@@ -1,0 +1,43 @@
+# 各記事から objectClass / tags を取得（数時間かかる場合あり）。手動実行のみ。
+name: Update scp_list.json (with article metadata)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-scp-list-metadata
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate scp_list.json with metadata
+        run: |
+          mkdir -p docs
+          python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/scp_list.json
+          if git diff --staged --quiet; then
+            echo "No changes to docs/scp_list.json — skipping commit."
+            exit 0
+          fi
+          git commit -m "chore(data): regenerate scp_list.json with article metadata [skip ci]"
+          git push
