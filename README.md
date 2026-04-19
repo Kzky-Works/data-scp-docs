@@ -32,3 +32,7 @@ cd app-scp-docs   # ローカル clone 名
 未 push の `update_list.py` を試したいときは `copy`。
 
 定期実行したい場合は macOS の `launchd` や cron で上記を週 1 などで呼び出してください。
+
+### Actions の push が rejected になるとき
+
+別のワークフローや手動 push で `main` が進んでいると、単純 `git push` が拒否されます。ワークフローでは **コミット後に `fetch` + `rebase origin/main` してから push** するようになっています。まだ失敗する場合は Actions のログを確認し、同時に複数ジョブが走っていないか（`concurrency` で直列化済み）を見てください。

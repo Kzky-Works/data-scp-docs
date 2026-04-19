@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-scp-list-metadata
+  group: data-scp-docs-main-writes
   cancel-in-progress: false
 
 jobs:
@@ -21,6 +21,8 @@ jobs:
     timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Sync scripts/update_list.py from app-scp-docs
         env:
@@ -52,6 +54,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add scripts/update_list.py docs/scp_list.json
@@ -60,4 +63,6 @@ jobs:
             exit 0
           fi
           git commit -m "chore(data): sync script and/or scp_list.json (with metadata) [skip ci]"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          git push origin main
