@@ -3,6 +3,7 @@
 SCP-JP シリーズ一覧（Wikidot）からタイトルを取得し、アプリの SCPListRemotePayload 互換 JSON を生成する。
 
 要件: ScpDocs の SCPListRemotePayload / SCPListRemoteEntry（series: 0…4, scpNumber: Int）に一致。
+各エントリは `scp-series-jp` 由来の `title` に加え、`scp-series` 一覧から `mainlistTranslationTitle`（本家メインリスト和訳の行タイトル）を付与する。
 `hubLinkedPaths` は scp-international から辿る国際支部和訳（/scp-数字-2文字、-jp 以外）。
 Phase 14: 各エントリに任意フィールド `objectClass`（文字列）・`tags`（文字列配列）を付けられる。
 個別記事からの取得は `--with-article-metadata`（負荷が高いため遅延秒数に注意）。
@@ -35,7 +36,7 @@ HTTP_HEADERS = {
     "Accept-Language": "ja,en;q=0.8",
 }
 
-# SCPJPSeries.rawValue → Wikidot 一覧 URL
+# SCPJPSeries.rawValue → Wikidot 一覧 URL（日本支部オリジナル `scp-NNN-jp`）
 SERIES_PAGES: list[tuple[int, str]] = [
     (0, "https://scp-jp.wikidot.com/scp-series-jp"),
     (1, "https://scp-jp.wikidot.com/scp-series-jp-2"),
@@ -44,9 +45,20 @@ SERIES_PAGES: list[tuple[int, str]] = [
     (4, "https://scp-jp.wikidot.com/scp-series-jp-5"),
 ]
 
+# 本家メインリスト和訳（`scp-NNN`）。JSON の `mainlistTranslationTitle` 用。
+SERIES_PAGES_MAINLIST: list[tuple[int, str]] = [
+    (0, "https://scp-jp.wikidot.com/scp-series"),
+    (1, "https://scp-jp.wikidot.com/scp-series-2"),
+    (2, "https://scp-jp.wikidot.com/scp-series-3"),
+    (3, "https://scp-jp.wikidot.com/scp-series-4"),
+    (4, "https://scp-jp.wikidot.com/scp-series-5"),
+]
+
 INTERNATIONAL_HUB_URL = "https://scp-jp.wikidot.com/scp-international"
 
 SCP_HREF_RE = re.compile(r"^/scp-(\d+)-jp$")
+# 本家メインリスト和訳一覧（`/scp-173` 形式。`-jp` や国際支部 `-xx` は除外）
+SCP_MAINLIST_HREF_RE = re.compile(r"^/scp-(\d+)$")
 OBJECT_CLASS_RE = re.compile(
     r"<strong>\s*(?:オブジェクトクラス|Object Class)\s*:\s*</strong>\s*([A-Za-z][A-Za-z\-]*)",
     re.IGNORECASE,
@@ -137,6 +149,17 @@ def looks_like_intl_branch_list_page(path: str) -> bool:
 
 def parse_scp_number_from_href(href: str) -> int | None:
     m = SCP_HREF_RE.match(href.strip())
+    if not m:
+        return None
+    return int(m.group(1), 10)
+
+
+def parse_scp_number_from_mainlist_href(href: str) -> int | None:
+    raw = (href or "").strip()
+    if not raw or raw.startswith("#"):
+        return None
+    path = urlparse(urljoin("https://scp-jp.wikidot.com/", raw)).path
+    m = SCP_MAINLIST_HREF_RE.match(path)
     if not m:
         return None
     return int(m.group(1), 10)
@@ -306,6 +329,48 @@ def fetch_series_entries(series: int, url: str, session: requests.Session) -> li
     return out
 
 
+def fetch_mainlist_translation_title_map(series: int, url: str, session: requests.Session) -> dict[int, str]:
+    """`scp-series` 系ページから `/scp-数字` リンクの一覧行タイトルを取得。"""
+    time.sleep(REQUEST_DELAY_SEC)
+    r = session.get(url, headers=HTTP_HEADERS, timeout=60)
+    r.raise_for_status()
+    r.encoding = r.encoding or "utf-8"
+    soup = BeautifulSoup(r.text, "html.parser")
+    rng = range_for_series(series)
+    by_num: dict[int, str] = {}
+
+    for li in soup.find_all("li"):
+        a = li.find("a", href=True)
+        if not a:
+            continue
+        href = a.get("href", "") or ""
+        n = parse_scp_number_from_mainlist_href(href)
+        if n is None:
+            continue
+        if not (rng.lo <= n <= rng.hi):
+            continue
+        title = extract_title_from_li(li)
+        if not title:
+            continue
+        by_num[n] = title
+
+    return by_num
+
+
+def merge_mainlist_translation_titles(
+    entries: list[dict[str, Any]], session: requests.Session
+) -> None:
+    """各エントリに `mainlistTranslationTitle` を付与（`scp-series` 一覧由来）。"""
+    for series, url in SERIES_PAGES_MAINLIST:
+        title_map = fetch_mainlist_translation_title_map(series, url, session)
+        for e in entries:
+            if int(e["series"]) != series:
+                continue
+            n = int(e["scpNumber"])
+            if n in title_map:
+                e["mainlistTranslationTitle"] = title_map[n]
+
+
 def validate_payload(payload: dict[str, Any]) -> None:
     schema = payload.get("schemaVersion")
     if schema != 1:
@@ -351,6 +416,9 @@ def validate_payload(payload: dict[str, Any]) -> None:
             raise ValueError(f"duplicate entry series={s} scpNumber={n}")
         seen.add(key)
 
+        mlt = e.get("mainlistTranslationTitle")
+        if mlt is not None and (not isinstance(mlt, str) or not mlt.strip()):
+            raise ValueError(f"entries[{i}].mainlistTranslationTitle must be non-empty string or omitted, got {mlt!r}")
         oc = e.get("objectClass")
         if oc is not None and not isinstance(oc, str):
             raise ValueError(f"entries[{i}].objectClass must be string or omitted, got {oc!r}")
@@ -379,6 +447,8 @@ def scrape_all(
         all_entries.extend(rows)
 
     all_entries.sort(key=lambda e: (e["series"], e["scpNumber"]))
+
+    merge_mainlist_translation_titles(all_entries, session)
 
     if with_article_metadata:
         delay = metadata_delay_sec if metadata_delay_sec is not None else REQUEST_DELAY_SEC
