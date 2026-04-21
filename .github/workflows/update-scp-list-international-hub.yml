@@ -1,24 +1,23 @@
-# リポジトリ同梱の scripts/update_list.py で docs/scp_list.json を生成し、変更があれば push。
-name: Update scp_list.json
+# hubLinkedPaths のみ Wikidot 国際一覧から再取得（重い）。国内日次ジョブとは別実行。
+name: Update scp_list.json (international hub)
 
 on:
   workflow_dispatch:
   schedule:
-    # 毎日 15:00 UTC = 翌日 00:00 JST（日本時間 0時）
-    - cron: "0 15 * * *"
+    # 毎週月曜 16:00 UTC ≒ 翌日 01:00 JST（日次国内 15:00 UTC とずらす）
+    - cron: "0 16 * * 1"
 
 permissions:
   contents: write
 
 concurrency:
-  # 同一リポジトリへの push を直列化（週次ジョブとメタデータジョブの競合を防ぐ）
   group: data-scp-docs-main-writes
   cancel-in-progress: false
 
 jobs:
-  update:
+  update-hub:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,16 +31,14 @@ jobs:
         run: |
           set -euxo pipefail
           pip install -r requirements.txt
-          pip freeze | grep -Ei '^(beautifulsoup4|requests)=' || true
 
-      - name: Generate scp_list.json
+      - name: Refresh hubLinkedPaths only
         run: |
           set -euxo pipefail
           mkdir -p docs
           python3 scripts/update_list.py \
-            --out docs/scp_list.json \
-            --merge-metadata-from docs/scp_list.json \
-            --domestic-only \
+            --hub-linked-paths-only \
+            --in-out docs/scp_list.json \
             --verbose
           ls -la docs/scp_list.json
 
@@ -55,7 +52,7 @@ jobs:
             echo "No changes — skipping commit."
             exit 0
           fi
-          git commit -m "chore(data): update scp_list.json [skip ci]"
+          git commit -m "chore(data): refresh hubLinkedPaths [skip ci]"
           git fetch origin main
           git rebase origin/main
           git push origin main

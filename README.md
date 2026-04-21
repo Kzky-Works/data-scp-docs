@@ -7,15 +7,24 @@
 **`scripts/update_list.py` と `requirements.txt` はこのリポジトリが正です。**  
 GitHub Actions は checkout した同じ内容を使い、**別リポジトリからスクリプトを取得しません**（`app-scp-docs` を private にしても一覧 CI は独立して動きます）。
 
+### 国内一覧（軽量）と国際ハブは別ジョブ
+
+- **国内（日次）:** `--domestic-only` … シリーズ一覧＋`mainlistTranslationTitle`＋既存 JSON からのメタマージのみ。**国際一覧の HTTP は行わない**（`hubLinkedPaths` はマージ元ファイルの値のまま）。
+- **国際ハブ（週次・別ワークフロー）:** `--hub-linked-paths-only` … 既存 `scp_list.json` を読み、**`hubLinkedPaths` だけ** Wikidot から再取得して書き戻す（重い処理はここだけに集約）。
+- **メタ付き（週次）:** 既存 JSON に **`hubLinkedPaths` が入っていれば**、記事メタ取得の前に **国際クロールをスキップ**（空のときだけフル取得）。
+
 ローカルで試す場合:
 
 ```bash
 pip install -r requirements.txt
 mkdir -p docs
+# 国内のみ（日次 CI と同趣旨）
 python3 scripts/update_list.py --out docs/scp_list.json \
   --merge-metadata-from docs/scp_list.json \
-  --reuse-hub-linked-paths-from docs/scp_list.json \
+  --domestic-only \
   --verbose
+# 国際 hub のみ更新（重い）
+python3 scripts/update_list.py --hub-linked-paths-only --in-out docs/scp_list.json --verbose
 # メタデータ付き（初回は全記事。2回目以降は増分が既定の CI と同じ）
 python3 scripts/update_list.py --out docs/scp_list.json \
   --merge-metadata-from docs/scp_list.json \
@@ -30,8 +39,9 @@ python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata 
 
 | Workflow | 内容 |
 |----------|------|
-| **Update scp_list.json** | シリーズ一覧から `docs/scp_list.json` を生成。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。既存から `objectClass` / `tags` をマージし、**`--reuse-hub-linked-paths-from`** で `hubLinkedPaths` の再クロールを省略（国際一覧だけで 10 分以上かかるのを避ける。ハブの生データはメタ付きジョブで更新）。 |
-| **Update scp_list.json (with article metadata)** | 各記事からタグ・オブジェクトクラス取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON をマージし **`--metadata-only-missing`** と **`--metadata-max-age-days 14`** で、タイムスタンプが **14 日以内**の記事は HTTP 省略、それ以外・未取得は再取得して本家のタグ追記に追従。全件取り直すときは `--metadata-only-missing` を外すか `--metadata-max-age-days 0`。 |
+| **Update scp_list.json** | **国内のみ（日次）**。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。`--domestic-only` で国際一覧を叩かない。 |
+| **Update scp_list.json (international hub)** | **`hubLinkedPaths` のみ更新（週次）**。**毎週月曜 16:00 UTC** ＋手動。重い国際クロールはこのジョブだけ。 |
+| **Update scp_list.json (with article metadata)** | 記事メタ取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON に hub があれば国際クロール省略。 |
 
 差分があるときだけ `docs/scp_list.json` がコミットされ、Pages が更新されます。
 

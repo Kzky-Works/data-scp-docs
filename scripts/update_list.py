@@ -8,7 +8,8 @@ SCP-JP シリーズ一覧（Wikidot）からタイトルを取得し、アプリ
 Phase 14: 各エントリに任意フィールド `objectClass`（文字列）・`tags`（文字列配列）を付けられる。
 個別記事からの取得は `--with-article-metadata`（負荷が高いため遅延秒数に注意）。
 軽量実行時は `--merge-metadata-from` で既存 JSON の objectClass/tags を同一記事に引き継ぎ、週次ジョブでメタを消さない。
-日次の負荷軽減のため `--reuse-hub-linked-paths-from` で hub 一覧の再クロールを省略できる（メタ付きジョブで定期的に更新された hub を流用）。
+日次の負荷軽減のため **`--domestic-only`** で国際一覧の HTTP を一切行わない（`hubLinkedPaths` は `--merge-metadata-from` の既存値のみ）。
+国際ハブの更新は別ジョブ **`--hub-linked-paths-only`**（既存 JSON の `hubLinkedPaths` だけ再取得して上書き）。
 メタ付き実行では `--merge-metadata-from` と `--metadata-only-missing` を組み合わせると Wikidot 負荷を抑える。
 各エントリの `articleMetadataSyncedAt` と `--metadata-max-age-days`（既定 14）で、経過後は再取得して本家のタグ追記に追従する。
 メタ付き実行時は `--checkpoint-every` 件ごとに `--out` へ原子書き込みし、途中失敗でも進捗を残せる。
@@ -661,6 +662,7 @@ def scrape_all(
     checkpoint_out_path: str | None = None,
     checkpoint_every: int = 10,
     reuse_hub_linked_paths_from: str | None = None,
+    domestic_only: bool = False,
 ) -> dict[str, Any]:
     session = requests.Session()
     all_entries: list[dict[str, Any]] = []
@@ -708,14 +710,26 @@ def scrape_all(
             print(f"WARN: checkpoint write failed ({reason}): {w}", file=sys.stderr)
 
     if with_article_metadata:
-        try:
-            hub_paths = fetch_international_hub_article_paths(session, verbose=verbose)
-        except Exception as ex:
-            print(
-                f"WARN: hubLinkedPaths fetch failed before article metadata, using merge file or []: {ex}",
-                file=sys.stderr,
-            )
-            hub_paths = load_hub_linked_paths_from_merge_json(merge_metadata_from) or []
+        hub_pref: list[str] | None = None
+        if merge_metadata_from:
+            hub_pref = load_hub_linked_paths_from_merge_json(merge_metadata_from)
+        if hub_pref is not None and len(hub_pref) > 0:
+            hub_paths = hub_pref
+            if verbose:
+                print(
+                    "INFO: using hubLinkedPaths from merge file before metadata "
+                    "(skipping international list crawl)",
+                    file=sys.stderr,
+                )
+        else:
+            try:
+                hub_paths = fetch_international_hub_article_paths(session, verbose=verbose)
+            except Exception as ex:
+                print(
+                    f"WARN: hubLinkedPaths fetch failed before article metadata, using []: {ex}",
+                    file=sys.stderr,
+                )
+                hub_paths = []
 
         delay = metadata_delay_sec if metadata_delay_sec is not None else REQUEST_DELAY_SEC
         n_fetched = 0
@@ -788,20 +802,30 @@ def scrape_all(
                 file=sys.stderr,
             )
     else:
-        hub_cached = load_hub_linked_paths_from_merge_json(reuse_hub_linked_paths_from)
-        if hub_cached is not None and len(hub_cached) > 0:
-            hub_paths = hub_cached
+        if domestic_only:
+            hub_src = merge_metadata_from
+            hub_cached = load_hub_linked_paths_from_merge_json(hub_src) if hub_src else None
+            hub_paths = list(hub_cached) if hub_cached else []
             print(
-                f"INFO: reused {len(hub_paths)} hubLinkedPaths from {reuse_hub_linked_paths_from} "
-                "(skipped international list crawl)",
+                f"INFO: domestic-only: hubLinkedPaths={len(hub_paths)} from "
+                f"{hub_src!r} (no international crawl)",
                 file=sys.stderr,
             )
         else:
-            print(
-                "INFO: fetching hubLinkedPaths from Wikidot (international lists; often several minutes)…",
-                file=sys.stderr,
-            )
-            hub_paths = fetch_international_hub_article_paths(session, verbose=verbose)
+            hub_cached = load_hub_linked_paths_from_merge_json(reuse_hub_linked_paths_from)
+            if hub_cached is not None and len(hub_cached) > 0:
+                hub_paths = hub_cached
+                print(
+                    f"INFO: reused {len(hub_paths)} hubLinkedPaths from {reuse_hub_linked_paths_from} "
+                    "(skipped international list crawl)",
+                    file=sys.stderr,
+                )
+            else:
+                print(
+                    "INFO: fetching hubLinkedPaths from Wikidot (international lists; often several minutes)…",
+                    file=sys.stderr,
+                )
+                hub_paths = fetch_international_hub_article_paths(session, verbose=verbose)
 
     assert hub_paths is not None
 
@@ -818,6 +842,48 @@ def scrape_all(
     }
     validate_payload(payload)
     return payload
+
+
+def run_hub_linked_paths_only(in_out_path: str, *, verbose: bool) -> int:
+    """既存 scp_list.json の hubLinkedPaths だけを Wikidot から取り直す。"""
+    session = requests.Session()
+    try:
+        with open(in_out_path, encoding="utf-8") as f:
+            payload: dict[str, Any] = json.load(f)
+    except Exception as e:
+        print(f"ERROR: cannot read {in_out_path}: {e}", file=sys.stderr)
+        return 1
+    try:
+        validate_payload(payload)
+    except Exception as e:
+        print(f"ERROR: invalid payload in {in_out_path}: {e}", file=sys.stderr)
+        return 1
+    print(
+        "INFO: hub-linked-paths-only: crawling international lists (slow)…",
+        file=sys.stderr,
+    )
+    try:
+        new_hub = fetch_international_hub_article_paths(session, verbose=verbose)
+    except Exception as e:
+        print(f"ERROR: international hub fetch failed: {e}", file=sys.stderr)
+        return 1
+    now = datetime.now(timezone.utc)
+    payload["hubLinkedPaths"] = new_hub
+    payload["listVersion"] = int(now.timestamp())
+    payload["generatedAt"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    try:
+        validate_payload(payload)
+        with open(in_out_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+    except Exception as e:
+        print(f"ERROR: write failed: {e}", file=sys.stderr)
+        return 1
+    print(
+        f"Wrote hubLinkedPaths only ({len(new_hub)} paths) → {in_out_path}",
+        file=sys.stderr,
+    )
+    return 0
 
 
 def main() -> int:
@@ -898,13 +964,42 @@ def main() -> int:
         metavar="PATH",
         default=None,
         help=(
-            "Without --with-article-metadata: if this JSON exists and hubLinkedPaths is non-empty, "
-            "reuse it and skip the slow international-list crawl (daily jobs; refresh hub on metadata runs)."
+            "Without --with-article-metadata and without --domestic-only: if this JSON has non-empty "
+            "hubLinkedPaths, reuse and skip international crawl."
         ),
+    )
+    p.add_argument(
+        "--domestic-only",
+        action="store_true",
+        help=(
+            "Without --with-article-metadata: never crawl international lists. hubLinkedPaths are taken "
+            "only from --merge-metadata-from if present (else []). Use daily; run --hub-linked-paths-only separately."
+        ),
+    )
+    p.add_argument(
+        "--hub-linked-paths-only",
+        action="store_true",
+        help="Only refresh hubLinkedPaths in existing JSON (--in-out or --out). Does not touch entries.",
+    )
+    p.add_argument(
+        "--in-out",
+        metavar="PATH",
+        default=None,
+        help="With --hub-linked-paths-only: JSON to read and write (defaults to --out).",
     )
     args = p.parse_args()
     out_path = args.out
     merge_from = args.merge_metadata_from
+
+    if args.hub_linked_paths_only:
+        if args.with_article_metadata or args.domestic_only or args.merge_metadata_from:
+            print(
+                "ERROR: --hub-linked-paths-only cannot be combined with generation flags.",
+                file=sys.stderr,
+            )
+            return 2
+        path = args.in_out or out_path
+        return run_hub_linked_paths_only(path, verbose=args.verbose)
     if args.metadata_only_missing and not args.with_article_metadata:
         print(
             "WARN: --metadata-only-missing has no effect without --with-article-metadata.",
@@ -913,6 +1008,16 @@ def main() -> int:
     if args.reuse_hub_linked_paths_from and args.with_article_metadata:
         print(
             "WARN: --reuse-hub-linked-paths-from is ignored with --with-article-metadata.",
+            file=sys.stderr,
+        )
+    if args.domestic_only and args.reuse_hub_linked_paths_from:
+        print(
+            "WARN: --reuse-hub-linked-paths-from ignored when --domestic-only is set.",
+            file=sys.stderr,
+        )
+    if args.domestic_only and args.with_article_metadata:
+        print(
+            "WARN: --domestic-only is ignored with --with-article-metadata.",
             file=sys.stderr,
         )
     try:
@@ -927,8 +1032,11 @@ def main() -> int:
             checkpoint_out_path=out_path if args.with_article_metadata else None,
             checkpoint_every=args.checkpoint_every,
             reuse_hub_linked_paths_from=(
-                None if args.with_article_metadata else args.reuse_hub_linked_paths_from
+                None
+                if args.with_article_metadata or args.domestic_only
+                else args.reuse_hub_linked_paths_from
             ),
+            domestic_only=bool(args.domestic_only and not args.with_article_metadata),
         )
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
