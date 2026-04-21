@@ -8,6 +8,7 @@ SCP-JP シリーズ一覧（Wikidot）からタイトルを取得し、アプリ
 Phase 14: 各エントリに任意フィールド `objectClass`（文字列）・`tags`（文字列配列）を付けられる。
 個別記事からの取得は `--with-article-metadata`（負荷が高いため遅延秒数に注意）。
 軽量実行時は `--merge-metadata-from` で既存 JSON の objectClass/tags を同一記事に引き継ぎ、週次ジョブでメタを消さない。
+日次の負荷軽減のため `--reuse-hub-linked-paths-from` で hub 一覧の再クロールを省略できる（メタ付きジョブで定期的に更新された hub を流用）。
 メタ付き実行では `--merge-metadata-from` と `--metadata-only-missing` を組み合わせると Wikidot 負荷を抑える。
 各エントリの `articleMetadataSyncedAt` と `--metadata-max-age-days`（既定 14）で、経過後は再取得して本家のタグ追記に追従する。
 メタ付き実行時は `--checkpoint-every` 件ごとに `--out` へ原子書き込みし、途中失敗でも進捗を残せる。
@@ -229,7 +230,9 @@ def extract_intl_article_paths_from_html(html: str) -> set[str]:
     return out
 
 
-def fetch_international_hub_article_paths(session: requests.Session) -> list[str]:
+def fetch_international_hub_article_paths(
+    session: requests.Session, *, verbose: bool = False
+) -> list[str]:
     text = fetch_html_with_retry(session, INTERNATIONAL_HUB_URL)
     soup = BeautifulSoup(text, "html.parser")
     list_urls: list[str] = []
@@ -250,10 +253,18 @@ def fetch_international_hub_article_paths(session: requests.Session) -> list[str
             seen_u.add(u)
             list_urls.append(u)
     list_urls.sort()
+    n_max = min(len(list_urls), MAX_INTL_LIST_PAGES)
+    if verbose:
+        print(
+            f"INFO: international hub: fetching up to {n_max} list pages (long-running)…",
+            file=sys.stderr,
+        )
     articles: set[str] = set()
     for i, u in enumerate(list_urls):
         if i >= MAX_INTL_LIST_PAGES:
             break
+        if verbose and i > 0 and i % 10 == 0:
+            print(f"INFO: international list progress {i}/{n_max}", file=sys.stderr)
         try:
             # 国際支部一覧は 503 が出やすいためリトライ多め
             html = fetch_html_with_retry(session, u, retries=12)
@@ -264,6 +275,8 @@ def fetch_international_hub_article_paths(session: requests.Session) -> list[str
             )
             continue
         articles.update(extract_intl_article_paths_from_html(html))
+    if verbose:
+        print(f"INFO: international hub done ({len(articles)} article paths)", file=sys.stderr)
     return sorted(articles)
 
 
@@ -647,6 +660,7 @@ def scrape_all(
     metadata_max_age_days: float | None = None,
     checkpoint_out_path: str | None = None,
     checkpoint_every: int = 10,
+    reuse_hub_linked_paths_from: str | None = None,
 ) -> dict[str, Any]:
     session = requests.Session()
     all_entries: list[dict[str, Any]] = []
@@ -695,7 +709,7 @@ def scrape_all(
 
     if with_article_metadata:
         try:
-            hub_paths = fetch_international_hub_article_paths(session)
+            hub_paths = fetch_international_hub_article_paths(session, verbose=verbose)
         except Exception as ex:
             print(
                 f"WARN: hubLinkedPaths fetch failed before article metadata, using merge file or []: {ex}",
@@ -774,7 +788,20 @@ def scrape_all(
                 file=sys.stderr,
             )
     else:
-        hub_paths = fetch_international_hub_article_paths(session)
+        hub_cached = load_hub_linked_paths_from_merge_json(reuse_hub_linked_paths_from)
+        if hub_cached is not None and len(hub_cached) > 0:
+            hub_paths = hub_cached
+            print(
+                f"INFO: reused {len(hub_paths)} hubLinkedPaths from {reuse_hub_linked_paths_from} "
+                "(skipped international list crawl)",
+                file=sys.stderr,
+            )
+        else:
+            print(
+                "INFO: fetching hubLinkedPaths from Wikidot (international lists; often several minutes)…",
+                file=sys.stderr,
+            )
+            hub_paths = fetch_international_hub_article_paths(session, verbose=verbose)
 
     assert hub_paths is not None
 
@@ -866,12 +893,26 @@ def main() -> int:
             "still writes --out once with progress."
         ),
     )
+    p.add_argument(
+        "--reuse-hub-linked-paths-from",
+        metavar="PATH",
+        default=None,
+        help=(
+            "Without --with-article-metadata: if this JSON exists and hubLinkedPaths is non-empty, "
+            "reuse it and skip the slow international-list crawl (daily jobs; refresh hub on metadata runs)."
+        ),
+    )
     args = p.parse_args()
     out_path = args.out
     merge_from = args.merge_metadata_from
     if args.metadata_only_missing and not args.with_article_metadata:
         print(
             "WARN: --metadata-only-missing has no effect without --with-article-metadata.",
+            file=sys.stderr,
+        )
+    if args.reuse_hub_linked_paths_from and args.with_article_metadata:
+        print(
+            "WARN: --reuse-hub-linked-paths-from is ignored with --with-article-metadata.",
             file=sys.stderr,
         )
     try:
@@ -885,6 +926,9 @@ def main() -> int:
             metadata_max_age_days=args.metadata_max_age_days,
             checkpoint_out_path=out_path if args.with_article_metadata else None,
             checkpoint_every=args.checkpoint_every,
+            reuse_hub_linked_paths_from=(
+                None if args.with_article_metadata else args.reuse_hub_linked_paths_from
+            ),
         )
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
