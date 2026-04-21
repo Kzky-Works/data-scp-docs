@@ -1,9 +1,12 @@
-# 各記事から objectClass / tags を取得（数時間かかる場合あり）。手動実行のみ。
-# スクリプトは本リポジトリの scripts/update_list.py（app-scp-docs からの取得は行わない）。
+# 各記事から objectClass / tags を取得（初回のみ長時間になり得る）。増分は --metadata-only-missing。
+# スクリプトは本リポジトリの scripts/update_list.py。
 name: Update scp_list.json (with article metadata)
 
 on:
   workflow_dispatch:
+  schedule:
+    # 毎週日曜 15:00 UTC = 毎週月曜 00:00 JST（日本時間 0時・週1回）
+    - cron: "0 15 * * 0"
 
 permissions:
   contents: write

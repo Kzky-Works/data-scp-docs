@@ -26,8 +26,8 @@ python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata 
 
 | Workflow | 内容 |
 |----------|------|
-| **Update scp_list.json** | シリーズ一覧＋国際ハブから `docs/scp_list.json` を生成。**毎週月曜 18:00 UTC** ＋手動。既存ファイルから `objectClass` / `tags` を **マージ**するため、メタ付きジョブの結果を週次で消さない。 |
-| **Update scp_list.json (with article metadata)** | 上記に加え各記事からタグ・オブジェクトクラス取得。**手動のみ**。既存 `docs/scp_list.json` をマージしたうえで **`--metadata-only-missing`** により、未取得の記事だけ HTTP する（初回フル取得後の再実行は短時間・負荷小）。全件取り直したいときはローカル等で `--metadata-only-missing` を外す。 |
+| **Update scp_list.json** | シリーズ一覧＋国際ハブから `docs/scp_list.json` を生成。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。既存ファイルから `objectClass` / `tags` を **マージ**するため、メタ付きジョブの結果を消さない。 |
+| **Update scp_list.json (with article metadata)** | 各記事からタグ・オブジェクトクラス取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON をマージしたうえで **`--metadata-only-missing`** により未取得のみ HTTP（初回フル取得後は短時間になりやすい）。全件取り直すときはローカル等で `--metadata-only-missing` を外す。 |
 
 差分があるときだけ `docs/scp_list.json` がコミットされ、Pages が更新されます。
 

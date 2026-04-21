@@ -4,8 +4,8 @@ name: Update scp_list.json
 on:
   workflow_dispatch:
   schedule:
-    # 毎週月曜 18:00 UTC。変更可。
-    - cron: "0 18 * * 1"
+    # 毎日 15:00 UTC = 翌日 00:00 JST（日本時間 0時）
+    - cron: "0 15 * * *"
 
 permissions:
   contents: write
