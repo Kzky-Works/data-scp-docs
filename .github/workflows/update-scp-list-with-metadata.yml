@@ -37,7 +37,9 @@ jobs:
           mkdir -p docs
           python3 scripts/update_list.py \
             --out docs/scp_list.json \
+            --merge-metadata-from docs/scp_list.json \
             --with-article-metadata \
+            --metadata-only-missing \
             --verbose
           ls -la docs/scp_list.json
 

@@ -14,7 +14,11 @@ pip install -r requirements.txt
 mkdir -p docs
 python3 scripts/update_list.py --out docs/scp_list.json \
   --merge-metadata-from docs/scp_list.json
-# メタデータ付き（時間がかかります）
+# メタデータ付き（初回は全記事。2回目以降は増分が既定の CI と同じ）
+python3 scripts/update_list.py --out docs/scp_list.json \
+  --merge-metadata-from docs/scp_list.json \
+  --with-article-metadata --metadata-only-missing --verbose
+# Wikidot へ全記事を再取得（負荷大）
 python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata --verbose
 ```
 
@@ -23,7 +27,7 @@ python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata 
 | Workflow | 内容 |
 |----------|------|
 | **Update scp_list.json** | シリーズ一覧＋国際ハブから `docs/scp_list.json` を生成。**毎週月曜 18:00 UTC** ＋手動。既存ファイルから `objectClass` / `tags` を **マージ**するため、メタ付きジョブの結果を週次で消さない。 |
-| **Update scp_list.json (with article metadata)** | 上記に加え各記事からタグ・オブジェクトクラス取得。**手動のみ**（数時間かかる場合あり）。 |
+| **Update scp_list.json (with article metadata)** | 上記に加え各記事からタグ・オブジェクトクラス取得。**手動のみ**。既存 `docs/scp_list.json` をマージしたうえで **`--metadata-only-missing`** により、未取得の記事だけ HTTP する（初回フル取得後の再実行は短時間・負荷小）。全件取り直したいときはローカル等で `--metadata-only-missing` を外す。 |
 
 差分があるときだけ `docs/scp_list.json` がコミットされ、Pages が更新されます。
 

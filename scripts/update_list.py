@@ -8,6 +8,7 @@ SCP-JP シリーズ一覧（Wikidot）からタイトルを取得し、アプリ
 Phase 14: 各エントリに任意フィールド `objectClass`（文字列）・`tags`（文字列配列）を付けられる。
 個別記事からの取得は `--with-article-metadata`（負荷が高いため遅延秒数に注意）。
 軽量実行時は `--merge-metadata-from` で既存 JSON の objectClass/tags を同一記事に引き継ぎ、週次ジョブでメタを消さない。
+メタ付き実行では `--merge-metadata-from` と `--metadata-only-missing` を組み合わせると、未取得の記事だけ HTTP し Wikidot 負荷を抑える。
 """
 
 from __future__ import annotations
@@ -435,9 +436,13 @@ def load_article_metadata_map(path: str) -> dict[tuple[int, int], dict[str, Any]
         oc = e.get("objectClass")
         if isinstance(oc, str) and oc.strip():
             blob["objectClass"] = oc.strip()
-        tg = e.get("tags")
-        if isinstance(tg, list) and tg and all(isinstance(t, str) and t.strip() for t in tg):
-            blob["tags"] = [str(t).strip() for t in tg]
+        if "tags" in e:
+            tg = e["tags"]
+            if isinstance(tg, list):
+                if tg and all(isinstance(t, str) and t.strip() for t in tg):
+                    blob["tags"] = [str(t).strip() for t in tg]
+                elif not tg:
+                    blob["tags"] = []
         if blob:
             out[(s, n)] = blob
     return out
@@ -459,6 +464,16 @@ def merge_article_metadata_into_entries(
             e["tags"] = list(src["tags"])
         n_touched += 1
     return n_touched
+
+
+def entry_has_article_metadata(e: dict[str, Any]) -> bool:
+    """個別記事の取得を省略してよいか（オブジェクトクラスと tags キーが揃っているか）。"""
+    oc = e.get("objectClass")
+    if not isinstance(oc, str) or not oc.strip():
+        return False
+    if "tags" not in e:
+        return False
+    return isinstance(e["tags"], list)
 
 
 def validate_payload(payload: dict[str, Any]) -> None:
@@ -528,6 +543,7 @@ def scrape_all(
     metadata_max_articles: int | None = None,
     verbose: bool = False,
     merge_metadata_from: str | None = None,
+    metadata_only_missing: bool = False,
 ) -> dict[str, Any]:
     session = requests.Session()
     all_entries: list[dict[str, Any]] = []
@@ -542,20 +558,38 @@ def scrape_all(
 
     merge_mainlist_translation_titles(all_entries, session)
 
+    if merge_metadata_from:
+        meta_map = load_article_metadata_map(merge_metadata_from)
+        if meta_map:
+            n_m = merge_article_metadata_into_entries(all_entries, meta_map)
+            print(
+                f"INFO: merged objectClass/tags for {n_m} entries from {merge_metadata_from}",
+                file=sys.stderr,
+            )
+
     if with_article_metadata:
         delay = metadata_delay_sec if metadata_delay_sec is not None else REQUEST_DELAY_SEC
-        n_done = 0
+        n_fetched = 0
+        n_skipped = 0
         if verbose:
             cap = metadata_max_articles if metadata_max_articles is not None else "all"
             print(
-                f"INFO: article metadata fetch delay={delay}s max_articles={cap}",
+                f"INFO: article metadata fetch delay={delay}s max_fetches={cap} "
+                f"only_missing={metadata_only_missing}",
                 file=sys.stderr,
             )
         for e in all_entries:
-            if metadata_max_articles is not None and n_done >= metadata_max_articles:
+            if metadata_max_articles is not None and n_fetched >= metadata_max_articles:
                 break
             n = int(e["scpNumber"])
             slug = f"/scp-{n:03d}-jp" if n < 1000 else f"/scp-{n}-jp"
+            if metadata_only_missing and entry_has_article_metadata(e):
+                n_skipped += 1
+                if verbose and n_skipped <= 5:
+                    print(f"INFO: skip (already have metadata) {slug}", file=sys.stderr)
+                elif verbose and n_skipped == 6:
+                    print("INFO: … further skips omitted", file=sys.stderr)
+                continue
             try:
                 oc, tags = fetch_article_metadata(
                     session, slug, delay_sec=delay, verbose=verbose
@@ -565,18 +599,13 @@ def scrape_all(
                 continue
             if oc:
                 e["objectClass"] = oc
-            if tags:
-                e["tags"] = tags
-            n_done += 1
-            if n_done % 50 == 0:
-                print(f"… metadata {n_done} articles", file=sys.stderr)
-
-    elif merge_metadata_from:
-        meta_map = load_article_metadata_map(merge_metadata_from)
-        if meta_map:
-            n_m = merge_article_metadata_into_entries(all_entries, meta_map)
+            e["tags"] = tags
+            n_fetched += 1
+            if n_fetched % 50 == 0:
+                print(f"… metadata fetched {n_fetched} articles", file=sys.stderr)
+        if metadata_only_missing and (n_skipped or n_fetched):
             print(
-                f"INFO: merged objectClass/tags for {n_m} entries from {merge_metadata_from}",
+                f"INFO: article metadata done fetched={n_fetched} skipped_existing={n_skipped}",
                 file=sys.stderr,
             )
 
@@ -637,18 +666,25 @@ def main() -> int:
         metavar="PATH",
         default=None,
         help=(
-            "When not using --with-article-metadata, copy objectClass and tags from this "
-            "existing scp_list.json onto matching entries (keeps weekly runs from wiping metadata)."
+            "Merge objectClass/tags from this existing scp_list.json onto entries after list scrape. "
+            "Use without --with-article-metadata so weekly runs keep metadata; "
+            "combine with --with-article-metadata to seed before incremental fetches."
+        ),
+    )
+    p.add_argument(
+        "--metadata-only-missing",
+        action="store_true",
+        help=(
+            "With --with-article-metadata: skip HTTP for entries that already have objectClass "
+            "and a tags list (after --merge-metadata-from). Reduces Wikidot load on repeat runs."
         ),
     )
     args = p.parse_args()
     out_path = args.out
-    merge_from = None
-    if args.merge_metadata_from and not args.with_article_metadata:
-        merge_from = args.merge_metadata_from
-    elif args.merge_metadata_from and args.with_article_metadata:
+    merge_from = args.merge_metadata_from
+    if args.metadata_only_missing and not args.with_article_metadata:
         print(
-            "WARN: --merge-metadata-from is ignored when --with-article-metadata is set.",
+            "WARN: --metadata-only-missing has no effect without --with-article-metadata.",
             file=sys.stderr,
         )
     try:
@@ -658,6 +694,7 @@ def main() -> int:
             metadata_max_articles=args.metadata_max_articles,
             verbose=args.verbose,
             merge_metadata_from=merge_from,
+            metadata_only_missing=args.metadata_only_missing,
         )
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
