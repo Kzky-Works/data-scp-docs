@@ -1,4 +1,4 @@
-# ① app-scp-docs の update_list.py を取得 ② docs/scp_list.json を生成 ③ 変更があれば push
+# リポジトリ同梱の scripts/update_list.py で docs/scp_list.json を生成し、変更があれば push。
 name: Update scp_list.json
 
 on:
@@ -6,10 +6,6 @@ on:
   schedule:
     # 毎週月曜 18:00 UTC。変更可。
     - cron: "0 18 * * 1"
-
-env:
-  # スクリプトの取得元（公開リポジトリ想定）。private の場合は README の「プライベート時」を参照。
-  APP_SCP_DOCS_SCRIPT_URL: https://raw.githubusercontent.com/Kzky-Works/app-scp-docs/main/update_list.py
 
 permissions:
   contents: write
@@ -28,45 +24,34 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Sync scripts/update_list.py from app-scp-docs
-        env:
-          APP_SCP_DOCS_READ_TOKEN: ${{ secrets.APP_SCP_DOCS_READ_TOKEN }}
-        run: |
-          set -euo pipefail
-          mkdir -p scripts
-          if [ -n "${APP_SCP_DOCS_READ_TOKEN:-}" ]; then
-            curl -fsSL \
-              -H "Authorization: Bearer ${APP_SCP_DOCS_READ_TOKEN}" \
-              -H "Accept: application/vnd.github.raw" \
-              -o scripts/update_list.py \
-              "https://api.github.com/repos/Kzky-Works/app-scp-docs/contents/update_list.py?ref=main"
-          else
-            curl -fsSL -o scripts/update_list.py "$APP_SCP_DOCS_SCRIPT_URL"
-          fi
-
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          set -euxo pipefail
+          pip install -r requirements.txt
+          pip freeze | grep -Ei '^(beautifulsoup4|requests)=' || true
 
       - name: Generate scp_list.json
         run: |
+          set -euxo pipefail
           mkdir -p docs
           python3 scripts/update_list.py --out docs/scp_list.json
+          ls -la docs/scp_list.json
 
       - name: Commit and push if changed
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts/update_list.py docs/scp_list.json
+          git add docs/scp_list.json
           if git diff --staged --quiet; then
             echo "No changes — skipping commit."
             exit 0
           fi
-          git commit -m "chore(data): sync update_list.py and/or scp_list.json [skip ci]"
+          git commit -m "chore(data): update scp_list.json [skip ci]"
           git fetch origin main
           git rebase origin/main
           git push origin main

@@ -32,7 +32,7 @@ MAX_INTL_LIST_PAGES = 150
 
 # User-Agent（ブロック回避・識別用）
 HTTP_HEADERS = {
-    "User-Agent": "ScpDocsListBot/1.0 (+https://github.com/scp-docs; contact: repo owner)",
+    "User-Agent": "ScpDocsListBot/1.0 (+https://github.com/Kzky-Works/data-scp-docs; contact: repo owner)",
     "Accept-Language": "ja,en;q=0.8",
 }
 
@@ -287,18 +287,53 @@ def extract_article_tags_from_html(html: str, object_class: str | None) -> list[
 
 
 def fetch_article_metadata(
-    session: requests.Session, article_path: str, *, delay_sec: float
+    session: requests.Session,
+    article_path: str,
+    *,
+    delay_sec: float,
+    retries: int = 5,
+    verbose: bool = False,
 ) -> tuple[str | None, list[str]]:
-    """個別記事からオブジェクトクラスとタグを取得。"""
+    """個別記事からオブジェクトクラスとタグを取得。403/429/503 は指数バックオフで再試行。"""
     url = urljoin("https://scp-jp.wikidot.com/", article_path)
-    time.sleep(delay_sec)
-    r = session.get(url, headers=HTTP_HEADERS, timeout=90)
-    r.raise_for_status()
-    r.encoding = r.encoding or "utf-8"
-    html = r.text
-    oc = extract_object_class_from_html(html)
-    tags = extract_article_tags_from_html(html, oc)
-    return oc, tags
+    last_err: Exception | None = None
+    for attempt in range(retries):
+        time.sleep(delay_sec)
+        try:
+            r = session.get(url, headers=HTTP_HEADERS, timeout=90)
+            if r.status_code in (403, 429, 503) and attempt < retries - 1:
+                wait = min(120, 15 * (2**attempt))
+                if verbose:
+                    print(
+                        f"INFO: {article_path} HTTP {r.status_code}, sleep {wait}s then retry "
+                        f"({attempt + 1}/{retries})",
+                        file=sys.stderr,
+                    )
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            r.encoding = r.encoding or "utf-8"
+            html = r.text
+            oc = extract_object_class_from_html(html)
+            tags = extract_article_tags_from_html(html, oc)
+            if verbose:
+                print(
+                    f"INFO: {article_path} ok objectClass={oc!r} tags={len(tags)}",
+                    file=sys.stderr,
+                )
+            return oc, tags
+        except Exception as e:
+            last_err = e
+            if attempt < retries - 1:
+                wait = min(90, 8 * (attempt + 1))
+                if verbose:
+                    print(
+                        f"INFO: {article_path} error {e!r}, sleep {wait}s retry",
+                        file=sys.stderr,
+                    )
+                time.sleep(wait)
+    assert last_err is not None
+    raise last_err
 
 
 def fetch_series_entries(series: int, url: str, session: requests.Session) -> list[dict[str, Any]]:
@@ -436,6 +471,7 @@ def scrape_all(
     with_article_metadata: bool = False,
     metadata_delay_sec: float | None = None,
     metadata_max_articles: int | None = None,
+    verbose: bool = False,
 ) -> dict[str, Any]:
     session = requests.Session()
     all_entries: list[dict[str, Any]] = []
@@ -453,13 +489,21 @@ def scrape_all(
     if with_article_metadata:
         delay = metadata_delay_sec if metadata_delay_sec is not None else REQUEST_DELAY_SEC
         n_done = 0
+        if verbose:
+            cap = metadata_max_articles if metadata_max_articles is not None else "all"
+            print(
+                f"INFO: article metadata fetch delay={delay}s max_articles={cap}",
+                file=sys.stderr,
+            )
         for e in all_entries:
             if metadata_max_articles is not None and n_done >= metadata_max_articles:
                 break
             n = int(e["scpNumber"])
             slug = f"/scp-{n:03d}-jp" if n < 1000 else f"/scp-{n}-jp"
             try:
-                oc, tags = fetch_article_metadata(session, slug, delay_sec=delay)
+                oc, tags = fetch_article_metadata(
+                    session, slug, delay_sec=delay, verbose=verbose
+                )
             except Exception as ex:
                 print(f"WARN: metadata {slug}: {ex}", file=sys.stderr)
                 continue
@@ -517,6 +561,12 @@ def main() -> int:
         default=None,
         help="Stop after this many article fetches (for testing).",
     )
+    p.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Log metadata fetches and retries to stderr.",
+    )
     args = p.parse_args()
     out_path = args.out
     try:
@@ -524,6 +574,7 @@ def main() -> int:
             with_article_metadata=args.with_article_metadata,
             metadata_delay_sec=args.metadata_delay_sec,
             metadata_max_articles=args.metadata_max_articles,
+            verbose=args.verbose,
         )
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
