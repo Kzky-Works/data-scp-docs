@@ -38,7 +38,9 @@ jobs:
         run: |
           set -euxo pipefail
           mkdir -p docs
-          python3 scripts/update_list.py --out docs/scp_list.json
+          python3 scripts/update_list.py \
+            --out docs/scp_list.json \
+            --merge-metadata-from docs/scp_list.json
           ls -la docs/scp_list.json
 
       - name: Commit and push if changed

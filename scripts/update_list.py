@@ -7,6 +7,7 @@ SCP-JP シリーズ一覧（Wikidot）からタイトルを取得し、アプリ
 `hubLinkedPaths` は scp-international から辿る国際支部和訳（/scp-数字-2文字、-jp 以外）。
 Phase 14: 各エントリに任意フィールド `objectClass`（文字列）・`tags`（文字列配列）を付けられる。
 個別記事からの取得は `--with-article-metadata`（負荷が高いため遅延秒数に注意）。
+軽量実行時は `--merge-metadata-from` で既存 JSON の objectClass/tags を同一記事に引き継ぎ、週次ジョブでメタを消さない。
 """
 
 from __future__ import annotations
@@ -406,6 +407,60 @@ def merge_mainlist_translation_titles(
                 e["mainlistTranslationTitle"] = title_map[n]
 
 
+def load_article_metadata_map(path: str) -> dict[tuple[int, int], dict[str, Any]]:
+    """既存 scp_list.json から (series, scpNumber) → objectClass/tags だけを読む。"""
+    import os
+
+    if not path or not os.path.isfile(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception as e:
+        print(f"WARN: could not load merge-metadata-from {path}: {e}", file=sys.stderr)
+        return {}
+    entries = payload.get("entries")
+    if not isinstance(entries, list):
+        return {}
+    out: dict[tuple[int, int], dict[str, Any]] = {}
+    for e in entries:
+        if not isinstance(e, dict):
+            continue
+        try:
+            s = int(e["series"])
+            n = int(e["scpNumber"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        blob: dict[str, Any] = {}
+        oc = e.get("objectClass")
+        if isinstance(oc, str) and oc.strip():
+            blob["objectClass"] = oc.strip()
+        tg = e.get("tags")
+        if isinstance(tg, list) and tg and all(isinstance(t, str) and t.strip() for t in tg):
+            blob["tags"] = [str(t).strip() for t in tg]
+        if blob:
+            out[(s, n)] = blob
+    return out
+
+
+def merge_article_metadata_into_entries(
+    entries: list[dict[str, Any]], meta_map: dict[tuple[int, int], dict[str, Any]]
+) -> int:
+    """一覧から組み立てた entries に、meta_map の objectClass/tags を上書きコピーする。"""
+    n_touched = 0
+    for e in entries:
+        key = (int(e["series"]), int(e["scpNumber"]))
+        src = meta_map.get(key)
+        if not src:
+            continue
+        if "objectClass" in src:
+            e["objectClass"] = src["objectClass"]
+        if "tags" in src:
+            e["tags"] = list(src["tags"])
+        n_touched += 1
+    return n_touched
+
+
 def validate_payload(payload: dict[str, Any]) -> None:
     schema = payload.get("schemaVersion")
     if schema != 1:
@@ -472,6 +527,7 @@ def scrape_all(
     metadata_delay_sec: float | None = None,
     metadata_max_articles: int | None = None,
     verbose: bool = False,
+    merge_metadata_from: str | None = None,
 ) -> dict[str, Any]:
     session = requests.Session()
     all_entries: list[dict[str, Any]] = []
@@ -514,6 +570,15 @@ def scrape_all(
             n_done += 1
             if n_done % 50 == 0:
                 print(f"… metadata {n_done} articles", file=sys.stderr)
+
+    elif merge_metadata_from:
+        meta_map = load_article_metadata_map(merge_metadata_from)
+        if meta_map:
+            n_m = merge_article_metadata_into_entries(all_entries, meta_map)
+            print(
+                f"INFO: merged objectClass/tags for {n_m} entries from {merge_metadata_from}",
+                file=sys.stderr,
+            )
 
     hub_paths = fetch_international_hub_article_paths(session)
 
@@ -567,14 +632,32 @@ def main() -> int:
         action="store_true",
         help="Log metadata fetches and retries to stderr.",
     )
+    p.add_argument(
+        "--merge-metadata-from",
+        metavar="PATH",
+        default=None,
+        help=(
+            "When not using --with-article-metadata, copy objectClass and tags from this "
+            "existing scp_list.json onto matching entries (keeps weekly runs from wiping metadata)."
+        ),
+    )
     args = p.parse_args()
     out_path = args.out
+    merge_from = None
+    if args.merge_metadata_from and not args.with_article_metadata:
+        merge_from = args.merge_metadata_from
+    elif args.merge_metadata_from and args.with_article_metadata:
+        print(
+            "WARN: --merge-metadata-from is ignored when --with-article-metadata is set.",
+            file=sys.stderr,
+        )
     try:
         data = scrape_all(
             with_article_metadata=args.with_article_metadata,
             metadata_delay_sec=args.metadata_delay_sec,
             metadata_max_articles=args.metadata_max_articles,
             verbose=args.verbose,
+            merge_metadata_from=merge_from,
         )
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
