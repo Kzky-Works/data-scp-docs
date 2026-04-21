@@ -178,14 +178,22 @@ def extract_title_from_li(li) -> str | None:
     return t if t else None
 
 
-def fetch_html_with_retry(session: requests.Session, url: str, retries: int = 4) -> str:
+def fetch_html_with_retry(
+    session: requests.Session,
+    url: str,
+    retries: int = 8,
+    *,
+    transient_status: tuple[int, ...] = (502, 503, 429),
+) -> str:
+    """Wikidot の一時障害（502/503/429）と接続エラーに再試行する。"""
     last_err: Exception | None = None
     for attempt in range(retries):
         time.sleep(REQUEST_DELAY_HUB_SEC)
         try:
             r = session.get(url, headers=HTTP_HEADERS, timeout=90)
-            if r.status_code == 503 and attempt < retries - 1:
-                time.sleep(6 * (attempt + 1))
+            if r.status_code in transient_status and attempt < retries - 1:
+                wait = min(180, 12 * (2**attempt))
+                time.sleep(wait)
                 continue
             r.raise_for_status()
             r.encoding = r.encoding or "utf-8"
@@ -193,7 +201,7 @@ def fetch_html_with_retry(session: requests.Session, url: str, retries: int = 4)
         except Exception as e:
             last_err = e
             if attempt < retries - 1:
-                time.sleep(5 * (attempt + 1))
+                time.sleep(min(120, 8 * (attempt + 1)))
     assert last_err is not None
     raise last_err
 
@@ -242,9 +250,13 @@ def fetch_international_hub_article_paths(session: requests.Session) -> list[str
         if i >= MAX_INTL_LIST_PAGES:
             break
         try:
-            html = fetch_html_with_retry(session, u)
+            # 国際支部一覧は 503 が出やすいためリトライ多め
+            html = fetch_html_with_retry(session, u, retries=12)
         except Exception as e:
-            print(f"WARN: skip intl list {u}: {e}", file=sys.stderr)
+            print(
+                f"WARN: skip intl list {u} after retries (hubLinkedPaths may be incomplete): {e}",
+                file=sys.stderr,
+            )
             continue
         articles.update(extract_intl_article_paths_from_html(html))
     return sorted(articles)
