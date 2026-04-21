@@ -10,11 +10,13 @@ Phase 14: 各エントリに任意フィールド `objectClass`（文字列）�
 軽量実行時は `--merge-metadata-from` で既存 JSON の objectClass/tags を同一記事に引き継ぎ、週次ジョブでメタを消さない。
 メタ付き実行では `--merge-metadata-from` と `--metadata-only-missing` を組み合わせると Wikidot 負荷を抑える。
 各エントリの `articleMetadataSyncedAt` と `--metadata-max-age-days`（既定 14）で、経過後は再取得して本家のタグ追記に追従する。
+メタ付き実行時は `--checkpoint-every` 件ごとに `--out` へ原子書き込みし、途中失敗でも進捗を残せる。
 """
 
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 import time
@@ -423,6 +425,45 @@ def merge_mainlist_translation_titles(
                 e["mainlistTranslationTitle"] = title_map[n]
 
 
+def load_hub_linked_paths_from_merge_json(path: str | None) -> list[str] | None:
+    """既存 scp_list.json の hubLinkedPaths を取り出す（取得失敗時のフォールバック用）。"""
+    if not path or not os.path.isfile(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return None
+    hub = payload.get("hubLinkedPaths")
+    if not isinstance(hub, list):
+        return None
+    if not all(isinstance(p, str) and p.startswith("/scp-") for p in hub):
+        return None
+    return list(hub)
+
+
+def atomic_write_scp_list_json(out_path: str, payload: dict[str, Any], *, verbose: bool) -> None:
+    validate_payload(payload)
+    tmp = f"{out_path}.tmp.{os.getpid()}"
+    try:
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        os.replace(tmp, out_path)
+    except BaseException:
+        if os.path.isfile(tmp):
+            try:
+                os.unlink(tmp)
+            except OSError:
+                pass
+        raise
+    if verbose:
+        print(
+            f"INFO: wrote checkpoint {out_path} ({len(payload['entries'])} entries)",
+            file=sys.stderr,
+        )
+
+
 def parse_iso_utc(s: str) -> datetime | None:
     raw = (s or "").strip()
     if not raw:
@@ -437,8 +478,6 @@ def parse_iso_utc(s: str) -> datetime | None:
 
 def load_article_metadata_map(path: str) -> dict[tuple[int, int], dict[str, Any]]:
     """既存 scp_list.json から (series, scpNumber) → objectClass/tags だけを読む。"""
-    import os
-
     if not path or not os.path.isfile(path):
         return {}
     try:
@@ -606,6 +645,8 @@ def scrape_all(
     merge_metadata_from: str | None = None,
     metadata_only_missing: bool = False,
     metadata_max_age_days: float | None = None,
+    checkpoint_out_path: str | None = None,
+    checkpoint_every: int = 10,
 ) -> dict[str, Any]:
     session = requests.Session()
     all_entries: list[dict[str, Any]] = []
@@ -629,7 +670,39 @@ def scrape_all(
                 file=sys.stderr,
             )
 
+    hub_paths: list[str] | None = None
+    ce = max(1, int(checkpoint_every)) if checkpoint_every > 0 else 0
+
+    def hub_checkpoint_payload() -> dict[str, Any]:
+        snap = datetime.now(timezone.utc)
+        return {
+            "listVersion": int(snap.timestamp()),
+            "schemaVersion": 1,
+            "generatedAt": snap.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "entries": all_entries,
+            "hubLinkedPaths": hub_paths if hub_paths is not None else [],
+        }
+
+    def maybe_write_checkpoint(*, reason: str) -> None:
+        if not checkpoint_out_path or hub_paths is None:
+            return
+        try:
+            atomic_write_scp_list_json(
+                checkpoint_out_path, hub_checkpoint_payload(), verbose=verbose
+            )
+        except Exception as w:
+            print(f"WARN: checkpoint write failed ({reason}): {w}", file=sys.stderr)
+
     if with_article_metadata:
+        try:
+            hub_paths = fetch_international_hub_article_paths(session)
+        except Exception as ex:
+            print(
+                f"WARN: hubLinkedPaths fetch failed before article metadata, using merge file or []: {ex}",
+                file=sys.stderr,
+            )
+            hub_paths = load_hub_linked_paths_from_merge_json(merge_metadata_from) or []
+
         delay = metadata_delay_sec if metadata_delay_sec is not None else REQUEST_DELAY_SEC
         n_fetched = 0
         n_skipped = 0
@@ -641,44 +714,69 @@ def scrape_all(
             cap = metadata_max_articles if metadata_max_articles is not None else "all"
             print(
                 f"INFO: article metadata fetch delay={delay}s max_fetches={cap} "
-                f"only_missing={metadata_only_missing} max_age_days={age_d!r}",
+                f"only_missing={metadata_only_missing} max_age_days={age_d!r} "
+                f"checkpoint_every={ce if ce > 0 else 'off (errors still flush)'}",
                 file=sys.stderr,
             )
-        for e in all_entries:
-            if metadata_max_articles is not None and n_fetched >= metadata_max_articles:
-                break
-            n = int(e["scpNumber"])
-            slug = f"/scp-{n:03d}-jp" if n < 1000 else f"/scp-{n}-jp"
-            if metadata_only_missing and should_skip_metadata_fetch(
-                e, max_age_days=age_d, now=now_meta
-            ):
-                n_skipped += 1
-                if verbose and n_skipped <= 5:
-                    print(f"INFO: skip (metadata fresh) {slug}", file=sys.stderr)
-                elif verbose and n_skipped == 6:
-                    print("INFO: … further skips omitted", file=sys.stderr)
-                continue
-            try:
-                oc, tags = fetch_article_metadata(
-                    session, slug, delay_sec=delay, verbose=verbose
+        try:
+            for e in all_entries:
+                if metadata_max_articles is not None and n_fetched >= metadata_max_articles:
+                    break
+                n = int(e["scpNumber"])
+                slug = f"/scp-{n:03d}-jp" if n < 1000 else f"/scp-{n}-jp"
+                if metadata_only_missing and should_skip_metadata_fetch(
+                    e, max_age_days=age_d, now=now_meta
+                ):
+                    n_skipped += 1
+                    if verbose and n_skipped <= 5:
+                        print(f"INFO: skip (metadata fresh) {slug}", file=sys.stderr)
+                    elif verbose and n_skipped == 6:
+                        print("INFO: … further skips omitted", file=sys.stderr)
+                    continue
+                try:
+                    oc, tags = fetch_article_metadata(
+                        session, slug, delay_sec=delay, verbose=verbose
+                    )
+                except Exception as ex:
+                    print(f"WARN: metadata {slug}: {ex}", file=sys.stderr)
+                    continue
+                if oc:
+                    e["objectClass"] = oc
+                e["tags"] = tags
+                e[METADATA_SYNCED_AT_KEY] = datetime.now(timezone.utc).strftime(
+                    "%Y-%m-%dT%H:%M:%SZ"
                 )
-            except Exception as ex:
-                print(f"WARN: metadata {slug}: {ex}", file=sys.stderr)
-                continue
-            if oc:
-                e["objectClass"] = oc
-            e["tags"] = tags
-            e[METADATA_SYNCED_AT_KEY] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-            n_fetched += 1
-            if n_fetched % 50 == 0:
-                print(f"… metadata fetched {n_fetched} articles", file=sys.stderr)
+                n_fetched += 1
+                if n_fetched % 50 == 0:
+                    print(f"… metadata fetched {n_fetched} articles", file=sys.stderr)
+                if (
+                    checkpoint_out_path
+                    and ce > 0
+                    and hub_paths is not None
+                    and n_fetched > 0
+                    and n_fetched % ce == 0
+                ):
+                    maybe_write_checkpoint(reason="periodic")
+        except BaseException as ex:
+            if checkpoint_out_path and n_fetched > 0 and hub_paths is not None:
+                try:
+                    maybe_write_checkpoint(reason="after-error")
+                    print(
+                        f"INFO: checkpoint saved after interrupt ({n_fetched} articles fetched): {ex!r}",
+                        file=sys.stderr,
+                    )
+                except Exception as w:
+                    print(f"WARN: post-error checkpoint failed: {w}", file=sys.stderr)
+            raise
         if metadata_only_missing and (n_skipped or n_fetched):
             print(
                 f"INFO: article metadata done fetched={n_fetched} skipped_existing={n_skipped}",
                 file=sys.stderr,
             )
+    else:
+        hub_paths = fetch_international_hub_article_paths(session)
 
-    hub_paths = fetch_international_hub_article_paths(session)
+    assert hub_paths is not None
 
     now = datetime.now(timezone.utc)
     generated_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -758,6 +856,16 @@ def main() -> int:
             "(default 14). Use 0 to always re-fetch every article."
         ),
     )
+    p.add_argument(
+        "--checkpoint-every",
+        type=int,
+        default=10,
+        help=(
+            "With --with-article-metadata: atomic-write --out after this many successful article fetches "
+            "(default 10). Use 0 to disable periodic writes only; on crash/abort after ≥1 fetch, "
+            "still writes --out once with progress."
+        ),
+    )
     args = p.parse_args()
     out_path = args.out
     merge_from = args.merge_metadata_from
@@ -775,6 +883,8 @@ def main() -> int:
             merge_metadata_from=merge_from,
             metadata_only_missing=args.metadata_only_missing,
             metadata_max_age_days=args.metadata_max_age_days,
+            checkpoint_out_path=out_path if args.with_article_metadata else None,
+            checkpoint_every=args.checkpoint_every,
         )
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)

@@ -1,4 +1,4 @@
-# 各記事から objectClass / tags を取得（初回のみ長時間になり得る）。増分は --metadata-only-missing。
+# 各記事から objectClass / tags を取得（初回のみ長時間になり得る）。増分・チェックポイント付き。
 # スクリプトは本リポジトリの scripts/update_list.py。
 name: Update scp_list.json (with article metadata)
 
@@ -44,7 +44,9 @@ jobs:
             --with-article-metadata \
             --metadata-only-missing \
             --metadata-max-age-days 30 \
+            --checkpoint-every 25 \
             --verbose
+
           ls -la docs/scp_list.json
 
       - name: Commit and push if changed

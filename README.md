@@ -19,6 +19,7 @@ python3 scripts/update_list.py --out docs/scp_list.json \
   --merge-metadata-from docs/scp_list.json \
   --with-article-metadata --metadata-only-missing \
   --metadata-max-age-days 14 --verbose
+# --checkpoint-every N（既定 10）: N 件ごとに docs/scp_list.json へ原子書き込み。0 で定期のみオフ（異常終了時は取得済みがあれば 1 回フラッシュ）。
 # Wikidot へ全記事を再取得（負荷大）
 python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata --verbose
 ```
