@@ -43,6 +43,7 @@ jobs:
             --merge-metadata-from docs/scp_list.json \
             --with-article-metadata \
             --metadata-only-missing \
+            --metadata-max-age-days 14 \
             --verbose
           ls -la docs/scp_list.json
 

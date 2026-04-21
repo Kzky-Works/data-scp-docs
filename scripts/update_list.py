@@ -8,7 +8,8 @@ SCP-JP シリーズ一覧（Wikidot）からタイトルを取得し、アプリ
 Phase 14: 各エントリに任意フィールド `objectClass`（文字列）・`tags`（文字列配列）を付けられる。
 個別記事からの取得は `--with-article-metadata`（負荷が高いため遅延秒数に注意）。
 軽量実行時は `--merge-metadata-from` で既存 JSON の objectClass/tags を同一記事に引き継ぎ、週次ジョブでメタを消さない。
-メタ付き実行では `--merge-metadata-from` と `--metadata-only-missing` を組み合わせると、未取得の記事だけ HTTP し Wikidot 負荷を抑える。
+メタ付き実行では `--merge-metadata-from` と `--metadata-only-missing` を組み合わせると Wikidot 負荷を抑える。
+各エントリの `articleMetadataSyncedAt` と `--metadata-max-age-days`（既定 14）で、経過後は再取得して本家のタグ追記に追従する。
 """
 
 from __future__ import annotations
@@ -29,6 +30,8 @@ from bs4 import BeautifulSoup
 REQUEST_DELAY_SEC = 2.5
 # 国際ハブ配下の一覧ページ取得にも同間隔を使う。
 REQUEST_DELAY_HUB_SEC = 2.5
+# エントリ任意キー: メタ付き取得完了時刻（ISO8601 UTC）。増分スキップの鮮度判定に使う。
+METADATA_SYNCED_AT_KEY = "articleMetadataSyncedAt"
 # scp-international から辿る一覧ページの最大取得数（CI 時間・相手サーバ負荷の上限）。
 MAX_INTL_LIST_PAGES = 150
 
@@ -420,6 +423,18 @@ def merge_mainlist_translation_titles(
                 e["mainlistTranslationTitle"] = title_map[n]
 
 
+def parse_iso_utc(s: str) -> datetime | None:
+    raw = (s or "").strip()
+    if not raw:
+        return None
+    try:
+        if raw.endswith("Z"):
+            raw = raw[:-1] + "+00:00"
+        return datetime.fromisoformat(raw).astimezone(timezone.utc)
+    except ValueError:
+        return None
+
+
 def load_article_metadata_map(path: str) -> dict[tuple[int, int], dict[str, Any]]:
     """既存 scp_list.json から (series, scpNumber) → objectClass/tags だけを読む。"""
     import os
@@ -455,6 +470,9 @@ def load_article_metadata_map(path: str) -> dict[tuple[int, int], dict[str, Any]
                     blob["tags"] = [str(t).strip() for t in tg]
                 elif not tg:
                     blob["tags"] = []
+        sat = e.get(METADATA_SYNCED_AT_KEY)
+        if isinstance(sat, str) and sat.strip():
+            blob[METADATA_SYNCED_AT_KEY] = sat.strip()
         if blob:
             out[(s, n)] = blob
     return out
@@ -474,6 +492,8 @@ def merge_article_metadata_into_entries(
             e["objectClass"] = src["objectClass"]
         if "tags" in src:
             e["tags"] = list(src["tags"])
+        if METADATA_SYNCED_AT_KEY in src:
+            e[METADATA_SYNCED_AT_KEY] = src[METADATA_SYNCED_AT_KEY]
         n_touched += 1
     return n_touched
 
@@ -486,6 +506,29 @@ def entry_has_article_metadata(e: dict[str, Any]) -> bool:
     if "tags" not in e:
         return False
     return isinstance(e["tags"], list)
+
+
+def should_skip_metadata_fetch(
+    e: dict[str, Any],
+    *,
+    max_age_days: float | None,
+    now: datetime,
+) -> bool:
+    """メタ HTTP を省略してよいか。max_age_days が None または <=0 なら鮮度無視（揃っていれば省略）。"""
+    if not entry_has_article_metadata(e):
+        return False
+    if max_age_days is None or max_age_days <= 0:
+        return True
+    raw = e.get(METADATA_SYNCED_AT_KEY)
+    if not isinstance(raw, str) or not raw.strip():
+        return False
+    t = parse_iso_utc(raw)
+    if t is None:
+        return False
+    age_sec = (now - t).total_seconds()
+    if age_sec < 0:
+        return False
+    return age_sec <= max_age_days * 86400.0
 
 
 def validate_payload(payload: dict[str, Any]) -> None:
@@ -546,6 +589,12 @@ def validate_payload(payload: dict[str, Any]) -> None:
             for j, tag in enumerate(tg):
                 if not isinstance(tag, str) or not tag.strip():
                     raise ValueError(f"entries[{i}].tags[{j}] invalid")
+        ms = e.get(METADATA_SYNCED_AT_KEY)
+        if ms is not None:
+            if not isinstance(ms, str) or not ms.strip():
+                raise ValueError(f"entries[{i}].{METADATA_SYNCED_AT_KEY} must be non-empty string or omitted")
+            if parse_iso_utc(ms) is None:
+                raise ValueError(f"entries[{i}].{METADATA_SYNCED_AT_KEY} must be ISO8601 UTC, got {ms!r}")
 
 
 def scrape_all(
@@ -556,6 +605,7 @@ def scrape_all(
     verbose: bool = False,
     merge_metadata_from: str | None = None,
     metadata_only_missing: bool = False,
+    metadata_max_age_days: float | None = None,
 ) -> dict[str, Any]:
     session = requests.Session()
     all_entries: list[dict[str, Any]] = []
@@ -583,11 +633,15 @@ def scrape_all(
         delay = metadata_delay_sec if metadata_delay_sec is not None else REQUEST_DELAY_SEC
         n_fetched = 0
         n_skipped = 0
+        now_meta = datetime.now(timezone.utc)
+        age_d = metadata_max_age_days
+        if metadata_only_missing and age_d is None:
+            age_d = 14.0
         if verbose:
             cap = metadata_max_articles if metadata_max_articles is not None else "all"
             print(
                 f"INFO: article metadata fetch delay={delay}s max_fetches={cap} "
-                f"only_missing={metadata_only_missing}",
+                f"only_missing={metadata_only_missing} max_age_days={age_d!r}",
                 file=sys.stderr,
             )
         for e in all_entries:
@@ -595,10 +649,12 @@ def scrape_all(
                 break
             n = int(e["scpNumber"])
             slug = f"/scp-{n:03d}-jp" if n < 1000 else f"/scp-{n}-jp"
-            if metadata_only_missing and entry_has_article_metadata(e):
+            if metadata_only_missing and should_skip_metadata_fetch(
+                e, max_age_days=age_d, now=now_meta
+            ):
                 n_skipped += 1
                 if verbose and n_skipped <= 5:
-                    print(f"INFO: skip (already have metadata) {slug}", file=sys.stderr)
+                    print(f"INFO: skip (metadata fresh) {slug}", file=sys.stderr)
                 elif verbose and n_skipped == 6:
                     print("INFO: … further skips omitted", file=sys.stderr)
                 continue
@@ -612,6 +668,7 @@ def scrape_all(
             if oc:
                 e["objectClass"] = oc
             e["tags"] = tags
+            e[METADATA_SYNCED_AT_KEY] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             n_fetched += 1
             if n_fetched % 50 == 0:
                 print(f"… metadata fetched {n_fetched} articles", file=sys.stderr)
@@ -687,8 +744,18 @@ def main() -> int:
         "--metadata-only-missing",
         action="store_true",
         help=(
-            "With --with-article-metadata: skip HTTP for entries that already have objectClass "
-            "and a tags list (after --merge-metadata-from). Reduces Wikidot load on repeat runs."
+            "With --with-article-metadata: skip HTTP when entry has objectClass, tags, and "
+            "articleMetadataSyncedAt newer than --metadata-max-age-days (default 14). "
+            "Missing timestamp or stale entries are re-fetched so Wikidot tag changes are picked up."
+        ),
+    )
+    p.add_argument(
+        "--metadata-max-age-days",
+        type=float,
+        default=None,
+        help=(
+            "With --metadata-only-missing: max age in days for articleMetadataSyncedAt to allow skip "
+            "(default 14). Use 0 to always re-fetch every article."
         ),
     )
     args = p.parse_args()
@@ -707,6 +774,7 @@ def main() -> int:
             verbose=args.verbose,
             merge_metadata_from=merge_from,
             metadata_only_missing=args.metadata_only_missing,
+            metadata_max_age_days=args.metadata_max_age_days,
         )
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
