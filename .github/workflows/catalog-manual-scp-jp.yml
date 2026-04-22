@@ -4,6 +4,9 @@ name: "Catalog tags · SCP-JP label"
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     uses: ./.github/workflows/wikidot-catalogs-reusable.yml

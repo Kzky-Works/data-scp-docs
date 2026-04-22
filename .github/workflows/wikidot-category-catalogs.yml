@@ -19,6 +19,9 @@ on:
   schedule:
     - cron: "30 17 * * *"
 
+permissions:
+  contents: write
+
 jobs:
   scheduled-build:
     if: github.event_name == 'schedule'

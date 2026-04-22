@@ -3,6 +3,9 @@ name: "Catalog tags · Joke label"
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     uses: ./.github/workflows/wikidot-catalogs-reusable.yml
