@@ -12,10 +12,14 @@ on:
       max_tags:
         description: 処理するタグ数の上限（0 で全件・時間は長くなります）
         type: string
-        default: "50"
+        default: "100"
+      shuffle_tags:
+        description: タグ処理順をシャッフルする（均等に網羅したいとき ON）
+        type: boolean
+        default: true
   schedule:
-    # 毎週火曜 11:15 UTC（Page-tags は重いので日次ジョブと別日）
-    - cron: "15 11 * * 2"
+    # 毎日 17:30 UTC（翌 JST 02:30）：100 タグ＋シャッフル（約 1456 タグならおよそ 15 日で一通り）
+    - cron: "30 17 * * *"
 
 permissions:
   contents: write
@@ -39,18 +43,32 @@ jobs:
 
       - name: Merge page-tags into docs/scp_list.json
         env:
+          GH_EVENT: ${{ github.event_name }}
           SLEEP: ${{ github.event.inputs.sleep_seconds }}
-          MAX_TAGS: ${{ github.event.inputs.max_tags }}
+          MAX_TAGS_INPUT: ${{ github.event.inputs.max_tags }}
+          SHUFFLE_INPUT: ${{ github.event.inputs.shuffle_tags }}
         run: |
           set -euo pipefail
           mkdir -p docs
           SLEEP_SEC="${SLEEP:-0.35}"
-          LIMIT="${MAX_TAGS:-0}"
+
+          if [ "${GH_EVENT}" = "schedule" ]; then
+            LIMIT="100"
+            SHUFFLE_ARGS=(--shuffle-tags)
+          else
+            LIMIT="${MAX_TAGS_INPUT:-100}"
+            SHUFFLE_ARGS=()
+            case "${SHUFFLE_INPUT:-true}" in
+              true|True) SHUFFLE_ARGS=(--shuffle-tags) ;;
+            esac
+          fi
+
           python3 scripts/wikidot_page_tags_merge.py \
             --base-json-path docs/scp_list.json \
             --out docs/scp_list.json \
             --sleep "${SLEEP_SEC}" \
-            --max-tags "${LIMIT}"
+            --max-tags "${LIMIT}" \
+            "${SHUFFLE_ARGS[@]}"
           ls -la docs/scp_list.json
 
       - name: Commit and push if changed
