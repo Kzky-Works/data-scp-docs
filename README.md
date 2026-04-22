@@ -5,6 +5,7 @@
 ## 一覧 JSON の生成（ソース・オブ・トゥルース）
 
 **`scripts/update_list.py` と `requirements.txt` はこのリポジトリが正です。**  
+タグ逆引きマージ用の **`scripts/wikidot_page_tags_merge.py`**（標準ライブラリのみ）もここで管理します。  
 GitHub Actions は checkout した同じ内容を使い、**別リポジトリからスクリプトを取得しません**（`app-scp-docs` を private にしても一覧 CI は独立して動きます）。
 
 ### 国内一覧（軽量）と国際ハブは別ジョブ
@@ -33,6 +34,12 @@ python3 scripts/update_list.py --out docs/scp_list.json \
 # --checkpoint-every N（既定 10）: N 件ごとに docs/scp_list.json へ原子書き込み。0 で定期のみオフ（異常終了時は取得済みがあれば 1 回フラッシュ）。
 # Wikidot へ全記事を再取得（負荷大）
 python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata --verbose
+
+# Wikidot system:page-tags のタグ一覧からタグを逆引きマージ（標準ライブラリのみ・CI と同じ）
+python3 scripts/wikidot_page_tags_merge.py \
+  --base-json-path docs/scp_list.json \
+  --out docs/scp_list.json \
+  --sleep 0.35
 ```
 
 ## 自動更新（GitHub Actions）
@@ -42,6 +49,7 @@ python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata 
 | **Update scp_list.json** | **国内のみ（日次）**。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。`--domestic-only` で国際一覧を叩かない。 |
 | **Update scp_list.json (international hub)** | **`hubLinkedPaths` のみ更新（週次）**。**毎週月曜 16:00 UTC** ＋手動。重い国際クロールはこのジョブだけ。 |
 | **Update scp_list.json (with article metadata)** | 記事メタ取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON に hub があれば国際クロール省略。 |
+| **Merge Wikidot page-tags into scp_list.json** | **`system:page-tags` のタグ一覧からタグを逆引き**して `tags` をマージ（ページネーション対応）。**毎週火曜 11:15 UTC** ＋手動。`wikidot_page_tags_merge.py` は依存パッケージ不要。 |
 
 差分があるときだけ `docs/scp_list.json` がコミットされ、Pages が更新されます。
 

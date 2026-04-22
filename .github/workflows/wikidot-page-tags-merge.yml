@@ -1,0 +1,69 @@
+# Wikidot system:page-tags を巡回し、タグ一覧から記事へ逆引きして docs/scp_list.json の tags をマージする。
+# 標準ライブラリのみの scripts/wikidot_page_tags_merge.py を使用。
+name: Merge Wikidot page-tags into scp_list.json
+
+on:
+  workflow_dispatch:
+    inputs:
+      sleep_seconds:
+        description: Wikidot へのリクエスト間隔（秒）
+        type: string
+        default: "0.35"
+      max_tags:
+        description: 処理するタグ数の上限（0 で全件・時間は長くなります）
+        type: string
+        default: "0"
+  schedule:
+    # 毎週火曜 11:15 UTC（Page-tags は重いので日次ジョブと別日）
+    - cron: "15 11 * * 2"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-scp-docs-main-writes
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Merge page-tags into docs/scp_list.json
+        env:
+          SLEEP: ${{ github.event.inputs.sleep_seconds }}
+          MAX_TAGS: ${{ github.event.inputs.max_tags }}
+        run: |
+          set -euo pipefail
+          mkdir -p docs
+          SLEEP_SEC="${SLEEP:-0.35}"
+          LIMIT="${MAX_TAGS:-0}"
+          python3 scripts/wikidot_page_tags_merge.py \
+            --base-json-path docs/scp_list.json \
+            --out docs/scp_list.json \
+            --sleep "${SLEEP_SEC}" \
+            --max-tags "${LIMIT}"
+          ls -la docs/scp_list.json
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/scp_list.json
+          if git diff --staged --quiet; then
+            echo "No changes — skipping commit."
+            exit 0
+          fi
+          git commit -m "chore(data): merge Wikidot page-tags into scp_list.json [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin main
