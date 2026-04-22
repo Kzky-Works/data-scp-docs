@@ -1,4 +1,4 @@
-# 別ワークフローとして手動のみ。中身は全カテゴリ同一（Actions 一覧の見分け用）。
+# 手動のみ。Actions 一覧のラベル用。指定カテゴリの JSON のみ incremental 更新（他ファイルは触らない）。
 name: "Catalog tags · SCP-JP label"
 
 on:
@@ -14,4 +14,7 @@ jobs:
       sleep_seconds: "0.35"
       max_tags: "100"
       shuffle_tags: true
+      mode: incremental
+      categories: scp_jp
+      tag_skip_limit: "-1"
     secrets: inherit

@@ -9,13 +9,25 @@ on:
         description: Wikidot へのリクエスト間隔（秒）
         default: "0.35"
       max_tags:
-        description: 処理するタグ数の上限（0 で全件）
+        description: 処理するタグ数の上限（0 でタグ雲の全件）
         type: string
         default: "100"
       shuffle_tags:
         description: タグ処理順をシャッフルする
         type: boolean
         default: true
+      mode:
+        type: string
+        description: "full=今回の集計で置換 / incremental=既存 JSON とマージ（部分実行向け）"
+        default: "incremental"
+      categories:
+        type: string
+        description: 出力するカテゴリのみ（カンマ区切り）。空=全6種。例 scp_jp,tales
+        default: ""
+      tag_skip_limit:
+        type: string
+        description: タグ取得スキップの許容数。超過でジョブ失敗。-1 で無効、0 で1件でも失敗
+        default: "-1"
 
 permissions:
   contents: write
@@ -42,21 +54,31 @@ jobs:
           SLEEP_SEC: ${{ inputs.sleep_seconds }}
           LIMIT: ${{ inputs.max_tags }}
           SHUFFLE: ${{ inputs.shuffle_tags }}
+          MODE: ${{ inputs.mode }}
+          CATEGORIES: ${{ inputs.categories }}
+          TAG_SKIP_LIMIT: ${{ inputs.tag_skip_limit }}
         run: |
           set -euo pipefail
           mkdir -p docs/catalog
           SLEEP="${SLEEP_SEC:-0.35}"
           MAX="${LIMIT:-100}"
+          MODE_IN="${MODE:-incremental}"
+          SKIPL="${TAG_SKIP_LIMIT:--1}"
           SHUFFLE_ARGS=()
           case "${SHUFFLE:-true}" in
             true|True) SHUFFLE_ARGS=(--shuffle-tags) ;;
           esac
+          EXTRA_ARGS=(--mode "${MODE_IN}" --tag-skip-limit "${SKIPL}")
+          if [[ -n "${CATEGORIES:-}" ]]; then
+            EXTRA_ARGS+=(--categories "${CATEGORIES}")
+          fi
           python3 scripts/build_wikidot_category_catalogs.py \
             --out-dir docs/catalog \
             --scp-list-path docs/scp_list.json \
             --sleep "${SLEEP}" \
             --max-tags "${MAX}" \
-            "${SHUFFLE_ARGS[@]}"
+            "${SHUFFLE_ARGS[@]}" \
+            "${EXTRA_ARGS[@]}"
           ls -la docs/catalog/
 
       - name: Commit and push if changed

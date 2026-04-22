@@ -37,13 +37,25 @@ python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata 
 
 # Wikidot page-tags → カテゴリ別カタログ（scp_jp.json / scp.json / joke.json / tales.json / canon.json / goi.json）
 mkdir -p docs/catalog
+# 日次相当: タグ上限＋既存 JSON へマージ（部分実行でも欠落しにくい）
 python3 scripts/build_wikidot_category_catalogs.py \
   --out-dir docs/catalog \
   --scp-list-path docs/scp_list.json \
   --sleep 0.35 \
+  --mode incremental \
   --max-tags 100 \
   --shuffle-tags
+# 週次相当: 全タグを走査して全置換（スナップショット）
+python3 scripts/build_wikidot_category_catalogs.py \
+  --out-dir docs/catalog \
+  --scp-list-path docs/scp_list.json \
+  --sleep 0.35 \
+  --mode full \
+  --max-tags 0
+# 1 ファイルだけ更新: --categories scp_jp など
 ```
+
+**運用（フル vs 増分）:** 既定の Actions 日次ジョブは **`--mode incremental`** と **`--max-tags 100`** で、タグ雲の一部だけを取りに行き、**既存 `docs/catalog/*.json` のエントリとタグ集合をマージ**します（未取得タグ由来の情報が一括で消えるのを避ける）。**全タグ・全置換のスナップショット**が必要なときは **`Wikidot category catalogs (full)`**（週次）または手動で **`--mode full --max-tags 0`** を使ってください。`--tag-skip-limit`（例: `0`）で 503 多発時にジョブを失敗扱いにできます。
 
 ## 自動更新（GitHub Actions）
 
@@ -52,8 +64,9 @@ python3 scripts/build_wikidot_category_catalogs.py \
 | **Update scp_list.json** | **国内のみ（日次）**。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。`--domestic-only` で国際一覧を叩かない。 |
 | **Update scp_list.json (international hub)** | **`hubLinkedPaths` のみ更新（週次）**。**毎週月曜 16:00 UTC** ＋手動。重い国際クロールはこのジョブだけ。 |
 | **Update scp_list.json (with article metadata)** | 記事メタ取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON に hub があれば国際クロール省略。 |
-| **Wikidot category catalogs** | **`system:page-tags`** を巡回し **`docs/catalog/` に 6 ファイル**出力（SCP-JP / SCP / Joke / Tales / Canon / GoI）。**`scp_list.json` の `tags` は更新しない**。**毎日 17:30 UTC** に 100 タグ＋シャッフル。実体は `wikidot-catalogs-reusable.yml`。 |
-| **Catalog tags · …（6 本）** | **手動専用**の入口（`catalog-manual-*.yml`）。中身は再利用ワークフローと同じ・**6 JSON すべて**を再生成（ラベル用）。 |
+| **Wikidot category catalogs** | **`system:page-tags`** を巡回し **`docs/catalog/`** を更新。**日次 17:30 UTC**: `incremental`＋**100 タグ**＋シャッフル（既存 JSON とマージ）。実体は `wikidot-catalogs-reusable.yml`。 |
+| **Wikidot category catalogs (full)** | **週次（日曜 18:15 UTC）**＋手動。**`full`**＋**全タグ**（`max_tags=0`）で **6 JSON を全置換**。 |
+| **Catalog tags · …（6 本）** | **手動専用**。ラベルごとに **`categories` を 1 つだけ**指定し、その JSON のみ incremental 更新（他カタログはコミット対象に出ない）。 |
 
 差分があるときだけ `docs/scp_list.json`（または `docs/catalog/*.json`）がコミットされ、Pages が更新されます。
 

@@ -13,4 +13,7 @@ jobs:
       sleep_seconds: "0.35"
       max_tags: "100"
       shuffle_tags: true
+      mode: incremental
+      categories: joke
+      tag_skip_limit: "-1"
     secrets: inherit

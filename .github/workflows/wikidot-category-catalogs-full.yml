@@ -1,0 +1,35 @@
+# 週次フル刷新: 全タグを走査し incremental ではなく全置換（スナップショット整合）。
+name: Wikidot category catalogs (full)
+
+on:
+  workflow_dispatch:
+    inputs:
+      sleep_seconds:
+        description: Wikidot へのリクエスト間隔（秒）
+        type: string
+        default: "0.35"
+      shuffle_tags:
+        description: タグ処理順をシャッフルする（全件時は負荷分散に有効）
+        type: boolean
+        default: true
+      tag_skip_limit:
+        description: タグ取得スキップの許容数（-1 で無効）
+        type: string
+        default: "-1"
+  schedule:
+    - cron: "15 18 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  full-build:
+    uses: ./.github/workflows/wikidot-catalogs-reusable.yml
+    with:
+      sleep_seconds: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.sleep_seconds || '0.35' }}
+      max_tags: "0"
+      shuffle_tags: ${{ github.event_name == 'workflow_dispatch' && fromJSON(github.event.inputs.shuffle_tags) || true }}
+      mode: full
+      categories: ""
+      tag_skip_limit: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag_skip_limit || '-1' }}
+    secrets: inherit

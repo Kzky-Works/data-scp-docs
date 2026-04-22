@@ -1,4 +1,4 @@
-# カテゴリ別タグカタログ（6 JSON）。page-tags のタグは scp_list.json にマージしない。
+# カテゴリ別タグカタログ（6 JSON）。日次は incremental＋タグ上限で Wikidot 負荷を抑える。
 name: Wikidot category catalogs
 
 on:
@@ -9,13 +9,28 @@ on:
         type: string
         default: "0.35"
       max_tags:
-        description: 処理するタグ数の上限（0 で全件）
+        description: 処理するタグ数の上限（0 でタグ雲の全件）
         type: string
         default: "100"
       shuffle_tags:
         description: タグ処理順をシャッフルする
         type: boolean
         default: true
+      mode:
+        description: "full=全置換 / incremental=既存 JSON とマージ"
+        type: choice
+        options:
+          - incremental
+          - full
+        default: incremental
+      categories:
+        description: 出力カテゴリの絞り込み（カンマ区切り）。空=全6種
+        type: string
+        default: ""
+      tag_skip_limit:
+        description: タグ取得スキップ許容数（超過で失敗）。-1 で無効
+        type: string
+        default: "-1"
   schedule:
     - cron: "30 17 * * *"
 
@@ -30,6 +45,9 @@ jobs:
       sleep_seconds: "0.35"
       max_tags: "100"
       shuffle_tags: true
+      mode: incremental
+      categories: ""
+      tag_skip_limit: "-1"
     secrets: inherit
 
   manual-build:
@@ -38,5 +56,8 @@ jobs:
     with:
       sleep_seconds: ${{ github.event.inputs.sleep_seconds }}
       max_tags: ${{ github.event.inputs.max_tags }}
-      shuffle_tags: ${{ github.event.inputs.shuffle_tags }}
+      shuffle_tags: ${{ fromJSON(github.event.inputs.shuffle_tags) }}
+      mode: ${{ github.event.inputs.mode }}
+      categories: ${{ github.event.inputs.categories }}
+      tag_skip_limit: ${{ github.event.inputs.tag_skip_limit }}
     secrets: inherit
