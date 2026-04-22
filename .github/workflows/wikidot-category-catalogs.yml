@@ -1,0 +1,39 @@
+# カテゴリ別タグカタログ（6 JSON）。page-tags のタグは scp_list.json にマージしない。
+name: Wikidot category catalogs
+
+on:
+  workflow_dispatch:
+    inputs:
+      sleep_seconds:
+        description: Wikidot へのリクエスト間隔（秒）
+        type: string
+        default: "0.35"
+      max_tags:
+        description: 処理するタグ数の上限（0 で全件）
+        type: string
+        default: "100"
+      shuffle_tags:
+        description: タグ処理順をシャッフルする
+        type: boolean
+        default: true
+  schedule:
+    - cron: "30 17 * * *"
+
+jobs:
+  scheduled-build:
+    if: github.event_name == 'schedule'
+    uses: ./.github/workflows/wikidot-catalogs-reusable.yml
+    with:
+      sleep_seconds: "0.35"
+      max_tags: "100"
+      shuffle_tags: true
+    secrets: inherit
+
+  manual-build:
+    if: github.event_name == 'workflow_dispatch'
+    uses: ./.github/workflows/wikidot-catalogs-reusable.yml
+    with:
+      sleep_seconds: ${{ github.event.inputs.sleep_seconds }}
+      max_tags: ${{ github.event.inputs.max_tags }}
+      shuffle_tags: ${{ github.event.inputs.shuffle_tags }}
+    secrets: inherit

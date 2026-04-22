@@ -5,7 +5,7 @@
 ## 一覧 JSON の生成（ソース・オブ・トゥルース）
 
 **`scripts/update_list.py` と `requirements.txt` はこのリポジトリが正です。**  
-タグ逆引きマージ用の **`scripts/wikidot_page_tags_merge.py`**（標準ライブラリのみ）もここで管理します。  
+**`system:page-tags` のタグ逆引き**は **`scripts/build_wikidot_category_catalogs.py`**（標準ライブラリのみ）で、`docs/catalog/*.json` に **カテゴリ別**書き出しします（**`scp_list.json` にタグをマージしない**）。旧 `wikidot_page_tags_merge.py` は非推奨です。  
 GitHub Actions は checkout した同じ内容を使い、**別リポジトリからスクリプトを取得しません**（`app-scp-docs` を private にしても一覧 CI は独立して動きます）。
 
 ### 国内一覧（軽量）と国際ハブは別ジョブ
@@ -35,10 +35,11 @@ python3 scripts/update_list.py --out docs/scp_list.json \
 # Wikidot へ全記事を再取得（負荷大）
 python3 scripts/update_list.py --out docs/scp_list.json --with-article-metadata --verbose
 
-# Wikidot system:page-tags のタグ一覧からタグを逆引きマージ（標準ライブラリのみ・CI と同じ）
-python3 scripts/wikidot_page_tags_merge.py \
-  --base-json-path docs/scp_list.json \
-  --out docs/scp_list.json \
+# Wikidot page-tags → カテゴリ別カタログ（scp_jp.json / scp.json / joke.json / tales.json / canon.json / goi.json）
+mkdir -p docs/catalog
+python3 scripts/build_wikidot_category_catalogs.py \
+  --out-dir docs/catalog \
+  --scp-list-path docs/scp_list.json \
   --sleep 0.35 \
   --max-tags 100 \
   --shuffle-tags
@@ -51,9 +52,23 @@ python3 scripts/wikidot_page_tags_merge.py \
 | **Update scp_list.json** | **国内のみ（日次）**。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。`--domestic-only` で国際一覧を叩かない。 |
 | **Update scp_list.json (international hub)** | **`hubLinkedPaths` のみ更新（週次）**。**毎週月曜 16:00 UTC** ＋手動。重い国際クロールはこのジョブだけ。 |
 | **Update scp_list.json (with article metadata)** | 記事メタ取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON に hub があれば国際クロール省略。 |
-| **Merge Wikidot page-tags into scp_list.json** | **`system:page-tags` のタグ一覧からタグを逆引き**して `tags` をマージ（ページネーション対応）。**毎日 17:30 UTC（翌 JST 02:30）** に **100 タグ・シャッフル**で実行（約 15 日でクラウド全体を一通り見るイメージ）＋手動。`wikidot_page_tags_merge.py` は依存パッケージ不要。 |
+| **Wikidot category catalogs** | **`system:page-tags`** を巡回し **`docs/catalog/` に 6 ファイル**出力（SCP-JP / SCP / Joke / Tales / Canon / GoI）。**`scp_list.json` の `tags` は更新しない**。**毎日 17:30 UTC** に 100 タグ＋シャッフル。実体は `wikidot-catalogs-reusable.yml`。 |
+| **Catalog tags · …（6 本）** | **手動専用**の入口（`catalog-manual-*.yml`）。中身は再利用ワークフローと同じ・**6 JSON すべて**を再生成（ラベル用）。 |
 
-差分があるときだけ `docs/scp_list.json` がコミットされ、Pages が更新されます。
+差分があるときだけ `docs/scp_list.json`（または `docs/catalog/*.json`）がコミットされ、Pages が更新されます。
+
+### カタログ JSON（`docs/catalog/`）
+
+| ファイル | 内容 |
+|----------|------|
+| `scp_jp.json` | `/scp-N-jp` のみ。`series` / `scpNumber` / `slug` / `url` / `title`（`scp_list.title`）/ `objectClass`（タグ語から昇格した OC）/ `tags` |
+| `scp.json` | `/scp-N`（本家メイン和訳）のみ。`title` は `scp_list.mainlistTranslationTitle` |
+| `joke.json` | `/scp-N-j` のみ |
+| `tales.json` / `canon.json` / `goi.json` | SCP 番号形式以外のスラッグ。**Tales / Canon / GoI** はスラッグの **ヒューリスティック**（`goi-format`・`canon` 等）。専用 hub を全部クロールはしていないため、取りこぼし・誤分類は README 運用で都度調整してください。 |
+
+**注意:** `/scp-N-xx`（国際支部、`-jp` 以外）はタグ一覧からは付与しません（誤マージ防止）。
+
+**過去の `scp_list.json` に混ざった tags** は、メタジョブの `--merge-metadata-from` で温存されます。タグを捨てる場合は別途 `tags` を手直しするか、バックアップした上でメタを再取得する運用が必要です。
 
 ### Actions の push が rejected になるとき
 

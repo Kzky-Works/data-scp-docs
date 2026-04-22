@@ -1,0 +1,75 @@
+# scripts/build_wikidot_category_catalogs.py で docs/catalog/*.json を生成（scp_list.json は変更しない）。
+name: Wikidot category catalogs
+
+on:
+  workflow_call:
+    inputs:
+      sleep_seconds:
+        type: string
+        description: Wikidot へのリクエスト間隔（秒）
+        default: "0.35"
+      max_tags:
+        description: 処理するタグ数の上限（0 で全件）
+        type: string
+        default: "100"
+      shuffle_tags:
+        description: タグ処理順をシャッフルする
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-scp-docs-main-writes
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build docs/catalog/*.json from page-tags
+        env:
+          SLEEP_SEC: ${{ inputs.sleep_seconds }}
+          LIMIT: ${{ inputs.max_tags }}
+          SHUFFLE: ${{ inputs.shuffle_tags }}
+        run: |
+          set -euo pipefail
+          mkdir -p docs/catalog
+          SLEEP="${SLEEP_SEC:-0.35}"
+          MAX="${LIMIT:-100}"
+          SHUFFLE_ARGS=()
+          case "${SHUFFLE:-true}" in
+            true|True) SHUFFLE_ARGS=(--shuffle-tags) ;;
+          esac
+          python3 scripts/build_wikidot_category_catalogs.py \
+            --out-dir docs/catalog \
+            --scp-list-path docs/scp_list.json \
+            --sleep "${SLEEP}" \
+            --max-tags "${MAX}" \
+            "${SHUFFLE_ARGS[@]}"
+          ls -la docs/catalog/
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/catalog/*.json
+          if git diff --staged --quiet; then
+            echo "No changes — skipping commit."
+            exit 0
+          fi
+          git commit -m "chore(data): update Wikidot category tag catalogs [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin main

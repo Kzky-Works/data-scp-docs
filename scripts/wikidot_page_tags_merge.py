@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-scp-jp.wikidot.com の system:page-tags を巡回し、タグ一覧ページから SCP 記事 URL を収集して
-mergeKey（series_scpNumber）ごとのタグ集合を構築し、scp_list.json とマージした JSON を出力する。
+【非推奨】page-tags を series_scpNumber に混在マージすると、SCP-JP と本家メイン和訳のタグが混ざる。
 
-前提: ScpDocs の SCPListRemotePayload / SCPJPSeries の番号レンジ（001〜4999）に合わせ、
-      /scp-NNN / scp-NNN-jp / scp-NNN-j のスラッグのみを対象とする。
+代替: scripts/build_wikidot_category_catalogs.py（docs/catalog/*.json にカテゴリ別出力）。
+このファイルは後方互換・緊急時のみ。新規ワークフローでは呼ばないこと。
+────────────────────────────────────────────────────────
+旧説明（参考）:
 
-本スクリプトと GitHub Actions は data-scp-docs リポジトリが正（scp_list.json 関連の集約先）。
+scp-jp.wikidot.com の system:page-tags を巡回し、scp_list.json とマージした JSON を出力する。
 """
 
 from __future__ import annotations

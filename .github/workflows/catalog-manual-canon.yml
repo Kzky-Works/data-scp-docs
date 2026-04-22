@@ -1,0 +1,13 @@
+name: "Catalog tags · Canon label"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ./.github/workflows/wikidot-catalogs-reusable.yml
+    with:
+      sleep_seconds: "0.35"
+      max_tags: "100"
+      shuffle_tags: true
+    secrets: inherit

@@ -1,0 +1,14 @@
+# 別ワークフローとして手動のみ。中身は全カテゴリ同一（Actions 一覧の見分け用）。
+name: "Catalog tags · SCP-JP label"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ./.github/workflows/wikidot-catalogs-reusable.yml
+    with:
+      sleep_seconds: "0.35"
+      max_tags: "100"
+      shuffle_tags: true
+    secrets: inherit
