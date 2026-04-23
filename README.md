@@ -2,6 +2,27 @@
 
 `scp_list.json`（ScpDocs アプリ用リモート一覧）を GitHub Pages で配信するリポジトリです。
 
+## アプリ 3 系統フィード: `scp-jp.json`
+
+ScpDocs の **`SCPArticleListPayload`** 互換（`schemaVersion: 1`）。リポジトリ直下に **`scp-jp.json`** を置き、Pages のルートから配信します（`AppRemoteConfig` の `scp-jp.json` と同じパス）。
+
+| キー | 意味 |
+|------|------|
+| `u` | 記事の絶対 URL（`https://scp-jp.wikidot.com/scp-…-jp`） |
+| `i` | 安定 ID（例: `scp-173-jp`） |
+| `t` | 日本支部オリジナル一覧（`scp-series-jp` 系）の行タイトル |
+| `o` | 任意。本家メイン和訳一覧（`scp-series` 系）の行タイトル。`docs/scp_list.json` の `mainlistTranslationTitle` をマージ |
+| `c` | 任意。オブジェクトクラス（`scp_list` の `objectClass` または記事ページ取得） |
+| `g` | 任意。タグ配列（`scp_list` の `tags` または記事ページ取得） |
+
+```bash
+pip install -r requirements.txt
+# 既定出力: リポジトリ直下 scp-jp.json。一覧は Wikidot、メタは既存 scp_list からマージ（推奨）
+python3 scripts/generate_scp_jp_app_feed.py --merge-metadata-from docs/scp_list.json --verbose
+# 記事ページを直接叩いて c/g を更新（全件・遅い）
+python3 scripts/generate_scp_jp_app_feed.py --merge-metadata-from docs/scp_list.json --with-article-metadata --verbose
+```
+
 ## 一覧 JSON の生成（ソース・オブ・トゥルース）
 
 **`scripts/update_list.py` と `requirements.txt` はこのリポジトリが正です。**  
@@ -62,6 +83,7 @@ python3 scripts/build_wikidot_category_catalogs.py \
 | Workflow | 内容 |
 |----------|------|
 | **Update scp_list.json** | **国内のみ（日次）**。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。`--domestic-only` で国際一覧を叩かない。 |
+| **Update scp-jp.json (app feed)** | **`scp-jp.json`（3 系統 JP フィード）**。**毎日 16:30 UTC** ＋手動。`docs/scp_list.json` からメタをマージしつつ Wikidot 一覧を再取得。 |
 | **Update scp_list.json (international hub)** | **`hubLinkedPaths` のみ更新（週次）**。**毎週月曜 16:00 UTC** ＋手動。重い国際クロールはこのジョブだけ。 |
 | **Update scp_list.json (with article metadata)** | 記事メタ取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON に hub があれば国際クロール省略。 |
 | **Wikidot category catalogs** | **`system:page-tags`** を巡回し **`docs/catalog/`** を更新。**日次 17:30 UTC**: `incremental`＋**100 タグ**＋シャッフル（既存 JSON とマージ）。実体は `wikidot-catalogs-reusable.yml`。 |
