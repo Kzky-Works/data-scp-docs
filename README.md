@@ -1,31 +1,39 @@
 # data-scp-docs
 
-[GitHub Pages](https://kzky-works.github.io/data-scp-docs/) 向けの **静的 JSON 配信**用リポジトリです。
+[GitHub Pages](https://kzky-works.github.io/data-scp-docs/) 向けの JSON 配信リポジトリです。
 
-## 方針（2026-04）
+## 支部別リスト（`list/<code>/`）
 
-**Wikidot 向けのデータ収集・生成スクリプトおよび GitHub Actions ワークフローは削除済み**です。  
-`docs/` 以下のファイル更新は、**別のパイプライン・手作業・別リポジトリ**で行い、ここへコミットする運用に切り替えています。
+| パス | 内容 |
+|------|------|
+| `list/jp/scp-jp.json` | 日本支部オリジナル（`SCPArticleListPayload`） |
+| `list/jp/scp.json` | 本家メイン和訳 |
+| `list/jp/scp-int.json` | 国際支部パス（`hubLinkedPaths` 前提） |
+| `list/jp/tales.json` | Tales-JP（`SCPGeneralContentListPayload`） |
+| `list/jp/gois.json` | GoI 形式（`goi-format` タグ由来、`SCPGeneralContentListPayload`） |
 
-## 主な配信パス（Pages 上の URL）
+他支部（例: `ru`）は `BranchConfig` の `code` / `site_host` / `output_dir` を差し替えて `harvester.py` を拡張する想定です。
 
-| リポジトリ内パス | 例（ホスト直下からのパス） |
-|------------------|----------------------------|
-| `docs/scp_list.json` | `/scp_list.json`（既定ブランチのルート公開に依存。運用に合わせて調整） |
-| `docs/catalog/*.json` | `/catalog/…`（`wikiCatalogBaseURLString` 等と整合） |
-| `docs/list/jp/*.json` | `/list/jp/scp-jp.json` など（ScpDocs 3 系統フィード） |
+## 収集（`scripts/harvester.py`）
 
-※ GitHub Pages の **公開ルートが `main` の `/` か `gh-pages` の `/` か**で URL が変わります。アプリの `AppRemoteConfig` と実際の Pages 設定を一致させてください。
+- **基礎層:** `scp-series-jp` 系・`scp-series` 系の一覧から `u` / `i` / `t`。
+- **属性層:** `system:page-tags/tag/<object-class>` を優先順で巡回し、一覧に含まれるパスへ `c` を付与（`docs/scp_list.json` があれば `c` / `g` / `o` をマージ）。
+- **国際:** `docs/scp_list.json` の `hubLinkedPaths` ＋国際一覧クロールで `scp-int.json` の `t`。
+- **著者層:** `foundation-tales-jp` を HTML パースし Tale に `a`（著者）を付与。
 
-## `docs/catalog/` のファイル（参考）
+```bash
+pip install -r requirements.txt
+python3 scripts/harvester.py --scp-list docs/scp_list.json
+```
 
-| ファイル | 内容の概要 |
-|----------|------------|
-| `scp_jp.json` | `/scp-N-jp` 系 |
-| `scp.json` | 本家メイン和訳 `/scp-N` 系 |
-| `joke.json` | `-j` 系 |
-| `tales.json` / `canon.json` / `goi.json` | 番号形式以外のスラッグ中心 |
+## GitHub Actions
+
+| Workflow | 内容 |
+|----------|------|
+| **Update list feeds** (`update.yml`) | **毎日 00:00 UTC** ＋手動。`harvester.py` 実行後、`list/jp/` のみ差分コミット。 |
+
+`docs/scp_list.json` が無い、または `hubLinkedPaths` が空の場合、`scp-int.json` は空に近くなることがあります。
 
 ## アプリ（app-scp-docs）
 
-`AppRemoteConfig` のベース URL・パスは、**上記の実際の配信レイアウト**に合わせて設定してください。
+`AppRemoteConfig` の `scpDataHostBaseURLString` と、`list/jp/…` パス（3 系統＋`tales` / `gois`）を一致させてください。
