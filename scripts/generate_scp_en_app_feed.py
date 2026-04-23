@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-ScpDocs 3 系統フィード用: `scp.json`（本家メイン和訳一覧、`SCPArticleListPayload` 互換）を生成する。
+ScpDocs 3 系統フィード用: `docs/list/jp/scp.json`（本家メイン和訳一覧、`SCPArticleListPayload` 互換）を生成する。
 
-アプリの `AppRemoteConfig.scpENListJSONPathComponent` は **`scp.json`**（`scp-en.json` ではない）。
+アプリの EN 系統パスは **`list/jp/scp.json`**（ファイル名は `scp-en.json` ではない）。
 
 各 entry:
   - u / i: `https://scp-jp.wikidot.com/scp-NNN`（`-jp` なし）
@@ -29,6 +29,7 @@ from _scp_app_feed_common import (
     HTTP_HEADERS,
     REQUEST_DELAY_SEC,
     atomic_write_json,
+    default_jp_list_feed_dir,
     fetch_mainlist_rows,
     load_scp_list_entry_blobs,
     mainlist_article_path,
@@ -140,15 +141,14 @@ def build_entries(
 
 
 def default_out_path() -> str:
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    return os.path.join(root, "scp.json")
+    return os.path.join(default_jp_list_feed_dir(), "scp.json")
 
 
 def main() -> int:
     p = argparse.ArgumentParser(
         description="Generate ScpDocs SCPArticleListPayload JSON (scp.json, EN/mainlist feed)."
     )
-    p.add_argument("--out", default=None, help="Output path (default: <repo>/scp.json)")
+    p.add_argument("--out", default=None, help="Output path (default: <repo>/docs/list/jp/scp.json)")
     p.add_argument(
         "--merge-metadata-from",
         default=None,

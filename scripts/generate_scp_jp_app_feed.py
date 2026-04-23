@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ScpDocs 3 系統フィード用: `scp-jp.json`（`SCPArticleListPayload` 互換）を生成する。
+ScpDocs 3 系統フィード用: `docs/list/jp/scp-jp.json`（`SCPArticleListPayload` 互換）を生成する。
 
 スキーマ（iOS `SCPArticleListPayload` / `SCPArticle` と一致）:
   - listVersion, schemaVersion, generatedAt, entries
@@ -30,6 +30,8 @@ from urllib.parse import unquote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+
+from _scp_app_feed_common import default_jp_list_feed_dir
 
 REQUEST_DELAY_SEC = 2.5
 
@@ -448,13 +450,12 @@ def atomic_write_json(out_path: str, payload: dict[str, Any], *, verbose: bool) 
 
 
 def default_out_path() -> str:
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    return os.path.join(root, "scp-jp.json")
+    return os.path.join(default_jp_list_feed_dir(), "scp-jp.json")
 
 
 def main() -> int:
     p = argparse.ArgumentParser(description="Generate ScpDocs SCPArticleListPayload JSON (scp-jp.json).")
-    p.add_argument("--out", default=None, help="Output path (default: <repo>/scp-jp.json)")
+    p.add_argument("--out", default=None, help="Output path (default: <repo>/docs/list/jp/scp-jp.json)")
     p.add_argument(
         "--merge-metadata-from",
         default=None,

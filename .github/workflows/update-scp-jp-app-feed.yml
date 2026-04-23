@@ -1,4 +1,4 @@
-# `scripts/generate_scp_jp_app_feed.py` でリポジトリ直下の `scp-jp.json`（ScpDocs 3 系統 JP フィード）を更新する。
+# `scripts/generate_scp_jp_app_feed.py` で `docs/list/jp/scp-jp.json`（ScpDocs 3 系統 JP フィード）を更新する。
 # `docs/scp_list.json` から objectClass / tags / mainlistTranslationTitle をマージする前提（日次の scp_list ジョブの後に実行）。
 name: Update scp-jp.json (app feed)
 
@@ -38,18 +38,19 @@ jobs:
         run: |
           set -euxo pipefail
           test -f docs/scp_list.json
+          mkdir -p docs/list/jp
           python3 scripts/generate_scp_jp_app_feed.py \
-            --out scp-jp.json \
+            --out docs/list/jp/scp-jp.json \
             --merge-metadata-from docs/scp_list.json \
             --verbose
-          ls -la scp-jp.json
+          ls -la docs/list/jp/scp-jp.json
 
       - name: Commit and push if changed
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scp-jp.json
+          git add docs/list/jp/scp-jp.json
           if git diff --staged --quiet; then
             echo "No changes — skipping commit."
             exit 0

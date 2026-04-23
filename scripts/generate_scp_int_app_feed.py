@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ScpDocs 3 系統フィード用: `scp-int.json`（国際支部和訳パス、`SCPArticleListPayload` 互換）を生成する。
+ScpDocs 3 系統フィード用: `docs/list/jp/scp-int.json`（国際支部和訳パス、`SCPArticleListPayload` 互換）を生成する。
 
 エントリは `docs/scp_list.json` の `hubLinkedPaths`（例: `/scp-173-fr`）を正とする。
 タイトルは scp-international から辿る各一覧 HTML の `<li>` から可能な限り抽出し、
@@ -24,8 +24,10 @@ from bs4 import BeautifulSoup
 from _scp_app_feed_common import (
     REQUEST_DELAY_SEC,
     atomic_write_json,
+    default_jp_list_feed_dir,
     extract_title_from_li,
     fetch_html_with_retry,
+    repo_root,
 )
 
 INTERNATIONAL_HUB_URL = "https://scp-jp.wikidot.com/scp-international"
@@ -234,18 +236,17 @@ def build_entries(
 
 
 def default_out_path() -> str:
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    return os.path.join(root, "scp-int.json")
+    return os.path.join(default_jp_list_feed_dir(), "scp-int.json")
 
 
 def default_merge_titles_path() -> str | None:
-    p = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), "scp-int.json")
+    p = os.path.join(default_jp_list_feed_dir(), "scp-int.json")
     return p if os.path.isfile(p) else None
 
 
 def main() -> int:
     p = argparse.ArgumentParser(description="Generate ScpDocs SCPArticleListPayload JSON (scp-int.json).")
-    p.add_argument("--out", default=None, help="Output path (default: <repo>/scp-int.json)")
+    p.add_argument("--out", default=None, help="Output path (default: <repo>/docs/list/jp/scp-int.json)")
     p.add_argument(
         "--hub-paths-from",
         default=None,
@@ -256,7 +257,7 @@ def main() -> int:
         "--merge-titles-from",
         default=None,
         metavar="PATH",
-        help="Previous scp-int.json to reuse titles when crawl misses (default: <repo>/scp-int.json if exists)",
+        help="Previous scp-int.json to reuse titles when crawl misses (default: docs/list/jp/scp-int.json if exists)",
     )
     p.add_argument(
         "--no-merge-titles",
@@ -276,9 +277,8 @@ def main() -> int:
     )
     p.add_argument("-v", "--verbose", action="store_true")
     args = p.parse_args()
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     out_path = args.out or default_out_path()
-    hub_path = args.hub_paths_from or os.path.join(root, "docs", "scp_list.json")
+    hub_path = args.hub_paths_from or os.path.join(repo_root(), "docs", "scp_list.json")
     merge_titles: str | None
     if args.no_merge_titles:
         merge_titles = None

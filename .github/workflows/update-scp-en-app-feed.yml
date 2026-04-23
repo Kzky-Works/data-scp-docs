@@ -1,4 +1,4 @@
-# 本家メイン和訳一覧 → リポジトリ直下 `scp.json`（ScpDocs EN 系統フィード）。
+# 本家メイン和訳一覧 → `docs/list/jp/scp.json`（ScpDocs EN 系統フィード）。
 name: Update scp.json (app feed)
 
 on:
@@ -36,18 +36,19 @@ jobs:
         run: |
           set -euxo pipefail
           test -f docs/scp_list.json
+          mkdir -p docs/list/jp
           python3 scripts/generate_scp_en_app_feed.py \
-            --out scp.json \
+            --out docs/list/jp/scp.json \
             --merge-metadata-from docs/scp_list.json \
             --verbose
-          ls -la scp.json
+          ls -la docs/list/jp/scp.json
 
       - name: Commit and push if changed
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scp.json
+          git add docs/list/jp/scp.json
           if git diff --staged --quiet; then
             echo "No changes — skipping commit."
             exit 0

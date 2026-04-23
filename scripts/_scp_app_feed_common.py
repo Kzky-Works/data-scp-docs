@@ -16,6 +16,17 @@ from bs4 import BeautifulSoup
 
 REQUEST_DELAY_SEC = 2.5
 
+
+def repo_root() -> str:
+    """`scripts/` の一つ上（リポジトリルート）。"""
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+
+def default_jp_list_feed_dir() -> str:
+    """日本支部向けフィード JSON の格納先（`docs/list/jp/` = Pages 上 `list/jp/`）。"""
+    return os.path.join(repo_root(), "docs", "list", "jp")
+
+
 HTTP_HEADERS = {
     "User-Agent": "ScpDocsAppFeedBot/1.0 (+https://github.com/Kzky-Works/data-scp-docs; contact: repo owner)",
     "Accept-Language": "ja,en;q=0.8",
@@ -212,6 +223,9 @@ def validate_app_feed_payload(payload: dict[str, Any]) -> None:
 
 def atomic_write_json(out_path: str, payload: dict[str, Any], *, verbose: bool) -> None:
     validate_app_feed_payload(payload)
+    parent = os.path.dirname(os.path.abspath(out_path))
+    if parent:
+        os.makedirs(parent, exist_ok=True)
     tmp = f"{out_path}.tmp.{os.getpid()}"
     try:
         with open(tmp, "w", encoding="utf-8") as f:
