@@ -1,0 +1,59 @@
+# `hubLinkedPaths` + 国際一覧クロール → リポジトリ直下 `scp-int.json`。
+name: Update scp-int.json (app feed)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 週次（月曜 17:00 UTC）。国際ハブ scp_list ジョブ（月曜 16:00 UTC）の後を想定。
+    - cron: "0 17 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-scp-docs-main-writes
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          set -euxo pipefail
+          pip install -r requirements.txt
+          pip freeze | grep -Ei '^(beautifulsoup4|requests)=' || true
+
+      - name: Generate scp-int.json
+        run: |
+          set -euxo pipefail
+          test -f docs/scp_list.json
+          python3 scripts/generate_scp_int_app_feed.py \
+            --out scp-int.json \
+            --hub-paths-from docs/scp_list.json \
+            --verbose
+          ls -la scp-int.json
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scp-int.json
+          if git diff --staged --quiet; then
+            echo "No changes — skipping commit."
+            exit 0
+          fi
+          git commit -m "chore(data): update scp-int.json app feed [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin main

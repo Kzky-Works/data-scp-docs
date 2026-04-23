@@ -23,6 +23,35 @@ python3 scripts/generate_scp_jp_app_feed.py --merge-metadata-from docs/scp_list.
 python3 scripts/generate_scp_jp_app_feed.py --merge-metadata-from docs/scp_list.json --with-article-metadata --verbose
 ```
 
+## アプリ 3 系統フィード: `scp.json`（本家メイン和訳）
+
+ScpDocs の `AppRemoteConfig` は EN 系統のファイル名を **`scp.json`** としている（`scp-en.json` ではない）。
+
+| キー | 意味 |
+|------|------|
+| `u` / `i` | `https://scp-jp.wikidot.com/scp-NNN`（`-jp` なし） |
+| `t` | 本家メイン和訳一覧（`scp-series` …）の行タイトル |
+| `o` | 任意。日本支部オリジナル（`-jp`）の行タイトル＝`docs/scp_list.json` の `title` |
+| `c` / `g` | `scp_list` の `objectClass` / `tags` をマージ |
+
+```bash
+python3 scripts/generate_scp_en_app_feed.py --merge-metadata-from docs/scp_list.json --verbose
+```
+
+## アプリ 3 系統フィード: `scp-int.json`（国際支部和訳）
+
+`docs/scp_list.json` の **`hubLinkedPaths`**（`/scp-数字-2文字`、`-jp` 除外）をエントリの正とする。
+
+- **タイトル**: scp-international から辿る各一覧ページをクロールして `<li>` から抽出。取れない場合は **直前コミットの `scp-int.json`**（`--merge-titles-from`、既定でリポジトリ内の同名ファイル）を参照し、それでも無い場合は **`SCP-番号-XX`** 形式のフォールバック。
+- **ローカルでクロールが進まない環境**（TLS 等）では `--skip-intl-crawl` でフォールバックのみ生成可。
+
+```bash
+# 本番相当（一覧クロールあり。GitHub Actions 既定）
+python3 scripts/generate_scp_int_app_feed.py --hub-paths-from docs/scp_list.json --verbose
+# タイトルはフォールバックのみ（高速・オフライン向け）
+python3 scripts/generate_scp_int_app_feed.py --hub-paths-from docs/scp_list.json --skip-intl-crawl --no-merge-titles --verbose
+```
+
 ## 一覧 JSON の生成（ソース・オブ・トゥルース）
 
 **`scripts/update_list.py` と `requirements.txt` はこのリポジトリが正です。**  
@@ -84,6 +113,8 @@ python3 scripts/build_wikidot_category_catalogs.py \
 |----------|------|
 | **Update scp_list.json** | **国内のみ（日次）**。**毎日 15:00 UTC（翌日 0:00 JST）** ＋手動。`--domestic-only` で国際一覧を叩かない。 |
 | **Update scp-jp.json (app feed)** | **`scp-jp.json`（3 系統 JP フィード）**。**毎日 16:30 UTC** ＋手動。`docs/scp_list.json` からメタをマージしつつ Wikidot 一覧を再取得。 |
+| **Update scp.json (app feed)** | **`scp.json`（本家メイン和訳）**。**毎日 16:45 UTC** ＋手動。 |
+| **Update scp-int.json (app feed)** | **`scp-int.json`（国際支部パス）**。**毎週月曜 17:00 UTC** ＋手動。`hubLinkedPaths` ＋国際一覧クロール（所要長め）。 |
 | **Update scp_list.json (international hub)** | **`hubLinkedPaths` のみ更新（週次）**。**毎週月曜 16:00 UTC** ＋手動。重い国際クロールはこのジョブだけ。 |
 | **Update scp_list.json (with article metadata)** | 記事メタ取得。**毎週日曜 15:00 UTC（翌週月曜 0:00 JST）** ＋手動。既存 JSON に hub があれば国際クロール省略。 |
 | **Wikidot category catalogs** | **`system:page-tags`** を巡回し **`docs/catalog/`** を更新。**日次 17:30 UTC**: `incremental`＋**100 タグ**＋シャッフル（既存 JSON とマージ）。実体は `wikidot-catalogs-reusable.yml`。 |
