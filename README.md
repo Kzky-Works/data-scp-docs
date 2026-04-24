@@ -4,36 +4,38 @@
 
 ## 支部別リスト（`list/<code>/`）
 
+マニフェスト（`schemaVersion: 2`）のみ配信します。各ファイルは `entries`（`u` / `i` / `t`）と、必要な記事だけの `metadata`（主キーは `i`）を含みます。
+
 | パス | 内容 |
 |------|------|
-| `list/jp/scp-jp.json` | 日本支部オリジナル（`SCPArticleListPayload`） |
-| `list/jp/scp.json` | 本家メイン和訳 |
-| `list/jp/scp-int.json` | 国際支部パス（`hubLinkedPaths` 前提） |
-| `list/jp/tales.json` | Tales-JP（`SCPGeneralContentListPayload`） |
-| `list/jp/gois.json` | GoI 形式（`goi-format` タグ由来、`SCPGeneralContentListPayload`） |
+| `list/jp/manifest_scp-jp.json` | 日本支部オリジナル（`/scp-nnn-jp`） |
+| `list/jp/manifest_scp-main.json` | 本家メイン和訳（`/scp-nnn`） |
+| `list/jp/manifest_scp-int.json` | 国際支部和訳（`/scp-nnn-xx`、ハブから辿る一覧のスクレイプ） |
+| `list/jp/manifest_tales.json` | Tales-JP（`foundation-tales-jp`） |
+| `list/jp/manifest_gois.json` | GoI 形式（`goi-format` タグ一覧） |
 
 他支部（例: `ru`）は `BranchConfig` の `code` / `site_host` / `output_dir` を差し替えて `harvester.py` を拡張する想定です。
 
 ## 収集（`scripts/harvester.py`）
 
 - **基礎層:** `scp-series-jp` 系・`scp-series` 系の一覧から `u` / `i` / `t`。
-- **属性層:** `system:page-tags/tag/<object-class>` を優先順で巡回し、一覧に含まれるパスへ `c` を付与（`docs/scp_list.json` があれば `c` / `g` / `o` をマージ）。
-- **国際:** `docs/scp_list.json` の `hubLinkedPaths` ＋国際一覧クロールで `scp-int.json` の `t`。
-- **著者層:** `foundation-tales-jp` を HTML パースし Tale に `a`（著者）を付与。
+- **支部の補助:** 同番号の本家 `/scp-n` 一覧タイトルを `metadata` の `o` に載せる（支部 `t` と異なる場合のみ）。
+- **属性層:** `system:page-tags/tag/<object-class>` を巡回し、該当パスへ `metadata` の `c` を付与。
+- **国際:** `/scp-international` から辿った各言語一覧ページをクロール（`scp_list.json` は不要）。
+- **Tale:** `foundation-tales-jp` を HTML パースし、著者は `metadata` の `a` に載せる。
 
 ```bash
 pip install -r requirements.txt
-python3 scripts/harvester.py --scp-list docs/scp_list.json
+python3 scripts/harvester.py
+python3 scripts/validate_manifests.py
 ```
 
 ## GitHub Actions
 
 | Workflow | 内容 |
 |----------|------|
-| **Update list feeds** (`update.yml`) | **毎日 00:00 UTC** ＋手動。`harvester.py` 実行後、`list/jp/` のみ差分コミット。 |
-
-`docs/scp_list.json` が無い、または `hubLinkedPaths` が空の場合、`scp-int.json` は空に近くなることがあります。
+| **Update list feeds** (`update.yml`) | **毎日 00:00 UTC** ＋手動。`harvester.py` → `validate_manifests.py` の後、`list/jp/` のみ差分コミット。 |
 
 ## アプリ（app-scp-docs）
 
-`AppRemoteConfig` の `scpDataHostBaseURLString` と、`list/jp/…` パス（3 系統＋`tales` / `gois`）を一致させてください。
+`AppRemoteConfig` の `scpDataHostBaseURLString` と、`list/jp/manifest_*.json` のパスを一致させてください。

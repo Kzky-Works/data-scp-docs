@@ -3,9 +3,8 @@
 JP 支部向けハイブリッド索引: シリーズ一覧（基礎層）＋ page-tags（属性層）＋
 foundation-tales-jp（著者層）を統合し list/jp/*.json を生成する。
 
-マニフェスト版（schemaVersion 2）: manifest_scp-*.json に entries（u,i,t）と
-スパース metadata（主キー i）を同居させる。従来の scp-*.json（schema 1）も
-並行出力して後方互換を維持する。
+マニフェスト（schemaVersion 2）: `manifest_scp-*.json` / `manifest_tales.json` /
+`manifest_gois.json` に entries（u,i,t）とスパース metadata（主キー i）を出力する。
 
 収集は Wikidot のみ（scp_list.json には依存しない）。
 """
@@ -21,16 +20,13 @@ import time
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any
-from urllib.parse import unquote, urljoin, urlparse
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-# 従来の scp-jp.json 等（フラット 1 エントリ）
-LEGACY_LIST_SCHEMA_VERSION = 1
-# manifest_* : entries + sparse metadata
 MANIFEST_SCHEMA_VERSION = 2
 
 HTTP_HEADERS = {
@@ -441,19 +437,6 @@ def _fallback_int_title(path: str) -> str:
     return f"SCP-{m.group(1)}-{m.group(2).upper()}"
 
 
-def article_entry_dict(row: ArticleRow) -> dict[str, Any]:
-    d: dict[str, Any] = {"u": row.u, "i": row.i, "t": row.t}
-    if row.c:
-        d["c"] = row.c
-    if row.o:
-        d["o"] = row.o
-    if row.g:
-        d["g"] = list(row.g)
-    if row.a:
-        d["a"] = row.a
-    return d
-
-
 def now_payload_meta() -> tuple[int, str]:
     dt = datetime.now(timezone.utc)
     return int(dt.timestamp()), dt.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -470,38 +453,6 @@ def write_manifest(path: str, entries: list[dict[str, Any]], metadata: dict[str,
         "generatedAt": gen,
         "entries": entries,
         "metadata": md,
-    }
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    tmp = path + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-        f.write("\n")
-    os.replace(tmp, path)
-
-
-def write_article_list(path: str, entries: list[dict[str, Any]]) -> None:
-    lv, gen = now_payload_meta()
-    payload = {
-        "listVersion": lv,
-        "schemaVersion": LEGACY_LIST_SCHEMA_VERSION,
-        "generatedAt": gen,
-        "entries": entries,
-    }
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    tmp = path + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-        f.write("\n")
-    os.replace(tmp, path)
-
-
-def write_general_list(path: str, entries: list[dict[str, Any]]) -> None:
-    lv, gen = now_payload_meta()
-    payload = {
-        "listVersion": lv,
-        "schemaVersion": LEGACY_LIST_SCHEMA_VERSION,
-        "generatedAt": gen,
-        "entries": entries,
     }
     os.makedirs(os.path.dirname(path), exist_ok=True)
     tmp = path + ".tmp"
@@ -718,23 +669,11 @@ class JapaneseBranchHarvester:
         print("INFO: gois — tag goi-format", file=sys.stderr)
         goi_entries = parse_goi_tag_pages(self.session, cfg)
 
-        out_jp = os.path.join(cfg.output_dir, "scp-jp.json")
-        out_main = os.path.join(cfg.output_dir, "scp.json")
-        out_int = os.path.join(cfg.output_dir, "scp-int.json")
-        out_tales = os.path.join(cfg.output_dir, "tales.json")
-        out_gois = os.path.join(cfg.output_dir, "gois.json")
-
         man_jp = os.path.join(cfg.output_dir, "manifest_scp-jp.json")
         man_main = os.path.join(cfg.output_dir, "manifest_scp-main.json")
         man_int = os.path.join(cfg.output_dir, "manifest_scp-int.json")
         man_tales = os.path.join(cfg.output_dir, "manifest_tales.json")
         man_gois = os.path.join(cfg.output_dir, "manifest_gois.json")
-
-        write_article_list(out_jp, [article_entry_dict(r) for _, r in sorted(jp_rows.items())])
-        write_article_list(out_main, [article_entry_dict(r) for _, r in sorted(main_rows.items())])
-        write_article_list(out_int, int_entries)
-        write_general_list(out_tales, tale_entries)
-        write_general_list(out_gois, goi_entries)
 
         ej, mj = trifold_rows_to_manifest_parts(jp_rows)
         write_manifest(man_jp, ej, mj)
@@ -748,8 +687,7 @@ class JapaneseBranchHarvester:
         write_manifest(man_gois, gl, gm)
 
         print(
-            f"OK: wrote legacy + manifests: {out_jp}, {man_jp}, {out_main}, {man_main}, "
-            f"{out_int}, {man_int}, {out_tales}, {man_tales}, {out_gois}, {man_gois}",
+            f"OK: wrote {man_jp}, {man_main}, {man_int}, {man_tales}, {man_gois}",
             file=sys.stderr,
         )
 
