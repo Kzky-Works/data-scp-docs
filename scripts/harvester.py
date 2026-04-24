@@ -4,7 +4,8 @@ JP 支部向けハイブリッド索引: シリーズ一覧（基礎層）＋ pa
 foundation-tales-jp（著者層）を統合し list/jp/*.json を生成する。
 
 マニフェスト（schemaVersion 2）: `manifest_scp-*.json` / `manifest_tales.json` /
-`manifest_gois.json` に entries（u,i,t）とスパース metadata（主キー i）を出力する。
+`manifest_gois.json` / `manifest_canons.json` / `manifest_jokes.json` に entries（u,i,t）と
+スパース metadata（主キー i）を出力する。listVersion は前回出力と差分が無い場合は据え置き。
 
 収集は Wikidot のみ（scp_list.json には依存しない）。
 """
@@ -90,6 +91,28 @@ INTL_LIST_HINTS = (
 )
 INTL_PATH_RE = re.compile(r"^/scp-\d+-[a-z]{2}$")
 MAX_INTL_LIST_PAGES = 80
+
+# マルチフォーム SoT（docs/HANDOVER_TALES_CANON_COLLECTION_RULES_ja.md §9–12）
+CANON_INDEX_PATHS: tuple[str, ...] = ("/canon-hub-jp", "/canon-hub", "/series-hub-jp")
+JOKE_INDEX_PATHS: tuple[str, ...] = ("/joke-scps", "/joke-scps-jp")
+GOI_FORMATS_HUB = "/goi-formats-jp"
+FOUNDATION_TALES_EN = "/foundation-tales"
+
+PAGE_LINK_EXCLUDE_PREFIXES: tuple[str, ...] = (
+    "/system:",
+    "/nav:",
+    "/search:",
+    "/admin:",
+    "/login",
+    "/register",
+    "/_:",
+    "/local--",
+    "/forum",
+    "/blog:",
+    "/activity",
+)
+
+JOKE_HUB_PATHS_LOWER = frozenset({"/joke-scps", "/joke-scps-jp"})
 
 
 @dataclass
@@ -437,16 +460,31 @@ def _fallback_int_title(path: str) -> str:
     return f"SCP-{m.group(1)}-{m.group(2).upper()}"
 
 
-def now_payload_meta() -> tuple[int, str]:
+def next_list_version_and_generated_at(
+    path: str, entries: list[dict[str, Any]], metadata: dict[str, Any]
+) -> tuple[int, str]:
+    """entries + metadata（正規化後）が前回と同一なら listVersion を据え置き、変化時のみ +1。"""
     dt = datetime.now(timezone.utc)
-    return int(dt.timestamp()), dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    gen = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    md_norm = {k: v for k, v in metadata.items() if isinstance(v, dict) and v}
+    if os.path.isfile(path):
+        try:
+            with open(path, encoding="utf-8") as f:
+                old = json.load(f)
+        except Exception:
+            old = {}
+        old_lv = int(old.get("listVersion") or 0)
+        if old.get("entries") == entries and (old.get("metadata") or {}) == md_norm:
+            return old_lv, gen
+        return old_lv + 1, gen
+    return int(dt.timestamp()), gen
 
 
 def write_manifest(path: str, entries: list[dict[str, Any]], metadata: dict[str, Any]) -> None:
     """schemaVersion 2: entries（軽）+ metadata（スパース、キーは i）。"""
-    lv, gen = now_payload_meta()
     md = {k: v for k, v in metadata.items() if isinstance(v, dict) and v}
     validate_manifest_entries_metadata(entries, md, os.path.basename(path))
+    lv, gen = next_list_version_and_generated_at(path, entries, metadata)
     payload: dict[str, Any] = {
         "listVersion": lv,
         "schemaVersion": MANIFEST_SCHEMA_VERSION,
@@ -460,6 +498,123 @@ def write_manifest(path: str, entries: list[dict[str, Any]], metadata: dict[str,
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write("\n")
     os.replace(tmp, path)
+
+
+def _page_link_excluded(path: str) -> bool:
+    pl = path.lower()
+    if not pl.startswith("/"):
+        return True
+    for pfx in PAGE_LINK_EXCLUDE_PREFIXES:
+        if pl.startswith(pfx):
+            return True
+    return False
+
+
+def extract_page_content_link_map(
+    session: requests.Session, cfg: BranchConfig, page_path: str
+) -> dict[str, str]:
+    """#page-content 内の同一サイト単一スラッグへのリンク → {正規パス: 表示テキスト}。"""
+    base = cfg.site_host.rstrip("/")
+    url = cfg.abs_url(page_path)
+    html = fetch_html(session, url)
+    soup = BeautifulSoup(html, "html.parser")
+    root = soup.select_one("#page-content") or soup.body
+    out: dict[str, str] = {}
+    if root is None:
+        return out
+    for a in root.find_all("a", href=True):
+        raw = (a.get("href") or "").strip().split("#")[0]
+        if not raw or raw.startswith("javascript:"):
+            continue
+        absu = urljoin(url, raw)
+        pu = urlparse(absu)
+        if pu.netloc and pu.netloc != urlparse(base).netloc:
+            continue
+        p = pu.path or "/"
+        if p == "/" or _page_link_excluded(p):
+            continue
+        segs = [x for x in p.strip("/").split("/") if x]
+        if len(segs) != 1:
+            continue
+        slug = segs[0]
+        if ":" in slug:
+            continue
+        title = a.get_text(" ", strip=True) or slug
+        prev = out.get(p)
+        if prev is None or len(title) > len(prev):
+            out[p] = title
+    return out
+
+
+def is_joke_article_path(path: str) -> bool:
+    pl = path.lower()
+    if pl in JOKE_HUB_PATHS_LOWER:
+        return False
+    # 日本支部オリジナル（-jp-j）を本家系（-j）より先に判定
+    if re.match(r"^/scp-.+-jp-j$", pl):
+        return True
+    if re.match(r"^/scp-.+-j$", pl):
+        return True
+    if pl.startswith("/joke-scp"):
+        if re.match(r"^/joke-scp[\w-]*$", pl) and pl not in JOKE_HUB_PATHS_LOWER:
+            return True
+    return False
+
+
+def scrape_joke_index_entries(session: requests.Session, cfg: BranchConfig) -> list[dict[str, Any]]:
+    merged: dict[str, str] = {}
+    for hub in JOKE_INDEX_PATHS:
+        part = extract_page_content_link_map(session, cfg, hub)
+        for p, t in part.items():
+            if not is_joke_article_path(p):
+                continue
+            prev = merged.get(p)
+            if prev is None or len(t) > len(prev):
+                merged[p] = t
+    base = cfg.site_host.rstrip("/")
+    out: list[dict[str, Any]] = []
+    for path, title in sorted(merged.items(), key=lambda x: x[0]):
+        i = path.lstrip("/").lower()
+        u = base + path
+        out.append({"u": u, "i": i, "t": title})
+    return out
+
+
+def scrape_canon_hub_entries(session: requests.Session, cfg: BranchConfig) -> list[dict[str, Any]]:
+    merged: dict[str, str] = {}
+    for hub in CANON_INDEX_PATHS:
+        part = extract_page_content_link_map(session, cfg, hub)
+        merged.update(part)
+    base = cfg.site_host.rstrip("/")
+    out: list[dict[str, Any]] = []
+    for path, title in sorted(merged.items(), key=lambda x: x[0]):
+        i = path.lstrip("/").lower()
+        u = base + path
+        out.append({"u": u, "i": i, "t": title})
+    return out
+
+
+def scrape_goi_formats_hub_entries(session: requests.Session, cfg: BranchConfig) -> list[dict[str, Any]]:
+    """goi-formats-jp ハブ上の要注意団体リンク（§11）。"""
+    m = extract_page_content_link_map(session, cfg, GOI_FORMATS_HUB)
+    base = cfg.site_host.rstrip("/")
+    skip = frozenset(
+        {
+            "/goi-formats-jp",
+            "/goi-formats",
+            "/goi-formats-jp/",
+        }
+    )
+    out: list[dict[str, Any]] = []
+    for path, title in sorted(m.items(), key=lambda x: x[0]):
+        pl = path.lower()
+        if pl in skip or pl.rstrip("/") in skip:
+            continue
+        i = path.lstrip("/").lower()
+        u = base + path
+        disp = title.strip() if title.strip() else i
+        out.append({"u": u, "i": i, "t": disp, "o": disp})
+    return out
 
 
 def tales_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -484,6 +639,7 @@ def tales_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[st
 
 def goi_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     light: list[dict[str, Any]] = []
+    metadata: dict[str, Any] = {}
     for e in raw:
         if not isinstance(e, dict):
             continue
@@ -492,11 +648,45 @@ def goi_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[str,
         if not isinstance(i, str) or not i.strip() or not isinstance(u, str) or not u.strip():
             continue
         t = e.get("t")
+        ikey = i.strip()
         light.append(
             {
                 "u": u.strip(),
-                "i": i.strip(),
-                "t": (t if isinstance(t, str) and t.strip() else i.strip()),
+                "i": ikey,
+                "t": (t if isinstance(t, str) and t.strip() else ikey),
+            }
+        )
+        chunk: dict[str, Any] = {}
+        o = e.get("o")
+        if isinstance(o, str) and o.strip():
+            chunk["o"] = o.strip()
+        g = e.get("g")
+        if isinstance(g, list) and g:
+            chunk["g"] = [str(x).strip() for x in g if isinstance(x, str) and str(x).strip()]
+        if chunk:
+            metadata[ikey] = chunk
+    return light, metadata
+
+
+def simple_multiform_raw_to_manifest_parts(
+    raw: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Canon / Joke 等: u,i,t のみ（metadata 空）。"""
+    light: list[dict[str, Any]] = []
+    for e in raw:
+        if not isinstance(e, dict):
+            continue
+        i = e.get("i")
+        u = e.get("u")
+        if not isinstance(i, str) or not i.strip() or not isinstance(u, str) or not u.strip():
+            continue
+        t = e.get("t")
+        ikey = i.strip()
+        light.append(
+            {
+                "u": u.strip(),
+                "i": ikey,
+                "t": (t if isinstance(t, str) and t.strip() else ikey),
             }
         )
     return light, {}
@@ -662,18 +852,37 @@ class JapaneseBranchHarvester:
         print("INFO: intl lists (hub crawl)", file=sys.stderr)
         int_entries = build_int_rows_from_wikidot(self.session, cfg)
 
-        print("INFO: tales — foundation-tales-jp", file=sys.stderr)
+        print("INFO: tales — foundation-tales-jp + foundation-tales", file=sys.stderr)
         tales_html = fetch_html(self.session, cfg.abs_url(cfg.foundation_tales_path))
         tale_entries = parse_foundation_tales_jp(tales_html, cfg)
+        try:
+            tales_en_html = fetch_html(self.session, cfg.abs_url(FOUNDATION_TALES_EN), retries=4)
+            tale_entries.extend(parse_foundation_tales_jp(tales_en_html, cfg))
+        except Exception as ex:
+            print(f"WARN: foundation-tales (EN hub): {ex}", file=sys.stderr)
+        tale_by_i: dict[str, dict[str, Any]] = {}
+        for ent in tale_entries:
+            ik = ent.get("i")
+            if isinstance(ik, str) and ik.strip():
+                tale_by_i[ik.strip()] = ent
+        tale_entries = list(tale_by_i.values())
 
-        print("INFO: gois — tag goi-format", file=sys.stderr)
-        goi_entries = parse_goi_tag_pages(self.session, cfg)
+        print("INFO: gois — goi-formats-jp hub", file=sys.stderr)
+        goi_entries = scrape_goi_formats_hub_entries(self.session, cfg)
+
+        print("INFO: canons — hub index pages", file=sys.stderr)
+        canon_entries = scrape_canon_hub_entries(self.session, cfg)
+
+        print("INFO: jokes — joke-scps + joke-scps-jp", file=sys.stderr)
+        joke_entries = scrape_joke_index_entries(self.session, cfg)
 
         man_jp = os.path.join(cfg.output_dir, "manifest_scp-jp.json")
         man_main = os.path.join(cfg.output_dir, "manifest_scp-main.json")
         man_int = os.path.join(cfg.output_dir, "manifest_scp-int.json")
         man_tales = os.path.join(cfg.output_dir, "manifest_tales.json")
         man_gois = os.path.join(cfg.output_dir, "manifest_gois.json")
+        man_canons = os.path.join(cfg.output_dir, "manifest_canons.json")
+        man_jokes = os.path.join(cfg.output_dir, "manifest_jokes.json")
 
         ej, mj = trifold_rows_to_manifest_parts(jp_rows)
         write_manifest(man_jp, ej, mj)
@@ -685,9 +894,13 @@ class JapaneseBranchHarvester:
         write_manifest(man_tales, tl, tm)
         gl, gm = goi_raw_to_manifest_parts(goi_entries)
         write_manifest(man_gois, gl, gm)
+        cl, cm = simple_multiform_raw_to_manifest_parts(canon_entries)
+        write_manifest(man_canons, cl, cm)
+        jl, jm = simple_multiform_raw_to_manifest_parts(joke_entries)
+        write_manifest(man_jokes, jl, jm)
 
         print(
-            f"OK: wrote {man_jp}, {man_main}, {man_int}, {man_tales}, {man_gois}",
+            f"OK: wrote {man_jp}, {man_main}, {man_int}, {man_tales}, {man_gois}, {man_canons}, {man_jokes}",
             file=sys.stderr,
         )
 
