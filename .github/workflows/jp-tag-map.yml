@@ -1,0 +1,72 @@
+# リポジトリルートで list/jp/jp_tag.json を生成し Artifact 名 jp-tag として保存する（workflow_dispatch のみ）。
+# 前提: scripts/build_jp_wikidot_tag_article_map.py
+name: JP tag map (list/jp/jp_tag.json)
+
+on:
+  workflow_dispatch:
+    inputs:
+      jp_tag_hub_page_min:
+        description: "tag/jp/p/* の先頭ページ（通常 1）"
+        type: string
+        default: "1"
+      jp_tag_hub_page_max:
+        description: "tag/jp/p/* の末尾ページ（通常 59）"
+        type: string
+        default: "59"
+      max_tags:
+        description: "処理するタグ数の上限（0 または空＝すべて・非常に時間がかかります）"
+        type: string
+        default: "0"
+      sleep_sec:
+        description: "リクエスト間隔（秒）"
+        type: string
+        default: "0.35"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: data-scp-docs-jp-tag-map
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build JSON
+        env:
+          PAGE_MIN: ${{ inputs.jp_tag_hub_page_min }}
+          PAGE_MAX: ${{ inputs.jp_tag_hub_page_max }}
+          MAX_TAGS: ${{ inputs.max_tags }}
+          SLEEP: ${{ inputs.sleep_sec }}
+        run: |
+          set -euxo pipefail
+          mkdir -p list/jp
+          MAX_TAGS_FLAG=()
+          if [ -n "${MAX_TAGS}" ] && [ "${MAX_TAGS}" != "0" ]; then
+            MAX_TAGS_FLAG=(--max-tags "${MAX_TAGS}")
+          fi
+          python3 scripts/build_jp_wikidot_tag_article_map.py \
+            --jp-tag-hub-page-min "${PAGE_MIN}" \
+            --jp-tag-hub-page-max "${PAGE_MAX}" \
+            "${MAX_TAGS_FLAG[@]}" \
+            --sleep-sec "${SLEEP}" \
+            -o list/jp/jp_tag.json
+          ls -la list/jp/jp_tag.json
+          python3 -c "import json; d=json.load(open('list/jp/jp_tag.json')); print('tags', len(d.get('tags',[])), 'articles', len(d.get('articles',{})))"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jp-tag
+          path: list/jp/jp_tag.json
+          if-no-files-found: error
