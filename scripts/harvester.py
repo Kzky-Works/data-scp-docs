@@ -3,7 +3,11 @@
 JP 支部向けハイブリッド索引: シリーズ一覧（基礎層）＋ page-tags（属性層）＋
 foundation-tales-jp（著者層）を統合し list/jp/*.json を生成する。
 
-将来の支部追加: BranchConfig の site_host / output_dir / URL 定義を差し替える。
+マニフェスト版（schemaVersion 2）: manifest_scp-*.json に entries（u,i,t）と
+スパース metadata（主キー i）を同居させる。従来の scp-*.json（schema 1）も
+並行出力して後方互換を維持する。
+
+収集は Wikidot のみ（scp_list.json には依存しない）。
 """
 
 from __future__ import annotations
@@ -23,6 +27,11 @@ import requests
 from bs4 import BeautifulSoup
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+# 従来の scp-jp.json 等（フラット 1 エントリ）
+LEGACY_LIST_SCHEMA_VERSION = 1
+# manifest_* : entries + sparse metadata
+MANIFEST_SCHEMA_VERSION = 2
 
 HTTP_HEADERS = {
     "User-Agent": "ScpDocsHarvester/1.0 (+https://github.com/Kzky-Works/data-scp-docs)",
@@ -225,77 +234,69 @@ def scrape_series_main(session: requests.Session, cfg: BranchConfig) -> dict[str
     return out
 
 
-def load_scp_list_merge(path: str) -> dict[tuple[int, int], dict[str, Any]]:
-    """docs/scp_list.json があれば (series, n) → メタ。"""
-    if not os.path.isfile(path):
-        return {}
-    try:
-        with open(path, encoding="utf-8") as f:
-            data = json.load(f)
-    except Exception:
-        return {}
-    entries = data.get("entries")
-    if not isinstance(entries, list):
-        return {}
-    m: dict[tuple[int, int], dict[str, Any]] = {}
+def validate_manifest_entries_metadata(
+    entries: list[dict[str, Any]], metadata: dict[str, Any], label: str
+) -> None:
+    """metadata のキーは必ず entries[].i に存在する（孤児禁止）。"""
+    ids: set[str] = set()
     for e in entries:
         if not isinstance(e, dict):
             continue
-        try:
-            s = int(e["series"])
-            n = int(e["scpNumber"])
-        except (KeyError, TypeError, ValueError):
+        i = e.get("i")
+        if isinstance(i, str) and i.strip():
+            ids.add(i.strip())
+    for k in metadata:
+        if k not in ids:
+            raise ValueError(f"manifest {label}: metadata key {k!r} has no matching entry.i")
+
+
+def light_article_row_dict(row: ArticleRow) -> dict[str, Any]:
+    return {"u": row.u, "i": row.i, "t": row.t}
+
+
+def sparse_trifold_metadata_chunk(row: ArticleRow) -> dict[str, Any] | None:
+    """entries 以外に載せる c / o / g のみ（空なら None）。o は t と異なる場合だけ。"""
+    chunk: dict[str, Any] = {}
+    if row.c and str(row.c).strip():
+        chunk["c"] = str(row.c).strip()
+    if row.o and str(row.o).strip():
+        ost = str(row.o).strip()
+        if ost != (row.t or "").strip():
+            chunk["o"] = ost
+    if row.g:
+        chunk["g"] = [str(x).strip() for x in row.g if isinstance(x, str) and str(x).strip()]
+    return chunk if chunk else None
+
+
+def attach_jp_mainlist_title_from_main_series(
+    jp_rows: dict[str, ArticleRow], main_rows: dict[str, ArticleRow]
+) -> None:
+    """支部行の o に本家 /scp-n 一覧タイトルを載せる（一覧 t と異なるときのみ）。"""
+    for path, row in jp_rows.items():
+        m = SCP_JP_HREF.match(path)
+        if not m:
             continue
-        m[(s, n)] = e
-    return m
-
-
-def series_num_from_jp_path(path: str) -> tuple[int, int] | None:
-    m = SCP_JP_HREF.match(path)
-    if not m:
-        return None
-    n = int(m.group(1), 10)
-    for s in range(5):
-        r = range_for_series(s)
-        if r.lo <= n <= r.hi:
-            return s, n
-    return None
-
-
-def series_num_from_main_path(path: str) -> tuple[int, int] | None:
-    m = SCP_MAIN_HREF.match(path)
-    if not m:
-        return None
-    n = int(m.group(1), 10)
-    for s in range(5):
-        r = range_for_series(s)
-        if r.lo <= n <= r.hi:
-            return s, n
-    return None
-
-
-def apply_scp_list_merge(rows: dict[str, ArticleRow], merge: dict[tuple[int, int], dict[str, Any]], *, jp: bool) -> None:
-    for path, row in rows.items():
-        key = series_num_from_jp_path(path) if jp else series_num_from_main_path(path)
-        if key is None:
+        n = int(m.group(1), 10)
+        main_row = main_rows.get(f"/scp-{n}")
+        if main_row is None:
             continue
-        e = merge.get(key)
-        if not e:
-            continue
-        if jp:
-            mt = e.get("mainlistTranslationTitle")
-            if isinstance(mt, str) and mt.strip():
-                row.o = mt.strip()
-        else:
-            tit = e.get("title")
-            if isinstance(tit, str) and tit.strip():
-                row.o = tit.strip()
-        oc = e.get("objectClass")
-        if isinstance(oc, str) and oc.strip():
-            row.c = oc.strip()
-        tg = e.get("tags")
-        if isinstance(tg, list) and tg:
-            row.g = [str(x).strip() for x in tg if isinstance(x, str) and str(x).strip()]
+        mt = (main_row.t or "").strip()
+        jt = (row.t or "").strip()
+        if mt and mt != jt:
+            row.o = mt
+
+
+def trifold_rows_to_manifest_parts(
+    rows: dict[str, ArticleRow],
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    entries_out: list[dict[str, Any]] = []
+    metadata: dict[str, Any] = {}
+    for _, row in sorted(rows.items()):
+        entries_out.append(light_article_row_dict(row))
+        chunk = sparse_trifold_metadata_chunk(row)
+        if chunk:
+            metadata[row.i] = chunk
+    return entries_out, metadata
 
 
 OC_TAG_TO_DISPLAY = {
@@ -417,36 +418,19 @@ def crawl_intl_titles(session: requests.Session, cfg: BranchConfig) -> dict[str,
     return merged
 
 
-def load_hub_paths_from_scp_list(path: str) -> list[str]:
-    if not os.path.isfile(path):
-        return []
-    with open(path, encoding="utf-8") as f:
-        data = json.load(f)
-    hub = data.get("hubLinkedPaths")
-    if not isinstance(hub, list):
-        return []
-    out: list[str] = []
-    for p in hub:
-        if isinstance(p, str) and INTL_PATH_RE.match(p) and not p.endswith("-jp"):
-            out.append(p)
-    out.sort()
-    return out
-
-
-def build_int_rows(session: requests.Session, cfg: BranchConfig, scp_list_path: str) -> list[dict[str, Any]]:
-    hub_paths = load_hub_paths_from_scp_list(scp_list_path)
+def build_int_rows_from_wikidot(session: requests.Session, cfg: BranchConfig) -> list[dict[str, Any]]:
+    """国際支部リンクは /scp-international から辿った各一覧ページのスクレイプ結果のみ（scp_list 不要）。"""
     titles = crawl_intl_titles(session, cfg)
     base = cfg.site_host.rstrip("/")
     rows: list[dict[str, Any]] = []
-    if not hub_paths:
-        print("WARN: hubLinkedPaths empty; scp-int.json will be empty", file=sys.stderr)
-        return rows
-    for p in hub_paths:
+    if not titles:
+        print("WARN: no intl paths discovered; scp-int manifest may be empty", file=sys.stderr)
+    for p in sorted(titles.keys()):
         i = p.lstrip("/").lower()
         u = base + p
-        t = titles.get(p) or _fallback_int_title(p)
-        e: dict[str, Any] = {"u": u, "i": i, "t": t}
-        rows.append(e)
+        raw_t = titles.get(p, "")
+        t = raw_t.strip() if isinstance(raw_t, str) and raw_t.strip() else _fallback_int_title(p)
+        rows.append({"u": u, "i": i, "t": t})
     return rows
 
 
@@ -475,11 +459,31 @@ def now_payload_meta() -> tuple[int, str]:
     return int(dt.timestamp()), dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def write_manifest(path: str, entries: list[dict[str, Any]], metadata: dict[str, Any]) -> None:
+    """schemaVersion 2: entries（軽）+ metadata（スパース、キーは i）。"""
+    lv, gen = now_payload_meta()
+    md = {k: v for k, v in metadata.items() if isinstance(v, dict) and v}
+    validate_manifest_entries_metadata(entries, md, os.path.basename(path))
+    payload: dict[str, Any] = {
+        "listVersion": lv,
+        "schemaVersion": MANIFEST_SCHEMA_VERSION,
+        "generatedAt": gen,
+        "entries": entries,
+        "metadata": md,
+    }
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.replace(tmp, path)
+
+
 def write_article_list(path: str, entries: list[dict[str, Any]]) -> None:
     lv, gen = now_payload_meta()
     payload = {
         "listVersion": lv,
-        "schemaVersion": 1,
+        "schemaVersion": LEGACY_LIST_SCHEMA_VERSION,
         "generatedAt": gen,
         "entries": entries,
     }
@@ -495,7 +499,7 @@ def write_general_list(path: str, entries: list[dict[str, Any]]) -> None:
     lv, gen = now_payload_meta()
     payload = {
         "listVersion": lv,
-        "schemaVersion": 1,
+        "schemaVersion": LEGACY_LIST_SCHEMA_VERSION,
         "generatedAt": gen,
         "entries": entries,
     }
@@ -505,6 +509,46 @@ def write_general_list(path: str, entries: list[dict[str, Any]]) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write("\n")
     os.replace(tmp, path)
+
+
+def tales_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    light: list[dict[str, Any]] = []
+    metadata: dict[str, Any] = {}
+    for e in raw:
+        if not isinstance(e, dict):
+            continue
+        i = e.get("i")
+        if not isinstance(i, str) or not i.strip():
+            continue
+        u = e.get("u")
+        t = e.get("t")
+        if not isinstance(u, str) or not u.strip():
+            continue
+        light.append({"u": u.strip(), "i": i.strip(), "t": (t if isinstance(t, str) and t.strip() else i.strip())})
+        a = e.get("a")
+        if isinstance(a, str) and a.strip():
+            metadata[i.strip()] = {"a": a.strip()}
+    return light, metadata
+
+
+def goi_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    light: list[dict[str, Any]] = []
+    for e in raw:
+        if not isinstance(e, dict):
+            continue
+        i = e.get("i")
+        u = e.get("u")
+        if not isinstance(i, str) or not i.strip() or not isinstance(u, str) or not u.strip():
+            continue
+        t = e.get("t")
+        light.append(
+            {
+                "u": u.strip(),
+                "i": i.strip(),
+                "t": (t if isinstance(t, str) and t.strip() else i.strip()),
+            }
+        )
+    return light, {}
 
 
 # --- 著者層: foundation-tales-jp（Swift パーサと同等の簡易ロジック） ---
@@ -640,19 +684,16 @@ class JapaneseBranchHarvester:
         self.cfg = cfg or BranchConfig()
         self.session = requests.Session()
 
-    def run(self, *, scp_list_path: str) -> None:
+    def run(self) -> None:
         cfg = self.cfg
         os.makedirs(cfg.output_dir, exist_ok=True)
 
-        merge = load_scp_list_merge(scp_list_path)
-
         print("INFO: base layer — JP series", file=sys.stderr)
         jp_rows = scrape_series_jp(self.session, cfg)
-        apply_scp_list_merge(jp_rows, merge, jp=True)
 
         print("INFO: base layer — mainlist", file=sys.stderr)
         main_rows = scrape_series_main(self.session, cfg)
-        apply_scp_list_merge(main_rows, merge, jp=False)
+        attach_jp_mainlist_title_from_main_series(jp_rows, main_rows)
 
         jp_paths = set(jp_rows.keys())
         main_paths = set(main_rows.keys())
@@ -667,8 +708,8 @@ class JapaneseBranchHarvester:
             if not row.c and p in oc_main:
                 row.c = oc_main[p]
 
-        print("INFO: intl hub", file=sys.stderr)
-        int_entries = build_int_rows(self.session, cfg, scp_list_path)
+        print("INFO: intl lists (hub crawl)", file=sys.stderr)
+        int_entries = build_int_rows_from_wikidot(self.session, cfg)
 
         print("INFO: tales — foundation-tales-jp", file=sys.stderr)
         tales_html = fetch_html(self.session, cfg.abs_url(cfg.foundation_tales_path))
@@ -683,25 +724,41 @@ class JapaneseBranchHarvester:
         out_tales = os.path.join(cfg.output_dir, "tales.json")
         out_gois = os.path.join(cfg.output_dir, "gois.json")
 
+        man_jp = os.path.join(cfg.output_dir, "manifest_scp-jp.json")
+        man_main = os.path.join(cfg.output_dir, "manifest_scp-main.json")
+        man_int = os.path.join(cfg.output_dir, "manifest_scp-int.json")
+        man_tales = os.path.join(cfg.output_dir, "manifest_tales.json")
+        man_gois = os.path.join(cfg.output_dir, "manifest_gois.json")
+
         write_article_list(out_jp, [article_entry_dict(r) for _, r in sorted(jp_rows.items())])
         write_article_list(out_main, [article_entry_dict(r) for _, r in sorted(main_rows.items())])
         write_article_list(out_int, int_entries)
         write_general_list(out_tales, tale_entries)
         write_general_list(out_gois, goi_entries)
 
-        print(f"OK: wrote {out_jp}, {out_main}, {out_int}, {out_tales}, {out_gois}", file=sys.stderr)
+        ej, mj = trifold_rows_to_manifest_parts(jp_rows)
+        write_manifest(man_jp, ej, mj)
+        em, mm = trifold_rows_to_manifest_parts(main_rows)
+        write_manifest(man_main, em, mm)
+        write_manifest(man_int, int_entries, {})
+
+        tl, tm = tales_raw_to_manifest_parts(tale_entries)
+        write_manifest(man_tales, tl, tm)
+        gl, gm = goi_raw_to_manifest_parts(goi_entries)
+        write_manifest(man_gois, gl, gm)
+
+        print(
+            f"OK: wrote legacy + manifests: {out_jp}, {man_jp}, {out_main}, {man_main}, "
+            f"{out_int}, {man_int}, {out_tales}, {man_tales}, {out_gois}, {man_gois}",
+            file=sys.stderr,
+        )
 
 
 def main() -> int:
     p = argparse.ArgumentParser(description="Hybrid harvester for list/jp/*.json")
-    p.add_argument(
-        "--scp-list",
-        default=os.path.join(REPO_ROOT, "docs", "scp_list.json"),
-        help="Optional scp_list.json for merge + hubLinkedPaths",
-    )
     args = p.parse_args()
     try:
-        JapaneseBranchHarvester().run(scp_list_path=args.scp_list)
+        JapaneseBranchHarvester().run()
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         return 1
