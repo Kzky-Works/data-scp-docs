@@ -83,7 +83,7 @@ def list_article_paths_from_tag_page(html: str) -> list[str]:
     if not block:
         return []
     paths: list[str] = []
-    for href, _label in re.findall(
+    for href in re.findall(
         r'<div class="list-pages-item">\s*<p><a href="(/[^"]+)">', block
     ):
         if href.startswith("/system:page-tags/"):
