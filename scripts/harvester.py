@@ -400,11 +400,19 @@ OC_TAG_TO_DISPLAY = {
 MAX_OBJECT_CLASS_TAG_LIST_PAGES = 256
 
 
-def crawl_object_class_tag_pages(session: requests.Session, cfg: BranchConfig) -> dict[str, str]:
-    """属性層: system:page-tags/tag/<class> に掲載された記事パス → OC（先に列挙したタグを優先）。"""
+def crawl_object_class_tag_pages(
+    session: requests.Session,
+    cfg: BranchConfig,
+    target_paths: set[str] | None = None,
+) -> dict[str, str]:
+    """属性層: system:page-tags/tag/<class> に掲載された記事パス → OC。
+
+    target_paths を渡すと対象だけを採用し、全対象が解決した時点で巡回を止める。
+    """
     base = cfg.site_host.rstrip("/")
     path_to_class: dict[str, str] = {}
     base_netloc = urlparse(base).netloc
+    remaining = set(target_paths or [])
 
     def ingest_tag_page_html(html: str, oc_display: str) -> None:
         soup = BeautifulSoup(html, "html.parser")
@@ -416,10 +424,15 @@ def crawl_object_class_tag_pages(session: requests.Session, cfg: BranchConfig) -
             pth = pu.path or ""
             if not pth or pth.startswith("/system:"):
                 continue
+            if target_paths is not None and pth not in target_paths:
+                continue
             if pth not in path_to_class:
                 path_to_class[pth] = oc_display
+                remaining.discard(pth)
 
     for tag in OBJECT_CLASS_TAGS:
+        if target_paths is not None and not remaining:
+            break
         first_url = f"{base}/system:page-tags/tag/{tag}"
         try:
             first_html = fetch_html(session, first_url, retries=4)
@@ -445,6 +458,8 @@ def crawl_object_class_tag_pages(session: requests.Session, cfg: BranchConfig) -
                     print(f"WARN: OC tag page {tag} p/{page}: {ex}", file=sys.stderr)
                     break
             ingest_tag_page_html(html, oc_display)
+            if target_paths is not None and not remaining:
+                break
     return path_to_class
 
 
@@ -476,6 +491,75 @@ def load_jp_tag_articles(output_dir: str) -> dict[str, list[str]]:
         tags = [str(x).strip() for x in v if isinstance(x, str) and str(x).strip()]
         if tags:
             out[k.strip().lower()] = tags
+    return out
+
+
+def object_class_from_tags(tags: list[str]) -> str | None:
+    """`jp_tag.json` のタグ配列から現行優先順で OC 表示名を推定する。"""
+    tag_set = {str(t).strip().lower() for t in tags if isinstance(t, str) and str(t).strip()}
+    for tag in OBJECT_CLASS_TAGS:
+        if tag in tag_set:
+            return OC_TAG_TO_DISPLAY.get(tag, tag.replace("-", " ").title())
+    return None
+
+
+def object_class_map_from_jp_tag_articles(
+    paths: set[str], tag_articles: dict[str, list[str]]
+) -> tuple[dict[str, str], int]:
+    """対象パスに対し、`jp_tag.json` から OC を復元する。戻り値2つ目はタグ行が存在した件数。"""
+    out: dict[str, str] = {}
+    tagged = 0
+    for path in paths:
+        key = path.lstrip("/").lower()
+        tags = tag_articles.get(key)
+        if tags is None:
+            continue
+        tagged += 1
+        c = object_class_from_tags(tags)
+        if c:
+            out[path] = c
+    return out, tagged
+
+
+def paths_missing_from_jp_tag(paths: set[str], tag_articles: dict[str, list[str]]) -> set[str]:
+    """`jp_tag.json` にタグ行が無い対象パスだけを返す。"""
+    return {p for p in paths if p.lstrip("/").lower() not in tag_articles}
+
+
+def apply_object_classes_to_article_rows(rows: dict[str, ArticleRow], path_to_class: dict[str, str]) -> None:
+    for p, row in rows.items():
+        if not row.c and p in path_to_class:
+            row.c = path_to_class[p]
+
+
+def load_existing_manifest_object_classes(path: str) -> dict[str, str]:
+    """既存 manifest の metadata.c をゼロリクエスト fallback として読む。"""
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return {}
+    md = data.get("metadata")
+    if not isinstance(md, dict):
+        return {}
+    out: dict[str, str] = {}
+    for k, v in md.items():
+        if not isinstance(k, str) or not isinstance(v, dict):
+            continue
+        c = v.get("c")
+        if isinstance(c, str) and c.strip():
+            out[k.strip().lower()] = c.strip()
+    return out
+
+
+def object_class_map_from_existing_manifest(
+    paths: set[str], existing_by_slug: dict[str, str]
+) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for path in paths:
+        c = existing_by_slug.get(path.lstrip("/").lower())
+        if c:
+            out[path] = c
     return out
 
 
@@ -1760,6 +1844,13 @@ class JapaneseBranchHarvester:
             f"INFO: manifest_canons.json will be: {os.path.join(out_abs, 'manifest_canons.json')}",
             file=sys.stderr,
         )
+        man_jp = os.path.join(cfg.output_dir, "manifest_scp-jp.json")
+        man_main = os.path.join(cfg.output_dir, "manifest_scp-main.json")
+        man_int = os.path.join(cfg.output_dir, "manifest_scp-int.json")
+        man_tales = os.path.join(cfg.output_dir, "manifest_tales.json")
+        man_gois = os.path.join(cfg.output_dir, "manifest_gois.json")
+        man_canons = os.path.join(cfg.output_dir, "manifest_canons.json")
+        man_jokes = os.path.join(cfg.output_dir, "manifest_jokes.json")
 
         print("INFO: base layer — JP series", file=sys.stderr)
         jp_rows = scrape_series_jp(self.session, cfg)
@@ -1771,16 +1862,24 @@ class JapaneseBranchHarvester:
         jp_paths = set(jp_rows.keys())
         main_paths = set(main_rows.keys())
 
-        print("INFO: attribute layer — object class tags (single crawl)", file=sys.stderr)
-        all_oc = crawl_object_class_tag_pages(self.session, cfg)
-        oc_jp = filter_object_class_map(all_oc, jp_paths)
-        oc_main = filter_object_class_map(all_oc, main_paths)
-        for p, row in jp_rows.items():
-            if not row.c and p in oc_jp:
-                row.c = oc_jp[p]
-        for p, row in main_rows.items():
-            if not row.c and p in oc_main:
-                row.c = oc_main[p]
+        print("INFO: attribute layer — manifest raw tags from jp_tag.json", file=sys.stderr)
+        jp_tag_articles = load_jp_tag_articles(cfg.output_dir)
+        attach_tags_from_jp_tag_map(jp_rows, jp_tag_articles)
+        attach_tags_from_jp_tag_map(main_rows, jp_tag_articles)
+
+        print("INFO: attribute layer — object class from jp_tag.json", file=sys.stderr)
+        oc_jp, tagged_jp = object_class_map_from_jp_tag_articles(jp_paths, jp_tag_articles)
+        oc_main, tagged_main = object_class_map_from_jp_tag_articles(main_paths, jp_tag_articles)
+        apply_object_classes_to_article_rows(jp_rows, oc_jp)
+        apply_object_classes_to_article_rows(main_rows, oc_main)
+        existing_oc_jp = object_class_map_from_existing_manifest(
+            jp_paths, load_existing_manifest_object_classes(man_jp)
+        )
+        existing_oc_main = object_class_map_from_existing_manifest(
+            main_paths, load_existing_manifest_object_classes(man_main)
+        )
+        apply_object_classes_to_article_rows(jp_rows, existing_oc_jp)
+        apply_object_classes_to_article_rows(main_rows, existing_oc_main)
 
         print("INFO: intl lists (hub crawl)", file=sys.stderr)
         int_entries = build_int_rows_from_wikidot(self.session, cfg)
@@ -1791,8 +1890,11 @@ class JapaneseBranchHarvester:
                 pth = urlparse(raw_u.strip()).path or ""
                 if pth:
                     int_paths.add(pth)
-        print("INFO: attribute layer — intl object class (from shared page-tags crawl)", file=sys.stderr)
-        oc_int = filter_object_class_map(all_oc, int_paths)
+        print("INFO: attribute layer — intl object class from jp_tag.json", file=sys.stderr)
+        oc_int, tagged_int = object_class_map_from_jp_tag_articles(int_paths, jp_tag_articles)
+        existing_oc_int = object_class_map_from_existing_manifest(
+            int_paths, load_existing_manifest_object_classes(man_int)
+        )
         # Entries without metadata["c"] here rely on oc_int hitting `pth`; expand tag-page crawl or light `g` if OC is missing in app.
         md_int: dict[str, Any] = {}
         for ent in int_entries:
@@ -1803,7 +1905,7 @@ class JapaneseBranchHarvester:
             raw_u = ent.get("u")
             if isinstance(raw_u, str) and raw_u.strip():
                 pth = urlparse(raw_u.strip()).path or ""
-            c_val = oc_int.get(pth) if pth else None
+            c_val = (oc_int.get(pth) or existing_oc_int.get(pth)) if pth else None
             if c_val and str(c_val).strip():
                 md_int[ik.strip()] = {"c": str(c_val).strip()}
 
@@ -1864,26 +1966,61 @@ class JapaneseBranchHarvester:
 
         print("INFO: jokes — joke-scps + joke-scps-jp (li-based titles like series)", file=sys.stderr)
         joke_rows = scrape_joke_article_rows(self.session, cfg)
-        print("INFO: attribute layer — joke object class (from shared page-tags crawl)", file=sys.stderr)
-        joke_paths = set(joke_rows.keys())
-        oc_joke = filter_object_class_map(all_oc, joke_paths)
-        for p, row in joke_rows.items():
-            if not row.c and p in oc_joke:
-                row.c = oc_joke[p]
-
-        print("INFO: attribute layer — manifest raw tags from jp_tag.json", file=sys.stderr)
-        jp_tag_articles = load_jp_tag_articles(cfg.output_dir)
-        attach_tags_from_jp_tag_map(jp_rows, jp_tag_articles)
-        attach_tags_from_jp_tag_map(main_rows, jp_tag_articles)
         attach_tags_from_jp_tag_map(joke_rows, jp_tag_articles)
+        print("INFO: attribute layer — joke object class from jp_tag.json", file=sys.stderr)
+        joke_paths = set(joke_rows.keys())
+        oc_joke, tagged_joke = object_class_map_from_jp_tag_articles(joke_paths, jp_tag_articles)
+        apply_object_classes_to_article_rows(joke_rows, oc_joke)
+        existing_oc_joke = object_class_map_from_existing_manifest(
+            joke_paths, load_existing_manifest_object_classes(man_jokes)
+        )
+        apply_object_classes_to_article_rows(joke_rows, existing_oc_joke)
 
-        man_jp = os.path.join(cfg.output_dir, "manifest_scp-jp.json")
-        man_main = os.path.join(cfg.output_dir, "manifest_scp-main.json")
-        man_int = os.path.join(cfg.output_dir, "manifest_scp-int.json")
-        man_tales = os.path.join(cfg.output_dir, "manifest_tales.json")
-        man_gois = os.path.join(cfg.output_dir, "manifest_gois.json")
-        man_canons = os.path.join(cfg.output_dir, "manifest_canons.json")
-        man_jokes = os.path.join(cfg.output_dir, "manifest_jokes.json")
+        missing_from_jp_tag = (
+            paths_missing_from_jp_tag(jp_paths, jp_tag_articles)
+            | paths_missing_from_jp_tag(main_paths, jp_tag_articles)
+            | paths_missing_from_jp_tag(int_paths, jp_tag_articles)
+            | paths_missing_from_jp_tag(joke_paths, jp_tag_articles)
+        )
+        fallback_targets = missing_from_jp_tag if not jp_tag_articles else set()
+        total_targets = len(jp_paths) + len(main_paths) + len(int_paths) + len(joke_paths)
+        total_tagged = tagged_jp + tagged_main + tagged_int + tagged_joke
+        total_from_jp_tag = len(oc_jp) + len(oc_main) + len(oc_int) + len(oc_joke)
+        total_from_existing = len(existing_oc_jp) + len(existing_oc_main) + len(existing_oc_int) + len(existing_oc_joke)
+        print(
+            "INFO: object class jp_tag summary — "
+            f"targets={total_targets} tagged={total_tagged} "
+            f"resolved={total_from_jp_tag} existing_manifest_resolved={total_from_existing} "
+            f"missing_from_jp_tag={len(missing_from_jp_tag)} fallback_candidates={len(fallback_targets)}",
+            file=sys.stderr,
+        )
+        if fallback_targets:
+            print(
+                "INFO: object class fallback — crawling page-tags only for "
+                f"{len(fallback_targets)} paths missing from jp_tag.json",
+                file=sys.stderr,
+            )
+            fallback_oc = crawl_object_class_tag_pages(self.session, cfg, fallback_targets)
+            apply_object_classes_to_article_rows(jp_rows, filter_object_class_map(fallback_oc, jp_paths))
+            apply_object_classes_to_article_rows(main_rows, filter_object_class_map(fallback_oc, main_paths))
+            apply_object_classes_to_article_rows(joke_rows, filter_object_class_map(fallback_oc, joke_paths))
+            for ent in int_entries:
+                ik = ent.get("i")
+                if not isinstance(ik, str) or not ik.strip():
+                    continue
+                raw_u = ent.get("u")
+                pth = urlparse(raw_u.strip()).path if isinstance(raw_u, str) and raw_u.strip() else ""
+                if pth in fallback_oc:
+                    chunk = md_int.setdefault(ik.strip(), {})
+                    if isinstance(chunk, dict) and not chunk.get("c"):
+                        chunk["c"] = fallback_oc[pth]
+            print(
+                "INFO: object class fallback summary — "
+                f"resolved={len(fallback_oc)} unresolved={len(fallback_targets) - len(fallback_oc)}",
+                file=sys.stderr,
+            )
+        else:
+            print("INFO: object class fallback — skipped (jp_tag.json loaded)", file=sys.stderr)
 
         ej, mj = trifold_rows_to_manifest_parts(jp_rows)
         write_manifest(man_jp, ej, mj)

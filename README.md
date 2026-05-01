@@ -17,6 +17,12 @@
 | `.github/workflows/update.yml` | 日次ハーベスト + push |
 | `.github/workflows/jp-tag-map.yml` | 週次 `jp_tag.json` + push |
 
+## GitHub Actions の運用順序
+
+- 通常日は **Update list feeds** のみで十分です。`harvester.py` は既存 `list/jp/jp_tag.json` をタグ・オブジェクトクラス推定の正本として使い、OC専用の page-tags 巡回は通常スキップします。
+- タグ鮮度を上げたい日は **JP tag map** → **Update list feeds** の順に手動実行します。先に `jp_tag.json` を更新してから manifest に `metadata.g` / `metadata.c` を反映します。
+- `jp_tag.json` が読めない場合のみ、`harvester.py` はOC page-tagsへの fallback crawlを行います。
+
 ## ローカル実行
 
 ```bash

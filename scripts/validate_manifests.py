@@ -8,6 +8,36 @@ import os
 import sys
 from typing import Any
 
+OBJECT_CLASS_TAGS = (
+    "safe",
+    "euclid",
+    "keter",
+    "thaumiel",
+    "neutralized",
+    "explained",
+    "apollyon",
+    "esoteric-class",
+)
+
+OC_TAG_TO_DISPLAY = {
+    "safe": "Safe",
+    "euclid": "Euclid",
+    "keter": "Keter",
+    "thaumiel": "Thaumiel",
+    "neutralized": "Neutralized",
+    "explained": "Explained",
+    "apollyon": "Apollyon",
+    "esoteric-class": "Esoteric",
+}
+
+
+def object_class_from_tags(tags: list[str]) -> str | None:
+    tag_set = {t.strip().lower() for t in tags if isinstance(t, str) and t.strip()}
+    for tag in OBJECT_CLASS_TAGS:
+        if tag in tag_set:
+            return OC_TAG_TO_DISPLAY.get(tag, tag.replace("-", " ").title())
+    return None
+
 
 def load_jp_tag_articles(dir_path: str) -> tuple[dict[str, list[str]], list[str]]:
     path = os.path.join(dir_path, "jp_tag.json")
@@ -82,6 +112,12 @@ def check_file(path: str, jp_tag_articles: dict[str, list[str]]) -> list[str]:
         expected = jp_tag_articles.get(k.lower())
         if expected is not None and got != expected:
             errs.append(f"{path}: metadata[{k!r}].g does not match jp_tag.json articles[{k.lower()!r}]")
+        inferred_c = object_class_from_tags(got)
+        c_val = v.get("c")
+        if inferred_c and isinstance(c_val, str) and c_val.strip() and c_val.strip() != inferred_c:
+            errs.append(
+                f"{path}: metadata[{k!r}].c {c_val!r} conflicts with OC inferred from metadata.g {inferred_c!r}"
+            )
     return errs
 
 
