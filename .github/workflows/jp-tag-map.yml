@@ -1,0 +1,91 @@
+# タグ逆引き list/jp/jp_tag.json を生成し、同一リポ main へ push する。
+# スクリプト・依存関係は本リポジトリの scripts/ / requirements.txt が正。
+name: JP tag map
+
+on:
+  workflow_dispatch:
+    inputs:
+      jp_tag_hub_page_min:
+        description: "tag/jp/p/* の先頭ページ（通常 1）"
+        type: string
+        default: "1"
+      jp_tag_hub_page_max:
+        description: "tag/jp/p/* の末尾ページ（通常 59）"
+        type: string
+        default: "59"
+      max_tags:
+        description: "処理するタグ数の上限（0 または空＝すべて・非常に時間がかかります）"
+        type: string
+        default: "0"
+      sleep_sec:
+        description: "リクエスト間隔（秒）"
+        type: string
+        default: "0.35"
+  schedule:
+    - cron: "0 0 * * 0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-scp-docs-list-jp-write
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          set -euxo pipefail
+          pip install -r requirements.txt
+
+      - name: Build JSON
+        run: |
+          set -euxo pipefail
+          PAGE_MIN='${{ github.event.inputs.jp_tag_hub_page_min }}'
+          PAGE_MAX='${{ github.event.inputs.jp_tag_hub_page_max }}'
+          MAX_TAGS='${{ github.event.inputs.max_tags }}'
+          SLEEP='${{ github.event.inputs.sleep_sec }}'
+          : "${PAGE_MIN:=1}"
+          : "${PAGE_MAX:=59}"
+          : "${MAX_TAGS:=0}"
+          : "${SLEEP:=0.35}"
+          OUT="list/jp/jp_tag.json"
+          mkdir -p "$(dirname "$OUT")"
+          MAX_TAGS_FLAG=()
+          if [ -n "${MAX_TAGS}" ] && [ "${MAX_TAGS}" != "0" ]; then
+            MAX_TAGS_FLAG=(--max-tags "${MAX_TAGS}")
+          fi
+          python3 scripts/build_jp_wikidot_tag_article_map.py \
+            --jp-tag-hub-page-min "${PAGE_MIN}" \
+            --jp-tag-hub-page-max "${PAGE_MAX}" \
+            "${MAX_TAGS_FLAG[@]}" \
+            --sleep-sec "${SLEEP}" \
+            -o "$OUT"
+          ls -la "$OUT"
+          python3 -c "import json; d=json.load(open('$OUT')); print('tags', len(d.get('tags',[])), 'articles', len(d.get('articles',{})))"
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add list/jp/jp_tag.json
+          if git diff --staged --quiet; then
+            echo "No changes — skipping commit."
+            exit 0
+          fi
+          git commit -m "chore(data): refresh list/jp/jp_tag.json [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin main
