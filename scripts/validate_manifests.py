@@ -9,7 +9,38 @@ import sys
 from typing import Any
 
 
-def check_file(path: str) -> list[str]:
+def load_jp_tag_articles(dir_path: str) -> tuple[dict[str, list[str]], list[str]]:
+    path = os.path.join(dir_path, "jp_tag.json")
+    if not os.path.isfile(path):
+        return {}, []
+    errs: list[str] = []
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as ex:
+        return {}, [f"{path}: failed to load jp_tag.json: {ex}"]
+    if not isinstance(data, dict):
+        return {}, [f"{path}: root must be object"]
+    articles = data.get("articles")
+    if not isinstance(articles, dict):
+        return {}, [f"{path}: missing articles object"]
+    out: dict[str, list[str]] = {}
+    for k, v in articles.items():
+        if not isinstance(k, str) or not k.strip():
+            errs.append(f"{path}: articles contains non-empty string keys only")
+            continue
+        if not isinstance(v, list) or not v:
+            errs.append(f"{path}: articles[{k!r}] must be a non-empty array")
+            continue
+        tags = [x.strip() for x in v if isinstance(x, str) and x.strip()]
+        if len(tags) != len(v):
+            errs.append(f"{path}: articles[{k!r}] contains non-string or empty tag")
+            continue
+        out[k.strip().lower()] = tags
+    return out, errs
+
+
+def check_file(path: str, jp_tag_articles: dict[str, list[str]]) -> list[str]:
     errs: list[str] = []
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
@@ -27,12 +58,30 @@ def check_file(path: str) -> list[str]:
             continue
         slug = e.get("i")
         if isinstance(slug, str) and slug.strip():
-            ids.add(slug.strip())
+            key = slug.strip()
+            if key in ids:
+                errs.append(f"{path}: duplicate entries[].i {key!r}")
+            ids.add(key)
     if not isinstance(metadata, dict):
         return errs
-    for k in metadata:
+    for k, v in metadata.items():
         if k not in ids:
             errs.append(f"{path}: metadata orphan key {k!r}")
+        if not isinstance(v, dict):
+            continue
+        g = v.get("g")
+        if g is None:
+            continue
+        if not isinstance(g, list):
+            errs.append(f"{path}: metadata[{k!r}].g must be an array")
+            continue
+        got = [x.strip() for x in g if isinstance(x, str) and x.strip()]
+        if len(got) != len(g):
+            errs.append(f"{path}: metadata[{k!r}].g contains non-string or empty tag")
+            continue
+        expected = jp_tag_articles.get(k.lower())
+        if expected is not None and got != expected:
+            errs.append(f"{path}: metadata[{k!r}].g does not match jp_tag.json articles[{k.lower()!r}]")
     return errs
 
 
@@ -53,10 +102,14 @@ def main() -> int:
     if not names:
         print(f"WARN: no manifest_*.json in {d}", file=sys.stderr)
         return 0
+    jp_tag_articles, jp_tag_errs = load_jp_tag_articles(d)
     failed = False
+    for err in jp_tag_errs:
+        print(err, file=sys.stderr)
+        failed = True
     for n in names:
         path = os.path.join(d, n)
-        for err in check_file(path):
+        for err in check_file(path, jp_tag_articles):
             print(err, file=sys.stderr)
             failed = True
     if failed:

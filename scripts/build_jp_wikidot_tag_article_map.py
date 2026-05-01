@@ -40,19 +40,14 @@ import time
 import urllib.parse
 import urllib.request
 from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+from wikidot_utils import wikidot_tag_list_total_pages
 
 BASE = "http://scp-jp.wikidot.com"
-
-
-def wikidot_tag_list_total_pages(html: str) -> int:
-    """`system:page-tags` 一覧のページャから総ページ数。無ければ 1。"""
-    m = re.search(r'class="pager-no"[^>]*>\s*ページ\s+\d+\s*/\s*(\d+)\s*<', html, re.I)
-    if m:
-        return max(1, int(m.group(1)))
-    m = re.search(r'class="pager-no"[^>]*>\s*page\s+\d+\s+of\s+(\d+)\s*<', html, re.I)
-    if m:
-        return max(1, int(m.group(1)))
-    return 1
+JP_TAG_SCHEMA_VERSION = 1
 
 
 def fetch(url: str) -> str:
@@ -104,25 +99,51 @@ def list_article_paths_from_tag_page(html: str) -> list[str]:
     return paths
 
 
-def paginated_tag_urls(tag_slug: str, *, max_pages: int) -> list[str]:
-    """タグ一覧の URL をページ 1 … N まで（N はページャから取得）。"""
+def iter_paginated_tag_pages(tag_slug: str, *, max_pages: int) -> list[tuple[str, str]]:
+    """タグ一覧の URL + HTML をページ 1 … N まで返す。1ページ目は再取得しない。"""
     enc = urllib.parse.quote(tag_slug, safe="")
     first = f"{BASE}/system:page-tags/tag/{enc}"
     try:
-        html = fetch(first)
-    except Exception:
-        return [first]
-    total = wikidot_tag_list_total_pages(html)
+        first_html = fetch(first)
+    except Exception as e:
+        print(f"warn: tag {tag_slug!r} page 1: {e}", file=sys.stderr)
+        return []
+    total = wikidot_tag_list_total_pages(first_html)
     if total > max_pages:
         print(
             f"warn: tag {tag_slug!r}: pager reports {total} pages; capping at {max_pages}",
             file=sys.stderr,
         )
         total = max_pages
-    out = [first]
+    out = [(first, first_html)]
     for page in range(2, total + 1):
-        out.append(f"{BASE}/system:page-tags/tag/{enc}/p/{page}")
+        url = f"{BASE}/system:page-tags/tag/{enc}/p/{page}"
+        try:
+            out.append((url, fetch(url)))
+        except Exception as e:
+            print(f"warn: tag {tag_slug!r} page {page}: {e}", file=sys.stderr)
+            break
     return out
+
+
+def next_list_version_and_generated_at(output_path: str, data: dict[str, Any]) -> tuple[int, str]:
+    """Keep listVersion stable when source/tag/articles payload is unchanged."""
+    now = datetime.now(timezone.utc)
+    gen = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    if not output_path:
+        return int(now.timestamp()), gen
+    p = Path(output_path)
+    if not p.is_file():
+        return int(now.timestamp()), gen
+    try:
+        old = json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        old = {}
+    old_lv = int(old.get("listVersion") or 0)
+    comparable_keys = ("source", "tagPageRange", "tags", "articles")
+    if all(old.get(k) == data.get(k) for k in comparable_keys):
+        return old_lv, gen
+    return old_lv + 1, gen
 
 
 def harvest(args: argparse.Namespace) -> dict:
@@ -144,9 +165,8 @@ def harvest(args: argparse.Namespace) -> dict:
 
     for i, tag in enumerate(tag_list):
         try:
-            pages = paginated_tag_urls(tag, max_pages=args.max_tag_list_pages)
-            for page_url in pages:
-                html = fetch(page_url)
+            pages = iter_paginated_tag_pages(tag, max_pages=args.max_tag_list_pages)
+            for _page_url, html in pages:
                 for path in list_article_paths_from_tag_page(html):
                     slug = path.strip("/").split("/")[-1]
                     if not slug:
@@ -158,11 +178,18 @@ def harvest(args: argparse.Namespace) -> dict:
         if (i + 1) % 50 == 0:
             print(f"... processed {i + 1}/{len(tag_list)} tags", file=sys.stderr)
 
-    return {
+    data: dict[str, Any] = {
         "source": "scp-jp.wikidot.com/system:page-tags",
         "tagPageRange": [args.jp_tag_hub_page_min, args.jp_tag_hub_page_max],
         "tags": tag_list,
         "articles": {k: sorted(v) for k, v in sorted(article_tags.items())},
+    }
+    lv, gen = next_list_version_and_generated_at(args.output, data)
+    return {
+        "listVersion": lv,
+        "schemaVersion": JP_TAG_SCHEMA_VERSION,
+        "generatedAt": gen,
+        **data,
     }
 
 

@@ -38,6 +38,8 @@ import requests
 from requests.exceptions import HTTPError
 from bs4 import BeautifulSoup
 
+from wikidot_utils import wikidot_tag_list_total_pages
+
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 MANIFEST_SCHEMA_VERSION = 2
@@ -398,18 +400,7 @@ OC_TAG_TO_DISPLAY = {
 MAX_OBJECT_CLASS_TAG_LIST_PAGES = 256
 
 
-def wikidot_tag_list_total_pages(html: str) -> int:
-    """`system:page-tags` の pager から総ページ数（日本支部: ページ 1 / N、本家: page 1 of N）。無ければ 1。"""
-    m = re.search(r'class="pager-no"[^>]*>\s*ページ\s+\d+\s*/\s*(\d+)\s*<', html, re.I)
-    if m:
-        return max(1, int(m.group(1)))
-    m = re.search(r'class="pager-no"[^>]*>\s*page\s+\d+\s+of\s+(\d+)\s*<', html, re.I)
-    if m:
-        return max(1, int(m.group(1)))
-    return 1
-
-
-def map_object_class_from_tag_pages(session: requests.Session, cfg: BranchConfig, paths: set[str]) -> dict[str, str]:
+def crawl_object_class_tag_pages(session: requests.Session, cfg: BranchConfig) -> dict[str, str]:
     """属性層: system:page-tags/tag/<class> に掲載された記事パス → OC（先に列挙したタグを優先）。"""
     base = cfg.site_host.rstrip("/")
     path_to_class: dict[str, str] = {}
@@ -423,7 +414,7 @@ def map_object_class_from_tag_pages(session: requests.Session, cfg: BranchConfig
             if pu.netloc and pu.netloc != base_netloc:
                 continue
             pth = pu.path or ""
-            if pth not in paths:
+            if not pth or pth.startswith("/system:"):
                 continue
             if pth not in path_to_class:
                 path_to_class[pth] = oc_display
@@ -455,6 +446,65 @@ def map_object_class_from_tag_pages(session: requests.Session, cfg: BranchConfig
                     break
             ingest_tag_page_html(html, oc_display)
     return path_to_class
+
+
+def filter_object_class_map(path_to_class: dict[str, str], paths: set[str]) -> dict[str, str]:
+    """事前に1回だけクロールした OC マップを対象パス集合へ絞る。"""
+    return {p: c for p, c in path_to_class.items() if p in paths}
+
+
+def load_jp_tag_articles(output_dir: str) -> dict[str, list[str]]:
+    """既存 `jp_tag.json` から slug -> raw tags を読む。無ければ空。"""
+    path = os.path.join(output_dir, "jp_tag.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print(f"WARN: jp_tag.json not found; manifest g enrichment skipped: {path}", file=sys.stderr)
+        return {}
+    except Exception as ex:
+        print(f"WARN: failed to load jp_tag.json; manifest g enrichment skipped: {ex}", file=sys.stderr)
+        return {}
+    articles = data.get("articles")
+    if not isinstance(articles, dict):
+        print("WARN: jp_tag.json has no articles object; manifest g enrichment skipped", file=sys.stderr)
+        return {}
+    out: dict[str, list[str]] = {}
+    for k, v in articles.items():
+        if not isinstance(k, str) or not isinstance(v, list):
+            continue
+        tags = [str(x).strip() for x in v if isinstance(x, str) and str(x).strip()]
+        if tags:
+            out[k.strip().lower()] = tags
+    return out
+
+
+def attach_tags_from_jp_tag_map(rows: dict[str, ArticleRow], tag_articles: dict[str, list[str]]) -> None:
+    """ArticleRow.g に `jp_tag.json` の raw tags を付与する（既存順・class marker を保持）。"""
+    for row in rows.values():
+        tags = tag_articles.get(row.i.lower())
+        if tags:
+            row.g = list(tags)
+
+
+def enrich_metadata_tags_from_jp_tag_map(
+    entries: list[dict[str, Any]],
+    metadata: dict[str, Any],
+    tag_articles: dict[str, list[str]],
+) -> None:
+    """light entries + metadata に `metadata[i].g` をスパース付与する。"""
+    for ent in entries:
+        if not isinstance(ent, dict):
+            continue
+        ik = ent.get("i")
+        if not isinstance(ik, str) or not ik.strip():
+            continue
+        tags = tag_articles.get(ik.strip().lower())
+        if not tags:
+            continue
+        chunk = metadata.setdefault(ik.strip(), {})
+        if isinstance(chunk, dict):
+            chunk["g"] = list(tags)
 
 
 def is_english_main_series_list(path: str) -> bool:
@@ -1721,9 +1771,10 @@ class JapaneseBranchHarvester:
         jp_paths = set(jp_rows.keys())
         main_paths = set(main_rows.keys())
 
-        print("INFO: attribute layer — object class tags", file=sys.stderr)
-        oc_jp = map_object_class_from_tag_pages(self.session, cfg, jp_paths)
-        oc_main = map_object_class_from_tag_pages(self.session, cfg, main_paths)
+        print("INFO: attribute layer — object class tags (single crawl)", file=sys.stderr)
+        all_oc = crawl_object_class_tag_pages(self.session, cfg)
+        oc_jp = filter_object_class_map(all_oc, jp_paths)
+        oc_main = filter_object_class_map(all_oc, main_paths)
         for p, row in jp_rows.items():
             if not row.c and p in oc_jp:
                 row.c = oc_jp[p]
@@ -1740,8 +1791,8 @@ class JapaneseBranchHarvester:
                 pth = urlparse(raw_u.strip()).path or ""
                 if pth:
                     int_paths.add(pth)
-        print("INFO: attribute layer — intl object class (page-tags)", file=sys.stderr)
-        oc_int = map_object_class_from_tag_pages(self.session, cfg, int_paths)
+        print("INFO: attribute layer — intl object class (from shared page-tags crawl)", file=sys.stderr)
+        oc_int = filter_object_class_map(all_oc, int_paths)
         # Entries without metadata["c"] here rely on oc_int hitting `pth`; expand tag-page crawl or light `g` if OC is missing in app.
         md_int: dict[str, Any] = {}
         for ent in int_entries:
@@ -1813,12 +1864,18 @@ class JapaneseBranchHarvester:
 
         print("INFO: jokes — joke-scps + joke-scps-jp (li-based titles like series)", file=sys.stderr)
         joke_rows = scrape_joke_article_rows(self.session, cfg)
-        print("INFO: attribute layer — joke object class (page-tags)", file=sys.stderr)
+        print("INFO: attribute layer — joke object class (from shared page-tags crawl)", file=sys.stderr)
         joke_paths = set(joke_rows.keys())
-        oc_joke = map_object_class_from_tag_pages(self.session, cfg, joke_paths)
+        oc_joke = filter_object_class_map(all_oc, joke_paths)
         for p, row in joke_rows.items():
             if not row.c and p in oc_joke:
                 row.c = oc_joke[p]
+
+        print("INFO: attribute layer — manifest raw tags from jp_tag.json", file=sys.stderr)
+        jp_tag_articles = load_jp_tag_articles(cfg.output_dir)
+        attach_tags_from_jp_tag_map(jp_rows, jp_tag_articles)
+        attach_tags_from_jp_tag_map(main_rows, jp_tag_articles)
+        attach_tags_from_jp_tag_map(joke_rows, jp_tag_articles)
 
         man_jp = os.path.join(cfg.output_dir, "manifest_scp-jp.json")
         man_main = os.path.join(cfg.output_dir, "manifest_scp-main.json")
@@ -1832,6 +1889,7 @@ class JapaneseBranchHarvester:
         write_manifest(man_jp, ej, mj)
         em, mm = trifold_rows_to_manifest_parts(main_rows)
         write_manifest(man_main, em, mm)
+        enrich_metadata_tags_from_jp_tag_map(int_entries, md_int, jp_tag_articles)
         write_manifest(man_int, int_entries, md_int)
 
         tl, tm = tales_raw_to_manifest_parts(tale_entries)
