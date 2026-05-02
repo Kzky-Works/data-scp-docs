@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: data-scp-docs-list-jp-write
@@ -52,3 +53,16 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git push origin main
+
+      - name: Open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          TITLE="CI failed: ${GITHUB_WORKFLOW} (run ${GITHUB_RUN_ID})"
+          BODY=$(printf '%s\n\n- Workflow: %s\n- Run: %s\n- Trigger: %s\n- Ref: %s\n\nSee logs for details.' \
+            "Workflow **${GITHUB_WORKFLOW}** failed." \
+            "${GITHUB_WORKFLOW}" "${RUN_URL}" "${GITHUB_EVENT_NAME}" "${GITHUB_REF}")
+          gh issue create --title "${TITLE}" --body "${BODY}"

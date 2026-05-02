@@ -537,7 +537,11 @@ def load_existing_manifest_object_classes(path: str) -> dict[str, str]:
     try:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-    except Exception:
+    except FileNotFoundError:
+        return {}
+    except (OSError, ValueError) as ex:
+        # Corrupted manifest: log loudly so CI captures it instead of silently dropping the OC fallback.
+        print(f"WARN: load_existing_manifest_object_classes: failed to read {path}: {ex}", file=sys.stderr)
         return {}
     md = data.get("metadata")
     if not isinstance(md, dict):
@@ -717,7 +721,9 @@ def next_list_version_and_generated_at(
         try:
             with open(path, encoding="utf-8") as f:
                 old = json.load(f)
-        except Exception:
+        except (OSError, ValueError) as ex:
+            # Corrupted prior manifest: emit a warning and treat as empty so the diff path still bumps listVersion.
+            print(f"WARN: next_list_version_and_generated_at: failed to read {path}: {ex}", file=sys.stderr)
             old = {}
         old_lv = int(old.get("listVersion") or 0)
         if old.get("entries") == entries and (old.get("metadata") or {}) == md_norm:
@@ -745,7 +751,8 @@ def next_canon_list_version_and_generated_at(
         try:
             with open(path, encoding="utf-8") as f:
                 old = json.load(f)
-        except Exception:
+        except (OSError, ValueError) as ex:
+            print(f"WARN: next_canon_list_version_and_generated_at: failed to read {path}: {ex}", file=sys.stderr)
             old = {}
         old_lv = int(old.get("listVersion") or 0)
         old_cr = old.get("canonRegions") or {}
@@ -1579,7 +1586,9 @@ def _next_goi_v3_list_version(
     try:
         with open(path, encoding="utf-8") as f:
             old = json.load(f)
-    except Exception:
+    except (OSError, ValueError) as ex:
+        # Corrupted prior GoI manifest: warn loudly and bump version so consumers refetch.
+        print(f"WARN: _next_goi_v3_list_version: failed to read {path}: {ex}", file=sys.stderr)
         return int(datetime.now(timezone.utc).timestamp())
     if int(old.get("schemaVersion") or 0) < GOI_MANIFEST_SCHEMA_VERSION:
         return int(old.get("listVersion") or 0) + 1

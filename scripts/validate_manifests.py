@@ -121,6 +121,22 @@ def check_file(path: str, jp_tag_articles: dict[str, list[str]]) -> list[str]:
     return errs
 
 
+RETIRED_FILES = (
+    # Retired in favor of the trifold manifest split (`list/jp/manifest_scp-*.json`).
+    # Resurfacing these would silently re-expose the legacy schema to consumers.
+    ("docs", "scp_list.json"),
+)
+
+
+def check_retired_files(repo_root: str) -> list[str]:
+    errs: list[str] = []
+    for parts in RETIRED_FILES:
+        path = os.path.join(repo_root, *parts)
+        if os.path.isfile(path):
+            errs.append(f"{path}: retired file resurfaced — delete it (see APP_SPEC_HANDOVER §6.2)")
+    return errs
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description="Validate manifest_scp-*.json metadata keys")
     p.add_argument(
@@ -138,8 +154,12 @@ def main() -> int:
     if not names:
         print(f"WARN: no manifest_*.json in {d}", file=sys.stderr)
         return 0
-    jp_tag_articles, jp_tag_errs = load_jp_tag_articles(d)
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     failed = False
+    for err in check_retired_files(repo_root):
+        print(err, file=sys.stderr)
+        failed = True
+    jp_tag_articles, jp_tag_errs = load_jp_tag_articles(d)
     for err in jp_tag_errs:
         print(err, file=sys.stderr)
         failed = True
