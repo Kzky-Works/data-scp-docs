@@ -62,6 +62,7 @@ jobs:
           : "${MAX_TAGS:=0}"
           : "${SLEEP:=0.35}"
           OUT="list/jp/jp_tag.json"
+          OUT_COMPACT="list/jp/jp_tag_compact.json"
           mkdir -p "$(dirname "$OUT")"
           MAX_TAGS_FLAG=()
           if [ -n "${MAX_TAGS}" ] && [ "${MAX_TAGS}" != "0" ]; then
@@ -72,8 +73,9 @@ jobs:
             --jp-tag-hub-page-max "${PAGE_MAX}" \
             "${MAX_TAGS_FLAG[@]}" \
             --sleep-sec "${SLEEP}" \
-            -o "$OUT"
-          ls -la "$OUT"
+            -o "$OUT" \
+            --output-compact "$OUT_COMPACT"
+          ls -la "$OUT" "$OUT_COMPACT"
           python3 -c "import json; d=json.load(open('$OUT')); print('tags', len(d.get('tags',[])), 'articles', len(d.get('articles',{})))"
 
       - name: Commit and push if changed
@@ -81,7 +83,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add list/jp/jp_tag.json
+          git add list/jp/jp_tag.json list/jp/jp_tag_compact.json
           if git diff --staged --quiet; then
             echo "No changes — skipping commit."
             exit 0

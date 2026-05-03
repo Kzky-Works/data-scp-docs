@@ -1,10 +1,12 @@
-# Hybrid harvester: list/jp/*.json を毎日生成し、差分があれば main へ push。
-name: Update list feeds
+# 旧 cron は `daily.yml`（軽量）と `weekly.yml`（本文取得）に分離した。
+# このワークフローは「フル再走査（破損検出・整合性監査用）」として手動 / 月次のみ。
+name: Update list feeds (full)
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    # 月次フル再走査: 毎月 1 日 00:00 UTC
+    - cron: "0 0 1 * *"
 
 permissions:
   contents: write
@@ -32,10 +34,10 @@ jobs:
           set -euxo pipefail
           pip install -r requirements.txt
 
-      - name: Run harvester
+      - name: Run harvester (full)
         run: |
           set -euxo pipefail
-          python3 scripts/harvester.py
+          python3 scripts/harvester.py --mode full
           python3 scripts/validate_manifests.py
           ls -la list/jp/
 
@@ -49,7 +51,7 @@ jobs:
             echo "No changes — skipping commit."
             exit 0
           fi
-          git commit -m "chore(data): refresh list/jp feeds [skip ci]"
+          git commit -m "chore(data): refresh list/jp feeds (full) [skip ci]"
           git fetch origin main
           git rebase origin/main
           git push origin main

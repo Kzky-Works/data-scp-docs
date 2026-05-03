@@ -45,6 +45,9 @@ REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 MANIFEST_SCHEMA_VERSION = 2
 GOI_MANIFEST_SCHEMA_VERSION = 3
 
+# `--mode` の許容値。詳細は `main()` の引数ヘルプ参照。
+_HARVEST_MODE_CHOICES: tuple[str, ...] = ("daily", "weekly", "full")
+
 HTTP_HEADERS = {
     "User-Agent": "ScpDocsHarvester/1.0 (+https://github.com/Kzky-Works/data-scp-docs)",
     "Accept-Language": "ja,en;q=0.8",
@@ -1628,29 +1631,200 @@ def write_goi_manifest_v3(path: str, payload: dict[str, Any]) -> None:
     os.replace(tpath, path)
 
 
-def enrich_tale_entries_last_updated_in_place(
-    session: requests.Session, entries: list[dict[str, Any]]
-) -> None:
-    """各 Tale の本文 URL を1回ずつ取得し `#page-info` から `lu`（unix 秒）を付与。"""
-    url_cache: dict[str, int | None] = {}
-    for ent in entries:
-        u = (ent.get("u") or "").strip()
-        if not u:
+def load_existing_tales_metadata(path: str) -> tuple[dict[str, int], dict[str, str], dict[str, str]]:
+    """既存 `manifest_tales.json` から `i -> lu` / `i -> img` / `i -> desc` を読み出す。
+
+    daily / weekly モードで「前回値の引き継ぎ」と「差分検出（lu が変わった記事だけ本文を再 fetch）」に使う。
+    ファイルが無い／壊れているときは全部空の辞書。
+    """
+    lu_by_i: dict[str, int] = {}
+    img_by_i: dict[str, str] = {}
+    desc_by_i: dict[str, str] = {}
+    if not os.path.isfile(path):
+        return lu_by_i, img_by_i, desc_by_i
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except (OSError, ValueError):
+        return lu_by_i, img_by_i, desc_by_i
+    entries = payload.get("entries") if isinstance(payload, dict) else None
+    if isinstance(entries, list):
+        for ent in entries:
+            if not isinstance(ent, dict):
+                continue
+            ik = ent.get("i")
+            if not isinstance(ik, str) or not ik.strip():
+                continue
+            key = ik.strip()
+            lu = ent.get("lu")
+            if isinstance(lu, int) and lu > 0:
+                lu_by_i[key] = lu
+    metadata = payload.get("metadata") if isinstance(payload, dict) else None
+    if isinstance(metadata, dict):
+        for ik, chunk in metadata.items():
+            if not isinstance(ik, str) or not isinstance(chunk, dict):
+                continue
+            key = ik.strip()
+            if not key:
+                continue
+            img = chunk.get("img")
+            if isinstance(img, str) and img.strip():
+                img_by_i[key] = img.strip()
+            desc = chunk.get("desc")
+            if isinstance(desc, str) and desc.strip():
+                desc_by_i[key] = desc.strip()
+    return lu_by_i, img_by_i, desc_by_i
+
+
+def extract_first_content_image_url(soup: BeautifulSoup, base_url: str) -> str | None:
+    """`#page-content` 内の最初の `<img>` を絶対 URL で返す。サイドメニュー・ナビ画像は除外。"""
+    content = soup.select_one("#page-content")
+    if content is None:
+        return None
+    for img in content.find_all("img"):
+        # 親要素にナビ／メタ系のクラスが付いていれば除外
+        skip = False
+        node = img
+        for _ in range(6):
+            cls = node.get("class") or [] if hasattr(node, "get") else []
+            if any(c in {"nav", "footnote", "rate-points", "page-rate-widget-box"} for c in cls):
+                skip = True
+                break
+            parent = getattr(node, "parent", None)
+            if parent is None:
+                break
+            node = parent
+        if skip:
             continue
-        if u not in url_cache:
-            try:
-                html = fetch_html(session, u)
-                url_cache[u] = extract_page_info_unix(html)
-            except HTTPError as e:
-                st = e.response.status_code if e.response is not None else 0
-                print(f"WARN: tale page fetch failed ({st}): {u}", file=sys.stderr)
-                url_cache[u] = None
-            except Exception as ex:
-                print(f"WARN: tale page fetch failed: {u} ({ex})", file=sys.stderr)
-                url_cache[u] = None
-        ts = url_cache[u]
-        if ts is not None:
-            ent["lu"] = ts
+        src = img.get("src") or img.get("data-src")
+        if not isinstance(src, str) or not src.strip():
+            continue
+        s = src.strip()
+        if s.startswith("data:"):
+            continue
+        return urljoin(base_url, s)
+    return None
+
+
+_DESCRIPTION_HEADER_RE = re.compile(r"(説明|description)", re.I)
+_DESC_MAX_CHARS = 260
+
+
+def extract_description_excerpt(soup: BeautifulSoup) -> str | None:
+    """`#page-content` の「説明 / Description」セクション直後のテキスト先頭 260 字。
+
+    見出しが見つからないときは `#page-content` 直下の最初のまとまった段落を返す。
+    """
+    content = soup.select_one("#page-content")
+    if content is None:
+        return None
+
+    def collect_after(node, max_chars: int) -> str:
+        out: list[str] = []
+        cur = 0
+        sib = node.find_next_sibling()
+        while sib is not None and cur < max_chars:
+            if sib.name in {"h1", "h2", "h3"}:
+                break
+            text = sib.get_text(separator=" ", strip=True)
+            if text:
+                out.append(text)
+                cur += len(text)
+            sib = sib.find_next_sibling()
+        joined = " ".join(out).strip()
+        if not joined:
+            return ""
+        if len(joined) > max_chars:
+            joined = joined[:max_chars].rstrip() + "…"
+        return joined
+
+    for h in content.find_all(["h1", "h2", "h3"]):
+        title = h.get_text(separator=" ", strip=True)
+        if title and _DESCRIPTION_HEADER_RE.search(title):
+            t = collect_after(h, _DESC_MAX_CHARS)
+            if t:
+                return t
+
+    # フォールバック: 最初の `<p>`
+    p = content.find("p")
+    if p is not None:
+        text = p.get_text(separator=" ", strip=True)
+        if text:
+            if len(text) > _DESC_MAX_CHARS:
+                text = text[:_DESC_MAX_CHARS].rstrip() + "…"
+            return text
+    return None
+
+
+def enrich_tale_entries_last_updated_in_place(
+    session: requests.Session,
+    entries: list[dict[str, Any]],
+    *,
+    mode: str = "full",
+    prior_lu: dict[str, int] | None = None,
+    prior_img: dict[str, str] | None = None,
+    prior_desc: dict[str, str] | None = None,
+) -> None:
+    """各 Tale の本文 URL を取得し `#page-info` から `lu`、`#page-content` から `img`/`desc` を付与。
+
+    モード:
+    - `daily`: 本文 fetch しない。前回値（`prior_lu`/`prior_img`/`prior_desc`）をそのまま `lu`/`img`/`desc` として復元する。
+    - `weekly`: 前回 `lu` が無い記事、または記事が新規追加されたものだけ本文を取得（差分取得）。既存値は引き継ぐ。
+    - `full`: 全記事を取得し直す（旧来挙動）。
+    """
+    prior_lu = prior_lu or {}
+    prior_img = prior_img or {}
+    prior_desc = prior_desc or {}
+
+    if mode == "daily":
+        for ent in entries:
+            ik = (ent.get("i") or "").strip() if isinstance(ent.get("i"), str) else ""
+            if not ik:
+                continue
+            if ik in prior_lu:
+                ent["lu"] = prior_lu[ik]
+            if ik in prior_img:
+                ent.setdefault("img", prior_img[ik])
+            if ik in prior_desc:
+                ent.setdefault("desc", prior_desc[ik])
+        return
+
+    fetched: int = 0
+    skipped: int = 0
+    for ent in entries:
+        u = (ent.get("u") or "").strip() if isinstance(ent.get("u"), str) else ""
+        ik = (ent.get("i") or "").strip() if isinstance(ent.get("i"), str) else ""
+        if not u or not ik:
+            continue
+        # 引き継ぎ: 既存値があり、weekly でかつ前回 lu が判明していればスキップ。
+        if mode == "weekly" and ik in prior_lu:
+            ent["lu"] = prior_lu[ik]
+            if ik in prior_img:
+                ent.setdefault("img", prior_img[ik])
+            if ik in prior_desc:
+                ent.setdefault("desc", prior_desc[ik])
+            skipped += 1
+            continue
+        try:
+            html = fetch_html(session, u)
+            soup = BeautifulSoup(html, "html.parser")
+            ts = extract_page_info_unix_from_soup(soup)
+            if ts is not None:
+                ent["lu"] = ts
+            img = extract_first_content_image_url(soup, u)
+            if img:
+                ent["img"] = img
+            desc = extract_description_excerpt(soup)
+            if desc:
+                ent["desc"] = desc
+            fetched += 1
+        except HTTPError as e:
+            st = e.response.status_code if e.response is not None else 0
+            print(f"WARN: tale page fetch failed ({st}): {u}", file=sys.stderr)
+        except Exception as ex:
+            print(f"WARN: tale page fetch failed: {u} ({ex})", file=sys.stderr)
+
+    print(f"INFO: tales enrichment — mode={mode} fetched={fetched} preserved={skipped}", file=sys.stderr)
 
 
 def tales_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -1681,6 +1855,13 @@ def tales_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[st
         r_raw = e.get("r")
         if isinstance(r_raw, str) and r_raw.strip():
             md_chunk["r"] = r_raw.strip()
+        # サムネ URL と説明抜粋（260 字）はアプリの「続きから読む」プレビュー用。アプリ側 WebView 抽出を不要にする。
+        img_raw = e.get("img")
+        if isinstance(img_raw, str) and img_raw.strip():
+            md_chunk["img"] = img_raw.strip()
+        desc_raw = e.get("desc")
+        if isinstance(desc_raw, str) and desc_raw.strip():
+            md_chunk["desc"] = desc_raw.strip()
         if md_chunk:
             metadata[row_i] = md_chunk
     light.sort(key=lambda r: str((r.get("i") or "")).lower())
@@ -1840,9 +2021,11 @@ def parse_goi_tag_pages(session: requests.Session, cfg: BranchConfig) -> list[di
 class JapaneseBranchHarvester:
     """JP 支部の収集 orchestrator。"""
 
-    def __init__(self, cfg: BranchConfig | None = None):
+    def __init__(self, cfg: BranchConfig | None = None, mode: str = "full"):
         self.cfg = cfg or BranchConfig()
         self.session = requests.Session()
+        # daily / weekly / full のクロール階層。詳細は `_HARVEST_MODE_CHOICES`。
+        self.mode = mode if mode in _HARVEST_MODE_CHOICES else "full"
 
     def run(self) -> None:
         cfg = self.cfg
@@ -1946,8 +2129,16 @@ class JapaneseBranchHarvester:
         except Exception as ex:
             print(f"WARN: foundation-tales (EN hub): {ex}", file=sys.stderr)
         tale_entries = list(tale_by_i.values())
-        print("INFO: tales — per-article #page-info last-updated (lu)", file=sys.stderr)
-        enrich_tale_entries_last_updated_in_place(self.session, tale_entries)
+        print(f"INFO: tales — per-article enrichment (mode={self.mode})", file=sys.stderr)
+        prior_lu, prior_img, prior_desc = load_existing_tales_metadata(man_tales)
+        enrich_tale_entries_last_updated_in_place(
+            self.session,
+            tale_entries,
+            mode=self.mode,
+            prior_lu=prior_lu,
+            prior_img=prior_img,
+            prior_desc=prior_desc,
+        )
 
         print("INFO: gois — goi-formats-jp (structured, schema v3)", file=sys.stderr)
         goi_regions, goi_flat, goi_meta = scrape_goi_formats_hub_structured(
@@ -2054,6 +2245,77 @@ class JapaneseBranchHarvester:
             f"OK: wrote {man_jp}, {man_main}, {man_int}, {man_tales}, {man_gois}, {man_canons}, {man_jokes}",
             file=sys.stderr,
         )
+
+        # 全 manifest の sha256/byteSize/listVersion/entryCount を 1 ファイルにまとめる。
+        # アプリ側は起動時にこの数 KB だけを GET し、変わった kind だけ本体を取りに行く。
+        write_catalog_index(
+            cfg.output_dir,
+            files=[
+                ("manifest_scp-jp", man_jp),
+                ("manifest_scp-main", man_main),
+                ("manifest_scp-int", man_int),
+                ("manifest_tales", man_tales),
+                ("manifest_canons", man_canons),
+                ("manifest_gois", man_gois),
+                ("manifest_jokes", man_jokes),
+            ],
+        )
+
+
+CATALOG_INDEX_SCHEMA_VERSION = 1
+
+
+def write_catalog_index(output_dir: str, *, files: list[tuple[str, str]]) -> None:
+    """`catalog_index.json` を書き出す。
+
+    アプリ起動時のチェックを軽量化するための頂点インデックス。
+    各 manifest の `listVersion` / `schemaVersion` / `generatedAt` / `contentHash`(sha256) /
+    `byteSize` / `entryCount` を 1 つにまとめる。
+    """
+    import hashlib
+
+    rec_files: list[dict[str, Any]] = []
+    for kind, fp in files:
+        if not os.path.isfile(fp):
+            continue
+        try:
+            with open(fp, "rb") as f:
+                blob = f.read()
+        except OSError:
+            continue
+        try:
+            payload = json.loads(blob)
+        except ValueError:
+            continue
+        if not isinstance(payload, dict):
+            continue
+        list_version = payload.get("listVersion")
+        schema_version = payload.get("schemaVersion")
+        generated_at = payload.get("generatedAt")
+        entries = payload.get("entries")
+        entry_count = len(entries) if isinstance(entries, list) else None
+        rec_files.append({
+            "kind": kind,
+            "url": os.path.basename(fp),
+            "listVersion": list_version if isinstance(list_version, int) else None,
+            "schemaVersion": schema_version if isinstance(schema_version, int) else None,
+            "generatedAt": generated_at if isinstance(generated_at, str) else None,
+            "contentHash": "sha256-" + hashlib.sha256(blob).hexdigest(),
+            "byteSize": len(blob),
+            "entryCount": entry_count,
+        })
+    out_path = os.path.join(output_dir, "catalog_index.json")
+    payload = {
+        "schemaVersion": CATALOG_INDEX_SCHEMA_VERSION,
+        "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "files": rec_files,
+    }
+    tpath = out_path + ".tmp"
+    with open(tpath, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.replace(tpath, out_path)
+    print(f"OK: wrote {out_path} (files={len(rec_files)})", file=sys.stderr)
 
 
 def _git_toplevel(start_dir: str) -> str | None:
@@ -2192,12 +2454,23 @@ def main() -> int:
         default="",
         help="リポジトリルート（未指定時は output-dir またはミラー REPO_ROOT から自動検出）",
     )
+    p.add_argument(
+        "--mode",
+        type=str,
+        choices=list(_HARVEST_MODE_CHOICES),
+        default="full",
+        help=(
+            "クロール階層。`daily` は一覧ハブのみ取得し Tale 本文（lu/img/desc）は前回値を引き継ぐ；"
+            "`weekly` は前回 lu が無い記事だけ本文を取得して img/desc も抽出；"
+            "`full` は全記事の本文を取得し直す（旧来挙動・既定）。"
+        ),
+    )
     args = p.parse_args()
     cfg = BranchConfig()
     if args.output_dir:
         cfg.output_dir = os.path.abspath(args.output_dir)
     try:
-        JapaneseBranchHarvester(cfg).run()
+        JapaneseBranchHarvester(cfg, mode=args.mode).run()
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         return 1

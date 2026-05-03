@@ -212,6 +212,15 @@ def main() -> None:
         default="",
         help="write JSON file instead of stdout (e.g. list/jp/jp_tag.json)",
     )
+    ap.add_argument(
+        "--output-compact",
+        type=str,
+        default="",
+        help=(
+            "write a compact bidirectional dictionary alongside (e.g. list/jp/jp_tag_compact.json). "
+            "アプリ側の jp_tag 走査を不要にするため、`tagsToArticles` と `articleToTags` を整形済みで出力する。"
+        ),
+    )
     args = ap.parse_args()
     if args.max_tag_list_pages < 1:
         print("error: --max-tag-list-pages must be >= 1", file=sys.stderr)
@@ -223,6 +232,40 @@ def main() -> None:
             f.write(text)
     else:
         sys.stdout.write(text)
+    if args.output_compact:
+        compact = build_compact_payload(data)
+        with open(args.output_compact, "w", encoding="utf-8") as f:
+            json.dump(compact, f, ensure_ascii=False, separators=(",", ":"))
+            f.write("\n")
+        print(
+            "OK: wrote compact tag map "
+            f"({len(compact['tagsToArticles'])} tags, {len(compact['articleToTags'])} articles)"
+            f" -> {args.output_compact}",
+            file=sys.stderr,
+        )
+
+
+def build_compact_payload(data: dict) -> dict[str, Any]:
+    """`jp_tag.json` の `articles` 辞書を、アプリ用の整形済み双方向辞書に変換する。"""
+    article_to_tags = data.get("articles") or {}
+    if not isinstance(article_to_tags, dict):
+        article_to_tags = {}
+    tags_to_articles: defaultdict[str, list[str]] = defaultdict(list)
+    for slug, tags in article_to_tags.items():
+        if not isinstance(slug, str) or not isinstance(tags, list):
+            continue
+        for tag in tags:
+            if isinstance(tag, str) and tag.strip():
+                tags_to_articles[tag.strip()].append(slug)
+    for tag, slugs in tags_to_articles.items():
+        slugs.sort()
+    return {
+        "schemaVersion": 1,
+        "listVersion": data.get("listVersion"),
+        "generatedAt": data.get("generatedAt"),
+        "tagsToArticles": dict(sorted(tags_to_articles.items())),
+        "articleToTags": {k: list(v) for k, v in sorted(article_to_tags.items())},
+    }
 
 
 if __name__ == "__main__":
