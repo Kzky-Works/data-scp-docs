@@ -1,0 +1,70 @@
+# 週次クロール（中量）: Tale 個別本文の lu / img / desc を **差分取得**（前回 lu が判明している記事はスキップ）。
+# アプリのサムネ・抜粋・続きから読むプレビューの鮮度を維持しつつ、Wikidot への週次本文アクセスを数百件以下に抑える。
+name: Update list feeds (weekly)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 週 1: 日曜 01:00 UTC
+    - cron: "0 1 * * 0"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: data-scp-docs-list-jp-write
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          set -euxo pipefail
+          pip install -r requirements.txt
+
+      - name: Run harvester (weekly)
+        run: |
+          set -euxo pipefail
+          python3 scripts/harvester.py --mode weekly
+          python3 scripts/validate_manifests.py
+          ls -la list/jp/
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add list/jp/
+          if git diff --staged --quiet; then
+            echo "No changes — skipping commit."
+            exit 0
+          fi
+          git commit -m "chore(data): refresh list/jp feeds (weekly) [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin main
+
+      - name: Open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          TITLE="CI failed: ${GITHUB_WORKFLOW} (run ${GITHUB_RUN_ID})"
+          BODY=$(printf '%s\n\n- Workflow: %s\n- Run: %s\n- Trigger: %s\n- Ref: %s\n\nSee logs for details.' \
+            "Workflow **${GITHUB_WORKFLOW}** failed." \
+            "${GITHUB_WORKFLOW}" "${RUN_URL}" "${GITHUB_EVENT_NAME}" "${GITHUB_REF}")
+          gh issue create --title "${TITLE}" --body "${BODY}"
