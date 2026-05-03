@@ -1313,10 +1313,11 @@ def extract_page_info_unix(html: str) -> int | None:
     return extract_page_info_unix_from_soup(soup)
 
 
-def extract_canon_hub_card_fields(html: str) -> tuple[str, int | None]:
+def extract_canon_hub_card_fields(html: str) -> tuple[str, int | None, str | None]:
     """
-    カノン／連作ハブ1ページから (description プレーン, 最終更新 unix)。
-    div.canon-description → div.series-description → #page-content 先頭 blockquote の順で要約。
+    カノン／連作ハブ1ページから (ds プレーン, 最終更新 unix, 冒頭段落 desc)。
+    ds: div.canon-description → div.series-description → #page-content 先頭 blockquote の順で要約。
+    desc: #page-content 最初の <p>（heading 検索なし）。
     #page-info span.odate.time_* を参照。
     """
     soup = BeautifulSoup(html, "html.parser")
@@ -1336,7 +1337,8 @@ def extract_canon_hub_card_fields(html: str) -> tuple[str, int | None]:
             if bq is not None:
                 desc = re.sub(r"\s+", " ", bq.get_text(" ", strip=True)).strip()
     ts = extract_page_info_unix_from_soup(soup)
-    return desc, ts
+    opening_desc = extract_opening_excerpt(soup)
+    return desc, ts, opening_desc
 
 
 def _log_canon_enrich_sample(
@@ -1367,7 +1369,7 @@ def enrich_canon_hub_lines_in_place(
     hub_desc_by_region: dict[str, dict[str, str]] | None = None,
 ) -> None:
     """各ハブ行に ct / ds / lu を付与。ds は索引ページ（hub_desc_by_region）を優先し、無い場合のみ同一 URL の本文を取得（同一 URL は1回だけ）。"""
-    url_cache: dict[str, tuple[str, int | None]] = {}
+    url_cache: dict[str, tuple[str, int | None, str | None]] = {}
     hub_desc_by_region = hub_desc_by_region or {}
     for region, lines in region_lines.items():
         region_ds = hub_desc_by_region.get(region) or {}
@@ -1393,14 +1395,16 @@ def enrich_canon_hub_lines_in_place(
                             f"WARN: canon hub page 404 (index link stale?): {u}",
                             file=sys.stderr,
                         )
-                        url_cache[u] = ("", None)
+                        url_cache[u] = ("", None, None)
                     else:
                         raise
-            ds_page, lu = url_cache[u]
+            ds_page, lu, opening_desc = url_cache[u]
             ds = ds_from_hub or ds_page
             line["ds"] = ds if ds else ""
             if lu is not None:
                 line["lu"] = lu
+            if opening_desc:
+                line["desc"] = opening_desc
 
 
 def scrape_canon_manifest_payload(
@@ -1549,6 +1553,29 @@ def _goi_parse_h2_group(h2, page_url: str, site_host: str) -> dict[str, Any] | N
         "t": name,
         "u": site_host.rstrip("/") + hub_path,
     }
+
+
+def enrich_goi_regions_desc_in_place(
+    session: requests.Session,
+    goi_regions: dict[str, list[dict[str, Any]]],
+) -> None:
+    """goiRegions 各エントリのハブページ冒頭段落を `desc` として付与する。"""
+    fetched = 0
+    for region_list in goi_regions.values():
+        for entry in region_list:
+            u = (entry.get("u") or "").strip()
+            if not u:
+                continue
+            try:
+                html = fetch_html(session, u)
+                soup = BeautifulSoup(html, "html.parser")
+                desc = extract_opening_excerpt(soup)
+                if desc:
+                    entry["desc"] = desc
+                fetched += 1
+            except Exception as ex:
+                print(f"WARN: GoI desc fetch failed: {u} ({ex})", file=sys.stderr)
+    print(f"INFO: GoI desc enrichment — fetched={fetched}", file=sys.stderr)
 
 
 def scrape_goi_formats_hub_structured(
@@ -1716,6 +1743,7 @@ def enrich_entries_img_desc_in_place(
     mode: str = "full",
     prior_img: dict[str, str] | None = None,
     prior_desc: dict[str, str] | None = None,
+    deadline: float | None = None,
 ) -> None:
     """entries に `img`/`desc` を付与する（SCP 報告書・jokes 共用）。
 
@@ -1726,6 +1754,7 @@ def enrich_entries_img_desc_in_place(
 
     付与した img / desc は entries の各 dict に直接セットする。
     呼び出し元は `merge_img_desc_from_entries_to_metadata` で metadata へ移すこと。
+    `deadline` (time.time() 換算の unix 秒) を指定すると、超過時にループを中断して部分結果を返す。
     """
     prior_img = prior_img or {}
     prior_desc = prior_desc or {}
@@ -1754,6 +1783,13 @@ def enrich_entries_img_desc_in_place(
                 ent.setdefault("desc", prior_desc[ik])
             skipped += 1
             continue
+        if deadline is not None and time.time() >= deadline:
+            print(
+                f"INFO: img/desc enrichment — time budget reached, stopping early "
+                f"(fetched={fetched} preserved={skipped})",
+                file=sys.stderr,
+            )
+            break
         try:
             html = fetch_html(session, u)
             soup = BeautifulSoup(html, "html.parser")
@@ -1876,24 +1912,43 @@ def extract_description_excerpt(soup: BeautifulSoup) -> str | None:
     return None
 
 
+def extract_opening_excerpt(soup: BeautifulSoup) -> str | None:
+    """`#page-content` の最初の `<p>` テキストを最大 _DESC_MAX_CHARS 字で返す。
+    Tales / Canons / GoIs 用（heading 検索なし）。
+    """
+    content = soup.select_one("#page-content")
+    if content is None:
+        return None
+    p = content.find("p")
+    if p is None:
+        return None
+    text = p.get_text(separator=" ", strip=True)
+    if not text:
+        return None
+    if len(text) > _DESC_MAX_CHARS:
+        text = text[:_DESC_MAX_CHARS].rstrip() + "…"
+    return text
+
+
 def enrich_tale_entries_last_updated_in_place(
     session: requests.Session,
     entries: list[dict[str, Any]],
     *,
     mode: str = "full",
     prior_lu: dict[str, int] | None = None,
-    prior_img: dict[str, str] | None = None,
     prior_desc: dict[str, str] | None = None,
+    deadline: float | None = None,
 ) -> None:
-    """各 Tale の本文 URL を取得し `#page-info` から `lu`、`#page-content` から `img`/`desc` を付与。
+    """各 Tale の本文 URL を取得し `#page-info` から `lu`、`#page-content` 冒頭段落から `desc` を付与。
+    Tales は img を収集しない（画像がほぼ存在しないため）。
 
     モード:
-    - `daily`: 本文 fetch しない。前回値（`prior_lu`/`prior_img`/`prior_desc`）をそのまま `lu`/`img`/`desc` として復元する。
-    - `weekly`: 前回 `lu` が無い記事、または記事が新規追加されたものだけ本文を取得（差分取得）。既存値は引き継ぐ。
-    - `full`: 全記事を取得し直す（旧来挙動）。
+    - `daily`: 本文 fetch しない。前回値（`prior_lu`/`prior_desc`）を復元するだけ。
+    - `weekly`: `lu` と `desc` が両方判明している記事はスキップ（差分取得）。
+    - `full`: 全記事を取得し直す。
+    `deadline` (time.time() 換算の unix 秒) を指定すると、超過時にループを中断して部分結果を返す。
     """
     prior_lu = prior_lu or {}
-    prior_img = prior_img or {}
     prior_desc = prior_desc or {}
 
     if mode == "daily":
@@ -1903,8 +1958,6 @@ def enrich_tale_entries_last_updated_in_place(
                 continue
             if ik in prior_lu:
                 ent["lu"] = prior_lu[ik]
-            if ik in prior_img:
-                ent.setdefault("img", prior_img[ik])
             if ik in prior_desc:
                 ent.setdefault("desc", prior_desc[ik])
         return
@@ -1916,25 +1969,26 @@ def enrich_tale_entries_last_updated_in_place(
         ik = (ent.get("i") or "").strip() if isinstance(ent.get("i"), str) else ""
         if not u or not ik:
             continue
-        # 引き継ぎ: 既存値があり、weekly でかつ前回 lu が判明していればスキップ。
-        if mode == "weekly" and ik in prior_lu:
+        # lu と desc が両方判明していればスキップ（どちらか欠けている場合は再取得）。
+        if mode == "weekly" and ik in prior_lu and ik in prior_desc:
             ent["lu"] = prior_lu[ik]
-            if ik in prior_img:
-                ent.setdefault("img", prior_img[ik])
-            if ik in prior_desc:
-                ent.setdefault("desc", prior_desc[ik])
+            ent.setdefault("desc", prior_desc[ik])
             skipped += 1
             continue
+        if deadline is not None and time.time() >= deadline:
+            print(
+                f"INFO: tales enrichment — time budget reached, stopping early "
+                f"(fetched={fetched} preserved={skipped})",
+                file=sys.stderr,
+            )
+            break
         try:
             html = fetch_html(session, u)
             soup = BeautifulSoup(html, "html.parser")
             ts = extract_page_info_unix_from_soup(soup)
             if ts is not None:
                 ent["lu"] = ts
-            img = extract_first_content_image_url(soup, u)
-            if img:
-                ent["img"] = img
-            desc = extract_description_excerpt(soup)
+            desc = extract_opening_excerpt(soup)
             if desc:
                 ent["desc"] = desc
             fetched += 1
@@ -2141,11 +2195,13 @@ def parse_goi_tag_pages(session: requests.Session, cfg: BranchConfig) -> list[di
 class JapaneseBranchHarvester:
     """JP 支部の収集 orchestrator。"""
 
-    def __init__(self, cfg: BranchConfig | None = None, mode: str = "full"):
+    def __init__(self, cfg: BranchConfig | None = None, mode: str = "full", deadline: float | None = None):
         self.cfg = cfg or BranchConfig()
         self.session = requests.Session()
         # daily / weekly / full のクロール階層。詳細は `_HARVEST_MODE_CHOICES`。
         self.mode = mode if mode in _HARVEST_MODE_CHOICES else "full"
+        # time.time() 換算の締め切り。None = 無制限。
+        self.deadline = deadline
 
     def run(self) -> None:
         cfg = self.cfg
@@ -2250,20 +2306,22 @@ class JapaneseBranchHarvester:
             print(f"WARN: foundation-tales (EN hub): {ex}", file=sys.stderr)
         tale_entries = list(tale_by_i.values())
         print(f"INFO: tales — per-article enrichment (mode={self.mode})", file=sys.stderr)
-        prior_lu, prior_img, prior_desc = load_existing_tales_metadata(man_tales)
+        prior_lu, _prior_img_unused, prior_desc = load_existing_tales_metadata(man_tales)
         enrich_tale_entries_last_updated_in_place(
             self.session,
             tale_entries,
             mode=self.mode,
             prior_lu=prior_lu,
-            prior_img=prior_img,
             prior_desc=prior_desc,
+            deadline=self.deadline,
         )
 
         print("INFO: gois — goi-formats-jp (structured, schema v3)", file=sys.stderr)
         goi_regions, goi_flat, goi_meta = scrape_goi_formats_hub_structured(
             self.session, cfg
         )
+        print("INFO: gois — per-hub desc enrichment", file=sys.stderr)
+        enrich_goi_regions_desc_in_place(self.session, goi_regions)
         goi_payload: dict[str, Any] = {
             "entries": goi_flat,
             "metadata": {
@@ -2345,7 +2403,8 @@ class JapaneseBranchHarvester:
         ej, mj = trifold_rows_to_manifest_parts(jp_rows)
         prior_img_jp, prior_desc_jp = load_existing_manifest_img_desc(man_jp)
         enrich_entries_img_desc_in_place(
-            self.session, ej, mode=self.mode, prior_img=prior_img_jp, prior_desc=prior_desc_jp
+            self.session, ej, mode=self.mode, prior_img=prior_img_jp, prior_desc=prior_desc_jp,
+            deadline=self.deadline,
         )
         merge_img_desc_from_entries_to_metadata(ej, mj)
         write_manifest(man_jp, ej, mj)
@@ -2353,7 +2412,8 @@ class JapaneseBranchHarvester:
         em, mm = trifold_rows_to_manifest_parts(main_rows)
         prior_img_main, prior_desc_main = load_existing_manifest_img_desc(man_main)
         enrich_entries_img_desc_in_place(
-            self.session, em, mode=self.mode, prior_img=prior_img_main, prior_desc=prior_desc_main
+            self.session, em, mode=self.mode, prior_img=prior_img_main, prior_desc=prior_desc_main,
+            deadline=self.deadline,
         )
         merge_img_desc_from_entries_to_metadata(em, mm)
         write_manifest(man_main, em, mm)
@@ -2361,7 +2421,8 @@ class JapaneseBranchHarvester:
         enrich_metadata_tags_from_jp_tag_map(int_entries, md_int, jp_tag_articles)
         prior_img_int, prior_desc_int = load_existing_manifest_img_desc(man_int)
         enrich_entries_img_desc_in_place(
-            self.session, int_entries, mode=self.mode, prior_img=prior_img_int, prior_desc=prior_desc_int
+            self.session, int_entries, mode=self.mode, prior_img=prior_img_int, prior_desc=prior_desc_int,
+            deadline=self.deadline,
         )
         merge_img_desc_from_entries_to_metadata(int_entries, md_int)
         write_manifest(man_int, int_entries, md_int)
@@ -2379,7 +2440,8 @@ class JapaneseBranchHarvester:
         jl, jm = trifold_rows_to_manifest_parts(joke_rows)
         prior_img_jokes, prior_desc_jokes = load_existing_manifest_img_desc(man_jokes)
         enrich_entries_img_desc_in_place(
-            self.session, jl, mode=self.mode, prior_img=prior_img_jokes, prior_desc=prior_desc_jokes
+            self.session, jl, mode=self.mode, prior_img=prior_img_jokes, prior_desc=prior_desc_jokes,
+            deadline=self.deadline,
         )
         merge_img_desc_from_entries_to_metadata(jl, jm)
         write_manifest(man_jokes, jl, jm)
@@ -2608,12 +2670,22 @@ def main() -> int:
             "`full` は全記事の本文を取得し直す（旧来挙動・既定）。"
         ),
     )
+    p.add_argument(
+        "--time-budget-minutes",
+        type=float,
+        default=0.0,
+        help=(
+            "実行時間の上限（分）。0 = 無制限。CI タイムアウト前に graceful stop するために使う。"
+            "時間切れ時点までに取得した img/desc を partial commit して、次回実行で続きを再開できる。"
+        ),
+    )
     args = p.parse_args()
     cfg = BranchConfig()
     if args.output_dir:
         cfg.output_dir = os.path.abspath(args.output_dir)
+    deadline = time.time() + args.time_budget_minutes * 60 if args.time_budget_minutes > 0 else None
     try:
-        JapaneseBranchHarvester(cfg, mode=args.mode).run()
+        JapaneseBranchHarvester(cfg, mode=args.mode, deadline=deadline).run()
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         return 1

@@ -37,7 +37,7 @@ jobs:
       - name: Run harvester (weekly)
         run: |
           set -euxo pipefail
-          python3 scripts/harvester.py --mode weekly
+          python3 scripts/harvester.py --mode weekly --time-budget-minutes 160
           python3 scripts/validate_manifests.py
           ls -la list/jp/
 
