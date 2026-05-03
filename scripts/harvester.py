@@ -1676,6 +1676,126 @@ def load_existing_tales_metadata(path: str) -> tuple[dict[str, int], dict[str, s
     return lu_by_i, img_by_i, desc_by_i
 
 
+def load_existing_manifest_img_desc(path: str) -> tuple[dict[str, str], dict[str, str]]:
+    """既存 manifest の `metadata` セクションから `i -> img` / `i -> desc` を読み出す。
+
+    trifold SCP 報告書・jokes など `lu` を持たないマニフェスト用の軽量版。
+    ファイルが無い／壊れているときは `({}, {})` を返す。
+    """
+    img_by_i: dict[str, str] = {}
+    desc_by_i: dict[str, str] = {}
+    if not os.path.isfile(path):
+        return img_by_i, desc_by_i
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except (OSError, ValueError):
+        return img_by_i, desc_by_i
+    metadata = payload.get("metadata") if isinstance(payload, dict) else None
+    if not isinstance(metadata, dict):
+        return img_by_i, desc_by_i
+    for ik, chunk in metadata.items():
+        if not isinstance(ik, str) or not isinstance(chunk, dict):
+            continue
+        key = ik.strip()
+        if not key:
+            continue
+        img = chunk.get("img")
+        if isinstance(img, str) and img.strip():
+            img_by_i[key] = img.strip()
+        desc = chunk.get("desc")
+        if isinstance(desc, str) and desc.strip():
+            desc_by_i[key] = desc.strip()
+    return img_by_i, desc_by_i
+
+
+def enrich_entries_img_desc_in_place(
+    session: requests.Session,
+    entries: list[dict[str, Any]],
+    *,
+    mode: str = "full",
+    prior_img: dict[str, str] | None = None,
+    prior_desc: dict[str, str] | None = None,
+) -> None:
+    """entries に `img`/`desc` を付与する（SCP 報告書・jokes 共用）。
+
+    モード:
+    - `daily`: 本文 fetch しない。prior_img / prior_desc を entries に復元するだけ。
+    - `weekly`: prior_img に `i` が既にある記事はスキップ（差分取得）。ない記事のみ本文フェッチ。
+    - `full`: 全件フェッチ。
+
+    付与した img / desc は entries の各 dict に直接セットする。
+    呼び出し元は `merge_img_desc_from_entries_to_metadata` で metadata へ移すこと。
+    """
+    prior_img = prior_img or {}
+    prior_desc = prior_desc or {}
+
+    if mode == "daily":
+        for ent in entries:
+            ik = (ent.get("i") or "").strip()
+            if not ik:
+                continue
+            if ik in prior_img:
+                ent.setdefault("img", prior_img[ik])
+            if ik in prior_desc:
+                ent.setdefault("desc", prior_desc[ik])
+        return
+
+    fetched = 0
+    skipped = 0
+    for ent in entries:
+        u = (ent.get("u") or "").strip()
+        ik = (ent.get("i") or "").strip()
+        if not u or not ik:
+            continue
+        if mode == "weekly" and ik in prior_img:
+            ent.setdefault("img", prior_img[ik])
+            if ik in prior_desc:
+                ent.setdefault("desc", prior_desc[ik])
+            skipped += 1
+            continue
+        try:
+            html = fetch_html(session, u)
+            soup = BeautifulSoup(html, "html.parser")
+            img = extract_first_content_image_url(soup, u)
+            if img:
+                ent["img"] = img
+            desc = extract_description_excerpt(soup)
+            if desc:
+                ent["desc"] = desc
+            fetched += 1
+        except HTTPError as e:
+            st = e.response.status_code if e.response is not None else 0
+            print(f"WARN: article page fetch failed ({st}): {u}", file=sys.stderr)
+        except Exception as ex:
+            print(f"WARN: article page fetch failed: {u} ({ex})", file=sys.stderr)
+
+    print(
+        f"INFO: img/desc enrichment — mode={mode} fetched={fetched} preserved={skipped}",
+        file=sys.stderr,
+    )
+
+
+def merge_img_desc_from_entries_to_metadata(
+    entries: list[dict[str, Any]], metadata: dict[str, Any]
+) -> None:
+    """entries の `img`/`desc` を metadata dict に移し、entries からは除去する。
+
+    `enrich_entries_img_desc_in_place` の後に呼ぶ。
+    entries は `{"u":..., "i":..., "t":...}` 形式の manifest entries list。
+    """
+    for ent in entries:
+        ik = (ent.get("i") or "").strip()
+        if not ik:
+            continue
+        for field in ("img", "desc"):
+            val = ent.pop(field, None)
+            if val:
+                if ik not in metadata:
+                    metadata[ik] = {}
+                metadata[ik][field] = val
+
+
 def extract_first_content_image_url(soup: BeautifulSoup, base_url: str) -> str | None:
     """`#page-content` 内の最初の `<img>` を絶対 URL で返す。サイドメニュー・ナビ画像は除外。"""
     content = soup.select_one("#page-content")
@@ -2223,10 +2343,27 @@ class JapaneseBranchHarvester:
             print("INFO: object class fallback — skipped (jp_tag.json loaded)", file=sys.stderr)
 
         ej, mj = trifold_rows_to_manifest_parts(jp_rows)
+        prior_img_jp, prior_desc_jp = load_existing_manifest_img_desc(man_jp)
+        enrich_entries_img_desc_in_place(
+            self.session, ej, mode=self.mode, prior_img=prior_img_jp, prior_desc=prior_desc_jp
+        )
+        merge_img_desc_from_entries_to_metadata(ej, mj)
         write_manifest(man_jp, ej, mj)
+
         em, mm = trifold_rows_to_manifest_parts(main_rows)
+        prior_img_main, prior_desc_main = load_existing_manifest_img_desc(man_main)
+        enrich_entries_img_desc_in_place(
+            self.session, em, mode=self.mode, prior_img=prior_img_main, prior_desc=prior_desc_main
+        )
+        merge_img_desc_from_entries_to_metadata(em, mm)
         write_manifest(man_main, em, mm)
+
         enrich_metadata_tags_from_jp_tag_map(int_entries, md_int, jp_tag_articles)
+        prior_img_int, prior_desc_int = load_existing_manifest_img_desc(man_int)
+        enrich_entries_img_desc_in_place(
+            self.session, int_entries, mode=self.mode, prior_img=prior_img_int, prior_desc=prior_desc_int
+        )
+        merge_img_desc_from_entries_to_metadata(int_entries, md_int)
         write_manifest(man_int, int_entries, md_int)
 
         tl, tm = tales_raw_to_manifest_parts(tale_entries)
@@ -2238,7 +2375,13 @@ class JapaneseBranchHarvester:
         write_manifest(man_tales, tl, tm)
         write_goi_manifest_v3(man_gois, goi_payload)
         write_canon_manifest(man_canons, canon_light, canon_meta, canon_regions)
+
         jl, jm = trifold_rows_to_manifest_parts(joke_rows)
+        prior_img_jokes, prior_desc_jokes = load_existing_manifest_img_desc(man_jokes)
+        enrich_entries_img_desc_in_place(
+            self.session, jl, mode=self.mode, prior_img=prior_img_jokes, prior_desc=prior_desc_jokes
+        )
+        merge_img_desc_from_entries_to_metadata(jl, jm)
         write_manifest(man_jokes, jl, jm)
 
         print(
