@@ -224,6 +224,10 @@ def fetch_html(session: requests.Session, url: str, *, retries: int = 6) -> str:
             r.raise_for_status()
             r.encoding = r.encoding or "utf-8"
             return r.text
+        except HTTPError:
+            # 404/403/410 等は記事未翻訳・恒久削除でリトライ無意味。
+            # 上の 429/502/503 transient 経路で `continue` した場合はここに来ない。
+            raise
         except Exception as e:
             last = e
             if attempt < retries - 1:
