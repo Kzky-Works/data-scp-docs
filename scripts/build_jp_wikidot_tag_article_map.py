@@ -45,12 +45,27 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from wikidot_utils import wikidot_tag_list_total_pages
+from bs4 import BeautifulSoup
+
+from wikidot_utils import parse_odate_unix, wikidot_tag_list_total_pages
 
 BASE = "http://scp-jp.wikidot.com"
 JP_TAG_SCHEMA_VERSION = 1
 PROGRESS_SCHEMA_VERSION = 1
 RATE_LIMIT_STATUSES = (429, 503)
+TAG_TAXONOMY_SOURCE = "scp-jp.wikidot.com/tag-list"
+TAG_TAXONOMY_PATH = "/tag-list"
+TAG_TAXONOMY_CATEGORIES = (
+    "メジャー",
+    "オブジェクトクラス",
+    "アトリビュート",
+    "GoIフォーマット",
+    "コンテンツマーカー",
+    "支部",
+    "ジャンル",
+    "ウィキ運営用",
+)
+TAG_TAXONOMY_KNOWN_TAGS = ("scp", "safe", "euclid")
 
 
 class RateLimitedError(Exception):
@@ -158,6 +173,220 @@ def iter_paginated_tag_pages(
     return out
 
 
+def load_previous_output(path: str) -> dict[str, Any]:
+    if not path:
+        return {}
+    p = Path(path)
+    if not p.is_file():
+        return {}
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        print(f"warn: failed to read previous output {path}: {e}", file=sys.stderr)
+        return {}
+
+
+def taxonomy_fields_from_previous(previous: dict[str, Any]) -> dict[str, Any]:
+    fields: dict[str, Any] = {}
+    taxonomy = previous.get("tagTaxonomy")
+    if isinstance(taxonomy, list) and taxonomy:
+        fields["tagTaxonomy"] = taxonomy
+    source = previous.get("tagTaxonomySource")
+    if isinstance(source, str) and source.strip():
+        fields["tagTaxonomySource"] = source.strip()
+    updated = previous.get("tagTaxonomyUpdatedAt")
+    if isinstance(updated, int):
+        fields["tagTaxonomyUpdatedAt"] = updated
+    return fields
+
+
+def collapse_ws(text: str) -> str:
+    return " ".join(text.split())
+
+
+def tag_slug_from_page_tags_href(href: str) -> str | None:
+    marker = "/system:page-tags/tag/"
+    if marker not in href:
+        return None
+    part = href.split(marker, 1)[1].split("#", 1)[0].split("?", 1)[0]
+    if not part:
+        return None
+    return urllib.parse.unquote(part).strip()
+
+
+def iter_tabset_panels(tabset) -> list[tuple[str, Any]]:
+    nav = tabset.find("ul", class_="yui-nav", recursive=False)
+    content = tabset.find("div", class_="yui-content", recursive=False)
+    if nav is None or content is None:
+        return []
+    labels: list[str] = []
+    for li in nav.find_all("li", recursive=False):
+        em = li.find("em")
+        labels.append(collapse_ws(em.get_text(" ", strip=True) if em else li.get_text(" ", strip=True)))
+    panels = [
+        div
+        for div in content.find_all("div", recursive=False)
+        if str(div.get("id") or "").startswith("wiki-tab-")
+    ]
+    return [(label, panel) for label, panel in zip(labels, panels) if label]
+
+
+def find_main_tag_taxonomy_tabset(root) -> Any | None:
+    wanted = set(TAG_TAXONOMY_CATEGORIES)
+    best = None
+    best_score = 0
+    for tabset in root.find_all("div", class_="yui-navset"):
+        labels = {label for label, _panel in iter_tabset_panels(tabset)}
+        score = len(labels & wanted)
+        if score > best_score:
+            best = tabset
+            best_score = score
+    return best if best_score >= 4 else None
+
+
+def tags_from_li(li, allowed_tags: set[str], seen: set[str]) -> list[str]:
+    out: list[str] = []
+    for a in li.find_all("a", href=True):
+        tag = tag_slug_from_page_tags_href(str(a.get("href") or ""))
+        if not tag or tag not in allowed_tags or tag in seen:
+            continue
+        seen.add(tag)
+        out.append(tag)
+    return out
+
+
+def collect_tag_taxonomy_groups(
+    container,
+    *,
+    default_subcategory: str,
+    allowed_tags: set[str],
+    seen: set[str],
+) -> list[dict[str, Any]]:
+    grouped: dict[str, list[str]] = {}
+    current_subcategory = default_subcategory
+
+    def add_tags(subcategory: str, tags: list[str]) -> None:
+        if not tags:
+            return
+        grouped.setdefault(subcategory, []).extend(tags)
+
+    def walk(node, subcategory: str) -> str:
+        current = subcategory
+        for child in node.find_all(recursive=False):
+            name = getattr(child, "name", None)
+            if name in {"h2", "h3", "h4"}:
+                text = collapse_ws(child.get_text(" ", strip=True))
+                if text:
+                    current = text
+                continue
+            if name == "div" and "yui-navset" in (child.get("class") or []):
+                for label, panel in iter_tabset_panels(child):
+                    if label == "最小化":
+                        continue
+                    walk(panel, label)
+                continue
+            if name == "li":
+                add_tags(current, tags_from_li(child, allowed_tags, seen))
+            current = walk(child, current)
+        return current
+
+    walk(container, current_subcategory)
+    return [
+        {"subcategory": subcategory, "tags": tags}
+        for subcategory, tags in grouped.items()
+        if tags
+    ]
+
+
+def validate_tag_taxonomy(taxonomy: list[dict[str, Any]], allowed_tags: set[str]) -> bool:
+    if not taxonomy:
+        return False
+    flat = {
+        tag
+        for group in taxonomy
+        for tag in group.get("tags", [])
+        if isinstance(tag, str)
+    }
+    if not flat:
+        return False
+    categories = {
+        group.get("category")
+        for group in taxonomy
+        if isinstance(group.get("category"), str)
+    }
+    if len(allowed_tags) >= 100 and len(categories) < 4:
+        return False
+    for known in TAG_TAXONOMY_KNOWN_TAGS:
+        if known in allowed_tags and known not in flat:
+            return False
+    if len(allowed_tags) >= 100 and len(flat) < 25:
+        return False
+    return True
+
+
+def parse_tag_taxonomy_html(html: str, allowed_tags: set[str]) -> tuple[list[dict[str, Any]], int | None]:
+    soup = BeautifulSoup(html, "html.parser")
+    root = soup.select_one("#page-content") or soup
+    updated_at = parse_odate_unix(soup.select_one("#page-info span.odate"))
+    tabset = find_main_tag_taxonomy_tabset(root)
+    if tabset is None:
+        return [], updated_at
+
+    taxonomy: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    wanted = set(TAG_TAXONOMY_CATEGORIES)
+    for category, panel in iter_tabset_panels(tabset):
+        if category not in wanted:
+            continue
+        for group in collect_tag_taxonomy_groups(
+            panel,
+            default_subcategory=category,
+            allowed_tags=allowed_tags,
+            seen=seen,
+        ):
+            taxonomy.append(
+                {
+                    "category": category,
+                    "subcategory": group["subcategory"],
+                    "tags": group["tags"],
+                }
+            )
+    return taxonomy, updated_at
+
+
+def build_tag_taxonomy_fields(args: argparse.Namespace, allowed_tags: set[str]) -> dict[str, Any]:
+    previous = load_previous_output(args.output)
+    previous_fields = taxonomy_fields_from_previous(previous)
+    if getattr(args, "skip_tag_taxonomy", False):
+        return previous_fields
+
+    try:
+        if args.tag_list_html_file:
+            html = Path(args.tag_list_html_file).read_text(encoding="utf-8")
+        else:
+            html = fetch(BASE + TAG_TAXONOMY_PATH)
+        taxonomy, updated_at = parse_tag_taxonomy_html(html, allowed_tags)
+        if not validate_tag_taxonomy(taxonomy, allowed_tags):
+            print("warn: tag taxonomy extraction failed validation; keeping previous taxonomy", file=sys.stderr)
+            return previous_fields
+        fields: dict[str, Any] = {
+            "tagTaxonomySource": TAG_TAXONOMY_SOURCE,
+            "tagTaxonomy": taxonomy,
+        }
+        if updated_at is not None:
+            fields["tagTaxonomyUpdatedAt"] = updated_at
+        print(
+            f"OK: extracted tag taxonomy ({len(taxonomy)} groups, "
+            f"{sum(len(g['tags']) for g in taxonomy)} tags)",
+            file=sys.stderr,
+        )
+        return fields
+    except Exception as e:
+        print(f"warn: failed to extract tag taxonomy: {e}; keeping previous taxonomy", file=sys.stderr)
+        return previous_fields
+
+
 def next_list_version_and_generated_at(output_path: str, data: dict[str, Any]) -> tuple[int, str]:
     """Keep listVersion stable when source/tag/articles payload is unchanged."""
     now = datetime.now(timezone.utc)
@@ -172,7 +401,15 @@ def next_list_version_and_generated_at(output_path: str, data: dict[str, Any]) -
     except Exception:
         old = {}
     old_lv = int(old.get("listVersion") or 0)
-    comparable_keys = ("source", "tagPageRange", "tags", "articles")
+    comparable_keys = (
+        "source",
+        "tagPageRange",
+        "tags",
+        "articles",
+        "tagTaxonomySource",
+        "tagTaxonomyUpdatedAt",
+        "tagTaxonomy",
+    )
     if all(old.get(k) == data.get(k) for k in comparable_keys):
         return old_lv, gen
     return old_lv + 1, gen
@@ -329,6 +566,11 @@ def harvest(args: argparse.Namespace) -> tuple[dict, dict]:
         "tags": list(cycle_tags),
         "articles": {k: sorted(v) for k, v in sorted(article_tags_inv.items())},
     }
+    if stop_reason == "cycle_done":
+        data.update(build_tag_taxonomy_fields(args, set(cycle_tags)))
+    else:
+        # Partial runs keep the prior taxonomy so the old listVersion never points at a new taxonomy.
+        data.update(taxonomy_fields_from_previous(load_previous_output(args.output)))
 
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -425,6 +667,17 @@ def main() -> None:
         "--no-stop-on-503",
         action="store_true",
         help="legacy behavior: keep going on 503/429 instead of stopping early",
+    )
+    ap.add_argument(
+        "--skip-tag-taxonomy",
+        action="store_true",
+        help="do not fetch /tag-list; carry forward existing tagTaxonomy fields if present",
+    )
+    ap.add_argument(
+        "--tag-list-html-file",
+        type=str,
+        default="",
+        help="read tag-list HTML from this fixture instead of fetching /tag-list (tests/debug)",
     )
     ap.add_argument(
         "-o",
