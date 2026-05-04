@@ -204,7 +204,6 @@ class ArticleRow:
     i: str
     t: str
     c: str | None = None
-    o: str | None = None
     g: list[str] = field(default_factory=list)
     a: str | None = None  # 報告書では通常使わない（互換のためキーは出力時省略）
 
@@ -346,35 +345,13 @@ def light_article_row_dict(row: ArticleRow) -> dict[str, Any]:
 
 
 def sparse_trifold_metadata_chunk(row: ArticleRow) -> dict[str, Any] | None:
-    """entries 以外に載せる c / o / g のみ（空なら None）。o は t と異なる場合だけ。"""
+    """entries 以外に載せる c / g のみ（空なら None）。"""
     chunk: dict[str, Any] = {}
     if row.c and str(row.c).strip():
         chunk["c"] = str(row.c).strip()
-    if row.o and str(row.o).strip():
-        ost = str(row.o).strip()
-        if ost != (row.t or "").strip():
-            chunk["o"] = ost
     if row.g:
         chunk["g"] = [str(x).strip() for x in row.g if isinstance(x, str) and str(x).strip()]
     return chunk if chunk else None
-
-
-def attach_jp_mainlist_title_from_main_series(
-    jp_rows: dict[str, ArticleRow], main_rows: dict[str, ArticleRow]
-) -> None:
-    """支部行の o に本家 /scp-n 一覧タイトルを載せる（一覧 t と異なるときのみ）。"""
-    for path, row in jp_rows.items():
-        m = SCP_JP_HREF.match(path)
-        if not m:
-            continue
-        n = int(m.group(1), 10)
-        main_row = main_rows.get(f"/scp-{n}")
-        if main_row is None:
-            continue
-        mt = (main_row.t or "").strip()
-        jt = (row.t or "").strip()
-        if mt and mt != jt:
-            row.o = mt
 
 
 def trifold_rows_to_manifest_parts(
@@ -1892,54 +1869,84 @@ def extract_first_content_image_url(soup: BeautifulSoup, base_url: str) -> str |
     return None
 
 
-_DESCRIPTION_HEADER_RE = re.compile(r"(説明|description)", re.I)
 _DESC_MAX_CHARS = 260
+_DESC_NOISE_SELECTORS = (
+    "script,style,noscript,"
+    ".page-rate-widget-box,.rate-box-with-credit-button,"
+    ".creditButton,.heritage-emblem,.scp-image-block-credit,"
+    ".footnotes-footer,.licensebox,#page-options-container"
+)
+# SCP / Joke 記事の本文先頭アンカー（優先順）。iOS の ContinueReadingDOMProbe と同等。
+_DESC_PRIMARY_ANCHORS = (
+    re.compile(r"特別収容プロトコル\s*[:：]?"),
+    re.compile(r"special containment procedures\s*:?", re.I),
+)
+_DESC_FALLBACK_ANCHORS = (
+    re.compile(r"説明\s*[:：]"),
+    re.compile(r"description\s*:", re.I),
+)
+# 抜粋を打ち切る後続セクション見出し。
+_DESC_STOP_PATTERNS = (
+    re.compile(r"説明\s*[:：]"),
+    re.compile(r"description\s*:", re.I),
+    re.compile(r"補遺\s*[:：]?"),
+    re.compile(r"追記\s*[:：]?"),
+    re.compile(r"追加記録\s*[:：]?"),
+    re.compile(r"脚注\s*[:：]?"),
+    re.compile(r"addendum\s*:?", re.I),
+    re.compile(r"footnotes\s*:?", re.I),
+)
+# テキスト先頭に残りがちな評価バッジ（"評価: +123" など）。
+_DESC_RATING_PREFIX_RE = re.compile(r"^評価\s*[:：]\s*\S+\s*", re.I)
+
+
+def _first_match(text: str, patterns: tuple[re.Pattern[str], ...]) -> re.Match[str] | None:
+    """patterns を順に試し、最初にヒットしたものを返す（None なら全滅）。"""
+    for pat in patterns:
+        m = pat.search(text)
+        if m:
+            return m
+    return None
 
 
 def extract_description_excerpt(soup: BeautifulSoup) -> str | None:
-    """`#page-content` の「説明 / Description」セクション直後のテキスト先頭 260 字。
+    """SCP / Joke 記事用の本文先頭抜粋。
 
-    見出しが見つからないときは `#page-content` 直下の最初のまとまった段落を返す。
+    iOS 側 `ContinueReadingDOMProbe.descriptionSectionPlainTextPrefixJavaScript` と
+    同等の優先順位・stop パターンで `#page-content` を切り出す。
+    アンカー（特別収容プロトコル / 説明 等）が見つからない場合は `None` を返す。
     """
-    content = soup.select_one("#page-content")
+    content = soup.select_one("#page-content") or soup.select_one("#wikidot-body") or soup.body
     if content is None:
         return None
+    clone = BeautifulSoup(str(content), "html.parser")
+    for noise in clone.select(_DESC_NOISE_SELECTORS):
+        noise.decompose()
+    txt = clone.get_text(separator=" ", strip=True)
+    txt = re.sub(r"\s+", " ", txt).strip()
+    txt = _DESC_RATING_PREFIX_RE.sub("", txt).strip()
+    if not txt:
+        return None
 
-    def collect_after(node, max_chars: int) -> str:
-        out: list[str] = []
-        cur = 0
-        sib = node.find_next_sibling()
-        while sib is not None and cur < max_chars:
-            if sib.name in {"h1", "h2", "h3"}:
-                break
-            text = sib.get_text(separator=" ", strip=True)
-            if text:
-                out.append(text)
-                cur += len(text)
-            sib = sib.find_next_sibling()
-        joined = " ".join(out).strip()
-        if not joined:
-            return ""
-        if len(joined) > max_chars:
-            joined = joined[:max_chars].rstrip() + "…"
-        return joined
+    start = _first_match(txt, _DESC_PRIMARY_ANCHORS) or _first_match(txt, _DESC_FALLBACK_ANCHORS)
+    if start is None:
+        return None
+    sliced = txt[start.end():].strip()
+    sliced = _DESC_RATING_PREFIX_RE.sub("", sliced).strip()
+    if not sliced:
+        return None
 
-    for h in content.find_all(["h1", "h2", "h3"]):
-        title = h.get_text(separator=" ", strip=True)
-        if title and _DESCRIPTION_HEADER_RE.search(title):
-            t = collect_after(h, _DESC_MAX_CHARS)
-            if t:
-                return t
-
-    # フォールバック: 最初の `<p>`
-    p = content.find("p")
-    if p is not None:
-        text = p.get_text(separator=" ", strip=True)
-        if text:
-            if len(text) > _DESC_MAX_CHARS:
-                text = text[:_DESC_MAX_CHARS].rstrip() + "…"
-            return text
-    return None
+    best_end = len(sliced)
+    for pat in _DESC_STOP_PATTERNS:
+        m = pat.search(sliced)
+        if m and m.start() > 8 and m.start() < best_end:
+            best_end = m.start()
+    sliced = sliced[:best_end].strip()
+    if not sliced:
+        return None
+    if len(sliced) > _DESC_MAX_CHARS:
+        sliced = sliced[:_DESC_MAX_CHARS].rstrip() + "…"
+    return sliced
 
 
 def extract_opening_excerpt(soup: BeautifulSoup) -> str | None:
@@ -2265,7 +2272,6 @@ class JapaneseBranchHarvester:
 
         print("INFO: base layer — mainlist", file=sys.stderr)
         main_rows = scrape_series_main(self.session, cfg)
-        attach_jp_mainlist_title_from_main_series(jp_rows, main_rows)
 
         jp_paths = set(jp_rows.keys())
         main_paths = set(main_rows.keys())
