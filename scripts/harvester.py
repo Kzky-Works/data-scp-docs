@@ -45,6 +45,8 @@ REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 MANIFEST_SCHEMA_VERSION = 2
 GOI_MANIFEST_SCHEMA_VERSION = 3
 
+HARVEST_STATE_FILENAME = "_harvest_state.json"
+
 # `--mode` の許容値。詳細は `main()` の引数ヘルプ参照。
 _HARVEST_MODE_CHOICES: tuple[str, ...] = ("daily", "weekly", "full")
 
@@ -1832,6 +1834,34 @@ def merge_img_desc_from_entries_to_metadata(
                 metadata[ik][field] = val
 
 
+def load_harvest_state(output_dir: str) -> dict[str, Any]:
+    """`_harvest_state.json` を読む。無ければ空辞書を返す。
+
+    weekly モードのセクション開始位置ローテーション用に `section_offset` を保持する。
+    """
+    path = os.path.join(output_dir, HARVEST_STATE_FILENAME)
+    if not os.path.isfile(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict):
+            return data
+    except (OSError, ValueError):
+        pass
+    return {}
+
+
+def save_harvest_state(output_dir: str, state: dict[str, Any]) -> None:
+    """`_harvest_state.json` を原子的に保存。"""
+    path = os.path.join(output_dir, HARVEST_STATE_FILENAME)
+    tpath = path + ".tmp"
+    with open(tpath, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.replace(tpath, path)
+
+
 def extract_first_content_image_url(soup: BeautifulSoup, base_url: str) -> str | None:
     """`#page-content` 内の最初の `<img>` を絶対 URL で返す。サイドメニュー・ナビ画像は除外。"""
     content = soup.select_one("#page-content")
@@ -1969,12 +1999,14 @@ def enrich_tale_entries_last_updated_in_place(
         ik = (ent.get("i") or "").strip() if isinstance(ent.get("i"), str) else ""
         if not u or not ik:
             continue
-        # lu と desc が両方判明していればスキップ（どちらか欠けている場合は再取得）。
-        if mode == "weekly" and ik in prior_lu and ik in prior_desc:
-            ent["lu"] = prior_lu[ik]
-            ent.setdefault("desc", prior_desc[ik])
-            skipped += 1
-            continue
+        if mode == "weekly":
+            if ik in prior_lu and not ent.get("lu"):
+                ent["lu"] = prior_lu[ik]
+            if ik in prior_desc:
+                ent.setdefault("desc", prior_desc[ik])
+            if ent.get("lu") and ent.get("desc"):
+                skipped += 1
+                continue
         if deadline is not None and time.time() >= deadline:
             print(
                 f"INFO: tales enrichment — time budget reached, stopping early "
@@ -1986,10 +2018,10 @@ def enrich_tale_entries_last_updated_in_place(
             html = fetch_html(session, u)
             soup = BeautifulSoup(html, "html.parser")
             ts = extract_page_info_unix_from_soup(soup)
-            if ts is not None:
+            if ts is not None and not ent.get("lu"):
                 ent["lu"] = ts
             desc = extract_opening_excerpt(soup)
-            if desc:
+            if desc and not ent.get("desc"):
                 ent["desc"] = desc
             fetched += 1
         except HTTPError as e:
@@ -2195,13 +2227,21 @@ def parse_goi_tag_pages(session: requests.Session, cfg: BranchConfig) -> list[di
 class JapaneseBranchHarvester:
     """JP 支部の収集 orchestrator。"""
 
-    def __init__(self, cfg: BranchConfig | None = None, mode: str = "full", deadline: float | None = None):
+    def __init__(
+        self,
+        cfg: BranchConfig | None = None,
+        mode: str = "full",
+        deadline: float | None = None,
+        section_offset: int = 0,
+    ):
         self.cfg = cfg or BranchConfig()
         self.session = requests.Session()
         # daily / weekly / full のクロール階層。詳細は `_HARVEST_MODE_CHOICES`。
         self.mode = mode if mode in _HARVEST_MODE_CHOICES else "full"
         # time.time() 換算の締め切り。None = 無制限。
         self.deadline = deadline
+        # weekly モードでセクション開始位置を毎回ずらすためのオフセット（state ファイル由来）。
+        self.section_offset = max(0, int(section_offset))
 
     def run(self) -> None:
         cfg = self.cfg
@@ -2305,16 +2345,6 @@ class JapaneseBranchHarvester:
         except Exception as ex:
             print(f"WARN: foundation-tales (EN hub): {ex}", file=sys.stderr)
         tale_entries = list(tale_by_i.values())
-        print(f"INFO: tales — per-article enrichment (mode={self.mode})", file=sys.stderr)
-        prior_lu, _prior_img_unused, prior_desc = load_existing_tales_metadata(man_tales)
-        enrich_tale_entries_last_updated_in_place(
-            self.session,
-            tale_entries,
-            mode=self.mode,
-            prior_lu=prior_lu,
-            prior_desc=prior_desc,
-            deadline=self.deadline,
-        )
 
         print("INFO: gois — goi-formats-jp (structured, schema v3)", file=sys.stderr)
         goi_regions, goi_flat, goi_meta = scrape_goi_formats_hub_structured(
@@ -2400,51 +2430,86 @@ class JapaneseBranchHarvester:
         else:
             print("INFO: object class fallback — skipped (jp_tag.json loaded)", file=sys.stderr)
 
+        # 5 セクション分の trifold/raw 分解と md prep。これを先に済ませることで、
+        # 下のローテーションに渡す closure が共通の前提状態の上で動ける。
         ej, mj = trifold_rows_to_manifest_parts(jp_rows)
-        prior_img_jp, prior_desc_jp = load_existing_manifest_img_desc(man_jp)
-        enrich_entries_img_desc_in_place(
-            self.session, ej, mode=self.mode, prior_img=prior_img_jp, prior_desc=prior_desc_jp,
-            deadline=self.deadline,
-        )
-        merge_img_desc_from_entries_to_metadata(ej, mj)
-        write_manifest(man_jp, ej, mj)
-
         em, mm = trifold_rows_to_manifest_parts(main_rows)
-        prior_img_main, prior_desc_main = load_existing_manifest_img_desc(man_main)
-        enrich_entries_img_desc_in_place(
-            self.session, em, mode=self.mode, prior_img=prior_img_main, prior_desc=prior_desc_main,
-            deadline=self.deadline,
-        )
-        merge_img_desc_from_entries_to_metadata(em, mm)
-        write_manifest(man_main, em, mm)
-
         enrich_metadata_tags_from_jp_tag_map(int_entries, md_int, jp_tag_articles)
-        prior_img_int, prior_desc_int = load_existing_manifest_img_desc(man_int)
-        enrich_entries_img_desc_in_place(
-            self.session, int_entries, mode=self.mode, prior_img=prior_img_int, prior_desc=prior_desc_int,
-            deadline=self.deadline,
-        )
-        merge_img_desc_from_entries_to_metadata(int_entries, md_int)
-        write_manifest(man_int, int_entries, md_int)
+        jl, jm = trifold_rows_to_manifest_parts(joke_rows)
 
-        tl, tm = tales_raw_to_manifest_parts(tale_entries)
-        n_lu = sum(1 for x in tl if isinstance(x.get("lu"), int) and int(x["lu"]) > 0)
-        print(
-            f"INFO: manifest_tales — entries={len(tl)} with_lu={n_lu} (listVersion via write_manifest)",
-            file=sys.stderr,
-        )
-        write_manifest(man_tales, tl, tm)
+        def _enrich_write_scp_jp() -> None:
+            prior_img, prior_desc = load_existing_manifest_img_desc(man_jp)
+            enrich_entries_img_desc_in_place(
+                self.session, ej, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
+                deadline=self.deadline,
+            )
+            merge_img_desc_from_entries_to_metadata(ej, mj)
+            write_manifest(man_jp, ej, mj)
+
+        def _enrich_write_scp_main() -> None:
+            prior_img, prior_desc = load_existing_manifest_img_desc(man_main)
+            enrich_entries_img_desc_in_place(
+                self.session, em, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
+                deadline=self.deadline,
+            )
+            merge_img_desc_from_entries_to_metadata(em, mm)
+            write_manifest(man_main, em, mm)
+
+        def _enrich_write_scp_int() -> None:
+            prior_img, prior_desc = load_existing_manifest_img_desc(man_int)
+            enrich_entries_img_desc_in_place(
+                self.session, int_entries, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
+                deadline=self.deadline,
+            )
+            merge_img_desc_from_entries_to_metadata(int_entries, md_int)
+            write_manifest(man_int, int_entries, md_int)
+
+        def _enrich_write_tales() -> None:
+            print(f"INFO: tales — per-article enrichment (mode={self.mode})", file=sys.stderr)
+            prior_lu, _prior_img_unused, prior_desc = load_existing_tales_metadata(man_tales)
+            enrich_tale_entries_last_updated_in_place(
+                self.session, tale_entries, mode=self.mode,
+                prior_lu=prior_lu, prior_desc=prior_desc, deadline=self.deadline,
+            )
+            tl, tm = tales_raw_to_manifest_parts(tale_entries)
+            n_lu = sum(1 for x in tl if isinstance(x.get("lu"), int) and int(x["lu"]) > 0)
+            print(
+                f"INFO: manifest_tales — entries={len(tl)} with_lu={n_lu} (listVersion via write_manifest)",
+                file=sys.stderr,
+            )
+            write_manifest(man_tales, tl, tm)
+
+        def _enrich_write_jokes() -> None:
+            prior_img, prior_desc = load_existing_manifest_img_desc(man_jokes)
+            enrich_entries_img_desc_in_place(
+                self.session, jl, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
+                deadline=self.deadline,
+            )
+            merge_img_desc_from_entries_to_metadata(jl, jm)
+            write_manifest(man_jokes, jl, jm)
+
+        # weekly モード時は section_offset で開始位置を 1 ずつ rotate（5 回で全セクションが「最初」になる）。
+        # daily / full は固定順（既存挙動維持）。
+        sections: list[tuple[str, "callable"]] = [
+            ("scp-jp", _enrich_write_scp_jp),
+            ("scp-main", _enrich_write_scp_main),
+            ("scp-int", _enrich_write_scp_int),
+            ("tales", _enrich_write_tales),
+            ("jokes", _enrich_write_jokes),
+        ]
+        if self.mode == "weekly":
+            offset = int(self.section_offset) % len(sections)
+            if offset:
+                sections = sections[offset:] + sections[:offset]
+            print(
+                f"INFO: section rotation — offset={offset} order={[s[0] for s in sections]}",
+                file=sys.stderr,
+            )
+        for name, action in sections:
+            action()
+
         write_goi_manifest_v3(man_gois, goi_payload)
         write_canon_manifest(man_canons, canon_light, canon_meta, canon_regions)
-
-        jl, jm = trifold_rows_to_manifest_parts(joke_rows)
-        prior_img_jokes, prior_desc_jokes = load_existing_manifest_img_desc(man_jokes)
-        enrich_entries_img_desc_in_place(
-            self.session, jl, mode=self.mode, prior_img=prior_img_jokes, prior_desc=prior_desc_jokes,
-            deadline=self.deadline,
-        )
-        merge_img_desc_from_entries_to_metadata(jl, jm)
-        write_manifest(man_jokes, jl, jm)
 
         print(
             f"OK: wrote {man_jp}, {man_main}, {man_int}, {man_tales}, {man_gois}, {man_canons}, {man_jokes}",
@@ -2679,16 +2744,49 @@ def main() -> int:
             "時間切れ時点までに取得した img/desc を partial commit して、次回実行で続きを再開できる。"
         ),
     )
+    p.add_argument(
+        "--reset-state",
+        action="store_true",
+        help=(
+            "weekly モードのセクション開始位置オフセットを 0 に戻す（schema 変更等で全件再エンリッチが必要になったとき用）。"
+        ),
+    )
     args = p.parse_args()
     cfg = BranchConfig()
     if args.output_dir:
         cfg.output_dir = os.path.abspath(args.output_dir)
     deadline = time.time() + args.time_budget_minutes * 60 if args.time_budget_minutes > 0 else None
+
+    # weekly モード時のみ section_offset を state から読み、run 後に +1 して保存。
+    # daily / full は state を一切いじらない（既存挙動）。
+    state: dict[str, Any] = {}
+    section_offset = 0
+    if args.mode == "weekly":
+        os.makedirs(cfg.output_dir, exist_ok=True)
+        state = load_harvest_state(cfg.output_dir)
+        if args.reset_state:
+            state["section_offset"] = 0
+        raw_off = state.get("section_offset", 0)
+        section_offset = int(raw_off) if isinstance(raw_off, int) else 0
+
     try:
-        JapaneseBranchHarvester(cfg, mode=args.mode, deadline=deadline).run()
-    except Exception as e:
-        print(f"ERROR: {e}", file=sys.stderr)
-        return 1
+        try:
+            JapaneseBranchHarvester(
+                cfg, mode=args.mode, deadline=deadline, section_offset=section_offset
+            ).run()
+        except Exception as e:
+            print(f"ERROR: {e}", file=sys.stderr)
+            return 1
+    finally:
+        # 例外で落ちても次回は別オフセットから始めたいので finally で保存。
+        # 同じセクションで詰まり続けると永遠に他セクションへ到達できないため。
+        if args.mode == "weekly":
+            state["section_offset"] = (section_offset + 1) % 5
+            save_harvest_state(cfg.output_dir, state)
+            print(
+                f"INFO: harvest state — next section_offset={state['section_offset']}",
+                file=sys.stderr,
+            )
     want_commit = bool(args.git_commit or args.git_push)
     try:
         git_stage_commit_push_json(

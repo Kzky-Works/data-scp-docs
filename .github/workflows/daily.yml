@@ -34,6 +34,12 @@ jobs:
           set -euxo pipefail
           pip install -r requirements.txt
 
+      - name: Register manifest merge driver
+        run: |
+          set -euo pipefail
+          git config merge.scpmanifest.name "SCP manifest union merge"
+          git config merge.scpmanifest.driver "python3 scripts/merge_manifest.py %O %A %B %P"
+
       - name: Run harvester (daily)
         run: |
           set -euxo pipefail
@@ -54,6 +60,10 @@ jobs:
           git commit -m "chore(data): refresh list/jp feeds (daily) [skip ci]"
           git fetch origin main
           git rebase origin/main
+          if grep -rl '^<<<<<<< ' list/jp/ >/dev/null 2>&1; then
+            echo "ERROR: unresolved conflict markers remain after merge driver"
+            exit 1
+          fi
           git push origin main
 
       - name: Open issue on failure
