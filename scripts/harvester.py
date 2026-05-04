@@ -2535,20 +2535,18 @@ def _refresh_metadata_from_body(
             chunk["desc"] = desc
             changed = True
     elif edit.kind in ("scp-jp", "scp-main", "scp-int", "jokes"):
+        # `g`/`c` は jp_tag.json (jp-tag-map workflow, 週次) を正本とするため、
+        # incremental refresh では更新しない（lu/img/desc のみ更新）。
+        # 記事が retag されても次の週次 jp-tag-map → weekly harvester で同期される。
         if img and chunk.get("img") != img:
             chunk["img"] = img
             changed = True
         if desc and chunk.get("desc") != desc:
             chunk["desc"] = desc
             changed = True
-        if tags is not None:
-            oc = object_class_from_tags(tags)
-            if oc and chunk.get("c") != oc:
-                chunk["c"] = oc
-                changed = True
-            if tags and chunk.get("g") != tags:
-                chunk["g"] = list(tags)
-                changed = True
+        if isinstance(lu, int) and lu > 0 and chunk.get("lu") != lu:
+            chunk["lu"] = lu
+            changed = True
     elif edit.kind == "canons":
         # canon は entries 側に lu を持つ（regions も同期させる）。
         ent = edit.entries[edit.i_to_idx[i_key]]
@@ -2573,8 +2571,13 @@ def _append_new_entry(
     soup: BeautifulSoup,
     tags: list[str],
     url: str,
+    jp_tag_articles: dict[str, list[str]] | None = None,
 ) -> None:
-    """新規エントリ 1 件を追加する。kind ごとに entry/metadata 形を整える。"""
+    """新規エントリ 1 件を追加する。kind ごとに entry/metadata 形を整える。
+
+    `jp_tag_articles` 指定時は、スラッグが既に jp_tag.json に登録されていれば
+    そちらの tags を `g` の正本として優先する（validator との整合性確保）。
+    """
     i_key = slug.lstrip("/").lower()
     if i_key in edit.i_to_idx:
         return
@@ -2601,15 +2604,20 @@ def _append_new_entry(
         if desc:
             new_meta["desc"] = desc
     elif edit.kind in ("scp-jp", "scp-main", "scp-int", "jokes"):
-        oc = object_class_from_tags(tags)
+        # jp_tag.json に既に登録されていればそちらを正本とする（validator との整合性のため）。
+        canonical_tags = (jp_tag_articles or {}).get(i_key) if jp_tag_articles else None
+        effective_tags = canonical_tags if canonical_tags is not None else tags
+        oc = object_class_from_tags(effective_tags)
         if oc:
             new_meta["c"] = oc
-        if tags:
-            new_meta["g"] = list(tags)
+        if effective_tags:
+            new_meta["g"] = list(effective_tags)
         if img:
             new_meta["img"] = img
         if desc:
             new_meta["desc"] = desc
+        if isinstance(lu, int) and lu > 0:
+            new_meta["lu"] = lu
     elif edit.kind == "canons":
         # canon hub 系の新規追加は regions 構造の再構築が要るので incremental では入れず full に任せる。
         return
@@ -2699,6 +2707,9 @@ class IncrementalHarvester:
                 if slug not in slug_index:
                     slug_index[slug] = (kind, i)
 
+        # jp_tag.json を読み込み、新規エントリの `g` として優先採用する（validator 整合性のため）。
+        jp_tag_articles = load_jp_tag_articles(cfg.output_dir)
+
         # 3. 各リスティングを差分処理
         from recent_pages import (
             iter_recently_created_jp,
@@ -2743,6 +2754,7 @@ class IncrementalHarvester:
                     edits[kind],
                     slug=ent.slug, title=ent.title,
                     base_host=cfg.site_host, soup=soup, tags=tags, url=url,
+                    jp_tag_articles=jp_tag_articles,
                 )
                 slug_index[slug_l] = (kind, ent.slug.lstrip("/").lower())
             if ent.ts_unix > max_ts_jp:
@@ -2783,6 +2795,7 @@ class IncrementalHarvester:
                     edits[kind],
                     slug=ent.slug, title=ent.title,
                     base_host=cfg.site_host, soup=soup, tags=tags, url=url,
+                    jp_tag_articles=jp_tag_articles,
                 )
                 slug_index[slug_l] = (kind, ent.slug.lstrip("/").lower())
             if ent.ts_unix > max_ts_tl:
