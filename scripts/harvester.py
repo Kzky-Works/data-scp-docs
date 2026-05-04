@@ -1732,24 +1732,27 @@ def load_existing_tales_metadata(path: str) -> tuple[dict[str, int], dict[str, s
     return lu_by_i, img_by_i, desc_by_i
 
 
-def load_existing_manifest_img_desc(path: str) -> tuple[dict[str, str], dict[str, str]]:
-    """既存 manifest の `metadata` セクションから `i -> img` / `i -> desc` を読み出す。
+def load_existing_manifest_img_desc(
+    path: str,
+) -> tuple[dict[str, str], dict[str, str], dict[str, int]]:
+    """既存 manifest の `metadata` セクションから `i -> img` / `i -> desc` / `i -> lu` を読み出す。
 
-    trifold SCP 報告書・jokes など `lu` を持たないマニフェスト用の軽量版。
-    ファイルが無い／壊れているときは `({}, {})` を返す。
+    trifold SCP 報告書・jokes 用。`lu` はサイトマップ lastmod skip 用に追加。
+    ファイルが無い／壊れているときは `({}, {}, {})` を返す。
     """
     img_by_i: dict[str, str] = {}
     desc_by_i: dict[str, str] = {}
+    lu_by_i: dict[str, int] = {}
     if not os.path.isfile(path):
-        return img_by_i, desc_by_i
+        return img_by_i, desc_by_i, lu_by_i
     try:
         with open(path, "r", encoding="utf-8") as f:
             payload = json.load(f)
     except (OSError, ValueError):
-        return img_by_i, desc_by_i
+        return img_by_i, desc_by_i, lu_by_i
     metadata = payload.get("metadata") if isinstance(payload, dict) else None
     if not isinstance(metadata, dict):
-        return img_by_i, desc_by_i
+        return img_by_i, desc_by_i, lu_by_i
     for ik, chunk in metadata.items():
         if not isinstance(ik, str) or not isinstance(chunk, dict):
             continue
@@ -1762,7 +1765,10 @@ def load_existing_manifest_img_desc(path: str) -> tuple[dict[str, str], dict[str
         desc = chunk.get("desc")
         if isinstance(desc, str) and desc.strip():
             desc_by_i[key] = desc.strip()
-    return img_by_i, desc_by_i
+        lu = chunk.get("lu")
+        if isinstance(lu, int) and lu > 0:
+            lu_by_i[key] = lu
+    return img_by_i, desc_by_i, lu_by_i
 
 
 def enrich_entries_img_desc_in_place(
@@ -1772,21 +1778,25 @@ def enrich_entries_img_desc_in_place(
     mode: str = "full",
     prior_img: dict[str, str] | None = None,
     prior_desc: dict[str, str] | None = None,
+    prior_lu: dict[str, int] | None = None,
     deadline: float | None = None,
+    sitemap_lastmod: dict[str, int] | None = None,
 ) -> None:
-    """entries に `img`/`desc` を付与する（SCP 報告書・jokes 共用）。
+    """entries に `img`/`desc`/`lu` を付与する（SCP 報告書・jokes 共用）。
 
     モード:
-    - `daily`: 本文 fetch しない。prior_img / prior_desc を entries に復元するだけ。
-    - `weekly`: prior_img に `i` が既にある記事はスキップ（差分取得）。ない記事のみ本文フェッチ。
-    - `full`: 全件フェッチ。
+    - `daily`: 本文 fetch しない。prior_img / prior_desc / prior_lu を entries に復元するだけ。
+    - `weekly`: 既に img を取得済みの記事はスキップ。`sitemap_lastmod` 指定時は
+                「サイトマップ lastmod ≤ prior_lu」かつ「prior_img に存在」で skip 判定を強化（無変更 fetch を回避）。
+    - `full`: 全件フェッチ（ただし sitemap_lastmod があり前回 lu と一致なら skip）。
 
-    付与した img / desc は entries の各 dict に直接セットする。
+    付与した img / desc / lu は entries の各 dict に直接セットする。
     呼び出し元は `merge_img_desc_from_entries_to_metadata` で metadata へ移すこと。
     `deadline` (time.time() 換算の unix 秒) を指定すると、超過時にループを中断して部分結果を返す。
     """
     prior_img = prior_img or {}
     prior_desc = prior_desc or {}
+    prior_lu = prior_lu or {}
 
     if mode == "daily":
         for ent in entries:
@@ -1797,25 +1807,43 @@ def enrich_entries_img_desc_in_place(
                 ent.setdefault("img", prior_img[ik])
             if ik in prior_desc:
                 ent.setdefault("desc", prior_desc[ik])
+            if ik in prior_lu:
+                ent.setdefault("lu", prior_lu[ik])
         return
 
     fetched = 0
     skipped = 0
+    sitemap_skipped = 0
     for ent in entries:
         u = (ent.get("u") or "").strip()
         ik = (ent.get("i") or "").strip()
         if not u or not ik:
             continue
-        if mode == "weekly" and ik in prior_img:
+        # サイトマップ lastmod skip: 既に img 取得済み + lu 不変なら本文 fetch を完全に省く。
+        if sitemap_lastmod is not None and ik in prior_img:
+            path_key = urlparse(u).path or ("/" + ik)
+            sm_lu = sitemap_lastmod.get(path_key)
+            p_lu = prior_lu.get(ik)
+            if sm_lu is not None and p_lu is not None and p_lu >= sm_lu:
+                ent.setdefault("img", prior_img[ik])
+                if ik in prior_desc:
+                    ent.setdefault("desc", prior_desc[ik])
+                ent.setdefault("lu", p_lu)
+                sitemap_skipped += 1
+                continue
+        # サイトマップ無し時の従来 weekly skip: img 取得済みなら fetch しない。
+        if mode == "weekly" and sitemap_lastmod is None and ik in prior_img:
             ent.setdefault("img", prior_img[ik])
             if ik in prior_desc:
                 ent.setdefault("desc", prior_desc[ik])
+            if ik in prior_lu:
+                ent.setdefault("lu", prior_lu[ik])
             skipped += 1
             continue
         if deadline is not None and time.time() >= deadline:
             print(
                 f"INFO: img/desc enrichment — time budget reached, stopping early "
-                f"(fetched={fetched} preserved={skipped})",
+                f"(fetched={fetched} preserved={skipped} sitemap_skip={sitemap_skipped})",
                 file=sys.stderr,
             )
             break
@@ -1828,6 +1856,9 @@ def enrich_entries_img_desc_in_place(
             desc = extract_description_excerpt(soup)
             if desc:
                 ent["desc"] = desc
+            lu = extract_page_info_unix_from_soup(soup)
+            if isinstance(lu, int) and lu > 0:
+                ent["lu"] = lu
             fetched += 1
         except HTTPError as e:
             st = e.response.status_code if e.response is not None else 0
@@ -1836,7 +1867,7 @@ def enrich_entries_img_desc_in_place(
             print(f"WARN: article page fetch failed: {u} ({ex})", file=sys.stderr)
 
     print(
-        f"INFO: img/desc enrichment — mode={mode} fetched={fetched} preserved={skipped}",
+        f"INFO: img/desc enrichment — mode={mode} fetched={fetched} preserved={skipped} sitemap_skip={sitemap_skipped}",
         file=sys.stderr,
     )
 
@@ -1853,7 +1884,7 @@ def merge_img_desc_from_entries_to_metadata(
         ik = (ent.get("i") or "").strip()
         if not ik:
             continue
-        for field in ("img", "desc"):
+        for field in ("img", "desc", "lu"):
             val = ent.pop(field, None)
             if val:
                 if ik not in metadata:
@@ -2025,6 +2056,7 @@ def enrich_tale_entries_last_updated_in_place(
     prior_lu: dict[str, int] | None = None,
     prior_desc: dict[str, str] | None = None,
     deadline: float | None = None,
+    sitemap_lastmod: dict[str, int] | None = None,
 ) -> None:
     """各 Tale の本文 URL を取得し `#page-info` から `lu`、`#page-content` 冒頭段落から `desc` を付与。
     Tales は img を収集しない（画像がほぼ存在しないため）。
@@ -2032,8 +2064,9 @@ def enrich_tale_entries_last_updated_in_place(
     モード:
     - `daily`: 本文 fetch しない。前回値（`prior_lu`/`prior_desc`）を復元するだけ。
     - `weekly`: `lu` と `desc` が両方判明している記事はスキップ（差分取得）。
-    - `full`: 全記事を取得し直す。
+    - `full`: 全記事を取得し直す（ただし sitemap_lastmod があり前回 lu と一致なら skip）。
     `deadline` (time.time() 換算の unix 秒) を指定すると、超過時にループを中断して部分結果を返す。
+    `sitemap_lastmod` 指定時は、サイトマップ lastmod ≤ prior_lu の記事は本文 fetch を完全省略。
     """
     prior_lu = prior_lu or {}
     prior_desc = prior_desc or {}
@@ -2051,11 +2084,22 @@ def enrich_tale_entries_last_updated_in_place(
 
     fetched: int = 0
     skipped: int = 0
+    sitemap_skipped: int = 0
     for ent in entries:
         u = (ent.get("u") or "").strip() if isinstance(ent.get("u"), str) else ""
         ik = (ent.get("i") or "").strip() if isinstance(ent.get("i"), str) else ""
         if not u or not ik:
             continue
+        # サイトマップ lastmod skip: 前回 lu があり、かつ サイトマップの lastmod がそれ以下なら本文 fetch 不要。
+        if sitemap_lastmod is not None and ik in prior_lu:
+            path_key = urlparse(u).path or ("/" + ik)
+            sm_lu = sitemap_lastmod.get(path_key)
+            if sm_lu is not None and prior_lu[ik] >= sm_lu:
+                ent["lu"] = prior_lu[ik]
+                if ik in prior_desc:
+                    ent.setdefault("desc", prior_desc[ik])
+                sitemap_skipped += 1
+                continue
         if mode == "weekly":
             if ik in prior_lu and not ent.get("lu"):
                 ent["lu"] = prior_lu[ik]
@@ -2067,7 +2111,7 @@ def enrich_tale_entries_last_updated_in_place(
         if deadline is not None and time.time() >= deadline:
             print(
                 f"INFO: tales enrichment — time budget reached, stopping early "
-                f"(fetched={fetched} preserved={skipped})",
+                f"(fetched={fetched} preserved={skipped} sitemap_skip={sitemap_skipped})",
                 file=sys.stderr,
             )
             break
@@ -2087,7 +2131,10 @@ def enrich_tale_entries_last_updated_in_place(
         except Exception as ex:
             print(f"WARN: tale page fetch failed: {u} ({ex})", file=sys.stderr)
 
-    print(f"INFO: tales enrichment — mode={mode} fetched={fetched} preserved={skipped}", file=sys.stderr)
+    print(
+        f"INFO: tales enrichment — mode={mode} fetched={fetched} preserved={skipped} sitemap_skip={sitemap_skipped}",
+        file=sys.stderr,
+    )
 
 
 def tales_raw_to_manifest_parts(raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -2830,6 +2877,7 @@ class JapaneseBranchHarvester:
         mode: str = "full",
         deadline: float | None = None,
         section_offset: int = 0,
+        use_sitemap: bool = True,
     ):
         self.cfg = cfg or BranchConfig()
         self.session = requests.Session()
@@ -2839,12 +2887,33 @@ class JapaneseBranchHarvester:
         self.deadline = deadline
         # weekly モードでセクション開始位置を毎回ずらすためのオフセット（state ファイル由来）。
         self.section_offset = max(0, int(section_offset))
+        # Wikidot sitemap.xml を使った lastmod skip を有効にするか。
+        self.use_sitemap = use_sitemap
+        self._sitemap_lastmod: dict[str, int] | None = None
+
+    def _load_sitemap_lastmod(self) -> dict[str, int] | None:
+        """sitemap.xml をフェッチして `{path: lastmod_unix}` を返す。失敗時は None。"""
+        if not self.use_sitemap:
+            return None
+        try:
+            from sitemap import load_wikidot_sitemap_lastmod
+        except ImportError as ex:
+            print(f"WARN: sitemap module unavailable ({ex}); continuing without sitemap skip", file=sys.stderr)
+            return None
+        try:
+            lm = load_wikidot_sitemap_lastmod(self.session, self.cfg.site_host)
+        except Exception as ex:
+            print(f"WARN: sitemap load failed ({ex}); continuing without sitemap skip", file=sys.stderr)
+            return None
+        print(f"INFO: sitemap lastmod loaded: {len(lm)} entries", file=sys.stderr)
+        return lm if lm else None
 
     def run(self) -> None:
         cfg = self.cfg
         os.makedirs(cfg.output_dir, exist_ok=True)
         out_abs = os.path.abspath(cfg.output_dir)
         print(f"INFO: output-dir (absolute): {out_abs}", file=sys.stderr)
+        self._sitemap_lastmod = self._load_sitemap_lastmod()
         print(
             f"INFO: manifest_canons.json will be: {os.path.join(out_abs, 'manifest_canons.json')}",
             file=sys.stderr,
@@ -3034,28 +3103,31 @@ class JapaneseBranchHarvester:
         jl, jm = trifold_rows_to_manifest_parts(joke_rows)
 
         def _enrich_write_scp_jp() -> None:
-            prior_img, prior_desc = load_existing_manifest_img_desc(man_jp)
+            prior_img, prior_desc, prior_lu = load_existing_manifest_img_desc(man_jp)
             enrich_entries_img_desc_in_place(
-                self.session, ej, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
-                deadline=self.deadline,
+                self.session, ej, mode=self.mode,
+                prior_img=prior_img, prior_desc=prior_desc, prior_lu=prior_lu,
+                deadline=self.deadline, sitemap_lastmod=self._sitemap_lastmod,
             )
             merge_img_desc_from_entries_to_metadata(ej, mj)
             write_manifest(man_jp, ej, mj)
 
         def _enrich_write_scp_main() -> None:
-            prior_img, prior_desc = load_existing_manifest_img_desc(man_main)
+            prior_img, prior_desc, prior_lu = load_existing_manifest_img_desc(man_main)
             enrich_entries_img_desc_in_place(
-                self.session, em, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
-                deadline=self.deadline,
+                self.session, em, mode=self.mode,
+                prior_img=prior_img, prior_desc=prior_desc, prior_lu=prior_lu,
+                deadline=self.deadline, sitemap_lastmod=self._sitemap_lastmod,
             )
             merge_img_desc_from_entries_to_metadata(em, mm)
             write_manifest(man_main, em, mm)
 
         def _enrich_write_scp_int() -> None:
-            prior_img, prior_desc = load_existing_manifest_img_desc(man_int)
+            prior_img, prior_desc, prior_lu = load_existing_manifest_img_desc(man_int)
             enrich_entries_img_desc_in_place(
-                self.session, int_entries, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
-                deadline=self.deadline,
+                self.session, int_entries, mode=self.mode,
+                prior_img=prior_img, prior_desc=prior_desc, prior_lu=prior_lu,
+                deadline=self.deadline, sitemap_lastmod=self._sitemap_lastmod,
             )
             merge_img_desc_from_entries_to_metadata(int_entries, md_int)
             write_manifest(man_int, int_entries, md_int)
@@ -3066,6 +3138,7 @@ class JapaneseBranchHarvester:
             enrich_tale_entries_last_updated_in_place(
                 self.session, tale_entries, mode=self.mode,
                 prior_lu=prior_lu, prior_desc=prior_desc, deadline=self.deadline,
+                sitemap_lastmod=self._sitemap_lastmod,
             )
             tl, tm = tales_raw_to_manifest_parts(tale_entries)
             n_lu = sum(1 for x in tl if isinstance(x.get("lu"), int) and int(x["lu"]) > 0)
@@ -3076,10 +3149,11 @@ class JapaneseBranchHarvester:
             write_manifest(man_tales, tl, tm)
 
         def _enrich_write_jokes() -> None:
-            prior_img, prior_desc = load_existing_manifest_img_desc(man_jokes)
+            prior_img, prior_desc, prior_lu = load_existing_manifest_img_desc(man_jokes)
             enrich_entries_img_desc_in_place(
-                self.session, jl, mode=self.mode, prior_img=prior_img, prior_desc=prior_desc,
-                deadline=self.deadline,
+                self.session, jl, mode=self.mode,
+                prior_img=prior_img, prior_desc=prior_desc, prior_lu=prior_lu,
+                deadline=self.deadline, sitemap_lastmod=self._sitemap_lastmod,
             )
             merge_img_desc_from_entries_to_metadata(jl, jm)
             write_manifest(man_jokes, jl, jm)
@@ -3350,6 +3424,13 @@ def main() -> int:
             "weekly モードのセクション開始位置オフセットを 0 に戻す（schema 変更等で全件再エンリッチが必要になったとき用）。"
         ),
     )
+    p.add_argument(
+        "--no-sitemap",
+        dest="use_sitemap",
+        action="store_false",
+        help="Wikidot sitemap.xml を使った lastmod skip を無効化（デバッグ用フォールバック）。",
+    )
+    p.set_defaults(use_sitemap=True)
     args = p.parse_args()
     cfg = BranchConfig()
     if args.output_dir:
@@ -3374,7 +3455,8 @@ def main() -> int:
                 state = IncrementalHarvester(cfg, deadline=deadline).run(state)
             else:
                 JapaneseBranchHarvester(
-                    cfg, mode=args.mode, deadline=deadline, section_offset=section_offset
+                    cfg, mode=args.mode, deadline=deadline, section_offset=section_offset,
+                    use_sitemap=args.use_sitemap,
                 ).run()
         except Exception as e:
             print(f"ERROR: {e}", file=sys.stderr)
