@@ -1,5 +1,9 @@
 # 週次クロール（中量）: Tale 個別本文の lu / img / desc を **差分取得**（前回 lu が判明している記事はスキップ）。
 # アプリのサムネ・抜粋・続きから読むプレビューの鮮度を維持しつつ、Wikidot への週次本文アクセスを数百件以下に抑える。
+#
+# TODO(incremental): daily.yml が `--mode incremental` で安定稼働すれば、
+# `most-recently-edited` 由来の lu/img/desc 更新と機能が重複する。
+# 数週間ぶんの観測でカバレッジ十分が確認できたらこのワークフロー自体を retire する。
 name: Update list feeds (weekly)
 
 on:

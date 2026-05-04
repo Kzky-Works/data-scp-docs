@@ -48,7 +48,12 @@ GOI_MANIFEST_SCHEMA_VERSION = 3
 HARVEST_STATE_FILENAME = "_harvest_state.json"
 
 # `--mode` の許容値。詳細は `main()` の引数ヘルプ参照。
-_HARVEST_MODE_CHOICES: tuple[str, ...] = ("daily", "weekly", "full")
+_HARVEST_MODE_CHOICES: tuple[str, ...] = ("daily", "weekly", "full", "incremental")
+
+# incremental モードのカーソル安全装置。
+# 1 ジェネレータあたり何ページまで遡るか・全マニフェスト合計で何件まで本文 fetch するかを制限する。
+INCREMENTAL_HARD_CAP_PAGES = 50
+INCREMENTAL_MAX_BODY_FETCHES_PER_RUN = 200
 
 HTTP_HEADERS = {
     "User-Agent": "ScpDocsHarvester/1.0 (+https://github.com/Kzky-Works/data-scp-docs)",
@@ -123,6 +128,17 @@ INTL_SEED_PATHS: tuple[str, ...] = (
     "/scp-series-cn",
     "/scp-series-zh",
 )
+
+# CN 系: 記事本文が存在する有効な一覧ページのみ。
+# `/scp-series-cn-1-tales-edition` などは記事リンクを持つが本文が 404 のため除外し、
+# enrichment フェッチでの大量 404 を回避する。
+CN_SERIES_VALID_PATHS: frozenset[str] = frozenset({
+    "/scp-series-cn",
+    "/scp-series-cn-2",
+    "/scp-series-cn-3",
+    "/scp-series-cn-4",
+    "/scp-series-cn-5",
+})
 
 
 def is_intl_scp_article_path(pth: str) -> bool:
@@ -596,7 +612,13 @@ def looks_intl_list(path: str) -> bool:
         return False
     if is_english_main_series_list(path):
         return False
-    return any(s in pl for s in INTL_LIST_HINTS)
+    if not any(s in pl for s in INTL_LIST_HINTS):
+        return False
+    # CN 系: tales-edition 等の派生ページはリンク先記事が 404 を量産するため、
+    # 一覧として有効なのは CN_SERIES_VALID_PATHS のみに限定する。
+    if "scp-series-cn" in pl and pl.rstrip("/") not in CN_SERIES_VALID_PATHS:
+        return False
+    return True
 
 
 def discover_intl_list_urls(session: requests.Session, cfg: BranchConfig) -> list[str]:
@@ -2235,6 +2257,546 @@ def parse_goi_tag_pages(session: requests.Session, cfg: BranchConfig) -> list[di
     return out
 
 
+# --------------------------------------------------------------------------- #
+# Incremental mode (listing-page driven)
+# --------------------------------------------------------------------------- #
+#
+# `daily` モードは毎回シリーズ／ハブ計 25–30 ページを舐めていたが、
+# 大半の日は実際の差分は数件しかない。
+# `incremental` モードは Wikidot 側の `/most-recently-created-jp`、
+# `/most-recently-created-translated`、`/most-recently-edited` の 3 リスティングページを
+# カーソル付きで読み、前回以降の差分だけマニフェストに反映する。
+# 構造変更や renames / 削除の取りこぼしは月次 `full` モードで補正する想定。
+#
+# 対応マニフェスト:
+#   - manifest_scp-jp / manifest_scp-main / manifest_scp-int / manifest_tales / manifest_jokes
+#     -> 既存スラッグなら img/desc/lu を再 fetch して上書き、新規なら本文 fetch でタグ分類して追加
+#   - manifest_canons
+#     -> 既存ハブの `lu` のみ refresh（regions 構造は触らず）。新規ハブは monthly full で取り込む。
+#   - manifest_gois
+#     -> v3 goiRegions の付け替えが必要なため incremental では touch しない（monthly full 専任）。
+
+INCREMENTAL_STATE_KEY = "incremental"
+
+
+def _incremental_cursor(state: dict[str, Any], key: str) -> int:
+    """`state["incremental"][key]` を int として返す。欠落時 0。"""
+    inc = state.get(INCREMENTAL_STATE_KEY)
+    if not isinstance(inc, dict):
+        return 0
+    v = inc.get(key)
+    if isinstance(v, int) and v > 0:
+        return v
+    return 0
+
+
+def _set_incremental_cursor(state: dict[str, Any], key: str, value: int) -> None:
+    inc = state.setdefault(INCREMENTAL_STATE_KEY, {})
+    if not isinstance(inc, dict):
+        inc = {}
+        state[INCREMENTAL_STATE_KEY] = inc
+    inc[key] = int(value)
+
+
+def _stamp_full_run(state: dict[str, Any]) -> None:
+    state["lastFullRunUtc"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _extract_article_tags(soup: BeautifulSoup) -> list[str]:
+    """Wikidot 記事ページの `<div class="page-tags">` からタグ語の配列を返す。"""
+    pt = soup.select_one("div.page-tags")
+    if pt is None:
+        return []
+    out: list[str] = []
+    for a in pt.find_all("a"):
+        t = (a.get_text(strip=True) or "").strip()
+        if t:
+            out.append(t)
+    return out
+
+
+# `manifest_scp-int.json` で扱う言語コード（先頭 `_` が付いた raw タグ）。
+_INTL_LANG_TAG_PREFIXES = (
+    "_cn", "_de", "_es", "_fr", "_it", "_ko", "_pl", "_pt", "_ro", "_ru",
+    "_th", "_ua", "_vn", "_zh", "_cs", "_sk",
+)
+
+
+def _classify_manifest_for_new_slug(
+    slug: str, tags: list[str]
+) -> str | None:
+    """新規スラッグを 7 マニフェストのどれに振り分けるか決定する。
+
+    返り値は ``"scp-jp"`` / ``"scp-main"`` / ``"scp-int"`` / ``"tales"`` / ``"jokes"`` /
+    ``"canons"`` / ``"gois"`` のいずれか、または分類対象外を意味する ``None``。
+    """
+    tag_set = {t.lower() for t in tags}
+    s = slug.lower()
+    if "tale" in tag_set:
+        return "tales"
+    if "goi-format" in tag_set:
+        return "gois"
+    if "joke" in tag_set:
+        return "jokes"
+    if "hub" in tag_set and ("canon" in tag_set or "シリーズ" in tag_set or "series" in tag_set):
+        return "canons"
+    if "scp" in tag_set:
+        if "jp" in tag_set and re.match(r"^/scp-\d+-jp$", s):
+            return "scp-jp"
+        # 国際版言語タグ
+        for pfx in _INTL_LANG_TAG_PREFIXES:
+            if pfx in tag_set:
+                return "scp-int"
+        if is_intl_scp_article_path(s):
+            return "scp-int"
+        if re.match(r"^/scp-\d+$", s):
+            return "scp-main"
+    return None
+
+
+@dataclass
+class _ManifestEdits:
+    """1 マニフェスト分の差分編集状態。
+
+    - ``entries``: 現行の entries 配列（必要なら appended/書換）
+    - ``metadata``: 現行の metadata（i -> chunk）
+    - ``i_to_idx``: i -> entries 内のインデックス
+    - ``slug_to_i``: スラッグ（小文字、先頭 `/` 付き）-> i
+    - ``dirty``: 何かしら触ったか
+    """
+
+    kind: str
+    path: str
+    entries: list[dict[str, Any]]
+    metadata: dict[str, Any]
+    i_to_idx: dict[str, int]
+    slug_to_i: dict[str, str]
+    dirty: bool = False
+    # canon は schemaVersion 2 でも canonRegions を保つ必要があるので原本 payload を持っておく。
+    canon_regions: dict[str, list[dict[str, Any]]] | None = None
+
+
+def _slug_from_entry_u(u: str | None, base_host: str) -> str | None:
+    if not isinstance(u, str) or not u.strip():
+        return None
+    pu = urlparse(u.strip())
+    if not pu.path:
+        return None
+    return pu.path.lower()
+
+
+def _load_manifest_for_edit(kind: str, path: str, base_host: str) -> _ManifestEdits:
+    """既存マニフェストを読み込み、incremental 用の編集ハンドルを構築する。"""
+    entries: list[dict[str, Any]] = []
+    metadata: dict[str, Any] = {}
+    canon_regions: dict[str, list[dict[str, Any]]] | None = None
+    if os.path.isfile(path):
+        try:
+            with open(path, encoding="utf-8") as f:
+                payload = json.load(f)
+            raw_entries = payload.get("entries")
+            if isinstance(raw_entries, list):
+                entries = [e for e in raw_entries if isinstance(e, dict)]
+            raw_md = payload.get("metadata")
+            if isinstance(raw_md, dict):
+                metadata = {k: dict(v) for k, v in raw_md.items() if isinstance(k, str) and isinstance(v, dict)}
+            raw_cr = payload.get("canonRegions")
+            if isinstance(raw_cr, dict):
+                canon_regions = {
+                    "jp": list(raw_cr.get("jp") or []),
+                    "en": list(raw_cr.get("en") or []),
+                    "series_jp": list(raw_cr.get("seriesJp") or []),
+                }
+        except (OSError, ValueError) as ex:
+            print(f"WARN: incremental: failed to load {path}: {ex}", file=sys.stderr)
+    i_to_idx: dict[str, int] = {}
+    slug_to_i: dict[str, str] = {}
+    for idx, ent in enumerate(entries):
+        ik = ent.get("i")
+        if isinstance(ik, str) and ik.strip():
+            i_to_idx[ik.strip()] = idx
+        slug = _slug_from_entry_u(ent.get("u"), base_host)
+        if slug:
+            slug_to_i[slug] = ent.get("i", "") if isinstance(ent.get("i"), str) else ""
+    return _ManifestEdits(
+        kind=kind,
+        path=path,
+        entries=entries,
+        metadata=metadata,
+        i_to_idx=i_to_idx,
+        slug_to_i=slug_to_i,
+        dirty=False,
+        canon_regions=canon_regions,
+    )
+
+
+def _refresh_metadata_from_body(
+    edit: _ManifestEdits,
+    i_key: str,
+    soup: BeautifulSoup,
+    base_url: str,
+    *,
+    tags: list[str] | None = None,
+) -> None:
+    """既存エントリの metadata を本文 fetch 結果で上書き。kind に応じてフィールドを選ぶ。"""
+    if i_key not in edit.i_to_idx:
+        return
+    chunk = edit.metadata.setdefault(i_key, {})
+    if not isinstance(chunk, dict):
+        chunk = {}
+        edit.metadata[i_key] = chunk
+
+    img = extract_first_content_image_url(soup, base_url)
+    desc = extract_description_excerpt(soup)
+    lu = extract_page_info_unix_from_soup(soup)
+
+    changed = False
+    if edit.kind == "tales":
+        # tales は entries 側に lu を、metadata 側に img/desc を持つ。
+        ent = edit.entries[edit.i_to_idx[i_key]]
+        if isinstance(lu, int) and lu > 0 and ent.get("lu") != lu:
+            ent["lu"] = lu
+            changed = True
+        if img and chunk.get("img") != img:
+            chunk["img"] = img
+            changed = True
+        if desc and chunk.get("desc") != desc:
+            chunk["desc"] = desc
+            changed = True
+    elif edit.kind in ("scp-jp", "scp-main", "scp-int", "jokes"):
+        if img and chunk.get("img") != img:
+            chunk["img"] = img
+            changed = True
+        if desc and chunk.get("desc") != desc:
+            chunk["desc"] = desc
+            changed = True
+        if tags is not None:
+            oc = object_class_from_tags(tags)
+            if oc and chunk.get("c") != oc:
+                chunk["c"] = oc
+                changed = True
+            if tags and chunk.get("g") != tags:
+                chunk["g"] = list(tags)
+                changed = True
+    elif edit.kind == "canons":
+        # canon は entries 側に lu を持つ（regions も同期させる）。
+        ent = edit.entries[edit.i_to_idx[i_key]]
+        if isinstance(lu, int) and lu > 0 and ent.get("lu") != lu:
+            ent["lu"] = lu
+            changed = True
+            if edit.canon_regions:
+                for region_lines in edit.canon_regions.values():
+                    for line in region_lines:
+                        if isinstance(line, dict) and line.get("i") == i_key:
+                            line["lu"] = lu
+    if changed:
+        edit.dirty = True
+
+
+def _append_new_entry(
+    edit: _ManifestEdits,
+    *,
+    slug: str,
+    title: str,
+    base_host: str,
+    soup: BeautifulSoup,
+    tags: list[str],
+    url: str,
+) -> None:
+    """新規エントリ 1 件を追加する。kind ごとに entry/metadata 形を整える。"""
+    i_key = slug.lstrip("/").lower()
+    if i_key in edit.i_to_idx:
+        return
+    base = base_host.rstrip("/")
+    u = base + slug
+
+    img = extract_first_content_image_url(soup, base + slug)
+    desc = extract_description_excerpt(soup)
+    lu = extract_page_info_unix_from_soup(soup)
+
+    new_entry: dict[str, Any] = {"u": u, "i": i_key, "t": title}
+    new_meta: dict[str, Any] = {}
+
+    if edit.kind == "tales":
+        if isinstance(lu, int) and lu > 0:
+            new_entry["lu"] = lu
+        # tales は jp/en/jp+en の region を r フィールドで保持する。
+        # incremental では JP リスティング由来 → "jp"、translated 由来 → "en" を呼び出し側で渡す。
+        # ここではタグからの推定: jp タグ → jp、それ以外 → en に倒す。
+        tag_set = {t.lower() for t in tags}
+        new_meta["r"] = "jp" if "jp" in tag_set else "en"
+        if img:
+            new_meta["img"] = img
+        if desc:
+            new_meta["desc"] = desc
+    elif edit.kind in ("scp-jp", "scp-main", "scp-int", "jokes"):
+        oc = object_class_from_tags(tags)
+        if oc:
+            new_meta["c"] = oc
+        if tags:
+            new_meta["g"] = list(tags)
+        if img:
+            new_meta["img"] = img
+        if desc:
+            new_meta["desc"] = desc
+    elif edit.kind == "canons":
+        # canon hub 系の新規追加は regions 構造の再構築が要るので incremental では入れず full に任せる。
+        return
+    elif edit.kind == "gois":
+        return
+
+    edit.entries.append(new_entry)
+    edit.i_to_idx[i_key] = len(edit.entries) - 1
+    edit.slug_to_i[slug.lower()] = i_key
+    if new_meta:
+        edit.metadata[i_key] = new_meta
+    edit.dirty = True
+    print(f"INFO: incremental + {edit.kind}: {slug} ({title!r})", file=sys.stderr)
+
+
+def _write_edits(edit: _ManifestEdits) -> None:
+    """編集後マニフェストを書き戻す。dirty=False なら no-op（listVersion 据え置き）。"""
+    if not edit.dirty:
+        return
+    if edit.kind == "canons":
+        regions = edit.canon_regions or {"jp": [], "en": [], "series_jp": []}
+        write_canon_manifest(edit.path, edit.entries, edit.metadata, regions)
+    else:
+        write_manifest(edit.path, edit.entries, edit.metadata)
+
+
+class IncrementalHarvester:
+    """Wikidot 集約ページから差分のみ抽出してマニフェストに当てる軽量 orchestrator。"""
+
+    def __init__(
+        self,
+        cfg: BranchConfig | None = None,
+        deadline: float | None = None,
+    ):
+        self.cfg = cfg or BranchConfig()
+        self.session = requests.Session()
+        self.deadline = deadline
+        self.body_fetches = 0
+
+    def _budget_exhausted(self) -> bool:
+        if self.deadline is not None and time.time() >= self.deadline:
+            return True
+        if self.body_fetches >= INCREMENTAL_MAX_BODY_FETCHES_PER_RUN:
+            return True
+        return False
+
+    def _fetch_body(self, url: str) -> tuple[BeautifulSoup, list[str]] | None:
+        """記事本文を取得し ``(soup, tags)`` を返す。404/410 等は None。"""
+        try:
+            html = fetch_html(self.session, url)
+        except HTTPError as e:
+            st = e.response.status_code if e.response is not None else 0
+            print(f"WARN: incremental body fetch failed ({st}): {url}", file=sys.stderr)
+            return None
+        except Exception as ex:  # noqa: BLE001
+            print(f"WARN: incremental body fetch failed: {url} ({ex})", file=sys.stderr)
+            return None
+        self.body_fetches += 1
+        soup = BeautifulSoup(html, "html.parser")
+        tags = _extract_article_tags(soup)
+        return soup, tags
+
+    def run(self, state: dict[str, Any]) -> dict[str, Any]:
+        """state を更新して返す（呼び出し側が `save_harvest_state` で保存する）。"""
+        cfg = self.cfg
+        os.makedirs(cfg.output_dir, exist_ok=True)
+        base = cfg.site_host.rstrip("/")
+
+        # 1. 既存マニフェストを編集ハンドルに展開
+        kinds = ("scp-jp", "scp-main", "scp-int", "tales", "jokes", "canons", "gois")
+        edits: dict[str, _ManifestEdits] = {}
+        for kind in kinds:
+            fname = f"manifest_{kind}.json" if kind != "scp-jp" else "manifest_scp-jp.json"
+            # kind は filename suffix と一致するように設計済み。
+            if kind == "scp-main":
+                fname = "manifest_scp-main.json"
+            elif kind == "scp-int":
+                fname = "manifest_scp-int.json"
+            edits[kind] = _load_manifest_for_edit(
+                kind, os.path.join(cfg.output_dir, fname), cfg.site_host
+            )
+
+        # 2. グローバルなスラッグ -> (kind, i) 逆引きインデックス
+        slug_index: dict[str, tuple[str, str]] = {}
+        for kind, edit in edits.items():
+            for slug, i in edit.slug_to_i.items():
+                if slug not in slug_index:
+                    slug_index[slug] = (kind, i)
+
+        # 3. 各リスティングを差分処理
+        from recent_pages import (
+            iter_recently_created_jp,
+            iter_recently_translated,
+            iter_recently_edited,
+        )
+
+        cursors_advanced: dict[str, int] = {}
+
+        # --- (a) 新規 JP 作成 ---
+        since_jp = _incremental_cursor(state, "lastCreatedJpUnix")
+        print(f"INFO: incremental: created-jp since_unix={since_jp}", file=sys.stderr)
+        res_jp = iter_recently_created_jp(
+            self.session, cfg.site_host,
+            since_unix=since_jp, fetch_html=fetch_html,
+            hard_cap_pages=INCREMENTAL_HARD_CAP_PAGES,
+        )
+        max_ts_jp = since_jp
+        for ent in res_jp.entries:
+            if self._budget_exhausted():
+                print("INFO: incremental: budget exhausted during created-jp", file=sys.stderr)
+                break
+            slug_l = ent.slug.lower()
+            existing = slug_index.get(slug_l)
+            if existing is not None:
+                # 既知記事（再公開等）は recent-edited 側で metadata refresh されるためここではスキップ。
+                if ent.ts_unix > max_ts_jp:
+                    max_ts_jp = ent.ts_unix
+                continue
+            url = base + ent.slug
+            fetched = self._fetch_body(url)
+            if fetched is None:
+                continue
+            soup, tags = fetched
+            kind = _classify_manifest_for_new_slug(ent.slug, tags)
+            if kind is None:
+                if ent.ts_unix > max_ts_jp:
+                    max_ts_jp = ent.ts_unix
+                continue
+            if kind in edits:
+                _append_new_entry(
+                    edits[kind],
+                    slug=ent.slug, title=ent.title,
+                    base_host=cfg.site_host, soup=soup, tags=tags, url=url,
+                )
+                slug_index[slug_l] = (kind, ent.slug.lstrip("/").lower())
+            if ent.ts_unix > max_ts_jp:
+                max_ts_jp = ent.ts_unix
+        if not res_jp.incomplete:
+            cursors_advanced["lastCreatedJpUnix"] = max_ts_jp
+
+        # --- (b) 新規翻訳 ---
+        since_tl = _incremental_cursor(state, "lastCreatedTranslatedUnix")
+        print(f"INFO: incremental: created-translated since_unix={since_tl}", file=sys.stderr)
+        res_tl = iter_recently_translated(
+            self.session, cfg.site_host,
+            since_unix=since_tl, fetch_html=fetch_html,
+            hard_cap_pages=INCREMENTAL_HARD_CAP_PAGES,
+        )
+        max_ts_tl = since_tl
+        for ent in res_tl.entries:
+            if self._budget_exhausted():
+                print("INFO: incremental: budget exhausted during created-translated", file=sys.stderr)
+                break
+            slug_l = ent.slug.lower()
+            if slug_l in slug_index:
+                if ent.ts_unix > max_ts_tl:
+                    max_ts_tl = ent.ts_unix
+                continue
+            url = base + ent.slug
+            fetched = self._fetch_body(url)
+            if fetched is None:
+                continue
+            soup, tags = fetched
+            kind = _classify_manifest_for_new_slug(ent.slug, tags)
+            if kind is None:
+                if ent.ts_unix > max_ts_tl:
+                    max_ts_tl = ent.ts_unix
+                continue
+            if kind in edits:
+                _append_new_entry(
+                    edits[kind],
+                    slug=ent.slug, title=ent.title,
+                    base_host=cfg.site_host, soup=soup, tags=tags, url=url,
+                )
+                slug_index[slug_l] = (kind, ent.slug.lstrip("/").lower())
+            if ent.ts_unix > max_ts_tl:
+                max_ts_tl = ent.ts_unix
+        if not res_tl.incomplete:
+            cursors_advanced["lastCreatedTranslatedUnix"] = max_ts_tl
+
+        # --- (c) 編集（既知スラッグだけ refresh）---
+        since_ed = _incremental_cursor(state, "lastEditedUnix")
+        print(f"INFO: incremental: edited since_unix={since_ed}", file=sys.stderr)
+        res_ed = iter_recently_edited(
+            self.session, cfg.site_host,
+            since_unix=since_ed, fetch_html=fetch_html,
+            hard_cap_pages=INCREMENTAL_HARD_CAP_PAGES,
+        )
+        max_ts_ed = since_ed
+        # 編集列挙の中身は author / fragment / forum 等のシステムページが大半なので、
+        # 既知スラッグだけに絞ることで本文 fetch 数を抑える。
+        for ent in res_ed.entries:
+            if self._budget_exhausted():
+                print("INFO: incremental: budget exhausted during edited", file=sys.stderr)
+                break
+            slug_l = ent.slug.lower()
+            existing = slug_index.get(slug_l)
+            if existing is None:
+                if ent.ts_unix > max_ts_ed:
+                    max_ts_ed = ent.ts_unix
+                continue
+            kind, i_key = existing
+            if kind == "gois":
+                # GoI は incremental では触らない（regions 再構築コストが見合わない）。
+                if ent.ts_unix > max_ts_ed:
+                    max_ts_ed = ent.ts_unix
+                continue
+            url = base + ent.slug
+            fetched = self._fetch_body(url)
+            if fetched is None:
+                continue
+            soup, tags = fetched
+            edit = edits[kind]
+            # i_key は slug 由来とは限らない（過去 schema で別キーの可能性）ので逆引きで取り直す。
+            real_i = edit.slug_to_i.get(slug_l, i_key)
+            _refresh_metadata_from_body(edit, real_i, soup, url, tags=tags)
+            if ent.ts_unix > max_ts_ed:
+                max_ts_ed = ent.ts_unix
+        if not res_ed.incomplete:
+            cursors_advanced["lastEditedUnix"] = max_ts_ed
+
+        # 4. マニフェストを書き戻す（dirty なものだけ）
+        for edit in edits.values():
+            _write_edits(edit)
+
+        # 5. catalog index を更新（既存 full と同等の手順）
+        write_catalog_index(
+            cfg.output_dir,
+            files=[
+                ("manifest_scp-jp", os.path.join(cfg.output_dir, "manifest_scp-jp.json")),
+                ("manifest_scp-main", os.path.join(cfg.output_dir, "manifest_scp-main.json")),
+                ("manifest_scp-int", os.path.join(cfg.output_dir, "manifest_scp-int.json")),
+                ("manifest_tales", os.path.join(cfg.output_dir, "manifest_tales.json")),
+                ("manifest_canons", os.path.join(cfg.output_dir, "manifest_canons.json")),
+                ("manifest_gois", os.path.join(cfg.output_dir, "manifest_gois.json")),
+                ("manifest_jokes", os.path.join(cfg.output_dir, "manifest_jokes.json")),
+            ],
+        )
+
+        # 6. state カーソルを進める（incomplete なジェネレータは保留）
+        for key, val in cursors_advanced.items():
+            _set_incremental_cursor(state, key, val)
+        state.setdefault(INCREMENTAL_STATE_KEY, {})[
+            "lastIncrementalRunUtc"
+        ] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        print(
+            "INFO: incremental: done. "
+            f"body_fetches={self.body_fetches} "
+            f"created_jp_new={sum(1 for e in res_jp.entries if e.ts_unix > since_jp)} "
+            f"translated_new={sum(1 for e in res_tl.entries if e.ts_unix > since_tl)} "
+            f"edited_seen={len(res_ed.entries)} "
+            f"cursors_advanced={list(cursors_advanced.keys())}",
+            file=sys.stderr,
+        )
+        return state
+
+
 class JapaneseBranchHarvester:
     """JP 支部の収集 orchestrator。"""
 
@@ -2740,7 +3302,10 @@ def main() -> int:
         choices=list(_HARVEST_MODE_CHOICES),
         default="full",
         help=(
-            "クロール階層。`daily` は一覧ハブのみ取得し Tale 本文（lu/img/desc）は前回値を引き継ぐ；"
+            "クロール階層。`incremental` は Wikidot の most-recently-created-jp / "
+            "most-recently-created-translated / most-recently-edited を読み、前回以降の差分だけを"
+            "マニフェストに反映（軽量）；"
+            "`daily` は一覧ハブのみ取得し Tale 本文（lu/img/desc）は前回値を引き継ぐ；"
             "`weekly` は前回 lu が無い記事だけ本文を取得して img/desc も抽出；"
             "`full` は全記事の本文を取得し直す（旧来挙動・既定）。"
         ),
@@ -2767,23 +3332,26 @@ def main() -> int:
         cfg.output_dir = os.path.abspath(args.output_dir)
     deadline = time.time() + args.time_budget_minutes * 60 if args.time_budget_minutes > 0 else None
 
-    # weekly モード時のみ section_offset を state から読み、run 後に +1 して保存。
-    # daily / full は state を一切いじらない（既存挙動）。
+    # weekly / incremental / full モードは state を読み書きする。daily は state を一切いじらない（既存挙動）。
     state: dict[str, Any] = {}
     section_offset = 0
-    if args.mode == "weekly":
+    if args.mode in ("weekly", "incremental", "full"):
         os.makedirs(cfg.output_dir, exist_ok=True)
         state = load_harvest_state(cfg.output_dir)
-        if args.reset_state:
-            state["section_offset"] = 0
-        raw_off = state.get("section_offset", 0)
-        section_offset = int(raw_off) if isinstance(raw_off, int) else 0
+        if args.mode == "weekly":
+            if args.reset_state:
+                state["section_offset"] = 0
+            raw_off = state.get("section_offset", 0)
+            section_offset = int(raw_off) if isinstance(raw_off, int) else 0
 
     try:
         try:
-            JapaneseBranchHarvester(
-                cfg, mode=args.mode, deadline=deadline, section_offset=section_offset
-            ).run()
+            if args.mode == "incremental":
+                state = IncrementalHarvester(cfg, deadline=deadline).run(state)
+            else:
+                JapaneseBranchHarvester(
+                    cfg, mode=args.mode, deadline=deadline, section_offset=section_offset
+                ).run()
         except Exception as e:
             print(f"ERROR: {e}", file=sys.stderr)
             return 1
@@ -2797,6 +3365,12 @@ def main() -> int:
                 f"INFO: harvest state — next section_offset={state['section_offset']}",
                 file=sys.stderr,
             )
+        elif args.mode == "incremental":
+            save_harvest_state(cfg.output_dir, state)
+        elif args.mode == "full":
+            # full 完走で state.lastFullRunUtc を打刻（incremental 側のドリフト判断に使う）。
+            _stamp_full_run(state)
+            save_harvest_state(cfg.output_dir, state)
     want_commit = bool(args.git_commit or args.git_push)
     try:
         git_stage_commit_push_json(

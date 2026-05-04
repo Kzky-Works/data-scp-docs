@@ -1,5 +1,10 @@
-# 日次クロール（軽量）: 一覧ハブのみ取得。Tale 本文 (lu / img / desc) には触らず、前回値を引き継ぐ。
-# Wikidot への日次リクエスト数を「数千 → 数十」に抑える。本文の鮮度は `weekly.yml` に委ねる。
+# 日次差分（超軽量）: Wikidot の most-recently-created-jp / -translated / -edited を読み、前回以降の差分だけを反映。
+# 大半の日は数件レベルなので、リクエスト数は「数十 → 数件」に圧縮される。
+# 構造変更や renames / 削除の取りこぼしは月次 `update.yml` (full) で補正する。
+#
+# ロールバック: リスティングページの仕様変更や障害でこのモードが機能しなくなったら、
+# 下の `--mode incremental` を `--mode daily` に戻すだけで旧来のハブ全走査に切替わる
+# （その場合 weekly.yml の Tale 本文ローテも引き続き動く）。
 name: Update list feeds (daily)
 
 on:
@@ -40,10 +45,10 @@ jobs:
           git config merge.scpmanifest.name "SCP manifest union merge"
           git config merge.scpmanifest.driver "python3 scripts/merge_manifest.py %O %A %B %P"
 
-      - name: Run harvester (daily)
+      - name: Run harvester (incremental)
         run: |
           set -euxo pipefail
-          python3 scripts/harvester.py --mode daily
+          python3 scripts/harvester.py --mode incremental
           python3 scripts/validate_manifests.py
           ls -la list/jp/
 
@@ -57,7 +62,7 @@ jobs:
             echo "No changes — skipping commit."
             exit 0
           fi
-          git commit -m "chore(data): refresh list/jp feeds (daily) [skip ci]"
+          git commit -m "chore(data): refresh list/jp feeds (incremental) [skip ci]"
           git fetch origin main
           git rebase origin/main
           if grep -rl '^<<<<<<< ' list/jp/ >/dev/null 2>&1; then
