@@ -252,6 +252,20 @@ def fetch_html(session: requests.Session, url: str, *, retries: int = 6) -> str:
     raise last
 
 
+def _link_is_newpage(a) -> bool:
+    """Wikidot 慣習: `<a class="newpage">` はリンク先がまだ作成されていない（404）ことを示す。
+    一覧ページから個別記事 URL を抽出する際に除外することで、無駄な enrichment フェッチと 404 警告を防ぐ。
+    """
+    if a is None:
+        return False
+    classes = a.get("class")
+    if classes is None:
+        return False
+    if isinstance(classes, str):
+        return "newpage" in classes.split()
+    return "newpage" in classes
+
+
 def extract_title_from_li(li) -> str | None:
     full = li.get_text(separator="", strip=False).strip()
     if " - " not in full:
@@ -296,6 +310,8 @@ def scrape_series_jp(session: requests.Session, cfg: BranchConfig) -> dict[str, 
             a = li.find("a", href=True)
             if not a:
                 continue
+            if _link_is_newpage(a):
+                continue
             href = (a.get("href") or "").strip()
             pu = urlparse(urljoin(base + "/", href))
             m = SCP_JP_HREF.match(pu.path)
@@ -325,6 +341,8 @@ def scrape_series_main(session: requests.Session, cfg: BranchConfig) -> dict[str
         for li in soup.find_all("li"):
             a = li.find("a", href=True)
             if not a:
+                continue
+            if _link_is_newpage(a):
                 continue
             href = (a.get("href") or "").strip()
             pu = urlparse(urljoin(base + "/", href))
@@ -660,6 +678,8 @@ def extract_intl_titles(html: str, base_host: str) -> dict[str, str]:
         a = li.find("a", href=True)
         if not a:
             continue
+        if _link_is_newpage(a):
+            continue
         raw = (a.get("href") or "").strip()
         pu = urlparse(urljoin(base + "/", raw))
         pth = pu.path
@@ -846,6 +866,8 @@ def page_content_link_map_from_root(root, page_url: str, base: str) -> dict[str,
         return out
     base_netloc = urlparse(base).netloc
     for a in root.find_all("a", href=True):
+        if _link_is_newpage(a):
+            continue
         raw = (a.get("href") or "").strip().split("#")[0]
         if not raw or raw.startswith("javascript:"):
             continue
@@ -940,6 +962,8 @@ def scrape_joke_article_rows(session: requests.Session, cfg: BranchConfig) -> di
         for li in root.find_all("li"):
             a = li.find("a", href=True)
             if not a:
+                continue
+            if _link_is_newpage(a):
                 continue
             href = (a.get("href") or "").strip()
             pu = urlparse(urljoin(base + "/", href))
