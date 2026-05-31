@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1780174029,
+  "generatedAt": "2026-05-30T20:47:09Z",
+  "chunkRevision": "sha256-1d7e16628ce29169d5ffd3efc5cc25baf986081dcef38bbc85e0663f9e3cafbc",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-fr",
+        "path": "DataPipeline/list/fr/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 13,
+        "generatedAt": "2026-05-25T08:55:33Z",
+        "contentHash": "sha256-9ad690af24fafbe4e42617ffdbda47f9161f369a0bb66f1859ea1cd3134cf55f"
+      },
+      {
+        "kind": "manifest_scp-fr",
+        "branchID": "scp-fr",
+        "path": "DataPipeline/list/fr/manifest_scp-fr.json",
+        "schemaVersion": 2,
+        "listVersion": 8,
+        "generatedAt": "2026-05-25T04:45:04Z",
+        "contentHash": "sha256-8d4c47a23b6dfe3a78255dd2b9905ba664f0c2d6fc262cbe74d51e7390c226a4"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-fr",
+        "path": "DataPipeline/list/fr/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 9,
+        "generatedAt": "2026-05-25T08:55:26Z",
+        "contentHash": "sha256-e98466415e9bf4d34b74bd06e3026b66dca4192e66ffa215b58fb0c6dce9ee6b"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-d492a4ecc5a06b94918d569bcd980985c2cdbf36fc37df9647d2f0a59f703ce2"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-fr:collection:canon:bsia",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "bsia",
+      "title": "Bureau de Surveillance des Individus Anormaux",
+      "sourceListURL": "https://fondationscp.wikidot.com/bsia",
+      "officialHubURL": "https://fondationscp.wikidot.com/bsia",
+      "hubPresentation": "standard",
+      "canonicalTag": "bsia",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "bsia",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "generic"
+          },
+          {
+            "tag": "collaboration-fr",
+            "reason": "genericCollaboration"
+          },
+          {
+            "tag": "fr",
+            "reason": "region"
+          }
+        ],
+        "notes": []
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "primaryArticles": [
+        {
+          "id": "scp-245-fr",
+          "title": "Tout l'amour du monde",
+          "url": "https://fondationscp.wikidot.com/scp-245-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-408-fr",
+          "title": "Cerf Chantant",
+          "url": "https://fondationscp.wikidot.com/scp-408-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-719-fr",
+          "title": "Lares S██████",
+          "url": "https://fondationscp.wikidot.com/scp-719-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-773-fr",
+          "title": "Trouver sa voie",
+          "url": "https://fondationscp.wikidot.com/scp-773-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "adoucissons-les-moeurs",
+          "title": "Adoucissons les moeurs",
+          "url": "https://fondationscp.wikidot.com/adoucissons-les-moeurs",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ancien-monarque-perdu",
+          "title": "Ancien monarque perdu",
+          "url": "https://fondationscp.wikidot.com/ancien-monarque-perdu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "conversation-petite-blind",
+          "title": "D'Agents à Agents : Petite blind",
+          "url": "https://fondationscp.wikidot.com/conversation-petite-blind",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "deux-steaks",
+          "title": "Deux steaks",
+          "url": "https://fondationscp.wikidot.com/deux-steaks",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "djinn-tonic",
+          "title": "La Charte",
+          "url": "https://fondationscp.wikidot.com/djinn-tonic",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "entre-en-jeu-le-bureau",
+          "title": "Entre en jeu le Bureau",
+          "url": "https://fondationscp.wikidot.com/entre-en-jeu-le-bureau",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "humanoids-park",
+          "title": "Humanoids Park",
+          "url": "https://fondationscp.wikidot.com/humanoids-park",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "je-suis-un-cliche",
+          "title": "Je suis un cliché",
+          "url": "https://fondationscp.wikidot.com/je-suis-un-cliche",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kid-s-show-edition-anormal",
+          "title": "Kid's Show : Édition Anormale",
+          "url": "https://fondationscp.wikidot.com/kid-s-show-edition-anormal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-jeune-homme-le-vieillard-et-m-waltz",
+          "title": "Le Jeune homme, le Vieillard et M. Waltz",
+          "url": "https://fondationscp.wikidot.com/le-jeune-homme-le-vieillard-et-m-waltz",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-pianiste-sans-piano",
+          "title": "Le pianiste sans piano",
+          "url": "https://fondationscp.wikidot.com/le-pianiste-sans-piano",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-tracas-de-thomas-l-avocat",
+          "title": "Les Tracas de Thomas l'Avocat",
+          "url": "https://fondationscp.wikidot.com/les-tracas-de-thomas-l-avocat",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "object-93p",
+          "title": "Object 93P",
+          "url": "https://fondationscp.wikidot.com/object-93p",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "question-de-choix",
+          "title": "Question de choix",
+          "url": "https://fondationscp.wikidot.com/question-de-choix",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reveil-d-un-homme",
+          "title": "Réveil d'un homme",
+          "url": "https://fondationscp.wikidot.com/reveil-d-un-homme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "schroedinger-serait-fier",
+          "title": "Schrödinger serait fier",
+          "url": "https://fondationscp.wikidot.com/schroedinger-serait-fier",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-heros",
+          "title": "Un Héros",
+          "url": "https://fondationscp.wikidot.com/un-heros",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.bsia"
+    },
+    {
+      "id": "scp-fr:collection:series:desert-humain",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "desert-humain",
+      "title": "Désert Humain",
+      "sourceListURL": "https://fondationscp.wikidot.com/desert-humain",
+      "officialHubURL": "https://fondationscp.wikidot.com/desert-humain",
+      "hubPresentation": "standard",
+      "canonicalTag": "désert-humain",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "désert-humain",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "generic"
+          }
+        ],
+        "notes": [
+          "Hub URL slug is desert-humain; reverse lookup tag keeps the accent."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "FR Tales metadata.g coverage is below native SCP coverage; this seed was reviewed as a representative fixture."
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "primaryArticles": [
+        {
+          "id": "l-age-du-marbre",
+          "title": "L'Âge du Marbre",
+          "url": "https://fondationscp.wikidot.com/l-age-du-marbre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-mort-d-un-reve",
+          "title": "La mort d'un rêve",
+          "url": "https://fondationscp.wikidot.com/la-mort-d-un-reve",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-vraie-valeur-des-choses",
+          "title": "La Vraie Valeur Des Choses",
+          "url": "https://fondationscp.wikidot.com/la-vraie-valeur-des-choses",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-devoir-de-memoire",
+          "title": "Le devoir de mémoire",
+          "url": "https://fondationscp.wikidot.com/le-devoir-de-memoire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "loin-des-yeux-loin-du-coeur",
+          "title": "Loin des yeux, loin du cœur",
+          "url": "https://fondationscp.wikidot.com/loin-des-yeux-loin-du-coeur",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ombres-post-modernes",
+          "title": "Ombres post-modernes",
+          "url": "https://fondationscp.wikidot.com/ombres-post-modernes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perte-artistique",
+          "title": "Perte Artistique",
+          "url": "https://fondationscp.wikidot.com/perte-artistique",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "proteger-l-innocent",
+          "title": "Protéger l'innocent",
+          "url": "https://fondationscp.wikidot.com/proteger-l-innocent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "retrouver-son-chemin",
+          "title": "Retrouver Son Chemin",
+          "url": "https://fondationscp.wikidot.com/retrouver-son-chemin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vaincre-la-vie",
+          "title": "Vaincre la vie",
+          "url": "https://fondationscp.wikidot.com/vaincre-la-vie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.desert_humain"
+    }
+  ]
+}

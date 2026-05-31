@@ -1,0 +1,624 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1780174031,
+  "generatedAt": "2026-05-31T04:24:01Z",
+  "chunkRevision": "sha256-6a5721d5a2fdab41693832448c7a1aeccdbd61904de689d2a7e7e56d6d93276c",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-jp",
+        "path": "DataPipeline/list/jp/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1777039515,
+        "generatedAt": "2026-05-25T09:03:10Z",
+        "contentHash": "sha256-2e51f8f61f617553585fa0b7d5a6b1f677e98873c4ca9ab32462ddb19ce9872d"
+      },
+      {
+        "kind": "manifest_scp-jp",
+        "branchID": "scp-jp",
+        "path": "DataPipeline/list/jp/manifest_scp-jp.json",
+        "schemaVersion": 2,
+        "listVersion": 1777885329,
+        "generatedAt": "2026-05-30T03:29:19Z",
+        "contentHash": "sha256-5b6ed88ec4d311cbee7b9408f6de8f4437106ff638483646f9d6d30e860effb2"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-jp",
+        "path": "DataPipeline/list/jp/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1777025014,
+        "generatedAt": "2026-05-30T03:29:19Z",
+        "contentHash": "sha256-26c4b79bf20a5073882ff4875f6ae9fea92815c3cf7cf5e5ba0948dfead577b9"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-d492a4ecc5a06b94918d569bcd980985c2cdbf36fc37df9647d2f0a59f703ce2"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-jp:collection:canon:canon-jp-2",
+      "branchID": "scp-jp",
+      "kind": "canon",
+      "hubID": "canon-jp-2",
+      "title": "わるいざいだん -確保・収容・支配-",
+      "sourceListURL": "https://scp-jp.wikidot.com/canon-jp-2",
+      "officialHubURL": "https://scp-jp.wikidot.com/canon-jp-2",
+      "hubPresentation": "standard",
+      "canonicalTag": "わるいざいだん",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "わるいざいだん",
+        "rejected": [
+          {
+            "tag": "jp",
+            "reason": "region"
+          },
+          {
+            "tag": "インターナショナル",
+            "reason": "generic"
+          },
+          {
+            "tag": "ハブ",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "合作",
+            "reason": "genericCollaboration"
+          }
+        ],
+        "notes": []
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "primaryArticles": [
+        {
+          "id": "scp-2202-jp",
+          "title": "rror",
+          "url": "https://scp-jp.wikidot.com/scp-2202-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2355-jp",
+          "title": "信心深き不審者",
+          "url": "https://scp-jp.wikidot.com/scp-2355-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2468-jp",
+          "title": "うたかた",
+          "url": "https://scp-jp.wikidot.com/scp-2468-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2590-jp",
+          "title": "永映夢",
+          "url": "https://scp-jp.wikidot.com/scp-2590-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3007-jp",
+          "title": "幻実世界",
+          "url": "https://scp-jp.wikidot.com/scp-3007-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4000-jp",
+          "title": "忌名",
+          "url": "https://scp-jp.wikidot.com/scp-4000-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ak1-s-tales-recruit-hurriedly",
+          "title": "急募",
+          "url": "https://scp-jp.wikidot.com/ak1-s-tales-recruit-hurriedly",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "amesist-tear",
+          "title": "紫水晶の涙を",
+          "url": "https://scp-jp.wikidot.com/amesist-tear",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "anime-bystander-green-jp",
+          "title": "「アニメ『迅速搬送闘士バイスタンダー・グリーン』ありし日の殲滅！悪党どもへの天誅」の放送とそれに付随する処理",
+          "url": "https://scp-jp.wikidot.com/anime-bystander-green-jp",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "bad-fondation-01",
+          "title": "SCPがいっぱい",
+          "url": "https://scp-jp.wikidot.com/bad-fondation-01",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "bad-foundation-02",
+          "title": "小さな小さな王様",
+          "url": "https://scp-jp.wikidot.com/bad-foundation-02",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "creed-and-greed-traitor",
+          "title": "Creed & Greed: Traitor",
+          "url": "https://scp-jp.wikidot.com/creed-and-greed-traitor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dark-omiai",
+          "title": "静穏の終わる朝",
+          "url": "https://scp-jp.wikidot.com/dark-omiai",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dclass-search",
+          "title": "Dクラス職員簡易検索システム",
+          "url": "https://scp-jp.wikidot.com/dclass-search",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dictator-s-qualification",
+          "title": "独裁者の資格",
+          "url": "https://scp-jp.wikidot.com/dictator-s-qualification",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fatal-error-clock",
+          "title": "フェイタルエラークロック",
+          "url": "https://scp-jp.wikidot.com/fatal-error-clock",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "goodbye-petit-princesse",
+          "title": "さよなら、ほしのおひめさま",
+          "url": "https://scp-jp.wikidot.com/goodbye-petit-princesse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "holy-nova-tale-wordfromdominator",
+          "title": "A Word FromThe Dominator || &quot;統治者&quot;の言葉",
+          "url": "https://scp-jp.wikidot.com/holy-nova-tale-wordfromdominator",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "human-or-not",
+          "title": "そいつはヒトなのか？",
+          "url": "https://scp-jp.wikidot.com/human-or-not",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "k-u-m-a-011",
+          "title": "正義の味方",
+          "url": "https://scp-jp.wikidot.com/k-u-m-a-011",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "many-goi",
+          "title": "GoIがいっぱい",
+          "url": "https://scp-jp.wikidot.com/many-goi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mary-tale11",
+          "title": "何が世界を歪めたのか",
+          "url": "https://scp-jp.wikidot.com/mary-tale11",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "monster",
+          "title": "妖怪",
+          "url": "https://scp-jp.wikidot.com/monster",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "nekomiya-tale-006",
+          "title": "鬼穴の奥より来たるもの",
+          "url": "https://scp-jp.wikidot.com/nekomiya-tale-006",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "oral-examination-for-site-director",
+          "title": "サイト管理者のための面接試験――エージェント・カナヘビによる面接",
+          "url": "https://scp-jp.wikidot.com/oral-examination-for-site-director",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ressources-humaines-to-evil-foundation",
+          "title": "歪んだ世界と1つの友情",
+          "url": "https://scp-jp.wikidot.com/ressources-humaines-to-evil-foundation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "risoluto",
+          "title": "名犬リゾルート",
+          "url": "https://scp-jp.wikidot.com/risoluto",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "soilence-20150213-01",
+          "title": "異海観航",
+          "url": "https://scp-jp.wikidot.com/soilence-20150213-01",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tale-of-bad-foundation-and-doc-the-toymaker",
+          "title": "わるいざいだんとおもちゃ屋のドク",
+          "url": "https://scp-jp.wikidot.com/tale-of-bad-foundation-and-doc-the-toymaker",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "third-homeplanet-01",
+          "title": "第三の故郷 -幕切れの空-",
+          "url": "https://scp-jp.wikidot.com/third-homeplanet-01",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "zvezda",
+          "title": "ズヴェズダ",
+          "url": "https://scp-jp.wikidot.com/zvezda",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.canon_jp_2"
+    },
+    {
+      "id": "scp-jp:collection:series:q9alt-hub",
+      "branchID": "scp-jp",
+      "kind": "series",
+      "hubID": "q9alt-hub",
+      "title": "Q9ALT",
+      "sourceListURL": "https://scp-jp.wikidot.com/q9alt-hub",
+      "officialHubURL": "https://scp-jp.wikidot.com/q9alt-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "q9alt",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "q9alt",
+        "rejected": [
+          {
+            "tag": "jp",
+            "reason": "region"
+          },
+          {
+            "tag": "ハブ",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": []
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "primaryArticles": [
+        {
+          "id": "q9alt-1",
+          "title": "Q9ALT #1 &quot;Quest 2B Saved&quot;",
+          "url": "https://scp-jp.wikidot.com/q9alt-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "q9alt-2",
+          "title": "Q9ALT #2 &quot;Hero MUST be Alive&quot;",
+          "url": "https://scp-jp.wikidot.com/q9alt-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "q9alt-3",
+          "title": "Q9ALT #3 &quot;Citrus NEVER Withers&quot;",
+          "url": "https://scp-jp.wikidot.com/q9alt-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "q9alt-4",
+          "title": "Q9ALT #4 &quot;Double Bottomed&quot;",
+          "url": "https://scp-jp.wikidot.com/q9alt-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "q9alt-5",
+          "title": "Q9ALT #5 &quot;Just a Past&quot;",
+          "url": "https://scp-jp.wikidot.com/q9alt-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "q9alt-6",
+          "title": "Q9ALT #6 &quot;Quest 2 Save Myself&quot;",
+          "url": "https://scp-jp.wikidot.com/q9alt-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "q9alt-zabuta",
+          "title": "異世界アルバイター座布田",
+          "url": "https://scp-jp.wikidot.com/q9alt-zabuta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.q9alt_hub"
+    },
+    {
+      "id": "scp-jp:collection:canon:absinthiana-dream",
+      "branchID": "scp-jp",
+      "kind": "canon",
+      "hubID": "absinthiana-dream",
+      "title": "アブサンの夢",
+      "sourceListURL": "https://scp-jp.wikidot.com/absinthiana-dream",
+      "officialHubURL": "https://scp-jp.wikidot.com/absinthiana-dream",
+      "hubPresentation": "standard",
+      "canonicalTag": "アブサンの夢",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "アブサンの夢",
+        "rejected": [
+          {
+            "tag": "jp",
+            "reason": "region"
+          },
+          {
+            "tag": "ハブ",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "合作",
+            "reason": "genericCollaboration"
+          }
+        ],
+        "notes": []
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "primaryArticles": [
+        {
+          "id": "scp-107-jp",
+          "title": "アブサン・アベニュー",
+          "url": "https://scp-jp.wikidot.com/scp-107-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "byakuya-yumeututu",
+          "title": "白夜夢現",
+          "url": "https://scp-jp.wikidot.com/byakuya-yumeututu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "in-the-reversed-world",
+          "title": "裏返った世界の中で 前編",
+          "url": "https://scp-jp.wikidot.com/in-the-reversed-world",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "in-the-reversed-world-to",
+          "title": "裏返った世界の中で 後編",
+          "url": "https://scp-jp.wikidot.com/in-the-reversed-world-to",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "notyetdr-minthe",
+          "title": "コキュートス",
+          "url": "https://scp-jp.wikidot.com/notyetdr-minthe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ykamikura-11",
+          "title": "ムーンレイカー",
+          "url": "https://scp-jp.wikidot.com/ykamikura-11",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ykamikura-12",
+          "title": "マイ・シン",
+          "url": "https://scp-jp.wikidot.com/ykamikura-12",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.absinthiana_dream"
+    },
+    {
+      "id": "scp-jp:collection:canon:poor-foundation-hub",
+      "branchID": "scp-jp",
+      "kind": "canon",
+      "hubID": "poor-foundation-hub",
+      "title": "まずしいざいだん",
+      "sourceListURL": "https://scp-jp.wikidot.com/poor-foundation-hub",
+      "officialHubURL": "https://scp-jp.wikidot.com/poor-foundation-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "まずしいざいだん",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "まずしいざいだん",
+        "rejected": [
+          {
+            "tag": "af2022",
+            "reason": "event"
+          },
+          {
+            "tag": "jp",
+            "reason": "region"
+          },
+          {
+            "tag": "ハブ",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "合作",
+            "reason": "genericCollaboration"
+          }
+        ],
+        "notes": [
+          "poor-foundation-hab is a manifest_tales page and is intentionally included as a primary article."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "primaryArticles": [
+        {
+          "id": "scp-2534-jp",
+          "title": "二束三文のアノマリー",
+          "url": "https://scp-jp.wikidot.com/scp-2534-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2712-jp",
+          "title": "どんなに貧しくとも、供え物に手を出すほど財団は非倫理的ではない",
+          "url": "https://scp-jp.wikidot.com/scp-2712-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3520-jp",
+          "title": "SCP-3520-JP",
+          "url": "https://scp-jp.wikidot.com/scp-3520-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4599-jp",
+          "title": "Deal With Itつべこべ言うな",
+          "url": "https://scp-jp.wikidot.com/scp-4599-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "after-breakdown",
+          "title": "割れた末に",
+          "url": "https://scp-jp.wikidot.com/after-breakdown",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "cold-wind",
+          "title": "寒風",
+          "url": "https://scp-jp.wikidot.com/cold-wind",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dickinnou",
+          "title": "雪、金積もれど道は忘るべからず",
+          "url": "https://scp-jp.wikidot.com/dickinnou",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dream-science-scp",
+          "title": "空想科学のSCP",
+          "url": "https://scp-jp.wikidot.com/dream-science-scp",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "no-such-thing-as-a-free-lunch",
+          "title": "無料のランチなんてありゃしない",
+          "url": "https://scp-jp.wikidot.com/no-such-thing-as-a-free-lunch",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "poor-foundation-hab",
+          "title": "まずしいざいだん ハブ",
+          "url": "https://scp-jp.wikidot.com/poor-foundation-hab",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tele-contain-orientation",
+          "title": "テレ収容のオリエンテーション",
+          "url": "https://scp-jp.wikidot.com/tele-contain-orientation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "winning-and-run",
+          "title": "ウイニングとラン",
+          "url": "https://scp-jp.wikidot.com/winning-and-run",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "yuugata-news-cat-cafe",
+          "title": "5時台の特集:異常性と触れ合う保護アノマリーカフェ。特集内で新たな家族も？",
+          "url": "https://scp-jp.wikidot.com/yuugata-news-cat-cafe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.poor_foundation_hub"
+    }
+  ]
+}
