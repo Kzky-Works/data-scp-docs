@@ -1,0 +1,566 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1780501547,
+  "generatedAt": "2026-06-03T15:45:47Z",
+  "chunkRevision": "sha256-c3169c192697af67f459df26142cba167788574cede1cde1367581d7041d27e0",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-ru",
+        "path": "DataPipeline/list/ru/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1780501539,
+        "generatedAt": "2026-06-03T15:45:39Z",
+        "contentHash": "sha256-2f3ec3a7e9e00137b1a8ce1cdedf51547bad82c9af4e9c9f102e1811fa9ff94e"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-ru",
+        "path": "DataPipeline/list/ru/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1780500908,
+        "generatedAt": "2026-06-03T15:35:08Z",
+        "contentHash": "sha256-db76c869af69e84edf4fb64aebbaf5ac7817ef7e990becaa35254fe649131fe4"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-ru",
+        "path": "DataPipeline/list/ru/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1780500908,
+        "generatedAt": "2026-06-03T15:35:08Z",
+        "contentHash": "sha256-d797a53b8c559e59ec7a1966b2f6d665ccaca39bb20ae145845a4e8ccb5a9fc1"
+      },
+      {
+        "kind": "manifest_scp-ru",
+        "branchID": "scp-ru",
+        "path": "DataPipeline/list/ru/manifest_scp-ru.json",
+        "schemaVersion": 2,
+        "listVersion": 1780500908,
+        "generatedAt": "2026-06-03T15:35:08Z",
+        "contentHash": "sha256-64d6ed8d3162450b659ccb51bed81c49a9692ec3c9b3d4b294c181b4ac030e53"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-ru",
+        "path": "DataPipeline/list/ru/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1780500908,
+        "generatedAt": "2026-06-03T15:35:08Z",
+        "contentHash": "sha256-3acbd3e60597d55d28a93b27ef4bc5d4516f486a42125571476d349ecc3b99c5"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-4e6928f76380eb97801b937ee81fd37e34093ae68e4dfa41a1b5fd4311eeb6a6"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-ru:collection:canon:site-7-hub",
+      "branchID": "scp-ru",
+      "kind": "canon",
+      "hubID": "site-7-hub",
+      "title": "Хаб Зоны 7",
+      "sourceListURL": "https://scpfoundation.net/site-7-hub",
+      "officialHubURL": "https://scpfoundation.net/site-7-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "хаб_цикл:хаб_3оны_7",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "хаб_цикл:хаб_3оны_7",
+        "rejected": [
+          {
+            "tag": "структура:хаб",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "тип:канон",
+            "reason": "generic"
+          },
+          {
+            "tag": "филиал:ru",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "Reviewed from RU API tag reverse lookup; hub metadata carries the cycle tag."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "RU API tag reverse lookup from хаб_цикл:хаб_3оны_7."
+      },
+      "memberManifests": [
+        "manifest_scp-ru",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1048-ru",
+          "title": "SCP-1048-RU - Принтер для документов",
+          "url": "https://scpfoundation.net/scp-1048-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.9
+        },
+        {
+          "id": "coi-1",
+          "title": "Конфликт интересов. Глава 1",
+          "url": "https://scpfoundation.net/coi-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8
+        },
+        {
+          "id": "coi-2",
+          "title": "Конфликт интересов. Глава 2",
+          "url": "https://scpfoundation.net/coi-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7
+        },
+        {
+          "id": "coi-3",
+          "title": "Конфликт интересов. Глава 3",
+          "url": "https://scpfoundation.net/coi-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5
+        },
+        {
+          "id": "coi-4",
+          "title": "Конфликт интересов. Глава 4",
+          "url": "https://scpfoundation.net/coi-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6
+        },
+        {
+          "id": "coi-5",
+          "title": "Конфликт интересов. Глава 5",
+          "url": "https://scpfoundation.net/coi-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5
+        },
+        {
+          "id": "coi-6",
+          "title": "Конфликт интересов. Глава 6",
+          "url": "https://scpfoundation.net/coi-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.9
+        },
+        {
+          "id": "coi-7",
+          "title": "Конфликт интересов. Глава 7",
+          "url": "https://scpfoundation.net/coi-7",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.9
+        },
+        {
+          "id": "coi-8",
+          "title": "Конфликт интересов. Эпилог",
+          "url": "https://scpfoundation.net/coi-8",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.1
+        },
+        {
+          "id": "debes-ergo-potes",
+          "title": "Должен, значит можешь",
+          "url": "https://scpfoundation.net/debes-ergo-potes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0
+        },
+        {
+          "id": "project-human-shield",
+          "title": "\"Живой щит\": проектная информация",
+          "url": "https://scpfoundation.net/project-human-shield",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3
+        },
+        {
+          "id": "safety-factor",
+          "title": "Запас прочности",
+          "url": "https://scpfoundation.net/safety-factor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8
+        },
+        {
+          "id": "the-eye-of-the-storm-1",
+          "title": "Глаз бури",
+          "url": "https://scpfoundation.net/the-eye-of-the-storm-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7
+        },
+        {
+          "id": "the-eye-of-the-storm-2",
+          "title": "Полевой эксперт",
+          "url": "https://scpfoundation.net/the-eye-of-the-storm-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6
+        },
+        {
+          "id": "the-eye-of-the-storm-3",
+          "title": "Наваждение",
+          "url": "https://scpfoundation.net/the-eye-of-the-storm-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0
+        },
+        {
+          "id": "the-eye-of-the-storm-4",
+          "title": "Пустая камера",
+          "url": "https://scpfoundation.net/the-eye-of-the-storm-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5
+        },
+        {
+          "id": "the-eye-of-the-storm-5",
+          "title": "Кто, если не мы?",
+          "url": "https://scpfoundation.net/the-eye-of-the-storm-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0
+        },
+        {
+          "id": "the-eye-of-the-storm-interlude",
+          "title": "Информатор",
+          "url": "https://scpfoundation.net/the-eye-of-the-storm-interlude",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8
+        },
+        {
+          "id": "thunder-perfect-mind",
+          "title": "Совершенный разум",
+          "url": "https://scpfoundation.net/thunder-perfect-mind",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:canon:h",
+      "branchID": "scp-ru",
+      "kind": "canon",
+      "hubID": "h",
+      "title": "«H»",
+      "sourceListURL": "https://scpfoundation.net/h",
+      "officialHubURL": "https://scpfoundation.net/h",
+      "hubPresentation": "standard",
+      "canonicalTag": "хаб_цикл:h",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "хаб_цикл:h",
+        "rejected": [
+          {
+            "tag": "структура:хаб",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "тип:канон",
+            "reason": "generic"
+          },
+          {
+            "tag": "филиал:ru",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "Hub slug is h; canonical tag is the RU cycle tag used by member pages."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "RU API tag reverse lookup from хаб_цикл:h."
+      },
+      "memberManifests": [
+        "manifest_scp-ru",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-hole-in-the-head",
+          "title": "Дыра в голове",
+          "url": "https://scpfoundation.net/a-hole-in-the-head",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6
+        },
+        {
+          "id": "kalopsia",
+          "title": "Калопсия",
+          "url": "https://scpfoundation.net/kalopsia",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7
+        },
+        {
+          "id": "painting-without-paints",
+          "title": "Картина без красок",
+          "url": "https://scpfoundation.net/painting-without-paints",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.1
+        },
+        {
+          "id": "resonanse",
+          "title": "ООЗ «РЕЗОНАНС»",
+          "url": "https://scpfoundation.net/resonanse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6
+        },
+        {
+          "id": "scp-001-h",
+          "title": "SCP-001-H - Зона максимальной нормальности",
+          "url": "https://scpfoundation.net/scp-001-h",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8
+        },
+        {
+          "id": "scp-002-h",
+          "title": "SCP-002-H - Когда почернеет свет",
+          "url": "https://scpfoundation.net/scp-002-h",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6
+        },
+        {
+          "id": "scp-003-h",
+          "title": "SCP-003-H - Нормальность превыше всего",
+          "url": "https://scpfoundation.net/scp-003-h",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8
+        },
+        {
+          "id": "scp-004-h",
+          "title": "SCP-004-H - Бордовый код",
+          "url": "https://scpfoundation.net/scp-004-h",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.6
+        },
+        {
+          "id": "you-dont-have-to-be-a-hero",
+          "title": "Героем можешь ты не быть",
+          "url": "https://scpfoundation.net/you-dont-have-to-be-a-hero",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.6
+        },
+        {
+          "id": "you-should-have-left",
+          "title": "Тебе стоило уйти",
+          "url": "https://scpfoundation.net/you-should-have-left",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.4
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:canon:quiet-current-hub",
+      "branchID": "scp-ru",
+      "kind": "canon",
+      "hubID": "quiet-current-hub",
+      "title": "Хаб Отдела временной безошибочности",
+      "sourceListURL": "https://scpfoundation.net/quiet-current-hub",
+      "officialHubURL": "https://scpfoundation.net/quiet-current-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "хаб_цикл:тихое_течение",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "хаб_цикл:тихое_течение",
+        "rejected": [
+          {
+            "tag": "структура:хаб",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "тип:канон",
+            "reason": "generic"
+          },
+          {
+            "tag": "филиал:ru",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "Reviewed as a canon hub with a RU cycle tag despite extra dossier/lore tags."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "RU API tag reverse lookup from хаб_цикл:тихое_течение."
+      },
+      "memberManifests": [
+        "manifest_scp-ru",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1074-ru",
+          "title": "SCP-1074-RU - Вы допустили потерю дорогостоящего оборудования",
+          "url": "https://scpfoundation.net/scp-1074-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.3
+        },
+        {
+          "id": "scp-1129-ru",
+          "title": "SCP-1129-RU - Давай убьём Гитлера!",
+          "url": "https://scpfoundation.net/scp-1129-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.1
+        },
+        {
+          "id": "scp-1174-ru",
+          "title": "SCP-1174-RU - Посмертно утопленные",
+          "url": "https://scpfoundation.net/scp-1174-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.4
+        },
+        {
+          "id": "scp-1174-ru-v-1",
+          "title": "SCP-1174-RU-V - Петля, в которой ты — верёвка вокруг шеи",
+          "url": "https://scpfoundation.net/scp-1174-ru-v-1",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.3
+        },
+        {
+          "id": "scp-1412-ru",
+          "title": "SCP-1412-RU - Вероятность один к пяти",
+          "url": "https://scpfoundation.net/scp-1412-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.8
+        },
+        {
+          "id": "scp-1417-ru",
+          "title": "SCP-1417-RU - Но один человек может изменить настоящее",
+          "url": "https://scpfoundation.net/scp-1417-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.0
+        },
+        {
+          "id": "scp-1418-ru",
+          "title": "SCP-1418-RU - Восстановить течение судьбы и жить дальше в проклятом мире, который сами и создали",
+          "url": "https://scpfoundation.net/scp-1418-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.7
+        },
+        {
+          "id": "scp-1419-ru",
+          "title": "SCP-1419-RU - Ещё один дождь",
+          "url": "https://scpfoundation.net/scp-1419-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.7
+        },
+        {
+          "id": "scp-1420-ru",
+          "title": "SCP-1420-RU - Одним глазком",
+          "url": "https://scpfoundation.net/scp-1420-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.7
+        },
+        {
+          "id": "scp-1453-ru",
+          "title": "SCP-1453-RU - Принцип невмешательства",
+          "url": "https://scpfoundation.net/scp-1453-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.7
+        },
+        {
+          "id": "scp-1465-ru",
+          "title": "SCP-1465-RU - Призыв океана тьмы",
+          "url": "https://scpfoundation.net/scp-1465-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 3.9
+        },
+        {
+          "id": "scp-1467-ru",
+          "title": "SCP-1467-RU - Увольнение с позором",
+          "url": "https://scpfoundation.net/scp-1467-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.3
+        },
+        {
+          "id": "do-not-even-think-about-dying-in-a-loop",
+          "title": "Даже не думайте умирать в петле",
+          "url": "https://scpfoundation.net/do-not-even-think-about-dying-in-a-loop",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.4
+        },
+        {
+          "id": "gods-hydrophobia-syndrome",
+          "title": "Синдром гидрофобного божества",
+          "url": "https://scpfoundation.net/gods-hydrophobia-syndrome",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5
+        },
+        {
+          "id": "paper-moon-syndrome",
+          "title": "Синдром бумажной луны",
+          "url": "https://scpfoundation.net/paper-moon-syndrome",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.9
+        },
+        {
+          "id": "silent-leges-syndrome",
+          "title": "Синдром молчаливых законов",
+          "url": "https://scpfoundation.net/silent-leges-syndrome",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
