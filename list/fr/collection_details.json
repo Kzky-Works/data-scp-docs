@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1780575964,
-  "generatedAt": "2026-06-04T12:26:04Z",
-  "chunkRevision": "sha256-d80d6fabac4ba856432ea3bbd69939154504e553de84fe8daffb1dbf0c6caae1",
+  "listVersion": 1780577466,
+  "generatedAt": "2026-06-04T12:51:06Z",
+  "chunkRevision": "sha256-bd02a275dadfcd409ba5c7b86cb2130d8f4203518cb2eb755a00f72183f51da5",
   "builtFrom": {
     "manifests": [
       {
@@ -36,7 +36,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-4e6928f76380eb97801b937ee81fd37e34093ae68e4dfa41a1b5fd4311eeb6a6"
+      "contentHash": "sha256-52df6d0b5d8880dfc8696c2ce921485042c0c850af2bf5ab40d37a67d260b5e9"
     }
   },
   "collections": [
@@ -342,6 +342,4646 @@
       ],
       "supplementLinks": [],
       "titleLocalizationKey": "library.item.desert_humain"
+    },
+    {
+      "id": "scp-fr:collection:canon:retour-a-l-anormal",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "retour-a-l-anormal",
+      "title": "Retour à l'Anormal",
+      "sourceListURL": "https://fondationscp.wikidot.com/retour-a-l-anormal",
+      "officialHubURL": "https://fondationscp.wikidot.com/retour-a-l-anormal",
+      "hubPresentation": "standard",
+      "canonicalTag": "retour-à-l-anormal",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "retour-à-l-anormal",
+        "rejected": [
+          {
+            "tag": "collaboration-fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "0-de-probabilite",
+          "title": "0 % de probabilité",
+          "url": "https://fondationscp.wikidot.com/0-de-probabilite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 66
+        },
+        {
+          "id": "a-vous-les-studios",
+          "title": "À vous les studios",
+          "url": "https://fondationscp.wikidot.com/a-vous-les-studios",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-vous-les-studios-bd",
+          "title": "À vous les studios BD",
+          "url": "https://fondationscp.wikidot.com/a-vous-les-studios-bd",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "aethersehen",
+          "title": "Æthersehen",
+          "url": "https://fondationscp.wikidot.com/aethersehen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "after-agite",
+          "title": "After agité",
+          "url": "https://fondationscp.wikidot.com/after-agite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "breves-de-comptoir",
+          "title": "Brèves de comptoir",
+          "url": "https://fondationscp.wikidot.com/breves-de-comptoir",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "cartes-sur-table",
+          "title": "Cartes sur table",
+          "url": "https://fondationscp.wikidot.com/cartes-sur-table",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chemin-de-memoire",
+          "title": "Chemin de mémoire",
+          "url": "https://fondationscp.wikidot.com/chemin-de-memoire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "clairvoyance",
+          "title": "Clairvoyance",
+          "url": "https://fondationscp.wikidot.com/clairvoyance",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "concours-de-circonstances",
+          "title": "Concours de circonstance",
+          "url": "https://fondationscp.wikidot.com/concours-de-circonstances",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dernier-plein",
+          "title": "Dernier Plein",
+          "url": "https://fondationscp.wikidot.com/dernier-plein",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "detour-humanitaire",
+          "title": "Détour humanitaire",
+          "url": "https://fondationscp.wikidot.com/detour-humanitaire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "devenir-le-chasseur",
+          "title": "Devenir le chasseur",
+          "url": "https://fondationscp.wikidot.com/devenir-le-chasseur",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dilemme",
+          "title": "Dilemme",
+          "url": "https://fondationscp.wikidot.com/dilemme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "echos-d-antan",
+          "title": "Echos d'antan",
+          "url": "https://fondationscp.wikidot.com/echos-d-antan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "je-hais-les-enfants",
+          "title": "Je hais les enfants",
+          "url": "https://fondationscp.wikidot.com/je-hais-les-enfants",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kendrick",
+          "title": "Ethan",
+          "url": "https://fondationscp.wikidot.com/kendrick",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-insecurite-de-l-emploi",
+          "title": "L'insécurité de l'emploi",
+          "url": "https://fondationscp.wikidot.com/l-insecurite-de-l-emploi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "lapsus-et-coutumes",
+          "title": "Lapsus et Coutumes",
+          "url": "https://fondationscp.wikidot.com/lapsus-et-coutumes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-renard-et-la-louve-partie-1",
+          "title": "Le renard et la Louve (Partie 1)",
+          "url": "https://fondationscp.wikidot.com/le-renard-et-la-louve-partie-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "livret-rose",
+          "title": "Livret rose",
+          "url": "https://fondationscp.wikidot.com/livret-rose",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "neige",
+          "title": "Neige",
+          "url": "https://fondationscp.wikidot.com/neige",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pas-d-alternatives",
+          "title": "Pas d'alternatives",
+          "url": "https://fondationscp.wikidot.com/pas-d-alternatives",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pieger-sa-proie",
+          "title": "Piéger sa proie",
+          "url": "https://fondationscp.wikidot.com/pieger-sa-proie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "porte-a-porte",
+          "title": "Porte-à-porte",
+          "url": "https://fondationscp.wikidot.com/porte-a-porte",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "presque-une-histoire-vraie",
+          "title": "Presque Une Histoire Vraie",
+          "url": "https://fondationscp.wikidot.com/presque-une-histoire-vraie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "procedure-d-elimination",
+          "title": "Procédure d'élimination",
+          "url": "https://fondationscp.wikidot.com/procedure-d-elimination",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reminiscence",
+          "title": "Réminiscence",
+          "url": "https://fondationscp.wikidot.com/reminiscence",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rencontre-au-sommet",
+          "title": "Rencontre au sommet",
+          "url": "https://fondationscp.wikidot.com/rencontre-au-sommet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reset",
+          "title": "Reset",
+          "url": "https://fondationscp.wikidot.com/reset",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "retour-a-l-anormal-hello-world",
+          "title": "<hello world />",
+          "url": "https://fondationscp.wikidot.com/retour-a-l-anormal-hello-world",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 27
+        },
+        {
+          "id": "separation",
+          "title": "Séparation",
+          "url": "https://fondationscp.wikidot.com/separation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "simple-camionneur-perdu",
+          "title": "Simple Camionneur Perdu",
+          "url": "https://fondationscp.wikidot.com/simple-camionneur-perdu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sursis",
+          "title": "Sursis",
+          "url": "https://fondationscp.wikidot.com/sursis",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tenter-sa-chance",
+          "title": "\"Tenter sa chance\"",
+          "url": "https://fondationscp.wikidot.com/tenter-sa-chance",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "time-to-come-back",
+          "title": "Time to come back",
+          "url": "https://fondationscp.wikidot.com/time-to-come-back",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-apres-midi-a-la-fete-foraine",
+          "title": "Un après-midi à la fête foraine",
+          "url": "https://fondationscp.wikidot.com/un-apres-midi-a-la-fete-foraine",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vers-le-froid-de-l-est",
+          "title": "Vers le froid de l'Est",
+          "url": "https://fondationscp.wikidot.com/vers-le-froid-de-l-est",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "way-to-fall",
+          "title": "Way To Fall",
+          "url": "https://fondationscp.wikidot.com/way-to-fall",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.retour_a_l_anormal"
+    },
+    {
+      "id": "scp-fr:collection:canon:ressources-humaines",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "ressources-humaines",
+      "title": "Ressources Humaines",
+      "sourceListURL": "https://fondationscp.wikidot.com/ressources-humaines",
+      "officialHubURL": "https://fondationscp.wikidot.com/ressources-humaines",
+      "hubPresentation": "standard",
+      "canonicalTag": "ressources-humaines",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ressources-humaines",
+        "rejected": [
+          {
+            "tag": "collaboration-fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "1-nouveau-message",
+          "title": "(1) Nouveau Message",
+          "url": "https://fondationscp.wikidot.com/1-nouveau-message",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "au-fond-du-couloir",
+          "title": "Au Fond Du Couloir",
+          "url": "https://fondationscp.wikidot.com/au-fond-du-couloir",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "celle-qui-observe",
+          "title": "Celle qui observe",
+          "url": "https://fondationscp.wikidot.com/celle-qui-observe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "celle-qui-s-est-souvenue",
+          "title": "Celle qui s'est souvenue.",
+          "url": "https://fondationscp.wikidot.com/celle-qui-s-est-souvenue",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "celui-qui-a-eu-peur",
+          "title": "Celui qui a eu peur",
+          "url": "https://fondationscp.wikidot.com/celui-qui-a-eu-peur",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "celui-qui-a-fait-de-son-mieux",
+          "title": "Celui qui a fait de son mieux",
+          "url": "https://fondationscp.wikidot.com/celui-qui-a-fait-de-son-mieux",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "celui-qui-s-est-tue",
+          "title": "Celui qui s'est tué",
+          "url": "https://fondationscp.wikidot.com/celui-qui-s-est-tue",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ceux-qui-desobeissent",
+          "title": "Ceux qui désobéissent",
+          "url": "https://fondationscp.wikidot.com/ceux-qui-desobeissent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ceux-qui-ont-menti",
+          "title": "Ceux qui ont menti",
+          "url": "https://fondationscp.wikidot.com/ceux-qui-ont-menti",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ceux-qui-ont-survecu-a-yod",
+          "title": "Ceux qui ont survécu à Yod",
+          "url": "https://fondationscp.wikidot.com/ceux-qui-ont-survecu-a-yod",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ceux-qui-restent",
+          "title": "Ceux qui restent",
+          "url": "https://fondationscp.wikidot.com/ceux-qui-restent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ceux-qui-risquent-leur-vie",
+          "title": "Ceux qui risquent leur vie",
+          "url": "https://fondationscp.wikidot.com/ceux-qui-risquent-leur-vie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "d-187",
+          "title": "Orange Sanguine",
+          "url": "https://fondationscp.wikidot.com/d-187",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "d-5090-privileges",
+          "title": "D-5090 : Privilèges",
+          "url": "https://fondationscp.wikidot.com/d-5090-privileges",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "d-6542",
+          "title": "D-6542",
+          "url": "https://fondationscp.wikidot.com/d-6542",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "d-7891",
+          "title": "D-7891",
+          "url": "https://fondationscp.wikidot.com/d-7891",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "d-8113",
+          "title": "D-8113",
+          "url": "https://fondationscp.wikidot.com/d-8113",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "entre-chien-et-loup",
+          "title": "Entre chien et loup",
+          "url": "https://fondationscp.wikidot.com/entre-chien-et-loup",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "infaillible",
+          "title": "Infaillible",
+          "url": "https://fondationscp.wikidot.com/infaillible",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "jusqu-a-l-aube",
+          "title": "Jusqu'à l'aube ?",
+          "url": "https://fondationscp.wikidot.com/jusqu-a-l-aube",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-homme-qui-ne-ressentait-rien",
+          "title": "L'Homme qui ne ressentait rien",
+          "url": "https://fondationscp.wikidot.com/l-homme-qui-ne-ressentait-rien",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-vie-est-un-chaton",
+          "title": "La vie est un chaton.",
+          "url": "https://fondationscp.wikidot.com/la-vie-est-un-chaton",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-chant-des-grillons",
+          "title": "Le chant des grillons",
+          "url": "https://fondationscp.wikidot.com/le-chant-des-grillons",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-murmures-de-la-nuit",
+          "title": "Les murmures de la nuit",
+          "url": "https://fondationscp.wikidot.com/les-murmures-de-la-nuit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "n-aie-pas-peur",
+          "title": "N'aie pas peur.",
+          "url": "https://fondationscp.wikidot.com/n-aie-pas-peur",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ne-leur-pardonne-pas",
+          "title": "Ne leur pardonne pas.",
+          "url": "https://fondationscp.wikidot.com/ne-leur-pardonne-pas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pour-un-peu",
+          "title": "Pour un peu",
+          "url": "https://fondationscp.wikidot.com/pour-un-peu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "projet-danaides",
+          "title": "Projet Danaïdes",
+          "url": "https://fondationscp.wikidot.com/projet-danaides",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "quand-le-soleil-se-couche",
+          "title": "Quand le Soleil se couche",
+          "url": "https://fondationscp.wikidot.com/quand-le-soleil-se-couche",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "survivre-en-temps-de-paix",
+          "title": "Survivre en temps de paix.",
+          "url": "https://fondationscp.wikidot.com/survivre-en-temps-de-paix",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "systeme-d",
+          "title": "Système D",
+          "url": "https://fondationscp.wikidot.com/systeme-d",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tic-tac",
+          "title": "Tic. Tac.",
+          "url": "https://fondationscp.wikidot.com/tic-tac",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "une-vie-de-merde",
+          "title": "Une vie de merde.",
+          "url": "https://fondationscp.wikidot.com/une-vie-de-merde",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.ressources_humaines"
+    },
+    {
+      "id": "scp-fr:collection:canon:dos-au-mur",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "dos-au-mur",
+      "title": "Dos au Mur",
+      "sourceListURL": "https://fondationscp.wikidot.com/dos-au-mur",
+      "officialHubURL": "https://fondationscp.wikidot.com/dos-au-mur",
+      "hubPresentation": "standard",
+      "canonicalTag": "dos-au-mur",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dos-au-mur",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "collaboration-fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "21e-congres-omp",
+          "title": "Vingt-et-unième congrès international de l'OMPS",
+          "url": "https://fondationscp.wikidot.com/21e-congres-omp",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "aucun-fluide-ectoplasmique-n-a-coule-cette-nuit",
+          "title": "Aucun fluide ectoplasmique n'a coulé cette nuit",
+          "url": "https://fondationscp.wikidot.com/aucun-fluide-ectoplasmique-n-a-coule-cette-nuit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "comment-disparut-le-docteur-belmont",
+          "title": "Comment disparut le docteur Belmont",
+          "url": "https://fondationscp.wikidot.com/comment-disparut-le-docteur-belmont",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dos-au-mur-a-la-croisee-des-chemins",
+          "title": "À la croisée des chemins",
+          "url": "https://fondationscp.wikidot.com/dos-au-mur-a-la-croisee-des-chemins",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "escorte-de-couverture",
+          "title": "Escorte de couverture",
+          "url": "https://fondationscp.wikidot.com/escorte-de-couverture",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "je-serai-bientot-de-retour",
+          "title": "Je serai bientôt de retour",
+          "url": "https://fondationscp.wikidot.com/je-serai-bientot-de-retour",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kid-s-show-shutdown-gouvernemental",
+          "title": "Kid's Show Shutdown gouvernemental",
+          "url": "https://fondationscp.wikidot.com/kid-s-show-shutdown-gouvernemental",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kybian-out",
+          "title": "Kybian Out",
+          "url": "https://fondationscp.wikidot.com/kybian-out",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-chute-d-un-geant",
+          "title": "La Chute d'un Géant",
+          "url": "https://fondationscp.wikidot.com/la-chute-d-un-geant",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-defiance-n-a-jamais-ete-une-option",
+          "title": "La défiance n'a jamais été une option",
+          "url": "https://fondationscp.wikidot.com/la-defiance-n-a-jamais-ete-une-option",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-fuite",
+          "title": "La Fuite",
+          "url": "https://fondationscp.wikidot.com/la-fuite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-calme",
+          "title": "Le calme",
+          "url": "https://fondationscp.wikidot.com/le-calme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-ennemis-d-hier",
+          "title": "Les ennemis d'hier",
+          "url": "https://fondationscp.wikidot.com/les-ennemis-d-hier",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "merci-mais-nous-nous-en-occupons",
+          "title": "\"Merci, mais nous nous en occupons\"",
+          "url": "https://fondationscp.wikidot.com/merci-mais-nous-nous-en-occupons",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 28
+        },
+        {
+          "id": "mise-a-jour-de-contrat",
+          "title": "Mise à jour de contrat",
+          "url": "https://fondationscp.wikidot.com/mise-a-jour-de-contrat",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "plafond-de-pierre",
+          "title": "Plafond de pierre",
+          "url": "https://fondationscp.wikidot.com/plafond-de-pierre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rencontre-sous-la-generalite",
+          "title": "Rencontre sous la Généralité",
+          "url": "https://fondationscp.wikidot.com/rencontre-sous-la-generalite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reunion-inexistante",
+          "title": "Réunion inexistante",
+          "url": "https://fondationscp.wikidot.com/reunion-inexistante",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "savoir-rien-sur-personne",
+          "title": "Savoir Rien sur Personne",
+          "url": "https://fondationscp.wikidot.com/savoir-rien-sur-personne",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-bilan",
+          "title": "BGGPIGF_61",
+          "url": "https://fondationscp.wikidot.com/un-bilan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.dos_au_mur"
+    },
+    {
+      "id": "scp-fr:collection:canon:sous-le-monde-centre",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "sous-le-monde-centre",
+      "title": "Sous le Monde",
+      "sourceListURL": "https://fondationscp.wikidot.com/sous-le-monde-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/sous-le-monde-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "sous-le-monde",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sous-le-monde",
+        "rejected": [],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "ceux-qui-meurent-dans-l-encre",
+          "title": "Ceux qui meurent dans l'encre",
+          "url": "https://fondationscp.wikidot.com/ceux-qui-meurent-dans-l-encre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dossier-site-bayard",
+          "title": "Dossier d'installation : Le Site-Bayard",
+          "url": "https://fondationscp.wikidot.com/dossier-site-bayard",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "hantologies",
+          "title": "Hantologies",
+          "url": "https://fondationscp.wikidot.com/hantologies",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "il-etait-une-fois-l-espace",
+          "title": "Il était une fois... l'Espace",
+          "url": "https://fondationscp.wikidot.com/il-etait-une-fois-l-espace",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-enfant-des-etoiles",
+          "title": "L'Enfant Des Etoiles",
+          "url": "https://fondationscp.wikidot.com/l-enfant-des-etoiles",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-proces-du-medecin-tueur",
+          "title": "Les Haletantes Aventures des Surfemmes dans : Le Procès du Médecin Tueur",
+          "url": "https://fondationscp.wikidot.com/le-proces-du-medecin-tueur",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-sang-royal-des-mittelheim",
+          "title": "Le Sang Royal des Mittelheim",
+          "url": "https://fondationscp.wikidot.com/le-sang-royal-des-mittelheim",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-vol-du-masque-chevelu",
+          "title": "Les Haletantes Aventures des Surfemmes dans : Le Vol Du Masque Chevelu",
+          "url": "https://fondationscp.wikidot.com/le-vol-du-masque-chevelu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "legs-701",
+          "title": "Legs 701 - Suivi et manifestations",
+          "url": "https://fondationscp.wikidot.com/legs-701",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tourment-entre-deux-rives",
+          "title": "Tourment entre deux rives",
+          "url": "https://fondationscp.wikidot.com/tourment-entre-deux-rives",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.sous_le_monde_centre"
+    },
+    {
+      "id": "scp-fr:collection:canon:centre-embargo",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "centre-embargo",
+      "title": "EMBARGO",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-embargo",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-embargo",
+      "hubPresentation": "standard",
+      "canonicalTag": "embargo",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "embargo",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "cmo",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "eurtec",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "cathedrale-de-plomb",
+          "title": "Cathédrale De Plomb",
+          "url": "https://fondationscp.wikidot.com/cathedrale-de-plomb",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "cest-donc-ca-nos-vies",
+          "title": "C'est donc ça nos vies",
+          "url": "https://fondationscp.wikidot.com/cest-donc-ca-nos-vies",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "diabolus-in-musica",
+          "title": "Diabolus In Musica",
+          "url": "https://fondationscp.wikidot.com/diabolus-in-musica",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "histoires-de-viandes",
+          "title": "Histoires De Viandes",
+          "url": "https://fondationscp.wikidot.com/histoires-de-viandes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "humanoide",
+          "title": "Humanoïde",
+          "url": "https://fondationscp.wikidot.com/humanoide",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mise-en-eveil",
+          "title": "Mise en éveil",
+          "url": "https://fondationscp.wikidot.com/mise-en-eveil",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "retro",
+          "title": "Rétro",
+          "url": "https://fondationscp.wikidot.com/retro",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reveil",
+          "title": "Réveil",
+          "url": "https://fondationscp.wikidot.com/reveil",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "temps-de-cerveau-disponible",
+          "title": "Temps De Cerveau Disponible",
+          "url": "https://fondationscp.wikidot.com/temps-de-cerveau-disponible",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.centre_embargo"
+    },
+    {
+      "id": "scp-fr:collection:canon:l-heure-ou-blanchit-la-campagne",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "l-heure-ou-blanchit-la-campagne",
+      "title": "L'Heure où Blanchit la Campagne",
+      "sourceListURL": "https://fondationscp.wikidot.com/l-heure-ou-blanchit-la-campagne",
+      "officialHubURL": "https://fondationscp.wikidot.com/l-heure-ou-blanchit-la-campagne",
+      "hubPresentation": "standard",
+      "canonicalTag": "campagne-brumeuse",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "campagne-brumeuse",
+        "rejected": [
+          {
+            "tag": "c12fr2024",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-635-fr",
+          "title": "\"Brume\"",
+          "url": "https://fondationscp.wikidot.com/scp-635-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "adieu-papa-adieu-maman",
+          "title": "Adieu Papa, Adieu Maman",
+          "url": "https://fondationscp.wikidot.com/adieu-papa-adieu-maman",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "ennui-des-chasses-citadines",
+          "title": "L'Ennui des Chasses Citadines",
+          "url": "https://fondationscp.wikidot.com/ennui-des-chasses-citadines",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "geant-de-la-foret",
+          "title": "Le Géant de la Forêt",
+          "url": "https://fondationscp.wikidot.com/geant-de-la-foret",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-dame-maison",
+          "title": "La Dame-Maison",
+          "url": "https://fondationscp.wikidot.com/la-dame-maison",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-melasse-du-quotidien",
+          "title": "La Mélasse du Quotidien",
+          "url": "https://fondationscp.wikidot.com/la-melasse-du-quotidien",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-pacte",
+          "title": "Le Pacte",
+          "url": "https://fondationscp.wikidot.com/le-pacte",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-sens-de-notre-sang",
+          "title": "Le Sens de notre Sang",
+          "url": "https://fondationscp.wikidot.com/le-sens-de-notre-sang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-village-mort-en-une-nuit",
+          "title": "Le Village Mort en une Nuit",
+          "url": "https://fondationscp.wikidot.com/le-village-mort-en-une-nuit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "letrangere",
+          "title": "L'Étrangère",
+          "url": "https://fondationscp.wikidot.com/letrangere",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mere-de-brume",
+          "title": "Mère de Brume",
+          "url": "https://fondationscp.wikidot.com/mere-de-brume",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ontophysique-appliquee",
+          "title": "L'Ontophysique appliquée",
+          "url": "https://fondationscp.wikidot.com/ontophysique-appliquee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "parce-que-tout-va-bien",
+          "title": "Parce que Tout va Bien",
+          "url": "https://fondationscp.wikidot.com/parce-que-tout-va-bien",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "portes-et-volets-fermes",
+          "title": "Portes et Volets Fermés",
+          "url": "https://fondationscp.wikidot.com/portes-et-volets-fermes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-021821135-fr",
+          "title": "SCP-0███-FR",
+          "url": "https://fondationscp.wikidot.com/scp-021821135-fr",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "treves-lucides",
+          "title": "Trêves Lucides",
+          "url": "https://fondationscp.wikidot.com/treves-lucides",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.l_heure_ou_blanchit_la_campagne"
+    },
+    {
+      "id": "scp-fr:collection:canon:le-reseau-corail",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "le-reseau-corail",
+      "title": "Le Réseau CORAIL",
+      "sourceListURL": "https://fondationscp.wikidot.com/le-reseau-corail",
+      "officialHubURL": "https://fondationscp.wikidot.com/le-reseau-corail",
+      "hubPresentation": "standard",
+      "canonicalTag": "corail",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "corail",
+        "rejected": [],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-531-fr",
+          "title": "Urbex Spatial",
+          "url": "https://fondationscp.wikidot.com/scp-531-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-542-fr",
+          "title": "Stabat 𒀭𒈾𒀸 Magna",
+          "url": "https://fondationscp.wikidot.com/scp-542-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-586-fr",
+          "title": "Point de rupture",
+          "url": "https://fondationscp.wikidot.com/scp-586-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-597-fr",
+          "title": "L'Odyssée de l'espace",
+          "url": "https://fondationscp.wikidot.com/scp-597-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-638-fr",
+          "title": "L'orgueil des Spallacci",
+          "url": "https://fondationscp.wikidot.com/scp-638-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-642-fr",
+          "title": "N'écoute pas les idoles, écoute-moi",
+          "url": "https://fondationscp.wikidot.com/scp-642-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-650-fr",
+          "title": "L'odeur de l'atome",
+          "url": "https://fondationscp.wikidot.com/scp-650-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-697-fr",
+          "title": "Question Existentielle",
+          "url": "https://fondationscp.wikidot.com/scp-697-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-700-fr",
+          "title": "Divin D20 Devin",
+          "url": "https://fondationscp.wikidot.com/scp-700-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-742-fr",
+          "title": "يا رايح",
+          "url": "https://fondationscp.wikidot.com/scp-742-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-796-fr",
+          "title": "Sans corps, où es-tu",
+          "url": "https://fondationscp.wikidot.com/scp-796-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-797-fr",
+          "title": "Sans cœur, je suis là",
+          "url": "https://fondationscp.wikidot.com/scp-797-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-897-fr",
+          "title": "Hic Est Nun",
+          "url": "https://fondationscp.wikidot.com/scp-897-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.le_reseau_corail"
+    },
+    {
+      "id": "scp-fr:collection:canon:centre-quand-le-soleil-se-couche",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "centre-quand-le-soleil-se-couche",
+      "title": "Quand le Soleil se Couche",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-quand-le-soleil-se-couche",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-quand-le-soleil-se-couche",
+      "hubPresentation": "standard",
+      "canonicalTag": "soleil-couche",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "soleil-couche",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "appel-nocturne",
+          "title": "Appel Nocturne",
+          "url": "https://fondationscp.wikidot.com/appel-nocturne",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 34
+        },
+        {
+          "id": "chat",
+          "title": "Chat ♥",
+          "url": "https://fondationscp.wikidot.com/chat",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "je-viens-pour-aider",
+          "title": "Je viens pour aider",
+          "url": "https://fondationscp.wikidot.com/je-viens-pour-aider",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kilometres-avant-l-aube",
+          "title": "Kilomètres avant l'aube",
+          "url": "https://fondationscp.wikidot.com/kilometres-avant-l-aube",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-bebete-dans-mes-toilettes",
+          "title": "La bêbête dans mes toilettes",
+          "url": "https://fondationscp.wikidot.com/la-bebete-dans-mes-toilettes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "lesetoiles",
+          "title": "Sur la route des étoiles",
+          "url": "https://fondationscp.wikidot.com/lesetoiles",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pas-envie-de-realiser",
+          "title": "Pas envie de réaliser...",
+          "url": "https://fondationscp.wikidot.com/pas-envie-de-realiser",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-que13-126",
+          "title": "SCP-QUE13-126",
+          "url": "https://fondationscp.wikidot.com/scp-que13-126",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-ukg07-511",
+          "title": "SCP-UKG07-511: Le Brouillard",
+          "url": "https://fondationscp.wikidot.com/scp-ukg07-511",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-nouveau-depart",
+          "title": "Un nouveau départ",
+          "url": "https://fondationscp.wikidot.com/un-nouveau-depart",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.centre_quand_le_soleil_se_couche"
+    },
+    {
+      "id": "scp-fr:collection:canon:centre-de-demain-comme-hier",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "centre-de-demain-comme-hier",
+      "title": "Demain comme hier",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-de-demain-comme-hier",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-de-demain-comme-hier",
+      "hubPresentation": "standard",
+      "canonicalTag": "demain-comme-hier",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "demain-comme-hier",
+        "rejected": [
+          {
+            "tag": "c12fr2024",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "faute-de-temps",
+          "title": "Faute de temps",
+          "url": "https://fondationscp.wikidot.com/faute-de-temps",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "juste-un-reve",
+          "title": "Juste un rêve",
+          "url": "https://fondationscp.wikidot.com/juste-un-reve",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-amertume-a-les-couleurs-de-l-ennui-mais-le-piquant-de-l-ai",
+          "title": "L'amertume a les couleurs de l'ennui, mais le piquant de l'aigreur",
+          "url": "https://fondationscp.wikidot.com/l-amertume-a-les-couleurs-de-l-ennui-mais-le-piquant-de-l-ai",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-triples-de-monsieur-smith",
+          "title": "Les triplés de Monsieur Smith",
+          "url": "https://fondationscp.wikidot.com/les-triples-de-monsieur-smith",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "operation-rideau",
+          "title": "Opération Rideau",
+          "url": "https://fondationscp.wikidot.com/operation-rideau",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "passation-de-savoir",
+          "title": "Passation de savoir",
+          "url": "https://fondationscp.wikidot.com/passation-de-savoir",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ramener-la-magie",
+          "title": "Ramener la magie",
+          "url": "https://fondationscp.wikidot.com/ramener-la-magie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "raviver-la-flamme",
+          "title": "Raviver la flamme",
+          "url": "https://fondationscp.wikidot.com/raviver-la-flamme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-nouvel-espoir",
+          "title": "Un nouvel espoir",
+          "url": "https://fondationscp.wikidot.com/un-nouvel-espoir",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.centre_de_demain_comme_hier"
+    },
+    {
+      "id": "scp-fr:collection:series:apres-aleph",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "apres-aleph",
+      "title": "Après Aleph",
+      "sourceListURL": "https://fondationscp.wikidot.com/apres-aleph",
+      "officialHubURL": "https://fondationscp.wikidot.com/apres-aleph",
+      "hubPresentation": "standard",
+      "canonicalTag": "après-aleph",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "après-aleph",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "collaboration-fr",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "1882",
+          "title": "1882",
+          "url": "https://fondationscp.wikidot.com/1882",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "a-toi-mon-frere-a-tous-les-notres-et-a-ceux-d-encore-au-dess",
+          "title": "A toi, mon frère, à tous les nôtres, et à ceux d'encore au-dessus",
+          "url": "https://fondationscp.wikidot.com/a-toi-mon-frere-a-tous-les-notres-et-a-ceux-d-encore-au-dess",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "apres-aleph-010001000110111101101101011011010110000101100111",
+          "title": "0001 0010 0100 0100 1000 0011 0110",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-010001000110111101101101011011010110000101100111",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "apres-aleph-after-aleph-t2-2-derniere-visite",
+          "title": "Dernière visite",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-after-aleph-t2-2-derniere-visite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-apres-aleph-15-damocles",
+          "title": "Damoclès",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-apres-aleph-15-damocles",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-apres-aleph-chapitre-13-en-guerre",
+          "title": "En guerre",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-apres-aleph-chapitre-13-en-guerre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-apres-aleph-confrontation-musclee",
+          "title": "Confrontation musclée",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-apres-aleph-confrontation-musclee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-apres-aleph-partie-11-hier-et-aujourd-hui",
+          "title": "Hier et Aujourd'hui",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-apres-aleph-partie-11-hier-et-aujourd-hui",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-apres-aleph-partie-14-blackout",
+          "title": "Blackout",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-apres-aleph-partie-14-blackout",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-apres-aleph-partie-16-in-memoriam",
+          "title": "In memoriam",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-apres-aleph-partie-16-in-memoriam",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-apres-aleph-partie-17-a-la-croisee-des-chemins",
+          "title": "À la croisée des chemins",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-apres-aleph-partie-17-a-la-croisee-des-chemins",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-1-le-probleme-cubain",
+          "title": "Le problème cubain",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-1-le-probleme-cubain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-2",
+          "title": "Un beau temps de fin du monde",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-2-top-depart",
+          "title": "Top' départ!",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-2-top-depart",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-3-nous-l-avons-merite",
+          "title": "Nous l'avons mérité",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-3-nous-l-avons-merite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-3-un-probleme-de-taille",
+          "title": "Chapitre 3 : Un problème de taille",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-3-un-probleme-de-taille",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-4-vous-avez-dit-fantome",
+          "title": "Vous avez dit \"fantôme\" ?",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-4-vous-avez-dit-fantome",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-5-tombe-du-ciel",
+          "title": "Tombé du ciel",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-5-tombe-du-ciel",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-chapitre-6-traces-dans-la-neige",
+          "title": "Traces dans la neige",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-chapitre-6-traces-dans-la-neige",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-conflit-d-interet",
+          "title": "Conflit d'intérêt",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-conflit-d-interet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-danse-macabre",
+          "title": "Danse macabre",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-danse-macabre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-de-l-atlantique-a-la-volga",
+          "title": "De l'Atlantique à la Volga",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-de-l-atlantique-a-la-volga",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-demi-tour",
+          "title": "Demi-tour",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-demi-tour",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-5-chapitre-1-home-alone",
+          "title": "Chapitre 1 : Home Alone",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-5-chapitre-1-home-alone",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-5-la-rencontre-du-4eme-type",
+          "title": "La rencontre du 4ème type",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-5-la-rencontre-du-4eme-type",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-interlude-1-un-jour-avant-la-chute",
+          "title": "Équipe 6, interlude 1 : Un jour avant la chute",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-interlude-1-un-jour-avant-la-chute",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-partie-1-falling-down",
+          "title": "Falling down",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-partie-1-falling-down",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-partie-2-seul-dehors",
+          "title": "Le Retardataire",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-partie-2-seul-dehors",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-partie-3-eveil",
+          "title": "Éveil",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-partie-3-eveil",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-partie-4-i-will-survive",
+          "title": "I Will Survive",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-partie-4-i-will-survive",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-partie-5-cendres",
+          "title": "Cendres",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-partie-5-cendres",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-partie-6-on-m-a-appele",
+          "title": "On m'a appelé ?",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-partie-6-on-m-a-appele",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-equipe-6-partie-7-sweet-euphoria",
+          "title": "Sweet Euphoria",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-equipe-6-partie-7-sweet-euphoria",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-insurrection-au-site-06-03",
+          "title": "Insurrection au Site 06-03",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-insurrection-au-site-06-03",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-l-agent-et-le-docteur",
+          "title": "L'Agent et le Docteur",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-l-agent-et-le-docteur",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-l-ardente-obligation",
+          "title": "L'ardente obligation",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-l-ardente-obligation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-la-fuite",
+          "title": "La Fuite",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-la-fuite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-la-traque",
+          "title": "La Traque",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-la-traque",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-la-vie-cachee-de-monsieur-g-partie-1",
+          "title": "La vie cachée de Monsieur G, partie 1 : Naissance d'un monstre",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-la-vie-cachee-de-monsieur-g-partie-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-le-depart",
+          "title": "Le Départ",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-le-depart",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-le-sang",
+          "title": "Le Sang",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-le-sang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-les-quatre-cavaliers",
+          "title": "Les quatre Cavaliers",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-les-quatre-cavaliers",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-partie-1-le-commencement",
+          "title": "Après Aleph Partie 1 : Le Commencement",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-1-le-commencement",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 35
+        },
+        {
+          "id": "apres-aleph-partie-10",
+          "title": "Tempête de sable",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-10",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-partie-12",
+          "title": "Indestructible",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-12",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-partie-2",
+          "title": "\"Désormais O-23 c'est nous\"",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 25
+        },
+        {
+          "id": "apres-aleph-partie-2-bd",
+          "title": "\"Désormais O-23 c'est nous\" BD",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-2-bd",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "apres-aleph-partie-3",
+          "title": "Les ennuis vont commencer",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-partie-4",
+          "title": "25/08/1944",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "apres-aleph-partie-5",
+          "title": "Lever de soleil sur cadavre fondu, Monsieur Raclette (2019)",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-partie-6",
+          "title": "Une visite à but culturel",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-partie-7",
+          "title": "Course contre la mort",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-7",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-partie-8",
+          "title": "Après la neige, le sable",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-8",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "apres-aleph-partie-9",
+          "title": "Embuscade",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-partie-9",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-point-de-vue-et-acuite-visuelle",
+          "title": "Point de vue et acuité visuelle",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-point-de-vue-et-acuite-visuelle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-preludeous",
+          "title": "Préludeous",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-preludeous",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-preludeous-fin-et-debut",
+          "title": "Préludeous : Fin et début",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-preludeous-fin-et-debut",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-que-le-spectacle-commence",
+          "title": "Que le spectacle commence",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-que-le-spectacle-commence",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-tout-va-rentrer-dans-l-ordre",
+          "title": "Tout va rentrer dans l'ordre",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-tout-va-rentrer-dans-l-ordre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-une-eille",
+          "title": "Une Vieille Connaissance",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-une-eille",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-une-ombre-dans-la-neige",
+          "title": "Une ombre dans la neige",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-une-ombre-dans-la-neige",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-variations-chapitre-1",
+          "title": "Variations, chapitre 1",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-variations-chapitre-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "apres-aleph-variations-chapitre-2",
+          "title": "Variations, chapitre 2",
+          "url": "https://fondationscp.wikidot.com/apres-aleph-variations-chapitre-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ascension",
+          "title": "Ascension",
+          "url": "https://fondationscp.wikidot.com/ascension",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "beignet-ou-yaourt",
+          "title": "Beignet Ou Yaourt ?",
+          "url": "https://fondationscp.wikidot.com/beignet-ou-yaourt",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "celui-qui-tente-d-ecrire-l-histoire",
+          "title": "Celui qui tente d'écrire l'Histoire",
+          "url": "https://fondationscp.wikidot.com/celui-qui-tente-d-ecrire-l-histoire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-1-un-miracle-en-enfer",
+          "title": "Chapitre 1 : Un Miracle en Enfer",
+          "url": "https://fondationscp.wikidot.com/chapitre-1-un-miracle-en-enfer",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-10-etchmiadzin",
+          "title": "Chapitre 10 : Etchmiadzin",
+          "url": "https://fondationscp.wikidot.com/chapitre-10-etchmiadzin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-11-la-fin-du-periple",
+          "title": "Chapitre 11 : La fin du périple",
+          "url": "https://fondationscp.wikidot.com/chapitre-11-la-fin-du-periple",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-2-2",
+          "title": "Annexe : Le fantôme d'une autre guerre",
+          "url": "https://fondationscp.wikidot.com/chapitre-2-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "chapitre-2-5-fragments",
+          "title": "Chapitre 2.5 Fragments de vie",
+          "url": "https://fondationscp.wikidot.com/chapitre-2-5-fragments",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-2-jai-reve-dun-cheval",
+          "title": "Chapitre 2 : J'ai rêvé d'un Cheval",
+          "url": "https://fondationscp.wikidot.com/chapitre-2-jai-reve-dun-cheval",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-2-six-pieds-sous-terre",
+          "title": "Chapitre 2 : Six Pieds sous Terre",
+          "url": "https://fondationscp.wikidot.com/chapitre-2-six-pieds-sous-terre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-3-jerusalem",
+          "title": "Chapitre 3 : Jérusalem",
+          "url": "https://fondationscp.wikidot.com/chapitre-3-jerusalem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-4-sos",
+          "title": "Chapitre 4 : SOS",
+          "url": "https://fondationscp.wikidot.com/chapitre-4-sos",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-5-rencontre-avec-l-ennemi",
+          "title": "Chapitre 5 : Rencontre avec l'Ennemi",
+          "url": "https://fondationscp.wikidot.com/chapitre-5-rencontre-avec-l-ennemi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-6-istanbul-la-daevite",
+          "title": "Chapitre 6 : Istanbul la Daevite",
+          "url": "https://fondationscp.wikidot.com/chapitre-6-istanbul-la-daevite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-7-le-chateau-de-l-epervier",
+          "title": "Chapitre 7 : Le château de l'épervier",
+          "url": "https://fondationscp.wikidot.com/chapitre-7-le-chateau-de-l-epervier",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-8-effondrement-dimensionnel",
+          "title": "Chapitre 8 : Effondrement dimensionnel",
+          "url": "https://fondationscp.wikidot.com/chapitre-8-effondrement-dimensionnel",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-9-metsamor",
+          "title": "Chapitre 9 : Metsamor",
+          "url": "https://fondationscp.wikidot.com/chapitre-9-metsamor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "clapitre-1-debacle",
+          "title": "Chapitre 1 : Débâcle",
+          "url": "https://fondationscp.wikidot.com/clapitre-1-debacle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "content-de-l-entendre-encore",
+          "title": "Content de l'entendre encore.",
+          "url": "https://fondationscp.wikidot.com/content-de-l-entendre-encore",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "experiences",
+          "title": "Expériences",
+          "url": "https://fondationscp.wikidot.com/experiences",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gruppa-krovi",
+          "title": "Gruppa Krovi",
+          "url": "https://fondationscp.wikidot.com/gruppa-krovi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "il-se-passe-quelque-chose-au-site-aleph",
+          "title": "Il se passe quelque chose au Site-Aleph",
+          "url": "https://fondationscp.wikidot.com/il-se-passe-quelque-chose-au-site-aleph",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "journal-de-grym-fragments",
+          "title": "Journal de Grym - Fragments",
+          "url": "https://fondationscp.wikidot.com/journal-de-grym-fragments",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-geste-des-douze-barthelemy",
+          "title": "La geste des Douze : Barthélémy le Revenant",
+          "url": "https://fondationscp.wikidot.com/la-geste-des-douze-barthelemy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-geste-des-douze-judas-le-mutin",
+          "title": "La geste des Douze - Judas le Mutin",
+          "url": "https://fondationscp.wikidot.com/la-geste-des-douze-judas-le-mutin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-geste-des-douze-pierre-l-intrompable",
+          "title": "La geste des Douze : Pierre l'Intrompable",
+          "url": "https://fondationscp.wikidot.com/la-geste-des-douze-pierre-l-intrompable",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-grande-panique",
+          "title": "Une équipe anonyme",
+          "url": "https://fondationscp.wikidot.com/la-grande-panique",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-vie-cachee-de-monsieur-g-partie-2-mort-d-un-homme",
+          "title": "La vie cachée de Monsieur G. - Partie 2 - Mort d'un homme",
+          "url": "https://fondationscp.wikidot.com/la-vie-cachee-de-monsieur-g-partie-2-mort-d-un-homme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-grand-remplacement",
+          "title": "Le Grand Remplacement",
+          "url": "https://fondationscp.wikidot.com/le-grand-remplacement",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-massacre-de-palo-alto",
+          "title": "Le massacre de Palo Alto",
+          "url": "https://fondationscp.wikidot.com/le-massacre-de-palo-alto",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "log-incidents-11320-niv5",
+          "title": "Log_Incidents_11320_Niv5",
+          "url": "https://fondationscp.wikidot.com/log-incidents-11320-niv5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "moscou-jour-130-pt1",
+          "title": "Moscou, jour 130 partie 1",
+          "url": "https://fondationscp.wikidot.com/moscou-jour-130-pt1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "moscou-jour-130-pt2",
+          "title": "Moscou, jour 130 partie 2",
+          "url": "https://fondationscp.wikidot.com/moscou-jour-130-pt2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pre-ouverture",
+          "title": "Pré-ouverture",
+          "url": "https://fondationscp.wikidot.com/pre-ouverture",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "secrets-et-propheties",
+          "title": "Secrets et Prophéties",
+          "url": "https://fondationscp.wikidot.com/secrets-et-propheties",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sous-un-rayon-de-lune",
+          "title": "Sous un rayon de Lune",
+          "url": "https://fondationscp.wikidot.com/sous-un-rayon-de-lune",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "une-pause-cafe",
+          "title": "Une pause café",
+          "url": "https://fondationscp.wikidot.com/une-pause-cafe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "une-promesse",
+          "title": "Une promesse",
+          "url": "https://fondationscp.wikidot.com/une-promesse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "une-visite-a-but-culturel-bd",
+          "title": "Une visite à but culturel BD",
+          "url": "https://fondationscp.wikidot.com/une-visite-a-but-culturel-bd",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.apres_aleph"
+    },
+    {
+      "id": "scp-fr:collection:series:o-astres-honorez-nos-entrailles",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "o-astres-honorez-nos-entrailles",
+      "title": "Ô Astres honorez nos entrailles",
+      "sourceListURL": "https://fondationscp.wikidot.com/o-astres-honorez-nos-entrailles",
+      "officialHubURL": "https://fondationscp.wikidot.com/o-astres-honorez-nos-entrailles",
+      "hubPresentation": "standard",
+      "canonicalTag": "sarkique",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sarkique",
+        "rejected": [],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-291-fr",
+          "title": "Procédures de confinement mises à jour",
+          "url": "https://fondationscp.wikidot.com/scp-291-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-298-fr",
+          "title": "L'École des Templiers",
+          "url": "https://fondationscp.wikidot.com/scp-298-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-372-fr",
+          "title": "Les Petits Garnements",
+          "url": "https://fondationscp.wikidot.com/scp-372-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-406-fr",
+          "title": "Je suis un rebut",
+          "url": "https://fondationscp.wikidot.com/scp-406-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-428-fr",
+          "title": "Le Collier de souvenirs",
+          "url": "https://fondationscp.wikidot.com/scp-428-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-463-fr",
+          "title": "Bistouris anonymes",
+          "url": "https://fondationscp.wikidot.com/scp-463-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-469-fr",
+          "title": "Les Mésaventures de la XIe Séphalite dans la Forêt du Perpétuel Équinoxe",
+          "url": "https://fondationscp.wikidot.com/scp-469-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-473-fr",
+          "title": "Chairs et mycoses",
+          "url": "https://fondationscp.wikidot.com/scp-473-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-486-fr",
+          "title": "Rafle de dents",
+          "url": "https://fondationscp.wikidot.com/scp-486-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-511-fr",
+          "title": "Et la division mena à notre perdition",
+          "url": "https://fondationscp.wikidot.com/scp-511-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-542-fr",
+          "title": "Stabat 𒀭𒈾𒀸 Magna",
+          "url": "https://fondationscp.wikidot.com/scp-542-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-594-fr",
+          "title": "Le doigt",
+          "url": "https://fondationscp.wikidot.com/scp-594-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-650-fr",
+          "title": "L'odeur de l'atome",
+          "url": "https://fondationscp.wikidot.com/scp-650-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-689-fr",
+          "title": "Il y a fort longtemps dans les montagnes",
+          "url": "https://fondationscp.wikidot.com/scp-689-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-708-fr",
+          "title": "Le corps est un temple une bombe",
+          "url": "https://fondationscp.wikidot.com/scp-708-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-wandsman-in-the-court-of-the-hanged-king",
+          "title": "Un Arpenteur à la cour du Roi Pendu",
+          "url": "https://fondationscp.wikidot.com/a-wandsman-in-the-court-of-the-hanged-king",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "about-the-serpent",
+          "title": "À propos du Serpent",
+          "url": "https://fondationscp.wikidot.com/about-the-serpent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "an-anthropological-approach-to-sarkicism-case-study-02-the-d",
+          "title": "Une approche anthropologique du Sarkicisme - Étude de cas 02 : Les Divoši de Prague",
+          "url": "https://fondationscp.wikidot.com/an-anthropological-approach-to-sarkicism-case-study-02-the-d",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "anthropological-report-darkwater",
+          "title": "Une approche anthropologique du sarkicisme - Étude de cas 03 : La loge Sombreseaux",
+          "url": "https://fondationscp.wikidot.com/anthropological-report-darkwater",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapter-6-scarecrow-factory",
+          "title": "Usine d'Épouvantails",
+          "url": "https://fondationscp.wikidot.com/chapter-6-scarecrow-factory",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapter-9-it-s-just-a-jump-to-the-left",
+          "title": "Ce n'est qu'un saut sur la gauche",
+          "url": "https://fondationscp.wikidot.com/chapter-9-it-s-just-a-jump-to-the-left",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "equipe-d-operation",
+          "title": "Équipe d'opération",
+          "url": "https://fondationscp.wikidot.com/equipe-d-operation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gastronomie-sarkique-et-anormalite-humaine",
+          "title": "Gastronomie Sarkique et Anormalité Humaine",
+          "url": "https://fondationscp.wikidot.com/gastronomie-sarkique-et-anormalite-humaine",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "hallowinside",
+          "title": "Tous Saints",
+          "url": "https://fondationscp.wikidot.com/hallowinside",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "herman-fuller-can-shove-it-up-his-ass",
+          "title": "Herman Fuller peut se le fourrer dans le cul",
+          "url": "https://fondationscp.wikidot.com/herman-fuller-can-shove-it-up-his-ass",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "histoires-de-viandes",
+          "title": "Histoires De Viandes",
+          "url": "https://fondationscp.wikidot.com/histoires-de-viandes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "il-ne-restera-que-lui",
+          "title": "Il ne restera que lui",
+          "url": "https://fondationscp.wikidot.com/il-ne-restera-que-lui",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "interviews-with-prospective-groups-of-interest",
+          "title": "Entretiens avec de potentiels Groupes d'Intérêt",
+          "url": "https://fondationscp.wikidot.com/interviews-with-prospective-groups-of-interest",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "je-ne-peux-me-sauver-seule",
+          "title": "Je ne peux me sauver seule",
+          "url": "https://fondationscp.wikidot.com/je-ne-peux-me-sauver-seule",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kelipat",
+          "title": "Kelipat",
+          "url": "https://fondationscp.wikidot.com/kelipat",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-chute-d-un-temple",
+          "title": "La Chute d'un Temple",
+          "url": "https://fondationscp.wikidot.com/la-chute-d-un-temple",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-fille-de-l-ambre",
+          "title": "La fille de l'ambre",
+          "url": "https://fondationscp.wikidot.com/la-fille-de-l-ambre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-fille-de-la-mort",
+          "title": "La fille de la mort",
+          "url": "https://fondationscp.wikidot.com/la-fille-de-la-mort",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-position-du-toubib",
+          "title": "La position du Toubib",
+          "url": "https://fondationscp.wikidot.com/la-position-du-toubib",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-rafle-de-beth",
+          "title": "La Rafle de Beth",
+          "url": "https://fondationscp.wikidot.com/la-rafle-de-beth",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "letters-from-benares",
+          "title": "Lettres en provenance de Bénarès",
+          "url": "https://fondationscp.wikidot.com/letters-from-benares",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "lettre-d-un-concierge",
+          "title": "Lettre d'Un Concierge",
+          "url": "https://fondationscp.wikidot.com/lettre-d-un-concierge",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "lovataar-throne",
+          "title": "De Lovataar et du Trône",
+          "url": "https://fondationscp.wikidot.com/lovataar-throne",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "of-dragons-and-serpents",
+          "title": "Archive de l'ÉdDB du ██/██/20██-███ : Des Dragons et des Serpents",
+          "url": "https://fondationscp.wikidot.com/of-dragons-and-serpents",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "old-adytite-language",
+          "title": "Langue Ämärangnä (Adytite)",
+          "url": "https://fondationscp.wikidot.com/old-adytite-language",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "on-the-outskirts",
+          "title": "En périphérie",
+          "url": "https://fondationscp.wikidot.com/on-the-outskirts",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "par-dela-les-montagnes",
+          "title": "Par-delà les montagnes",
+          "url": "https://fondationscp.wikidot.com/par-dela-les-montagnes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "retour-au-bercail",
+          "title": "Retour au bercail",
+          "url": "https://fondationscp.wikidot.com/retour-au-bercail",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sarkic-case-study-01-the-vas-n-a-of-sarvi",
+          "title": "Une approche anthropologique du Sarkicisme - Étude de cas 01 : Les Vaśńa de Sarvi",
+          "url": "https://fondationscp.wikidot.com/sarkic-case-study-01-the-vas-n-a-of-sarvi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "suivez-la-voie",
+          "title": "Suivez la Voie",
+          "url": "https://fondationscp.wikidot.com/suivez-la-voie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-day-of-the-dragon",
+          "title": "Le Jour de la Dragonne",
+          "url": "https://fondationscp.wikidot.com/the-day-of-the-dragon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-grand-theological-game",
+          "title": "Le grand jeu théologique",
+          "url": "https://fondationscp.wikidot.com/the-grand-theological-game",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-iron-wolf",
+          "title": "Le Loup de Fer",
+          "url": "https://fondationscp.wikidot.com/the-iron-wolf",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-maker-and-the-beast",
+          "title": "L'Artisan et la Bête",
+          "url": "https://fondationscp.wikidot.com/the-maker-and-the-beast",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-news-tonight-wednesday-april-26th-2017",
+          "title": "Les Nouvelles du Soir : mercredi 26 avril 2017",
+          "url": "https://fondationscp.wikidot.com/the-news-tonight-wednesday-april-26th-2017",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-parables-of-pseudo-nadox",
+          "title": "Les Paraboles de Pseudo-Nadox",
+          "url": "https://fondationscp.wikidot.com/the-parables-of-pseudo-nadox",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-real-adventures-in-capitalism",
+          "title": "Les Vraies Aventures dans le Capitalisme",
+          "url": "https://fondationscp.wikidot.com/the-real-adventures-in-capitalism",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-thing-at-the-bottom-of-my-dreams",
+          "title": "La chose au fond de mes rêves",
+          "url": "https://fondationscp.wikidot.com/the-thing-at-the-bottom-of-my-dreams",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "traite-d-anomalolithisation",
+          "title": "L’Anomalolithisation : définition, révolution et limites",
+          "url": "https://fondationscp.wikidot.com/traite-d-anomalolithisation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vajksaran",
+          "title": "Annexe 2023-StV_004",
+          "url": "https://fondationscp.wikidot.com/vajksaran",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.o_astres_honorez_nos_entrailles"
+    },
+    {
+      "id": "scp-fr:collection:series:dda-centre",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "dda-centre",
+      "title": "Division des Droits d'Auteur",
+      "sourceListURL": "https://fondationscp.wikidot.com/dda-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/dda-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-fin-de-la-mascarade",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-fin-de-la-mascarade",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "collaboration-fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-611-fr",
+          "title": "Épitaphe Magique",
+          "url": "https://fondationscp.wikidot.com/scp-611-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-lesson-in-power",
+          "title": "Une Leçon de Pouvoir",
+          "url": "https://fondationscp.wikidot.com/a-lesson-in-power",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ethical",
+          "title": "Éthique ?",
+          "url": "https://fondationscp.wikidot.com/ethical",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fluffy-little-kitty",
+          "title": "Petit chaton tout doux",
+          "url": "https://fondationscp.wikidot.com/fluffy-little-kitty",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "forum-post",
+          "title": "Publication du Forum",
+          "url": "https://fondationscp.wikidot.com/forum-post",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "freekleinberg",
+          "title": "Libérez Kleinberg",
+          "url": "https://fondationscp.wikidot.com/freekleinberg",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "joseon",
+          "title": "Joséon",
+          "url": "https://fondationscp.wikidot.com/joseon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "keeping-it-chill",
+          "title": "Reste cool avec tes potos à la Fondation SCP",
+          "url": "https://fondationscp.wikidot.com/keeping-it-chill",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-librairie",
+          "title": "La Librairie",
+          "url": "https://fondationscp.wikidot.com/la-librairie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-pornographe",
+          "title": "Le Pornographe",
+          "url": "https://fondationscp.wikidot.com/le-pornographe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "on-the-outskirts",
+          "title": "En périphérie",
+          "url": "https://fondationscp.wikidot.com/on-the-outskirts",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "paperpushing",
+          "title": "Paperasserie",
+          "url": "https://fondationscp.wikidot.com/paperpushing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "partition",
+          "title": "Cloison de verre",
+          "url": "https://fondationscp.wikidot.com/partition",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "La Mascarade, Finie",
+          "url": "https://fondationscp.wikidot.com/piercing-the-veil",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pineapple-cognitohazard",
+          "title": "Ananas danger cognitif",
+          "url": "https://fondationscp.wikidot.com/pineapple-cognitohazard",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "propriete-intellectuelle",
+          "title": "Propriété Intellectuelle",
+          "url": "https://fondationscp.wikidot.com/propriete-intellectuelle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "research-notes-of-rj-tellar",
+          "title": "Notes d'investigation de R.J. Tellar",
+          "url": "https://fondationscp.wikidot.com/research-notes-of-rj-tellar",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ripped-from-the-headlines",
+          "title": "Tiré des gros titres",
+          "url": "https://fondationscp.wikidot.com/ripped-from-the-headlines",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "safety-reasons",
+          "title": "Raisons de sécurité",
+          "url": "https://fondationscp.wikidot.com/safety-reasons",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sci-fi-shenanigans",
+          "title": "Manigances SF",
+          "url": "https://fondationscp.wikidot.com/sci-fi-shenanigans",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "shuffle-puppies",
+          "title": "Filous Pets",
+          "url": "https://fondationscp.wikidot.com/shuffle-puppies",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "six-letters-addressed",
+          "title": "Six Lettres Adressées à la Fondation SCP (et une en retour)",
+          "url": "https://fondationscp.wikidot.com/six-letters-addressed",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "stormsite19",
+          "title": "#StormSite19",
+          "url": "https://fondationscp.wikidot.com/stormsite19",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "the-executions-of-doctor-bright",
+          "title": "Les exécutions du Docteur Bright",
+          "url": "https://fondationscp.wikidot.com/the-executions-of-doctor-bright",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-truth-is-out-there",
+          "title": "La Vérité est ailleurs",
+          "url": "https://fondationscp.wikidot.com/the-truth-is-out-there",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "therapy-tacos",
+          "title": "Tacos Thérapeutique",
+          "url": "https://fondationscp.wikidot.com/therapy-tacos",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "when-the-time-comes-i-do-not-want-to-be-forgotten",
+          "title": "Oceanus, père de tout",
+          "url": "https://fondationscp.wikidot.com/when-the-time-comes-i-do-not-want-to-be-forgotten",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.dda_centre"
+    },
+    {
+      "id": "scp-fr:collection:series:projetcrossoverfrindex",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "projetcrossoverfrindex",
+      "title": "Projet Crossover",
+      "sourceListURL": "https://fondationscp.wikidot.com/projetcrossoverfrindex",
+      "officialHubURL": "https://fondationscp.wikidot.com/projetcrossoverfrindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "crossover",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "crossover",
+        "rejected": [],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-nightmare-on-aleph-site-premier-cauchemar",
+          "title": "A Nightmare On Aleph Site - Premier cauchemar",
+          "url": "https://fondationscp.wikidot.com/a-nightmare-on-aleph-site-premier-cauchemar",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "a-nightmare-on-aleph-site-second-cauchemar",
+          "title": "A Nightmare On Aleph Site - Second Cauchemar",
+          "url": "https://fondationscp.wikidot.com/a-nightmare-on-aleph-site-second-cauchemar",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "arriere-pensee",
+          "title": "Affaire #0151808 - Arrière-pensée",
+          "url": "https://fondationscp.wikidot.com/arriere-pensee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "bientot-tu-connaitras-la-tragique-etendue-de-mes-echecs",
+          "title": "Bientôt, Tu Connaîtras La Tragique Étendue De Mes Échecs",
+          "url": "https://fondationscp.wikidot.com/bientot-tu-connaitras-la-tragique-etendue-de-mes-echecs",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "cavalier-seul",
+          "title": "Cavalier seul",
+          "url": "https://fondationscp.wikidot.com/cavalier-seul",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "de-l-importance-de-l-esthetique",
+          "title": "De l'Importance de l'Esthétique",
+          "url": "https://fondationscp.wikidot.com/de-l-importance-de-l-esthetique",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dedpoule-lol",
+          "title": "Scrotum, Chimichangas et Pistolets",
+          "url": "https://fondationscp.wikidot.com/dedpoule-lol",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dial-s-for-scp",
+          "title": "Composez le S pour SCP",
+          "url": "https://fondationscp.wikidot.com/dial-s-for-scp",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "droit-d-asile",
+          "title": "Droit d'asile",
+          "url": "https://fondationscp.wikidot.com/droit-d-asile",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "encore-et-toujours",
+          "title": "Encore et Toujours...",
+          "url": "https://fondationscp.wikidot.com/encore-et-toujours",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fate-containment-wonders-mages-et-fondation",
+          "title": "Sort 1 : Mages et Fondation",
+          "url": "https://fondationscp.wikidot.com/fate-containment-wonders-mages-et-fondation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fondation-a-valnuit",
+          "title": "Fondation à Valnuit",
+          "url": "https://fondationscp.wikidot.com/fondation-a-valnuit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "histoire-de-fantomes",
+          "title": "Histoire de fantômes",
+          "url": "https://fondationscp.wikidot.com/histoire-de-fantomes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "incident-report-kaf-09",
+          "title": "Rapport d'Incident KAF-09",
+          "url": "https://fondationscp.wikidot.com/incident-report-kaf-09",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "keters-with-hats",
+          "title": "Des Keters Avec des Chapeaux",
+          "url": "https://fondationscp.wikidot.com/keters-with-hats",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "knee-deep-in-the-keter",
+          "title": "Jusqu'aux Genoux dans les Keter",
+          "url": "https://fondationscp.wikidot.com/knee-deep-in-the-keter",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-azuree",
+          "title": "L'Azurée",
+          "url": "https://fondationscp.wikidot.com/l-azuree",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-derniere-aventure-coloree-de-d-5056",
+          "title": "La dernière aventure colorée de D-5056.",
+          "url": "https://fondationscp.wikidot.com/la-derniere-aventure-coloree-de-d-5056",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-foret-des-habitants",
+          "title": "La Forêt des Habitants",
+          "url": "https://fondationscp.wikidot.com/la-foret-des-habitants",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-premiere-aventure-coloree-de-victor-salendro",
+          "title": "La première aventure colorée de Victor Salendro.",
+          "url": "https://fondationscp.wikidot.com/la-premiere-aventure-coloree-de-victor-salendro",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-ville-ecologique",
+          "title": "La Ville Écologique",
+          "url": "https://fondationscp.wikidot.com/la-ville-ecologique",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-monde-aura-toujours-besoin-de-heros",
+          "title": "Le monde aura toujours besoin de héros",
+          "url": "https://fondationscp.wikidot.com/le-monde-aura-toujours-besoin-de-heros",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-bibliothecaires-et-les-chercheurs",
+          "title": "Les Bibliothécaires et les Chercheurs",
+          "url": "https://fondationscp.wikidot.com/les-bibliothecaires-et-les-chercheurs",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mission-accomplie",
+          "title": "Mission accomplie",
+          "url": "https://fondationscp.wikidot.com/mission-accomplie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "occurrence-of-oddness",
+          "title": "Occurrence de Bizarrerie",
+          "url": "https://fondationscp.wikidot.com/occurrence-of-oddness",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "orgueil-et-prejuges",
+          "title": "Orgueil et Préjugés",
+          "url": "https://fondationscp.wikidot.com/orgueil-et-prejuges",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pas-lui",
+          "title": "Pas lui...",
+          "url": "https://fondationscp.wikidot.com/pas-lui",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "passe-oublie",
+          "title": "Passé oublié",
+          "url": "https://fondationscp.wikidot.com/passe-oublie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "periode-ecarlate",
+          "title": "Période écarlate",
+          "url": "https://fondationscp.wikidot.com/periode-ecarlate",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "personne-de-tres-important",
+          "title": "Personne De Très Important",
+          "url": "https://fondationscp.wikidot.com/personne-de-tres-important",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "renaitre-en-brisant-la-glace",
+          "title": "Renaitre en brisant la Glace",
+          "url": "https://fondationscp.wikidot.com/renaitre-en-brisant-la-glace",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tentative-de-reconstitution-utopique-mise-sur-l-antenne-nati",
+          "title": "Tentative de Reconstitution Utopique Mise sur l'Antenne Nationale",
+          "url": "https://fondationscp.wikidot.com/tentative-de-reconstitution-utopique-mise-sur-l-antenne-nati",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-foundation-never-changes",
+          "title": "La Fondation ne meurt jamais",
+          "url": "https://fondationscp.wikidot.com/the-foundation-never-changes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "this-is-always-a-horrible-idea",
+          "title": "C'est toujours une idée horrible",
+          "url": "https://fondationscp.wikidot.com/this-is-always-a-horrible-idea",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-peu-de-discipline",
+          "title": "Un peu de discipline",
+          "url": "https://fondationscp.wikidot.com/un-peu-de-discipline",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.projetcrossoverfrindex"
+    },
+    {
+      "id": "scp-fr:collection:series:centre-de-bienvenue-chez-les-ducasse",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "centre-de-bienvenue-chez-les-ducasse",
+      "title": "Bienvenue chez les Ducasse",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-de-bienvenue-chez-les-ducasse",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-de-bienvenue-chez-les-ducasse",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-meute",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-meute",
+        "rejected": [
+          {
+            "tag": "campagne-brumeuse",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-392-fr",
+          "title": "La Proie du chasseur",
+          "url": "https://fondationscp.wikidot.com/scp-392-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-412-fr",
+          "title": "Fusil à balles mortes",
+          "url": "https://fondationscp.wikidot.com/scp-412-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-560-fr",
+          "title": "Pachydermonimbus",
+          "url": "https://fondationscp.wikidot.com/scp-560-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-590-fr",
+          "title": "Le Serpent, le Phare et le Chasseur",
+          "url": "https://fondationscp.wikidot.com/scp-590-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-654-fr",
+          "title": "Le village",
+          "url": "https://fondationscp.wikidot.com/scp-654-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-668-fr",
+          "title": "Face A",
+          "url": "https://fondationscp.wikidot.com/scp-668-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-725-fr",
+          "title": "TGV (Traque à Grande Vitesse)",
+          "url": "https://fondationscp.wikidot.com/scp-725-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "adieu-papa-adieu-maman",
+          "title": "Adieu Papa, Adieu Maman",
+          "url": "https://fondationscp.wikidot.com/adieu-papa-adieu-maman",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "concours-ravefm-partie-1",
+          "title": "Le Concours Rave.fm. Partie 1 : Les Clés",
+          "url": "https://fondationscp.wikidot.com/concours-ravefm-partie-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "concours-ravefm-partie-2",
+          "title": "Le Concours Rave.fm. Partie 2 : L'Attente",
+          "url": "https://fondationscp.wikidot.com/concours-ravefm-partie-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "cygnes-amour",
+          "title": "Cygnes d'amour",
+          "url": "https://fondationscp.wikidot.com/cygnes-amour",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "de-fil-en-aiguille",
+          "title": "De fil en aiguille",
+          "url": "https://fondationscp.wikidot.com/de-fil-en-aiguille",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "de-l-origine-de-yod",
+          "title": "De l'origine de Yod",
+          "url": "https://fondationscp.wikidot.com/de-l-origine-de-yod",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "desolee-isolee",
+          "title": "Désolée Isolée",
+          "url": "https://fondationscp.wikidot.com/desolee-isolee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ennui-des-chasses-citadines",
+          "title": "L'Ennui des Chasses Citadines",
+          "url": "https://fondationscp.wikidot.com/ennui-des-chasses-citadines",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "entre-predateurs",
+          "title": "Entre prédateurs",
+          "url": "https://fondationscp.wikidot.com/entre-predateurs",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gds-ichor",
+          "title": "Goût du sang — épisode 1 : Ichor",
+          "url": "https://fondationscp.wikidot.com/gds-ichor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gds-typeo",
+          "title": "Goût du sang — épisode 2 : Type O Négatif",
+          "url": "https://fondationscp.wikidot.com/gds-typeo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "geant-de-la-foret",
+          "title": "Le Géant de la Forêt",
+          "url": "https://fondationscp.wikidot.com/geant-de-la-foret",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "je-crois-qu-on-va-s-en-sortir",
+          "title": "Je crois qu'on va s'en sortir",
+          "url": "https://fondationscp.wikidot.com/je-crois-qu-on-va-s-en-sortir",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-dame-maison",
+          "title": "La Dame-Maison",
+          "url": "https://fondationscp.wikidot.com/la-dame-maison",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-melasse-du-quotidien",
+          "title": "La Mélasse du Quotidien",
+          "url": "https://fondationscp.wikidot.com/la-melasse-du-quotidien",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-pacte",
+          "title": "Le Pacte",
+          "url": "https://fondationscp.wikidot.com/le-pacte",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-phare-dans-la-tempete",
+          "title": "La Mort Artu – Chapitre 3 : Le phare dans la tempête",
+          "url": "https://fondationscp.wikidot.com/le-phare-dans-la-tempete",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-sens-de-notre-sang",
+          "title": "Le Sens de notre Sang",
+          "url": "https://fondationscp.wikidot.com/le-sens-de-notre-sang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-son-des-clochettes",
+          "title": "Le son des clochettes",
+          "url": "https://fondationscp.wikidot.com/le-son-des-clochettes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-village-mort-en-une-nuit",
+          "title": "Le Village Mort en une Nuit",
+          "url": "https://fondationscp.wikidot.com/le-village-mort-en-une-nuit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "letrangere",
+          "title": "L'Étrangère",
+          "url": "https://fondationscp.wikidot.com/letrangere",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "loto-de-l-ombre",
+          "title": "Je ne sais pas qui la recevra, mais ce n'est pas grave",
+          "url": "https://fondationscp.wikidot.com/loto-de-l-ombre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mere-de-brume",
+          "title": "Mère de Brume",
+          "url": "https://fondationscp.wikidot.com/mere-de-brume",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "monologue-a-deux",
+          "title": "Monologue à Deux",
+          "url": "https://fondationscp.wikidot.com/monologue-a-deux",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "parce-que-tout-va-bien",
+          "title": "Parce que Tout va Bien",
+          "url": "https://fondationscp.wikidot.com/parce-que-tout-va-bien",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "portes-et-volets-fermes",
+          "title": "Portes et Volets Fermés",
+          "url": "https://fondationscp.wikidot.com/portes-et-volets-fermes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "promenons-nous-dans-les-bois",
+          "title": "Promenons-nous dans les bois",
+          "url": "https://fondationscp.wikidot.com/promenons-nous-dans-les-bois",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reves-d-enfant-sous-la-banniere-rouge-etoilee",
+          "title": "Rêves d'enfant sous la bannière rouge et étoilée",
+          "url": "https://fondationscp.wikidot.com/reves-d-enfant-sous-la-banniere-rouge-etoilee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-021821135-fr",
+          "title": "SCP-0███-FR",
+          "url": "https://fondationscp.wikidot.com/scp-021821135-fr",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "treves-lucides",
+          "title": "Trêves Lucides",
+          "url": "https://fondationscp.wikidot.com/treves-lucides",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "veux-tu",
+          "title": "Veux-tu",
+          "url": "https://fondationscp.wikidot.com/veux-tu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.centre_de_bienvenue_chez_les_ducasse"
+    },
+    {
+      "id": "scp-fr:collection:series:chroniques-de-saphir",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "chroniques-de-saphir",
+      "title": "Les Chroniques de SAPHIR",
+      "sourceListURL": "https://fondationscp.wikidot.com/chroniques-de-saphir",
+      "officialHubURL": "https://fondationscp.wikidot.com/chroniques-de-saphir",
+      "hubPresentation": "standard",
+      "canonicalTag": "chroniques-de-saphir",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "chroniques-de-saphir",
+        "rejected": [
+          {
+            "tag": "saphir",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "chasser-le-mal",
+          "title": "Chasser le Mal",
+          "url": "https://fondationscp.wikidot.com/chasser-le-mal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "partager-le-vin",
+          "title": "Partager le Vin",
+          "url": "https://fondationscp.wikidot.com/partager-le-vin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rompre-le-pain",
+          "title": "Rompre le Pain",
+          "url": "https://fondationscp.wikidot.com/rompre-le-pain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "trouver-l-absolution",
+          "title": "Trouver l'Absolution",
+          "url": "https://fondationscp.wikidot.com/trouver-l-absolution",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "verser-le-sang",
+          "title": "Verser le Sang",
+          "url": "https://fondationscp.wikidot.com/verser-le-sang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.chroniques_de_saphir"
+    },
+    {
+      "id": "scp-fr:collection:series:la-petite-equipe-de-lord-dottinghton",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "la-petite-equipe-de-lord-dottinghton",
+      "title": "Dottinghton",
+      "sourceListURL": "https://fondationscp.wikidot.com/la-petite-equipe-de-lord-dottinghton",
+      "officialHubURL": "https://fondationscp.wikidot.com/la-petite-equipe-de-lord-dottinghton",
+      "hubPresentation": "standard",
+      "canonicalTag": "dottinghton",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dottinghton",
+        "rejected": [
+          {
+            "tag": "agent-vandrake",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "d-2108",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-benji",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-frog",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-grym",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-holt",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-johannes",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-kaze",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-sonitrok",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "kommissaer-mortarion",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-la-recherche-de-scarlet",
+          "title": "À la recherche de Scarlet",
+          "url": "https://fondationscp.wikidot.com/a-la-recherche-de-scarlet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "histoire-d-un-cataclysme",
+          "title": "Histoire d'un Cataclysme",
+          "url": "https://fondationscp.wikidot.com/histoire-d-un-cataclysme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.la_petite_equipe_de_lord_dottinghton"
+    },
+    {
+      "id": "scp-fr:collection:series:gentleman-dream-centre",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "gentleman-dream-centre",
+      "title": "Gentleman Dream",
+      "sourceListURL": "https://fondationscp.wikidot.com/gentleman-dream-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/gentleman-dream-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "gentleman-dream",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gentleman-dream",
+        "rejected": [],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "gentleman-dream-chapitre-1",
+          "title": "Gentleman Dream : Chapitre 1",
+          "url": "https://fondationscp.wikidot.com/gentleman-dream-chapitre-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gentleman-dream-chapitre-2",
+          "title": "Gentleman Dream : Chapitre 2",
+          "url": "https://fondationscp.wikidot.com/gentleman-dream-chapitre-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gentleman-dream-chapitre-3",
+          "title": "Gentleman Dream : Chapitre 3",
+          "url": "https://fondationscp.wikidot.com/gentleman-dream-chapitre-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gentleman-dream-chapitre-4",
+          "title": "Gentleman Dream : Chapitre 4",
+          "url": "https://fondationscp.wikidot.com/gentleman-dream-chapitre-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gentleman-dream-chapitre-5",
+          "title": "Gentleman Dream : Chapitre 5",
+          "url": "https://fondationscp.wikidot.com/gentleman-dream-chapitre-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "noye-de-fonte-et-autres-histoires-de-l-ouest",
+          "title": "Noyé de Fonte et autres histoires de l'Ouest",
+          "url": "https://fondationscp.wikidot.com/noye-de-fonte-et-autres-histoires-de-l-ouest",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.gentleman_dream_centre"
+    },
+    {
+      "id": "scp-fr:collection:series:centre-des-jacobusiers",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "centre-des-jacobusiers",
+      "title": "L'Héritage des Jacobusiers",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-des-jacobusiers",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-des-jacobusiers",
+      "hubPresentation": "standard",
+      "canonicalTag": "jacobusiers",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "jacobusiers",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-quoi-sert-on",
+          "title": "À quoi sert-on ?",
+          "url": "https://fondationscp.wikidot.com/a-quoi-sert-on",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "crise-de-reunion",
+          "title": "Crise de réunion",
+          "url": "https://fondationscp.wikidot.com/crise-de-reunion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "des-trous-dans-les-arbres",
+          "title": "Des trous dans les arbres",
+          "url": "https://fondationscp.wikidot.com/des-trous-dans-les-arbres",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "deus-fecit-machina",
+          "title": "Deus fecit Machina",
+          "url": "https://fondationscp.wikidot.com/deus-fecit-machina",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "entretien-au-sommet",
+          "title": "Entretien au sommet",
+          "url": "https://fondationscp.wikidot.com/entretien-au-sommet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "face-a-la-ville",
+          "title": "Face à la ville",
+          "url": "https://fondationscp.wikidot.com/face-a-la-ville",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "faire-mieux",
+          "title": "Faire mieux",
+          "url": "https://fondationscp.wikidot.com/faire-mieux",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gagner-contre-les-autres",
+          "title": "Gagner contre les autres",
+          "url": "https://fondationscp.wikidot.com/gagner-contre-les-autres",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "je-t-enverrai-des-lettres",
+          "title": "Je t'enverrai des lettres",
+          "url": "https://fondationscp.wikidot.com/je-t-enverrai-des-lettres",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-illusion-de-la-planification",
+          "title": "L'illusion de la planification",
+          "url": "https://fondationscp.wikidot.com/l-illusion-de-la-planification",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-interdit-du-secret",
+          "title": "L'interdit du secret",
+          "url": "https://fondationscp.wikidot.com/l-interdit-du-secret",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-theorie-des-adultes-2",
+          "title": "La Théorie des adultes, 2",
+          "url": "https://fondationscp.wikidot.com/la-theorie-des-adultes-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-theorie-des-adultes-ou-le-pacte",
+          "title": "La Théorie des adultes ou le Pacte",
+          "url": "https://fondationscp.wikidot.com/la-theorie-des-adultes-ou-le-pacte",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-cours-de-la-methode",
+          "title": "Le cours de la méthode",
+          "url": "https://fondationscp.wikidot.com/le-cours-de-la-methode",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-demon-de-camille",
+          "title": "Le Démon de Camille",
+          "url": "https://fondationscp.wikidot.com/le-demon-de-camille",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-enfants-ne-sont-pas-credibles",
+          "title": "Les enfants ne sont pas crédibles",
+          "url": "https://fondationscp.wikidot.com/les-enfants-ne-sont-pas-credibles",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ne-cassons-pas-la-regle",
+          "title": "Ne cassons pas la règle",
+          "url": "https://fondationscp.wikidot.com/ne-cassons-pas-la-regle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perdre-contre-le-monde",
+          "title": "Perdre contre le monde",
+          "url": "https://fondationscp.wikidot.com/perdre-contre-le-monde",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "regard-canin",
+          "title": "Regard canin",
+          "url": "https://fondationscp.wikidot.com/regard-canin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-crochet-dans-la-ville",
+          "title": "Un crochet dans la ville",
+          "url": "https://fondationscp.wikidot.com/un-crochet-dans-la-ville",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.centre_des_jacobusiers"
+    },
+    {
+      "id": "scp-fr:collection:series:introduction-fr",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "introduction-fr",
+      "title": "L'Introduction",
+      "sourceListURL": "https://fondationscp.wikidot.com/introduction-fr",
+      "officialHubURL": "https://fondationscp.wikidot.com/introduction-fr",
+      "hubPresentation": "standard",
+      "canonicalTag": "série-introduction",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "série-introduction",
+        "rejected": [],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "introduction-ep-1",
+          "title": "Introduction-Ep-1",
+          "url": "https://fondationscp.wikidot.com/introduction-ep-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "introduction-ep-2",
+          "title": "Introduction-Ep-2",
+          "url": "https://fondationscp.wikidot.com/introduction-ep-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.introduction_fr"
+    },
+    {
+      "id": "scp-fr:collection:series:centre-de-retranscription-des-dessins-animes",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "centre-de-retranscription-des-dessins-animes",
+      "title": "Kid's Show",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-de-retranscription-des-dessins-animes",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-de-retranscription-des-dessins-animes",
+      "hubPresentation": "standard",
+      "canonicalTag": "dessin-animé",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dessin-animé",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "gruesome-tale",
+          "title": "Gruesome Tale",
+          "url": "https://fondationscp.wikidot.com/gruesome-tale",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kid-s-show",
+          "title": "Kid's Show",
+          "url": "https://fondationscp.wikidot.com/kid-s-show",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kid-s-show-edition-anormal",
+          "title": "Kid's Show : Édition Anormale",
+          "url": "https://fondationscp.wikidot.com/kid-s-show-edition-anormal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kid-s-show-shutdown-gouvernemental",
+          "title": "Kid's Show Shutdown gouvernemental",
+          "url": "https://fondationscp.wikidot.com/kid-s-show-shutdown-gouvernemental",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.centre_de_retranscription_des_dessins_animes"
+    },
+    {
+      "id": "scp-fr:collection:series:centre-de-minuit-moins-cinq",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "centre-de-minuit-moins-cinq",
+      "title": "Minuit Moins Cinq",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-de-minuit-moins-cinq",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-de-minuit-moins-cinq",
+      "hubPresentation": "standard",
+      "canonicalTag": "minuit-moins-cinq",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "minuit-moins-cinq",
+        "rejected": [
+          {
+            "tag": "centre",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "cinquistes",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "fr",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-la-recherche-d-astro-comic",
+          "title": "À la recherche d'Astro (BD)",
+          "url": "https://fondationscp.wikidot.com/a-la-recherche-d-astro-comic",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-1-la-saison-des-suicides",
+          "title": "Chapitre 1 - La Saison Des Suicides",
+          "url": "https://fondationscp.wikidot.com/chapitre-1-la-saison-des-suicides",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-2-folie-a-deux",
+          "title": "Chapitre 2 - Folie À Deux",
+          "url": "https://fondationscp.wikidot.com/chapitre-2-folie-a-deux",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-3-vices-et-vertus",
+          "title": "Chapitre 3 - Vices & Vertus",
+          "url": "https://fondationscp.wikidot.com/chapitre-3-vices-et-vertus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-4-jours-dangereux",
+          "title": "Chapitre 4 - Jours Dangereux",
+          "url": "https://fondationscp.wikidot.com/chapitre-4-jours-dangereux",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapitre-5-quelques-minutes-avant-minuit",
+          "title": "Chapitre 5 - Quelques Minutes Avant Minuit",
+          "url": "https://fondationscp.wikidot.com/chapitre-5-quelques-minutes-avant-minuit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "laisse-sur-non-lu",
+          "title": "Laissé sur \"non-lu\"",
+          "url": "https://fondationscp.wikidot.com/laisse-sur-non-lu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.centre_de_minuit_moins_cinq"
+    },
+    {
+      "id": "scp-fr:collection:series:les-mots-des-narrateurs",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "les-mots-des-narrateurs",
+      "title": "Les Mots des Narrateurs",
+      "sourceListURL": "https://fondationscp.wikidot.com/les-mots-des-narrateurs",
+      "officialHubURL": "https://fondationscp.wikidot.com/les-mots-des-narrateurs",
+      "hubPresentation": "standard",
+      "canonicalTag": "les-mots",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "les-mots",
+        "rejected": [
+          {
+            "tag": "poésie",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "j-ai-donne-mon-ame-parce-qu-on-me-l-a-demandee",
+          "title": "J'ai donné mon âme parce qu'on me l'a demandée",
+          "url": "https://fondationscp.wikidot.com/j-ai-donne-mon-ame-parce-qu-on-me-l-a-demandee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-ombre-d-un-echo",
+          "title": "L'ombre d'un écho",
+          "url": "https://fondationscp.wikidot.com/l-ombre-d-un-echo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rosa-alba",
+          "title": "Rosa alba",
+          "url": "https://fondationscp.wikidot.com/rosa-alba",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.les_mots_des_narrateurs"
+    },
+    {
+      "id": "scp-fr:collection:series:les-malheurs-du-sophiste",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "les-malheurs-du-sophiste",
+      "title": "Orgueil et {SUPPRIMÉ}",
+      "sourceListURL": "https://fondationscp.wikidot.com/les-malheurs-du-sophiste",
+      "officialHubURL": "https://fondationscp.wikidot.com/les-malheurs-du-sophiste",
+      "hubPresentation": "standard",
+      "canonicalTag": "orgueil-et-supprimé",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "orgueil-et-supprimé",
+        "rejected": [
+          {
+            "tag": "dr-gémini",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "dr-tesla",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "1975",
+          "title": "1975",
+          "url": "https://fondationscp.wikidot.com/1975",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "dans-le-marbre",
+          "title": "Dans le marbre",
+          "url": "https://fondationscp.wikidot.com/dans-le-marbre",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ne-en-neant",
+          "title": "Né en : Néant",
+          "url": "https://fondationscp.wikidot.com/ne-en-neant",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.les_malheurs_du_sophiste"
+    },
+    {
+      "id": "scp-fr:collection:series:diancecht",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "diancecht",
+      "title": "Les Promesses d'une Nouvelle Génération",
+      "sourceListURL": "https://fondationscp.wikidot.com/diancecht",
+      "officialHubURL": "https://fondationscp.wikidot.com/diancecht",
+      "hubPresentation": "standard",
+      "canonicalTag": "nouvelle-génération",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "nouvelle-génération",
+        "rejected": [
+          {
+            "tag": "dr-holt",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "autochtones",
+          "title": "Autochtones",
+          "url": "https://fondationscp.wikidot.com/autochtones",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "rentree-en-matiere",
+          "title": "Rentrée en matière",
+          "url": "https://fondationscp.wikidot.com/rentree-en-matiere",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.diancecht"
+    },
+    {
+      "id": "scp-fr:collection:series:une-tragedie-centre",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "une-tragedie-centre",
+      "title": "Une Tragédie du Roi Pendu",
+      "sourceListURL": "https://fondationscp.wikidot.com/une-tragedie-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/une-tragedie-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "roi-pendu",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "roi-pendu",
+        "rejected": [
+          {
+            "tag": "alagadda",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-505-fr",
+          "title": "Avant Aleph",
+          "url": "https://fondationscp.wikidot.com/scp-505-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-574-fr",
+          "title": "On ne parle jamais tout seul",
+          "url": "https://fondationscp.wikidot.com/scp-574-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-599-fr",
+          "title": "Le Roi est mort, longue vie au Roi",
+          "url": "https://fondationscp.wikidot.com/scp-599-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-672-fr",
+          "title": "L'unique représentation de la Comédie du Bouffon Noyé",
+          "url": "https://fondationscp.wikidot.com/scp-672-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-wandsman-in-the-court-of-the-hanged-king",
+          "title": "Un Arpenteur à la cour du Roi Pendu",
+          "url": "https://fondationscp.wikidot.com/a-wandsman-in-the-court-of-the-hanged-king",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "about-the-serpent",
+          "title": "À propos du Serpent",
+          "url": "https://fondationscp.wikidot.com/about-the-serpent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "and-so-the-crows-laughed",
+          "title": "Et ainsi rirent les Corbeaux",
+          "url": "https://fondationscp.wikidot.com/and-so-the-crows-laughed",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "brotherhood",
+          "title": "Fraternité",
+          "url": "https://fondationscp.wikidot.com/brotherhood",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chapter-7-unshelved",
+          "title": "Déclassé",
+          "url": "https://fondationscp.wikidot.com/chapter-7-unshelved",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "eulogy-for-the-living",
+          "title": "Éloge funèbre pour les vivants",
+          "url": "https://fondationscp.wikidot.com/eulogy-for-the-living",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gray-god",
+          "title": "Guide Gris",
+          "url": "https://fondationscp.wikidot.com/gray-god",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-seigneur-de-ionaros-fut-pendu",
+          "title": "Et le Seigneur de Ionaros fut pendu",
+          "url": "https://fondationscp.wikidot.com/le-seigneur-de-ionaros-fut-pendu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "of-dragons-and-serpents",
+          "title": "Archive de l'ÉdDB du ██/██/20██-███ : Des Dragons et des Serpents",
+          "url": "https://fondationscp.wikidot.com/of-dragons-and-serpents",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "the-clock-shall-strike-again",
+          "title": "L'Horloge frappera de nouveau",
+          "url": "https://fondationscp.wikidot.com/the-clock-shall-strike-again",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-grand-theological-game",
+          "title": "Le grand jeu théologique",
+          "url": "https://fondationscp.wikidot.com/the-grand-theological-game",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-real-adventures-in-capitalism",
+          "title": "Les Vraies Aventures dans le Capitalisme",
+          "url": "https://fondationscp.wikidot.com/the-real-adventures-in-capitalism",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "theology-of-a-snake",
+          "title": "Théologie d'un Serpent",
+          "url": "https://fondationscp.wikidot.com/theology-of-a-snake",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "there-are-no-children-in-alagadda",
+          "title": "Il n'y a pas d'enfants à Alagadda",
+          "url": "https://fondationscp.wikidot.com/there-are-no-children-in-alagadda",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "une-tragedie-acte-1",
+          "title": "ACTE 1 - Sur Les Planches",
+          "url": "https://fondationscp.wikidot.com/une-tragedie-acte-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "une-tragedie-acte-2",
+          "title": "ACTE 2 - Derrière les Pendrillons",
+          "url": "https://fondationscp.wikidot.com/une-tragedie-acte-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "une-tragedie-acte-3",
+          "title": "ACTE 3 - Dans les Coulisses",
+          "url": "https://fondationscp.wikidot.com/une-tragedie-acte-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "une-tragedie-acte-4",
+          "title": "ACTE 4 - Sous les Projecteurs",
+          "url": "https://fondationscp.wikidot.com/une-tragedie-acte-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "une-tragedie-acte-5",
+          "title": "ACTE 5 - À la Régie",
+          "url": "https://fondationscp.wikidot.com/une-tragedie-acte-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "une-tragedie-acte-6",
+          "title": "ACTE 6 - Au Fond des Sièges",
+          "url": "https://fondationscp.wikidot.com/une-tragedie-acte-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.une_tragedie_centre"
+    },
+    {
+      "id": "scp-fr:collection:series:en-regardant-les-etoiles",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "en-regardant-les-etoiles",
+      "title": "Le Livre noir",
+      "sourceListURL": "https://fondationscp.wikidot.com/en-regardant-les-etoiles",
+      "officialHubURL": "https://fondationscp.wikidot.com/en-regardant-les-etoiles",
+      "hubPresentation": "standard",
+      "canonicalTag": "aumn",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "aumn",
+        "rejected": [
+          {
+            "tag": "gdi2019",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-563-fr",
+          "title": "Nous n'avons rien besoin de plus",
+          "url": "https://fondationscp.wikidot.com/scp-563-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-722-fr",
+          "title": "Sibilants subsides sibyllins",
+          "url": "https://fondationscp.wikidot.com/scp-722-fr",
+          "sourceManifest": "manifest_scp-fr",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-femme-et-ses-poupees",
+          "title": "La Femme et ses poupées",
+          "url": "https://fondationscp.wikidot.com/la-femme-et-ses-poupees",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-colosse-et-sa-requete",
+          "title": "Le Colosse et sa requête",
+          "url": "https://fondationscp.wikidot.com/le-colosse-et-sa-requete",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-jeune-et-ses-problemes",
+          "title": "Le Jeune et ses problèmes",
+          "url": "https://fondationscp.wikidot.com/le-jeune-et-ses-problemes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-mage-et-ses-droles-de-dames",
+          "title": "Le Mage et ses drôles de dames",
+          "url": "https://fondationscp.wikidot.com/le-mage-et-ses-droles-de-dames",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-marionnettiste-et-la-clef",
+          "title": "Le Marionnettiste et la clef",
+          "url": "https://fondationscp.wikidot.com/le-marionnettiste-et-la-clef",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "quelque-chose-de-fort",
+          "title": "Quelque Chose de fort",
+          "url": "https://fondationscp.wikidot.com/quelque-chose-de-fort",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.en_regardant_les_etoiles"
     }
   ]
 }

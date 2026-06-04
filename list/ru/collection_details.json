@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1780501547,
-  "generatedAt": "2026-06-03T15:45:47Z",
-  "chunkRevision": "sha256-c3169c192697af67f459df26142cba167788574cede1cde1367581d7041d27e0",
+  "listVersion": 1780575944,
+  "generatedAt": "2026-06-04T12:25:44Z",
+  "chunkRevision": "sha256-e4061ee7ebe269b86b24d79b05f9c28c06a35dfd0d8ac999f9716b3796a23043",
   "builtFrom": {
     "manifests": [
       {
@@ -54,7 +54,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-4e6928f76380eb97801b937ee81fd37e34093ae68e4dfa41a1b5fd4311eeb6a6"
+      "contentHash": "sha256-52df6d0b5d8880dfc8696c2ce921485042c0c850af2bf5ab40d37a67d260b5e9"
     }
   },
   "collections": [
@@ -561,6 +561,123 @@
         }
       ],
       "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:canon:dira-hub",
+      "branchID": "scp-ru",
+      "kind": "canon",
+      "hubID": "dira-hub",
+      "title": "Хаб Департамента внутренних исследований и анализа (DIRA)",
+      "sourceListURL": "https://scpfoundation.net/dira-hub",
+      "officialHubURL": "https://scpfoundation.net/dira-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "отдел:dira",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "отдел:dira",
+        "rejected": [
+          {
+            "tag": "событие:протегано",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "структура:_одобрено_амс",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "структура:избранное",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "структура:хаб",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "тип:канон",
+            "reason": "nonCanonicalHubTag"
+          },
+          {
+            "tag": "филиал:ru",
+            "reason": "nonCanonicalHubTag"
+          }
+        ],
+        "notes": [
+          "Seeded from manifest_canons hub metadata for native collection coverage."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-ru",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1337-ru",
+          "title": "SCP-1337-RU - Чёрный день прозапас",
+          "url": "https://scpfoundation.net/scp-1337-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.3
+        },
+        {
+          "id": "scp-1346-ru",
+          "title": "SCP-1346-RU - Китайский гамбит №30",
+          "url": "https://scpfoundation.net/scp-1346-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.3
+        },
+        {
+          "id": "scp-1369-ru",
+          "title": "SCP-1369-RU - В мире лучшем, в мире ином",
+          "url": "https://scpfoundation.net/scp-1369-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.4
+        },
+        {
+          "id": "scp-1530-ru",
+          "title": "SCP-1530-RU - Суицид на рабочем месте",
+          "url": "https://scpfoundation.net/scp-1530-ru",
+          "sourceManifest": "manifest_scp-ru",
+          "role": "primaryArticle",
+          "os": 4.2
+        },
+        {
+          "id": "on-the-discovery-of-new-lands",
+          "title": "Нельзя открыть новые земли, плавая рядом с берегом",
+          "url": "https://scpfoundation.net/on-the-discovery-of-new-lands",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.1
+        },
+        {
+          "id": "one-day-in-site-88",
+          "title": "Один день в Зоне 88",
+          "url": "https://scpfoundation.net/one-day-in-site-88",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.9
+        },
+        {
+          "id": "zero-object",
+          "title": "Объект ЗЕРО",
+          "url": "https://scpfoundation.net/zero-object",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.dira_hub"
     }
   ]
 }
