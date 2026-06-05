@@ -1,0 +1,1183 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1780666246,
+  "generatedAt": "2026-06-05T13:30:46Z",
+  "chunkRevision": "sha256-3e2efc050fe1a10a29f13c81fecedf5b679f90e2c06a80d1065407ece8279a26",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-wiki-en",
+        "path": "DataPipeline/list/en/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1780664763,
+        "generatedAt": "2026-06-05T13:06:03Z",
+        "contentHash": "sha256-0984d0f5133314788989f00b00247e6b76bbd3f238f277439b15ace38a77cac9"
+      },
+      {
+        "kind": "manifest_scp-foundation",
+        "branchID": "scp-wiki-en",
+        "path": "DataPipeline/list/en/manifest_scp-foundation.json",
+        "schemaVersion": 2,
+        "listVersion": 1780646205,
+        "generatedAt": "2026-06-05T07:56:45Z",
+        "contentHash": "sha256-8d95cd4e99a676d08e0872f45098bffcfa724a5abca82347da8fac790dbe2d24"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-wiki-en",
+        "path": "DataPipeline/list/en/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1780646295,
+        "generatedAt": "2026-06-05T07:58:15Z",
+        "contentHash": "sha256-e6701d0ed3381f592f9b167b4193fd97024a891d5c39deb91c8010b0e107603a"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-bdbf4689302393541bc7c3360d0251e9579e7070f1fc5a48c68e53075956a9c3"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-wiki-en:collection:canon:broken-masquerade-hub",
+      "branchID": "scp-wiki-en",
+      "kind": "canon",
+      "hubID": "broken-masquerade-hub",
+      "title": "Broken Masquerade",
+      "sourceListURL": "https://scp-wiki.wikidot.com/broken-masquerade-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/broken-masquerade-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "broken-masquerade",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "broken-masquerade",
+        "rejected": [
+          {
+            "tag": "en",
+            "reason": "region"
+          },
+          {
+            "tag": "canon",
+            "reason": "generic"
+          },
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Seeded as EN Canon representative native detail while remaining EN canon hubs continue as official-hub fallback until reviewed."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-foundation",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-3241",
+          "title": "The SS Sommerfeld",
+          "url": "https://scp-wiki.wikidot.com/scp-3241",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3739",
+          "title": "Mind-Milk™ by Moosphere, Inc.",
+          "url": "https://scp-wiki.wikidot.com/scp-3739",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4413",
+          "title": "The End of Something Really Excellent",
+          "url": "https://scp-wiki.wikidot.com/scp-4413",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4427",
+          "title": "Nobody Stands for the People",
+          "url": "https://scp-wiki.wikidot.com/scp-4427",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4475",
+          "title": "So Long, and Thanks for All the Milk",
+          "url": "https://scp-wiki.wikidot.com/scp-4475",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4720",
+          "title": "So Come on ye Childhood Heroes! Won’t You Rise Up From the Pages?",
+          "url": "https://scp-wiki.wikidot.com/scp-4720",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4790",
+          "title": "Do not go gentle into that good night.",
+          "url": "https://scp-wiki.wikidot.com/scp-4790",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5012",
+          "title": "There Is No Escape From The Bottomless Pit",
+          "url": "https://scp-wiki.wikidot.com/scp-5012",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5148",
+          "title": "Qlippoth",
+          "url": "https://scp-wiki.wikidot.com/scp-5148",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5350",
+          "title": "Oculoma",
+          "url": "https://scp-wiki.wikidot.com/scp-5350",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5990",
+          "title": "Out of my head, out of my mind",
+          "url": "https://scp-wiki.wikidot.com/scp-5990",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6041",
+          "title": "Chicken Little's Requiem",
+          "url": "https://scp-wiki.wikidot.com/scp-6041",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6101",
+          "title": "The Most Powerful SCP",
+          "url": "https://scp-wiki.wikidot.com/scp-6101",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6115",
+          "title": "The Public Option",
+          "url": "https://scp-wiki.wikidot.com/scp-6115",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6470",
+          "title": "Omnipresent",
+          "url": "https://scp-wiki.wikidot.com/scp-6470",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6705",
+          "title": "The Bicameral Milk",
+          "url": "https://scp-wiki.wikidot.com/scp-6705",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7199",
+          "title": "Do Me a Favor and be Grateful for Yourself",
+          "url": "https://scp-wiki.wikidot.com/scp-7199",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7268",
+          "title": "The Spark of Life",
+          "url": "https://scp-wiki.wikidot.com/scp-7268",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7404",
+          "title": "Nothing gold can stay.",
+          "url": "https://scp-wiki.wikidot.com/scp-7404",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7461",
+          "title": "The Foundation Tries to be Charitable",
+          "url": "https://scp-wiki.wikidot.com/scp-7461",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7973",
+          "title": "Abnormalization",
+          "url": "https://scp-wiki.wikidot.com/scp-7973",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8111",
+          "title": "Magic for Liars",
+          "url": "https://scp-wiki.wikidot.com/scp-8111",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8122",
+          "title": "Venus de Flytrap",
+          "url": "https://scp-wiki.wikidot.com/scp-8122",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8224",
+          "title": "Of Idiots and Wands",
+          "url": "https://scp-wiki.wikidot.com/scp-8224",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8682",
+          "title": "Catastromancy",
+          "url": "https://scp-wiki.wikidot.com/scp-8682",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8780",
+          "title": "Detonation Man",
+          "url": "https://scp-wiki.wikidot.com/scp-8780",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8807",
+          "title": "SOUP",
+          "url": "https://scp-wiki.wikidot.com/scp-8807",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8870",
+          "title": "The Controversy",
+          "url": "https://scp-wiki.wikidot.com/scp-8870",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8968",
+          "title": "Lost in Transit",
+          "url": "https://scp-wiki.wikidot.com/scp-8968",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9035",
+          "title": "Foundationland®",
+          "url": "https://scp-wiki.wikidot.com/scp-9035",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9451",
+          "title": "This Little Anomaly Went to Market",
+          "url": "https://scp-wiki.wikidot.com/scp-9451",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-day-notable-to-nobody",
+          "title": "A Day Notable to Nobody",
+          "url": "https://scp-wiki.wikidot.com/a-day-notable-to-nobody",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-lesson-in-power",
+          "title": "A Lesson in Power",
+          "url": "https://scp-wiki.wikidot.com/a-lesson-in-power",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-new-chance-to-explore-life",
+          "title": "A New Chance To Explore Life",
+          "url": "https://scp-wiki.wikidot.com/a-new-chance-to-explore-life",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "all-legends-die-eventually",
+          "title": "All Legends Die Eventually",
+          "url": "https://scp-wiki.wikidot.com/all-legends-die-eventually",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ambroseinternational-pdf",
+          "title": "AmbroseInternational.pdf",
+          "url": "https://scp-wiki.wikidot.com/ambroseinternational-pdf",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "broken-masquerade-epistolary",
+          "title": "Snippets of an Unveiled World",
+          "url": "https://scp-wiki.wikidot.com/broken-masquerade-epistolary",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "channel-surfing",
+          "title": "A Collection of Anomalous Television Programs From Beyond the Masquerade",
+          "url": "https://scp-wiki.wikidot.com/channel-surfing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "confiscated-documents-march-2022",
+          "title": "Items Seized, March 2022, Site-42 Sapient Object Containment",
+          "url": "https://scp-wiki.wikidot.com/confiscated-documents-march-2022",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "corporate-responsibility",
+          "title": "You're a Toy, Mr. Sanderson",
+          "url": "https://scp-wiki.wikidot.com/corporate-responsibility",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "disillusionment",
+          "title": "Disillusionment",
+          "url": "https://scp-wiki.wikidot.com/disillusionment",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dying-in-an-ocean-of-money-was-worth-it",
+          "title": "Dying in an Ocean of Money was Worth It",
+          "url": "https://scp-wiki.wikidot.com/dying-in-an-ocean-of-money-was-worth-it",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ethical",
+          "title": "Ethical?",
+          "url": "https://scp-wiki.wikidot.com/ethical",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ethics-guide",
+          "title": "The Ethics Committee's Guide to Human Anomalies",
+          "url": "https://scp-wiki.wikidot.com/ethics-guide",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "final-form",
+          "title": "Final Form",
+          "url": "https://scp-wiki.wikidot.com/final-form",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "first-lesson",
+          "title": "First Lesson",
+          "url": "https://scp-wiki.wikidot.com/first-lesson",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fluffy-little-kitty",
+          "title": "Fluffy Little Kitty",
+          "url": "https://scp-wiki.wikidot.com/fluffy-little-kitty",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "freekleinberg",
+          "title": "Free Kleinberg",
+          "url": "https://scp-wiki.wikidot.com/freekleinberg",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "garlic-news-report",
+          "title": "GARLIC NEWS REPORT",
+          "url": "https://scp-wiki.wikidot.com/garlic-news-report",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "goat-vr-more-like-goat-very-bad-game",
+          "title": "Goat VR? More like Goat VeRy bad game!",
+          "url": "https://scp-wiki.wikidot.com/goat-vr-more-like-goat-very-bad-game",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "good-morning-anomalies",
+          "title": "Good Morning Anomalies",
+          "url": "https://scp-wiki.wikidot.com/good-morning-anomalies",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "i-went-to-hong-shing",
+          "title": "I went to Hong Shing, and All I Got Was This Radioactive Crystal",
+          "url": "https://scp-wiki.wikidot.com/i-went-to-hong-shing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "in-memoriam",
+          "title": "Like a Rock",
+          "url": "https://scp-wiki.wikidot.com/in-memoriam",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "indignitas",
+          "title": "Indignitas",
+          "url": "https://scp-wiki.wikidot.com/indignitas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "joseon",
+          "title": "Joseon",
+          "url": "https://scp-wiki.wikidot.com/joseon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "journal-of-iris-thompson",
+          "title": "From The Journal Of Iris Thompson, Ex-MTF Commander",
+          "url": "https://scp-wiki.wikidot.com/journal-of-iris-thompson",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "keeping-it-chill",
+          "title": "Keeping it Chill With Your Homies Down at The SCP Foundation",
+          "url": "https://scp-wiki.wikidot.com/keeping-it-chill",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "live-air",
+          "title": "Live Air",
+          "url": "https://scp-int.wikidot.com/live-air",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "meme-culture",
+          "title": "Meme Culture",
+          "url": "https://scp-wiki.wikidot.com/meme-culture",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mindfall",
+          "title": "Mindfall",
+          "url": "https://scp-wiki.wikidot.com/mindfall",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "no-esteemed-deed",
+          "title": "No Highly Esteemed Deed is Commemorated Here",
+          "url": "https://scp-wiki.wikidot.com/no-esteemed-deed",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "no-sense-crying",
+          "title": "Spilled Milk",
+          "url": "https://scp-wiki.wikidot.com/no-sense-crying",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "not-alone",
+          "title": "Not Alone",
+          "url": "https://scp-wiki.wikidot.com/not-alone",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "on-the-outskirts",
+          "title": "On the Outskirts",
+          "url": "https://scp-wiki.wikidot.com/on-the-outskirts",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "paperpushing",
+          "title": "Paperpushing",
+          "url": "https://scp-wiki.wikidot.com/paperpushing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "partition",
+          "title": "Glass Partition",
+          "url": "https://scp-wiki.wikidot.com/partition",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "Masquerade's End",
+          "url": "https://scp-wiki.wikidot.com/piercing-the-veil",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pineapple-cognitohazard",
+          "title": "Pineapple Cognitohazard",
+          "url": "https://scp-wiki.wikidot.com/pineapple-cognitohazard",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "psa-cognitohazards-and-you",
+          "title": "PSA: Cognitohazards and You!",
+          "url": "https://scp-wiki.wikidot.com/psa-cognitohazards-and-you",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reality-tv-designer-pets-and-fine-dining",
+          "title": "Reality TV, Designer Pets, and Fine Dining",
+          "url": "https://scp-wiki.wikidot.com/reality-tv-designer-pets-and-fine-dining",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "research-notes-of-rj-tellar",
+          "title": "Research Notes Of RJ Tellar",
+          "url": "https://scp-wiki.wikidot.com/research-notes-of-rj-tellar",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reviver",
+          "title": "Reviver",
+          "url": "https://scp-wiki.wikidot.com/reviver",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ripped-from-the-headlines",
+          "title": "Ripped From the Headlines",
+          "url": "https://scp-wiki.wikidot.com/ripped-from-the-headlines",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "safety-reasons",
+          "title": "Safety Reasons",
+          "url": "https://scp-wiki.wikidot.com/safety-reasons",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sariling-dugo-t-bakal",
+          "title": "Sariling Dugo't Bakal",
+          "url": "https://scp-wiki.wikidot.com/sariling-dugo-t-bakal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sci-fi-shenanigans",
+          "title": "Sci-Fi Shenanigans",
+          "url": "https://scp-wiki.wikidot.com/sci-fi-shenanigans",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sell-clickbait-profit",
+          "title": "Sell, Clickbait, Profit",
+          "url": "https://scp-wiki.wikidot.com/sell-clickbait-profit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sex-drugs-money",
+          "title": "Sex, Drugs, Money",
+          "url": "https://scp-wiki.wikidot.com/sex-drugs-money",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "shuffle-puppies",
+          "title": "Shuffle Puppies",
+          "url": "https://scp-wiki.wikidot.com/shuffle-puppies",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "single-issue-voters",
+          "title": "Single Issue Voters",
+          "url": "https://scp-wiki.wikidot.com/single-issue-voters",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "six-letters-addressed",
+          "title": "Six Letters Addressed to the SCP Foundation (and One Letter Home)",
+          "url": "https://scp-wiki.wikidot.com/six-letters-addressed",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "skip-game",
+          "title": "Sell, Clickbait, Profit 2: Skip Game",
+          "url": "https://scp-wiki.wikidot.com/skip-game",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "standoff",
+          "title": "Standoff",
+          "url": "https://scp-wiki.wikidot.com/standoff",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "stormsite19",
+          "title": "#StormSite19",
+          "url": "https://scp-wiki.wikidot.com/stormsite19",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "stranded-lullaby",
+          "title": "Stranded Lullaby",
+          "url": "https://scp-wiki.wikidot.com/stranded-lullaby",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-executions-of-doctor-bright",
+          "title": "The Executions of Doctor Bright",
+          "url": "https://scp-wiki.wikidot.com/the-executions-of-doctor-bright",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-fine-print",
+          "title": "And What Was a Soul to That Blank White World",
+          "url": "https://scp-wiki.wikidot.com/the-fine-print",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-happiest-days-of-our-lives",
+          "title": "the happiest days of our lives",
+          "url": "https://scp-wiki.wikidot.com/the-happiest-days-of-our-lives",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-previous-segment-was-brought-to-you-by-a-grant-from-the",
+          "title": "The Previous Segment Was Brought to You by a Grant from the Wondertainment Holiday Fund and by Viewers Like You",
+          "url": "https://scp-wiki.wikidot.com/the-previous-segment-was-brought-to-you-by-a-grant-from-the",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-revert",
+          "title": "The Revert",
+          "url": "https://scp-wiki.wikidot.com/the-revert",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-truth-is-out-there",
+          "title": "The Truth Is Out There",
+          "url": "https://scp-wiki.wikidot.com/the-truth-is-out-there",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "therapy-tacos",
+          "title": "Therapy Tacos",
+          "url": "https://scp-wiki.wikidot.com/therapy-tacos",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "this-is-not-a-metaphor",
+          "title": "This is Not a Metaphor",
+          "url": "https://scp-wiki.wikidot.com/this-is-not-a-metaphor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "three-fifty",
+          "title": "Three Hundred and Fifty Dollars",
+          "url": "https://scp-wiki.wikidot.com/three-fifty",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "top-5-colleges",
+          "title": "These 5 Colleges are the Best for Learning Dark Powers! Number 1 Will SHOCK You!",
+          "url": "https://scp-wiki.wikidot.com/top-5-colleges",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "undeadthequeen",
+          "title": "/r/undeadthequeen",
+          "url": "https://scp-wiki.wikidot.com/undeadthequeen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "under-the-desk",
+          "title": "Under the Desk",
+          "url": "https://scp-wiki.wikidot.com/under-the-desk",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "unusual-news",
+          "title": "Veilfall",
+          "url": "https://scp-wiki.wikidot.com/unusual-news",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "what",
+          "title": "WHAT THE FU-",
+          "url": "https://scp-wiki.wikidot.com/what",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "when-the-time-comes-i-do-not-want-to-be-forgotten",
+          "title": "Oceanus, Father to All",
+          "url": "https://scp-wiki.wikidot.com/when-the-time-comes-i-do-not-want-to-be-forgotten",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.broken_masquerade_hub",
+      "manualTagReason": "EN canon hub rows are region-only and do not carry hub metadata.g; canonical tag verified against the EN tag index."
+    },
+    {
+      "id": "scp-wiki-en:collection:series:antimemetics-division-hub",
+      "branchID": "scp-wiki-en",
+      "kind": "series",
+      "hubID": "antimemetics-division-hub",
+      "title": "There Is No Antimemetics Division",
+      "sourceListURL": "https://scp-wiki.wikidot.com/antimemetics-division-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/antimemetics-division-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "antimemetics-division",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "antimemetics-division",
+        "rejected": [
+          {
+            "tag": "en",
+            "reason": "region"
+          },
+          {
+            "tag": "series",
+            "reason": "generic"
+          },
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Seeded as EN Series representative native detail while remaining EN series archive rows continue as official-hub fallback until reviewed."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-foundation",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1463",
+          "title": "Comprehension/Invasion/Evasion",
+          "url": "https://scp-wiki.wikidot.com/scp-1463",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1796",
+          "title": "TOP SECRET DOCUMENTS",
+          "url": "https://scp-wiki.wikidot.com/scp-1796",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2111",
+          "title": "If You Can Read This…",
+          "url": "https://scp-wiki.wikidot.com/scp-2111",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2828",
+          "title": "Antimemetic Body Part",
+          "url": "https://scp-wiki.wikidot.com/scp-2828",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3125",
+          "title": "The Escapee",
+          "url": "https://scp-wiki.wikidot.com/scp-3125",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3393",
+          "title": "For Your Eyes Only",
+          "url": "https://scp-wiki.wikidot.com/scp-3393",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3443",
+          "title": "Placeholder",
+          "url": "https://scp-wiki.wikidot.com/scp-3443",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3787",
+          "title": "The Horse Meme",
+          "url": "https://scp-wiki.wikidot.com/scp-3787",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4270",
+          "title": "Does Benjamin Harrison Shit In The Oval Office?",
+          "url": "https://scp-wiki.wikidot.com/scp-4270",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4937",
+          "title": "A Deflated Balloon Dog",
+          "url": "https://scp-wiki.wikidot.com/scp-4937",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5401",
+          "title": "Thing",
+          "url": "https://scp-wiki.wikidot.com/scp-5401",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5997",
+          "title": "The River of Mnemosyne",
+          "url": "https://scp-wiki.wikidot.com/scp-5997",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6421",
+          "title": "The President of the Republic of Chile is Spiderman",
+          "url": "https://scp-wiki.wikidot.com/scp-6421",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6443",
+          "title": "You Left Me Cold, Alone, and Forgotten",
+          "url": "https://scp-wiki.wikidot.com/scp-6443",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6455",
+          "title": "The Los Angeles Mimic",
+          "url": "https://scp-wiki.wikidot.com/scp-6455",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6763",
+          "title": "CAELOPHOBIA, or, Inter-Departmental Departure",
+          "url": "https://scp-wiki.wikidot.com/scp-6763",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7180",
+          "title": "Everything will be OK",
+          "url": "https://scp-wiki.wikidot.com/scp-7180",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7427",
+          "title": "Fall Forever",
+          "url": "https://scp-wiki.wikidot.com/scp-7427",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8316",
+          "title": "Memorium",
+          "url": "https://scp-wiki.wikidot.com/scp-8316",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8382",
+          "title": "The Minervan Mallet",
+          "url": "https://scp-wiki.wikidot.com/scp-8382",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8571",
+          "title": "\"The true Champions League\"",
+          "url": "https://scp-wiki.wikidot.com/scp-8571",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9255",
+          "title": "Nature Abhors, Memory Abates",
+          "url": "https://scp-wiki.wikidot.com/scp-9255",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9385",
+          "title": "D-e-c-a-y",
+          "url": "https://scp-wiki.wikidot.com/scp-9385",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9429",
+          "title": "A Memorial",
+          "url": "https://scp-wiki.wikidot.com/scp-9429",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9555",
+          "title": "The Memeticist",
+          "url": "https://scp-wiki.wikidot.com/scp-9555",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9830",
+          "title": "SYSTEM ERROR: This anomaly does not exist.",
+          "url": "https://scp-wiki.wikidot.com/scp-9830",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9923",
+          "title": "MEDIUM & MESSENGER",
+          "url": "https://scp-wiki.wikidot.com/scp-9923",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "40-waiting-to-happen",
+          "title": "Waiting to Happen",
+          "url": "https://scp-wiki.wikidot.com/40-waiting-to-happen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "43-nothing-happens",
+          "title": "Nothing Happens",
+          "url": "https://scp-wiki.wikidot.com/43-nothing-happens",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-thin-dangerous-line",
+          "title": "A Thin Dangerous Line",
+          "url": "https://scp-wiki.wikidot.com/a-thin-dangerous-line",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ara-orun",
+          "title": "Ará Orún",
+          "url": "https://scp-wiki.wikidot.com/ara-orun",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "blood-brain",
+          "title": "Blood/Brain",
+          "url": "https://scp-wiki.wikidot.com/blood-brain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "case-colourless-green",
+          "title": "CASE COLOURLESS GREEN",
+          "url": "https://scp-wiki.wikidot.com/case-colourless-green",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "champions-of-nothing",
+          "title": "Champions Of Nothing",
+          "url": "https://scp-wiki.wikidot.com/champions-of-nothing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fresh-hell",
+          "title": "Fresh Hell",
+          "url": "https://scp-wiki.wikidot.com/fresh-hell",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "immemorial",
+          "title": "Immemorial",
+          "url": "https://scp-wiki.wikidot.com/immemorial",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "in-the-trenches-with-the-dead",
+          "title": "In the Trenches with the Dead",
+          "url": "https://scp-wiki.wikidot.com/in-the-trenches-with-the-dead",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "introductory-antimemetics",
+          "title": "Introductory Antimemetics",
+          "url": "https://scp-wiki.wikidot.com/introductory-antimemetics",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "numbers-lie",
+          "title": "Numbers Lie",
+          "url": "https://scp-wiki.wikidot.com/numbers-lie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-scp-033",
+          "title": "SCP-SCP-033",
+          "url": "https://scp-wiki.wikidot.com/scp-scp-033",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-wild-light",
+          "title": "Wild Light",
+          "url": "https://scp-wiki.wikidot.com/the-wild-light",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "thereisnocolouroutofspace",
+          "title": "There Is No Colour Out of Space",
+          "url": "https://scp-wiki.wikidot.com/thereisnocolouroutofspace",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tombstone",
+          "title": "Tombstone",
+          "url": "https://scp-wiki.wikidot.com/tombstone",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "under-new-management",
+          "title": "Under New Management",
+          "url": "https://scp-wiki.wikidot.com/under-new-management",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "unforgettable-that-s-what-you-are",
+          "title": "Unforgettable, That's What You Are",
+          "url": "https://scp-wiki.wikidot.com/unforgettable-that-s-what-you-are",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "unthreaded",
+          "title": "Unthreaded",
+          "url": "https://scp-wiki.wikidot.com/unthreaded",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "we-need-to-talk-about-fifty-five",
+          "title": "We Need To Talk About Fifty-Five",
+          "url": "https://scp-wiki.wikidot.com/we-need-to-talk-about-fifty-five",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "where-have-you-been-all-my-life",
+          "title": "Where Have You Been All My Life",
+          "url": "https://scp-wiki.wikidot.com/where-have-you-been-all-my-life",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "your-last-first-day",
+          "title": "Your Last First Day",
+          "url": "https://scp-wiki.wikidot.com/your-last-first-day",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.antimemetics_division_hub",
+      "manualTagReason": "EN series archive rows are region-only and do not carry hub metadata.g; canonical tag verified against the EN tag index."
+    }
+  ]
+}
