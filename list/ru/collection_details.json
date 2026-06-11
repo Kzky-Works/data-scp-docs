@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1781079212,
-  "generatedAt": "2026-06-10T08:13:32Z",
-  "chunkRevision": "sha256-a6cc29b64e28054591c28c58c51745d393dea8272976d48aae22017458c5390f",
+  "listVersion": 1781167588,
+  "generatedAt": "2026-06-11T08:46:28Z",
+  "chunkRevision": "sha256-e3946cb0ebb6cc3f2e8c77f0f275e54507a6e4f30e45afdcfdfebb71f2ededdf",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1780776505,
-        "generatedAt": "2026-06-06T20:08:25Z",
-        "contentHash": "sha256-dc94ff5157fb61110f576f5ce7b437915df001d971f5d77fb4154c9fdca8ccd8"
+        "listVersion": 1781167587,
+        "generatedAt": "2026-06-11T08:46:27Z",
+        "contentHash": "sha256-9c3af8d65e553379bf824a5fd45d63b858c9102ec82fb4e189db0d544c6dd1b1"
       },
       {
         "kind": "manifest_scp-int",
@@ -28,33 +28,33 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1781079212,
-        "generatedAt": "2026-06-10T08:13:32Z",
-        "contentHash": "sha256-dd913d82b5ada5307272c7541e0e9900a3d37360900c5f6c741e68aebc307e2f"
+        "listVersion": 1781167587,
+        "generatedAt": "2026-06-11T08:46:27Z",
+        "contentHash": "sha256-103fd45385af7bcb6cf8212cb5ec745c0b810dcaa6401abef5c3ac0e113fbec5"
       },
       {
         "kind": "manifest_scp-ru",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-ru.json",
         "schemaVersion": 2,
-        "listVersion": 1781079212,
-        "generatedAt": "2026-06-10T08:13:32Z",
-        "contentHash": "sha256-2d51e70770719e2f60e01893f896f4b969a965a6c2589b5ecea41d7566b51ad7"
+        "listVersion": 1781167587,
+        "generatedAt": "2026-06-11T08:46:27Z",
+        "contentHash": "sha256-ab6c14a2221986dd4a476419c52057ea4172a5f2ce73460d4d2d32052edb7f08"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1781079212,
-        "generatedAt": "2026-06-10T08:13:32Z",
-        "contentHash": "sha256-d00c02f1a2eb4686501cb6c614f2e112f469576b00c1674f47625e4437a70103"
+        "listVersion": 1781167587,
+        "generatedAt": "2026-06-11T08:46:27Z",
+        "contentHash": "sha256-c46671c4db33ca8c1cb3b63bb7c132714aea62002fd3fd400ca8a2213a52e758"
       }
     ],
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-52df6d0b5d8880dfc8696c2ce921485042c0c850af2bf5ab40d37a67d260b5e9"
+      "contentHash": "sha256-bdbf4689302393541bc7c3360d0251e9579e7070f1fc5a48c68e53075956a9c3"
     }
   },
   "collections": [
@@ -670,6 +670,48 @@
       ],
       "supplementLinks": [],
       "titleLocalizationKey": "library.item.dira_hub"
+    },
+    {
+      "id": "scp-ru:collection:series:project-versions",
+      "branchID": "scp-ru",
+      "kind": "series",
+      "hubID": "project-versions",
+      "title": "Проект \"Версии\"",
+      "sourceListURL": "https://scpfoundation.net/project-versions",
+      "officialHubURL": "https://scpfoundation.net/project-versions",
+      "hubPresentation": "standard",
+      "canonicalTag": "project-versions",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "project-versions",
+        "rejected": [
+          {
+            "tag": "структура:хаб",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "тип:цикл",
+            "reason": "generic"
+          },
+          {
+            "tag": "филиал:ru",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "RU series surface currently exposes only project-versions; hub metadata has no dedicated reverse lookup member tag, so this is reviewed as native official-hub-only detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "RU Series minimum native detail; member expansion requires a future dedicated reviewed tag or explicit member seed."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
     }
   ]
 }
