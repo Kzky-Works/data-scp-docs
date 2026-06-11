@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1781078375,
-  "generatedAt": "2026-06-10T07:59:35Z",
-  "chunkRevision": "sha256-fc63d4ad637c17a9bb3e3a7230687f5006f48a839d12f26be16964b91652f8ed",
+  "listVersion": 1781166578,
+  "generatedAt": "2026-06-11T08:29:38Z",
+  "chunkRevision": "sha256-31fc2f1af06bed35cc929faeee0816ef7776a7342588d0a4e1d596e6889aa78b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,33 +10,33 @@
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1781078297,
-        "generatedAt": "2026-06-10T07:58:17Z",
-        "contentHash": "sha256-c823343925bcd63829bedb16407c7ce5aa7c3a6ddc3c05b5cb46b4bd30db2ddd"
+        "listVersion": 1781166511,
+        "generatedAt": "2026-06-11T08:28:31Z",
+        "contentHash": "sha256-6c4206f7ee1b638831f8c397b3d5dc27e0fb89205677d1d08e704599ca533c3a"
       },
       {
         "kind": "manifest_scp-fr",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_scp-fr.json",
         "schemaVersion": 2,
-        "listVersion": 1781078163,
-        "generatedAt": "2026-06-10T07:56:03Z",
-        "contentHash": "sha256-6e191b6ac1c1a9ee34fde6fae6283333324a53f02bf8d8ee3c1ce431a5825280"
+        "listVersion": 1781166397,
+        "generatedAt": "2026-06-11T08:26:37Z",
+        "contentHash": "sha256-3c94297834abf8a6838eac851b637448b538a44f434fd904bcbaf24b5da719e2"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1781078286,
-        "generatedAt": "2026-06-10T07:58:06Z",
-        "contentHash": "sha256-1a6951d031a565f85b0ef7ca3206489eda4ef7f585d68895971909ca70a9fda3"
+        "listVersion": 1781166501,
+        "generatedAt": "2026-06-11T08:28:21Z",
+        "contentHash": "sha256-6ceae8663b2149876acb9d1b4fbd94910c971f5653c1ca15ecc112434775422c"
       }
     ],
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-52df6d0b5d8880dfc8696c2ce921485042c0c850af2bf5ab40d37a67d260b5e9"
+      "contentHash": "sha256-bdbf4689302393541bc7c3360d0251e9579e7070f1fc5a48c68e53075956a9c3"
     }
   },
   "collections": [
@@ -110,7 +110,8 @@
           "title": "Trouver sa voie",
           "url": "https://fondationscp.wikidot.com/scp-773-fr",
           "sourceManifest": "manifest_scp-fr",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 10
         },
         {
           "id": "adoucissons-les-moeurs",
@@ -860,7 +861,8 @@
           "title": "Infaillible",
           "url": "https://fondationscp.wikidot.com/infaillible",
           "sourceManifest": "manifest_tales",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 5
         },
         {
           "id": "jusqu-a-l-aube",
@@ -1639,21 +1641,24 @@
           "title": "يا رايح",
           "url": "https://fondationscp.wikidot.com/scp-742-fr",
           "sourceManifest": "manifest_scp-fr",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 15
         },
         {
           "id": "scp-796-fr",
           "title": "Sans corps, où es-tu",
           "url": "https://fondationscp.wikidot.com/scp-796-fr",
           "sourceManifest": "manifest_scp-fr",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 10
         },
         {
           "id": "scp-797-fr",
           "title": "Sans cœur, je suis là",
           "url": "https://fondationscp.wikidot.com/scp-797-fr",
           "sourceManifest": "manifest_scp-fr",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 21
         },
         {
           "id": "scp-897-fr",
@@ -2190,7 +2195,8 @@
           "title": "Insurrection au Site 06-03",
           "url": "https://fondationscp.wikidot.com/apres-aleph-insurrection-au-site-06-03",
           "sourceManifest": "manifest_tales",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 15
         },
         {
           "id": "apres-aleph-l-agent-et-le-docteur",
@@ -2268,7 +2274,8 @@
           "title": "Indestructible",
           "url": "https://fondationscp.wikidot.com/apres-aleph-partie-12",
           "sourceManifest": "manifest_tales",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 26
         },
         {
           "id": "apres-aleph-partie-2",
@@ -3771,7 +3778,8 @@
           "title": "TGV (Traque à Grande Vitesse)",
           "url": "https://fondationscp.wikidot.com/scp-725-fr",
           "sourceManifest": "manifest_scp-fr",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 12
         },
         {
           "id": "adieu-papa-adieu-maman",
@@ -4473,14 +4481,16 @@
           "title": "Introduction-Ep-1",
           "url": "https://fondationscp.wikidot.com/introduction-ep-1",
           "sourceManifest": "manifest_tales",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 26
         },
         {
           "id": "introduction-ep-2",
           "title": "Introduction-Ep-2",
           "url": "https://fondationscp.wikidot.com/introduction-ep-2",
           "sourceManifest": "manifest_tales",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 24
         }
       ],
       "supplementLinks": [],
@@ -4699,7 +4709,8 @@
           "title": "J'ai donné mon âme parce qu'on me l'a demandée",
           "url": "https://fondationscp.wikidot.com/j-ai-donne-mon-ame-parce-qu-on-me-l-a-demandee",
           "sourceManifest": "manifest_tales",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 15
         },
         {
           "id": "l-ombre-d-un-echo",
@@ -5111,7 +5122,8 @@
           "title": "Sibilants subsides sibyllins",
           "url": "https://fondationscp.wikidot.com/scp-722-fr",
           "sourceManifest": "manifest_scp-fr",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 7
         },
         {
           "id": "la-femme-et-ses-poupees",
