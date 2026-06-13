@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1781254194,
-  "generatedAt": "2026-06-12T08:49:54Z",
-  "chunkRevision": "sha256-b35ed06baa611e7c59ff8e0023a7fa7a81fad1e9316aaedeafec2c5ba8b21438",
+  "listVersion": 1781335286,
+  "generatedAt": "2026-06-13T07:21:26Z",
+  "chunkRevision": "sha256-a554602390582fae2a0867acf34884ed32a0d029d7197e20ef36679ffbfec7d2",
   "builtFrom": {
     "manifests": [
       {
@@ -10,27 +10,27 @@
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1781251672,
-        "generatedAt": "2026-06-12T08:07:52Z",
-        "contentHash": "sha256-f4433733079a0067241fd987bc544977cd6e9e8f0a14f6c7492dcc11139b331c"
+        "listVersion": 1781335099,
+        "generatedAt": "2026-06-13T07:18:19Z",
+        "contentHash": "sha256-0bde2e2b508771b6b9f4507787713fb7abbe1c488b2eb9b861e18fbdef5ff386"
       },
       {
         "kind": "manifest_scp-foundation",
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_scp-foundation.json",
         "schemaVersion": 2,
-        "listVersion": 1781251494,
-        "generatedAt": "2026-06-12T08:04:54Z",
-        "contentHash": "sha256-f31e42fad6a16e74420c2716443b6d506d6939cf98c6297035020d6a9fb58112"
+        "listVersion": 1781334567,
+        "generatedAt": "2026-06-13T07:09:27Z",
+        "contentHash": "sha256-fdf4ddefd7bc634dc489896a529e8bf350976a99f6e59add5a07f7994bf1db70"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1781251603,
-        "generatedAt": "2026-06-12T08:06:43Z",
-        "contentHash": "sha256-541fb008108ec72035c89fd2dc85b9e682a6de61b62d5acf9d85732c102cc108"
+        "listVersion": 1781334665,
+        "generatedAt": "2026-06-13T07:11:05Z",
+        "contentHash": "sha256-dabe4349e3d6f8b96049a5ea9afec69b3f8bd0f7849d4b8df93ea892204126fe"
       }
     ],
     "seedReview": {
@@ -298,6 +298,13 @@
           "title": "This Little Anomaly Went to Market",
           "url": "https://scp-wiki.wikidot.com/scp-9451",
           "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "72qna",
+          "title": "A Q&A With The Staff At Site-72",
+          "url": "https://scp-wiki.wikidot.com/72qna",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle"
         },
         {
@@ -941,7 +948,8 @@
           "title": "CAELOPHOBIA, or, Inter-Departmental Departure",
           "url": "https://scp-wiki.wikidot.com/scp-6763",
           "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle"
+          "role": "primaryArticle",
+          "os": 77
         },
         {
           "id": "scp-7180",
