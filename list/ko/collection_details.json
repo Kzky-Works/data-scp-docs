@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1782015587,
-  "generatedAt": "2026-06-21T04:19:47Z",
-  "chunkRevision": "sha256-a8b35ca26e7700e8c9fee8a9c482eaabdb944a2c50292cfe17632339352bed3e",
+  "listVersion": 1782023945,
+  "generatedAt": "2026-06-21T06:39:05Z",
+  "chunkRevision": "sha256-26013bd9b96dbc8614aadeca5ef5de049b1d554dd733a2634d7db3bf53977270",
   "builtFrom": {
     "manifests": [
       {
@@ -10,16 +10,1610 @@
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1782015579,
-        "generatedAt": "2026-06-21T04:19:39Z",
-        "contentHash": "sha256-0a148704f452fe309a111f86284ff54b40ca29edef7f2c0cc88f20f5897315d7"
+        "listVersion": 1782023934,
+        "generatedAt": "2026-06-21T06:38:54Z",
+        "contentHash": "sha256-3b8c10513fec05e31307e2087e91a44e9f5213243822ab419291936103695931"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-ko",
+        "path": "DataPipeline/list/ko/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1781921255,
+        "generatedAt": "2026-06-20T02:07:35Z",
+        "contentHash": "sha256-44366624317ff8462bbc081015b56c27f94c18bf61c57ec684bd1221846319cc"
+      },
+      {
+        "kind": "manifest_scp-ko",
+        "branchID": "scp-ko",
+        "path": "DataPipeline/list/ko/manifest_scp-ko.json",
+        "schemaVersion": 2,
+        "listVersion": 1782023816,
+        "generatedAt": "2026-06-21T06:36:56Z",
+        "contentHash": "sha256-d3fc7d18f3181f72ef05cd285719e5af58ae70b746875ef629503cd96d93d2f0"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-ko",
+        "path": "DataPipeline/list/ko/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1782023824,
+        "generatedAt": "2026-06-21T06:37:04Z",
+        "contentHash": "sha256-6fcd29b706848f7a28f35bd288e6b58fa3e5fe8eb537283f5dadf5a7b7aebd8f"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-ko",
+        "path": "DataPipeline/list/ko/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1782023933,
+        "generatedAt": "2026-06-21T06:38:53Z",
+        "contentHash": "sha256-178f9befa8209229f1d5aef1e8eb65df4317555543585744c9878ab1349a7817"
       }
     ],
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-bdbf4689302393541bc7c3360d0251e9579e7070f1fc5a48c68e53075956a9c3"
+      "contentHash": "sha256-55a71af677332594c587fb7f279127e11125fc584ae48e719b37b1aaed0421d5"
     }
   },
-  "collections": []
+  "collections": [
+    {
+      "id": "scp-ko:collection:canon:joseon-hub",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "joseon-hub",
+      "title": "조선(朝鮮)",
+      "sourceListURL": "https://scpko.wikidot.com/joseon-hub",
+      "officialHubURL": "https://scpko.wikidot.com/joseon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "조선",
+      "tagReview": {
+        "accepted": "조선",
+        "notes": [],
+        "rejected": [
+          {
+            "reason": "region",
+            "tag": "ko"
+          },
+          {
+            "reason": "genericCollaboration",
+            "tag": "공동작업"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "카논"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "허브"
+          }
+        ],
+        "status": "reviewed"
+      },
+      "quality": {
+        "coverageNote": null,
+        "reviewStatus": "reviewed"
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1488-ko",
+          "title": "두 갈래 길이 숲 속으로 나 있었다",
+          "url": "https://scpko.wikidot.com/scp-1488-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "a-ink-reader",
+          "title": "전기수전 제1장",
+          "url": "https://scpko.wikidot.com/a-ink-reader",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "darkness",
+          "title": "사람은 무엇으로 사는가",
+          "url": "https://scpko.wikidot.com/darkness",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "doc-ke-00122",
+          "title": "문서 KE-00122",
+          "url": "https://scpko.wikidot.com/doc-ke-00122",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "glasses-damcheon-1",
+          "title": "이금록 담천전, 일장",
+          "url": "https://scpko.wikidot.com/glasses-damcheon-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "glasses-damcheon-prologue",
+          "title": "이금록 담천전, 서장",
+          "url": "https://scpko.wikidot.com/glasses-damcheon-prologue",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "joseon-institutions",
+          "title": "한반도 초상조직의 간략한 역사",
+          "url": "https://scpko.wikidot.com/joseon-institutions",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "joseon-mask-1",
+          "title": "危世之說 悖亂篇 第一章 (上)",
+          "url": "https://scpko.wikidot.com/joseon-mask-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "joseon-mask-2",
+          "title": "危世之說 悖亂篇 第一章 (下)",
+          "url": "https://scpko.wikidot.com/joseon-mask-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "joseon-miracle-drug",
+          "title": "危世之說 混世篇 第五章",
+          "url": "https://scpko.wikidot.com/joseon-miracle-drug",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "joseon-ruler",
+          "title": "危世之說 怪異篇 第三章",
+          "url": "https://scpko.wikidot.com/joseon-ruler",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "joseon-siamese",
+          "title": "危世之說 鬼神篇 第一章",
+          "url": "https://scpko.wikidot.com/joseon-siamese",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "joseon-statue-1",
+          "title": "危世之說 勇力篇 第一章 (上)",
+          "url": "https://scpko.wikidot.com/joseon-statue-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "joseon-statue-2",
+          "title": "危世之說 勇力篇 第一章 (下)",
+          "url": "https://scpko.wikidot.com/joseon-statue-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "joseon-the-preface",
+          "title": "危世之說 序章",
+          "url": "https://scpko.wikidot.com/joseon-the-preface",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "joseon-three-years-hill",
+          "title": "구전설화: 삼년고개",
+          "url": "https://scpko.wikidot.com/joseon-three-years-hill",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "joseon-turtle",
+          "title": "危世之說 怪異篇 第一章",
+          "url": "https://scpko.wikidot.com/joseon-turtle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "namhansanseoung",
+          "title": "야사 - 남한산성(南漢山城)",
+          "url": "https://scpko.wikidot.com/namhansanseoung",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "nothing",
+          "title": "아무 것도 없는",
+          "url": "https://scpko.wikidot.com/nothing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "remainlife-1",
+          "title": "야사 - 불어도감의 명맥 (1)",
+          "url": "https://scpko.wikidot.com/remainlife-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "remainlife-2",
+          "title": "야사 - 불어도감의 명맥 (2)",
+          "url": "https://scpko.wikidot.com/remainlife-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "remainlife-3",
+          "title": "야사 - 불어도감의 명맥 (3)",
+          "url": "https://scpko.wikidot.com/remainlife-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "sibals-adventure",
+          "title": "굽은 솔 웃지 마라",
+          "url": "https://scpko.wikidot.com/sibals-adventure",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "the-man",
+          "title": "그 사내",
+          "url": "https://scpko.wikidot.com/the-man",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "yeonsan01",
+          "title": "가르침",
+          "url": "https://scpko.wikidot.com/yeonsan01",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "yeonsan02",
+          "title": "죽은 사람이 돌아올 때",
+          "url": "https://scpko.wikidot.com/yeonsan02",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.joseon_hub"
+    },
+    {
+      "id": "scp-ko:collection:canon:mujin-yarn",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "mujin-yarn",
+      "title": "무진기담(霧津奇譚)",
+      "sourceListURL": "https://scpko.wikidot.com/mujin-yarn",
+      "officialHubURL": "https://scpko.wikidot.com/mujin-yarn",
+      "hubPresentation": "standard",
+      "canonicalTag": "무진기담",
+      "tagReview": {
+        "accepted": "무진기담",
+        "notes": [],
+        "rejected": [
+          {
+            "reason": "region",
+            "tag": "ko"
+          },
+          {
+            "reason": "genericCollaboration",
+            "tag": "공동작업"
+          },
+          {
+            "reason": "settingTag",
+            "tag": "무진"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "카논"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "허브"
+          }
+        ],
+        "status": "reviewed"
+      },
+      "quality": {
+        "coverageNote": null,
+        "reviewStatus": "reviewed"
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-dense-fog",
+          "title": "짙은 안개",
+          "url": "https://scpko.wikidot.com/a-dense-fog",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "atombofsomeoneelse",
+          "title": "타인의 무덤",
+          "url": "https://scpko.wikidot.com/atombofsomeoneelse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "baron-munchausen",
+          "title": "허풍선이 남작의 인형극: 내 이야기가 아닌 너의 이야기",
+          "url": "https://scpko.wikidot.com/baron-munchausen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 28
+        },
+        {
+          "id": "cheer",
+          "title": "위로",
+          "url": "https://scpko.wikidot.com/cheer",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "dead-on-the-scene-but-together-forever",
+          "title": "빛을 죽여버린 안개는 언제나 아름다웠어",
+          "url": "https://scpko.wikidot.com/dead-on-the-scene-but-together-forever",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "ecstasy-waves",
+          "title": "황홀경 — 파도",
+          "url": "https://scpko.wikidot.com/ecstasy-waves",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "fog-defeats-sun",
+          "title": "태양은 안개를 이길 수 없었다",
+          "url": "https://scpko.wikidot.com/fog-defeats-sun",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "fogless-1",
+          "title": "그 비오는 날, 눅눅한 방울소리, 무진과 곡성 그 사이의 안개없는 폐촌에서",
+          "url": "https://scpko.wikidot.com/fogless-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 23
+        },
+        {
+          "id": "in-the-world-where-the-fog-has-vanished",
+          "title": "안개가 없어진 세상에서",
+          "url": "https://scpko.wikidot.com/in-the-world-where-the-fog-has-vanished",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "lady-of-domokoro",
+          "title": "도모코로의 여주인",
+          "url": "https://scpko.wikidot.com/lady-of-domokoro",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 39
+        },
+        {
+          "id": "memorydeleted",
+          "title": "안개와 기억",
+          "url": "https://scpko.wikidot.com/memorydeleted",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "metaphor-for-love",
+          "title": "사랑에 대한 짧은 메타포",
+          "url": "https://scpko.wikidot.com/metaphor-for-love",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 38
+        },
+        {
+          "id": "on-the-train-mujin",
+          "title": "기차에서",
+          "url": "https://scpko.wikidot.com/on-the-train-mujin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 23
+        },
+        {
+          "id": "pavane",
+          "title": "죽은 유령을 위한 파반느",
+          "url": "https://scpko.wikidot.com/pavane",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "reasonthatihaterain",
+          "title": "누군가를 위한 빗방울",
+          "url": "https://scpko.wikidot.com/reasonthatihaterain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "seacicada",
+          "title": "바다 매미",
+          "url": "https://scpko.wikidot.com/seacicada",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 51
+        },
+        {
+          "id": "short-deviation",
+          "title": "짧은 일탈",
+          "url": "https://scpko.wikidot.com/short-deviation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "sleepwalking-in-mujin",
+          "title": "몽유무진",
+          "url": "https://scpko.wikidot.com/sleepwalking-in-mujin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "star-gazing",
+          "title": "하지만 두려움을 무릅쓰고 고개를 들어보니 하늘은 꽉 차 있었다네",
+          "url": "https://scpko.wikidot.com/star-gazing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "thefog",
+          "title": "이 또한 지나가리라",
+          "url": "https://scpko.wikidot.com/thefog",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "village-of-judas",
+          "title": "유다의 마을",
+          "url": "https://scpko.wikidot.com/village-of-judas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 32
+        },
+        {
+          "id": "youu-to-tomorrrow",
+          "title": "내일의 당신",
+          "url": "https://scpko.wikidot.com/youu-to-tomorrrow",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.mujin_yarn"
+    },
+    {
+      "id": "scp-ko:collection:canon:anomalympic-hub",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "anomalympic-hub",
+      "title": "초상올림픽",
+      "sourceListURL": "https://scpko.wikidot.com/anomalympic-hub",
+      "officialHubURL": "https://scpko.wikidot.com/anomalympic-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "초상올림픽",
+      "tagReview": {
+        "accepted": "초상올림픽",
+        "notes": [],
+        "rejected": [
+          {
+            "reason": "region",
+            "tag": "ko"
+          },
+          {
+            "reason": "genericCollaboration",
+            "tag": "공동작업"
+          },
+          {
+            "reason": "settingTag",
+            "tag": "스리포틀랜즈"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "카논"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "허브"
+          }
+        ],
+        "status": "reviewed"
+      },
+      "quality": {
+        "coverageNote": null,
+        "reviewStatus": "reviewed"
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1488-ko",
+          "title": "두 갈래 길이 숲 속으로 나 있었다",
+          "url": "https://scpko.wikidot.com/scp-1488-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "afterdeath-football-semifinal-scp-vs-5th",
+          "title": "스리포츠 초상올림픽 내세 족구 준결승전: SCP 재단 VS 다섯째주의",
+          "url": "https://scpko.wikidot.com/afterdeath-football-semifinal-scp-vs-5th",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "boaxandpancia",
+          "title": "조물딱지 프로필: 복스와 팬시아!",
+          "url": "https://scpko.wikidot.com/boaxandpancia",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "figghhting-fire-with-fire",
+          "title": "불과 싸움과 용기와 스포츠 정신의 로망",
+          "url": "https://scpko.wikidot.com/figghhting-fire-with-fire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "paranormal-pentathlon",
+          "title": "스리포츠 초상올림픽 초상 5종 1차 예선전",
+          "url": "https://scpko.wikidot.com/paranormal-pentathlon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 26
+        },
+        {
+          "id": "three-ports-anomalympic-opening-part1",
+          "title": "스리포츠 초상올림픽 개막식 1부",
+          "url": "https://scpko.wikidot.com/three-ports-anomalympic-opening-part1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "three-ports-anomalympic-opening-part2",
+          "title": "스리포츠 초상올림픽 개막식 2부",
+          "url": "https://scpko.wikidot.com/three-ports-anomalympic-opening-part2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "yeji-vs-yunsang",
+          "title": "스시블레이드 토너먼트 본선 16강전: 박예지 VS 강윤상 (完)",
+          "url": "https://scpko.wikidot.com/yeji-vs-yunsang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.anomalympic_hub"
+    },
+    {
+      "id": "scp-ko:collection:canon:ice-hub",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "ice-hub",
+      "title": "극한",
+      "sourceListURL": "https://scpko.wikidot.com/ice-hub",
+      "officialHubURL": "https://scpko.wikidot.com/ice-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "극한",
+      "tagReview": {
+        "accepted": "극한",
+        "notes": [],
+        "rejected": [
+          {
+            "reason": "region",
+            "tag": "ko"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "카논"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "허브"
+          }
+        ],
+        "status": "reviewed"
+      },
+      "quality": {
+        "coverageNote": null,
+        "reviewStatus": "reviewed"
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1012-ko",
+          "title": "여명의 수문장",
+          "url": "https://scpko.wikidot.com/scp-1012-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 23
+        },
+        {
+          "id": "scp-1232-ko",
+          "title": "희망행 특급 열차",
+          "url": "https://scpko.wikidot.com/scp-1232-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "scp-1329-ko",
+          "title": "그대여 그대여 그리운 그대여 슬픔마저도 비춰내자",
+          "url": "https://scpko.wikidot.com/scp-1329-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "scp-1400-ko",
+          "title": "언 발에 오줌 누기",
+          "url": "https://scpko.wikidot.com/scp-1400-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "scp-1488-ko",
+          "title": "두 갈래 길이 숲 속으로 나 있었다",
+          "url": "https://scpko.wikidot.com/scp-1488-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "scp-1547-ko",
+          "title": "구멍이 다시 뚫리는 그날",
+          "url": "https://scpko.wikidot.com/scp-1547-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-1619-ko",
+          "title": "다도와 극한의 끝",
+          "url": "https://scpko.wikidot.com/scp-1619-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 31
+        },
+        {
+          "id": "scp-1691-ko",
+          "title": "실낙원 작전의 패잔병이자, 재단 최후의 직원 마들렌 아만드. 낙원으로 가는 길에 오르다.",
+          "url": "https://scpko.wikidot.com/scp-1691-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "scp-317-ko",
+          "title": "눈 내린 마을의 검은 국경은",
+          "url": "https://scpko.wikidot.com/scp-317-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "scp-358-ko",
+          "title": "희망을 실어 나르는 로켓",
+          "url": "https://scpko.wikidot.com/scp-358-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "scp-366-ko",
+          "title": "육탈",
+          "url": "https://scpko.wikidot.com/scp-366-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "scp-537-ko",
+          "title": "꽁꽁 씨",
+          "url": "https://scpko.wikidot.com/scp-537-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "scp-539-ko",
+          "title": "별빛",
+          "url": "https://scpko.wikidot.com/scp-539-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 25
+        },
+        {
+          "id": "scp-736-ko",
+          "title": "신기루",
+          "url": "https://scpko.wikidot.com/scp-736-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 28
+        },
+        {
+          "id": "blue-dots-on-the-sky",
+          "title": "하늘의 파란 점들",
+          "url": "https://scpko.wikidot.com/blue-dots-on-the-sky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "climate-prophecy-report",
+          "title": "통계예언학과 정기 보고서 - 통계예언학을 이용한 기상예측모델 연구",
+          "url": "https://scpko.wikidot.com/climate-prophecy-report",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "pole",
+          "title": "극점",
+          "url": "https://scpko.wikidot.com/pole",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "red-pine-forever",
+          "title": "푸르른 소나무여, 널리 퍼져라",
+          "url": "https://scpko.wikidot.com/red-pine-forever",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "unauthorized-research",
+          "title": "무허가 연구",
+          "url": "https://scpko.wikidot.com/unauthorized-research",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "unpreferred-defined-future-xc",
+          "title": "선호되지 않은 확정된 묶음 XC",
+          "url": "https://scpko.wikidot.com/unpreferred-defined-future-xc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "wake-up-lord-serpent",
+          "title": "겨울잠을 깨다",
+          "url": "https://scpko.wikidot.com/wake-up-lord-serpent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "winter-bloodsuckers",
+          "title": "누가누가 더 엿같냐 2: 겨울모기는 꽤나 강력하다",
+          "url": "https://scpko.wikidot.com/winter-bloodsuckers",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.ice_hub"
+    },
+    {
+      "id": "scp-ko:collection:canon:site-04k-non-stop",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "site-04k-non-stop",
+      "title": "제04K기지 논스톱",
+      "sourceListURL": "https://scpko.wikidot.com/site-04k-non-stop",
+      "officialHubURL": "https://scpko.wikidot.com/site-04k-non-stop",
+      "hubPresentation": "standard",
+      "canonicalTag": "04k-논스톱",
+      "tagReview": {
+        "accepted": "04k-논스톱",
+        "notes": [],
+        "rejected": [
+          {
+            "reason": "region",
+            "tag": "ko"
+          },
+          {
+            "reason": "characterTag",
+            "tag": "강윤상-이사관"
+          },
+          {
+            "reason": "characterTag",
+            "tag": "윤성재"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "카논"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "허브"
+          }
+        ],
+        "status": "reviewed"
+      },
+      "quality": {
+        "coverageNote": null,
+        "reviewStatus": "reviewed"
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1440-ko",
+          "title": "암호명: dj 서닌자의 제안 - 울어버렸쓰=상",
+          "url": "https://scpko.wikidot.com/scp-1440-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 33
+        },
+        {
+          "id": "scp-1804-ko",
+          "title": "적절한 인가, 적절한 경력",
+          "url": "https://scpko.wikidot.com/scp-1804-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 26
+        },
+        {
+          "id": "black-white-sushi-chef",
+          "title": "흙백요리사: 요리 계급 전쟁",
+          "url": "https://scpko.wikidot.com/black-white-sushi-chef",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 25
+        },
+        {
+          "id": "boaxandpancia",
+          "title": "조물딱지 프로필: 복스와 팬시아!",
+          "url": "https://scpko.wikidot.com/boaxandpancia",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "burning-culture",
+          "title": "제04K기지에는 태움 문화가 있더란 모양입니다...",
+          "url": "https://scpko.wikidot.com/burning-culture",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 31
+        },
+        {
+          "id": "but-thou-shalt-not-eat-it",
+          "title": "윤상 각하 패스트푸드 묘지",
+          "url": "https://scpko.wikidot.com/but-thou-shalt-not-eat-it",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 36
+        },
+        {
+          "id": "counterpart",
+          "title": "운명의 상대",
+          "url": "https://scpko.wikidot.com/counterpart",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "death-punishment",
+          "title": "휴거",
+          "url": "https://scpko.wikidot.com/death-punishment",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 44
+        },
+        {
+          "id": "erlkoenig",
+          "title": "재단성악 - 마왕",
+          "url": "https://scpko.wikidot.com/erlkoenig",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 35
+        },
+        {
+          "id": "higaisha-zura-de-dokka-wo-mata-neriaruketara-na",
+          "title": "피해자의 얼굴",
+          "url": "https://scpko.wikidot.com/higaisha-zura-de-dokka-wo-mata-neriaruketara-na",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "house-of-interest",
+          "title": "하우스 오브 인터레스트",
+          "url": "https://scpko.wikidot.com/house-of-interest",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "i-had-a-wonderful-dream",
+          "title": "심리상담 기록 - 04kӉ\"˜qei2b",
+          "url": "https://scpko.wikidot.com/i-had-a-wonderful-dream",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "kangyoonsang-zero-two",
+          "title": "밤에 피리를 불면 이렇게 된다",
+          "url": "https://scpko.wikidot.com/kangyoonsang-zero-two",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 23
+        },
+        {
+          "id": "marine-fish",
+          "title": "나는 물고기가 무엇인지 모릅니다.",
+          "url": "https://scpko.wikidot.com/marine-fish",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "noru-is-week",
+          "title": "고라니 대소동",
+          "url": "https://scpko.wikidot.com/noru-is-week",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 23
+        },
+        {
+          "id": "site04k-chuseok-yutnori",
+          "title": "강윤상 이사관배 천하제일 윷놀이 대회",
+          "url": "https://scpko.wikidot.com/site04k-chuseok-yutnori",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "the-watchman-of-04k",
+          "title": "04K의 파수꾼",
+          "url": "https://scpko.wikidot.com/the-watchman-of-04k",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "why-do-not-we-eat-04k-cakes",
+          "title": "윈터타임 레코드",
+          "url": "https://scpko.wikidot.com/why-do-not-we-eat-04k-cakes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "yeji-vs-yunsang",
+          "title": "스시블레이드 토너먼트 본선 16강전: 박예지 VS 강윤상 (完)",
+          "url": "https://scpko.wikidot.com/yeji-vs-yunsang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.site_04k_non_stop"
+    },
+    {
+      "id": "scp-ko:collection:canon:site-145k-cooperation-dossier",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "site-145k-cooperation-dossier",
+      "title": "제145K기지 협력사",
+      "sourceListURL": "https://scpko.wikidot.com/site-145k-cooperation-dossier",
+      "officialHubURL": "https://scpko.wikidot.com/site-145k-cooperation-dossier",
+      "hubPresentation": "standard",
+      "canonicalTag": "145k-협력사",
+      "tagReview": {
+        "accepted": "145k-협력사",
+        "notes": [],
+        "rejected": [
+          {
+            "reason": "region",
+            "tag": "ko"
+          },
+          {
+            "reason": "contest",
+            "tag": "2023-기지경연-ko"
+          },
+          {
+            "reason": "deptTag",
+            "tag": "악마학과"
+          },
+          {
+            "reason": "deptTag",
+            "tag": "지속가능격리개발과"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "카논"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "허브"
+          }
+        ],
+        "status": "reviewed"
+      },
+      "quality": {
+        "coverageNote": null,
+        "reviewStatus": "reviewed"
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1028-ko",
+          "title": "입을 티끌에 댈지어다 혹시 소망이 있을지로다",
+          "url": "https://scpko.wikidot.com/scp-1028-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 36
+        },
+        {
+          "id": "scp-1186-ko",
+          "title": "물에 빠진 나이프",
+          "url": "https://scpko.wikidot.com/scp-1186-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-1300-ko",
+          "title": "시간을 지키는 노래",
+          "url": "https://scpko.wikidot.com/scp-1300-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "scp-1605-ko",
+          "title": "두 번 다시 나타나지 않을",
+          "url": "https://scpko.wikidot.com/scp-1605-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-1618-ko",
+          "title": "제145K기지에서 농담이 금지된 이유",
+          "url": "https://scpko.wikidot.com/scp-1618-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 55
+        },
+        {
+          "id": "scp-1668-ko",
+          "title": "마귀비빔밥 2 : 헬 온 어스",
+          "url": "https://scpko.wikidot.com/scp-1668-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 33
+        },
+        {
+          "id": "scp-1682-ko",
+          "title": "※주의※ 엄청 위험함(scp682보다쎔)",
+          "url": "https://scpko.wikidot.com/scp-1682-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 27
+        },
+        {
+          "id": "scp-1884-ko",
+          "title": "미친ㅋㅋ 광릉왕모기 콘서트 직캠;;;",
+          "url": "https://scpko.wikidot.com/scp-1884-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 66
+        },
+        {
+          "id": "scp-213-ko",
+          "title": "55호 격리실, 유의미한 결과를 얻기 위해서는",
+          "url": "https://scpko.wikidot.com/scp-213-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "scp-249-ko",
+          "title": "미소 짓는 당신",
+          "url": "https://scpko.wikidot.com/scp-249-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 22
+        },
+        {
+          "id": "scp-254-ko",
+          "title": "송장메뚜기",
+          "url": "https://scpko.wikidot.com/scp-254-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-262-ko",
+          "title": "양초의 용도를 알 때 모습은 알 필요 없다",
+          "url": "https://scpko.wikidot.com/scp-262-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-269-ko",
+          "title": "첫날밤",
+          "url": "https://scpko.wikidot.com/scp-269-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "scp-279-ko",
+          "title": "또다시 내일 밤 만나러 가려 하지만",
+          "url": "https://scpko.wikidot.com/scp-279-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 26
+        },
+        {
+          "id": "scp-320-ko",
+          "title": "메뚜기를 자금원으로 이용하는 방안에 대하여",
+          "url": "https://scpko.wikidot.com/scp-320-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 26
+        },
+        {
+          "id": "scp-394-ko",
+          "title": "선생님 미각이 안느껴져요",
+          "url": "https://scpko.wikidot.com/scp-394-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "scp-396-ko",
+          "title": "다도에 발모약제145K기지 제휴",
+          "url": "https://scpko.wikidot.com/scp-396-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 22
+        },
+        {
+          "id": "scp-569-ko",
+          "title": "다도의 금태양 ntr",
+          "url": "https://scpko.wikidot.com/scp-569-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 34
+        },
+        {
+          "id": "scp-656-ko",
+          "title": "사과",
+          "url": "https://scpko.wikidot.com/scp-656-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "scp-663-ko",
+          "title": "닭 잡는 데 소 잡는 메스 쓰기",
+          "url": "https://scpko.wikidot.com/scp-663-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 27
+        },
+        {
+          "id": "scp-946-ko",
+          "title": "달빛과 함께 사라지다",
+          "url": "https://scpko.wikidot.com/scp-946-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "scp-970-ko",
+          "title": "성격은 운명이다",
+          "url": "https://scpko.wikidot.com/scp-970-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "a-journal-of-principal-researcher",
+          "title": "양재수 수석연구원의 일지",
+          "url": "https://scpko.wikidot.com/a-journal-of-principal-researcher",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "ad-undas",
+          "title": "파도를 향하여",
+          "url": "https://scpko.wikidot.com/ad-undas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "body-recovery",
+          "title": "수습",
+          "url": "https://scpko.wikidot.com/body-recovery",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "christmas-site-145k-cafeteria",
+          "title": "크리스마스, 제145K기지, 구내식당",
+          "url": "https://scpko.wikidot.com/christmas-site-145k-cafeteria",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "daily-dose-of-chirping",
+          "title": "정신병동에도 짹짹 소리가 나요",
+          "url": "https://scpko.wikidot.com/daily-dose-of-chirping",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "division-of-sustainable-containtment-development-s-radio",
+          "title": "지속가능 라디오 12.00pm",
+          "url": "https://scpko.wikidot.com/division-of-sustainable-containtment-development-s-radio",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "entomology-department-in-site-145k-hub",
+          "title": "제145K기지 곤충학부",
+          "url": "https://scpko.wikidot.com/entomology-department-in-site-145k-hub",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "euptata-entomology",
+          "title": "내가 그린 꽃 그림",
+          "url": "https://scpko.wikidot.com/euptata-entomology",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "hello-2023-world",
+          "title": "작년은 폐쇄되었습니다",
+          "url": "https://scpko.wikidot.com/hello-2023-world",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "infinite-water",
+          "title": "지속가능한 삶, 그리고 복도에 관한 사견",
+          "url": "https://scpko.wikidot.com/infinite-water",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "life-on-trash",
+          "title": "배수로에서의 삶",
+          "url": "https://scpko.wikidot.com/life-on-trash",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "operation-burning-down-the-house",
+          "title": "작전명 버닝 다운 더 하우스",
+          "url": "https://scpko.wikidot.com/operation-burning-down-the-house",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "p-pk",
+          "title": "박예지 요원과 친구되는 이야기(실패함)",
+          "url": "https://scpko.wikidot.com/p-pk",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 33
+        },
+        {
+          "id": "pasta-145k",
+          "title": "제145K기지의 평범한 파스타 조리법",
+          "url": "https://scpko.wikidot.com/pasta-145k",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "people-who-take-medicine-for-one-s-mouth",
+          "title": "죽이지 않고 이기기",
+          "url": "https://scpko.wikidot.com/people-who-take-medicine-for-one-s-mouth",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "procurement",
+          "title": "조달",
+          "url": "https://scpko.wikidot.com/procurement",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "scp-4-14-s-mad-black-day",
+          "title": "재단과 함께 블랙데이를 즐기세요",
+          "url": "https://scpko.wikidot.com/scp-4-14-s-mad-black-day",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "soi-1460",
+          "title": "요주의 생물종: 1460",
+          "url": "https://scpko.wikidot.com/soi-1460",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "sustainable-akgivari",
+          "title": "이름부터 알아먹을 수가 없어서 그것이 무엇인지 차마 물어볼 수조차 없었던 지속가능격리개발사업에 대하여 당신이 알 필요 없는 것",
+          "url": "https://scpko.wikidot.com/sustainable-akgivari",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "tangbi",
+          "title": "고요한 탕비실 속에서",
+          "url": "https://scpko.wikidot.com/tangbi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "the-devil-wears-bibim",
+          "title": "마귀, 비빔밥, 안전",
+          "url": "https://scpko.wikidot.com/the-devil-wears-bibim",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "the-first-goddamn-site-145k-tale",
+          "title": "연구격리기지에서 환영받는 이야기",
+          "url": "https://scpko.wikidot.com/the-first-goddamn-site-145k-tale",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "the-weekend",
+          "title": "휴일",
+          "url": "https://scpko.wikidot.com/the-weekend",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "un-bibim",
+          "title": "언(Un)비빔",
+          "url": "https://scpko.wikidot.com/un-bibim",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.site_145k_cooperation_dossier"
+    },
+    {
+      "id": "scp-ko:collection:canon:nx-50",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "nx-50",
+      "title": "제50넥서스",
+      "sourceListURL": "https://scpko.wikidot.com/nx-50",
+      "officialHubURL": "https://scpko.wikidot.com/nx-50",
+      "hubPresentation": "standard",
+      "canonicalTag": "제50넥서스",
+      "tagReview": {
+        "accepted": "제50넥서스",
+        "notes": [],
+        "rejected": [
+          {
+            "reason": "region",
+            "tag": "ko"
+          },
+          {
+            "reason": "genericCollaboration",
+            "tag": "공저"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "카논"
+          },
+          {
+            "reason": "genericHubMarker",
+            "tag": "허브"
+          }
+        ],
+        "status": "reviewed"
+      },
+      "quality": {
+        "coverageNote": null,
+        "reviewStatus": "reviewed"
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1488-ko",
+          "title": "두 갈래 길이 숲 속으로 나 있었다",
+          "url": "https://scpko.wikidot.com/scp-1488-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "scp-1547-ko",
+          "title": "구멍이 다시 뚫리는 그날",
+          "url": "https://scpko.wikidot.com/scp-1547-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-1807-ko",
+          "title": "수난이대",
+          "url": "https://scpko.wikidot.com/scp-1807-ko",
+          "sourceManifest": "manifest_scp-ko",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "hello-my-microflora",
+          "title": "안녕, 나의 메타모나드",
+          "url": "https://scpko.wikidot.com/hello-my-microflora",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "nexus-dossier-50",
+          "title": "넥서스 기록서류: 50",
+          "url": "https://scpko.wikidot.com/nexus-dossier-50",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 26
+        }
+      ],
+      "supplementLinks": [],
+      "titleLocalizationKey": "library.item.nx_50"
+    }
+  ]
 }
