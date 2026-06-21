@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1782031615,
-  "generatedAt": "2026-06-21T08:46:55Z",
-  "chunkRevision": "sha256-0a39d917f767e95c92e44dc3b67581df229d9362bc18f377e34425bdcae97cd6",
+  "listVersion": 1782044714,
+  "generatedAt": "2026-06-21T12:25:14Z",
+  "chunkRevision": "sha256-98c2650b064b061d6f9e0415642aa265c27e22278dc619a89157297bdda7cb9a",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1782031609,
-        "generatedAt": "2026-06-21T08:46:49Z",
-        "contentHash": "sha256-25ed1b61c789e79d62b0252c1a49c46f880864bb3e7f61153c7b83592a4a0789"
+        "listVersion": 1782044702,
+        "generatedAt": "2026-06-21T12:25:02Z",
+        "contentHash": "sha256-287555974f8a17860102641a7a7032877e1b480b69e218e47c60eff0832cd00a"
       },
       {
         "kind": "manifest_scp-int",
@@ -54,7 +54,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-55a71af677332594c587fb7f279127e11125fc584ae48e719b37b1aaed0421d5"
+      "contentHash": "sha256-24ce89aa1e8fb772f9f457c7d5f26e68241ca0b9d1f75923be0707ac614a3e6f"
     }
   },
   "collections": [
@@ -1614,6 +1614,48 @@
       ],
       "supplementLinks": [],
       "titleLocalizationKey": "library.item.nx_50"
+    },
+    {
+      "id": "scp-ko:collection:canon:timeline88",
+      "branchID": "scp-ko",
+      "kind": "canon",
+      "hubID": "timeline88",
+      "title": "카논/연작 타임라인 준완본",
+      "sourceListURL": "https://scpko.wikidot.com/timeline88",
+      "officialHubURL": "https://scpko.wikidot.com/timeline88",
+      "hubPresentation": "standard",
+      "canonicalTag": "timeline88",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "ko",
+            "reason": "region"
+          },
+          {
+            "tag": "공동작업",
+            "reason": "genericCollaboration"
+          },
+          {
+            "tag": "허브",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Meta table-of-contents hub (카논/연작 타임라인 준완본); no distinct canonical member tag. Reviewed as official-hub-only so members are not misrepresented."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "official hub only (no enumerable native members)"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
     }
   ]
 }
