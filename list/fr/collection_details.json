@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1782199499,
-  "generatedAt": "2026-06-23T07:24:59Z",
-  "chunkRevision": "sha256-2e3a4f212d0247e8614ad81c3eef20c6469eedeef2eefc496b298b376f9f8dcd",
+  "listVersion": 1782205940,
+  "generatedAt": "2026-06-23T09:12:20Z",
+  "chunkRevision": "sha256-f0bf298e2cf2372541e80ce6b5e91e0c09cdc4a4853c12e1274bb054086e04c1",
   "builtFrom": {
     "manifests": [
       {
@@ -13,6 +13,15 @@
         "listVersion": 1782199112,
         "generatedAt": "2026-06-23T07:18:32Z",
         "contentHash": "sha256-1e1bd4dc64dbec741b80852d2bd6d1b05a4ab493f1110924dee8923056292c99"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-fr",
+        "path": "DataPipeline/list/fr/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1781458245,
+        "generatedAt": "2026-06-14T17:30:45Z",
+        "contentHash": "sha256-33868504c30f558fbcced9f11fff0f789ba2cb46409fa6f82c32f1be04b0eb11"
       },
       {
         "kind": "manifest_scp-fr",
@@ -5475,6 +5484,1542 @@
       ],
       "supplementLinks": [],
       "titleLocalizationKey": "library.item.en_regardant_les_etoiles"
+    },
+    {
+      "id": "scp-fr:collection:goi:la-diaspora",
+      "branchID": "scp-fr",
+      "kind": "goi",
+      "hubID": "la-diaspora",
+      "title": "La Diaspora",
+      "sourceListURL": "https://fondationscp.wikidot.com/diaspora-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/diaspora-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-diaspora",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-diaspora",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.fr"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "fr"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-612-fr",
+          "title": "SCP-612-FR",
+          "url": "https://fondationscp.wikidot.com/scp-612-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-610-fr",
+          "title": "SCP-610-FR",
+          "url": "https://fondationscp.wikidot.com/scp-610-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-694-fr",
+          "title": "SCP-694-FR",
+          "url": "https://fondationscp.wikidot.com/scp-694-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-710-fr",
+          "title": "SCP-710-FR",
+          "url": "https://fondationscp.wikidot.com/scp-710-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9610",
+          "title": "SCP-9610",
+          "url": "https://fondationscp.wikidot.com/scp-9610",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "froid-forts-fins-feroces-reves-etranges",
+          "title": "Froids, Forts, Fins, Féroces et rêves étranges",
+          "url": "https://fondationscp.wikidot.com/froid-forts-fins-feroces-reves-etranges",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-760-fr",
+          "title": "SCP-760-FR",
+          "url": "https://fondationscp.wikidot.com/scp-760-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "traite-d-anomalolithisation",
+          "title": "L’Anomalolithisation : définition, révolution et limites",
+          "url": "https://fondationscp.wikidot.com/traite-d-anomalolithisation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vengeance",
+          "title": "Vengeance !",
+          "url": "https://fondationscp.wikidot.com/vengeance",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-794-fr",
+          "title": "SCP-794-FR",
+          "url": "https://fondationscp.wikidot.com/scp-794-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-fr:collection:goi:la-gendastrerie-nationale-francaise",
+      "branchID": "scp-fr",
+      "kind": "goi",
+      "hubID": "la-gendastrerie-nationale-francaise",
+      "title": "La Gendastrerie Nationale Française",
+      "sourceListURL": "https://fondationscp.wikidot.com/gendastrerie-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/gendastrerie-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-gendastrerie-nationale-francaise",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-gendastrerie-nationale-francaise",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.fr"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "fr"
+      },
+      "primaryArticles": [
+        {
+          "id": "plafond-de-pierre",
+          "title": "Plafond de pierre",
+          "url": "https://fondationscp.wikidot.com/plafond-de-pierre",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-335-fr",
+          "title": "SCP-335-FR",
+          "url": "https://fondationscp.wikidot.com/scp-335-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mai-68",
+          "title": "Mai 68",
+          "url": "https://fondationscp.wikidot.com/mai-68",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "desastre",
+          "title": "Désastre",
+          "url": "https://fondationscp.wikidot.com/desastre",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-393-fr",
+          "title": "SCP-393-FR",
+          "url": "https://fondationscp.wikidot.com/scp-393-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "escorte-de-couverture",
+          "title": "Escorte de couverture",
+          "url": "https://fondationscp.wikidot.com/escorte-de-couverture",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "des-astres",
+          "title": "Des Astres",
+          "url": "https://fondationscp.wikidot.com/des-astres",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gamme-d-anormaux",
+          "title": "\"Gamme d'anormaux\" IND74/ANO61/ETH18",
+          "url": "https://fondationscp.wikidot.com/gamme-d-anormaux",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-401-fr",
+          "title": "SCP-401-FR",
+          "url": "https://fondationscp.wikidot.com/scp-401-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-410-fr",
+          "title": "SCP-410-FR",
+          "url": "https://fondationscp.wikidot.com/scp-410-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dossier-broch-majax-theodor",
+          "title": "Casier des preuves 36.15 ZET — Dossier Broch-Majax-Theodor",
+          "url": "https://fondationscp.wikidot.com/dossier-broch-majax-theodor",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "aucun-fluide-ectoplasmique-n-a-coule-cette-nuit",
+          "title": "Aucun fluide ectoplasmique n'a coulé cette nuit",
+          "url": "https://fondationscp.wikidot.com/aucun-fluide-ectoplasmique-n-a-coule-cette-nuit",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-creme-de-la-creme",
+          "title": "La Crème de la crème",
+          "url": "https://fondationscp.wikidot.com/la-creme-de-la-creme",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "comment-disparut-le-docteur-belmont",
+          "title": "Comment disparut le docteur Belmont",
+          "url": "https://fondationscp.wikidot.com/comment-disparut-le-docteur-belmont",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "de-l-origine-de-yod",
+          "title": "De l'origine de Yod",
+          "url": "https://fondationscp.wikidot.com/de-l-origine-de-yod",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-carnet-secret-du-gendastre",
+          "title": "Le Carnet Secret du Gendastre",
+          "url": "https://fondationscp.wikidot.com/le-carnet-secret-du-gendastre",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-defiance-n-a-jamais-ete-une-option",
+          "title": "La défiance n'a jamais été une option",
+          "url": "https://fondationscp.wikidot.com/la-defiance-n-a-jamais-ete-une-option",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-429-fr",
+          "title": "SCP-429-FR",
+          "url": "https://fondationscp.wikidot.com/scp-429-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-433-fr",
+          "title": "SCP-433-FR",
+          "url": "https://fondationscp.wikidot.com/scp-433-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-vol-du-masque-chevelu",
+          "title": "Les Haletantes Aventures des Surfemmes dans : Le Vol Du Masque Chevelu",
+          "url": "https://fondationscp.wikidot.com/le-vol-du-masque-chevelu",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-530-fr",
+          "title": "SCP-530-FR",
+          "url": "https://fondationscp.wikidot.com/scp-530-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-589-fr",
+          "title": "SCP-589-FR",
+          "url": "https://fondationscp.wikidot.com/scp-589-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "lettre-de-reclamation-d-une-gentilhomme",
+          "title": "Lettre de réclamation d'une Gentilhomme",
+          "url": "https://fondationscp.wikidot.com/lettre-de-reclamation-d-une-gentilhomme",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "centre-fractal",
+          "title": "F.R.A.C.T.A.L. - Fichier Ƨ",
+          "url": "https://fondationscp.wikidot.com/centre-fractal",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-641-fr",
+          "title": "SCP-641-FR",
+          "url": "https://fondationscp.wikidot.com/scp-641-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-699-fr",
+          "title": "SCP-699-FR",
+          "url": "https://fondationscp.wikidot.com/scp-699-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-627-fr",
+          "title": "SCP-627-FR",
+          "url": "https://fondationscp.wikidot.com/scp-627-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-lapin-a-gobe-un-chasseur",
+          "title": "Un lapin a gobé un chasseur",
+          "url": "https://fondationscp.wikidot.com/un-lapin-a-gobe-un-chasseur",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "promenons-nous",
+          "title": "Promenons-nous dans les bois",
+          "url": "https://fondationscp.wikidot.com/promenons-nous",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "conquete-de-la-foret-sombre",
+          "title": "Conquête de la Forêt Sombre",
+          "url": "https://fondationscp.wikidot.com/conquete-de-la-foret-sombre",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ulia",
+          "title": "Notice Écarlate J639 : Ulia",
+          "url": "https://fondationscp.wikidot.com/ulia",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-684-fr",
+          "title": "SCP-684-FR",
+          "url": "https://fondationscp.wikidot.com/scp-684-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-719-fr",
+          "title": "SCP-719-FR",
+          "url": "https://fondationscp.wikidot.com/scp-719-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-720-fr",
+          "title": "SCP-720-FR",
+          "url": "https://fondationscp.wikidot.com/scp-720-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-701-fr",
+          "title": "SCP-701-FR",
+          "url": "https://fondationscp.wikidot.com/scp-701-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-738-fr",
+          "title": "SCP-738-FR",
+          "url": "https://fondationscp.wikidot.com/scp-738-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-toi-la-plus-belle-de-mes-histoires",
+          "title": "À toi, la Plus Belle de mes Histoires",
+          "url": "https://fondationscp.wikidot.com/a-toi-la-plus-belle-de-mes-histoires",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-amour-du-risque",
+          "title": "L'Amour Du Risque",
+          "url": "https://fondationscp.wikidot.com/l-amour-du-risque",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "une-parade-pour-les-oiseaux",
+          "title": "Une parade pour les Oiseaux",
+          "url": "https://fondationscp.wikidot.com/une-parade-pour-les-oiseaux",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-fr:collection:goi:les-gentilshommes-humanistes",
+      "branchID": "scp-fr",
+      "kind": "goi",
+      "hubID": "les-gentilshommes-humanistes",
+      "title": "Les Gentilshommes Humanistes",
+      "sourceListURL": "https://fondationscp.wikidot.com/les-gentilshommes-humanistes-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/les-gentilshommes-humanistes-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "les-gentilshommes-humanistes",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "les-gentilshommes-humanistes",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.fr"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "fr"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-198-fr",
+          "title": "SCP-198-FR",
+          "url": "https://fondationscp.wikidot.com/scp-198-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-187-fr",
+          "title": "SCP-187-FR",
+          "url": "https://fondationscp.wikidot.com/scp-187-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-244-fr",
+          "title": "SCP-244-FR",
+          "url": "https://fondationscp.wikidot.com/scp-244-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "humanisme-et-esthetique",
+          "title": "Humanisme et Esthétique",
+          "url": "https://fondationscp.wikidot.com/humanisme-et-esthetique",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "art-et-anesthetique",
+          "title": "Art et Anesthétique",
+          "url": "https://fondationscp.wikidot.com/art-et-anesthetique",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-274-fr",
+          "title": "SCP-274-FR",
+          "url": "https://fondationscp.wikidot.com/scp-274-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "monsieur-de-glatz-detective-gentilhomme",
+          "title": "Monsieur de Glatz, détective gentilhomme",
+          "url": "https://fondationscp.wikidot.com/monsieur-de-glatz-detective-gentilhomme",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "proposition-des-drs-gemini-et-tesla",
+          "title": "Proposition des Drs Gémini et Tesla",
+          "url": "https://fondationscp.wikidot.com/proposition-des-drs-gemini-et-tesla",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-295-fr",
+          "title": "SCP-295-FR",
+          "url": "https://fondationscp.wikidot.com/scp-295-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-vin-des-poitevins",
+          "title": "Le vin des Poitevins",
+          "url": "https://fondationscp.wikidot.com/le-vin-des-poitevins",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-degustations-d-argence",
+          "title": "Les Dégustations d'Argence",
+          "url": "https://fondationscp.wikidot.com/les-degustations-d-argence",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-348-fr",
+          "title": "SCP-348-FR",
+          "url": "https://fondationscp.wikidot.com/scp-348-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-911-fr-ex",
+          "title": "SCP-911-FR-EX",
+          "url": "https://fondationscp.wikidot.com/scp-911-fr-ex",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-427-fr",
+          "title": "SCP-427-FR",
+          "url": "https://fondationscp.wikidot.com/scp-427-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-513-fr",
+          "title": "SCP-513-FR",
+          "url": "https://fondationscp.wikidot.com/scp-513-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "seconde-donation-des-gentilshommes-humanistes",
+          "title": "Seconde Donation Des Gentilshommes Humanistes",
+          "url": "https://fondationscp.wikidot.com/seconde-donation-des-gentilshommes-humanistes",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-528-fr",
+          "title": "SCP-528-FR",
+          "url": "https://fondationscp.wikidot.com/scp-528-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "proposition-du-dr-macro",
+          "title": "Proposition du Dr Macro",
+          "url": "https://fondationscp.wikidot.com/proposition-du-dr-macro",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "lettre-de-reclamation-d-une-gentilhomme",
+          "title": "Lettre de réclamation d'une Gentilhomme",
+          "url": "https://fondationscp.wikidot.com/lettre-de-reclamation-d-une-gentilhomme",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-582-fr",
+          "title": "SCP-582-FR",
+          "url": "https://fondationscp.wikidot.com/scp-582-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-685-fr",
+          "title": "SCP-685-FR",
+          "url": "https://fondationscp.wikidot.com/scp-685-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-766-fr",
+          "title": "SCP-766-FR",
+          "url": "https://fondationscp.wikidot.com/scp-766-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "amicalite",
+          "title": "Amicalité",
+          "url": "https://fondationscp.wikidot.com/amicalite",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "traite-d-anomalolithisation",
+          "title": "L’Anomalolithisation : définition, révolution et limites",
+          "url": "https://fondationscp.wikidot.com/traite-d-anomalolithisation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "concours-ravefm-partie-2",
+          "title": "Le Concours Rave.fm. Partie 2 : L'Attente",
+          "url": "https://fondationscp.wikidot.com/concours-ravefm-partie-2",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-fr:collection:goi:l-ordre-de-la-lumiere",
+      "branchID": "scp-fr",
+      "kind": "goi",
+      "hubID": "l-ordre-de-la-lumiere",
+      "title": "L'Ordre de la Lumière",
+      "sourceListURL": "https://fondationscp.wikidot.com/avertissement",
+      "officialHubURL": "https://fondationscp.wikidot.com/avertissement",
+      "hubPresentation": "standard",
+      "canonicalTag": "l-ordre-de-la-lumiere",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "l-ordre-de-la-lumiere",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.fr"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "fr"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-038-fr",
+          "title": "SCP-038-FR",
+          "url": "https://fondationscp.wikidot.com/scp-038-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-088-fr",
+          "title": "SCP-088-FR",
+          "url": "https://fondationscp.wikidot.com/scp-088-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-046-fr",
+          "title": "SCP-046-FR",
+          "url": "https://fondationscp.wikidot.com/scp-046-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-056-fr",
+          "title": "SCP-056-FR",
+          "url": "https://fondationscp.wikidot.com/scp-056-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-030-fr",
+          "title": "SCP-030-FR",
+          "url": "https://fondationscp.wikidot.com/scp-030-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-104-fr",
+          "title": "SCP-104-FR",
+          "url": "https://fondationscp.wikidot.com/scp-104-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-066-fr",
+          "title": "SCP-066-FR",
+          "url": "https://fondationscp.wikidot.com/scp-066-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-182-fr",
+          "title": "SCP-182-FR",
+          "url": "https://fondationscp.wikidot.com/scp-182-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-200-fr",
+          "title": "SCP-200-FR",
+          "url": "https://fondationscp.wikidot.com/scp-200-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-190-fr",
+          "title": "SCP-190-FR",
+          "url": "https://fondationscp.wikidot.com/scp-190-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-261-fr",
+          "title": "SCP-261-FR",
+          "url": "https://fondationscp.wikidot.com/scp-261-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sang-pour-sang",
+          "title": "Sang pour sang",
+          "url": "https://fondationscp.wikidot.com/sang-pour-sang",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-252-fr",
+          "title": "SCP-252-FR",
+          "url": "https://fondationscp.wikidot.com/scp-252-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "l-ordre-de-la-lumiere",
+          "title": "L'Ordre de la Lumière",
+          "url": "https://fondationscp.wikidot.com/l-ordre-de-la-lumiere",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-450-fr",
+          "title": "SCP-450-FR",
+          "url": "https://fondationscp.wikidot.com/scp-450-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "proposition-du-dr-macro",
+          "title": "Proposition du Dr Macro",
+          "url": "https://fondationscp.wikidot.com/proposition-du-dr-macro",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-fr:collection:goi:primordial",
+      "branchID": "scp-fr",
+      "kind": "goi",
+      "hubID": "primordial",
+      "title": "Primordial",
+      "sourceListURL": "https://fondationscp.wikidot.com/centre-de-primordial",
+      "officialHubURL": "https://fondationscp.wikidot.com/centre-de-primordial",
+      "hubPresentation": "standard",
+      "canonicalTag": "primordial",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "primordial",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.fr"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "fr"
+      },
+      "primaryArticles": [
+        {
+          "id": "chronologie-associee-a-scp-194-fr",
+          "title": "Chronologie associée à SCP-194-FR-F",
+          "url": "https://fondationscp.wikidot.com/chronologie-associee-a-scp-194-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-194-fr",
+          "title": "SCP-194-FR",
+          "url": "https://fondationscp.wikidot.com/scp-194-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rencontre-au-sommet",
+          "title": "Rencontre au sommet",
+          "url": "https://fondationscp.wikidot.com/rencontre-au-sommet",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-fuite",
+          "title": "La Fuite",
+          "url": "https://fondationscp.wikidot.com/la-fuite",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mission-primordiale",
+          "title": "Mission primordiale",
+          "url": "https://fondationscp.wikidot.com/mission-primordiale",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-job-de-reve",
+          "title": "Un job de rêve",
+          "url": "https://fondationscp.wikidot.com/un-job-de-reve",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-254-fr",
+          "title": "SCP-254-FR",
+          "url": "https://fondationscp.wikidot.com/scp-254-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dcd-2874",
+          "title": "DCD-2874",
+          "url": "https://fondationscp.wikidot.com/dcd-2874",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-chiens-de-l-apocalypse",
+          "title": "Les Chiens De l'Apocalypse",
+          "url": "https://fondationscp.wikidot.com/les-chiens-de-l-apocalypse",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ce-qui-ne-me-tue-pas-me-rend-plus-mort",
+          "title": "Ce qui ne me tue pas me rend plus mort",
+          "url": "https://fondationscp.wikidot.com/ce-qui-ne-me-tue-pas-me-rend-plus-mort",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sanction",
+          "title": "Sanction",
+          "url": "https://fondationscp.wikidot.com/sanction",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "cold-case",
+          "title": "Cold case",
+          "url": "https://fondationscp.wikidot.com/cold-case",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "two-million-ways-to-lie",
+          "title": "Two million ways to lie, so everyone's a con man in freedom land",
+          "url": "https://fondationscp.wikidot.com/two-million-ways-to-lie",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-renard-et-la-louve-partie-1",
+          "title": "Le renard et la Louve (Partie 1)",
+          "url": "https://fondationscp.wikidot.com/le-renard-et-la-louve-partie-1",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-vie-du-comedien-est-un-pluriel",
+          "title": "La Vie du comédien est un pluriel",
+          "url": "https://fondationscp.wikidot.com/la-vie-du-comedien-est-un-pluriel",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "oculum-pro-oculo",
+          "title": "Oculum pro oculo...",
+          "url": "https://fondationscp.wikidot.com/oculum-pro-oculo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sanguinem-pro-sanguine",
+          "title": "...Sanguinem pro sanguine",
+          "url": "https://fondationscp.wikidot.com/sanguinem-pro-sanguine",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "le-droit-du-sang",
+          "title": "Le Droit du sang",
+          "url": "https://fondationscp.wikidot.com/le-droit-du-sang",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "comment-disparut-le-docteur-belmont",
+          "title": "Comment disparut le docteur Belmont",
+          "url": "https://fondationscp.wikidot.com/comment-disparut-le-docteur-belmont",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "philosophie-du-plagiat",
+          "title": "Philosophie du Plagiat",
+          "url": "https://fondationscp.wikidot.com/philosophie-du-plagiat",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-463-fr",
+          "title": "SCP-463-FR",
+          "url": "https://fondationscp.wikidot.com/scp-463-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "bouffee-d-indochine",
+          "title": "Bouffée d'Indochine",
+          "url": "https://fondationscp.wikidot.com/bouffee-d-indochine",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-la-poursuite-des-etoiles-diurnes",
+          "title": "À la poursuite des Étoiles diurnes",
+          "url": "https://fondationscp.wikidot.com/a-la-poursuite-des-etoiles-diurnes",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "noir-blanc-jaune",
+          "title": "Noir Blanc Jaune",
+          "url": "https://fondationscp.wikidot.com/noir-blanc-jaune",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-lapin-a-gobe-un-chasseur",
+          "title": "Un lapin a gobé un chasseur",
+          "url": "https://fondationscp.wikidot.com/un-lapin-a-gobe-un-chasseur",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "les-zotres",
+          "title": "Les Zotres",
+          "url": "https://fondationscp.wikidot.com/les-zotres",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "profil-de-bestiole-kevin",
+          "title": "Profil De Bestiole : Kevin !",
+          "url": "https://fondationscp.wikidot.com/profil-de-bestiole-kevin",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tout-ce-qui-fut",
+          "title": "Tout ce qui fut",
+          "url": "https://fondationscp.wikidot.com/tout-ce-qui-fut",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-798-fr",
+          "title": "SCP-798-FR",
+          "url": "https://fondationscp.wikidot.com/scp-798-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "hotline",
+          "title": "H O T L I N E",
+          "url": "https://fondationscp.wikidot.com/hotline",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-fr:collection:goi:la-societe-athee-pour-la-halte-de-l-ideologie-religieuse-saphir",
+      "branchID": "scp-fr",
+      "kind": "goi",
+      "hubID": "la-societe-athee-pour-la-halte-de-l-ideologie-religieuse-saphir",
+      "title": "La Société Athée Pour la Halte de l'Idéologie Religieuse (SAPHIR)",
+      "sourceListURL": "https://fondationscp.wikidot.com/saphir-centre",
+      "officialHubURL": "https://fondationscp.wikidot.com/saphir-centre",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-societe-athee-pour-la-halte-de-l-ideologie-religieuse-saphir",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-societe-athee-pour-la-halte-de-l-ideologie-religieuse-saphir",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.fr"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "fr"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-137-fr",
+          "title": "SCP-137-FR",
+          "url": "https://fondationscp.wikidot.com/scp-137-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-164-fr",
+          "title": "SCP-164-FR",
+          "url": "https://fondationscp.wikidot.com/scp-164-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-236-fr",
+          "title": "SCP-236-FR",
+          "url": "https://fondationscp.wikidot.com/scp-236-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "partager-le-vin",
+          "title": "Partager le Vin",
+          "url": "https://fondationscp.wikidot.com/partager-le-vin",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chasser-le-mal",
+          "title": "Chasser le Mal",
+          "url": "https://fondationscp.wikidot.com/chasser-le-mal",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-227-fr",
+          "title": "SCP-227-FR",
+          "url": "https://fondationscp.wikidot.com/scp-227-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-261-fr",
+          "title": "SCP-261-FR",
+          "url": "https://fondationscp.wikidot.com/scp-261-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perdition",
+          "title": "Perdition",
+          "url": "https://fondationscp.wikidot.com/perdition",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "trouver-l-absolution",
+          "title": "Trouver l'Absolution",
+          "url": "https://fondationscp.wikidot.com/trouver-l-absolution",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "verser-le-sang",
+          "title": "Verser le Sang",
+          "url": "https://fondationscp.wikidot.com/verser-le-sang",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "grenat",
+          "title": "Données sensibles - Source : GRENAT_",
+          "url": "https://fondationscp.wikidot.com/grenat",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "philosophie-de-la-torture",
+          "title": "Philosophie de la Torture",
+          "url": "https://fondationscp.wikidot.com/philosophie-de-la-torture",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dieu-est-mort",
+          "title": "Dieu est mort",
+          "url": "https://fondationscp.wikidot.com/dieu-est-mort",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-242-fr-b",
+          "title": "SCP-242-FR-B",
+          "url": "https://fondationscp.wikidot.com/scp-242-fr-b",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "archirelique-n-24",
+          "title": "Archirelique nᵒ 24",
+          "url": "https://fondationscp.wikidot.com/archirelique-n-24",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-242-fr",
+          "title": "SCP-242-FR",
+          "url": "https://fondationscp.wikidot.com/scp-242-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "atteindre-la-perfection",
+          "title": "Atteindre la perfection",
+          "url": "https://fondationscp.wikidot.com/atteindre-la-perfection",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-ville-ecologique",
+          "title": "La Ville Écologique",
+          "url": "https://fondationscp.wikidot.com/la-ville-ecologique",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "nos-coeurs-echoues",
+          "title": "Nos cœurs échoués",
+          "url": "https://fondationscp.wikidot.com/nos-coeurs-echoues",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-266-fr",
+          "title": "SCP-266-FR",
+          "url": "https://fondationscp.wikidot.com/scp-266-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3380",
+          "title": "SCP-3380",
+          "url": "https://fondationscp.wikidot.com/scp-3380",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chroniques-de-saphir",
+          "title": "Les Chroniques de SAPHIR",
+          "url": "https://fondationscp.wikidot.com/chroniques-de-saphir",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-281-fr",
+          "title": "SCP-281-FR",
+          "url": "https://fondationscp.wikidot.com/scp-281-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chris-t-est-mort",
+          "title": "Chris.T est mort.",
+          "url": "https://fondationscp.wikidot.com/chris-t-est-mort",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rompre-le-pain",
+          "title": "Rompre le Pain",
+          "url": "https://fondationscp.wikidot.com/rompre-le-pain",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-353-fr",
+          "title": "SCP-353-FR",
+          "url": "https://fondationscp.wikidot.com/scp-353-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-380-fr",
+          "title": "SCP-380-FR",
+          "url": "https://fondationscp.wikidot.com/scp-380-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "alors-comme-ca-vous-voulez-ecrire-sur-saphir",
+          "title": "Alors comme ça vous voulez écrire sur SAPHIR ?",
+          "url": "https://fondationscp.wikidot.com/alors-comme-ca-vous-voulez-ecrire-sur-saphir",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3859",
+          "title": "SCP-3859",
+          "url": "https://fondationscp.wikidot.com/scp-3859",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "humanoids-park",
+          "title": "Humanoids Park",
+          "url": "https://fondationscp.wikidot.com/humanoids-park",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-379-fr",
+          "title": "SCP-379-FR",
+          "url": "https://fondationscp.wikidot.com/scp-379-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fim-omega-5",
+          "title": "Centre de la FIM Oméga-5 - Les Joailliers",
+          "url": "https://fondationscp.wikidot.com/fim-omega-5",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-mas-carol",
+          "title": "A Mas Carol",
+          "url": "https://fondationscp.wikidot.com/a-mas-carol",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chimes-broken",
+          "title": "Carillons Brisés",
+          "url": "https://fondationscp.wikidot.com/chimes-broken",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "grant-request-post-mortem-neural-preservation",
+          "title": "DEMANDE DE SUBVENTION POUR LA RE-CRÉATION D'UN SYSTÈME DE PRÉSERVATION NEURALE POST-MORTEM AVANCÉ",
+          "url": "https://fondationscp.wikidot.com/grant-request-post-mortem-neural-preservation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4519",
+          "title": "SCP-4519",
+          "url": "https://fondationscp.wikidot.com/scp-4519",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "zetetic-bulletin-wu-xing-iris",
+          "title": "Bulletin Zététique : Le Mythe de l'Iris des Wu Xing",
+          "url": "https://fondationscp.wikidot.com/zetetic-bulletin-wu-xing-iris",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-deniers",
+          "title": "Les Négateurs",
+          "url": "https://fondationscp.wikidot.com/the-deniers",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "coup-declat",
+          "title": "Coup d’Éclat",
+          "url": "https://fondationscp.wikidot.com/coup-declat",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "if-the-rain-comes-back-it-washes-away-all-your-pain",
+          "title": "If the rain comes back, it washes away all your pain",
+          "url": "https://fondationscp.wikidot.com/if-the-rain-comes-back-it-washes-away-all-your-pain",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-393-fr",
+          "title": "SCP-393-FR",
+          "url": "https://fondationscp.wikidot.com/scp-393-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-364-fr",
+          "title": "SCP-364-FR",
+          "url": "https://fondationscp.wikidot.com/scp-364-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "doutes",
+          "title": "D.O.U.T.E.S.",
+          "url": "https://fondationscp.wikidot.com/doutes",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1576-jp",
+          "title": "SCP-1576-JP",
+          "url": "https://fondationscp.wikidot.com/scp-1576-jp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dossier-broch-majax-theodor",
+          "title": "Casier des preuves 36.15 ZET — Dossier Broch-Majax-Theodor",
+          "url": "https://fondationscp.wikidot.com/dossier-broch-majax-theodor",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1343-jp",
+          "title": "SCP-1343-JP",
+          "url": "https://fondationscp.wikidot.com/scp-1343-jp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-496-fr",
+          "title": "SCP-496-FR",
+          "url": "https://fondationscp.wikidot.com/scp-496-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "philosophie-du-plagiat",
+          "title": "Philosophie du Plagiat",
+          "url": "https://fondationscp.wikidot.com/philosophie-du-plagiat",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "profil-de-bestiole-zeus",
+          "title": "Profil de Bestiole : Zeus !",
+          "url": "https://fondationscp.wikidot.com/profil-de-bestiole-zeus",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "proposition-du-dr-maquereau",
+          "title": "Proposition du Dr Maquereau",
+          "url": "https://fondationscp.wikidot.com/proposition-du-dr-maquereau",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ma-verite-est-ailleurs",
+          "title": "Ma vérité est ailleurs",
+          "url": "https://fondationscp.wikidot.com/ma-verite-est-ailleurs",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "secure-facility-dossier-reliquary-area-27",
+          "title": "Dossier des Installations : Zone Reliquaire-27",
+          "url": "https://fondationscp.wikidot.com/secure-facility-dossier-reliquary-area-27",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-429-fr",
+          "title": "SCP-429-FR",
+          "url": "https://fondationscp.wikidot.com/scp-429-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-482-fr",
+          "title": "SCP-482-FR",
+          "url": "https://fondationscp.wikidot.com/scp-482-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-538-fr",
+          "title": "SCP-538-FR",
+          "url": "https://fondationscp.wikidot.com/scp-538-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-152-fr",
+          "title": "SCP-152-FR",
+          "url": "https://fondationscp.wikidot.com/scp-152-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-551-fr",
+          "title": "SCP-551-FR",
+          "url": "https://fondationscp.wikidot.com/scp-551-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "entretiens-avec-de-potentiels-nouveaux-dieux",
+          "title": "Entretiens avec de potentiels nouveaux dieux",
+          "url": "https://fondationscp.wikidot.com/entretiens-avec-de-potentiels-nouveaux-dieux",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "crooaaar-en-l-amour",
+          "title": "Crooaaar en l' amour",
+          "url": "https://fondationscp.wikidot.com/crooaaar-en-l-amour",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-mon-anoure",
+          "title": "À mon Anoure",
+          "url": "https://fondationscp.wikidot.com/a-mon-anoure",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pour-soigner-filbuson-1",
+          "title": "Pour soigner Filbuson I - L'athée et l'agent",
+          "url": "https://fondationscp.wikidot.com/pour-soigner-filbuson-1",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pour-soigner-filbuson-2",
+          "title": "Pour soigner Filbuson II - Le terrible \"M\"",
+          "url": "https://fondationscp.wikidot.com/pour-soigner-filbuson-2",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pour-soigner-filbuson-3",
+          "title": "Pour soigner Filbuson III - La jungle ne ment pas",
+          "url": "https://fondationscp.wikidot.com/pour-soigner-filbuson-3",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pour-soigner-filbuson-4",
+          "title": "Pour soigner Filbuson IV - Un phénomène humain",
+          "url": "https://fondationscp.wikidot.com/pour-soigner-filbuson-4",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "journal-du-type-avec-sa-machine",
+          "title": "Journal du type avec sa machine",
+          "url": "https://fondationscp.wikidot.com/journal-du-type-avec-sa-machine",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tout-ce-qui-fut",
+          "title": "Tout ce qui fut",
+          "url": "https://fondationscp.wikidot.com/tout-ce-qui-fut",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-674-fr",
+          "title": "SCP-674-FR",
+          "url": "https://fondationscp.wikidot.com/scp-674-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-692-fr",
+          "title": "SCP-692-FR",
+          "url": "https://fondationscp.wikidot.com/scp-692-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7925",
+          "title": "SCP-7925",
+          "url": "https://fondationscp.wikidot.com/scp-7925",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-707-fr",
+          "title": "SCP-707-FR",
+          "url": "https://fondationscp.wikidot.com/scp-707-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "skp-777-fr",
+          "title": "SKP-777-FR",
+          "url": "https://fondationscp.wikidot.com/skp-777-fr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "de-tout-mes-coeurs",
+          "title": "Je t'aime de tous mes cœurs",
+          "url": "https://fondationscp.wikidot.com/de-tout-mes-coeurs",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1782175449,
-  "generatedAt": "2026-06-23T00:44:09Z",
-  "chunkRevision": "sha256-8185011ebf34ef7d6d2b4fd85337088bc42b4617c296577cee3731f6113190c0",
+  "listVersion": 1782205142,
+  "generatedAt": "2026-06-23T08:59:02Z",
+  "chunkRevision": "sha256-f0fcb1f278220aa72a26c4c721cdd87a0da591541b6fcf1758f74c5e85d0e5ca",
   "builtFrom": {
     "manifests": [
       {
@@ -13,6 +13,15 @@
         "listVersion": 1782175218,
         "generatedAt": "2026-06-23T00:40:18Z",
         "contentHash": "sha256-ed89a806c5832247556cfc55d2a715cd45aec6d208db05271eab54e30673d819"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-ko",
+        "path": "DataPipeline/list/ko/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1782015580,
+        "generatedAt": "2026-06-21T04:19:40Z",
+        "contentHash": "sha256-16b05bd5e9bae7f3b4c815560ea8053e38919adccc38a116beaa35c6c40c5888"
       },
       {
         "kind": "manifest_scp-int",
@@ -1655,6 +1664,222 @@
         "mode": "officialHubOnly"
       },
       "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ko:collection:goi:국가초상방재원",
+      "branchID": "scp-ko",
+      "kind": "goi",
+      "hubID": "국가초상방재원",
+      "title": "국가초상방재원",
+      "sourceListURL": "https://scpko.wikidot.com/npes-hub",
+      "officialHubURL": "https://scpko.wikidot.com/npes-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "국가초상방재원",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "국가초상방재원",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ko"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ko"
+      },
+      "primaryArticles": [
+        {
+          "id": "joint-statement-12-05-2017",
+          "title": "12・5 공동성명",
+          "url": "https://scpko.wikidot.com/joint-statement-12-05-2017",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ko:collection:goi:능구렁이-손",
+      "branchID": "scp-ko",
+      "kind": "goi",
+      "hubID": "능구렁이-손",
+      "title": "능구렁이 손",
+      "sourceListURL": "https://scpko.wikidot.com/dinodon-s-hand",
+      "officialHubURL": "https://scpko.wikidot.com/dinodon-s-hand",
+      "hubPresentation": "standard",
+      "canonicalTag": "능구렁이-손",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "능구렁이-손",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ko"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ko"
+      },
+      "primaryArticles": [
+        {
+          "id": "serpent-s-hand-hub",
+          "title": "뱀의 손",
+          "url": "https://scpko.wikidot.com/serpent-s-hand-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "finding-jeonwoochijeon",
+          "title": "재단과 한 차례 충돌",
+          "url": "https://scpko.wikidot.com/finding-jeonwoochijeon",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "goc-far-east-orientation",
+          "title": "세계 오컬트 연합 극동부문",
+          "url": "https://scpko.wikidot.com/goc-far-east-orientation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ko:collection:goi:세을가",
+      "branchID": "scp-ko",
+      "kind": "goi",
+      "hubID": "세을가",
+      "title": "세을가",
+      "sourceListURL": "https://scpko.wikidot.com/seulga-hub",
+      "officialHubURL": "https://scpko.wikidot.com/seulga-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "세을가",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "세을가",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ko"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ko"
+      },
+      "primaryArticles": [
+        {
+          "id": "ijamea-hub",
+          "title": "이자메아",
+          "url": "https://scpko.wikidot.com/ijamea-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ko:collection:goi:청해진",
+      "branchID": "scp-ko",
+      "kind": "goi",
+      "hubID": "청해진",
+      "title": "청해진",
+      "sourceListURL": "https://scpko.wikidot.com/chonghaejin",
+      "officialHubURL": "https://scpko.wikidot.com/chonghaejin",
+      "hubPresentation": "standard",
+      "canonicalTag": "청해진",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "청해진",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ko"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ko"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-983-ko",
+          "title": "SCP-983-KO",
+          "url": "https://scpko.wikidot.com/scp-983-ko",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-169",
+          "title": "SCP-169",
+          "url": "https://scpko.wikidot.com/scp-169",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ko:collection:goi:플러그소프트",
+      "branchID": "scp-ko",
+      "kind": "goi",
+      "hubID": "플러그소프트",
+      "title": "플러그소프트",
+      "sourceListURL": "https://scpko.wikidot.com/plugsoft-hub",
+      "officialHubURL": "https://scpko.wikidot.com/plugsoft-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "플러그소프트",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "플러그소프트",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ko"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ko"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-185-ko",
+          "title": "SCP-185-KO",
+          "url": "https://scpko.wikidot.com/scp-185-ko",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
       "supplementLinks": []
     }
   ]

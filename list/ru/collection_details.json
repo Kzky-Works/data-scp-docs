@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1782175024,
-  "generatedAt": "2026-06-23T00:37:04Z",
-  "chunkRevision": "sha256-b193e369a8e14cce1eaef59ea89b50f6d60b6f47c788dbaa0858645a69d343c5",
+  "listVersion": 1782205142,
+  "generatedAt": "2026-06-23T08:59:02Z",
+  "chunkRevision": "sha256-0cc50bd31da301d5704720aea7dd259ae941f044a855579d084074ca425c0f80",
   "builtFrom": {
     "manifests": [
       {
@@ -13,6 +13,15 @@
         "listVersion": 1782175021,
         "generatedAt": "2026-06-23T00:37:01Z",
         "contentHash": "sha256-cb8e4c2bf347dfbf1bf2d246230a32b354884485dec255e4e0b8009f9e69b680"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-ru",
+        "path": "DataPipeline/list/ru/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1782031443,
+        "generatedAt": "2026-06-21T08:44:03Z",
+        "contentHash": "sha256-7c042a25c5097831c0e17fd0045ad5d207719e94f5ee7b99b8f84215f8006f6d"
       },
       {
         "kind": "manifest_scp-int",
@@ -711,6 +720,594 @@
         "mode": "officialHubOnly"
       },
       "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:goi:ooz-window-to-europe",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "ooz-window-to-europe",
+      "title": "ООЗ «ОКНО В ЕВРОПУ»",
+      "sourceListURL": "https://scpfoundation.net/ooz-window-to-europe",
+      "officialHubURL": "https://scpfoundation.net/ooz-window-to-europe",
+      "hubPresentation": "standard",
+      "canonicalTag": "ooz-window-to-europe",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ooz-window-to-europe",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "fly-agaric",
+          "title": "Досье ООЗ \"МУХОМОР\"",
+          "url": "https://scpfoundation.net/fly-agaric",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "resonanse",
+          "title": "ООЗ «РЕЗОНАНС»",
+          "url": "https://scpfoundation.net/resonanse",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ooz-lightbulb-of-iliich",
+          "title": "ООЗ «ЛАМПОЧКА ИЛЬИЧА»",
+          "url": "https://scpfoundation.net/ooz-lightbulb-of-iliich",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "memorandum-083-regarding-project-guardianship",
+          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
+          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1485-ru",
+          "title": "Штиль. «Днепр» вызывает «Волгу»",
+          "url": "https://scpfoundation.net/scp-1485-ru",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:goi:resonanse",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "resonanse",
+      "title": "ООЗ «РЕЗОНАНС»",
+      "sourceListURL": "https://scpfoundation.net/resonanse",
+      "officialHubURL": "https://scpfoundation.net/resonanse",
+      "hubPresentation": "standard",
+      "canonicalTag": "resonanse",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "resonanse",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "ooz-window-to-europe",
+          "title": "ООЗ «ОКНО В ЕВРОПУ»",
+          "url": "https://scpfoundation.net/ooz-window-to-europe",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fly-agaric",
+          "title": "Досье ООЗ \"МУХОМОР\"",
+          "url": "https://scpfoundation.net/fly-agaric",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ooz-lightbulb-of-iliich",
+          "title": "ООЗ «ЛАМПОЧКА ИЛЬИЧА»",
+          "url": "https://scpfoundation.net/ooz-lightbulb-of-iliich",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "memorandum-083-regarding-project-guardianship",
+          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
+          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1485-ru",
+          "title": "Штиль. «Днепр» вызывает «Волгу»",
+          "url": "https://scpfoundation.net/scp-1485-ru",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:goi:scp-1484-ru",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "scp-1484-ru",
+      "title": "UTE-1500 «Дадо»",
+      "sourceListURL": "https://scpfoundation.net/scp-1484-ru",
+      "officialHubURL": "https://scpfoundation.net/scp-1484-ru",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-1484-ru",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "scp-1484-ru",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "wans-image-png",
+          "title": "Образ_WAN.png",
+          "url": "https://scpfoundation.net/wans-image-png",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fifteenth-anonymous-donation",
+          "title": "Пятнадцатое Анонимное Пожертвование",
+          "url": "https://scpfoundation.net/fifteenth-anonymous-donation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "Конец маскараду",
+          "url": "https://scpfoundation.net/piercing-the-veil",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "5th-global-occult-coalition-donation",
+          "title": "Пятое Пожертвование Глобальной Оккультной Коалиции",
+          "url": "https://scpfoundation.net/5th-global-occult-coalition-donation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-sympathetic-thorn-in-the-side-of-the-bookburners",
+          "title": "Сочувствующая заноза в боку Книгожогов",
+          "url": "https://scpfoundation.net/a-sympathetic-thorn-in-the-side-of-the-bookburners",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "memorandum-083-regarding-project-guardianship",
+          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
+          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:goi:ooz-lightbulb-of-iliich",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "ooz-lightbulb-of-iliich",
+      "title": "ООЗ «ЛАМПОЧКА ИЛЬИЧА»",
+      "sourceListURL": "https://scpfoundation.net/ooz-lightbulb-of-iliich",
+      "officialHubURL": "https://scpfoundation.net/ooz-lightbulb-of-iliich",
+      "hubPresentation": "standard",
+      "canonicalTag": "ooz-lightbulb-of-iliich",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ooz-lightbulb-of-iliich",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "the-parables-of-pseudo-nadox",
+          "title": "Притчи Псевдо-Надокса",
+          "url": "https://scpfoundation.net/the-parables-of-pseudo-nadox",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ooz-window-to-europe",
+          "title": "ООЗ «ОКНО В ЕВРОПУ»",
+          "url": "https://scpfoundation.net/ooz-window-to-europe",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mother-who-demands-ones-toes",
+          "title": "Карцист Халина Иева, Мать, что пожинает пальцы ног",
+          "url": "https://scpfoundation.net/mother-who-demands-ones-toes",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-book-of-mathisi-chapter-1",
+          "title": "Книга Матиси, часть 1: Притча о трёх принцах",
+          "url": "https://scpfoundation.net/the-book-of-mathisi-chapter-1",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "goac-chapter-2-js",
+          "title": "ЕоХВ > Часть_2.js",
+          "url": "https://scpfoundation.net/goac-chapter-2-js",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fly-agaric",
+          "title": "Досье ООЗ \"МУХОМОР\"",
+          "url": "https://scpfoundation.net/fly-agaric",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "osanshouo",
+          "title": "Проект \"Осансёу\", 2006",
+          "url": "https://scpfoundation.net/osanshouo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ambrose-thorn-valley",
+          "title": "Эмброуз Терновой Долины",
+          "url": "https://scpfoundation.net/ambrose-thorn-valley",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "resonanse",
+          "title": "ООЗ «РЕЗОНАНС»",
+          "url": "https://scpfoundation.net/resonanse",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tifu-by-getting-a-book-from-the-library",
+          "title": "Сегодня я облажался, взяв книгу из Библиотеки",
+          "url": "https://scpfoundation.net/tifu-by-getting-a-book-from-the-library",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "book-of-isaac-son-of-zadok",
+          "title": "Книга Исаака, сына Задока",
+          "url": "https://scpfoundation.net/book-of-isaac-son-of-zadok",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "memorandum-083-regarding-project-guardianship",
+          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
+          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1485-ru",
+          "title": "Штиль. «Днепр» вызывает «Волгу»",
+          "url": "https://scpfoundation.net/scp-1485-ru",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:goi:project-proposal-174-517",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "project-proposal-174-517",
+      "title": "Проектное предложение № 174-517",
+      "sourceListURL": "https://scpfoundation.net/project-proposal-174-517",
+      "officialHubURL": "https://scpfoundation.net/project-proposal-174-517",
+      "hubPresentation": "standard",
+      "canonicalTag": "project-proposal-174-517",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "project-proposal-174-517",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "project-proposal-2004-024",
+          "title": "Проектное предложение 24-2014: \"Ценности моего отца\"",
+          "url": "https://scpfoundation.net/project-proposal-2004-024",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "project-proposal-1964-301",
+          "title": "Проектное предложение 1964-301 - Сущность Праздности",
+          "url": "https://scpfoundation.net/project-proposal-1964-301",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "project-proposal-1964-238",
+          "title": "Проектное предложение 1964-238: \"Пожиратель миров\"",
+          "url": "https://scpfoundation.net/project-proposal-1964-238",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "project-proposal-1994-357-a-still-life",
+          "title": "Проектное предложение 1994-357: \"Остановись, мгновенье\"",
+          "url": "https://scpfoundation.net/project-proposal-1994-357-a-still-life",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "project-proposal-2014-2112",
+          "title": "Проектное предложение 2014-2112: \"Сны о неудачах\"",
+          "url": "https://scpfoundation.net/project-proposal-2014-2112",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "project-proposal-2014-733",
+          "title": "Проектное предложение 733-2014: \"Роль всей жизни\"",
+          "url": "https://scpfoundation.net/project-proposal-2014-733",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "memorandum-083-regarding-project-guardianship",
+          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
+          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:goi:scp-1485-ru",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "scp-1485-ru",
+      "title": "Штиль. «Днепр» вызывает «Волгу»",
+      "sourceListURL": "https://scpfoundation.net/scp-1485-ru",
+      "officialHubURL": "https://scpfoundation.net/scp-1485-ru",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-1485-ru",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "scp-1485-ru",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "ooz-window-to-europe",
+          "title": "ООЗ «ОКНО В ЕВРОПУ»",
+          "url": "https://scpfoundation.net/ooz-window-to-europe",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "fly-agaric",
+          "title": "Досье ООЗ \"МУХОМОР\"",
+          "url": "https://scpfoundation.net/fly-agaric",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "resonanse",
+          "title": "ООЗ «РЕЗОНАНС»",
+          "url": "https://scpfoundation.net/resonanse",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ooz-lightbulb-of-iliich",
+          "title": "ООЗ «ЛАМПОЧКА ИЛЬИЧА»",
+          "url": "https://scpfoundation.net/ooz-lightbulb-of-iliich",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "memorandum-083-regarding-project-guardianship",
+          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
+          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ru:collection:goi:wip:what-about-ai",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "wip:what-about-ai",
+      "title": "Что вы думаете насчет ИИ?",
+      "sourceListURL": "https://scpfoundation.net/wip:what-about-ai",
+      "officialHubURL": "https://scpfoundation.net/wip:what-about-ai",
+      "hubPresentation": "standard",
+      "canonicalTag": "wip:what-about-ai",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wip:what-about-ai",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "new-ritual",
+          "title": "Новый ритуал.",
+          "url": "https://scpfoundation.net/new-ritual",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "exe-plosion",
+          "title": "exe.plosion",
+          "url": "https://scpfoundation.net/exe-plosion",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "escape-from-terminus",
+          "title": "Побег из Терминуса",
+          "url": "https://scpfoundation.net/escape-from-terminus",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "higher-minds",
+          "title": "Начальная школа \"Higher Minds\"",
+          "url": "https://scpfoundation.net/higher-minds",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "coleoptera",
+          "title": "Жесткокрылые",
+          "url": "https://scpfoundation.net/coleoptera",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sunday-dinner",
+          "title": "Для домашнего просмотра: Воскресный ужин",
+          "url": "https://scpfoundation.net/sunday-dinner",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-little-bunnys-doctor",
+          "title": "Зайчик и его Доктор",
+          "url": "https://scpfoundation.net/a-little-bunnys-doctor",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "Конец маскараду",
+          "url": "https://scpfoundation.net/piercing-the-veil",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "michael-the-kiler",
+          "title": "майкл убица",
+          "url": "https://scpfoundation.net/michael-the-kiler",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tifu-by-getting-a-book-from-the-library",
+          "title": "Сегодня я облажался, взяв книгу из Библиотеки",
+          "url": "https://scpfoundation.net/tifu-by-getting-a-book-from-the-library",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "impossible-murder",
+          "title": "Невозможное убийство",
+          "url": "https://scpfoundation.net/impossible-murder",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
       "supplementLinks": []
     }
   ]
