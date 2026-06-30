@@ -1,0 +1,1960 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1782776430,
+  "generatedAt": "2026-06-29T23:40:30Z",
+  "chunkRevision": "sha256-40af6c2d05984b806eb8217b3727b63b74ed17725c8e8487b52bc742daabebc4",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-es",
+        "path": "DataPipeline/list/es/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1782771532,
+        "generatedAt": "2026-06-29T22:18:52Z",
+        "contentHash": "sha256-7221615140f5ed3d28b6c003d0eb408d80e36cdf1ee247a1343550b3ca1ba910"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-es",
+        "path": "DataPipeline/list/es/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1782776321,
+        "generatedAt": "2026-06-29T23:38:41Z",
+        "contentHash": "sha256-874e0a0e80a6cc3eaf13cc02bc3d2767c5a4730997a65df9e7b974a59fe2e9c5"
+      },
+      {
+        "kind": "manifest_scp-es",
+        "branchID": "scp-es",
+        "path": "DataPipeline/list/es/manifest_scp-es.json",
+        "schemaVersion": 2,
+        "listVersion": 1782771324,
+        "generatedAt": "2026-06-29T22:15:24Z",
+        "contentHash": "sha256-67acd344791bda42cd756e8f98db44399be9304bb502c5995ac95535a8cf5064"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-es",
+        "path": "DataPipeline/list/es/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1782771521,
+        "generatedAt": "2026-06-29T22:18:41Z",
+        "contentHash": "sha256-22501b366175ee2927dc197a2e31f7ce36b3d96ee04a9c8d55c091f5ab6b5729"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-es",
+        "path": "DataPipeline/list/es/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1782771337,
+        "generatedAt": "2026-06-29T22:15:37Z",
+        "contentHash": "sha256-b59060db176535694007847fb9120a060021d23a1e577c83f3c7bde81b8a8e6a"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-es",
+        "path": "DataPipeline/list/es/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1782771343,
+        "generatedAt": "2026-06-29T22:15:43Z",
+        "contentHash": "sha256-a1f30899e298e4c9d947ef669eec2283f931852882d47a56260fd084bf0e4fdb"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-5475877acccdb3515c3373761814fa48cc7e59ddfd6ab7e7ad99b66078230b27"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-es:collection:canon:i-57-hub",
+      "branchID": "scp-es",
+      "kind": "canon",
+      "hubID": "i-57-hub",
+      "title": "Instalación-57",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/i-57-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/i-57-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "i-57",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "i-57",
+        "rejected": [
+          {
+            "tag": "-500",
+            "reason": "rating"
+          },
+          {
+            "tag": "es",
+            "reason": "region"
+          },
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-ES canon hub metadata for 3.2.0 native collection coverage; reverse lookup finds members across ES SCP, Tales, and translated main manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "41 primary articles at ES harvest time"
+      },
+      "memberManifests": [
+        "manifest_scp-es",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-es-076",
+          "title": "¿Sabías que en 1998 Mijaíl Gorbachov apareció en un anuncio de Pizza Hut? Sólo un dato a tener en cuenta.",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-076",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-078",
+          "title": "Cronofagia",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-078",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-080",
+          "title": "Llorando bajo la Arena, O: Lorem Desertum",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-080",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-096",
+          "title": "¡A la Caza del Holandés!",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-096",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-113",
+          "title": "Trato Especial",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-113",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-119",
+          "title": "El Ministerio de Anomalias de Cuba",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-119",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-120",
+          "title": "Esta Enfermedad No Me Vencerá",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-120",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-134",
+          "title": "13.0.0.0.0 en la Cuenta Larga",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-134",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-157",
+          "title": "Coppélia",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-157",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-169",
+          "title": "El Sueño Hentai Hecho Realidad",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-169",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-174",
+          "title": "Tu Sonrisa o la Vida",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-174",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-179",
+          "title": "ARKHANGEL KHRANITEL (Arcángel de la Guardia)",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-179",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-189",
+          "title": "18 de Septiembre",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-189",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-193",
+          "title": "El 13 de Abril de 2013, un Tren Cayó del Cielo",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-193",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-194",
+          "title": "¡Ese maldito Fidel Castro no se quiere quedar muerto!",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-194",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-213",
+          "title": "Trece Días para el Fin",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-213",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-224",
+          "title": "Cangrejos Lunares",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-224",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-230",
+          "title": "Protocolo Águila",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-230",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-245",
+          "title": "Autarquía de la Expiación",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-245",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-257",
+          "title": "Tan Frágil como el Hielo",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-257",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-269",
+          "title": "Prosperidad de los Vicios",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-269",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-274",
+          "title": "Crisis de la Intromisión de Cuba",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-274",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-278",
+          "title": "Entre Oriente y Occidente; Mayor Que Berlín",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-278",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-289",
+          "title": "Ultraplantas",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-289",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-290",
+          "title": "Taxi equivocado.",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-290",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-293",
+          "title": "Simple espectador nostálgico",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-293",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-310",
+          "title": "Reflejado en la Península",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-310",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-357",
+          "title": "El Yankee Y El Gusano",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-357",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-380",
+          "title": "Maldita Rastrera Sucia Sencillamente política",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-380",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "colaboracion",
+          "title": "Colaboración",
+          "url": "https://lafundacionscp.wikidot.com/colaboracion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dia-del-astronauta",
+          "title": "Día del Astronauta",
+          "url": "https://lafundacionscp.wikidot.com/dia-del-astronauta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "incoherencias",
+          "title": "Incoherencias",
+          "url": "https://lafundacionscp.wikidot.com/incoherencias",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "maria",
+          "title": "María",
+          "url": "https://lafundacionscp.wikidot.com/maria",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mismos-ojos-distinto-paisaje",
+          "title": "Mismos Ojos Distinto Paisaje",
+          "url": "https://lafundacionscp.wikidot.com/mismos-ojos-distinto-paisaje",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "peso-de-la-revolucion",
+          "title": "El Peso de la Revolución",
+          "url": "https://lafundacionscp.wikidot.com/peso-de-la-revolucion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "propuesta-de-almarduk",
+          "title": "El Canto del Cisne y el Fin de los Arcángeles",
+          "url": "https://lafundacionscp.wikidot.com/propuesta-de-almarduk",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-cangrejo-perdido-en-cuba",
+          "title": "Un Cangrejo Perdido En Cuba",
+          "url": "https://lafundacionscp.wikidot.com/un-cangrejo-perdido-en-cuba",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3874",
+          "title": "Una contra seiscientas",
+          "url": "https://lafundacionscp.wikidot.com/scp-3874",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5227",
+          "title": "F.O.G /// FEAR OF GOD1",
+          "url": "https://lafundacionscp.wikidot.com/scp-5227",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6000",
+          "title": "La Serpiente, el Alce, y la Biblioteca de los Errantes",
+          "url": "https://lafundacionscp.wikidot.com/scp-6000",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7833",
+          "title": "El Vejigante del Carnaval Ponceño",
+          "url": "https://lafundacionscp.wikidot.com/scp-7833",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:canon:oem-hub",
+      "branchID": "scp-es",
+      "kind": "canon",
+      "hubID": "oem-hub",
+      "title": "Observando Estrellas Muertas",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/oem-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/oem-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "estrellas-muertas",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "estrellas-muertas",
+        "rejected": [
+          {
+            "tag": "-500",
+            "reason": "rating"
+          },
+          {
+            "tag": "es",
+            "reason": "region"
+          },
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "sechud",
+            "reason": "subgroup"
+          },
+          {
+            "tag": "vidnepa",
+            "reason": "subgroup"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-ES canon hub metadata for 3.2.0 native collection coverage; accepted tag matches the Observando Estrellas Muertas canon rather than faction/subgroup tags."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "27 primary articles at ES harvest time"
+      },
+      "memberManifests": [
+        "manifest_scp-es",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-es-040",
+          "title": "Polaris Leporidae",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-040",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-055",
+          "title": "Sollozo a los 5 Reinos",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-055",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-090",
+          "title": "Emisaria de Nueve Luces",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-090",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-129",
+          "title": "La Llama de Andrómeda",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-129",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-148",
+          "title": "La Sombra de Calibán",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-148",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-149",
+          "title": "Rigor Mortis Estelar",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-149",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-165",
+          "title": "Sarcófago Kaiju",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-165",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-185",
+          "title": "La Golondrina Espacial",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-185",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-191",
+          "title": "Jardín Estelar",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-191",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-218",
+          "title": "Agujero dorado",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-218",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-224",
+          "title": "Cangrejos Lunares",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-224",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-231",
+          "title": "Tres epítomes de cuatro alientos",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-231",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-233",
+          "title": "De las cenizas de la vida",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-233",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-289",
+          "title": "Ultraplantas",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-289",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-299",
+          "title": "Un Filo Sin Destino, o; Soy Un Guerrero y Todavía Respiro, o; El Sonido Sibilante de un Pueblo que Regresa",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-299",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dia-del-astronauta",
+          "title": "Día del Astronauta",
+          "url": "https://lafundacionscp.wikidot.com/dia-del-astronauta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "esperanzas-de-resurrecion",
+          "title": "Esperanzas De Resurreción",
+          "url": "https://lafundacionscp.wikidot.com/esperanzas-de-resurrecion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "hojas-oscuras-de-una-existencia-condenada",
+          "title": "Hojas oscuras de una existencia condenada",
+          "url": "https://lafundacionscp.wikidot.com/hojas-oscuras-de-una-existencia-condenada",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "imperfecta-creacion",
+          "title": "Imperfecta Creacion",
+          "url": "https://lafundacionscp.wikidot.com/imperfecta-creacion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-ultima-noche-antes-del-comienzo",
+          "title": "La última noche antes del comienzo",
+          "url": "https://lafundacionscp.wikidot.com/la-ultima-noche-antes-del-comienzo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mori-consumida-volvi-moviendo-las-orejas",
+          "title": "Morí Consumida, Volvi Moviendo Las Orejas",
+          "url": "https://lafundacionscp.wikidot.com/mori-consumida-volvi-moviendo-las-orejas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "nacimiento-eternidad",
+          "title": "Nacimiento de la Eternidad",
+          "url": "https://lafundacionscp.wikidot.com/nacimiento-eternidad",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ojos-a-la-mar",
+          "title": "Ojos A La Mar",
+          "url": "https://lafundacionscp.wikidot.com/ojos-a-la-mar",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "propuesta-de-almarduk",
+          "title": "El Canto del Cisne y el Fin de los Arcángeles",
+          "url": "https://lafundacionscp.wikidot.com/propuesta-de-almarduk",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "puntos-blancos-etereos-siguen-reinando",
+          "title": "Puntos Blancos Etéreos, Siguen Reinando, y Aún Perduran Sus Pecados",
+          "url": "https://lafundacionscp.wikidot.com/puntos-blancos-etereos-siguen-reinando",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "roedor-hexapodo",
+          "title": "El roedor hexápodo en la penumbra",
+          "url": "https://lafundacionscp.wikidot.com/roedor-hexapodo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "terranova",
+          "title": "Bienvenido a Terranova",
+          "url": "https://lafundacionscp.wikidot.com/terranova",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:canon:hub-sueno-nuclear",
+      "branchID": "scp-es",
+      "kind": "canon",
+      "hubID": "hub-sueno-nuclear",
+      "title": "Sueño Nuclear",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/hub-sueno-nuclear",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/hub-sueno-nuclear",
+      "hubPresentation": "standard",
+      "canonicalTag": "sueño-nuclear",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sueño-nuclear",
+        "rejected": [
+          {
+            "tag": "-500",
+            "reason": "rating"
+          },
+          {
+            "tag": "es",
+            "reason": "region"
+          },
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "tlaneyanco",
+            "reason": "subgroup"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-ES canon hub metadata for 3.2.0 native collection coverage; accepted tag matches the Sueño Nuclear canon."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "11 primary articles at ES harvest time"
+      },
+      "memberManifests": [
+        "manifest_scp-es",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-es-097",
+          "title": "Reactor Fungí",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-097",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-139",
+          "title": "Evento Sol Invictus",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-139",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-es-159",
+          "title": "Reutilizando el pasado",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-159",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "al-inframundo-y-de-regreso",
+          "title": "Al Inframundo Y De Regreso",
+          "url": "https://lafundacionscp.wikidot.com/al-inframundo-y-de-regreso",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "camila",
+          "title": "Camila",
+          "url": "https://lafundacionscp.wikidot.com/camila",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "comienza-el-sueno-nuclear",
+          "title": "Comienza el Sueño Nuclear",
+          "url": "https://lafundacionscp.wikidot.com/comienza-el-sueno-nuclear",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "el-dia-cuando-dios-pidio-ayuda",
+          "title": "El Dia Cuando Dios Pidio Ayuda",
+          "url": "https://lafundacionscp.wikidot.com/el-dia-cuando-dios-pidio-ayuda",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pugilizacion-aberrante-nuevo-talento",
+          "title": "Pugilización Aberrante: Nuevo Talento",
+          "url": "https://lafundacionscp.wikidot.com/pugilizacion-aberrante-nuevo-talento",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "suenos-nacientes-deseos",
+          "title": "Sueños Nacientes Deseos",
+          "url": "https://lafundacionscp.wikidot.com/suenos-nacientes-deseos",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "suenos-olvidados-selena",
+          "title": "Sueños Olvidados - Selena",
+          "url": "https://lafundacionscp.wikidot.com/suenos-olvidados-selena",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5359",
+          "title": "El Poema de la Dama Desconocida",
+          "url": "https://lafundacionscp.wikidot.com/scp-5359",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:academia-medici-de-las-artes-ocultas",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "academia-medici-de-las-artes-ocultas",
+      "title": "Academia Medici de las Artes Ocultas",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/hub-madao",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/hub-madao",
+      "hubPresentation": "standard",
+      "canonicalTag": "academia-medici-de-las-artes-ocultas",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "academia-medici-de-las-artes-ocultas",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "reloj-de-sol",
+          "title": "Reloj De Sol, fecha desconocida",
+          "url": "https://lafundacionscp.wikidot.com/reloj-de-sol",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:agencia-del-imperio-japones-para-la-examinacion-de-cuestiones-anormales",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "agencia-del-imperio-japones-para-la-examinacion-de-cuestiones-anormales",
+      "title": "Agencia del Imperio Japonés para la Examinación de Cuestiones Anormales",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/ijamea-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/ijamea-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "agencia-del-imperio-japones-para-la-examinacion-de-cuestiones-anormales",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "agencia-del-imperio-japones-para-la-examinacion-de-cuestiones-anormales",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "proyecto-amerika-no-shokuminchi",
+          "title": "Proyecto: Amerika no shokuminchi, 1983",
+          "url": "https://lafundacionscp.wikidot.com/proyecto-amerika-no-shokuminchi",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:are-we-cool-yet",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "are-we-cool-yet",
+      "title": "Are We Cool Yet?",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/are-we-cool-yet-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/are-we-cool-yet-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "are-we-cool-yet",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "are-we-cool-yet",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "propuesta-de-proyecto-2018-005",
+          "title": "Propuesta De Proyecto 2018-005",
+          "url": "https://lafundacionscp.wikidot.com/propuesta-de-proyecto-2018-005",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "propuesta-de-proyecto-2024-111",
+          "title": "Propuesta de Proyecto 2024-111: El calentamiento global hizo más fácil romper el hielo",
+          "url": "https://lafundacionscp.wikidot.com/propuesta-de-proyecto-2024-111",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "propuesta-de-proyecto-chupamelo",
+          "title": "Propuesta de Proyecto 2024-036: \"Chúpame la verga\"",
+          "url": "https://lafundacionscp.wikidot.com/propuesta-de-proyecto-chupamelo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:cargas-inusuales",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "cargas-inusuales",
+      "title": "Cargas Inusuales",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/unusual-cargo-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/unusual-cargo-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "cargas-inusuales",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "cargas-inusuales",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "manifesto793",
+          "title": "Manifesto 793: Othello el Moro",
+          "url": "https://lafundacionscp.wikidot.com/manifesto793",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "manifiesto-719",
+          "title": "Manifiesto 719: La Mansión Bellerose",
+          "url": "https://lafundacionscp.wikidot.com/manifiesto-719",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:circo-de-lo-inquietante-de-herman-fuller",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "circo-de-lo-inquietante-de-herman-fuller",
+      "title": "Circo de lo Inquietante de Herman Fuller",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/herman-fuller-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/herman-fuller-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "circo-de-lo-inquietante-de-herman-fuller",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "circo-de-lo-inquietante-de-herman-fuller",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "doctor-muerte",
+          "title": "Herman Fuller Presenta: El Doctor Muerte",
+          "url": "https://lafundacionscp.wikidot.com/doctor-muerte",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:coalicion-oculta-global",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "coalicion-oculta-global",
+      "title": "Coalición Oculta Global",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/goc-hub-page",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/goc-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "coalicion-oculta-global",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "coalicion-oculta-global",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "kte-2272-hogweed-van-allen-viridi",
+          "title": "KTE-2272-Hogweed-Van Allen-Viridi",
+          "url": "https://lafundacionscp.wikidot.com/kte-2272-hogweed-van-allen-viridi",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kte-3770-ex-machina-pigmalion",
+          "title": "KTE-3770-Ex Machina-Pigmalión",
+          "url": "https://lafundacionscp.wikidot.com/kte-3770-ex-machina-pigmalion",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kte-7883-velveteen-gris",
+          "title": "\"Reanimadores Ushebti\"",
+          "url": "https://lafundacionscp.wikidot.com/kte-7883-velveteen-gris",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kte-8926-negro-parallax-morfo",
+          "title": "KTE-8926-Negro Parallax-morfo",
+          "url": "https://lafundacionscp.wikidot.com/kte-8926-negro-parallax-morfo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "lte-2020-goodrick",
+          "title": "LTE-2020-Goodrick",
+          "url": "https://lafundacionscp.wikidot.com/lte-2020-goodrick",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:colectivo-oneiroi",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "colectivo-oneiroi",
+      "title": "Colectivo Oneiroi",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/oneiroi",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/oneiroi",
+      "hubPresentation": "standard",
+      "canonicalTag": "colectivo-oneiroi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "colectivo-oneiroi",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "ambrosia-para-ludopatas",
+          "title": "Ambrosía Para Ludópatas",
+          "url": "https://lafundacionscp.wikidot.com/ambrosia-para-ludopatas",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gouxuxo",
+          "title": "#Gouxuxo",
+          "url": "https://lafundacionscp.wikidot.com/gouxuxo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "somnovacuidad",
+          "title": "Somnovacuidad",
+          "url": "https://lafundacionscp.wikidot.com/somnovacuidad",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:gru-division-p",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "gru-division-p",
+      "title": "GRU División \"P\"",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/gru-p-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/gru-p-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "gru-division-p",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gru-division-p",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "kironsk",
+          "title": "Expediente GRU-P \"KIRONSK\"",
+          "url": "https://lafundacionscp.wikidot.com/kironsk",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:espiritu-de-chicago",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "espiritu-de-chicago",
+      "title": "Espíritu de Chicago",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/chicago-spirit",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/chicago-spirit",
+      "hubPresentation": "standard",
+      "canonicalTag": "espiritu-de-chicago",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "espiritu-de-chicago",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "carroll-305-la-pequena-habana",
+          "title": "Carroll 305: La Pequeña Habana",
+          "url": "https://lafundacionscp.wikidot.com/carroll-305-la-pequena-habana",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:fundacion-de-caridad-manna",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "fundacion-de-caridad-manna",
+      "title": "Fundación de Caridad Manna",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/manna-charitable-foundation-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/manna-charitable-foundation-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "fundacion-de-caridad-manna",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "fundacion-de-caridad-manna",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "septima-donacion-anonima",
+          "title": "Séptima Donación Anónima",
+          "url": "https://lafundacionscp.wikidot.com/septima-donacion-anonima",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:la-iniciativa-horizonte",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "la-iniciativa-horizonte",
+      "title": "La Iniciativa Horizonte",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/horizon-initiative-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/horizon-initiative-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-iniciativa-horizonte",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-iniciativa-horizonte",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "el-monolito-del-miedo",
+          "title": "El Monolito Del Miedo",
+          "url": "https://lafundacionscp.wikidot.com/el-monolito-del-miedo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:la-mano-de-la-serpiente",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "la-mano-de-la-serpiente",
+      "title": "La Mano de la Serpiente",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/serpent-s-hand-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/serpent-s-hand-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-mano-de-la-serpiente",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-mano-de-la-serpiente",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "cartas-del-mundo",
+          "title": "Las Cartas del Mundo y el Mensajero de lo Extraviado",
+          "url": "https://lafundacionscp.wikidot.com/cartas-del-mundo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "doncella-tiempo",
+          "title": "Tiemalilla ~ Damisela del Devenir",
+          "url": "https://lafundacionscp.wikidot.com/doncella-tiempo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dragones-tonatiuh",
+          "title": "Las Divinidades de Tlaneyanco",
+          "url": "https://lafundacionscp.wikidot.com/dragones-tonatiuh",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "el-abismo-de-odosha",
+          "title": "El Abismo de Odosha",
+          "url": "https://lafundacionscp.wikidot.com/el-abismo-de-odosha",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "el-laso",
+          "title": "El Laso de Apophis",
+          "url": "https://lafundacionscp.wikidot.com/el-laso",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "eon-de-zaion",
+          "title": "El Eón de Zaion, La Leyenda del Primer Explorador",
+          "url": "https://lafundacionscp.wikidot.com/eon-de-zaion",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "jardines-sagrados",
+          "title": "Los Jardines Sagrados del Dios Verde",
+          "url": "https://lafundacionscp.wikidot.com/jardines-sagrados",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-dama-del-sol",
+          "title": "La Dama Del Sol",
+          "url": "https://lafundacionscp.wikidot.com/la-dama-del-sol",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-no-carroza-funeraria",
+          "title": "La Carroza Funeraria",
+          "url": "https://lafundacionscp.wikidot.com/la-no-carroza-funeraria",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "las-cuevas-del-bev",
+          "title": "Las Cuevas del Bev",
+          "url": "https://lafundacionscp.wikidot.com/las-cuevas-del-bev",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "los-compositores",
+          "title": "Los Compositores",
+          "url": "https://lafundacionscp.wikidot.com/los-compositores",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "marw-el-reencarnado",
+          "title": "Marw (El Reencarnado)",
+          "url": "https://lafundacionscp.wikidot.com/marw-el-reencarnado",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vidnepas-protectores-de-los-descendientes-del-polvo-estelar",
+          "title": "Vidnepas Protectores de los Descendientes del Polvo Estelar",
+          "url": "https://lafundacionscp.wikidot.com/vidnepas-protectores-de-los-descendientes-del-polvo-estelar",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "volver-a-casa",
+          "title": "Camino de Vuelta a Casa",
+          "url": "https://lafundacionscp.wikidot.com/volver-a-casa",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:la-reina-negra",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "la-reina-negra",
+      "title": "La Reina Negra",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/black-queen-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/black-queen-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "la-reina-negra",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "la-reina-negra",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "evangelio-de-tamar-la-prostituta",
+          "title": "El Evangelio de Tamar la Prostituta",
+          "url": "https://lafundacionscp.wikidot.com/evangelio-de-tamar-la-prostituta",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "la-cueva-entre-dimensiones",
+          "title": "La cueva entre dimensiones",
+          "url": "https://lafundacionscp.wikidot.com/la-cueva-entre-dimensiones",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "reunion-mesa",
+          "title": "Mesa de Reunión",
+          "url": "https://lafundacionscp.wikidot.com/reunion-mesa",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "un-tal-dios-verde",
+          "title": "Un tal \"Dios Verde\"",
+          "url": "https://lafundacionscp.wikidot.com/un-tal-dios-verde",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:marshall-carter-and-dark-ltd",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "marshall-carter-and-dark-ltd",
+      "title": "Marshall, Carter, and Dark Ltd.",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/marshall-carter-and-dark-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/marshall-carter-and-dark-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "marshall-carter-and-dark-ltd",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "marshall-carter-and-dark-ltd",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "mcd-fedora-del-fiestero",
+          "title": "«Fedora del Fiestero» (L3TM3/413IN/4EAC3)",
+          "url": "https://lafundacionscp.wikidot.com/mcd-fedora-del-fiestero",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mcd-reisen-traum-train-resort",
+          "title": "\"Reisen Traum Train\" Resort (D3P85/E4O53/29Y4A)",
+          "url": "https://lafundacionscp.wikidot.com/mcd-reisen-traum-train-resort",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mcd-tabula-veritatis",
+          "title": "\"Tabula Veritatis\" (MG5P8/RF33G/7UL45)",
+          "url": "https://lafundacionscp.wikidot.com/mcd-tabula-veritatis",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mcd-topo-extractor-de-minerales",
+          "title": "'Topo extractor de minerales' (S3XLS/U9PF5/S9TG)",
+          "url": "https://lafundacionscp.wikidot.com/mcd-topo-extractor-de-minerales",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:ministerio-de-anomalias-de-cuba",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "ministerio-de-anomalias-de-cuba",
+      "title": "Ministerio de Anomalías de Cuba",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/mac-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/mac-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ministerio-de-anomalias-de-cuba",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ministerio-de-anomalias-de-cuba",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "la-promesa",
+          "title": "CASO 006755: La Promesa",
+          "url": "https://lafundacionscp.wikidot.com/la-promesa",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ya-te-veo",
+          "title": "CASO 001001: Yateveo",
+          "url": "https://lafundacionscp.wikidot.com/ya-te-veo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:nadie",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "nadie",
+      "title": "\"Nadie\"",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/nobody-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/nobody-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "nadie",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "nadie",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "la-casa-de-nadie",
+          "title": "La Casa de Nadie",
+          "url": "https://lafundacionscp.wikidot.com/la-casa-de-nadie",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pastel-de-choclo",
+          "title": "Nadie prueba el Pastel de Choclo y de paso ve a un Tren caer del Cielo",
+          "url": "https://lafundacionscp.wikidot.com/pastel-de-choclo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:hub-de-restaurantes-ambrose",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "hub-de-restaurantes-ambrose",
+      "title": "Hub de Restaurantes Ambrose",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/ambrose-restaurant-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/ambrose-restaurant-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "hub-de-restaurantes-ambrose",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "hub-de-restaurantes-ambrose",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "ambrose-tlaneyanco",
+          "title": "Ambrose Tlaneyanco: Un Tour de Recuerdos Sabor y Radioactividades",
+          "url": "https://lafundacionscp.wikidot.com/ambrose-tlaneyanco",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:shark-punching-center",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "shark-punching-center",
+      "title": "Shark Punching Center",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/spc-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/spc-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "shark-punching-center",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "shark-punching-center",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "spc-es-100",
+          "title": "SPC-ES-100",
+          "url": "https://lafundacionscp.wikidot.com/spc-es-100",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "spc-es-260",
+          "title": "SPC-ES-260",
+          "url": "https://lafundacionscp.wikidot.com/spc-es-260",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "spc-es-330",
+          "title": "SPC-ES-330",
+          "url": "https://lafundacionscp.wikidot.com/spc-es-330",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:sociedad-antares",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "sociedad-antares",
+      "title": "Sociedad Antares",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/informe-sobre-la-sociedad-antares",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/informe-sobre-la-sociedad-antares",
+      "hubPresentation": "standard",
+      "canonicalTag": "sociedad-antares",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sociedad-antares",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "testimonio-de-un-contacto-particular",
+          "title": "Testimonio de un Contacto Particular",
+          "url": "https://lafundacionscp.wikidot.com/testimonio-de-un-contacto-particular",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "testimonio-de-un-iniciado",
+          "title": "Testimonio de un Iniciado",
+          "url": "https://lafundacionscp.wikidot.com/testimonio-de-un-iniciado",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "testimonio-de-viejas-cartas",
+          "title": "Testimonio sobre viejas cartas de pergamino",
+          "url": "https://lafundacionscp.wikidot.com/testimonio-de-viejas-cartas",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:sushi-oscuro",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "sushi-oscuro",
+      "title": "Sushi Oscuro",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/sushiblade-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/sushiblade-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "sushi-oscuro",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sushi-oscuro",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "yamizushi-file-no271",
+          "title": "Archivo del Sushi Oscuro Nro.271 \"Euler\"",
+          "url": "https://lafundacionscp.wikidot.com/yamizushi-file-no271",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "yamizushi-file-no995",
+          "title": "Archivo del Sushi Oscuro Nro. 995 \"Suisame\"",
+          "url": "https://lafundacionscp.wikidot.com/yamizushi-file-no995",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:unidad-de-incidentes-inusuales-fbi",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "unidad-de-incidentes-inusuales-fbi",
+      "title": "Unidad de Incidentes Inusuales, FBI",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/unusual-incidents-unit-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/unusual-incidents-unit-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "unidad-de-incidentes-inusuales-fbi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unidad-de-incidentes-inusuales-fbi",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "archivo-udii-2021-032",
+          "title": "Archivo UdII: 2021-032",
+          "url": "https://lafundacionscp.wikidot.com/archivo-udii-2021-032",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "archivo-udii-2022-008",
+          "title": "Archivo UdII: 2022-008",
+          "url": "https://lafundacionscp.wikidot.com/archivo-udii-2022-008",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dossier-lph",
+          "title": "Dossier de Ubicación de la UdII -- \"La Pequeña Habana\"",
+          "url": "https://lafundacionscp.wikidot.com/dossier-lph",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-es:collection:goi:soluciones-de-wilson-para-la-fauna-silvestre",
+      "branchID": "scp-es",
+      "kind": "goi",
+      "hubID": "soluciones-de-wilson-para-la-fauna-silvestre",
+      "title": "Soluciones de Wilson para la Fauna Silvestre",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/wilson-s-wildlife-solutions-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/wilson-s-wildlife-solutions-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "soluciones-de-wilson-para-la-fauna-silvestre",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "soluciones-de-wilson-para-la-fauna-silvestre",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.es"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "es"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-donde-fueron-todos",
+          "title": "Perfil de la Criatura: ¡Wiwi!",
+          "url": "https://lafundacionscp.wikidot.com/a-donde-fueron-todos",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "espiritu-de-ano-nuevo",
+          "title": "¡Espíritu de Año Nuevo!",
+          "url": "https://lafundacionscp.wikidot.com/espiritu-de-ano-nuevo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "peligro-hipopotamos-de-medellin",
+          "title": "Peligro: ¡Hipopótamos de Medellín!",
+          "url": "https://lafundacionscp.wikidot.com/peligro-hipopotamos-de-medellin",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "peligro-igniciervos",
+          "title": "Peligro: ¡Igniciervos!",
+          "url": "https://lafundacionscp.wikidot.com/peligro-igniciervos",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perfil-de-la-criatura-levi",
+          "title": "Perfil de la Criatura: ¡Levi!",
+          "url": "https://lafundacionscp.wikidot.com/perfil-de-la-criatura-levi",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perfil-de-la-criatura-marw",
+          "title": "Perfil de la Criatura: ¡Marw!",
+          "url": "https://lafundacionscp.wikidot.com/perfil-de-la-criatura-marw",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perfil-de-la-criatura-matusalen",
+          "title": "Perfil de la Criatura: ¡Matusalén!",
+          "url": "https://lafundacionscp.wikidot.com/perfil-de-la-criatura-matusalen",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perfil-de-la-criatura-thor",
+          "title": "Perfil de la Criatura: ¡Thor!",
+          "url": "https://lafundacionscp.wikidot.com/perfil-de-la-criatura-thor",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "perfil-de-la-criatura-yerko",
+          "title": "Perfil de la Criatura: ¡Yerko!",
+          "url": "https://lafundacionscp.wikidot.com/perfil-de-la-criatura-yerko",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rescate-pozo-espantozo",
+          "title": "Misión de Rescate: ¡El Pozo Espantozo!",
+          "url": "https://lafundacionscp.wikidot.com/rescate-pozo-espantozo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
