@@ -1,0 +1,2033 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1783292688,
+  "generatedAt": "2026-07-05T23:04:48Z",
+  "chunkRevision": "sha256-c48a8d9e1e11d5637e5f9d5726d0601ea0d515a91a7d0467c537509980e17e7f",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-pl",
+        "path": "DataPipeline/list/pl/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1783287877,
+        "generatedAt": "2026-07-05T21:44:37Z",
+        "contentHash": "sha256-b5afb51ad01d998869ed22008435505de0b369a25b12f94fcf2b351159d6ea53"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-pl",
+        "path": "DataPipeline/list/pl/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1783287881,
+        "generatedAt": "2026-07-05T21:44:41Z",
+        "contentHash": "sha256-1fb46308019a132799e6a4879053b1de74646b86070de3b2f8763d2a39f99c9b"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-pl",
+        "path": "DataPipeline/list/pl/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1783288585,
+        "generatedAt": "2026-07-05T21:56:25Z",
+        "contentHash": "sha256-78ebcc30fa92a0f2790a076b2f28dadba24323c51a065813c2b64493cbfcbdc4"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-pl",
+        "path": "DataPipeline/list/pl/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1783290964,
+        "generatedAt": "2026-07-05T22:36:04Z",
+        "contentHash": "sha256-257d9d333c329316df08c9afb4fa8f26cf4945d4a12044386c36dfc2a601c6c5"
+      },
+      {
+        "kind": "manifest_scp-pl",
+        "branchID": "scp-pl",
+        "path": "DataPipeline/list/pl/manifest_scp-pl.json",
+        "schemaVersion": 2,
+        "listVersion": 1783288449,
+        "generatedAt": "2026-07-05T21:54:09Z",
+        "contentHash": "sha256-da27963840e97deb0517fec510e447236e8c217cdb20ea71f1f6e45bf1ff3125"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-pl",
+        "path": "DataPipeline/list/pl/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1783288934,
+        "generatedAt": "2026-07-05T22:02:14Z",
+        "contentHash": "sha256-34add39508c7d9262075783a45cc85865e2c0c6e21e125b5600ef60fdd4d016f"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-19b4722b508b0921baab259d3f0050ed0762dde71799315c7a38cf9a4bb2f92e"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-pl:collection:canon:chwasty-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "chwasty-hub",
+      "title": "Chwasty",
+      "sourceListURL": "https://scp-pl.wikidot.com/chwasty-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/chwasty-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "chwasty",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "chwasty",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-029",
+          "title": "SCP-PL-029",
+          "url": "https://scp-pl.wikidot.com/scp-pl-029",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 68
+        },
+        {
+          "id": "scp-pl-037",
+          "title": "SCP-PL-037",
+          "url": "https://scp-pl.wikidot.com/scp-pl-037",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-086",
+          "title": "SCP-PL-086",
+          "url": "https://scp-pl.wikidot.com/scp-pl-086",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 32
+        },
+        {
+          "id": "scp-pl-207",
+          "title": "SCP-PL-207",
+          "url": "https://scp-pl.wikidot.com/scp-pl-207",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-pl-223",
+          "title": "SCP-PL-223",
+          "url": "https://scp-pl.wikidot.com/scp-pl-223",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-305",
+          "title": "SCP-PL-305",
+          "url": "https://scp-pl.wikidot.com/scp-pl-305",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 34
+        },
+        {
+          "id": "scp-pl-393",
+          "title": "SCP-PL-393",
+          "url": "https://scp-pl.wikidot.com/scp-pl-393",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "czym-sa-obiekty-konspiracyjne",
+          "title": "Czym są obiekty konspiracyjne?",
+          "url": "https://scp-pl.wikidot.com/czym-sa-obiekty-konspiracyjne",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 33
+        },
+        {
+          "id": "historia-klasyfikacji-obiektow-i-ty",
+          "title": "Historia Klasyfikacji Obiektów i Ty",
+          "url": "https://scp-pl.wikidot.com/historia-klasyfikacji-obiektow-i-ty",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "masz-nowa-wiadomosc",
+          "title": "Masz nową wiadomość",
+          "url": "https://scp-pl.wikidot.com/masz-nowa-wiadomosc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 0
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:canon:czarne-niebo-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "czarne-niebo-hub",
+      "title": "Czarne Niebo",
+      "sourceListURL": "https://scp-pl.wikidot.com/czarne-niebo-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/czarne-niebo-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "czarne-niebo",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "czarne-niebo",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "kanonpl2021",
+            "reason": "genericContest"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          },
+          {
+            "tag": "współpraca",
+            "reason": "genericCollaboration"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-207",
+          "title": "SCP-PL-207",
+          "url": "https://scp-pl.wikidot.com/scp-pl-207",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-pl-231",
+          "title": "SCP-PL-231",
+          "url": "https://scp-pl.wikidot.com/scp-pl-231",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 29
+        },
+        {
+          "id": "scp-pl-238",
+          "title": "SCP-PL-238",
+          "url": "https://scp-pl.wikidot.com/scp-pl-238",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "scp-pl-258",
+          "title": "SCP-PL-258",
+          "url": "https://scp-pl.wikidot.com/scp-pl-258",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-309",
+          "title": "SCP-PL-309",
+          "url": "https://scp-pl.wikidot.com/scp-pl-309",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "scp-pl-310",
+          "title": "SCP-PL-310",
+          "url": "https://scp-pl.wikidot.com/scp-pl-310",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "scp-pl-353",
+          "title": "SCP-PL-353",
+          "url": "https://scp-pl.wikidot.com/scp-pl-353",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-364",
+          "title": "SCP-PL-364",
+          "url": "https://scp-pl.wikidot.com/scp-pl-364",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 22
+        },
+        {
+          "id": "scp-pl-374",
+          "title": "SCP-PL-374",
+          "url": "https://scp-pl.wikidot.com/scp-pl-374",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "calkowite-zacmienie",
+          "title": "Całkowite zaćmienie",
+          "url": "https://scp-pl.wikidot.com/calkowite-zacmienie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "emocje-jak-na-grzybach",
+          "title": "Emocje jak na Grzybach",
+          "url": "https://scp-pl.wikidot.com/emocje-jak-na-grzybach",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "hammer-and-a-hard-place",
+          "title": "Między Młotem a Kowadłem",
+          "url": "https://scp-pl.wikidot.com/hammer-and-a-hard-place",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "pierwsze-24-godziny-cz-1",
+          "title": "Pierwsze 24 godziny: 21:00–01:12",
+          "url": "https://scp-pl.wikidot.com/pierwsze-24-godziny-cz-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "pierwsze-24-godziny-cz-2",
+          "title": "Pierwsze 24 godziny: 01:16–01:52",
+          "url": "https://scp-pl.wikidot.com/pierwsze-24-godziny-cz-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "wylacz-komputer-burza-idzie",
+          "title": "Wyłącz Komputer, Burza Idzie",
+          "url": "https://scp-pl.wikidot.com/wylacz-komputer-burza-idzie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 25
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:canon:krolewska-fundacya-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "krolewska-fundacya-hub",
+      "title": "Królewska Fundacya",
+      "sourceListURL": "https://scp-pl.wikidot.com/krolewska-fundacya-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/krolewska-fundacya-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "fundacya",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "fundacya",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "kanonpl2021",
+            "reason": "genericContest"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-268",
+          "title": "Wynaturzenie-268",
+          "url": "https://scp-pl.wikidot.com/scp-pl-268",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-276",
+          "title": "Wynaturzenie-276",
+          "url": "https://scp-pl.wikidot.com/scp-pl-276",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-pl-303",
+          "title": "Osobliwość 303",
+          "url": "https://scp-pl.wikidot.com/scp-pl-303",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "scp-pl-353",
+          "title": "SCP-PL-353",
+          "url": "https://scp-pl.wikidot.com/scp-pl-353",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-358",
+          "title": "SCP-PL-358",
+          "url": "https://scp-pl.wikidot.com/scp-pl-358",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "scp-pl-363",
+          "title": "Wynaturzenie 363",
+          "url": "https://scp-pl.wikidot.com/scp-pl-363",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "scp-pl-377",
+          "title": "Wynaturzenie 377",
+          "url": "https://scp-pl.wikidot.com/scp-pl-377",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "scp-pl-387",
+          "title": "Wynaturzenie 387",
+          "url": "https://scp-pl.wikidot.com/scp-pl-387",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "kasztelan-sochaczewski",
+          "title": "Kasztelan sochaczewski",
+          "url": "https://scp-pl.wikidot.com/kasztelan-sochaczewski",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "przypadek-dymitra-iwanowicza-czesc-1",
+          "title": "Przypadek Dymitra Iwanowicza: Część 1",
+          "url": "https://scp-pl.wikidot.com/przypadek-dymitra-iwanowicza-czesc-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:canon:lady-poludnia",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "lady-poludnia",
+      "title": "Lądy Południa",
+      "sourceListURL": "https://scp-pl.wikidot.com/lady-poludnia",
+      "officialHubURL": "https://scp-pl.wikidot.com/lady-poludnia",
+      "hubPresentation": "standard",
+      "canonicalTag": "lądy-południa",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "lądy-południa",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-045",
+          "title": "SCP-PL-045",
+          "url": "https://scp-pl.wikidot.com/scp-pl-045",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 33
+        },
+        {
+          "id": "scp-pl-266",
+          "title": "SCP-PL-266",
+          "url": "https://scp-pl.wikidot.com/scp-pl-266",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 39
+        },
+        {
+          "id": "scp-pl-272",
+          "title": "SCP-PL-272",
+          "url": "https://scp-pl.wikidot.com/scp-pl-272",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 23
+        },
+        {
+          "id": "scp-pl-283",
+          "title": "SCP-PL-283",
+          "url": "https://scp-pl.wikidot.com/scp-pl-283",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "scp-pl-323",
+          "title": "SCP-PL-323",
+          "url": "https://scp-pl.wikidot.com/scp-pl-323",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-383",
+          "title": "SCP-PL-383",
+          "url": "https://scp-pl.wikidot.com/scp-pl-383",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "scp-pl-391",
+          "title": "SCP-PL-391",
+          "url": "https://scp-pl.wikidot.com/scp-pl-391",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-392",
+          "title": "SCP-PL-392",
+          "url": "https://scp-pl.wikidot.com/scp-pl-392",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 22
+        },
+        {
+          "id": "klamka-zapadla",
+          "title": "Klamka zapadła",
+          "url": "https://scp-pl.wikidot.com/klamka-zapadla",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "kolubryna-w-ladach-poludnia",
+          "title": "Kolubryna Ultra Omega 3000™ w lądach południa",
+          "url": "https://scp-pl.wikidot.com/kolubryna-w-ladach-poludnia",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "narodziny-nowego-slonca",
+          "title": "Mit o śmierci i narodzinach nowego Słońca",
+          "url": "https://scp-pl.wikidot.com/narodziny-nowego-slonca",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "ups",
+          "title": "Ups",
+          "url": "https://scp-pl.wikidot.com/ups",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "z-upadlych-tronow-krag",
+          "title": "z upadłych tronów krąg",
+          "url": "https://scp-pl.wikidot.com/z-upadlych-tronow-krag",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:canon:przyczajone-leczenie-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "przyczajone-leczenie-hub",
+      "title": "Przyczajone Leczenie",
+      "sourceListURL": "https://scp-pl.wikidot.com/przyczajone-leczenie-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/przyczajone-leczenie-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "przyczajone-leczenie",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "przyczajone-leczenie",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-083",
+          "title": "SCP-PL-083",
+          "url": "https://scp-pl.wikidot.com/scp-pl-083",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-pl-160",
+          "title": "SCP-PL-160",
+          "url": "https://scp-pl.wikidot.com/scp-pl-160",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "scp-pl-165",
+          "title": "SCP-PL-165",
+          "url": "https://scp-pl.wikidot.com/scp-pl-165",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 23
+        },
+        {
+          "id": "scp-pl-318",
+          "title": "SCP-PL-318",
+          "url": "https://scp-pl.wikidot.com/scp-pl-318",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "o-poczatkach-medycyny-altnormalnej",
+          "title": "O początkach medycyny altnormalnej",
+          "url": "https://scp-pl.wikidot.com/o-poczatkach-medycyny-altnormalnej",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 29
+        },
+        {
+          "id": "przemeczenie",
+          "title": "Przemęczenie",
+          "url": "https://scp-pl.wikidot.com/przemeczenie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "ukryci-wrogowie",
+          "title": "Ukryci wrogowie",
+          "url": "https://scp-pl.wikidot.com/ukryci-wrogowie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "wewnetrzne-piekno",
+          "title": "Wewnętrzne piękno",
+          "url": "https://scp-pl.wikidot.com/wewnetrzne-piekno",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:canon:pieklo-cycow-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "pieklo-cycow-hub",
+      "title": "Piekło Cyców",
+      "sourceListURL": "https://scp-pl.wikidot.com/pieklo-cycow-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/pieklo-cycow-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "piekło-cyców",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "piekło-cyców",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-139",
+          "title": "SCP-PL-139",
+          "url": "https://scp-pl.wikidot.com/scp-pl-139",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "scp-pl-189",
+          "title": "SCP-PL-189",
+          "url": "https://scp-pl.wikidot.com/scp-pl-189",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "scp-pl-232",
+          "title": "SCP-PL-232",
+          "url": "https://scp-pl.wikidot.com/scp-pl-232",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "scp-pl-289",
+          "title": "SCP-PL-289",
+          "url": "https://scp-pl.wikidot.com/scp-pl-289",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 34
+        },
+        {
+          "id": "scp-pl-389",
+          "title": "SCP-PL-389",
+          "url": "https://scp-pl.wikidot.com/scp-pl-389",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "ballada-o-sasiadach",
+          "title": "Ballada o Sąsiadach",
+          "url": "https://scp-pl.wikidot.com/ballada-o-sasiadach",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "chaos-kontrolowany",
+          "title": "Chaos Kontrolowany",
+          "url": "https://scp-pl.wikidot.com/chaos-kontrolowany",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "wiedzmy",
+          "title": "Wiedźmy",
+          "url": "https://scp-pl.wikidot.com/wiedzmy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "zimno-jak-w-piekle",
+          "title": "Zimno Jak W Piekle",
+          "url": "https://scp-pl.wikidot.com/zimno-jak-w-piekle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:canon:symonia-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "symonia-hub",
+      "title": "Symonia",
+      "sourceListURL": "https://scp-pl.wikidot.com/symonia-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/symonia-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "symonia",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "symonia",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "kanonpl2021",
+            "reason": "genericContest"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-232",
+          "title": "SCP-PL-232",
+          "url": "https://scp-pl.wikidot.com/scp-pl-232",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "scp-pl-295",
+          "title": "SCP-PL-295",
+          "url": "https://scp-pl.wikidot.com/scp-pl-295",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "scp-pl-299",
+          "title": "SCP-PL-299",
+          "url": "https://scp-pl.wikidot.com/scp-pl-299",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 37
+        },
+        {
+          "id": "scp-pl-319",
+          "title": "SCP-PL-319",
+          "url": "https://scp-pl.wikidot.com/scp-pl-319",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "wniosek-o-przeniesienie",
+          "title": "Zaznaczyć X przy właściwej odpowiedzi",
+          "url": "https://scp-pl.wikidot.com/wniosek-o-przeniesienie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:canon:zwarcie-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "zwarcie-hub",
+      "title": "Zwarcie",
+      "sourceListURL": "https://scp-pl.wikidot.com/zwarcie-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/zwarcie-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "zwarcie",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "zwarcie",
+        "rejected": [
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "kanonpl2021",
+            "reason": "genericContest"
+          },
+          {
+            "tag": "oryginał",
+            "reason": "genericNativeMarker"
+          },
+          {
+            "tag": "współpraca",
+            "reason": "genericCollaboration"
+          }
+        ],
+        "notes": [
+          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": null
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-235",
+          "title": "SCP-PL-235",
+          "url": "https://scp-pl.wikidot.com/scp-pl-235",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "scp-pl-264",
+          "title": "SCP-PL-264",
+          "url": "https://scp-pl.wikidot.com/scp-pl-264",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "dzialajac-w-cieniu",
+          "title": "Działając w cieniu",
+          "url": "https://scp-pl.wikidot.com/dzialajac-w-cieniu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "zle-krolestwo",
+          "title": "Złe Królestwo",
+          "url": "https://scp-pl.wikidot.com/zle-krolestwo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:a-r-g-u-s-inc",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "a-r-g-u-s-inc",
+      "title": "A.R.G.U.S. Inc.",
+      "sourceListURL": "https://scp-pl.wikidot.com/argus-inc-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/argus-inc-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "a-r-g-u-s-inc",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "a-r-g-u-s-inc",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "uh-75m-ad-argus-inc-jj-doc",
+          "title": "UH-75M/AD/ARGUS_INC/JJ.doc",
+          "url": "https://scp-pl.wikidot.com/uh-75m-ad-argus-inc-jj-doc",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:centralne-biuro-ds-paranormalnych-cbsp",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "centralne-biuro-ds-paranormalnych-cbsp",
+      "title": "Centralne Biuro ds. Paranormalnych (CBSP)",
+      "sourceListURL": "https://scp-pl.wikidot.com/cbsp-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/cbsp-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "centralne-biuro-ds-paranormalnych-cbsp",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "centralne-biuro-ds-paranormalnych-cbsp",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "sledztwo-sz-2025-213",
+          "title": "Śledztwo SZ-2025/213 (\"Zapomniani\")",
+          "url": "https://scp-pl.wikidot.com/sledztwo-sz-2025-213",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:hunter-industries",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "hunter-industries",
+      "title": "Hunter Industries",
+      "sourceListURL": "https://scp-pl.wikidot.com/hunter-industries-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/hunter-industries-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "hunter-industries",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "hunter-industries",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "projekt-aplikacji-malphas",
+          "title": "Projekt aplikacji — Malphas",
+          "url": "https://scp-pl.wikidot.com/projekt-aplikacji-malphas",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "zlecenie-mef-2839",
+          "title": "Zlecenie MEF-2839",
+          "url": "https://scp-pl.wikidot.com/zlecenie-mef-2839",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "zlecenie-mef-7629",
+          "title": "Zlecenie MEF-7629",
+          "url": "https://scp-pl.wikidot.com/zlecenie-mef-7629",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:polski-zwiazek-grzybiarstwa-anomalnego-pzga",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "polski-zwiazek-grzybiarstwa-anomalnego-pzga",
+      "title": "Polski Związek Grzybiarstwa Anomalnego (PZGA)",
+      "sourceListURL": "https://scp-pl.wikidot.com/pzga-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/pzga-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "polski-zwiazek-grzybiarstwa-anomalnego-pzga",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "polski-zwiazek-grzybiarstwa-anomalnego-pzga",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "boletus-aridas",
+          "title": "Ulotka Informacja o Anomalnym Grzybie — Kurzawka Szlachecka",
+          "url": "https://scp-pl.wikidot.com/boletus-aridas",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ulotka-informacyjna-o-anomalnym-grzybie-halucynka-prawdziwa",
+          "title": "Ulotka informacyjna o anomalnym grzybie — Halucynka Prawdziwa",
+          "url": "https://scp-pl.wikidot.com/ulotka-informacyjna-o-anomalnym-grzybie-halucynka-prawdziwa",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:wspania-osci-mieszkaniowe-sp-z-o-o",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "wspania-osci-mieszkaniowe-sp-z-o-o",
+      "title": "Wspaniałości Mieszkaniowe Sp. z o.o.",
+      "sourceListURL": "https://scp-pl.wikidot.com/katalog",
+      "officialHubURL": "https://scp-pl.wikidot.com/katalog",
+      "hubPresentation": "standard",
+      "canonicalTag": "wspania-osci-mieszkaniowe-sp-z-o-o",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wspania-osci-mieszkaniowe-sp-z-o-o",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "ubikaz",
+          "title": "Ubikaz",
+          "url": "https://scp-pl.wikidot.com/ubikaz",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:www",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "www",
+      "title": "WWW",
+      "sourceListURL": "https://scp-pl.wikidot.com/www-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/www-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "www",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "www",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "cel-78",
+          "title": "Cel nr 78 \"Pociąg Miłości\"",
+          "url": "https://scp-pl.wikidot.com/cel-78",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:inne-nieznane",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "inne-nieznane",
+      "title": "Inne/Nieznane",
+      "sourceListURL": "https://scp-pl.wikidot.com/artefakt-2228",
+      "officialHubURL": "https://scp-pl.wikidot.com/artefakt-2228",
+      "hubPresentation": "standard",
+      "canonicalTag": "inne-nieznane",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "inne-nieznane",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "informacja-o-dzialalnosci-sap-w-roku-2025",
+          "title": "Informacja o działalności Stowarzyszenia Artykułu Pierwszego w roku 2025",
+          "url": "https://scp-pl.wikidot.com/informacja-o-dzialalnosci-sap-w-roku-2025",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "on-th4717",
+          "title": "On-Θ4717 \"Sen o Oazie",
+          "url": "https://scp-pl.wikidot.com/on-th4717",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vellus-aureum",
+          "title": "Vellus aureum",
+          "url": "https://scp-pl.wikidot.com/vellus-aureum",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "wyjscie-z-pzdp",
+          "title": "Wyjście z PZDP: decyzja, która zmienia wszystko. Co naprawdę oznacza dla matrycy i działkowców?",
+          "url": "https://scp-pl.wikidot.com/wyjscie-z-pzdp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "wylacz-tv-wlacz-myslenie",
+          "title": "Wyłącz TV, włącz myślenie",
+          "url": "https://scp-pl.wikidot.com/wylacz-tv-wlacz-myslenie",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:anderson-robotics",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "anderson-robotics",
+      "title": "Anderson Robotics",
+      "sourceListURL": "https://scp-pl.wikidot.com/anderson-robotics-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/anderson-robotics-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "anderson-robotics",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "anderson-robotics",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "mech-bojowy-serii-laggar",
+          "title": "Przegląd Produktu Anderson Robotics: Mech Bojowy Serii Laggar",
+          "url": "https://scp-pl.wikidot.com/mech-bojowy-serii-laggar",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:are-we-cool-yet",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "are-we-cool-yet",
+      "title": "Are We Cool Yet?",
+      "sourceListURL": "https://scp-pl.wikidot.com/are-we-cool-yet-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/are-we-cool-yet-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "are-we-cool-yet",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "are-we-cool-yet",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "propozycja-projektu-0000-000",
+          "title": "Propozycja projektu 0000-000: \"Precz ludzkości!\"",
+          "url": "https://scp-pl.wikidot.com/propozycja-projektu-0000-000",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "propozycja-projektu-2022-001",
+          "title": "Propozycja projektu 2022-001: \"Podpalmy świat\"",
+          "url": "https://scp-pl.wikidot.com/propozycja-projektu-2022-001",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "wirtualna-galeria-smierci",
+          "title": "Wirtualna Galeria Śmierci \"Waba\"",
+          "url": "https://scp-pl.wikidot.com/wirtualna-galeria-smierci",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:dewici",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "dewici",
+      "title": "Dewici",
+      "sourceListURL": "https://scp-pl.wikidot.com/daevite-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/daevite-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "dewici",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dewici",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "na-bestyje-przepis-jeden-kranca-wdech",
+          "title": "Na Bestyję Przepis Jeden // Krańca Wdech",
+          "url": "https://scp-pl.wikidot.com/na-bestyje-przepis-jeden-kranca-wdech",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:duch-chicago",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "duch-chicago",
+      "title": "Duch Chicago",
+      "sourceListURL": "https://scp-pl.wikidot.com/chicago-spirit",
+      "officialHubURL": "https://scp-pl.wikidot.com/chicago-spirit",
+      "hubPresentation": "standard",
+      "canonicalTag": "duch-chicago",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "duch-chicago",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "sposob-grzybiarzy",
+          "title": "Carroll 099: Sposób Grzybiarzy",
+          "url": "https://scp-pl.wikidot.com/sposob-grzybiarzy",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:globalna-koalicja-okultystyczna-goc",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "globalna-koalicja-okultystyczna-goc",
+      "title": "Globalna Koalicja Okultystyczna (GOC)",
+      "sourceListURL": "https://scp-pl.wikidot.com/goc-hub-page",
+      "officialHubURL": "https://scp-pl.wikidot.com/goc-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "globalna-koalicja-okultystyczna-goc",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "globalna-koalicja-okultystyczna-goc",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "kte-7881-staple-spiral-holistic-tardischild",
+          "title": "KTE-7881-Staple-Spiral-Holistic-Tardischild \"MultiOil Sagl\"",
+          "url": "https://scp-pl.wikidot.com/kte-7881-staple-spiral-holistic-tardischild",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:inicjatywa-horyzontu",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "inicjatywa-horyzontu",
+      "title": "Inicjatywa Horyzontu",
+      "sourceListURL": "https://scp-pl.wikidot.com/horizon-initiative-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/horizon-initiative-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "inicjatywa-horyzontu",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "inicjatywa-horyzontu",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "dzieje-krola-ognia",
+          "title": "Dzieje Króla Ognia",
+          "url": "https://scp-pl.wikidot.com/dzieje-krola-ognia",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:komisja-adunkow-nadzwyczajnych",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "komisja-adunkow-nadzwyczajnych",
+      "title": "Komisja Ładunków Nadzwyczajnych",
+      "sourceListURL": "https://scp-pl.wikidot.com/manifest-704",
+      "officialHubURL": "https://scp-pl.wikidot.com/manifest-704",
+      "hubPresentation": "standard",
+      "canonicalTag": "komisja-adunkow-nadzwyczajnych",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "komisja-adunkow-nadzwyczajnych",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "manifest-354-odmienny-wsrod-odmiencow",
+          "title": "Manifest 354: Odmienny wśród odmieńców",
+          "url": "https://scp-pl.wikidot.com/manifest-354-odmienny-wsrod-odmiencow",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:laboratoria-prometeusza-inc",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "laboratoria-prometeusza-inc",
+      "title": "Laboratoria Prometeusza, Inc.",
+      "sourceListURL": "https://scp-pl.wikidot.com/wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+      "officialHubURL": "https://scp-pl.wikidot.com/wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+      "hubPresentation": "standard",
+      "canonicalTag": "laboratoria-prometeusza-inc",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "laboratoria-prometeusza-inc",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "cierpienia-noworoczne",
+          "title": "WNIOSEK O DOTACJĘ NA PROJEKT ULŻENIA CIERPIENIU ZWIERZĄT W ZWIĄZKU Z CELEBRACJAMI NOWOROCZNYMI",
+          "url": "https://scp-pl.wikidot.com/cierpienia-noworoczne",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "komputerowa-wena",
+          "title": "WNIOSEK O STWORZENIE PROGRAMU TWORZĄCEGO WIĘCEJ WNIOSKÓW W CELU WYROBIENIA NORMY",
+          "url": "https://scp-pl.wikidot.com/komputerowa-wena",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "wniosek-o-dotacje-na-wykorzystanie-paryskiej-architektury",
+          "title": "WNIOSEK O DOTACJĘ NA WYKORZYSTANIE PARYSKIEJ ARCHITEKTURY W CELU PRZEPROWADZENIA MASOWEGO EGZORCYZMU DUCHÓW WEŃ WYSTĘPUJĄCYCH",
+          "url": "https://scp-pl.wikidot.com/wniosek-o-dotacje-na-wykorzystanie-paryskiej-architektury",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:marshall-carter-and-dark-ltd",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "marshall-carter-and-dark-ltd",
+      "title": "Marshall, Carter, and Dark Ltd.",
+      "sourceListURL": "https://scp-pl.wikidot.com/marshall-carter-and-dark-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/marshall-carter-and-dark-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "marshall-carter-and-dark-ltd",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "marshall-carter-and-dark-ltd",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "duszosiew-polnocny",
+          "title": "\"Duszosiew Północny\" (YKJ23/1SA4C/1DABK)",
+          "url": "https://scp-pl.wikidot.com/duszosiew-polnocny",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tytan-ti74n",
+          "title": "\"Tytan\" (TI74N/1UM49/O6YBG4)",
+          "url": "https://scp-pl.wikidot.com/tytan-ti74n",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:reka-weza",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "reka-weza",
+      "title": "Ręka Węża",
+      "sourceListURL": "https://scp-pl.wikidot.com/serpent-s-hand-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/serpent-s-hand-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "reka-weza",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "reka-weza",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "bukowski-marsz-zalobny",
+          "title": "Bukowski marsz żałobny",
+          "url": "https://scp-pl.wikidot.com/bukowski-marsz-zalobny",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gerard-drugi",
+          "title": "Gerard II",
+          "url": "https://scp-pl.wikidot.com/gerard-drugi",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mab-futuryzm",
+          "title": "Mab-Futuryzm",
+          "url": "https://scp-pl.wikidot.com/mab-futuryzm",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "na-ostatni-guzik",
+          "title": "Na ostatni guzik",
+          "url": "https://scp-pl.wikidot.com/na-ostatni-guzik",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:restauracje-ambrose",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "restauracje-ambrose",
+      "title": "Restauracje Ambrose",
+      "sourceListURL": "https://scp-pl.wikidot.com/ambrose-restaurant-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/ambrose-restaurant-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "restauracje-ambrose",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "restauracje-ambrose",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "ambrose-biegun-polnocny",
+          "title": "Ambrose Biegun Północny: Pod Pierwszą Gwiazdą",
+          "url": "https://scp-pl.wikidot.com/ambrose-biegun-polnocny",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ambrose-medsir",
+          "title": "Ambrose Med'sir: Nie do końca tradycyjnie",
+          "url": "https://scp-pl.wikidot.com/ambrose-medsir",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ambrose-metaverse",
+          "title": "Ambrose Metaverse: Jadłodajnia Przyszłości",
+          "url": "https://scp-pl.wikidot.com/ambrose-metaverse",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ambrose-warszawa",
+          "title": "Ambrose Warszawa: Niepozornie Lecz Spokojnie",
+          "url": "https://scp-pl.wikidot.com/ambrose-warszawa",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:wilson-s-wildlife-solutions",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "wilson-s-wildlife-solutions",
+      "title": "Wilson's Wildlife Solutions",
+      "sourceListURL": "https://scp-pl.wikidot.com/wilson-s-wildlife-solutions-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/wilson-s-wildlife-solutions-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "wilson-s-wildlife-solutions",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wilson-s-wildlife-solutions",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "profil-zwierzaka-gonzo",
+          "title": "Profil Zwierzaka: Gonzo!",
+          "url": "https://scp-pl.wikidot.com/profil-zwierzaka-gonzo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "profil-zwierzaka-milosz",
+          "title": "Profil Zwierzaka: Miłosz!",
+          "url": "https://scp-pl.wikidot.com/profil-zwierzaka-milosz",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "profil-zwierzaka-kijetesantakalu",
+          "title": "Profil Zwierzaka: kijetesantakalu!",
+          "url": "https://scp-pl.wikidot.com/profil-zwierzaka-kijetesantakalu",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "profil-zwierzaka-lara",
+          "title": "Profil Zwierzaka: Lara!",
+          "url": "https://scp-pl.wikidot.com/profil-zwierzaka-lara",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:inne-nieznane",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "inne-nieznane",
+      "title": "Inne/Nieznane",
+      "sourceListURL": "https://scp-pl.wikidot.com/iluminaci-krytykuja-vanguard",
+      "officialHubURL": "https://scp-pl.wikidot.com/iluminaci-krytykuja-vanguard",
+      "hubPresentation": "standard",
+      "canonicalTag": "inne-nieznane",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "inne-nieznane",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "informacja-o-dzialalnosci-sap-w-roku-2025",
+          "title": "Informacja o działalności Stowarzyszenia Artykułu Pierwszego w roku 2025",
+          "url": "https://scp-pl.wikidot.com/informacja-o-dzialalnosci-sap-w-roku-2025",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "on-th4717",
+          "title": "On-Θ4717 \"Sen o Oazie",
+          "url": "https://scp-pl.wikidot.com/on-th4717",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vellus-aureum",
+          "title": "Vellus aureum",
+          "url": "https://scp-pl.wikidot.com/vellus-aureum",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "wyjscie-z-pzdp",
+          "title": "Wyjście z PZDP: decyzja, która zmienia wszystko. Co naprawdę oznacza dla matrycy i działkowców?",
+          "url": "https://scp-pl.wikidot.com/wyjscie-z-pzdp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "wylacz-tv-wlacz-myslenie",
+          "title": "Wyłącz TV, włącz myślenie",
+          "url": "https://scp-pl.wikidot.com/wylacz-tv-wlacz-myslenie",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:goi:japonskie-laboratorium-ulepszania-i-tworzenia-organizmow-joicl",
+      "branchID": "scp-pl",
+      "kind": "goi",
+      "hubID": "japonskie-laboratorium-ulepszania-i-tworzenia-organizmow-joicl",
+      "title": "Japońskie Laboratorium Ulepszania i Tworzenia Organizmów (JOICL)",
+      "sourceListURL": "https://scp-pl.wikidot.com/so-r-4771",
+      "officialHubURL": "https://scp-pl.wikidot.com/so-r-4771",
+      "hubPresentation": "standard",
+      "canonicalTag": "japonskie-laboratorium-ulepszania-i-tworzenia-organizmow-joicl",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "japonskie-laboratorium-ulepszania-i-tworzenia-organizmow-joicl",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.pl"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "pl"
+      },
+      "primaryArticles": [
+        {
+          "id": "drzewa-wolnosci",
+          "title": "Katalog Sprzedaży 終-Y-1789 \"Drzewa Wolności\"",
+          "url": "https://scp-pl.wikidot.com/drzewa-wolnosci",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
