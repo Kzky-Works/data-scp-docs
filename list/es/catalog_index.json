@@ -1,57 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-13T07:02:03Z",
+  "generatedAt": "2026-07-13T07:28:06Z",
   "files": [
-    {
-      "kind": "manifest_scp-es",
-      "url": "manifest_scp-es.json",
-      "listVersion": 1783925269,
-      "schemaVersion": 2,
-      "generatedAt": "2026-07-13T06:47:49Z",
-      "contentHash": "sha256-05cfb843fda79ab59f77cfb6bf3efc11979f188f2da073beaee03d58ba075731",
-      "byteSize": 190015,
-      "entryCount": 330
-    },
-    {
-      "kind": "manifest_scp-main",
-      "url": "manifest_scp-main.json",
-      "listVersion": 1783925828,
-      "schemaVersion": 2,
-      "generatedAt": "2026-07-13T06:57:08Z",
-      "contentHash": "sha256-c3baf322e045679f9e3b23d933276e0fc9577e92acb06247da7c038cc990dde0",
-      "byteSize": 1987263,
-      "entryCount": 3945
-    },
-    {
-      "kind": "manifest_scp-int",
-      "url": "manifest_scp-int.json",
-      "listVersion": 1783139179,
-      "schemaVersion": 2,
-      "generatedAt": "2026-07-04T04:26:19Z",
-      "contentHash": "sha256-36cc32553f95203795181fd414df55da8c99bc223654a83d1e74ddd7d2fa2832",
-      "byteSize": 9840,
-      "entryCount": 17
-    },
-    {
-      "kind": "manifest_tales",
-      "url": "manifest_tales.json",
-      "listVersion": 1783925834,
-      "schemaVersion": 2,
-      "generatedAt": "2026-07-13T06:57:14Z",
-      "contentHash": "sha256-55a88d66992a9aa58b33468ec406625141b04922002cb28167ae613a63089733",
-      "byteSize": 397159,
-      "entryCount": 644
-    },
-    {
-      "kind": "manifest_canons",
-      "url": "manifest_canons.json",
-      "listVersion": 1783925837,
-      "schemaVersion": 2,
-      "generatedAt": "2026-07-13T06:57:17Z",
-      "contentHash": "sha256-192a63a5b9c169ea317b330eef527761c9e2cfebbb25a22a7792f986a34b61bc",
-      "byteSize": 17601,
-      "entryCount": 38
-    },
     {
       "kind": "collection_details",
       "url": "collection_details.json",
@@ -63,14 +13,14 @@
       "entryCount": 25
     },
     {
-      "kind": "manifest_gois",
-      "url": "manifest_gois.json",
-      "listVersion": 1783925844,
-      "schemaVersion": 3,
-      "generatedAt": "2026-07-13T06:57:24Z",
-      "contentHash": "sha256-74e778a53807c9897960bee069817adbabdad1cf2d19d6ff60e8802fb733ea95",
-      "byteSize": 202770,
-      "entryCount": 304
+      "kind": "es_tag",
+      "url": "es_tag.json",
+      "listVersion": 1782773651,
+      "schemaVersion": 2,
+      "generatedAt": "2026-07-05T09:28:33Z",
+      "contentHash": "sha256-db1469c8962d03148f01fdd50ee0e1c2531875778d330a93d511c3fb76e6cdd5",
+      "byteSize": 1483381,
+      "entryCount": 8472
     },
     {
       "kind": "goi_directory",
@@ -93,14 +43,14 @@
       "entryCount": 26
     },
     {
-      "kind": "manifest_jokes",
-      "url": "manifest_jokes.json",
-      "listVersion": 1783926055,
+      "kind": "manifest_canons",
+      "url": "manifest_canons.json",
+      "listVersion": 1783925837,
       "schemaVersion": 2,
-      "generatedAt": "2026-07-13T07:00:55Z",
-      "contentHash": "sha256-5ec64be8d1c083c23b670e039dcb852c332b053483a902dca389857d8f16f5e4",
-      "byteSize": 113339,
-      "entryCount": 187
+      "generatedAt": "2026-07-13T06:57:17Z",
+      "contentHash": "sha256-192a63a5b9c169ea317b330eef527761c9e2cfebbb25a22a7792f986a34b61bc",
+      "byteSize": 17601,
+      "entryCount": 38
     },
     {
       "kind": "manifest_collaboration",
@@ -113,6 +63,46 @@
       "entryCount": 41
     },
     {
+      "kind": "manifest_gois",
+      "url": "manifest_gois.json",
+      "listVersion": 1783925844,
+      "schemaVersion": 3,
+      "generatedAt": "2026-07-13T06:57:24Z",
+      "contentHash": "sha256-74e778a53807c9897960bee069817adbabdad1cf2d19d6ff60e8802fb733ea95",
+      "byteSize": 202770,
+      "entryCount": 304
+    },
+    {
+      "kind": "manifest_jokes",
+      "url": "manifest_jokes.json",
+      "listVersion": 1783926055,
+      "schemaVersion": 2,
+      "generatedAt": "2026-07-13T07:00:55Z",
+      "contentHash": "sha256-5ec64be8d1c083c23b670e039dcb852c332b053483a902dca389857d8f16f5e4",
+      "byteSize": 113339,
+      "entryCount": 187
+    },
+    {
+      "kind": "manifest_recent",
+      "url": "manifest_recent.json",
+      "listVersion": 1783927584,
+      "schemaVersion": 2,
+      "generatedAt": "2026-07-13T07:23:12Z",
+      "contentHash": "sha256-67da630446110873d8410bf3762eaa24779a9a09c457fb1c885b8d912037d728",
+      "byteSize": 22485,
+      "entryCount": 60
+    },
+    {
+      "kind": "manifest_scp-es",
+      "url": "manifest_scp-es.json",
+      "listVersion": 1783925269,
+      "schemaVersion": 2,
+      "generatedAt": "2026-07-13T06:47:49Z",
+      "contentHash": "sha256-05cfb843fda79ab59f77cfb6bf3efc11979f188f2da073beaee03d58ba075731",
+      "byteSize": 190015,
+      "entryCount": 330
+    },
+    {
       "kind": "manifest_scp-ex",
       "url": "manifest_scp-ex.json",
       "listVersion": 1783926055,
@@ -123,14 +113,24 @@
       "entryCount": 39
     },
     {
-      "kind": "manifest_recent",
-      "url": "manifest_recent.json",
-      "listVersion": 1783925850,
+      "kind": "manifest_scp-int",
+      "url": "manifest_scp-int.json",
+      "listVersion": 1783139179,
       "schemaVersion": 2,
-      "generatedAt": "2026-07-13T06:57:30Z",
-      "contentHash": "sha256-2784ae85b1b9a5ad76eb880f18961b75fac31171c5759ff9679ce480cc1b1933",
-      "byteSize": 22485,
-      "entryCount": 60
+      "generatedAt": "2026-07-04T04:26:19Z",
+      "contentHash": "sha256-36cc32553f95203795181fd414df55da8c99bc223654a83d1e74ddd7d2fa2832",
+      "byteSize": 9840,
+      "entryCount": 17
+    },
+    {
+      "kind": "manifest_scp-main",
+      "url": "manifest_scp-main.json",
+      "listVersion": 1783925828,
+      "schemaVersion": 2,
+      "generatedAt": "2026-07-13T06:57:08Z",
+      "contentHash": "sha256-c3baf322e045679f9e3b23d933276e0fc9577e92acb06247da7c038cc990dde0",
+      "byteSize": 1987263,
+      "entryCount": 3945
     },
     {
       "kind": "manifest_scp001-proposals",
@@ -143,14 +143,14 @@
       "entryCount": 34
     },
     {
-      "kind": "es_tag",
-      "url": "es_tag.json",
-      "listVersion": 1782773651,
+      "kind": "manifest_tales",
+      "url": "manifest_tales.json",
+      "listVersion": 1783925834,
       "schemaVersion": 2,
-      "generatedAt": "2026-07-05T09:28:33Z",
-      "contentHash": "sha256-db1469c8962d03148f01fdd50ee0e1c2531875778d330a93d511c3fb76e6cdd5",
-      "byteSize": 1483381,
-      "entryCount": 8472
+      "generatedAt": "2026-07-13T06:57:14Z",
+      "contentHash": "sha256-55a88d66992a9aa58b33468ec406625141b04922002cb28167ae613a63089733",
+      "byteSize": 397159,
+      "entryCount": 644
     },
     {
       "kind": "render_class_index",
