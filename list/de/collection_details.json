@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1784463736,
+  "generatedAt": "2026-07-19T12:22:16Z",
+  "chunkRevision": "sha256-9b235d0f28ffde66c94fa3acc8999efdc6df674bf8ea5b783c8cd11859a83bcf",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-de",
+        "path": "DataPipeline/list/de/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1784463681,
+        "generatedAt": "2026-07-19T12:21:21Z",
+        "contentHash": "sha256-6bea2b65d8a2b32784bed2b736417d7b980049d7341c561c91c0f13e91ff2de1"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-de",
+        "path": "DataPipeline/list/de/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1784463684,
+        "generatedAt": "2026-07-19T12:21:24Z",
+        "contentHash": "sha256-d355d6db87a21dc794ccd6943b48612e7075e3ad10ed05b0cdcfedaa96d83b1f"
+      },
+      {
+        "kind": "manifest_scp-de",
+        "branchID": "scp-de",
+        "path": "DataPipeline/list/de/manifest_scp-de.json",
+        "schemaVersion": 2,
+        "listVersion": 1784461443,
+        "generatedAt": "2026-07-19T11:44:03Z",
+        "contentHash": "sha256-23675bd0d2587f7aad877d267bc6f9a771188e4f0992517d99dc8af8b1095a9e"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-de",
+        "path": "DataPipeline/list/de/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1784463614,
+        "generatedAt": "2026-07-19T12:20:14Z",
+        "contentHash": "sha256-974c33b6e066a4aaa7c9e14e3d5ae8482f858a88f345ba4618742e7696e4269b"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-de",
+        "path": "DataPipeline/list/de/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1784463528,
+        "generatedAt": "2026-07-19T12:18:48Z",
+        "contentHash": "sha256-053dc4b313f9fd48991ad28a1516e06910aa42abe7f4ce6a1804e01a08b50183"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-de",
+        "path": "DataPipeline/list/de/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1784463678,
+        "generatedAt": "2026-07-19T12:21:18Z",
+        "contentHash": "sha256-40dff0623a2cddca929a83fcb3930e41d39b41bc87fa95859986ddf7f6afecc4"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-0ffc489409616f1cf69aeb5cd4066c94080306a8c9e42f24d0c895116b55588e"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-de:collection:canon:projekt-trickster",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "projekt-trickster",
+      "title": "Projekt Trickster",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/projekt-trickster",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/projekt-trickster",
+      "hubPresentation": "standard",
+      "canonicalTag": "projekt-trickster",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "projekt-trickster",
+        "rejected": [
+          {
+            "tag": "deutsch",
+            "reason": "genericNativeMarker"
+          },
+          {
+            "tag": "gemeinschaftsarbeit",
+            "reason": "genericCollaboration"
+          },
+          {
+            "tag": "kanon",
+            "reason": "genericCanonMarker"
+          },
+          {
+            "tag": "portalseite",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Live-verified over HTTP against the SCP-DE Projekt Trickster hub and its dedicated tag surface on 2026-07-19; all 42 tag-resolved members appear on the official hub in reading order."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "42 tag-resolved primary articles; all 42 matched links on the live official hub at review time."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "das-verhaengnis-des-chirurgen",
+          "title": "Das Verhängnis des Chirurgen",
+          "url": "http://scp-wiki-de.wikidot.com/das-verhaengnis-des-chirurgen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "schwierige-beziehungen",
+          "title": "Schwierige Beziehungen",
+          "url": "http://scp-wiki-de.wikidot.com/schwierige-beziehungen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "tod-liebe-und-dazwischen",
+          "title": "Tod, Liebe und dazwischen",
+          "url": "http://scp-wiki-de.wikidot.com/tod-liebe-und-dazwischen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "hausender-daemon",
+          "title": "Der Dämon, der in uns haust",
+          "url": "http://scp-wiki-de.wikidot.com/hausender-daemon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "der-schein-truegt",
+          "title": "Der Schein trügt",
+          "url": "http://scp-wiki-de.wikidot.com/der-schein-truegt",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "die-kleinen-maedchen-und-die-schwefelhoelzer",
+          "title": "Die kleinen Mädchen und die Schwefelhölzer",
+          "url": "http://scp-wiki-de.wikidot.com/die-kleinen-maedchen-und-die-schwefelhoelzer",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "feste-feiern-wie-sie-fallen",
+          "title": "Feste feiern, wie sie fallen",
+          "url": "http://scp-wiki-de.wikidot.com/feste-feiern-wie-sie-fallen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "im-trichter-und-unter-der-huette",
+          "title": "Im Trichter und unter der Hütte",
+          "url": "http://scp-wiki-de.wikidot.com/im-trichter-und-unter-der-huette",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "gespraechskreis-zur-angstbehandlung",
+          "title": "Gesprächskreis zur Angstbehandlung",
+          "url": "http://scp-wiki-de.wikidot.com/gespraechskreis-zur-angstbehandlung",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "hexenjagd",
+          "title": "Hexenjagd",
+          "url": "http://scp-wiki-de.wikidot.com/hexenjagd",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "scp-101-de",
+          "title": "Eik, der Baum der Erkenntnis",
+          "url": "http://scp-wiki-de.wikidot.com/scp-101-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "scp-121-de",
+          "title": "Telepathischer Humanoide",
+          "url": "http://scp-wiki-de.wikidot.com/scp-121-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "scp-122-de",
+          "title": "Frau Harlekina",
+          "url": "http://scp-wiki-de.wikidot.com/scp-122-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "scp-129-de",
+          "title": "Der falsche Chirurg",
+          "url": "http://scp-wiki-de.wikidot.com/scp-129-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "scp-136-de",
+          "title": "Der Junge, der die Zeit anhält",
+          "url": "http://scp-wiki-de.wikidot.com/scp-136-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "scp-140-de",
+          "title": "Morts volantes",
+          "url": "http://scp-wiki-de.wikidot.com/scp-140-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-146-de",
+          "title": "Kalliope Anlage",
+          "url": "http://scp-wiki-de.wikidot.com/scp-146-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "scp-148-de",
+          "title": "Blauer Schleim [Level 25]",
+          "url": "http://scp-wiki-de.wikidot.com/scp-148-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "scp-187-de",
+          "title": "Mathilda",
+          "url": "http://scp-wiki-de.wikidot.com/scp-187-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "scp-193-de",
+          "title": "Bildung ist Verbesserung",
+          "url": "http://scp-wiki-de.wikidot.com/scp-193-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "scp-196-de",
+          "title": "Homo Reptilis",
+          "url": "http://scp-wiki-de.wikidot.com/scp-196-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "scp-239-de",
+          "title": "USB-Wüstenrennratte",
+          "url": "http://scp-wiki-de.wikidot.com/scp-239-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "scp-329-de",
+          "title": "Der letzte Druide, jetzt wirklich",
+          "url": "http://scp-wiki-de.wikidot.com/scp-329-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "scp-369-de",
+          "title": "Der Kobold im Radio",
+          "url": "http://scp-wiki-de.wikidot.com/scp-369-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "scp-344-de",
+          "title": "Vom Blitze getroffen",
+          "url": "http://scp-wiki-de.wikidot.com/scp-344-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "scp-375-de",
+          "title": "Verlorener Plüschwolf",
+          "url": "http://scp-wiki-de.wikidot.com/scp-375-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "scp-399-de",
+          "title": "Im Abgrund des bedrückenden Meeres haust eine barmherzige Meerjungfrau",
+          "url": "http://scp-wiki-de.wikidot.com/scp-399-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "scp-6192",
+          "title": "Nicht mehrer länger benutzte Spiegel",
+          "url": "http://scp-wiki-de.wikidot.com/scp-6192",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "ein-seltsamer-tagtraum-so-suess-wie-gift",
+          "title": "Ein Seltsamer Tagtraum, So Süß Wie Gift",
+          "url": "http://scp-wiki-de.wikidot.com/ein-seltsamer-tagtraum-so-suess-wie-gift",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2
+        },
+        {
+          "id": "verlust-1",
+          "title": "Verlust, Episode 1: Genommen",
+          "url": "http://scp-wiki-de.wikidot.com/verlust-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "verlust-2",
+          "title": "Verlust, Episode 2: Gejagt",
+          "url": "http://scp-wiki-de.wikidot.com/verlust-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2
+        },
+        {
+          "id": "budgetkuerzungen",
+          "title": "Budgetkürzungen",
+          "url": "http://scp-wiki-de.wikidot.com/budgetkuerzungen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "wie-lange-dauert-die-unendlichkeit",
+          "title": "Wie lange dauert die Unendlichkeit",
+          "url": "http://scp-wiki-de.wikidot.com/wie-lange-dauert-die-unendlichkeit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:abteilung-xxv-hub",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "abteilung-xxv-hub",
+      "title": "Abteilung XXV",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/abteilung-xxv-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/abteilung-xxv-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "abteilung-xxv-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "abteilung-xxv-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "geklaerte-fronten",
+          "title": "Geklärte Fronten",
+          "url": "http://scp-wiki-de.wikidot.com/geklaerte-fronten",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mit-dem-strom",
+          "title": "Mit dem Strom",
+          "url": "http://scp-wiki-de.wikidot.com/mit-dem-strom",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "unsichtbare-blinde",
+          "title": "Unsichtbare Blinde",
+          "url": "http://scp-wiki-de.wikidot.com/unsichtbare-blinde",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "zwei-sind-schon-eine-verschworene-gemeinschaft",
+          "title": "Zwei sind schon eine verschworene Gemeinschaft",
+          "url": "http://scp-wiki-de.wikidot.com/zwei-sind-schon-eine-verschworene-gemeinschaft",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:caecus-c-hub",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "caecus-c-hub",
+      "title": "Caecus Carneliana-Kollektiv",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/caecus-c-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/caecus-c-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "caecus-c-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "caecus-c-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "alter-freund",
+          "title": "Alter Freund",
+          "url": "http://scp-wiki-de.wikidot.com/alter-freund",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "die-maske-die-wir-tragen",
+          "title": "Die Maske, die wir tragen",
+          "url": "http://scp-wiki-de.wikidot.com/die-maske-die-wir-tragen",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ein-baum-kapitel-1-2",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 1 & 2",
+          "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-1-2",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ein-baum-kapitel-3-4",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 3 & 4",
+          "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-3-4",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ein-baum-kapitel-5-6",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 5 & 6",
+          "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-5-6",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ein-baum-kapitel-7-8",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 7 & 8",
+          "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-7-8",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ein-baum-kapitel-9",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 9",
+          "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-9",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "rueckkehr",
+          "title": "Rückkehr",
+          "url": "http://scp-wiki-de.wikidot.com/rueckkehr",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "zwei-sind-schon-eine-verschworene-gemeinschaft",
+          "title": "Zwei sind schon eine verschworene Gemeinschaft",
+          "url": "http://scp-wiki-de.wikidot.com/zwei-sind-schon-eine-verschworene-gemeinschaft",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:imbw-hub",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "imbw-hub",
+      "title": "Institut für menschliche Bildung und Weiterentwicklung",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/imbw-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/imbw-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "imbw-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "imbw-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "menschlicher-bausatz",
+          "title": "Menschlicher Bausatz",
+          "url": "http://scp-wiki-de.wikidot.com/menschlicher-bausatz",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "neue-horizonte",
+          "title": "Neue Horizonte",
+          "url": "http://scp-wiki-de.wikidot.com/neue-horizonte",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:magierakademie-hub",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "magierakademie-hub",
+      "title": "Die Magierakademie",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/magierakademie-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/magierakademie-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "magierakademie-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "magierakademie-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "schicksal-eines-magiers-1",
+          "title": "Das Schicksal eines Magiers, Teil 1",
+          "url": "http://scp-wiki-de.wikidot.com/schicksal-eines-magiers-1",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mit-dem-strom",
+          "title": "Mit dem Strom",
+          "url": "http://scp-wiki-de.wikidot.com/mit-dem-strom",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "persoenliches-log-l7194066",
+          "title": "Persönliches Log #L7194066",
+          "url": "http://scp-wiki-de.wikidot.com/persoenliches-log-l7194066",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:raptor-tec-industries",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "raptor-tec-industries",
+      "title": "Raptor Tec. Industries",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/raptor-tec-industries",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/raptor-tec-industries",
+      "hubPresentation": "standard",
+      "canonicalTag": "raptor-tec-industries",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "raptor-tec-industries",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "lilith-und-samson",
+          "title": "Lilith und Samson",
+          "url": "http://scp-wiki-de.wikidot.com/lilith-und-samson",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "die-woelfin-und-die-staehlerne-jungfrau",
+          "title": "Die Wölfin und die stählerne Jungfrau",
+          "url": "http://scp-wiki-de.wikidot.com/die-woelfin-und-die-staehlerne-jungfrau",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gestatten-mein-name-ist-ridter",
+          "title": "Gestatten, mein Name ist Ridter",
+          "url": "http://scp-wiki-de.wikidot.com/gestatten-mein-name-ist-ridter",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "menschlicher-bausatz",
+          "title": "Menschlicher Bausatz",
+          "url": "http://scp-wiki-de.wikidot.com/menschlicher-bausatz",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:4r-hub",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "4r-hub",
+      "title": "Das Vierte Reich",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/4r-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/4r-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "4r-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "4r-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "geklaerte-fronten",
+          "title": "Geklärte Fronten",
+          "url": "http://scp-wiki-de.wikidot.com/geklaerte-fronten",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mit-dem-strom",
+          "title": "Mit dem Strom",
+          "url": "http://scp-wiki-de.wikidot.com/mit-dem-strom",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:goi-1995-de-das-wunderkabinett",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "goi-1995-de-das-wunderkabinett",
+      "title": "Das Wunderkabinett",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/goi-1995-de-das-wunderkabinett",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/goi-1995-de-das-wunderkabinett",
+      "hubPresentation": "standard",
+      "canonicalTag": "goi-1995-de-das-wunderkabinett",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "goi-1995-de-das-wunderkabinett",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "der-legendaere-zauberstab-von-morgan-le-fay",
+          "title": "Der Legendäre Zauberstab Von Morgan Le Fay",
+          "url": "http://scp-wiki-de.wikidot.com/der-legendaere-zauberstab-von-morgan-le-fay",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "incriveis-sapatos-ozwalds",
+          "title": "Des sagenhaften Ozwalds Schuhe",
+          "url": "http://scp-wiki-de.wikidot.com/incriveis-sapatos-ozwalds",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "das-taegliche-leben-mit-einer-ausserirdischen",
+          "title": "Das tägliche Leben mit einer Außerirdischen",
+          "url": "http://scp-wiki-de.wikidot.com/das-taegliche-leben-mit-einer-ausserirdischen",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "die-maske-die-wir-tragen",
+          "title": "Die Maske, die wir tragen",
+          "url": "http://scp-wiki-de.wikidot.com/die-maske-die-wir-tragen",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gestatten-mein-name-ist-ridter",
+          "title": "Gestatten, mein Name ist Ridter",
+          "url": "http://scp-wiki-de.wikidot.com/gestatten-mein-name-ist-ridter",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "menschlicher-bausatz",
+          "title": "Menschlicher Bausatz",
+          "url": "http://scp-wiki-de.wikidot.com/menschlicher-bausatz",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "unsichtbare-blinde",
+          "title": "Unsichtbare Blinde",
+          "url": "http://scp-wiki-de.wikidot.com/unsichtbare-blinde",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "zwei-sind-schon-eine-verschworene-gemeinschaft",
+          "title": "Zwei sind schon eine verschworene Gemeinschaft",
+          "url": "http://scp-wiki-de.wikidot.com/zwei-sind-schon-eine-verschworene-gemeinschaft",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-de:collection:goi:skp-portal",
+      "branchID": "scp-de",
+      "kind": "goi",
+      "hubID": "skp-portal",
+      "title": "Sonderkommando für Paranormales",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/skp-portal",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/skp-portal",
+      "hubPresentation": "standard",
+      "canonicalTag": "skp-portal",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "skp-portal",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.de"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "de"
+      },
+      "primaryArticles": [
+        {
+          "id": "projekt-morgenpforte",
+          "title": "Projekt Morgenpforte",
+          "url": "http://scp-wiki-de.wikidot.com/projekt-morgenpforte",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "uebernahme-der-scp-foundation-durch-das-skp",
+          "title": "Übernahme der SCP Foundation",
+          "url": "http://scp-wiki-de.wikidot.com/uebernahme-der-scp-foundation-durch-das-skp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "das-tagebuch-eines-soldaten",
+          "title": "Das Tagebuch eines Soldaten",
+          "url": "http://scp-wiki-de.wikidot.com/das-tagebuch-eines-soldaten",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
