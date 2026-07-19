@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1784453174,
+  "generatedAt": "2026-07-19T09:26:14Z",
+  "chunkRevision": "sha256-678d6165c4cb28dc10f9ba52e80d44ddc50073238ef58cefc63bf957a0f3de66",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-th",
+        "path": "DataPipeline/list/th/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1784452402,
+        "generatedAt": "2026-07-19T09:13:22Z",
+        "contentHash": "sha256-eb1a4dc437c1cdcedcb457722b9762380cb745652a4c652a29812a8281620fc3"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-th",
+        "path": "DataPipeline/list/th/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1784452340,
+        "generatedAt": "2026-07-19T09:12:20Z",
+        "contentHash": "sha256-f2c3778a52ed1242f9e4721ca31fadadfe38ebfb484b9adf781166825b570aff"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-th",
+        "path": "DataPipeline/list/th/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1784452288,
+        "generatedAt": "2026-07-19T09:11:28Z",
+        "contentHash": "sha256-1d261656ec4214f26aef26557cdb6cebe963936a72b7893c4d80495d48d1f9d8"
+      },
+      {
+        "kind": "manifest_scp-th",
+        "branchID": "scp-th",
+        "path": "DataPipeline/list/th/manifest_scp-th.json",
+        "schemaVersion": 2,
+        "listVersion": 1784451507,
+        "generatedAt": "2026-07-19T08:58:27Z",
+        "contentHash": "sha256-efea1bf10d6c64ea584866148c71a8af7b780a7fe5340f36e30b1ccfc80386d6"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-th",
+        "path": "DataPipeline/list/th/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1784453110,
+        "generatedAt": "2026-07-19T09:25:10Z",
+        "contentHash": "sha256-6bff7fcc89f577c0882af1dc1f67d6073f8373fed22823a4c39034abc23dbfb4"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-b3559632d0b7586708b7ffa77d3018ad7d9e1b6f233c5976465ddcf28875e095"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-th:collection:canon:horror-foundation",
+      "branchID": "scp-th",
+      "kind": "canon",
+      "hubID": "horror-foundation",
+      "title": "สถาบันสยองขวัญ",
+      "sourceListURL": "http://scp-th.wikidot.com/horror-foundation",
+      "officialHubURL": "http://scp-th.wikidot.com/horror-foundation",
+      "hubPresentation": "standard",
+      "canonicalTag": "horror-foundation",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "horror-foundation",
+        "rejected": [
+          {
+            "tag": "tale-th",
+            "reason": "genericTaleMarker"
+          },
+          {
+            "tag": "th-canon",
+            "reason": "genericCanonMarker"
+          },
+          {
+            "tag": "th-hub",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Live-verified over HTTP against the SCP-TH Horror Foundation hub and completed TH tag map on 2026-07-19; the specific horror-foundation tag resolves native Tale members and the official hub exposes their reading order."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "10 tag-resolved primary articles; 9 matched links on the live official hub at review time (site-66-part-1 is tag-only)."
+      },
+      "memberManifests": [
+        "manifest_scp-th",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "7-ghost-story-in-the-site-29",
+          "title": "7 เรื่องผีในไซต์-29a",
+          "url": "http://scp-th.wikidot.com/7-ghost-story-in-the-site-29",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "d-6679",
+          "title": "D-6679",
+          "url": "http://scp-th.wikidot.com/d-6679",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "virtual-dream",
+          "title": "ความฝันเสมือนจริง",
+          "url": "http://scp-th.wikidot.com/virtual-dream",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "hour-of-scare",
+          "title": "ชั่วโมงหลอน",
+          "url": "http://scp-th.wikidot.com/hour-of-scare",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "dr-norleans-and-mysterious-stories",
+          "title": "ดร. นอร์เลอองกับเรื่องลี้ลับ",
+          "url": "http://scp-th.wikidot.com/dr-norleans-and-mysterious-stories",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "long-the-way",
+          "title": "ทางเดินยาว",
+          "url": "http://scp-th.wikidot.com/long-the-way",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "orientation-block-b",
+          "title": "ปฐมนิเทศตึก B",
+          "url": "http://scp-th.wikidot.com/orientation-block-b",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "the-janitor",
+          "title": "ภารโรง",
+          "url": "http://scp-th.wikidot.com/the-janitor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "mortuary",
+          "title": "ห้องดับจิต",
+          "url": "http://scp-th.wikidot.com/mortuary",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "site-66-part-1",
+          "title": "ไซต์-66 ตอนที่ 1",
+          "url": "http://scp-th.wikidot.com/site-66-part-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 26
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
