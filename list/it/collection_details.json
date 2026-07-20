@@ -1,0 +1,1343 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1784543926,
+  "generatedAt": "2026-07-20T10:38:46Z",
+  "chunkRevision": "sha256-f3cc4c426a97087e11eb4bad1e3f9f5f7c4cc465011840ad5b63b0a1ff62b3b2",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-it",
+        "path": "DataPipeline/list/it/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1784543797,
+        "generatedAt": "2026-07-20T10:36:37Z",
+        "contentHash": "sha256-1bcdc2e4130e9794d04e492522c2e2bd723955616a72b1c394e6dc101a25da39"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-it",
+        "path": "DataPipeline/list/it/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1784535754,
+        "generatedAt": "2026-07-20T08:22:34Z",
+        "contentHash": "sha256-7302b5d137202d1d697904759345d82fde4977d5dca4c5901118588d29030eb9"
+      },
+      {
+        "kind": "manifest_scp-it",
+        "branchID": "scp-it",
+        "path": "DataPipeline/list/it/manifest_scp-it.json",
+        "schemaVersion": 2,
+        "listVersion": 1784533820,
+        "generatedAt": "2026-07-20T07:50:20Z",
+        "contentHash": "sha256-fa8983a6f0adb177df140128ebf7d84369c21965e4dfe76ec9dd5fb07f855f96"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-it",
+        "path": "DataPipeline/list/it/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1784535525,
+        "generatedAt": "2026-07-20T08:18:45Z",
+        "contentHash": "sha256-bed2d93fd849e3cfc7e29b59e221f9f0428176f4bdcc3861a764b774be351e41"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-it",
+        "path": "DataPipeline/list/it/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1784535867,
+        "generatedAt": "2026-07-20T08:24:27Z",
+        "contentHash": "sha256-cdc0b02b4311e465a33dad76a8fe3a1922dbb2778c377ba19c48b35f04179fbf"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-c35efcfe7eeae15813f4b2d1462f06273a316ca8eee2e984533d20d6f53de7f5"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-it:collection:canon:nuova-gestione-e-pesanti-bagagli",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "nuova-gestione-e-pesanti-bagagli",
+      "title": "Nuova Gestione e Pesanti Bagagli",
+      "sourceListURL": "http://fondazionescp.wikidot.com/nuova-gestione-e-pesanti-bagagli",
+      "officialHubURL": "http://fondazionescp.wikidot.com/nuova-gestione-e-pesanti-bagagli",
+      "hubPresentation": "standard",
+      "canonicalTag": "pesanti-bagagli",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "pesanti-bagagli",
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "hub",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Heading text on /canoni-alternativi links directly to this page (row carries the 'hub' tag); pesanti-bagagli tag confirmed on the hub plus 2 members enumerable via the branch's fixed tagReverseLookup memberManifests set: scp-014-int (manifest_scp-int), apocrifo (manifest_tales).",
+          "it_tag.json shows 3 more pesanti-bagagli members that only live in manifest_gois (scp-it-077, scp-it-080, scp-it-116) -- out of scope for this canon reverse lookup, which is fixed to manifest_scp-it/manifest_tales/manifest_scp-main/manifest_scp-int -- plus 5 more (scp-it-032, scp-it-108, scp-it-179, canta-il-gallo, vomito) not present in any currently harvested IT feed manifest at all, so none of those 8 are enumerable as primaryArticles here."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "2 of 10 tag-confirmed pesanti-bagagli members enumerable via the branch's fixed canon memberManifests set"
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-014-int",
+          "title": "Una Rete di Amnestici",
+          "url": "http://fondazionescp.wikidot.com/scp-014-int",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "os": 2
+        },
+        {
+          "id": "apocrifo",
+          "title": "Apocrifo",
+          "url": "http://fondazionescp.wikidot.com/apocrifo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:ultimo-in-vita",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "ultimo-in-vita",
+      "title": "Sogno ancora di rimanere l'ultimo in vita",
+      "sourceListURL": "http://fondazionescp.wikidot.com/ultimo-in-vita",
+      "officialHubURL": "http://fondazionescp.wikidot.com/ultimo-in-vita",
+      "hubPresentation": "standard",
+      "canonicalTag": "ultimo-in-vita",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:un-ultimo-saluto",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "un-ultimo-saluto",
+      "title": "Un ultimo saluto",
+      "sourceListURL": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
+      "officialHubURL": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
+      "hubPresentation": "standard",
+      "canonicalTag": "un-ultimo-saluto",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:vittoria-di-pirro",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "vittoria-di-pirro",
+      "title": "Vittoria di Pirro",
+      "sourceListURL": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
+      "officialHubURL": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
+      "hubPresentation": "standard",
+      "canonicalTag": "vittoria-di-pirro",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:l-ultimo-della-linea-15",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "l-ultimo-della-linea-15",
+      "title": "L'ultimo della Linea 15",
+      "sourceListURL": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
+      "officialHubURL": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
+      "hubPresentation": "standard",
+      "canonicalTag": "l-ultimo-della-linea-15",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:sette-rintocchi",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "sette-rintocchi",
+      "title": "Sette Rintocchi",
+      "sourceListURL": "http://fondazionescp.wikidot.com/sette-rintocchi",
+      "officialHubURL": "http://fondazionescp.wikidot.com/sette-rintocchi",
+      "hubPresentation": "standard",
+      "canonicalTag": "sette-rintocchi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-098",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-098",
+      "title": "Richiamo dagli abissi",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-098",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-098",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-098",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:eredi",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "eredi",
+      "title": "Eredi",
+      "sourceListURL": "http://fondazionescp.wikidot.com/eredi",
+      "officialHubURL": "http://fondazionescp.wikidot.com/eredi",
+      "hubPresentation": "standard",
+      "canonicalTag": "eredi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:epilogo-di-un-assassino",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "epilogo-di-un-assassino",
+      "title": "Epilogo di un assassino",
+      "sourceListURL": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
+      "officialHubURL": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
+      "hubPresentation": "standard",
+      "canonicalTag": "epilogo-di-un-assassino",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:gian-galeazzo",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "gian-galeazzo",
+      "title": "Gian Galeazzo",
+      "sourceListURL": "http://fondazionescp.wikidot.com/gian-galeazzo",
+      "officialHubURL": "http://fondazionescp.wikidot.com/gian-galeazzo",
+      "hubPresentation": "standard",
+      "canonicalTag": "gian-galeazzo",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:il-peso-delle-responsabilita",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "il-peso-delle-responsabilita",
+      "title": "Il peso delle responsabilità",
+      "sourceListURL": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
+      "officialHubURL": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
+      "hubPresentation": "standard",
+      "canonicalTag": "il-peso-delle-responsabilita",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:dossier-del-sito-deus",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "dossier-del-sito-deus",
+      "title": "Dossier del Sito Deus",
+      "sourceListURL": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
+      "officialHubURL": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
+      "hubPresentation": "standard",
+      "canonicalTag": "dossier-del-sito-deus",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:dossier-luca-spallacci",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "dossier-luca-spallacci",
+      "title": "Fascicolo Persona d'Interesse: Luca Spallacci",
+      "sourceListURL": "http://fondazionescp.wikidot.com/dossier-luca-spallacci",
+      "officialHubURL": "http://fondazionescp.wikidot.com/dossier-luca-spallacci",
+      "hubPresentation": "standard",
+      "canonicalTag": "dossier-luca-spallacci",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:vedete-da-lassu",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "vedete-da-lassu",
+      "title": "Vedete da Lassù",
+      "sourceListURL": "http://fondazionescp.wikidot.com/vedete-da-lassu",
+      "officialHubURL": "http://fondazionescp.wikidot.com/vedete-da-lassu",
+      "hubPresentation": "standard",
+      "canonicalTag": "vedete-da-lassu",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-120",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-120",
+      "title": "Questo nome è di tutti",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-120",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-120",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-120",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:cenobirma",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "cenobirma",
+      "title": "SCP-IT-003—EP.01—Cenobirma Irma",
+      "sourceListURL": "http://fondazionescp.wikidot.com/cenobirma",
+      "officialHubURL": "http://fondazionescp.wikidot.com/cenobirma",
+      "hubPresentation": "standard",
+      "canonicalTag": "cenobirma",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-003",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-003",
+      "title": "Il Paradigma di Weber",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-003",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-003",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-003",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-026",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-026",
+      "title": "Il Test di Arendt",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-026",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-026",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-026",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:vedi-napoli-e-poi-muori",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "vedi-napoli-e-poi-muori",
+      "title": "Vedi Napoli e poi Muori",
+      "sourceListURL": "http://fondazionescp.wikidot.com/vedi-napoli-e-poi-muori",
+      "officialHubURL": "http://fondazionescp.wikidot.com/vedi-napoli-e-poi-muori",
+      "hubPresentation": "standard",
+      "canonicalTag": "vedi-napoli-e-poi-muori",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:quando-napoli-piange-firenze-ride",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "quando-napoli-piange-firenze-ride",
+      "title": "Quando Napoli piange, Firenze ride",
+      "sourceListURL": "http://fondazionescp.wikidot.com/quando-napoli-piange-firenze-ride",
+      "officialHubURL": "http://fondazionescp.wikidot.com/quando-napoli-piange-firenze-ride",
+      "hubPresentation": "standard",
+      "canonicalTag": "quando-napoli-piange-firenze-ride",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:addio-roma-addio-napoli",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "addio-roma-addio-napoli",
+      "title": "Addio Roma, addio Napoli",
+      "sourceListURL": "http://fondazionescp.wikidot.com/addio-roma-addio-napoli",
+      "officialHubURL": "http://fondazionescp.wikidot.com/addio-roma-addio-napoli",
+      "hubPresentation": "standard",
+      "canonicalTag": "addio-roma-addio-napoli",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:tutto-il-mondo-e-paese",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "tutto-il-mondo-e-paese",
+      "title": "Tutto Il Mondo È Paese",
+      "sourceListURL": "http://fondazionescp.wikidot.com/tutto-il-mondo-e-paese",
+      "officialHubURL": "http://fondazionescp.wikidot.com/tutto-il-mondo-e-paese",
+      "hubPresentation": "standard",
+      "canonicalTag": "tutto-il-mondo-e-paese",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-001",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-001",
+      "title": "Stat Febris Pristina Nomine",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-001",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-001",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-001",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-004",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-004",
+      "title": "Realizziamo i Vostri Sogni",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-004",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-004",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-004",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-019",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-019",
+      "title": "Dove un tempo mormorava il fiume",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-019",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-019",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-019",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-096",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-096",
+      "title": "GUARDAMI",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-096",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-096",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-096",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-181",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-181",
+      "title": "Morte d'Attore",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-181",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-181",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-it-181",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:il-crepuscolo-dell-ordine",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "il-crepuscolo-dell-ordine",
+      "title": "Il Crepuscolo dell'Ordine",
+      "sourceListURL": "http://fondazionescp.wikidot.com/il-crepuscolo-dell-ordine",
+      "officialHubURL": "http://fondazionescp.wikidot.com/il-crepuscolo-dell-ordine",
+      "hubPresentation": "standard",
+      "canonicalTag": "il-crepuscolo-dell-ordine",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:incidente-vela-cuore-d-inchiostro",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "incidente-vela-cuore-d-inchiostro",
+      "title": "Incidente Vela / Cuore d'Inchiostro",
+      "sourceListURL": "http://fondazionescp.wikidot.com/incidente-vela-cuore-d-inchiostro",
+      "officialHubURL": "http://fondazionescp.wikidot.com/incidente-vela-cuore-d-inchiostro",
+      "hubPresentation": "standard",
+      "canonicalTag": "incidente-vela-cuore-d-inchiostro",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:pluet-ignem",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "pluet-ignem",
+      "title": "Pluet Ignem",
+      "sourceListURL": "http://fondazionescp.wikidot.com/pluet-ignem",
+      "officialHubURL": "http://fondazionescp.wikidot.com/pluet-ignem",
+      "hubPresentation": "standard",
+      "canonicalTag": "pluet-ignem",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:secondo-vi-odia-ma-dal-profondo-del-cuore",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "secondo-vi-odia-ma-dal-profondo-del-cuore",
+      "title": "Secondo Vi Odia, ma dal Profondo del Cuore",
+      "sourceListURL": "http://fondazionescp.wikidot.com/secondo-vi-odia-ma-dal-profondo-del-cuore",
+      "officialHubURL": "http://fondazionescp.wikidot.com/secondo-vi-odia-ma-dal-profondo-del-cuore",
+      "hubPresentation": "standard",
+      "canonicalTag": "secondo-vi-odia-ma-dal-profondo-del-cuore",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:sul-tetto-del-mondo",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "sul-tetto-del-mondo",
+      "title": "Sul Tetto del Mondo",
+      "sourceListURL": "http://fondazionescp.wikidot.com/sul-tetto-del-mondo",
+      "officialHubURL": "http://fondazionescp.wikidot.com/sul-tetto-del-mondo",
+      "hubPresentation": "standard",
+      "canonicalTag": "sul-tetto-del-mondo",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-it:collection:canon:trovare-un-confine",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "trovare-un-confine",
+      "title": "Trovare un Confine",
+      "sourceListURL": "http://fondazionescp.wikidot.com/trovare-un-confine",
+      "officialHubURL": "http://fondazionescp.wikidot.com/trovare-un-confine",
+      "hubPresentation": "standard",
+      "canonicalTag": "trovare-un-confine",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "it",
+            "reason": "region"
+          },
+          {
+            "tag": "canoni-alternativi",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    }
+  ]
+}
