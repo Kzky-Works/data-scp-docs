@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784475903,
-  "generatedAt": "2026-07-19T15:45:03Z",
-  "chunkRevision": "sha256-93d2c7d7073a17f1a1f06d4d00268f7a927998b8a8d855ed67fac0fa7b24e92a",
+  "listVersion": 1784550611,
+  "generatedAt": "2026-07-20T12:30:11Z",
+  "chunkRevision": "sha256-5d293dfd5f785f4560a276064a85bf4fffcd8bc8d4017a0d94cb7cb873587638",
   "builtFrom": {
     "manifests": [
       {
@@ -10,60 +10,60 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1784398973,
-        "generatedAt": "2026-07-18T18:22:53Z",
-        "contentHash": "sha256-aca5e889461bfd2298c6beabad914d6b86a360b1e3dd065da61b93dbf0af0497"
+        "listVersion": 1784536017,
+        "generatedAt": "2026-07-20T08:26:57Z",
+        "contentHash": "sha256-6603c5e0c2ce16cce361a779c22a008f1a7d0c93612f333d1d37f71743e6842e"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1784398977,
-        "generatedAt": "2026-07-18T18:22:57Z",
-        "contentHash": "sha256-d63aae0286f5ac388074a20b9e36943adba1e1528770031dbdb39864fae1f71f"
+        "listVersion": 1784536023,
+        "generatedAt": "2026-07-20T08:27:03Z",
+        "contentHash": "sha256-f1dfd61920aca0d8053df234d006f57938bd20803bfec7219b25cb46c2ca2822"
       },
       {
         "kind": "manifest_scp-cn",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-cn.json",
         "schemaVersion": 2,
-        "listVersion": 1784425817,
-        "generatedAt": "2026-07-19T01:50:17Z",
-        "contentHash": "sha256-a0d68f33e8686db823b0ecf15c57958a3d2199e354f0fa3d53e10589cef12437"
+        "listVersion": 1784535920,
+        "generatedAt": "2026-07-20T08:25:20Z",
+        "contentHash": "sha256-5ea34cee478b748dbb96fbaa2d01cac33e6627857c79107891e35fc91ca40635"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1784419561,
-        "generatedAt": "2026-07-19T00:06:01Z",
-        "contentHash": "sha256-c95fa3fadf484722f6e8d0e863e83cd70c5e2e2d516836038f94d881691d3339"
+        "listVersion": 1784535960,
+        "generatedAt": "2026-07-20T08:26:00Z",
+        "contentHash": "sha256-c8214895bc89ea5a5e7d30d751730a45d7bd1f51e12697da511049fdafe7d057"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1784425833,
-        "generatedAt": "2026-07-19T01:50:33Z",
-        "contentHash": "sha256-2fd730ed256d506776f6dab79b91ff76fe628a28e7c468f756da0774af729e31"
+        "listVersion": 1784535947,
+        "generatedAt": "2026-07-20T08:25:47Z",
+        "contentHash": "sha256-a2cb642939c5ffa964774b0b476103695e8df0aacb80858f8124a5af433f131a"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1784425560,
-        "generatedAt": "2026-07-19T01:46:00Z",
-        "contentHash": "sha256-a421072db6c7c5c1aa5a3fa557419732ba449c50e10bf88e9b3e29ebe2a6ef22"
+        "listVersion": 1784536010,
+        "generatedAt": "2026-07-20T08:26:50Z",
+        "contentHash": "sha256-8cb029fe87dd1620b21f01e5434f858a6a83d21a8309fe17e7935dc5fe8f9492"
       }
     ],
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-0ffc489409616f1cf69aeb5cd4066c94080306a8c9e42f24d0c895116b55588e"
+      "contentHash": "sha256-c35efcfe7eeae15813f4b2d1462f06273a316ca8eee2e984533d20d6f53de7f5"
     }
   },
   "collections": [
@@ -2750,6 +2750,13 @@
           "id": "uranusday",
           "title": "星期八再见（部分发现、来源不明的中国儿童节目；2007年之前）",
           "url": "https://scp-wiki-cn.wikidot.com/uranusday",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "false-home",
+          "title": "弗斯之家 / The False Home (丢失的、来源不明的社会实验性质真人出演的地下网络剧集；2014年之前)",
+          "url": "https://scp-wiki-cn.wikidot.com/false-home",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
