@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1784592959,
+  "generatedAt": "2026-07-21T00:15:59Z",
+  "chunkRevision": "sha256-39233d758b003b4b18c70c3515a4991df0d678720158b2844ab9d54ff9d2f21f",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-pt",
+        "path": "DataPipeline/list/pt/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1784592767,
+        "generatedAt": "2026-07-21T00:12:47Z",
+        "contentHash": "sha256-ee19c24716e09e0aeb9ca30fda704c8a0fd9302b15149d957ae6730b22940195"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-56156da6f235b9e58e811fc6906c2a059a065248bcb1700d2da033409b11e41c"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-pt:collection:canon:fundacao-lusofona",
+      "branchID": "scp-pt",
+      "kind": "canon",
+      "hubID": "fundacao-lusofona",
+      "title": "Cânone da Fundação Lusófona",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/fundacao-lusofona",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/fundacao-lusofona",
+      "hubPresentation": "standard",
+      "canonicalTag": "fundacao-lusofona",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "pt",
+            "reason": "region"
+          },
+          {
+            "tag": "organograma",
+            "reason": "genericSiteStructure"
+          }
+        ],
+        "notes": [
+          "The official Fundação Lusófona canon hub exposes no member list and has no canon-specific reverse-lookup tag; reviewed live on 2026-07-21 as an officialHubOnly native detail."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; the official native canon surface has no member list"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    }
+  ]
+}
