@@ -1,0 +1,3655 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1784633594,
+  "generatedAt": "2026-07-21T11:33:14Z",
+  "chunkRevision": "sha256-f90b520cf5671df6bc4c8219f77785aca6fef083c52d4c14c4e620097058ee7b",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-zh-tr",
+        "path": "DataPipeline/list/zh-tr/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1784631535,
+        "generatedAt": "2026-07-21T10:58:55Z",
+        "contentHash": "sha256-9939f98070cf6a87a10eb4914887d9ff44f561e020659127924cd7868d759c0f"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-zh-tr",
+        "path": "DataPipeline/list/zh-tr/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1784631545,
+        "generatedAt": "2026-07-21T10:59:05Z",
+        "contentHash": "sha256-639866e81a221442b50b9fa9e9db6c470f4e059e8b1d34d2e26079df61661271"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-zh-tr",
+        "path": "DataPipeline/list/zh-tr/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1784631285,
+        "generatedAt": "2026-07-21T10:54:45Z",
+        "contentHash": "sha256-6bd1c8bf6d078897fd32ce49dbf15dd5da5bc5023e7846fdbefafa0ce4f01659"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-zh-tr",
+        "path": "DataPipeline/list/zh-tr/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1784631056,
+        "generatedAt": "2026-07-21T10:50:56Z",
+        "contentHash": "sha256-9195b5df5d89e3ee4d97d83f54679ced2b1af71796c251ade537594cf01d0371"
+      },
+      {
+        "kind": "manifest_scp-zh-tr",
+        "branchID": "scp-zh-tr",
+        "path": "DataPipeline/list/zh-tr/manifest_scp-zh-tr.json",
+        "schemaVersion": 2,
+        "listVersion": 1784631444,
+        "generatedAt": "2026-07-21T10:57:24Z",
+        "contentHash": "sha256-6eac1a5bfe4204722c6f9ab0a5943ef9abd704f2aad472b5440110fc7589b001"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-zh-tr",
+        "path": "DataPipeline/list/zh-tr/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1784633553,
+        "generatedAt": "2026-07-21T11:32:33Z",
+        "contentHash": "sha256-c3233448d08f412ae072f588bf76f25011c4b8f0e2cf91ff10641b7cce005c8a"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-859f0303c2c0cdb00d5c264096abd8fbddcb069d500cdf0cfd0eabd5dfa70e35"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-zh-tr:collection:canon:operation-nucleon-bank",
+      "branchID": "scp-zh-tr",
+      "kind": "canon",
+      "hubID": "operation-nucleon-bank",
+      "title": "核裂擠兌",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank",
+      "hubPresentation": "standard",
+      "canonicalTag": "核裂擠兌",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "核裂擠兌",
+        "rejected": [
+          {
+            "tag": "site-zh-50",
+            "reason": "notCollectionSpecific"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "天紀-17",
+            "reason": "notCollectionSpecific"
+          },
+          {
+            "tag": "第八處",
+            "reason": "notCollectionSpecific"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Canonハブと収録作品に共通する固有タグ。完走済みタグ地図で複数のメンバーを逆引きできることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "tag-confirmed members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-zh-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "v",
+          "title": "一如往常",
+          "url": "http://scp-zh-tr.wikidot.com/v",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "lucid-dream",
+          "title": "清醒夢",
+          "url": "http://scp-zh-tr.wikidot.com/lucid-dream",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "operation-nucleon-bank-minger",
+          "title": "事件代號：核裂擠兌-指揮官Minger的視角",
+          "url": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank-minger",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "operation-nucleon-bank-semibreve",
+          "title": "事件代號：核裂擠兌-主任Semibreve的視角",
+          "url": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank-semibreve",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "operation-nucleon-bank-run-1",
+          "title": "裂變序言",
+          "url": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank-run-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "i-m-not-fine",
+          "title": "事件代號：核裂擠兌-後勤醫護人員研究員L.What視角",
+          "url": "http://scp-zh-tr.wikidot.com/i-m-not-fine",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "after-the-boom",
+          "title": "逍遙前",
+          "url": "http://scp-zh-tr.wikidot.com/after-the-boom",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "operation-nucleon-bank-cobweb01",
+          "title": "事件代號：核裂擠兌 蛛網裡的老鷹",
+          "url": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank-cobweb01",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "operation-nucleon-bank-hg",
+          "title": "事件代號：核裂擠兌-外勤研究員 水銀視角",
+          "url": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank-hg",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "scp-zh-899",
+          "title": "穿越的特工",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-899",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "scp-zh-802",
+          "title": "利刃所向",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-802",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "the-declaration",
+          "title": "事件代號：核裂擠兌-誓言",
+          "url": "http://scp-zh-tr.wikidot.com/the-declaration",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "discipline",
+          "title": "紀律嚴明",
+          "url": "http://scp-zh-tr.wikidot.com/discipline",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:canon:shopping-arcade",
+      "branchID": "scp-zh-tr",
+      "kind": "canon",
+      "hubID": "shopping-arcade",
+      "title": "繁中站點地下街",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/shopping-arcade",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/shopping-arcade",
+      "hubPresentation": "standard",
+      "canonicalTag": "地下街",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "地下街",
+        "rejected": [
+          {
+            "tag": "三垣",
+            "reason": "notCollectionSpecific"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Canonハブと収録作品に共通する固有タグ。完走済みタグ地図で複数のメンバーを逆引きできることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "tag-confirmed members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-zh-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-zh-098",
+          "title": "「寧靜」",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-098",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 28
+        },
+        {
+          "id": "scp-zh-618",
+          "title": "太陽餅獅",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-618",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 59
+        },
+        {
+          "id": "scp-zh-009",
+          "title": "臺式早點",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-009",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "blue-0428",
+          "title": "洗標：藍0428-Dr. V的實驗袍",
+          "url": "http://scp-zh-tr.wikidot.com/blue-0428",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "memory-of-light",
+          "title": "燈火記憶",
+          "url": "http://scp-zh-tr.wikidot.com/memory-of-light",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "scp-zh-779",
+          "title": "佛眼金睛",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-779",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "scp-zh-350",
+          "title": "貓貓巡邏隊",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-350",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "dappoopoo",
+          "title": "非典型遊說部門 （Department of Atypical Persuasion DAP）｜商店及服務評論",
+          "url": "http://scp-zh-tr.wikidot.com/dappoopoo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "mooninwater",
+          "title": "水中撈月",
+          "url": "http://scp-zh-tr.wikidot.com/mooninwater",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "for-the-curse-of-us",
+          "title": "少年L的希死念慮",
+          "url": "http://scp-zh-tr.wikidot.com/for-the-curse-of-us",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "koy-joe",
+          "title": "地下街偽親子一日遊",
+          "url": "http://scp-zh-tr.wikidot.com/koy-joe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "self-coup-of-the-knavish",
+          "title": "執左道者的自我政變",
+          "url": "http://scp-zh-tr.wikidot.com/self-coup-of-the-knavish",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "nx-zh-02",
+          "title": "NX-ZH-02：西加走灣群島",
+          "url": "http://scp-zh-tr.wikidot.com/nx-zh-02",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 26
+        },
+        {
+          "id": "the-ss-vs-ss",
+          "title": "炙熱的午後時光",
+          "url": "http://scp-zh-tr.wikidot.com/the-ss-vs-ss",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 33
+        },
+        {
+          "id": "20210428",
+          "title": "行動代號：0428突襲計畫",
+          "url": "http://scp-zh-tr.wikidot.com/20210428",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "source-of-chaos",
+          "title": "2010年的那幾個實習生",
+          "url": "http://scp-zh-tr.wikidot.com/source-of-chaos",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "a-battlefield-without-emotion",
+          "title": "無面的沙場",
+          "url": "http://scp-zh-tr.wikidot.com/a-battlefield-without-emotion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "discipline",
+          "title": "紀律嚴明",
+          "url": "http://scp-zh-tr.wikidot.com/discipline",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "self-service-laundry-zh",
+          "title": "基金會員工排起了隊",
+          "url": "http://scp-zh-tr.wikidot.com/self-service-laundry-zh",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "eclipse-absence",
+          "title": "缺席者的盛宴",
+          "url": "http://scp-zh-tr.wikidot.com/eclipse-absence",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:canon:navigation",
+      "branchID": "scp-zh-tr",
+      "kind": "canon",
+      "hubID": "navigation",
+      "title": "航海學",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/navigation",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/navigation",
+      "hubPresentation": "standard",
+      "canonicalTag": "航海學",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "航海學",
+        "rejected": [
+          {
+            "tag": "site-zh-81",
+            "reason": "notCollectionSpecific"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Canonハブと収録作品に共通する固有タグ。完走済みタグ地図で複数のメンバーを逆引きできることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "tag-confirmed members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-zh-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "rocaf",
+          "title": "凌雲御風起",
+          "url": "http://scp-zh-tr.wikidot.com/rocaf",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "resign-in-navigation",
+          "title": "為了更好的結局而離職",
+          "url": "http://scp-zh-tr.wikidot.com/resign-in-navigation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "dream-about-tomorrow",
+          "title": "無夢之人是否會夢到明天的景色",
+          "url": "http://scp-zh-tr.wikidot.com/dream-about-tomorrow",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "they-throw-them-into-the-sea",
+          "title": "他們把人扔進了海裡",
+          "url": "http://scp-zh-tr.wikidot.com/they-throw-them-into-the-sea",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "scp-zh-700",
+          "title": "預言後依然難以避免",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-700",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "color-of-take-a-bow",
+          "title": "謝幕的顏色",
+          "url": "http://scp-zh-tr.wikidot.com/color-of-take-a-bow",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "scp-zh-113",
+          "title": "抹殺事情的真相",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-113",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 33
+        },
+        {
+          "id": "maybe-some-coffee-in-the-ocean-park",
+          "title": "也許，一個溫暖的午後，在海洋公園啜飲咖啡",
+          "url": "http://scp-zh-tr.wikidot.com/maybe-some-coffee-in-the-ocean-park",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "swift",
+          "title": "雨燕",
+          "url": "http://scp-zh-tr.wikidot.com/swift",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "color-of-hope",
+          "title": "希望的顏色",
+          "url": "http://scp-zh-tr.wikidot.com/color-of-hope",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "a-battlefield-without-emotion",
+          "title": "無面的沙場",
+          "url": "http://scp-zh-tr.wikidot.com/a-battlefield-without-emotion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "teapotoao",
+          "title": "末日時能泡杯茶嗎？",
+          "url": "http://scp-zh-tr.wikidot.com/teapotoao",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "backtohome",
+          "title": "歸途",
+          "url": "http://scp-zh-tr.wikidot.com/backtohome",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "all-the-bridges-were-burned",
+          "title": "所有的橋都被燒掉了",
+          "url": "http://scp-zh-tr.wikidot.com/all-the-bridges-were-burned",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "hammer",
+          "title": "狼頭",
+          "url": "http://scp-zh-tr.wikidot.com/hammer",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "crown",
+          "title": "加冕為亡",
+          "url": "http://scp-zh-tr.wikidot.com/crown",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "arrowhead",
+          "title": "矢尖",
+          "url": "http://scp-zh-tr.wikidot.com/arrowhead",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "end-of-heavy-snow",
+          "title": "銀裝素裹",
+          "url": "http://scp-zh-tr.wikidot.com/end-of-heavy-snow",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "first-but-last",
+          "title": "最後一場雪",
+          "url": "http://scp-zh-tr.wikidot.com/first-but-last",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "scp-zh-131",
+          "title": "彼岸花開",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-131",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "can-have-a-barbecue-in-ends",
+          "title": "末日來時能烤肉嗎",
+          "url": "http://scp-zh-tr.wikidot.com/can-have-a-barbecue-in-ends",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "self-coup-of-the-knavish",
+          "title": "執左道者的自我政變",
+          "url": "http://scp-zh-tr.wikidot.com/self-coup-of-the-knavish",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19
+        },
+        {
+          "id": "interview-of-x",
+          "title": "完美犯X的入職",
+          "url": "http://scp-zh-tr.wikidot.com/interview-of-x",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "newandnewandnew",
+          "title": "沉睡",
+          "url": "http://scp-zh-tr.wikidot.com/newandnewandnew",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "obstacle",
+          "title": "障礙",
+          "url": "http://scp-zh-tr.wikidot.com/obstacle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "discipline",
+          "title": "紀律嚴明",
+          "url": "http://scp-zh-tr.wikidot.com/discipline",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:canon:operation-twin-cities-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "canon",
+      "hubID": "operation-twin-cities-hub",
+      "title": "雙城作戰",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/operation-twin-cities-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/operation-twin-cities-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "雙城作戰",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "雙城作戰",
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Canonハブと収録作品に共通する固有タグ。完走済みタグ地図で複数のメンバーを逆引きできることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "tag-confirmed members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-zh-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-zh-256",
+          "title": "基改山泉",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-256",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "disremember",
+          "title": "潛在危險無法被文字記錄",
+          "url": "http://scp-zh-tr.wikidot.com/disremember",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "scp-zh-888",
+          "title": "霾",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-888",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 22
+        },
+        {
+          "id": "no-moon-night",
+          "title": "無月之夜",
+          "url": "http://scp-zh-tr.wikidot.com/no-moon-night",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "so-we-won-lost-and-then-what",
+          "title": "阿我們贏了/輸了，然後勒？",
+          "url": "http://scp-zh-tr.wikidot.com/so-we-won-lost-and-then-what",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "remove-before-flight",
+          "title": "飛行前拆除",
+          "url": "http://scp-zh-tr.wikidot.com/remove-before-flight",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "air-combat-of-vizmor",
+          "title": "維茲莫爾嶺空戰",
+          "url": "http://scp-zh-tr.wikidot.com/air-combat-of-vizmor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "red-cloud-strike",
+          "title": "臨界突擊",
+          "url": "http://scp-zh-tr.wikidot.com/red-cloud-strike",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "bell-frame",
+          "title": "鐘架",
+          "url": "http://scp-zh-tr.wikidot.com/bell-frame",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "limit-scale",
+          "title": "極限刻度",
+          "url": "http://scp-zh-tr.wikidot.com/limit-scale",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "negative",
+          "title": "Negative",
+          "url": "http://scp-zh-tr.wikidot.com/negative",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "i-must-scream",
+          "title": "不默而生",
+          "url": "http://scp-zh-tr.wikidot.com/i-must-scream",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "absent",
+          "title": "缺席",
+          "url": "http://scp-zh-tr.wikidot.com/absent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "pls-just-leave-im-begging-you",
+          "title": "基金會怎麼還不走:(",
+          "url": "http://scp-zh-tr.wikidot.com/pls-just-leave-im-begging-you",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "a-battlefield-without-emotion",
+          "title": "無面的沙場",
+          "url": "http://scp-zh-tr.wikidot.com/a-battlefield-without-emotion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9
+        },
+        {
+          "id": "scp-zh-802",
+          "title": "利刃所向",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-802",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "discipline",
+          "title": "紀律嚴明",
+          "url": "http://scp-zh-tr.wikidot.com/discipline",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "after-the-boom",
+          "title": "逍遙前",
+          "url": "http://scp-zh-tr.wikidot.com/after-the-boom",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:canon:taiwan-miracle-exposition",
+      "branchID": "scp-zh-tr",
+      "kind": "canon",
+      "hubID": "taiwan-miracle-exposition",
+      "title": "神異博覽會一九三五",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/taiwan-miracle-exposition",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/taiwan-miracle-exposition",
+      "hubPresentation": "standard",
+      "canonicalTag": "神異博覽會",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "神異博覽會",
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Canonハブと収録作品に共通する固有タグ。完走済みタグ地図で複数のメンバーを逆引きできることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "tag-confirmed members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-zh-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-zh-046",
+          "title": "巡山靈",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-046",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "scp-zh-061",
+          "title": "本車開往博覽會",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-061",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "scp-zh-157",
+          "title": "暢行無阻",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-157",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "scp-zh-304",
+          "title": "行進插曲",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-304",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "scp-zh-327",
+          "title": "花兒與檳榔",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-327",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "1935-overture-night-rain",
+          "title": "一九三五序曲 - 夜雨",
+          "url": "http://scp-zh-tr.wikidot.com/1935-overture-night-rain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "who-is-the-asian-orphan",
+          "title": "亞細亞的孤兒是誰",
+          "url": "http://scp-zh-tr.wikidot.com/who-is-the-asian-orphan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "meretrix-mimicking-cyrenidae",
+          "title": "擬態的台灣蜆.html",
+          "url": "http://scp-zh-tr.wikidot.com/meretrix-mimicking-cyrenidae",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "taiwan-newspaper",
+          "title": "台灣異新報、昭和十年十一月一日",
+          "url": "http://scp-zh-tr.wikidot.com/taiwan-newspaper",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "to-the-doctor",
+          "title": "你是啥物人？",
+          "url": "http://scp-zh-tr.wikidot.com/to-the-doctor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "the-diverging-paths-of-koumin-literature",
+          "title": "皇民文學中的歧路：〈香楠枝〉與鹿野純平的「異觀點」書寫",
+          "url": "http://scp-zh-tr.wikidot.com/the-diverging-paths-of-koumin-literature",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 15
+        },
+        {
+          "id": "scp-zh-493",
+          "title": "「迷離」釉藥",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-493",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "scp-zh-306",
+          "title": "挖掘過深",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-306",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 30
+        },
+        {
+          "id": "scp-zh-668",
+          "title": "「廣內」",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-668",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "wdym-400th-year",
+          "title": "【提問】開台四百年要做什麼？",
+          "url": "http://scp-zh-tr.wikidot.com/wdym-400th-year",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 22
+        },
+        {
+          "id": "scp-zh-345",
+          "title": "不願參與的悲劇",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-345",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 25
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:canon:azure-skydome-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "canon",
+      "hubID": "azure-skydome-hub",
+      "title": "燦藍天穹",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/azure-skydome-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/azure-skydome-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "燦藍天穹",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "燦藍天穹",
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Canonハブと収録作品に共通する固有タグ。完走済みタグ地図で複数のメンバーを逆引きできることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "tag-confirmed members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-zh-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-zh-835",
+          "title": "燦藍神化天穹",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-835",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 45
+        },
+        {
+          "id": "scp-zh-989",
+          "title": "托爾萊德症候群 我們腦中的太陽",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-989",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "jingzhe",
+          "title": "驚蟄",
+          "url": "http://scp-zh-tr.wikidot.com/jingzhe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "shadow-of-the-sun-1",
+          "title": "未知航程：恆星之影1-1",
+          "url": "http://scp-zh-tr.wikidot.com/shadow-of-the-sun-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "shadow-of-the-sun-2",
+          "title": "未知航程：恆星之影1-2",
+          "url": "http://scp-zh-tr.wikidot.com/shadow-of-the-sun-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10
+        },
+        {
+          "id": "shadow-of-the-sun-3",
+          "title": "未知航程：恆星之影1-3",
+          "url": "http://scp-zh-tr.wikidot.com/shadow-of-the-sun-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "shadow-of-the-sun-4",
+          "title": "未知航程：恆星之影1-4",
+          "url": "http://scp-zh-tr.wikidot.com/shadow-of-the-sun-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "red-star-0-5",
+          "title": "未知航程：海峽戰役2-1",
+          "url": "http://scp-zh-tr.wikidot.com/red-star-0-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "red-earth-2",
+          "title": "未知航程：海峽戰役2-2",
+          "url": "http://scp-zh-tr.wikidot.com/red-earth-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        },
+        {
+          "id": "red-earth-3",
+          "title": "未知航程：海峽戰役2-3",
+          "url": "http://scp-zh-tr.wikidot.com/red-earth-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "red-earth-4",
+          "title": "未知航程：海峽戰役2-4",
+          "url": "http://scp-zh-tr.wikidot.com/red-earth-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "a-precise-bombing",
+          "title": "精準轟炸",
+          "url": "http://scp-zh-tr.wikidot.com/a-precise-bombing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "ancient-taiwan-chronicle",
+          "title": "母親、異族、大洪水：上古台灣異常史講座",
+          "url": "http://scp-zh-tr.wikidot.com/ancient-taiwan-chronicle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "your-last-working-day",
+          "title": "你的最後一個工作日",
+          "url": "http://scp-zh-tr.wikidot.com/your-last-working-day",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12
+        },
+        {
+          "id": "blue-eyes-white-dragon",
+          "title": "斷開連結",
+          "url": "http://scp-zh-tr.wikidot.com/blue-eyes-white-dragon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "queen-of-farangaw",
+          "title": "馬蘭女王",
+          "url": "http://scp-zh-tr.wikidot.com/queen-of-farangaw",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 18
+        },
+        {
+          "id": "wynn-village-reconnaissance-mission-description",
+          "title": "懷恩村偵察任務說明",
+          "url": "http://scp-zh-tr.wikidot.com/wynn-village-reconnaissance-mission-description",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "scp-zh-955",
+          "title": "Consider a spherical human.",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-955",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "scp-zh-621",
+          "title": "瘟疫飛揚於奇蹟之島",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-621",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "scp-zh-852",
+          "title": "一瞥靈光",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-852",
+          "sourceManifest": "manifest_scp-zh-tr",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "assessing-the-possibility-of-using-scp-zh-621-patients-as-an",
+          "title": "利用SCP-ZH-621感染者作為另類Elan-Vital Energy電池之可行性",
+          "url": "http://scp-zh-tr.wikidot.com/assessing-the-possibility-of-using-scp-zh-621-patients-as-an",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        },
+        {
+          "id": "attempt-of-type-green-and-bluenullification-via-aether-rewea",
+          "title": "重新編織乙太質以無效化綠型和藍型異常性質之嘗試",
+          "url": "http://scp-zh-tr.wikidot.com/attempt-of-type-green-and-bluenullification-via-aether-rewea",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "scp-zh-247-ending-is-beginning",
+          "title": "是嗎？這就是妳所希望的結局......",
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-247-ending-is-beginning",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 1
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:azure-skydome-challenge",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "azure-skydome-challenge",
+      "title": "挑戰活動：天穹之下",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/azure-skydome-challenge",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/azure-skydome-challenge",
+      "hubPresentation": "standard",
+      "canonicalTag": "azure-skydome-challenge",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "燦藍天穹",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:azure-skydome-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "azure-skydome-hub",
+      "title": "燦藍天穹",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/azure-skydome-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/azure-skydome-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "azure-skydome-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "燦藍天穹",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:bell-tosser",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "bell-tosser",
+      "title": "擲鈴手生創 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/bell-tosser",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/bell-tosser",
+      "hubPresentation": "standard",
+      "canonicalTag": "bell-tosser",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:cardinal-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "cardinal-hub",
+      "title": "文章使用零件中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/cardinal-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/cardinal-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "cardinal-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "合作",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:cobweb-international-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "cobweb-international-hub",
+      "title": "蛛網國際 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/cobweb-international-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/cobweb-international-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "cobweb-international-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "蛛網國際",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:goi-bt",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "goi-bt",
+      "title": "拋鈴人中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/goi-bt",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/goi-bt",
+      "hubPresentation": "standard",
+      "canonicalTag": "goi-bt",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "拋鈴人",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:laundry-of-miya",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "laundry-of-miya",
+      "title": "洗衣部門",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/laundry-of-miya",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/laundry-of-miya",
+      "hubPresentation": "standard",
+      "canonicalTag": "laundry-of-miya",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "洗衣部門",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:littlegreatwar2",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "littlegreatwar2",
+      "title": "當游樂場的燈漸熄",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/littlegreatwar2",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/littlegreatwar2",
+      "hubPresentation": "standard",
+      "canonicalTag": "littlegreatwar2",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "wondertainment博士",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "反大麻玩家",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "小小先生",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "故事",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:mu-yi-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "mu-yi-hub",
+      "title": "木易藏書閣 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/mu-yi-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/mu-yi-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "mu-yi-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "木易",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:navigation",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "navigation",
+      "title": "航海學",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/navigation",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/navigation",
+      "hubPresentation": "standard",
+      "canonicalTag": "navigation",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-81",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "航海學",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:operation-nucleon-bank",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "operation-nucleon-bank",
+      "title": "核裂擠兌",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank",
+      "hubPresentation": "standard",
+      "canonicalTag": "operation-nucleon-bank",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-50",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "天紀-17",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "核裂擠兌",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "第八處",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:operation-twin-cities-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "operation-twin-cities-hub",
+      "title": "雙城作戰",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/operation-twin-cities-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/operation-twin-cities-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "operation-twin-cities-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "雙城作戰",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:radiw",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "radiw",
+      "title": "陽嵐之歌 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/radiw",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/radiw",
+      "hubPresentation": "standard",
+      "canonicalTag": "radiw",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "cidal-dongi",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "site-zh-44",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "山本五十嵐",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:secure-facilities-locations-zh",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "secure-facilities-locations-zh",
+      "title": "基金會設施-ZH",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/secure-facilities-locations-zh",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/secure-facilities-locations-zh",
+      "hubPresentation": "standard",
+      "canonicalTag": "secure-facilities-locations-zh",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "合作",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:shopping-arcade",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "shopping-arcade",
+      "title": "繁中站點地下街",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/shopping-arcade",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/shopping-arcade",
+      "hubPresentation": "standard",
+      "canonicalTag": "shopping-arcade",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "三垣",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "地下街",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-16-4th-staff-restaurant-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-16-4th-staff-restaurant-hub",
+      "title": "酣夜櫻華 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-16-4th-staff-restaurant-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-16-4th-staff-restaurant-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-16-4th-staff-restaurant-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2022萬聖事件",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "site-zh-16",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "合著",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "故事",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "酣夜櫻華",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:systematic-restoration-and-recollection-department",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "systematic-restoration-and-recollection-department",
+      "title": "系統還原與追溯部門 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/systematic-restoration-and-recollection-department",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/systematic-restoration-and-recollection-department",
+      "hubPresentation": "standard",
+      "canonicalTag": "systematic-restoration-and-recollection-department",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "srr部",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:taiwan-miracle-exposition",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "taiwan-miracle-exposition",
+      "title": "神異博覽會一九三五",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/taiwan-miracle-exposition",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/taiwan-miracle-exposition",
+      "hubPresentation": "standard",
+      "canonicalTag": "taiwan-miracle-exposition",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "神異博覽會",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:three-enclosures-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "three-enclosures-hub",
+      "title": "「三垣」中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/three-enclosures-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/three-enclosures-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "three-enclosures-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "三垣",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "合作",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:tsars-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "tsars-hub",
+      "title": "沙皇先知協會中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/tsars-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/tsars-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "tsars-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "展出",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "沙皇先知協會",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:urban-legend-department",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "urban-legend-department",
+      "title": "都市傳說型異常應對部門中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/urban-legend-department",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/urban-legend-department",
+      "hubPresentation": "standard",
+      "canonicalTag": "urban-legend-department",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "都異部門",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:yuanji-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "yuanji-hub",
+      "title": "遠己中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/yuanji-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/yuanji-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "yuanji-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "遠己",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:zero-team-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "zero-team-hub",
+      "title": "皇家香港警察隊零號專隊 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/zero-team-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/zero-team-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "zero-team-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "零號專隊",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:zhongyuan-2024",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "zhongyuan-2024",
+      "title": "中元恐怖——早梅詩",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/zhongyuan-2024",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/zhongyuan-2024",
+      "hubPresentation": "standard",
+      "canonicalTag": "zhongyuan-2024",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2024中元恐怖",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:zhongyuan-2025",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "zhongyuan-2025",
+      "title": "中元恐怖——繁星輿圖",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/zhongyuan-2025",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/zhongyuan-2025",
+      "hubPresentation": "standard",
+      "canonicalTag": "zhongyuan-2025",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2025中元恐怖",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:zh-whale-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "zh-whale-hub",
+      "title": "測量鯨魚的長度 中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/zh-whale-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/zh-whale-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "zh-whale-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "合著",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "愚人節同歡",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "搞笑",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-02",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-02",
+      "title": "維安設施檔案：Site-ZH-02",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-02",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-02",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-02",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-02",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "車肆-8",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-11",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-11",
+      "title": "維安設施檔案：Site-ZH-11",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-11",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-11",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-11",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-11",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-12",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-12",
+      "title": "維安設施檔案：Site-ZH-12",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-12",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-12",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-12",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-12",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-13",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-13",
+      "title": "維安設施檔案：Site-ZH-13",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-13",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-13",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-13",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-13",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-16",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-16",
+      "title": "維安設施檔案：Site-ZH-16",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-16",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-16",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-16",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-16",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-25",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-25",
+      "title": "維安設施檔案：Site-ZH-25",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-25",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-25",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-25",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-25",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "木易",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-31",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-31",
+      "title": "維安設施檔案：Site-ZH-31",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-31",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-31",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-31",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-31",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-44",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-44",
+      "title": "維安設施檔案：Site-ZH-44",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-44",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-44",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-44",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "ain博士",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "site-zh-44",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "surge博士",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "葉凡博士",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-50",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-50",
+      "title": "維安設施檔案：Site-ZH-50",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-50",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-50",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-50",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "site-zh-50",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:site-zh-81",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "site-zh-81",
+      "title": "維安設施檔案：Site-ZH-81",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/site-zh-81",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/site-zh-81",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-zh-81",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "koschei.aic",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "reverberate博士",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "site-zh-81",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "站點",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:candy-pumpkin-2021-a",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "candy-pumpkin-2021-a",
+      "title": "2021萬聖月活動頁（創作組）",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/candy-pumpkin-2021-a",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/candy-pumpkin-2021-a",
+      "hubPresentation": "standard",
+      "canonicalTag": "candy-pumpkin-2021-a",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:candy-pumpkin-2021-b",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "candy-pumpkin-2021-b",
+      "title": "2021萬聖月活動頁（藝作組）",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/candy-pumpkin-2021-b",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/candy-pumpkin-2021-b",
+      "hubPresentation": "standard",
+      "canonicalTag": "candy-pumpkin-2021-b",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:christmas-event",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "christmas-event",
+      "title": "聖夜相守中心頁",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/christmas-event",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/christmas-event",
+      "hubPresentation": "standard",
+      "canonicalTag": "christmas-event",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2019聖夜相守",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:christmas-event2",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "christmas-event2",
+      "title": "聖夜相守又一夜",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/christmas-event2",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/christmas-event2",
+      "hubPresentation": "standard",
+      "canonicalTag": "christmas-event2",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2020聖夜相守",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:christmas-event3",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "christmas-event3",
+      "title": "聖夜相守再一夜",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/christmas-event3",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/christmas-event3",
+      "hubPresentation": "standard",
+      "canonicalTag": "christmas-event3",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2021聖夜相守",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:christmas-event4",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "christmas-event4",
+      "title": "聖夜相守另一夜",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/christmas-event4",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/christmas-event4",
+      "hubPresentation": "standard",
+      "canonicalTag": "christmas-event4",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2022聖夜相守",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:christmas-event5",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "christmas-event5",
+      "title": "聖夜相守這一夜",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/christmas-event5",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/christmas-event5",
+      "hubPresentation": "standard",
+      "canonicalTag": "christmas-event5",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2023聖夜相守",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:christmas-event6",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "christmas-event6",
+      "title": "聖夜相守虹光夜",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/christmas-event6",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/christmas-event6",
+      "hubPresentation": "standard",
+      "canonicalTag": "christmas-event6",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "聖夜虹光",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:climb-the-pyramid",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "climb-the-pyramid",
+      "title": "活動：【集合啦！金字塔攀爬隊！】",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/climb-the-pyramid",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/climb-the-pyramid",
+      "hubPresentation": "standard",
+      "canonicalTag": "climb-the-pyramid",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2020攀爬金字塔",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:darkroom-2020",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "darkroom-2020",
+      "title": "2020 虹光之間",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/darkroom-2020",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/darkroom-2020",
+      "hubPresentation": "standard",
+      "canonicalTag": "darkroom-2020",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2020虹光之間",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:darkroom-2022",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "darkroom-2022",
+      "title": "2022 虹光之間",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/darkroom-2022",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/darkroom-2022",
+      "hubPresentation": "standard",
+      "canonicalTag": "darkroom-2022",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2022虹光之間",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:death-eternal-life",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "death-eternal-life",
+      "title": "死亡永生挑戰活動",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/death-eternal-life",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/death-eternal-life",
+      "hubPresentation": "standard",
+      "canonicalTag": "death-eternal-life",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "死亡永生",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:halloween-event-2022",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "halloween-event-2022",
+      "title": "2022萬聖事件",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/halloween-event-2022",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/halloween-event-2022",
+      "hubPresentation": "standard",
+      "canonicalTag": "halloween-event-2022",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "2022萬聖事件",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:pigeon-adoption",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "pigeon-adoption",
+      "title": "挑戰活動 鴿子領養",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/pigeon-adoption",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/pigeon-adoption",
+      "hubPresentation": "standard",
+      "canonicalTag": "pigeon-adoption",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          },
+          {
+            "tag": "鴿子領養",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:series:transfer-challenge-zh",
+      "branchID": "scp-zh-tr",
+      "kind": "series",
+      "hubID": "transfer-challenge-zh",
+      "title": "挑戰活動 職位交換",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/transfer-challenge-zh",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/transfer-challenge-zh",
+      "hubPresentation": "standard",
+      "canonicalTag": "transfer-challenge-zh",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [
+          {
+            "tag": "中心",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "原創",
+            "reason": "region"
+          },
+          {
+            "tag": "挑戰活動",
+            "reason": "unconfirmedCollectionTag"
+          }
+        ],
+        "notes": [
+          "ZH-TR公式Series archive掲載を確認。作品集合を一意に逆引きできる固有タグを確認できないためofficialHubOnly。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-zh-tr:collection:goi:zero-team-hub",
+      "branchID": "scp-zh-tr",
+      "kind": "goi",
+      "hubID": "zero-team-hub",
+      "title": "皇家香港警務處-零號專隊",
+      "sourceListURL": "http://scp-zh-tr.wikidot.com/zero-team-hub",
+      "officialHubURL": "http://scp-zh-tr.wikidot.com/zero-team-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "zero-team-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "zero-team-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.zh-tr"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "zh-tr"
+      },
+      "primaryArticles": [
+        {
+          "id": "e-021",
+          "title": "測試型記憶鞏固觸媒注射",
+          "url": "http://scp-zh-tr.wikidot.com/e-021",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "new-cha-ling",
+          "title": "新茶嶺",
+          "url": "http://scp-zh-tr.wikidot.com/new-cha-ling",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
