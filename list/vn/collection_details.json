@@ -1,0 +1,908 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1784607724,
+  "generatedAt": "2026-07-21T04:22:04Z",
+  "chunkRevision": "sha256-c33e1fc6c3aa9f8088dfd274e4ff1fcb63d2464d0e1442b6a3eb2e67e1a5941d",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-vn",
+        "path": "DataPipeline/list/vn/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1784604922,
+        "generatedAt": "2026-07-21T03:35:22Z",
+        "contentHash": "sha256-9823040373f6d7c479cad6fc255fa6cf4b09bfb283e8d011d3db80c1612a8a40"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-vn",
+        "path": "DataPipeline/list/vn/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1784604928,
+        "generatedAt": "2026-07-21T03:35:28Z",
+        "contentHash": "sha256-ef4dc84fdd5c8f4b48ab22dc85b92ae9267c708953b6cbbc025f6f0e4a7678ad"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-vn",
+        "path": "DataPipeline/list/vn/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1784604853,
+        "generatedAt": "2026-07-21T03:34:13Z",
+        "contentHash": "sha256-40755d0e64cecbd0ee514d49d0324f95910cc55f7410531f7087bbe6e78c2117"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-vn",
+        "path": "DataPipeline/list/vn/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1784604828,
+        "generatedAt": "2026-07-21T03:33:48Z",
+        "contentHash": "sha256-2a6722d60a14abe79ecf637f13d4fa1100ddcdb8ba1e6f4a07dee87186eb1020"
+      },
+      {
+        "kind": "manifest_scp-vn",
+        "branchID": "scp-vn",
+        "path": "DataPipeline/list/vn/manifest_scp-vn.json",
+        "schemaVersion": 2,
+        "listVersion": 1784604801,
+        "generatedAt": "2026-07-21T03:33:21Z",
+        "contentHash": "sha256-f1de9f89ac3eae45f43e663051798cfa785a8692e77797c4928a85f9c381dc6d"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-vn",
+        "path": "DataPipeline/list/vn/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1784607071,
+        "generatedAt": "2026-07-21T04:11:11Z",
+        "contentHash": "sha256-6f178cd19ab58a5d00c3c1511f0ec634f2941d425fb616473ddb3f14adc6b071"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-3a717a9194697a0ec2bc4537b4fa980676b82c84af24dc4134fbc12e326bde70"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-vn:collection:canon:don-vi-tam-linh-hub",
+      "branchID": "scp-vn",
+      "kind": "canon",
+      "hubID": "don-vi-tam-linh-hub",
+      "title": "Đơn Vị Tâm Linh",
+      "sourceListURL": "https://scp-vn.wikidot.com/don-vi-tam-linh-hub",
+      "officialHubURL": "https://scp-vn.wikidot.com/don-vi-tam-linh-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "đơn-vị-tâm-linh",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "đơn-vị-tâm-linh",
+        "rejected": [
+          {
+            "tag": "hub-canon-vn",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "hub-vn",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "VN公式カノンハブと収録作品に共通する固有タグ。現行manifestからSCP 8件・Tales 20件を列挙できることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "28 tag-confirmed native members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "nhat-dinh-thang-loi",
+          "title": "Nhất Định Thắng Lợi",
+          "url": "https://scp-vn.wikidot.com/nhat-dinh-thang-loi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7
+        },
+        {
+          "id": "tieng-sam-giua-bien-lang",
+          "title": "Tiếng Sấm Giữa Biển Lặng",
+          "url": "https://scp-vn.wikidot.com/tieng-sam-giua-bien-lang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "nhung-ke-thach-thuc",
+          "title": "Những Kẻ Thách Thức",
+          "url": "https://scp-vn.wikidot.com/nhung-ke-thach-thuc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-101-vn",
+          "title": "Ngọn Lửa Của Quan Phán Sự",
+          "url": "https://scp-vn.wikidot.com/scp-101-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "nx-59-vn",
+          "title": "NX-59-VN - Quận Không",
+          "url": "https://scp-vn.wikidot.com/nx-59-vn",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "bao-cao-khai-quat-diem-g198-vn",
+          "title": "Báo Cáo Khai Quật Điểm G198-VN",
+          "url": "https://scp-vn.wikidot.com/bao-cao-khai-quat-diem-g198-vn",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "roi-phu-lang-giang",
+          "title": "Rời Phủ Lạng Giang",
+          "url": "https://scp-vn.wikidot.com/roi-phu-lang-giang",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "hung-hoa-mot-chen-tra",
+          "title": "Hưng Hoá, Một Chén Trà",
+          "url": "https://scp-vn.wikidot.com/hung-hoa-mot-chen-tra",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tai-minh-minh-duc",
+          "title": "Tại Minh Minh Đức",
+          "url": "https://scp-vn.wikidot.com/tai-minh-minh-duc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "nhiem-vu-o-thanh-hoa",
+          "title": "Nhiệm Vụ Ở Thanh Hoá",
+          "url": "https://scp-vn.wikidot.com/nhiem-vu-o-thanh-hoa",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mat-toi-cua-quan-phan-su",
+          "title": "Mặt Tối Của Quan Phán Sự",
+          "url": "https://scp-vn.wikidot.com/mat-toi-cua-quan-phan-su",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tuyet-do",
+          "title": "Tuyết Đỏ",
+          "url": "https://scp-vn.wikidot.com/tuyet-do",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "chuong-su-ngam-khuc",
+          "title": "Chưởng Sự Ngâm Khúc",
+          "url": "https://scp-vn.wikidot.com/chuong-su-ngam-khuc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tan-cuoc",
+          "title": "Tàn Cuộc",
+          "url": "https://scp-vn.wikidot.com/tan-cuoc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ca-cap-cuu-o-don-vi-tam-linh",
+          "title": "Ca Cấp Cứu Ở Đơn Vị Tâm Linh",
+          "url": "https://scp-vn.wikidot.com/ca-cap-cuu-o-don-vi-tam-linh",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-133-vn",
+          "title": "Sao Chổi, Mộc Thần và Đơn Vị Tâm Linh",
+          "url": "https://scp-vn.wikidot.com/scp-133-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "bat-do-ky",
+          "title": "Bất Do Kỷ",
+          "url": "https://scp-vn.wikidot.com/bat-do-ky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tu-dong-tro-tan",
+          "title": "Từ Đống Tro Tàn",
+          "url": "https://scp-vn.wikidot.com/tu-dong-tro-tan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "khuc-dong-dao-phan-su",
+          "title": "Khúc Đồng Dao Phán Sự",
+          "url": "https://scp-vn.wikidot.com/khuc-dong-dao-phan-su",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mot-the-gioi-khac",
+          "title": "Một Thế Giới Khác",
+          "url": "https://scp-vn.wikidot.com/mot-the-gioi-khac",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-066-vn",
+          "title": "Đơn Vị Tâm Linh Là Một Lũ Mê Tín",
+          "url": "https://scp-vn.wikidot.com/scp-066-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-165-vn",
+          "title": "Vô Giang Đạo",
+          "url": "https://scp-vn.wikidot.com/scp-165-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-199-vn",
+          "title": "SCP-199-VN/Dị Chỉ 199",
+          "url": "https://scp-vn.wikidot.com/scp-199-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-420-vn",
+          "title": "Chơi Đồ Thành Tiên",
+          "url": "https://scp-vn.wikidot.com/scp-420-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-030-vn",
+          "title": "Yersinia và loài hoa bên kia bờ",
+          "url": "https://scp-vn.wikidot.com/scp-030-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-015-vn",
+          "title": "Đại thoại Điếu cày",
+          "url": "https://scp-vn.wikidot.com/scp-015-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "os": 26
+        },
+        {
+          "id": "mot-ngay-cua-ts-tuan",
+          "title": "Một Ngày Của Ts. Tuân",
+          "url": "https://scp-vn.wikidot.com/mot-ngay-cua-ts-tuan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ngay-giang-sinh-dau-tien",
+          "title": "Ngày Giáng Sinh Đầu Tiên",
+          "url": "https://scp-vn.wikidot.com/ngay-giang-sinh-dau-tien",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-vn:collection:canon:flower-heaven-hub",
+      "branchID": "scp-vn",
+      "kind": "canon",
+      "hubID": "flower-heaven-hub",
+      "title": "Flower Heaven",
+      "sourceListURL": "https://scp-vn.wikidot.com/flower-heaven-hub",
+      "officialHubURL": "https://scp-vn.wikidot.com/flower-heaven-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "flower-heaven",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "flower-heaven",
+        "rejected": [
+          {
+            "tag": "hub-canon-vn",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "hub-vn",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "VN公式カノンハブと収録作品に共通する固有タグ。現行manifestからSCP 7件・Tales 3件・INT 1件を列挙できることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "11 tag-confirmed native members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-092-vn",
+          "title": "Bách Hoa Hương",
+          "url": "https://scp-vn.wikidot.com/scp-092-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-034-vn",
+          "title": "Hoa Điểu",
+          "url": "https://scp-vn.wikidot.com/scp-034-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-056-vn",
+          "title": "Hình Nhân",
+          "url": "https://scp-vn.wikidot.com/scp-056-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "where-the-iron-bars-grow-bouquets-of-flowers",
+          "title": "Nơi Song Sắt Trồng Những Bó Hoa",
+          "url": "https://scp-vn.wikidot.com/where-the-iron-bars-grow-bouquets-of-flowers",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-035-vn",
+          "title": "Hạt Giống Đau Thương",
+          "url": "https://scp-vn.wikidot.com/scp-035-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-168-vn",
+          "title": "Mười Năm Chưa Muộn",
+          "url": "https://scp-vn.wikidot.com/scp-168-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-072-vn",
+          "title": "Giữa Hai Thế Giới",
+          "url": "https://scp-vn.wikidot.com/scp-072-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "layers-of-white",
+          "title": "Cánh Trắng",
+          "url": "https://scp-vn.wikidot.com/layers-of-white",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "forever-garden",
+          "title": "Vườn Hoa Vĩnh Cửu",
+          "url": "https://scp-vn.wikidot.com/forever-garden",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-057-vn",
+          "title": "Hoạ Ngữ",
+          "url": "https://scp-vn.wikidot.com/scp-057-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "floweror-wikipedia",
+          "title": "Chuyên viên tỉa hoa - Wikipedia",
+          "url": "https://scp-vn.wikidot.com/floweror-wikipedia",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-vn:collection:canon:tu-rung-di-len-hub",
+      "branchID": "scp-vn",
+      "kind": "canon",
+      "hubID": "tu-rung-di-len-hub",
+      "title": "Từ Rừng Đi Lên",
+      "sourceListURL": "https://scp-vn.wikidot.com/tu-rung-di-len-hub",
+      "officialHubURL": "https://scp-vn.wikidot.com/tu-rung-di-len-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "từ-rừng-đi-lên",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "từ-rừng-đi-lên",
+        "rejected": [
+          {
+            "tag": "hub-canon-vn",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "hub-vn",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "VN公式カノンハブと収録作品に共通する固有タグ。現行manifestからSCP 9件・Tales 19件を列挙できることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "28 tag-confirmed native members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-164-vn",
+          "title": "Một Viên Đạn, Hai Trái Tim",
+          "url": "https://scp-vn.wikidot.com/scp-164-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-132-vn",
+          "title": "Giấc Mộng Hái Sen",
+          "url": "https://scp-vn.wikidot.com/scp-132-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mong-ba-tet-thay",
+          "title": "Mồng Ba Tết Thầy",
+          "url": "https://scp-vn.wikidot.com/mong-ba-tet-thay",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "dem-dai-lam-mong",
+          "title": "Đêm Dài Lắm Mộng",
+          "url": "https://scp-vn.wikidot.com/dem-dai-lam-mong",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "hau-sinh-kha-uy",
+          "title": "Hậu Sinh Khả Úy",
+          "url": "https://scp-vn.wikidot.com/hau-sinh-kha-uy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "muoi-sau-mua-tuyet-phu",
+          "title": "Mười Sáu Mùa Tuyết Phủ",
+          "url": "https://scp-vn.wikidot.com/muoi-sau-mua-tuyet-phu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-098-vn",
+          "title": "Hạt bụi nào hóa kiếp thân tôi?",
+          "url": "https://scp-vn.wikidot.com/scp-098-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "giao-thuc-nui-cam",
+          "title": "Giao thức Núi Cấm, hay Buổi định hướng Đơn vị Truyền thông Đại chúng",
+          "url": "https://scp-vn.wikidot.com/giao-thuc-nui-cam",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-079-vn",
+          "title": "Bên Trên Tầng Lầu",
+          "url": "https://scp-vn.wikidot.com/scp-079-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-019-vn",
+          "title": "Truyện Cổ Tích Thời Đại Dịch",
+          "url": "https://scp-vn.wikidot.com/scp-019-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "vieng-tham-bat-ngo",
+          "title": "Chuyến Viếng thăm Bất ngờ",
+          "url": "https://scp-vn.wikidot.com/vieng-tham-bat-ngo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "mua-hoa-anh-dao",
+          "title": "Mùa Hoa Anh Đào",
+          "url": "https://scp-vn.wikidot.com/mua-hoa-anh-dao",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "anh-duong-sau-dem-toi",
+          "title": "Ánh Dương Sau Đêm Tối",
+          "url": "https://scp-vn.wikidot.com/anh-duong-sau-dem-toi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "tren-nhung-tang-may",
+          "title": "Trên Những Tầng Mây",
+          "url": "https://scp-vn.wikidot.com/tren-nhung-tang-may",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-009-vn",
+          "title": "Nomèl",
+          "url": "https://scp-vn.wikidot.com/scp-009-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "os": 38
+        },
+        {
+          "id": "scp-077-vn",
+          "title": "Nuôi Ong Tay Áo",
+          "url": "https://scp-vn.wikidot.com/scp-077-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "extra-shift",
+          "title": "Công Việc Ngoài Giờ",
+          "url": "https://scp-vn.wikidot.com/extra-shift",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-111-vn",
+          "title": "Đồng Chí",
+          "url": "https://scp-vn.wikidot.com/scp-111-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-068-vn",
+          "title": "Thân em…",
+          "url": "https://scp-vn.wikidot.com/scp-068-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-haunted-memory",
+          "title": "Bóng Ma Ký Ức",
+          "url": "https://scp-vn.wikidot.com/a-haunted-memory",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-merchants-of-district-zero",
+          "title": "Bọn Lái Buôn Quận Không",
+          "url": "https://scp-vn.wikidot.com/the-merchants-of-district-zero",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "to-the-drawing-board",
+          "title": "Tập Hợp Manh Mối",
+          "url": "https://scp-vn.wikidot.com/to-the-drawing-board",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-fire-that-changed-colors",
+          "title": "Ngọn Lửa Đổi Màu",
+          "url": "https://scp-vn.wikidot.com/the-fire-that-changed-colors",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-promise-of-the-prisoner",
+          "title": "Lời Hứa (Của Tù Nhân)",
+          "url": "https://scp-vn.wikidot.com/the-promise-of-the-prisoner",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-promise-of-the-escapee",
+          "title": "Lời Hứa (Của Kẻ Đào Tẩu)",
+          "url": "https://scp-vn.wikidot.com/the-promise-of-the-escapee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "break-out-and-track-down",
+          "title": "Vượt Ngục Và Truy Lùng",
+          "url": "https://scp-vn.wikidot.com/break-out-and-track-down",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ideal",
+          "title": "Lý Tưởng",
+          "url": "https://scp-vn.wikidot.com/ideal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "revenge",
+          "title": "Trả Thù",
+          "url": "https://scp-vn.wikidot.com/revenge",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-vn:collection:canon:parental-guidance-hub",
+      "branchID": "scp-vn",
+      "kind": "canon",
+      "hubID": "parental-guidance-hub",
+      "title": "Phụ huynh Giám sát",
+      "sourceListURL": "https://scp-vn.wikidot.com/parental-guidance-hub",
+      "officialHubURL": "https://scp-vn.wikidot.com/parental-guidance-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "phụ-huynh-giám-sát",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "phụ-huynh-giám-sát",
+        "rejected": [
+          {
+            "tag": "hub-canon-vn",
+            "reason": "genericHubMarker"
+          },
+          {
+            "tag": "hub-vn",
+            "reason": "genericHubMarker"
+          }
+        ],
+        "notes": [
+          "VN公式カノンハブと収録作品に共通する固有タグ。現行manifestからSCP 14件・Tales 6件を列挙できることを確認。"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "20 tag-confirmed native members enumerable"
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-015-vn",
+          "title": "Đại thoại Điếu cày",
+          "url": "https://scp-vn.wikidot.com/scp-015-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "os": 26
+        },
+        {
+          "id": "scp-046-vn",
+          "title": "Hai đầu Một tay",
+          "url": "https://scp-vn.wikidot.com/scp-046-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-064-vn",
+          "title": "Khách Quý Giường Đông",
+          "url": "https://scp-vn.wikidot.com/scp-064-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "hot-len-nao-nhung-tam-hon-tho-ngay",
+          "title": "Hót lên nào những tâm hồn thơ ngây!",
+          "url": "https://scp-vn.wikidot.com/hot-len-nao-nhung-tam-hon-tho-ngay",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-087-vn",
+          "title": "Playmate",
+          "url": "https://scp-vn.wikidot.com/scp-087-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-103-vn",
+          "title": "Thiên sứ nhân tạo",
+          "url": "https://scp-vn.wikidot.com/scp-103-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-106-vn",
+          "title": "Trẻ Lạc",
+          "url": "https://scp-vn.wikidot.com/scp-106-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-021-vn",
+          "title": "Cách Tổ Chức Đánh Cắp Giáng Sinh",
+          "url": "https://scp-vn.wikidot.com/scp-021-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-193-vn",
+          "title": "Ngoại Sói",
+          "url": "https://scp-vn.wikidot.com/scp-193-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-590-vn",
+          "title": "Không Dây Ràng Buộc",
+          "url": "https://scp-vn.wikidot.com/scp-590-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-144-vn",
+          "title": "Cầm - \"Màn trình diễn phải được tiếp tục!\"",
+          "url": "https://scp-vn.wikidot.com/scp-144-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-025-vn",
+          "title": "Biên Niên Sử Maxilus Bất Bại",
+          "url": "https://scp-vn.wikidot.com/scp-025-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-041-vn",
+          "title": "Đạo Cao Một Trượng",
+          "url": "https://scp-vn.wikidot.com/scp-041-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-051-vn",
+          "title": "Gia đình Tinh quái",
+          "url": "https://scp-vn.wikidot.com/scp-051-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-150-vn",
+          "title": "Kiến Quốc",
+          "url": "https://scp-vn.wikidot.com/scp-150-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "moon-champ-s-moon-festival",
+          "title": "Trung thu của Quán quân Mặt trăng",
+          "url": "https://scp-vn.wikidot.com/moon-champ-s-moon-festival",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "airport",
+          "title": "Alex Thorley Bị Kẹt Ở Sân Bay",
+          "url": "https://scp-vn.wikidot.com/airport",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "never-be-laid-to-waste-by-some-waste",
+          "title": "Thử thách của lửa và sắt vụn",
+          "url": "https://scp-vn.wikidot.com/never-be-laid-to-waste-by-some-waste",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "never-know-when-your-past-will-come-and-bite-at-you",
+          "title": "Quá khứ quay lại cắn bạn lúc bạn ít ngờ tới nhất",
+          "url": "https://scp-vn.wikidot.com/never-know-when-your-past-will-come-and-bite-at-you",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "never-meet-the-wacky-red-guy",
+          "title": "Bữa sáng cùng Gã Santa Nửa mùa",
+          "url": "https://scp-vn.wikidot.com/never-meet-the-wacky-red-guy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-vn:collection:goi:diep-ton-hub",
+      "branchID": "scp-vn",
+      "kind": "goi",
+      "hubID": "diep-ton-hub",
+      "title": "Diệp Tôn",
+      "sourceListURL": "https://scp-vn.wikidot.com/diep-ton-hub",
+      "officialHubURL": "https://scp-vn.wikidot.com/diep-ton-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "diep-ton-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "diep-ton-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.vn"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "vn"
+      },
+      "primaryArticles": [
+        {
+          "id": "diep-luc-chan-kinh-an-tang-khong-tam-thai",
+          "title": "Diệp lục Chân kinh: Ẩn Tàng Không Tâm Thái",
+          "url": "https://scp-vn.wikidot.com/diep-luc-chan-kinh-an-tang-khong-tam-thai",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "diep-luc-chan-kinh-su-tich-ba-chua-coi",
+          "title": "Diệp lục Chân kinh: Sự tích Bà chúa Cói",
+          "url": "https://scp-vn.wikidot.com/diep-luc-chan-kinh-su-tich-ba-chua-coi",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
