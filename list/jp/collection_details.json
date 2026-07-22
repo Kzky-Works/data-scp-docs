@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784352856,
-  "generatedAt": "2026-07-18T05:34:16Z",
-  "chunkRevision": "sha256-6f12fefa2cd6eab1e43d4ae04c6fdb5b174334698b2e728f89e4ca8acc5d4014",
+  "listVersion": 1784703834,
+  "generatedAt": "2026-07-22T07:03:54Z",
+  "chunkRevision": "sha256-a4e5b0afc2133eadf4a5c6c2765137dcc918796c12ac3a92d6987e2163d3dc36",
   "builtFrom": {
     "manifests": [
       {
@@ -10,42 +10,42 @@
         "branchID": "scp-jp",
         "path": "DataPipeline/list/jp/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1783935583,
-        "generatedAt": "2026-07-13T06:16:39Z",
-        "contentHash": "sha256-70fcd4b1f50b0ebbbac9da0b7f7c94b5a216b31319f320005dfe02122ba10d11"
+        "listVersion": 1784530179,
+        "generatedAt": "2026-07-20T06:49:39Z",
+        "contentHash": "sha256-76038d3dec01139c2ffd7bd4931786c4555dc3ae421dd922b9bd0f152e864a56"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-jp",
         "path": "DataPipeline/list/jp/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1783923465,
-        "generatedAt": "2026-07-13T06:17:45Z",
-        "contentHash": "sha256-3e1cb9982894ce9ec085b539a5206fc7c1f1a3d713bcd7c6a065990f9c389d18"
+        "listVersion": 1784530309,
+        "generatedAt": "2026-07-20T06:51:49Z",
+        "contentHash": "sha256-a0b2c5252131235a90227966677c13e9747813ac2890fb52bd52ea81f3779fcf"
       },
       {
         "kind": "manifest_scp-jp",
         "branchID": "scp-jp",
         "path": "DataPipeline/list/jp/manifest_scp-jp.json",
         "schemaVersion": 2,
-        "listVersion": 1784352853,
-        "generatedAt": "2026-07-18T05:34:13Z",
-        "contentHash": "sha256-8aa783e414d0b19fea1f574d6edcd8060c63fa8adbf873ead165a0b76752c7b0"
+        "listVersion": 1784702942,
+        "generatedAt": "2026-07-22T06:49:02Z",
+        "contentHash": "sha256-2e1d98635039a61004dada0efafe3b54b385d843ae451c4adc0992d51ee4f6ae"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-jp",
         "path": "DataPipeline/list/jp/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1784352853,
-        "generatedAt": "2026-07-18T05:34:13Z",
-        "contentHash": "sha256-14911b2f4083e6243efa9190d3445793b827b08fa2f73c50c9afca656e4a3aa7"
+        "listVersion": 1784529911,
+        "generatedAt": "2026-07-20T06:45:11Z",
+        "contentHash": "sha256-8f5215da8c10f546036fa6752fa720e8f55de31e963cc2b97f4f69d0209e6788"
       }
     ],
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-19b4722b508b0921baab259d3f0050ed0762dde71799315c7a38cf9a4bb2f92e"
+      "contentHash": "sha256-859f0303c2c0cdb00d5c264096abd8fbddcb069d500cdf0cfd0eabd5dfa70e35"
     }
   },
   "collections": [
@@ -15366,6 +15366,20 @@
           "id": "scp-4554-jp",
           "title": "SCP-4554-JP",
           "url": "https://scp-jp.wikidot.com/scp-4554-jp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4019-jp",
+          "title": "SCP-4019-JP",
+          "url": "https://scp-jp.wikidot.com/scp-4019-jp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "control-plan-for-feral-cat",
+          "title": "ネコモドキダニを用いたノネコ駆除計画",
+          "url": "https://scp-jp.wikidot.com/control-plan-for-feral-cat",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
