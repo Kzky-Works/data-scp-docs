@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784718078,
-  "generatedAt": "2026-07-22T11:01:18Z",
-  "chunkRevision": "sha256-d52bcfdf1e7e5800dd1161ebe161c11cb1fe9366f65c38c61ce3cc855ffb96d5",
+  "listVersion": 1784793083,
+  "generatedAt": "2026-07-23T07:51:23Z",
+  "chunkRevision": "sha256-d1d13ecfb88447c7e2aac4347a0e83297de4cbcd896b42e642247769635bbe94",
   "builtFrom": {
     "manifests": [
       {
@@ -54,7 +54,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-859f0303c2c0cdb00d5c264096abd8fbddcb069d500cdf0cfd0eabd5dfa70e35"
+      "contentHash": "sha256-c3f6f188446b9a5b5838eb6a937c1e0841eae8f56ef414105f719ed19f02e22a"
     }
   },
   "collections": [
@@ -184,6 +184,35 @@
           "os": 26
         }
       ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-th:collection:canon:zetafoudation",
+      "branchID": "scp-th",
+      "kind": "canon",
+      "hubID": "zetafoudation",
+      "title": "ZETAFOUDATION",
+      "sourceListURL": "http://scp-th.wikidot.com/zetafoudation",
+      "officialHubURL": "http://scp-th.wikidot.com/zetafoudation",
+      "hubPresentation": "standard",
+      "canonicalTag": "zetafoudation",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": null,
+        "rejected": [],
+        "notes": [
+          "TH official canon archive entry confirmed; no collection-specific member tag was accepted without unambiguous evidence."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
       "supplementLinks": []
     }
   ]
