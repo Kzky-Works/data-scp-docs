@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784816052,
-  "generatedAt": "2026-07-23T14:14:12Z",
-  "chunkRevision": "sha256-9725ae14b79fe9af468a5f27604130cf4d76f3e7b4419e6889914402f0a51899",
+  "listVersion": 1784847341,
+  "generatedAt": "2026-07-23T22:55:41Z",
+  "chunkRevision": "sha256-ee524e6fdb0ffae17b31c2a8c10fc7eabd8fcdac2145749b45aafe52eea20ebf",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-jp",
         "path": "DataPipeline/list/jp/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1784530179,
-        "generatedAt": "2026-07-20T06:49:39Z",
-        "contentHash": "sha256-76038d3dec01139c2ffd7bd4931786c4555dc3ae421dd922b9bd0f152e864a56"
+        "listVersion": 1784847278,
+        "generatedAt": "2026-07-23T22:54:38Z",
+        "contentHash": "sha256-38ad200f53fbd969159146194141775e1da80b2d15f2dbe92cb98bf994611d2b"
       },
       {
         "kind": "manifest_gois",
@@ -45,7 +45,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-c3f6f188446b9a5b5838eb6a937c1e0841eae8f56ef414105f719ed19f02e22a"
+      "contentHash": "sha256-6ded9d043f6e3c33dd76792652aade6bead19c3cea1143ac78fc384ad67c7687"
     }
   },
   "collections": [
@@ -2500,6 +2500,14 @@
           "os": 507
         },
         {
+          "id": "sushi-battle-round01",
+          "title": "闇試合",
+          "url": "https://scp-jp.wikidot.com/sushi-battle-round01",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 78
+        },
+        {
           "id": "scp-2133-jp",
           "title": "手中の世界に嗤いけり",
           "url": "https://scp-jp.wikidot.com/scp-2133-jp",
@@ -2570,14 +2578,6 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "os": 117
-        },
-        {
-          "id": "sushi-battle-round01",
-          "title": "闇試合",
-          "url": "https://scp-jp.wikidot.com/sushi-battle-round01",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 78
         },
         {
           "id": "egg-drago",
@@ -11015,9 +11015,9 @@
       "titleLocalizationKey": "library.item.undertokyo_hub"
     },
     {
-      "id": "scp-jp:collection:series:ueno-tour-hub",
+      "id": "scp-jp:collection:canon:ueno-tour-hub",
       "branchID": "scp-jp",
-      "kind": "series",
+      "kind": "canon",
       "hubID": "ueno-tour-hub",
       "title": "晴れの休みは上野巡りへ",
       "sourceListURL": "https://scp-jp.wikidot.com/ueno-tour-hub",
@@ -11172,6 +11172,216 @@
       ],
       "supplementLinks": [],
       "titleLocalizationKey": "library.item.ueno_tour_hub"
+    },
+    {
+      "id": "scp-jp:collection:series:kyoto-cursing-warfare",
+      "branchID": "scp-jp",
+      "kind": "series",
+      "hubID": "kyoto-cursing-warfare",
+      "title": "京都呪縛戦争/毒蛇、病毒",
+      "sourceListURL": "https://scp-jp.wikidot.com/kyoto-cursing-warfare",
+      "officialHubURL": "https://scp-jp.wikidot.com/kyoto-cursing-warfare",
+      "hubPresentation": "standard",
+      "canonicalTag": "京都呪縛戦争",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "京都呪縛戦争",
+        "rejected": [],
+        "notes": [
+          "The current official series archive points to /kyoto-cursing-warfare; the stale /kyoto-cursing-warfare-hub URL is replaced during harvest."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "6 tag-confirmed members; official hub reviewed 2026-07-24"
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "kyoto-cursing-warfare-ep1",
+          "title": "#1　はじまりのよるに",
+          "url": "https://scp-jp.wikidot.com/kyoto-cursing-warfare-ep1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4
+        },
+        {
+          "id": "kyoto-cursing-warfare-ep2",
+          "title": "#2　無法少女なむな☆ナムナム",
+          "url": "https://scp-jp.wikidot.com/kyoto-cursing-warfare-ep2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "kyoto-cursing-warfare-interlude-1",
+          "title": "Interlude-1　デッドロッキング・オン・キョウト",
+          "url": "https://scp-jp.wikidot.com/kyoto-cursing-warfare-interlude-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8
+        },
+        {
+          "id": "kyoto-cursing-warfare-ep3",
+          "title": "#3　Plague.exe",
+          "url": "https://scp-jp.wikidot.com/kyoto-cursing-warfare-ep3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 13
+        },
+        {
+          "id": "kyoto-cursing-warfare-ep4",
+          "title": "#4　刀・病原菌・蛇",
+          "url": "https://scp-jp.wikidot.com/kyoto-cursing-warfare-ep4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "kyoto-cursing-warfare-interlude-2",
+          "title": "Interlude-2　世界プロジェクト",
+          "url": "https://scp-jp.wikidot.com/kyoto-cursing-warfare-interlude-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-jp:collection:series:eve-aic",
+      "branchID": "scp-jp",
+      "kind": "series",
+      "hubID": "eve-aic",
+      "title": "Eve.aic",
+      "sourceListURL": "https://scp-jp.wikidot.com/eve-aic",
+      "officialHubURL": "https://scp-jp.wikidot.com/eve-aic",
+      "hubPresentation": "standard",
+      "canonicalTag": "eve-aic-tales",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "eve-aic-tales",
+        "rejected": [],
+        "notes": [
+          "Canonical tag verified on the current official hub and JP tag index."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "12 tag-confirmed members; official hub reviewed 2026-07-24"
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "tagReverseLookup"
+      },
+      "primaryArticles": [
+        {
+          "id": "eve-aic-part-one",
+          "title": "#1 頭が軋む",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-one",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 52
+        },
+        {
+          "id": "eve-aic-part-two",
+          "title": "#2 月は黙して",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-two",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 30
+        },
+        {
+          "id": "eve-aic-part-three",
+          "title": "#3 旭に触れず",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-three",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 22
+        },
+        {
+          "id": "eve-aic-part-four",
+          "title": "#4 刃を見た",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-four",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 27
+        },
+        {
+          "id": "eve-aic-part-five",
+          "title": "#5 八目に悖る",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-five",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 24
+        },
+        {
+          "id": "eve-aic-part-six",
+          "title": "#6 児喰らいを封じ",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-six",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 20
+        },
+        {
+          "id": "eve-aic-part-seven",
+          "title": "#7 無き声を聞き",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-seven",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "eve-aic-part-eight",
+          "title": "#8 長雨を負い",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-eight",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16
+        },
+        {
+          "id": "eve-aic-part-nine",
+          "title": "#9 血を視るとも",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-nine",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17
+        },
+        {
+          "id": "eve-aic-part-ten",
+          "title": "#10 浮かぶは、魔",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-ten",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 21
+        },
+        {
+          "id": "eve-aic-part-eleven",
+          "title": "#11 虚を映して",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-eleven",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 14
+        },
+        {
+          "id": "eve-aic-part-thirteen",
+          "title": "#13 散輪は語らず",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-thirteen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 11
+        }
+      ],
+      "supplementLinks": []
     },
     {
       "id": "scp-jp:collection:goi:aodaisho",
