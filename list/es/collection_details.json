@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784816052,
-  "generatedAt": "2026-07-23T14:14:12Z",
-  "chunkRevision": "sha256-22607f651915544adfb78b19c206c9c776cb43ee0577998ea63c0c878bea61bd",
+  "listVersion": 1784847900,
+  "generatedAt": "2026-07-23T23:05:00Z",
+  "chunkRevision": "sha256-8d959a487d06e0eddacfaf396e80919aebc96fc28afa6a06b98c25d160656a77",
   "builtFrom": {
     "manifests": [
       {
@@ -19,9 +19,9 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1783925844,
-        "generatedAt": "2026-07-13T06:57:24Z",
-        "contentHash": "sha256-74e778a53807c9897960bee069817adbabdad1cf2d19d6ff60e8802fb733ea95"
+        "listVersion": 1784846473,
+        "generatedAt": "2026-07-23T22:41:13Z",
+        "contentHash": "sha256-c09bb0d30f049d906282468d805c8eeca8036f3850a6358e3f43ae5641c5b4af"
       },
       {
         "kind": "manifest_scp-es",
@@ -63,7 +63,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-c3f6f188446b9a5b5838eb6a937c1e0841eae8f56ef414105f719ed19f02e22a"
+      "contentHash": "sha256-6ded9d043f6e3c33dd76792652aade6bead19c3cea1143ac78fc384ad67c7687"
     }
   },
   "collections": [
@@ -1483,8 +1483,8 @@
       "kind": "goi",
       "hubID": "la-reina-negra",
       "title": "La Reina Negra",
-      "sourceListURL": "https://lafundacionscp.wikidot.com/evangelio-de-tamar-la-prostituta",
-      "officialHubURL": "https://lafundacionscp.wikidot.com/evangelio-de-tamar-la-prostituta",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/black-queen-hub",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/black-queen-hub",
       "hubPresentation": "standard",
       "canonicalTag": "la-reina-negra",
       "tagReview": {
@@ -1524,6 +1524,13 @@
           "id": "un-tal-dios-verde",
           "title": "Un tal \"Dios Verde\"",
           "url": "https://lafundacionscp.wikidot.com/un-tal-dios-verde",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "evangelio-de-tamar-la-prostituta",
+          "title": "El Evangelio de Tamar la Prostituta",
+          "url": "https://lafundacionscp.wikidot.com/evangelio-de-tamar-la-prostituta",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -1715,6 +1722,13 @@
           "id": "ambrose-tlaneyanco",
           "title": "Ambrose Tlaneyanco: Un Tour de Recuerdos Sabor y Radioactividades",
           "url": "https://lafundacionscp.wikidot.com/ambrose-tlaneyanco",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ambrose-hogar",
+          "title": "Ambrose Hogar",
+          "url": "https://lafundacionscp.wikidot.com/ambrose-hogar",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
