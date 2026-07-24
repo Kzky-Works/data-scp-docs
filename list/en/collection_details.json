@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784866381,
-  "generatedAt": "2026-07-24T04:13:01Z",
-  "chunkRevision": "sha256-c456d3bae9710a416ea91e29b9cba422b72299866ca704ed4f4497df4397ee43",
+  "listVersion": 1784872119,
+  "generatedAt": "2026-07-24T05:48:39Z",
+  "chunkRevision": "sha256-6884033f4849bfc4dfa992963cb8fb43461f4e27c17785081235dbb81f5e5567",
   "builtFrom": {
     "manifests": [
       {
@@ -46,6 +46,11 @@
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
       "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-f163f182bf44897a390266fe5331b5288902b025b62921b52ca1b8546acf0536"
     }
   },
   "collections": [
@@ -14114,17 +14119,20 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "os": 121
-        },
-        {
-          "id": "blue-blooded-blues",
-          "title": "Blue Blooded Blues",
-          "url": "https://scp-wiki.wikidot.com/blue-blooded-blues",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
-      "manualTagReason": "EN canon hub rows carry no hub metadata.g. Auto-derived 2026-06-21: canonical tag 'no-return' = hub slug form; 78 members via reverse-lookup across ['manifest_scp-foundation', 'manifest_tales']. Batch-approved method (slug=canonical, members>=3); pending per-hub spot-check."
+      "manualTagReason": "EN canon hub rows carry no hub metadata.g. Auto-derived 2026-06-21: canonical tag 'no-return' = hub slug form; 78 members via reverse-lookup across ['manifest_scp-foundation', 'manifest_tales']. Batch-approved method (slug=canonical, members>=3); pending per-hub spot-check.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki.wikidot.com/blue-blooded-blues",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-wiki-en:collection:canon:old-man-in-the-sea-hub",
@@ -41391,18 +41399,20 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "os": 10
-        },
-        {
-          "id": "the-man-in-the-mountain",
-          "title": "The Man in the Mountain",
-          "url": "https://scp-wiki.wikidot.com/the-man-in-the-mountain",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4
         }
       ],
       "supplementLinks": [],
-      "manualTagReason": "EN Canon/Series hub metadata is region-only; the canonical tag was verified against the current EN tag index and official hub on 2026-07-24."
+      "manualTagReason": "EN Canon/Series hub metadata is region-only; the canonical tag was verified against the current EN tag index and official hub on 2026-07-24.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki.wikidot.com/the-man-in-the-mountain",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-wiki-en:collection:series:olympia-project",

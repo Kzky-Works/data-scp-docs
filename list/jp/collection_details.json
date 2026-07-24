@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784867034,
-  "generatedAt": "2026-07-24T04:23:54Z",
-  "chunkRevision": "sha256-bdfcf66c518f618259babf8632e3f7fefe031915651f2223faccad91626d9b8c",
+  "listVersion": 1784872118,
+  "generatedAt": "2026-07-24T05:48:38Z",
+  "chunkRevision": "sha256-f2c5253c26cf20c35f9e5b02e2c7e596670b8e94bb5d3c013a55dcac7d66f926",
   "builtFrom": {
     "manifests": [
       {
@@ -46,6 +46,11 @@
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
       "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-f163f182bf44897a390266fe5331b5288902b025b62921b52ca1b8546acf0536"
     }
   },
   "collections": [
@@ -11469,13 +11474,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "guests",
-          "title": "金哲賢 キム・チョルヒョン",
-          "url": "https://scp-jp.wikidot.com/guests",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "kanshin-ryoiki-tono",
           "title": "妖怪保護区",
           "url": "https://scp-jp.wikidot.com/kanshin-ryoiki-tono",
@@ -11637,7 +11635,17 @@
           "role": "primaryArticle"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-jp.wikidot.com/guests",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-jp:collection:goi:pamwac",
@@ -14712,13 +14720,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4989-jp",
-          "title": "SCP-4989-JP",
-          "url": "https://scp-jp.wikidot.com/scp-4989-jp",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "locker-s-tales-guilty",
           "title": "罪と罰",
           "url": "https://scp-jp.wikidot.com/locker-s-tales-guilty",
@@ -15573,13 +15574,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4554-jp",
-          "title": "SCP-4554-JP",
-          "url": "https://scp-jp.wikidot.com/scp-4554-jp",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4019-jp",
           "title": "SCP-4019-JP",
           "url": "https://scp-jp.wikidot.com/scp-4019-jp",
@@ -15594,7 +15588,25 @@
           "role": "primaryArticle"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-jp.wikidot.com/scp-4989-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        },
+        {
+          "url": "https://scp-jp.wikidot.com/scp-4554-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-jp:collection:goi:JAGPATO",
@@ -17613,16 +17625,19 @@
           "url": "https://scp-jp.wikidot.com/scp-1858-jp",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
-        },
-        {
-          "id": "c2h6hg-t-art-yamizushi-imagefile-no2026-b",
-          "title": "闇寿司画像ファイルNo.2026-B \"トビハゼの飛び越えVer2.0\"",
-          "url": "https://scp-jp.wikidot.com/c2h6hg-t-art-yamizushi-imagefile-no2026-b",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-jp.wikidot.com/c2h6hg-t-art-yamizushi-imagefile-no2026-b",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     }
   ]
 }
