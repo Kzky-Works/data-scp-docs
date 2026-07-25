@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784875527,
-  "generatedAt": "2026-07-24T06:45:27Z",
-  "chunkRevision": "sha256-9c85cf25a7950ee64b409822f25d81d6448af679870727cce6d759413545e088",
+  "listVersion": 1784998812,
+  "generatedAt": "2026-07-25T17:00:12Z",
+  "chunkRevision": "sha256-4a8c1648a8c16fd6e975feb00535335ade53999b3d2e2839d081d8eaf9716917",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1784543797,
-        "generatedAt": "2026-07-20T10:36:37Z",
-        "contentHash": "sha256-1bcdc2e4130e9794d04e492522c2e2bd723955616a72b1c394e6dc101a25da39"
+        "listVersion": 1784998774,
+        "generatedAt": "2026-07-25T16:59:34Z",
+        "contentHash": "sha256-ac50524307892874223d8fd1887b24be02bcae03682d1ec5804ad83df8cf8633"
       },
       {
         "kind": "manifest_scp-int",
@@ -55,9 +55,3128 @@
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
       "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+    },
+    "officialStructureSeed": {
+      "path": "DataPipeline/collection_seeds/canon_structures/it.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-5029341a741f95b24ac0571707fa62a10d75dc4dce7df17ed3347c6af7704378"
+    },
+    "officialTagMap": {
+      "kind": "it_tag",
+      "branchID": "scp-it",
+      "path": "DataPipeline/list/it/it_tag.json",
+      "schemaVersion": 2,
+      "listVersion": 1784533582,
+      "generatedAt": "2026-07-20T08:40:33Z",
+      "contentHash": "sha256-0cff4df9784bc4bd47fe7dfdb09c50839d52a228548259552725b018269df92d"
     }
   },
   "collections": [
+    {
+      "id": "scp-it:collection:canon:aiad-homescreen",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "aiad-homescreen",
+      "title": "AIAD",
+      "sourceListURL": "http://fondazionescp.wikidot.com/aiad-homescreen",
+      "officialHubURL": "http://fondazionescp.wikidot.com/aiad-homescreen",
+      "hubPresentation": "standard",
+      "canonicalTag": "aiad",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "aiad",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-af6f892f5d7a5c58c854d7c0dcd9b45e1c025ec352097f4b3c974196cf739b66"
+      },
+      "primaryArticles": [
+        {
+          "id": "alert-lockdown-initiated",
+          "title": "ALLERTA! LOCKDOWN INIZIALIZZATO!",
+          "url": "http://fondazionescp.wikidot.com/alert-lockdown-initiated",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "command-query-separation",
+          "title": "Separazione di Query e Comandi",
+          "url": "http://fondazionescp.wikidot.com/command-query-separation",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "superencipherment",
+          "title": "Supercifratura",
+          "url": "http://fondazionescp.wikidot.com/superencipherment",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "clock-multiplier",
+          "title": "Moltiplicatore di Clock",
+          "url": "http://fondazionescp.wikidot.com/clock-multiplier",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "null-terminating-string",
+          "title": "Stringa Null-terminata",
+          "url": "http://fondazionescp.wikidot.com/null-terminating-string",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hello-world",
+          "title": "Buongiorno Mondo: Parte I",
+          "url": "http://fondazionescp.wikidot.com/hello-world",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hello-world-part-ii",
+          "title": "Buongiorno Mondo: Parte II",
+          "url": "http://fondazionescp.wikidot.com/hello-world-part-ii",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hello-world-part-iii",
+          "title": "Buongiorno Mondo: Parte III",
+          "url": "http://fondazionescp.wikidot.com/hello-world-part-iii",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hello-world-part-iv",
+          "title": "Buongiorno Mondo: Parte IV",
+          "url": "http://fondazionescp.wikidot.com/hello-world-part-iv",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-2987",
+          "title": "Invictus",
+          "url": "http://fondazionescp.wikidot.com/scp-2987",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-2987 dev'essere conservato presso il piano 17 del Sito-88 . La rimozione a scopo di test richiede l'approvazione dal direttore di progetto di SCP-2987. I test che comportano l'interazione fra SCP-2987 e altre intelligenze artificiali richiedono ulteriore a…"
+        },
+        {
+          "id": "scp-2522",
+          "title": "hatbot.aic",
+          "url": "http://fondazionescp.wikidot.com/scp-2522",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-2522 è una utility di intelligenza artificiale anomala ed ostile, sviluppata originariamente per la sottodivisione di Computer Intelligence del Sito-19 in collaborazione con l'AIAD 1 a metà degli anni 2000, con lo scopo di creare un'interfaccia con cui com…"
+        },
+        {
+          "id": "scp-4790",
+          "title": "Non andare gentilmente in quella buona notte.",
+          "url": "http://fondazionescp.wikidot.com/scp-4790",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Il consenso scientifico su Alfa Centauri B deve essere falsificato e le pubblicazioni principali alterate, per spiegare le sue proprietà anormali come il prodotto di un disturbo non anomalo del campo magnetico. Le teorie sulla possibilità di vita extraterrestr…"
+        },
+        {
+          "id": "scp-5012",
+          "title": "Non C'è Scampo dalla Fossa Senza Fondo",
+          "url": "http://fondazionescp.wikidot.com/scp-5012",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "[in sospeso] Procedure Ereditarie di Contenimento: SCP-5012 è proprietà legale di Agricoltura Fitzwilliam, una compagnia di facciata della Fondazione. Si sono implementate le misure anti irruzione standard, come è appropriato per i progetti a basso rischio. SC…"
+        },
+        {
+          "id": "rogue-ai-nveo4-yvn3e-pn6ug",
+          "title": "'Rogue AI' (NVEO4/YVN3E/PN6UG)",
+          "url": "http://fondazionescp.wikidot.com/rogue-ai-nveo4-yvn3e-pn6ug",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Fondazione SCP | Dip. IT AIAD <Artificial Intelligence Applications Division>",
+      "articleSections": [
+        {
+          "id": "01-info",
+          "title": "Info",
+          "articleIDs": [
+            "alert-lockdown-initiated",
+            "command-query-separation",
+            "superencipherment",
+            "clock-multiplier",
+            "null-terminating-string",
+            "hello-world",
+            "hello-world-part-ii",
+            "hello-world-part-iii",
+            "hello-world-part-iv",
+            "scp-2987",
+            "scp-2522",
+            "scp-4790",
+            "scp-5012",
+            "rogue-ai-nveo4-yvn3e-pn6ug"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:site-17-hub",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "site-17-hub",
+      "title": "Catalogo Deepwell del Sito-17",
+      "sourceListURL": "http://fondazionescp.wikidot.com/site-17-hub",
+      "officialHubURL": "http://fondazionescp.wikidot.com/site-17-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "catalogo-deepwell",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "catalogo-deepwell",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-f00d9d8dbd99e945ce05f0df76bc43699a0c42f8bec80180dc1bbee5e781a972"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-6113",
+          "title": "Riflessioni Temporanee",
+          "url": "http://fondazionescp.wikidot.com/scp-6113",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Contenere SCP-6113-1 ed SCP-6113-2 non è attualmente possibile. Il contenimento di SCP-6113 si concentra principalmente sull'insabbiamento delle informazioni correlate all'anomalia; sono dunque state messe in atto le seguenti procedure speciali di contenimento…"
+        },
+        {
+          "id": "scp-6124",
+          "title": "Cow Spotting",
+          "url": "http://fondazionescp.wikidot.com/scp-6124",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "In quanto SCP-6124 si presenta globalmente all'interno delle popolazioni di bestiame, non si necessita alcun tipo di contenimento. SCP-6124 è de facto accettato come componente non anomala della vita civile, e la scoperta delle sue proprietà e della sua storia…"
+        },
+        {
+          "id": "scp-7791",
+          "title": "Male Necessario",
+          "url": "http://fondazionescp.wikidot.com/scp-7791",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-7791 deve essere contenuto all'interno dell'Unità di Contenimento Concettuale-34, localizzata al Sito-77. La natura di SCP-7791 deve essere resa nota soltanto ai membri senior del Comitato Etico e al personale con credenziali situazionali 5/7791. Il conten…"
+        },
+        {
+          "id": "scp-5097",
+          "title": "Lavorare dalle 9 alle 17",
+          "url": "http://fondazionescp.wikidot.com/scp-5097",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Nell’eventualità in cui SCP-5097 ritorni alla realtà, dovrà essere rimproverato e posto in una cella di contenimento umanoide. La nota lasciata da SCP-5097 è al momento tenuta in un armadietto per Elementi Anomali."
+        },
+        {
+          "id": "hurt",
+          "title": "A Pezzi",
+          "url": "http://fondazionescp.wikidot.com/hurt",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "CelesteKara"
+        },
+        {
+          "id": "somnambulant-directives-take-the-helm",
+          "title": "Le Direttive Sonnambule Hanno La Priorità",
+          "url": "http://fondazionescp.wikidot.com/somnambulant-directives-take-the-helm",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Nagiros"
+        },
+        {
+          "id": "white-space-hub",
+          "title": "spazio bianco (HUB)",
+          "url": "http://fondazionescp.wikidot.com/white-space-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "admonition",
+          "title": "MONITO (HUB)",
+          "url": "http://fondazionescp.wikidot.com/admonition",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Liryn, Placeholder McD, e al"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "La Fondazione è un'organizzazione clandestina globale con una presa ferrea su tutti i media, la letteratura e le conoscenze comuni. Operano all'interno di una gerarchia rigida che va dal Ricercatore al Direttore del Sito al Sovrintendente così da assicurarsi che l'umanità permanga in un'ignoranza perpetua e beata. Conterranno e hanno già contenuto Dio e a nessuno sembra importare.",
+      "articleSections": [
+        {
+          "id": "01-storie",
+          "title": "Storie",
+          "articleIDs": [
+            "scp-6113",
+            "scp-6124",
+            "scp-7791",
+            "scp-5097",
+            "hurt",
+            "somnambulant-directives-take-the-helm",
+            "white-space-hub",
+            "admonition"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:from-120-s-archives-hub",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "from-120-s-archives-hub",
+      "title": "Dagli Archivi del Sito-120",
+      "sourceListURL": "http://fondazionescp.wikidot.com/from-120-s-archives-hub",
+      "officialHubURL": "http://fondazionescp.wikidot.com/from-120-s-archives-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "archivi-120",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "archivi-120",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-6bd5635f243d9a58bc54c11cea996b2d455e1f4f2b14f1573b9b8ca00f7863d8"
+      },
+      "primaryArticles": [
+        {
+          "id": "the-edge-of-all-light",
+          "title": "1. Il Confine di Tutta la Luce",
+          "url": "http://fondazionescp.wikidot.com/the-edge-of-all-light",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "2. Dagli Archivi del Sito-120 — di 3. Proposta di Pickman/Blank — di"
+        },
+        {
+          "id": "tears-and-bone",
+          "title": "Lacrime e Ossa",
+          "url": "http://fondazionescp.wikidot.com/tears-and-bone",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "they-had-names",
+          "title": "Avevano dei Nomi",
+          "url": "http://fondazionescp.wikidot.com/they-had-names",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "pickman-blank-proposal",
+          "title": "Proposta di Pickman/Blank - Il Frontespizio",
+          "url": "http://fondazionescp.wikidot.com/pickman-blank-proposal",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "and-every-time-we-meet-again-hub",
+          "title": "E Ogni Volta che Ci Rivediamo",
+          "url": "http://fondazionescp.wikidot.com/and-every-time-we-meet-again-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "o4-s-summit",
+          "title": "Vertice del Comando O4",
+          "url": "http://fondazionescp.wikidot.com/o4-s-summit",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "secure-facility-dossier-site-120",
+          "title": "Fascicolo della Struttura di Sicurezza: Sito-120",
+          "url": "http://fondazionescp.wikidot.com/secure-facility-dossier-site-120",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-6596",
+          "title": "8 Mile: La Bestia dalla Lussuria e dall'Odio Nata",
+          "url": "http://fondazionescp.wikidot.com/scp-6596",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "Il contenimento diretto di SCP-6596 risulta impossibile al momento. Ciononostante, a causa della sua relazione col Sito-120, SCP-6596 non pone alcuna minaccia al Velo. Ciò, combinato col pattern delle apparizioni di SCP-6596, ha spostato gli sforzi principali…"
+        },
+        {
+          "id": "ambrose-esterberg",
+          "title": "Ambrose Esterberg",
+          "url": "http://fondazionescp.wikidot.com/ambrose-esterberg",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "fresh-blood",
+          "title": "Sangue Fresco",
+          "url": "http://fondazionescp.wikidot.com/fresh-blood",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-7278",
+          "title": "La Furia di un Fae",
+          "url": "http://fondazionescp.wikidot.com/scp-7278",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-7278 è conservato in una camera di contenimento a bassa priorità all'interno del Sito-120 . La ricerca di PdI-7278 è in corso."
+        },
+        {
+          "id": "scp-it-120",
+          "title": "SCP-IT-120 - Questo nome è di tutti",
+          "url": "http://fondazionescp.wikidot.com/scp-it-120",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "in-life-as-in-language",
+          "title": "Vivere la Vita Come una Lingua",
+          "url": "http://fondazionescp.wikidot.com/in-life-as-in-language",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-6172",
+          "title": "Introduzione alla Neve",
+          "url": "http://fondazionescp.wikidot.com/scp-6172",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Per ordine diretto del Comando O5, la priorità del progetto Ermes è stata giudicata bassa; pertanto, i fondi per esso e gli impieghi alternativi di SCP-6172 sono stati accantonati. Ora il completamento del progetto Ermes è l’obiettivo primario e assoluto della…"
+        },
+        {
+          "id": "scp-6747",
+          "title": "TEORIA DEL CAOS",
+          "url": "http://fondazionescp.wikidot.com/scp-6747",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-6747 è lo scopo ultimo del PROGETTO X/MACHINA vedi ADDENDUM 6747/V ), una priorità di CLASSE-AMIDA ; che in quanto tale, le sono state rese disponibili risorse virtualmente infinite per il completamento. Tale progetto deve essere presidiato da un quorum di…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Siete ancora indecisi? Provate Il Confine di Tutta la Luce !",
+      "articleSections": [
+        {
+          "id": "01-articoli-piu-recenti",
+          "title": "Articoli più Recenti",
+          "articleIDs": [
+            "the-edge-of-all-light",
+            "tears-and-bone"
+          ]
+        },
+        {
+          "id": "02-scricchiolii-nelle-crepe",
+          "title": "Scricchiolii nelle Crepe",
+          "articleIDs": [
+            "they-had-names"
+          ]
+        },
+        {
+          "id": "03-scp-7600-due-metri-sotto",
+          "title": "SCP-7600 - Due Metri Sotto",
+          "articleIDs": [
+            "pickman-blank-proposal"
+          ]
+        },
+        {
+          "id": "04-profilo-della-creatura-fuffi",
+          "title": "Profilo della Creatura: Fuffi!",
+          "articleIDs": [
+            "and-every-time-we-meet-again-hub",
+            "o4-s-summit"
+          ]
+        },
+        {
+          "id": "05-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "secure-facility-dossier-site-120"
+          ]
+        },
+        {
+          "id": "06-8-testimonianza-parte-2",
+          "title": "8. Testimonianza - Parte 2",
+          "articleIDs": [
+            "scp-6596"
+          ]
+        },
+        {
+          "id": "07-scp-pl-389-fornax-aeterna",
+          "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
+          "articleIDs": [
+            "ambrose-esterberg"
+          ]
+        },
+        {
+          "id": "08-scp-7672-alla-corte-del-re-dei-goblin",
+          "title": "SCP-7672 - Alla Corte del Re dei Goblin",
+          "articleIDs": [
+            "fresh-blood"
+          ]
+        },
+        {
+          "id": "09-scp-5659-odium-dei-amoris",
+          "title": "SCP-5659 - Odium Dei Amoris",
+          "articleIDs": [
+            "scp-7278",
+            "scp-it-120"
+          ]
+        },
+        {
+          "id": "10-danimali",
+          "title": "Danimali",
+          "articleIDs": [
+            "in-life-as-in-language"
+          ]
+        },
+        {
+          "id": "11-cronache-dellirreale-serie",
+          "title": "Cronache dell’Irreale (serie)",
+          "articleIDs": [
+            "scp-6172"
+          ]
+        },
+        {
+          "id": "12-scp-7999-incontrami-fra-le-stelle",
+          "title": "SCP-7999 - Incontrami fra le Stelle",
+          "articleIDs": [
+            "scp-6747"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:those-twisted-pines-hub",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "those-twisted-pines-hub",
+      "title": "Quei Pini Contorti",
+      "sourceListURL": "http://fondazionescp.wikidot.com/those-twisted-pines-hub",
+      "officialHubURL": "http://fondazionescp.wikidot.com/those-twisted-pines-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "pini-contorti",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "pini-contorti",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-fa79438ad57ab0919328f8dc3afeac5187096c9aa1bf62cdbdc81e72c57cce73"
+      },
+      "primaryArticles": [
+        {
+          "id": "make-portland-weirder",
+          "title": "Si Renda Portland Più Strana",
+          "url": "http://fondazionescp.wikidot.com/make-portland-weirder",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "paper-pusher",
+          "title": "Mastica Numeri",
+          "url": "http://fondazionescp.wikidot.com/paper-pusher",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-1360",
+          "title": "DUUSP #31",
+          "url": "http://fondazionescp.wikidot.com/scp-1360",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-1360 deve essere contenuto all'interno di una cella di contenimento standard per umanoidi presso il Sito-19. Per potervi accedere è richiesta la presenza di quattro addetti alla sicurezza. Le restrizioni non possono essere evase a meno che non sia espressa…"
+        },
+        {
+          "id": "scp-2987",
+          "title": "Invictus",
+          "url": "http://fondazionescp.wikidot.com/scp-2987",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-2987 dev'essere conservato presso il piano 17 del Sito-88 . La rimozione a scopo di test richiede l'approvazione dal direttore di progetto di SCP-2987. I test che comportano l'interazione fra SCP-2987 e altre intelligenze artificiali richiedono ulteriore a…"
+        },
+        {
+          "id": "realignment",
+          "title": "Riallineamento",
+          "url": "http://fondazionescp.wikidot.com/realignment",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3108",
+          "title": "La Pistola Nerfante",
+          "url": "http://fondazionescp.wikidot.com/scp-3108",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "SCP-3108 deve essere contenuto in un deposito standard per il contenimento di oggetti anomali nel Sito-64 , e non deve essere rimosso se non a scopo di test. I test proposti devono essere approvati in anticipo sia dal Dr. Johnson che dal Dr. Dietz. SCP-3108-1…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Quanto segue è presentato in ordine cronologico approssimativo. Gli articoli in grassetto sono parte dell'arco narrativo della Anderson Robotics. Gli articoli sottolineati sono parte dell'arco narrativo di Sasha Merlo. Gli articoli in corsivo sono parte dell'arco narrativo di Beatrice Ross.",
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli:",
+          "articleIDs": [
+            "make-portland-weirder",
+            "paper-pusher",
+            "scp-1360",
+            "scp-2987",
+            "realignment",
+            "scp-3108"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:war-on-all-fronts-hub",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "war-on-all-fronts-hub",
+      "title": "Guerra Su Tutti I Fronti",
+      "sourceListURL": "http://fondazionescp.wikidot.com/war-on-all-fronts-hub",
+      "officialHubURL": "http://fondazionescp.wikidot.com/war-on-all-fronts-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "guerra-su-tutti-i-fronti",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "guerra-su-tutti-i-fronti",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-0a4c22d8c2bbc272dd0619ff6e26aa19d1a11980b36fd37364cbf92b33986577"
+      },
+      "primaryArticles": [
+        {
+          "id": "kaiju-caviar-ocn39-t5fg6-7hjl2",
+          "title": "'Caviale di Kaiju' (OCN39/T5FG6/7HJL2)",
+          "url": "http://fondazionescp.wikidot.com/kaiju-caviar-ocn39-t5fg6-7hjl2",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Non giocare col cibo. ( )"
+        },
+        {
+          "id": "the-kaiju-sea",
+          "title": "4. Il Mare Dei Kaiju",
+          "url": "http://fondazionescp.wikidot.com/the-kaiju-sea",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Un tentativo di mettere ordine dopo che il mondo è finito. ( )"
+        },
+        {
+          "id": "anastasis-hub",
+          "title": "HUB DI ANASTASI",
+          "url": "http://fondazionescp.wikidot.com/anastasis-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Penso che non dimenticherò mai il giorno in cui l'apocalisse è strisciata dall'oceano.",
+      "articleSections": [
+        {
+          "id": "01-il-giorno-dopo",
+          "title": "Il Giorno Dopo",
+          "articleIDs": [
+            "kaiju-caviar-ocn39-t5fg6-7hjl2"
+          ]
+        },
+        {
+          "id": "02-apocalisse",
+          "title": "APOCALISSE",
+          "articleIDs": [
+            "the-kaiju-sea"
+          ]
+        },
+        {
+          "id": "03-anastasi",
+          "title": "AnAstAsi",
+          "articleIDs": [
+            "anastasis-hub"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:resurrection",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "resurrection",
+      "title": "Resurrezione",
+      "sourceListURL": "http://fondazionescp.wikidot.com/resurrection",
+      "officialHubURL": "http://fondazionescp.wikidot.com/resurrection",
+      "hubPresentation": "standard",
+      "canonicalTag": "resurrezione",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "resurrezione",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-9ea5378c9425c0dffe1a6f18a95287324860482a362e3e9c76aa473b96ae1fb7"
+      },
+      "primaryArticles": [
+        {
+          "id": "yesterday",
+          "title": "Ieri",
+          "url": "http://fondazionescp.wikidot.com/yesterday",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "snakes-and-ladders",
+          "title": "Scale e Serpenti",
+          "url": "http://fondazionescp.wikidot.com/snakes-and-ladders",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "1. Scale e Serpenti di"
+        },
+        {
+          "id": "iquit",
+          "title": "«Mi Dimetto»",
+          "url": "http://fondazionescp.wikidot.com/iquit",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "2. «Mi Dimetto» di"
+        },
+        {
+          "id": "a-restless-wanderer-on-the-earth",
+          "title": "Ramingo e Fuggiasco sulla Terra",
+          "url": "http://fondazionescp.wikidot.com/a-restless-wanderer-on-the-earth",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "3. Ramingo e Fuggiasco sulla Terra di"
+        },
+        {
+          "id": "prisoners",
+          "title": "Prigioniere | Famiglia | Si Va in Scena | Sorelle",
+          "url": "http://fondazionescp.wikidot.com/prisoners",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "incident-zero-part-1",
+          "title": "Parte 1",
+          "url": "http://fondazionescp.wikidot.com/incident-zero-part-1",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Parte 1 | Parte 2 | Parte 3 | Parte 4 | Parte 5 » di"
+        },
+        {
+          "id": "immediate-actions",
+          "title": "Azioni Immediate",
+          "url": "http://fondazionescp.wikidot.com/immediate-actions",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "1. Azioni Immediate di"
+        },
+        {
+          "id": "the-seed-of-an-idea",
+          "title": "Il Seme di un’Idea",
+          "url": "http://fondazionescp.wikidot.com/the-seed-of-an-idea",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "2. Il Seme di un’Idea di"
+        },
+        {
+          "id": "contingency",
+          "title": "Piano d’Emergenza",
+          "url": "http://fondazionescp.wikidot.com/contingency",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "3. Piano d’Emergenza di"
+        },
+        {
+          "id": "deals-with-the-devil",
+          "title": "Patti col Diavolo",
+          "url": "http://fondazionescp.wikidot.com/deals-with-the-devil",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "4. Patti col Diavolo di"
+        },
+        {
+          "id": "what-s-in-a-name",
+          "title": "Cosa c’è in un Nome?",
+          "url": "http://fondazionescp.wikidot.com/what-s-in-a-name",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "5. Cosa c’è in un Nome? di"
+        },
+        {
+          "id": "just-a-formality",
+          "title": "Solo una Formalità",
+          "url": "http://fondazionescp.wikidot.com/just-a-formality",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "6. Solo una Formalità di"
+        },
+        {
+          "id": "integrity-project",
+          "title": "Progetto di Integrità",
+          "url": "http://fondazionescp.wikidot.com/integrity-project",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "7. Progetto di Integrità di"
+        },
+        {
+          "id": "new-tricks",
+          "title": "Nuovi Trucchi",
+          "url": "http://fondazionescp.wikidot.com/new-tricks",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "8. Nuovi Trucchi di e"
+        },
+        {
+          "id": "the-wolves-at-the-door",
+          "title": "I Lupi alle Porte",
+          "url": "http://fondazionescp.wikidot.com/the-wolves-at-the-door",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "9. I Lupi alle Porte di"
+        },
+        {
+          "id": "light-dependent-reactions",
+          "title": "Reazioni Dipendenti dalla Luce",
+          "url": "http://fondazionescp.wikidot.com/light-dependent-reactions",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "10. Reazioni Dipendenti dalla Luce di"
+        },
+        {
+          "id": "dressing-up",
+          "title": "Vestirsi",
+          "url": "http://fondazionescp.wikidot.com/dressing-up",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "11. Serata Fuori tra Ragazze Vestirsi | Ubriacarsi | Scatenare l’Inferno di"
+        },
+        {
+          "id": "additional-resources",
+          "title": "Risorse Aggiuntive",
+          "url": "http://fondazionescp.wikidot.com/additional-resources",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "12. Risorse Aggiuntive di e"
+        },
+        {
+          "id": "pythia-s-wing",
+          "title": "L’Ala della Pizia",
+          "url": "http://fondazionescp.wikidot.com/pythia-s-wing",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "14. L’Ala della Pizia di"
+        },
+        {
+          "id": "number-one-with-a-bullet",
+          "title": "Bersaglio Numero Uno",
+          "url": "http://fondazionescp.wikidot.com/number-one-with-a-bullet",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "15. Bersaglio Numero Uno di"
+        },
+        {
+          "id": "lending-a-hand",
+          "title": "Dare una Mano",
+          "url": "http://fondazionescp.wikidot.com/lending-a-hand",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "16. Dare una Mano di"
+        },
+        {
+          "id": "the-high-court-with-the-magic-army",
+          "title": "La Corte Suprema con l’Esercito Magico",
+          "url": "http://fondazionescp.wikidot.com/the-high-court-with-the-magic-army",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "17. La Corte Suprema con l’Esercito Magico di"
+        },
+        {
+          "id": "in-harm-s-way",
+          "title": "In Pericolo",
+          "url": "http://fondazionescp.wikidot.com/in-harm-s-way",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "18. In Pericolo di"
+        },
+        {
+          "id": "hellomuddah",
+          "title": "Operazione “Campo Granada”",
+          "url": "http://fondazionescp.wikidot.com/hellomuddah",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "1. Operazione “Campo Granada” di e"
+        },
+        {
+          "id": "folly",
+          "title": "Pazzia",
+          "url": "http://fondazionescp.wikidot.com/folly",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "2. Pazzia di"
+        },
+        {
+          "id": "back-alley-deals",
+          "title": "Affari da Vicolo sul Retro",
+          "url": "http://fondazionescp.wikidot.com/back-alley-deals",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "3. Affari da Vicolo sul Retro di"
+        },
+        {
+          "id": "tasers-thermite",
+          "title": "Pistole Elettriche e Termite",
+          "url": "http://fondazionescp.wikidot.com/tasers-thermite",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "4. Pistole Elettriche e Termite di e"
+        },
+        {
+          "id": "tinker-tailor-soldier-huntsman",
+          "title": "Stagnino, Sarto, Soldato, Cacciatore",
+          "url": "http://fondazionescp.wikidot.com/tinker-tailor-soldier-huntsman",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "5. Stagnino, Sarto, Soldato, Cacciatore di"
+        },
+        {
+          "id": "we-got-a-good-thing-here",
+          "title": "Qui c’è Qualcosa di Buono",
+          "url": "http://fondazionescp.wikidot.com/we-got-a-good-thing-here",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "6. Qui c’è Qualcosa di Buono di"
+        },
+        {
+          "id": "are-we-there-yet",
+          "title": "Siamo Arrivati?",
+          "url": "http://fondazionescp.wikidot.com/are-we-there-yet",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "7. Siamo Arrivati? di"
+        },
+        {
+          "id": "i-thought-you-died-alone",
+          "title": "Pensavo che Fossi Morto da Solo",
+          "url": "http://fondazionescp.wikidot.com/i-thought-you-died-alone",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "8. Pensavo che Fossi Morto da Solo di"
+        },
+        {
+          "id": "ball-gags-and-scrambled-eggs",
+          "title": "Bavagli con Palla e Uova Strapazzate",
+          "url": "http://fondazionescp.wikidot.com/ball-gags-and-scrambled-eggs",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "9. Bavagli con Palla e Uova Strapazzate di e"
+        },
+        {
+          "id": "up-to-no-good",
+          "title": "Niente di Buono",
+          "url": "http://fondazionescp.wikidot.com/up-to-no-good",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "10. Niente di Buono di"
+        },
+        {
+          "id": "elder-baconator",
+          "title": "Pancetta Quadrupla",
+          "url": "http://fondazionescp.wikidot.com/elder-baconator",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "11. Pancetta Quadrupla di e"
+        },
+        {
+          "id": "getting-into-treble",
+          "title": "Raggiungere le Alte Frequenze",
+          "url": "http://fondazionescp.wikidot.com/getting-into-treble",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "12. Raggiungere le Alte Frequenze di"
+        },
+        {
+          "id": "passing-notes-in-class",
+          "title": "Passarsi Bigliettini in Classe",
+          "url": "http://fondazionescp.wikidot.com/passing-notes-in-class",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "13. Passarsi Bigliettini in Classe di"
+        },
+        {
+          "id": "no-joke",
+          "title": "Non È uno Scherzo",
+          "url": "http://fondazionescp.wikidot.com/no-joke",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "14. Non È uno Scherzo di"
+        },
+        {
+          "id": "calm",
+          "title": "Calma",
+          "url": "http://fondazionescp.wikidot.com/calm",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "15. Calma - Racconto più Recente, 09/12/2019 a cura di , in collaborazione con , , , , , e"
+        },
+        {
+          "id": "oh-seventy-six",
+          "title": "SCP-076-2",
+          "url": "http://fondazionescp.wikidot.com/oh-seventy-six",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Domare il Fuoco (in corso) SCP-076-2 | Progetto Cerbero | Mastini di Guerra | Tra Fuoco e Fiamme di"
+        },
+        {
+          "id": "four-stories-told-in-order",
+          "title": "Quattro Storie Raccontate al Fine...",
+          "url": "http://fondazionescp.wikidot.com/four-stories-told-in-order",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "requiem-for-ice-spider",
+          "title": "Requiem per il Ragno di Ghiaccio",
+          "url": "http://fondazionescp.wikidot.com/requiem-for-ice-spider",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "so-leave-yourself-alone",
+          "title": "Quindi Lasciati Stare",
+          "url": "http://fondazionescp.wikidot.com/so-leave-yourself-alone",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "[Nota: Avvertenze sui Contenuti] di"
+        },
+        {
+          "id": "this-is-the-real-life",
+          "title": "È Tutto Vero",
+          "url": "http://fondazionescp.wikidot.com/this-is-the-real-life",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "fresh-blood",
+          "title": "Sangue Fresco",
+          "url": "http://fondazionescp.wikidot.com/fresh-blood",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hawaiian-shirts",
+          "title": "Camicie Hawaiane",
+          "url": "http://fondazionescp.wikidot.com/hawaiian-shirts",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-8726",
+          "title": "Ricercatore James, 6 Anni, in Eterno",
+          "url": "http://fondazionescp.wikidot.com/scp-8726",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "SCP-8726 deve rimanere sotto le cure del dott. Everwood nel laboratorio di ricerca sul GdI-386 1 del Sito-55. Ha il permesso di aggirarsi per il sito a suo piacimento, a patto che almeno un membro del personale di Livello 2 lo supervisioni. Inoltre, quando gli…"
+        },
+        {
+          "id": "resurrection-old-foes-hub",
+          "title": "Resurrezione - Vecchi Nemici",
+          "url": "http://fondazionescp.wikidot.com/resurrection-old-foes-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Nota per i Lettori, Dicembre 2021: Le storie qui sopra furono scritte nel 2014. Erano state concepite come prologo del progetto Resurrezione, ma all’inizio furono omesse per via di questioni ora irrilevanti.",
+      "articleSections": [
+        {
+          "id": "01-parte-zero-prima-della-ssm-alfa-9",
+          "title": "PARTE ZERO: Prima della SSM Alfa-9",
+          "articleIDs": [
+            "yesterday",
+            "snakes-and-ladders",
+            "iquit",
+            "a-restless-wanderer-on-the-earth",
+            "prisoners"
+          ]
+        },
+        {
+          "id": "02-lincidente-zero-il-giorno-in-cui-tutto-cambio",
+          "title": "L’Incidente Zero: il Giorno in cui Tutto Cambiò",
+          "articleIDs": [
+            "incident-zero-part-1"
+          ]
+        },
+        {
+          "id": "03-parte-uno-il-nuovo-inizio",
+          "title": "PARTE UNO: Il Nuovo Inizio",
+          "articleIDs": [
+            "immediate-actions",
+            "the-seed-of-an-idea",
+            "contingency",
+            "deals-with-the-devil",
+            "what-s-in-a-name",
+            "just-a-formality",
+            "integrity-project",
+            "new-tricks",
+            "the-wolves-at-the-door",
+            "light-dependent-reactions",
+            "dressing-up",
+            "additional-resources",
+            "pythia-s-wing",
+            "number-one-with-a-bullet",
+            "lending-a-hand",
+            "the-high-court-with-the-magic-army",
+            "in-harm-s-way"
+          ]
+        },
+        {
+          "id": "04-parte-due-via-libera-alla-ssm-alfa-9",
+          "title": "PARTE DUE: Via Libera alla SSM Alfa-9",
+          "articleIDs": [
+            "hellomuddah",
+            "folly",
+            "back-alley-deals",
+            "tasers-thermite",
+            "tinker-tailor-soldier-huntsman",
+            "we-got-a-good-thing-here",
+            "are-we-there-yet",
+            "i-thought-you-died-alone",
+            "ball-gags-and-scrambled-eggs",
+            "up-to-no-good",
+            "elder-baconator",
+            "getting-into-treble",
+            "passing-notes-in-class",
+            "no-joke",
+            "calm"
+          ]
+        },
+        {
+          "id": "05-racconti-autonomi",
+          "title": "Racconti Autonomi",
+          "articleIDs": [
+            "oh-seventy-six",
+            "four-stories-told-in-order",
+            "requiem-for-ice-spider",
+            "so-leave-yourself-alone",
+            "this-is-the-real-life",
+            "fresh-blood",
+            "hawaiian-shirts",
+            "scp-8726"
+          ]
+        },
+        {
+          "id": "06-saghe",
+          "title": "Saghe",
+          "articleIDs": [
+            "resurrection-old-foes-hub"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:the-trashfire",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "the-trashfire",
+      "title": "Rifiuti al Rogo",
+      "sourceListURL": "http://fondazionescp.wikidot.com/the-trashfire",
+      "officialHubURL": "http://fondazionescp.wikidot.com/the-trashfire",
+      "hubPresentation": "standard",
+      "canonicalTag": "rifiuti-al-rogo",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "rifiuti-al-rogo",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-f0f01009402965a9b261c681deb3eb2df5c8f0c1e8a2656b64e340739fc4476d"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-5012",
+          "title": "Non C'è Scampo dalla Fossa Senza Fondo",
+          "url": "http://fondazionescp.wikidot.com/scp-5012",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "[in sospeso] Procedure Ereditarie di Contenimento: SCP-5012 è proprietà legale di Agricoltura Fitzwilliam, una compagnia di facciata della Fondazione. Si sono implementate le misure anti irruzione standard, come è appropriato per i progetti a basso rischio. SC…"
+        },
+        {
+          "id": "scp-378",
+          "title": "Cerebroverme",
+          "url": "http://fondazionescp.wikidot.com/scp-378",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-378 deve essere contenuto in un Terrario di Contenimento per Entità Sotterranee. Temperatura e umidità devono essere mantenute a livello ottimale per la crescita e la sopravvivenza di Heterodermia kaincrow 1 e di Prenolepis everettmann 2 . Due volte all'an…"
+        },
+        {
+          "id": "scp-4776",
+          "title": "ARMAREAGAN",
+          "url": "http://fondazionescp.wikidot.com/scp-4776",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "I dati sulla posizione di SCP-4776 sono stampati su una piccola scheda e conservati all'interno di un caveau di oggetti ad alta sicurezza nel Sito-49. SCP-4776-1 è stato registrato nel database del Sit-49, e non è accessibile a nessun membro del personale con…"
+        },
+        {
+          "id": "secure-facility-dossier-site-56",
+          "title": "Fascicolo della Struttura di Sicurezza: Sito-56",
+          "url": "http://fondazionescp.wikidot.com/secure-facility-dossier-site-56",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-4495",
+          "title": "Un Dio per Maiali",
+          "url": "http://fondazionescp.wikidot.com/scp-4495",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Il personale rilevante deve eseguire la Procedura 610-Sinclair su base quotidiana ed il personale di manutenzione deve ispezionare la camera di contenimento di SCP-4495 su base bisettimanale. SCP-4495 è contenuto all'interno di una cella a tre livelli, ciascun…"
+        },
+        {
+          "id": "qlippoth-and-sefiros",
+          "title": "Qelipot e Sefiros",
+          "url": "http://fondazionescp.wikidot.com/qlippoth-and-sefiros",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "(Biblioteca del Viandante) tradotto da"
+        },
+        {
+          "id": "nadox-and-the-mekhanite",
+          "title": "Nadox e il Mekhanita",
+          "url": "http://fondazionescp.wikidot.com/nadox-and-the-mekhanite",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "jacklyn-diamandis-accountable-to-nobody",
+          "title": "jacklyn diamandis non rende conto a nessuno",
+          "url": "http://fondazionescp.wikidot.com/jacklyn-diamandis-accountable-to-nobody",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "christ-in-scarlet",
+          "title": "Cristo Scarlatto",
+          "url": "http://fondazionescp.wikidot.com/christ-in-scarlet",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "a-crack-in-the-porcelain",
+          "title": "Una Crepa nella Porcellana",
+          "url": "http://fondazionescp.wikidot.com/a-crack-in-the-porcelain",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "(esplicito) tradotto da"
+        },
+        {
+          "id": "filled-to-the-brim-with-girlish-glee",
+          "title": "Ripiena Fino All'Orlo Di Gioia Femminile",
+          "url": "http://fondazionescp.wikidot.com/filled-to-the-brim-with-girlish-glee",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "project-proposal-2014-1221",
+          "title": "Proposta Progetto 2014-1221: Svegliarsi Finalmente",
+          "url": "http://fondazionescp.wikidot.com/project-proposal-2014-1221",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "are-we-gentrified-yet",
+          "title": "Are We Gentrified Yet?",
+          "url": "http://fondazionescp.wikidot.com/are-we-gentrified-yet",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-952",
+          "title": "NP Rock",
+          "url": "http://fondazionescp.wikidot.com/scp-952",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "I progetti musicali sotto gli effetti di SCP-952 devono essere terminati con ogni mezzo possibile, e qualsiasi supporto fisico contenente registrazioni di musica influenzata da SCP-952 deve essere copiato su un Dispositivo di memorizzazione antimemetico standa…"
+        },
+        {
+          "id": "soi-004",
+          "title": "Specie di Interesse-004",
+          "url": "http://fondazionescp.wikidot.com/soi-004",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3874",
+          "title": "Seicento Contro Uno",
+          "url": "http://fondazionescp.wikidot.com/scp-3874",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "A causa dell'Accordo SCP-GOC del 1970 1 , il coinvolgimento diretto della Fondazione nel contenimento di SCP-3874 è impossibile. La Fondazione deve invece monitorare le attività del GdI-616 \"Pentagramma\" 2 in relazione all'anomalia e ai tentativi di sabotaggio…"
+        },
+        {
+          "id": "ambrose-backdoor-soho",
+          "title": "Ambrose BackDoor SoHo",
+          "url": "http://fondazionescp.wikidot.com/ambrose-backdoor-soho",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-654",
+          "title": "Corno Tonante",
+          "url": "http://fondazionescp.wikidot.com/scp-654",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Il contenimento diretto di SCP-654 è affidato al GdI-466 (Wilson's Wildlife Solutions) per via del Trattato di Boring 1 . SCP-654 è contenuto in un habitat speciale che circola costantemente acqua di mare, tenuto ad una temperatura di approssimativamente -1.8…"
+        },
+        {
+          "id": "scp-744",
+          "title": "Scopo Superiore",
+          "url": "http://fondazionescp.wikidot.com/scp-744",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-744 è stato acquistato da GdI-952 (\"Olney Ironworks\") attraverso S. C. Public . . Una società di facciata della Fondazione creata allo scopo di interagire con GdI-952 al di sopra del Velo. I filmati di sorveglianza devono essere continuamente monitorati da…"
+        },
+        {
+          "id": "a-eulogy-in-eleven-eight-time",
+          "title": "Un'Eulogia In Tempo 11/8",
+          "url": "http://fondazionescp.wikidot.com/a-eulogy-in-eleven-eight-time",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "they-were-beautiful",
+          "title": "Roccia Spaziale (Poesia Ritrovata)",
+          "url": "http://fondazionescp.wikidot.com/they-were-beautiful",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Storie su bestie senza scopo, e sul danno che hanno causato.",
+      "articleSections": [
+        {
+          "id": "01-le-storie",
+          "title": "Le Storie",
+          "articleIDs": [
+            "scp-5012",
+            "scp-378",
+            "scp-4776",
+            "secure-facility-dossier-site-56",
+            "scp-4495",
+            "qlippoth-and-sefiros",
+            "nadox-and-the-mekhanite",
+            "jacklyn-diamandis-accountable-to-nobody",
+            "christ-in-scarlet",
+            "a-crack-in-the-porcelain",
+            "filled-to-the-brim-with-girlish-glee",
+            "project-proposal-2014-1221",
+            "are-we-gentrified-yet",
+            "scp-952",
+            "soi-004",
+            "scp-3874",
+            "ambrose-backdoor-soho",
+            "scp-654",
+            "scp-744",
+            "a-eulogy-in-eleven-eight-time",
+            "they-were-beautiful"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:broken-masquerade-hub",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "broken-masquerade-hub",
+      "title": "Smascherati",
+      "sourceListURL": "http://fondazionescp.wikidot.com/broken-masquerade-hub",
+      "officialHubURL": "http://fondazionescp.wikidot.com/broken-masquerade-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "smascherati",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "smascherati",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-6fc9d8d5c68e87943b4724c1f65fe796499a84c849c5a3b67dc8a997cdbbed28"
+      },
+      "primaryArticles": [
+        {
+          "id": "ripped-from-the-headlines",
+          "title": "Strappato dai Titoli",
+          "url": "http://fondazionescp.wikidot.com/ripped-from-the-headlines",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "demasqed",
+          "title": "Demascherati",
+          "url": "http://fondazionescp.wikidot.com/demasqed",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "La Fine Della Recita",
+          "url": "http://fondazionescp.wikidot.com/piercing-the-veil",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-executions-of-doctor-bright",
+          "title": "Le Esecuzioni del Dr. Bright",
+          "url": "http://fondazionescp.wikidot.com/the-executions-of-doctor-bright",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "research-notes-of-rj-tellar",
+          "title": "Note di Ricerca di RJ Tellar",
+          "url": "http://fondazionescp.wikidot.com/research-notes-of-rj-tellar",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "joseon",
+          "title": "Joseon",
+          "url": "http://fondazionescp.wikidot.com/joseon",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-truth-is-out-there",
+          "title": "La Verità è Lì Fuori",
+          "url": "http://fondazionescp.wikidot.com/the-truth-is-out-there",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "ethical",
+          "title": "Etico?",
+          "url": "http://fondazionescp.wikidot.com/ethical",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "six-letters-addressed",
+          "title": "Sei Lettere Indirizzate Alla Fondazione SCP (E Una Lettera a Casa)",
+          "url": "http://fondazionescp.wikidot.com/six-letters-addressed",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "a-lesson-in-power",
+          "title": "Una Lezione Sul Potere",
+          "url": "http://fondazionescp.wikidot.com/a-lesson-in-power",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3241",
+          "title": "La SS Sommerfeld",
+          "url": "http://fondazionescp.wikidot.com/scp-3241",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "La SARC 1 ha il compito di elaborare costantemente un piano di contenimento di SCP-3241 sicuro ed efficiente. Fino all'elaborazione di quest'ultimo, le procedure per contenere SCP-3241 si concentreranno sulla mitigazione e l'osservazione del fenomeno e la prev…"
+        },
+        {
+          "id": "on-the-outskirts",
+          "title": "In Avanscoperta",
+          "url": "http://fondazionescp.wikidot.com/on-the-outskirts",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "no-esteemed-deed",
+          "title": "Nessun Atto Altamente Stimato è Commemorato Qui",
+          "url": "http://fondazionescp.wikidot.com/no-esteemed-deed",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "ambroseinternational-pdf",
+          "title": "AmbroseInternational.pdf",
+          "url": "http://fondazionescp.wikidot.com/ambroseinternational-pdf",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "para-puppies",
+          "title": "'ParaPedigree' PED464/CAN33/LUP22",
+          "url": "http://fondazionescp.wikidot.com/para-puppies",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "reality-tv-designer-pets-and-fine-dining",
+          "title": "Reality TV, Animali di Marca e Cucina Raffinata",
+          "url": "http://fondazionescp.wikidot.com/reality-tv-designer-pets-and-fine-dining",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-4720",
+          "title": "Quindi Forza, Eroi dell'Infanzia! Non Sorgerete dalle Pagine?",
+          "url": "http://fondazionescp.wikidot.com/scp-4720",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "Gli SCP-4720 sono contenuti nell'ala-archivio della libreria del Sito-38. Le istanze di SCP-4720 sono isolate in sacchetti di polietilene puliti e adatti all'archiviazione, e conservate in un ambiente a temperatura e umidità controllata. Delle campagne di info…"
+        },
+        {
+          "id": "keeping-it-chill",
+          "title": "Divertendosi Con I Propri Amici Alla SCP Foundation",
+          "url": "http://fondazionescp.wikidot.com/keeping-it-chill",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "broken-masquerade-epistolary",
+          "title": "Frammenti di un Mondo Svelato",
+          "url": "http://fondazionescp.wikidot.com/broken-masquerade-epistolary",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "& ; tradotto da e"
+        },
+        {
+          "id": "stormsite19",
+          "title": "#InvadereilSito19",
+          "url": "http://fondazionescp.wikidot.com/stormsite19",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-5148",
+          "title": "Qlippoth",
+          "url": "http://fondazionescp.wikidot.com/scp-5148",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Bisogna rispettare la procedura 5148-Alpha quando si fa riferimento alle Classi dell'Oggetto comprese tra Chokhmah e Binah per tutte le anomalie registrate nel database SCiPnet del Sito-19. La Classe dell'Oggetto può essere pronunciata ad alta voce, ma non dig…"
+        },
+        {
+          "id": "uiu-file-2019-031",
+          "title": "File UIU 2019-031: Mariti trofeo",
+          "url": "http://fondazionescp.wikidot.com/uiu-file-2019-031",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "disillusionment",
+          "title": "Disillusione",
+          "url": "http://fondazionescp.wikidot.com/disillusionment",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-5990",
+          "title": "Fuori dalla mia testa, fuori dalla mia mente",
+          "url": "http://fondazionescp.wikidot.com/scp-5990",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Il contenimento di SCP-5990 implica la messa in sicurezza del luogo di un evento SCP-5990 quando viene segnalato e l'assistenza nella pulizia di eventuali danni, normativi o anomali. Al momento non sono noti dei mezzi per garantire il completo contenimento fis…"
+        },
+        {
+          "id": "scp-3739",
+          "title": "Latte-Mentale™ di Moosphere, Inc.",
+          "url": "http://fondazionescp.wikidot.com/scp-3739",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Il contenimento di SCP-3739 è incentrato sull'introduzione di un prodotto concorrente stabile per ottenere un punto d'appoggio nel mercato del paranormale. 1 A tal fine, l'obiettivo della società della Fondazione Produzioni Casearie Stratford 2 è quello di pro…"
+        },
+        {
+          "id": "the-fine-print",
+          "title": "E Cos'era un'Anima per Quel Mondo Bianco e Vuoto",
+          "url": "http://fondazionescp.wikidot.com/the-fine-print",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cyantreuse, tradotto da e"
+        },
+        {
+          "id": "sex-drugs-money",
+          "title": "Sesso, Droga, Denaro",
+          "url": "http://fondazionescp.wikidot.com/sex-drugs-money",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cyantreuse, tradotto da"
+        },
+        {
+          "id": "forum-post",
+          "title": "Post sul Forum",
+          "url": "http://fondazionescp.wikidot.com/forum-post",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cyantreuse, tradotto da"
+        },
+        {
+          "id": "ethics-guide",
+          "title": "Guida del Comitato Etico alle Anomalie Umane",
+          "url": "http://fondazionescp.wikidot.com/ethics-guide",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cyantreuse, tradotto da"
+        },
+        {
+          "id": "scp-4427",
+          "title": "Nessuno Rappresenta il Popolo",
+          "url": "http://fondazionescp.wikidot.com/scp-4427",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Poiché non esiste un metodo accurato per prevedere i tempi di manifestazione di SCP-4427, SCP-4427 è considerato incontenibile; tuttavia, la maggior parte dei casi 1 sembra avere luogo durante manifestazioni politiche — in particolare nei raduni cui l'argoment…"
+        },
+        {
+          "id": "when-the-time-comes-i-do-not-want-to-be-forgotten",
+          "title": "Oceano, Padre di Tutti",
+          "url": "http://fondazionescp.wikidot.com/when-the-time-comes-i-do-not-want-to-be-forgotten",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cyantreuse, tradotto da"
+        },
+        {
+          "id": "in-memoriam",
+          "title": "Come una Roccia",
+          "url": "http://fondazionescp.wikidot.com/in-memoriam",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cyantreuse, tradotto da"
+        },
+        {
+          "id": "freekleinberg",
+          "title": "Liberate Kleinberg",
+          "url": "http://fondazionescp.wikidot.com/freekleinberg",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "single-issue-voters",
+          "title": "Elezioni a Scelta Singola",
+          "url": "http://fondazionescp.wikidot.com/single-issue-voters",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "psa-cognitohazards-and-you",
+          "title": "PSA: Rischi Cognitivi e Voi!",
+          "url": "http://fondazionescp.wikidot.com/psa-cognitohazards-and-you",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "sell-clickbait-profit",
+          "title": "Saldi, Clickbait, Profitti",
+          "url": "http://fondazionescp.wikidot.com/sell-clickbait-profit",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "top-5-colleges",
+          "title": "Questi 5 College Sono i Migliori per Poter Imparare le Arti Oscure! Il Numero 1 Vi Scioccherà!",
+          "url": "http://fondazionescp.wikidot.com/top-5-colleges",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-6115",
+          "title": "L'Opzione Pubblica",
+          "url": "http://fondazionescp.wikidot.com/scp-6115",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "Gli individui designati come SCP-6115-1 devono essere trasferiti alla struttura della Fondazione più vicina che sia dotata di attrezzature mediche in grado di curare SCP-6115. Secondo le politiche mediche della Fondazione, i pazienti devono ricevere un certifi…"
+        },
+        {
+          "id": "scp-7404",
+          "title": "Quanto è oro svanirà",
+          "url": "http://fondazionescp.wikidot.com/scp-7404",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Lo slot di SCP-7404 è stato eletto come luogo di sepoltura per SCP-7404 ed è stato impiegato come tale. A tale scopo, SCP-7404 è stato reso aperto al pubblico."
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\"Sto solo dicendo che era la cosa giusta da fare in quel momento. Potrebbe non essere la cosa giusta da fare in questo momento. Potrebbe non essere la cosa giusta da fare ancora per un bel pò di tempo. Ma allora? Era la cosa giusta da fare\". \"Stai dicendo, Signor Cle-\" \"È Dottore\" \"Mi scusi, dottore. Stai dicendo, Dottor Clef, che queste persone meritavano di morire?\" \"Niente affatto, Oprah. Sto dicendo che, al momento, non avevamo altra scelta se volevamo capire come funzionava questo dispositivo. Grazie a questa comprensione, siamo stati in grado di nascondere l'oggetto al pubblico e preservare più vite di persone di quante ne siano state perse.\" \"Il bene di molti, Dottor Clef?\" \"Il bene di molti, Oprah\" \"E ora che il velo della segretezza è stato levato?\" \"Facciamo le cose diversamente, ma dobbiamo ancora fare le stesse cose. Dobbiamo continuare la nostra ricerca.\" \"Ma perché, Dottore",
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "ripped-from-the-headlines",
+            "demasqed",
+            "piercing-the-veil",
+            "the-executions-of-doctor-bright",
+            "research-notes-of-rj-tellar",
+            "joseon",
+            "the-truth-is-out-there",
+            "ethical",
+            "six-letters-addressed",
+            "a-lesson-in-power",
+            "scp-3241",
+            "on-the-outskirts",
+            "no-esteemed-deed",
+            "ambroseinternational-pdf",
+            "para-puppies",
+            "reality-tv-designer-pets-and-fine-dining",
+            "scp-4720",
+            "keeping-it-chill",
+            "broken-masquerade-epistolary",
+            "stormsite19",
+            "scp-5148",
+            "uiu-file-2019-031",
+            "disillusionment",
+            "scp-5990",
+            "scp-3739",
+            "the-fine-print",
+            "sex-drugs-money",
+            "forum-post",
+            "ethics-guide",
+            "scp-4427",
+            "when-the-time-comes-i-do-not-want-to-be-forgotten",
+            "in-memoriam",
+            "freekleinberg",
+            "single-issue-voters",
+            "psa-cognitohazards-and-you",
+            "sell-clickbait-profit",
+            "top-5-colleges",
+            "scp-6115",
+            "scp-7404"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:on-mount-golgotha-hub",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "on-mount-golgotha-hub",
+      "title": "Sul Monte Golgota",
+      "sourceListURL": "http://fondazionescp.wikidot.com/on-mount-golgotha-hub",
+      "officialHubURL": "http://fondazionescp.wikidot.com/on-mount-golgotha-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "sul-monte-golgota",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sul-monte-golgota",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-44f7f855ae0716bd849d218f48f7996e6a9798621f386cfbdcff7bcbca0b5723"
+      },
+      "primaryArticles": [
+        {
+          "id": "empedocles",
+          "title": "Empedocle",
+          "url": "http://fondazionescp.wikidot.com/empedocles",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "primae-formae",
+          "title": "Primae Formae",
+          "url": "http://fondazionescp.wikidot.com/primae-formae",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "bloodlines",
+          "title": "Linee di Sangue",
+          "url": "http://fondazionescp.wikidot.com/bloodlines",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-journal-of-k-m-sandoval",
+          "title": "Il Diario di K. M Sandoval",
+          "url": "http://fondazionescp.wikidot.com/the-journal-of-k-m-sandoval",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-4614",
+          "title": "Echi tra Allora ed Oggi",
+          "url": "http://fondazionescp.wikidot.com/scp-4614",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-4614 è custodito in una cassetta di sicurezza nell'Ala Deposito per elementi di Classe Safe. Le chiavi della cassetta sono sotto la custodia della Direzione del Sito."
+        },
+        {
+          "id": "scp-2458",
+          "title": "La Musica ha un Certo Fascino",
+          "url": "http://fondazionescp.wikidot.com/scp-2458",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "SCP-2458 va riposto all'interno della propria custodia, a sua volta posta dentro a un armadietto di sicurezza standard da cui può essere rimosso solo per gli esperimenti. Ogni test deve essere compiuto all'interno di un ambiente insonorizzato al cui interno po…"
+        },
+        {
+          "id": "scp-5012",
+          "title": "Non C'è Scampo dalla Fossa Senza Fondo",
+          "url": "http://fondazionescp.wikidot.com/scp-5012",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "[in sospeso] Procedure Ereditarie di Contenimento: SCP-5012 è proprietà legale di Agricoltura Fitzwilliam, una compagnia di facciata della Fondazione. Si sono implementate le misure anti irruzione standard, come è appropriato per i progetti a basso rischio. SC…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\" Sono nato con la musica dentro di me. La musica è parte di me.",
+      "articleSections": [
+        {
+          "id": "01-racconti-principali",
+          "title": "Racconti Principali",
+          "articleIDs": [
+            "empedocles",
+            "primae-formae",
+            "bloodlines",
+            "the-journal-of-k-m-sandoval",
+            "scp-4614"
+          ]
+        },
+        {
+          "id": "02-oggetti-dinteresse-aggiuntivi",
+          "title": "Oggetti d’Interesse Aggiuntivi",
+          "articleIDs": [
+            "scp-2458",
+            "scp-5012"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:only-game-in-town-hub",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "only-game-in-town-hub",
+      "title": "L'Unico Sulla Piazza",
+      "sourceListURL": "http://fondazionescp.wikidot.com/only-game-in-town-hub",
+      "officialHubURL": "http://fondazionescp.wikidot.com/only-game-in-town-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "unico-sulla-piazza",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unico-sulla-piazza",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-ba3fa8dcf392cd330132ad5b48ba63f291a385489c22419232ffd6291ea0f66d"
+      },
+      "primaryArticles": [
+        {
+          "id": "the-birthday",
+          "title": "Mente in Pezzi",
+          "url": "http://fondazionescp.wikidot.com/the-birthday",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Vivax"
+        },
+        {
+          "id": "the-tale-of-the-library",
+          "title": "Il Racconto della Biblioteca",
+          "url": "http://fondazionescp.wikidot.com/the-tale-of-the-library",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Rumetzen"
+        },
+        {
+          "id": "there-was-one-there-was-not-one",
+          "title": "Ce N'Era Uno, Non Ce N'Era Uno",
+          "url": "http://fondazionescp.wikidot.com/there-was-one-there-was-not-one",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Gaffsey"
+        },
+        {
+          "id": "the-king-in-chains",
+          "title": "Il Re Incatenato",
+          "url": "http://fondazionescp.wikidot.com/the-king-in-chains",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Gaffsey"
+        },
+        {
+          "id": "interlude-scenes-from-the-fall",
+          "title": "Interludio - Scene Dalla Caduta",
+          "url": "http://fondazionescp.wikidot.com/interlude-scenes-from-the-fall",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Vivax"
+        },
+        {
+          "id": "on-the-origins",
+          "title": "Sulle Origini dei Rituali Carnofoni Premoderni",
+          "url": "http://fondazionescp.wikidot.com/on-the-origins",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Riemann e Gaffsey"
+        },
+        {
+          "id": "a-child-to-teach",
+          "title": "Un Bambino a cui Insegnare",
+          "url": "http://fondazionescp.wikidot.com/a-child-to-teach",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Pixeltasim"
+        },
+        {
+          "id": "competitive-teleology",
+          "title": "Teleologia Competitiva",
+          "url": "http://fondazionescp.wikidot.com/competitive-teleology",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Riemann"
+        },
+        {
+          "id": "the-faraday-girls",
+          "title": "Interludio - Le Ragazze Faraday",
+          "url": "http://fondazionescp.wikidot.com/the-faraday-girls",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Rumetzen"
+        },
+        {
+          "id": "the-end",
+          "title": "La Fine",
+          "url": "http://fondazionescp.wikidot.com/the-end",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Gaffsey"
+        },
+        {
+          "id": "the-edge-of-all-light",
+          "title": "Il Confine Di Tutta la Luce",
+          "url": "http://fondazionescp.wikidot.com/the-edge-of-all-light",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Ralliston"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\" Io contro mio fratello, mio fratello ed io contro i miei cugini, poi i miei cugini ed io contro gli estranei. \" - Proverbio beduino",
+      "articleSections": [
+        {
+          "id": "01-crediti",
+          "title": "Crediti",
+          "articleIDs": [
+            "the-birthday",
+            "the-tale-of-the-library",
+            "there-was-one-there-was-not-one",
+            "the-king-in-chains",
+            "interlude-scenes-from-the-fall",
+            "on-the-origins",
+            "a-child-to-teach",
+            "competitive-teleology",
+            "the-faraday-girls",
+            "the-end",
+            "the-edge-of-all-light"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:ultimo-in-vita",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "ultimo-in-vita",
+      "title": "Sogno ancora di rimanere l'ultimo in vita",
+      "sourceListURL": "http://fondazionescp.wikidot.com/ultimo-in-vita",
+      "officialHubURL": "http://fondazionescp.wikidot.com/ultimo-in-vita",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-1475611ad0e906f6a30cee03384c988a19fad69035a6ffbf1bda5a837d45e576"
+      },
+      "primaryArticles": [
+        {
+          "id": "ultimo-in-vita",
+          "title": "Sogno ancora di rimanere l'ultimo in vita",
+          "url": "http://fondazionescp.wikidot.com/ultimo-in-vita",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "ultimo-in-vita"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:un-ultimo-saluto",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "un-ultimo-saluto",
+      "title": "Un ultimo saluto",
+      "sourceListURL": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
+      "officialHubURL": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-5cf8c4916edba263738138a2cb58c0c92dc6063eed714d71dc10ae62fc2ca395"
+      },
+      "primaryArticles": [
+        {
+          "id": "un-ultimo-saluto",
+          "title": "Un ultimo saluto",
+          "url": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "un-ultimo-saluto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:vittoria-di-pirro",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "vittoria-di-pirro",
+      "title": "Vittoria di Pirro",
+      "sourceListURL": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
+      "officialHubURL": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-246c0a154a25ee13300191d41fa50beb8938e95ecb3c642b78d46254b5811525"
+      },
+      "primaryArticles": [
+        {
+          "id": "vittoria-di-pirro",
+          "title": "Vittoria di Pirro",
+          "url": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "vittoria-di-pirro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:l-ultimo-della-linea-15",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "l-ultimo-della-linea-15",
+      "title": "L'ultimo della Linea 15",
+      "sourceListURL": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
+      "officialHubURL": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-f39942d47edcd26a35f39b790362dc725adedddb1ffd2896ba2ffee5643add51"
+      },
+      "primaryArticles": [
+        {
+          "id": "l-ultimo-della-linea-15",
+          "title": "L'ultimo della Linea 15",
+          "url": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "l-ultimo-della-linea-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:sette-rintocchi",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "sette-rintocchi",
+      "title": "Sette Rintocchi",
+      "sourceListURL": "http://fondazionescp.wikidot.com/sette-rintocchi",
+      "officialHubURL": "http://fondazionescp.wikidot.com/sette-rintocchi",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-9eaaccb8d3d7d1c26e97b9d773726da971069ca030ddcec10f861821e44380e3"
+      },
+      "primaryArticles": [
+        {
+          "id": "sette-rintocchi",
+          "title": "Sette Rintocchi",
+          "url": "http://fondazionescp.wikidot.com/sette-rintocchi",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "sette-rintocchi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-098",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-098",
+      "title": "Richiamo dagli abissi",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-098",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-098",
+      "hubPresentation": "standard",
+      "canonicalTag": "acquatico",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "acquatico",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-5cac864e7c03d1fa8dd39e0d4f0a503dd468713d0906d54187050d052f3a4c9f"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-it-098",
+          "title": "Richiamo dagli abissi",
+          "url": "http://fondazionescp.wikidot.com/scp-it-098",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-098"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:eredi",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "eredi",
+      "title": "Eredi",
+      "sourceListURL": "http://fondazionescp.wikidot.com/eredi",
+      "officialHubURL": "http://fondazionescp.wikidot.com/eredi",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-ef501926ff947f3df996d9dce471fe6b8e3d7a0b24e5b531987ec17d98dac312"
+      },
+      "primaryArticles": [
+        {
+          "id": "eredi",
+          "title": "Eredi",
+          "url": "http://fondazionescp.wikidot.com/eredi",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "eredi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:epilogo-di-un-assassino",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "epilogo-di-un-assassino",
+      "title": "Epilogo di un assassino",
+      "sourceListURL": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
+      "officialHubURL": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-c342ec7010ec4e5b38f01d5006785944c57fab919de3700829a941e3631f63f4"
+      },
+      "primaryArticles": [
+        {
+          "id": "epilogo-di-un-assassino",
+          "title": "Epilogo di un assassino",
+          "url": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "epilogo-di-un-assassino"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:gian-galeazzo",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "gian-galeazzo",
+      "title": "Gian Galeazzo",
+      "sourceListURL": "http://fondazionescp.wikidot.com/gian-galeazzo",
+      "officialHubURL": "http://fondazionescp.wikidot.com/gian-galeazzo",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-7c01d5cc8fd3561f6f76c379f6ff2eea9c6d5fd34106ff5ab441ec200282488d"
+      },
+      "primaryArticles": [
+        {
+          "id": "gian-galeazzo",
+          "title": "Gian Galeazzo",
+          "url": "http://fondazionescp.wikidot.com/gian-galeazzo",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "gian-galeazzo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:il-peso-delle-responsabilita",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "il-peso-delle-responsabilita",
+      "title": "Il peso delle responsabilità",
+      "sourceListURL": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
+      "officialHubURL": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-1b7c47a4f8b598e3e4720de130fdc0489c8f038aa29ea18dc7143ae0d39cbcab"
+      },
+      "primaryArticles": [
+        {
+          "id": "il-peso-delle-responsabilita",
+          "title": "Il peso delle responsabilità",
+          "url": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "il-peso-delle-responsabilita"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:dossier-del-sito-deus",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "dossier-del-sito-deus",
+      "title": "Dossier del Sito Deus",
+      "sourceListURL": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
+      "officialHubURL": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-519a5472cb36e131439a0fca07998b365577919f6fbf2196d812f2f175258aa6"
+      },
+      "primaryArticles": [
+        {
+          "id": "dossier-del-sito-deus",
+          "title": "Dossier del Sito Deus",
+          "url": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "dossier-del-sito-deus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:dossier-luca-spallacci",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "dossier-luca-spallacci",
+      "title": "Fascicolo Persona d'Interesse: Luca Spallacci",
+      "sourceListURL": "http://fondazionescp.wikidot.com/dossier-luca-spallacci",
+      "officialHubURL": "http://fondazionescp.wikidot.com/dossier-luca-spallacci",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-30add1010c5f9b1349e3f70a9afa1e0468037f864cf38bd2fe51e1aa6ecbf9c2"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-it-068-arc",
+          "title": "Molisano",
+          "url": "http://fondazionescp.wikidot.com/scp-it-068-arc",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Nazionalità: Molisano"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Descrizione Fisica: Maschio caucasico, capelli ricci castani, occhi marroni, barba dello stesso colore dei capelli. Altezza 1,76 m, corporatura robusta, indossa spesso occhiali.",
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-068-arc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:vedete-da-lassu",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "vedete-da-lassu",
+      "title": "Vedete da Lassù",
+      "sourceListURL": "http://fondazionescp.wikidot.com/vedete-da-lassu",
+      "officialHubURL": "http://fondazionescp.wikidot.com/vedete-da-lassu",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-92b140815dab9e9475f79b423cc035e665c389450a2c4b59b6154205bb2a3e07"
+      },
+      "primaryArticles": [
+        {
+          "id": "vedete-da-lassu",
+          "title": "Vedete da Lassù",
+          "url": "http://fondazionescp.wikidot.com/vedete-da-lassu",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "vedete-da-lassu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-120",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-120",
+      "title": "Questo nome è di tutti",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-120",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-120",
+      "hubPresentation": "standard",
+      "canonicalTag": "altera-mente",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "altera-mente",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-d08c03753581c334b61a8906188e0c507510b367bce1fe5edcf14e06c2955254"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-it-120",
+          "title": "Questo nome è di tutti",
+          "url": "http://fondazionescp.wikidot.com/scp-it-120",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-120"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:cenobirma",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "cenobirma",
+      "title": "SCP-IT-003—EP.01—Cenobirma Irma",
+      "sourceListURL": "http://fondazionescp.wikidot.com/cenobirma",
+      "officialHubURL": "http://fondazionescp.wikidot.com/cenobirma",
+      "hubPresentation": "standard",
+      "canonicalTag": "canoni-alternativi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canoni-alternativi",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-2bc3ba934bf37778ea3a7f20725786754d78c0efd72574331d3ecd217096d6cf"
+      },
+      "primaryArticles": [
+        {
+          "id": "cenobirma",
+          "title": "SCP-IT-003—EP.01—Cenobirma Irma",
+          "url": "http://fondazionescp.wikidot.com/cenobirma",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "cenobirma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-003",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-003",
+      "title": "Il Paradigma di Weber",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-003",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-003",
+      "hubPresentation": "standard",
+      "canonicalTag": "altera-memoria",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "altera-memoria",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-c2db8a0c268333f166ede5b1083e46b245800299242cbcd40512019d540f5eb0"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-it-003",
+          "title": "Il Paradigma di Weber",
+          "url": "http://fondazionescp.wikidot.com/scp-it-003",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-it:collection:canon:scp-it-026",
+      "branchID": "scp-it",
+      "kind": "canon",
+      "hubID": "scp-it-026",
+      "title": "Il Test di Arendt",
+      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-026",
+      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-026",
+      "hubPresentation": "standard",
+      "canonicalTag": "altera-mente",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "altera-mente",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-7e3ab3b775e1ce87e6e94e196c34619d7d55756064871c9c9fa98a8da80ef791"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-it-026",
+          "title": "Il Test di Arendt",
+          "url": "http://fondazionescp.wikidot.com/scp-it-026",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-026"
+          ]
+        }
+      ]
+    },
     {
       "id": "scp-it:collection:canon:nuova-gestione-e-pesanti-bagagli",
       "branchID": "scp-it",
@@ -71,28 +3190,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "pesanti-bagagli",
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Heading text on /canoni-alternativi links directly to this page (row carries the 'hub' tag); pesanti-bagagli tag confirmed on the hub plus 2 members enumerable via the branch's fixed tagReverseLookup memberManifests set: scp-014-int (manifest_scp-int), apocrifo (manifest_tales).",
-          "it_tag.json shows 3 more pesanti-bagagli members that only live in manifest_gois (scp-it-077, scp-it-080, scp-it-116) -- out of scope for this canon reverse lookup, which is fixed to manifest_scp-it/manifest_tales/manifest_scp-main/manifest_scp-int -- plus 5 more (scp-it-032, scp-it-108, scp-it-179, canta-il-gallo, vomito) not present in any currently harvested IT feed manifest at all, so none of those 8 are enumerable as primaryArticles here."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "2 of 10 tag-confirmed pesanti-bagagli members enumerable via the branch's fixed canon memberManifests set"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-it",
@@ -101,673 +3206,104 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "structureHash": "sha256-187c0b74616bf05863d7573da3a8c32856e4c787b3962adde334f95e1cd4869d"
       },
       "primaryArticles": [
+        {
+          "id": "scp-it-077",
+          "title": "SCP-IT-077",
+          "url": "http://fondazionescp.wikidot.com/scp-it-077",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "- Il Grande Musicista dell'Indifferenza"
+        },
+        {
+          "id": "scp-it-032",
+          "title": "SCP-IT-032",
+          "url": "http://fondazionescp.wikidot.com/scp-it-032",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "- Non Puoi Mancare"
+        },
+        {
+          "id": "vomito",
+          "title": "Questo Vomito Ti Sarà Utile",
+          "url": "http://fondazionescp.wikidot.com/vomito",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-it-116",
+          "title": "SCP-IT-116",
+          "url": "http://fondazionescp.wikidot.com/scp-it-116",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "- A Cuore Aperto di"
+        },
+        {
+          "id": "scp-it-080",
+          "title": "SCP-IT-080",
+          "url": "http://fondazionescp.wikidot.com/scp-it-080",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "- Giù Nello Scivolo, Così Scorre Il Sangue"
+        },
+        {
+          "id": "canta-il-gallo",
+          "title": "Canta il Gallo",
+          "url": "http://fondazionescp.wikidot.com/canta-il-gallo",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-it-179",
+          "title": "SCP-IT-179",
+          "url": "http://fondazionescp.wikidot.com/scp-it-179",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "- La Mia Morte ed Io"
+        },
+        {
+          "id": "scp-it-108",
+          "title": "SCP-IT-108",
+          "url": "http://fondazionescp.wikidot.com/scp-it-108",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "- Il Nostro Silenzioso Assenzio"
+        },
         {
           "id": "scp-014-int",
           "title": "Una Rete di Amnestici",
           "url": "http://fondazionescp.wikidot.com/scp-014-int",
           "sourceManifest": "manifest_scp-int",
           "role": "primaryArticle",
-          "os": 2
-        },
-        {
-          "id": "apocrifo",
-          "title": "Apocrifo",
-          "url": "http://fondazionescp.wikidot.com/apocrifo",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-014-INT è attualmente contenuto dai Nexus precedentemente interessati dagli effetti dell'anomalia, all’interno di FP-120 \" Esterberg \". Grazie agli accordi stipulati, la Fondazione ha potuto monitorare alcune parti del contenimento e della sicurezza riguar…"
         }
       ],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:ultimo-in-vita",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "ultimo-in-vita",
-      "title": "Sogno ancora di rimanere l'ultimo in vita",
-      "sourceListURL": "http://fondazionescp.wikidot.com/ultimo-in-vita",
-      "officialHubURL": "http://fondazionescp.wikidot.com/ultimo-in-vita",
-      "hubPresentation": "standard",
-      "canonicalTag": "ultimo-in-vita",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:un-ultimo-saluto",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "un-ultimo-saluto",
-      "title": "Un ultimo saluto",
-      "sourceListURL": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
-      "officialHubURL": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
-      "hubPresentation": "standard",
-      "canonicalTag": "un-ultimo-saluto",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:vittoria-di-pirro",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "vittoria-di-pirro",
-      "title": "Vittoria di Pirro",
-      "sourceListURL": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
-      "officialHubURL": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
-      "hubPresentation": "standard",
-      "canonicalTag": "vittoria-di-pirro",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:l-ultimo-della-linea-15",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "l-ultimo-della-linea-15",
-      "title": "L'ultimo della Linea 15",
-      "sourceListURL": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
-      "officialHubURL": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
-      "hubPresentation": "standard",
-      "canonicalTag": "l-ultimo-della-linea-15",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:sette-rintocchi",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "sette-rintocchi",
-      "title": "Sette Rintocchi",
-      "sourceListURL": "http://fondazionescp.wikidot.com/sette-rintocchi",
-      "officialHubURL": "http://fondazionescp.wikidot.com/sette-rintocchi",
-      "hubPresentation": "standard",
-      "canonicalTag": "sette-rintocchi",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'zombieverso' canon (5 works: ultimo-in-vita, un-ultimo-saluto, vittoria-di-pirro, l-ultimo-della-linea-15, sette-rintocchi) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'zombieverso' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:scp-it-098",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "scp-it-098",
-      "title": "Richiamo dagli abissi",
-      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-098",
-      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-098",
-      "hubPresentation": "standard",
-      "canonicalTag": "scp-it-098",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:eredi",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "eredi",
-      "title": "Eredi",
-      "sourceListURL": "http://fondazionescp.wikidot.com/eredi",
-      "officialHubURL": "http://fondazionescp.wikidot.com/eredi",
-      "hubPresentation": "standard",
-      "canonicalTag": "eredi",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:epilogo-di-un-assassino",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "epilogo-di-un-assassino",
-      "title": "Epilogo di un assassino",
-      "sourceListURL": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
-      "officialHubURL": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
-      "hubPresentation": "standard",
-      "canonicalTag": "epilogo-di-un-assassino",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:gian-galeazzo",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "gian-galeazzo",
-      "title": "Gian Galeazzo",
-      "sourceListURL": "http://fondazionescp.wikidot.com/gian-galeazzo",
-      "officialHubURL": "http://fondazionescp.wikidot.com/gian-galeazzo",
-      "hubPresentation": "standard",
-      "canonicalTag": "gian-galeazzo",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:il-peso-delle-responsabilita",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "il-peso-delle-responsabilita",
-      "title": "Il peso delle responsabilità",
-      "sourceListURL": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
-      "officialHubURL": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
-      "hubPresentation": "standard",
-      "canonicalTag": "il-peso-delle-responsabilita",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:dossier-del-sito-deus",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "dossier-del-sito-deus",
-      "title": "Dossier del Sito Deus",
-      "sourceListURL": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
-      "officialHubURL": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
-      "hubPresentation": "standard",
-      "canonicalTag": "dossier-del-sito-deus",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:dossier-luca-spallacci",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "dossier-luca-spallacci",
-      "title": "Fascicolo Persona d'Interesse: Luca Spallacci",
-      "sourceListURL": "http://fondazionescp.wikidot.com/dossier-luca-spallacci",
-      "officialHubURL": "http://fondazionescp.wikidot.com/dossier-luca-spallacci",
-      "hubPresentation": "standard",
-      "canonicalTag": "dossier-luca-spallacci",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:vedete-da-lassu",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "vedete-da-lassu",
-      "title": "Vedete da Lassù",
-      "sourceListURL": "http://fondazionescp.wikidot.com/vedete-da-lassu",
-      "officialHubURL": "http://fondazionescp.wikidot.com/vedete-da-lassu",
-      "hubPresentation": "standard",
-      "canonicalTag": "vedete-da-lassu",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Member of the tag-confirmed 'capitanata' canon (8 works: scp-it-098, eredi, epilogo-di-un-assassino, gian-galeazzo, il-peso-delle-responsabilita, dossier-del-sito-deus, dossier-luca-spallacci, vedete-da-lassu) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'capitanata' group pending hub designation"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:scp-it-120",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "scp-it-120",
-      "title": "Questo nome è di tutti",
-      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-120",
-      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-120",
-      "hubPresentation": "standard",
-      "canonicalTag": "scp-it-120",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:cenobirma",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "cenobirma",
-      "title": "SCP-IT-003—EP.01—Cenobirma Irma",
-      "sourceListURL": "http://fondazionescp.wikidot.com/cenobirma",
-      "officialHubURL": "http://fondazionescp.wikidot.com/cenobirma",
-      "hubPresentation": "standard",
-      "canonicalTag": "cenobirma",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:scp-it-003",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "scp-it-003",
-      "title": "Il Paradigma di Weber",
-      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-003",
-      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-003",
-      "hubPresentation": "standard",
-      "canonicalTag": "scp-it-003",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-it:collection:canon:scp-it-026",
-      "branchID": "scp-it",
-      "kind": "canon",
-      "hubID": "scp-it-026",
-      "title": "Il Test di Arendt",
-      "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-026",
-      "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-026",
-      "hubPresentation": "standard",
-      "canonicalTag": "scp-it-026",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "CONVALIDA FINALE PER L'OPERATO UFFICIALE DELL'INIZIATIVA DI CONTENIMENTO ITALIANA: Con la presente, la direttrice Elena Sifone si impegna ad assumersi e a rispettare i doveri annessi al ruolo di Direttrice del Sito-77 e dell'Iniziativa di Contenimento Italiana in generale. Con la ferma, questa conferma che gli obblighi a cui si sottopone siano: Contenere col maggior successo possibile ogni minaccia contro la Normalità e la vita civile nella penisola italiana. Garantire un'amministrazione ottimale del territorio italiano al meglio dell'efficienza logistica ed economica. Nominare un collegio di esperti tecnici ed amministrativi affinché svolgano il ruolo di rappresentanti del Consiglio O4-IT al meglio delle loro capacità. Pianificare, dirigere e moderare le consultazioni del Consiglio O4-IT programmate o di emergenza che siano. Comunicare quanto deliberato dal Consiglio O5 o dall'assemblea",
+      "articleSections": [
+        {
+          "id": "01-i-lavori",
+          "title": "I Lavori",
+          "articleIDs": [
+            "scp-it-077",
+            "scp-it-032",
+            "vomito",
+            "scp-it-116",
+            "scp-it-080",
+            "canta-il-gallo",
+            "scp-it-179",
+            "scp-it-108",
+            "scp-014-int"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:vedi-napoli-e-poi-muori",
@@ -778,34 +3314,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/vedi-napoli-e-poi-muori",
       "officialHubURL": "http://fondazionescp.wikidot.com/vedi-napoli-e-poi-muori",
       "hubPresentation": "standard",
-      "canonicalTag": "vedi-napoli-e-poi-muori",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-669aa4cc85b50e9e6d34348f9dd1c191574ea811c2697c483f3180ee53ff54c5"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "vedi-napoli-e-poi-muori",
+          "title": "Vedi Napoli e poi Muori",
+          "url": "http://fondazionescp.wikidot.com/vedi-napoli-e-poi-muori",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "vedi-napoli-e-poi-muori"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:quando-napoli-piange-firenze-ride",
@@ -816,34 +3372,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/quando-napoli-piange-firenze-ride",
       "officialHubURL": "http://fondazionescp.wikidot.com/quando-napoli-piange-firenze-ride",
       "hubPresentation": "standard",
-      "canonicalTag": "quando-napoli-piange-firenze-ride",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-8c31f1ed635a82b37c2aa9732cc9391d73410bf5df50141316c02a95ba5d8f1a"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "quando-napoli-piange-firenze-ride",
+          "title": "Quando Napoli piange, Firenze ride",
+          "url": "http://fondazionescp.wikidot.com/quando-napoli-piange-firenze-ride",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "quando-napoli-piange-firenze-ride"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:addio-roma-addio-napoli",
@@ -854,34 +3430,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/addio-roma-addio-napoli",
       "officialHubURL": "http://fondazionescp.wikidot.com/addio-roma-addio-napoli",
       "hubPresentation": "standard",
-      "canonicalTag": "addio-roma-addio-napoli",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-922403b0555803f56ebce9cf3cdae3ae54bad54285d45e6242024f5c37187401"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "addio-roma-addio-napoli",
+          "title": "Addio Roma, addio Napoli",
+          "url": "http://fondazionescp.wikidot.com/addio-roma-addio-napoli",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "addio-roma-addio-napoli"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:tutto-il-mondo-e-paese",
@@ -892,34 +3488,56 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/tutto-il-mondo-e-paese",
       "officialHubURL": "http://fondazionescp.wikidot.com/tutto-il-mondo-e-paese",
       "hubPresentation": "standard",
-      "canonicalTag": "tutto-il-mondo-e-paese",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "Member of the tag-confirmed 'svelati' canon (4 works: vedi-napoli-e-poi-muori, quando-napoli-piange-firenze-ride, addio-roma-addio-napoli, tutto-il-mondo-e-paese) but no row in this group carries a distinguishing hub marker on /canoni-alternativi (the heading has no anchor link of its own), so no member can be picked as the canonical hub without guessing. Reviewed as officialHubOnly per-row; a follow-up pass could designate a hub member and convert the group to tagReverseLookup with explicit user sign-off."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; member of tag-confirmed 'svelati' group pending hub designation"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-174db0a0e2dfb4e3294a2d6ed0cd01ddb8224d5d7829f092aa7d3a89bda24129"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "tutto-il-mondo-e-paese",
+          "title": "Tutto il Mondo è Paese",
+          "url": "http://fondazionescp.wikidot.com/tutto-il-mondo-e-paese",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Ringraziamenti: Si ringraziano Mainardo , C0S0 , Dr Zeno e Siddartha Alonne per le recensioni e il via libera. Ringraziamento speciale a C0S0 per essere abbastanza degenerato da aver dato inizio a quest'universo narrativo e a Mainardo per averlo nutrito."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "tutto-il-mondo-e-paese"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:scp-it-001",
@@ -930,34 +3548,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-001",
       "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-001",
       "hubPresentation": "standard",
-      "canonicalTag": "scp-it-001",
+      "canonicalTag": "antimemetico",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "antimemetico",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-67240368b46d73ba5acf084de0bb6ff9c5aa108f1814fd059c355c9f5202651c"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-it-001",
+          "title": "Stat Febris Pristina Nomine",
+          "url": "http://fondazionescp.wikidot.com/scp-it-001",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-001"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:scp-it-004",
@@ -968,34 +3606,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-004",
       "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-004",
       "hubPresentation": "standard",
-      "canonicalTag": "scp-it-004",
+      "canonicalTag": "apollyon",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "apollyon",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-6456bdd24b7374739b3467bee17f7f8b03e9aacf695de69aa5ada34f4a98ff41"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-it-004",
+          "title": "Realizziamo i Vostri Sogni",
+          "url": "http://fondazionescp.wikidot.com/scp-it-004",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-004"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:scp-it-019",
@@ -1006,34 +3664,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-019",
       "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-019",
       "hubPresentation": "standard",
-      "canonicalTag": "scp-it-019",
+      "canonicalTag": "altera-mente",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "altera-mente",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-388533c571075d8a676c5abf4e1203899a9aef7861f68e11aac5ea1d3366cd5e"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-it-019",
+          "title": "Dove un tempo mormorava il fiume",
+          "url": "http://fondazionescp.wikidot.com/scp-it-019",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-019"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:scp-it-096",
@@ -1044,34 +3722,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-096",
       "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-096",
       "hubPresentation": "standard",
-      "canonicalTag": "scp-it-096",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-9dc1350bf446b943e3df67a292710b4dc9c6cb2fd74c8e1ee0f4cff6eb0a0d06"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-it-096",
+          "title": "GUARDAMI",
+          "url": "http://fondazionescp.wikidot.com/scp-it-096",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-096"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:scp-it-181",
@@ -1082,34 +3780,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/scp-it-181",
       "officialHubURL": "http://fondazionescp.wikidot.com/scp-it-181",
       "hubPresentation": "standard",
-      "canonicalTag": "scp-it-181",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "scp",
+        "structureHash": "sha256-b3132bcc155f66efe03e3aafa845936cdebbfa5d628064a737b646418197bd53"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-it-181",
+          "title": "Morte d'Attore",
+          "url": "http://fondazionescp.wikidot.com/scp-it-181",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "scp-it-181"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:il-crepuscolo-dell-ordine",
@@ -1120,34 +3838,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/il-crepuscolo-dell-ordine",
       "officialHubURL": "http://fondazionescp.wikidot.com/il-crepuscolo-dell-ordine",
       "hubPresentation": "standard",
-      "canonicalTag": "il-crepuscolo-dell-ordine",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-5588b0d2b5fb4b616c9d26c8f12d2de833d9bec7c7b11c2f715263e64f9001a6"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "il-crepuscolo-dell-ordine",
+          "title": "Il Crepuscolo dell'Ordine",
+          "url": "http://fondazionescp.wikidot.com/il-crepuscolo-dell-ordine",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "il-crepuscolo-dell-ordine"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:incidente-vela-cuore-d-inchiostro",
@@ -1158,34 +3896,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/incidente-vela-cuore-d-inchiostro",
       "officialHubURL": "http://fondazionescp.wikidot.com/incidente-vela-cuore-d-inchiostro",
       "hubPresentation": "standard",
-      "canonicalTag": "incidente-vela-cuore-d-inchiostro",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-99453f3b55dcce934ed0615e3eccb68162db534851b4f4c88d30a110c10809df"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "incidente-vela-cuore-d-inchiostro",
+          "title": "Incidente Vela / Cuore d'Inchiostro",
+          "url": "http://fondazionescp.wikidot.com/incidente-vela-cuore-d-inchiostro",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "incidente-vela-cuore-d-inchiostro"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:pluet-ignem",
@@ -1196,34 +3954,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/pluet-ignem",
       "officialHubURL": "http://fondazionescp.wikidot.com/pluet-ignem",
       "hubPresentation": "standard",
-      "canonicalTag": "pluet-ignem",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-988ff22b87c21d7f5f5dde446c77ef913564dbf6fc6a42131ad89947ab12da28"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "pluet-ignem",
+          "title": "Pluet Ignem",
+          "url": "http://fondazionescp.wikidot.com/pluet-ignem",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "pluet-ignem"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:secondo-vi-odia-ma-dal-profondo-del-cuore",
@@ -1234,34 +4012,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/secondo-vi-odia-ma-dal-profondo-del-cuore",
       "officialHubURL": "http://fondazionescp.wikidot.com/secondo-vi-odia-ma-dal-profondo-del-cuore",
       "hubPresentation": "standard",
-      "canonicalTag": "secondo-vi-odia-ma-dal-profondo-del-cuore",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-8675097befef7704690da10ff5458017e8caaca9cb3fb8504862cebe4e8a2e76"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "secondo-vi-odia-ma-dal-profondo-del-cuore",
+          "title": "Secondo Vi Odia, ma dal Profondo del Cuore",
+          "url": "http://fondazionescp.wikidot.com/secondo-vi-odia-ma-dal-profondo-del-cuore",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "secondo-vi-odia-ma-dal-profondo-del-cuore"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:sul-tetto-del-mondo",
@@ -1272,34 +4070,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/sul-tetto-del-mondo",
       "officialHubURL": "http://fondazionescp.wikidot.com/sul-tetto-del-mondo",
       "hubPresentation": "standard",
-      "canonicalTag": "sul-tetto-del-mondo",
+      "canonicalTag": "biblioteca-del-viandante",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "biblioteca-del-viandante",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-996db71f935d40f50ca9fd7e1255d1597e638ae831969576f922e9f63e98a531"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "sul-tetto-del-mondo",
+          "title": "Sul Tetto del Mondo",
+          "url": "http://fondazionescp.wikidot.com/sul-tetto-del-mondo",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "sul-tetto-del-mondo"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-it:collection:canon:trovare-un-confine",
@@ -1310,34 +4128,54 @@
       "sourceListURL": "http://fondazionescp.wikidot.com/trovare-un-confine",
       "officialHubURL": "http://fondazionescp.wikidot.com/trovare-un-confine",
       "hubPresentation": "standard",
-      "canonicalTag": "trovare-un-confine",
+      "canonicalTag": "canoni-alternativi",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "it",
-            "reason": "region"
-          },
-          {
-            "tag": "canoni-alternativi",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "accepted": "canoni-alternativi",
+        "rejected": [],
         "notes": [
-          "No canon-specific shared tag found for this row among the 33 canonRegions.it rows or in it_tag.json; reviewed as a standalone officialHubOnly native detail."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed canon grouping"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-it",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "it_tag.json",
+        "emptySectionTitle": "Articoli",
+        "singletonArticle": true,
+        "allowUntaggedMembers": true,
+        "singletonContentKind": "tale",
+        "structureHash": "sha256-719f54fcf91a17dd8b88c605069273ecfffb112bb67b6c52f85ebb45aceb4cb4"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "trovare-un-confine",
+          "title": "Trovare un Confine",
+          "url": "http://fondazionescp.wikidot.com/trovare-un-confine",
+          "sourceManifest": "manifest_canons",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articoli",
+          "title": "Articoli",
+          "articleIDs": [
+            "trovare-un-confine"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784989793,
-  "generatedAt": "2026-07-25T14:29:53Z",
-  "chunkRevision": "sha256-83a977bc96ce176e13813f9b7ea917a95eab2269082780d059dc990ae90234dc",
+  "listVersion": 1784997433,
+  "generatedAt": "2026-07-25T16:37:13Z",
+  "chunkRevision": "sha256-f8403be14fe940d4ff08b64ad51c91199316bd7629d9b321dcd9bf270c0bf03b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-pt",
         "path": "DataPipeline/list/pt/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1784988700,
-        "generatedAt": "2026-07-25T14:11:40Z",
-        "contentHash": "sha256-58ef968ee044ea226e6aa7e5c2bab4fe850b2dee698248bde645d3c91de699e5"
+        "listVersion": 1784997433,
+        "generatedAt": "2026-07-25T16:37:13Z",
+        "contentHash": "sha256-5de8bc7c8a29c9ee07342b69828adf0163a25d1b1ffac73f4ba9c5c28653b558"
       },
       {
         "kind": "manifest_scp-int",
@@ -57,9 +57,9 @@
       "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
     },
     "officialStructureSeed": {
-      "path": "DataPipeline/collection_seeds/pt_official_canon_structures.json",
+      "path": "DataPipeline/collection_seeds/canon_structures/pt.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-e301d6f722b41b367ca4d71f4c15c9d9711b47ac16e0fbd0a1c7fff5cc698028"
+      "contentHash": "sha256-191050d9894b31fa427a9e4ee1b315d44e8d376242e31a3b4ec3d8af5ec0fea6"
     },
     "officialTagMap": {
       "kind": "pt_tag",
@@ -72,44 +72,6 @@
     }
   },
   "collections": [
-    {
-      "id": "scp-pt:collection:canon:fundacao-lusofona",
-      "branchID": "scp-pt",
-      "kind": "canon",
-      "hubID": "fundacao-lusofona",
-      "title": "Cânone da Fundação Lusófona",
-      "sourceListURL": "http://scp-pt-br.wikidot.com/fundacao-lusofona",
-      "officialHubURL": "http://scp-pt-br.wikidot.com/fundacao-lusofona",
-      "hubPresentation": "standard",
-      "canonicalTag": "fundacao-lusofona",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [
-          {
-            "tag": "pt",
-            "reason": "region"
-          },
-          {
-            "tag": "organograma",
-            "reason": "genericSiteStructure"
-          }
-        ],
-        "notes": [
-          "The official Fundação Lusófona canon hub exposes no member list and has no canon-specific reverse-lookup tag; reviewed live on 2026-07-21 as an officialHubOnly native detail."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; the official native canon surface has no member list"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
     {
       "id": "scp-pt:collection:series:the-ursus-maritimus-incident",
       "branchID": "scp-pt",
@@ -995,12 +957,12 @@
         "accepted": "ad-astra",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -1011,11 +973,12 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
+        "emptySectionTitle": "Artigos",
         "excludedSections": [
           "Últimos Artigos",
           "Glossário"
         ],
-        "structureHash": "sha256-4266306c7bf7ad084666143350501c07383384a2ef508efbcf7b0a952ed46306"
+        "structureHash": "sha256-2a7ea1bf748ebe93d4b8f7e69bdc0c9574ae8f069252f02c3c9d30d7eee7c64d"
       },
       "primaryArticles": [
         {
@@ -1496,12 +1459,12 @@
         "accepted": "anoitecer",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -1512,9 +1475,10 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "memberSelector": ".fancybox .title a[href]",
+        "emptySectionTitle": "Artigos",
         "allowUntaggedMembers": true,
-        "structureHash": "sha256-608fb9309330b066bae711a3648c2431eab27930cfaada273738521edffce868"
+        "memberSelector": ".fancybox .title a[href]",
+        "structureHash": "sha256-be883fbc706a033cd8b60a3e22954e14639a78a78d042092bb412f3cd096ca38"
       },
       "primaryArticles": [
         {
@@ -1596,12 +1560,12 @@
         "accepted": "apoteose",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -1612,7 +1576,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-e2edaa89064a822a8b16140a055e83110e0c13c126c31feeb26ab8ed763a59a6"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-426377610455dbffdb190ea77e518b13128e164664ab2ad794e8b818d584ee06"
       },
       "primaryArticles": [
         {
@@ -1663,12 +1628,12 @@
         "accepted": "pinheiros-distorcidos",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -1679,7 +1644,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-ad992b3f865982154e4b100f23fbefe65c6a1db38c0fa46ea44d31fc2cf4cc37"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-80d93b58ef0a1de53b6369f07264772cfaa29a147fd3b23ff2820a54fbe6f8fc"
       },
       "primaryArticles": [
         {
@@ -2627,12 +2593,12 @@
         "accepted": "aurora",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -2643,7 +2609,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-1af79352bc365548ca740fe8f512c412668797d1f0d7b7773bdd49c08798a34d"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-8f7a3c56d608d6ebee4afb8312a4e3a1d9447becb51de51f9aa364cf112e9eed"
       },
       "primaryArticles": [
         {
@@ -2726,12 +2693,12 @@
         "accepted": "daia",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -2742,7 +2709,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-75e1389ef6e2cef8897f95c12fcc57ece3a4b5482e318bb3585333e38bf7ac28"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-d247f4df1a4b9927faf22f8f11a5898245a8213270d72389a48f5901943b215c"
       },
       "primaryArticles": [
         {
@@ -3193,12 +3161,12 @@
         "accepted": "dep-de-alquimia",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -3209,7 +3177,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-51d804f3b75cfb1f483b61215dbade8da5080cc0fe9c7e662a8380873d852fdc"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-6cc58dde4c7911a73d9a3b364ed56c122433d967f15e001c4543edcc61824335"
       },
       "primaryArticles": [
         {
@@ -3364,12 +3333,12 @@
         "accepted": "doutores-da-igreja",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -3380,10 +3349,11 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "memberSelector": "h3 a[href], h5 a[href]",
+        "emptySectionTitle": "Artigos",
         "allowUntaggedMembers": true,
+        "memberSelector": "h3 a[href], h5 a[href]",
         "allowEmpty": true,
-        "structureHash": "sha256-210b1efdee1f3a634a8afa1d295cef7d93c982bd62cd7c6c39e7d94476ccf353",
+        "structureHash": "sha256-a9dc6bb100e5bed025618712be13b5d24046a7a12af6759771dd8521dcd82199",
         "verifiedEmpty": true
       },
       "primaryArticles": [],
@@ -3412,12 +3382,12 @@
         "accepted": "escatologia-competitiva",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -3428,7 +3398,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-d143da1752b90c3795a28d5bff80eb516017b73aa3bf7b590a658eeb376fdd84"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-0e3e7c2901d346a32c5cf62222a6bfb276931fd62b3a7dc5abafd4ea0a74d107"
       },
       "primaryArticles": [
         {
@@ -3740,12 +3711,12 @@
         "accepted": "fim-da-morte",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -3756,7 +3727,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-ea5947c53e49f687a6ae144a516066fdda2ab6c926fa96f089bc435d886a085f"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-e9afa5dcd249a03d59cebff0ca244677eed5373993dc20e576051614a8b3046d"
       },
       "primaryArticles": [
         {
@@ -4274,12 +4246,12 @@
         "accepted": "o-golfo",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -4290,7 +4262,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-a78ca9753bc91c2d2e13bbe2cfbb724c1756457e2b1ddb116c0e9a06b115c046"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-a39e3945a3309dbc636c0ffc77efd97b38319affae134d4d258279a9daa9ea8e"
       },
       "primaryArticles": [
         {
@@ -4378,12 +4351,12 @@
         "accepted": "guerra-em-todas-as-frontes",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -4394,7 +4367,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-287675722dd250c125f5b23dde6f7be83eef3475a3783dbc79f7bbbbbc851c8a"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-4255a1e76726848dbacc4940bd3769904674502971775e02077524a8336c7949"
       },
       "primaryArticles": [
         {
@@ -4809,12 +4783,12 @@
         "accepted": "a-guerra-mais-fria",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -4825,7 +4799,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-09ac08984430caa0bea495ca470a7065264bcb6a6fe8a5ab63bea5c9f60fb9be"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-169fdf1f01679aab668adb8444428f36dafabe71e7de69bba6148bc7a244af8f"
       },
       "primaryArticles": [
         {
@@ -5126,12 +5101,12 @@
         "accepted": "guerra-maneira-2",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -5142,10 +5117,11 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "memberSelector": "blockquote a[href]",
+        "emptySectionTitle": "Artigos",
         "allowUntaggedMembers": true,
+        "memberSelector": "blockquote a[href]",
         "allowEmpty": true,
-        "structureHash": "sha256-210b1efdee1f3a634a8afa1d295cef7d93c982bd62cd7c6c39e7d94476ccf353",
+        "structureHash": "sha256-0d74dae4c20031d25728e51b2f2c07befc7e142882fffd4bfca8b2df1a71e6af",
         "verifiedEmpty": true
       },
       "primaryArticles": [],
@@ -5174,12 +5150,12 @@
         "accepted": "infundado",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -5190,7 +5166,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-fdfa63f26eb5eccc5e09cc61a85ff536a2e603566a1e60c3e8c58552f2fa201f"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-9efe38d4b2ef8384cbb34dc25a93bbf2b9363641a6912c29f29c1ea1e7857d3b"
       },
       "primaryArticles": [
         {
@@ -5408,12 +5385,12 @@
         "accepted": "máscara-quebrada",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -5424,7 +5401,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-132a5dacf9e03bd3b395e598e4793c2fc61f9ff162a0f43a3385f4022cde338b"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-18566c7da9c83bb5bb41692b35c95c7d8179dacf0b36226b664d59bdded5362e"
       },
       "primaryArticles": [
         {
@@ -5867,12 +5845,12 @@
         "accepted": "medo&circos",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -5883,7 +5861,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-b06c18fc3bf492d31b236d23f24df3323f2f420da3f7e0c197477e174ebf294c"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-e89a119a0450fac5e6c227e6e178ac9094d5d1f1421e13a45474cb6a74779b7b"
       },
       "primaryArticles": [
         {
@@ -6245,12 +6224,12 @@
         "accepted": "ninho-do-rato",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -6261,7 +6240,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-89c51063f26a129b9505efeb5ac2170b36e69a2fc1fbea697054ea5648d9a3b2"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-e2655612856ad8975055b8ab1025c4b9ff794c7a369d871a6c3a280e58bec411"
       },
       "primaryArticles": [
         {
@@ -6641,12 +6621,12 @@
         "accepted": "mundo-maravilhoso",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -6657,7 +6637,8 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-c7047c83287d295969e9a7f6d2b2aab83e5603e8b7b848c0ed23c97655dc4060"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-177dcd0df36ee3a6dbf2a6c25365ed538ded35291376682267ba4051af81ae12"
       },
       "primaryArticles": [
         {
@@ -6906,12 +6887,12 @@
         "accepted": "terceira-lei",
         "rejected": [],
         "notes": [
-          "PT-BR member set, source order, and section grouping come from the official translated Canon hub DOM; pt_tag is used only to reject navigation and unrelated links."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official PT-BR hub structure; refreshed by the weekly full crawl."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pt",
@@ -6922,17 +6903,10 @@
       "memberResolution": {
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
-        "structureHash": "sha256-aa3d0415ca7d3240ec3667028ad3cc028ebc7a492aea88b4aa9dc791e3573840"
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-75677d7f7a8e7686813605a872df47a70c0cf3403bf5741f186602d5a43db227"
       },
       "primaryArticles": [
-        {
-          "id": "dead-mans-hand",
-          "title": "1. Mão do Homem Morto",
-          "url": "http://scp-pt-br.wikidot.com/dead-mans-hand",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "2. Coroa de Espinhos escrito/"
-        },
         {
           "id": "the-assassination-of-xyank",
           "title": "O Assassinato de Thaddeus Xyank Pelo Covarde do Thaddeus Xyank",
@@ -7931,6 +7905,13 @@
           "contentKind": "tale"
         },
         {
+          "id": "dead-mans-hand",
+          "title": "Mão do Homem Morto",
+          "url": "http://scp-pt-br.wikidot.com/dead-mans-hand",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "middlegame",
           "title": "Meio-jogo",
           "url": "http://scp-pt-br.wikidot.com/middlegame",
@@ -7998,14 +7979,7 @@
       "description": "Qualquer tecnologia suficientemente avançada é indistinguível da magia. Qualquer magia suficientemente avançada é reproduzível como tecnologia. A rua encontra seus próprios usos para ambos.",
       "articleSections": [
         {
-          "id": "01-ultimos-artigos",
-          "title": "Últimos Artigos",
-          "articleIDs": [
-            "dead-mans-hand"
-          ]
-        },
-        {
-          "id": "02-inicio-1882-1945",
+          "id": "01-inicio-1882-1945",
           "title": "Início (1882-1945)",
           "articleIDs": [
             "the-assassination-of-xyank",
@@ -8020,7 +7994,7 @@
           ]
         },
         {
-          "id": "03-bolha-1945-1991",
+          "id": "02-bolha-1945-1991",
           "title": "Bolha (1945-1991)",
           "articleIDs": [
             "scp-2664",
@@ -8047,7 +8021,7 @@
           ]
         },
         {
-          "id": "04-estouro-1991-2024",
+          "id": "03-estouro-1991-2024",
           "title": "Estouro (1991-2024)",
           "articleIDs": [
             "when-parallel-lines-diverge",
@@ -8121,7 +8095,7 @@
           ]
         },
         {
-          "id": "05-visao-geral",
+          "id": "04-visao-geral",
           "title": "Visão Geral",
           "articleIDs": [
             "ties-that-bind",
@@ -8134,7 +8108,7 @@
           ]
         },
         {
-          "id": "06-indice-de-paratecnologia",
+          "id": "05-indice-de-paratecnologia",
           "title": "Índice de Paratecnologia",
           "articleIDs": [
             "all-hallows",
@@ -8159,6 +8133,7 @@
             "dead-men-tell-tales",
             "jth",
             "closed-game",
+            "dead-mans-hand",
             "middlegame",
             "no-matter-what-mask-you-wear",
             "no-good-deed",
@@ -8171,6 +8146,45 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-pt:collection:canon:fundacao-lusofona",
+      "branchID": "scp-pt",
+      "kind": "canon",
+      "hubID": "fundacao-lusofona",
+      "title": "Cânone da Fundação Lusófona",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/fundacao-lusofona",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/fundacao-lusofona",
+      "hubPresentation": "standard",
+      "canonicalTag": "fundação-lusófona",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "fundação-lusófona",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pt",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubProfile",
+        "tagSource": "pt_tag.json",
+        "emptySectionTitle": "Artigos",
+        "structureHash": "sha256-35e89919a994162fcc54da45c6eaa9ac2a6cede0f94bad9e84bd48c7f21a938b",
+        "verifiedProfile": true
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "A Fundação Lusófona, \"Filial Lusófona da Fundação\" ou \"SCP-PT\", é uma instituição autônoma parte da grande SCP Foundation. Institucionalmente, possui jurisdição e jurisprudência para operar promovendo ações de segurança, contenção, proteção e quaisquer outras ações necessárias para assegurar a proteção da normalidade nos territórios lusófonos (falantes de Português) ao redor do mundo. Relevantemente, a Fundação Lusófona é reconhecida pelos governos de Brasil, e Portugal como a organização oficialmente responsável pela proteção destes territórios nacionais."
     }
   ]
 }

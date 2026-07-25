@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784961005,
-  "generatedAt": "2026-07-25T06:30:05Z",
-  "chunkRevision": "sha256-5f91382d9fd53c538efa8d7674d9caef374e99dab718863c7f73c79e7435837e",
+  "listVersion": 1784998488,
+  "generatedAt": "2026-07-25T16:54:48Z",
+  "chunkRevision": "sha256-732c3041fb7cfd79b0b565881a9368fa8abe8074f7901826c172aadabb931eaa",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1784874778,
-        "generatedAt": "2026-07-24T06:32:58Z",
-        "contentHash": "sha256-111ca490272bfbda714ceb6ca1619bd63f0c86878c83ea1e12fcf31f011cdc71"
+        "listVersion": 1784998488,
+        "generatedAt": "2026-07-25T16:54:48Z",
+        "contentHash": "sha256-c5cc82ee0a8a464de8a281e0c7d3b2e1b930fa327b818a2e39fd391f183a3b49"
       },
       {
         "kind": "manifest_gois",
@@ -64,6 +64,20 @@
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
       "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+    },
+    "officialStructureSeed": {
+      "path": "DataPipeline/collection_seeds/canon_structures/pl.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-850a750b58368cdb35a374882d48f4f75ded3d6e8d034221a3ea92bac02f238b"
+    },
+    "officialTagMap": {
+      "kind": "pl_tag",
+      "branchID": "scp-pl",
+      "path": "DataPipeline/list/pl/pl_tag.json",
+      "schemaVersion": 2,
+      "listVersion": 1783292523,
+      "generatedAt": "2026-07-13T09:40:33Z",
+      "contentHash": "sha256-796455b9a692bbb3de0374bb249753c292c7db6f3259c9c097598aad624cf508"
     }
   },
   "collections": [
@@ -80,23 +94,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "chwasty",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -105,7 +110,10 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-ec15790c588bd4a4169d089b39b7f906c29344aee7a3a6e7942d25edf32ef650"
       },
       "primaryArticles": [
         {
@@ -114,7 +122,9 @@
           "url": "https://scp-pl.wikidot.com/czym-sa-obiekty-konspiracyjne",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 33
+          "contentKind": "tale",
+          "os": 33,
+          "desc": "— Witam, doktorze."
         },
         {
           "id": "scp-pl-029",
@@ -122,7 +132,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-029",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 68
+          "contentKind": "scp",
+          "os": 68,
+          "desc": "[USUNIĘTO]"
         },
         {
           "id": "scp-pl-037",
@@ -130,7 +142,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-037",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "SCP-PL-037 musi zostać powstrzymany i zneutralizowany tak szybko, jak to tylko możliwe. Ochroniarze oraz Agenci Fundacji mają pozwolenie na użycie wszelkich narzędzi pozwalających schwytać i/lub unieszkodliwić podmiot, zaś nieprzeszkoleni w zakresie posługiwan…"
         },
         {
           "id": "scp-pl-086",
@@ -138,7 +152,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-086",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 32
+          "contentKind": "scp",
+          "os": 32,
+          "desc": "Podmiot został uziemiony w jednym z domów znajdujących się niedaleko Parku ████████ (Polska). Konkretnie chodzi o dom [UTAJNIONO] w lesie [UTAJNIONO] . Teren badawczy obejmuje powierzchnię o promieniu 50 metrów od obiektu i jest stale patrolowany przez czterec…"
         },
         {
           "id": "scp-pl-207",
@@ -146,7 +162,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-207",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 14
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "Słupy objęte SCP-PL-207 mają zostać usunięte z przestrzeni publicznej, zastąpione nieanomalnymi odpowiednikami, a także przeniesione do najbliższych ośrodków zdatnych do ich przechowywania. Wszelkie pojawiające się na nich teksty będące efektem SCP-PL-207 mają…"
         },
         {
           "id": "scp-pl-305",
@@ -154,7 +172,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-305",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 34
+          "contentKind": "scp",
+          "os": 34,
+          "desc": "Ze względu na naturę anomalii, na obecną chwilę nie da się jej przechować. Zabezpieczenie lub terminacja anomalii stanowią priorytet."
         },
         {
           "id": "scp-pl-393",
@@ -162,7 +182,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-393",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 20
+          "contentKind": "scp",
+          "os": 20,
+          "desc": "Każda odnotowana obserwacja instancji SCP-PL-393 musi być rejestrowana, a powikłania jej manifestacji ograniczone do minimum. W przypadku wystąpienia zjawiska w dużym skupisku ludzkim, wymagane jest zastosowanie środków amnezyjnych i usunięcie dotkniętego obra…"
         },
         {
           "id": "historia-klasyfikacji-obiektow-i-ty",
@@ -170,7 +192,9 @@
           "url": "https://scp-pl.wikidot.com/historia-klasyfikacji-obiektow-i-ty",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 17
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "Historia Klasyfikacji Obiektów i Ty"
         },
         {
           "id": "masz-nowa-wiadomosc",
@@ -178,18 +202,56 @@
           "url": "https://scp-pl.wikidot.com/masz-nowa-wiadomosc",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 0
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Od: Ty Do: tymszcz@command-dept.scp Temat: Re:Sprawa #4823 Treść: Dyrektorze, zająłem się badaniem powiązań między atakami na wewnętrzne struktury Fundacji przez obiekty konspiracyjne. Jednakże w trakcie robienia tego ujawnił mi się pewien pattern. Pierwszym a…"
         },
         {
-          "id": "scp-pl-223",
-          "title": "Literufka",
-          "url": "https://scp-pl.wikidot.com/scp-pl-223",
-          "sourceManifest": "manifest_scp-pl",
+          "id": "projekt-chwastoboj",
+          "title": "Projekt Chwastobój",
+          "url": "https://scp-pl.wikidot.com/projekt-chwastoboj",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "tale"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "Nie wiadomo, skąd pochodzą obiekty konspiracyjne. Nie wiadomo, czy ich działaniom przyświeca jakiś cel. Nie wiadomo, w jaki sposób powstały lub zostały stworzone. Przez swoją zagadkową nietypowość nie pozwalają się sklasyfikować, a przez swoją nadnaturalną potęgę — na klasyfikację nie pozwalają.",
+      "articleSections": [
+        {
+          "id": "01-ale-zawsze-wracaja",
+          "title": "Ale zawsze wracają",
+          "articleIDs": [
+            "czym-sa-obiekty-konspiracyjne"
+          ]
+        },
+        {
+          "id": "02-poznane-podmioty",
+          "title": "Poznane Podmioty",
+          "articleIDs": [
+            "scp-pl-029",
+            "scp-pl-037",
+            "scp-pl-086",
+            "scp-pl-207",
+            "scp-pl-305",
+            "scp-pl-393"
+          ]
+        },
+        {
+          "id": "03-opowiesci",
+          "title": "Opowieści",
+          "articleIDs": [
+            "historia-klasyfikacji-obiektow-i-ty",
+            "masz-nowa-wiadomosc"
+          ]
+        },
+        {
+          "id": "04-choc-moze-jest-pewien-sposob",
+          "title": "Choć może jest pewien sposób…",
+          "articleIDs": [
+            "projekt-chwastoboj"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:canon:czarne-niebo-hub",
@@ -204,31 +266,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "czarne-niebo",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "kanonpl2021",
-            "reason": "genericContest"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          },
-          {
-            "tag": "współpraca",
-            "reason": "genericCollaboration"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -237,7 +282,10 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-90a10cc10363775ca28a38e4cc1859b450728549ba3cd7e9aba854f343ffba2d"
       },
       "primaryArticles": [
         {
@@ -246,7 +294,9 @@
           "url": "https://scp-pl.wikidot.com/calkowite-zacmienie",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 24
+          "contentKind": "tale",
+          "os": 24,
+          "desc": "Całkowite zaćmienie Autor: Draven Addams ( Strona autorska )"
         },
         {
           "id": "scp-pl-231",
@@ -254,7 +304,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-231",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 29
+          "contentKind": "scp",
+          "os": 29,
+          "desc": "SCP-PL-231 jest aktualnie przechowywany w prowizorycznej przechowalni w pobliżu Poznania w Polsce. SCP-PL-231 ma być więziony za pomocą pieczęci taumaturgicznych i stale monitorowany z bezpiecznej odległości. Teren w promieniu 1 kilometra od obiektu ma być ogr…"
         },
         {
           "id": "hammer-and-a-hard-place",
@@ -262,7 +314,9 @@
           "url": "https://scp-pl.wikidot.com/hammer-and-a-hard-place",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 16
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "autorstwa Calamari_Knight"
         },
         {
           "id": "scp-pl-207",
@@ -270,7 +324,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-207",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 14
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "Słupy objęte SCP-PL-207 mają zostać usunięte z przestrzeni publicznej, zastąpione nieanomalnymi odpowiednikami, a także przeniesione do najbliższych ośrodków zdatnych do ich przechowywania. Wszelkie pojawiające się na nich teksty będące efektem SCP-PL-207 mają…"
         },
         {
           "id": "wylacz-komputer-burza-idzie",
@@ -278,7 +334,9 @@
           "url": "https://scp-pl.wikidot.com/wylacz-komputer-burza-idzie",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 24
+          "contentKind": "tale",
+          "os": 24,
+          "desc": "autorstwa Calamari_Knight"
         },
         {
           "id": "pierwsze-24-godziny-cz-1",
@@ -286,7 +344,9 @@
           "url": "https://scp-pl.wikidot.com/pierwsze-24-godziny-cz-1",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 13
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "Niedziela, 13 czerwca 2021 roku, godz. 21:00"
         },
         {
           "id": "pierwsze-24-godziny-cz-2",
@@ -294,15 +354,16 @@
           "url": "https://scp-pl.wikidot.com/pierwsze-24-godziny-cz-2",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 11
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Poniedziałek, 14 czerwca 2021 roku, godz. 1:16, DW 575, okolice słupka kilometrowego 53/7, woj. mazowieckie, Polska"
         },
         {
-          "id": "pierwsze-24-godziny-cz-3",
-          "title": "Pierwsze 24 godziny: 02:31–02:57",
-          "url": "https://scp-pl.wikidot.com/pierwsze-24-godziny-cz-3",
-          "sourceManifest": "manifest_tales",
+          "id": "dwie-strony-z-pamietnika-gorala",
+          "title": "Dwie strony z pamiętnika górala",
+          "url": "https://scp-pl.wikidot.com/dwie-strony-z-pamietnika-gorala",
           "role": "primaryArticle",
-          "os": 9
+          "contentKind": "tale"
         },
         {
           "id": "scp-pl-238",
@@ -310,7 +371,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-238",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 11
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "SCP-PL-238 jest głównym podmiotem używanym do ukończenia Projektu PIORUNOCHRON. Personel pracujący przy Projekcie PIORUNOCHRON ma całkowity dostęp do dokumentacji historycznej odnośnie SCP-PL-238. Osoby chcące się zgłosić do uczestnictwa w projekcie mają się s…"
         },
         {
           "id": "scp-pl-374",
@@ -318,7 +381,16 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-374",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 19
+          "contentKind": "scp",
+          "os": 19,
+          "desc": "Obecnie miejscem zabezpieczenia podmiotu jest Posterunek 22 znajdujący się na terenie Kampinoskiego Parku Narodowego i działający pod przykrywką infrastruktury parkowej. Placówka jest autonomiczną sekcją podlegającą pod Ośrodek PL-55 , której stanowisko dyrekt…"
+        },
+        {
+          "id": "stary-ale-jary",
+          "title": "Stary ale jary",
+          "url": "https://scp-pl.wikidot.com/stary-ale-jary",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "scp-pl-258",
@@ -326,7 +398,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-258",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "Naturalny Transport Wielofunkcyjny autorstwa"
         },
         {
           "id": "scp-pl-309",
@@ -334,7 +408,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-309",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 13
+          "contentKind": "scp",
+          "os": 13,
+          "desc": "W Grocie Króla autorstwa"
         },
         {
           "id": "scp-pl-310",
@@ -342,7 +418,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-310",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 17
+          "contentKind": "scp",
+          "os": 17,
+          "desc": "Zgodnie z Paktem \"Strzały i Trybika\" , SCP-PL-310 znajduje się pod jurysdykcją przedstawicieli Zepsutego Kościoła. Żaden z pracowników Fundacji ze STREFY 2217 nie może przebywać w wyznaczonej odległości od występowania obiektu; jedyny wyjątek stanowi naprawian…"
         },
         {
           "id": "scp-pl-353",
@@ -350,7 +428,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-353",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "SCP-PL-353 znajduje się w prowizorycznej strefie przechowawczej podlegającej pod Ośrodek PL-154, znajdującej się na szczycie wzniesienia niedaleko Pustelni Św. Jana z Dukli w województwie podkarpackim. Mają do niej dostęp wszyscy pracownicy o poziomie upoważni…"
         },
         {
           "id": "scp-pl-364",
@@ -358,7 +438,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-364",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 22
+          "contentKind": "scp",
+          "os": 22,
+          "desc": "Ze względu na naturę SCP-PL-364, obiektu nie należy zabezpieczać. Na każdym z posterunków Fundacji stacjonować ma co najmniej jeden wysokiej rangi oficer MFO Tau-7 \"Pancerni\". Wyznaczonych oficerów poinstruowano, że po kontakcie z obiektem mają obowiązek bezzw…"
         },
         {
           "id": "emocje-jak-na-grzybach",
@@ -366,10 +448,68 @@
           "url": "https://scp-pl.wikidot.com/emocje-jak-na-grzybach",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "autorstwa Calamari_Knight"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "Witaj, pracowniku. Jeśli to widzisz, masz przed sobą jeden z ostatnich komputerów Fundacji. Jak dobrze wiesz, przechodzimy kryzys. Po tym, jak serwery Fundacji zostały zniszczone, udało nam się na chwilę uruchomić tylko to urządzenie. Nie przyzwyczajaj się, za tydzień może już go nie być. Zgodnie z naszymi priorytetami musimy opracować plan odzyskania energii elektrycznej i przywrócenia normalności. Z działającą komunikacją czy bez, przy świetle lamp naftowych czy pryzmatów Spenglera , Ośrodki mają kontynuować swoją pracę bez względu na okoliczności. Teraz po prostu jest trochę trudniej. Odpowiednie instrukcje znajdziesz w załącznikach. Zabezpieczać, Przechowywać, Chronić Administrator Polskiej Filii",
+      "articleSections": [
+        {
+          "id": "01-logowanie-zakonczone",
+          "title": "LOGOWANIE ZAKOŃCZONE",
+          "articleIDs": [
+            "calkowite-zacmienie"
+          ]
+        },
+        {
+          "id": "02-raport-wprowadzajacy-lektura-obowiazkowa-dla-poziomu-2-wzwyz",
+          "title": "Raport wprowadzający — Lektura obowiązkowa dla poziomu 2 wzwyż",
+          "articleIDs": [
+            "scp-pl-231"
+          ]
+        },
+        {
+          "id": "03-czarne-niebo-gowna-seria",
+          "title": "Czarne Niebo — główna seria",
+          "articleIDs": [
+            "hammer-and-a-hard-place"
+          ]
+        },
+        {
+          "id": "04-cisza-przed-burza-preludium",
+          "title": "Cisza przed burzą — Preludium:",
+          "articleIDs": [
+            "scp-pl-207"
+          ]
+        },
+        {
+          "id": "05-impakt-pierwsze-dni",
+          "title": "Impakt — Pierwsze dni",
+          "articleIDs": [
+            "wylacz-komputer-burza-idzie",
+            "pierwsze-24-godziny-cz-1",
+            "pierwsze-24-godziny-cz-2",
+            "dwie-strony-z-pamietnika-gorala",
+            "scp-pl-238",
+            "scp-pl-374",
+            "stary-ale-jary"
+          ]
+        },
+        {
+          "id": "06-gdy-nasta-grom-opowiesci-ze-swiata-bez-pradu",
+          "title": "Gdy nastał grom — Opowieści ze świata bez prądu",
+          "articleIDs": [
+            "scp-pl-258",
+            "scp-pl-309",
+            "scp-pl-310",
+            "scp-pl-353",
+            "scp-pl-364",
+            "emocje-jak-na-grzybach"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:canon:krolewska-fundacya-hub",
@@ -384,27 +524,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "fundacya",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "kanonpl2021",
-            "reason": "genericContest"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -413,7 +540,10 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-fc112f8f0f118c1d73b2481e2167b881b1d3529ce6e3e028ca3e0e18af3b636e"
       },
       "primaryArticles": [
         {
@@ -422,6 +552,7 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-268",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 18
         },
         {
@@ -430,6 +561,7 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-276",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 14
         },
         {
@@ -438,6 +570,7 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-303",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 14
         },
         {
@@ -446,6 +579,7 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-387",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 9
         },
         {
@@ -454,6 +588,7 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-363",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 16
         },
         {
@@ -462,7 +597,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-353",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "SCP-PL-353 znajduje się w prowizorycznej strefie przechowawczej podlegającej pod Ośrodek PL-154, znajdującej się na szczycie wzniesienia niedaleko Pustelni Św. Jana z Dukli w województwie podkarpackim. Mają do niej dostęp wszyscy pracownicy o poziomie upoważni…"
         },
         {
           "id": "scp-pl-358",
@@ -470,7 +607,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-358",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 19
+          "contentKind": "scp",
+          "os": 19,
+          "desc": "SCP-PL-358 powinien cały czas znajdować się pod ścisłym nadzorem. Podmiot, pomimo swojej elokwencji i dobrych manier w rozmowach, jest wrogo nastawiony do personelu Fundacji i zarazem stanowi duże zagrożenie. Jednostką przydzieloną do SCP-PL-358 jest SFO Ksi-1…"
         },
         {
           "id": "przypadek-dymitra-iwanowicza-czesc-1",
@@ -478,7 +617,9 @@
           "url": "https://scp-pl.wikidot.com/przypadek-dymitra-iwanowicza-czesc-1",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 7
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Dymitr, najmłodszy syn Iwana IV Groźnego i Marii Nagoj, po śmierci swego carskiego ojca, decyzją rady regencyjnej został wraz z matką zesłany do Uglicza. Razu pewnego, ośmioletni wówczas chłopiec, bawiąc się beztrosko swym ulubionym nożykiem doznał z jego ostr…"
         },
         {
           "id": "kasztelan-sochaczewski",
@@ -486,18 +627,67 @@
           "url": "https://scp-pl.wikidot.com/kasztelan-sochaczewski",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 11
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "To był, droga gawiedzi, dzień jak co dzień, w jednym z miast położonych na Mazowszu, mijał on dość spokojnie. Sochaczew, bo tak nazywało się ów miasteczko, nie słynął raczej z wielkich burd, czy awantur, w ogóle dość mało się tam zawsze działo. To kilkutysięcz…"
         },
         {
-          "id": "scp-pl-377",
-          "title": "Wynaturzenie 377",
-          "url": "https://scp-pl.wikidot.com/scp-pl-377",
-          "sourceManifest": "manifest_scp-pl",
+          "id": "vellus-aureum",
+          "title": "Vellus aureum",
+          "url": "https://scp-pl.wikidot.com/vellus-aureum",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "os": 9
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "poczet-krolow-i-ksiazat-polskich-hub",
+          "title": "Poczet królów i książąt polskich hub",
+          "url": "https://scp-pl.wikidot.com/poczet-krolow-i-ksiazat-polskich-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "stary-ale-jary",
+          "title": "Stary ale jary",
+          "url": "https://scp-pl.wikidot.com/stary-ale-jary",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "Być może doszły Waszmości słuchy, że nowy wróg zwrócił swe spojrzenie na potężną Rzeczpospolitą. Właśnie dlatego chcieliśmy Waszmość obaczyć. Bowiem tym razem nie Szwedy, nie Moskale, czy Turki, ale sama, inherentna natura tego ziemskiego padołu i wszystek diabelskich sprawunków obraca się przeciwko nam. Bronić się tedy pozostaje, a za zasługi dla dobra ludzkości i król za życia doceni i Bóg po śmierci wynagrodzi. Amen.",
+      "articleSections": [
+        {
+          "id": "01-raporty",
+          "title": "Raporty:",
+          "articleIDs": [
+            "scp-pl-268",
+            "scp-pl-276",
+            "scp-pl-303",
+            "scp-pl-387",
+            "scp-pl-363",
+            "scp-pl-353",
+            "scp-pl-358"
+          ]
+        },
+        {
+          "id": "02-opowiesci",
+          "title": "Opowieści:",
+          "articleIDs": [
+            "przypadek-dymitra-iwanowicza-czesc-1",
+            "kasztelan-sochaczewski"
+          ]
+        },
+        {
+          "id": "03-inne",
+          "title": "Inne:",
+          "articleIDs": [
+            "vellus-aureum",
+            "poczet-krolow-i-ksiazat-polskich-hub",
+            "stary-ale-jary"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:canon:lady-poludnia",
@@ -512,23 +702,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "lądy-południa",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -537,16 +718,28 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-ac7b2fc22702935649e15cff7921575b283bf70949cca89393e7e4dc5a71e842"
       },
       "primaryArticles": [
+        {
+          "id": "spowiedz-dozorcy-anonim",
+          "title": "Spowiedź dozorcy — Anonim [+9]",
+          "url": "https://scp-pl.wikidot.com/spowiedz-dozorcy-anonim",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
         {
           "id": "scp-pl-266",
           "title": "Kości Zostały Rzucone",
           "url": "https://scp-pl.wikidot.com/scp-pl-266",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 39
+          "contentKind": "scp",
+          "os": 39,
+          "desc": "Obiekty składowe SCP-PL-266 są obecnie przechowywane w Magazynie w Wymiarowym Ośrodku PL-174. Wszelkie obiekty pozyskane w związku z eksploracjami SCP-PL-266-1 mają być oddawane do Ośrodka PL-174 do badań, po których mogą być trzymane w odpowiednich sekcjach m…"
         },
         {
           "id": "klamka-zapadla",
@@ -554,7 +747,9 @@
           "url": "https://scp-pl.wikidot.com/klamka-zapadla",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 11
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Klamka zapadła Autor: BlazingPie"
         },
         {
           "id": "scp-pl-045",
@@ -562,7 +757,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-045",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 33
+          "contentKind": "scp",
+          "os": 33,
+          "desc": "SCP-PL-045 jest trzymany zawieszony na linie o długości 2,5 metra, w sześciennym pokoju o krawędziach długości 5 metrów w Wymiarowym Ośrodku PL-174. Wiedza o SCP-PL-045 jest zarezerwowana dla personelu z poziomem 4 lub wyższym z Projektu ATENA i Projektu 266 .…"
         },
         {
           "id": "scp-pl-272",
@@ -570,7 +767,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-272",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 23
+          "contentKind": "scp",
+          "os": 23,
+          "desc": "SCP-PL-272 jest trzymany w szafce przechowawczej w Magazynie Ośrodka PL-174. Dostęp do podmiotu może być przydzielony za pozwoleniem kierownika Projektu 266 , obecnie Dr Jane Woods . Wszelkie zmiany zachodzące w treści SCP-PL-272 należy zapisywać również w for…"
         },
         {
           "id": "scp-pl-391",
@@ -578,7 +777,17 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-391",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "Ze względu na swoją odległość od jakiejkolwiek osady zamieszkiwanej przez ludność Theta-Psi-40, SCP-PL-391 nie wymaga wzmożonego nadzoru."
+        },
+        {
+          "id": "gerard-drugi",
+          "title": "Gerard II",
+          "url": "https://scp-pl.wikidot.com/gerard-drugi",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
         },
         {
           "id": "narodziny-nowego-slonca",
@@ -586,7 +795,9 @@
           "url": "https://scp-pl.wikidot.com/narodziny-nowego-slonca",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 11
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Tytuł: Mit o śmierci i narodzinach nowego Słońca Autor: KubKac"
         },
         {
           "id": "kolubryna-w-ladach-poludnia",
@@ -594,7 +805,9 @@
           "url": "https://scp-pl.wikidot.com/kolubryna-w-ladach-poludnia",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 15
+          "contentKind": "tale",
+          "os": 15,
+          "desc": "Kolubryna Ultra Omega 3000™ w lądach południa Autor: BlazingPie"
         },
         {
           "id": "scp-pl-283",
@@ -602,50 +815,49 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-283",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 11
-        },
-        {
-          "id": "scp-pl-323",
-          "title": "Filar z głębin",
-          "url": "https://scp-pl.wikidot.com/scp-pl-323",
-          "sourceManifest": "manifest_scp-pl",
-          "role": "primaryArticle",
-          "os": 18
-        },
-        {
-          "id": "scp-pl-383",
-          "title": "Lecz Wyspa nie zamilkła",
-          "url": "https://scp-pl.wikidot.com/scp-pl-383",
-          "sourceManifest": "manifest_scp-pl",
-          "role": "primaryArticle",
-          "os": 8
-        },
-        {
-          "id": "scp-pl-392",
-          "title": "Koń by się uśmiał",
-          "url": "https://scp-pl.wikidot.com/scp-pl-392",
-          "sourceManifest": "manifest_scp-pl",
-          "role": "primaryArticle",
-          "os": 23
-        },
-        {
-          "id": "ups",
-          "title": "Ups",
-          "url": "https://scp-pl.wikidot.com/ups",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11
-        },
-        {
-          "id": "z-upadlych-tronow-krag",
-          "title": "z upadłych tronów krąg",
-          "url": "https://scp-pl.wikidot.com/z-upadlych-tronow-krag",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 12
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "Wszystkie wejścia prowadzące do SCP-PL-283 poza jednym zostały odpowiednio oznaczone przez Fundację. Zespołom eksplorującym pobliskie okolice nakazano omijać podmiot, chyba że wejście do niego jest wymagane w nagłych okolicznościach. W takim przypadku nie nale…"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "Poniższy hub kanonu obecnie przechodzi gruntowną przebudowę i przepisanie. W związku z tym niektóre informacje zawarte na tej stronie mogę być nieaktualne lub błędne. Po więcej informacji prosimy skontaktować się z głównym autorem kanonu, BlazingPie . Przebudowa powinna zostać zakończona w najbliższym czasie, dziękujemy za cierpliwość.",
+      "articleSections": [
+        {
+          "id": "01-lady-poudnia-hub",
+          "title": "Lądy Południa Hub",
+          "articleIDs": [
+            "spowiedz-dozorcy-anonim"
+          ]
+        },
+        {
+          "id": "02-baza-danych-wymiarowego-osrodka-pl-174",
+          "title": "BAZA DANYCH WYMIAROWEGO OŚRODKA PL-174",
+          "articleIDs": [
+            "scp-pl-266"
+          ]
+        },
+        {
+          "id": "03-sezon-pierwszy",
+          "title": "Sezon Pierwszy",
+          "articleIDs": [
+            "klamka-zapadla",
+            "scp-pl-045",
+            "scp-pl-272",
+            "scp-pl-391",
+            "gerard-drugi",
+            "narodziny-nowego-slonca"
+          ]
+        },
+        {
+          "id": "04-prace-poboczne",
+          "title": "Prace poboczne",
+          "articleIDs": [
+            "kolubryna-w-ladach-poludnia",
+            "scp-pl-283"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:canon:przyczajone-leczenie-hub",
@@ -660,23 +872,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "przyczajone-leczenie",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -685,7 +888,10 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-fe8a59c76756d58cdb195349c0ad35016d5ee2e52a7f21d2d69fa2ca1d7a4bfa"
       },
       "primaryArticles": [
         {
@@ -694,7 +900,9 @@
           "url": "https://scp-pl.wikidot.com/o-poczatkach-medycyny-altnormalnej",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 29
+          "contentKind": "tale",
+          "os": 29,
+          "desc": "Witam panie Jarosławie. Może zacznie pan od opowiedzenia o tym, skąd wzięło się u pana zainteresowanie tą dziedziną?"
         },
         {
           "id": "przemeczenie",
@@ -702,7 +910,9 @@
           "url": "https://scp-pl.wikidot.com/przemeczenie",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 19
+          "contentKind": "tale",
+          "os": 19,
+          "desc": "Przemęczenie Autor: WhiterPL"
         },
         {
           "id": "scp-pl-160",
@@ -710,7 +920,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-160",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 21
+          "contentKind": "scp",
+          "os": 21,
+          "desc": "Obiekt powinien być przechowywany z dala od światła słonecznego w odpowiednio chłodnym miejscu. Zażywanie SCP-PL-160 przez personel inny, niż wskazany w badaniach, jest zabronione. SCP-PL-160 w nieoryginalnym pojemniku zabezpieczającym."
         },
         {
           "id": "ukryci-wrogowie",
@@ -718,7 +930,9 @@
           "url": "https://scp-pl.wikidot.com/ukryci-wrogowie",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 14
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "Ukryci wrogowie Autor: Draven Addams ( Strona autorska )"
         },
         {
           "id": "scp-pl-083",
@@ -726,7 +940,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-083",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "Opakowania zawierające SCP-PL-083 są przechowywane w magazynie na obiekty anomalne w Ośrodku PL-13. Do obiektu może mieć dostęp tylko osoba dysponująca zezwoleniem kierownika projektu. 1 Obecnie w posiadaniu Fundacji znajdują się dwa opakowania SCP-PL-083 zawi…"
         },
         {
           "id": "scp-pl-165",
@@ -734,7 +950,32 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-165",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 23
+          "contentKind": "scp",
+          "os": 23,
+          "desc": "Pojemniki zawierające fundacyjny zapas SCP-PL-165 są trzymane w magazynie Ośrodka PL-55. Podmiotu nie należy konsumować poza testami. » Otwórz Czynności Przechowawcze B « Upoważnienie potwierdzone SCP-PL-165-B trzymane są w magazynie obiektów wartościowych Ośr…"
+        },
+        {
+          "id": "samdaecheon-odin",
+          "title": "Oferta Samdaecheon: ODIN!",
+          "url": "https://scp-pl.wikidot.com/samdaecheon-odin",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "tytan-ti74n",
+          "title": "\"Tytan\" (TI74N/1UM49/O6YBG4)",
+          "url": "https://scp-pl.wikidot.com/tytan-ti74n",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "duszosiew-polnocny",
+          "title": "\"Duszosiew Północny\" (YKJ23/1SA4C/1DABK)",
+          "url": "https://scp-pl.wikidot.com/duszosiew-polnocny",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
         },
         {
           "id": "scp-pl-318",
@@ -742,7 +983,17 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-318",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 7
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "W każdej placówce Fundacji powinno się znajdować kilka instancji SCP-PL-318, których użyć można za zgodą dyrektora placówki bądź jego zastępcy. Można także składać wnioski o udostępnienie paru anomalii jednostce MFO. W takim wypadku możliwe jest użycie SCP-PL-…"
+        },
+        {
+          "id": "kte-7881-staple-spiral-holistic-tardischild",
+          "title": "KTE-7881-Staple-Spiral-Holistic-Tardischild \"MultiOil Sagl\"",
+          "url": "https://scp-pl.wikidot.com/kte-7881-staple-spiral-holistic-tardischild",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
         },
         {
           "id": "wewnetrzne-piekno",
@@ -750,10 +1001,33 @@
           "url": "https://scp-pl.wikidot.com/wewnetrzne-piekno",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 9
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Profesora Kamińskiego na Oddziale Intensywnej Terapii Chronionej Strefy PL-22 nie trzeba było nikomu przedstawiać. Może i nie był widoczny zbyt często, ale i tak jego obecność i nadzór czuło się w każdym centymetrze kwadratowym podłogi, centymetrze sześciennym…"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "O początkach medycyny altnormalnej autor: Platnicki \"Młodzi ludzie w naszym kraju cierpią, i bogacą się na tym międzynarodowe firmy. My chcieliśmy tego zapobiec. Tak doszliśmy do stanu dzisiejszego. Dalej jesteśmy dość skromną organizacją, ale wiele ludzi w Polsce zgadza się ze mną i kupuje moje produkty. Jeżdżę na targi nauki anomalnej, chociaż nie jestem tak mile widziany, i właśnie tam widzę własnymi oczami że ludzie chcą zmian tak jak ja.\"",
+      "articleSections": [
+        {
+          "id": "01-jednak-ten-sposob-leczenia-ma-swoje-wady",
+          "title": "Jednak ten sposób leczenia ma swoje wady",
+          "articleIDs": [
+            "o-poczatkach-medycyny-altnormalnej",
+            "przemeczenie",
+            "scp-pl-160",
+            "ukryci-wrogowie",
+            "scp-pl-083",
+            "scp-pl-165",
+            "samdaecheon-odin",
+            "tytan-ti74n",
+            "duszosiew-polnocny",
+            "scp-pl-318",
+            "kte-7881-staple-spiral-holistic-tardischild",
+            "wewnetrzne-piekno"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:canon:pieklo-cycow-hub",
@@ -768,23 +1042,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "piekło-cyców",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -793,7 +1058,10 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-2044f6cd0e6ef88e0408ee040a0b992c65e77fe3e7497c33ba7a50bf05da13d0"
       },
       "primaryArticles": [
         {
@@ -802,7 +1070,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-289",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 34
+          "contentKind": "scp",
+          "os": 34,
+          "desc": "Obiekt jest zabezpieczony przez Ośrodek PL-79. SCP-PL-289 ma być obserwowany i strzeżony przez Ochronę Ośrodka. Personel placówki może używać SCP-PL-289 za zgodą dyrektora. Przed wejściem należy zabrać ze sobą specjalnie przygotowaną mapę i system nawigacji. N…"
         },
         {
           "id": "chaos-kontrolowany",
@@ -810,7 +1080,9 @@
           "url": "https://scp-pl.wikidot.com/chaos-kontrolowany",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 6
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Ośrodek Rebelii Chaosu, Łódź Bałuty"
         },
         {
           "id": "scp-pl-389",
@@ -818,7 +1090,27 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-389",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 13
+          "contentKind": "scp",
+          "os": 13,
+          "desc": "SCP-PL-389 nie jest aktualnie przechowywany przez Fundację. Obiekt jest monitorowany przez taumaturgiczne kręgi obserwacyjne nałożone na obiekt przez doktor Lucretię Deamonne. Badaniami nad obiektem oraz konserwacją kręgów zajmuje się Biuro Technik Mrocznych,…"
+        },
+        {
+          "id": "projekt-aplikacji-malphas",
+          "title": "Projekt aplikacji — Malphas",
+          "url": "https://scp-pl.wikidot.com/projekt-aplikacji-malphas",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Malphas, pomocnik domowy, asystent oraz terapeuta idealnie dla ciebie — autorstwa"
+        },
+        {
+          "id": "zlecenie-mef-2839",
+          "title": "Zlecenie MEF-2839",
+          "url": "https://scp-pl.wikidot.com/zlecenie-mef-2839",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Karabin szybkostrzelny \"Adramalech\", stworzony dla twoich potrzeb — autorstwa i"
         },
         {
           "id": "zimno-jak-w-piekle",
@@ -826,7 +1118,9 @@
           "url": "https://scp-pl.wikidot.com/zimno-jak-w-piekle",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 2
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Zimno Jak W Piekle"
         },
         {
           "id": "scp-pl-139",
@@ -834,7 +1128,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-139",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 24
+          "contentKind": "scp",
+          "os": 24,
+          "desc": "Obiekt znajduje się w podziemiach, czyli sektorach G, H, I, J, K, L, M oraz nieukończonych sektorach O, P, R, S powstającego Ośrodka PL-48, budowa do czasu ograniczenia działań obiektu została wstrzymana. Obiekt jest aktualnie wypalany z Sektora I przez MFO Om…"
         },
         {
           "id": "wiedzmy",
@@ -842,7 +1138,9 @@
           "url": "https://scp-pl.wikidot.com/wiedzmy",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 3
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "autorstwa Zygard"
         },
         {
           "id": "scp-pl-189",
@@ -850,7 +1148,17 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-189",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 4
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Obiekt jest aktualnie poszukiwany w okolicach Puszczy Kampinoskiej. Wszelkie wzmianki o obiekcie powinny być sprawdzane a świadkowie przesłuchiwani. Obiekt jest przechowywany w Ośrodku PL-49 w standardowej celi dla humanoidów. Badania nad obiektem prowadzi akt…"
+        },
+        {
+          "id": "faust-hub",
+          "title": "Faust",
+          "url": "https://scp-pl.wikidot.com/faust-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Siła absolutna nie jest darmowa. Ceną jej są dusze ludzkie. Demony tak naprawdę ich nawet nie potrzebują, lecz czym jest układ z przysłowiowym diabłem bez zapłaty? — autorstwa SCP-PL-232 Sonata Diabelskiego Trytlu — autorstwa Ja jestem Mesjaszem — autorstwa SCP-PL-319 \"Nie wódź nas na pokuszenie\" — autorstwa SCP-PL-233 \"Dualizm Ontologiczny\" — autorstwa Chce mi się pić — autorstwa"
         },
         {
           "id": "scp-pl-232",
@@ -858,18 +1166,38 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-232",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 9
-        },
-        {
-          "id": "ballada-o-sasiadach",
-          "title": "Ballada o Sąsiadach",
-          "url": "https://scp-pl.wikidot.com/ballada-o-sasiadach",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "Wszelki kontakt polityczno-korporacyjny z ośrodkami Fundacji na terenie państw w granicach SCP-PL-232 został przerwany. Personel z byłych ośrodków ma pozwolenie na dezercję do Ośrodków Fundacji znajdujących się poza jego zasięgiem, jednakże ze względów na pode…"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "Kanon \"Piekło Cyców\" skupia się na istnieniu demonicznej warstwy rzeczywistości, którą od nas oddziela bariera. Tak się składa, iż ta bariera jest najcieńsza na terenie niepozornej gminy Cyców. Ze względu na występujące tam w związku z tym anomalie Fundacja dosyć szybko zabezpiecza teren całej gminy, nazywanej później przez nią Nx-79 \"Gmina Cyców\", całkowicie odcinając ją od reszty cywilizacji. Zostaje zbudowany Ośrodek PL-79 mający nadzorować teren całego Nexusa oraz zajmować się badaniem anomalii związanych z demoniczną warstwą rzeczywistości. Okazuje się jednak, że Fundacja nie jest jedyną organizacją, która wie o jej istnieniu. W lesie znajdującym się na terenie wsi Cyców znajdują się zakłady zbrojeniowe należące do Hunter Industries, jak i również ich główna siedziba. Gdzie Fundacja zajmuje się badaniem bytów demonicznych, ci zajmują się wykorzystywaniem ich w celu rozwoju technolog",
+      "articleSections": [
+        {
+          "id": "01-prace-z-kanonu-w-kolejnosci-chronologicznej",
+          "title": "Prace z kanonu w kolejności chronologicznej",
+          "articleIDs": [
+            "scp-pl-289",
+            "chaos-kontrolowany",
+            "scp-pl-389",
+            "projekt-aplikacji-malphas",
+            "zlecenie-mef-2839",
+            "zimno-jak-w-piekle",
+            "scp-pl-139",
+            "wiedzmy",
+            "scp-pl-189"
+          ]
+        },
+        {
+          "id": "02-alternatywna-linia-czasowa-serii-faust",
+          "title": "Alternatywna linia czasowa serii \"Faust\"",
+          "articleIDs": [
+            "faust-hub",
+            "scp-pl-232"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:canon:symonia-hub",
@@ -884,27 +1212,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "symonia",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "kanonpl2021",
-            "reason": "genericContest"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -913,16 +1228,42 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-fafe0f13d0b334d0cd399d809c91ca1726239e723a7df45ab22866bc273fb19c"
       },
       "primaryArticles": [
+        {
+          "id": "w-osrodku-101-bez-zmian",
+          "title": "W Ośrodku PL-101 bez zmian",
+          "url": "https://scp-pl.wikidot.com/w-osrodku-101-bez-zmian",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
         {
           "id": "scp-pl-295",
           "title": "Null",
           "url": "https://scp-pl.wikidot.com/scp-pl-295",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 11
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "SCP-PL-295 należy przechowywać wyłącznie na terenie Strefy PL-34 w desygnowanym pomieszczeniu przechowawczym w formie zamkniętego prostopadłościanu o wielkości 50 [cm] x 50 [cm] x 50 [cm] z dowolnego trwałego, nieprzeźroczystego materiału. Wszelka dokumentacja…"
+        },
+        {
+          "id": "dokumentacja-strzezonej-placowki-strefa-pl-34",
+          "title": "Dokumentacja Strzeżonej Placówki: Strefa PL-34",
+          "url": "https://scp-pl.wikidot.com/dokumentacja-strzezonej-placowki-strefa-pl-34",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "dokumentacja-strzezonej-placowki-osrodek-101",
+          "title": "Dokumentacja Strzeżonej Placówki: Ośrodek PL-101",
+          "url": "https://scp-pl.wikidot.com/dokumentacja-strzezonej-placowki-osrodek-101",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "wniosek-o-przeniesienie",
@@ -930,7 +1271,9 @@
           "url": "https://scp-pl.wikidot.com/wniosek-o-przeniesienie",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "Tytuł: Zaznaczyć X przy właściwej odpowiedzi Autor: KubKac"
         },
         {
           "id": "scp-pl-299",
@@ -938,7 +1281,16 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-299",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 37
+          "contentKind": "scp",
+          "os": 37,
+          "desc": "Wszystkie instancje SCP-PL-299, należy przechowywać w szafce, do której dostęp można uzyskać jedynie za pozwoleniem, dwóch starszych naukowców z poziomem bezpieczeństwa 4 (Ściśle Tajne). Obiekt cotygodniowo jest zdrapywany, po pierwotnym upewnieniu się, że obi…"
+        },
+        {
+          "id": "pankuronium",
+          "title": "PanKuronium",
+          "url": "https://scp-pl.wikidot.com/pankuronium",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "scp-pl-232",
@@ -946,18 +1298,29 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-232",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 9
-        },
-        {
-          "id": "scp-pl-319",
-          "title": "Nie wódź nas na pokuszenie",
-          "url": "https://scp-pl.wikidot.com/scp-pl-319",
-          "sourceManifest": "manifest_scp-pl",
-          "role": "primaryArticle",
-          "os": 12
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "Wszelki kontakt polityczno-korporacyjny z ośrodkami Fundacji na terenie państw w granicach SCP-PL-232 został przerwany. Personel z byłych ośrodków ma pozwolenie na dezercję do Ośrodków Fundacji znajdujących się poza jego zasięgiem, jednakże ze względów na pode…"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "Kiedy świat może zostać zakończony jednym prostym naciśnięciem przycisku, terror może w każdej chwili obluzować się spod łańcucha i uwolnić się na świat, Fundacja pracuje niestrudzona, by zachować status quo ludzkości. Bez uznania, bez chwały, trzymana wyłącznie poprzez swoje ideały i obowiązki wobec Ziemi, ale niektórzy chcą więcej. Niektórzy widzą opcje wzbogacenia siebie, nawet jeśli ceną tego jest porzucenie wielkiej misji Fundacji.",
+      "articleSections": [
+        {
+          "id": "01-zalecana-kolejnosc-czytania",
+          "title": "Zalecana kolejność czytania",
+          "articleIDs": [
+            "w-osrodku-101-bez-zmian",
+            "scp-pl-295",
+            "dokumentacja-strzezonej-placowki-strefa-pl-34",
+            "dokumentacja-strzezonej-placowki-osrodek-101",
+            "wniosek-o-przeniesienie",
+            "scp-pl-299",
+            "pankuronium",
+            "scp-pl-232"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:canon:zwarcie-hub",
@@ -972,31 +1335,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "zwarcie",
-        "rejected": [
-          {
-            "tag": "hub",
-            "reason": "genericHubMarker"
-          },
-          {
-            "tag": "kanonpl2021",
-            "reason": "genericContest"
-          },
-          {
-            "tag": "oryginał",
-            "reason": "genericNativeMarker"
-          },
-          {
-            "tag": "współpraca",
-            "reason": "genericCollaboration"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Seeded from SCP-PL canon hub metadata for 3.5.0 native collection coverage; reverse lookup finds members across PL SCP and Tales manifests."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": null
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-pl",
@@ -1005,7 +1351,10 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-8aa2c7b47d9b1a163b2a2a488f9dd4822fc0e32e0f7d5b39121e8038f79eab22"
       },
       "primaryArticles": [
         {
@@ -1014,7 +1363,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-235",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 15
+          "contentKind": "scp",
+          "os": 15,
+          "desc": "SCP-PL-235 jest przechowywany w oddzielnej przechowalni w magazynie Budynku 205 Wymiarowego Ośrodka PL-174. W pomieszczeniu podmiotu znajdują się czujniki Promieniowania Jodh, wszelkie większe zmiany w ilości promieniowania wydzielanego przez obiekt mają być z…"
         },
         {
           "id": "zle-krolestwo",
@@ -1022,7 +1373,9 @@
           "url": "https://scp-pl.wikidot.com/zle-krolestwo",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 11
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Nienawidziłem dymu z kominów fabryk. Krztusiłem się nim za każdym razem, kiedy obok nich przechodziłem. Ich zapach był ohydny."
         },
         {
           "id": "scp-pl-264",
@@ -1030,7 +1383,9 @@
           "url": "https://scp-pl.wikidot.com/scp-pl-264",
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
-          "os": 12
+          "contentKind": "scp",
+          "os": 12,
+          "desc": "Ze względu na duże ilości emitowanego przez obiekt Promieniowania Jodh, przechowalnia podmiotu musi być oddalona o co najmniej 30 metrów od pozostałej części placówki, w której znajduje się obiekt. Bezpośredni kontakt z podmiotem jest wzbroniony, poza próbami…"
         },
         {
           "id": "dzialajac-w-cieniu",
@@ -1038,10 +1393,2546 @@
           "url": "https://scp-pl.wikidot.com/dzialajac-w-cieniu",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 10
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Oczywiście, że doszedłem do czegokolwiek zbyt późno!"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "KAZANIE PATRIARCHY METATRONA Światło! Tyle mówią Wam o oświeceniu, a co z tego wynika? Tysiące lat szukamy prawdziwego Światła i teraz, gdy stoimy u jego progu, ONI mają czelność mówić nam, że to nie tędy droga? Spójrzcie! Jesteśmy na skraju prawdziwej chwały, proroctwa się wypełniły! Pan nasz zepsuty dał nam swą łaskę i wreszcie odkryliśmy to, co mamy posiąść! Wojna! Tyle mówią Wam o wojnie! Tak straszą, punktują. Zdrajcy! Głupcy! Tysiące lat gotowaliśmy się na to, że Cel nasz zdobędziemy. \"Bezsens\"? Nie! To próba Pana! Na błogosławieństwo to musimy najpierw zapracować, wydrzeć je! Znak! Znak wskazał nam drogę! Powiadam, właśnie to przewidziały nam proroctwa naszych przodków! Nikczemnicy… Wstawiają się za tymi, którzy posiedli coś, co nie należy do nich. Coś przeznaczonego NAM ! A oni co? Mówią, że nie. Że to nie tak. Że nie możemy. Stoimy na skraju wypełnienia proroctwa, osiągnięcia ch",
+      "articleSections": [
+        {
+          "id": "01-artykuy",
+          "title": "Artykuły",
+          "articleIDs": [
+            "scp-pl-235",
+            "zle-krolestwo",
+            "scp-pl-264",
+            "dzialajac-w-cieniu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:no-return-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "no-return-hub",
+      "title": "Bez powrotu",
+      "sourceListURL": "https://scp-pl.wikidot.com/no-return-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/no-return-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "bez-powrotu",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "bez-powrotu",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-92f3c97c43df00d100f4455831e4c6fbb8ab5402209aa77e7daf766f9189573a"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-trip-down-memory-lane",
+          "title": "Podróż w dół Alei Wspomnień",
+          "url": "https://scp-pl.wikidot.com/a-trip-down-memory-lane",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "voice-of-vanguard",
+          "title": "Głos Vanguard",
+          "url": "https://scp-pl.wikidot.com/voice-of-vanguard",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "zlecenie-mef-7629",
+          "title": "Zlecenie MEF-7629",
+          "url": "https://scp-pl.wikidot.com/zlecenie-mef-7629",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Jeden wybór dwa światy płodzi Lustrzany arras swobodzi Egida Vanguard oświeca Gdy Przełom znaczy drogę…",
+      "articleSections": [
+        {
+          "id": "01-os-czasu-przeomu",
+          "title": "OŚ CZASU PRZEŁOMU",
+          "articleIDs": [
+            "a-trip-down-memory-lane"
+          ]
+        },
+        {
+          "id": "02-os-czasu-vanguard",
+          "title": "OŚ CZASU VANGUARD",
+          "articleIDs": [
+            "voice-of-vanguard",
+            "zlecenie-mef-7629"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:daybreak",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "daybreak",
+      "title": "Brzask",
+      "sourceListURL": "https://scp-pl.wikidot.com/daybreak",
+      "officialHubURL": "https://scp-pl.wikidot.com/daybreak",
+      "hubPresentation": "standard",
+      "canonicalTag": "brzask",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "brzask",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-e0433c9ff2f0069347091f603098ba6ec865e06ab701b52501defd0e36ddfa05"
+      },
+      "primaryArticles": [
+        {
+          "id": "shaggydredlocks-proposal",
+          "title": "DOSTĘP DO PLIKU SCP-001",
+          "url": "https://scp-pl.wikidot.com/shaggydredlocks-proposal",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-sun-ever-sets-on-the-british-empire",
+          "title": "Niech Słońce nigdy nie zajdzie nad Imperium Brytyjskim",
+          "url": "https://scp-pl.wikidot.com/the-sun-ever-sets-on-the-british-empire",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Niech Słońce nigdy nie zajdzie nad Imperium Brytyjskim - Świt Zmierzchem Niezniszczalnego Jaszczura - Pustkowie"
+        },
+        {
+          "id": "heart-and-sol",
+          "title": "Serce i Sol",
+          "url": "https://scp-pl.wikidot.com/heart-and-sol",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Serce i Sol"
+        },
+        {
+          "id": "the-moment-of-burial",
+          "title": "Chwila pochówku",
+          "url": "https://scp-pl.wikidot.com/the-moment-of-burial",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Chwila pochówku"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Jeśli możesz to przeczytać, jesteś jednym z nas . Nie ma znaczenia, czy jesteś cywilem, który natknął się na to podczas próby przetrwania. Nie obchodzi nas, jeśli uważasz się za członka konkurencyjnej organizacji, próbującego odnaleźć sens w tym szaleństwie i chronić tych, których kochasz. Witamy cię, jeśli jesteś kimś innym niż człowiekiem, jeśli tylko potrafisz wybaczyć nasze przewinienia wobec twojego pokroju. Tajemnicę. Drobne sprzeczki. Cenzurowanie chaosu w służbie kontroli. To już jest za nami.",
+      "articleSections": [
+        {
+          "id": "01-notatka-od-administratora-fundacji-scp",
+          "title": "Notatka od Administratora Fundacji SCP",
+          "articleIDs": [
+            "shaggydredlocks-proposal"
+          ]
+        },
+        {
+          "id": "02-opowiesci",
+          "title": "Opowieści",
+          "articleIDs": [
+            "the-sun-ever-sets-on-the-british-empire"
+          ]
+        },
+        {
+          "id": "03-poczatki",
+          "title": "Początki",
+          "articleIDs": [
+            "heart-and-sol"
+          ]
+        },
+        {
+          "id": "04-zakonczenia",
+          "title": "Zakończenia",
+          "articleIDs": [
+            "the-moment-of-burial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:cool-war-2-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "cool-war-2-hub",
+      "title": "Cool War 2: Ruizerekcja",
+      "sourceListURL": "https://scp-pl.wikidot.com/cool-war-2-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/cool-war-2-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "are-we-cool-yet",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "are-we-cool-yet",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-ddf234c0d34f99b0118796ebf3d8a74733667ed99b3bc1cf93dc43bfd96db172"
+      },
+      "primaryArticles": [
+        {
+          "id": "project-proposal-2012-120",
+          "title": "Sztuka to droga ucieczki",
+          "url": "https://scp-pl.wikidot.com/project-proposal-2012-120",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": ">rozpakowywanie C00L_war_2_ru1z_fr0m_y0ur_gr4ve.7z Wyodrębnianie 232 Plików… Wyodrębniono! >del C00L_war_2_ru1z_fr0m_y0ur_gr4ve.7z Usuwanie… Usunięto! >dir > 001. Cool War: Death & Rebirth (Summary) > 002. The Dawn Of A New Era > 003. Where Fearful Feet Dare Not Tread > 004. wowwee un kill ursefl > 005. Deconstruction Of A God > 006. Fifty Percent Off Everything > 007. The Snipper Reborn > 008. Joey And Overgang And Rita And Molly And Zombies > 009. You Did What? > 010. Noxious Fumes Fill The Area > 011. Potential Tradeoffs > 012. The Second Cool War Begins > 013. I Can See The Light > 014. The Madness Sets In Fast > 015. Antidisestablishmentarianism > 016. Pork Crackling Is Repulsive > 017."
+        }
+      ],
+      "supplementLinks": [],
+      "description": ">rozpakowywanie C00L_war_2_ru1z_fr0m_y0ur_gr4ve.7z Wyodrębnianie 232 Plików… Wyodrębniono! >del C00L_war_2_ru1z_fr0m_y0ur_gr4ve.7z Usuwanie… Usunięto! >dir > 001. Cool War: Death & Rebirth (Summary) > 002. The Dawn Of A New Era > 003. Where Fearful Feet Dare Not Tread > 004. wowwee un kill ursefl > 005. Deconstruction Of A God > 006. Fifty Percent Off Everything > 007. The Snipper Reborn > 008. Joey And Overgang And Rita And Molly And Zombies > 009. You Did What? > 010. Noxious Fumes Fill The Area > 011. Potential Tradeoffs > 012. The Second Cool War Begins > 013. I Can See The Light > 014. The Madness Sets In Fast > 015. Antidisestablishmentarianism > 016. Pork Crackling Is Repulsive > 017. The Characteristic Dipole > 018. Messages Transmitted And Recieved > 019. Anusparade Assholes > 020. A Series Of Changes > 021. A Broken Bookshelf > 022. Raptor Orgies Are More Fun Than You'd Think >",
+      "articleSections": [
+        {
+          "id": "01-artykuy",
+          "title": "Artykuły",
+          "articleIDs": [
+            "project-proposal-2012-120"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:site-17-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "site-17-hub",
+      "title": "Katalog Deepwell Ośrodka 17",
+      "sourceListURL": "https://scp-pl.wikidot.com/site-17-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/site-17-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "katalog-deepwell",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "katalog-deepwell",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-76914976054a58341d954d3c8629e4d9d2f870b52b6b91c363a541c87fc109f9"
+      },
+      "primaryArticles": [
+        {
+          "id": "test-subjects",
+          "title": "\"Obiekty Testowe\" (B82SW/9KL74/Y4P1K)",
+          "url": "https://scp-pl.wikidot.com/test-subjects",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Autorstwa Ralliston"
+        },
+        {
+          "id": "scp-4936",
+          "title": "Wakacje 🦀",
+          "url": "https://scp-pl.wikidot.com/scp-4936",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "Łączona Badawcza Formacja Operacyjna Phi-4 (\"Zodiac Hunters\") składająca się z członków Departamentu Essofizyki Fundacji oraz Wydziału Zjawisk Astronomicznych została przydzielona do zdalnego monitorowania Beta Cancri. Szeroko zakrojone obserwacje SCP-4936 maj…"
+        },
+        {
+          "id": "scp-6124",
+          "title": "Dostrzeganie krów",
+          "url": "https://scp-pl.wikidot.com/scp-6124",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Ze względu na wszechobecność SCP-6124 wśród globalnych populacji inwentarza żywego, zabezpieczenie nie jest wymagane. SCP-6124 jest akceptowany jako nieanomalny aspekt ludzkiego życia, a odkrycie jego skrytych właściwości i historii jest mało prawdopodobne. Ag…"
+        },
+        {
+          "id": "scp-4051",
+          "title": "Twój przyjazny Keter z sąsiedztwa",
+          "url": "https://scp-pl.wikidot.com/scp-4051",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-4051 ma być przechowywany w standardowej komorze przechowawczej dla humanoidów w Ośrodku 17. Obecnie SCP-4051 wymaga stałych badań psychiatrycznych, które będą przeprowadzane przez stacjonującą na miejscu terapeutkę Jules Yesenię. Transport z i do biura Ye…"
+        },
+        {
+          "id": "scp-4260",
+          "title": "Poddyrektywa",
+          "url": "https://scp-pl.wikidot.com/scp-4260",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Strefa 03, znajdująca się dwa kilometry pod Hong Kongiem, została zbudowana w celu zabezpieczenia SCP-4260. Komora przechowawcza zabezpieczająca SCP-4260 została wzbogacona o Matrycę Zwartości Strayera, zaprojektowaną w celu łączenia i wiązania jego różnych el…"
+        },
+        {
+          "id": "apas",
+          "title": "Zautomatyzowany System Pasywnej Amnezji Ver. 17.09",
+          "url": "https://scp-pl.wikidot.com/apas",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Autorstwa Nagiros"
+        },
+        {
+          "id": "he-who-screws-with-reality",
+          "title": "Ten, który zadziera z rzeczywistością",
+          "url": "https://scp-pl.wikidot.com/he-who-screws-with-reality",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Autorstwa Nagiros"
+        },
+        {
+          "id": "scp-4175",
+          "title": "Poznani przyjaciele i Otchłań",
+          "url": "https://scp-pl.wikidot.com/scp-4175",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-4175 to Humanoidalna Zjawa Poziomu I, która jest widoczna w odbiciu lustra kosmetycznego w łazience. Uważa się, że SCP-4175 jest spektralnymi szczątkami Alexa Conrada, trzynastoletniej ofiary zabójstwa wykonanego przez jego rodziców w dniu 30 sierpnia 2014…"
+        },
+        {
+          "id": "scp-4415",
+          "title": "Komora Przechowawcza dla Humanoidów #λ045",
+          "url": "https://scp-pl.wikidot.com/scp-4415",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-4415 jest samodzielnie zabezpieczony w Skrzydle Przechowywania Humanoidów Ośrodka 17. W celu ograniczenia potencjalnej utraty anomalnego humanoida podczas prowadzenia badań, przed każdą eksploracją SCP-4415 należy podać SCP-4051 środki amnezyjne klasy S (\"…"
+        },
+        {
+          "id": "scp-4755",
+          "title": "Gdy Jesteśmy Wszechpotężni",
+          "url": "https://scp-pl.wikidot.com/scp-4755",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "Fundacyjne kontakty w sferach edukacji, literatury i filozofii mają na celu monitorowanie ogólnej świadomości społecznej na temat SCP-4755 jako zjawiska. Dodatkowo nie wolno dopuścić do zatajenia i/lub przerwania badań nad SCP-4755 w tych dziedzinach. Te dwa w…"
+        },
+        {
+          "id": "systems-patch",
+          "title": "Poprawki systemowe",
+          "url": "https://scp-pl.wikidot.com/systems-patch",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Autorstwa Nagiros"
+        },
+        {
+          "id": "scp-5097",
+          "title": "8 godzin dziennie",
+          "url": "https://scp-pl.wikidot.com/scp-5097",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "W przypadku powrotu SCP-5097 do rzeczywistości, podmiot ma otrzymać surową reprymendę i zostać umieszczony w celi przechowawczej dla humanoidów. Notatka pozostawiona przez SCP-5097 jest przechowywana w szafce na Przedmioty Anomalne"
+        },
+        {
+          "id": "scp-pl-310",
+          "title": "ŻELAZNA WIARA",
+          "url": "https://scp-pl.wikidot.com/scp-pl-310",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 17,
+          "desc": "Zgodnie z Paktem \"Strzały i Trybika\" , SCP-PL-310 znajduje się pod jurysdykcją przedstawicieli Zepsutego Kościoła. Żaden z pracowników Fundacji ze STREFY 2217 nie może przebywać w wyznaczonej odległości od występowania obiektu; jedyny wyjątek stanowi naprawian…"
+        },
+        {
+          "id": "scp-pl-386",
+          "title": "Dalej śpisz na dnie moich wspomnień",
+          "url": "https://scp-pl.wikidot.com/scp-pl-386",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "Ze względu na istotne znaczenie podmiotu dla funkcjonowania Noosfery, SCP-PL-386 pozostaje niezabezpieczone; . Anomalie klasy Enochian stanowią fundamentalny aspekt podstawowej rzeczywistości, przez co ich zabezpieczenie jest niemożliwe. w tym celu za prioryte…"
+        },
+        {
+          "id": "white-space-hub",
+          "title": "biała przestrzeń (HUB)",
+          "url": "https://scp-pl.wikidot.com/white-space-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "admonition",
+          "title": "PRZESTROGA (HUB)",
+          "url": "https://scp-pl.wikidot.com/admonition",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Autorstwa Liryn, Placeholder McD, et. al"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Fundacja jest globalną, tajną organizacją, która trzyma żelazną ręką wszystkie media, literaturę i wiedzę publiczną. Działają w ścisłej hierarchii od Naukowca, przez Dyrektora Ośrodka aż po Nadzorcę, aby zapewnić, że ludzkość pozostanie w wiecznej i błogiej niewiedzy. Zabezpieczą i zabezpieczyli Boga, a nikt tym nie wydaje się tym przejmować.",
+      "articleSections": [
+        {
+          "id": "01-historie",
+          "title": "Historie",
+          "articleIDs": [
+            "test-subjects",
+            "scp-4936",
+            "scp-6124",
+            "scp-4051",
+            "scp-4260",
+            "apas",
+            "he-who-screws-with-reality",
+            "scp-4175",
+            "scp-4415",
+            "scp-4755",
+            "systems-patch",
+            "scp-5097",
+            "scp-pl-310",
+            "scp-pl-386",
+            "white-space-hub",
+            "admonition"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:end-of-death-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "end-of-death-hub",
+      "title": "Koniec śmierci",
+      "sourceListURL": "https://scp-pl.wikidot.com/end-of-death-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/end-of-death-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "koniec-śmierci",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "koniec-śmierci",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-7266d49e3b4a14226031a33f50cb8d5d8919f27fc216ab1f1f169faef8b54315"
+      },
+      "primaryArticles": [
+        {
+          "id": "in-the-clutches-of-life",
+          "title": "W szponach życia",
+          "url": "https://scp-pl.wikidot.com/in-the-clutches-of-life",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3984",
+          "title": "Szturchanie Śmierci patykiem",
+          "url": "https://scp-pl.wikidot.com/scp-3984",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "Zabezpieczenie SCP-3984 obraca się wokół wywoływania śmierci na dotkniętych zwierzętach. Jako, że to obecnie niemożliwe, SCP-3984 może zostać uznany za niezabezpieczony. Wysiłki badawcze muszą być skierowane na rozwój alternatywnej metody wywołania śmierci. Ba…"
+        },
+        {
+          "id": "omega-k",
+          "title": "ΩK",
+          "url": "https://scp-pl.wikidot.com/omega-k",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "surgical-identity-perpetuation",
+          "title": "WNIOSEK O DOTACJĘ NA UDOSKONALENIE PRZESZCZEPÓW MÓZGU, W CELU UTRWALENIA TOŻSAMOŚCI JAKO SPOSOBU LECZENIA NIEŚMIERTELNOŚCI",
+          "url": "https://scp-pl.wikidot.com/surgical-identity-perpetuation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "with-the-reaper-on-retirement",
+          "title": "Ze Żniwiarzem na emeryturze",
+          "url": "https://scp-pl.wikidot.com/with-the-reaper-on-retirement",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-foundation-wants-a-robot-army",
+          "title": "Opowieści Komitetu ds. Etyki: 5 powodów, dlaczego Fundacja chce armii robotów",
+          "url": "https://scp-pl.wikidot.com/the-foundation-wants-a-robot-army",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3287",
+          "title": "Gaz przeciwniemowlęcy",
+          "url": "https://scp-pl.wikidot.com/scp-3287",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 12,
+          "desc": "W dowolnym momencie, nie może istnieć więcej niż 50 standardowych butli Klasy E z płynnym gazem każdego typu SCP-3287. Zbiorniki te mają być trzymane w komorze próżniowej pod ciśnieniem w 112 stopniach Kelwina, oraz obsługiwane tylko przez personel wyposażony…"
+        },
+        {
+          "id": "populated-control-led",
+          "title": "Podgląd(anie) populacji",
+          "url": "https://scp-pl.wikidot.com/populated-control-led",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3866",
+          "title": "Auta na Azji od dado",
+          "url": "https://scp-pl.wikidot.com/scp-3866",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "Wszystkie znane instancje SCP-3866 mają być trzymane w bezpiecznym pojemniku w Ośrodku 23. Testowanie może mieć miejsce wyłącznie, gdy dostępna jest kapsuła do długoterminowego przechowywania humanoidów."
+        },
+        {
+          "id": "societal-census-programme",
+          "title": "Fragmenty raportu Klasy ΩK Societal Census Programme",
+          "url": "https://scp-pl.wikidot.com/societal-census-programme",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hypnotraline",
+          "title": "''Hipnotralina'' (TR7K2/2UD9X/53GN8)",
+          "url": "https://scp-pl.wikidot.com/hypnotraline",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "scp-4514",
+          "title": "Rzecz, która cię zabija",
+          "url": "https://scp-pl.wikidot.com/scp-4514",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 12,
+          "desc": "SCP-4514 to zwyczajny nóż sprężynowy. Do manifestacji właściwości anomalnych SCP-4514 dochodzi, gdy: Zrani się nim osobę tak, że straci ona 40% swojej krwi Zrani się nim osobę, powodując znaczne obrażenia mózgu Zrani się nim osobę, powodując znaczne obrażenia…"
+        },
+        {
+          "id": "impossible-to-destroy-reptile",
+          "title": "Gad Niemożliwy-Do-Zniszczenia",
+          "url": "https://scp-pl.wikidot.com/impossible-to-destroy-reptile",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-4322",
+          "title": "Bezsenne marzenia",
+          "url": "https://scp-pl.wikidot.com/scp-4322",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-4322 ma pozostać aktywny bez przerwy, z codziennymi czterogodzinnymi przerwami transmisji. Przesłuchania Klasy D pod wpływem podmiotu mają być przeprowadzane kwartalnie, by zachować jakość usługi. Zachęca się personel do proponowania mediów do możliwego do…"
+        },
+        {
+          "id": "scp-6872",
+          "title": "Alternatywne wyjście",
+          "url": "https://scp-pl.wikidot.com/scp-6872",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-6872 ma zostać aktywowany tylko jako ostatnia deska ratunku w przypadku nieuchronnego wystąpienia globalnego Scenariusza Klasy K. Aktywacja SCP-6872 wymaga pilnej autoryzacji większości członków Rady O5. Osoby nienależące do Rady O5, próbujące uzyskać dost…"
+        },
+        {
+          "id": "ambrose-thorn-valley",
+          "title": "Ambrose Dolina Cierni",
+          "url": "https://scp-pl.wikidot.com/ambrose-thorn-valley",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "FRAGMENT FUNDACYJNEJ BAZY DANYCH SCENARIUSZY KLASY K Desygnacja Scenariusza: Klasa ΩK Prawdopodobieństwo: Prawie Niemożliwy Dotkliwość: Możliwy do przeżycia, ale wymaga umiarkowanej restrukturyzacji cywilizacji ludzkiej Opis: Scenariusz Klasy ΩK (\"Koniec-Śmierci\") odnosi się do sytuacji, w której nieśmiertelność jest narzucona całemu życiu, bez żadnej innej zmiany biologicznej (dla przykładu zatrzymanie starzenia się, lub narzucona sterylność). Wszystkie protokoły dotyczące tego scenariusza zakładają, że podjęte zostaną działania w stronę uniknięcia jakiejkolwiek sytuacji Zepsutej Maskarady. Scenariusz ten również zakłada, że Fundacja utrzymała swoją obecną strukturę i poddziały. Priorytety: 1. Kontrola Populacji: Ze względu na współczynniki urodzeń i śmierci populacji insektów, należy wziąć to na cel w przeciągu dwudziestu czterech godzin od początku scenariusza, zanim populacja insektó",
+      "articleSections": [
+        {
+          "id": "01-sezon-pierwszy",
+          "title": "SEZON PIERWSZY",
+          "articleIDs": [
+            "in-the-clutches-of-life",
+            "scp-3984",
+            "omega-k",
+            "surgical-identity-perpetuation",
+            "with-the-reaper-on-retirement",
+            "the-foundation-wants-a-robot-army",
+            "scp-3287",
+            "populated-control-led",
+            "scp-3866",
+            "societal-census-programme",
+            "hypnotraline"
+          ]
+        },
+        {
+          "id": "02-sezon-drugi",
+          "title": "SEZON DRUGI",
+          "articleIDs": [
+            "scp-4514"
+          ]
+        },
+        {
+          "id": "03-historie-ze-swiata-po-smierci",
+          "title": "Historie Ze Świata Po Śmierci",
+          "articleIDs": [
+            "impossible-to-destroy-reptile",
+            "scp-4322",
+            "scp-6872",
+            "ambrose-thorn-valley"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:the-man-who-wasnt-there-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "the-man-who-wasnt-there-hub",
+      "title": "Mężczyzna, którego tam nie było",
+      "sourceListURL": "https://scp-pl.wikidot.com/the-man-who-wasnt-there-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/the-man-who-wasnt-there-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "mężczyzna-którego-tam-nie-było",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "mężczyzna-którego-tam-nie-było",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-0222853d769ab7ff2e7ade82d6913faa1009c6843b90f3fe301dd5467ed89ffe"
+      },
+      "primaryArticles": [
+        {
+          "id": "prelude-nobody",
+          "title": "Preludium: Terminus",
+          "url": "https://scp-pl.wikidot.com/prelude-nobody",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Drewbear"
+        },
+        {
+          "id": "foreign-aid",
+          "title": "Obca Pomoc",
+          "url": "https://scp-pl.wikidot.com/foreign-aid",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Drewbear"
+        },
+        {
+          "id": "board-meeting-transcript",
+          "title": "Interludium: Wycinek",
+          "url": "https://scp-pl.wikidot.com/board-meeting-transcript",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Drewbear"
+        },
+        {
+          "id": "the-stranger-and-the-secretary",
+          "title": "Obcy i Sekretarka",
+          "url": "https://scp-pl.wikidot.com/the-stranger-and-the-secretary",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cryogenchaos autorstwa Drewbear"
+        },
+        {
+          "id": "wondertainment-special-letter",
+          "title": "Interludium: Specjalny List",
+          "url": "https://scp-pl.wikidot.com/wondertainment-special-letter",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Drewbear"
+        },
+        {
+          "id": "gaslight-gatekeep-girlboss-hub",
+          "title": "Hub Serii",
+          "url": "https://scp-pl.wikidot.com/gaslight-gatekeep-girlboss-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-man-in-the-white-suit-hub",
+          "title": "Hub Serii",
+          "url": "https://scp-pl.wikidot.com/the-man-in-the-white-suit-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hello-my-name-isnt",
+          "title": "Cześć, nie nazywam się",
+          "url": "https://scp-pl.wikidot.com/hello-my-name-isnt",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Captain Kirby"
+        },
+        {
+          "id": "chiaroscuro",
+          "title": "Chiaroscuro",
+          "url": "https://scp-pl.wikidot.com/chiaroscuro",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Tufto"
+        },
+        {
+          "id": "nobodyx4",
+          "title": "Spotkania Nikogo, Nikogo, Nikogo i Nikogo z Mężczyzną w białym garniturze",
+          "url": "https://scp-pl.wikidot.com/nobodyx4",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "ROUNDERHOUSE"
+        },
+        {
+          "id": "scp-5353",
+          "title": "Czy ktoś jeszcze pamięta Fritza Obermeyera?",
+          "url": "https://scp-pl.wikidot.com/scp-5353",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Spotkania SCP-5353 mają być zgłaszane Agentce Hester Maliz z Ośrodka 122. Wszelkie incydenty z udziałem SCP-5353 mają zostać niwelowane zgodnie z Protokołem Ajax-4, wykorzystując prasę, kontakty rządowe i taktyczne wykorzystanie eksperymentalnych środków amnez…"
+        },
+        {
+          "id": "everyday-is-somebodys-birthday",
+          "title": "Everyday Is Somebody's Birthday",
+          "url": "https://scp-pl.wikidot.com/everyday-is-somebodys-birthday",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Captain Kirby"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Wczoraj u góry, na schodach, spotkałem mężczyznę, którego nie było, dzisiaj też go tam nie było, chcę, chcę, by odszedł.",
+      "articleSections": [
+        {
+          "id": "01-zycie-i-smierc-gownej-iteracji",
+          "title": "Życie i Śmierć Głównej Iteracji",
+          "articleIDs": [
+            "prelude-nobody",
+            "foreign-aid",
+            "board-meeting-transcript",
+            "the-stranger-and-the-secretary",
+            "wondertainment-special-letter"
+          ]
+        },
+        {
+          "id": "02-nieskonczone-owy-iteracji",
+          "title": "Nieskończone Łowy Iteracji-φ",
+          "articleIDs": [
+            "gaslight-gatekeep-girlboss-hub"
+          ]
+        },
+        {
+          "id": "03-mezczyzna-w-biaym-garniturze",
+          "title": "Mężczyzna w Białym Garniturze",
+          "articleIDs": [
+            "the-man-in-the-white-suit-hub",
+            "hello-my-name-isnt",
+            "chiaroscuro",
+            "nobodyx4",
+            "scp-5353",
+            "everyday-is-somebodys-birthday"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:on-mount-golgotha-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "on-mount-golgotha-hub",
+      "title": "Na Golgocie",
+      "sourceListURL": "https://scp-pl.wikidot.com/on-mount-golgotha-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/on-mount-golgotha-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "na-golgocie",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "na-golgocie",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-a8d6920c2321e02a14f48ce2b5e1fb440b9f19bf591b45c6c56b920aaca9fd42"
+      },
+      "primaryArticles": [
+        {
+          "id": "empedocles",
+          "title": "Empedokles",
+          "url": "https://scp-pl.wikidot.com/empedocles",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "primae-formae",
+          "title": "Primae Formae",
+          "url": "https://scp-pl.wikidot.com/primae-formae",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "bloodlines",
+          "title": "Więzy krwi",
+          "url": "https://scp-pl.wikidot.com/bloodlines",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-2458",
+          "title": "Muzyka ma swój urok",
+          "url": "https://scp-pl.wikidot.com/scp-2458",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-2458 ma być trzymany w swoim futerale w standardowej szafce przechowawczej i może być wyjmowany wyłącznie do testów. Wszystkie testy mają być przeprowadzane w dźwiękoszczelnej komorze, w której obecny jest wyłącznie personel klasy D. Badacze mają wykonywać…"
+        },
+        {
+          "id": "scp-2519",
+          "title": "Popłacz się",
+          "url": "https://scp-pl.wikidot.com/scp-2519",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Pojedyncza instancja SCP-2519 ma być przechowywana na pendrive w standardowej skrytce przechowawczej na elektronikę w Ośrodku 15. Mobilna Formacja Operacyjna Kappa-10 (\"Skynet\") ma za zadanie operować boty internetowe mające na celu wykrywanie udostępniana pli…"
+        },
+        {
+          "id": "scp-7676",
+          "title": "Wielka Symfonia z 1976",
+          "url": "https://scp-pl.wikidot.com/scp-7676",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Wokół strefy zero zjawiska SCP-7676 wyznaczono Obszar Kwarantanny Zulu-9, który ma być w pełni obsadzony przez personel spełniający kryteria \"Null-Engram\". W związku z obecnymi brakami odpowiedniego personelu wewnątrz naszej organizacji, Departamentowi Anality…"
+        },
+        {
+          "id": "scp-012",
+          "title": "Zła kompozycja",
+          "url": "https://scp-pl.wikidot.com/scp-012",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 19,
+          "desc": "SCP-012 ma być przez cały czas przechowywany w zaciemnionym pomieszczeniu. Jeżeli obiekt zostanie wystawiony na działanie światła lub zobaczony przez pracowników w innym zakresie światła niż podczerwień, należy bezzwłocznie poddać personel badaniom psychiatryc…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\" Przyszedłem na świat z muzyką we mnie. Muzyka była częścią mnie.",
+      "articleSections": [
+        {
+          "id": "01-wazne-opowiadania",
+          "title": "Ważne opowiadania",
+          "articleIDs": [
+            "empedocles",
+            "primae-formae",
+            "bloodlines"
+          ]
+        },
+        {
+          "id": "02-inne-przedmioty-zainteresowania",
+          "title": "Inne przedmioty zainteresowania",
+          "articleIDs": [
+            "scp-2458",
+            "scp-2519",
+            "scp-7676"
+          ]
+        },
+        {
+          "id": "03-inne-opowiadania",
+          "title": "Inne opowiadania",
+          "articleIDs": [
+            "scp-012"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:the-coldest-war-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "the-coldest-war-hub",
+      "title": "Najzimniejsza wojna",
+      "sourceListURL": "https://scp-pl.wikidot.com/the-coldest-war-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/the-coldest-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "najzimniejsza-wojna",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "najzimniejsza-wojna",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-212d074a35a29a12b9a65e9a064764bf71d34fb09955279c393bf65582e26ad5"
+      },
+      "primaryArticles": [
+        {
+          "id": "voices-unassailable",
+          "title": "Głosy niepodważalne — \"Oto co musisz wiedzieć o zimnej wojnie.\"",
+          "url": "https://scp-pl.wikidot.com/voices-unassailable",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Głosy niepodważalne —"
+        },
+        {
+          "id": "audio-of-war",
+          "title": "Odgłosy wojny — \"…możemy zostać zmuszeni do zdetonowania głowicy przed ewakuacją.\"",
+          "url": "https://scp-pl.wikidot.com/audio-of-war",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Odgłosy wojny —"
+        },
+        {
+          "id": "they-will-leave-us-with-a-shaken-earth",
+          "title": "Zostawią nam drżącą ziemię — \"Moja ukochana Dorothy, to co się tu dzieje to nowa wojna, nowy rodzaj wojny…\"",
+          "url": "https://scp-pl.wikidot.com/they-will-leave-us-with-a-shaken-earth",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Zostawią nam drżącą ziemię —"
+        },
+        {
+          "id": "condor",
+          "title": "Idea - Ideał - Ideologia — \"Teraz Junta używa go głównie przeciwko cywilom. Artystom, profesorom, czasami kościołowi. Ich następnym celem jest pracownik budowlany, lider związku zawodowego. Agustin Varela. Nie wiem kiedy, ale pewnie niedługo.\"",
+          "url": "https://scp-pl.wikidot.com/condor",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Idea - Ideał - Ideologia — Kondor Eventide Release Crossroads Embarkation"
+        },
+        {
+          "id": "scp-2350",
+          "title": "Z umysłu Malinalxochitl",
+          "url": "https://scp-pl.wikidot.com/scp-2350",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Nagranie SCP-2350 jest trzymane na zabezpieczonej pamięci USB w Cyfrowej Zbrojowni Ośrodka 42. Z pamięcią USB może obchodzić się wyłącznie personel niesłyszący lub personel noszący przemysłowe nauszniki wygłuszające i zatyczki do uszu. Mobilne Formacje Operacy…"
+        },
+        {
+          "id": "scp-2664",
+          "title": "Czerwona Linia",
+          "url": "https://scp-pl.wikidot.com/scp-2664",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Na czas pisania tego dokumentu, SCP-2664 został przeklasyfikowany na Zneutralizowane. Śledztwo w sprawie aktywa \"Gaius Prime\" należącego do Globalnej Koalicji Okultystycznej jest w toku. + POPRZEDNIE SPECJALNE CZYNNOŚCI PRZECHOWAWCZE - Nieużywane z dniem 25.12…"
+        },
+        {
+          "id": "scp-6672",
+          "title": "Arbitralna apoteoza",
+          "url": "https://scp-pl.wikidot.com/scp-6672",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Ponieważ Fundacja nie może fizycznie wejść w posiadanie SCP-6672, znajduje się on obecnie w miejscu, w którym został zbudowany, pod nadzorem swoich twórców. 1 W związku z tym, jej zabezpieczenia obecnie polegają wyłącznie na uzyskiwaniu cotygodniowych informac…"
+        },
+        {
+          "id": "scp-es-357",
+          "title": "Jankes i Gusano",
+          "url": "https://scp-pl.wikidot.com/scp-es-357",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Ze względu na naturę SCP-ES-357, obecne działania przechowawcze skupione są na rekrutowaniu rodowitych Kubańczyków zamieszkujących Małą Hawanę jako potencjalnych szpiegów przeciwko Kubańskiemu Ministerstwu Anomalii."
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Fundacja nie zna ideologii innej niż przechowywanie. Ale cała reszta świata…",
+      "articleSections": [
+        {
+          "id": "01-opowiesci",
+          "title": "Opowieści",
+          "articleIDs": [
+            "voices-unassailable",
+            "audio-of-war",
+            "they-will-leave-us-with-a-shaken-earth",
+            "condor"
+          ]
+        },
+        {
+          "id": "02-raporty-scp",
+          "title": "Raporty SCP",
+          "articleIDs": [
+            "scp-2350",
+            "scp-2664",
+            "scp-6672",
+            "scp-es-357"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:unfounded-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "unfounded-hub",
+      "title": "Nieufundowana",
+      "sourceListURL": "https://scp-pl.wikidot.com/unfounded-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/unfounded-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "nieufundowana",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "nieufundowana",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-5c030bbaea2f963ec81ffdddf9c4d406717eadaa76f4169dc0eaf8c84e35ce84"
+      },
+      "primaryArticles": [
+        {
+          "id": "taken-from-a-global-occult-coalition-casefile",
+          "title": "Pliki z teczki na dokumenty Globalnej Koalicji Okultystycznej",
+          "url": "https://scp-pl.wikidot.com/taken-from-a-global-occult-coalition-casefile",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "let-the-factory-fail",
+          "title": "#LetTheFactoryFail",
+          "url": "https://scp-pl.wikidot.com/let-the-factory-fail",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-6871",
+          "title": "W mgnieniu oka",
+          "url": "https://scp-pl.wikidot.com/scp-6871",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "Instrukcje dotyczące potrzebnych składników oraz przeprowadzenia SCP-6871 są dostępne tylko dla Rady O5 Administratora. Wszystkie nieupoważnione osoby próbujące uzyskać te informacje mają zostać zlikwidowane na miejscu. Wszystkie testy z udziałem SCP-6871 mają…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "nie·u·fun·do·wa·na przy. nie zbudować, nie zakłada, nie ustanawiać czegoś do użytku publicznego na swój koszt.",
+      "articleSections": [
+        {
+          "id": "01-historie",
+          "title": "Historie",
+          "articleIDs": [
+            "taken-from-a-global-occult-coalition-casefile",
+            "let-the-factory-fail",
+            "scp-6871"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:arbh-class-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "arbh-class-hub",
+      "title": "Owadzie piekło",
+      "sourceListURL": "https://scp-pl.wikidot.com/arbh-class-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/arbh-class-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "owadzie-piekło",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "owadzie-piekło",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-74241c707c018436fa81d2551439dab8de5924c0fa24f505d9edc1aec75cf5a6"
+      },
+      "primaryArticles": [
+        {
+          "id": "critter-profile-genghis",
+          "title": "Profil Zwierzaka: Genghis!",
+          "url": "https://scp-pl.wikidot.com/critter-profile-genghis",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "OTWÓRZ PLIK: Profil Zwierzaka: Genghis!"
+        },
+        {
+          "id": "scp-4991",
+          "title": ">Więc tak ten świat się zakończy. Nie z hukiem, ale z shitpostem.",
+          "url": "https://scp-pl.wikidot.com/scp-4991",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "Wszystkie strony sieci społecznościowych pod wpływem SCP-4991 zostały poddane procedurze całkowitego usunięcia zapisów incydentu. Historia przykrywkowa dotycząca ARG (Gra w Alternatywnej Rzeczywistości) została zaimplementowana na wypadek przetrwania jakiegoko…"
+        },
+        {
+          "id": "end-of-the-world-livestream",
+          "title": "Stream z końca świata",
+          "url": "https://scp-pl.wikidot.com/end-of-the-world-livestream",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "OTWÓRZ PLIK: Stream z końca świata"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\"Genghis\" to imię dla naszej Australijskiej Szarańczy, która zadomowiła się w starym dobrym Oregonie. Przypuszczalnie po Australii mieszkał w sąsiednim Wasco County, gdzie jego chmara spowodowała utratę plonów. Został znaleziony, kiedy nasi eksperci ustalili, że chmara Genghisa rosła w niezwykle szybkim tempie.",
+      "articleSections": [
+        {
+          "id": "01-profil-zwierzaka-genghis",
+          "title": "Profil Zwierzaka: Genghis!",
+          "articleIDs": [
+            "critter-profile-genghis"
+          ]
+        },
+        {
+          "id": "02-scp-4991",
+          "title": "SCP-4991",
+          "articleIDs": [
+            "scp-4991"
+          ]
+        },
+        {
+          "id": "03-stream-z-konca-swiata",
+          "title": "STREAM Z KOŃCA ŚWIATA",
+          "articleIDs": [
+            "end-of-the-world-livestream"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:project-heimdall",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "project-heimdall",
+      "title": "Projekt Heimdall",
+      "sourceListURL": "https://scp-pl.wikidot.com/project-heimdall",
+      "officialHubURL": "https://scp-pl.wikidot.com/project-heimdall",
+      "hubPresentation": "standard",
+      "canonicalTag": "heimdall",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "heimdall",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-54bc89099e5fb2da768bb5ca9349ed1470537e87e15413964d061e304c083aaa"
+      },
+      "primaryArticles": [
+        {
+          "id": "project-heimdall-prologue",
+          "title": "Projekt Heimdall - Prolog",
+          "url": "https://scp-pl.wikidot.com/project-heimdall-prologue",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "to-what-purpose-an-invasion",
+          "title": "Jaki cel miałaby mieć inwazja?",
+          "url": "https://scp-pl.wikidot.com/to-what-purpose-an-invasion",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "lessons-from-history",
+          "title": "Lekcje z Historii",
+          "url": "https://scp-pl.wikidot.com/lessons-from-history",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-1342",
+          "title": "Do twórców muzyki",
+          "url": "https://scp-pl.wikidot.com/scp-1342",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-1342 ma być przechowywany w Ośrodku 15. SCP-1342-1 ma być przechowywany w klatce Faradaya, mierzącej 15m x 15m x 20m, w celu zapobiegnięcia transmisji telemetrii oraz innych danych dotyczących SCP-1342. SCP-1342-2 ma być przechowywany w standardowej szafce…"
+        },
+        {
+          "id": "scp-2117",
+          "title": "Skradziona Solidarność",
+          "url": "https://scp-pl.wikidot.com/scp-2117",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-2117 jest lokalizacją Ośrodka 2117, do którego dostęp ma każda osoba posiadająca instancję SCP-2117-A-1. Obecnie instancje SCP-2117-A-1 są używane przez niezbędny personel, członków Mobilnej Formacji Operacyjnej Omega-2 (\"Anti-Nihilism IN SPACE!\") oraz ins…"
+        },
+        {
+          "id": "scp-2372",
+          "title": "Bratnie dusze",
+          "url": "https://scp-pl.wikidot.com/scp-2372",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-2372 ma być przechowywany w krionicznej komorze przechowawczej w Ośrodku 168. Temperatura w komorze ma być utrzymywana w zakresie od 2°C do 4°C. Prośby SCP-2372-A o odłączenie go od SCP-2372 mają być odrzucane. SCP-2372-A ma być poinformowany, że zostanie…"
+        },
+        {
+          "id": "scp-3320",
+          "title": "Etyczna względność",
+          "url": "https://scp-pl.wikidot.com/scp-3320",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-3320 jest przechowywane wewnątrz Strefy 3320 na południowym Oceanie Atlantyckim. Na Strefę 3320 składa się Ośrodek 3320 na Wyspie Bouveta, oddanej Fundacji na zawsze przez rząd norweski, a także 50 kilometrowa strefa wykluczenia na otaczającym oceanie. SCP…"
+        },
+        {
+          "id": "scp-5060",
+          "title": "Planeta Sentinel Północny",
+          "url": "https://scp-pl.wikidot.com/scp-5060",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Fizyczne zabezpieczenie SCP-5060 jest obecnie niemożliwe. W związku z tym fundacyjne wysiłki są skoncentrowane na ograniczaniu świadomości społecznej odnośnie SCP-5060. Agenci Fundacji w Międzynarodowej Unii Astronomicznej mają zgłaszać wszystkie trwające bada…"
+        },
+        {
+          "id": "scp-6335",
+          "title": "Kołyska",
+          "url": "https://scp-pl.wikidot.com/scp-6335",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Lokalizacje, działania i stany wszystkich znanych instancji SCP-6335 mają być stale monitorowane pod kątem jakichkolwiek nietypowych zachowań. SCP-6335-A ma bezterminowo pozostawać na orbicie okołoziemskiej. Utrzymanie jego poprawnego działania jest traktowane…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "OD: O5-7, w imieniu Rady O5 DO: Generał William Pendergast (Zastępca Dyrektora Fundacji ds. Operacji Planowania Protokołów Awaryjnych) RE: Propozycja CPO 83910301 Operacja została zatwierdzona pod kryptonimem \"Projekt Heimdall\". Celem ma być zbadanie potencjalnych środków, za pomocą których pozaziemskie siły wykazujące aktywną wrogość wobec ludzkiego życia i/lub cywilizacji mogłyby próbować podbić, zniewolić lub dokonać eksterminacji ludzkości. Na podstawie uzyskanych danych mają zostać opracowane środki zaradcze i protokoły awaryjne. Wyniki projektu po jego zakończeniu mają zostać przedstawione Radzie O5.",
+      "articleSections": [
+        {
+          "id": "01-dokumentacja-projektu",
+          "title": "Dokumentacja Projektu",
+          "articleIDs": [
+            "project-heimdall-prologue",
+            "to-what-purpose-an-invasion",
+            "lessons-from-history"
+          ]
+        },
+        {
+          "id": "02-powiazane-dokumenty",
+          "title": "Powiązane Dokumenty",
+          "articleIDs": [
+            "scp-1342",
+            "scp-2117",
+            "scp-2372",
+            "scp-3320",
+            "scp-5060",
+            "scp-6335"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:the-s-c-plastics-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "the-s-c-plastics-hub",
+      "title": "S & C Plastics",
+      "sourceListURL": "https://scp-pl.wikidot.com/the-s-c-plastics-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/the-s-c-plastics-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "s&c-plastics",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "s&c-plastics",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-3170616fb0e308134e6d7240d932aa5c5be3c95595026124848747015a8838a8"
+      },
+      "primaryArticles": [
+        {
+          "id": "last-days-at-camp",
+          "title": "Ostatnie Dni Na Obozie",
+          "url": "https://scp-pl.wikidot.com/last-days-at-camp",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "halloween-at-s-c-plastics",
+          "title": "Halloween w S & C Plastics",
+          "url": "https://scp-pl.wikidot.com/halloween-at-s-c-plastics",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Zgodnie uważa się, że Sloth's Pit jest jednym z najdziwniejszych miejsc na kontynentalnej części Stanów Zjednoczonych, ale nie znajdziesz tu nic tak prozaicznego jak tajemniczy dom albo wzgórze grawitacyjne. Zamiast tego mamy sady jabłkowe zasadzone przez samego Johna Chapmana, gdzie zamiast soku płynie cydr. Każdy dom jest nawiedzony, a wycieczki z duchami są dostępne, dzięki Towarzystwu Historycznemu Sloth's Pit i Radzie Miasta. Ekwipunek kempingowy jest zawsze dostępny do wypożyczenia, jeśli ktoś jest na tyle dzielny, by wyruszyć i spędzić noc w lesie, pod gwiazdami i wznoszącymi się drzewami.",
+      "articleSections": [
+        {
+          "id": "01-1890-2012",
+          "title": "1890-2012",
+          "articleIDs": [
+            "last-days-at-camp"
+          ]
+        },
+        {
+          "id": "02-2012-2014",
+          "title": "2012-2014",
+          "articleIDs": [
+            "halloween-at-s-c-plastics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:rat-s-nest-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "rat-s-nest-hub",
+      "title": "Szczurze gniazdo",
+      "sourceListURL": "https://scp-pl.wikidot.com/rat-s-nest-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/rat-s-nest-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "szczurze-gniazdo",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "szczurze-gniazdo",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-73bccdc7102906b04c0a2a7934818b8d8996a64efca73efdb86603053e8df98b",
+        "verifiedEmpty": true,
+        "allowEmpty": true
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Czy ze światem jest w ogóle coś nie tak, czy po prostu od zawsze tak było? Czy jesteśmy w stanie wskazać jedno pojedyncze zdarzenie w przeszłości, które spowodowało, że anomalie wymknęły się spod kontroli?",
+      "articleSections": [
+        {
+          "id": "01-artykuy",
+          "title": "Artykuły",
+          "articleIDs": []
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:those-twisted-pines-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "those-twisted-pines-hub",
+      "title": "Those Twisted Pines",
+      "sourceListURL": "https://scp-pl.wikidot.com/those-twisted-pines-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/those-twisted-pines-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "twisted-pines",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "twisted-pines",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-0054e18b08a94372e7fcff7a905ab66927bb7464f09897228032e4d2e06f4ad9"
+      },
+      "primaryArticles": [
+        {
+          "id": "good-as-new",
+          "title": "Jak nowy",
+          "url": "https://scp-pl.wikidot.com/good-as-new",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "paper-pusher",
+          "title": "Urzędas",
+          "url": "https://scp-pl.wikidot.com/paper-pusher",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-2960",
+          "title": "Przedstawienie MUSI trwać…",
+          "url": "https://scp-pl.wikidot.com/scp-2960",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Z powodu natury SCP-2960, obiekt musi być przechowywany w miejscu dawnego audytorium Liceum █████ w █████, Oregon. Szkoła została zamknięta i zakupiona przez firmę przykrywkową Fundacji. Wszystkim instancjom SCP-2960 muszą być zapewnione dzienne posiłki zgodni…"
+        },
+        {
+          "id": "scp-1360",
+          "title": "PSHUD nr 31",
+          "url": "https://scp-pl.wikidot.com/scp-1360",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-1360 musi być przechowywany w celi przechowawczej dla humanoidów w Ośrodku 19. Przed wejściem wymagana jest obecność czterech pracowników ochrony. Ograniczenia nie mogą zostać usunięte, chyba że jest to wymagane do przeprowadzenia testu. W celu komunikacji…"
+        },
+        {
+          "id": "products",
+          "title": "Produkty",
+          "url": "https://scp-pl.wikidot.com/products",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-4660",
+          "title": "Kot wrócił",
+          "url": "https://scp-pl.wikidot.com/scp-4660",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "SCP-4660-1 ma być przechowywany na miejscu w SCP-4660-3, we wnętrzu Komory Przechowawczej dla Anomalnych Ssaków typu S. Komora ma być codziennie kontrolowana pod kątem prób przełamania zabezpieczeń. Ta komora i teren, na którym jest wybudowany SCP-4660-3 są za…"
+        },
+        {
+          "id": "realignment",
+          "title": "Zmiana stron",
+          "url": "https://scp-pl.wikidot.com/realignment",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3108",
+          "title": "Nerfiący pistolet",
+          "url": "https://scp-pl.wikidot.com/scp-3108",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "SCP-3108 musi być trzymany w standardowej przechowalni dla obiektów anomalnych w Ośrodku 64 i może być z niej wyjmowany wyłącznie do celów testowych. Proponowane testy muszą zostać wcześniej zatwierdzone przez zarówno dr. Johnsona i dr. Dietza. SCP-3108-1 nie…"
+        },
+        {
+          "id": "scp-3560",
+          "title": "Wszystkie roboty trafiają do otchłani",
+          "url": "https://scp-pl.wikidot.com/scp-3560",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Ze względu na bliskie położenie względem istniejącego już Ośrodka przechowawczego Fundacji, SCP-3560 jest obecnie przechowywany przez personel Ośrodka 64 . Wszystkie ścieżki prowadzące do SCP-3560 mają zostać odcięte od publicznego dostępu pod przykrywką poważ…"
+        },
+        {
+          "id": "hector-and-jacob",
+          "title": "Hector i Jacob",
+          "url": "https://scp-pl.wikidot.com/hector-and-jacob",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3860",
+          "title": "Upadek sokoła",
+          "url": "https://scp-pl.wikidot.com/scp-3860",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-3860 jest przechowywany w Antytaumaturgicznej Celi dla Humanoidów Typu S, w humanoidalnym skrzydle przechowawczym o wysokim poziomie bezpieczeństwa Ośrodka 19. Cela ma być codziennie sprawdzana pod kątem obecności kontrabandy bądź wszelakich próby przełama…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Poniższe prace przedstawione są w porządku mniej więcej chronologicznym. Artykuły pogrubione są częścią serii o Anderson Robotics. Artykuły podkreślone są częścią serii o Sashy Merlo. Artykuły pochyłe są częścią serii o Beatrice Ross.",
+      "articleSections": [
+        {
+          "id": "01-artykuy",
+          "title": "Artykuły:",
+          "articleIDs": [
+            "good-as-new",
+            "paper-pusher",
+            "scp-2960",
+            "scp-1360",
+            "products",
+            "scp-4660",
+            "realignment",
+            "scp-3108",
+            "scp-3560",
+            "hector-and-jacob",
+            "scp-3860"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:war-on-all-fronts-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "war-on-all-fronts-hub",
+      "title": "Wojna na wszystkich frontach",
+      "sourceListURL": "https://scp-pl.wikidot.com/war-on-all-fronts-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/war-on-all-fronts-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "wojna-na-wszystkich-frontach",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wojna-na-wszystkich-frontach",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-41e56ee0c5cddd8385b5a5951058b8d39eb2ff75c13363cbe700e4d6db749474"
+      },
+      "primaryArticles": [
+        {
+          "id": "nx-03",
+          "title": "Nx-03",
+          "url": "https://scp-pl.wikidot.com/nx-03",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Mityczna wyspa, raj i azyl, oraz zagłada, która ją zniszczyła. ( )"
+        },
+        {
+          "id": "lte-0851-cetus",
+          "title": "LTE-0851-Cetus",
+          "url": "https://scp-pl.wikidot.com/lte-0851-cetus",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Bestia z legendy. Niszczyciel wszystkiego. Kraken. Potwór. Abominacja. ( )"
+        },
+        {
+          "id": "a-foul-storm-in-a-fair-land",
+          "title": "Straszliwa Burza w Krainie Fae",
+          "url": "https://scp-pl.wikidot.com/a-foul-storm-in-a-fair-land",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Wszystko musi się kiedyś skończyć, nawet wieczne królestwa. ( )"
+        },
+        {
+          "id": "kaiju-caviar-ocn39-t5fg6-7hjl2",
+          "title": "\"Kawior Kaiju\" (OCN39/T5FG6/7HJL2)",
+          "url": "https://scp-pl.wikidot.com/kaiju-caviar-ocn39-t5fg6-7hjl2",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Nie baw się swoim jedzeniem. ( )"
+        },
+        {
+          "id": "the-dread-behemoth",
+          "title": "Herman Fuller przedstawia: Przerażający Behemot",
+          "url": "https://scp-pl.wikidot.com/the-dread-behemoth",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Wspaniała opowieść o heroizmie i przedstawieniu, oraz trofeum walki! ( )"
+        },
+        {
+          "id": "about-deer",
+          "title": "O Uczelni Jelenia",
+          "url": "https://scp-pl.wikidot.com/about-deer",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Fale tego rozpryskują się daleko i szeroko. ( )"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Nie sądzę, bym kiedykolwiek zapomniała tamten dzień, kiedy apokalipsa wypełzła z morza.",
+      "articleSections": [
+        {
+          "id": "01-poprzednik",
+          "title": "Poprzednik",
+          "articleIDs": [
+            "nx-03"
+          ]
+        },
+        {
+          "id": "02-atak",
+          "title": "Atak",
+          "articleIDs": [
+            "lte-0851-cetus",
+            "a-foul-storm-in-a-fair-land"
+          ]
+        },
+        {
+          "id": "03-nastepstwa",
+          "title": "Następstwa",
+          "articleIDs": [
+            "kaiju-caviar-ocn39-t5fg6-7hjl2",
+            "the-dread-behemoth"
+          ]
+        },
+        {
+          "id": "04-akademicy",
+          "title": "Akademicy",
+          "articleIDs": [
+            "about-deer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:from-120-s-archives-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "from-120-s-archives-hub",
+      "title": "Z archiwum 120",
+      "sourceListURL": "https://scp-pl.wikidot.com/from-120-s-archives-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/from-120-s-archives-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "z-archiwum-120",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "z-archiwum-120",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-1e767f473a63267df408645254afa35756f663f04a3d074b6b24aa252f69bd7f"
+      },
+      "primaryArticles": [
+        {
+          "id": "project-proposal-2012-120",
+          "title": "1. Propozycja projektu 2012-120: \"Sztuka to droga ucieczki\"",
+          "url": "https://scp-pl.wikidot.com/project-proposal-2012-120",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "2. SCP-7532 — autorstwa/przełożenia 3. SCP-PL-400 — autorstwa/przełożenia"
+        },
+        {
+          "id": "ralliston-s-proposal",
+          "title": "Propozycja Ralliston",
+          "url": "https://scp-pl.wikidot.com/ralliston-s-proposal",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "1. Propozycja Ralliston"
+        },
+        {
+          "id": "scp-5292",
+          "title": "Nasze książki, twoja biblioteka, wspólnie zjednoczeni",
+          "url": "https://scp-pl.wikidot.com/scp-5292",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Obiekt jest dużą, nieeuklidesową biblioteką znajdującą się około 60 metrów pod ziemią w Częstochowskich kopalniach w Polsce, z wieloma nieprzetłumaczonymi frazami napisanymi w języku Fae nad wejściem. Choć z zewnątrz wygląda jedynie na 100 m x 100 m x 20 m, je…"
+        },
+        {
+          "id": "and-every-time-we-meet-again-hub",
+          "title": "I Za Każdym Razem Gdy Się Znów Spotkamy",
+          "url": "https://scp-pl.wikidot.com/and-every-time-we-meet-again-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "3. Seria I Za Każdym Razem Gdy Się Znów Spotkamy"
+        },
+        {
+          "id": "secure-facility-dossier-site-120",
+          "title": "Dokumentacja Strzeżonej Placówki: Ośrodek 120",
+          "url": "https://scp-pl.wikidot.com/secure-facility-dossier-site-120",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "4. Dokumentacja Strzeżonej Placówki: Ośrodek 120"
+        },
+        {
+          "id": "cos-tu-smierdzi",
+          "title": "Coś tu Śmierdzi",
+          "url": "https://scp-pl.wikidot.com/cos-tu-smierdzi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Logo autorstwa Soulless11#2545 na licencji CC-BY 3.0"
+        },
+        {
+          "id": "wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+          "title": "WNIOSEK O DOTACJĘ NA OPRACOWANIE ŚRODKA PRZECIWKO ALERGII NA ŻELAZO WYSTĘPUJĄCEJ U PRZEDSTAWICIELI GATUNKU HOMO SAPIENS SIDHE",
+          "url": "https://scp-pl.wikidot.com/wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Czasami, by zwalczyć chorobę, wystarczy tylko uwięzić starożytne bóstwo i zrobić z niego bateryjkę. — autorstwa i"
+        },
+        {
+          "id": "historia-polskiego-projektu-przechowawczego",
+          "title": "Historia Polskiego Projektu Przechowawczego",
+          "url": "https://scp-pl.wikidot.com/historia-polskiego-projektu-przechowawczego",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "Autorstwa Jasiu06"
+        },
+        {
+          "id": "scp-pl-399",
+          "title": "Irracjonalna Insurekcja",
+          "url": "https://scp-pl.wikidot.com/scp-pl-399",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 43,
+          "desc": "Wszystkie osoby, które doświadczyły manifestacji SCP-PL-399 nie żyją, działają w anomalnych organizacjach albo są zintegrowane w anomalną społeczność. Ze względu na ten fakt, dodatkowe czynności przechowawcze wobec SCP-PL-399 są całkowicie niepotrzebne poza st…"
+        },
+        {
+          "id": "scp-pl-259",
+          "title": "Lista terytoriów podbitych przez Czyngis-Chana jest niekompletna, możesz pomóc, rozszerzając ją",
+          "url": "https://scp-pl.wikidot.com/scp-pl-259",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 15,
+          "desc": "SCP-PL-259 jest aktualnie przechowywany w Sektorze C na Poziomie 3 Ośrodka 120 . Obiekt musi znajdować się pod stałym nadzorem i ochroną ze strony personelu placówki. W razie utraty obiektu, należy natychmiast powiadomić o tym Dowództwo O5. Obiekt aktualnie je…"
+        },
+        {
+          "id": "scp-6672",
+          "title": "Arbitralna apoteoza",
+          "url": "https://scp-pl.wikidot.com/scp-6672",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Ponieważ Fundacja nie może fizycznie wejść w posiadanie SCP-6672, znajduje się on obecnie w miejscu, w którym został zbudowany, pod nadzorem swoich twórców. 1 W związku z tym, jej zabezpieczenia obecnie polegają wyłącznie na uzyskiwaniu cotygodniowych informac…"
+        },
+        {
+          "id": "scp-6789",
+          "title": "Powróć. Powróć. Powróć.",
+          "url": "https://scp-pl.wikidot.com/scp-6789",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Pomieszczenie, w którym znajduje się SCP-6789 jak i sąsiadujące z nim komory mają zostać zamknięte dla pracowników Rollander Steel i reszty społeczeństwa. Piwniczne podpoziomy fabryki mają zostać zapieczętowane i usunięte z oficjalnych planów architektonicznyc…"
+        },
+        {
+          "id": "critter-profile-sparky",
+          "title": "Profil Zwierzaka: Sparky!",
+          "url": "https://scp-pl.wikidot.com/critter-profile-sparky",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "To, co umarło, takie pozostanie, bez względu na to, jak bardzo chcielibyśmy zakłócić jego wieczny odpoczynek. — autorstwa i , przełożone przez"
+        },
+        {
+          "id": "scp-5314",
+          "title": "Ogrzybiałe szanse",
+          "url": "https://scp-pl.wikidot.com/scp-5314",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Zarodniki SCP-5314 mają być przechowywane w stanie zamrożonym w magazynie zarodni znajdującym się w Strefie 3. Zarodniki obiektu mogą być transportowane do innych placówek Fundacji jedynie pod ścisłym nadzorem. Podmiot może być hodowany jedynie na potrzeby eks…"
+        },
+        {
+          "id": "scp-pl-273",
+          "title": "Flota Pepsi",
+          "url": "https://scp-pl.wikidot.com/scp-pl-273",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 10,
+          "desc": "Obiekty obecnie znajdują się poza posiadaniem i zasięgiem Fundacji. Obecnie trwają globalne próby ich namierzenia. 1 W przypadku, gdyby udało się zlokalizować położenie SCP-PL-273, należy powiadomić o tym fakcie Radę O4 , która podejmie dalsze decyzje w sprawi…"
+        },
+        {
+          "id": "wspanialy-kumpel",
+          "title": "Wspaniały Kumpel",
+          "url": "https://scp-pl.wikidot.com/wspanialy-kumpel",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Restauracja Dolores była jedną z bardziej luksusowych w Esterbergu. Nie była co prawda aż tak wyjątkową, jak Ambrose, jednak miała swój urok — oraz pewną ważną cechę. \"Dolores\" znajdowała się w Dzielnicy Administracyjnej, rzut beretem od ratusza. Miejsce to cz…"
+        },
+        {
+          "id": "scp-6079",
+          "title": "Cyfrowa dysocjacja",
+          "url": "https://scp-pl.wikidot.com/scp-6079",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 10,
+          "desc": "Wszystkie Ośrodki Fundacji SCP są obecnie poddane cyfrowej kwarantannie. Obejmuje to przemieszczanie się pomiędzy Ośrodkami Fundacji Konstruktów Sztucznej Inteligencji (.aic) oraz innych sztucznych inteligencji. Stan ten ma być utrzymany do czasu, aż źródło SC…"
+        },
+        {
+          "id": "scp-pl-213",
+          "title": "Gloria Necatis",
+          "url": "https://scp-pl.wikidot.com/scp-pl-213",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 27,
+          "desc": "SCP-PL-213 jest anomalią probabilistyczną, która skupia się całkowicie na osobie aktualnie piastującej pozycję papieża Kościoła Katolickiego. Zjawisko działa poprzez przyciąganie do swojej ofiary zjawisk anomalnych, paranormalnych i taumaturgicznych, znacząco…"
+        },
+        {
+          "id": "scp-5464",
+          "title": "Odponiedźwiedzialność, którą nosimy",
+          "url": "https://scp-pl.wikidot.com/scp-5464",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 16,
+          "desc": "Podczas nieaktywnej fazy SCP-5464 ma pozostać na swoim wybiegu znajdującym się w parku wokół Ośrodka 120 . Ma być również monitorowany pod kątem wszelakich zmian swojego zachowania. Gdy SCP-5464 wejdzie w fazę aktywną, MFO Omega-6 (\"Ścigać Nie Chce Misię”) ma…"
+        },
+        {
+          "id": "gaslight-gatekeep-girlboss-hub",
+          "title": "GASLIGHT, GATEKEEP, GIRLBOSS",
+          "url": "https://scp-pl.wikidot.com/gaslight-gatekeep-girlboss-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Gdy Królowa Nienawiści próbuje po raz trzeci uczynić świat swoim, nieumarła mafioza, medium, Nikt i najbardziej niemiła osoba, jaką kiedykolwiek spotkasz, spróbują zapewnić, że jej plan nigdy się nie powiedzie. — autorstwa , i 1. SCP-5572: I Ain't No Skeleton's Son — autorstwa i , przełożone przez i 2. The Lands Nobody Returns From — autorstwa i 3. Four Knights' Tango — autorstwa , i 4. I Was the Queen (Before It Was Cool) — autorstwa i"
+        },
+        {
+          "id": "scp-5572",
+          "title": "I Ain't No Skeleton's Son",
+          "url": "https://scp-pl.wikidot.com/scp-5572",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Personel stacjonujący w Ośrodku 120 obecnie tworzy materiały skierowane do ludności cywilnej, nawołujące do grzebania swoich bliskich z myślą o metodach zapobiegawczych SCP-5572. Jednakże, jeżeli Rada Nadzorcza otrzyma sygnał \" potrzebne zasoby \", kampania ta…"
+        },
+        {
+          "id": "the-queen-in-green",
+          "title": "Królowa w Zieleni",
+          "url": "https://scp-pl.wikidot.com/the-queen-in-green",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Desperacja zmienia każdego. Nawet boga. — autorstwa"
+        },
+        {
+          "id": "the-deathless-merchant-of-london",
+          "title": "Nieśmiertelny Kupiec z Londynu",
+          "url": "https://scp-pl.wikidot.com/the-deathless-merchant-of-london",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Wyznawcy Węża mają dość MC&D, więc biorą sprawę w swoje Ręce. — autorstwa"
+        },
+        {
+          "id": "boletus-aridas",
+          "title": "Ulotka Informacja o Anomalnym Grzybie — Kurzawka Szlachecka",
+          "url": "https://scp-pl.wikidot.com/boletus-aridas",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Kiedy kilku grzybiarzy przypadkowo odkrywa jeden z najbardziej anomalnych obszarów na terenie całej Polski, Fundacja jest zmuszona nawiązać z nimi współpracę. — autorstwa SCP-PL-252: Zawodowe Grzybobranie — Okazuje się, że przeszłość po prostu nie ma sensu. — autorstwa"
+        },
+        {
+          "id": "scp-pl-252",
+          "title": "Zawodowe Grzybobranie",
+          "url": "https://scp-pl.wikidot.com/scp-pl-252",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 13,
+          "desc": "SCP-PL-252 to osobnik grzyba anomalnego gatunku Kurzawka Szlachecka ( Boletus Aridas ), 2 aktualnie znajdujący się pod budynkiem na terenie dzielnicy Tysiąclecia w Częstochowie, mierzący 20 metrów wysokości. Chociaż obiekt sam w sobie, poza rozmiarem, nie różn…"
+        },
+        {
+          "id": "fresh-blood",
+          "title": "Świeża krew",
+          "url": "https://scp-pl.wikidot.com/fresh-blood",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Próbując znaleźć kogoś nowego, kto zasiliłby jej niekończące się rządy pracowników, Fundacja sięga po najgorszych rodzaj ludzi na Ziemi — nastolatków — autorstwa"
+        },
+        {
+          "id": "propozycja-arcydziegiel",
+          "title": "Propozycja Arcydziegiel: Fundator",
+          "url": "https://scp-pl.wikidot.com/propozycja-arcydziegiel",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Fundacja osobiście uważa się za jedynych prawdzie niezawodnych strażników normalności na świecie. Są jednak w błędzie. — autorstwa —"
+        },
+        {
+          "id": "morskie-opowiesci",
+          "title": "Morskie Opowieści",
+          "url": "https://scp-pl.wikidot.com/morskie-opowiesci",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "The difference between a fairy tale and a sea tale? A fairy tale starts with \"Once upon a time.\" A sea tale starts with \"This ain’t no shit!\""
+        },
+        {
+          "id": "10-kwietnia-2010",
+          "title": "10 Kwietnia 2010",
+          "url": "https://scp-pl.wikidot.com/10-kwietnia-2010",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "\"10 kwietnia 2010\""
+        },
+        {
+          "id": "szczupak-krol-glebin",
+          "title": "Szczupak Król Głębin",
+          "url": "https://scp-pl.wikidot.com/szczupak-krol-glebin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "\"Szczupak król głębin\""
+        },
+        {
+          "id": "krewetkowy-bol",
+          "title": "Krewetkowy Ból",
+          "url": "https://scp-pl.wikidot.com/krewetkowy-bol",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "\"Krewetkowy Ból\""
+        },
+        {
+          "id": "szczeki-w-ruinach",
+          "title": "Szczęki W Ruinach",
+          "url": "https://scp-pl.wikidot.com/szczeki-w-ruinach",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "\"Szczęki W Ruinach\""
+        },
+        {
+          "id": "ryba-pod-kocim-nozem",
+          "title": "Ryba Pod Kocim Nożem",
+          "url": "https://scp-pl.wikidot.com/ryba-pod-kocim-nozem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "\"Ryba pod kocim nożem\""
+        },
+        {
+          "id": "powrot-do-niflheimu",
+          "title": "Powrót do Niflheimu",
+          "url": "https://scp-pl.wikidot.com/powrot-do-niflheimu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "\"Powrót do Niflheimu\""
+        },
+        {
+          "id": "scp-pl-284",
+          "title": "O Boże, o kurwa",
+          "url": "https://scp-pl.wikidot.com/scp-pl-284",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 15,
+          "desc": "Niepotrzebne jest monitorowanie działalności SCP-PL-284 poza regularnymi kontrolami zachowania tajności. Ewentualne powiązanie obiektu z SCP-5484 jest wciąż badane przez zespół naukowców z ośrodków PL-55 i 120 , choć wiodąca hipoteza mu zaprzecza, a wskazuje r…"
+        },
+        {
+          "id": "konsekwencje",
+          "title": "Konsekwencje",
+          "url": "https://scp-pl.wikidot.com/konsekwencje",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Był piękny letni wieczór nad stołecznym miastem Warszawą. Wieżowce i drapacze chmur tej liczącej sobie dwa miliony mieszkańców metropolii przepięknie rozświetlały ją o tej porze dnia. Na niebie, gdzie górował księżyc w pełni, gdzieniegdzie mieniły się pojedync…"
+        },
+        {
+          "id": "049-x-minion-x-reader",
+          "title": "049 x minionek x czytelnik (czytelnik jest minionkiem) (to wina varaxous, przykro mi)",
+          "url": "https://scp-pl.wikidot.com/049-x-minion-x-reader",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Czasami prawda naprawdę jest dziwniejsza niż fikcja. Zwłaszcza gdy ta fikcja wkracza do prawdziwego życie, terroryzując twój Ośrodek. — autorstwa"
+        },
+        {
+          "id": "wylacz-komputer-burza-idzie",
+          "title": "Wyłącz Komputer, Burza Idzie",
+          "url": "https://scp-pl.wikidot.com/wylacz-komputer-burza-idzie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 24,
+          "desc": "autorstwa Calamari_Knight"
+        },
+        {
+          "id": "scp-pl-121-j",
+          "title": "SCP-PL-121-J: Żółw Diego",
+          "url": "https://scp-pl.wikidot.com/scp-pl-121-j",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Daniel Asheworth mógł wygrać walki z niezliczonymi bogami, ale wkrótce znajdzie swoje limity, gdy zainteresuje się nim pewien specyficzny żółw. — autorstwa does not match any existing user name —"
+        },
+        {
+          "id": "money-game",
+          "title": "Gra o pieniądz",
+          "url": "https://scp-pl.wikidot.com/money-game",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Władza ma swoją cenę. A niektórzy są skłonni ją zapłacić. — autorstwa"
+        },
+        {
+          "id": "the-edge-of-all-light",
+          "title": "Na skraju wszelkiego światła",
+          "url": "https://scp-pl.wikidot.com/the-edge-of-all-light",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Czasy się zmieniły — a wraz z nimi niektóre rzeczy, które uważaliśmy za najbardziej ludzkie. — autorstwa"
+        },
+        {
+          "id": "scp-pl-253",
+          "title": "WHAT IN THE KENTUCKY FRIED FUCK",
+          "url": "https://scp-pl.wikidot.com/scp-pl-253",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 31,
+          "desc": "SCP-PL-253 jest nadzorowany przez członków Ośrodka 120 , którzy mają za zadanie co tydzień przeprowadzać inspekcję obiektu, zgodnie z umową między Dyrekcją Ośrodka 120, a PoI-PL-253. PoI-PL-253 nie może pod żadnym pozorem ujawnić swojej anomalnej natury."
+        },
+        {
+          "id": "zlecenie-mef-7629",
+          "title": "Zlecenie MEF-7629",
+          "url": "https://scp-pl.wikidot.com/zlecenie-mef-7629",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Niektórzy ludzie są patologicznie uzależnieni od kontroli. Naprawdę szkoda, że najbardziej wpływowy właściciel firmy na świecie jest jednym z takich drani. — autorstwa"
+        },
+        {
+          "id": "scp-6747",
+          "title": "TEORIA CHAOSU",
+          "url": "https://scp-pl.wikidot.com/scp-6747",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "SCP-6747 jest ostatecznym celem PROJEKTU X/MACHINA (zobacz DODATEK 6747/V ) stanowiącego priorytet KLASY AMIDA ; w związku z tym, na rzecz jego ukończenia zostały udostępnione praktycznie nieograniczone zasoby. Wspomniany projekt ma być prowadzony przez kworum…"
+        },
+        {
+          "id": "scp-0110-j",
+          "title": "SCP-0110-J: Osobista emerytura, natychmiastowo skuteczna",
+          "url": "https://scp-pl.wikidot.com/scp-0110-j",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Dyrektor Maria Jones wraca z pierwszych od dawna wakacji, ale w swojej świętej bazie RAISA spotyka ją niemiła niespodzianka. — autorstwa , przełożone przez —"
+        },
+        {
+          "id": "scp-6072",
+          "title": "Gdziekolwiek śmierć kroczy",
+          "url": "https://scp-pl.wikidot.com/scp-6072",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-6072 pozostaje obecnie niezabezpieczony. Jego właściwa lokalizacja i zakotwiczenie przy użyciu Kotwic Rzeczywistości Scrantona we współpracy z personelem Ośrodka 88 ze względu na ich doświadczenie z anomaliami humanoidalnymi ma być uważane za najwyższy pri…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Zastrzeżenie: Zakładki \"Postacie, Organizacje i Pojęcia\" oraz \"Główna Oś Czasu\" zawierają poważne spoilery dotyczące wydarzeń w kanonie.",
+      "articleSections": [
+        {
+          "id": "01-najnowsze-artykuy",
+          "title": "Najnowsze Artykuły",
+          "articleIDs": [
+            "project-proposal-2012-120"
+          ]
+        },
+        {
+          "id": "02-przewodnik-dla-nowych-czytelnikow",
+          "title": "Przewodnik dla Nowych Czytelników",
+          "articleIDs": [
+            "ralliston-s-proposal",
+            "scp-5292",
+            "and-every-time-we-meet-again-hub",
+            "secure-facility-dossier-site-120"
+          ]
+        },
+        {
+          "id": "03-fundamenty",
+          "title": "Fundamenty",
+          "articleIDs": [
+            "cos-tu-smierdzi",
+            "wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+            "historia-polskiego-projektu-przechowawczego"
+          ]
+        },
+        {
+          "id": "04-trzy-wielkie-wojny",
+          "title": "Trzy Wielkie Wojny",
+          "articleIDs": [
+            "scp-pl-399",
+            "scp-pl-259",
+            "scp-6672",
+            "scp-6789",
+            "critter-profile-sparky",
+            "scp-5314",
+            "scp-pl-273",
+            "wspanialy-kumpel",
+            "scp-6079",
+            "scp-pl-213"
+          ]
+        },
+        {
+          "id": "05-zmiany-na-lepsze",
+          "title": "Zmiany na Lepsze",
+          "articleIDs": [
+            "scp-5464",
+            "gaslight-gatekeep-girlboss-hub",
+            "scp-5572",
+            "the-queen-in-green",
+            "the-deathless-merchant-of-london",
+            "boletus-aridas",
+            "scp-pl-252",
+            "fresh-blood",
+            "propozycja-arcydziegiel",
+            "morskie-opowiesci",
+            "10-kwietnia-2010",
+            "szczupak-krol-glebin",
+            "krewetkowy-bol",
+            "szczeki-w-ruinach",
+            "ryba-pod-kocim-nozem",
+            "powrot-do-niflheimu",
+            "scp-pl-284",
+            "konsekwencje",
+            "049-x-minion-x-reader",
+            "wylacz-komputer-burza-idzie",
+            "scp-pl-121-j"
+          ]
+        },
+        {
+          "id": "06-koniec-ery",
+          "title": "Koniec Ery",
+          "articleIDs": [
+            "money-game",
+            "the-edge-of-all-light",
+            "scp-pl-253",
+            "zlecenie-mef-7629",
+            "scp-6747",
+            "scp-0110-j",
+            "scp-6072"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:broken-masquerade-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "broken-masquerade-hub",
+      "title": "Zepsuta maskarada",
+      "sourceListURL": "https://scp-pl.wikidot.com/broken-masquerade-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/broken-masquerade-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "zepsuta-maskarada",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "zepsuta-maskarada",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-b45bf91cca8920b27f5066635a2fe8ecde6cf40b109ebbdcd68347dc4caffc0a"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-pl-211",
+          "title": "See, I",
+          "url": "https://scp-pl.wikidot.com/scp-pl-211",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "SCP-PL-211 jest objęty Fundacyjnym Programem Nadzoru Anomalnych Cywili, wprowadzonym po wystąpieniu Scenariusza \"Zepsutej Maskarady\" Klasy BK i w związku z czym musiał zostać wypuszczony z fundacyjnego aresztu. SCP-PL-211 może kontynuować swoją działalność art…"
+        },
+        {
+          "id": "scp-pl-230",
+          "title": "Projekt PANTOGNOSIA",
+          "url": "https://scp-pl.wikidot.com/scp-pl-230",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 19,
+          "desc": "Priorytetowym zadaniem Fundacji jest zapewnienie przeżycia SCP-PL-230 i dbanie o jego bezpieczeństwo oraz komfort bytowania. W tym celu przechowywany jest w osobnym sektorze Ośrodka PL-68, po którym może swobodnie się poruszać. Nie może go opuścić; wszelkie pr…"
+        },
+        {
+          "id": "dysonans-poznawczy",
+          "title": "Dysonans poznawczy",
+          "url": "https://scp-pl.wikidot.com/dysonans-poznawczy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "— Bibip biiiiiippppp bibip biiiiiippppp bibip biiiiiippppp"
+        },
+        {
+          "id": "ripped-from-the-headlines",
+          "title": "Wyrwane z nagłówków",
+          "url": "https://scp-pl.wikidot.com/ripped-from-the-headlines",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-executions-of-doctor-bright",
+          "title": "Egzekucje Doktora Brighta",
+          "url": "https://scp-pl.wikidot.com/the-executions-of-doctor-bright",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "a-lesson-in-power",
+          "title": "Lekcja o Potędze",
+          "url": "https://scp-pl.wikidot.com/a-lesson-in-power",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "confiscated-documents-march-2022",
+          "title": "Skonfiskowane obiekty, marzec 2022, Ośrodek 42 Sektor Obiektów Rozumnych",
+          "url": "https://scp-pl.wikidot.com/confiscated-documents-march-2022",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Cyantreuse"
+        },
+        {
+          "id": "scp-7404",
+          "title": "Wszystko, co złote, krótko trwa.",
+          "url": "https://scp-pl.wikidot.com/scp-7404",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "Slot SCP-7404 jest miejscem pochówku SCP-7404 i jest jako taki urządzony. W tym celu SCP-7404 został publicznie odtajniony."
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "Koniec maskarady",
+          "url": "https://scp-pl.wikidot.com/piercing-the-veil",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3241",
+          "title": "SS Sommerfeld",
+          "url": "https://scp-pl.wikidot.com/scp-3241",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "SARC 1 ma w dalszym ciągu pracować nad bezpieczną i skuteczną strategią zabezpieczenia SCP-3241. Dopóki takowa nie zostanie opracowana, czynności przechowawcze SCP-3241 mają skupiać się na dezinformacji, obserwacji i zapobieganiu zewnętrznemu kontaktowi. Perso…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\"Ja tylko mówię, że to była słuszna rzecz do zrobienia w tym czasie. Mogła nie być słuszna teraz. Mogła nie być już od jakiegoś czasu. Ale w takim wypadku? Tak trzeba było.\" \"Czy pan mówi, Panie Cle—\" \"Doktorze.\" \"Proszę wybaczyć, doktorze. Czy pan mówi, Doktorze Clef, że ci ludzie zasłużyli na to by umrzeć?\" \"Nie do końca, Oprah. Mówię, że w tym czasie nie mieliśmy innego wyboru, jeśli chcieliśmy zrozumieć jak działało to urządzenie. Dzięki tej wiedzy byliśmy wstanie ukryć obiekt przed opinią publiczną i uratować życie większej ilości osób niż straciliśmy.\" \"Dobro ogółu, Doktorze Clef?\" \"Dobro ogółu, Oprah.\" \"I teraz zasłona tajemnic opadła?\" \"Robimy różne rzeczy, ale nadal musimy coś robić. Musimy się uczyć.\" \"Ale dlaczego, Doktorze?\" \"Korea.\"",
+      "articleSections": [
+        {
+          "id": "01-artykuy",
+          "title": "Artykuły",
+          "articleIDs": [
+            "scp-pl-211",
+            "scp-pl-230",
+            "dysonans-poznawczy",
+            "ripped-from-the-headlines",
+            "the-executions-of-doctor-bright",
+            "a-lesson-in-power",
+            "confiscated-documents-march-2022",
+            "scp-7404",
+            "piercing-the-veil",
+            "scp-3241"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-pl:collection:canon:nightfall-hub",
+      "branchID": "scp-pl",
+      "kind": "canon",
+      "hubID": "nightfall-hub",
+      "title": "ZMROK",
+      "sourceListURL": "https://scp-pl.wikidot.com/nightfall-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/nightfall-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "zmrok",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "zmrok",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-pl",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pl_tag.json",
+        "emptySectionTitle": "Artykuły",
+        "structureHash": "sha256-7ccc9515cf33d8b48bdb2bffe94afe6641e87ec5484f4a6cedf6f2d1e5da2ef9",
+        "verifiedEmpty": true,
+        "allowEmpty": true
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Pewnego dnia światło powróci do tego miejsca i będziemy żyć szczęściem i obfitością. Lecz jeszcze nie dziś. Dziś krwawy księżyc wisi nisko na niebie i odbija się od zatoki. W tym miejscu szaleństwa słońce nie wstaje.",
+      "articleSections": [
+        {
+          "id": "01-artykuy",
+          "title": "Artykuły",
+          "articleIDs": []
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:goi:a-r-g-u-s-inc",

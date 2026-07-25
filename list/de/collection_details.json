@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784961430,
-  "generatedAt": "2026-07-25T06:37:10Z",
-  "chunkRevision": "sha256-51b420834d83456ee03802c3280a56d682fae832ec0f550cd5cd565723f94b6e",
+  "listVersion": 1784999147,
+  "generatedAt": "2026-07-25T17:05:47Z",
+  "chunkRevision": "sha256-146807f07c6532e26cbd5d8926fadd6a6ec063ab40ef8c0285c966ad846ceded",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1784961341,
-        "generatedAt": "2026-07-25T06:35:41Z",
-        "contentHash": "sha256-e11b20167db7f3c263aad88202cdfaed3a4a30abcab97a883d166b7a2bfe9190"
+        "listVersion": 1784998970,
+        "generatedAt": "2026-07-25T17:02:50Z",
+        "contentHash": "sha256-c10d526ac5d851dbf32f1e5ec19f1e8810c25909cf3de724b2e0cc391da1f289"
       },
       {
         "kind": "manifest_gois",
@@ -64,441 +64,23 @@
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
       "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+    },
+    "officialStructureSeed": {
+      "path": "DataPipeline/collection_seeds/canon_structures/de.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-c5444b3c7e9cdf388cfaf3ab9825198674fcb5a1f0bd1f7c6075bf7c0def0571"
+    },
+    "officialTagMap": {
+      "kind": "de_tag",
+      "branchID": "scp-de",
+      "path": "DataPipeline/list/de/de_tag.json",
+      "schemaVersion": 2,
+      "listVersion": 1784461041,
+      "generatedAt": "2026-07-19T11:37:21Z",
+      "contentHash": "sha256-27248379cb1cb1a36f11a1a8cc2f92f9f0ed4f7de612bf70a684dd9e9008c6c1"
     }
   },
   "collections": [
-    {
-      "id": "scp-de:collection:canon:projekt-trickster",
-      "branchID": "scp-de",
-      "kind": "canon",
-      "hubID": "projekt-trickster",
-      "title": "Projekt Trickster",
-      "sourceListURL": "http://scp-wiki-de.wikidot.com/projekt-trickster",
-      "officialHubURL": "http://scp-wiki-de.wikidot.com/projekt-trickster",
-      "hubPresentation": "standard",
-      "canonicalTag": "projekt-trickster",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "projekt-trickster",
-        "rejected": [
-          {
-            "tag": "deutsch",
-            "reason": "genericNativeMarker"
-          },
-          {
-            "tag": "gemeinschaftsarbeit",
-            "reason": "genericCollaboration"
-          },
-          {
-            "tag": "kanon",
-            "reason": "genericCanonMarker"
-          },
-          {
-            "tag": "portalseite",
-            "reason": "genericHubMarker"
-          }
-        ],
-        "notes": [
-          "Live-verified over HTTP against the SCP-DE Projekt Trickster hub and its dedicated tag surface on 2026-07-19; all 42 tag-resolved members appear on the official hub in reading order."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "42 tag-resolved primary articles; all 42 matched links on the live official hub at review time."
-      },
-      "memberManifests": [
-        "manifest_scp-de",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "tagReverseLookup"
-      },
-      "primaryArticles": [
-        {
-          "id": "das-verhaengnis-des-chirurgen",
-          "title": "Das Verhängnis des Chirurgen",
-          "url": "http://scp-wiki-de.wikidot.com/das-verhaengnis-des-chirurgen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 9
-        },
-        {
-          "id": "schwierige-beziehungen",
-          "title": "Schwierige Beziehungen",
-          "url": "http://scp-wiki-de.wikidot.com/schwierige-beziehungen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 12
-        },
-        {
-          "id": "tod-liebe-und-dazwischen",
-          "title": "Tod, Liebe und dazwischen",
-          "url": "http://scp-wiki-de.wikidot.com/tod-liebe-und-dazwischen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7
-        },
-        {
-          "id": "hausender-daemon",
-          "title": "Der Dämon, der in uns haust",
-          "url": "http://scp-wiki-de.wikidot.com/hausender-daemon",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8
-        },
-        {
-          "id": "der-schein-truegt",
-          "title": "Der Schein trügt",
-          "url": "http://scp-wiki-de.wikidot.com/der-schein-truegt",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 10
-        },
-        {
-          "id": "die-kleinen-maedchen-und-die-schwefelhoelzer",
-          "title": "Die kleinen Mädchen und die Schwefelhölzer",
-          "url": "http://scp-wiki-de.wikidot.com/die-kleinen-maedchen-und-die-schwefelhoelzer",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11
-        },
-        {
-          "id": "feste-feiern-wie-sie-fallen",
-          "title": "Feste feiern, wie sie fallen",
-          "url": "http://scp-wiki-de.wikidot.com/feste-feiern-wie-sie-fallen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 12
-        },
-        {
-          "id": "im-trichter-und-unter-der-huette",
-          "title": "Im Trichter und unter der Hütte",
-          "url": "http://scp-wiki-de.wikidot.com/im-trichter-und-unter-der-huette",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 9
-        },
-        {
-          "id": "gespraechskreis-zur-angstbehandlung",
-          "title": "Gesprächskreis zur Angstbehandlung",
-          "url": "http://scp-wiki-de.wikidot.com/gespraechskreis-zur-angstbehandlung",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7
-        },
-        {
-          "id": "hexenjagd",
-          "title": "Hexenjagd",
-          "url": "http://scp-wiki-de.wikidot.com/hexenjagd",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6
-        },
-        {
-          "id": "scp-101-de",
-          "title": "Eik, der Baum der Erkenntnis",
-          "url": "http://scp-wiki-de.wikidot.com/scp-101-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 20
-        },
-        {
-          "id": "scp-121-de",
-          "title": "Telepathischer Humanoide",
-          "url": "http://scp-wiki-de.wikidot.com/scp-121-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 12
-        },
-        {
-          "id": "scp-122-de",
-          "title": "Frau Harlekina",
-          "url": "http://scp-wiki-de.wikidot.com/scp-122-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 12
-        },
-        {
-          "id": "scp-129-de",
-          "title": "Der falsche Chirurg",
-          "url": "http://scp-wiki-de.wikidot.com/scp-129-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 9
-        },
-        {
-          "id": "scp-136-de",
-          "title": "Der Junge, der die Zeit anhält",
-          "url": "http://scp-wiki-de.wikidot.com/scp-136-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 9
-        },
-        {
-          "id": "scp-140-de",
-          "title": "Morts volantes",
-          "url": "http://scp-wiki-de.wikidot.com/scp-140-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 18
-        },
-        {
-          "id": "scp-146-de",
-          "title": "Kalliope Anlage",
-          "url": "http://scp-wiki-de.wikidot.com/scp-146-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 4
-        },
-        {
-          "id": "scp-148-de",
-          "title": "Blauer Schleim [Level 25]",
-          "url": "http://scp-wiki-de.wikidot.com/scp-148-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 17
-        },
-        {
-          "id": "scp-187-de",
-          "title": "Mathilda",
-          "url": "http://scp-wiki-de.wikidot.com/scp-187-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 15
-        },
-        {
-          "id": "scp-193-de",
-          "title": "Bildung ist Verbesserung",
-          "url": "http://scp-wiki-de.wikidot.com/scp-193-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 9
-        },
-        {
-          "id": "scp-196-de",
-          "title": "Homo Reptilis",
-          "url": "http://scp-wiki-de.wikidot.com/scp-196-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 10
-        },
-        {
-          "id": "scp-239-de",
-          "title": "USB-Wüstenrennratte",
-          "url": "http://scp-wiki-de.wikidot.com/scp-239-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 18
-        },
-        {
-          "id": "scp-329-de",
-          "title": "Der letzte Druide, jetzt wirklich",
-          "url": "http://scp-wiki-de.wikidot.com/scp-329-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 11
-        },
-        {
-          "id": "scp-369-de",
-          "title": "Der Kobold im Radio",
-          "url": "http://scp-wiki-de.wikidot.com/scp-369-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 6
-        },
-        {
-          "id": "scp-344-de",
-          "title": "Vom Blitze getroffen",
-          "url": "http://scp-wiki-de.wikidot.com/scp-344-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 4
-        },
-        {
-          "id": "scp-375-de",
-          "title": "Verlorener Plüschwolf",
-          "url": "http://scp-wiki-de.wikidot.com/scp-375-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 4
-        },
-        {
-          "id": "scp-399-de",
-          "title": "Im Abgrund des bedrückenden Meeres haust eine barmherzige Meerjungfrau",
-          "url": "http://scp-wiki-de.wikidot.com/scp-399-de",
-          "sourceManifest": "manifest_scp-de",
-          "role": "primaryArticle",
-          "os": 11
-        },
-        {
-          "id": "scp-6192",
-          "title": "Nicht mehrer länger benutzte Spiegel",
-          "url": "http://scp-wiki-de.wikidot.com/scp-6192",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "os": 4
-        },
-        {
-          "id": "ein-seltsamer-tagtraum-so-suess-wie-gift",
-          "title": "Ein Seltsamer Tagtraum, So Süß Wie Gift",
-          "url": "http://scp-wiki-de.wikidot.com/ein-seltsamer-tagtraum-so-suess-wie-gift",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2
-        },
-        {
-          "id": "verlust-1",
-          "title": "Verlust, Episode 1: Genommen",
-          "url": "http://scp-wiki-de.wikidot.com/verlust-1",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6
-        },
-        {
-          "id": "verlust-2",
-          "title": "Verlust, Episode 2: Gejagt",
-          "url": "http://scp-wiki-de.wikidot.com/verlust-2",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2
-        },
-        {
-          "id": "budgetkuerzungen",
-          "title": "Budgetkürzungen",
-          "url": "http://scp-wiki-de.wikidot.com/budgetkuerzungen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8
-        },
-        {
-          "id": "wie-lange-dauert-die-unendlichkeit",
-          "title": "Wie lange dauert die Unendlichkeit",
-          "url": "http://scp-wiki-de.wikidot.com/wie-lange-dauert-die-unendlichkeit",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5
-        }
-      ],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-de:collection:canon:scp-foundation-in-deutschland-portal",
-      "branchID": "scp-de",
-      "kind": "canon",
-      "hubID": "scp-foundation-in-deutschland-portal",
-      "title": "Deutschsprachige SCP Foundation",
-      "sourceListURL": "http://scp-wiki-de.wikidot.com/scp-foundation-in-deutschland-portal",
-      "officialHubURL": "http://scp-wiki-de.wikidot.com/scp-foundation-in-deutschland-portal",
-      "hubPresentation": "standard",
-      "canonicalTag": "scp-foundation-in-deutschland-portal",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [],
-        "notes": [
-          "DE official canon archive entry confirmed; no collection-specific member tag was accepted without unambiguous evidence."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-de:collection:canon:machina-portal",
-      "branchID": "scp-de",
-      "kind": "canon",
-      "hubID": "machina-portal",
-      "title": "Machina",
-      "sourceListURL": "http://scp-wiki-de.wikidot.com/machina-portal",
-      "officialHubURL": "http://scp-wiki-de.wikidot.com/machina-portal",
-      "hubPresentation": "standard",
-      "canonicalTag": "machina-portal",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [],
-        "notes": [
-          "DE official canon archive entry confirmed; no collection-specific member tag was accepted without unambiguous evidence."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-de:collection:canon:sapphire-portal",
-      "branchID": "scp-de",
-      "kind": "canon",
-      "hubID": "sapphire-portal",
-      "title": "Saphirblauer Himmel",
-      "sourceListURL": "http://scp-wiki-de.wikidot.com/sapphire-portal",
-      "officialHubURL": "http://scp-wiki-de.wikidot.com/sapphire-portal",
-      "hubPresentation": "standard",
-      "canonicalTag": "sapphire-portal",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [],
-        "notes": [
-          "DE official canon archive entry confirmed; no collection-specific member tag was accepted without unambiguous evidence."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-de:collection:canon:skp-portal",
-      "branchID": "scp-de",
-      "kind": "canon",
-      "hubID": "skp-portal",
-      "title": "SKP",
-      "sourceListURL": "http://scp-wiki-de.wikidot.com/skp-portal",
-      "officialHubURL": "http://scp-wiki-de.wikidot.com/skp-portal",
-      "hubPresentation": "standard",
-      "canonicalTag": "skp-portal",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": null,
-        "rejected": [],
-        "notes": [
-          "DE official canon archive entry confirmed; no collection-specific member tag was accepted without unambiguous evidence."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
-      },
-      "memberManifests": [],
-      "memberResolution": {
-        "mode": "officialHubOnly"
-      },
-      "primaryArticles": [],
-      "supplementLinks": []
-    },
     {
       "id": "scp-de:collection:series:antihelden-hub",
       "branchID": "scp-de",
@@ -1254,6 +836,2120 @@
       "supplementLinks": []
     },
     {
+      "id": "scp-de:collection:canon:scp-foundation-in-deutschland-portal",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "scp-foundation-in-deutschland-portal",
+      "title": "Deutschsprachige SCP Foundation",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/scp-foundation-in-deutschland-portal",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/scp-foundation-in-deutschland-portal",
+      "hubPresentation": "standard",
+      "canonicalTag": "deutsch",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "deutsch",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-fc2f0b1c5de3a81cc5a50485a3035b5d4f170a4f667c3fcf9068afde7956f8e4"
+      },
+      "primaryArticles": [
+        {
+          "id": "secure-facilities-locations",
+          "title": "Standorte",
+          "url": "http://scp-wiki-de.wikidot.com/secure-facilities-locations",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "F: Welche Artikel definieren den Kanon? A: Derzeit dieser Artikel und Standorte ."
+        },
+        {
+          "id": "task-forces",
+          "title": "Mobile Task Forces",
+          "url": "http://scp-wiki-de.wikidot.com/task-forces",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "rabes-kanon-essay",
+          "title": "Rabes Anleitung für den DE-Standardkanon",
+          "url": "http://scp-wiki-de.wikidot.com/rabes-kanon-essay",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Logo der deutschsprachigen SCP-Foundation für den DACH-Gesamtbereich",
+      "articleSections": [
+        {
+          "id": "01-credits",
+          "title": "Credits",
+          "articleIDs": [
+            "secure-facilities-locations",
+            "task-forces",
+            "rabes-kanon-essay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:machina-portal",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "machina-portal",
+      "title": "Machina",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/machina-portal",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/machina-portal",
+      "hubPresentation": "standard",
+      "canonicalTag": "machina",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "machina",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-c76600ca21d05712fa0feb8b24d60c3e506b4a4da29a5ff988cc81ad5ed6b05d"
+      },
+      "primaryArticles": [
+        {
+          "id": "initiative-zur-wiederherstellung-der-menschheit",
+          "title": "Die Initiative zur Wiederherstellung der Menschheit",
+          "url": "http://scp-wiki-de.wikidot.com/initiative-zur-wiederherstellung-der-menschheit",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Die Initiative zur Wiederherstellung der Menschheit setzt sich aus ehemaligen Foundation-Androiden zusammen, die versuchen die Menschheit auf einem alternativen Weg wiederzubeleben. Zu diesem Zweck versuchen sie verschiedenen Lebewesen einen menschlichen Geist zu geben oder menschenähnliche Organismen zu kreieren, deren Genom von den Nanomaschinen nicht als Ziel angesehen wird. Ein weiterer Versuch stellt das Unterfangen dar, die Androiden selbst mit variierendem Erfolge zu \"vermenschlichen\". In der Initiative gibt es verschiedene Lager, zwischen denen eine unterschiedliche Dynamik herrscht."
+        },
+        {
+          "id": "antihuman-fraktion",
+          "title": "Antihuman Fraktion",
+          "url": "http://scp-wiki-de.wikidot.com/antihuman-fraktion",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Die Antihuman-Fraktion, auch Antihumans genannt, ist eine Gruppe ehemaliger Foundationandroiden, die durch ihren Lernprozess ihre Programmierung überwunden haben und nun mit allen Mitteln versuchen die Wiederauferstehung der Menschheit zu unterbinden. Als Argumente führt sie die Fehlerhaftigkeit des Menschen, seine historischen Verbrechen und die unkontrollierbare Natur des Lebens allgemein an. Die Fanatischsten unter ihnen haben sich sogar ihre Fähigkeit der Emulierung von Emotionen genommen, da sie diese als menschliche Schwäche ansehen. Die Antihuman-fraktion experimentiert außerdem mit alternativen Androidenkörpern, die auf verschiedenen Tierarten basieren."
+        },
+        {
+          "id": "asp-073",
+          "title": "ASP-073",
+          "url": "http://scp-wiki-de.wikidot.com/asp-073",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- \"Kain\""
+        },
+        {
+          "id": "asp-076",
+          "title": "ASP-076",
+          "url": "http://scp-wiki-de.wikidot.com/asp-076",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- \"Abel\""
+        },
+        {
+          "id": "asp-173",
+          "title": "ASP-173",
+          "url": "http://scp-wiki-de.wikidot.com/asp-173",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- Die Statue"
+        },
+        {
+          "id": "asp-128-de",
+          "title": "ASP-128-DE",
+          "url": "http://scp-wiki-de.wikidot.com/asp-128-de",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- Die Invasoren"
+        },
+        {
+          "id": "asp-128-de-el",
+          "title": "ASP-128-DE-EL",
+          "url": "http://scp-wiki-de.wikidot.com/asp-128-de-el",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- Herabgestürztes Linienschiff"
+        },
+        {
+          "id": "asp-156-de-ex",
+          "title": "ASP-156-DE-EX",
+          "url": "http://scp-wiki-de.wikidot.com/asp-156-de-ex",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- Maschinelle Menschenkundlerin"
+        },
+        {
+          "id": "asp-650-jp",
+          "title": "ASP-650-JP",
+          "url": "http://scp-wiki-de.wikidot.com/asp-650-jp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- Verdammte Marionette"
+        },
+        {
+          "id": "das-tagebuch-eines-soldaten",
+          "title": "Das Tagebuch eines Soldaten",
+          "url": "http://scp-wiki-de.wikidot.com/das-tagebuch-eines-soldaten",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Artikel: Das Tagebuch eines Soldaten Original-Autor: Dr Ore 1599145257red-ink-spatter.png Bild-Ersteller: publicdomainvectors.org Bild-Quelle: https://freesvg.org/red-ink-splatter Bild-Lizenz: Public Domain"
+        },
+        {
+          "id": "happiness-in-tasteless",
+          "title": "Der Deckel des Sarges öffnete sich auch heute wieder",
+          "url": "http://scp-wiki-de.wikidot.com/happiness-in-tasteless",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "nuuko001",
+          "title": "Du verstehst nichts",
+          "url": "http://scp-wiki-de.wikidot.com/nuuko001",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "loved-sushi",
+          "title": "Ein geliebtes Lebensmittelerbe und eine Reflexion darüber",
+          "url": "http://scp-wiki-de.wikidot.com/loved-sushi",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "gray-condolences",
+          "title": "Graues Beileid",
+          "url": "http://scp-wiki-de.wikidot.com/gray-condolences",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "heute-habe-ich-etwas-neues-gelernt",
+          "title": "Heute habe ich etwas neues gelernt",
+          "url": "http://scp-wiki-de.wikidot.com/heute-habe-ich-etwas-neues-gelernt",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "metal-hero",
+          "title": "Metal Hero",
+          "url": "http://scp-wiki-de.wikidot.com/metal-hero",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "projekt-exodus",
+          "title": "Projekt Exodus",
+          "url": "http://scp-wiki-de.wikidot.com/projekt-exodus",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "staub-zu-staub",
+          "title": "Staub zu Staub",
+          "url": "http://scp-wiki-de.wikidot.com/staub-zu-staub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "no-sushi-no-life",
+          "title": "Sushiblade-Kardinal",
+          "url": "http://scp-wiki-de.wikidot.com/no-sushi-no-life",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "cant-recognize",
+          "title": "Von der Unfähigkeit, nichts außer Glück zu empfinden und einem Neuanfang",
+          "url": "http://scp-wiki-de.wikidot.com/cant-recognize",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "ambrose-vineta",
+          "title": "Ambrose Vineta",
+          "url": "http://scp-wiki-de.wikidot.com/ambrose-vineta",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "projektvorschlag-2024-001",
+          "title": "Projektvorschlag 2024-001 „Menschsein\"",
+          "url": "http://scp-wiki-de.wikidot.com/projektvorschlag-2024-001",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "scp-156-de",
+          "title": "Maschinelle Menschenkundlerin",
+          "url": "http://scp-wiki-de.wikidot.com/scp-156-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 16,
+          "desc": "SCP-156-DE ist in einer Standardunterkunft für humanoide Anomalien unterzubringen, die mit einem Faradayschen Käfig versehen wurde. Es ist einmal monatlich mit sechs Litern destilliertem, schweren Wasser zu versorgen. Für SCP-156-DE wurde außerdem auf sein Bit…"
+        },
+        {
+          "id": "scp-296-de",
+          "title": "Im Tod erblühen wir",
+          "url": "http://scp-wiki-de.wikidot.com/scp-296-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 22,
+          "desc": "Ein automatisiertes Aufnahmesystem muss SCP-296-DE zu jederzeit überwachen. Bei Veränderungen der Übertragung ist der Standortdirektor von Standort-DE2 so wie der Projektleiter AFFODILL unverzüglich in Kenntnis zu setzen. Die Aufzeichnungs- und Informationsich…"
+        },
+        {
+          "id": "skp-128",
+          "title": "SKP-128",
+          "url": "http://scp-wiki-de.wikidot.com/skp-128",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "- Die Invasoren"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Das Vierte Reich Die Führung des Vierte Reiches wurde durch die Nanomaschinen vollständig ausgelöscht. Ihre nichtmenschlichen Anomalien blieben zurück und werden entweder von der Foundation aufgesammelt oder geraten unter die Kontrolle feindlicher Gruppierungen.",
+      "articleSections": [
+        {
+          "id": "01-das-imbw",
+          "title": "Das IMBW",
+          "articleIDs": [
+            "initiative-zur-wiederherstellung-der-menschheit",
+            "antihuman-fraktion"
+          ]
+        },
+        {
+          "id": "02-church-of-the-broken-god",
+          "title": "Church of the Broken God",
+          "articleIDs": [
+            "asp-073",
+            "asp-076",
+            "asp-173",
+            "asp-128-de",
+            "asp-128-de-el",
+            "asp-156-de-ex",
+            "asp-650-jp",
+            "das-tagebuch-eines-soldaten",
+            "happiness-in-tasteless",
+            "nuuko001",
+            "loved-sushi",
+            "gray-condolences",
+            "heute-habe-ich-etwas-neues-gelernt",
+            "metal-hero",
+            "projekt-exodus",
+            "staub-zu-staub",
+            "no-sushi-no-life",
+            "cant-recognize",
+            "ambrose-vineta",
+            "projektvorschlag-2024-001",
+            "scp-156-de",
+            "scp-296-de",
+            "skp-128"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:projekt-trickster",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "projekt-trickster",
+      "title": "Projekt Trickster",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/projekt-trickster",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/projekt-trickster",
+      "hubPresentation": "standard",
+      "canonicalTag": "projekt-trickster",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "projekt-trickster",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-a5a6b106ba1b65b5d06d7627a6918f19f59e894f8e5209653554e55b3004fe20"
+      },
+      "primaryArticles": [
+        {
+          "id": "das-verhaengnis-des-chirurgen",
+          "title": "Das Verhängnis des Chirurgen",
+          "url": "http://scp-wiki-de.wikidot.com/das-verhaengnis-des-chirurgen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Artikel: Das Verhängnis des Chirurgen Autor: DrPeterWenzel"
+        },
+        {
+          "id": "schwierige-beziehungen",
+          "title": "Schwierige Beziehungen",
+          "url": "http://scp-wiki-de.wikidot.com/schwierige-beziehungen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Artikel: Schwierige Beziehungen Autor: Dr Himy"
+        },
+        {
+          "id": "tod-liebe-und-dazwischen",
+          "title": "Tod, Liebe und dazwischen",
+          "url": "http://scp-wiki-de.wikidot.com/tod-liebe-und-dazwischen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Artikel: Tod, Liebe und dazwischen Autor: Einer von Rabe"
+        },
+        {
+          "id": "hausender-daemon",
+          "title": "Der Dämon, der in uns haust",
+          "url": "http://scp-wiki-de.wikidot.com/hausender-daemon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Artikel: Der Dämon, der in uns haust Autoren: Flaming2204"
+        },
+        {
+          "id": "verspaetete-lieferung",
+          "title": "Verspätete Lieferung",
+          "url": "http://scp-wiki-de.wikidot.com/verspaetete-lieferung",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "der-schein-truegt",
+          "title": "Der Schein trügt",
+          "url": "http://scp-wiki-de.wikidot.com/der-schein-truegt",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Artikel: Der Schein trügt Autoren: Flaming2204"
+        },
+        {
+          "id": "ein-langweiliger-valentinstag",
+          "title": "Ein langweiliger Valentinstag",
+          "url": "http://scp-wiki-de.wikidot.com/ein-langweiliger-valentinstag",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "die-kleinen-maedchen-und-die-schwefelhoelzer",
+          "title": "Die kleinen Mädchen und die Schwefelhölzer",
+          "url": "http://scp-wiki-de.wikidot.com/die-kleinen-maedchen-und-die-schwefelhoelzer",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Artikel: Die kleinen Mädchen und die Schwefelhölzer Autor: Dr Himy"
+        },
+        {
+          "id": "feste-feiern-wie-sie-fallen",
+          "title": "Feste feiern, wie sie fallen",
+          "url": "http://scp-wiki-de.wikidot.com/feste-feiern-wie-sie-fallen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Artikel: Feste feiern, wie sie fallen Autor: Dr Himy Credits der Figuren"
+        },
+        {
+          "id": "im-trichter-und-unter-der-huette",
+          "title": "Im Trichter und unter der Hütte",
+          "url": "http://scp-wiki-de.wikidot.com/im-trichter-und-unter-der-huette",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Artikel: Im Trichter und unter der Hütte Autor: Dr Himy"
+        },
+        {
+          "id": "gespraechskreis-zur-angstbehandlung",
+          "title": "Gesprächskreis zur Angstbehandlung",
+          "url": "http://scp-wiki-de.wikidot.com/gespraechskreis-zur-angstbehandlung",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Artikel: Gesprächskreis zur Angstbehandlung Autor: Dr Himy"
+        },
+        {
+          "id": "hexenjagd",
+          "title": "Hexenjagd",
+          "url": "http://scp-wiki-de.wikidot.com/hexenjagd",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Artikel: Hexenjagd Autor: Dr Himy"
+        },
+        {
+          "id": "scp-101-de",
+          "title": "Eik, der Baum der Erkenntnis",
+          "url": "http://scp-wiki-de.wikidot.com/scp-101-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 20,
+          "desc": "SCP-101-DE muss in einem 10 × 10 × 25 m großen Raum eingedämmt werden. Um SCP-101-DE muss ein faraday'scher Käfig errichtet werden, um dessen anomalen Effekt entgegenzuwirken. Ist dies nicht der Fall oder wird dies nicht korrekt ausgeführt, kann es so zu erheb…"
+        },
+        {
+          "id": "scp-121-de",
+          "title": "Telepathischer Humanoide",
+          "url": "http://scp-wiki-de.wikidot.com/scp-121-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 12,
+          "desc": "SCP-121-DE wird in einem 7 x 7 x 3 Meter messenden Raum in Standort-DE17 festgehalten. Boden, Decke und Wände sind aus Backsteinen errichtet und von Erdreich umgeben. Die Wand zum Gang sowie auch die Tür sind mit einem 1 Millimeter dicken Bleiblech verkleidet.…"
+        },
+        {
+          "id": "scp-122-de",
+          "title": "Frau Harlekina",
+          "url": "http://scp-wiki-de.wikidot.com/scp-122-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 12,
+          "desc": "SCP-122-DE wird in einer Eindämmungszelle für menschenartige Anomalien an Standort-DE20 in Sektor-A2 untergebracht. Elektronische Endgeräte, wie etwa Mobiltelefone, Computer oder Videospielkonsolen aller Art sind in einem Umkreis von 5 m um SCP-122-DE nicht er…"
+        },
+        {
+          "id": "scp-129-de",
+          "title": "Der falsche Chirurg",
+          "url": "http://scp-wiki-de.wikidot.com/scp-129-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "SCP-129-DE ist in einer Standardzelle für menschliche Anomalien unterzubringen. Die Zelle muss durch einen in den Wänden verbauten faradayschen Käfig, bestehend aus einem engmaschigen Drahtgeflecht sowie einer umfassenden Schicht Aluminiumblech, abgeschirmt we…"
+        },
+        {
+          "id": "scp-136-de",
+          "title": "Der Junge, der die Zeit anhält",
+          "url": "http://scp-wiki-de.wikidot.com/scp-136-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "SCP-136-DE ist in einer Sicherheitszelle der Stufe 3 für humanoide SCPs unterzubringen und ist der Ausgang innerhalb von Standort-DE20, zusammen mit Doktor Thompkins und 4 Wachen, sowie einem Ortungschip gestattet. Experimente, Interviews und ähnliches dürfen…"
+        },
+        {
+          "id": "scp-140-de",
+          "title": "Morts volantes",
+          "url": "http://scp-wiki-de.wikidot.com/scp-140-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "SCP-140-DE-1 und somit SCP-140-DE-2 sind in einer Standardzelle für menschliche Anomalien in Standort-DE17, Ebene 3, möglichst nahe am Personalaufzug unterzubringen. Zur Sicherheit müssen die Zugänge der Luftversorgung mit foundationüblichen Partikelfiltersyst…"
+        },
+        {
+          "id": "scp-146-de",
+          "title": "Kalliope Anlage",
+          "url": "http://scp-wiki-de.wikidot.com/scp-146-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-146-DE ist momentan in Standort-DE17, Ebene 3 untergebracht. Sowohl der Zugang zu Inputbereich B als auch zu Outputbereich C sind durch Standard-Sicherheitsstufe-3 Türen zu sichern. Ein Mitglied des Wachpersonals hat zu jeder Zeit zwischen den beiden Eingä…"
+        },
+        {
+          "id": "scp-148-de",
+          "title": "Blauer Schleim [Level 25]",
+          "url": "http://scp-wiki-de.wikidot.com/scp-148-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 17,
+          "desc": "Für die Verwahrung ist eine Eindämmungskammer der Klasse CBE-3 in Form eines Zylinders mit dem Durchmesser von 8.5 Metern vonnöten. Innerhalb der Kammer ist eine weiße Wandtafel mit wasserlöslichen Filzstiften. Auf der Nordseite befindet sich ein Spiegel. Pers…"
+        },
+        {
+          "id": "scp-187-de",
+          "title": "Mathilda",
+          "url": "http://scp-wiki-de.wikidot.com/scp-187-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 15,
+          "desc": "Aufgrund der Informationen, die mit höchster Wahrscheinlichkeit einer oder mehrerer Organisationen und Interessengruppen in die Hände gespielt wurden, wird SCP-187-DE in einem willkürlich gewählten Zeitraum, der allerdings nicht mehr als ein halbes Jahr umfass…"
+        },
+        {
+          "id": "scp-193-de",
+          "title": "Bildung ist Verbesserung",
+          "url": "http://scp-wiki-de.wikidot.com/scp-193-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "Areal-DE3 dient dazu, den \"Unterrichtsbetrieb\" aufrechtzuerhalten. Auf dem Gelände steht ein Gebäude, in welchem sich das Kontrollzentrum, die Wachräume und Unterkünfte für dem Projekt zugeteiltem Personal befinden. Eine Mauer verdeckt die Sicht von außerhalb…"
+        },
+        {
+          "id": "scp-196-de",
+          "title": "Homo Reptilis",
+          "url": "http://scp-wiki-de.wikidot.com/scp-196-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 10,
+          "desc": "SCP-196-DE ist in einer zehn mal acht mal drei (10 x 8 x 3) Meter großen Zelle in Standort-DE14 aufzubewahren. Es muss ein Teich von mindestens sechs (6) Metern im Durchmesser und einer Tiefe von mindestens vier (4) Metern vorhanden sein. Der Raum muss zudem f…"
+        },
+        {
+          "id": "scp-239-de",
+          "title": "USB-Wüstenrennratte",
+          "url": "http://scp-wiki-de.wikidot.com/scp-239-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "SCP-239-DE ist in einem für Nagetiere ausgestatteten Käfig unterzubringen, welcher dem erhöhten Bewegungs- und Spieldrang vom Objekt angepasst ist. Dieses sollte eine Mindestgröße von 120x60x80 cm besitzen und mit diversen Kletter- und Spielzubehör, welches fü…"
+        },
+        {
+          "id": "scp-329-de",
+          "title": "Der letzte Druide, jetzt wirklich",
+          "url": "http://scp-wiki-de.wikidot.com/scp-329-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "Es ist SCP-329-DE gestattet, sich in einem kleinen Bereich innerhalb des Eindämmungssektors 4 im Standort-DE22 zu bewegen. Dieser Bereich ist so auszulegen, dass es ihm nicht möglich ist, von seinen anomalen Fähigkeiten Gebrauch zu machen. Es ist mit zwei GPS-…"
+        },
+        {
+          "id": "scp-369-de",
+          "title": "Der Kobold im Radio",
+          "url": "http://scp-wiki-de.wikidot.com/scp-369-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "SCP-369-DE-1 wird in einem Raum mit Standardmöblierung in Standort-DE20 verwahrt. Der Raum ist mit einem faradayschen Käfig versehen. Das Objekt darf für Versuchszwecke aus dem Raum entfernt werden. Die Rückwand von SCP-369-DE-1 darf nur mit Einwilligung von S…"
+        },
+        {
+          "id": "scp-344-de",
+          "title": "Vom Blitze getroffen",
+          "url": "http://scp-wiki-de.wikidot.com/scp-344-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Da SCP-344-DE an SCP-344-DE-1 gebunden ist, sind nur die Standardmaßnahmen für postmortem EVE-Echos vonnöten. Deswegen wird SCP-344-DE-1 in einem Artefakt-Eindämmungsraum mit den Standardmaßen verwahrt, welcher mit einem Faradayschen Käfig isoliert wurde. SCP-…"
+        },
+        {
+          "id": "scp-375-de",
+          "title": "Verlorener Plüschwolf",
+          "url": "http://scp-wiki-de.wikidot.com/scp-375-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-375-DE wurde mit einem Ortungschip versehen, der es ihm ermöglicht, sich innerhalb des Standorts zu bewegen, wenn es von für die Anomalie zuständigen Personen begleitet wird. Personal und anderen Personen ist es beschränkt erlaubt, SCP-375-DE physische Zär…"
+        },
+        {
+          "id": "scp-399-de",
+          "title": "Im Abgrund des bedrückenden Meeres haust eine barmherzige Meerjungfrau",
+          "url": "http://scp-wiki-de.wikidot.com/scp-399-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "SCP-399-DE ist nach bisherigen Erkenntnissen nicht eindämmbar. Falschinformationen über Halluzinationen bei Übermüdung und Depressionen müssen in der Öffentlichkeit verteilt werden. Bestätigte Fälle von 399-AQUARIUM-Ereignissen in der Zivilbevölkerung werden v…"
+        },
+        {
+          "id": "scp-6192",
+          "title": "Nicht mehrer länger benutzte Spiegel",
+          "url": "http://scp-wiki-de.wikidot.com/scp-6192",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Das Wissen über SCP-6192 muss in der wissenschaftlichen Öffentlichkeit weitgehend unterdrückt werden, damit alle Auswirkungen der Anomalie mit nicht-anomaler Wissenschaft erklärt werden können. Individuen, die eine hohe Konzentration von SCP-6192 aufweisen, we…"
+        },
+        {
+          "id": "kreaturenprofil-eden",
+          "title": "Kreaturenprofil: EDEN!",
+          "url": "http://scp-wiki-de.wikidot.com/kreaturenprofil-eden",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "ein-seltsamer-tagtraum-so-suess-wie-gift",
+          "title": "Ein Seltsamer Tagtraum, So Süß Wie Gift",
+          "url": "http://scp-wiki-de.wikidot.com/ein-seltsamer-tagtraum-so-suess-wie-gift",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Ein Seltsamer Tagtraum, So Süß Wie Gift Autor: Einer von Rabe"
+        },
+        {
+          "id": "verlust-1",
+          "title": "Verlust, Episode 1: Genommen",
+          "url": "http://scp-wiki-de.wikidot.com/verlust-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Artikel: Verlust, Episode 1: Genommen Autor: Flaming2204"
+        },
+        {
+          "id": "nexus-11-1",
+          "title": "Teil 1",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-11-1",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Trickster Heist Teil 1 / Teil 2 / Teil 3"
+        },
+        {
+          "id": "verlust-2",
+          "title": "Verlust, Episode 2: Gejagt",
+          "url": "http://scp-wiki-de.wikidot.com/verlust-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Verlust, Episode 2: Gejagt Autor: Flaming2204"
+        },
+        {
+          "id": "nexus-11-3",
+          "title": "Trickster Heist, Teil 3",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-11-3",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "nexus-11-2",
+          "title": "Trickster Heist, Teil 2",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-11-2",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "budgetkuerzungen",
+          "title": "Budgetkürzungen",
+          "url": "http://scp-wiki-de.wikidot.com/budgetkuerzungen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Artikel: Budgetkürzungen"
+        },
+        {
+          "id": "wie-lange-dauert-die-unendlichkeit",
+          "title": "Wie lange dauert die Unendlichkeit",
+          "url": "http://scp-wiki-de.wikidot.com/wie-lange-dauert-die-unendlichkeit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Artikel: Wie lange dauert die Unendlichkeit"
+        },
+        {
+          "id": "to-whom-it-may-concern",
+          "title": "An alle, die es betrifft",
+          "url": "http://scp-wiki-de.wikidot.com/to-whom-it-may-concern",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "mirror-in-your-mind",
+          "title": "Spiegel in deinem Geist",
+          "url": "http://scp-wiki-de.wikidot.com/mirror-in-your-mind",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-6192-ex",
+          "title": "SCP-6192-1-EX",
+          "url": "http://scp-wiki-de.wikidot.com/scp-6192-ex",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Dieses Projekt soll die Erforschung von vernunftbegabten Anomalien unterstützen.",
+      "articleSections": [
+        {
+          "id": "01-geschichten-die-in-diesem-universum-spielen",
+          "title": "Geschichten, die in diesem Universum spielen:",
+          "articleIDs": [
+            "das-verhaengnis-des-chirurgen",
+            "schwierige-beziehungen",
+            "tod-liebe-und-dazwischen",
+            "hausender-daemon",
+            "verspaetete-lieferung",
+            "der-schein-truegt",
+            "ein-langweiliger-valentinstag",
+            "die-kleinen-maedchen-und-die-schwefelhoelzer",
+            "feste-feiern-wie-sie-fallen",
+            "im-trichter-und-unter-der-huette",
+            "gespraechskreis-zur-angstbehandlung",
+            "hexenjagd"
+          ]
+        },
+        {
+          "id": "02-anomalien-die-mit-dem-projekt-in-verbindung-stehen",
+          "title": "Anomalien, die mit dem Projekt in Verbindung stehen:",
+          "articleIDs": [
+            "scp-101-de",
+            "scp-121-de",
+            "scp-122-de",
+            "scp-129-de",
+            "scp-136-de",
+            "scp-140-de",
+            "scp-146-de",
+            "scp-148-de",
+            "scp-187-de",
+            "scp-193-de",
+            "scp-196-de",
+            "scp-239-de",
+            "scp-329-de",
+            "scp-369-de",
+            "scp-344-de",
+            "scp-375-de",
+            "scp-399-de",
+            "scp-6192"
+          ]
+        },
+        {
+          "id": "03-artikel-ebenfalls-in-diesem-universum-spielen",
+          "title": "Artikel, ebenfalls in diesem Universum spielen:",
+          "articleIDs": [
+            "kreaturenprofil-eden",
+            "ein-seltsamer-tagtraum-so-suess-wie-gift",
+            "verlust-1",
+            "nexus-11-1",
+            "verlust-2",
+            "nexus-11-3",
+            "nexus-11-2",
+            "budgetkuerzungen",
+            "wie-lange-dauert-die-unendlichkeit",
+            "to-whom-it-may-concern",
+            "mirror-in-your-mind",
+            "scp-6192-ex"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:sapphire-portal",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "sapphire-portal",
+      "title": "Saphirblauer Himmel",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/sapphire-portal",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/sapphire-portal",
+      "hubPresentation": "standard",
+      "canonicalTag": "deutsch",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "deutsch",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-81468d3eb38a721f2e3f0048287e429adeb684003eaed83053da58531cfc49e8"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-128-de",
+          "title": "Herabgestürztes Linienschiff",
+          "url": "http://scp-wiki-de.wikidot.com/scp-128-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 19,
+          "desc": "Von SCP-128-DE selbst geht keine Gefahr aus. Es ist als Schiffswrack zu tarnen und in einem Umkreis von 2 km ist ein Fahrverbot wegen dem Vorhandensein von Seeminen zu verhängen, die im Zweiten Weltkrieg von der Kriegsmarine verlegt worden waren. Aufgrund von…"
+        },
+        {
+          "id": "hue-136-de",
+          "title": "HuE-136-DE",
+          "url": "http://scp-wiki-de.wikidot.com/hue-136-de",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Artikel: HuE-136-DE - Der Sheriff, der die Zeit anhält Derivate von: SCP-136-DE Autor: Doktor Cyberion"
+        },
+        {
+          "id": "brv-dokument-blaue-aufruestung",
+          "title": "BRV-Dokument - Operation \"blaue Aufrüstung\"",
+          "url": "http://scp-wiki-de.wikidot.com/brv-dokument-blaue-aufruestung",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "leben-im-untergrund",
+          "title": "Leben im Untergrund",
+          "url": "http://scp-wiki-de.wikidot.com/leben-im-untergrund",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "fcs-krk-b3",
+          "title": "Informationsdatenblatt: FCS KRK B3",
+          "url": "http://scp-wiki-de.wikidot.com/fcs-krk-b3",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "SCP Foundation Die SCP Foundation verlagerte ihren Standpunkt größtenteils in den Untergrund, die verschiedenen Zweige wurden zusammengeschlossen und auf Himmel und Erde aufgeteilt. Eine große Anzahl an SCPs ging während dem Desaster-Jahr verloren, eine bestimmte Anzahl wurde jedoch erfolgreich in den Untergrund verlagert. Die Foundation schaffte es ihr Dasein der Öffentlichkeit nicht zu enthüllen, agiert immer noch im Geheimen und besitzt großen Einfluss auf die Politik, Regeln und Organisierung von Städten im Himmel, sowie im Untergrund. Die Foundation verlor fast alle ihre Standorte auf der Oberfläche und behält nach Zerfall von SAPPHIRE die Kontrolle über die restlichen Anlagen und Oberfläche-Himmel-Dockstellen von SAPPHIRE. Bei der Evakuierung verlagerte die Foundation ihre Konzentration auf die Transportation von Personal und SCPs, die SCP Foundation hat jedoch bei der Zivil-Evakui",
+      "articleSections": [
+        {
+          "id": "01-artikel",
+          "title": "Artikel:",
+          "articleIDs": [
+            "scp-128-de",
+            "hue-136-de"
+          ]
+        },
+        {
+          "id": "02-geschichten",
+          "title": "Geschichten:",
+          "articleIDs": [
+            "brv-dokument-blaue-aufruestung",
+            "leben-im-untergrund",
+            "fcs-krk-b3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:skp-portal",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "skp-portal",
+      "title": "SKP",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/skp-portal",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/skp-portal",
+      "hubPresentation": "standard",
+      "canonicalTag": "deutsch",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "deutsch",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-e06b5dd9aca01118af095248adada1c559df95f5e33639646c2ba870bb7df272"
+      },
+      "primaryArticles": [
+        {
+          "id": "interessengruppen",
+          "title": "Interessengruppen (Deutsch)",
+          "url": "http://scp-wiki-de.wikidot.com/interessengruppen",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Kanon-Portal » Sonderkommando für Paranormales-Portal Interessengruppen (Deutsch) » Sonderkommando für Paranormales-Portal"
+        },
+        {
+          "id": "scp-028-de",
+          "title": "Sonderkommando für Paranormales",
+          "url": "http://scp-wiki-de.wikidot.com/scp-028-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 37,
+          "desc": "SCP-028-DE ist oberirdisch als homöopathische Wellnesshotelanlage getarnt, die als Unterkunft für einen Großteil des Personals dient; die Wellnessbereiche dürfen vom Personal zur Entspannung genutzt werden und werden von Stufe 1 Personal betrieben. Zivilisten…"
+        },
+        {
+          "id": "psw-hub",
+          "title": "Panslawischer Widerstand",
+          "url": "http://scp-wiki-de.wikidot.com/psw-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Der Panslawische Widerstand, kurz PSW genannt, entstand 1964 auf einem Slawenkongress, welcher von den Widerstandsbewegungen der Slawen einberufen wurde und den Zusammenschluss der slawischen Freiheitskämpfer zu Folge hatte. Der daraus resultierende Panslawische Widerstand führt seitdem einen verdeckten Kampf gegen das Großdeutsche Reich und nutzt dabei Paranormalien mit einem slawischen Ursprung. Mit der Zeit verbreitete sich unter den Mitgliedern ein heidnischer Kult um die Paranormalien, wodurch der slawische Glaube den Panslawischen Widerstand dauerhaft prägen sollte. Für eine Liste der mit getaggten Artikel, siehe hier ."
+        },
+        {
+          "id": "skp-017",
+          "title": "SKP-017",
+          "url": "http://scp-wiki-de.wikidot.com/skp-017",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Artikel: SKP-017 - R.T.I. Grizzly A1 Autor: Dr_Grom"
+        },
+        {
+          "id": "skp-128",
+          "title": "SKP-128",
+          "url": "http://scp-wiki-de.wikidot.com/skp-128",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Nachdem bei den Ereignissen um SKP-128 zahlreiche Kampfdroiden gehackt wurden, wurden die Überreste eingehend untersucht und derzeit verschiedene Ansätze zur Vermeidung anomaler Hacking-Prozeduren getestet, unter Anderem eine Abschirmung mit Beryllium-Bronze und Mikro-SRAs. Bis eine Lösung gefunden wurde, werden Kampfdroiden nur noch selten eingesetzt."
+        },
+        {
+          "id": "skp-hintergrund",
+          "title": "hier",
+          "url": "http://scp-wiki-de.wikidot.com/skp-hintergrund",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Dies ist nur eine Zusammenfassung, einen ausführlicheren Hintergund findet ihr hier ."
+        },
+        {
+          "id": "skp-028",
+          "title": "SKP-028",
+          "url": "http://scp-wiki-de.wikidot.com/skp-028",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "Logo der SCP-Foundation"
+        },
+        {
+          "id": "skp-038",
+          "title": "SKP-038",
+          "url": "http://scp-wiki-de.wikidot.com/skp-038",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Artikel: SKP-038 - Konditio 452 Derivat von: SCP-038-DE - Konditio 452 Derivat-Autor: Dr Ore Original der Derivat-Vorlage: SCP-038-DE Original-Autor: Dr Ore"
+        },
+        {
+          "id": "skp-047",
+          "title": "SKP-047",
+          "url": "http://scp-wiki-de.wikidot.com/skp-047",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Artikel: SKP-047 - R.T.I. Mücke Autor: TempestSCP"
+        },
+        {
+          "id": "skp-136",
+          "title": "SKP-136",
+          "url": "http://scp-wiki-de.wikidot.com/skp-136",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Artikel: SKP-136 - Der Assasine, der die Zeit anhält"
+        },
+        {
+          "id": "skp-156",
+          "title": "SKP-156",
+          "url": "http://scp-wiki-de.wikidot.com/skp-156",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Canberra macht mobil"
+        },
+        {
+          "id": "skp-299",
+          "title": "SKP-299",
+          "url": "http://scp-wiki-de.wikidot.com/skp-299",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Verlorene Wochen"
+        },
+        {
+          "id": "skp-173-us",
+          "title": "SKP-173-US",
+          "url": "http://scp-wiki-de.wikidot.com/skp-173-us",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "desc": "Die Statue"
+        },
+        {
+          "id": "skp-187",
+          "title": "SKP-187",
+          "url": "http://scp-wiki-de.wikidot.com/skp-187",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Artikel: SKP-187 - Irmengard Autor: Dr Himy Bild: https://commons.wikimedia.org/wiki/File:Cardington_Sheds.jpg Urheber: NathanShortstown Lizenz: CC BY-SA 4.0"
+        },
+        {
+          "id": "scp-001-de-ex",
+          "title": "SCP-001-DE-EX",
+          "url": "http://scp-wiki-de.wikidot.com/scp-001-de-ex",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Vergiss mal nicht"
+        },
+        {
+          "id": "scp-073-de",
+          "title": "Letztes Licht",
+          "url": "http://scp-wiki-de.wikidot.com/scp-073-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "SCP-073-DE ist zu jeder Zeit verdeckt mit versteckten Kameras und getarntem Personal zu überwachen. Alle direkt an SCP-073-DE anliegende Wohngebäude werden aufgekauft und als zentrale Operationsstätte genutzt, wobei sie das besagte Personal beherbergen. SCP-07…"
+        },
+        {
+          "id": "scp-149-de",
+          "title": "Der Geist des Untergangs",
+          "url": "http://scp-wiki-de.wikidot.com/scp-149-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 24,
+          "desc": "SCP-149-DE darf ohne die Genehmigung von mindestens zwei O4s nicht geöffnet oder betreten werden. Sollte ein Betreten erforderlich sein, ist auf SCP-149-DE am Ort an dem die Öffnung geschaffen wird unter dem Vorwand bodenkundlicher Untersuchungen ein kleines I…"
+        },
+        {
+          "id": "scp-188-de",
+          "title": "B4 „Blitzgewitter”",
+          "url": "http://scp-wiki-de.wikidot.com/scp-188-de",
+          "sourceManifest": "manifest_scp-de",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 23,
+          "desc": "Von SCP-188-DE existieren keine Proben mehr. Sollten wider Erwarten Proben gefunden werden, sind diese gemäß den Standardbestimmungen für mikrobielle biologische Kampfstoffe der Klasse 3 einzufrieren und zu handhaben. Eine Nachproduktion von SCP-188-DE anhand…"
+        },
+        {
+          "id": "das-tagebuch-eines-soldaten",
+          "title": "Das Tagebuch eines Soldaten",
+          "url": "http://scp-wiki-de.wikidot.com/das-tagebuch-eines-soldaten",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Artikel: Das Tagebuch eines Soldaten Original-Autor: Dr Ore 1599145257red-ink-spatter.png Bild-Ersteller: publicdomainvectors.org Bild-Quelle: https://freesvg.org/red-ink-splatter Bild-Lizenz: Public Domain"
+        },
+        {
+          "id": "der-seltsame-fall-des-dr-schmitz",
+          "title": "Der seltsame Fall des Dr. Schmitz",
+          "url": "http://scp-wiki-de.wikidot.com/der-seltsame-fall-des-dr-schmitz",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "skp-chat",
+          "title": "Eine völlig normale Forumdiskussion",
+          "url": "http://scp-wiki-de.wikidot.com/skp-chat",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "operation-kuckuckskinder",
+          "title": "Operation Kuckuckskinder",
+          "url": "http://scp-wiki-de.wikidot.com/operation-kuckuckskinder",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "projekt-morgenpforte",
+          "title": "Projekt Morgenpforte",
+          "url": "http://scp-wiki-de.wikidot.com/projekt-morgenpforte",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Artikel: Projekt Morgenpforte Autor: Belvelski"
+        },
+        {
+          "id": "uebernahme-der-scp-foundation-durch-das-skp",
+          "title": "Übernahme der SCP Foundation",
+          "url": "http://scp-wiki-de.wikidot.com/uebernahme-der-scp-foundation-durch-das-skp",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "ueber-das-skp",
+          "title": "Über das Sonderkommando für Paranormales",
+          "url": "http://scp-wiki-de.wikidot.com/ueber-das-skp",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Anmerkung Das Sonderkommando für Paranormales existierte nicht nur bis Anfang 1945 in unserem Universum, es existiert in einem Anderen (U-3378-DE) noch immer. Wir konnten von dort eine große Menge Daten erbeuten und stellen diese nach einer Aufarbeitung nach und nach in der Foundation Datenbank zur Verfügung. Bitte beachten Sie dass das SKP hier und dort zu unterscheiden sind. In diesem Dokument finden Sie Informationen über Beide. 1 Wir gehen davon aus, dass beide ihren Ursprung im gleichen Universum haben welches sich nach einer kurzen Phase der Unbestimmtheit während eines Experiments des SKP in 1944 in zwei Richtungen entwickelte, daher werden beide als Zweige derselben GoI betrachtet und behandelt. — Dr. Irma Bauer",
+      "articleSections": [
+        {
+          "id": "01-credits",
+          "title": "Credits",
+          "articleIDs": [
+            "interessengruppen"
+          ]
+        },
+        {
+          "id": "02-geschichte-des-skp",
+          "title": "Geschichte des SKP",
+          "articleIDs": [
+            "scp-028-de"
+          ]
+        },
+        {
+          "id": "03-interessengruppen-des-skp-universums",
+          "title": "Interessengruppen des SKP-Universums",
+          "articleIDs": [
+            "psw-hub"
+          ]
+        },
+        {
+          "id": "04-kriegsgerat",
+          "title": "Kriegsgerät",
+          "articleIDs": [
+            "skp-017"
+          ]
+        },
+        {
+          "id": "05-kampfdroiden",
+          "title": "Kampfdroiden",
+          "articleIDs": [
+            "skp-128"
+          ]
+        },
+        {
+          "id": "06-hintergrund",
+          "title": "Hintergrund",
+          "articleIDs": [
+            "skp-hintergrund"
+          ]
+        },
+        {
+          "id": "07-liste-der-zum-skp-gehorigen-artikel",
+          "title": "Liste der zum SKP gehörigen Artikel",
+          "articleIDs": [
+            "skp-028",
+            "skp-038",
+            "skp-047",
+            "skp-136",
+            "skp-156",
+            "skp-299",
+            "skp-173-us",
+            "skp-187",
+            "scp-001-de-ex",
+            "scp-073-de",
+            "scp-149-de",
+            "scp-188-de",
+            "das-tagebuch-eines-soldaten",
+            "der-seltsame-fall-des-dr-schmitz",
+            "skp-chat",
+            "operation-kuckuckskinder",
+            "projekt-morgenpforte",
+            "uebernahme-der-scp-foundation-durch-das-skp",
+            "ueber-das-skp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:alive",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "alive",
+      "title": "Lebendig",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/alive",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/alive",
+      "hubPresentation": "standard",
+      "canonicalTag": "chinesisch",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "chinesisch",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-cf2a6487fdcf8dbe9c38efe3281084c4caad77414cb60f0e1ed2ba93dfc87af9"
+      },
+      "primaryArticles": [
+        {
+          "id": "foundation-s-death",
+          "title": "Tod der Foundation",
+          "url": "http://scp-wiki-de.wikidot.com/foundation-s-death",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Sayonara Heaven übersetzt von"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Ist das Verschwinden des Anomalen für die Menschheit ein neuer Morgen der Ordnung und des Wiederauflebens,",
+      "articleSections": [
+        {
+          "id": "01-credits",
+          "title": "Credits",
+          "articleIDs": [
+            "foundation-s-death"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:f4k",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "f4k",
+      "title": "Foundation 4K",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/f4k",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/f4k",
+      "hubPresentation": "standard",
+      "canonicalTag": "chinesisch",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "chinesisch",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-388ccce14baceac5cfb77aa12cf5c751b59a5df59ef06e99af090f9af7a3c720"
+      },
+      "primaryArticles": [
+        {
+          "id": "foundation-fi",
+          "title": "Overtüre von 4k: Foundation-Fi",
+          "url": "http://scp-wiki-de.wikidot.com/foundation-fi",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- von"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Artikel: Foundation 4K Originalautor: QBLevi Originalartikel: https://scp-wiki-cn.wikidot.com/f4k Übersetzer: Dr Ore",
+      "articleSections": [
+        {
+          "id": "01-credits",
+          "title": "Credits",
+          "articleIDs": [
+            "foundation-fi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:centre-embargo",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "centre-embargo",
+      "title": "EMBARGO",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/centre-embargo",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/centre-embargo",
+      "hubPresentation": "standard",
+      "canonicalTag": "embargo",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "embargo",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-b365569e4987432e97d7bcfec270ebf80aed0afd76a200a29d5ba2d0e52d3af8",
+        "verifiedEmpty": true,
+        "allowEmpty": true
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Während des Paratechnologie-Booms in den 60er Jahren, als sich die Church of the Broken God auf das elektromagnetische Spektrum ausbreitete und ihren kollektivistischen Griff auf die Welt ausdehnte, fasste die Global Occult Coalition der Vereinten Nationen einen radikalen Beschluss: Sie nutzte ihre im Entstehen begriffene Technologie des Dimensionsdesigns, um das größte Forschungslabor der Welt zu schaffen, die EURopean Technological Esoteric Capital , Eurtec, die von den Dienern der Silicon Nornir verwaltet wird, einer falschen Religion, die die Menschheit durch Paratechologie voranbringen soll.",
+      "articleSections": [
+        {
+          "id": "01-artikel",
+          "title": "Artikel",
+          "articleIDs": []
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:dans-les-coulisses",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "dans-les-coulisses",
+      "title": "Hinter den Kulissen",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/dans-les-coulisses",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/dans-les-coulisses",
+      "hubPresentation": "standard",
+      "canonicalTag": "hinter-den-kulissen",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "hinter-den-kulissen",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-19f3ceb2b089014f24f14232f40c9da8d610955baa6d5d30fe1894e9022daf37"
+      },
+      "primaryArticles": [
+        {
+          "id": "dossier-personnel-du-dr-caroline",
+          "title": "Personalakte von Dr. Caroline",
+          "url": "http://scp-wiki-de.wikidot.com/dossier-personnel-du-dr-caroline",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Personalakte von Dr. Attano Personalakte von Dr. Berthon Personalakte von Dr. Caroline Personalakte von Dr. Dvornikov und von seiner Tochter Personalakte von Dr. Howel Personalakte von Dr. Johannes Personalakte von Dr. Kudryavka Personalakte von Dr. Marchand Personalakte von Dr Nacra Personalakte von Dr Valbeaugris"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Hier findest du die Dossiers der verschiedenen beliebten oder sekundären Charaktere, die die Autoren durch Berichte, Geschichten und Einsätze verwenden. Grundsätzlich steht es dir frei 1 , jede Art von Charakter zu erstellen oder zu verwenden. Obwohl es von der Autorenseite variieren kann, ist das zu erwartende Format für die Beiträge klar und prägnant . Zehnseitige Geschichten, die sich auf die Kindheit Ihrer Figur konzentrieren, haben hier keinen Platz. Wenn du daran interessiert bist, an der Erstellung von Personalakte mitzuwirken und sie auf dieser Seite zu sehen, ist es wichtig, sich daran zu erinnern, dass es sich um ein kollektives Projekt handeln muss. Deine Kreation muss die folgenden Anforderungen erfüllen: Ein Minimum an beschreibend Darstellungen und deren Verwendung durch verschiedene Autoren. Wenn dein Charakter diese Anforderung nicht erfüllt, aber du denkst, dass er seine",
+      "articleSections": [
+        {
+          "id": "01-doktoren",
+          "title": "Doktoren",
+          "articleIDs": [
+            "dossier-personnel-du-dr-caroline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:chwasty-hub",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "chwasty-hub",
+      "title": "Unkräuter",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/chwasty-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/chwasty-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "unkräuter",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unkräuter",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-f8c329e61f539cf5143583929420eb5a5bb92046be12feaa892c580cc9404a4b"
+      },
+      "primaryArticles": [
+        {
+          "id": "czym-sa-obiekty-konspiracyjne",
+          "title": "Was sind Verschwörungsobjekte?",
+          "url": "http://scp-wiki-de.wikidot.com/czym-sa-obiekty-konspiracyjne",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Artikel: Unkräuter - Portalseite Autor: Unbekannt (Account gelöscht) Original: http://scp-pl.wikidot.com/chwasty-hub Übersetzer: Einer von Rabe",
+      "articleSections": [
+        {
+          "id": "01-aber-sie-kommen-immer-zuruck",
+          "title": "Aber sie kommen immer zurück.",
+          "articleIDs": [
+            "czym-sa-obiekty-konspiracyjne"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:sushiblade-hub",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "sushiblade-hub",
+      "title": "Sushiblade",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/sushiblade-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/sushiblade-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "sushiblade",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sushiblade",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-c74c01d7e3413f02157e9ed8aed8474f7d88dd01dc4d6c3a2c8d16d5924808a3"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-1134-jp",
+          "title": "SCP-1134-JP",
+          "url": "http://scp-wiki-de.wikidot.com/scp-1134-jp",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Da sich SCP-1134-JP nicht aus seinem Gebiet entfernt, können Überwachungskameras um und im Geschäft aufgestellt werden, um seine Aktivitäten zu überwachen. Wenn SCP-1134-JP Anzeichen von Misstrauen gegenüber den Überwachungskameras zeigt, sind ihm diese als Si…"
+        },
+        {
+          "id": "no-sushi-no-life",
+          "title": "Sushiblade-Kardinal",
+          "url": "http://scp-wiki-de.wikidot.com/no-sushi-no-life",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Die Empfehlung für heute? Nun, da hätten wir Sushiblade-Kardinal ."
+        },
+        {
+          "id": "nexus-13-2",
+          "title": "Der Zornregulator, Teil 2",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-13-2",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "nexus-13-3",
+          "title": "Der Zornregulator, Teil 3",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "yamizushi-hub",
+          "title": "Gibst du dich mit solch schwachem Sushi zufrieden?",
+          "url": "http://scp-wiki-de.wikidot.com/yamizushi-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Nur herein. Willkommen bei Katsu, einem Dreh-Sushirestaurant.",
+      "articleSections": [
+        {
+          "id": "01-credits",
+          "title": "Credits",
+          "articleIDs": [
+            "scp-1134-jp",
+            "no-sushi-no-life",
+            "nexus-13-2",
+            "nexus-13-3",
+            "yamizushi-hub"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:aiad-homescreen",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "aiad-homescreen",
+      "title": "AIAD",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/aiad-homescreen",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/aiad-homescreen",
+      "hubPresentation": "standard",
+      "canonicalTag": "aiad",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "aiad",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-8c2b9832be4377b623f308889e6baeea0d560bfe47c4f321bab5d9091c0973c1"
+      },
+      "primaryArticles": [
+        {
+          "id": "alert-lockdown-initiated",
+          "title": "ALARM! SPERRUNG INITIIERT!",
+          "url": "http://scp-wiki-de.wikidot.com/alert-lockdown-initiated",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-2193",
+          "title": "\"Monatliche Termination\"",
+          "url": "http://scp-wiki-de.wikidot.com/scp-2193",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Die Abteilung für Anwendungen der Künstlichen Intelligenz (AIAD) soll die Datenbank der Foundation auf Instanzen von SCP-2193-1 überwachen. Die Instanzen sind zu protokollieren und zu entfernen, und das Personal des Betriebs (falls zutreffend) wird eine amnest…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Dateiname: blue_squares2.gif Name: Blue Squares Background Urheber: LurkD Lizenz: CC-BY-SA 3.0",
+      "articleSections": [
+        {
+          "id": "01-credits",
+          "title": "Credits",
+          "articleIDs": [
+            "alert-lockdown-initiated",
+            "scp-2193"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:apotheosis-hub",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "apotheosis-hub",
+      "title": "Apotheose",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/apotheosis-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/apotheosis-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "apotheose",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "apotheose",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-0b9a4815f3536cb86104beee7d4b5f1b1d1567c857199f90dfd5acb7ac17f55f"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-3396",
+          "title": "Der Himmlische Parasit",
+          "url": "http://scp-wiki-de.wikidot.com/scp-3396",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-3396 ist eine extradimensionale Entität der Kategorie 4, die als ein Zusammenschluss von physisch und metaphysisch mutagen wirkenden Symbionten existiert, die derzeit etwa 6% der Weltbevölkerung befallen und beeinflussen. SCP-3396s zentraler Nexus befind…"
+        },
+        {
+          "id": "scp-3731",
+          "title": "Die Normalität wird beschützt werden",
+          "url": "http://scp-wiki-de.wikidot.com/scp-3731",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Das Protokoll ALABASTER wurde für aktiv erklärt: Das gesamte Militärpersonal der Foundation wurde der Erweiterung der Orangen Zone wegen der Sicherung der SCP-3731-Instanzen zugewiesen. Das gesamte Forschungspersonal wurde der Entwicklung von technologischen,…"
+        },
+        {
+          "id": "thrive",
+          "title": "Gedeiht",
+          "url": "http://scp-wiki-de.wikidot.com/thrive",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "CadaverCommander, Modern_Erasmus, fieldstone und Weryllium"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "“ Die Apotheose ist nicht der Ursprung des großen Mannes. Er kommt, kompakt in unbesiegbaren Folien, von der Vernunft, um Mitternacht, beleuchtet durch das studierende Auge, gehüllt in Ruhe, das Objekt dem das Summen der Gedanken in den Geist ausgewichen …” ―Wallace Stevens",
+      "articleSections": [
+        {
+          "id": "01-credits",
+          "title": "Credits",
+          "articleIDs": [
+            "scp-3396",
+            "scp-3731",
+            "thrive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:bellerverse",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "bellerverse",
+      "title": "Bellerverse",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/bellerverse",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/bellerverse",
+      "hubPresentation": "standard",
+      "canonicalTag": "bellerverse",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "bellerverse",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubProfile",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-7ddc6c9311d770de3e0dcf2bacfdffe8344886de12d9af1e35a3fc127c088ee3",
+        "verifiedProfile": true
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Artikel: Bellerverse Autor: DrEverettMann Original: Bellerverse Übersetzer: Lexikon_Scp"
+    },
+    {
+      "id": "scp-de:collection:canon:end-of-death-hub",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "end-of-death-hub",
+      "title": "Ende des Todes",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/end-of-death-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/end-of-death-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "end-of-death",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "end-of-death",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-813c0ee218a78ee9709fdf8bcb310545847eab11be39f8e473e37f1702638063"
+      },
+      "primaryArticles": [
+        {
+          "id": "in-the-clutches-of-life",
+          "title": "In den Fängen des Lebens",
+          "url": "http://scp-wiki-de.wikidot.com/in-the-clutches-of-life",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3448",
+          "title": "Halfterlife",
+          "url": "http://scp-wiki-de.wikidot.com/scp-3448",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-3448 hat an Standort-2718 aktiv zu bleiben. Das Personal hat SCP-3448 täglich auf zusätzliche Nachrichten von SCP-3448-A zu untersuchen. Projekt Dämmerung hat jede von SCP-3448-A vorgeschlagene oder angedeutete Fluchtmethode zu erforschen."
+        },
+        {
+          "id": "scp-4514",
+          "title": "Das Ding das dich tötet",
+          "url": "http://scp-wiki-de.wikidot.com/scp-4514",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-4514 ist in einem Standard-Container der Klasse Sicher aufzubewahren. SCP-4514 darf nur mit Zustimmung des O5-Rates verwendet werden."
+        },
+        {
+          "id": "new-buteo-series-mechanical-exoskeleton",
+          "title": "Anderson Robotics Installations-Guide: Ihr Neues Mechanisches Exoskelett Der Bueto-Serie!",
+          "url": "http://scp-wiki-de.wikidot.com/new-buteo-series-mechanical-exoskeleton",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "AUSZUG AUS DER FOUNDATION-DATENBANK ZU K-KLASSE-KONTINGENZEN Szenario-Bezeichnung: ΩK-Class Wahrscheinlichkeit: Fast Unmöglich Schwere: Überstehbar, erfordert aber moderate Restrukturierung der menschlichen Zivilisation Beschreibung: Ein ΩK-Klasse-Szenario (\"Ende-des-Todes\") beschreibt eine Situation, in der allem Leben ohne weitere biologische Veränderungen (wie etwa das Stoppen des Alterns oder erzwungene Sterilisation) Unsterblichkeit aufgezwungen wird. Alle Protokole die sich auf dieses Szenario beziehen, setzen voraus, dass Maßnahmen ergriffen wurden, um jedwede Zerbrochene-Maskerade-Situation zu vermeiden. Dieses Szenario setzt außerdem voraus, dass die Foundation ihre momentane Struktur und Aufteilung beibehalten hat. Schwerpunkte: 1. Fortpflanzungskontrolle: Aufgrund der Geburten- und Sterberaten von Insektenpopulationen muss dies innerhalb von vierundzwanzig Stunden nach Einsetz",
+      "articleSections": [
+        {
+          "id": "01-staffel-eins",
+          "title": "STAFFEL EINS",
+          "articleIDs": [
+            "in-the-clutches-of-life",
+            "scp-3448"
+          ]
+        },
+        {
+          "id": "02-staffel-zwei",
+          "title": "STAFFEL ZWEI",
+          "articleIDs": [
+            "scp-4514",
+            "new-buteo-series-mechanical-exoskeleton"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:pitch-haven-hub",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "pitch-haven-hub",
+      "title": "ㄗitch 卄aven",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/pitch-haven-hub",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/pitch-haven-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "audio",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "audio",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-224b3b2814fe3024450bceb639b3366fb0b9389eea5d2dd55f9060598bb82657",
+        "verifiedEmpty": true,
+        "allowEmpty": true
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Artikel: Pitch Haven Autor: Fantem Original: https://scp-wiki.wikidot.com/pitch-haven-hub Übersetzer: Dr Alice Bilder: Standort-45-Logo von Jerden , Bilder von SunnyClockwork Theme: siehe hier Musik: Kenneth Massey , laut Autor wurde die Erlaubnis zur Nutzung erteilt",
+      "articleSections": [
+        {
+          "id": "01-artikel",
+          "title": "Artikel",
+          "articleIDs": []
+        }
+      ]
+    },
+    {
+      "id": "scp-de:collection:canon:project-heimdall",
+      "branchID": "scp-de",
+      "kind": "canon",
+      "hubID": "project-heimdall",
+      "title": "Projekt Heimdall",
+      "sourceListURL": "http://scp-wiki-de.wikidot.com/project-heimdall",
+      "officialHubURL": "http://scp-wiki-de.wikidot.com/project-heimdall",
+      "hubPresentation": "standard",
+      "canonicalTag": "heimdall",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "heimdall",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-de",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "de_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-2bc69600011dd3f9cb1ca4d03466a7a0eaf7a83b57eb3cda58616b8f60315777"
+      },
+      "primaryArticles": [
+        {
+          "id": "project-heimdall-prologue",
+          "title": "Projekt Heimdall - Prolog",
+          "url": "http://scp-wiki-de.wikidot.com/project-heimdall-prologue",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "we-have-dismissed-that-claim",
+          "title": "Wir haben den Anspruch abgewiesen",
+          "url": "http://scp-wiki-de.wikidot.com/we-have-dismissed-that-claim",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "adana-protocol",
+          "title": "ADANA Protokoll",
+          "url": "http://scp-wiki-de.wikidot.com/adana-protocol",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "to-what-purpose-an-invasion",
+          "title": "Wozu eine Invasion",
+          "url": "http://scp-wiki-de.wikidot.com/to-what-purpose-an-invasion",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "lessons-from-history",
+          "title": "Lehren aus der Geschichte",
+          "url": "http://scp-wiki-de.wikidot.com/lessons-from-history",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-1342",
+          "title": "An die Macher der Musik",
+          "url": "http://scp-wiki-de.wikidot.com/scp-1342",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "SCP-1342 ist an Standort-15 zu lagern. SCP-1342-1 ist innerhalb eines faradayschen Käfigs aufzubewahren, der 15 m x 15 m x 20 m misst, um die Übertragung von Telemetrie und anderen Daten bezüglich SCP-1342 zu verhindern. SCP-1342-2 ist in einem Schließfach für…"
+        },
+        {
+          "id": "scp-2117",
+          "title": "Solidarität, gestohlen",
+          "url": "http://scp-wiki-de.wikidot.com/scp-2117",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-2117 ist der Standort von Standort-2117, den jedes Individuum, das eine Instanz von SCP-2117-A-1 besitzt, betreten kann. Derzeit werden SCP-2117-A-1-Instanzen von wichtigem Personal, Mitgliedern der Mobile Task Force Omega-2 (Anti-Nihilism IN SPACE! (z. dt…"
+        },
+        {
+          "id": "scp-3320",
+          "title": "Ethische Relativität",
+          "url": "http://scp-wiki-de.wikidot.com/scp-3320",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-3320 befindet sich in Zone-3320 im südlichen Atlantik. Zone-3320 besteht aus Standort-3320 auf der Insel Bouvet, die der Foundation von der norwegischen Regierung auf Dauer verpachtet wurde, und einer 50 km breiten Sperrzone im umliegenden Meer. SCP-3320 s…"
+        },
+        {
+          "id": "scp-5060",
+          "title": "Nördlicher Wächterplanet",
+          "url": "http://scp-wiki-de.wikidot.com/scp-5060",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Eine physische Eindämmung von SCP-5060 ist derzeit unmöglich. Die Foundation wird sich daher darauf konzentrieren, das öffentliche Bewusstsein für SCP-5060 zu verringern. Foundation-Mitarbeiter innerhalb der Internationalen Astronomischen Union haben über alle…"
+        },
+        {
+          "id": "on-the-failure-of-the-open-sky-accords",
+          "title": "Über das Scheitern der \"Open Sky\"-Abkommen",
+          "url": "http://scp-wiki-de.wikidot.com/on-the-failure-of-the-open-sky-accords",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "VON: O5-7, im Namen des O5-Rates AN: General William Pendergast (Stellvertretender Direktor der Foundation-Kontigenzplanung) RE: Vorgeschlagene KPO 83910301 Kontingenzplanungsoperation genehmigt. Codenamensbezeichnung \"Projekt Heimdall\". Erforschung möglicher Mittel, mit denen eine außerirdische Intelligenz, die dem menschlichen Leben und/oder der menschlichen Zivilisation energisch und aktiv feindlich gegenübersteht, versuchen könnte, die Menschheit zu erobern, zu versklaven oder zu vernichten. Analyse der wahrscheinlichen Folgen. Entwicklung von Gegenmaßnahmen und Notfallplänen. Bericht der Ergebnisse an den O5-Rat nach Abschluss der Arbeiten.",
+      "articleSections": [
+        {
+          "id": "01-projektdokumente",
+          "title": "Projektdokumente",
+          "articleIDs": [
+            "project-heimdall-prologue",
+            "we-have-dismissed-that-claim",
+            "adana-protocol",
+            "to-what-purpose-an-invasion",
+            "lessons-from-history"
+          ]
+        },
+        {
+          "id": "02-zugehorige-dokumentation",
+          "title": "Zugehörige Dokumentation",
+          "articleIDs": [
+            "scp-1342",
+            "scp-2117",
+            "scp-3320",
+            "scp-5060",
+            "on-the-failure-of-the-open-sky-accords"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-de:collection:goi:abteilung-xxv-hub",
       "branchID": "scp-de",
       "kind": "goi",
@@ -1752,7 +3448,8 @@
           "role": "primaryArticle"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "Anmerkung Das Sonderkommando für Paranormales existierte nicht nur bis Anfang 1945 in unserem Universum, es existiert in einem Anderen (U-3378-DE) noch immer. Wir konnten von dort eine große Menge Daten erbeuten und stellen diese nach einer Aufarbeitung nach und nach in der Foundation Datenbank zur Verfügung. Bitte beachten Sie dass das SKP hier und dort zu unterscheiden sind. In diesem Dokument finden Sie Informationen über Beide. 1 Wir gehen davon aus, dass beide ihren Ursprung im gleichen Universum haben welches sich nach einer kurzen Phase der Unbestimmtheit während eines Experiments des SKP in 1944 in zwei Richtungen entwickelte, daher werden beide als Zweige derselben GoI betrachtet und behandelt. — Dr. Irma Bauer"
     }
   ]
 }

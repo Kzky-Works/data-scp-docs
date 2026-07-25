@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784875380,
-  "generatedAt": "2026-07-24T06:43:00Z",
-  "chunkRevision": "sha256-02fd69ec4571c4e7d08fcf733b95fbf34548257c51c3ceea5ad8860cc55ac8f7",
+  "listVersion": 1784999047,
+  "generatedAt": "2026-07-25T17:04:07Z",
+  "chunkRevision": "sha256-5f47ee159afae0df515b5b2331c69cf289260ad6dfc6311a133dd48ba7f60bf4",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-th",
         "path": "DataPipeline/list/th/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1784875352,
-        "generatedAt": "2026-07-24T06:42:32Z",
-        "contentHash": "sha256-c33d054ae6883f47a36734af467250801add248475318ec86820b7902f2607e8"
+        "listVersion": 1784999047,
+        "generatedAt": "2026-07-25T17:04:07Z",
+        "contentHash": "sha256-724574430a7f85be4a2747ab8d2fb3ff382a51ef013cb77cd923ce2560ab7a6e"
       },
       {
         "kind": "manifest_scp-int",
@@ -55,9 +55,169 @@
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
       "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+    },
+    "officialStructureSeed": {
+      "path": "DataPipeline/collection_seeds/canon_structures/th.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-03980fb21730f373530f31747e52990a11af38cd0c4b83daa2ff16f5d3157ccd"
+    },
+    "officialTagMap": {
+      "kind": "th_tag",
+      "branchID": "scp-th",
+      "path": "DataPipeline/list/th/th_tag.json",
+      "schemaVersion": 2,
+      "listVersion": 1784451344,
+      "generatedAt": "2026-07-19T08:55:44Z",
+      "contentHash": "sha256-2a33a2e893674561a8fb6742277a19df7a07042f111892d22c1d7d152eba03e7"
     }
   },
   "collections": [
+    {
+      "id": "scp-th:collection:canon:zetafoudation",
+      "branchID": "scp-th",
+      "kind": "canon",
+      "hubID": "zetafoudation",
+      "title": "ZETAFOUDATION",
+      "sourceListURL": "http://scp-th.wikidot.com/zetafoudation",
+      "officialHubURL": "http://scp-th.wikidot.com/zetafoudation",
+      "hubPresentation": "standard",
+      "canonicalTag": "zetafoudation",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "zetafoudation",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-th",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "th_tag.json",
+        "emptySectionTitle": "บทความ",
+        "structureHash": "sha256-af6dd60411338e3b103a1a23e49dccdfa22dbc968f553b9833f016320e3ae820"
+      },
+      "primaryArticles": [
+        {
+          "id": "dothis-s-proposal",
+          "title": "SCP-001 Dothis's proposal",
+          "url": "http://scp-th.wikidot.com/dothis-s-proposal",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-148-th",
+          "title": "ขายหัวเราะ ฉบับที่ 148.1",
+          "url": "http://scp-th.wikidot.com/scp-148-th",
+          "sourceManifest": "manifest_scp-th",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "SCP-148-TH นั้นต้องถูกเก็บเอาไว้ในล็อคเกอร์ที่มีความปลอดภัยระดับสูง ปัจจุบันวัตถุอยู่ที่เอเรีย-2335 1 ไม่อนุญาตให้บุคคลใดเข้าถึง SCP-148-TH ภายหลังจากการทดสอบ (ดูภาคผนวก)"
+        },
+        {
+          "id": "scp-630-th",
+          "title": "ดาวเคราะห์ปริศนาในวงโคจรระบบสุริยะ",
+          "url": "http://scp-th.wikidot.com/scp-630-th",
+          "sourceManifest": "manifest_scp-th",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "เนื่องจากลักษณะที่คาดเดาไม่ได้และภัยคุกคามที่อาจเกิดขึ้นจาก SCP-630-TH ความพยายามในการกักกันจึงมุ่งเน้นไปที่การเฝ้าติดตามและบันทึกกิจกรรมของมันมากกว่าการพยายามกักกันทางกายภาพ สถาบันได้จัดตั้ง Mobile Task Force Omega-9 (\"Cosmic Watchers\") เพื่อติดตาม SCP-630-TH…"
+        },
+        {
+          "id": "deep-into-the-mysteries",
+          "title": "ความลึกลับเเห่งเมืองเมอร์ฟิลด์",
+          "url": "http://scp-th.wikidot.com/deep-into-the-mysteries",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "นิยาย SCP-TH » ความลึกลับเเห่งเมืองเมอร์ฟิลด์"
+        },
+        {
+          "id": "the-old-catoonbook",
+          "title": "หนังสือการ์ตูนเก่าๆ",
+          "url": "http://scp-th.wikidot.com/the-old-catoonbook",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Included page \"theme:red-vizor\" does not exist ( create it now )"
+        },
+        {
+          "id": "when-some-things-demand-they-lead-to-adventure",
+          "title": "เมื่อบางสิ่งเรียกร้องจะนำพาไปสู่การผจญภัย",
+          "url": "http://scp-th.wikidot.com/when-some-things-demand-they-lead-to-adventure",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "นิยาย SCP-TH » เมื่อบางสิ่งเรียกร้องจะนำพาไปสู่การผจญภัย"
+        },
+        {
+          "id": "happy-birthday-to-me",
+          "title": "สุขสันต์วันเกิดให้กับตัวฉัน 🎂",
+          "url": "http://scp-th.wikidot.com/happy-birthday-to-me",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "นิยาย SCP-TH » สุขสันต์วันเกิดให้กับตัวฉัน"
+        },
+        {
+          "id": "god-is-everything",
+          "title": "พระเจ้าคือทุกสิ่ง",
+          "url": "http://scp-th.wikidot.com/god-is-everything",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-first-symphony",
+          "title": "ซิมโฟนีเเรกเริ่ม",
+          "url": "http://scp-th.wikidot.com/the-first-symphony",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "ผู้เเต่ง: Dothis วันที่เเต่ง: 19 May 2023"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "นี่คือ Project Zetafoudation เป็นหนึ่งในนิยาย Canon-TH ของนักเขียนนิยาย SCP ที่เป็นสมาชิกในสาขาไทย ทำการร่วมมือกันสรรสร้างนิยาย SCP เเบบเขียนร่วมกัน เพื่อที่จะจัดระเบียบเเละจัดเรียงจักรวาลวิทยาของ SCP สาขาไทยให้ไม่เกิดความขัดเเย้งภายใน Canon, Project นี้จัดขึ้นมาด้วยความอาสาสมัครของเหล่านักเขียนเองด้วย เเละก็ขอให้เพลิดเพลินกับการอ่านนิยาย SCP ของพวกเรา เเละ Project นี้ได้รับเเรงบันดาลใจมาจากนักเขียนนิยาย SCP จากสาขาหลัก เเละ Zetafoudation จะเป็นรูปเเบบนิยายเเนว Sci fi, science, math เเละ theology",
+      "articleSections": [
+        {
+          "id": "01-scps",
+          "title": "รายการ SCPs",
+          "articleIDs": [
+            "dothis-s-proposal",
+            "scp-148-th",
+            "scp-630-th"
+          ]
+        },
+        {
+          "id": "02-tale-hub",
+          "title": "รายการ Tale Hub",
+          "articleIDs": [
+            "deep-into-the-mysteries",
+            "the-old-catoonbook",
+            "when-some-things-demand-they-lead-to-adventure",
+            "happy-birthday-to-me",
+            "god-is-everything",
+            "the-first-symphony"
+          ]
+        }
+      ]
+    },
     {
       "id": "scp-th:collection:canon:horror-foundation",
       "branchID": "scp-th",
@@ -71,27 +231,14 @@
       "tagReview": {
         "status": "reviewed",
         "accepted": "horror-foundation",
-        "rejected": [
-          {
-            "tag": "tale-th",
-            "reason": "genericTaleMarker"
-          },
-          {
-            "tag": "th-canon",
-            "reason": "genericCanonMarker"
-          },
-          {
-            "tag": "th-hub",
-            "reason": "genericHubMarker"
-          }
-        ],
+        "rejected": [],
         "notes": [
-          "Live-verified over HTTP against the SCP-TH Horror Foundation hub and completed TH tag map on 2026-07-19; the specific horror-foundation tag resolves native Tale members and the official hub exposes their reading order."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "10 tag-resolved primary articles; 9 matched links on the live official hub at review time (site-66-part-1 is tag-only)."
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
       "memberManifests": [
         "manifest_scp-th",
@@ -100,7 +247,10 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "th_tag.json",
+        "emptySectionTitle": "บทความ",
+        "structureHash": "sha256-57ad590ad0464476deae57c48162bbf03ae665e5aa84b9d5707ea12cd211cb19"
       },
       "primaryArticles": [
         {
@@ -109,7 +259,9 @@
           "url": "http://scp-th.wikidot.com/7-ghost-story-in-the-site-29",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 24
+          "contentKind": "tale",
+          "os": 24,
+          "desc": "ถ้าจะให้พูดถึงเรื่องผีสางอะไรนั่น ก็แค่สิ่งไร้สาระเมื่อเทียบกับสิ่งผิดปกติเหนือธรรมชาติที่ผมเจอมาตลอดทั้งชีวิตแล้วนั้นมันแทบจะไม่มีความหมาย แต่ถึงไงคนก็กลัวกันอยู่ดี"
         },
         {
           "id": "d-6679",
@@ -117,7 +269,9 @@
           "url": "http://scp-th.wikidot.com/d-6679",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 17
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "เคยมีคนถามผมว่าอยู่กับศพไม่เคยเจออะไรบ้างเหรอไง จะว่าไปก็พูดไม่ได้เต็มปากหรอกนะว่าเคยเจอ อาจเพราะผมไม่ค่อยจะมีเซ้นต์เรื่องพวกนี้ก็ได้"
         },
         {
           "id": "virtual-dream",
@@ -125,7 +279,9 @@
           "url": "http://scp-th.wikidot.com/virtual-dream",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 20
+          "contentKind": "tale",
+          "os": 20,
+          "desc": "ฟรองซัวส์ตื่นขึ้น ภาพในดวงตาสีฟ้าของเธอค่อยๆปรากฏขึ้นจากที่ภาพกำลังเบลอๆจนกระทั่งเห็นได้ชัดว่าห้องที่เธออยู่ในขณะนี้ก็คือห้องพยาบาล เธอมองไปรอบๆห้องก็พบว่าห้องนี้อยู่ในสภาพเก่า ๆ ตามกำแพงและพื้นห้องก็เต็มไปด้วยคราบดำ ๆ แสงไฟภายในห้องบ้างก็มืดสลัวบ้างก็ให้แสงสว…"
         },
         {
           "id": "hour-of-scare",
@@ -133,7 +289,9 @@
           "url": "http://scp-th.wikidot.com/hour-of-scare",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 18
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "เวลา 4 ทุ่ม 25 นาที ในวันสุดสัปดาห์แบบนี้คนส่วนใหญ่มักจะเลิกงานกันเร็ว แต่เขาชายวัยกลางคนผมหยิบสีน้ำตาลยังคงนั่งอยู่ที่นี่ในห้องทำงานที่ชั้น 8 ไซต์ 10 ดูเหมือนว่าเขายังทำงานไม่เสร็จ มีบางอย่างกวนใจเขา รู้สึกเหมือนมีคนอยู่ในนี้ เขาหันมองไปรอบๆที่ตอนนี้มีแต่ความ…"
         },
         {
           "id": "dr-norleans-and-mysterious-stories",
@@ -141,7 +299,9 @@
           "url": "http://scp-th.wikidot.com/dr-norleans-and-mysterious-stories",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 10
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "ชีวิตฉันก็เหมือนนักวิจัยทุก ๆ คนในสถาบันนั่นแหล่ะ แต่ถ้านั่นไม่นับตรงที่ฉันมีอะไรที่แตกต่างกับนักวิจัยคนอื่น ๆ"
         },
         {
           "id": "long-the-way",
@@ -149,7 +309,9 @@
           "url": "http://scp-th.wikidot.com/long-the-way",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 13
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "สวัสดีครับ ดร.สมิท ผมเห็นคุณเดินผ่านจุดที่ผมทำงานอยู่ ให้ผมเลี้ยงเบียร์มั่ย ไม่เหรอ? เอาเถอะนะเดียวผมสั่งผมอีก 2 เเก้ว เฮ้ เจสัน ฉันขอเบียร์เพิ่ม 2 เเก้วนะ"
         },
         {
           "id": "orientation-block-b",
@@ -157,7 +319,9 @@
           "url": "http://scp-th.wikidot.com/orientation-block-b",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 19
+          "contentKind": "tale",
+          "os": 19,
+          "desc": "สวัสดีผมคือ ดร.สวิฟ คายัก วันนี้เป็นวันทำงานวันแรกของผมในสถาบันแห่งนี้ โดยทั่วไปแล้วการมาทำงานวันแรกจะต้องได้รับการสอนงานเกี่ยวกับวิธีในการทำงาน ตั้งแต่วันนี้ผมจะมาเป็นผู้ช่วยนักวิจัยในสถาบันแห่งนี้ และแน่ละวันนี้เป็นวันปฐมนิเทศ พนักงานใหม่ประจำเดือน ห้องที่ผม…"
         },
         {
           "id": "the-janitor",
@@ -165,7 +329,9 @@
           "url": "http://scp-th.wikidot.com/the-janitor",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 9
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "\"ตรงนี้อากาศดีเนอะ\" เขาพูด"
         },
         {
           "id": "mortuary",
@@ -173,47 +339,218 @@
           "url": "http://scp-th.wikidot.com/mortuary",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 15
-        },
-        {
-          "id": "site-66-part-1",
-          "title": "ไซต์-66 ตอนที่ 1",
-          "url": "http://scp-th.wikidot.com/site-66-part-1",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 26
+          "contentKind": "tale",
+          "os": 15,
+          "desc": "สวัสดีตอนดึกด็อคเตอร์ ไม่เคยรู้เลยว่าคุณก็มาอยู่กะดึกในห้องนี้ด้วย มันเงียบมากเลยใช่ไหม๊ล่ะ ไม่ต้องห่วง คืนนี้ผมก็มาอยู่กะดึกเป็นเพื่อน ที่อีกห้องข้าง ๆ น่ะ"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "บทความ",
+          "articleIDs": [
+            "7-ghost-story-in-the-site-29",
+            "d-6679",
+            "virtual-dream",
+            "hour-of-scare",
+            "dr-norleans-and-mysterious-stories",
+            "long-the-way",
+            "orientation-block-b",
+            "the-janitor",
+            "mortuary"
+          ]
+        }
+      ]
     },
     {
-      "id": "scp-th:collection:canon:zetafoudation",
+      "id": "scp-th:collection:canon:fading-stars-hub",
       "branchID": "scp-th",
       "kind": "canon",
-      "hubID": "zetafoudation",
-      "title": "ZETAFOUDATION",
-      "sourceListURL": "http://scp-th.wikidot.com/zetafoudation",
-      "officialHubURL": "http://scp-th.wikidot.com/zetafoudation",
+      "hubID": "fading-stars-hub",
+      "title": "ดาราเลือนลา",
+      "sourceListURL": "http://scp-th.wikidot.com/fading-stars-hub",
+      "officialHubURL": "http://scp-th.wikidot.com/fading-stars-hub",
       "hubPresentation": "standard",
-      "canonicalTag": "zetafoudation",
+      "canonicalTag": "ดาราเลือนลา",
       "tagReview": {
         "status": "reviewed",
-        "accepted": null,
+        "accepted": "ดาราเลือนลา",
         "rejected": [],
         "notes": [
-          "TH official canon archive entry confirmed; no collection-specific member tag was accepted without unambiguous evidence."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
         ]
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-th",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "th_tag.json",
+        "emptySectionTitle": "บทความ",
+        "structureHash": "sha256-187a4d32ab2c42a1f94ac42419edad0c0e53b5da37f219c0cc447a7904b968d0"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-6404",
+          "title": "ชื่อฉันคือชื่อคุณ และชื่อคุณก็คือชื่อฉัน",
+          "url": "http://scp-th.wikidot.com/scp-6404",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "บุคลากรของสถาบันจะต้องตรวจสอบบัญชีสูติบัตรระหว่างประเทศ เพื่อตรวจหาบุคคลที่มีชื่อว่า \"ทัลลาแคนต์\" โดยบุคคลใดก็ตามที่มีชื่อเรียกว่าทัลลาแคนต์จะต้องถูกดําเนินการตามมาตรฐานมาตรการกําจัดวัตถุ SCP-6404 ได้ถูกกําจัดอย่างสมบูรณ์ในวันที่ 4 ตุลาคม ค.ศ. 2007 บันทึกทางปร…"
+        },
+        {
+          "id": "scp-6059",
+          "title": "เจ้าเคยได้รู้แจ้งในบ่ออ๊ะเปล่า!?",
+          "url": "http://scp-th.wikidot.com/scp-6059",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "อาคารของร้านชัค อี. ชีสซึ่งมี SCP-6059 อยู่ภายในได้ถูกเจ้าหน้าที่ของสถาบันเข้ายึด โดยอ้างว่าทางร้านได้ละเมิดข้อบังคับด้านอนามัยอย่างร้ายแรง และตัวอาคารเดิมได้ถูกดัดแปลงเป็นศูนย์ปฏิบัติการของสถาบัน พลเรือนซึ่งได้มีการบันทึกว่าได้เคยมีปฏิสัมพันธ์กับ SCP-6059 ได้…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "มรณา นิทรา— นิทรา และอาจฝันเฟื่อง—ใช่ มีอุปสรรคอยู่! เพราะในช่วงนิทรารมณ์แห่งมรณภาพ ยามเราลอกคราบกายหยาบนั้น สิ่งที่ความฝันจะนำมา ต้องรั้งรอไว้",
+      "articleSections": [
+        {
+          "id": "01-2007",
+          "title": "2007",
+          "articleIDs": [
+            "scp-6404"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "เหล่าทวยเทพ",
+          "articleIDs": [
+            "scp-6059"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-th:collection:canon:lolfoundation-hub-page",
+      "branchID": "scp-th",
+      "kind": "canon",
+      "hubID": "lolfoundation-hub-page",
+      "title": "สถาบัน 555+",
+      "sourceListURL": "http://scp-th.wikidot.com/lolfoundation-hub-page",
+      "officialHubURL": "http://scp-th.wikidot.com/lolfoundation-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "lolfoundation-hub-page",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "lolfoundation-hub-page",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-th",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "th_tag.json",
+        "emptySectionTitle": "บทความ",
+        "allowUntaggedMembers": true,
+        "memberSelector": "#page-content a[href]",
+        "structureHash": "sha256-3f04b18ee2ca0abde8bc933793b835bbf1a1b6f62833cabcff8ae4e2b165bd94"
+      },
+      "primaryArticles": [
+        {
+          "id": "long-live-the-king",
+          "title": "ราชาจงเจริญ",
+          "url": "http://scp-th.wikidot.com/long-live-the-king",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Roget"
+        },
+        {
+          "id": "date-night",
+          "title": "คืนเดต",
+          "url": "http://scp-th.wikidot.com/date-night",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Hercules Rockefeller"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "เรื่องราวแคนนอน",
+          "articleIDs": [
+            "long-live-the-king",
+            "date-night"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-th:collection:canon:siabhub",
+      "branchID": "scp-th",
+      "kind": "canon",
+      "hubID": "siabhub",
+      "title": "เรือในขวดโหล",
+      "sourceListURL": "http://scp-th.wikidot.com/siabhub",
+      "officialHubURL": "http://scp-th.wikidot.com/siabhub",
+      "hubPresentation": "standard",
+      "canonicalTag": "siabhub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "siabhub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-th",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "th_tag.json",
+        "emptySectionTitle": "บทความ",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-cfe31c7a81fd8abca2b5ad99e925a1ec3a2cccb9d19f55f3f7a90c09cb0a1b13",
+        "verifiedEmpty": true,
+        "allowEmpty": true
       },
       "primaryArticles": [],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "description": "ปี 2056 โบสถ์ยิวดิวเบิร์ช ห่างจากไซต์-17 ประมาณ 20 ไมล์ “เขาเป็นแรงบันดาลใจในการอมไอ้นั่นของผม” ดราเวน คอนดรากิฟูมฟายต่อหน้าแท่นบูชาศพ แฟนหนุ่มของเขาเอื้อมมือและลูบขาปลอบโยน พยักหน้าตอบรับอารมณ์อย่างเคร่งขรึม; เขาสามารถยืนยันได้เลยว่าลูกของผู้ตายเป็นฝ่ายรับที่ยอดเยี่ยม “เขาเก่งเรื่องการหายใจมาก” เคลฟคร่ำครวญด้วยน้ำตานองหน้า เจ้าหน้าที่รอบๆ พ่อหม้ายพยักหน้า เบนจามิน คอนดรากิ เคยเก่งเรื่องการหายใจ “ครั้งหนึ่งเขาต่อยหน้าฉันเพื่อโดนัทชิ้นสุดท้าย” ผู้อำนวยการแต่งตั้งคนใหม่ มูสร้องไห้ “พระเยซูเจ้า ฉันต้องคิดถึงเขามากแน่” “นี่มันพิธีกรรมชาวยิว ทิลด้า” ผู้อำนวยการไบรท์กระซิบใส่หูเธอจากม้านั่งราวกับต้องการแก้ไขประโยค ดร. ไรท์ แทงศอกเข้าที่ซี่โครงตอบ เมื่อรับบีเทศนาจบลงแล้วเดินไปที่โลงศพ กลุ่มเล็กๆ ประกอบด้วยครอบครัวและมิตรสหายตกลงสู่ความเงียบ วาจาสุดท้ายถูกกล่าว- สักอย่างเกี่ยวกับความรักและพระเจ้า จากนั้นผู้ถือพาเลทถูกเรียกขึ้นมาบนแท่น เพื่อถือโลงศพออกไปยังหลุมฝังศพข้างนอก บรรยากาศเคร่งขรึม ผู้เข",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "บทความ",
+          "articleIDs": []
+        }
+      ]
     }
   ]
 }
