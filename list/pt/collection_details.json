@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1784997433,
-  "generatedAt": "2026-07-25T16:37:13Z",
-  "chunkRevision": "sha256-f8403be14fe940d4ff08b64ad51c91199316bd7629d9b321dcd9bf270c0bf03b",
+  "listVersion": 1785002388,
+  "generatedAt": "2026-07-25T17:59:48Z",
+  "chunkRevision": "sha256-967b696ca4669a7c93f71eb9ac4924434bbd2fea0fe1f838efdbe80450b6b574",
   "builtFrom": {
     "manifests": [
       {
@@ -59,7 +59,7 @@
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/pt.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-191050d9894b31fa427a9e4ee1b315d44e8d376242e31a3b4ec3d8af5ec0fea6"
+      "contentHash": "sha256-3a89cfc8edd8a1460ec89a060f23644a199d80dadd8eb677530f509b9982781e"
     },
     "officialTagMap": {
       "kind": "pt_tag",
@@ -1459,7 +1459,8 @@
         "accepted": "anoitecer",
         "rejected": [],
         "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter.",
+          "The five official work links were each confirmed unavailable with repeated HTTP 404 responses on 2026-07-26; they are untranslated placeholders and must not be published as PT-BR articles."
         ]
       },
       "quality": {
@@ -1477,73 +1478,15 @@
         "tagSource": "pt_tag.json",
         "emptySectionTitle": "Artigos",
         "allowUntaggedMembers": true,
+        "forceEmpty": true,
+        "allowEmpty": true,
         "memberSelector": ".fancybox .title a[href]",
-        "structureHash": "sha256-be883fbc706a033cd8b60a3e22954e14639a78a78d042092bb412f3cd096ca38"
+        "structureHash": "sha256-8d771b9c9ecd8dd28a8e7881d1585a22fdeba4d29eba722a6ac7d05484c4031a",
+        "verifiedEmpty": true
       },
-      "primaryArticles": [
-        {
-          "id": "the-knights-of-wonder",
-          "title": "Os Cavaleiros da Maravilha",
-          "url": "http://scp-pt-br.wikidot.com/the-knights-of-wonder",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-6248",
-          "title": "SCP-6248",
-          "url": "http://scp-pt-br.wikidot.com/scp-6248",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-6734",
-          "title": "SCP-6734",
-          "url": "http://scp-pt-br.wikidot.com/scp-6734",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "17-phoenix-street",
-          "title": "Rua Phoenix, 17",
-          "url": "http://scp-pt-br.wikidot.com/17-phoenix-street",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "clawed-cadaver",
-          "title": "O Cadáver com Garras",
-          "url": "http://scp-pt-br.wikidot.com/clawed-cadaver",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        }
-      ],
+      "primaryArticles": [],
       "supplementLinks": [],
-      "description": "Após a tentativa fracassada da Fundação de assassinar a deusa Yvith, o mundo está mergulhado na noite eterna. Criaturas da noite correm desenfreadas e seres mais altos, uma vez incompreensíveis, caminham entre nós. Esta é a história de Xerophylla e a eterna noite de Yvith.",
-      "articleSections": [
-        {
-          "id": "01-aguas-agitadas",
-          "title": "Águas Agitadas",
-          "articleIDs": [
-            "the-knights-of-wonder"
-          ]
-        },
-        {
-          "id": "02-qui-lactis-uma-serie",
-          "title": "Qui Lactis : Uma Série",
-          "articleIDs": [
-            "scp-6248"
-          ]
-        },
-        {
-          "id": "03-dancando-nas-cinzas",
-          "title": "Dançando nas Cinzas",
-          "articleIDs": [
-            "scp-6734",
-            "17-phoenix-street",
-            "clawed-cadaver"
-          ]
-        }
-      ]
+      "description": "Após a tentativa fracassada da Fundação de assassinar a deusa Yvith, o mundo está mergulhado na noite eterna. Criaturas da noite correm desenfreadas e seres mais altos, uma vez incompreensíveis, caminham entre nós. Esta é a história de Xerophylla e a eterna noite de Yvith."
     },
     {
       "id": "scp-pt:collection:canon:apotheosis-hub",
@@ -2710,7 +2653,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pt_tag.json",
         "emptySectionTitle": "Artigos",
-        "structureHash": "sha256-d247f4df1a4b9927faf22f8f11a5898245a8213270d72389a48f5901943b215c"
+        "structureHash": "sha256-081ebcaac9270d36ffbd30aa153563be04519adb58c0c11e22f064ffca9134c3"
       },
       "primaryArticles": [
         {
@@ -3092,14 +3035,20 @@
       "description": "Histórias sobre pessoas virtuais fazendo uma diferença virtual.",
       "articleSections": [
         {
-          "id": "01-artigos",
-          "title": "Artigos",
+          "id": "01-registros-de-sistema-arquivados",
+          "title": "Registros de Sistema Arquivados:",
           "articleIDs": [
             "alert-lockdown-initiated",
             "command-query-separation",
             "superencipherment",
             "clock-multiplier",
-            "null-terminating-string",
+            "null-terminating-string"
+          ]
+        },
+        {
+          "id": "02-relatorios-pos-acao",
+          "title": "Relatórios Pós-Ação:",
+          "articleIDs": [
             "hello-world",
             "hello-world-part-ii",
             "hello-world-part-iii",
@@ -3112,7 +3061,13 @@
             "a-symphony-of-iron-and-steel",
             "internet-explorers",
             "fragmented-compiled",
-            "isolated-efficient",
+            "isolated-efficient"
+          ]
+        },
+        {
+          "id": "03-referencias",
+          "title": "Referências:",
+          "articleIDs": [
             "scp-2987",
             "scp-2306",
             "scp-2522",
@@ -3353,19 +3308,12 @@
         "allowUntaggedMembers": true,
         "memberSelector": "h3 a[href], h5 a[href]",
         "allowEmpty": true,
-        "structureHash": "sha256-a9dc6bb100e5bed025618712be13b5d24046a7a12af6759771dd8521dcd82199",
+        "structureHash": "sha256-dc1c0ddb62d74775beb205b4d4dff564b577b55f756575ab5bac87a94207e5e3",
         "verifiedEmpty": true
       },
       "primaryArticles": [],
       "supplementLinks": [],
-      "description": "Seiscentos anos atrás, o mundo acabou. Hoje, apenas um grupo protege os segredos do mundo antigo até um momento em que eles possam ser entendidos novamente; os padres da Santa Fundação.",
-      "articleSections": [
-        {
-          "id": "01-artigos",
-          "title": "Artigos",
-          "articleIDs": []
-        }
-      ]
+      "description": "Seiscentos anos atrás, o mundo acabou. Hoje, apenas um grupo protege os segredos do mundo antigo até um momento em que eles possam ser entendidos novamente; os padres da Santa Fundação."
     },
     {
       "id": "scp-pt:collection:canon:competitive-eschatology-hub",
@@ -5121,19 +5069,12 @@
         "allowUntaggedMembers": true,
         "memberSelector": "blockquote a[href]",
         "allowEmpty": true,
-        "structureHash": "sha256-0d74dae4c20031d25728e51b2f2c07befc7e142882fffd4bfca8b2df1a71e6af",
+        "structureHash": "sha256-8235c52962225480323672bf15791b5f04ba209e3be63bd3b51216dea3a6dfb5",
         "verifiedEmpty": true
       },
       "primaryArticles": [],
       "supplementLinks": [],
-      "description": "O Teste do FitnessGram Pacer é um teste de capacidade aeróbica de vários estágios que fica progressivamente mais difícil à medida que continua. O teste de marcapasso de 20 metros começará em 30 segundos. Alinhem-se no início. A velocidade de corrida começa lentamente e se acelera a cada minuto após vocês ouvirem este sinal. bodeboop . Uma única volta deve ser concluída toda vez que vocês ouvirem este som. ding . Se lembrem de correr em uma linha reta e correr o maior tempo possível. Na segunda vez que vocês falharem em concluir uma volta antes do som, seu teste acabará. O teste começará na palavra já. Em sua marca. Preparem-se! Já.",
-      "articleSections": [
-        {
-          "id": "01-artigos",
-          "title": "Artigos",
-          "articleIDs": []
-        }
-      ]
+      "description": "O Teste do FitnessGram Pacer é um teste de capacidade aeróbica de vários estágios que fica progressivamente mais difícil à medida que continua. O teste de marcapasso de 20 metros começará em 30 segundos. Alinhem-se no início. A velocidade de corrida começa lentamente e se acelera a cada minuto após vocês ouvirem este sinal. bodeboop . Uma única volta deve ser concluída toda vez que vocês ouvirem este som. ding . Se lembrem de correr em uma linha reta e correr o maior tempo possível. Na segunda vez que vocês falharem em concluir uma volta antes do som, seu teste acabará. O teste começará na palavra já. Em sua marca. Preparem-se! Já."
     },
     {
       "id": "scp-pt:collection:canon:unfounded-hub",
