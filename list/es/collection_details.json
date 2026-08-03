@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785653061,
-  "generatedAt": "2026-08-02T06:44:21Z",
-  "chunkRevision": "sha256-44c27c30e0aa8ee8c1f08bc1d7b0c9037b30512ad7ba0d8d61a0d28b03cb918c",
+  "listVersion": 1785746088,
+  "generatedAt": "2026-08-03T08:34:48Z",
+  "chunkRevision": "sha256-51463bc2229704c50f5ed18433b8df5ac19a4ad62378d1758cc4cfe351d04c24",
   "builtFrom": {
     "manifests": [
       {
@@ -19,18 +19,18 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1785650399,
-        "generatedAt": "2026-08-02T05:59:59Z",
-        "contentHash": "sha256-048143a8fec052490969443f6e67456a147e13d49bf2c2ab8cb6e18dd3053f91"
+        "listVersion": 1785745216,
+        "generatedAt": "2026-08-03T08:20:16Z",
+        "contentHash": "sha256-993798d99b7b10fb3a4b5a94a5ecf99f8e2331c6a4cbb60cd58d11375edde828"
       },
       {
         "kind": "manifest_scp-es",
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_scp-es.json",
         "schemaVersion": 2,
-        "listVersion": 1785082615,
-        "generatedAt": "2026-07-26T16:16:55Z",
-        "contentHash": "sha256-d9de5eccc7cefbb05d6cded2bd7e3299a4814fb8b726d4a46b52506ec986f64a"
+        "listVersion": 1785744908,
+        "generatedAt": "2026-08-03T08:15:08Z",
+        "contentHash": "sha256-fdd7de20f74b914dddaf527349fdce2739c7b800a06bc3f9866262d1c624fae3"
       },
       {
         "kind": "manifest_scp-int",
@@ -46,18 +46,18 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1785092358,
-        "generatedAt": "2026-07-26T18:59:18Z",
-        "contentHash": "sha256-c3faa4d3a3c2a4a36683dc8cbce1124509b0b07d2df827bbc357f2af71bffa34"
+        "listVersion": 1785745885,
+        "generatedAt": "2026-08-03T08:31:25Z",
+        "contentHash": "sha256-45b1141c647c7ce61be1ea482a0e11647bdfc6d59083088579e05a38fe1274c0"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1785092358,
-        "generatedAt": "2026-07-26T18:59:18Z",
-        "contentHash": "sha256-511913cd75a1a387885228cfee9293da0a0a160d2e5edfad0a3ce0ea9978dbae"
+        "listVersion": 1785745885,
+        "generatedAt": "2026-08-03T08:31:25Z",
+        "contentHash": "sha256-fc17e9281243976a43b0cadd424206c183d2e9081cf917b6b8b722e130167a86"
       }
     ],
     "seedReview": {
@@ -113,7 +113,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-a0fffd9d8271bc08041a84f2ed3f173eb8800b8746a4d462cba648e2f9e8e1ab"
+        "structureHash": "sha256-b520e265957682bb6b6e56774e341791a427b73a689123fdc2bd5520c660e47c"
       },
       "primaryArticles": [
         {
@@ -148,11 +148,13 @@
         },
         {
           "id": "sposob-grzybiarzy",
-          "title": "Caroll 099: El Modo de los Recogesetas",
+          "title": "sposob-grzybiarzy",
           "url": "https://lafundacionscp.wikidot.com/sposob-grzybiarzy",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por"
+          "contentKind": "goiFormat",
+          "os": 7,
+          "desc": "ARCHIVO ASRI: Documento de organización [DISUELTA] GDI CREADOR: GdI-001 \"El Espíritu de Chicago\" GDI RELACIONADO: GdI-571-20 \"Asociación Polaca de Setas Anómalas\" FECHA DE CREACIÓN: c. 1922 FECHA DE LA ÚLTIMA CORRECCIÓN DEL GDI: Enero de 1933 FECHA DE ADQUISIC…"
         },
         {
           "id": "mismos-ojos-distinto-paisaje",
@@ -257,7 +259,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por InnerAlchemy"
+          "os": 15,
+          "desc": "Un armazón de madera de ébano de 1 x 1.6 m tallado con intrincados patrones esotéricos en ambas caras, para su uso como mesa u otras superficies. Las personas que hagan uso de este armazón o se apoyen en él se verán incapaces de mentir u omitir información a v…"
         },
         {
           "id": "scp-es-257",
@@ -286,7 +289,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 19,
+          "desc": "Mi ficha se encuentra aqui. Link. Gracias por leer. Peligro: ¡Hipopótamos de Medellín! Hola, soy un Hipopótamo de Medellín. Soy casi idéntico a mis primos africanos y, de hecho, no soy muy diferente de ellos biológicamente. Básicamente, si sabes cómo es un hip…"
         },
         {
           "id": "scp-es-290",
@@ -315,7 +319,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 29,
+          "desc": "CASO 001001: Yateveo Palabras: 1810 palabras Tiempo de Lectura: ~7 minutos Escrito por: Dc_Yerko Más Artículos del Autor: ¡Click aquí!"
         },
         {
           "id": "ventanas-a-otro-mundo",
@@ -342,7 +347,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 40,
+          "desc": "Misión de Rescate: ¡El Pozo Espantozo! Palabras: 1572 palabras Tiempo de Lectura: ~6 minutos Escrito por: Dc_Yerko Más Artículos del Autor: ¡Click aquí!"
         },
         {
           "id": "scp-5227",
@@ -397,7 +403,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 35,
+          "desc": "Parece que ya he llegado a este lugar, hay muchas cosas que tengo que averiguar. Según el reloj ahora mismo son las 10 de la noche. Iré a buscar un restaurante más tarde, espero que haya alguno abierto. El viaje ha sido bastante movidito, así que espero que me…"
         },
         {
           "id": "doctor-muerte",
@@ -406,15 +413,18 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 57,
+          "desc": "Herman Fuller Presenta: El Doctor Muerte Palabras: 1616 palabras Tiempo de Lectura: ~6 minutos Escrito por: Dc_Yerko Más Artículos del Autor: ¡Click aquí!"
         },
         {
           "id": "operacion-ambar",
-          "title": "Operación Ámbar",
+          "title": "operacion-ambar",
           "url": "https://lafundacionscp.wikidot.com/operacion-ambar",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por"
+          "contentKind": "goiFormat",
+          "os": 26,
+          "desc": "Innecesarios. Se ha demostrado que SCP-ES-070-EX no posee propiedades anómalas."
         },
         {
           "id": "dossier-lph",
@@ -423,7 +433,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por y"
+          "os": 32,
+          "desc": "Esto es una prueba Y esto un cerdito Universo de Bolsillo/Ciudad-Estado La Pequeña Habana, comúnmente llamada Habanita, La Que Tiene Libertad (LQTL), o simplemente Habanados, es una ciudad-estado independiente y un enclave paranormal ubicado dentro de un unive…"
         },
         {
           "id": "scp-es-174",
@@ -462,7 +473,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 19,
+          "desc": "Mi ficha se encuentra aqui. Link. Gracias por leer. ARCHIVO ASRI: Grupo de Interés [EXTINTO] GDI-001: Espíritu de Chicago"
         },
         {
           "id": "scp-es-157",
@@ -501,7 +513,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 39,
+          "desc": "Peligro: ¡Igniciervos! Palabras: 1152 palabras Tiempo de Lectura: ~4 minutos Escrito por: Dc_Yerko Más Artículos del Autor: ¡Click aquí!"
         },
         {
           "id": "maria",
@@ -777,7 +790,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-f9a703087107739353f234284b327ef6104472b10eef5b6b6848d42667445e8c"
+        "structureHash": "sha256-835e52d60b8f28fb7928d93a3fa4c847f5a6198eda36f909970012061828cb12"
       },
       "primaryArticles": [
         {
@@ -787,7 +800,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- Por"
+          "os": 43,
+          "desc": "Vidnepas: Protectores de los Descendientes del Polvo Estelar SCP-ES-191 (por los Carceleros) Tochincitlalin (nombre en desuso) Conejos provenientes de las Estrellas Exolagomorfos (por los Carceleros)"
         },
         {
           "id": "la-ultima-noche-antes-del-comienzo",
@@ -1173,7 +1187,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-17a872be44a8c34080f3319225b309018c9449353e48781dad2bd44a78a0c160"
+        "structureHash": "sha256-a50c8974fb05453143d36f43532424f71315b9a1fe3b864fe3b266aed79e9cc2"
       },
       "primaryArticles": [
         {
@@ -1193,7 +1207,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- Las Divinidades de Tlaneyanco por"
+          "os": 22,
+          "desc": "Título: Los Cuatro Dragones Tonatiuh Autor: Luis Gm Creditos de imagen: dragón bajo la licencia BY-SA 2.0 Revisores: RevenantHeimdall does not match any existing user name, Eduteck y LazyLasagne"
         },
         {
           "id": "comienza-el-sueno-nuclear",
@@ -1270,7 +1285,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- ¡Levi! por"
+          "os": 27,
+          "desc": "Perfil de la Criatura: ¡Levi! Nombre: Levi Especie: Bathynomus giganteus (isópodo gigante) Cuidador Principal: Jorge Gutiérrez, Equipo Acuático"
         },
         {
           "id": "kte-2272-hogweed-van-allen-viridi",
@@ -1279,7 +1295,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- Ginkgo Ionizante por"
+          "os": 18,
+          "desc": "KTE-2272-Hogweed-Van Allen son plantas alteradas de la división Ginkgophyta, encontradas en 33°40′36′′N 106°28′32′′O, una zona de pruebas nucleares abandonada en el sur de Nuevo México, Estados Unidos de América. A diferencia de las especies no anómalas, el ci…"
         },
         {
           "id": "los-compositores",
@@ -1288,7 +1305,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- Los Compositores por"
+          "os": 16,
+          "desc": "Título: Los Compositores Autor: Luis Gm Creditos de imagen: OaxacaCatedral bajo dominio público Revisores: LazyLasagne, inv-labyrinth does not match any existing user name, oniricshogunsoldier y Amai-Ixchel"
         },
         {
           "id": "ambrose-tlaneyanco",
@@ -1297,7 +1315,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- Un Tour de Recuerdos Sabor y Radioactividades por"
+          "os": 18,
+          "desc": "Un par de meses atrás, cenando con mi amigo y compañero de trabajo, Sebastián LaCroix, hablábamos del destino de una de las más crecientes y dinámicas compañías en la cocina de lo desconocido: Restaurantes Ambrose. Me contó de su más reciente reseña de una de…"
         },
         {
           "id": "al-inframundo-y-de-regreso",
@@ -1409,7 +1428,7 @@
           "La Fundación SCP (SCP-ES)"
         ],
         "dropUnheadedMembers": true,
-        "structureHash": "sha256-8c1b1edb789b76705f8193ca56e8ecc37d8d7c97de71f5d84d507ca1eeff4dc6"
+        "structureHash": "sha256-f90f92b0d0f5fcab5c7f1aad3f777b761ee2b3366526809bd890e762e6c8722e"
       },
       "primaryArticles": [
         {
@@ -1429,7 +1448,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "\"Un pequeño dispositivo con un componente electrónico programable y un componente bioquímico de punción intravenosa o lumbar, utilizado para recordar por la fuerza recuerdos que han sido borrados de la mente del usuario.\" does not match any existing user name"
+          "os": 12,
+          "desc": "Un pequeño dispositivo con un componente electrónico programable y un componente bioquímico de punción intravenosa o lumbar, utilizado para recordar por la fuerza recuerdos que han sido borrados de la mente del usuario. El uso del artículo para recuperar memor…"
         },
         {
           "id": "scp-2821",
@@ -1929,7 +1949,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-ac78c70cc7ebf252c7c07e2103821a00c9820bf24dad2a286faef44f29c055bf"
+        "structureHash": "sha256-175c8d1c13b5d07e23cf84ccd8f60239a390b2ce23834fc7c0a8429b81581849"
       },
       "primaryArticles": [
         {
@@ -1965,7 +1985,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Modern_Erasmus"
+          "os": 5,
+          "desc": "Una Nueva era de la Magia La Victoria Prometida, Época de Tribulaciones, Tour de Conciertos del Resurgimiento de Que se Joda la Normalidad, Día del Juicio Final"
         },
         {
           "id": "scp-3731",
@@ -2324,7 +2345,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-1f27cecd2e8c8ddb3cac65370e8c8864da604cf09cc2d4a6c0ac810f071d5aab"
+        "structureHash": "sha256-6dfc500608cd11d7c0a2d8c06c244076169357c19008e4c54b5cf37c6c8282c9"
       },
       "primaryArticles": [
         {
@@ -2410,7 +2431,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Ralliston"
+          "os": 4,
+          "desc": "Los artículos son entidades humanoides, idénticas en compostura y fisiología a las de un Homo sapiens estándar no anómalo. Los artículos, que se presentan en conjuntos ordenados por sexo biológico, son siempre obedientes a su(s) propietario(s) vinculado(s) tau…"
         },
         {
           "id": "scp-4855",
@@ -3027,7 +3049,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-683c97fce8841e3286b84a3392b5f0671c6ecad44a44a6472c8fca3a1a4a56d3"
+        "structureHash": "sha256-100d4c3aec83c05dc1c1d5378247946fb0eb007713f1e5c3a311d0c1b4ee4177"
       },
       "primaryArticles": [
         {
@@ -3124,7 +3146,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Por"
+          "os": 2,
+          "desc": "Extracto de un diario recuperado por un soldado americano de un campo de batalla durante la Guerra de Corea de 1953. Marzo 10, 1945"
         },
         {
           "id": "scp-5353",
@@ -3272,7 +3295,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-712c9f35163b358351c1de5e24d60d7e32def612aab13182ce149999dad2f07e"
+        "structureHash": "sha256-fe1cdbe485387777e6ebd2e0c7c6d1897a558dc375c68c7c2d4bd42cad42eb16"
       },
       "primaryArticles": [
         {
@@ -3342,7 +3365,9 @@
           "url": "https://lafundacionscp.wikidot.com/jacklyn-diamandis-accountable-to-nobody",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 2,
+          "desc": "8 de junio, 1973 Jacklyn Diamandis. Jacklyn Scorpio Diamandis. Sale de mi lengua como una mierda. Si alguna vez el contrapunto más sucinto al imperio de Daevon caminara por la tierra, serían los Pactantes. Sólo los Daeva serían tan arrogantes como para violar…"
         },
         {
           "id": "scp-4886",
@@ -3390,7 +3415,9 @@
           "url": "https://lafundacionscp.wikidot.com/project-proposal-2014-1221",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 8,
+          "desc": "Premio: El Premio Salvatore Destinataria: Elisabeth Arturo Objetivo: Reconocer a los anartistas que utilizan lo anómalo para crear una pieza absurda, divertida o cómica."
         },
         {
           "id": "scp-952",
@@ -3442,7 +3469,9 @@
           "url": "https://lafundacionscp.wikidot.com/irregularity-proposal-2001-489",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 4,
+          "desc": "Descripción/Capacidades del Sospechoso Biografía/Preocupaciones Incidente Provocado Casos Asociados Identidad del Sospechoso: \"Anciano Rockwell\""
         },
         {
           "id": "scp-5994",
@@ -3460,7 +3489,9 @@
           "url": "https://lafundacionscp.wikidot.com/ambrose-backdoor-soho",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 6,
+          "desc": "Ambrose en BackDoor SoHo: ¡Gran Apertura! Buen Arte y Buenas Cenas En asociación con los Asociados Artísticos de BackDoor Soho, Marshall Carter & Dark LLC., y el colectivo artístico King of Hearts, Ambrose se enorgullece en presentar Ambrose BackDoor SoHo, una…"
         },
         {
           "id": "scp-654",
@@ -3868,7 +3899,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-06d0d2f11f1880397803249605c6cdc849eae1dc7d08170c06108fd653cddebf"
+        "structureHash": "sha256-9ef4a5e1fe76a59e0d0c748f9f4a7def6ed2009f9a4f547bf27d7dc922a6b5ed"
       },
       "primaryArticles": [
         {
@@ -3877,7 +3908,9 @@
           "url": "https://lafundacionscp.wikidot.com/mother-who-demands-ones-toes",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 15,
+          "desc": "Karcista Halyna Ieva El Azote del Hierro, la Madre que Exige los Dedos de los Pies, La Carne Que Comía, Subversión de las Expectativas Mekhánicas, La Hereje Fiel"
         },
         {
           "id": "lovataar-throne",
@@ -5035,7 +5068,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-db929e71308416406ab5be1d30e6aeeda2b78b7f83d1d7b151739b9acc23b977"
+        "structureHash": "sha256-a54832ad0f1600f557de8df3281e830293d580edb4cfd8e189e4ca48787831de"
       },
       "primaryArticles": [
         {
@@ -5071,7 +5104,9 @@
           "url": "https://lafundacionscp.wikidot.com/surgical-identity-perpetuation",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 9,
+          "desc": "MAGNA PETICIÓN PARA LA PERFECCIÓN DE LOS TRASPLANTES DE CEREBRO PARA LA PERPETUACIÓN DE LA IDENTIDAD COMO TRATAMIENTO PARA LA INMORTALIDAD DE PERSONAS DE EDAD AVANZADA"
         },
         {
           "id": "with-the-reaper-on-retirement",
@@ -5146,7 +5181,9 @@
           "url": "https://lafundacionscp.wikidot.com/hypnotraline",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 11,
+          "desc": "Los artículos son una mezcla de sustancias en polvo contenidas en cápsulas medicinales bicromas de color púrpura y negro. Cuando son ingeridas, los artículos inducen al sueño de ondas lentas (etapa 3 del sueño no REM) y reducen significativamente la frecuencia…"
         },
         {
           "id": "ii-tab-po-c-h20-qhs-prn-pain",
@@ -5206,7 +5243,9 @@
           "url": "https://lafundacionscp.wikidot.com/new-buteo-series-mechanical-exoskeleton",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 12,
+          "desc": "¡Soy Finn el Halcón, su amigo plumífero de Anderson Robotics! Estoy aquí para enseñarle todo sobre su nueva compra, el Exoesqueleto Mecánico de la Serie Buteo!"
         },
         {
           "id": "eat-your-greenes",
@@ -5325,7 +5364,9 @@
           "url": "https://lafundacionscp.wikidot.com/fifteenth-anonymous-donation",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 11,
+          "desc": "Gentilmente donado por un benefactor anónimo mediante un envío masivo. De Interés: médico, sueño, investigaciones en curso, amigable para el usuario, donación"
         },
         {
           "id": "scp-4935",
@@ -5510,7 +5551,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-c19d5e55b17e353a38952d181be49cc05a11e16eda78217c7a1cdf8d84a4e045"
+        "structureHash": "sha256-0eebc24c9ab2fa3e41613bf395434ee2bae298a002f2e1b64a587c15e4fff27b"
       },
       "primaryArticles": [
         {
@@ -5538,7 +5579,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Bestia de leyenda. Arruinador de todo. Kraken. Monstruo. Abominación. ( )"
+          "os": 9,
+          "desc": "Una gigafauna (de aproximadamente 100 metros de longitud) que muestra una mezcla de rasgos cefalopódicos y de cocodrilo. El plano corporal de la para-amenaza - con la excepción de la cabeza - era pentarradialmente simétrico. El cuerpo inferior de LTE-0851-Cetu…"
         },
         {
           "id": "a-foul-storm-in-a-fair-land",
@@ -5555,7 +5597,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "No juegues con tu comida. ( )"
+          "os": 6,
+          "desc": "Las huevas curadas en sal de la Entidad Aquamórfica Colosal que atacó la Isla Fey de Hy-Brasil en 1988. Cada huevo tiene aproximadamente 2 pulgadas y 1/4 de diámetro, es de color verde mar iridiscente, y se sirve mejor de forma individual como plato principal.…"
         },
         {
           "id": "the-dread-behemoth",
@@ -5564,7 +5607,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Un grandioso relato de heroísmo y espectáculo, y el trofeo de la lucha! ( )"
+          "os": 1,
+          "desc": "El Monstruoso Behemot Ven y sé testigo de uno de los espectáculos más horribles y extraños que el hombre haya visto jamás; ¡El enorme y no muerto corazón arrancado arrancado directamente del pecho de un Coloso Sobrenatural del Abismo! ¡Escucha la asombrosa his…"
         },
         {
           "id": "restless-dreams",
@@ -5581,7 +5625,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Buscando entre los escombros. ( )"
+          "os": 2,
+          "desc": "Reporte Inicial Prefacio del Evento/Ubicación Descripción de la Criatura/Habilidades Registro del Buró Copia electrónica a continuación, según la Ley de Registros Federales"
         },
         {
           "id": "squid-ispolin",
@@ -5590,15 +5635,18 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Cruzando titanes mientras tu mundo se derrumba a tu alrededor. ( )"
+          "os": 7,
+          "desc": "OSI \"CALAMAR ISPOLIN\" DIVISIÓN \"P\" DEPARTAMENTO III APROBADO 24.XII.1990 IMPRESIÓN NR: 1 FIRMADO .................. S JEFE DE DEPARTMENTO III-P-9-GRU D.NR: 7-I-1991 PERSONAL RESPONSABLE: Stanislav Nikolaev к.б.н. DETALLES: OSI \"CALAMAR ISPOLIN\" es la designaci…"
         },
         {
           "id": "analysis-of-the-plokamisuchus",
-          "title": "Análisis del Plokamisuchus",
+          "title": "analysis-of-the-plokamisuchus",
           "url": "https://lafundacionscp.wikidot.com/analysis-of-the-plokamisuchus",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "La autopsia de un dragón. ( )"
+          "contentKind": "goiFormat",
+          "os": 4,
+          "desc": "Análisis del Plokamisuchus Taumatología Unificada Trimestral Vol. 75, No. 4, Octubre 1988, pp. 33-40 Centro Internacional para el Estudio de la Taumatología Unificada Universidad de Swansea"
         },
         {
           "id": "scp-3741",
@@ -5653,7 +5701,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Mucho después del final, un intento de descubrir los sucesos. ( )"
+          "os": 9,
+          "desc": "El Mar Kaiju SCP-3534-02, La salvación de la Estrella, Mundo Acuático pero no el de Kevin Costner El Mar Kaiju es una versión de una realidad alternativa de la Tierra, cubierta casi completamente por océanos y habitada por colosales quimeras acuáticas y semiac…"
         },
         {
           "id": "storm-more-foul-land-less-fair",
@@ -5677,7 +5726,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Aún no hemos terminado con esto. ( )"
+          "os": 4,
+          "desc": "Presentado por Stanislav Nikolaev, д.б.н., 1991 La cantidad y magnitud de Agresores a Gran Escala (AGEs) a la normalidad y sociedad está creciendo a una escala sin precedente [1], siguiendo al notable ataque a Hy-Brasil en 1988. Aunque no ha ocurrido hasta aho…"
         },
         {
           "id": "scp-5391",
@@ -5712,7 +5762,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "\"Sr. Wilson, creo que nos hicimos amigos de un monstruo gigante.\" ( )"
+          "os": 2,
+          "desc": "Perfil de la Criatura: ¡Cappi! Nombre: Cappi Especie: ¡Mascota Encapsulada™ presentada por el Dr. Wondertainment!™ Cuidador principal: Quincy Ridge (algunas veces acompañado por Harper Ridge)"
         },
         {
           "id": "scp-5437",
@@ -5775,7 +5826,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Anderson Robotics busca sacar beneficios del apocalipsis, ¿qué podría salir mal?"
+          "os": 0,
+          "desc": "¡Soy Finn el Halcón, su amigo plumífero de Anderson Robotics! ¡Estoy aquí para enseñarle todo sobre su nueva adquisición, el Exoesqueleto de Defensa Kaiju Serie Púrpura!"
         },
         {
           "id": "long-live-the-queen",
@@ -5927,7 +5979,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-fbf3f806c5ff48cf91ae95fce69df987c6b870497a8c65cb1fec7c369b614987"
+        "structureHash": "sha256-27cb610aaabdd5c225fd21fd03db88aa2d27c9d13105d0f643a9f4802eeb1d82"
       },
       "primaryArticles": [
         {
@@ -6005,10 +6057,13 @@
         },
         {
           "id": "a-sympathetic-thorn-in-the-side-of-the-bookburners",
-          "title": "Una Espina Simpática en el Costado de los Quemalibros",
+          "title": "a-sympathetic-thorn-in-the-side-of-the-bookburners",
           "url": "https://lafundacionscp.wikidot.com/a-sympathetic-thorn-in-the-side-of-the-bookburners",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "goiFormat",
+          "os": 1,
+          "desc": "Una Espina Simpática en el Costado de los Quemalibros La Resistencia de Eurtec Las masas de Eurtec se han levantado contra sus opresores, los Quemalibros, quienes los harían ser pisoteados bajo sus altas torres. Abandonados por sus pastores hace mucho tiempo,…"
         },
         {
           "id": "halfway-lost",
@@ -6597,7 +6652,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-037ebeaf92f959530ad2393d6986ff6c4afb4e0d3046a25371de4383ac635c6f"
+        "structureHash": "sha256-2ccf6363f46fa8119c25bc538c4e9022ac74d46055620c1c4319e6692a06ffcb"
       },
       "primaryArticles": [
         {
@@ -6678,7 +6733,9 @@
           "url": "https://lafundacionscp.wikidot.com/para-puppies",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 10,
+          "desc": "Ya sea que busque un sedentario, un animal de exhibición o un nuevo mejor amigo, nuestro exclusivo pedigrí le garantizará una gran impresión. Usando los mismos procesos por los cuales creamos nuestros mundialmente famosos perros guardianes, hemos criado cachor…"
         },
         {
           "id": "reality-tv-designer-pets-and-fine-dining",
@@ -6783,7 +6840,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-1a35b62a4d854b60ba3b3a543275294dfe825c256b2cb5c0534ba8737f48e547"
+        "structureHash": "sha256-6aa63f9712615c7e770950ca34826444053b8fc5d5678361f80758f41f401bd8"
       },
       "primaryArticles": [
         {
@@ -6817,7 +6874,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "4 de diciembre, 2018, en otra vida"
+          "os": 6,
+          "desc": "Aviso: Para una parte de esta reseña, no es posible para mí decir cuán estrechamente lo que he escrito coincide con lo que realmente sucedió. Sin embargo, esta es una transcripción de mi experiencia, y aunque no sea del todo exacta a la realidad, es mi verdad,…"
         },
         {
           "id": "changes-at-site-18",
@@ -7598,7 +7656,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-7b0bdea36dc3156f52c9c67433202e06e243f7710dc3c7ec3524deb099d67116"
+        "structureHash": "sha256-c738516429ea778e4946d820857380f8215ac994f8cd2ad7f30e4984a0149417"
       },
       "primaryArticles": [
         {
@@ -7632,7 +7690,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "La humanidad siempre ha estado enamorada de espadas geniales. La Iniciativa Oculta Aliada tiene que asegurarse de que la Obskuracorps no influya en el curso de la guerra con una."
+          "os": 3,
+          "desc": "El artefacto es una espada de diseño similar a las armas de la antigua era vikinga. La hoja del objeto parece estar compuesta de acero y la empuñadura de oro, aunque no se han realizado pruebas para confirmar esto por el riesgo de invocar los hechizos taumatúr…"
         },
         {
           "id": "a-man-of-clay-and-men-formerly-men",
@@ -7715,7 +7774,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Marshall, Carter and Dark descubren que los cuernos de unicornio son unos contraconceptivos geniales, y llevan el inevitable horror del cuerpo equino a su conclusión lógica."
+          "os": 5,
+          "desc": "Los artículos son una forma en polvo de cuerno de unicornio, disponible en forma pura como cápsulas comestibles adecuadas para el consumo humano, y en una forma impura como bloques para su uso como pesticida industrial. Los elementos actúan como un poderoso an…"
         },
         {
           "id": "grant-request-for-utilization-of-electro-thaumic-computers-t",
@@ -7724,7 +7784,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Cómo lidiarías con una demanda creciente de exorcismos? Laboratorios Prometheus tiene la respuesta: construir un mejor exorcista."
+          "os": 7,
+          "desc": "MAGNA PETICIÓN PARA LA UTILIZACIÓN DE COMPUTADORAS ELECTROTÁUMICAS PARA REALIZAR EXORCISMOS DE ENTIDADES DEMONÍACAS La demanda de exorcismos sobrepasa en gran medida las capacidades de las instituciones religiosas humanas[1]. De no abordarse, el número de pers…"
         },
         {
           "id": "grant-request-for-genetically-engineering-low-cost-organic-a",
@@ -7733,7 +7794,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "\"Esclavo\" es un término muy anticuado. Preferimos el nombre Autómatas Totalmente Naturales™."
+          "os": 2,
+          "desc": "MAGNA PETICIÓN PARA AUTÓMATAS ORGÁNICOS DE BAJO COSTO CREADOS GENÉTICAMENTE DOTADOS DE IA PARA LABORES VARIAS PROBLEMA En la era industrial moderna, hay muchas tareas que los seres humanos considerarían desagradables, repetitivas, degradantes y/o peligrosas pa…"
         },
         {
           "id": "scp-4566",
@@ -7752,7 +7814,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Laboratorios Prometheus siempre había soñado en grande, y no hay nada que sea más grande que el espacio. Así que la conclusión lógica era construir una nave estelar potenciada por un agujero negro."
+          "os": 4,
+          "desc": "MAGNA PETICIÓN PARA LA CONSTRUCCIÓN DE UNA NAVE INTERESTELAR CIENTÍFICA Actualmente, el estudio de objetos extrasolares se limita a aquellos lo suficientemente grandes y lo suficientemente brillantes como para ser detectados con telescopios. La información que…"
         },
         {
           "id": "the-bard-of-ambrose",
@@ -7833,15 +7896,18 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "En 1988, Laboratorios Prometheus desenterró el cuerpo de un dios. Esto es lo que planearon hacer con él."
+          "os": 1,
+          "desc": "MAGNA PETICIÓN PARA INVESTIGAR LA APLICACIÓN DE CIERTOS ACTIVOS PARA SUPERAR LAS INHERENTES LIMITACIONES DEL CUERPO HUMANO"
         },
         {
           "id": "the-lord-of-endowments",
-          "title": "El Señor de las Dotaciones",
+          "title": "the-lord-of-endowments",
           "url": "https://lafundacionscp.wikidot.com/the-lord-of-endowments",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "El dios del transhumanismo."
+          "contentKind": "goiFormat",
+          "os": 3,
+          "desc": "La Ascensión del Hombre, El Creador de Dioses, Ophiomorphus, Azazel Está relacionado simbólicamente a otras figuras arquetípicas que se encuentran en los lindes entre animales, humanos y dioses. Estas similaridades pueden relacionarse a un origen común, o tal…"
         },
         {
           "id": "the-fountain-of-lamneth",
@@ -7911,11 +7977,13 @@
         },
         {
           "id": "portlands-roller-derby",
-          "title": "Equipos de Derby de Portland (Ordenados Por Qué Tanto Me Asustan)",
+          "title": "portlands-roller-derby",
           "url": "https://lafundacionscp.wikidot.com/portlands-roller-derby",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Tres Portlands tiene más equipos de roller derby per cápita que en cualquier otro lugar del mundo, y todos ellos hacen que me cague del miedo."
+          "contentKind": "goiFormat",
+          "os": 4,
+          "desc": "Odisea del Colegio Deer El Dólar se detiene aquí ORDENADOS EN RELACIÓN A LO MUCHO QUE ME ASUSTAN por la Corresponsal (No Oficial) de Deportes Sofia Haugen (⁂judgmentgay)"
         },
         {
           "id": "hypervelocity",
@@ -7932,7 +8000,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "[Continuidad Directa] — El texto de este hub está en plena continuidad con la Tercera Ley, aunque este estatus no se extiende automáticamente a los artículos vinculados."
+          "os": 16,
+          "desc": "Universo de Bolsillo/Ciudad-Estado La Ciudad de Tres Portlands, comúnmente llamada Tres Portlands, Tres Ports (3Ports), o simplemente Portlands, es una ciudad-estado independiente y un enclave paranormal ubicado dentro de un universo de bolsillo autónomo, acce…"
         }
       ],
       "supplementLinks": [],
