@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785653062,
-  "generatedAt": "2026-08-02T06:44:22Z",
-  "chunkRevision": "sha256-83dcf73f2d959c011cd55185ffa7a6350a6c9d9090ed55a143e78de98c7e8123",
+  "listVersion": 1785750501,
+  "generatedAt": "2026-08-03T09:48:21Z",
+  "chunkRevision": "sha256-574f15334403fb27b56cec40ef4cc5c0e2f37e9f8e550331465df699fbfb3a38",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785021855,
-        "generatedAt": "2026-07-25T23:24:15Z",
-        "contentHash": "sha256-477db80a8981e3b3c51acf75517456d3f34818db1312dc164dbc03e639be04bb"
+        "listVersion": 1785750501,
+        "generatedAt": "2026-08-03T09:48:21Z",
+        "contentHash": "sha256-287831cdd3c367f8a6714ba43021e8e6d15731e301e0e5e7bf7cf0a6857bf3a7"
       },
       {
         "kind": "manifest_scp-int",
@@ -21,34 +21,34 @@
         "schemaVersion": 2,
         "listVersion": 1784704164,
         "generatedAt": "2026-07-22T07:09:24Z",
-        "contentHash": "sha256-a1ba31ccf57cd1910e3316193e97bd6d3f5c1b4903a40538a09116aaa4f85e38"
+        "contentHash": "sha256-270e39e4916c640135f6f86730deb1b065a93ae9353e57557de15d24d696d92b"
       },
       {
         "kind": "manifest_scp-it",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-it.json",
         "schemaVersion": 2,
-        "listVersion": 1785391535,
-        "generatedAt": "2026-07-30T06:05:35Z",
-        "contentHash": "sha256-e804215c32fda815a9478510f2b19709fb4fc8e06e06ed0477174aa2099ecd40"
+        "listVersion": 1785750479,
+        "generatedAt": "2026-08-03T09:47:59Z",
+        "contentHash": "sha256-5fa0c554eaf23dc4e37994ccf1983cb00d1f1fe08d5909aecf4fb735297b3621"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1785391536,
-        "generatedAt": "2026-07-30T06:05:36Z",
-        "contentHash": "sha256-63158b8c32d82a287fbfb807f8b2085e4250448022fc69d5a1d9419ca01a6828"
+        "listVersion": 1785750479,
+        "generatedAt": "2026-08-03T09:47:59Z",
+        "contentHash": "sha256-67d423fe0e6f46829d06311206da5fe12340b241123ce8cfd729d637965af281"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1784810775,
-        "generatedAt": "2026-07-23T12:46:15Z",
-        "contentHash": "sha256-ab2f081334987da6275ee111cc9dc0bd4e39ed8e71e10ef9db5bde4e036ffbca"
+        "listVersion": 1785750417,
+        "generatedAt": "2026-08-03T09:46:57Z",
+        "contentHash": "sha256-5e3df7987b2b2a2ad81f4068a4e472839c960280bbe0b6cbd23f275b32023a35"
       }
     ],
     "seedReview": {
@@ -104,7 +104,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-af6f892f5d7a5c58c854d7c0dcd9b45e1c025ec352097f4b3c974196cf739b66"
+        "structureHash": "sha256-654ea467445a26c87bc0866b65f66d83a7cae86655ac527a9532d8093394e16e"
       },
       "primaryArticles": [
         {
@@ -222,18 +222,30 @@
       "description": "Fondazione SCP | Dip. IT AIAD <Artificial Intelligence Applications Division>",
       "articleSections": [
         {
-          "id": "01-info",
-          "title": "Info",
+          "id": "01-log-di-sistema-archiviati",
+          "title": "Log di Sistema Archiviati:",
           "articleIDs": [
             "alert-lockdown-initiated",
             "command-query-separation",
             "superencipherment",
             "clock-multiplier",
-            "null-terminating-string",
+            "null-terminating-string"
+          ]
+        },
+        {
+          "id": "02-resoconti-post-missione",
+          "title": "Resoconti Post-Missione:",
+          "articleIDs": [
             "hello-world",
             "hello-world-part-ii",
             "hello-world-part-iii",
-            "hello-world-part-iv",
+            "hello-world-part-iv"
+          ]
+        },
+        {
+          "id": "03-riferimenti",
+          "title": "Riferimenti:",
+          "articleIDs": [
             "scp-2987",
             "scp-2522",
             "scp-4790",
@@ -401,7 +413,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-6bd5635f243d9a58bc54c11cea996b2d455e1f4f2b14f1573b9b8ca00f7863d8"
+        "structureHash": "sha256-eddf6d91edca7b504d670afd0e9e4b8d408c8e3a9a8a81791588c4143203eb82"
       },
       "primaryArticles": [
         {
@@ -411,6 +423,13 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "2. Dagli Archivi del Sito-120 — di 3. Proposta di Pickman/Blank — di"
+        },
+        {
+          "id": "fresh-blood",
+          "title": "Sangue Fresco",
+          "url": "http://fondazionescp.wikidot.com/fresh-blood",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "tears-and-bone",
@@ -472,13 +491,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "fresh-blood",
-          "title": "Sangue Fresco",
-          "url": "http://fondazionescp.wikidot.com/fresh-blood",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-7278",
           "title": "La Furia di un Fae",
           "url": "http://fondazionescp.wikidot.com/scp-7278",
@@ -531,6 +543,7 @@
           "title": "Articoli più Recenti",
           "articleIDs": [
             "the-edge-of-all-light",
+            "fresh-blood",
             "tears-and-bone"
           ]
         },
@@ -552,36 +565,35 @@
           "id": "04-profilo-della-creatura-fuffi",
           "title": "Profilo della Creatura: Fuffi!",
           "articleIDs": [
-            "and-every-time-we-meet-again-hub",
+            "and-every-time-we-meet-again-hub"
+          ]
+        },
+        {
+          "id": "05-5-una-biblioteca-vuota",
+          "title": "5. Una Biblioteca, Vuota",
+          "articleIDs": [
             "o4-s-summit"
           ]
         },
         {
-          "id": "05-articoli",
+          "id": "06-articoli",
           "title": "Articoli",
           "articleIDs": [
             "secure-facility-dossier-site-120"
           ]
         },
         {
-          "id": "06-8-testimonianza-parte-2",
+          "id": "07-8-testimonianza-parte-2",
           "title": "8. Testimonianza - Parte 2",
           "articleIDs": [
             "scp-6596"
           ]
         },
         {
-          "id": "07-scp-pl-389-fornax-aeterna",
+          "id": "08-scp-pl-389-fornax-aeterna",
           "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
           "articleIDs": [
             "ambrose-esterberg"
-          ]
-        },
-        {
-          "id": "08-scp-7672-alla-corte-del-re-dei-goblin",
-          "title": "SCP-7672 - Alla Corte del Re dei Goblin",
-          "articleIDs": [
-            "fresh-blood"
           ]
         },
         {
@@ -836,7 +848,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-9ea5378c9425c0dffe1a6f18a95287324860482a362e3e9c76aa473b96ae1fb7"
+        "structureHash": "sha256-1d636ce4579d9d748f2e0dc8bea9c23ef2cc7227ff01e7a6622ad2f2de6f9678"
       },
       "primaryArticles": [
         {
@@ -1217,22 +1229,34 @@
           "id": "01-parte-zero-prima-della-ssm-alfa-9",
           "title": "PARTE ZERO: Prima della SSM Alfa-9",
           "articleIDs": [
-            "yesterday",
+            "yesterday"
+          ]
+        },
+        {
+          "id": "02-raccolta-dei-prologhi",
+          "title": "Raccolta dei Prologhi",
+          "articleIDs": [
             "snakes-and-ladders",
             "iquit",
-            "a-restless-wanderer-on-the-earth",
+            "a-restless-wanderer-on-the-earth"
+          ]
+        },
+        {
+          "id": "03-la-sequenza-del-serpente",
+          "title": "La Sequenza del Serpente",
+          "articleIDs": [
             "prisoners"
           ]
         },
         {
-          "id": "02-lincidente-zero-il-giorno-in-cui-tutto-cambio",
+          "id": "04-lincidente-zero-il-giorno-in-cui-tutto-cambio",
           "title": "L’Incidente Zero: il Giorno in cui Tutto Cambiò",
           "articleIDs": [
             "incident-zero-part-1"
           ]
         },
         {
-          "id": "03-parte-uno-il-nuovo-inizio",
+          "id": "05-parte-uno-il-nuovo-inizio",
           "title": "PARTE UNO: Il Nuovo Inizio",
           "articleIDs": [
             "immediate-actions",
@@ -1255,7 +1279,7 @@
           ]
         },
         {
-          "id": "04-parte-due-via-libera-alla-ssm-alfa-9",
+          "id": "06-parte-due-via-libera-alla-ssm-alfa-9",
           "title": "PARTE DUE: Via Libera alla SSM Alfa-9",
           "articleIDs": [
             "hellomuddah",
@@ -1276,7 +1300,7 @@
           ]
         },
         {
-          "id": "05-racconti-autonomi",
+          "id": "07-racconti-autonomi",
           "title": "Racconti Autonomi",
           "articleIDs": [
             "oh-seventy-six",
@@ -1290,7 +1314,7 @@
           ]
         },
         {
-          "id": "06-saghe",
+          "id": "08-saghe",
           "title": "Saghe",
           "articleIDs": [
             "resurrection-old-foes-hub"
@@ -1330,7 +1354,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-f0f01009402965a9b261c681deb3eb2df5c8f0c1e8a2656b64e340739fc4476d"
+        "structureHash": "sha256-3f51f3f2f6fe64d7ec503c57aa744f470a9c82e013ac7a3209e63a52eb513b09"
       },
       "primaryArticles": [
         {
@@ -1511,8 +1535,8 @@
       "description": "Storie su bestie senza scopo, e sul danno che hanno causato.",
       "articleSections": [
         {
-          "id": "01-le-storie",
-          "title": "Le Storie",
+          "id": "01-l-ascesa-e-la-caduta-della-house-of-spades-e-i-momenti-tra-la-due",
+          "title": "L'ascesa e la caduta della House of Spades, e i momenti tra la due.",
           "articleIDs": [
             "scp-5012",
             "scp-378",
@@ -1961,7 +1985,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-44f7f855ae0716bd849d218f48f7996e6a9798621f386cfbdcff7bcbca0b5723"
+        "structureHash": "sha256-d603521494afa90fc71328e43adfeab748f896bd309b44b1918e18e380ca66bd"
       },
       "primaryArticles": [
         {
@@ -2033,12 +2057,18 @@
             "empedocles",
             "primae-formae",
             "bloodlines",
-            "the-journal-of-k-m-sandoval",
+            "the-journal-of-k-m-sandoval"
+          ]
+        },
+        {
+          "id": "02-entrate-dal-concorso-rinascita-canoni",
+          "title": "Entrate dal Concorso Rinascita Canoni",
+          "articleIDs": [
             "scp-4614"
           ]
         },
         {
-          "id": "02-oggetti-dinteresse-aggiuntivi",
+          "id": "03-oggetti-dinteresse-aggiuntivi",
           "title": "Oggetti d’Interesse Aggiuntivi",
           "articleIDs": [
             "scp-2458",
@@ -2228,7 +2258,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-1475611ad0e906f6a30cee03384c988a19fad69035a6ffbf1bda5a837d45e576"
+        "structureHash": "sha256-6ab2cee2df83f981ce560ff475178eb555201eebf2b660126c3ca27d6167db24"
       },
       "primaryArticles": [
         {
@@ -2287,7 +2317,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-5cf8c4916edba263738138a2cb58c0c92dc6063eed714d71dc10ae62fc2ca395"
+        "structureHash": "sha256-08fdd7a03b69e13efd5b148c3bdefb93102710ecb561ce571c8119b0f6ef09fd"
       },
       "primaryArticles": [
         {
@@ -2346,7 +2376,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-246c0a154a25ee13300191d41fa50beb8938e95ecb3c642b78d46254b5811525"
+        "structureHash": "sha256-0d159b12bf280e71a0ae5576391e1207203249212125fef9e0facb61596872bd"
       },
       "primaryArticles": [
         {
@@ -2405,7 +2435,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-f39942d47edcd26a35f39b790362dc725adedddb1ffd2896ba2ffee5643add51"
+        "structureHash": "sha256-6c6cfe5aa50549e6b31351bb36c2ed85a52adbf03cf71d0cc907db58643ba124"
       },
       "primaryArticles": [
         {
@@ -2464,7 +2494,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-9eaaccb8d3d7d1c26e97b9d773726da971069ca030ddcec10f861821e44380e3"
+        "structureHash": "sha256-46d38d85990b67988c868af74e84804aa93431d6cd24fc1685f2102bddae248d"
       },
       "primaryArticles": [
         {
@@ -2582,7 +2612,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-ef501926ff947f3df996d9dce471fe6b8e3d7a0b24e5b531987ec17d98dac312"
+        "structureHash": "sha256-add8ead5d11840c03ec117c4cd12692ea65207aa85809dca91a79553a46b3525"
       },
       "primaryArticles": [
         {
@@ -2641,7 +2671,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-c342ec7010ec4e5b38f01d5006785944c57fab919de3700829a941e3631f63f4"
+        "structureHash": "sha256-6b53a2655a57558790e117e8f17a6b1aca4f3b55af2bed874511ee850d7987a4"
       },
       "primaryArticles": [
         {
@@ -2700,7 +2730,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-7c01d5cc8fd3561f6f76c379f6ff2eea9c6d5fd34106ff5ab441ec200282488d"
+        "structureHash": "sha256-8a9cebf25824313f2d53f3956e361cf0a8de49639e21cd5d3ba2c680c8c76a58"
       },
       "primaryArticles": [
         {
@@ -2759,7 +2789,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-1b7c47a4f8b598e3e4720de130fdc0489c8f038aa29ea18dc7143ae0d39cbcab"
+        "structureHash": "sha256-dc80056bfe868535092d682a5dc921e4111c4380e32ec8db31a339b1c9494e69"
       },
       "primaryArticles": [
         {
@@ -2818,7 +2848,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-519a5472cb36e131439a0fca07998b365577919f6fbf2196d812f2f175258aa6"
+        "structureHash": "sha256-2cd7e52f2633531467b87de42d83b1207989a26a0abf0e43feadb36d641301cb"
       },
       "primaryArticles": [
         {
@@ -2874,7 +2904,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-30add1010c5f9b1349e3f70a9afa1e0468037f864cf38bd2fe51e1aa6ecbf9c2"
+        "structureHash": "sha256-81677aa4a0c6f9734499f2997cd2be4c625a5a165668ea6f973070e3cb25ce6d"
       },
       "primaryArticles": [
         {
@@ -3051,7 +3081,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-2bc3ba934bf37778ea3a7f20725786754d78c0efd72574331d3ecd217096d6cf"
+        "structureHash": "sha256-a6b67d5018765abf556d3e6328cdf9266b887f39ec02471b58c608501a8a97e6"
       },
       "primaryArticles": [
         {
@@ -3225,7 +3255,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-187c0b74616bf05863d7573da3a8c32856e4c787b3962adde334f95e1cd4869d"
+        "structureHash": "sha256-9dc80c51cc546dd2d1767f61834560cda7ff58848df3aab204c51c7aab72aa47"
       },
       "primaryArticles": [
         {
@@ -3356,7 +3386,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-669aa4cc85b50e9e6d34348f9dd1c191574ea811c2697c483f3180ee53ff54c5"
+        "structureHash": "sha256-d5896fef5c9afad7032fce7d258a236da02026df9f48e30cc612d0c8fcd8b3a6"
       },
       "primaryArticles": [
         {
@@ -3415,7 +3445,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-8c31f1ed635a82b37c2aa9732cc9391d73410bf5df50141316c02a95ba5d8f1a"
+        "structureHash": "sha256-178307f2610ddfdb6ff12d7eddcddaeaa3f4e10201c50529123fc5adf6d01e5e"
       },
       "primaryArticles": [
         {
@@ -3474,7 +3504,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-922403b0555803f56ebce9cf3cdae3ae54bad54285d45e6242024f5c37187401"
+        "structureHash": "sha256-ff96fa557e743bc5012d6ac424187a94956eecdbb1ee5b35d2e8118097ca4670"
       },
       "primaryArticles": [
         {
@@ -3533,7 +3563,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-174db0a0e2dfb4e3294a2d6ed0cd01ddb8224d5d7829f092aa7d3a89bda24129"
+        "structureHash": "sha256-ff7823b31e67ccf285c4d1e41c983fbcb5d6f2829c3d6f6012e26c9da989ac00"
       },
       "primaryArticles": [
         {
@@ -3889,7 +3919,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-5588b0d2b5fb4b616c9d26c8f12d2de833d9bec7c7b11c2f715263e64f9001a6"
+        "structureHash": "sha256-f8c9b0aa30e0f7c2abc806fa6238feef61930a005418922de6e138d72562c729"
       },
       "primaryArticles": [
         {
@@ -3948,7 +3978,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-99453f3b55dcce934ed0615e3eccb68162db534851b4f4c88d30a110c10809df"
+        "structureHash": "sha256-90ce52c243542c9a922798b0482b85aca40dd210bfa871ec85edcbe70157345a"
       },
       "primaryArticles": [
         {
@@ -4007,7 +4037,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-988ff22b87c21d7f5f5dde446c77ef913564dbf6fc6a42131ad89947ab12da28"
+        "structureHash": "sha256-db2121e35e147f8642f8e5997857998f8b12220c5770505c94bfcff17a4addcd"
       },
       "primaryArticles": [
         {
@@ -4066,7 +4096,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-8675097befef7704690da10ff5458017e8caaca9cb3fb8504862cebe4e8a2e76"
+        "structureHash": "sha256-f98fae540cc400cb8f4ecb6083efe41cd43b6b29a1a2b065c17029aef7e94f9a"
       },
       "primaryArticles": [
         {
@@ -4125,7 +4155,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-996db71f935d40f50ca9fd7e1255d1597e638ae831969576f922e9f63e98a531"
+        "structureHash": "sha256-fc5a2606537ae6cc1b87990f1ec9dbec25f1a113ec2cdb65a8bb33e95400cdd6"
       },
       "primaryArticles": [
         {
@@ -4184,7 +4214,7 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-719f54fcf91a17dd8b88c605069273ecfffb112bb67b6c52f85ebb45aceb4cb4"
+        "structureHash": "sha256-a3029acdbf6e46af351eded667c315efd2b229d4f14b5782c27a5ce2e5fa09db"
       },
       "primaryArticles": [
         {
