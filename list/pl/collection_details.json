@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785653065,
-  "generatedAt": "2026-08-02T06:44:25Z",
-  "chunkRevision": "sha256-9d52425c1361a5d04da0b626906954dc919156127c4a2f256f6c98be8eb026c5",
+  "listVersion": 1785747522,
+  "generatedAt": "2026-08-03T08:58:42Z",
+  "chunkRevision": "sha256-170ba521797b02ebabfe6bd512345ee6d4c60297d7e84af4659cc83fbeff16d2",
   "builtFrom": {
     "manifests": [
       {
@@ -12,52 +12,52 @@
         "schemaVersion": 2,
         "listVersion": 1784998488,
         "generatedAt": "2026-07-25T16:54:48Z",
-        "contentHash": "sha256-c5cc82ee0a8a464de8a281e0c7d3b2e1b930fa327b818a2e39fd391f183a3b49"
+        "contentHash": "sha256-fde283b2888d48697b9ed8e6398f4ca9b0eacca897105195c377075119c2ed1c"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1785647462,
-        "generatedAt": "2026-08-02T05:11:02Z",
-        "contentHash": "sha256-5de98ed38c39cffbd89855ee547a114b3c1f8c8f8bde477179cec63e60d548b4"
+        "listVersion": 1785747335,
+        "generatedAt": "2026-08-03T08:55:35Z",
+        "contentHash": "sha256-c2d4698b20455b56fa982e3a3de4287e40031625e62c8b46a3407c5449284aa7"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1784706305,
-        "generatedAt": "2026-07-22T07:45:05Z",
-        "contentHash": "sha256-e6d790558c8b9d6713778b8dac0edf97929bfe6235c36689868107113d11bf39"
+        "listVersion": 1785746585,
+        "generatedAt": "2026-08-03T08:43:05Z",
+        "contentHash": "sha256-fa807924f26ffbf38379a3df47f07f4f35584028df43162fccbd28ff2531d676"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1784960770,
-        "generatedAt": "2026-07-25T06:26:10Z",
-        "contentHash": "sha256-4123bb38cb46267dd82dbde2188798e23ec03a4722cf7fb8f82eeefc1d5918df"
+        "listVersion": 1785747335,
+        "generatedAt": "2026-08-03T08:55:35Z",
+        "contentHash": "sha256-02c0e8792b8646f5dcd4305b614f2db24895ce1ab913f911b04923b06d623f7d"
       },
       {
         "kind": "manifest_scp-pl",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-pl.json",
         "schemaVersion": 2,
-        "listVersion": 1785391832,
-        "generatedAt": "2026-07-30T06:10:32Z",
-        "contentHash": "sha256-be8517a9ad53e403f05bf24b1571b34984df7fd172d9fa8aec549ec0c7e81556"
+        "listVersion": 1785747335,
+        "generatedAt": "2026-08-03T08:55:35Z",
+        "contentHash": "sha256-47f8d875df671bf2791011fcc3d92f9a2ce5a73fc8454766154e1c645e1859b7"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1784960770,
-        "generatedAt": "2026-07-25T06:26:10Z",
-        "contentHash": "sha256-9210c1a33d7b75a12c3527563494e0672a4a5d29a5a3d39816bb4aa40cdbd9ad"
+        "listVersion": 1785747335,
+        "generatedAt": "2026-08-03T08:55:35Z",
+        "contentHash": "sha256-eeabd5fd001ec3cc2919f54da8b2f6c47d0afc93d12ab1f9e5c1003476f5bd1c"
       }
     ],
     "seedReview": {
@@ -285,7 +285,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-90a10cc10363775ca28a38e4cc1859b450728549ba3cd7e9aba854f343ffba2d"
+        "structureHash": "sha256-ee54784f3d9f0d3fffde5762bb3d6204b9510c9aa1009e22b34f96c3af8d07d4"
       },
       "primaryArticles": [
         {
@@ -335,8 +335,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 24,
-          "desc": "autorstwa Calamari_Knight"
+          "os": 25,
+          "desc": "autorstwa Calamari_Knight — Chyba będzie burza — stwierdził Daniel Asheworth, patrząc przez okno Ośrodka 120. — Ta. Ale za to jaka burza — przytaknął Mark Kaufmann, spoglądając na powoli wyłaniającego się na horyzoncie olbrzymiego ciemnego cumulonimbusa. Nastą…"
         },
         {
           "id": "pierwsze-24-godziny-cz-1",
@@ -389,8 +389,11 @@
           "id": "stary-ale-jary",
           "title": "Stary ale jary",
           "url": "https://scp-pl.wikidot.com/stary-ale-jary",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "goiFormat",
+          "os": 15,
+          "desc": "Jaruna, Jarowit, Jary Bóg, SCP-████ Mityczne bóstwo czczone przed wiekami przez ludy słowiańskie, związane z pradawnymi kultami wegetacyjnymi i solarnymi. Przypisywano mu władzę nad młodością, płodnością, wiosną, a co niezwykłe — również nad wojną. Według prze…"
         },
         {
           "id": "scp-pl-258",
@@ -429,7 +432,7 @@
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 18,
+          "os": 19,
           "desc": "SCP-PL-353 znajduje się w prowizorycznej strefie przechowawczej podlegającej pod Ośrodek PL-154, znajdującej się na szczycie wzniesienia niedaleko Pustelni Św. Jana z Dukli w województwie podkarpackim. Mają do niej dostęp wszyscy pracownicy o poziomie upoważni…"
         },
         {
@@ -543,7 +546,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-fc112f8f0f118c1d73b2481e2167b881b1d3529ce6e3e028ca3e0e18af3b636e"
+        "structureHash": "sha256-8c6afc073a95ab113a1413128b42fbdd7ab1b4fa5274f93bd29893deb1757e06"
       },
       "primaryArticles": [
         {
@@ -598,7 +601,7 @@
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 18,
+          "os": 19,
           "desc": "SCP-PL-353 znajduje się w prowizorycznej strefie przechowawczej podlegającej pod Ośrodek PL-154, znajdującej się na szczycie wzniesienia niedaleko Pustelni Św. Jana z Dukli w województwie podkarpackim. Mają do niej dostęp wszyscy pracownicy o poziomie upoważni…"
         },
         {
@@ -637,7 +640,9 @@
           "url": "https://scp-pl.wikidot.com/vellus-aureum",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 11,
+          "desc": "Żywot pełen niespodzianek wybrałem sobie. Często, co prawda, goście kuryozalni trafiają mi się, lecz oddziału całego elektorskich raytarów z samego rana nie oczekiwałem. Ponoć zbiegów jakowyś szukali i poczęli wywracać domostwo me nogami do góry. Szczęśliwie o…"
         },
         {
           "id": "poczet-krolow-i-ksiazat-polskich-hub",
@@ -650,8 +655,11 @@
           "id": "stary-ale-jary",
           "title": "Stary ale jary",
           "url": "https://scp-pl.wikidot.com/stary-ale-jary",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "goiFormat",
+          "os": 15,
+          "desc": "Jaruna, Jarowit, Jary Bóg, SCP-████ Mityczne bóstwo czczone przed wiekami przez ludy słowiańskie, związane z pradawnymi kultami wegetacyjnymi i solarnymi. Przypisywano mu władzę nad młodością, płodnością, wiosną, a co niezwykłe — również nad wojną. Według prze…"
         }
       ],
       "supplementLinks": [],
@@ -721,15 +729,18 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-ac7b2fc22702935649e15cff7921575b283bf70949cca89393e7e4dc5a71e842"
+        "structureHash": "sha256-0c78d80ce31bb7830ef8d140e37db546430b84ef135e4c6715cbc7392b9dd7b7"
       },
       "primaryArticles": [
         {
           "id": "spowiedz-dozorcy-anonim",
-          "title": "Spowiedź dozorcy — Anonim [+9]",
+          "title": "Spowiedź dozorcy — Anonim",
           "url": "https://scp-pl.wikidot.com/spowiedz-dozorcy-anonim",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "goiFormat",
+          "os": 9,
+          "desc": "Ów \"D\" twierdził, że pracuje dla Fundacji SCP, specjalizując się w anomaliach międzywymiarowych. Nigdy co prawda nie zaznaczył, w jakim Ośrodku dokładnie pracuje, ale potwierdził, że cieszy się tam wysoką pozycją. Przyznaję, że na początku byłem dosyć sceptycz…"
         },
         {
           "id": "scp-pl-266",
@@ -787,7 +798,9 @@
           "url": "https://scp-pl.wikidot.com/gerard-drugi",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 17,
+          "desc": "Gerard z Ter'di, Gerard Nietutejszy( Jedenasty władca Królestwa Ter'di i przedostatni ze swojej dynastii, często określany jako król najlepszy, ale panujący za krótko. Za życia nie prowadził wielu wojen, tylko umacniał pozycję Królestwa, w czym znacznie pomaga…"
         },
         {
           "id": "narodziny-nowego-slonca",
@@ -824,8 +837,8 @@
       "description": "Poniższy hub kanonu obecnie przechodzi gruntowną przebudowę i przepisanie. W związku z tym niektóre informacje zawarte na tej stronie mogę być nieaktualne lub błędne. Po więcej informacji prosimy skontaktować się z głównym autorem kanonu, BlazingPie . Przebudowa powinna zostać zakończona w najbliższym czasie, dziękujemy za cierpliwość.",
       "articleSections": [
         {
-          "id": "01-lady-poudnia-hub",
-          "title": "Lądy Południa Hub",
+          "id": "01-najnowsza-praca",
+          "title": "NAJNOWSZA PRACA",
           "articleIDs": [
             "spowiedz-dozorcy-anonim"
           ]
@@ -838,8 +851,8 @@
           ]
         },
         {
-          "id": "03-sezon-pierwszy",
-          "title": "Sezon Pierwszy",
+          "id": "03-alea-iacta-est",
+          "title": "Alea Iacta Est",
           "articleIDs": [
             "klamka-zapadla",
             "scp-pl-045",
@@ -891,7 +904,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-fe8a59c76756d58cdb195349c0ad35016d5ee2e52a7f21d2d69fa2ca1d7a4bfa"
+        "structureHash": "sha256-c8e6fe6fc6fddcb432a040b434203290a6e319693a5bf891ed265f7baab3eb36"
       },
       "primaryArticles": [
         {
@@ -956,10 +969,13 @@
         },
         {
           "id": "samdaecheon-odin",
-          "title": "Oferta Samdaecheon: ODIN!",
+          "title": "samdaecheon-odin",
           "url": "https://scp-pl.wikidot.com/samdaecheon-odin",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "goiFormat",
+          "os": 17,
+          "desc": "Produkt powstały z myślą o wielu naszych klientach, którzy wspomagają swoją niepełnosprawność kończynami protetycznymi i nie tylko! Jeśli tego szukacie, to znaleźliście się w dobrym miejscu. \"ODIN\" to suplement diety w postaci odżywki białkowej (dostępny w sma…"
         },
         {
           "id": "tytan-ti74n",
@@ -967,7 +983,9 @@
           "url": "https://scp-pl.wikidot.com/tytan-ti74n",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 9,
+          "desc": "Tytan jest środkiem dopingującym na bazie zmodyfikowanej erytropoetyny (EPO) z anomalnie wbudowaną w jej cząsteczkę esencją konceptu matematyki kalkulacyjnej. Jego aplikacja polega na wcieraniu smarowidła w dziąsła, przez które substancja wnika do krwiobiegu,…"
         },
         {
           "id": "duszosiew-polnocny",
@@ -975,7 +993,9 @@
           "url": "https://scp-pl.wikidot.com/duszosiew-polnocny",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 11,
+          "desc": "Rzadki gatunek anomalnego kwiatu spotykany w Szkocji, Irlandii i na Hebrydach. Łodyga osiąga od 15 do 30 centymetrów długości, liście są okrągłe o postrzępionych krawędziach, a kwiaty kulistawo zamknięte, w kolorze bladoróżowym lub białym. Kwiaty są w stanie k…"
         },
         {
           "id": "scp-pl-318",
@@ -993,7 +1013,9 @@
           "url": "https://scp-pl.wikidot.com/kte-7881-staple-spiral-holistic-tardischild",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 16,
+          "desc": "KTE-7881-Staple-Spiral-Holistic-Tardischild to korporacyjne parazagrożenie w formie firmy sprzedającej specyfiki medycyny alternatywnej oraz altnormalnej [ 2 ] o nazwie MultiOil Sagl. Pomimo nazwy jasno wskazującej, że lokalizacją założenia i/lub zarejestrowan…"
         },
         {
           "id": "wewnetrzne-piekno",
@@ -1002,7 +1024,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 9,
+          "os": 10,
           "desc": "Profesora Kamińskiego na Oddziale Intensywnej Terapii Chronionej Strefy PL-22 nie trzeba było nikomu przedstawiać. Może i nie był widoczny zbyt często, ale i tak jego obecność i nadzór czuło się w każdym centymetrze kwadratowym podłogi, centymetrze sześciennym…"
         }
       ],
@@ -1061,7 +1083,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-2044f6cd0e6ef88e0408ee040a0b992c65e77fe3e7497c33ba7a50bf05da13d0"
+        "structureHash": "sha256-f55d14ce38382549781b8a5c0928189fb140d6d507f587627242fbed5f4c8e54"
       },
       "primaryArticles": [
         {
@@ -1101,7 +1123,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Malphas, pomocnik domowy, asystent oraz terapeuta idealnie dla ciebie — autorstwa"
+          "os": 17,
+          "desc": "Wszelkie urządzenia mobilne, na których zainstalowany jest SCP-1471, muszą zostać skonfiskowane i przeanalizowane celem znalezienia potencjalnych poszlak mogących wskazać na inne urządzenia, na które mógł oddziaływać obiekt. Po przeanalizowaniu urządzeń należy…"
         },
         {
           "id": "zlecenie-mef-2839",
@@ -1110,7 +1133,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Karabin szybkostrzelny \"Adramalech\", stworzony dla twoich potrzeb — autorstwa i"
+          "os": 8,
+          "desc": "12.03.2014 Cyców Klient: A.R.G.U.S. Inc. Typ usługi: Sprzedaż Specyfikację zlecenia: 14 zestawów broni typu \"Adramalech\" model 35. Dodatkowo przeszkolenie klienta z używania ww. broni."
         },
         {
           "id": "zimno-jak-w-piekle",
@@ -1139,7 +1163,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 3,
+          "os": 2,
           "desc": "autorstwa Zygard"
         },
         {
@@ -1445,7 +1469,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-92f3c97c43df00d100f4455831e4c6fbb8ab5402209aa77e7daf766f9189573a"
+        "structureHash": "sha256-957ca8f63c5db195c0cb2a05a85c4e0ef535ebe9159ade9ba2bfdcfd937b53d0"
       },
       "primaryArticles": [
         {
@@ -1468,24 +1492,32 @@
           "url": "https://scp-pl.wikidot.com/zlecenie-mef-7629",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 7,
+          "desc": "12/03/2023 Cyców Klient: Klient nr. 1138 Typ usługi: Sprzedaż Specyfikacje zlecenia: 5 kombinezonów maskujących \"Oni\" oraz 5 pistoletów typu \"Rokita\". Dodatkowo przeszkolenie klienta z ww. broni."
         }
       ],
       "supplementLinks": [],
       "description": "Jeden wybór dwa światy płodzi Lustrzany arras swobodzi Egida Vanguard oświeca Gdy Przełom znaczy drogę…",
       "articleSections": [
         {
-          "id": "01-os-czasu-przeomu",
-          "title": "OŚ CZASU PRZEŁOMU",
+          "id": "01-nobody-s-looking-for-trouble",
+          "title": "Nobody's Looking For Trouble",
           "articleIDs": [
             "a-trip-down-memory-lane"
           ]
         },
         {
-          "id": "02-os-czasu-vanguard",
-          "title": "OŚ CZASU VANGUARD",
+          "id": "02-with-many-choices",
+          "title": "With Many Choices",
           "articleIDs": [
-            "voice-of-vanguard",
+            "voice-of-vanguard"
+          ]
+        },
+        {
+          "id": "03-i-did-not-fade",
+          "title": "I Did Not Fade",
+          "articleIDs": [
             "zlecenie-mef-7629"
           ]
         }
@@ -1623,16 +1655,18 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-ddf234c0d34f99b0118796ebf3d8a74733667ed99b3bc1cf93dc43bfd96db172"
+        "structureHash": "sha256-d2ab2d66d02ad70aaa13b0a64a41cf4b3ca8d13580ca30566715ab7f26479445"
       },
       "primaryArticles": [
         {
           "id": "project-proposal-2012-120",
-          "title": "Sztuka to droga ucieczki",
+          "title": "Propozycja projektu 2012-120: \"Sztuka to droga ucieczki\"",
           "url": "https://scp-pl.wikidot.com/project-proposal-2012-120",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": ">rozpakowywanie C00L_war_2_ru1z_fr0m_y0ur_gr4ve.7z Wyodrębnianie 232 Plików… Wyodrębniono! >del C00L_war_2_ru1z_fr0m_y0ur_gr4ve.7z Usuwanie… Usunięto! >dir > 001. Cool War: Death & Rebirth (Summary) > 002. The Dawn Of A New Era > 003. Where Fearful Feet Dare Not Tread > 004. wowwee un kill ursefl > 005. Deconstruction Of A God > 006. Fifty Percent Off Everything > 007. The Snipper Reborn > 008. Joey And Overgang And Rita And Molly And Zombies > 009. You Did What? > 010. Noxious Fumes Fill The Area > 011. Potential Tradeoffs > 012. The Second Cool War Begins > 013. I Can See The Light > 014. The Madness Sets In Fast > 015. Antidisestablishmentarianism > 016. Pork Crackling Is Repulsive > 017."
+          "contentKind": "goiFormat",
+          "os": 3,
+          "desc": "Autor: Phillip Willis Tytuł: Sztuka to droga ucieczki Wymagane materiały: Duża klatka wzmocniona utwardzonym aluminium lub tytanem (wymagana jedna);"
         }
       ],
       "supplementLinks": [],
@@ -1679,7 +1713,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-76914976054a58341d954d3c8629e4d9d2f870b52b6b91c363a541c87fc109f9"
+        "structureHash": "sha256-c89ceddb493e63426c4a9f4407cf93c0a1d9725eca5c75be88f4e4ac325a5629"
       },
       "primaryArticles": [
         {
@@ -1689,7 +1723,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Autorstwa Ralliston"
+          "os": 3,
+          "desc": "Podmioty są humanoidalnymi bytami, identycznymi pod względem budowy i fizjologii ze standardowymi nieanomalnymi przedstawicielami Homo sapiens . Dostarczane w zestawach posortowanych według płci biologicznej, podmioty są całkowicie posłuszne swojemu związanemu…"
         },
         {
           "id": "scp-4936",
@@ -1890,7 +1925,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-7266d49e3b4a14226031a33f50cb8d5d8919f27fc216ab1f1f169faef8b54315"
+        "structureHash": "sha256-05c3018578e038f6119050cc761e0c3eea8e98c54ced88e2eb7bfb71d86a37f4"
       },
       "primaryArticles": [
         {
@@ -1923,7 +1958,9 @@
           "url": "https://scp-pl.wikidot.com/surgical-identity-perpetuation",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 4,
+          "desc": "Obecnie, ciało kontynuuje proces starzenia się normalnie nawet, jeżeli mózg się nie starzeje. Ta warunkowa nieśmiertelność wprowadza nowy zestaw komplikacji. Rozważmy obecne tempo rozkładu ciała, nieograniczone przez choroby i środowisko:"
         },
         {
           "id": "with-the-reaper-on-retirement",
@@ -1979,7 +2016,9 @@
           "url": "https://scp-pl.wikidot.com/hypnotraline",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 5,
+          "desc": "Przedmioty są mieszaniną sproszkowanych substancji zawartych w dwukolorowych, fioletowo-czarnych kapsułkach leczniczych. Po połknięciu przedmioty wywołują sen wolno-falowy (faza 3 nie-REM snu) i znacznie obniża tętno, oraz metabolizm w stosunku do tego, co jes…"
         },
         {
           "id": "scp-4514",
@@ -2017,14 +2056,6 @@
           "contentKind": "scp",
           "os": 5,
           "desc": "SCP-6872 ma zostać aktywowany tylko jako ostatnia deska ratunku w przypadku nieuchronnego wystąpienia globalnego Scenariusza Klasy K. Aktywacja SCP-6872 wymaga pilnej autoryzacji większości członków Rady O5. Osoby nienależące do Rady O5, próbujące uzyskać dost…"
-        },
-        {
-          "id": "ambrose-thorn-valley",
-          "title": "Ambrose Dolina Cierni",
-          "url": "https://scp-pl.wikidot.com/ambrose-thorn-valley",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat"
         }
       ],
       "supplementLinks": [],
@@ -2060,8 +2091,7 @@
           "articleIDs": [
             "impossible-to-destroy-reptile",
             "scp-4322",
-            "scp-6872",
-            "ambrose-thorn-valley"
+            "scp-6872"
           ]
         }
       ]
@@ -2098,7 +2128,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-0222853d769ab7ff2e7ade82d6913faa1009c6843b90f3fe301dd5467ed89ffe"
+        "structureHash": "sha256-996b58565938bfab946af9be22f1b6cca3769951ae85e5e30981ade54d85c023"
       },
       "primaryArticles": [
         {
@@ -2178,7 +2208,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "ROUNDERHOUSE"
+          "os": 4,
+          "desc": "Fragment dziennika pozyskanego z pola walki przez żołnierza Sił Zbrojnych Stanów Zjednoczonych z czasów wojny w Korei w 1953."
         },
         {
           "id": "scp-5353",
@@ -2266,7 +2297,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-a8d6920c2321e02a14f48ce2b5e1fb440b9f19bf591b45c6c56b920aaca9fd42"
+        "structureHash": "sha256-590d24b623fe7e3b8cb9f9df3c518ee4d794d6b7187cb525283ce857cc38afb7"
       },
       "primaryArticles": [
         {
@@ -2353,8 +2384,8 @@
           ]
         },
         {
-          "id": "03-inne-opowiadania",
-          "title": "Inne opowiadania",
+          "id": "03-prace-konkursowe-na-renesans-kanonow",
+          "title": "Prace konkursowe na Renesans Kanonów",
           "articleIDs": [
             "scp-012"
           ]
@@ -2600,7 +2631,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-74241c707c018436fa81d2551439dab8de5924c0fa24f505d9edc1aec75cf5a6"
+        "structureHash": "sha256-6c7fa33dd7484a34f6492c527dc4d4bdb771629c64023776d6767c9bcd6f73c9"
       },
       "primaryArticles": [
         {
@@ -2610,7 +2641,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "OTWÓRZ PLIK: Profil Zwierzaka: Genghis!"
+          "os": 3,
+          "desc": "Profil Zwierzaka: Genghis! Imię: Genghis Gatunek: Chortoicetes terminifera (Australijska Szarańcza Dżumy) Główny Opiekun: Zespół Naziemny, Karl Heller"
         },
         {
           "id": "scp-4991",
@@ -2902,7 +2934,7 @@
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
         "allowUntaggedMembers": true,
-        "structureHash": "sha256-73bccdc7102906b04c0a2a7934818b8d8996a64efca73efdb86603053e8df98b",
+        "structureHash": "sha256-88ab508587f2b6f234cc5b8fbf1b4c5e3c24d89be98a41a5fac4e16d2d18bf28",
         "verifiedEmpty": true,
         "allowEmpty": true
       },
@@ -3095,7 +3127,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-41e56ee0c5cddd8385b5a5951058b8d39eb2ff75c13363cbe700e4d6db749474"
+        "structureHash": "sha256-dceb882c8aadc8067a58fbf68f57a543c878b62052c0064876a42aa495bc1f52"
       },
       "primaryArticles": [
         {
@@ -3113,7 +3145,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Bestia z legendy. Niszczyciel wszystkiego. Kraken. Potwór. Abominacja. ( )"
+          "os": 9,
+          "desc": "Gigafauna (mierząca około 100 metrów długości) wykazująca mieszankę cech krokodylowych i głowonogów. Budowa ciała parazagrożenia - z wyjątkiem głowy - był pentaradalnie symetryczny. Dolna część ciała LTE-0851-Cetus zakończona była pięcioma mackami, ułożonymi p…"
         },
         {
           "id": "a-foul-storm-in-a-fair-land",
@@ -3130,7 +3163,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Nie baw się swoim jedzeniem. ( )"
+          "os": 4,
+          "desc": "Peklowana ikra Kolosalnego Bytu Akwamorficznego, który zaatakował w 1988 roku zamieszkałą przez Fae wyspę Hy-Brasil. Każde jajo posiada 2 1/4 cala średnicy, jest koloru opalizującej morskiej zieleni. Najlepiej je podawać oddzielnie jako przystawkę. Obecnie dos…"
         },
         {
           "id": "the-dread-behemoth",
@@ -3139,7 +3173,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Wspaniała opowieść o heroizmie i przedstawieniu, oraz trofeum walki! ( )"
+          "os": 4,
+          "desc": "Przerażający Behemot Przerażającego Przyjdźcie i ujrzyjcie jeden z najbardziej odrażających i dziwacznych spektakli, jakie człowiek kiedykolwiek widział; olbrzymie, nieumarłe serce wyrwane z piersi Kosmicznego Kolosa z Otchłani! Usłysz zadziwiającą opowieść o…"
         },
         {
           "id": "about-deer",
@@ -3217,16 +3252,18 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-1e767f473a63267df408645254afa35756f663f04a3d074b6b24aa252f69bd7f"
+        "structureHash": "sha256-8be3de3199e0f67c1c48dacdc0008a11b531e35f937a38664290b9c0acca4aea"
       },
       "primaryArticles": [
         {
           "id": "project-proposal-2012-120",
-          "title": "1. Propozycja projektu 2012-120: \"Sztuka to droga ucieczki\"",
+          "title": "Propozycja projektu 2012-120: \"Sztuka to droga ucieczki\"",
           "url": "https://scp-pl.wikidot.com/project-proposal-2012-120",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "2. SCP-7532 — autorstwa/przełożenia 3. SCP-PL-400 — autorstwa/przełożenia"
+          "contentKind": "goiFormat",
+          "os": 3,
+          "desc": "Autor: Phillip Willis Tytuł: Sztuka to droga ucieczki Wymagane materiały: Duża klatka wzmocniona utwardzonym aluminium lub tytanem (wymagana jedna);"
         },
         {
           "id": "ralliston-s-proposal",
@@ -3274,11 +3311,13 @@
         },
         {
           "id": "wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
-          "title": "WNIOSEK O DOTACJĘ NA OPRACOWANIE ŚRODKA PRZECIWKO ALERGII NA ŻELAZO WYSTĘPUJĄCEJ U PRZEDSTAWICIELI GATUNKU HOMO SAPIENS SIDHE",
+          "title": "wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
           "url": "https://scp-pl.wikidot.com/wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Czasami, by zwalczyć chorobę, wystarczy tylko uwięzić starożytne bóstwo i zrobić z niego bateryjkę. — autorstwa i"
+          "contentKind": "goiFormat",
+          "os": 13,
+          "desc": "Autorstwa Dr. Shanahan R'yann, 1908 r. Szacuje się, że aż jedna dziesiąta nie-arystrokratycznych przedstawicieli gatunku Fae (Homo sapiens sidhe) boryka się z nadwrażliwą reakcją alergiczną na żelazo, metal nie tylko stosowany praktycznie w każdej dziedzinie ż…"
         },
         {
           "id": "historia-polskiego-projektu-przechowawczego",
@@ -3297,7 +3336,7 @@
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 43,
+          "os": 44,
           "desc": "Wszystkie osoby, które doświadczyły manifestacji SCP-PL-399 nie żyją, działają w anomalnych organizacjach albo są zintegrowane w anomalną społeczność. Ze względu na ten fakt, dodatkowe czynności przechowawcze wobec SCP-PL-399 są całkowicie niepotrzebne poza st…"
         },
         {
@@ -3337,7 +3376,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "To, co umarło, takie pozostanie, bez względu na to, jak bardzo chcielibyśmy zakłócić jego wieczny odpoczynek. — autorstwa i , przełożone przez"
+          "os": 4,
+          "desc": "W związku z ostatnimi wydarzeniami, Profil Zwierzaka dla naszego dobrego pieska Sparky'ego nie jest już aktualny. Postaram się osobiście zaktualizować go o istotne informacje dotyczące jego i naszego gościa w ciągu najbliższych kilku dni. Po prostu muszę przez…"
         },
         {
           "id": "scp-5314",
@@ -3424,7 +3464,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Desperacja zmienia każdego. Nawet boga. — autorstwa"
+          "os": 3,
+          "desc": "Ośrodek 120 nie był cichym miejscem. Praktycznie od początku swojego istnienia zawsze był wypełniony jakimś hałasem. Z początku były to szelesty kartek nowo odkrytej biblioteki SCP-5292, na której szczycie później powstał Ośrodek, wypełnione gorączkowymi próba…"
         },
         {
           "id": "the-deathless-merchant-of-london",
@@ -3433,7 +3474,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Wyznawcy Węża mają dość MC&D, więc biorą sprawę w swoje Ręce. — autorstwa"
+          "os": 4,
+          "desc": "Nieśmiertelny Kupiec z Londynu Percival Darke Ten, który targował się ze Śmiercią Przedsiębiorca PoI-012-1 Ojciec Ciemności \"Ten skurwysyn\""
         },
         {
           "id": "boletus-aridas",
@@ -3442,7 +3484,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Kiedy kilku grzybiarzy przypadkowo odkrywa jeden z najbardziej anomalnych obszarów na terenie całej Polski, Fundacja jest zmuszona nawiązać z nimi współpracę. — autorstwa SCP-PL-252: Zawodowe Grzybobranie — Okazuje się, że przeszłość po prostu nie ma sensu. — autorstwa"
+          "os": 10,
+          "desc": "Autorstwa Jasiu06 Podany dokument został zdobyty od Zbigniewa Nowaka, agenta GoI-571-20 (\"Polskiego Związku Grzybiarstwa Anomalnego\") podczas wstępnej interwencji agentów Fundacji z Ośrodka 120 w sprawie SCP-PL-252 dnia 11.07.2015 roku."
         },
         {
           "id": "scp-pl-252",
@@ -3575,8 +3618,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 24,
-          "desc": "autorstwa Calamari_Knight"
+          "os": 25,
+          "desc": "autorstwa Calamari_Knight — Chyba będzie burza — stwierdził Daniel Asheworth, patrząc przez okno Ośrodka 120. — Ta. Ale za to jaka burza — przytaknął Mark Kaufmann, spoglądając na powoli wyłaniającego się na horyzoncie olbrzymiego ciemnego cumulonimbusa. Nastą…"
         },
         {
           "id": "scp-pl-121-j",
@@ -3619,7 +3662,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Niektórzy ludzie są patologicznie uzależnieni od kontroli. Naprawdę szkoda, że najbardziej wpływowy właściciel firmy na świecie jest jednym z takich drani. — autorstwa"
+          "os": 7,
+          "desc": "12/03/2023 Cyców Klient: Klient nr. 1138 Typ usługi: Sprzedaż Specyfikacje zlecenia: 5 kombinezonów maskujących \"Oni\" oraz 5 pistoletów typu \"Rokita\". Dodatkowo przeszkolenie klienta z ww. broni."
         },
         {
           "id": "scp-6747",
@@ -3671,8 +3715,8 @@
           ]
         },
         {
-          "id": "03-fundamenty",
-          "title": "Fundamenty",
+          "id": "03-1939",
+          "title": "????-1939",
           "articleIDs": [
             "cos-tu-smierdzi",
             "wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
@@ -3680,8 +3724,8 @@
           ]
         },
         {
-          "id": "04-trzy-wielkie-wojny",
-          "title": "Trzy Wielkie Wojny",
+          "id": "04-1939-2000",
+          "title": "1939-2000",
           "articleIDs": [
             "scp-pl-399",
             "scp-pl-259",
@@ -3696,8 +3740,8 @@
           ]
         },
         {
-          "id": "05-zmiany-na-lepsze",
-          "title": "Zmiany na Lepsze",
+          "id": "05-2000-2021",
+          "title": "2000-2021",
           "articleIDs": [
             "scp-5464",
             "gaslight-gatekeep-girlboss-hub",
@@ -3723,8 +3767,8 @@
           ]
         },
         {
-          "id": "06-koniec-ery",
-          "title": "Koniec Ery",
+          "id": "06-2021",
+          "title": "2021+",
           "articleIDs": [
             "money-game",
             "the-edge-of-all-light",
@@ -3912,7 +3956,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-7ccc9515cf33d8b48bdb2bffe94afe6641e87ec5484f4a6cedf6f2d1e5da2ef9",
+        "structureHash": "sha256-37bbd778610eca5ee2169bf0e8211c148ca72c4b402749d960b22a1b12bec65a",
         "verifiedEmpty": true,
         "allowEmpty": true
       },
@@ -4682,6 +4726,13 @@
           "id": "na-ostatni-guzik",
           "title": "Na ostatni guzik",
           "url": "https://scp-pl.wikidot.com/na-ostatni-guzik",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "stary-ale-jary",
+          "title": "Stary ale jary",
+          "url": "https://scp-pl.wikidot.com/stary-ale-jary",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
