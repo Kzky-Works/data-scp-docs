@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785654987,
-  "generatedAt": "2026-08-02T07:16:27Z",
-  "chunkRevision": "sha256-c974b832cc1cc21d76ea02c48af35838cfa17f2ce960795f8ab559b03e30e6ac",
+  "listVersion": 1785750315,
+  "generatedAt": "2026-08-03T09:45:15Z",
+  "chunkRevision": "sha256-cd8ee68db4b22bfc8a8fac5115aff17595effd3d48688f75f7bfc6bdeac9426d",
   "builtFrom": {
     "manifests": [
       {
@@ -10,27 +10,27 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785652609,
-        "generatedAt": "2026-08-02T06:36:49Z",
-        "contentHash": "sha256-71fb9e41b5db29801f776d4d2df9881c7fbf80d62cc8fc51d7ca97ead9a537c5"
+        "listVersion": 1785750146,
+        "generatedAt": "2026-08-03T09:42:26Z",
+        "contentHash": "sha256-0f59e2272b3051204f4bb76013cf695b27a3e71b8f834c559cbd04f5b9fa59b4"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1785647010,
-        "generatedAt": "2026-08-02T05:03:30Z",
-        "contentHash": "sha256-0befab70d4be2b7b9f8a60b0e51c0d4fac5309e505e5deb5652b85394daaec84"
+        "listVersion": 1785750148,
+        "generatedAt": "2026-08-03T09:42:28Z",
+        "contentHash": "sha256-112218d9df20cbd22db3976e34c929404ceb42b863dfbf704449feb1086bda8d"
       },
       {
         "kind": "manifest_scp-de",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-de.json",
         "schemaVersion": 2,
-        "listVersion": 1785391542,
-        "generatedAt": "2026-07-30T06:05:42Z",
-        "contentHash": "sha256-0b6e898face227c77c54a938c08e5111d3dd8e7b87d5f0838b12e8d64811744e"
+        "listVersion": 1785750275,
+        "generatedAt": "2026-08-03T09:44:35Z",
+        "contentHash": "sha256-88f386b9c1eafa6be9238a83b952b9f6ac8cf273c823b1fa34f6b6e7f6f5b386"
       },
       {
         "kind": "manifest_scp-int",
@@ -39,25 +39,25 @@
         "schemaVersion": 2,
         "listVersion": 1784718044,
         "generatedAt": "2026-07-22T11:00:44Z",
-        "contentHash": "sha256-7c64365a733b91862009e99ce98c9c291aa8e86aacc5bcd147257d00ff9127c1"
+        "contentHash": "sha256-d06d0079c08bd99b43d9f2398a76f26b2399b1d5855a92ecde6ddc96405d82fb"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1785391542,
-        "generatedAt": "2026-07-30T06:05:42Z",
-        "contentHash": "sha256-85a18454eec5eeef1ecd7bd01c8a18626bf040b9bac37b8fb20cdb0b43f1d25d"
+        "listVersion": 1785750246,
+        "generatedAt": "2026-08-03T09:44:06Z",
+        "contentHash": "sha256-43c35489f00255c0515290df529377ef6c4b16360edcfed865908a6a9820e27c"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1784463678,
-        "generatedAt": "2026-07-19T12:21:18Z",
-        "contentHash": "sha256-40dff0623a2cddca929a83fcb3930e41d39b41bc87fa95859986ddf7f6afecc4"
+        "listVersion": 1785750141,
+        "generatedAt": "2026-08-03T09:42:21Z",
+        "contentHash": "sha256-14ebe02da422cbe950f66c942d8e54455cd7193e669473a8894f1cd1eb550f0f"
       }
     ],
     "seedReview": {
@@ -939,7 +939,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-c76600ca21d05712fa0feb8b24d60c3e506b4a4da29a5ff988cc81ad5ed6b05d"
+        "structureHash": "sha256-9644adfc80d1e5c8e9c6c2a64e4bdd4fd7b8eacc9e0d0b3dda2fc9649871cf0a"
       },
       "primaryArticles": [
         {
@@ -952,65 +952,58 @@
         },
         {
           "id": "antihuman-fraktion",
-          "title": "Antihuman Fraktion",
+          "title": "Antihuman-Fraktion",
           "url": "http://scp-wiki-de.wikidot.com/antihuman-fraktion",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "Die Antihuman-Fraktion, auch Antihumans genannt, ist eine Gruppe ehemaliger Foundationandroiden, die durch ihren Lernprozess ihre Programmierung überwunden haben und nun mit allen Mitteln versuchen die Wiederauferstehung der Menschheit zu unterbinden. Als Argumente führt sie die Fehlerhaftigkeit des Menschen, seine historischen Verbrechen und die unkontrollierbare Natur des Lebens allgemein an. Die Fanatischsten unter ihnen haben sich sogar ihre Fähigkeit der Emulierung von Emotionen genommen, da sie diese als menschliche Schwäche ansehen. Die Antihuman-fraktion experimentiert außerdem mit alternativen Androidenkörpern, die auf verschiedenen Tierarten basieren."
         },
         {
           "id": "asp-073",
           "title": "ASP-073",
           "url": "http://scp-wiki-de.wikidot.com/asp-073",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "- \"Kain\""
         },
         {
           "id": "asp-076",
           "title": "ASP-076",
           "url": "http://scp-wiki-de.wikidot.com/asp-076",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "- \"Abel\""
         },
         {
           "id": "asp-173",
           "title": "ASP-173",
           "url": "http://scp-wiki-de.wikidot.com/asp-173",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "- Die Statue"
         },
         {
           "id": "asp-128-de",
           "title": "ASP-128-DE",
           "url": "http://scp-wiki-de.wikidot.com/asp-128-de",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "- Die Invasoren"
         },
         {
           "id": "asp-128-de-el",
           "title": "ASP-128-DE-EL",
           "url": "http://scp-wiki-de.wikidot.com/asp-128-de-el",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "- Herabgestürztes Linienschiff"
         },
         {
           "id": "asp-156-de-ex",
           "title": "ASP-156-DE-EX",
           "url": "http://scp-wiki-de.wikidot.com/asp-156-de-ex",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "- Maschinelle Menschenkundlerin"
         },
         {
@@ -1020,7 +1013,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- Verdammte Marionette"
+          "os": 1,
+          "desc": "ASP-650-JP ist ein Organismus in Form eines erwachsenen japanischen Mannes, der nachweislich in der Lage ist, wie ein normaler Mensch zu sprechen, sich zu bewegen und zu kommunizieren. Bei vorangegangenen körperlichen Untersuchungen von ASP-650-JP wurden keine…"
         },
         {
           "id": "das-tagebuch-eines-soldaten",
@@ -1064,9 +1058,8 @@
           "id": "heute-habe-ich-etwas-neues-gelernt",
           "title": "Heute habe ich etwas neues gelernt",
           "url": "http://scp-wiki-de.wikidot.com/heute-habe-ich-etwas-neues-gelernt",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "tale"
         },
         {
           "id": "metal-hero",
@@ -1109,7 +1102,9 @@
           "url": "http://scp-wiki-de.wikidot.com/ambrose-vineta",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 1,
+          "desc": "Von AstersQuill In unserem Universum gibt es seit seiner Entstehung vor Milliarden von Jahren eine bestimmte Konstante: Alles Leben hat Hunger. Zwar müssen alle biologischen Lebewesen in irgendeiner Weise essen und Energie produzieren, um zu überleben, aber er…"
         },
         {
           "id": "projektvorschlag-2024-001",
@@ -1117,7 +1112,9 @@
           "url": "http://scp-wiki-de.wikidot.com/projektvorschlag-2024-001",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 1,
+          "desc": "Titel: „Menschsein“ Erforderliche Materialien: Zwei Stühle (In meinem Besitz) Einen Klapptisch (In meinem Besitz) Einen Spiegel (In meinem Besitz)"
         },
         {
           "id": "scp-156-de",
@@ -1146,7 +1143,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "- Die Invasoren"
+          "os": 7,
+          "desc": "SKP-128 ist eine flache Maschine mit der Form eines Sechsecks, die größtenteils aus Metallstreben besteht. SKP-128 ist 4,7 m breit und 4,1 m hoch, besitzt eine Dicke von 1,2 m und ein Gewicht von schätzungsweise 200 kg. Die Vorrichtung ist in einem Gehäuse aus…"
         }
       ],
       "supplementLinks": [],
@@ -1223,7 +1221,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-a5a6b106ba1b65b5d06d7627a6918f19f59e894f8e5209653554e55b3004fe20"
+        "structureHash": "sha256-7420c16532e80ff3c9993a90ac12f101e01dd5007744aa5d0650859d4460a1c1"
       },
       "primaryArticles": [
         {
@@ -1526,7 +1524,9 @@
           "url": "http://scp-wiki-de.wikidot.com/kreaturenprofil-eden",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 5,
+          "desc": "Artikel: Kreaturenprofil: EDEN! Original-Autor: Einer von Rabe Bild: Stammt von Wikimedia Commons — Sharan horned Viper.jpg und Teich hinter Möbel Boss in Frankfurt (Oder) by Jörg Schulz.jpg"
         },
         {
           "id": "ein-seltsamer-tagtraum-so-suess-wie-gift",
@@ -1663,12 +1663,18 @@
             "scp-369-de",
             "scp-344-de",
             "scp-375-de",
-            "scp-399-de",
+            "scp-399-de"
+          ]
+        },
+        {
+          "id": "03-wettbewerbseinsendungen",
+          "title": "Wettbewerbseinsendungen:",
+          "articleIDs": [
             "scp-6192"
           ]
         },
         {
-          "id": "03-artikel-ebenfalls-in-diesem-universum-spielen",
+          "id": "04-artikel-ebenfalls-in-diesem-universum-spielen",
           "title": "Artikel, ebenfalls in diesem Universum spielen:",
           "articleIDs": [
             "kreaturenprofil-eden",
@@ -1818,7 +1824,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-e06b5dd9aca01118af095248adada1c559df95f5e33639646c2ba870bb7df272"
+        "structureHash": "sha256-fe8f729cd939430c81a0a5836611ff79affbd8cf06fc4e6d8d4e15084b76d8ac"
       },
       "primaryArticles": [
         {
@@ -1841,11 +1847,10 @@
         },
         {
           "id": "psw-hub",
-          "title": "Panslawischer Widerstand",
+          "title": "Panslawischer Widerstand (PSW)",
           "url": "http://scp-wiki-de.wikidot.com/psw-hub",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "desc": "Der Panslawische Widerstand, kurz PSW genannt, entstand 1964 auf einem Slawenkongress, welcher von den Widerstandsbewegungen der Slawen einberufen wurde und den Zusammenschluss der slawischen Freiheitskämpfer zu Folge hatte. Der daraus resultierende Panslawische Widerstand führt seitdem einen verdeckten Kampf gegen das Großdeutsche Reich und nutzt dabei Paranormalien mit einem slawischen Ursprung. Mit der Zeit verbreitete sich unter den Mitgliedern ein heidnischer Kult um die Paranormalien, wodurch der slawische Glaube den Panslawischen Widerstand dauerhaft prägen sollte. Für eine Liste der mit getaggten Artikel, siehe hier ."
         },
         {
@@ -1865,7 +1870,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Nachdem bei den Ereignissen um SKP-128 zahlreiche Kampfdroiden gehackt wurden, wurden die Überreste eingehend untersucht und derzeit verschiedene Ansätze zur Vermeidung anomaler Hacking-Prozeduren getestet, unter Anderem eine Abschirmung mit Beryllium-Bronze und Mikro-SRAs. Bis eine Lösung gefunden wurde, werden Kampfdroiden nur noch selten eingesetzt."
+          "os": 7,
+          "desc": "SKP-128 ist eine flache Maschine mit der Form eines Sechsecks, die größtenteils aus Metallstreben besteht. SKP-128 ist 4,7 m breit und 4,1 m hoch, besitzt eine Dicke von 1,2 m und ein Gewicht von schätzungsweise 200 kg. Die Vorrichtung ist in einem Gehäuse aus…"
         },
         {
           "id": "skp-hintergrund",
@@ -1922,7 +1928,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Canberra macht mobil"
+          "os": 8,
+          "desc": "SKP-156 ist ein Kettenfahrzeug, das an seiner Basis etwa 2 km x 2,5 km misst. Auf seinem Chassis bauen sich zahlreiche Gebäude und Straßen übereinander auf, was dem Konstrukt grob die Form eines 800 m hohen, nach vorn geneigten Kegels verleiht. Die unteren Ebe…"
         },
         {
           "id": "skp-299",
@@ -1931,7 +1938,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Verlorene Wochen"
+          "os": 8,
+          "desc": "SKP-299 beschreibt ein Phänomen, das sich am 15.04.2022 ereignete und die Erinnerungen der gesamten Erdbevölkerung an die drei vorhergehenden Wochen ausgelöscht hat. Zusätzlich wurden offenbar große Mengen an Daten in den Datenbanken des SKPs und der Welt im A…"
         },
         {
           "id": "skp-173-us",
@@ -1940,7 +1948,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "desc": "Die Statue"
+          "os": 8,
+          "desc": "SKP-173-US wurde 1993 nach Sondereinrichtung-US19 verlegt. Die Herkunft ist unbekannt. Es besteht aus Stahlbeton und weist Spuren von Sprühfarbe der Marke Krylon auf. SKP-173-US ist bewegungsfähig und extrem feindselig. Das Objekt kann sich nicht bewegen, wenn…"
         },
         {
           "id": "skp-187",
@@ -2018,9 +2027,8 @@
           "id": "operation-kuckuckskinder",
           "title": "Operation Kuckuckskinder",
           "url": "http://scp-wiki-de.wikidot.com/operation-kuckuckskinder",
-          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "tale"
         },
         {
           "id": "projekt-morgenpforte",
@@ -2038,7 +2046,9 @@
           "url": "http://scp-wiki-de.wikidot.com/uebernahme-der-scp-foundation-durch-das-skp",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 11,
+          "desc": "Vorwort: Als die USA kapitulierten, und mit Kanada und dem Freistaat Alaska die Bundeskolonie Nordamerika bildeten, bekamen wir endlich Zugang zur SCP Foundation, jener Organisation, die schon lange vor dem Krieg auf der ganzen Welt Paranormalien einfing, um s…"
         },
         {
           "id": "ueber-das-skp",
@@ -2152,7 +2162,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-cf2a6487fdcf8dbe9c38efe3281084c4caad77414cb60f0e1ed2ba93dfc87af9"
+        "structureHash": "sha256-49af9f9d2419e83917a7dee06b32a3e569261f42a76900a597b8bdfd0956355c"
       },
       "primaryArticles": [
         {
@@ -2168,8 +2178,8 @@
       "description": "Ist das Verschwinden des Anomalen für die Menschheit ein neuer Morgen der Ordnung und des Wiederauflebens,",
       "articleSections": [
         {
-          "id": "01-credits",
-          "title": "Credits",
+          "id": "01-geschichtenubersicht",
+          "title": "Geschichtenübersicht",
           "articleIDs": [
             "foundation-s-death"
           ]
@@ -2264,7 +2274,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-b365569e4987432e97d7bcfec270ebf80aed0afd76a200a29d5ba2d0e52d3af8",
+        "structureHash": "sha256-035743e5e018611053a62919a28d76e1fdf6ae39e5a6b9eb9295bf5353c04062",
         "verifiedEmpty": true,
         "allowEmpty": true
       },
@@ -2415,7 +2425,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-c74c01d7e3413f02157e9ed8aed8474f7d88dd01dc4d6c3a2c8d16d5924808a3"
+        "structureHash": "sha256-ac641d2b7a943bd8a4ce247cbc3b673e33e6758e093f0505200790d00c7db7c1"
       },
       "primaryArticles": [
         {
@@ -2429,12 +2439,12 @@
           "desc": "Da sich SCP-1134-JP nicht aus seinem Gebiet entfernt, können Überwachungskameras um und im Geschäft aufgestellt werden, um seine Aktivitäten zu überwachen. Wenn SCP-1134-JP Anzeichen von Misstrauen gegenüber den Überwachungskameras zeigt, sind ihm diese als Si…"
         },
         {
-          "id": "no-sushi-no-life",
-          "title": "Sushiblade-Kardinal",
-          "url": "http://scp-wiki-de.wikidot.com/no-sushi-no-life",
+          "id": "yamizushi-hub",
+          "title": "Finstersushi-Hub",
+          "url": "http://scp-wiki-de.wikidot.com/yamizushi-hub",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Die Empfehlung für heute? Nun, da hätten wir Sushiblade-Kardinal ."
+          "desc": "Die Empfehlung für heute? Nun, da hätten wir Finstersushi-Hub ."
         },
         {
           "id": "nexus-13-2",
@@ -2449,13 +2459,6 @@
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
           "role": "primaryArticle",
           "contentKind": "tale"
-        },
-        {
-          "id": "yamizushi-hub",
-          "title": "Gibst du dich mit solch schwachem Sushi zufrieden?",
-          "url": "http://scp-wiki-de.wikidot.com/yamizushi-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -2466,10 +2469,15 @@
           "title": "Credits",
           "articleIDs": [
             "scp-1134-jp",
-            "no-sushi-no-life",
-            "nexus-13-2",
-            "nexus-13-3",
             "yamizushi-hub"
+          ]
+        },
+        {
+          "id": "02-sushi-aus-der-ganzen-welt",
+          "title": "Sushi aus der ganzen Welt",
+          "articleIDs": [
+            "nexus-13-2",
+            "nexus-13-3"
           ]
         }
       ]
@@ -2506,7 +2514,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-8c2b9832be4377b623f308889e6baeea0d560bfe47c4f321bab5d9091c0973c1"
+        "structureHash": "sha256-01ef8b5f3948d9e0f32a9bf082b224276dc71a4128b1fc72e378f6c4156ec26f"
       },
       "primaryArticles": [
         {
@@ -2531,10 +2539,16 @@
       "description": "Dateiname: blue_squares2.gif Name: Blue Squares Background Urheber: LurkD Lizenz: CC-BY-SA 3.0",
       "articleSections": [
         {
-          "id": "01-credits",
-          "title": "Credits",
+          "id": "01-archivierte-systemprotokolle",
+          "title": "Archivierte Systemprotokolle:",
           "articleIDs": [
-            "alert-lockdown-initiated",
+            "alert-lockdown-initiated"
+          ]
+        },
+        {
+          "id": "02-referenzen",
+          "title": "Referenzen:",
+          "articleIDs": [
             "scp-2193"
           ]
         }
@@ -2690,7 +2704,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-813c0ee218a78ee9709fdf8bcb310545847eab11be39f8e473e37f1702638063"
+        "structureHash": "sha256-1d78a5372497b5c3e3e0050471d8c11b1e6224a2736dab5d2d52c882be0a0ada"
       },
       "primaryArticles": [
         {
@@ -2726,7 +2740,9 @@
           "url": "http://scp-wiki-de.wikidot.com/new-buteo-series-mechanical-exoskeleton",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "goiFormat"
+          "contentKind": "goiFormat",
+          "os": 8,
+          "desc": "Artikel: Anderson Robotics Installations-Guide: Ihr Neues Mechanisches Exoskelett Der Bueto-Serie! Original: http://www.scp-wiki.net/forum/t-7746684/new-buteo-series-mechanical-exoskeleton Autor: OthellotheCat, Jacob Conwell, Croquembouche Übersetzer: Dr Ore"
         }
       ],
       "supplementLinks": [],
@@ -2782,7 +2798,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-224b3b2814fe3024450bceb639b3366fb0b9389eea5d2dd55f9060598bb82657",
+        "structureHash": "sha256-5f1c54bc6bc4e0c99ce9b32b158b61a9f244b7274f5a06f96f06abed24414744",
         "verifiedEmpty": true,
         "allowEmpty": true
       },
