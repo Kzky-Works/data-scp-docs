@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785653002,
-  "generatedAt": "2026-08-02T06:43:22Z",
-  "chunkRevision": "sha256-d7e4ede2564e7f858a50e820220c11065c7024349ba22cc2c9f2fa6e43dc2dee",
+  "listVersion": 1785752645,
+  "generatedAt": "2026-08-03T10:24:05Z",
+  "chunkRevision": "sha256-9204560be01285640075a7b2257a257631ed66e723432b36daf8e12524363b5f",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785652912,
-        "generatedAt": "2026-08-02T06:41:52Z",
-        "contentHash": "sha256-3f8ad536acece547aca304ac3ea0d88a14b7a88cbd84b2a4514b5046a35a8c91"
+        "listVersion": 1785752424,
+        "generatedAt": "2026-08-03T10:20:24Z",
+        "contentHash": "sha256-5bc96555e3f336bb9f9bf7dc5f82c39fc83a080f729cc8ff5bef70fed1710c4e"
       },
       {
         "kind": "manifest_scp-cs",
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_scp-cs.json",
         "schemaVersion": 2,
-        "listVersion": 1785391532,
-        "generatedAt": "2026-07-30T06:05:32Z",
-        "contentHash": "sha256-1ed0111659918cfb6b1c8daf28404ad5f3611d8568c0517a4a66d940ebe071e3"
+        "listVersion": 1785752591,
+        "generatedAt": "2026-08-03T10:23:11Z",
+        "contentHash": "sha256-cf4ef6962a21f1940ed380078a2beefb4e2b90e8db80354d1617d61c3af6f485"
       },
       {
         "kind": "manifest_scp-int",
@@ -37,18 +37,18 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1785391532,
-        "generatedAt": "2026-07-30T06:05:32Z",
-        "contentHash": "sha256-9ffb5a07425262a028dea015284be969b85c7f4d9ca04cd20c4e546d9c4f5287"
+        "listVersion": 1785752574,
+        "generatedAt": "2026-08-03T10:22:54Z",
+        "contentHash": "sha256-c235c8b645253c8d434a8a75176f026dfba23c1da503112f2f252bfbc82b9269"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1784905293,
-        "generatedAt": "2026-07-24T15:01:33Z",
-        "contentHash": "sha256-cf6c86da9de6edf47f238b1e4e0cb3615f333891ecb9b89b9533e16698b959dc"
+        "listVersion": 1785752591,
+        "generatedAt": "2026-08-03T10:23:11Z",
+        "contentHash": "sha256-4aa77147f5bd8f394a25eca4de5b95f65410dca8d604fa95f6df8cb475c7f987"
       }
     ],
     "seedReview": {
@@ -1129,6 +1129,15 @@
           "role": "primaryArticle",
           "os": 4,
           "desc": "Název: Ořešník, kouzelník a věž Autor: Steven Choros"
+        },
+        {
+          "id": "volani-z-nemocnice",
+          "title": "Volání z nemocnice",
+          "url": "http://scp-cs.wikidot.com/volani-z-nemocnice",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6,
+          "desc": "Dva roky před přelomem tisíciletí, 6. května, mě rodiče poslali za tetou do malého města, o kterém jsem nikdy předtím neslyšel. Tvrdili, že tam konečně zjistím, že svět nekončí za hranicemi našeho města. Tehdy mi to znělo spíš jako trest převlečený za dárek."
         }
       ],
       "supplementLinks": [],
@@ -1486,7 +1495,7 @@
           "url": "http://scp-cs.wikidot.com/duhova-intervence",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 1,
+          "os": 5,
           "desc": "Houkání projíždějící sanitky za oknem je to, co mě vytrhne ze spánku. Šedé světlo zataženého nebe. Už asi bude odpoledne. Zase jsem prospala oběd, ale stejně nemám hlad. Venku je horko a cítím, že jsem propocená."
         },
         {
@@ -2072,6 +2081,15 @@
           "role": "primaryArticle",
           "os": 3,
           "desc": "Název: Amogus-con Autor: Hajgrando"
+        },
+        {
+          "id": "zamalovana-osobnost",
+          "title": "Zamalovaná Osobnost",
+          "url": "http://scp-cs.wikidot.com/zamalovana-osobnost",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6,
+          "desc": "…se probere. …se zmateně posadí na posteli. Proč si nepamatuje svoje jméno? Není to ta věc, co si zrovna má pamatovat? Praštila se do hlavy? Prohlédne si vlastní ruce; jako montáž fotek toho samého místa foceného každý den v tu samou dobu, stejné, ale s pomalu…"
         }
       ],
       "supplementLinks": [],
@@ -3395,7 +3413,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-94232c7889b48c4d820e1117c3691ed6f6b45c32ced0ef5bbef46b4d4735d55c"
+        "structureHash": "sha256-3fb31639c5d5013d46c3404e4f9710a56b83499c9ecf8eda5628f7eb67ed8c12"
       },
       "primaryArticles": [
         {
@@ -3423,10 +3441,16 @@
       "description": "SCP Nadace | IT Oddělení AIAD <Divize Aplikací Umělé Inteligence>",
       "articleSections": [
         {
-          "id": "01-info",
-          "title": "Info",
+          "id": "01-zaznamy-akci",
+          "title": "Záznamy Akcí:",
           "articleIDs": [
-            "ai-classification-guide",
+            "ai-classification-guide"
+          ]
+        },
+        {
+          "id": "02-reference",
+          "title": "Reference:",
+          "articleIDs": [
             "scp-5560"
           ]
         }
@@ -3464,7 +3488,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-e0d8771c58631a9020b8c93a281541361b40f5c523ff9ae7917251db05707fdb"
+        "structureHash": "sha256-8b649393af2d639efe04536b9b50e24ed47ddd7918a739c682977ba87e18e949"
       },
       "primaryArticles": [
         {
@@ -3568,7 +3592,13 @@
             "the-executions-of-doctor-bright",
             "a-lesson-in-power",
             "stormsite19",
-            "main-page-wikipedia",
+            "main-page-wikipedia"
+          ]
+        },
+        {
+          "id": "02-ceske-clanky",
+          "title": "České články",
+          "articleIDs": [
             "paranoia",
             "scp-004-cs"
           ]
@@ -4861,7 +4891,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-f680d5585ed356e2b4174cb344a642dc00e3996ab4c3bb1122d6e897d0937e1d"
+        "structureHash": "sha256-d27994e096c06cb557aa71adc72ecb61e7b4114d320cd39db1ed404210780aac"
       },
       "primaryArticles": [
         {
@@ -4977,20 +5007,26 @@
             "pattern-breaker",
             "counterpoint",
             "lessons-for-old-dogs",
-            "duets",
+            "duets"
+          ]
+        },
+        {
+          "id": "02-soutezni-prispevky-kanonicke-renesance",
+          "title": "Soutěžní příspěvky Kanonické renesance",
+          "articleIDs": [
             "gagliarda-part-one",
             "can-you-show-me-the-way-to-alagadda"
           ]
         },
         {
-          "id": "02-dalsi-pribehy",
-          "title": "Další příběhy",
+          "id": "03-prvni-suita",
+          "title": "První suita",
           "articleIDs": [
             "scp-2264"
           ]
         },
         {
-          "id": "03-byvaly-agent-roger-anderson",
+          "id": "04-byvaly-agent-roger-anderson",
           "title": "Bývalý agent Roger Anderson",
           "articleIDs": [
             "scp-701"
@@ -5030,7 +5066,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-22566f2672baaf77d78c0bddf66c3d7633ca1502e529a3e276a969e75579afdd",
+        "structureHash": "sha256-3204c019dc45485f1ea66086f36ee36225276629879c41e8516a89d6cdb9b791",
         "verifiedEmpty": true,
         "allowEmpty": true
       },
@@ -5139,7 +5175,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-ee9e6e57a4c7725539a3e8a066bcb478a6c30f176ff63767476a24f14937fa10"
+        "structureHash": "sha256-b7f31c7cb7c772ce2ab2adc91bf8d224b2fd70024f6aee055a62ced185a98ce2"
       },
       "primaryArticles": [
         {
@@ -5180,12 +5216,18 @@
           "id": "01-cast-nula-pred-alfou-9",
           "title": "ČÁST NULA: Před Alfou-9",
           "articleIDs": [
-            "yesterday",
+            "yesterday"
+          ]
+        },
+        {
+          "id": "02-sbirka-prologu",
+          "title": "Sbírka Prologů",
+          "articleIDs": [
             "iquit"
           ]
         },
         {
-          "id": "02-incident-nula-den-kdy-se-vsechno-zmenilo",
+          "id": "03-incident-nula-den-kdy-se-vsechno-zmenilo",
           "title": "Incident Nula: Den, kdy se všechno změnilo",
           "articleIDs": [
             "incident-zero-part-1"
