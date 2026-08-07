@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785759981,
-  "generatedAt": "2026-08-03T12:26:21Z",
-  "chunkRevision": "sha256-e7867cdc794a5d21ff8a03d00c984fcfe22306ea5d2407296bd5bb32dd572b51",
+  "listVersion": 1786116780,
+  "generatedAt": "2026-08-07T15:33:00Z",
+  "chunkRevision": "sha256-9d5ecd2ff1ecc3b11ed494071f31230281b93a73cd00634aaa23d04fd6a43a8a",
   "builtFrom": {
     "manifests": [
       {
@@ -19,9 +19,9 @@
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1785759979,
-        "generatedAt": "2026-08-03T12:26:19Z",
-        "contentHash": "sha256-a230333345e78eea7127c96b44f3aa3108ae16cc25a54a8784ac5690471a21d6"
+        "listVersion": 1786115339,
+        "generatedAt": "2026-08-07T15:08:59Z",
+        "contentHash": "sha256-2b4062a24411aaaed0b99510e975bf6207a230c0a233cd2a51042755eee212a3"
       },
       {
         "kind": "manifest_scp-fr",
@@ -45,7 +45,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+      "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
     },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/fr.json",
@@ -5066,7 +5066,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-5f54a451fc1ea47addbf83e532c65fc9282a21b0bf3cd90243d03a08309dda01"
+        "structureHash": "sha256-b1bfc3ecc4aa1db7ade67ac81beb36f3b0663929a493390e4cda37a4d282a08d"
       },
       "primaryArticles": [
         {
@@ -5236,7 +5236,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 11
+          "os": 11,
+          "desc": "Êtres vivants dotés de capacités anormales. Éventail de capacités très étendu ; du pliage de la réalité à la pratique de la thaumaturgie. Catalogue aux nombreux choix qui vous ferons à coup sûr trouver l'anormal dont vous rêvez. Marshall, Carter & Dark, LLP Ra…"
         },
         {
           "id": "reunion-inexistante",
@@ -6998,7 +6999,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-f8e87ab028d2079965ac23c03cea31070775af96d09edc472b693bc1fe44da6a"
+        "structureHash": "sha256-b2191a81ca1401d792bdd134622c10792b542d5a0c687c56a7d6b8a3f71c6059"
       },
       "primaryArticles": [
         {
@@ -7008,6 +7009,13 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "▷ SCP-7243 par Vaalxeny ▷ SCP-8808 par macro_au_micro ▷ SCP-6183 par Vaalxeny ▷ SCP-6488 par Vaalxeny ▷ SCP-6659 par Vaalxeny"
+        },
+        {
+          "id": "scp-6183",
+          "title": "Choisir une page du catalogue Deepwell aléatoire ?",
+          "url": "https://fondationscp.wikidot.com/scp-6183",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         },
         {
           "id": "scp-4260",
@@ -7049,6 +7057,7 @@
           "title": "Histoires",
           "articleIDs": [
             "scp-7243",
+            "scp-6183",
             "scp-4260",
             "scp-4755",
             "white-space-hub",
@@ -14492,7 +14501,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-c4234207161de29acdda2a4a68333411dc4b08c23c1f13508f4ea18b9c49832f"
+        "structureHash": "sha256-54563873b9a3a80f9ad9b55e12d351e82b78b40129537ae5ab3b9a299cb53a81"
       },
       "primaryArticles": [
         {
@@ -14746,7 +14755,8 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 12
+          "os": 12,
+          "desc": "Goûtez à la rare délicatesse de l'Oiseau de Feu Sibérien. Chaque lot acheté comprend un repas de cinq plats utilisant toutes les parties de l'oiseau, vous permettant de dormir tranquille en sachant que rien ne s'est perdu. À l'attention de nos membres ; ce pla…"
         },
         {
           "id": "diving-in-the-san-diego-sea",
@@ -14853,6 +14863,1137 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-fr:collection:series:admonition",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "admonition",
+      "title": "ADMONITION",
+      "sourceListURL": "https://fondationscp.wikidot.com/admonition",
+      "officialHubURL": "https://fondationscp.wikidot.com/admonition",
+      "hubPresentation": "standard",
+      "canonicalTag": "admonition",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "admonition",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "ADMONITION fermer Crédits Titre original..."
+    },
+    {
+      "id": "scp-fr:collection:series:atzak-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "atzak-hub",
+      "title": "Centre d'Atzak",
+      "sourceListURL": "https://fondationscp.wikidot.com/atzak-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/atzak-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "atzak-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "atzak-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Atzak Hub Auteur..."
+    },
+    {
+      "id": "scp-fr:collection:series:8000-dead-rats-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "8000-dead-rats-hub",
+      "title": "Centre de 8000 Rats Morts",
+      "sourceListURL": "https://fondationscp.wikidot.com/8000-dead-rats-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/8000-dead-rats-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "8000-dead-rats-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "8000-dead-rats-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : 8,000 Dead Rats..."
+    },
+    {
+      "id": "scp-fr:collection:series:redtape",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "redtape",
+      "title": "CENTRE DE FIL ROUGE",
+      "sourceListURL": "https://fondationscp.wikidot.com/redtape",
+      "officialHubURL": "https://fondationscp.wikidot.com/redtape",
+      "hubPresentation": "standard",
+      "canonicalTag": "redtape",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "redtape",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : REDTAPE HUB..."
+    },
+    {
+      "id": "scp-fr:collection:series:antimemetics-division-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "antimemetics-division-hub",
+      "title": "Centre de la Division Antimémétique",
+      "sourceListURL": "https://fondationscp.wikidot.com/antimemetics-division-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/antimemetics-division-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "antimemetics-division-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "antimemetics-division-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Départements de la Fondation Anglophone Centre de..."
+    },
+    {
+      "id": "scp-fr:collection:series:black-autumn-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "black-autumn-hub",
+      "title": "Centre de l'Automne Noir",
+      "sourceListURL": "https://fondationscp.wikidot.com/black-autumn-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/black-autumn-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "black-autumn-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "black-autumn-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Black Autumn Hub..."
+    },
+    {
+      "id": "scp-fr:collection:series:glittering-horizon-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "glittering-horizon-hub",
+      "title": "Centre de l'Horizon scintillant",
+      "sourceListURL": "https://fondationscp.wikidot.com/glittering-horizon-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/glittering-horizon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "glittering-horizon-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "glittering-horizon-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Glittering..."
+    },
+    {
+      "id": "scp-fr:collection:series:comedown-machine-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "comedown-machine-hub",
+      "title": "Centre de Machine à Disgrâce",
+      "sourceListURL": "https://fondationscp.wikidot.com/comedown-machine-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/comedown-machine-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "comedown-machine-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "comedown-machine-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Comedown Machine..."
+    },
+    {
+      "id": "scp-fr:collection:series:vend-a-friend",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "vend-a-friend",
+      "title": "Centre de Vends-Un-Ami",
+      "sourceListURL": "https://fondationscp.wikidot.com/vend-a-friend",
+      "officialHubURL": "https://fondationscp.wikidot.com/vend-a-friend",
+      "hubPresentation": "standard",
+      "canonicalTag": "vend-a-friend",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "vend-a-friend",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Vend-a-Friend Hub..."
+    },
+    {
+      "id": "scp-fr:collection:series:adventures-in-capitalism-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "adventures-in-capitalism-hub",
+      "title": "Centre des Aventures dans le Capitalisme",
+      "sourceListURL": "https://fondationscp.wikidot.com/adventures-in-capitalism-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/adventures-in-capitalism-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "adventures-in-capitalism-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "adventures-in-capitalism-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Adventures in..."
+    },
+    {
+      "id": "scp-fr:collection:series:kiryu-labs-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "kiryu-labs-hub",
+      "title": "Centre des Laboratoires Kiryu",
+      "sourceListURL": "https://fondationscp.wikidot.com/kiryu-labs-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/kiryu-labs-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "kiryu-labs-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "kiryu-labs-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Kiryu Labs Hub..."
+    },
+    {
+      "id": "scp-fr:collection:series:telecommunications-monitoring-office-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "telecommunications-monitoring-office-hub",
+      "title": "Centre du Bureau de Surveillance des Télécommunications",
+      "sourceListURL": "https://fondationscp.wikidot.com/telecommunications-monitoring-office-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/telecommunications-monitoring-office-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "telecommunications-monitoring-office-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "telecommunications-monitoring-office-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original :..."
+    },
+    {
+      "id": "scp-fr:collection:series:tales-of-mr-collector",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "tales-of-mr-collector",
+      "title": "Contes de M. Collectionneur",
+      "sourceListURL": "https://fondationscp.wikidot.com/tales-of-mr-collector",
+      "officialHubURL": "https://fondationscp.wikidot.com/tales-of-mr-collector",
+      "hubPresentation": "standard",
+      "canonicalTag": "tales-of-mr-collector",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "tales-of-mr-collector",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Tales of Mr...."
+    },
+    {
+      "id": "scp-fr:collection:series:guns-pointed-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "guns-pointed-hub",
+      "title": "Des armes sur la tempe de Dieu",
+      "sourceListURL": "https://fondationscp.wikidot.com/guns-pointed-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/guns-pointed-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "guns-pointed-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "guns-pointed-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Guns Pointed at..."
+    },
+    {
+      "id": "scp-fr:collection:series:in-his-own-image",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "in-his-own-image",
+      "title": "En sa propre image",
+      "sourceListURL": "https://fondationscp.wikidot.com/in-his-own-image",
+      "officialHubURL": "https://fondationscp.wikidot.com/in-his-own-image",
+      "hubPresentation": "standard",
+      "canonicalTag": "in-his-own-image",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "in-his-own-image",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Une histoire sur la vie à la Fondation et ce qui..."
+    },
+    {
+      "id": "scp-fr:collection:series:austringers",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "austringers",
+      "title": "Fauconniers",
+      "sourceListURL": "https://fondationscp.wikidot.com/austringers",
+      "officialHubURL": "https://fondationscp.wikidot.com/austringers",
+      "hubPresentation": "standard",
+      "canonicalTag": "austringers",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "austringers",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Austringers..."
+    },
+    {
+      "id": "scp-fr:collection:series:mtf-theta-90-hub-page",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "mtf-theta-90-hub-page",
+      "title": "FIM Thêta-90 – Centre",
+      "sourceListURL": "https://fondationscp.wikidot.com/mtf-theta-90-hub-page",
+      "officialHubURL": "https://fondationscp.wikidot.com/mtf-theta-90-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "mtf-theta-90-hub-page",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "mtf-theta-90-hub-page",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : MTF Theta-90 Hub..."
+    },
+    {
+      "id": "scp-fr:collection:series:end-of-line-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "end-of-line-hub",
+      "title": "Fin de Ligne - Centre",
+      "sourceListURL": "https://fondationscp.wikidot.com/end-of-line-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/end-of-line-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "end-of-line-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "end-of-line-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : End of Line Hub..."
+    },
+    {
+      "id": "scp-fr:collection:series:foundation-of-nomads",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "foundation-of-nomads",
+      "title": "Fondation de nomades - Centre",
+      "sourceListURL": "https://fondationscp.wikidot.com/foundation-of-nomads",
+      "officialHubURL": "https://fondationscp.wikidot.com/foundation-of-nomads",
+      "hubPresentation": "standard",
+      "canonicalTag": "foundation-of-nomads",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "foundation-of-nomads",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Foundation of..."
+    },
+    {
+      "id": "scp-fr:collection:series:the-hanged-king-s-comedy",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "the-hanged-king-s-comedy",
+      "title": "La Comédie du Roi Pendu",
+      "sourceListURL": "https://fondationscp.wikidot.com/the-hanged-king-s-comedy",
+      "officialHubURL": "https://fondationscp.wikidot.com/the-hanged-king-s-comedy",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-hanged-king-s-comedy",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-hanged-king-s-comedy",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : The Hanged King's..."
+    },
+    {
+      "id": "scp-fr:collection:series:the-cool-war-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "the-cool-war-hub",
+      "title": "La Guerre Cool",
+      "sourceListURL": "https://fondationscp.wikidot.com/the-cool-war-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/the-cool-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-cool-war-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-cool-war-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : The Cool War..."
+    },
+    {
+      "id": "scp-fr:collection:series:death-and-the-doctors-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "death-and-the-doctors-hub",
+      "title": "La Mort et les Docteurs – Centre",
+      "sourceListURL": "https://fondationscp.wikidot.com/death-and-the-doctors-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/death-and-the-doctors-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "death-and-the-doctors-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "death-and-the-doctors-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Death and the..."
+    },
+    {
+      "id": "scp-fr:collection:series:rise-of-the-pit-sloth-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "rise-of-the-pit-sloth-hub",
+      "title": "L'Automne Noir II : L'Ascension du Paresseux du Gouffre",
+      "sourceListURL": "https://fondationscp.wikidot.com/rise-of-the-pit-sloth-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/rise-of-the-pit-sloth-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "rise-of-the-pit-sloth-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "rise-of-the-pit-sloth-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Black Autumn II:..."
+    },
+    {
+      "id": "scp-fr:collection:series:goc-hub-page",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "goc-hub-page",
+      "title": "Les Affaires de la Coalition mondiale occulte",
+      "sourceListURL": "https://fondationscp.wikidot.com/goc-hub-page",
+      "officialHubURL": "https://fondationscp.wikidot.com/goc-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "goc-hub-page",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "goc-hub-page",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Global Occult..."
+    },
+    {
+      "id": "scp-fr:collection:series:new",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "new",
+      "title": "Les Aventures de Lord Blackwood, Explorateur et Gentleman",
+      "sourceListURL": "https://fondationscp.wikidot.com/new",
+      "officialHubURL": "https://fondationscp.wikidot.com/new",
+      "hubPresentation": "standard",
+      "canonicalTag": "new",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "new",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : The Adventures of..."
+    },
+    {
+      "id": "scp-fr:collection:series:unusual-investigations",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "unusual-investigations",
+      "title": "Les Enquêtes inhabituelles de Kenneth Spencer et Robin Thorne",
+      "sourceListURL": "https://fondationscp.wikidot.com/unusual-investigations",
+      "officialHubURL": "https://fondationscp.wikidot.com/unusual-investigations",
+      "hubPresentation": "standard",
+      "canonicalTag": "unusual-investigations",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unusual-investigations",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : The Unusual..."
+    },
+    {
+      "id": "scp-fr:collection:series:the-elusive-anderson",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "the-elusive-anderson",
+      "title": "L'Insaisissable Anderson",
+      "sourceListURL": "https://fondationscp.wikidot.com/the-elusive-anderson",
+      "officialHubURL": "https://fondationscp.wikidot.com/the-elusive-anderson",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-elusive-anderson",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-elusive-anderson",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : The Elusive..."
+    },
+    {
+      "id": "scp-fr:collection:series:murphy-law-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "murphy-law-hub",
+      "title": "Murphy Law dans... le Centre de Murphy Law !",
+      "sourceListURL": "https://fondationscp.wikidot.com/murphy-law-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/murphy-law-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "murphy-law-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "murphy-law-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Murphy Law in ..."
+    },
+    {
+      "id": "scp-fr:collection:series:classicalrevivalindex",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "classicalrevivalindex",
+      "title": "Page d'Index de Classical Revival",
+      "sourceListURL": "https://fondationscp.wikidot.com/classicalrevivalindex",
+      "officialHubURL": "https://fondationscp.wikidot.com/classicalrevivalindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "classicalrevivalindex",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "classicalrevivalindex",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Classical Revival..."
+    },
+    {
+      "id": "scp-fr:collection:series:peregrine",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "peregrine",
+      "title": "Pèlerin",
+      "sourceListURL": "https://fondationscp.wikidot.com/peregrine",
+      "officialHubURL": "https://fondationscp.wikidot.com/peregrine",
+      "hubPresentation": "standard",
+      "canonicalTag": "peregrine",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "peregrine",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Pèlerin Auteur :..."
+    },
+    {
+      "id": "scp-fr:collection:series:burnt-bridges",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "burnt-bridges",
+      "title": "Ponts coupés",
+      "sourceListURL": "https://fondationscp.wikidot.com/burnt-bridges",
+      "officialHubURL": "https://fondationscp.wikidot.com/burnt-bridges",
+      "hubPresentation": "standard",
+      "canonicalTag": "burnt-bridges",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "burnt-bridges",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Burnt Bridges..."
+    },
+    {
+      "id": "scp-fr:collection:series:portland-vice",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "portland-vice",
+      "title": "Portland Vice",
+      "sourceListURL": "https://fondationscp.wikidot.com/portland-vice",
+      "officialHubURL": "https://fondationscp.wikidot.com/portland-vice",
+      "hubPresentation": "standard",
+      "canonicalTag": "portland-vice",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "portland-vice",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Portland Vice..."
+    },
+    {
+      "id": "scp-fr:collection:series:crossoverprojectindex",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "crossoverprojectindex",
+      "title": "Projet Crossover",
+      "sourceListURL": "https://fondationscp.wikidot.com/crossoverprojectindex",
+      "officialHubURL": "https://fondationscp.wikidot.com/crossoverprojectindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "crossoverprojectindex",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "crossoverprojectindex",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Donc, la Fondation SCP devient rapidement, si ce..."
+    },
+    {
+      "id": "scp-fr:collection:series:olympia-project",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "olympia-project",
+      "title": "Projet Olympia",
+      "sourceListURL": "https://fondationscp.wikidot.com/olympia-project",
+      "officialHubURL": "https://fondationscp.wikidot.com/olympia-project",
+      "hubPresentation": "standard",
+      "canonicalTag": "olympia-project",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "olympia-project",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "But de l'expérience : Créer avec succès un humanoïde..."
+    },
+    {
+      "id": "scp-fr:collection:series:thaumiel",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "thaumiel",
+      "title": "Projet Thaumiel",
+      "sourceListURL": "https://fondationscp.wikidot.com/thaumiel",
+      "officialHubURL": "https://fondationscp.wikidot.com/thaumiel",
+      "hubPresentation": "standard",
+      "canonicalTag": "thaumiel",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "thaumiel",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Project Thaumiel..."
+    },
+    {
+      "id": "scp-fr:collection:series:kalinins-proposal",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "kalinins-proposal",
+      "title": "Proposition de Kalinin",
+      "sourceListURL": "https://fondationscp.wikidot.com/kalinins-proposal",
+      "officialHubURL": "https://fondationscp.wikidot.com/kalinins-proposal",
+      "hubPresentation": "standard",
+      "canonicalTag": "kalinins-proposal",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "kalinins-proposal",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : SCP-001 -..."
+    },
+    {
+      "id": "scp-fr:collection:series:remembrance",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "remembrance",
+      "title": "Souvenirs",
+      "sourceListURL": "https://fondationscp.wikidot.com/remembrance",
+      "officialHubURL": "https://fondationscp.wikidot.com/remembrance",
+      "hubPresentation": "standard",
+      "canonicalTag": "remembrance",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "remembrance",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "Souvenirs : Prélude : Première Sonnerie Partie Un..."
+    },
+    {
+      "id": "scp-fr:collection:series:ein-baum-ein-juwel-eine-familie-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "ein-baum-ein-juwel-eine-familie-hub",
+      "title": "Un Arbre, Un Joyau, Une Famille — Centre",
+      "sourceListURL": "https://fondationscp.wikidot.com/ein-baum-ein-juwel-eine-familie-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/ein-baum-ein-juwel-eine-familie-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ein-baum-ein-juwel-eine-familie-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ein-baum-ein-juwel-eine-familie-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : Ein Baum, Ein..."
+    },
+    {
+      "id": "scp-fr:collection:series:wwydftltimd-hub",
+      "branchID": "scp-fr",
+      "kind": "series",
+      "hubID": "wwydftltimd-hub",
+      "title": "When Will You Die for the Last Time in My Dreams - Centre",
+      "sourceListURL": "https://fondationscp.wikidot.com/wwydftltimd-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/wwydftltimd-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "wwydftltimd-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wwydftltimd-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "fermer Crédits Titre original : When Will You Die..."
     },
     {
       "id": "scp-fr:collection:goi:la-diaspora",

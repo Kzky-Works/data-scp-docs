@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786107505,
-  "generatedAt": "2026-08-07T12:58:25Z",
-  "chunkRevision": "sha256-a66a3f4a69b8d8fa15be3c17f4dc2fdff1387e4bd4b4650b07e726ad5b4e7cf5",
+  "listVersion": 1786116785,
+  "generatedAt": "2026-08-07T15:33:05Z",
+  "chunkRevision": "sha256-9559b4277458d338435d74021b01cc33143a27123d8bd692901d7ab914881557",
   "builtFrom": {
     "manifests": [
       {
@@ -10,54 +10,54 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785021940,
-        "generatedAt": "2026-07-25T23:25:40Z",
-        "contentHash": "sha256-01c03f42e86ddbc917367a9771958abb6eb879c576f11d25514836d3ecc3376a"
+        "listVersion": 1786110609,
+        "generatedAt": "2026-08-07T13:50:09Z",
+        "contentHash": "sha256-727e07c4bfa13961a2ee42a4028b19008e1b395b5909151fd6f8ee5c359163cf"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1785748156,
-        "generatedAt": "2026-08-03T09:09:16Z",
-        "contentHash": "sha256-6a600319c4f428760af8e2cb8fe48a8526588a0f1725a8f3b784ba22da769f73"
+        "listVersion": 1786109829,
+        "generatedAt": "2026-08-07T13:37:09Z",
+        "contentHash": "sha256-184f300c7a19364de469508ae3e9844f238d604b964abd7b7937f709ce9f612f"
       },
       {
         "kind": "manifest_scp-cn",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-cn.json",
         "schemaVersion": 2,
-        "listVersion": 1785747898,
-        "generatedAt": "2026-08-03T09:04:58Z",
-        "contentHash": "sha256-c01be3a8a46dc558de800f118ca4d67477d6fad9492e9c01a5e6594d0c99b813"
+        "listVersion": 1786109828,
+        "generatedAt": "2026-08-07T13:37:08Z",
+        "contentHash": "sha256-83d2fa513d6ab851e05adbd0d3671fd6ebb1c65c592e548f85f733466fb350a0"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1785748056,
-        "generatedAt": "2026-08-03T09:07:36Z",
-        "contentHash": "sha256-11f7f698a5950a8299acfd72354f9058d53621b37362ea34a74f0654789b42c6"
+        "listVersion": 1786109828,
+        "generatedAt": "2026-08-07T13:37:08Z",
+        "contentHash": "sha256-23a9ce6a809cb073aeeb66d805ddb55240eb7845c94ea1810fbb1fbb913fce8d"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1785748004,
-        "generatedAt": "2026-08-03T09:06:44Z",
-        "contentHash": "sha256-fd0e6adbb749f2477d23970f919736b0965589c1c8e211d1e299c559f5d129ca"
+        "listVersion": 1786109828,
+        "generatedAt": "2026-08-07T13:37:08Z",
+        "contentHash": "sha256-d6d6c579d18f8c730b897a351c9228e2acbe53c39bcaaced0bfae9705ff73d0c"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1785748135,
-        "generatedAt": "2026-08-03T09:08:55Z",
-        "contentHash": "sha256-24f9d236f7748a096d2f273975ee17d6d58c7c53b9dd849c5bebbeb497b7fae0"
+        "listVersion": 1786109829,
+        "generatedAt": "2026-08-07T13:37:09Z",
+        "contentHash": "sha256-6dc80d504c412d572af1126302a9bc666484c6633fc6bd3a3455af9050bbc33c"
       }
     ],
     "seedReview": {
@@ -25668,6 +25668,4346 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-cn:collection:series:oldzhang0",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "oldzhang0",
+      "title": "人们",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/oldzhang0",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/oldzhang0",
+      "hubPresentation": "standard",
+      "canonicalTag": "oldzhang0",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "oldzhang0",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:omg-the-goi-died-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "omg-the-goi-died-hub",
+      "title": "解衔中心页（又名寄oi）",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/omg-the-goi-died-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/omg-the-goi-died-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "omg-the-goi-died-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "omg-the-goi-died-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:petrifaction",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "petrifaction",
+      "title": "石化城 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/petrifaction",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/petrifaction",
+      "hubPresentation": "standard",
+      "canonicalTag": "petrifaction",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "petrifaction",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:project-wingman-cold-start",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "project-wingman-cold-start",
+      "title": "僚机计划：冷启动 系列中心页 主线/OVA/SP",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/project-wingman-cold-start",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/project-wingman-cold-start",
+      "hubPresentation": "standard",
+      "canonicalTag": "project-wingman-cold-start",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "project-wingman-cold-start",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:project-wingman-lotusky-squadron",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "project-wingman-lotusky-squadron",
+      "title": "僚机计划：莲之空中队 故事中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/project-wingman-lotusky-squadron",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/project-wingman-lotusky-squadron",
+      "hubPresentation": "standard",
+      "canonicalTag": "project-wingman-lotusky-squadron",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "project-wingman-lotusky-squadron",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:radio-station",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "radio-station",
+      "title": "广播电台",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/radio-station",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/radio-station",
+      "hubPresentation": "standard",
+      "canonicalTag": "radio-station",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "radio-station",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:river-witness-everything",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "river-witness-everything",
+      "title": "清河无轶事 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/river-witness-everything",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/river-witness-everything",
+      "hubPresentation": "standard",
+      "canonicalTag": "river-witness-everything",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "river-witness-everything",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:seagull-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "seagull-hub",
+      "title": "海鷗銜鑰中心頁",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/seagull-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/seagull-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "seagull-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "seagull-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:shadow-milkyway-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "shadow-milkyway-hub",
+      "title": "晦暗星河 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/shadow-milkyway-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/shadow-milkyway-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "shadow-milkyway-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "shadow-milkyway-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:shadow-relieved-against-light-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "shadow-relieved-against-light-hub",
+      "title": "以影衬光中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/shadow-relieved-against-light-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/shadow-relieved-against-light-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "shadow-relieved-against-light-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "shadow-relieved-against-light-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:shengxiang-chenyan",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "shengxiang-chenyan",
+      "title": "生相 尘烟系列中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/shengxiang-chenyan",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/shengxiang-chenyan",
+      "hubPresentation": "standard",
+      "canonicalTag": "shengxiang-chenyan",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "shengxiang-chenyan",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:shengxiang-fanhua",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "shengxiang-fanhua",
+      "title": "生相 繁花系列中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/shengxiang-fanhua",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/shengxiang-fanhua",
+      "hubPresentation": "standard",
+      "canonicalTag": "shengxiang-fanhua",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "shengxiang-fanhua",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:shengxiang-tiane",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "shengxiang-tiane",
+      "title": "生相 天鹅系列中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/shengxiang-tiane",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/shengxiang-tiane",
+      "hubPresentation": "standard",
+      "canonicalTag": "shengxiang-tiane",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "shengxiang-tiane",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:site-cn-21-s-20-years",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "site-cn-21-s-20-years",
+      "title": "Site-CN-21的二十年中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/site-cn-21-s-20-years",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/site-cn-21-s-20-years",
+      "hubPresentation": "standard",
+      "canonicalTag": "site-cn-21-s-20-years",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "site-cn-21-s-20-years",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:taylortesler1",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "taylortesler1",
+      "title": "翻覆的无垠",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/taylortesler1",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/taylortesler1",
+      "hubPresentation": "standard",
+      "canonicalTag": "taylortesler1",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "taylortesler1",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:thaumhistory-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "thaumhistory-hub",
+      "title": "奇术与七战的余烬",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/thaumhistory-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/thaumhistory-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "thaumhistory-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "thaumhistory-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-fierce-and-beautiful-world",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-fierce-and-beautiful-world",
+      "title": "美好而粗暴的世界 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-fierce-and-beautiful-world",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-fierce-and-beautiful-world",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-fierce-and-beautiful-world",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-fierce-and-beautiful-world",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-kismet-ephemeris-of-kalpas-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-kismet-ephemeris-of-kalpas-hub",
+      "title": "万劫历数 中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-kismet-ephemeris-of-kalpas-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-kismet-ephemeris-of-kalpas-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-kismet-ephemeris-of-kalpas-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-kismet-ephemeris-of-kalpas-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-originator-main",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-originator-main",
+      "title": "创始人事端 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-originator-main",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-originator-main",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-originator-main",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-originator-main",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-rose-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-rose-hub",
+      "title": "玫瑰",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-rose-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-rose-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-rose-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-rose-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-stele-stands-forever",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-stele-stands-forever",
+      "title": "往日不再，往事依旧 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-stele-stands-forever",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-stele-stands-forever",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-stele-stands-forever",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-stele-stands-forever",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:under-skin",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "under-skin",
+      "title": "皮囊之下 中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/under-skin",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/under-skin",
+      "hubPresentation": "standard",
+      "canonicalTag": "under-skin",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "under-skin",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:wgdhqzxy",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "wgdhqzxy",
+      "title": "五更断魂曲：中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/wgdhqzxy",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/wgdhqzxy",
+      "hubPresentation": "standard",
+      "canonicalTag": "wgdhqzxy",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wgdhqzxy",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:words-that-soak-in-scarlet",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "words-that-soak-in-scarlet",
+      "title": "腥紅浸淋的言詞",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/words-that-soak-in-scarlet",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/words-that-soak-in-scarlet",
+      "hubPresentation": "standard",
+      "canonicalTag": "words-that-soak-in-scarlet",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "words-that-soak-in-scarlet",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:wuhuabamen",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "wuhuabamen",
+      "title": "“五花八门” 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/wuhuabamen",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/wuhuabamen",
+      "hubPresentation": "standard",
+      "canonicalTag": "wuhuabamen",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wuhuabamen",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:now-the-serpent",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "now-the-serpent",
+      "title": "现在，蛇",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/now-the-serpent",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/now-the-serpent",
+      "hubPresentation": "standard",
+      "canonicalTag": "now-the-serpent",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "now-the-serpent",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:summer-of-doom-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "summer-of-doom-hub",
+      "title": "末日之夏中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/summer-of-doom-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/summer-of-doom-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "summer-of-doom-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "summer-of-doom-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:north-star-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "north-star-hub",
+      "title": "北极星中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/north-star-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/north-star-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "north-star-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "north-star-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:in-memoriam-nazare",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "in-memoriam-nazare",
+      "title": "星辰纪念页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/in-memoriam-nazare",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/in-memoriam-nazare",
+      "hubPresentation": "standard",
+      "canonicalTag": "in-memoriam-nazare",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "in-memoriam-nazare",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:dead-king-s-march",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "dead-king-s-march",
+      "title": "殁王行军",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/dead-king-s-march",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/dead-king-s-march",
+      "hubPresentation": "standard",
+      "canonicalTag": "dead-king-s-march",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dead-king-s-march",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-drooling-path",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-drooling-path",
+      "title": "垂涎之路 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-drooling-path",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-drooling-path",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-drooling-path",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-drooling-path",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:christ-in-scarlet-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "christ-in-scarlet-hub",
+      "title": "深红袍基督 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/christ-in-scarlet-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/christ-in-scarlet-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "christ-in-scarlet-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "christ-in-scarlet-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:deadlined-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "deadlined-hub",
+      "title": "突破不断继续：死线之内 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/deadlined-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/deadlined-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "deadlined-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "deadlined-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:crowne-thorne-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "crowne-thorne-hub",
+      "title": "荆棘王冠",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/crowne-thorne-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/crowne-thorne-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "crowne-thorne-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "crowne-thorne-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:8000-dead-rats-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "8000-dead-rats-hub",
+      "title": "八千死鼠 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/8000-dead-rats-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/8000-dead-rats-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "8000-dead-rats-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "8000-dead-rats-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:anabasis-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "anabasis-hub",
+      "title": "远征中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/anabasis-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/anabasis-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "anabasis-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "anabasis-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:hecatoncheires-cycle-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "hecatoncheires-cycle-hub",
+      "title": "百臂巨人之环 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/hecatoncheires-cycle-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/hecatoncheires-cycle-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "hecatoncheires-cycle-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "hecatoncheires-cycle-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:bitch-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "bitch-hub",
+      "title": "贱人 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/bitch-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/bitch-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "bitch-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "bitch-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:wrong-tomorrow-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "wrong-tomorrow-hub",
+      "title": "突破不断继续：错误的明天 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/wrong-tomorrow-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/wrong-tomorrow-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "wrong-tomorrow-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wrong-tomorrow-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:undervegas-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "undervegas-hub",
+      "title": "特工日历的阴间维加斯中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/undervegas-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/undervegas-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "undervegas-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "undervegas-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:whore-of-blood-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "whore-of-blood-hub",
+      "title": "血之大妓 中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/whore-of-blood-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/whore-of-blood-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "whore-of-blood-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "whore-of-blood-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:crewtime",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "crewtime",
+      "title": "月度讨论：犯罪实录",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/crewtime",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/crewtime",
+      "hubPresentation": "standard",
+      "canonicalTag": "crewtime",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "crewtime",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:devils-advocate-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "devils-advocate-hub",
+      "title": "魔鬼代言人中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/devils-advocate-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/devils-advocate-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "devils-advocate-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "devils-advocate-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:aftermath-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "aftermath-hub",
+      "title": "余波 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/aftermath-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/aftermath-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "aftermath-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "aftermath-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:gaslight-gatekeep-girlboss-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "gaslight-gatekeep-girlboss-hub",
+      "title": "煤气灯、守门员、女强人 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/gaslight-gatekeep-girlboss-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/gaslight-gatekeep-girlboss-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "gaslight-gatekeep-girlboss-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gaslight-gatekeep-girlboss-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:mundus-liberari",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "mundus-liberari",
+      "title": "自由世界中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/mundus-liberari",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/mundus-liberari",
+      "hubPresentation": "standard",
+      "canonicalTag": "mundus-liberari",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "mundus-liberari",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:resurrection-his-will-be-done-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "resurrection-his-will-be-done-hub",
+      "title": "重生计划：彼旨承行",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/resurrection-his-will-be-done-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/resurrection-his-will-be-done-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "resurrection-his-will-be-done-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "resurrection-his-will-be-done-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:foundation-of-nomads",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "foundation-of-nomads",
+      "title": "游牧者基金会中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/foundation-of-nomads",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/foundation-of-nomads",
+      "hubPresentation": "standard",
+      "canonicalTag": "foundation-of-nomads",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "foundation-of-nomads",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:dark-stuff-for-sleepless-nights",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "dark-stuff-for-sleepless-nights",
+      "title": "Dark Stuff伴无眠之夜",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/dark-stuff-for-sleepless-nights",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/dark-stuff-for-sleepless-nights",
+      "hubPresentation": "standard",
+      "canonicalTag": "dark-stuff-for-sleepless-nights",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dark-stuff-for-sleepless-nights",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:scp-anthology-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "scp-anthology-hub",
+      "title": "SCP文选2022",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/scp-anthology-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/scp-anthology-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-anthology-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "scp-anthology-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:ao-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "ao-hub",
+      "title": "异常项目们的故事",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/ao-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/ao-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ao-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ao-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-appliance-war-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-appliance-war-hub",
+      "title": "家电战争",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-appliance-war-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-appliance-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-appliance-war-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-appliance-war-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:stealingsolidarityhub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "stealingsolidarityhub",
+      "title": "盗取团结号",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/stealingsolidarityhub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/stealingsolidarityhub",
+      "hubPresentation": "standard",
+      "canonicalTag": "stealingsolidarityhub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "stealingsolidarityhub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:bury-the-survivors-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "bury-the-survivors-hub",
+      "title": "突破不断继续：埋葬生还者",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/bury-the-survivors-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/bury-the-survivors-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "bury-the-survivors-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "bury-the-survivors-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:cack-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "cack-hub",
+      "title": "粪作",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/cack-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/cack-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "cack-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "cack-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:classicalrevivalindex",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "classicalrevivalindex",
+      "title": "古典重温",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/classicalrevivalindex",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/classicalrevivalindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "classicalrevivalindex",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "classicalrevivalindex",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:tales-of-mr-collector",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "tales-of-mr-collector",
+      "title": "收藏家先生的故事集",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/tales-of-mr-collector",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/tales-of-mr-collector",
+      "hubPresentation": "standard",
+      "canonicalTag": "tales-of-mr-collector",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "tales-of-mr-collector",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:etdp-hub-page",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "etdp-hub-page",
+      "title": "祈问上帝",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/etdp-hub-page",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/etdp-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "etdp-hub-page",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "etdp-hub-page",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:goc-hub-page",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "goc-hub-page",
+      "title": "全球超自然联盟档案",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/goc-hub-page",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/goc-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "goc-hub-page",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "goc-hub-page",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:integration-program-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "integration-program-hub",
+      "title": "整合计划",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/integration-program-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/integration-program-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "integration-program-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "integration-program-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:kiryu-labs-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "kiryu-labs-hub",
+      "title": "Kiryu实验室",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/kiryu-labs-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/kiryu-labs-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "kiryu-labs-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "kiryu-labs-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:resurrection-new-faces-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "resurrection-new-faces-hub",
+      "title": "重生计划：新面貌",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/resurrection-new-faces-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/resurrection-new-faces-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "resurrection-new-faces-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "resurrection-new-faces-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:resurrection-old-foes-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "resurrection-old-foes-hub",
+      "title": "重生计划：老冤家",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/resurrection-old-foes-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/resurrection-old-foes-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "resurrection-old-foes-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "resurrection-old-foes-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:olympia-project",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "olympia-project",
+      "title": "奥林匹亚项目",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/olympia-project",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/olympia-project",
+      "hubPresentation": "standard",
+      "canonicalTag": "olympia-project",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "olympia-project",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:project-palisade",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "project-palisade",
+      "title": "围栏计划",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/project-palisade",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/project-palisade",
+      "hubPresentation": "standard",
+      "canonicalTag": "project-palisade",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "project-palisade",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:thaumiel",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "thaumiel",
+      "title": "Thaumiel计划",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/thaumiel",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/thaumiel",
+      "hubPresentation": "standard",
+      "canonicalTag": "thaumiel",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "thaumiel",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:bird",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "bird",
+      "title": "群鸟之伍",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/bird",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/bird",
+      "hubPresentation": "standard",
+      "canonicalTag": "bird",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "bird",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-time-after-time-password-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-time-after-time-password-hub",
+      "title": "多次性密码",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-time-after-time-password-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-time-after-time-password-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-time-after-time-password-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-time-after-time-password-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:unreality-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "unreality-hub",
+      "title": "非现实部",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/unreality-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/unreality-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "unreality-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unreality-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:and-every-time-we-meet-again-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "and-every-time-we-meet-again-hub",
+      "title": "每当你我重见之时",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/and-every-time-we-meet-again-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/and-every-time-we-meet-again-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "and-every-time-we-meet-again-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "and-every-time-we-meet-again-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:yggdrasils-surveyor",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "yggdrasils-surveyor",
+      "title": "Yggdrasil's Surveyor",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/yggdrasils-surveyor",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/yggdrasils-surveyor",
+      "hubPresentation": "standard",
+      "canonicalTag": "yggdrasils-surveyor",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "yggdrasils-surveyor",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:into-the-void-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "into-the-void-hub",
+      "title": "进军虚空 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/into-the-void-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/into-the-void-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "into-the-void-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "into-the-void-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:void-dancer-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "void-dancer-hub",
+      "title": "虚空舞者 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/void-dancer-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/void-dancer-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "void-dancer-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "void-dancer-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:double-hometown-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "double-hometown-hub",
+      "title": "双重故乡 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/double-hometown-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/double-hometown-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "double-hometown-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "double-hometown-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:foundation-collective-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "foundation-collective-hub",
+      "title": "基金会集团 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/foundation-collective-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/foundation-collective-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "foundation-collective-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "foundation-collective-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:sushiblade-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "sushiblade-hub",
+      "title": "寿司陀螺 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/sushiblade-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/sushiblade-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "sushiblade-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sushiblade-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:fusouki",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "fusouki",
+      "title": "扶桑紀 中心頁",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/fusouki",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/fusouki",
+      "hubPresentation": "standard",
+      "canonicalTag": "fusouki",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "fusouki",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:1998-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "1998-hub",
+      "title": "1998年 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/1998-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/1998-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "1998-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "1998-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:officer-doctor-soldier-spy-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "officer-doctor-soldier-spy-hub",
+      "title": "〈官员、博士、士兵与间谍〉中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/officer-doctor-soldier-spy-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/officer-doctor-soldier-spy-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "officer-doctor-soldier-spy-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "officer-doctor-soldier-spy-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-donkman-s-den",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-donkman-s-den",
+      "title": "驴哥的窝点 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-donkman-s-den",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-donkman-s-den",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-donkman-s-den",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-donkman-s-den",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-ursus-maritimus-incident",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-ursus-maritimus-incident",
+      "title": "北极熊事件",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-ursus-maritimus-incident",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-ursus-maritimus-incident",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-ursus-maritimus-incident",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-ursus-maritimus-incident",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:verse-of-an-endless-song",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "verse-of-an-endless-song",
+      "title": "无尽颂歌 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/verse-of-an-endless-song",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/verse-of-an-endless-song",
+      "hubPresentation": "standard",
+      "canonicalTag": "verse-of-an-endless-song",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "verse-of-an-endless-song",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:mainline-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "mainline-hub",
+      "title": "开天窗 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/mainline-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/mainline-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "mainline-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "mainline-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:hunger-doggo-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "hunger-doggo-hub",
+      "title": "小饿狗中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/hunger-doggo-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/hunger-doggo-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "hunger-doggo-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "hunger-doggo-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:in-opposition-to",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "in-opposition-to",
+      "title": "决战SCP系列",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/in-opposition-to",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/in-opposition-to",
+      "hubPresentation": "standard",
+      "canonicalTag": "in-opposition-to",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "in-opposition-to",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:non-prophet-organization-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "non-prophet-organization-hub",
+      "title": "非先知团体 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/non-prophet-organization-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/non-prophet-organization-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "non-prophet-organization-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "non-prophet-organization-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:sky-sermon-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "sky-sermon-hub",
+      "title": "银河接引中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/sky-sermon-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/sky-sermon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "sky-sermon-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sky-sermon-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:jude-s-bizarre-adventure",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "jude-s-bizarre-adventure",
+      "title": "Jude的奇妙冒险",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/jude-s-bizarre-adventure",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/jude-s-bizarre-adventure",
+      "hubPresentation": "standard",
+      "canonicalTag": "jude-s-bizarre-adventure",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "jude-s-bizarre-adventure",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-works-of-doc-burns",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-works-of-doc-burns",
+      "title": "Burns博士作品集",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-works-of-doc-burns",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-works-of-doc-burns",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-works-of-doc-burns",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-works-of-doc-burns",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:time-travel",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "time-travel",
+      "title": "初等时光旅行",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/time-travel",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/time-travel",
+      "hubPresentation": "standard",
+      "canonicalTag": "time-travel",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "time-travel",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:dark-side-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "dark-side-hub",
+      "title": "黑暗面 中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/dark-side-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/dark-side-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "dark-side-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dark-side-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:end-of-olympians-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "end-of-olympians-hub",
+      "title": "奥林匹亚之终结 中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/end-of-olympians-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/end-of-olympians-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "end-of-olympians-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "end-of-olympians-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:glittering-horizon-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "glittering-horizon-hub",
+      "title": "闪光地平线中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/glittering-horizon-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/glittering-horizon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "glittering-horizon-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "glittering-horizon-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:guns-pointed-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "guns-pointed-hub",
+      "title": "弑神之枪",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/guns-pointed-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/guns-pointed-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "guns-pointed-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "guns-pointed-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:horror-foundation",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "horror-foundation",
+      "title": "恐怖基金会",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/horror-foundation",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/horror-foundation",
+      "hubPresentation": "standard",
+      "canonicalTag": "horror-foundation",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "horror-foundation",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:subversion-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "subversion-hub",
+      "title": "颠覆",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/subversion-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/subversion-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "subversion-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "subversion-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:blood-red-summer-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "blood-red-summer-hub",
+      "title": "猩红夏季中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/blood-red-summer-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/blood-red-summer-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "blood-red-summer-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "blood-red-summer-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:ascension-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "ascension-hub",
+      "title": "扬升/与Rachael共舞中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/ascension-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/ascension-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ascension-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ascension-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:brink-dangerguts-adventures",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "brink-dangerguts-adventures",
+      "title": "Brink Dangerguts的冒险之旅",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/brink-dangerguts-adventures",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/brink-dangerguts-adventures",
+      "hubPresentation": "standard",
+      "canonicalTag": "brink-dangerguts-adventures",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "brink-dangerguts-adventures",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:broken-light-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "broken-light-hub",
+      "title": "碎光中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/broken-light-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/broken-light-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "broken-light-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "broken-light-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:wayfarers-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "wayfarers-hub",
+      "title": "旅者中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/wayfarers-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/wayfarers-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "wayfarers-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wayfarers-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:wills-and-ways-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "wills-and-ways-hub",
+      "title": "遗嘱与道路",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/wills-and-ways-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/wills-and-ways-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "wills-and-ways-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wills-and-ways-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-black-queen",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-black-queen",
+      "title": "黑皇后",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-black-queen",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-black-queen",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-black-queen",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-black-queen",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:rammer-jammer-yellow-hammer-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "rammer-jammer-yellow-hammer-hub",
+      "title": "夯土干扰机钻工中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/rammer-jammer-yellow-hammer-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/rammer-jammer-yellow-hammer-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "rammer-jammer-yellow-hammer-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "rammer-jammer-yellow-hammer-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:green-thumb",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "green-thumb",
+      "title": "绿拇指中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/green-thumb",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/green-thumb",
+      "hubPresentation": "standard",
+      "canonicalTag": "green-thumb",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "green-thumb",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:dixieland-nightmare-magic-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "dixieland-nightmare-magic-hub",
+      "title": "迪克西兰爵士乐噩梦魔法中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/dixieland-nightmare-magic-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/dixieland-nightmare-magic-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "dixieland-nightmare-magic-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dixieland-nightmare-magic-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:aleph-null-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "aleph-null-hub",
+      "title": "阿列夫零中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/aleph-null-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/aleph-null-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "aleph-null-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "aleph-null-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:time-contest",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "time-contest",
+      "title": "时间竞赛！",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/time-contest",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/time-contest",
+      "hubPresentation": "standard",
+      "canonicalTag": "time-contest",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "time-contest",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:december-24th-2011-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "december-24th-2011-hub",
+      "title": "2011年12月24日 中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/december-24th-2011-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/december-24th-2011-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "december-24th-2011-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "december-24th-2011-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:gloriana-alexylva-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "gloriana-alexylva-hub",
+      "title": "荣光Alexylva中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/gloriana-alexylva-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/gloriana-alexylva-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "gloriana-alexylva-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gloriana-alexylva-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:matryoshka",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "matryoshka",
+      "title": "套娃",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/matryoshka",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/matryoshka",
+      "hubPresentation": "standard",
+      "canonicalTag": "matryoshka",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "matryoshka",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:black-autumn-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "black-autumn-hub",
+      "title": "黑色秋日中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/black-autumn-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/black-autumn-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "black-autumn-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "black-autumn-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:rise-of-the-pit-sloth-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "rise-of-the-pit-sloth-hub",
+      "title": "黑色秋日II：斯洛斯之坑的出现中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/rise-of-the-pit-sloth-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/rise-of-the-pit-sloth-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "rise-of-the-pit-sloth-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "rise-of-the-pit-sloth-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:maim-the-sky-slay-the-sun-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "maim-the-sky-slay-the-sun-hub",
+      "title": "摧青天，戮白日中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/maim-the-sky-slay-the-sun-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/maim-the-sky-slay-the-sun-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "maim-the-sky-slay-the-sun-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "maim-the-sky-slay-the-sun-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:portland-vice",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "portland-vice",
+      "title": "波特兰之恶",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/portland-vice",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/portland-vice",
+      "hubPresentation": "standard",
+      "canonicalTag": "portland-vice",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "portland-vice",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-hanged-king-s-comedy",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-hanged-king-s-comedy",
+      "title": "缢王谐调",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-hanged-king-s-comedy",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-hanged-king-s-comedy",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-hanged-king-s-comedy",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-hanged-king-s-comedy",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:amnesticization",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "amnesticization",
+      "title": "转身忘却团队中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/amnesticization",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/amnesticization",
+      "hubPresentation": "standard",
+      "canonicalTag": "amnesticization",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "amnesticization",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:last-light-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "last-light-hub",
+      "title": "末光中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/last-light-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/last-light-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "last-light-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "last-light-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:gamedaypart3index",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "gamedaypart3index",
+      "title": "比赛日，章节三：保护",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/gamedaypart3index",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/gamedaypart3index",
+      "hubPresentation": "standard",
+      "canonicalTag": "gamedaypart3index",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gamedaypart3index",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:gamedaypart2index",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "gamedaypart2index",
+      "title": "比赛日，章节二：收容",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/gamedaypart2index",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/gamedaypart2index",
+      "hubPresentation": "standard",
+      "canonicalTag": "gamedaypart2index",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gamedaypart2index",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:gamedaypart1index",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "gamedaypart1index",
+      "title": "比赛日，章节一：控制",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/gamedaypart1index",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/gamedaypart1index",
+      "hubPresentation": "standard",
+      "canonicalTag": "gamedaypart1index",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gamedaypart1index",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:all-that-glisters",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "all-that-glisters",
+      "title": "晱灮的东西",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/all-that-glisters",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/all-that-glisters",
+      "hubPresentation": "standard",
+      "canonicalTag": "all-that-glisters",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "all-that-glisters",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:canon-jp-2",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "canon-jp-2",
+      "title": "邪恶基金会 -控制・收容・支配-",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/canon-jp-2",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/canon-jp-2",
+      "hubPresentation": "standard",
+      "canonicalTag": "canon-jp-2",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canon-jp-2",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:wayward",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "wayward",
+      "title": "任性王子的寓言",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/wayward",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/wayward",
+      "hubPresentation": "standard",
+      "canonicalTag": "wayward",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wayward",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:murphy-law-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "murphy-law-hub",
+      "title": "吕墨非奇案之......吕墨非中心页！",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/murphy-law-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/murphy-law-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "murphy-law-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "murphy-law-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:learning-the-alphabet-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "learning-the-alphabet-hub",
+      "title": "学习字母表 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/learning-the-alphabet-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/learning-the-alphabet-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "learning-the-alphabet-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "learning-the-alphabet-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:like-clockwork-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "like-clockwork-hub",
+      "title": "……就像发条中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/like-clockwork-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/like-clockwork-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "like-clockwork-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "like-clockwork-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:adventures-in-capitalism-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "adventures-in-capitalism-hub",
+      "title": "资本主义大冒险中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/adventures-in-capitalism-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/adventures-in-capitalism-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "adventures-in-capitalism-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "adventures-in-capitalism-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:end-of-line-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "end-of-line-hub",
+      "title": "终末中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/end-of-line-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/end-of-line-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "end-of-line-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "end-of-line-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:new",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "new",
+      "title": "绅士探险家布莱克伍德爵士冒险史",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/new",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/new",
+      "hubPresentation": "standard",
+      "canonicalTag": "new",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "new",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:atzak-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "atzak-hub",
+      "title": "Atzak中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/atzak-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/atzak-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "atzak-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "atzak-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:unusual-investigations",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "unusual-investigations",
+      "title": "对Kenneth Spencer和Robin Thorne的特异调查",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/unusual-investigations",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/unusual-investigations",
+      "hubPresentation": "standard",
+      "canonicalTag": "unusual-investigations",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unusual-investigations",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:comedown-machine-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "comedown-machine-hub",
+      "title": "衰败机器中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/comedown-machine-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/comedown-machine-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "comedown-machine-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "comedown-machine-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:uiu-series-with-no-name-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "uiu-series-with-no-name-hub",
+      "title": "无名的UIU系列中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/uiu-series-with-no-name-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/uiu-series-with-no-name-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "uiu-series-with-no-name-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "uiu-series-with-no-name-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:burnt-bridges",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "burnt-bridges",
+      "title": "济河焚舟",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/burnt-bridges",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/burnt-bridges",
+      "hubPresentation": "standard",
+      "canonicalTag": "burnt-bridges",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "burnt-bridges",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:austringers",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "austringers",
+      "title": "鹰猎者",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/austringers",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/austringers",
+      "hubPresentation": "standard",
+      "canonicalTag": "austringers",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "austringers",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-elusive-anderson",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-elusive-anderson",
+      "title": "神出鬼没的Anderson",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-elusive-anderson",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-elusive-anderson",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-elusive-anderson",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-elusive-anderson",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:above-all-stand-i",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "above-all-stand-i",
+      "title": "我立于万物之上",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/above-all-stand-i",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/above-all-stand-i",
+      "hubPresentation": "standard",
+      "canonicalTag": "above-all-stand-i",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "above-all-stand-i",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:sapphire-portal",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "sapphire-portal",
+      "title": "蓝宝石天空中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/sapphire-portal",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/sapphire-portal",
+      "hubPresentation": "standard",
+      "canonicalTag": "sapphire-portal",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sapphire-portal",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:peregrine",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "peregrine",
+      "title": "游隼",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/peregrine",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/peregrine",
+      "hubPresentation": "standard",
+      "canonicalTag": "peregrine",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "peregrine",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:psw-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "psw-hub",
+      "title": "泛斯拉夫抵抗军中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/psw-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/psw-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "psw-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "psw-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:skp-portal",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "skp-portal",
+      "title": "异常特遣队中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/skp-portal",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/skp-portal",
+      "hubPresentation": "standard",
+      "canonicalTag": "skp-portal",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "skp-portal",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:canon-hub-ko",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "canon-hub-ko",
+      "title": "韩国分部设定中心",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/canon-hub-ko",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/canon-hub-ko",
+      "hubPresentation": "standard",
+      "canonicalTag": "canon-hub-ko",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "canon-hub-ko",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:mujin-yarn",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "mujin-yarn",
+      "title": "雾津奇谭",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/mujin-yarn",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/mujin-yarn",
+      "hubPresentation": "standard",
+      "canonicalTag": "mujin-yarn",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "mujin-yarn",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:creepy-pasta",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "creepy-pasta",
+      "title": "Creepy-Pasta",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/creepy-pasta",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/creepy-pasta",
+      "hubPresentation": "standard",
+      "canonicalTag": "creepy-pasta",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "creepy-pasta",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:joseon-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "joseon-hub",
+      "title": "朝鲜 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/joseon-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/joseon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "joseon-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "joseon-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:dr-gears-storytime-entries",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "dr-gears-storytime-entries",
+      "title": "Dr.Gears故事集",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/dr-gears-storytime-entries",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/dr-gears-storytime-entries",
+      "hubPresentation": "standard",
+      "canonicalTag": "dr-gears-storytime-entries",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dr-gears-storytime-entries",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:sins-of-the-past-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "sins-of-the-past-hub",
+      "title": "过往罪恶中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/sins-of-the-past-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/sins-of-the-past-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "sins-of-the-past-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "sins-of-the-past-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:conspiracy",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "conspiracy",
+      "title": "阴谋",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/conspiracy",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/conspiracy",
+      "hubPresentation": "standard",
+      "canonicalTag": "conspiracy",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "conspiracy",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:gamedayindex",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "gamedayindex",
+      "title": "比赛日",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/gamedayindex",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/gamedayindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "gamedayindex",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gamedayindex",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:in-his-own-image",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "in-his-own-image",
+      "title": "他心之形",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/in-his-own-image",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/in-his-own-image",
+      "hubPresentation": "standard",
+      "canonicalTag": "in-his-own-image",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "in-his-own-image",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-cool-war-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-cool-war-hub",
+      "title": "Cool之战",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-cool-war-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-cool-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-cool-war-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-cool-war-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:remembrance",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "remembrance",
+      "title": "追忆",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/remembrance",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/remembrance",
+      "hubPresentation": "standard",
+      "canonicalTag": "remembrance",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "remembrance",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:the-lombardi-tales",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "the-lombardi-tales",
+      "title": "Lombardi的故事",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-lombardi-tales",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-lombardi-tales",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-lombardi-tales",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-lombardi-tales",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cn:collection:series:crossoverprojectindex",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "crossoverprojectindex",
+      "title": "Crossover项目",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/crossoverprojectindex",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/crossoverprojectindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "crossoverprojectindex",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "crossoverprojectindex",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
     },
     {
       "id": "scp-cn:collection:goi:alexylva-university-hub",

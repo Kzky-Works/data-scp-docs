@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785825008,
-  "generatedAt": "2026-08-04T06:30:08Z",
-  "chunkRevision": "sha256-b58379273b73d9cec9c8234309fa55c3b8db84e0817687d913c5910aca1cf414",
+  "listVersion": 1786118059,
+  "generatedAt": "2026-08-07T15:54:19Z",
+  "chunkRevision": "sha256-69a66d2a8b99c71ff91a9eaf102c00043dac66a935d63e1ac8d20c5e81b5d246",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785824726,
-        "generatedAt": "2026-08-04T06:25:26Z",
-        "contentHash": "sha256-7aeafe35ed94bfcbed77340064f7afc0716e6233ba2aa5550f39016f03fe9474"
+        "listVersion": 1786112749,
+        "generatedAt": "2026-08-07T14:25:49Z",
+        "contentHash": "sha256-80ecbcdc1ba0bedd6424532f0d272998e94f970563d3fa474a8bb244ece19f74"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1785747335,
-        "generatedAt": "2026-08-03T08:55:35Z",
-        "contentHash": "sha256-c2d4698b20455b56fa982e3a3de4287e40031625e62c8b46a3407c5449284aa7"
+        "listVersion": 1786114031,
+        "generatedAt": "2026-08-07T14:47:11Z",
+        "contentHash": "sha256-4246224246556a4ec3d4bdc594196d04dd891df4041b4dca8237569664bbadfa"
       },
       {
         "kind": "manifest_scp-int",
@@ -55,15 +55,15 @@
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1785747335,
-        "generatedAt": "2026-08-03T08:55:35Z",
-        "contentHash": "sha256-eeabd5fd001ec3cc2919f54da8b2f6c47d0afc93d12ab1f9e5c1003476f5bd1c"
+        "listVersion": 1786118034,
+        "generatedAt": "2026-08-07T15:53:54Z",
+        "contentHash": "sha256-63ceb66c972e3da92a4ba2284e030b6c5368b2d72648d709a8c68bc71cdbdcee"
       }
     ],
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+      "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
     },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/pl.json",
@@ -1925,7 +1925,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-05c3018578e038f6119050cc761e0c3eea8e98c54ced88e2eb7bfb71d86a37f4"
+        "structureHash": "sha256-7943b6811ac0f363fc22eaf6511354783092fd38222994ae40af92af04e4bbb9"
       },
       "primaryArticles": [
         {
@@ -2056,6 +2056,16 @@
           "contentKind": "scp",
           "os": 5,
           "desc": "SCP-6872 ma zostać aktywowany tylko jako ostatnia deska ratunku w przypadku nieuchronnego wystąpienia globalnego Scenariusza Klasy K. Aktywacja SCP-6872 wymaga pilnej autoryzacji większości członków Rady O5. Osoby nienależące do Rady O5, próbujące uzyskać dost…"
+        },
+        {
+          "id": "scp-pl-391",
+          "title": "Między życiem, a śmiercią",
+          "url": "https://scp-pl.wikidot.com/scp-pl-391",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "Ze względu na swoją odległość od jakiejkolwiek osady zamieszkiwanej przez ludność Theta-Psi-40, SCP-PL-391 nie wymaga wzmożonego nadzoru."
         }
       ],
       "supplementLinks": [],
@@ -2091,7 +2101,8 @@
           "articleIDs": [
             "impossible-to-destroy-reptile",
             "scp-4322",
-            "scp-6872"
+            "scp-6872",
+            "scp-pl-391"
           ]
         }
       ]
@@ -3965,6 +3976,874 @@
       "description": "Pewnego dnia światło powróci do tego miejsca i będziemy żyć szczęściem i obfitością. Lecz jeszcze nie dziś. Dziś krwawy księżyc wisi nisko na niebie i odbija się od zatoki. W tym miejscu szaleństwa słońce nie wstaje."
     },
     {
+      "id": "scp-pl:collection:series:argus-bcppotwzm-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "argus-bcppotwzm-hub",
+      "title": "A.R.G.U.S. - Bo czasami pięćdziesiąt par oczu to wciąż za mało.",
+      "sourceListURL": "https://scp-pl.wikidot.com/argus-bcppotwzm-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/argus-bcppotwzm-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "argus-bcppotwzm-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "argus-bcppotwzm-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:cjpw-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "cjpw-hub",
+      "title": "Człowieczeństwo jest pojęciem względnym",
+      "sourceListURL": "https://scp-pl.wikidot.com/cjpw-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/cjpw-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "cjpw-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "cjpw-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:dekalog-bohatera",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "dekalog-bohatera",
+      "title": "Dekalog Bohatera",
+      "sourceListURL": "https://scp-pl.wikidot.com/dekalog-bohatera",
+      "officialHubURL": "https://scp-pl.wikidot.com/dekalog-bohatera",
+      "hubPresentation": "standard",
+      "canonicalTag": "dekalog-bohatera",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dekalog-bohatera",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:faust-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "faust-hub",
+      "title": "Faust",
+      "sourceListURL": "https://scp-pl.wikidot.com/faust-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/faust-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "faust-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "faust-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:horror-wonders",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "horror-wonders",
+      "title": "Horror Wonders",
+      "sourceListURL": "https://scp-pl.wikidot.com/horror-wonders",
+      "officialHubURL": "https://scp-pl.wikidot.com/horror-wonders",
+      "hubPresentation": "standard",
+      "canonicalTag": "horror-wonders",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "horror-wonders",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:morskie-opowiesci",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "morskie-opowiesci",
+      "title": "Morskie opowieści",
+      "sourceListURL": "https://scp-pl.wikidot.com/morskie-opowiesci",
+      "officialHubURL": "https://scp-pl.wikidot.com/morskie-opowiesci",
+      "hubPresentation": "standard",
+      "canonicalTag": "morskie-opowiesci",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "morskie-opowiesci",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:epicka-saga-oliwii",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "epicka-saga-oliwii",
+      "title": "Epicka Saga Oliwii",
+      "sourceListURL": "https://scp-pl.wikidot.com/epicka-saga-oliwii",
+      "officialHubURL": "https://scp-pl.wikidot.com/epicka-saga-oliwii",
+      "hubPresentation": "standard",
+      "canonicalTag": "epicka-saga-oliwii",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "epicka-saga-oliwii",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:opowiesci-z-granic-swiatow",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "opowiesci-z-granic-swiatow",
+      "title": "Opowieści z granic światów",
+      "sourceListURL": "https://scp-pl.wikidot.com/opowiesci-z-granic-swiatow",
+      "officialHubURL": "https://scp-pl.wikidot.com/opowiesci-z-granic-swiatow",
+      "hubPresentation": "standard",
+      "canonicalTag": "opowiesci-z-granic-swiatow",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "opowiesci-z-granic-swiatow",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:ostatnie-dni-jesieni-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "ostatnie-dni-jesieni-hub",
+      "title": "Ostatnie dni jesieni",
+      "sourceListURL": "https://scp-pl.wikidot.com/ostatnie-dni-jesieni-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/ostatnie-dni-jesieni-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ostatnie-dni-jesieni-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ostatnie-dni-jesieni-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:projekt-chwastoboj",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "projekt-chwastoboj",
+      "title": "Projekt Chwastobój",
+      "sourceListURL": "https://scp-pl.wikidot.com/projekt-chwastoboj",
+      "officialHubURL": "https://scp-pl.wikidot.com/projekt-chwastoboj",
+      "hubPresentation": "standard",
+      "canonicalTag": "projekt-chwastoboj",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "projekt-chwastoboj",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:rok-2061",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "rok-2061",
+      "title": "Rok 2061",
+      "sourceListURL": "https://scp-pl.wikidot.com/rok-2061",
+      "officialHubURL": "https://scp-pl.wikidot.com/rok-2061",
+      "hubPresentation": "standard",
+      "canonicalTag": "rok-2061",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "rok-2061",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:roztrzyn",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "roztrzyn",
+      "title": "Roztrzyn",
+      "sourceListURL": "https://scp-pl.wikidot.com/roztrzyn",
+      "officialHubURL": "https://scp-pl.wikidot.com/roztrzyn",
+      "hubPresentation": "standard",
+      "canonicalTag": "roztrzyn",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "roztrzyn",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:teoria-obwodow",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "teoria-obwodow",
+      "title": "Teoria Obwodów",
+      "sourceListURL": "https://scp-pl.wikidot.com/teoria-obwodow",
+      "officialHubURL": "https://scp-pl.wikidot.com/teoria-obwodow",
+      "hubPresentation": "standard",
+      "canonicalTag": "teoria-obwodow",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "teoria-obwodow",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesPl archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:atzak-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "atzak-hub",
+      "title": "Atzak Hub",
+      "sourceListURL": "https://scp-pl.wikidot.com/atzak-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/atzak-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "atzak-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "atzak-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:the-time-after-time-password-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "the-time-after-time-password-hub",
+      "title": "Hasło raz po raz Hub",
+      "sourceListURL": "https://scp-pl.wikidot.com/the-time-after-time-password-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/the-time-after-time-password-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-time-after-time-password-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-time-after-time-password-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:dr-gears-storytime-entries",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "dr-gears-storytime-entries",
+      "title": "Historyjki Dr. Gearsa",
+      "sourceListURL": "https://scp-pl.wikidot.com/dr-gears-storytime-entries",
+      "officialHubURL": "https://scp-pl.wikidot.com/dr-gears-storytime-entries",
+      "hubPresentation": "standard",
+      "canonicalTag": "dr-gears-storytime-entries",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dr-gears-storytime-entries",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:and-every-time-we-meet-again-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "and-every-time-we-meet-again-hub",
+      "title": "I Za Każdym Razem Gdy Się Znów Spotkamy Hub",
+      "sourceListURL": "https://scp-pl.wikidot.com/and-every-time-we-meet-again-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/and-every-time-we-meet-again-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "and-every-time-we-meet-again-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "and-every-time-we-meet-again-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:the-ursus-maritimus-incident",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "the-ursus-maritimus-incident",
+      "title": "Incydent Ursus Maritimus",
+      "sourceListURL": "https://scp-pl.wikidot.com/the-ursus-maritimus-incident",
+      "officialHubURL": "https://scp-pl.wikidot.com/the-ursus-maritimus-incident",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-ursus-maritimus-incident",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-ursus-maritimus-incident",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:damocles",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "damocles",
+      "title": "Inicjatywa Damokles",
+      "sourceListURL": "https://scp-pl.wikidot.com/damocles",
+      "officialHubURL": "https://scp-pl.wikidot.com/damocles",
+      "hubPresentation": "standard",
+      "canonicalTag": "damocles",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "damocles",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:murphy-law-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "murphy-law-hub",
+      "title": "Murphy Law w... Hub Murphy'ego Law!",
+      "sourceListURL": "https://scp-pl.wikidot.com/murphy-law-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/murphy-law-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "murphy-law-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "murphy-law-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:nexus-series",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "nexus-series",
+      "title": "Nexus Hub",
+      "sourceListURL": "https://scp-pl.wikidot.com/nexus-series",
+      "officialHubURL": "https://scp-pl.wikidot.com/nexus-series",
+      "hubPresentation": "standard",
+      "canonicalTag": "nexus-series",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "nexus-series",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:resurrection-old-foes-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "resurrection-old-foes-hub",
+      "title": "Odrodzenie: Starzy Wrogowie Hub",
+      "sourceListURL": "https://scp-pl.wikidot.com/resurrection-old-foes-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/resurrection-old-foes-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "resurrection-old-foes-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "resurrection-old-foes-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:the-lombardi-tales",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "the-lombardi-tales",
+      "title": "Opowieści Lombardiego",
+      "sourceListURL": "https://scp-pl.wikidot.com/the-lombardi-tales",
+      "officialHubURL": "https://scp-pl.wikidot.com/the-lombardi-tales",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-lombardi-tales",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-lombardi-tales",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:tales-of-mr-collector",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "tales-of-mr-collector",
+      "title": "Opowieści Pana Kolekcjonera",
+      "sourceListURL": "https://scp-pl.wikidot.com/tales-of-mr-collector",
+      "officialHubURL": "https://scp-pl.wikidot.com/tales-of-mr-collector",
+      "hubPresentation": "standard",
+      "canonicalTag": "tales-of-mr-collector",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "tales-of-mr-collector",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:olympia-project",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "olympia-project",
+      "title": "Projekt Olimpia",
+      "sourceListURL": "https://scp-pl.wikidot.com/olympia-project",
+      "officialHubURL": "https://scp-pl.wikidot.com/olympia-project",
+      "hubPresentation": "standard",
+      "canonicalTag": "olympia-project",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "olympia-project",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:new",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "new",
+      "title": "Przygody Lorda Blackwooda, odkrywcy i dżentelmena",
+      "sourceListURL": "https://scp-pl.wikidot.com/new",
+      "officialHubURL": "https://scp-pl.wikidot.com/new",
+      "hubPresentation": "standard",
+      "canonicalTag": "new",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "new",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:pdps",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "pdps",
+      "title": "Służba Ochrony Domeny Publicznej Hub",
+      "sourceListURL": "https://scp-pl.wikidot.com/pdps",
+      "officialHubURL": "https://scp-pl.wikidot.com/pdps",
+      "hubPresentation": "standard",
+      "canonicalTag": "pdps",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "pdps",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:the-cool-war-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "the-cool-war-hub",
+      "title": "Spoko Wojna",
+      "sourceListURL": "https://scp-pl.wikidot.com/the-cool-war-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/the-cool-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-cool-war-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-cool-war-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:florence-thorne-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "florence-thorne-hub",
+      "title": "The Phoenix, The Nightingale, and The Magpies",
+      "sourceListURL": "https://scp-pl.wikidot.com/florence-thorne-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/florence-thorne-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "florence-thorne-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "florence-thorne-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:all-that-glisters",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "all-that-glisters",
+      "title": "Wszystko, co się lśni",
+      "sourceListURL": "https://scp-pl.wikidot.com/all-that-glisters",
+      "officialHubURL": "https://scp-pl.wikidot.com/all-that-glisters",
+      "hubPresentation": "standard",
+      "canonicalTag": "all-that-glisters",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "all-that-glisters",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pl:collection:series:antimemetics-division-hub",
+      "branchID": "scp-pl",
+      "kind": "series",
+      "hubID": "antimemetics-division-hub",
+      "title": "Wydział Antymemetyki Hub",
+      "sourceListURL": "https://scp-pl.wikidot.com/antimemetics-division-hub",
+      "officialHubURL": "https://scp-pl.wikidot.com/antimemetics-division-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "antimemetics-division-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "antimemetics-division-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
       "id": "scp-pl:collection:goi:a-r-g-u-s-inc",
       "branchID": "scp-pl",
       "kind": "goi",
@@ -4280,6 +5159,20 @@
           "id": "wylacz-tv-wlacz-myslenie",
           "title": "Wyłącz TV, włącz myślenie",
           "url": "https://scp-pl.wikidot.com/wylacz-tv-wlacz-myslenie",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kompas-parapolityczny-na-trudne-czasy",
+          "title": "unVeiled: Kompas parapolityczny na trudne czasy",
+          "url": "https://scp-pl.wikidot.com/kompas-parapolityczny-na-trudne-czasy",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "wniosek-o-dotacje-marsjanski-transburzowiec",
+          "title": "WNIOSEK O DOTACJĘ: Marsjański Transburzowiec",
+          "url": "https://scp-pl.wikidot.com/wniosek-o-dotacje-marsjanski-transburzowiec",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -4853,73 +5746,6 @@
           "id": "profil-zwierzaka-lara",
           "title": "Profil Zwierzaka: Lara!",
           "url": "https://scp-pl.wikidot.com/profil-zwierzaka-lara",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        }
-      ],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-pl:collection:goi:inne-nieznane",
-      "branchID": "scp-pl",
-      "kind": "goi",
-      "hubID": "inne-nieznane",
-      "title": "Inne/Nieznane",
-      "sourceListURL": "https://scp-pl.wikidot.com/iluminaci-krytykuja-vanguard",
-      "officialHubURL": "https://scp-pl.wikidot.com/iluminaci-krytykuja-vanguard",
-      "hubPresentation": "standard",
-      "canonicalTag": "inne-nieznane",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "inne-nieznane",
-        "notes": [
-          "auto-derived from manifest_gois.goiRegions.pl"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "auto-derived from GoI region articles"
-      },
-      "memberManifests": [
-        "manifest_gois"
-      ],
-      "memberResolution": {
-        "mode": "goiRegionArticles",
-        "region": "pl"
-      },
-      "primaryArticles": [
-        {
-          "id": "informacja-o-dzialalnosci-sap-w-roku-2025",
-          "title": "Informacja o działalności Stowarzyszenia Artykułu Pierwszego w roku 2025",
-          "url": "https://scp-pl.wikidot.com/informacja-o-dzialalnosci-sap-w-roku-2025",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "on-th4717",
-          "title": "On-Θ4717 \"Sen o Oazie",
-          "url": "https://scp-pl.wikidot.com/on-th4717",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "vellus-aureum",
-          "title": "Vellus aureum",
-          "url": "https://scp-pl.wikidot.com/vellus-aureum",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "wyjscie-z-pzdp",
-          "title": "Wyjście z PZDP: decyzja, która zmienia wszystko. Co naprawdę oznacza dla matrycy i działkowców?",
-          "url": "https://scp-pl.wikidot.com/wyjscie-z-pzdp",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "wylacz-tv-wlacz-myslenie",
-          "title": "Wyłącz TV, włącz myślenie",
-          "url": "https://scp-pl.wikidot.com/wylacz-tv-wlacz-myslenie",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785999005,
-  "generatedAt": "2026-08-06T06:50:05Z",
-  "chunkRevision": "sha256-6c9ca02ca1759956b8dc03e5a66fdd171458aeabcb001da930e387770955056a",
+  "listVersion": 1786113432,
+  "generatedAt": "2026-08-07T14:37:12Z",
+  "chunkRevision": "sha256-733f2e63714df3aa3897f939d18f3c6e034d0d81124b74b909778e0fecfb4a35",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785998914,
-        "generatedAt": "2026-08-06T06:48:34Z",
-        "contentHash": "sha256-929ceed9aeecc1eb15d8562d9bab9324a7b44d7696404fb33bfcce6f62ce206c"
+        "listVersion": 1786109584,
+        "generatedAt": "2026-08-07T13:33:04Z",
+        "contentHash": "sha256-b141c3a80cd7f029a1dafb816975f42d0832bcb2ef86629ba0dc0f5f817a55d2"
       },
       {
         "kind": "manifest_scp-cs",
@@ -54,7 +54,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+      "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
     },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/cs.json",
@@ -4165,6 +4165,47 @@
       ]
     },
     {
+      "id": "scp-cs:collection:canon:the-alchemy-department-hub",
+      "branchID": "scp-cs",
+      "kind": "canon",
+      "hubID": "the-alchemy-department-hub",
+      "title": "The Foundation Alchemy Department",
+      "sourceListURL": "http://scp-cs.wikidot.com/the-alchemy-department-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/the-alchemy-department-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-alchemy-department-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-alchemy-department-hub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "emptySectionTitle": "Články",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-396b1fb4f1e1fa326511730277649407e27e4da61f66431412dcf4c12f6d252b",
+        "verifiedEmpty": true,
+        "allowEmpty": true
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "…Víte, vše to začalo, když jsem přišel do Oblasti-127. Myslím, že doba působení Ředitele je mnohem delší, než dává najevo…"
+    },
+    {
       "id": "scp-cs:collection:canon:goc-hub-page",
       "branchID": "scp-cs",
       "kind": "canon",
@@ -5613,6 +5654,398 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-cs:collection:series:unreality-hub",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "unreality-hub",
+      "title": "Oddělení Nereality",
+      "sourceListURL": "http://scp-cs.wikidot.com/unreality-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/unreality-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "unreality-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unreality-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:adventures-in-capitalism-hub",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "adventures-in-capitalism-hub",
+      "title": "Dobrodružství v Kapitalismu",
+      "sourceListURL": "http://scp-cs.wikidot.com/adventures-in-capitalism-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/adventures-in-capitalism-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "adventures-in-capitalism-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "adventures-in-capitalism-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:all-that-glisters",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "all-that-glisters",
+      "title": "Co se třpytí",
+      "sourceListURL": "http://scp-cs.wikidot.com/all-that-glisters",
+      "officialHubURL": "http://scp-cs.wikidot.com/all-that-glisters",
+      "hubPresentation": "standard",
+      "canonicalTag": "all-that-glisters",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "all-that-glisters",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:antimemetics-division-hub",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "antimemetics-division-hub",
+      "title": "Antimemetická divize",
+      "sourceListURL": "http://scp-cs.wikidot.com/antimemetics-division-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/antimemetics-division-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "antimemetics-division-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "antimemetics-division-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:olympia-project",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "olympia-project",
+      "title": "Projekt Olympia",
+      "sourceListURL": "http://scp-cs.wikidot.com/olympia-project",
+      "officialHubURL": "http://scp-cs.wikidot.com/olympia-project",
+      "hubPresentation": "standard",
+      "canonicalTag": "olympia-project",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "olympia-project",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:kalinins-proposal",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "kalinins-proposal",
+      "title": "Návrh Uživatele: Kalinin",
+      "sourceListURL": "http://scp-cs.wikidot.com/kalinins-proposal",
+      "officialHubURL": "http://scp-cs.wikidot.com/kalinins-proposal",
+      "hubPresentation": "standard",
+      "canonicalTag": "kalinins-proposal",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "kalinins-proposal",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:crossoverprojectindex",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "crossoverprojectindex",
+      "title": "Projekt Crossover",
+      "sourceListURL": "http://scp-cs.wikidot.com/crossoverprojectindex",
+      "officialHubURL": "http://scp-cs.wikidot.com/crossoverprojectindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "crossoverprojectindex",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "crossoverprojectindex",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:tales-of-mr-collector",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "tales-of-mr-collector",
+      "title": "Příběhy Mr. Sběratele",
+      "sourceListURL": "http://scp-cs.wikidot.com/tales-of-mr-collector",
+      "officialHubURL": "http://scp-cs.wikidot.com/tales-of-mr-collector",
+      "hubPresentation": "standard",
+      "canonicalTag": "tales-of-mr-collector",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "tales-of-mr-collector",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:thaumiel",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "thaumiel",
+      "title": "Projekt Thaumiel",
+      "sourceListURL": "http://scp-cs.wikidot.com/thaumiel",
+      "officialHubURL": "http://scp-cs.wikidot.com/thaumiel",
+      "hubPresentation": "standard",
+      "canonicalTag": "thaumiel",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "thaumiel",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:peregrine",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "peregrine",
+      "title": "Sokol",
+      "sourceListURL": "http://scp-cs.wikidot.com/peregrine",
+      "officialHubURL": "http://scp-cs.wikidot.com/peregrine",
+      "hubPresentation": "standard",
+      "canonicalTag": "peregrine",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "peregrine",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:the-lombardi-tales",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "the-lombardi-tales",
+      "title": "Lombardiho příběhy",
+      "sourceListURL": "http://scp-cs.wikidot.com/the-lombardi-tales",
+      "officialHubURL": "http://scp-cs.wikidot.com/the-lombardi-tales",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-lombardi-tales",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-lombardi-tales",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:remembrance",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "remembrance",
+      "title": "Vzpomínání",
+      "sourceListURL": "http://scp-cs.wikidot.com/remembrance",
+      "officialHubURL": "http://scp-cs.wikidot.com/remembrance",
+      "hubPresentation": "standard",
+      "canonicalTag": "remembrance",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "remembrance",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:the-cool-war-hub",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "the-cool-war-hub",
+      "title": "Cool War",
+      "sourceListURL": "http://scp-cs.wikidot.com/the-cool-war-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/the-cool-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-cool-war-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-cool-war-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-cs:collection:series:in-his-own-image",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "in-his-own-image",
+      "title": "K Obrazu Svému",
+      "sourceListURL": "http://scp-cs.wikidot.com/in-his-own-image",
+      "officialHubURL": "http://scp-cs.wikidot.com/in-his-own-image",
+      "hubPresentation": "standard",
+      "canonicalTag": "in-his-own-image",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "in-his-own-image",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
     }
   ]
 }

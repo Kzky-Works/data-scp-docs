@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1785751692,
-  "generatedAt": "2026-08-03T10:08:12Z",
-  "chunkRevision": "sha256-88ef4beff482725ee541aa95bddc2302bb46663b75f5a93edef9584d89f51a81",
+  "listVersion": 1786117076,
+  "generatedAt": "2026-08-07T15:37:56Z",
+  "chunkRevision": "sha256-e7d9619cb4f721d4de4fc7a90004dae35344bb322f3e67616e96f58fd9638314",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-pt",
         "path": "DataPipeline/list/pt/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785751692,
-        "generatedAt": "2026-08-03T10:08:12Z",
-        "contentHash": "sha256-f20bac4f917f097ce144d1367cd566175725cfff3b18b6dfab4f3bf73506b929"
+        "listVersion": 1786117076,
+        "generatedAt": "2026-08-07T15:37:56Z",
+        "contentHash": "sha256-5dab250453665bd0d073c1253f3d81056edd918b2cae4ffa3139b98310c2938e"
       },
       {
         "kind": "manifest_scp-int",
@@ -54,7 +54,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-b7b955488a5460b1aecfdccd3694b256327e463038b9cd1af6f3d8778dc7102c"
+      "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
     },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/pt.json",
@@ -8186,6 +8186,594 @@
       "primaryArticles": [],
       "supplementLinks": [],
       "description": "A Fundação Lusófona, \"Filial Lusófona da Fundação\" ou \"SCP-PT\", é uma instituição autônoma parte da grande SCP Foundation. Institucionalmente, possui jurisdição e jurisprudência para operar promovendo ações de segurança, contenção, proteção e quaisquer outras ações necessárias para assegurar a proteção da normalidade nos territórios lusófonos (falantes de Português) ao redor do mundo. Relevantemente, a Fundação Lusófona é reconhecida pelos governos de Brasil, e Portugal como a organização oficialmente responsável pela proteção destes territórios nacionais."
+    },
+    {
+      "id": "scp-pt:collection:series:end-of-line-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "end-of-line-hub",
+      "title": "Central do Fim da Linha",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/end-of-line-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/end-of-line-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "end-of-line-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "end-of-line-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:austringers",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "austringers",
+      "title": "Falcoeiros",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/austringers",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/austringers",
+      "hubPresentation": "standard",
+      "canonicalTag": "austringers",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "austringers",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:the-elusive-anderson",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "the-elusive-anderson",
+      "title": "Anderson, O Elusivo",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/the-elusive-anderson",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/the-elusive-anderson",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-elusive-anderson",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-elusive-anderson",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:peregrine",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "peregrine",
+      "title": "Peregrine",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/peregrine",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/peregrine",
+      "hubPresentation": "standard",
+      "canonicalTag": "peregrine",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "peregrine",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:anastasis-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "anastasis-hub",
+      "title": "CENTRAL ANASTASIS",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/anastasis-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/anastasis-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "anastasis-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "anastasis-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:finding-asmodeus-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "finding-asmodeus-hub",
+      "title": "Encontrando Asmodeus",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/finding-asmodeus-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/finding-asmodeus-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "finding-asmodeus-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "finding-asmodeus-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:outfounded-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "outfounded-hub",
+      "title": "Central Superfundado",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/outfounded-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/outfounded-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "outfounded-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "outfounded-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:mtf-psi-7-home-improvement-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "mtf-psi-7-home-improvement-hub",
+      "title": "Central da Força-Tarefa Móvel Psi-7 \"Melhoria Domiciliar\"",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/mtf-psi-7-home-improvement-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/mtf-psi-7-home-improvement-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "mtf-psi-7-home-improvement-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "mtf-psi-7-home-improvement-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:above-all-stand-i",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "above-all-stand-i",
+      "title": "Acima De Tudo, Fico Eu",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/above-all-stand-i",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/above-all-stand-i",
+      "hubPresentation": "standard",
+      "canonicalTag": "above-all-stand-i",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "above-all-stand-i",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:necropotence",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "necropotence",
+      "title": "Central da Necropotência",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/necropotence",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/necropotence",
+      "hubPresentation": "standard",
+      "canonicalTag": "necropotence",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "necropotence",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:matryoshka",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "matryoshka",
+      "title": "Matryoshka",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/matryoshka",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/matryoshka",
+      "hubPresentation": "standard",
+      "canonicalTag": "matryoshka",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "matryoshka",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:the-cool-war-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "the-cool-war-hub",
+      "title": "A Guerra Maneira",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/the-cool-war-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/the-cool-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-cool-war-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-cool-war-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:acidverse",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "acidverse",
+      "title": "Ácidoverso",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/acidverse",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/acidverse",
+      "hubPresentation": "standard",
+      "canonicalTag": "acidverse",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "acidverse",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:demasqed",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "demasqed",
+      "title": "Central do Demasqed",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/demasqed",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/demasqed",
+      "hubPresentation": "standard",
+      "canonicalTag": "demasqed",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "demasqed",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:comedown-machine-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "comedown-machine-hub",
+      "title": "Central da Máquina de Queda",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/comedown-machine-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/comedown-machine-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "comedown-machine-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "comedown-machine-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:speed-demon-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "speed-demon-hub",
+      "title": "Speed Demon",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/speed-demon-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/speed-demon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "speed-demon-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "speed-demon-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:unusual-investigations",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "unusual-investigations",
+      "title": "As Investigações Incomuns de Kenneth Spencer e Robin Thorne",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/unusual-investigations",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/unusual-investigations",
+      "hubPresentation": "standard",
+      "canonicalTag": "unusual-investigations",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "unusual-investigations",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:guns-pointed-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "guns-pointed-hub",
+      "title": "Armas Apontadas na Cabeça de Deus",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/guns-pointed-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/guns-pointed-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "guns-pointed-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "guns-pointed-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:amnesticization",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "amnesticization",
+      "title": "Central da Equipe Fuhgeddaboutit",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/amnesticization",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/amnesticization",
+      "hubPresentation": "standard",
+      "canonicalTag": "amnesticization",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "amnesticization",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:atzak-hub",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "atzak-hub",
+      "title": "Central Atzak",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/atzak-hub",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/atzak-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "atzak-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "atzak-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-pt:collection:series:wayward",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "wayward",
+      "title": "A Parábola do Príncipe Rebelde",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/wayward",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/wayward",
+      "hubPresentation": "standard",
+      "canonicalTag": "wayward",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wayward",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+      },
+      "memberManifests": [],
+      "memberResolution": {
+        "mode": "officialHubOnly"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
     }
   ]
 }
