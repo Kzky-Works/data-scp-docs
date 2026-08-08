@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786165995,
-  "generatedAt": "2026-08-08T05:13:15Z",
-  "chunkRevision": "sha256-3020a01893b22cb0ff8b599378b1ea381d2d66182f755a92584cabd102dd4e29",
+  "listVersion": 1786193959,
+  "generatedAt": "2026-08-08T12:59:19Z",
+  "chunkRevision": "sha256-77ef838de674b95adab15a2d13aca6531911d2f69eef0758eb62dd5181600e99",
   "builtFrom": {
     "manifests": [
       {
@@ -101,14 +101,121 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-5e3c00f8302dcff9d9c5df8d1d107f563a3417c8cb871f253d982c2a995c4c34"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "ma-dao-thanh-cong-tai-ong-mat-ngua",
+          "title": "Mã Đáo Thành Công – Tái Ông Mất Ngựa",
+          "url": "https://scp-vn.wikidot.com/ma-dao-thanh-cong-tai-ong-mat-ngua",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "Ngoại truyện: Mã Đáo Thành Công – Tái Ông Mất Ngựa"
+        },
+        {
+          "id": "scp-065-vn",
+          "title": "Năm Con Rắn - Phắn Về Nhà",
+          "url": "https://scp-vn.wikidot.com/scp-065-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 27,
+          "desc": "Bản sao duy nhất của SCP-065-VN được lưu trữ trong một máy chủ an toàn không kết nối internet. Nhân sự bị ảnh hưởng bởi SCP-065-VN cần thực hiện giao thức “Đi để trở về” trong thời gian nhanh nhất có thể, giao thức trên có mức độ ưu tiên cấp 2. Nhân sự được kh…"
+        },
+        {
+          "id": "nam-rong-sap-sang-tan-trang-to-chuc",
+          "title": "Năm Rồng Sắp Sang - Tân Trang Tổ Chức",
+          "url": "https://scp-vn.wikidot.com/nam-rong-sap-sang-tan-trang-to-chuc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "□ Điểm 21-VN - Phân Khu Linh Thể Học - ▣ King Pigeon ▣ Không khí Tết tràn ngập khắp mọi nơi và luồn lách vào những căn phòng của các vị nghiên cứu viên thông qua cửa sổ đang hé mở. Nó luồn vào trong những bộ đồ giữ ấm dày và cuộn chặt từng người trong căn phòn…"
+        },
+        {
+          "id": "tet-tung-bung-mung-to-chuc",
+          "title": "TẾT TƯNG BỪNG - MỪNG TỔ CHỨC",
+          "url": "https://scp-vn.wikidot.com/tet-tung-bung-mung-to-chuc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 31,
+          "desc": "□ Điểm 21-VN - Phân Khu Linh Thể Học - ▣ King Pigeon ▣ Anh đưa đôi mắt thẫn thờ nhìn lên trên chiếc bàn đầy ắp các cuộc luận văn hay dự án kể lể về những chi tiêu hay những đồ án mới từ những nghiên cứu viên trẻ cần anh bắt tay vào đánh giá nhưng anh chỉ ngồi…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-2026",
+          "title": "2026",
+          "articleIDs": [
+            "ma-dao-thanh-cong-tai-ong-mat-ngua"
+          ]
+        },
+        {
+          "id": "02-2025",
+          "title": "2025",
+          "articleIDs": [
+            "scp-065-vn"
+          ]
+        },
+        {
+          "id": "03-2024",
+          "title": "2024",
+          "articleIDs": [
+            "nam-rong-sap-sang-tan-trang-to-chuc"
+          ]
+        },
+        {
+          "id": "04-2023",
+          "title": "2023",
+          "articleIDs": [
+            "tet-tung-bung-mung-to-chuc"
+          ]
+        }
+      ],
+      "description": "Vào dịp gần Tết âm lịch, ở chi nhánh Việt Nam của Tổ Chức SCP đã xuất hiện một dị tượng, khiến cho một thứ gì đó mà nhân sự chuẩn bị cho dịp Tết bỗng nhiên biến mất và xuất hiện ở một nơi khác họ không ngờ tới. Và đây là câu chuyện kể về những tình huống dở khóc dở cười mà các nhân sự gặp phải."
     },
     {
       "id": "scp-vn:collection:series:te-to-te",
@@ -130,14 +237,84 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-5d11a725953bdac0ef22ce767a03e2ff6f422141d1ab6a2eb1c9dae30c5bbfd4"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "erebus-factory",
+          "title": "Nhiều hơn bởi tác giả này",
+          "url": "https://scp-vn.wikidot.com/erebus-factory",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "wanted-benji-maden",
+          "title": "LỆNH TRUY NÃ: Benji Maden",
+          "url": "https://scp-vn.wikidot.com/wanted-benji-maden",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Khẩn cấp: Truy nã bị can Benji Madden Mức độ truy nã: Truy nã Quốc tế Lệnh điều động: Ủy ban Đạo đức Quyết định ngày 19 tháng 11 năm 1978."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "erebus-factory"
+          ]
+        },
+        {
+          "id": "02-series-ngoai-truyen-boi-erebus030",
+          "title": "Series ngoại truyện bởi Erebus030",
+          "articleIDs": [
+            "wanted-benji-maden"
+          ]
+        }
+      ],
+      "description": "Hỏi nêu, có tự khi nào? Từ khi trừ Quỷ cường hào hại dân Trồng sao đòi hỏi không cân Đòi ngọn bỏ cội? Rạ ăn thế nào? Phật mách “lấy khoai thế vào”. Cây này củ nặng, Người đào, giấu ăn. Lá lang chẳng bõ dính răng Quỷ chê, lại lấy củ ngon cho mình. Phật nghe kể rõ sự tình. Phật rằng “Ngô ngọt treo mình ngọn cao”. Quỷ ta tức giận mà gào. Ép Người trả đất, ai nào còn ăn? Phật nhìn mới thấy thương dân Mới bèn thách bọn Quỷ đần một phen Xin phần đất bóng phủ lên Cà sa móc gọn ở trên tre này Áo thầy cứ phấp phới bay Bóng thầy hóa phép càng ngày càng to Quỷ kia tai bứt đầu vò Kéo theo cả tộc ra đò biển Đông Hận thù bầy mắt dõi trông Lập binh lập tướng mà công vào bờ Nhưng kìa Quỷ có nào ngờ Phật đã có kế chỉ chờ phản công Quỷ hỏi “Phật sợ gì không.” “Quả, cơm, chuối, trứng, không gì sợ hơn.” Quỷ nghe đắc chí từng cơn Nhưng nghe Phật đáp “Vậy mầy sợ chi?” Quỷ nghe thì mới cười khì “Máu chó, dứa,"
     },
     {
       "id": "scp-vn:collection:series:hub-bach-thu-vien",
@@ -159,14 +336,220 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-ef2b8473326fee50516a8eeb7ba2ccebe543e534f4d95c9ef940d74933f28296"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "thu-la-trong-vuon",
+          "title": "Những Con Thú Lạ Trong Vườn-I",
+          "url": "https://scp-vn.wikidot.com/thu-la-trong-vuon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Những Con Thú Lạ Trong Vườn Thứ Hai là khoảng thời gian mà con người ta còn mãi luyến tiếc hai ngày nghỉ cuối tuần để rồi chẳng còn tâm trí đâu mà tập trung vào công việc nữa. Nhưng sang đến thứ Ba thì khác, đến lúc này thì ai cũng phải chấp nhận rằng sẽ không…"
+        },
+        {
+          "id": "thu-la-trong-vuon-2",
+          "title": "Những Con Thú Lạ Trong Vườn-II",
+          "url": "https://scp-vn.wikidot.com/thu-la-trong-vuon-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Những Con Thú Lạ Trong Vườn “Làm ơn tỉnh dậy, thưa loài người.” Một giọng nam trẻ tuổi nhẹ nhàng kêu. Thường nghe gọi liền cựa mình, chớp chớp mắt, cậu nhìn lên trời, thấy một màu đen kịt. Thường giật mình, cứ ngỡ trời đã tối, chẳng lẽ cậu đã phán đoán sai, th…"
+        },
+        {
+          "id": "thu-la-trong-vuon-3",
+          "title": "Những Con Thú Lạ Trong Vườn-III",
+          "url": "https://scp-vn.wikidot.com/thu-la-trong-vuon-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Những Con Thú Lạ Trong Vườn Khi cậu nghiên cứu viên và cấp dưới đáng tin cậy đã khuất bóng sau những gốc cổ thụ đằng xa, Trưởng Lão mới hé mắt, trên miệng nở một nụ cười quỷ dị. Tuy nó đang mơ màng mộng mị, nhưng những luồng ký ức mãnh liệt vẫn ùa về chiếm trọ…"
+        },
+        {
+          "id": "thu-la-trong-vuon-4",
+          "title": "Những Con Thú Lạ Trong Vườn-Kết",
+          "url": "https://scp-vn.wikidot.com/thu-la-trong-vuon-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Những Con Thú Lạ Trong Vườn Vừa xuống tới chân núi, Thường đã thấy Đại Sứ đang đứng đợi mình. Nửa ngày đã trôi qua kể từ khi cậu đưa ra quyết định cuối cùng cho Trưởng Lão. Vào cuối buổi gặp mặt, Thường đã cương quyết yêu cầu được rời khỏi khu rừng càng sớm cà…"
+        },
+        {
+          "id": "nx-64-vn",
+          "title": "Nx-64-VN: Thảo Cầm Viên Sài Gòn",
+          "url": "https://scp-vn.wikidot.com/nx-64-vn",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Mã Nexus: Nx-64-VN Định danh Địa phương: Thảo Cầm Viên Sài Gòn Dân số: Không xác định. (Đã thống kê được hơn 2000 cá thể thuộc 138 loài)"
+        },
+        {
+          "id": "scp-148-vn",
+          "title": "Tổ Trưởng",
+          "url": "https://scp-vn.wikidot.com/scp-148-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "Do bản thân dị thể đang cư trú bên trong khu vực Nexus-64, quy trình quản thúc xoay quanh việc hạn chế các sự cố liên quan đến SCP-148-VN thay vì nỗ lực bắt giữ và quản thúc trực tiếp. SCP-148-VN hiện được cho là không thù địch với Tổ Chức, tuy nhiên, dị thể v…"
+        },
+        {
+          "id": "scp-045-vn",
+          "title": "Ông Ba mươi",
+          "url": "https://scp-vn.wikidot.com/scp-045-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 10,
+          "desc": "Nhân sự cần giám sát và kiểm soát chặt chẽ khu vực diễn ra các hoạt động văn hóa tâm linh truyền thống của đồng bào dân tộc thiểu số diễn ra vào ngày 30/12 âm lịch thường niên, ngăn chặn mọi trường hợp người dân rời đi để tiến vào SCP-045-VN. Theo dõi và bắt g…"
+        },
+        {
+          "id": "scp-108-vn",
+          "title": "Gấu, Mèo, Gấu Mèo",
+          "url": "https://scp-vn.wikidot.com/scp-108-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-108-VN hiện được quản thúc trong khu vực chuồng của mình tại Nx-64-VN: Thảo Cầm Viên Sài Gòn và bị hạn chế di chuyển đến các khu vực khác. Các thành viên thuộc Tam đại gia tộc có nhiệm vụ hỗ trợ quản chế và giáo huấn các hành vi vi phạm quy định giữ bí mật…"
+        },
+        {
+          "id": "cam-vien-ngau-thu",
+          "title": "Cầm Viên Ngẫu Thư",
+          "url": "https://scp-vn.wikidot.com/cam-vien-ngau-thu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "\"Cầm Viên Ngẫu Thư\" bởi t4nku Tác phẩm dự thi \"GoIVNCon 2026\"."
+        },
+        {
+          "id": "how-to-write-an-scp",
+          "title": "Hướng Dẫn Viết SCP",
+          "url": "https://scp-vn.wikidot.com/how-to-write-an-scp",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "misa-profile",
+          "title": "Trang tác giả",
+          "url": "https://scp-vn.wikidot.com/misa-profile",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Trang tác giả"
+        },
+        {
+          "id": "the-ainz-sama-s-biography",
+          "title": "Trang tác giả",
+          "url": "https://scp-vn.wikidot.com/the-ainz-sama-s-biography",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Trang tác giả"
+        },
+        {
+          "id": "kir-profile",
+          "title": "Trang tác giả",
+          "url": "https://scp-vn.wikidot.com/kir-profile",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Trang tác giả"
+        },
+        {
+          "id": "profile-tanku-kyorov",
+          "title": "Trang tác giả",
+          "url": "https://scp-vn.wikidot.com/profile-tanku-kyorov",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Trang tác giả"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-tai-lieu-can-oc",
+          "title": "Tài liệu cần đọc",
+          "articleIDs": [
+            "thu-la-trong-vuon",
+            "thu-la-trong-vuon-2",
+            "thu-la-trong-vuon-3",
+            "thu-la-trong-vuon-4",
+            "nx-64-vn"
+          ]
+        },
+        {
+          "id": "02-scp",
+          "title": "SCP",
+          "articleIDs": [
+            "scp-148-vn",
+            "scp-045-vn",
+            "scp-108-vn"
+          ]
+        },
+        {
+          "id": "03-ngoai-truyen",
+          "title": "Ngoại truyện",
+          "articleIDs": [
+            "cam-vien-ngau-thu"
+          ]
+        },
+        {
+          "id": "04-tai-lieu-tllt",
+          "title": "Tài liệu TLĐLT",
+          "articleIDs": [
+            "how-to-write-an-scp",
+            "misa-profile",
+            "the-ainz-sama-s-biography",
+            "kir-profile",
+            "profile-tanku-kyorov"
+          ]
+        }
+      ],
+      "description": "Hôm nay là một ngày chủ nhật đẹp trời ở Thành phố Hồ Chí Minh và bạn chưa biết phải đi đâu chơi, vậy tại sao không thứ ghé thăm Thảo cầm Viên Sài Gòn? Được khởi công xây dựng hơn 160 năm trước, Thảo Cầm Viên hiện là khu bảo tồn và nhân giống các loài động-thực vật quý hiếm lớn nhất Việt Nam, đảm bảo sẽ là địa điểm lý tưởng cho các hoạt động tham quan, giải trí, học tập hay thậm chí là nghỉ ngơi chữa lành."
     },
     {
       "id": "scp-vn:collection:series:seven-sins-hub",
@@ -188,14 +571,136 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-d271164016904e6306a7bf3b57dc623b6ce8a8bb21f5e3e7169c879d30310f6c"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-701-vn",
+          "title": "Ngạo",
+          "url": "https://scp-vn.wikidot.com/scp-701-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 21,
+          "desc": "Mọi thông báo từ hệ thống của SCP-701-VN cần được giám sát liên tục nhằm tránh những sự kiện phá vỡ bức màn có thể xảy ra. Tất cả những thông báo trên đều sẽ được gửi về cho quản lý ĐĐNCĐ, phòng ban quản thúc tương ứng và tiến sĩ Karos. Ngoài ra, nếu gặp phải…"
+        },
+        {
+          "id": "scp-702-vn",
+          "title": "Tham",
+          "url": "https://scp-vn.wikidot.com/scp-702-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 24,
+          "desc": "SCP-702-VN là mã định danh cho bản thiết kế Điểm-08-VN, vì đặc tính và quy cách hoạt động mà dị thể chỉ có thể tồn tại ở dạng bản thiết kế. Đặc tính của SCP-702-VN sẽ bộc phát khi một cá nhân bất kỳ (thường là nhân sự mới tuyển dụng từ Tổ Chức) trực tiếp quan…"
+        },
+        {
+          "id": "scp-703-vn",
+          "title": "Dục",
+          "url": "https://scp-vn.wikidot.com/scp-703-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 20,
+          "desc": "Tổ Chức sẽ chu cấp chi phí cho Điểm-69-VN trong quá trình thực hiện. Cần thực hiện SCP-703-VN bằng mọi giá."
+        },
+        {
+          "id": "scp-704-vn",
+          "title": "Sân",
+          "url": "https://scp-vn.wikidot.com/scp-704-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 16,
+          "desc": "Quy trình quản thúc đối với SCP-704-VN là không cần thiết do bản chất dị tính. Tuy nhiên, các sự kiện cùng với sản phẩm đi kèm của SCP-704-VN sẽ được thu thập cho mục đích tổng hợp và nghiên cứu lâu dài. Điểm-14-VN."
+        },
+        {
+          "id": "scp-705-vn",
+          "title": "Phàm",
+          "url": "https://scp-vn.wikidot.com/scp-705-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 17,
+          "desc": "SCP-705-VN là tên gọi cho đối tượng hình cá thuộc họ Clariidae , chi Clarias , loài C. batrachus . Đối tượng có kích thước đạt 25cm, lớp da trần nhẵn, màu trắng hồng. Phần da dày và vô cùng chắc chắn. Đầu đối tượng dẹt bằng, thân và đuôi dẹt hai bên. Miệng rộn…"
+        },
+        {
+          "id": "scp-706-vn",
+          "title": "Hận",
+          "url": "https://scp-vn.wikidot.com/scp-706-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 16,
+          "desc": "Do sự xuất hiện bất ngờ của SCP-706-VN, các quy trình quản thúc vẫn đang được phát triển và thử nghiệm. Các Neo Hằng thực Scranton đã được lắp đặt tại địa điểm của dị thể để áp chế các hiện tượng biến đổi thực tại. Các chuyên gia huyền thuật chuyên về điều khi…"
+        },
+        {
+          "id": "scp-707-vn",
+          "title": "Lãn",
+          "url": "https://scp-vn.wikidot.com/scp-707-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 15,
+          "desc": "Không có bất cứ quy trình quản thúc cụ thể nào cho SCP-707-VN. Một nỗ lực tái tạo lại SCP-707-VN đang được thực hiện tại Điểm-73-VN."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-701-vn",
+            "scp-702-vn",
+            "scp-703-vn",
+            "scp-704-vn",
+            "scp-705-vn",
+            "scp-706-vn",
+            "scp-707-vn"
+          ]
+        }
+      ],
+      "description": "\"Nhân chi sơ tính bản thiện - Mạnh Tử\", \"Nhân chi sơ, tính bản ác - Tuân Tử\", \"Thất hình đại tội\"…là hai mặt của một đồng xu, là bản chất thâm sâu, nguyên thủy nhất của nhân loại. Việc nhận thức được tội lỗi, và hành động để cứu chuộc bản thân, hay buông thả theo cám dỗ của bản năng, là tiền đề để định nghĩa con người: con người."
     },
     {
       "id": "scp-vn:collection:series:ideal-and-revenge-hub",
@@ -217,14 +722,191 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-db661bd9cfc4fabd3540231f77aba637c38450ab055b4ba78562e04dd87dc6f2"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "extra-shift",
+          "title": "Công Việc Ngoài Giờ",
+          "url": "https://scp-vn.wikidot.com/extra-shift",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 35,
+          "desc": "Ừm, thì đây là bài viết đầu tiên của mình dưới tư cách là một cây bút của SCP-VN. Bài viết này, với mình sẽ là mở đầu của một series mới, do mình sáng tác. Hy vọng mọi người tiếp tục ủng hộ mình trong tương lai. - Ronin."
+        },
+        {
+          "id": "scp-111-vn",
+          "title": "Đồng Chí",
+          "url": "https://scp-vn.wikidot.com/scp-111-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 24,
+          "desc": "SCP-111-VN-A hiện được giữ trong một buồng quản thúc dị thể sinh học tiêu chuẩn tại Điểm-75-VN. Nhân sự của Tổ Chức bắt buộc phải mang thiết bị Phòng hộ Can thiệp Suy nghĩ Loại III 1 khi tiếp cận bán kính nhỏ hơn 30 m xung quanh dị thể. Các buổi trò chuyện kiê…"
+        },
+        {
+          "id": "scp-068-vn",
+          "title": "Thân em…",
+          "url": "https://scp-vn.wikidot.com/scp-068-vn",
+          "sourceManifest": "manifest_scp-vn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 23,
+          "desc": "Các cá nhân bị SCP-068-VN tác động cần được hướng dẫn tham gia tư vấn và điều trị tâm lý, tâm thần theo phác đồ thích hợp tại các cơ sở y tế, tham vấn có sự quản lý của Tổ Chức. Cả nơi thăm khám và người bị ảnh hưởng đều phải cam kết giữ bí mật về tình trạng t…"
+        },
+        {
+          "id": "a-haunted-memory",
+          "title": "Bóng Ma Ký Ức",
+          "url": "https://scp-vn.wikidot.com/a-haunted-memory",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "Thêm tác phẩm bởi Ronin (Time Samurai) Tiền đồn Tây Bắc, Điểm-29-VN \"Còn ai sống sót không?\" \"Có một thằng bé còn thở! Mau đưa nó lên xe cấp cứu! Thằng này đúng là số đỏ mà… Lửa to thế này mà vẫn còn sống được…\""
+        },
+        {
+          "id": "the-merchants-of-district-zero",
+          "title": "Bọn Lái Buôn Quận Không",
+          "url": "https://scp-vn.wikidot.com/the-merchants-of-district-zero",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "Thêm tác phẩm bởi Nya Piece / Ronin (Time Samurai) Đó là một đêm náo nhiệt. Giữa các con kênh chằng chịt là những thân hình uốn lượn được thắp sáng bởi những chiếc đèn lồng hình sao với cá chép, hình thiên nga với bươm bướm, nhẹ nhàng lướt trên ánh trăng thơ m…"
+        },
+        {
+          "id": "to-the-drawing-board",
+          "title": "Tập Hợp Manh Mối",
+          "url": "https://scp-vn.wikidot.com/to-the-drawing-board",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Thêm tác phẩm bởi Nya Piece / Ronin (Time Samurai) Họ bước vào một phòng họp không người. \"Được rồi, chúng ta có khoảng 15 phút trước khi giờ nghỉ trưa kết thúc.'' Schaf đóng cửa và kéo rèm. ''Phiền em canh cửa sổ giúp bọn chị, Maus.''"
+        },
+        {
+          "id": "the-fire-that-changed-colors",
+          "title": "Ngọn Lửa Đổi Màu",
+          "url": "https://scp-vn.wikidot.com/the-fire-that-changed-colors",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Thêm tác phẩm bởi Ronin (Time Samurai) Lại một buổi chiều trôi qua tại cơ sở mới. Tạm để quyển Không Gia Đình xuống bàn, tôi ngả lưng, phóng tầm mắt qua cửa sổ. Bên ngoài khung cửa kính, sân trường đã bắt đầu vắng. Vài học sinh cuối cùng rời khỏi khu nhà chính…"
+        },
+        {
+          "id": "the-promise-of-the-prisoner",
+          "title": "Lời Hứa (Của Tù Nhân)",
+          "url": "https://scp-vn.wikidot.com/the-promise-of-the-prisoner",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Thêm tác phẩm bởi Nya Piece Đã một ngày trôi qua kể từ khi thứ ánh sáng màu đỏ lạnh lẽo vụt tắt trong khoảng không đen kịt, sau khi chuyện đó diễn ra."
+        },
+        {
+          "id": "the-promise-of-the-escapee",
+          "title": "Lời Hứa (Của Kẻ Đào Tẩu)",
+          "url": "https://scp-vn.wikidot.com/the-promise-of-the-escapee",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Thêm tác phẩm bởi Nya Piece / Irina Bougainvillea Mùa xuân, 1970. Chàng trai mở mắt với cơn đau khắp người, những tia sáng lọt qua vết rách trên tấm bạt chiếu vào đồng tử cậu. Cậu cảm nhận được những tấm vải trắng quanh vai và ngực mình khi nhúc nhích. Những k…"
+        },
+        {
+          "id": "break-out-and-track-down",
+          "title": "Vượt Ngục Và Truy Lùng",
+          "url": "https://scp-vn.wikidot.com/break-out-and-track-down",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Thêm tác phẩm bởi Ronin (Time Samurai) 5:30, Long An Một chiếc mô tô phóng vụt qua Thị trấn Tân An, để lại sau lưng làn khói mỏng và ánh đèn đuôi nhấp nháy như một vệt lửa. Đêm chưa tan hẳn, bầu trời còn vương chút tím than lẫn trong ánh đèn vàng lờ mờ từ nhữn…"
+        },
+        {
+          "id": "ideal",
+          "title": "Lý Tưởng",
+          "url": "https://scp-vn.wikidot.com/ideal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Thêm tác phẩm bởi Ronin (Time Samurai) / Dept"
+        },
+        {
+          "id": "revenge",
+          "title": "Trả Thù",
+          "url": "https://scp-vn.wikidot.com/revenge",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Thêm tác phẩm bởi Ronin (Time Samurai) / Dept"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "extra-shift",
+            "scp-111-vn",
+            "scp-068-vn",
+            "a-haunted-memory",
+            "the-merchants-of-district-zero",
+            "to-the-drawing-board",
+            "the-fire-that-changed-colors",
+            "the-promise-of-the-prisoner",
+            "the-promise-of-the-escapee",
+            "break-out-and-track-down",
+            "ideal",
+            "revenge"
+          ]
+        }
+      ],
+      "description": "Một nghiên cứu viên trẻ tuổi muốn thoát khỏi công việc nhàm chán. Một huyền thuật sư đứng sau những cái chết vùng thôn quê. Một sinh vật lòng đầy căm thù với lời hứa chưa hoàn thành."
     },
     {
       "id": "scp-vn:collection:series:scph-to",
@@ -246,14 +928,158 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-071bf03efa3287c460ae613d54de5ac86fd652e5f4b60498f9831c858131ac54"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "khuc-dong-dao-phan-su",
+          "title": "Khúc Đồng Dao Phán Sự",
+          "url": "https://scp-vn.wikidot.com/khuc-dong-dao-phan-su",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "Lạng Sơn, bước dạo trên đường Cảnh quan tình tứ, bốn phương xuân tràn Cảnh họa đẹp đến bàng hoàng Nỗi lòng khi thỏa, vội vàng hồi hương."
+        },
+        {
+          "id": "tho-thu-hoi-tu-vuc-marianas",
+          "title": "Thơ Thu Hồi Từ Vực Sâu Marianas",
+          "url": "https://scp-vn.wikidot.com/tho-thu-hoi-tu-vuc-marianas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Một ngày mai, khi thế giới héo tàn Những cây cỏ, và thành phố tan hoang Ai sẽ nhớ, những con người di tản Ai còn nhớ, những bình yên dịu dàng. Một ngày mai, khi đêm ngày đảo lộn Vầng mặt trời, chẳng chạy trốn đi đâu Chẳng còn những, tháng mùa đông lạnh thấu Cũ…"
+        },
+        {
+          "id": "thi-si-chung-kien-mat-troi-suy-tan",
+          "title": "Thi Sĩ Chứng Kiến Mặt Trời Suy Tàn",
+          "url": "https://scp-vn.wikidot.com/thi-si-chung-kien-mat-troi-suy-tan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Khi Mặt Trời, căm hận cả thế gian Khi lòng ghen, nuốt gọn ánh trăng tàn Một khát khao, cho sự sống bình thản Một tình yêu, mãi thổn thức căng tràn. Tinh cầu này, do hơi ấm Sol ban Mỗi giai đoạn, đều thịnh vượng lai láng Từ vi khuẩn, đến nhân loại cường tráng.…"
+        },
+        {
+          "id": "xac-thit-giao-phoi",
+          "title": "Xác Thịt Giao Phối",
+          "url": "https://scp-vn.wikidot.com/xac-thit-giao-phoi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Kẻ tôi yêu mang nét đẹp hoang sơ Từ khi những áng văn thơ chưa sinh thời Tôi đã thấy, thấy nét đẹp trần trụi Người yêu tôi, ngài không vương trần bụi Người tôi yêu là một thứ nhu mì, Những con mắt, như muốn hoại tử đi Nổ vỡ ra, nhưng những chùm nho tím Hương n…"
+        },
+        {
+          "id": "tho-lac-van",
+          "title": "Thơ Lạc Vận",
+          "url": "https://scp-vn.wikidot.com/tho-lac-van",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "Một sinh linh khi vừa mới chào đời Cất tiếng kêu và khóc lóc hụt hơi Có vẻ như nó vẫn còn quá yếu Giữa bóng tối chật chội đầy chơi vơi."
+        },
+        {
+          "id": "me-oi",
+          "title": "Mẹ Ơi?",
+          "url": "https://scp-vn.wikidot.com/me-oi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 27,
+          "desc": "Mẹ! Mẹ ơi! Con bị kẹt mất rồi! Thân thể con ép chặt vào vách lỗ. Con xin mẹ! Mẹ ơi! Con đang cố! Những vách tường, con đau quá mẹ ơi! … Mẹ ơi mẹ? Con đói, con đang đói. Khi nào thì con sẽ được ăn đây? Mẹ ơi sao con phải kẹt nơi đây? Thân thể đau, bụng hoài gào…"
+        },
+        {
+          "id": "anh-nhin-t-man-dem",
+          "title": "Trong Màn Đêm",
+          "url": "https://scp-vn.wikidot.com/anh-nhin-t-man-dem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "Ánh sáng chập chờn hành lang vắng Y tá tăng ca uống ly trà Lẩn khuất bóng đen in tường trắng Giờ đây cũng hóa màu ố hoen."
+        },
+        {
+          "id": "chuong-su-ngam-khuc",
+          "title": "Chưởng Sự Ngâm Khúc",
+          "url": "https://scp-vn.wikidot.com/chuong-su-ngam-khuc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Thêm tác phẩm bởi Dept / KH Nam Trăng nửa khuyết, mây đen hiu hắt Cảnh đêm khuya, vắng lặng như tờ Chàng trai sắc mặt bơ phờ Sương giăng mờ ảo mập mờ như mơ Thoáng một chốc sương mây tan mất Gió tự đâu khẽ phất hàng cây Bến thuyền trống vắng nơi đây Tựa như đi…"
+        },
+        {
+          "id": "mua-sen-tan",
+          "title": "Mùa sen tàn",
+          "url": "https://scp-vn.wikidot.com/mua-sen-tan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "\"Như lúa đồng em nhỉ?\" Mùa thay lá ngỡ ngàng Thủ đô anh thủ thỉ Đường lạ bước mình sang Đinh đang chuông tàu reo Tay em, anh níu lại Em giấu má hồng theo Đoàn tàu như dài mãi…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-muc-tho-vn",
+          "title": "Mục Thơ VN",
+          "articleIDs": [
+            "khuc-dong-dao-phan-su",
+            "tho-thu-hoi-tu-vuc-marianas",
+            "thi-si-chung-kien-mat-troi-suy-tan",
+            "xac-thit-giao-phoi",
+            "tho-lac-van",
+            "me-oi",
+            "anh-nhin-t-man-dem",
+            "chuong-su-ngam-khuc",
+            "mua-sen-tan"
+          ]
+        }
+      ],
+      "description": "Phòng Ban SCPhở Tô hay đọc lại là SCPhổ thơ được tạo ra nhằm mục đích phổ thơ các SCP bao gồm cả EN và VN nhằm mục đích giải trí cũng như đưa các SCP thành những câu thơ mượt mà và tiếp cận được nhiều đọc giả hơn. Các SCP được phổ thơ thường được kể những dị tính hay những đặc trưng của dị thể và không gây sự bất hợp lý trong cốt truyện của dị thể đó. Không có giới hạn hay bất kì quy chuẩn các SCP được phổ thơ, hãy sáng tạo theo cách của bạn."
     },
     {
       "id": "scp-vn:collection:canon:don-vi-tam-linh-hub",
@@ -2296,7 +3122,7 @@
         "mode": "officialHubStructure",
         "tagSource": "vn_tag.json",
         "emptySectionTitle": "Bài viết",
-        "structureHash": "sha256-dd8b15acceb6530973ce434f70d9108846f432e077f22c9a17a9dc573a199f2c"
+        "structureHash": "sha256-5734bc69ac258750204ae34bac36d5d6914a4b99db5aa7f1e9770f975de29b91"
       },
       "primaryArticles": [
         {
@@ -2418,6 +3244,16 @@
           "contentKind": "tale",
           "os": 8,
           "desc": "bởi Captain Kirby \"Chúng ta chia tay đi.\" Elle không thể tin được lời nói mà cô vừa nghe thấy. Mới chỉ có năm ngày kể từ khi cô và Jonathan quay trở về từ chuyến đi kỉ niệm mười năm năm ngày cưới ở Peru. Họ đã đi bộ suốt ba ngày để đến chiêm ngưỡng Machu Picch…"
+        },
+        {
+          "id": "yuletide-joy",
+          "title": "Niềm Vui Giáng Sinh",
+          "url": "https://scp-vn.wikidot.com/yuletide-joy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "“Mẹ ơi, mẹ ơi, đến lượt mình kìa!” Elizabeth nhún nhảy, đôi má hồng của cô bé ánh lên một nụ cười rạng rỡ. Cô bé ngước đầu lên nhìn mặt mẹ mình, đôi môi của người mẹ mím chặt, tạo thành một nụ cười nhạt. Mẹ của cô quay sang nhìn một người đàn ông với cặp kính…"
         }
       ],
       "supplementLinks": [],
@@ -2456,7 +3292,8 @@
           "title": "Câu Chuyện Về Thế Giới Sau Cái Chết",
           "articleIDs": [
             "impossible-to-destroy-reptile",
-            "until-death-do-us-part"
+            "until-death-do-us-part",
+            "yuletide-joy"
           ]
         }
       ]

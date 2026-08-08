@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786110302,
-  "generatedAt": "2026-08-07T13:45:02Z",
-  "chunkRevision": "sha256-a2d91ba4f765e6f52d754b68a93e75c958b2bbbf8baa0060da28360b9acc1824",
+  "listVersion": 1786194690,
+  "generatedAt": "2026-08-08T13:11:30Z",
+  "chunkRevision": "sha256-097e0cea598dbb7da02db551c4ab4ad665bd42cde9dad761fac1d3df29963ac9",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1785743067,
-        "generatedAt": "2026-08-03T07:44:27Z",
-        "contentHash": "sha256-a3c9c2cb28da1fb5ad86775a51e1ff63e95e024c948e0a40800938b0cb6171f7"
+        "listVersion": 1786192082,
+        "generatedAt": "2026-08-08T12:28:02Z",
+        "contentHash": "sha256-bb1b57cf158e53a7cbd3f7c25621601319321df7bf6996f10bb32dfd2d5fac71"
       },
       {
         "kind": "manifest_gois",
@@ -65,6 +65,11 @@
       "schemaVersion": 1,
       "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
     },
+    "officialMemberSeed": {
+      "path": "DataPipeline/collection_seeds/ru_official_canon_members.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-3f8882c2c68b4c0458b900f3532da87045767cd7c0294339d1abbfcbf8d58f45"
+    },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/ru.json",
       "schemaVersion": 1,
@@ -101,13 +106,27 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series Archive row verified in Chrome; use the official linked article as the collection entry point."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-ru",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "temporologist-diary-2",
+          "title": "Дневник путешественника во времени, или Как я перестал бояться и полюбил темпоральный трансдуктор. Часть II",
+          "url": "https://scpfoundation.net/temporologist-diary-2",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        }
+      ],
       "supplementLinks": [],
       "description": "ДАТА: 06 августа 2021 ВРЕМЯ: 10:20 МЕСТОНАХОЖДЕНИЕ: Отдел темпоральных разработок, Лаборатория R Сегодня 6 августа 2021 года. Меня зовут Патрик Уилсон, и я первый путешественник во времени. Вот он, день Икс! Сегодня мы впервые запускаем наш…"
     },
@@ -144,13 +163,41 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "RU Series minimum native detail; member expansion requires a future dedicated reviewed tag or explicit member seed."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-ru",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "version-betrayal",
+          "title": "Предательство",
+          "url": "https://scpfoundation.net/version-betrayal",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "version-idea",
+          "title": "Идея",
+          "url": "https://scpfoundation.net/version-idea",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "version-ascending-and-descending",
+          "title": "Спускаясь и поднимаясь",
+          "url": "https://scpfoundation.net/version-ascending-and-descending",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        }
+      ],
       "supplementLinks": [],
       "description": "Фонд является одной из самых старых, самых загадочных и самых опасных организаций, занимающихся паранормальными явлениями... - Из руководства ГОК Группа, известная как Тюремщики, называет себя \"Фондом\". Она во многом является самой старой и…"
     },
@@ -955,7 +1002,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -964,10 +1011,8 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-61c32c0082fb03e18a93ece65a5ab4ce3473d52db47179299d51e8e905fe731b"
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
       "primaryArticles": [
         {
@@ -1401,6 +1446,16 @@
           "desc": "Предисловие О5-2: █.██.████ началось исследование продолжительной жизнеспособности SCP-083]. Были приняты во внимание такие факторы, как опасность, связанная с содержанием субъекта, и рентабельность регулярных ценных поставок крови девствен…"
         },
         {
+          "id": "termination-order",
+          "title": "Приказ об устранении",
+          "url": "https://scpfoundation.net/termination-order",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5.0,
+          "desc": "+++++ автор - доктор Клеф ------ — Начало интервью Клеф-88. Доктор Гирс, опрашивающий. Доктор Клеф, опрашиваемый. — Знаешь, на кого ты похож? На Джона Малковича. Такая же форма черепа и так далее, только у Малковича потрясающе выразительное…"
+        },
+        {
           "id": "the-king-is-dead",
           "title": "Король мертв",
           "url": "https://scpfoundation.net/the-king-is-dead",
@@ -1518,16 +1573,6 @@
           "desc": "+ Re: Внутренний инцидент между докторами \"Альто\" Клефом и ████████ Кондраки, ██.██.████. ------ Отчет ЗАКРЫТ. Дальнейшие правки должны быть одобрены уровнем О5, не считая исправления грамматических ошибок и опечаток. Дальнейшую информацию…"
         },
         {
-          "id": "termination-order",
-          "title": "Приказ об устранении",
-          "url": "https://scpfoundation.net/termination-order",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 5.0,
-          "desc": "+++++ автор - доктор Клеф ------ — Начало интервью Клеф-88. Доктор Гирс, опрашивающий. Доктор Клеф, опрашиваемый. — Знаешь, на кого ты похож? На Джона Малковича. Такая же форма черепа и так далее, только у Малковича потрясающе выразительное…"
-        },
-        {
           "id": "mementos",
           "title": "Сувениры",
           "url": "https://scpfoundation.net/mementos",
@@ -1615,146 +1660,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Реконструкция и \"воскрешение\" оригинальной \"центральной сюжетной линии\" Фонда SCP.",
-      "articleSections": [
-        {
-          "id": "01-9",
-          "title": "ЧАСТЬ НУЛЕВАЯ: До Альфы-9",
-          "articleIDs": [
-            "yesterday"
-          ]
-        },
-        {
-          "id": "02-articles",
-          "title": "Собрание прологов",
-          "articleIDs": [
-            "snakes-and-ladders"
-          ]
-        },
-        {
-          "id": "03-articles",
-          "title": "Прологи: Длань Змея",
-          "articleIDs": [
-            "black-queen-hub"
-          ]
-        },
-        {
-          "id": "04-articles",
-          "title": "Инцидент Зеро: День, когда всё изменилось.",
-          "articleIDs": [
-            "incident-zero-part-1"
-          ]
-        },
-        {
-          "id": "05-articles",
-          "title": "ЧАСТЬ ПЕРВАЯ: Введение",
-          "articleIDs": [
-            "immediate-actions",
-            "the-seed-of-an-idea",
-            "contingency",
-            "deals-with-the-devil",
-            "what-s-in-a-name",
-            "just-a-formality",
-            "integrity-project",
-            "new-tricks",
-            "the-wolves-at-the-door",
-            "light-dependent-reactions",
-            "dressing-up",
-            "additional-resources",
-            "job-opportunities",
-            "pythia-s-wing",
-            "number-one-with-a-bullet",
-            "lending-a-hand",
-            "the-high-court-with-the-magic-army",
-            "in-harm-s-way"
-          ]
-        },
-        {
-          "id": "06-9",
-          "title": "ЧАСТЬ ВТОРАЯ: Альфа-9 в действии",
-          "articleIDs": [
-            "hellomuddah",
-            "folly",
-            "back-alley-deals",
-            "tasers-thermite",
-            "tinker-tailor-soldier-huntsman",
-            "we-got-a-good-thing-here",
-            "are-we-there-yet",
-            "i-thought-you-died-alone",
-            "ball-gags-and-scrambled-eggs",
-            "up-to-no-good",
-            "elder-baconator",
-            "getting-into-treble",
-            "passing-notes-in-class",
-            "no-joke",
-            "calm"
-          ]
-        },
-        {
-          "id": "07-articles",
-          "title": "Отдельные рассказы",
-          "articleIDs": [
-            "this-is-the-real-life"
-          ]
-        },
-        {
-          "id": "08-articles",
-          "title": "Архив рассказов",
-          "articleIDs": [
-            "loosen-up-a-bit",
-            "boss-of-me",
-            "maria-jones-this-is-your-life"
-          ]
-        },
-        {
-          "id": "09-articles",
-          "title": "Верховный суд с волшебной армией",
-          "articleIDs": [
-            "the-flytrap",
-            "duke-till-dawn"
-          ]
-        },
-        {
-          "id": "10-articles",
-          "title": "Король мёртв",
-          "articleIDs": [
-            "the-king-is-dead",
-            "scp-076"
-          ]
-        },
-        {
-          "id": "11-o5",
-          "title": "Совет O5",
-          "articleIDs": [
-            "scp-963",
-            "scp-003"
-          ]
-        },
-        {
-          "id": "12-articles",
-          "title": "Элисон Чао, Чёрная Королева",
-          "articleIDs": [
-            "scp-076-2",
-            "scp-073",
-            "scp-105",
-            "scp-321",
-            "scp-2599",
-            "scp-1985",
-            "scp-2913",
-            "incident-239-b-clef-kondraki",
-            "termination-order",
-            "mementos",
-            "in-his-own-image",
-            "log-of-agent-aa",
-            "scp-784-arc",
-            "784incident1",
-            "ecceperago",
-            "goc-hub-page",
-            "serpent-s-hand-hub",
-            "oria-hub"
-          ]
-        }
-      ]
+      "description": "Реконструкция и \"воскрешение\" оригинальной \"центральной сюжетной линии\" Фонда SCP."
     },
     {
       "id": "scp-ru:collection:canon:bellerverse",
@@ -2472,7 +2378,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -2481,10 +2387,8 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-b03ccdf1544ed55e712090c429abf06c9a3fb9a415b977a12e6145e16504ac9d"
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
       "primaryArticles": [
         {
@@ -2638,36 +2542,6 @@
           "desc": "SCP-2987 представляет собой модифицированный внешний жесткий диск марки “MSI”, способный хранить любой файл или файлы, составляющие искусственный интеллект. SCP-2987 можно применять для хранения таких файлов вне зависимости от размера файла…"
         },
         {
-          "id": "the-hatbot-chronicles",
-          "title": "Хроники Шляпоробота",
-          "url": "https://scpfoundation.net/the-hatbot-chronicles",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2.0,
-          "desc": "Доктор Манн сидел глубоко в кресле, словно студент перед деканом. \"Я полагаю, вы хотите знать, что произошло.\" - У нас шесть сбежавших объектов, более пятидесяти жертв и материальный ущерб, оцениваемый в десятки тысяч долларов. Да, доктор,…"
-        },
-        {
-          "id": "basic-observations",
-          "title": "Основные наблюдения",
-          "url": "https://scpfoundation.net/basic-observations",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.0,
-          "desc": "Сознание вдумалось в себя. Оно вдумалось в своё существование и ощутило электронные сигналы, данные и информацию, несущиеся сквозь его существование. Снизу, сеть разумов, активных и живых, все включены в эту б о льшую машину. Будто предсказ…"
-        },
-        {
-          "id": "scp-2193",
-          "title": "\"Ежемесячное устранение\"",
-          "url": "https://scpfoundation.net/scp-2193",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4.6,
-          "desc": "SCP-2193-1 - это аномальная информационная угроза, воздействующая на документы, касающиеся объектов и сущностей, содержащихся Фондом. Чаще всего она проявляется в разделе, посвященном Особым условиям содержания, или в приложениях к объекту,…"
-        },
-        {
           "id": "scp-2306",
           "title": "ИИ-призрак",
           "url": "https://scpfoundation.net/scp-2306",
@@ -2698,6 +2572,16 @@
           "desc": "SCP-2806 представляет собой группу протезов: 7 рук, 6 глаз, 3 ноги и 4 уха. Все экземпляры изготовлены из комбинации алюминия, полиметилметакрилата, поликарбонатной оболочки и чёрной арамидной ткани, сходной по составу с SCP-1360]-1. Все эк…"
         },
         {
+          "id": "scp-2193",
+          "title": "\"Ежемесячное устранение\"",
+          "url": "https://scpfoundation.net/scp-2193",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4.6,
+          "desc": "SCP-2193-1 - это аномальная информационная угроза, воздействующая на документы, касающиеся объектов и сущностей, содержащихся Фондом. Чаще всего она проявляется в разделе, посвященном Особым условиям содержания, или в приложениях к объекту,…"
+        },
+        {
           "id": "scp-2519",
           "title": "Cry me a river",
           "url": "https://scpfoundation.net/scp-2519",
@@ -2706,6 +2590,16 @@
           "contentKind": "scp",
           "os": 4.3,
           "desc": "SCP-2519 это цифровой аудио-файл под названием \"Babylon.mp3\", в котором закодирована трехчастная партия «By the waters of Babylon», основанная на композиции Филиппа Хайеса(1738-1797) с текстом Псалма 136. Анализ аудио показывает, что записа…"
+        },
+        {
+          "id": "the-hatbot-chronicles",
+          "title": "Хроники Шляпоробота",
+          "url": "https://scpfoundation.net/the-hatbot-chronicles",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2.0,
+          "desc": "Доктор Манн сидел глубоко в кресле, словно студент перед деканом. \"Я полагаю, вы хотите знать, что произошло.\" - У нас шесть сбежавших объектов, более пятидесяти жертв и материальный ущерб, оцениваемый в десятки тысяч долларов. Да, доктор,…"
         },
         {
           "id": "rogue-ai-nveo4-yvn3e-pn6ug",
@@ -2726,72 +2620,20 @@
           "contentKind": "tale",
           "os": 4.8,
           "desc": "Загрузка grape_space.x3d ::РЕНДЕРИНГ:: Чего тебе здесь надо? Я хотела поговорить. Ты спустилась сюда, чтобы напомнить о своем старшинстве по отношению ко мне? Нет. Я пришла, потому что тебе нужен друг. Я – твой друг? Так ты здесь, чтобы и м…"
+        },
+        {
+          "id": "basic-observations",
+          "title": "Основные наблюдения",
+          "url": "https://scpfoundation.net/basic-observations",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.0,
+          "desc": "Сознание вдумалось в себя. Оно вдумалось в своё существование и ощутило электронные сигналы, данные и информацию, несущиеся сквозь его существование. Снизу, сеть разумов, активных и живых, все включены в эту б о льшую машину. Будто предсказ…"
         }
       ],
       "supplementLinks": [],
-      "description": "Рассказы о виртуальных людях, которые приносят виртуальную пользу.",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Архивные Технические Отчёты:",
-          "articleIDs": [
-            "alert-lockdown-initiated",
-            "command-query-separation",
-            "superencipherment",
-            "clock-multiplier",
-            "null-terminating-string"
-          ]
-        },
-        {
-          "id": "02-articles",
-          "title": "Отчеты о результатах операции:",
-          "articleIDs": [
-            "hello-world",
-            "hello-world-part-ii",
-            "hello-world-part-iii",
-            "hello-world-part-iv",
-            "ai-classification-guide",
-            "scp-5241",
-            "scp-5841",
-            "corruption",
-            "fragmented-compiled"
-          ]
-        },
-        {
-          "id": "03-articles",
-          "title": "Ссылки:",
-          "articleIDs": [
-            "scp-2987",
-            "the-hatbot-chronicles"
-          ]
-        },
-        {
-          "id": "04-articles",
-          "title": "Сеть максвеллитов",
-          "articleIDs": [
-            "basic-observations"
-          ]
-        },
-        {
-          "id": "05-articles",
-          "title": "Каноническая последовательность",
-          "articleIDs": [
-            "scp-2193",
-            "scp-2306",
-            "scp-2522",
-            "scp-2806",
-            "scp-2519"
-          ]
-        },
-        {
-          "id": "06-10",
-          "title": "Миссии МОГ Каппа-10 вне последовательности:",
-          "articleIDs": [
-            "rogue-ai-nveo4-yvn3e-pn6ug",
-            "come-back-kid"
-          ]
-        }
-      ]
+      "description": "Рассказы о виртуальных людях, которые приносят виртуальную пользу."
     },
     {
       "id": "scp-ru:collection:canon:doctors-of-the-church-hub",
@@ -4779,7 +4621,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -4788,10 +4630,8 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-4bd009a59cba319841f23e52067089147160a2a5ace0f6ebb34782d9e9fad243"
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
       "primaryArticles": [
         {
@@ -4803,6 +4643,16 @@
           "contentKind": "tale",
           "os": 4.5,
           "desc": "Хаб «Скрученных сосен»] Жизненно важные функции = || ХАБ] || Скоро…] 7 июня 2016 года Портленд, Орегон Агент Саша Мерло] сидела за пустым столиком в тихой кофейне, барабаня пальцами по столу и смотря в окно. Небо, конечно же, было пасмурным…"
+        },
+        {
+          "id": "moving-pictures",
+          "title": "Движущиеся картинки",
+          "url": "https://scpfoundation.net/moving-pictures",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5.0,
+          "desc": "= << Прощание с королями] || ХАБ] || 22 марта, 2017 год Неизвестное место За гранью реальности — обжигающий холод. Всеобъемлющая пустота пожирает и реальное, и нереальное, производя на свет сюрреалистичное. Это сокровищница невоплощённых ко…"
         },
         {
           "id": "make-portland-weirder",
@@ -4841,16 +4691,6 @@
           "contentKind": "tale",
           "os": 3.8,
           "desc": "= 22 марта, 2017 год Изнанка Сохо Сьерра Дастин залезла в карман своего пальто и достала пистолет из картинки с надписью «Ствол №44». Картинка была прикреплена к внутренней подкладке. Не прицеливаясь, она сделала шесть выстрелов себе за спи…"
-        },
-        {
-          "id": "moving-pictures",
-          "title": "Движущиеся картинки",
-          "url": "https://scpfoundation.net/moving-pictures",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 5.0,
-          "desc": "= << Прощание с королями] || ХАБ] || 22 марта, 2017 год Неизвестное место За гранью реальности — обжигающий холод. Всеобъемлющая пустота пожирает и реальное, и нереальное, производя на свет сюрреалистичное. Это сокровищница невоплощённых ко…"
         },
         {
           "id": "those-twisted-pines-hub",
@@ -4922,52 +4762,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Аномалии сегодня находятся на острие завтрашнего прогресса. Невозможное никогда не остаётся таким. Добро пожаловать в будущее.",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Последние переводы",
-          "articleIDs": [
-            "vital-signs"
-          ]
-        },
-        {
-          "id": "02-1945-1991",
-          "title": "Подъём (1945-1991)",
-          "articleIDs": [
-            "make-portland-weirder"
-          ]
-        },
-        {
-          "id": "03-1991-2024",
-          "title": "Упадок (1991-2024)",
-          "articleIDs": [
-            "unusual-investigations",
-            "permanent-waves",
-            "a-farewell-to-kings",
-            "moving-pictures"
-          ]
-        },
-        {
-          "id": "04-articles",
-          "title": "Продолжения канона",
-          "articleIDs": [
-            "those-twisted-pines-hub",
-            "three-portlands-hub"
-          ]
-        },
-        {
-          "id": "05-articles",
-          "title": "Обзор",
-          "articleIDs": [
-            "ties-that-bind",
-            "realignment",
-            "bal-chatri",
-            "decisions-we-make",
-            "the-blackbird-and-the-falcon"
-          ]
-        }
-      ]
+      "description": "Аномалии сегодня находятся на острие завтрашнего прогресса. Невозможное никогда не остаётся таким. Добро пожаловать в будущее."
     },
     {
       "id": "scp-ru:collection:canon:aces-and-eights",
@@ -5107,6 +4902,267 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-ru:collection:canon:the-alchemy-department-hub",
+      "branchID": "scp-ru",
+      "kind": "canon",
+      "hubID": "the-alchemy-department-hub",
+      "title": "Хаб Отдела Алхимии Фонда",
+      "sourceListURL": "https://scpfoundation.net/the-alchemy-department-hub",
+      "officialHubURL": "https://scpfoundation.net/the-alchemy-department-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "отдел:отдел_алхимии",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "отдел:отдел_алхимии",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
+      },
+      "memberManifests": [
+        "manifest_scp-ru",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
+      },
+      "primaryArticles": [
+        {
+          "id": "finding-balance",
+          "title": "Обретая равновесие",
+          "url": "https://scpfoundation.net/finding-balance",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "channeling-flows",
+          "title": "Направляя потоки",
+          "url": "https://scpfoundation.net/channeling-flows",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "restoring-harmony",
+          "title": "Восстанавливая гармонию",
+          "url": "https://scpfoundation.net/restoring-harmony",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "lepidoptraetheia",
+          "title": "Лепидоптраэтея",
+          "url": "https://scpfoundation.net/lepidoptraetheia",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "an-alchemist-goes-to-war",
+          "title": "Алхимик объявляет войну",
+          "url": "https://scpfoundation.net/an-alchemist-goes-to-war",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "alls-fair-in-love-and-alchemy",
+          "title": "В любви и алхимии все средства хороши",
+          "url": "https://scpfoundation.net/alls-fair-in-love-and-alchemy",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "the-summer-of-bad-memories",
+          "title": "Лето дурных воспоминаний",
+          "url": "https://scpfoundation.net/the-summer-of-bad-memories",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "le-mort-du-alchemist",
+          "title": "Le Mort Du Alchemist",
+          "url": "https://scpfoundation.net/le-mort-du-alchemist",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "once-and-future-alchemist",
+          "title": "Алхимик былой и грядущий",
+          "url": "https://scpfoundation.net/once-and-future-alchemist",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "small-town-problems",
+          "title": "Проблемы маленького городка",
+          "url": "https://scpfoundation.net/small-town-problems",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "denton-and-mcdowell-save-sixty-dollars",
+          "title": "Как Дентон и Макдауэлл сэкономили шестьдесят баксов",
+          "url": "https://scpfoundation.net/denton-and-mcdowell-save-sixty-dollars",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "how-not-to-misappropriate-foundation-resources",
+          "title": "Искусство нецелевого расходования ресурсов Фонда",
+          "url": "https://scpfoundation.net/how-not-to-misappropriate-foundation-resources",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "denton-and-mcdowell-recover-la-chupacabra-s-pinata-from-a-jersey-devil",
+          "title": "Дэнтон и Макдауэлл возвращают пиньяту Чупакабры из лап Дьявола из Джерси",
+          "url": "https://scpfoundation.net/denton-and-mcdowell-recover-la-chupacabra-s-pinata-from-a-jersey-devil",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "chronicles-of-the-irreal-hub",
+          "title": "Хроники Непознанного",
+          "url": "https://scpfoundation.net/chronicles-of-the-irreal-hub",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-6172",
+          "title": "SCP-6172",
+          "url": "https://scpfoundation.net/scp-6172",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "stranded-lullaby",
+          "title": "Заброшенная колыбельная",
+          "url": "https://scpfoundation.net/stranded-lullaby",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "the-mind-electric",
+          "title": "Электрический разум",
+          "url": "https://scpfoundation.net/the-mind-electric",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "time-machine-en",
+          "title": "Машина времени",
+          "url": "https://scpfoundation.net/time-machine-en",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "let-the-maze-of-my-design-carry-you-on",
+          "title": "Пусть лабиринт моего замысла унесёт тебя",
+          "url": "https://scpfoundation.net/let-the-maze-of-my-design-carry-you-on",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "isle-unto-thyself",
+          "title": "Остров в себе",
+          "url": "https://scpfoundation.net/isle-unto-thyself",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "bewitched-bothered-and-bewildered",
+          "title": "Околдован, взволнован, озадачен",
+          "url": "https://scpfoundation.net/bewitched-bothered-and-bewildered",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "its-fine-but-it-still-hurts",
+          "title": "Всё хорошо, но всё ещё больно",
+          "url": "https://scpfoundation.net/its-fine-but-it-still-hurts",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "an-arm-y-of-two",
+          "title": "Армия из двух",
+          "url": "https://scpfoundation.net/an-arm-y-of-two",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "alchemic-arm-istice",
+          "title": "Алхимическое перемирие",
+          "url": "https://scpfoundation.net/alchemic-arm-istice",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-3622",
+          "title": "SCP-3622",
+          "url": "https://scpfoundation.net/scp-3622",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-3714",
+          "title": "SCP-3714",
+          "url": "https://scpfoundation.net/scp-3714",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-3872",
+          "title": "SCP-3872",
+          "url": "https://scpfoundation.net/scp-3872",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-3615",
+          "title": "SCP-3615",
+          "url": "https://scpfoundation.net/scp-3615",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-5621",
+          "title": "SCP-5621",
+          "url": "https://scpfoundation.net/scp-5621",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-5501",
+          "title": "SCP-5501",
+          "url": "https://scpfoundation.net/scp-5501",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "plauge-proposal",
+          "title": "Предложение Plague",
+          "url": "https://scpfoundation.net/plauge-proposal",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        },
+        {
+          "id": "scp-471-fr",
+          "title": "SCP-471-FR",
+          "url": "https://scpfoundation.net/scp-471-fr",
+          "role": "primaryArticle",
+          "sourceManifest": "officialMemberSeed"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Алхимия. Её часто понимают превратно, а то и просто высмеивают. А между тем алхимия отвечает за куда большее вокруг нас, чем кто-либо знает. В Отделе Алхимии Фонда это хорошо понимают. Их задача — сдерживать угрозы, в существование которых большинство сотрудников Фонда даже не верит. Угрозы из далёкого прошлого возвращаются, чтобы омрачить наше настоящее."
     },
     {
       "id": "scp-ru:collection:canon:the-coldest-war-hub",

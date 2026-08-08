@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786181934,
-  "generatedAt": "2026-08-08T09:38:54Z",
-  "chunkRevision": "sha256-ef7f5c19fe99da6349fdccee702e173cb31bdd77a10e6fab7f61045d1d0e2588",
+  "listVersion": 1786191698,
+  "generatedAt": "2026-08-08T12:21:38Z",
+  "chunkRevision": "sha256-e8f0367517ec156e7e00631f28f473b46d9fb1fbae532aa2dc0071f9f92d720c",
   "builtFrom": {
     "manifests": [
       {
@@ -50,7 +50,7 @@
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/jp.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-2362e47185ccb43e4e9e3270245b5ca8e73c6e0a1153d5a7f5411362b1f4474e"
+      "contentHash": "sha256-ebac6ab37f5385261513bd04c3e27484c42cb1ed8a3395c7a1fb2115b61f61f6"
     },
     "officialTagMap": {
       "kind": "jp_tag",
@@ -64,7 +64,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-7243fe5c73b6d5e8a86d47713777d1507d14c98400299e31eff936badad50039"
+      "contentHash": "sha256-14c68b139740f96e3eaf14ef115196587472de6454c83467241b0e666a5a540c"
     }
   },
   "collections": [
@@ -4532,7 +4532,10 @@
       ],
       "memberResolution": {
         "mode": "tagMapReverseLookup",
-        "tagSource": "jp_tag.json"
+        "tagSource": "jp_tag.json",
+        "officialHubSupplementIDs": [
+          "mock-examination"
+        ]
       },
       "primaryArticles": [
         {
@@ -4621,6 +4624,15 @@
           "url": "https://scp-jp.wikidot.com/woodenwolf-drop-little-pearls",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle"
+        },
+        {
+          "id": "mock-examination",
+          "title": "模擬試験",
+          "url": "https://scp-jp.wikidot.com/mock-examination",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 67,
+          "desc": "SCPは創作物だ。すべては空想の存在でしかない。 だから、目の前のSCP-910-JPは、きっと偽物なのだろう。 「お疲れ様でした。ウィンカーの出し遅れが2回ほど見られたので、気をつけてください。また、本日は状況が良かったので転回を行いましたね」"
         }
       ],
       "supplementLinks": [],

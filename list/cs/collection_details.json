@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786166093,
-  "generatedAt": "2026-08-08T05:14:53Z",
-  "chunkRevision": "sha256-b167eb233c4472d91e4af1b91190d4a057cdcc68aa1c89bc2ca4cda569a414ad",
+  "listVersion": 1786193950,
+  "generatedAt": "2026-08-08T12:59:10Z",
+  "chunkRevision": "sha256-7d15783f47828227ce0f0f90a787f8aed18156d3e4b0d34ee0a8c9d608db76db",
   "builtFrom": {
     "manifests": [
       {
@@ -105,7 +105,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "5 tag-confirmed members enumerable"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
       "memberManifests": [
         "manifest_scp-cs",
@@ -114,7 +114,37 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-75490914de7854f6ec62eced88cc31c0799c3f6b00e32e37ba7d0ab64446fd20"
       },
       "primaryArticles": [
         {
@@ -123,26 +153,9 @@
           "url": "http://scp-cs.wikidot.com/scp-243-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 3,
           "desc": "Veškeré internetové příspěvky sdílející SCP-243-CS byly staženy a účty ovlivněných uživatelů byly smazány, či zablokovány. V případě další propagace budou ovlivněné osoby nalezeny a léčeny dle standardních protokolů pro ovlivnění memetickými anomáliemi s přihl…"
-        },
-        {
-          "id": "porozumeni-chybam",
-          "title": "Porozumění chybám",
-          "url": "http://scp-cs.wikidot.com/porozumeni-chybam",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Porozumění chybám Autor: Utylike"
-        },
-        {
-          "id": "co-bylo-nelze-vzit-zpet",
-          "title": "Co bylo nelze vzít zpět",
-          "url": "http://scp-cs.wikidot.com/co-bylo-nelze-vzit-zpet",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Co bylo, nelze vzít zpět Autor: Utylike"
         },
         {
           "id": "atelier-tveho-vnitrniho-ja",
@@ -154,6 +167,15 @@
           "desc": "Název: Ateliér tvého vnitřního já Autor: Utylike"
         },
         {
+          "id": "co-bylo-nelze-vzit-zpet",
+          "title": "Co bylo nelze vzít zpět",
+          "url": "http://scp-cs.wikidot.com/co-bylo-nelze-vzit-zpet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Název: Co bylo, nelze vzít zpět Autor: Utylike"
+        },
+        {
           "id": "jak-se-zbavit-svych-pratel",
           "title": "Jak se zbavit svých přátel",
           "url": "http://scp-cs.wikidot.com/jak-se-zbavit-svych-pratel",
@@ -161,6 +183,15 @@
           "role": "primaryArticle",
           "os": 3,
           "desc": "Název: Jak se zbavit svých přátel Autor: Utylike"
+        },
+        {
+          "id": "porozumeni-chybam",
+          "title": "Porozumění chybám",
+          "url": "http://scp-cs.wikidot.com/porozumeni-chybam",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Název: Porozumění chybám Autor: Utylike"
         },
         {
           "id": "svet-se-bez-vas-nezastavi",
@@ -172,7 +203,28 @@
           "desc": "Název: Svět se bez vás nezastaví Autor: Utylike"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-info",
+          "title": "Info",
+          "articleIDs": [
+            "scp-243-cs"
+          ]
+        },
+        {
+          "id": "02-additional-tagged-articles",
+          "title": "Additional tagged articles",
+          "articleIDs": [
+            "atelier-tveho-vnitrniho-ja",
+            "co-bylo-nelze-vzit-zpet",
+            "jak-se-zbavit-svych-pratel",
+            "porozumeni-chybam",
+            "svet-se-bez-vas-nezastavi"
+          ]
+        }
+      ],
+      "description": "——— ——— ——— ——— ——— ——— ——— ——— ——— ——— ——— ——— ——— Prolog - Manifesto viny ————————————————————————————————— Kapitola I. - Porozumění chybám ————————————————————————————————— Kapitola II. - Co bylo nelze vzít zpět ————————————————————————————————— Kapitola III. - Ateliér tvého vnitřního já —̴̢̧̡̡̡̡̢̨̨̨̢̢̛̛̰͉̲͓̙̯͍̥̞̹̗̰̳̥̠̬̩͖̻̞͉̠̬̱̮̼̮̣̙̫̠͓̬̼̙̩̦̦̙̯̮̱̝̟̭̹̻͎͚͕͇̫͔̮̘̞̠̳̳̠̮̥̫͚͕͔̥̻͉̟͖͕̟͖̮̩̺͔͇̪͎͙̜̠͖̳̻͔̻̮͇͎̑̌̂̊͗͂͛͛̾̉͒͌̌̓̍͐́̂͒̃̒̑̿̋̋̑̀͐͂̀̉́͋̑̍̒͂̊̍͌͋̔͗̋̉́̔̍̊̋̏͊̿̓͐̽̎̋̾̽̾̽́̾̈́̊͋̓̋̐̈̒̓̆͐͊̈́̃͘͜͜͜͝͝͠͝͠͠͝͝͝ͅͅ————————————————————————————————̴̢̧̡̡̡̡̢̨̨̨̢̢̛̛̰͉̲͓̙̯͍̥̞̹̗̰̳̥̠̬̩͖̻̞͉̠̬̱̮̼̮̣̙̫̠͓̬̼̙̩̦̦̙̯̮̱̝̟̭̹̻͎͚͕͇̫͔̮̘̞̠̳̳̠̮̥̫͚͕͔̥̻͉̟͖͕̟͖̮̩̺͔͇̪͎͙̜̠͖̳̻͔̻̮͇͎̑̌̂̊͗͂͛͛̾̉͒͌̌̓̍͐́̂͒̃̒̑̿̋̋̑̀͐͂̀̉́͋̑̍̒͂̊̍͌͋̔͗̋̉́̔̍̊̋̏͊̿̓͐̽̎̋̾̽̾̽́̾̈́̊͋̓̋̐̈̒̓̆͐͊̈́̃͘͜͜͜͝͝͠͝͠͠͝͝͝ͅͅ Kapitola IV. - Jak se zbavit svých přátel ————————————————————————————————— Kapitola V. - Svět se bez vás nezastaví ————————————————————————————————— Kapitola VI. - Nenapravi"
     },
     {
       "id": "scp-cs:collection:series:stastne-az-do-smrti-neexistuje-hub",
@@ -207,7 +259,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "2 tag-confirmed members enumerable"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
       "memberManifests": [
         "manifest_scp-cs",
@@ -216,7 +268,37 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-26804598b16cc97327aa6e87c95ff0b756b847bc07b120f85d5ca41aa83d51ae"
       },
       "primaryArticles": [
         {
@@ -225,6 +307,7 @@
           "url": "http://scp-cs.wikidot.com/scp-226-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 7,
           "desc": "SCP-226-CS musí být umístěno v humanoidní zadržovací cele s jednou (1) dětskou postelí, šatníkem, jedním (1) stolem se dvěma (2) židlemi a sprchovým koutem se závěsem. Pokud subjekt použije své schopnosti proti členům Nadace, musí být do místnosti ihned přived…"
         },
@@ -234,6 +317,7 @@
           "url": "http://scp-cs.wikidot.com/praeterium-oblivisceris-non-meministi",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 6,
           "desc": "Název: Praeteritum - Oblivisceris, non meministi Autor: Miss_Martins"
         },
@@ -243,6 +327,7 @@
           "url": "http://scp-cs.wikidot.com/falsa-spes",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 8,
           "desc": "Název: Falsa spes Autor: Miss_Martins"
         },
@@ -252,6 +337,7 @@
           "url": "http://scp-cs.wikidot.com/opus-latine-vel-aliquid-simile",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 5,
           "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins"
         },
@@ -261,6 +347,7 @@
           "url": "http://scp-cs.wikidot.com/ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 4,
           "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
         },
@@ -270,6 +357,7 @@
           "url": "http://scp-cs.wikidot.com/ne-pas-battu-petite-coeur-de-moi",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
         },
@@ -279,6 +367,7 @@
           "url": "http://scp-cs.wikidot.com/pourquoi-nous-detestes-tu-destin",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 4,
           "desc": "Název: Pourquoi nous détestes-tu, destin? (I. část) Autor: Miss_Martins Varování: Neskutečně moc sprostých slov (asi), sebevražedné sklony v části s dopisem, episoda je plná deprese"
         },
@@ -288,6 +377,7 @@
           "url": "http://scp-cs.wikidot.com/you-are-my-everything-i-am-your-nothing",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 5,
           "desc": "Název: You are my everything, I am your nothing Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
@@ -297,6 +387,7 @@
           "url": "http://scp-cs.wikidot.com/reviving-all-thats-dead",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 3,
           "desc": "Název: Reviving all that's dead Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
@@ -306,6 +397,7 @@
           "url": "http://scp-cs.wikidot.com/the-thunder-before-the-storm",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 4,
           "desc": "Název: The thunder before the storm Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
@@ -315,6 +407,7 @@
           "url": "http://scp-cs.wikidot.com/der-plan-klang-klar",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Der Plan klang klar Autor: Miss_Martins a Brian DAmmas Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
@@ -324,6 +417,7 @@
           "url": "http://scp-cs.wikidot.com/lass-die-revolution-kommen",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 1,
           "desc": "Název: Lass die Revolution kommen Autor: Miss_Martins a Brian DAmmas Varování: Sebevražedné sklony, episoda je plná deprese"
         },
@@ -333,6 +427,7 @@
           "url": "http://scp-cs.wikidot.com/operation-erfolgreich",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Operation Erfolgreich Autor: Miss_Martins a Brian DAmmas Varování: Sebevražedné sklony, episoda je plná deprese"
         },
@@ -342,6 +437,7 @@
           "url": "http://scp-cs.wikidot.com/stastne-az-do-smrti-tak-jo",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 4,
           "desc": "Název: Šťastně až do smrti? Tak jo Autor: Miss_Martins Poznámka autora: Děkuji všem, co tuto sérii se mnou četli, pomáhali mi při jejím psaní a dávali mi zpětnou vazbu. Těšte se na epilog! Mám vás moc ráda, lidi :3"
         },
@@ -351,11 +447,42 @@
           "url": "http://scp-cs.wikidot.com/stastne-a-vesele-az-naveky",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Šťastně až do smrti? Tak jo Autor: Miss_Martins Poznámka autora: Děkuji všem, co tuto sérii se mnou četli, pomáhali mi při jejím psaní a dávali mi zpětnou vazbu. Mám vás moc ráda, lidi :3"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-scp-na-uvod",
+          "title": "SCP na úvod",
+          "articleIDs": [
+            "scp-226-cs"
+          ]
+        },
+        {
+          "id": "02-pribehova-linie",
+          "title": "Příběhová linie",
+          "articleIDs": [
+            "praeterium-oblivisceris-non-meministi",
+            "falsa-spes",
+            "opus-latine-vel-aliquid-simile",
+            "ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
+            "ne-pas-battu-petite-coeur-de-moi",
+            "pourquoi-nous-detestes-tu-destin",
+            "you-are-my-everything-i-am-your-nothing",
+            "reviving-all-thats-dead",
+            "the-thunder-before-the-storm",
+            "der-plan-klang-klar",
+            "lass-die-revolution-kommen",
+            "operation-erfolgreich",
+            "stastne-az-do-smrti-tak-jo",
+            "stastne-a-vesele-az-naveky"
+          ]
+        }
+      ],
+      "description": "\" Jako malý jsem věřil, že když se snažíte být dobrý člověk, vždy pro Vás vše dopadne dobře."
     },
     {
       "id": "scp-cs:collection:series:tema2024",
@@ -390,7 +517,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "4 tag-confirmed members enumerable"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
       "memberManifests": [
         "manifest_scp-cs",
@@ -399,7 +526,37 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-a8552481d0a29f923d60d1e3a431b8c4ce4ff95cf33fefb847a9c508c76581e4"
       },
       "primaryArticles": [
         {
@@ -408,71 +565,9 @@
           "url": "http://scp-cs.wikidot.com/frustrace-z-rozmotanych-uzlu",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 8,
           "desc": "Název: Frustrace z rozmotaných uzlů Autor: Utylike"
-        },
-        {
-          "id": "opravovani-chyb",
-          "title": "Opravování chyb",
-          "url": "http://scp-cs.wikidot.com/opravovani-chyb",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Opravování chyb Autor: AtlasCZ"
-        },
-        {
-          "id": "praeterium-oblivisceris-non-meministi",
-          "title": "Praeteritum - Oblivisceris, non meministi",
-          "url": "http://scp-cs.wikidot.com/praeterium-oblivisceris-non-meministi",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Praeteritum - Oblivisceris, non meministi Autor: Miss_Martins"
-        },
-        {
-          "id": "se-slevou",
-          "title": "Se slevou",
-          "url": "http://scp-cs.wikidot.com/se-slevou",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Se slevou Autor: Steven Choros"
-        },
-        {
-          "id": "prozatim-uzamceno",
-          "title": "Prozatím uzamčeno",
-          "url": "http://scp-cs.wikidot.com/prozatim-uzamceno",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Prozatím uzamčeno Autor: Blakedin"
-        },
-        {
-          "id": "scp-318-cs",
-          "title": "Slastné připomenutí",
-          "url": "http://scp-cs.wikidot.com/scp-318-cs",
-          "sourceManifest": "manifest_scp-cs",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "SCP-318-CS musí být uzavřeno v neprodyšném skladovacím boxu v Oblasti-12CS. Veškeré testování na SCP-318-CS musí být prováděno pod dohledem minimálně jednoho výzkumného pracovníka prověrky úrovně 4. Aktualizace #1: Jakékoli testování na SCP-318-CS je zakázáno,…"
-        },
-        {
-          "id": "nekonecne-spletence-vlastnich-synapsi",
-          "title": "Nekonečné spletence vlastních synapsí",
-          "url": "http://scp-cs.wikidot.com/nekonecne-spletence-vlastnich-synapsi",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7,
-          "desc": "Název: Nekonečné spletence vlastních synapsí Autor: Hajgrando"
-        },
-        {
-          "id": "jak-hodit-vycerpanost-za-hlavu",
-          "title": "Jak hodit vyčerpanost za hlavu",
-          "url": "http://scp-cs.wikidot.com/jak-hodit-vycerpanost-za-hlavu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Jak hodit vyčerpanost za hlavu Autor: Brian DAmmas"
         },
         {
           "id": "asynchronie-bijicich-srdci",
@@ -480,53 +575,9 @@
           "url": "http://scp-cs.wikidot.com/asynchronie-bijicich-srdci",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 10,
           "desc": "Název: Asynchronie bijících srdcí Autor: Utylike"
-        },
-        {
-          "id": "ve-snu",
-          "title": "Ve snu",
-          "url": "http://scp-cs.wikidot.com/ve-snu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Ve snu Autor: Steven Choros"
-        },
-        {
-          "id": "tri-otazky-pro-jarmilu",
-          "title": "Tři otázky pro Jarmilu",
-          "url": "http://scp-cs.wikidot.com/tri-otazky-pro-jarmilu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Tři otázky pro Jarmilu Autor: Blakedin"
-        },
-        {
-          "id": "falsa-spes",
-          "title": "Falsa spes",
-          "url": "http://scp-cs.wikidot.com/falsa-spes",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8,
-          "desc": "Název: Falsa spes Autor: Miss_Martins"
-        },
-        {
-          "id": "efektivita",
-          "title": "Efektivita",
-          "url": "http://scp-cs.wikidot.com/efektivita",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Efektivita Autor: AtlasCZ"
-        },
-        {
-          "id": "pod-lampou-je-nejvetsi-tma",
-          "title": "Pod lampou je největší tma",
-          "url": "http://scp-cs.wikidot.com/pod-lampou-je-nejvetsi-tma",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Pod lampou je největší tma Autor: Brian DAmmas"
         },
         {
           "id": "hledani-osudu-behem-zahalky",
@@ -534,26 +585,9 @@
           "url": "http://scp-cs.wikidot.com/hledani-osudu-behem-zahalky",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Hledání osudu během zahálky Autor: Blakedin"
-        },
-        {
-          "id": "opus-latine-vel-aliquid-simile",
-          "title": "Opus latine vel aliquid simile",
-          "url": "http://scp-cs.wikidot.com/opus-latine-vel-aliquid-simile",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins"
-        },
-        {
-          "id": "vec-perspektivy",
-          "title": "Věc perspektivy",
-          "url": "http://scp-cs.wikidot.com/vec-perspektivy",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Věc perspektivy Autor: Utylike"
         },
         {
           "id": "posvit-mi-na-cestu",
@@ -561,26 +595,9 @@
           "url": "http://scp-cs.wikidot.com/posvit-mi-na-cestu",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 1,
           "desc": "Název: Posviť mi na cestu Autor: Blakedin"
-        },
-        {
-          "id": "marnotratny-jazycek-duseneho-plamene",
-          "title": "Marnotratný jazýček dušeného plamene",
-          "url": "http://scp-cs.wikidot.com/marnotratny-jazycek-duseneho-plamene",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Marnotratný jazýček dušeného plamene Autor: Utylike"
-        },
-        {
-          "id": "ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
-          "title": "Dite-moi, petite coeur, pour qui tu as battu",
-          "url": "http://scp-cs.wikidot.com/ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
         },
         {
           "id": "staci-jenom-krok",
@@ -588,26 +605,9 @@
           "url": "http://scp-cs.wikidot.com/staci-jenom-krok",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 1,
           "desc": "Název: Stačí jenom krok Autor: Blakedin"
-        },
-        {
-          "id": "prala-bych-si-abychom-spolu-meli-vice-casu",
-          "title": "Přála bych si, abychom spolu měli více času",
-          "url": "http://scp-cs.wikidot.com/prala-bych-si-abychom-spolu-meli-vice-casu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Přála bych si, abychom spolu měli více času Autor: Utylike"
-        },
-        {
-          "id": "ne-pas-battu-petite-coeur-de-moi",
-          "title": "Ne pas battu, petite coeur de moi",
-          "url": "http://scp-cs.wikidot.com/ne-pas-battu-petite-coeur-de-moi",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
         },
         {
           "id": "do-kralici-nory-hopem",
@@ -615,26 +615,9 @@
           "url": "http://scp-cs.wikidot.com/do-kralici-nory-hopem",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Do králičí nory hopem Autor: Blakedin"
-        },
-        {
-          "id": "navrat",
-          "title": "Návrat",
-          "url": "http://scp-cs.wikidot.com/navrat",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Návrat Autor: Utylike"
-        },
-        {
-          "id": "pourquoi-nous-detestes-tu-destin",
-          "title": "Pourquoi nous détestes-tu, destin?",
-          "url": "http://scp-cs.wikidot.com/pourquoi-nous-detestes-tu-destin",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Pourquoi nous détestes-tu, destin? (I. část) Autor: Miss_Martins Varování: Neskutečně moc sprostých slov (asi), sebevražedné sklony v části s dopisem, episoda je plná deprese"
         },
         {
           "id": "mrtva-schranka",
@@ -642,26 +625,9 @@
           "url": "http://scp-cs.wikidot.com/mrtva-schranka",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 1,
           "desc": "Název: Mrtvá schránka Autor: Blakedin"
-        },
-        {
-          "id": "provlecena-smycka",
-          "title": "Provlečená smyčka",
-          "url": "http://scp-cs.wikidot.com/provlecena-smycka",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "Název: Provlečená smyčka Autor: Utylike"
-        },
-        {
-          "id": "you-are-my-everything-i-am-your-nothing",
-          "title": "You are my everything, I am your nothing",
-          "url": "http://scp-cs.wikidot.com/you-are-my-everything-i-am-your-nothing",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "Název: You are my everything, I am your nothing Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
         {
           "id": "tanec-dusi",
@@ -669,26 +635,9 @@
           "url": "http://scp-cs.wikidot.com/tanec-dusi",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Tanec duší ** SCP-CS:** SCP-027-CS a SCP-039-CS Autor: Blakedin"
-        },
-        {
-          "id": "scp-807-cs",
-          "title": "Projekt NITVAS",
-          "url": "http://scp-cs.wikidot.com/scp-807-cs",
-          "sourceManifest": "manifest_scp-cs",
-          "role": "primaryArticle",
-          "os": 9,
-          "desc": "Zadržení SCP-807-CS spadá pod projekt NITVAS a přímý dohled ČROD-02 . Z tohoto důvodu jsou veškeré dodatečné informace, týkající se zadržení SCP-807-CS, tajné pro úroveň prověření 5 a dostupné pouze pro personál přiřazený k objektu SCP-807-CS, zaměstnance proj…"
-        },
-        {
-          "id": "reviving-all-thats-dead",
-          "title": "Reviving all that's dead",
-          "url": "http://scp-cs.wikidot.com/reviving-all-thats-dead",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Reviving all that's dead Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
         {
           "id": "nakazliva-lecba-na-neduhy-sveta",
@@ -696,26 +645,9 @@
           "url": "http://scp-cs.wikidot.com/nakazliva-lecba-na-neduhy-sveta",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 6,
           "desc": "Název: Nakažlivá léčba na neduhy světa Autor: Utylike"
-        },
-        {
-          "id": "spisy-tri-pacientu",
-          "title": "Spisy tří pacientů",
-          "url": "http://scp-cs.wikidot.com/spisy-tri-pacientu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 1,
-          "desc": "Název: Spisy tří pacientů Autor: Blakedin"
-        },
-        {
-          "id": "the-thunder-before-the-storm",
-          "title": "The Thunder Before The Storm",
-          "url": "http://scp-cs.wikidot.com/the-thunder-before-the-storm",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: The thunder before the storm Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
         {
           "id": "ve-sluzbach-stinu",
@@ -723,8 +655,29 @@
           "url": "http://scp-cs.wikidot.com/ve-sluzbach-stinu",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 1,
           "desc": "Název: Ve službách stínu Autor: Blakedin"
+        },
+        {
+          "id": "interval-zlomu",
+          "title": "Interval zlomu",
+          "url": "http://scp-cs.wikidot.com/interval-zlomu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Interval zlomu Autor: Blakedin"
+        },
+        {
+          "id": "obraz-a-odraz",
+          "title": "Obraz a odraz",
+          "url": "http://scp-cs.wikidot.com/obraz-a-odraz",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Obraz a odraz Autor: Blakedin"
         },
         {
           "id": "der-plan-klang-klar",
@@ -736,22 +689,40 @@
           "desc": "Název: Der Plan klang klar Autor: Miss_Martins a Brian DAmmas Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         },
         {
-          "id": "medaile",
-          "title": "Medaile",
-          "url": "http://scp-cs.wikidot.com/medaile",
+          "id": "ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
+          "title": "Dite-moi, petite coeur, pour qui tu as battu",
+          "url": "http://scp-cs.wikidot.com/ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 1,
-          "desc": "Název: Medaile Autor: Utylike"
+          "os": 4,
+          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
         },
         {
-          "id": "interval-zlomu",
-          "title": "Interval zlomu",
-          "url": "http://scp-cs.wikidot.com/interval-zlomu",
+          "id": "efektivita",
+          "title": "Efektivita",
+          "url": "http://scp-cs.wikidot.com/efektivita",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 1,
-          "desc": "Název: Interval zlomu Autor: Blakedin"
+          "os": 6,
+          "desc": "Název: Efektivita Autor: AtlasCZ"
+        },
+        {
+          "id": "falsa-spes",
+          "title": "Falsa spes",
+          "url": "http://scp-cs.wikidot.com/falsa-spes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8,
+          "desc": "Název: Falsa spes Autor: Miss_Martins"
+        },
+        {
+          "id": "jak-hodit-vycerpanost-za-hlavu",
+          "title": "Jak hodit vyčerpanost za hlavu",
+          "url": "http://scp-cs.wikidot.com/jak-hodit-vycerpanost-za-hlavu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Název: Jak hodit vyčerpanost za hlavu Autor: Brian DAmmas"
         },
         {
           "id": "lass-die-revolution-kommen",
@@ -763,6 +734,51 @@
           "desc": "Název: Lass die Revolution kommen Autor: Miss_Martins a Brian DAmmas Varování: Sebevražedné sklony, episoda je plná deprese"
         },
         {
+          "id": "marnotratny-jazycek-duseneho-plamene",
+          "title": "Marnotratný jazýček dušeného plamene",
+          "url": "http://scp-cs.wikidot.com/marnotratny-jazycek-duseneho-plamene",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6,
+          "desc": "Název: Marnotratný jazýček dušeného plamene Autor: Utylike"
+        },
+        {
+          "id": "medaile",
+          "title": "Medaile",
+          "url": "http://scp-cs.wikidot.com/medaile",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Název: Medaile Autor: Utylike"
+        },
+        {
+          "id": "navrat",
+          "title": "Návrat",
+          "url": "http://scp-cs.wikidot.com/navrat",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Název: Návrat Autor: Utylike"
+        },
+        {
+          "id": "ne-pas-battu-petite-coeur-de-moi",
+          "title": "Ne pas battu, petite coeur de moi",
+          "url": "http://scp-cs.wikidot.com/ne-pas-battu-petite-coeur-de-moi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
+        },
+        {
+          "id": "nekonecne-spletence-vlastnich-synapsi",
+          "title": "Nekonečné spletence vlastních synapsí",
+          "url": "http://scp-cs.wikidot.com/nekonecne-spletence-vlastnich-synapsi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7,
+          "desc": "Název: Nekonečné spletence vlastních synapsí Autor: Hajgrando"
+        },
+        {
           "id": "operation-erfolgreich",
           "title": "Operation Erfolgreich",
           "url": "http://scp-cs.wikidot.com/operation-erfolgreich",
@@ -770,6 +786,105 @@
           "role": "primaryArticle",
           "os": 2,
           "desc": "Název: Operation Erfolgreich Autor: Miss_Martins a Brian DAmmas Varování: Sebevražedné sklony, episoda je plná deprese"
+        },
+        {
+          "id": "opravovani-chyb",
+          "title": "Opravování chyb",
+          "url": "http://scp-cs.wikidot.com/opravovani-chyb",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6,
+          "desc": "Název: Opravování chyb Autor: AtlasCZ"
+        },
+        {
+          "id": "opus-latine-vel-aliquid-simile",
+          "title": "Opus latine vel aliquid simile",
+          "url": "http://scp-cs.wikidot.com/opus-latine-vel-aliquid-simile",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5,
+          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins"
+        },
+        {
+          "id": "pod-lampou-je-nejvetsi-tma",
+          "title": "Pod lampou je největší tma",
+          "url": "http://scp-cs.wikidot.com/pod-lampou-je-nejvetsi-tma",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Název: Pod lampou je největší tma Autor: Brian DAmmas"
+        },
+        {
+          "id": "pourquoi-nous-detestes-tu-destin",
+          "title": "Pourquoi nous détestes-tu, destin?",
+          "url": "http://scp-cs.wikidot.com/pourquoi-nous-detestes-tu-destin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4,
+          "desc": "Název: Pourquoi nous détestes-tu, destin? (I. část) Autor: Miss_Martins Varování: Neskutečně moc sprostých slov (asi), sebevražedné sklony v části s dopisem, episoda je plná deprese"
+        },
+        {
+          "id": "praeterium-oblivisceris-non-meministi",
+          "title": "Praeteritum - Oblivisceris, non meministi",
+          "url": "http://scp-cs.wikidot.com/praeterium-oblivisceris-non-meministi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 6,
+          "desc": "Název: Praeteritum - Oblivisceris, non meministi Autor: Miss_Martins"
+        },
+        {
+          "id": "prala-bych-si-abychom-spolu-meli-vice-casu",
+          "title": "Přála bych si, abychom spolu měli více času",
+          "url": "http://scp-cs.wikidot.com/prala-bych-si-abychom-spolu-meli-vice-casu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4,
+          "desc": "Název: Přála bych si, abychom spolu měli více času Autor: Utylike"
+        },
+        {
+          "id": "provlecena-smycka",
+          "title": "Provlečená smyčka",
+          "url": "http://scp-cs.wikidot.com/provlecena-smycka",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5,
+          "desc": "Název: Provlečená smyčka Autor: Utylike"
+        },
+        {
+          "id": "prozatim-uzamceno",
+          "title": "Prozatím uzamčeno",
+          "url": "http://scp-cs.wikidot.com/prozatim-uzamceno",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Název: Prozatím uzamčeno Autor: Blakedin"
+        },
+        {
+          "id": "reviving-all-thats-dead",
+          "title": "Reviving all that's dead",
+          "url": "http://scp-cs.wikidot.com/reviving-all-thats-dead",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Název: Reviving all that's dead Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
+        },
+        {
+          "id": "scp-318-cs",
+          "title": "Slastné připomenutí",
+          "url": "http://scp-cs.wikidot.com/scp-318-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 5,
+          "desc": "SCP-318-CS musí být uzavřeno v neprodyšném skladovacím boxu v Oblasti-12CS. Veškeré testování na SCP-318-CS musí být prováděno pod dohledem minimálně jednoho výzkumného pracovníka prověrky úrovně 4. Aktualizace #1: Jakékoli testování na SCP-318-CS je zakázáno,…"
+        },
+        {
+          "id": "scp-807-cs",
+          "title": "Projekt NITVAS",
+          "url": "http://scp-cs.wikidot.com/scp-807-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 9,
+          "desc": "Zadržení SCP-807-CS spadá pod projekt NITVAS a přímý dohled ČROD-02 . Z tohoto důvodu jsou veškeré dodatečné informace, týkající se zadržení SCP-807-CS, tajné pro úroveň prověření 5 a dostupné pouze pro personál přiřazený k objektu SCP-807-CS, zaměstnance proj…"
         },
         {
           "id": "scp-923-cs",
@@ -781,13 +896,31 @@
           "desc": "Objekt je zadržen na podstavci ve standardní biologické zadržovací cele, nacházející se v zabezpečeném křídle Oblasti-03CS. Od posledního incidentu je objekt pouze monitorován pro případné změny stavu, zatímco probíhá výzkum jeho latentních anomálních vlastnos…"
         },
         {
-          "id": "obraz-a-odraz",
-          "title": "Obraz a odraz",
-          "url": "http://scp-cs.wikidot.com/obraz-a-odraz",
+          "id": "se-slevou",
+          "title": "Se slevou",
+          "url": "http://scp-cs.wikidot.com/se-slevou",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Obraz a odraz Autor: Blakedin"
+          "os": 3,
+          "desc": "Název: Se slevou Autor: Steven Choros"
+        },
+        {
+          "id": "spisy-tri-pacientu",
+          "title": "Spisy tří pacientů",
+          "url": "http://scp-cs.wikidot.com/spisy-tri-pacientu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Název: Spisy tří pacientů Autor: Blakedin"
+        },
+        {
+          "id": "stastne-az-do-smrti-tak-jo",
+          "title": "Šťastně až do smrti? Tak jo",
+          "url": "http://scp-cs.wikidot.com/stastne-az-do-smrti-tak-jo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4,
+          "desc": "Název: Šťastně až do smrti? Tak jo Autor: Miss_Martins Poznámka autora: Děkuji všem, co tuto sérii se mnou četli, pomáhali mi při jejím psaní a dávali mi zpětnou vazbu. Těšte se na epilog! Mám vás moc ráda, lidi :3"
         },
         {
           "id": "telesnost",
@@ -799,16 +932,178 @@
           "desc": "Název: Tělesnost Autor: Utylike"
         },
         {
-          "id": "stastne-az-do-smrti-tak-jo",
-          "title": "Šťastně až do smrti? Tak jo",
-          "url": "http://scp-cs.wikidot.com/stastne-az-do-smrti-tak-jo",
+          "id": "the-thunder-before-the-storm",
+          "title": "The Thunder Before The Storm",
+          "url": "http://scp-cs.wikidot.com/the-thunder-before-the-storm",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "os": 4,
-          "desc": "Název: Šťastně až do smrti? Tak jo Autor: Miss_Martins Poznámka autora: Děkuji všem, co tuto sérii se mnou četli, pomáhali mi při jejím psaní a dávali mi zpětnou vazbu. Těšte se na epilog! Mám vás moc ráda, lidi :3"
+          "desc": "Název: The thunder before the storm Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
+        },
+        {
+          "id": "tri-otazky-pro-jarmilu",
+          "title": "Tři otázky pro Jarmilu",
+          "url": "http://scp-cs.wikidot.com/tri-otazky-pro-jarmilu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Název: Tři otázky pro Jarmilu Autor: Blakedin"
+        },
+        {
+          "id": "ve-snu",
+          "title": "Ve snu",
+          "url": "http://scp-cs.wikidot.com/ve-snu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Název: Ve snu Autor: Steven Choros"
+        },
+        {
+          "id": "vec-perspektivy",
+          "title": "Věc perspektivy",
+          "url": "http://scp-cs.wikidot.com/vec-perspektivy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Název: Věc perspektivy Autor: Utylike"
+        },
+        {
+          "id": "you-are-my-everything-i-am-your-nothing",
+          "title": "You are my everything, I am your nothing",
+          "url": "http://scp-cs.wikidot.com/you-are-my-everything-i-am-your-nothing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5,
+          "desc": "Název: You are my everything, I am your nothing Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-minulost",
+          "title": "Minulost",
+          "articleIDs": [
+            "frustrace-z-rozmotanych-uzlu"
+          ]
+        },
+        {
+          "id": "02-nadeje",
+          "title": "Naděje",
+          "articleIDs": [
+            "asynchronie-bijicich-srdci"
+          ]
+        },
+        {
+          "id": "03-prace",
+          "title": "Práce",
+          "articleIDs": [
+            "hledani-osudu-behem-zahalky"
+          ]
+        },
+        {
+          "id": "04-slunce",
+          "title": "Slunce",
+          "articleIDs": [
+            "posvit-mi-na-cestu"
+          ]
+        },
+        {
+          "id": "05-melcina",
+          "title": "Mělčina",
+          "articleIDs": [
+            "staci-jenom-krok"
+          ]
+        },
+        {
+          "id": "06-spirala",
+          "title": "Spirála",
+          "articleIDs": [
+            "do-kralici-nory-hopem"
+          ]
+        },
+        {
+          "id": "07-schranka",
+          "title": "Schránka",
+          "articleIDs": [
+            "mrtva-schranka"
+          ]
+        },
+        {
+          "id": "08-duse",
+          "title": "Duše",
+          "articleIDs": [
+            "tanec-dusi"
+          ]
+        },
+        {
+          "id": "09-priznaky",
+          "title": "Příznaky",
+          "articleIDs": [
+            "nakazliva-lecba-na-neduhy-sveta"
+          ]
+        },
+        {
+          "id": "10-pocta",
+          "title": "Pocta",
+          "articleIDs": [
+            "ve-sluzbach-stinu"
+          ]
+        },
+        {
+          "id": "11-interval",
+          "title": "Interval",
+          "articleIDs": [
+            "interval-zlomu"
+          ]
+        },
+        {
+          "id": "12-obraz",
+          "title": "Obraz",
+          "articleIDs": [
+            "obraz-a-odraz"
+          ]
+        },
+        {
+          "id": "13-additional-tagged-articles",
+          "title": "Additional tagged articles",
+          "articleIDs": [
+            "der-plan-klang-klar",
+            "ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
+            "efektivita",
+            "falsa-spes",
+            "jak-hodit-vycerpanost-za-hlavu",
+            "lass-die-revolution-kommen",
+            "marnotratny-jazycek-duseneho-plamene",
+            "medaile",
+            "navrat",
+            "ne-pas-battu-petite-coeur-de-moi",
+            "nekonecne-spletence-vlastnich-synapsi",
+            "operation-erfolgreich",
+            "opravovani-chyb",
+            "opus-latine-vel-aliquid-simile",
+            "pod-lampou-je-nejvetsi-tma",
+            "pourquoi-nous-detestes-tu-destin",
+            "praeterium-oblivisceris-non-meministi",
+            "prala-bych-si-abychom-spolu-meli-vice-casu",
+            "provlecena-smycka",
+            "prozatim-uzamceno",
+            "reviving-all-thats-dead",
+            "scp-318-cs",
+            "scp-807-cs",
+            "scp-923-cs",
+            "se-slevou",
+            "spisy-tri-pacientu",
+            "stastne-az-do-smrti-tak-jo",
+            "telesnost",
+            "the-thunder-before-the-storm",
+            "tri-otazky-pro-jarmilu",
+            "ve-snu",
+            "vec-perspektivy",
+            "you-are-my-everything-i-am-your-nothing"
+          ]
+        }
+      ],
+      "description": "Tohle je nová roční událost! Každý měsíc bude vybráno a vyhlášeno nové téma, na které můžete něco napsat a připojit se k ostatním. Můžete zpětně psát i do tématu z předchozího měsíce, ale čím později v roce začnete, tím víc toho budete mít. Téma 2024 pojede od března do března (nebo dokud mě to nepřestane bavit) a k dispozici tak bude 12 malých výzev, které budete moct splnit. Pro ty, co splní všech 12 výzev, bude na konci čekat nějaká ta odměna v podobě achievementu zde na stránce a možná i něco víc. Pokud máte více otázek, ptejte se Utylike , nebo na našem Discordu ."
     },
     {
       "id": "scp-cs:collection:series:podvodstoleti-hub",
@@ -843,14 +1138,102 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-f0d61d570ca458f0c15f343890ed381b09e6fedbfeb4b3057a8d5b16ae081d0a"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "podvodstoleti1",
+          "title": "Podvod století - část 1.",
+          "url": "http://scp-cs.wikidot.com/podvodstoleti1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "Název: Podvod století - část 1. Autor: Lyppiatt"
+        },
+        {
+          "id": "intermezzo1",
+          "title": "Intermezzo I - Dnes zvítězí pravda",
+          "url": "http://scp-cs.wikidot.com/intermezzo1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Intermezzo I - Dnes zvítězí pravda Autor: Lyppiatt"
+        },
+        {
+          "id": "podvodstoleti6",
+          "title": "Podvod století - část 6.",
+          "url": "http://scp-cs.wikidot.com/podvodstoleti6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Podvod století 6 Autor: Lyppiatt"
+        },
+        {
+          "id": "encore1",
+          "title": "Encore I - Začátky a konce",
+          "url": "http://scp-cs.wikidot.com/encore1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Encore I - Začátky a konce Autor: Utylike"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-podvod-stoleti",
+          "title": "Podvod Století",
+          "articleIDs": [
+            "podvodstoleti1",
+            "intermezzo1",
+            "podvodstoleti6",
+            "encore1"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:series:amogus-con",
@@ -885,14 +1268,213 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-e12aa94577cb8be30349ef37673c9e0c2c1e8f24c9d10fee133750217e036b02"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-148-cs",
+          "title": "Nedokončené záležitosti",
+          "url": "http://scp-cs.wikidot.com/scp-148-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Dokumenty obsahující aktivační frázi SCP-148-CS, včetně původního spisu, jež frázi obsahoval, jsou uchovávány ve skladišti Oblasti-16CS."
+        },
+        {
+          "id": "na-kopecku-za-cejlem",
+          "title": "Na kopečku za Cejlem",
+          "url": "http://scp-cs.wikidot.com/na-kopecku-za-cejlem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Na kopečku za Cejlem Autor: Utylike Příspěvek do Amogus-conu 2024: -slova od Airiho: tamagoči, nůžky -slova od žoži: svíčková, přilba -slova od Sary: kaďák, futanari -slova od Granka: tvaroh, recyklace"
+        },
+        {
+          "id": "uklidova-komora",
+          "title": "Úklidová komora",
+          "url": "http://scp-cs.wikidot.com/uklidova-komora",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Úklidová komora Autor: AtlasCZ"
+        },
+        {
+          "id": "coze-se-vlastne-stalo",
+          "title": "Co že se vlastně stalo?",
+          "url": "http://scp-cs.wikidot.com/coze-se-vlastne-stalo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Cože se vlastně stalo? Autor: zozi2021 Amoguscon entry"
+        },
+        {
+          "id": "scp-811-cs",
+          "title": "Scénář Třídy-XMAS",
+          "url": "http://scp-cs.wikidot.com/scp-811-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Scénář Třídy-XMAS byl realizován. Zaměstnanci Nadace přijmou jím navozený stav věcí za status quo. Každý zbylý neslavič musí být internován. Nad Oblastí1-CS buď vztyčeno Vánoční kolo. Zajistit. Zabalit. Veselit se."
+        },
+        {
+          "id": "adventnipribeh",
+          "title": "Adventní Příbeh",
+          "url": "http://scp-cs.wikidot.com/adventnipribeh",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Adventní Příbeh Autor: DrJuarezova"
+        },
+        {
+          "id": "scp-989-cs",
+          "title": "Václav Jehlavel",
+          "url": "http://scp-cs.wikidot.com/scp-989-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-989-CS musí být uzamčeno ve standardní zadržovací skříňce pro objekty třídy Safe. Tato skříňka nesmí být otevřená bez dostatečné celotělní ochrany proti propíchnutí."
+        },
+        {
+          "id": "memento-lovec",
+          "title": "Memento — Lovec",
+          "url": "http://scp-cs.wikidot.com/memento-lovec",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Memento — Lovec Autor: Utylike"
+        },
+        {
+          "id": "otaznik-znak",
+          "title": "?",
+          "url": "http://scp-cs.wikidot.com/otaznik-znak",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: ? Autor: Docked"
+        },
+        {
+          "id": "scp-658-cs",
+          "title": "Hladová jehla",
+          "url": "http://scp-cs.wikidot.com/scp-658-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-658-CS musí být uloženo v pouzdru pro křehké anomálie. Při manipulaci či testech s SCP-658-CS musí pracovníci mít kožené rukavice, prodloužené rukávy a ochranné brýle."
+        },
+        {
+          "id": "hra-na-ziranou",
+          "title": "Hra na Zíranou",
+          "url": "http://scp-cs.wikidot.com/hra-na-ziranou",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Hra na Zíranou Autor: AiryPatotie Příspěvek do Amogus-con 2025: Slova od: víno, zbytek, duše, Václav, jehla"
+        },
+        {
+          "id": "blizka-setkani-sarkickeho-druhu",
+          "title": "Blízká setkaní sarkického druhu",
+          "url": "http://scp-cs.wikidot.com/blizka-setkani-sarkickeho-druhu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Blízká setkaní sarkického druhu Autor: Totally Human Person"
+        },
+        {
+          "id": "mesicnik-oblasti-12",
+          "title": "Měsíčník Oblasti-12CS",
+          "url": "http://scp-cs.wikidot.com/mesicnik-oblasti-12",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Měsíčník Oblasti-12CS Autor:** Haringo"
+        },
+        {
+          "id": "krasne-a-trpytive",
+          "title": "Krásné a třpytivé",
+          "url": "http://scp-cs.wikidot.com/krasne-a-trpytive",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Krásné a třpytivé Autor:** Miss_Martins"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-info",
+          "title": "Info",
+          "articleIDs": [
+            "scp-148-cs",
+            "na-kopecku-za-cejlem",
+            "uklidova-komora",
+            "coze-se-vlastne-stalo",
+            "scp-811-cs",
+            "adventnipribeh",
+            "scp-989-cs",
+            "memento-lovec",
+            "otaznik-znak",
+            "scp-658-cs",
+            "hra-na-ziranou",
+            "blizka-setkani-sarkickeho-druhu",
+            "mesicnik-oblasti-12",
+            "krasne-a-trpytive"
+          ]
+        }
+      ],
+      "description": "Pravidla Každý z Amogusconů má jednoduchá pravidla Napsat 420 slov za 69minut . funny čísla haha V dalších případech se rozdělují slova, které autor musí ve svém článku zahrnout. Vymýšlení nových pravidel je pro příští Amoguscony možné, ale čas a počet slov se nemění."
     },
     {
       "id": "scp-cs:collection:series:crack-fic-hub",
@@ -931,14 +1513,628 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; tag currently resolves only the hub"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-a68e78135e99b89e68f68ea6c48cf7ed9e7a9c7ae2132c44cd5407d1fff49325"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "my-loever-the-dog",
+          "title": "Můj Mlienec, Pes",
+          "url": "http://scp-cs.wikidot.com/my-loever-the-dog",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Název: Můj Mlienec, Pes Originál: http://scp-wiki.net/my-loever-the-dog Autor: Zmax15 Překladatel: chamik"
+        },
+        {
+          "id": "my-loever-the-dog-2",
+          "title": "Můj Mlienec Pes 2: V Oblasti-91 Se Nikdy Nic Neděje REDUX",
+          "url": "http://scp-cs.wikidot.com/my-loever-the-dog-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Můj Mlienec Pes 2: V Oblasti-91 se nikdy nic neděje Autor: Lyppiatt Artwork: zozi2021 Žoži, děkuji ti za perfektní artworky. S nimi je dílo dokonáno."
+        },
+        {
+          "id": "my-loever-the-dog-3",
+          "title": "Můj Mlienec Pes 3, ale realita se rozpadá a požil jsem 100g psychotropních látek a zbývá mi pár minut života",
+          "url": "http://scp-cs.wikidot.com/my-loever-the-dog-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Můj Mlienec Pes 3, ale realita se rozpadá a požil jsem 100g psychotropních látek a zbývá mi pár minut života Autor: Pod tohle se nepodepíšu Zdroje obrázku: Vlastní tvorba Felt cute might delete later idk"
+        },
+        {
+          "id": "osobni-slozka-utylike-april2021",
+          "title": "Uživatelský Testovací (H)ybrid",
+          "url": "http://scp-cs.wikidot.com/osobni-slozka-utylike-april2021",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Profil: Administrátorský účet, Oblast-91 Bezpečnostní Prověření: Rada O23 Stav: Přihlášen (Nyní)"
+        },
+        {
+          "id": "aprilstory",
+          "title": "Apríl z Apríla na Apríla",
+          "url": "http://scp-cs.wikidot.com/aprilstory",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Apríl z Apríla na Apríla Autor: Hajgrando"
+        },
+        {
+          "id": "vevoda-az-do-rana",
+          "title": "Vévoda Až Do Rána",
+          "url": "http://scp-cs.wikidot.com/vevoda-az-do-rana",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "*První část*"
+        },
+        {
+          "id": "crack-fic-soutez-prosim-jak-smazu-wikidot",
+          "title": "První Crack-fic soutěž",
+          "url": "http://scp-cs.wikidot.com/crack-fic-soutez-prosim-jak-smazu-wikidot",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "hahaha-pogrs",
+          "title": "hahaha pogrs",
+          "url": "http://scp-cs.wikidot.com/hahaha-pogrs",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: hehehe pogrs Autor: H3G1"
+        },
+        {
+          "id": "xan-vs-administrator",
+          "title": "Xan vs. Administrátor SCP Nadace",
+          "url": "http://scp-cs.wikidot.com/xan-vs-administrator",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "A ta horší zase zde: Klasické BHLko"
+        },
+        {
+          "id": "proc-ztracis-cas-ctenim-url-nemas-snad-nic-lepsiho-na-praci",
+          "title": "V Oblasti-91 se pořád něco děje",
+          "url": "http://scp-cs.wikidot.com/proc-ztracis-cas-ctenim-url-nemas-snad-nic-lepsiho-na-praci",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 22,
+          "desc": "Název: V Oblasti-91 se pořád něco děje Autor: chamik a Hajgrando 89 možností změnit průběh příběhu, 25 konců. Přejeme příjemné čtení <3"
+        },
+        {
+          "id": "krasna-tepla-noc",
+          "title": "Krásná teplá noc",
+          "url": "http://scp-cs.wikidot.com/krasna-tepla-noc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Název: Krásná teplá noc Autor: Steven Choros Ilustrace: zozi2021 Postavy: AtlasCZ , Blakedin , Brian DAmmas , chamik , Dr Dobesh , DrCheems , DrDickens , Hajgrando , H3G1 , Lyppiatt , MissMuse , Modular , Pixelated Monkey , Shiro , Steven Choros , Utylike , zo…"
+        },
+        {
+          "id": "the-tale-of-scp-cheems-and-kain-pathos-crow",
+          "title": "Úžasná dobrodružství SCP-CHEEMS a Kaina Pathose Crowa: Part 1",
+          "url": "http://scp-cs.wikidot.com/the-tale-of-scp-cheems-and-kain-pathos-crow",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Lehce otravný hlas probudil Kaina Pathose Crowa ze spánku."
+        },
+        {
+          "id": "scpes-3999",
+          "title": "SCPES-3999",
+          "url": "http://scp-cs.wikidot.com/scpes-3999",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "Autor: Já Zdroje obrázků: 1-3 moje, za čtvrtý děkujeme naší úžasné sestřičce zozi2021 , nechť dlouho žije. <3 Obrázky Avalonu jsem taky dělal já, ten, co psal Avalon, mi je sprostě ukrad. Amogus."
+        },
+        {
+          "id": "projekt-xanisgon",
+          "title": "Projekt XANISGON",
+          "url": "http://scp-cs.wikidot.com/projekt-xanisgon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Autor: Uty… Ačkoliv se s tím nechci asociovat. Zdroje obrázků: Upravené z SCP-3301 a SCP-4812 . Jinak děkuji zozi2021 za možnost použít její fanart SCP-023-CS…"
+        },
+        {
+          "id": "komunitnipsani2021",
+          "title": "Komunitní psaní 2021",
+          "url": "http://scp-cs.wikidot.com/komunitnipsani2021",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Tento příběh je součástí komunitního psaní z Vánoc 2021."
+        },
+        {
+          "id": "the-tale-of-cheems-and-mcdrip",
+          "title": "Úžasná Dobrodružství SCP-CHEEMS a Páji McDripa",
+          "url": "http://scp-cs.wikidot.com/the-tale-of-cheems-and-mcdrip",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Úžasná Dobrodružství SCP-CHEEMS a Páji McDripa Autor: DrCheems"
+        },
+        {
+          "id": "ktn-rebuild",
+          "title": "PŘESTAVBA NOCI 6.0 + 9.0: (Ne)jsme krásně teplí",
+          "url": "http://scp-cs.wikidot.com/ktn-rebuild",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "REBUILD OF EVANGELION 3.0 + 1.0: Thrice upon a time PŘESTAVBA NOCI 6.0 + 9.0: (Ne)jsme krásně teplí"
+        },
+        {
+          "id": "crack-fic-soutez-2-meli-jsme-smazat-wiki",
+          "title": "Druhá Crack-fic soutěž",
+          "url": "http://scp-cs.wikidot.com/crack-fic-soutez-2-meli-jsme-smazat-wiki",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "tohle-url-je-ta-nejlepsi-cast-tohoto-clanku-ver-mi",
+          "title": "Jenkinsova dobrodružství v říši snů",
+          "url": "http://scp-cs.wikidot.com/tohle-url-je-ta-nejlepsi-cast-tohoto-clanku-ver-mi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Jenkinsova dobrodružství v říši snů Autor: AwareStep"
+        },
+        {
+          "id": "klub-agresivnich-chodnikojezdcu",
+          "title": "Klub Agresivních Chodníkojezdců",
+          "url": "http://scp-cs.wikidot.com/klub-agresivnich-chodnikojezdcu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Klub Agresivních Chodníkojezdců Autor: neTo42 Napsal jsem to asi za 1.5 hodiny."
+        },
+        {
+          "id": "metalurgie-a-metan",
+          "title": "Metalurgie a methan",
+          "url": "http://scp-cs.wikidot.com/metalurgie-a-metan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Metalurgie a methan Autor: AtlasCZ"
+        },
+        {
+          "id": "muj-maly-skipik",
+          "title": "Můj malý skipík: Záhada lesu Everfree",
+          "url": "http://scp-cs.wikidot.com/muj-maly-skipik",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Můj malý skipík: Záhada lesu Everfree Autor: LilyFoxyLu Video: neTo42"
+        },
+        {
+          "id": "scp-999-cs-sk-arc",
+          "title": "SCP-999-CS/SK-ARC",
+          "url": "http://scp-cs.wikidot.com/scp-999-cs-sk-arc",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "muj-milenec-kocka",
+          "title": "Muj Milenec Kocka",
+          "url": "http://scp-cs.wikidot.com/muj-milenec-kocka",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Muj Milenec Kocka Autor: DeSpacitel"
+        },
+        {
+          "id": "projekt-xanisgon-2-nekonecna-valka",
+          "title": "Projekt XANISGON 2: (NE)KONEČNÁ VÁLKA",
+          "url": "http://scp-cs.wikidot.com/projekt-xanisgon-2-nekonecna-valka",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "Název: Projekt XANISGON 2: (NE)KONEČNÁ VÁLKA Autor: Utylike Poděkování patří úžasné Azkee za ten úvod. Moc děkuji! Omlouvám se, že jsi kvůli tomu pracovala tak dlouho do rána… a za ty slzy…"
+        },
+        {
+          "id": "hvezdy-na-tebe-nestekaji",
+          "title": "Hvězdy na tebe neštěkají: XAN-INSERT",
+          "url": "http://scp-cs.wikidot.com/hvezdy-na-tebe-nestekaji",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Název: Hvězdy na Tebe Neštěkají: XAN-INSERT Autor: Lyppiatt Artwork: Azkee it's so perfect, omg thank you"
+        },
+        {
+          "id": "komunitnipsani2023",
+          "title": "Komunitní psaní 2023",
+          "url": "http://scp-cs.wikidot.com/komunitnipsani2023",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Tento příběh je součástí komunitního psaní z léta 2023."
+        },
+        {
+          "id": "crack-fic-soutez-uz-dost-prosim",
+          "title": "Třetí Crack-fic soutěž",
+          "url": "http://scp-cs.wikidot.com/crack-fic-soutez-uz-dost-prosim",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "datova-polozka-id-clwv359qn000008le84z0czkx",
+          "title": "datová položka ID:Clwv359qn000008le84z0czkx",
+          "url": "http://scp-cs.wikidot.com/datova-polozka-id-clwv359qn000008le84z0czkx",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: datová položka ID:clwv359qn000008le84z0czkx Autor: chamik"
+        },
+        {
+          "id": "graffiti-bridge",
+          "title": "Graffiti Bridge",
+          "url": "http://scp-cs.wikidot.com/graffiti-bridge",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Co si myslím o graffiti? No, má to pěkný soundtrack."
+        },
+        {
+          "id": "krest-ludvika-23",
+          "title": "Křest Ludvíka XXIII. babylonského, krále Uzbekistánu, našeho jediného boha a spasitele, představitele té nejčistší z ras, malíře",
+          "url": "http://scp-cs.wikidot.com/krest-ludvika-23",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Křest Ludvíka XXIII. babylonského, krále Uzbekistánu, našeho jediného boha a spasitele, představitele té nejčistší z ras, malíře a Vůdce našeho nadřazeného národa Autor: Atlas"
+        },
+        {
+          "id": "rip-jozin-z-bazin",
+          "title": "RIP jožin z bážin :(",
+          "url": "http://scp-cs.wikidot.com/rip-jozin-z-bazin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": -13,
+          "desc": "dne 31.2.2024 nás opustil/la/le žoži z důvodu nedostatku explicitního obsahu v normálním anime. často si stěžovala i na moc cute kočki a zároveň nadávala na svou vlastní kočku Chiquitu 1"
+        },
+        {
+          "id": "scp-p",
+          "title": "SCP-P",
+          "url": "http://scp-cs.wikidot.com/scp-p",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: SCP-P Autor: Galvans"
+        },
+        {
+          "id": "the-end-of-cheems",
+          "title": "SCP-CHEEMS a Pája McDrip - Poslední Případ",
+          "url": "http://scp-cs.wikidot.com/the-end-of-cheems",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: SCP-CHEEMS a Pája McDrip - Poslední Případ Autor: Utylike"
+        },
+        {
+          "id": "mmp-viii-parba-na-zizkove",
+          "title": "MMP VIII - Dlouho očekávaná pařba na Žižkově",
+          "url": "http://scp-cs.wikidot.com/mmp-viii-parba-na-zizkove",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Název: ** MMP VIII - Dlouho očekávaná pařba na Žižkově Autor:** Hajgrando"
+        },
+        {
+          "id": "uty-vs-xan-zaverecny-dil",
+          "title": "UTY vs. XAN: Úsvit psavedlnosti (Blu-ray edice)",
+          "url": "http://scp-cs.wikidot.com/uty-vs-xan-zaverecny-dil",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: UTY vs. XAN: Úsvit psavedlnosti (Blu-ray edice) Autor: Utylike"
+        },
+        {
+          "id": "komunitnipsani2024",
+          "title": "Komunitní psaní 2024",
+          "url": "http://scp-cs.wikidot.com/komunitnipsani2024",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Tento příběh je součástí komunitního psaní z Vánoc 2024."
+        },
+        {
+          "id": "laska-je-slepa",
+          "title": "Láska je slepá",
+          "url": "http://scp-cs.wikidot.com/laska-je-slepa",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Název: Láska je slepá Autor: Aidam7 Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "dva-jedna-nula",
+          "title": "Dva vlkodlaci, jedna cela, nula trpělivosti",
+          "url": "http://scp-cs.wikidot.com/dva-jedna-nula",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Autor: DrDickens Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "citokniha-padawana-ikea",
+          "title": "Citokniha padawana Ikea",
+          "url": "http://scp-cs.wikidot.com/citokniha-padawana-ikea",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Název: Citokniha padawana Ikea Autor: Utylike Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "neco-vic-nez-pratelstvi",
+          "title": "Můj Malý Skipík: Něco Víc Než Přátelství",
+          "url": "http://scp-cs.wikidot.com/neco-vic-nez-pratelstvi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Název: Můj Malý Skipík: Něco Víc Než Přátelství Autor: LilyFoxyLu Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "fyco",
+          "title": "Robert Fyco x SCP-682 fanfikce",
+          "url": "http://scp-cs.wikidot.com/fyco",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Robert Fyco x SCP-682 fanfikce Autor: Kapitan_Krysa Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "smrt-tokomotivy-shimona1201000100101002039477895567282653662",
+          "title": "Smrt Tokomotivy Shimona1201000100101002039477895567282653662",
+          "url": "http://scp-cs.wikidot.com/smrt-tokomotivy-shimona1201000100101002039477895567282653662",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Název: Smrt Tokomotivy Shimona1201000100101002039477895567282653662 Autor: nexu6842 Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "arkham",
+          "title": "Arkham",
+          "url": "http://scp-cs.wikidot.com/arkham",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "Název: Arkham Autor: Lyppiatt Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "divoka-noc-na-isla-vymazano",
+          "title": "Divoká noc na Isla ██████",
+          "url": "http://scp-cs.wikidot.com/divoka-noc-na-isla-vymazano",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Divoká noc na Isla ██████ Autor: Utylike Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "laska-mezi-robotem-a-jesterem",
+          "title": "Láska mezi Robotem a Ještěrem",
+          "url": "http://scp-cs.wikidot.com/laska-mezi-robotem-a-jesterem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Láska mezi Robotem a Ještěrem Autor: 00Clair00 Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "hey-alexa",
+          "title": "Alexa, fart on me",
+          "url": "http://scp-cs.wikidot.com/hey-alexa",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Alexa, fart on me Autor: zozi2021 Vzniklo v rámci Aprílu 2025 na téma fanfikce"
+        },
+        {
+          "id": "slepene-citrony-peletkem",
+          "title": "Slepené Citrony Peletkem",
+          "url": "http://scp-cs.wikidot.com/slepene-citrony-peletkem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: SCP-XXL-CS Autor: Galvans"
+        },
+        {
+          "id": "laska-na-prvni-pohled-nebo-taky-ne",
+          "title": "Láska na první pohled, nebo taky ne",
+          "url": "http://scp-cs.wikidot.com/laska-na-prvni-pohled-nebo-taky-ne",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Láska na první pohled, nebo taky ne Autor: kaculik"
+        },
+        {
+          "id": "spletence-niti-a-lnu",
+          "title": "Spletence nití a lnu",
+          "url": "http://scp-cs.wikidot.com/spletence-niti-a-lnu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Spletence nití a lnu Autor: AiryPatotie"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-prolog",
+          "title": "Prolog",
+          "articleIDs": [
+            "my-loever-the-dog"
+          ]
+        },
+        {
+          "id": "02-mmp",
+          "title": "MMP",
+          "articleIDs": [
+            "my-loever-the-dog-2",
+            "my-loever-the-dog-3"
+          ]
+        },
+        {
+          "id": "03-intermezzo-april-2021",
+          "title": "Intermezzo (apríl 2021)",
+          "articleIDs": [
+            "osobni-slozka-utylike-april2021",
+            "aprilstory",
+            "vevoda-az-do-rana",
+            "crack-fic-soutez-prosim-jak-smazu-wikidot",
+            "hahaha-pogrs",
+            "xan-vs-administrator",
+            "proc-ztracis-cas-ctenim-url-nemas-snad-nic-lepsiho-na-praci",
+            "krasna-tepla-noc",
+            "the-tale-of-scp-cheems-and-kain-pathos-crow",
+            "scpes-3999",
+            "projekt-xanisgon"
+          ]
+        },
+        {
+          "id": "04-intermezzo-vanoce-2021-a-april-2022",
+          "title": "Intermezzo (Vánoce 2021 a apríl 2022)",
+          "articleIDs": [
+            "komunitnipsani2021",
+            "the-tale-of-cheems-and-mcdrip",
+            "ktn-rebuild",
+            "crack-fic-soutez-2-meli-jsme-smazat-wiki",
+            "tohle-url-je-ta-nejlepsi-cast-tohoto-clanku-ver-mi",
+            "klub-agresivnich-chodnikojezdcu",
+            "metalurgie-a-metan",
+            "muj-maly-skipik",
+            "scp-999-cs-sk-arc",
+            "muj-milenec-kocka",
+            "projekt-xanisgon-2-nekonecna-valka",
+            "hvezdy-na-tebe-nestekaji"
+          ]
+        },
+        {
+          "id": "05-intermezzo-leto-2023",
+          "title": "Intermezzo (léto 2023)",
+          "articleIDs": [
+            "komunitnipsani2023",
+            "crack-fic-soutez-uz-dost-prosim",
+            "datova-polozka-id-clwv359qn000008le84z0czkx",
+            "graffiti-bridge",
+            "krest-ludvika-23",
+            "rip-jozin-z-bazin",
+            "scp-p",
+            "the-end-of-cheems",
+            "mmp-viii-parba-na-zizkove",
+            "uty-vs-xan-zaverecny-dil"
+          ]
+        },
+        {
+          "id": "06-intermezzo-vanoce-2024",
+          "title": "Intermezzo (Vánoce 2024)",
+          "articleIDs": [
+            "komunitnipsani2024"
+          ]
+        },
+        {
+          "id": "07-april-2025",
+          "title": "Apríl 2025",
+          "articleIDs": [
+            "laska-je-slepa",
+            "dva-jedna-nula",
+            "citokniha-padawana-ikea",
+            "neco-vic-nez-pratelstvi",
+            "fyco",
+            "smrt-tokomotivy-shimona1201000100101002039477895567282653662",
+            "arkham",
+            "divoka-noc-na-isla-vymazano",
+            "laska-mezi-robotem-a-jesterem",
+            "hey-alexa",
+            "slepene-citrony-peletkem",
+            "laska-na-prvni-pohled-nebo-taky-ne",
+            "spletence-niti-a-lnu"
+          ]
+        }
+      ],
+      "description": "This variant theme was used for 2021 April Fool's incident, \"Subpar Creative Products\"."
     },
     {
       "id": "scp-cs:collection:series:bergmannuv-paradox",
@@ -977,14 +2173,92 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "officialHubOnly; no confirmed collection-specific member tag"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-07a832389d6153830b842011f58f013186941c714eeff7499dbce7a53950cc30"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "cerveny-a-cerny",
+          "title": "Červený a Černý",
+          "url": "http://scp-cs.wikidot.com/cerveny-a-cerny",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Červený a Černý Autor: Lyppiatt"
+        },
+        {
+          "id": "zablesk-inspirace",
+          "title": "Záblesk Inspirace",
+          "url": "http://scp-cs.wikidot.com/zablesk-inspirace",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Záblesk Inspirace Autor: Lyppiatt"
+        },
+        {
+          "id": "polibek-muzy",
+          "title": "Polibek Múzy",
+          "url": "http://scp-cs.wikidot.com/polibek-muzy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Polibek Múzy Autor: Lyppiatt"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-info",
+          "title": "Info",
+          "articleIDs": [
+            "cerveny-a-cerny",
+            "zablesk-inspirace",
+            "polibek-muzy"
+          ]
+        }
+      ],
+      "description": "Kdysi jsem věřil, že přehlcenost našeho světa tlačila na tvůrčí originalitu jako nádor. Neboť tolik knih už bylo napsáno, tolik písní rozeznělo zlaté síně a tolik obrazů z tolika úhlů vyhotoveno, že se umělec jen těžko může inspirovat něčím novým a ještě méně dát něčemu novému vzniknout. Po dlouhém hledání jsem nalezl řešení ve vyprázdnění lidské mysli a oproštění se od všeho, všeho, co známe. Jen tak se mohl umělec vzdálit vnějším vlivům a vzdát absolutní průběh své ryzí mysli, jež se měla plnit barvami a tóny novými, skrytými všedním očím a uším. Pevně jsem věřil, že jen ze vzduchoprázdna, z netečné nicoty, může vzejít nový, spásný druh umění - umění vakua. Pro tuto svou víru jsem si temnotu pustil do své mysli, do své duše. Toto je příběh o tom, jak se to stalo."
     },
     {
       "id": "scp-cs:collection:series:rekytaj-hub",
@@ -1019,7 +2293,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "3 tag-confirmed members enumerable"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
       "memberManifests": [
         "manifest_scp-cs",
@@ -1028,53 +2302,58 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-61ded44463bbe3f13c0ce4e8e3955709546a30c1a1599bcfad8266d70c0aeca0"
       },
       "primaryArticles": [
         {
-          "id": "lepidopterofagie",
-          "title": "Lepidoptero(fóbie/fílie)",
-          "url": "http://scp-cs.wikidot.com/lepidopterofagie",
+          "id": "volani-z-nemocnice",
+          "title": "Volání z nemocnice",
+          "url": "http://scp-cs.wikidot.com/volani-z-nemocnice",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 1,
-          "desc": "Název: Lepidoptero(fóbie/fílie) Autor: Totally Human Person"
-        },
-        {
-          "id": "anatomie-uteku",
-          "title": "Anatomie útěku z města",
-          "url": "http://scp-cs.wikidot.com/anatomie-uteku",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 6,
-          "desc": "Název: Anatomie útěku z města Autor: Totally Human Person"
+          "desc": "Dva roky před přelomem tisíciletí, 6. května, mě rodiče poslali za tetou do malého města, o kterém jsem nikdy předtím neslyšel. Tvrdili, že tam konečně zjistím, že svět nekončí za hranicemi našeho města. Tehdy mi to znělo spíš jako trest převlečený za dárek."
         },
         {
-          "id": "zapal-mi-perka-cece",
-          "title": "Pálení stohu živou vodou",
-          "url": "http://scp-cs.wikidot.com/zapal-mi-perka-cece",
+          "id": "oresnik-kouzelnik-a-vez",
+          "title": "Ořesník, kouzelník a věž",
+          "url": "http://scp-cs.wikidot.com/oresnik-kouzelnik-a-vez",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 9,
-          "desc": "Název: Pálení stohu živou vodou Originál: http://scp-wiki.net/zapal-mi-perka-cece Autor: Miss_Martins"
-        },
-        {
-          "id": "memento-lovec",
-          "title": "Memento — Lovec",
-          "url": "http://scp-cs.wikidot.com/memento-lovec",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Memento — Lovec Autor: Utylike"
-        },
-        {
-          "id": "setkani-v-knihovne",
-          "title": "Setkání v knihovně",
-          "url": "http://scp-cs.wikidot.com/setkani-v-knihovne",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Setkání v knihovně Autor: Steven Choros"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Ořešník, kouzelník a věž Autor: Steven Choros"
         },
         {
           "id": "ranni-nalezy",
@@ -1082,35 +2361,39 @@
           "url": "http://scp-cs.wikidot.com/ranni-nalezy",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 1,
           "desc": "Název: Ranní nálezy Autor: Steven Choros"
         },
         {
-          "id": "kempingova-sezona",
-          "title": "Kempingová sezóna",
-          "url": "http://scp-cs.wikidot.com/kempingova-sezona",
+          "id": "setkani-v-knihovne",
+          "title": "Setkání v knihovně",
+          "url": "http://scp-cs.wikidot.com/setkani-v-knihovne",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 1,
-          "desc": "Název: Kempingová sezóna Autor: Blakedin"
-        },
-        {
-          "id": "k",
-          "title": "k",
-          "url": "http://scp-cs.wikidot.com/k",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
-          "desc": "Autor: Modular Obsazení: k Poděkování: Děkuji převelice mé věčné podporovatelce ve věcech uměleckých, Azkee ! Také za přečtení panem Steven Choros a konzultací ohledně kanónu, případně přímo jeho představení. Poznámka autora: Popravdě, nebylo mým záměrem napsa…"
+          "desc": "Název: Setkání v knihovně Autor: Steven Choros"
         },
         {
-          "id": "tynecke-putovani-antala-sestrmistka",
-          "title": "Týnecké putovaní Antala Šestrmístka",
-          "url": "http://scp-cs.wikidot.com/tynecke-putovani-antala-sestrmistka",
+          "id": "anatomie-uteku",
+          "title": "Anatomie útěku z města",
+          "url": "http://scp-cs.wikidot.com/anatomie-uteku",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Týnecké putování Antala Šestrmístka Autor: Blakedin"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Anatomie útěku z města Autor: Totally Human Person"
+        },
+        {
+          "id": "lepidopterofagie",
+          "title": "Lepidoptero(fóbie/fílie)",
+          "url": "http://scp-cs.wikidot.com/lepidopterofagie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Lepidoptero(fóbie/fílie) Autor: Totally Human Person"
         },
         {
           "id": "co-se-skryva-v-listi",
@@ -1122,26 +2405,79 @@
           "desc": "Název: Co se skrývá v listí Autor: Utylike"
         },
         {
-          "id": "oresnik-kouzelnik-a-vez",
-          "title": "Ořesník, kouzelník a věž",
-          "url": "http://scp-cs.wikidot.com/oresnik-kouzelnik-a-vez",
+          "id": "k",
+          "title": "k",
+          "url": "http://scp-cs.wikidot.com/k",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Ořešník, kouzelník a věž Autor: Steven Choros"
+          "os": 2,
+          "desc": "Autor: Modular Obsazení: k Poděkování: Děkuji převelice mé věčné podporovatelce ve věcech uměleckých, Azkee ! Také za přečtení panem Steven Choros a konzultací ohledně kanónu, případně přímo jeho představení. Poznámka autora: Popravdě, nebylo mým záměrem napsa…"
         },
         {
-          "id": "volani-z-nemocnice",
-          "title": "Volání z nemocnice",
-          "url": "http://scp-cs.wikidot.com/volani-z-nemocnice",
+          "id": "kempingova-sezona",
+          "title": "Kempingová sezóna",
+          "url": "http://scp-cs.wikidot.com/kempingova-sezona",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Název: Kempingová sezóna Autor: Blakedin"
+        },
+        {
+          "id": "memento-lovec",
+          "title": "Memento — Lovec",
+          "url": "http://scp-cs.wikidot.com/memento-lovec",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "os": 6,
-          "desc": "Dva roky před přelomem tisíciletí, 6. května, mě rodiče poslali za tetou do malého města, o kterém jsem nikdy předtím neslyšel. Tvrdili, že tam konečně zjistím, že svět nekončí za hranicemi našeho města. Tehdy mi to znělo spíš jako trest převlečený za dárek."
+          "desc": "Název: Memento — Lovec Autor: Utylike"
+        },
+        {
+          "id": "tynecke-putovani-antala-sestrmistka",
+          "title": "Týnecké putovaní Antala Šestrmístka",
+          "url": "http://scp-cs.wikidot.com/tynecke-putovani-antala-sestrmistka",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Název: Týnecké putování Antala Šestrmístka Autor: Blakedin"
+        },
+        {
+          "id": "zapal-mi-perka-cece",
+          "title": "Pálení stohu živou vodou",
+          "url": "http://scp-cs.wikidot.com/zapal-mi-perka-cece",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 9,
+          "desc": "Název: Pálení stohu živou vodou Originál: http://scp-wiki.net/zapal-mi-perka-cece Autor: Miss_Martins"
         }
       ],
       "supplementLinks": [],
-      "description": "ŘEKYTAJ „Kam to jdete, ještě máme odpoledne naplánované testy.“"
+      "description": "ŘEKYTAJ „Kam to jdete, ještě máme odpoledne naplánované testy.“",
+      "articleSections": [
+        {
+          "id": "01-nx-151-tynec-nad-cenzurou",
+          "title": "Nx-151: Týnec nad Cenzurou",
+          "articleIDs": [
+            "volani-z-nemocnice",
+            "oresnik-kouzelnik-a-vez",
+            "ranni-nalezy",
+            "setkani-v-knihovne",
+            "anatomie-uteku",
+            "lepidopterofagie"
+          ]
+        },
+        {
+          "id": "02-additional-tagged-articles",
+          "title": "Additional tagged articles",
+          "articleIDs": [
+            "co-se-skryva-v-listi",
+            "k",
+            "kempingova-sezona",
+            "memento-lovec",
+            "tynecke-putovani-antala-sestrmistka",
+            "zapal-mi-perka-cece"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:series:zlata-klec-hub",
@@ -1176,7 +2512,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "13 tag-confirmed members enumerable"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
       "memberManifests": [
         "manifest_scp-cs",
@@ -1185,7 +2521,37 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-2c8f198f87f14247d842e64c35ad6d43e7ec828a8303e40eac574468b8d17109"
       },
       "primaryArticles": [
         {
@@ -1194,6 +2560,7 @@
           "url": "http://scp-cs.wikidot.com/scp-4010",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 18,
           "desc": "SCP-4010 nesmí být za žádných okolností vyneseno. Veškeré informace o Projektu Kronos musí být zničeny."
         },
@@ -1203,6 +2570,7 @@
           "url": "http://scp-cs.wikidot.com/scp-3623",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 10,
           "desc": "V době psaní tohoto dokumentu se Nadaci podařilo zadržet 13 instancí SCP-3623 z alespoň 200 potvrzených po celém světě. 1 Celosvětová populace SCP-3623 se pomalu zvyšuje neznámým způsobem. SCP-3623-1 až -11 jsou drženy poblíž svých hostitelů ve standardní huma…"
         },
@@ -1212,6 +2580,7 @@
           "url": "http://scp-cs.wikidot.com/vsuvky-z-oblasti-91",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 9,
           "desc": "Název: Vsuvky z Oblasti-91 Autor: Utylike"
         },
@@ -1221,6 +2590,7 @@
           "url": "http://scp-cs.wikidot.com/scp-3814",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 9,
           "desc": "Dne 6. 11. 2009, bylo SCP-3814 reklasifikováno jako třída Neutralized. Původní klasifikace: Safe. Reklasifikováno na třídu Euclid. Viz Záznam o Incidentu 3814/2. SCP-3814 je aktuálně zadrženo v sekci pro personál Třídy D Oblasti-91. Role SCP-3814-1 musí být ne…"
         },
@@ -1230,6 +2600,7 @@
           "url": "http://scp-cs.wikidot.com/zapomenout-a-zit",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 8,
           "desc": "Název: Zapomenout a Žít Autor: Utylike"
         },
@@ -1239,6 +2610,7 @@
           "url": "http://scp-cs.wikidot.com/scp-023-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 22,
           "desc": "SCP-023-CS je drženo ve standardní zadržovací cele v Humanoidním křídle Oblasti-91. Subjekt má zakázáno používat své schopnosti mimo účely testování pod hrozbou terminace. Kontejnment SCP-023-Ω-CS sestává z opancéřované zadržovací cely v suterénu Oblasti-91, k…"
         },
@@ -1248,6 +2620,7 @@
           "url": "http://scp-cs.wikidot.com/nebojuj-s-monstry",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 20,
           "desc": "Název: Nebojuj s monstry Autor: Utylike"
         },
@@ -1257,6 +2630,7 @@
           "url": "http://scp-cs.wikidot.com/az-me-zitra-rano-v-pet-ke-zdi-postavi",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 12,
           "desc": "Název: Až mě, zítra ráno v pět, ke zdi postaví Autor: Utylike"
         },
@@ -1266,6 +2640,7 @@
           "url": "http://scp-cs.wikidot.com/scp-091-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 6,
           "desc": "Přístup k tomuto dokumentu je povolen pouze řediteli Oblasti-91 vedoucímu speciálních projektů Oblasti-91 z ochranných důvodů. Dne ██/██/2001 rozhodla Rada O5 o svěření plné správy SCP-091-CS do rukou výše zmíněné osobě (pro případné ověření viz. Záznam z hlas…"
         },
@@ -1275,6 +2650,7 @@
           "url": "http://scp-cs.wikidot.com/jen-tuhle-jednu-halloweenskou-noc",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 8,
           "desc": "Název: Jen tuhle jednu Halloweenskou noc Autor: Utylike"
         },
@@ -1284,6 +2660,7 @@
           "url": "http://scp-cs.wikidot.com/scp-034-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 29,
           "desc": "SCP-034-CS je zadrženo v místě svého objevení přibližně 2,3 kilometrů od Oblasti-91, jež je zodpovědná za provoz kontejnmentu. Kolem portálu bylo zbudováno zařízení připojené na místní elektrickou a vodovodní síť. Použití vlastního zdroje energie nebo přívodu…"
         },
@@ -1293,6 +2670,7 @@
           "url": "http://scp-cs.wikidot.com/prskavka",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 11,
           "desc": "Název: Prskavka Autor: Utylike"
         },
@@ -1302,6 +2680,7 @@
           "url": "http://scp-cs.wikidot.com/ohen-na-svici-sfouknes-v-srdci-nikoliv",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 9,
           "desc": "Název: Oheň na svíci sfoukneš, v srdci nikoliv Autor: Utylike Obrázky : https://pxhere.com/ + vlastní úprava"
         },
@@ -1311,6 +2690,7 @@
           "url": "http://scp-cs.wikidot.com/scp-230-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 19,
           "desc": "SCP-230-CS je aktuálně subjektem vyšetřování. Vzhledem k neobvyklým okolnostem je tato složka pouze dočasná a bude upravena jakmile dojde k dalšímu vývoji událostí. Veškeré nové informace ohledně SCP-230-CS musí být nahlášeny vedoucímu vyšetřování, Dr. Ikeovi,…"
         },
@@ -1320,6 +2700,7 @@
           "url": "http://scp-cs.wikidot.com/exoticke-snove-vzorce",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 3,
           "desc": "Název: Exotické snové vzorce Autor: Utylike"
         },
@@ -1329,6 +2710,7 @@
           "url": "http://scp-cs.wikidot.com/finis-auream-caveam",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 3,
           "desc": "Název: Finis Auream Caveam Autor: Utylike"
         },
@@ -1338,6 +2720,7 @@
           "url": "http://scp-cs.wikidot.com/tahy-stetcem",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 4,
           "desc": "Název: Tahy štětcem Autor: Utylike"
         },
@@ -1347,6 +2730,7 @@
           "url": "http://scp-cs.wikidot.com/vec-perspektivy",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Věc perspektivy Autor: Utylike"
         },
@@ -1356,6 +2740,7 @@
           "url": "http://scp-cs.wikidot.com/stin-a-mraz-vukol-nas",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 5,
           "desc": "Název: Stín a mráz vůkol nás Autor: Utylike"
         },
@@ -1365,6 +2750,7 @@
           "url": "http://scp-cs.wikidot.com/scp-3423",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 3,
           "desc": "SCP-3423 je uloženo ve standardní zadržovací cele pro anomální objekty v Oblasti-91. Na obě strany rámu SCP-3423 byly nainstalovány závěsy, které mohou být použity k zakrytí objektu v případě podobné události, jako byla ta z Dodatku 3423-3. Každá instance SCP-…"
         },
@@ -1374,6 +2760,7 @@
           "url": "http://scp-cs.wikidot.com/navrat",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 2,
           "desc": "Název: Návrat Autor: Utylike"
         },
@@ -1383,6 +2770,7 @@
           "url": "http://scp-cs.wikidot.com/scp-032-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 10,
           "desc": "Během 24 hodin byl na 5 zaměstnancích Třídy D otestován vliv SCP-032-CS na jejich sny. Průběh: 5 zaměstnanců Třídy D bylo rozděleno do separovaných místnosti, kde se nacházela pouze postel a židle. Všem byly podány léky na spaní pro zrychlení experimentu. Poté…"
         },
@@ -1392,6 +2780,7 @@
           "url": "http://scp-cs.wikidot.com/jak-jsem-vymenil-zbroj-za-plast",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 4,
           "desc": "Název: Jak jsem vyměnil zbroj za plášť Autor: Dr Bek"
         },
@@ -1401,6 +2790,7 @@
           "url": "http://scp-cs.wikidot.com/den-kdy-po-sobe-strilela-cela-oblast-91",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 4,
           "desc": "No, můj první tale ve kterém jsem pracoval s postavami z Oblasti- 19 91. V první řadě bych chtěl poděkovat Utylike , že mi umožnil vůbec je použít. Chtěl jsem napsat příběh, kde mohl mít personál den, kdy se sblíží a budou muset spolupracovat jinak než, že si…"
         },
@@ -1410,8 +2800,17 @@
           "url": "http://scp-cs.wikidot.com/zadrzovaci-inzenyri-drzi-spolu",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 0,
           "desc": "Název: Zadržovací Inženýři Drží spolu Autor: Dr Bek"
+        },
+        {
+          "id": "navrh-uzivatele-steven-choros",
+          "title": "Návrh Uživatele: Steven Choroš",
+          "url": "http://scp-cs.wikidot.com/navrh-uzivatele-steven-choros",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- Dárek pro Marii od"
         },
         {
           "id": "scp-185-cs",
@@ -1419,6 +2818,7 @@
           "url": "http://scp-cs.wikidot.com/scp-185-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 12,
           "desc": "Kopie SCP-185-CS-A na papíře je uskladněná v archivu a SCP-185-CS-B musí být zadržováno v místnosti pro anomálie Třídy Safe se dvěma vchody pod kamerovým dozorem v anartním křídle Oblasti-91. Před událostí 185-CS-GAMA musí být identifikováno SCP-185-CS-1 a nás…"
         },
@@ -1428,8 +2828,17 @@
           "url": "http://scp-cs.wikidot.com/scp-216-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 11,
           "desc": "SCP-216-CS je zadrženo ve standardní zadržovací komoře Oblasti-91. Nevyžaduje zvláštní údržbu biologických anomálií. Vyšetřování za účelem vypátrání původců anomálie stále probíhá a je věcí příslušných výkonných orgánů Oblasti-91."
+        },
+        {
+          "id": "scp-002-cs-j",
+          "title": "SCP-002-CS-J",
+          "url": "http://scp-cs.wikidot.com/scp-002-cs-j",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "- Já to spravím, nebojte! od"
         },
         {
           "id": "my-loever-the-dog-2",
@@ -1442,7 +2851,51 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Tato sekce obsahuje spoilery pro příběh jednotlivých postav. Zde uvedené informace nemusí být aktuální."
+      "description": "Tato sekce obsahuje spoilery pro příběh jednotlivých postav. Zde uvedené informace nemusí být aktuální.",
+      "articleSections": [
+        {
+          "id": "01-info",
+          "title": "Info",
+          "articleIDs": [
+            "scp-4010",
+            "scp-3623",
+            "vsuvky-z-oblasti-91",
+            "scp-3814",
+            "zapomenout-a-zit",
+            "scp-023-cs",
+            "nebojuj-s-monstry",
+            "az-me-zitra-rano-v-pet-ke-zdi-postavi",
+            "scp-091-cs",
+            "jen-tuhle-jednu-halloweenskou-noc",
+            "scp-034-cs",
+            "prskavka",
+            "ohen-na-svici-sfouknes-v-srdci-nikoliv",
+            "scp-230-cs",
+            "exoticke-snove-vzorce",
+            "finis-auream-caveam",
+            "tahy-stetcem",
+            "vec-perspektivy",
+            "stin-a-mraz-vukol-nas",
+            "scp-3423",
+            "navrat",
+            "scp-032-cs",
+            "jak-jsem-vymenil-zbroj-za-plast",
+            "den-kdy-po-sobe-strilela-cela-oblast-91",
+            "zadrzovaci-inzenyri-drzi-spolu",
+            "navrh-uzivatele-steven-choros",
+            "scp-185-cs",
+            "scp-216-cs",
+            "scp-002-cs-j"
+          ]
+        },
+        {
+          "id": "02-additional-tagged-articles",
+          "title": "Additional tagged articles",
+          "articleIDs": [
+            "my-loever-the-dog-2"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:series:zizkovska-dira-hub",
@@ -1477,7 +2930,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "13 tag-confirmed members enumerable"
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
       },
       "memberManifests": [
         "manifest_scp-cs",
@@ -1486,62 +2939,215 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "structureHash": "sha256-7221f99ccaa36a269f9b215d083f68a916a64a60abf8004b5488defbe680841e"
       },
       "primaryArticles": [
         {
-          "id": "duhova-intervence",
-          "title": "Duhová intervence",
-          "url": "http://scp-cs.wikidot.com/duhova-intervence",
+          "id": "zamalovana-osobnost",
+          "title": "Zamalovaná Osobnost",
+          "url": "http://scp-cs.wikidot.com/zamalovana-osobnost",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "…se probere. …se zmateně posadí na posteli. Proč si nepamatuje svoje jméno? Není to ta věc, co si zrovna má pamatovat? Praštila se do hlavy? Prohlédne si vlastní ruce; jako montáž fotek toho samého místa foceného každý den v tu samou dobu, stejné, ale s pomalu…"
+        },
+        {
+          "id": "platek-ze-zivota-hezky-od-kosti",
+          "title": "Plátek ze života, hezky od kosti",
+          "url": "http://scp-cs.wikidot.com/platek-ze-zivota-hezky-od-kosti",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "Název: Plátek ze života, hezky od kosti Autor: Utylike"
+        },
+        {
+          "id": "niterna-kakofonie-cev",
+          "title": "Niterná kakofonie cév",
+          "url": "http://scp-cs.wikidot.com/niterna-kakofonie-cev",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "Název: Niterná kakofonie cév Autor: Utylike Za obrázek děkuji úžasné Azkee ."
+        },
+        {
+          "id": "prokrvena-chut-synkreze-jazyku",
+          "title": "Prokrvená chuť synkreze jazyků",
+          "url": "http://scp-cs.wikidot.com/prokrvena-chut-synkreze-jazyku",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "Název: Prokrvená chuť synkreze jazyků Autor: Utylike"
+        },
+        {
+          "id": "roztresena-rezonance-hlasivek",
+          "title": "Roztřesená rezonance hlasivek",
+          "url": "http://scp-cs.wikidot.com/roztresena-rezonance-hlasivek",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Název: Roztřesená rezonance hlasivek Autor: Utylike"
+        },
+        {
+          "id": "asynchronie-bijicich-srdci",
+          "title": "Asynchronie bijících srdcí",
+          "url": "http://scp-cs.wikidot.com/asynchronie-bijicich-srdci",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Asynchronie bijících srdcí Autor: Utylike"
+        },
+        {
+          "id": "telesnost",
+          "title": "Tělesnost",
+          "url": "http://scp-cs.wikidot.com/telesnost",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 5,
-          "desc": "Houkání projíždějící sanitky za oknem je to, co mě vytrhne ze spánku. Šedé světlo zataženého nebe. Už asi bude odpoledne. Zase jsem prospala oběd, ale stejně nemám hlad. Venku je horko a cítím, že jsem propocená."
+          "desc": "Název: Tělesnost Autor: Utylike"
         },
         {
-          "id": "svet-se-bez-vas-nezastavi",
-          "title": "Svět se bez vás nezastaví",
-          "url": "http://scp-cs.wikidot.com/svet-se-bez-vas-nezastavi",
+          "id": "ken-s-bizarre-adventure",
+          "title": "Kenovo prazvláštní dobrodružství",
+          "url": "http://scp-cs.wikidot.com/ken-s-bizarre-adventure",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Svět se bez vás nezastaví Autor: Utylike"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Název: Kenovo prazvláštní dobrodružství Autor: Modular Poznámka: Očividné reference jsou očividné."
         },
         {
-          "id": "jak-se-zbavit-svych-pratel",
-          "title": "Jak se zbavit svých přátel",
-          "url": "http://scp-cs.wikidot.com/jak-se-zbavit-svych-pratel",
+          "id": "to-you-my-yesterday-s-me",
+          "title": "Píši ti, mé včerejší já",
+          "url": "http://scp-cs.wikidot.com/to-you-my-yesterday-s-me",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Jak se zbavit svých přátel Autor: Utylike"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Píši ti, mé včerejší já Autor: Modular Poznámka: Očividné reference jsou očividné."
         },
         {
-          "id": "atelier-tveho-vnitrniho-ja",
-          "title": "Ateliér tvého vnitřního já",
-          "url": "http://scp-cs.wikidot.com/atelier-tveho-vnitrniho-ja",
+          "id": "i-m-not-like-them-but-i-can-pretend",
+          "title": "Nahlédnutí do života tragikomického studenta Muchovy umělecké školy Edwarda K. Norwina aneb (ne)klidný den tisíckrát jinak",
+          "url": "http://scp-cs.wikidot.com/i-m-not-like-them-but-i-can-pretend",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Ateliér tvého vnitřního já Autor: Utylike"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Nahlédnutí do života tragikomického studenta Muchovy umělecké školy Edwarda K. Norwina aneb (ne)klidný den tisíckrát jinak"
         },
         {
-          "id": "co-bylo-nelze-vzit-zpet",
-          "title": "Co bylo nelze vzít zpět",
-          "url": "http://scp-cs.wikidot.com/co-bylo-nelze-vzit-zpet",
+          "id": "the-night-you-told-me-you-loved-me",
+          "title": "Tehdy večer, když ses mi vyznala, jsem byl jako ve snu",
+          "url": "http://scp-cs.wikidot.com/the-night-you-told-me-you-loved-me",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Co bylo, nelze vzít zpět Autor: Utylike"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Tehdy večer, když ses mi vyznala, jsem byl jako ve snu"
         },
         {
-          "id": "porozumeni-chybam",
-          "title": "Porozumění chybám",
-          "url": "http://scp-cs.wikidot.com/porozumeni-chybam",
+          "id": "cesta-jde-porad-dal-a-dal-kupredu-pryc-jde-od-mych-vrat",
+          "title": "Laskavé lesy podzimního smutku",
+          "url": "http://scp-cs.wikidot.com/cesta-jde-porad-dal-a-dal-kupredu-pryc-jde-od-mych-vrat",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 2,
-          "desc": "Název: Porozumění chybám Autor: Utylike"
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Laskavé lesy podzimního smutku"
+        },
+        {
+          "id": "sroubovana",
+          "title": "Šroubovaná",
+          "url": "http://scp-cs.wikidot.com/sroubovana",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "Název: Šroubovaná Autor: AtlasCZ"
+        },
+        {
+          "id": "unikovy-vychod",
+          "title": "Únikový východ",
+          "url": "http://scp-cs.wikidot.com/unikovy-vychod",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Únikový východ Autor: AtlasCZ"
+        },
+        {
+          "id": "internarativni-ruleta",
+          "title": "Internarativní ruleta",
+          "url": "http://scp-cs.wikidot.com/internarativni-ruleta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Internarativní ruleta Autor: AtlasCZ"
+        },
+        {
+          "id": "fascinujici-stvoreni",
+          "title": "Fascinující stvoření",
+          "url": "http://scp-cs.wikidot.com/fascinujici-stvoreni",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Fascinující stvoření Autor: AtlasCZ"
+        },
+        {
+          "id": "rozesli-se-u-petrinu",
+          "title": "Rozešli se u Petřínu",
+          "url": "http://scp-cs.wikidot.com/rozesli-se-u-petrinu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Název: Rozešli se u Petřínu Autor: AiryPatotie Příspěvek do Amogus-con 2024: Slova od Utylike : netopýr a křída Slova od zozi2021 : mamlas a hostina Slova od Serirel : logopedie a Uganda"
+        },
+        {
+          "id": "cesta-k-prazdnote-hub",
+          "title": "Cesta k prázdnotě",
+          "url": "http://scp-cs.wikidot.com/cesta-k-prazdnote-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "scp-243-cs",
@@ -1549,8 +3155,446 @@
           "url": "http://scp-cs.wikidot.com/scp-243-cs",
           "sourceManifest": "manifest_scp-cs",
           "role": "primaryArticle",
+          "contentKind": "scp",
           "os": 3,
           "desc": "Veškeré internetové příspěvky sdílející SCP-243-CS byly staženy a účty ovlivněných uživatelů byly smazány, či zablokovány. V případě další propagace budou ovlivněné osoby nalezeny a léčeny dle standardních protokolů pro ovlivnění memetickými anomáliemi s přihl…"
+        },
+        {
+          "id": "porozumeni-chybam",
+          "title": "Porozumění chybám",
+          "url": "http://scp-cs.wikidot.com/porozumeni-chybam",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Porozumění chybám Autor: Utylike"
+        },
+        {
+          "id": "co-bylo-nelze-vzit-zpet",
+          "title": "Co bylo nelze vzít zpět",
+          "url": "http://scp-cs.wikidot.com/co-bylo-nelze-vzit-zpet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Co bylo, nelze vzít zpět Autor: Utylike"
+        },
+        {
+          "id": "atelier-tveho-vnitrniho-ja",
+          "title": "Ateliér tvého vnitřního já",
+          "url": "http://scp-cs.wikidot.com/atelier-tveho-vnitrniho-ja",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Ateliér tvého vnitřního já Autor: Utylike"
+        },
+        {
+          "id": "jak-se-zbavit-svych-pratel",
+          "title": "Jak se zbavit svých přátel",
+          "url": "http://scp-cs.wikidot.com/jak-se-zbavit-svych-pratel",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Jak se zbavit svých přátel Autor: Utylike"
+        },
+        {
+          "id": "zikmunduv-kopecek",
+          "title": "Bagatelizace dávné konkurence",
+          "url": "http://scp-cs.wikidot.com/zikmunduv-kopecek",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Zikmundův kopeček Autor: Hajgrando"
+        },
+        {
+          "id": "na-kopecku-za-cejlem",
+          "title": "Na kopečku za Cejlem",
+          "url": "http://scp-cs.wikidot.com/na-kopecku-za-cejlem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Na kopečku za Cejlem Autor: Utylike Příspěvek do Amogus-conu 2024: -slova od Airiho: tamagoči, nůžky -slova od žoži: svíčková, přilba -slova od Sary: kaďák, futanari -slova od Granka: tvaroh, recyklace"
+        },
+        {
+          "id": "nekonecne-spletence-vlastnich-synapsi",
+          "title": "Nekonečné spletence vlastních synapsí",
+          "url": "http://scp-cs.wikidot.com/nekonecne-spletence-vlastnich-synapsi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Nekonečné spletence vlastních synapsí Autor: Hajgrando"
+        },
+        {
+          "id": "frustrace-z-rozmotanych-uzlu",
+          "title": "Frustrace z rozmotaných uzlů",
+          "url": "http://scp-cs.wikidot.com/frustrace-z-rozmotanych-uzlu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Frustrace z rozmotaných uzlů Autor: Utylike"
+        },
+        {
+          "id": "marnotratny-jazycek-duseneho-plamene",
+          "title": "Marnotratný jazýček dušeného plamene",
+          "url": "http://scp-cs.wikidot.com/marnotratny-jazycek-duseneho-plamene",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Marnotratný jazýček dušeného plamene Autor: Utylike"
+        },
+        {
+          "id": "provlecena-smycka",
+          "title": "Provlečená smyčka",
+          "url": "http://scp-cs.wikidot.com/provlecena-smycka",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Provlečená smyčka Autor: Utylike"
+        },
+        {
+          "id": "scp-917-cs",
+          "title": "Sedmnáctá karta Tarotu, Hvězda",
+          "url": "http://scp-cs.wikidot.com/scp-917-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-917-CS nelze žádným efektivním způsobem zadržet, avšak vzhledem k povaze anomálních účinků SCP-917-CS to ani není vyžadováno. Podle obecné nadační směrnice o zadržování antimemetických entit třídy Alfa-7 (humanoidní inteligentní entity bez nepřátelských úm…"
+        },
+        {
+          "id": "asi-takovej-pocit-jako-je-bodnuti-noze",
+          "title": "Osmnáctá karta Tarotu, Měsíc",
+          "url": "http://scp-cs.wikidot.com/asi-takovej-pocit-jako-je-bodnuti-noze",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Osmnáctá karta Tarotu, Měsíc"
+        },
+        {
+          "id": "specialita-podniku",
+          "title": "Specialita Podniku",
+          "url": "http://scp-cs.wikidot.com/specialita-podniku",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "Název: Specialita podniku Autor: DrCheems"
+        },
+        {
+          "id": "scp-004-cs",
+          "title": "Linka D",
+          "url": "http://scp-cs.wikidot.com/scp-004-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "Agenti Nadace jsou instruováni se SCP-004-CS vyhýbat jak ve službě, tak mimo pracovní hodiny. To se nevztahuje na agenty pověřené špionáží v civilu nebo nasazené v zájmových skupinách souvisejících s SCP-004-CS . Od Incidentu R-0 jsou všichni Nadační agenti st…"
+        },
+        {
+          "id": "hvezdy-prozari-tmu",
+          "title": "Hvězdy prozáří tmu",
+          "url": "http://scp-cs.wikidot.com/hvezdy-prozari-tmu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Hvězdy prozáří tmu Autor: kaculik"
+        },
+        {
+          "id": "kam-odchazi-nadeje",
+          "title": "Kam odchází naděje",
+          "url": "http://scp-cs.wikidot.com/kam-odchazi-nadeje",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Kam odchází naděje Autor: kaculik"
+        },
+        {
+          "id": "nezastavitelny-objekt",
+          "title": "Nezastavitelný objekt",
+          "url": "http://scp-cs.wikidot.com/nezastavitelny-objekt",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Název: Nezastavitelný objekt Autor: Utylike"
+        },
+        {
+          "id": "klicnik-a-muzikant",
+          "title": "Klíčník a Muzikant",
+          "url": "http://scp-cs.wikidot.com/klicnik-a-muzikant",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Klíčník a Muzikant Autor: Utylike a Lyppiatt"
+        },
+        {
+          "id": "primo-pod-nosem",
+          "title": "Přímo pod nosem",
+          "url": "http://scp-cs.wikidot.com/primo-pod-nosem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: Přímo pod nosem Autor: chamik"
+        },
+        {
+          "id": "scp-216-cs",
+          "title": "Pes žižkovský",
+          "url": "http://scp-cs.wikidot.com/scp-216-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "SCP-216-CS je zadrženo ve standardní zadržovací komoře Oblasti-91. Nevyžaduje zvláštní údržbu biologických anomálií. Vyšetřování za účelem vypátrání původců anomálie stále probíhá a je věcí příslušných výkonných orgánů Oblasti-91."
+        },
+        {
+          "id": "sladkatecka",
+          "title": "Sladká Tečka",
+          "url": "http://scp-cs.wikidot.com/sladkatecka",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Sladká Tečka Autor: Lyppiatt"
+        },
+        {
+          "id": "abstinencni-priznaky",
+          "title": "Abstinenční příznaky",
+          "url": "http://scp-cs.wikidot.com/abstinencni-priznaky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "Název: Abstinenční příznaky Autor: AtlasCZ"
+        },
+        {
+          "id": "scp-500-cs",
+          "title": "CHYBA: NEPLATNÝ ODKAZ",
+          "url": "http://scp-cs.wikidot.com/scp-500-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 19
+        },
+        {
+          "id": "zkrasleni-tela-za-nervy",
+          "title": "Zkrášlení těla za nervy",
+          "url": "http://scp-cs.wikidot.com/zkrasleni-tela-za-nervy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Název: Zkrášlení těla za nervy Autor: DrDickens"
+        },
+        {
+          "id": "ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
+          "title": "Dite-moi, petite coeur, pour qui tu as battu",
+          "url": "http://scp-cs.wikidot.com/ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
+        },
+        {
+          "id": "ne-pas-battu-petite-coeur-de-moi",
+          "title": "Ne pas battu, petite coeur de moi",
+          "url": "http://scp-cs.wikidot.com/ne-pas-battu-petite-coeur-de-moi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
+        },
+        {
+          "id": "reviving-all-thats-dead",
+          "title": "Reviving all that's dead",
+          "url": "http://scp-cs.wikidot.com/reviving-all-thats-dead",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Reviving all that's dead Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
+        },
+        {
+          "id": "the-thunder-before-the-storm",
+          "title": "The Thunder Before The Storm",
+          "url": "http://scp-cs.wikidot.com/the-thunder-before-the-storm",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: The thunder before the storm Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
+        },
+        {
+          "id": "studie-imanta-sarkicismus",
+          "title": "Studie sarkicismu a souvisejících témat Dr. Alfonse Kulhánka",
+          "url": "http://scp-cs.wikidot.com/studie-imanta-sarkicismus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Studie sarkicismu a souvisejících témat Dr. Alfonse Kulhánka Na motivy SCP-688-CS od Dr Dobesh napsal Steven Choros Zdroje obrázků:"
+        },
+        {
+          "id": "ruda-carodejka",
+          "title": "Rudá čarodějka",
+          "url": "http://scp-cs.wikidot.com/ruda-carodejka",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Střípky z cizího života — Rudá čarodějka Autor: Azkee"
+        },
+        {
+          "id": "palis-doutnas-nehoris",
+          "title": "Střípky z cizího života — Pálíš, doutnáš, nehoříš",
+          "url": "http://scp-cs.wikidot.com/palis-doutnas-nehoris",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "Název: Střípky z cizího života — Pálíš, doutnáš, nehoříš Autor: Azkee"
+        },
+        {
+          "id": "vitejte-v-zizkovske-dire",
+          "title": "Vítejte v Žižkovské Díře",
+          "url": "http://scp-cs.wikidot.com/vitejte-v-zizkovske-dire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Název: Vítejte v Žižkovské Díře Autor: zozi2021"
+        },
+        {
+          "id": "opice",
+          "title": "Opice",
+          "url": "http://scp-cs.wikidot.com/opice",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Opice Autor: zozi2021"
+        },
+        {
+          "id": "kategoricky-imperativ-kraliku",
+          "title": "Kategorický imperativ králíků",
+          "url": "http://scp-cs.wikidot.com/kategoricky-imperativ-kraliku",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 15,
+          "desc": "Název: Kategorický imperativ králíků Autor: Azkee"
+        },
+        {
+          "id": "coze-jsem-vcera-provedl",
+          "title": "Cože jsem včera provedl?",
+          "url": "http://scp-cs.wikidot.com/coze-jsem-vcera-provedl",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Název: Cože jsem včera provedl? Autor: neTo42"
+        },
+        {
+          "id": "vytrhly-nehty-vykaslany-zuby-a-kaluze-krve",
+          "title": "Vytrhlý nehty, vykašlaný zuby a kaluže krve",
+          "url": "http://scp-cs.wikidot.com/vytrhly-nehty-vykaslany-zuby-a-kaluze-krve",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: Vytrhlý nehty, vykašlaný zuby a jiné kuriozity Autor: neTo42"
+        },
+        {
+          "id": "diravdire",
+          "title": "Díra v Díře Líže Zvíře",
+          "url": "http://scp-cs.wikidot.com/diravdire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Název: Díra v Díře Líže Zvíře Autor: Lyppiatt"
+        },
+        {
+          "id": "tripribehy",
+          "title": "Tré Příběhů ze Tří Osob",
+          "url": "http://scp-cs.wikidot.com/tripribehy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "Název: Tré Příběhů ze Tří Osob Autor: Lyppiatt"
+        },
+        {
+          "id": "hospodska-sazka-se-strachem",
+          "title": "Hospodská sázka se strachem",
+          "url": "http://scp-cs.wikidot.com/hospodska-sazka-se-strachem",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Hospodská sázka se strachem Autor: Utylike"
+        },
+        {
+          "id": "zklidnujici-opus-hermana-fullera",
+          "title": "Zklidňující opus Hermana Fullera",
+          "url": "http://scp-cs.wikidot.com/zklidnujici-opus-hermana-fullera",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "Název: Zklidňující opus Hermana Fullera Autor: AtlasCZ"
+        },
+        {
+          "id": "hydrant",
+          "title": "Hydrant",
+          "url": "http://scp-cs.wikidot.com/hydrant",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Název: Hydrant Autor: AtlasCZ"
+        },
+        {
+          "id": "se-slevou",
+          "title": "Se slevou",
+          "url": "http://scp-cs.wikidot.com/se-slevou",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Se slevou Autor: Steven Choros"
+        },
+        {
+          "id": "denik-felicie",
+          "title": "Deník Felície",
+          "url": "http://scp-cs.wikidot.com/denik-felicie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Deník Felície Autor: Lyppiatt"
+        },
+        {
+          "id": "the-cool-war-hub",
+          "title": "Cool War",
+          "url": "http://scp-cs.wikidot.com/the-cool-war-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Inspiraci je možné načerpat v původní anglické sérii příběhů Cool War . Pro nějakou česky psanou inspiraci o umělcích čtěte Bergmannův Paradox nebo příběh Tahy štětcem ."
         },
         {
           "id": "metamorfozy-milence",
@@ -1571,507 +3615,13 @@
           "desc": "Název: Nikdo neví Autor: Steven Choros"
         },
         {
-          "id": "telesnost",
-          "title": "Tělesnost",
-          "url": "http://scp-cs.wikidot.com/telesnost",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "Název: Tělesnost Autor: Utylike"
-        },
-        {
-          "id": "the-thunder-before-the-storm",
-          "title": "The Thunder Before The Storm",
-          "url": "http://scp-cs.wikidot.com/the-thunder-before-the-storm",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: The thunder before the storm Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
-        },
-        {
-          "id": "reviving-all-thats-dead",
-          "title": "Reviving all that's dead",
-          "url": "http://scp-cs.wikidot.com/reviving-all-thats-dead",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Reviving all that's dead Autor: Miss_Martins Varování: Sebevražedné sklony, episoda je plná deprese Poznámka autora: Při překladu do angličtiny přehoďte název do češtiny. Díky!"
-        },
-        {
-          "id": "uklidova-komora",
-          "title": "Úklidová komora",
-          "url": "http://scp-cs.wikidot.com/uklidova-komora",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Úklidová komora Autor: AtlasCZ"
-        },
-        {
-          "id": "ruda-carodejka",
-          "title": "Rudá čarodějka",
-          "url": "http://scp-cs.wikidot.com/ruda-carodejka",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Střípky z cizího života — Rudá čarodějka Autor: Azkee"
-        },
-        {
-          "id": "denik-felicie",
-          "title": "Deník Felície",
-          "url": "http://scp-cs.wikidot.com/denik-felicie",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Deník Felície Autor: Lyppiatt"
-        },
-        {
-          "id": "fascinujici-stvoreni",
-          "title": "Fascinující stvoření",
-          "url": "http://scp-cs.wikidot.com/fascinujici-stvoreni",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Fascinující stvoření Autor: AtlasCZ"
-        },
-        {
-          "id": "provlecena-smycka",
-          "title": "Provlečená smyčka",
-          "url": "http://scp-cs.wikidot.com/provlecena-smycka",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "Název: Provlečená smyčka Autor: Utylike"
-        },
-        {
-          "id": "scp-004-cs",
-          "title": "Linka D",
-          "url": "http://scp-cs.wikidot.com/scp-004-cs",
-          "sourceManifest": "manifest_scp-cs",
-          "role": "primaryArticle",
-          "os": 11,
-          "desc": "Agenti Nadace jsou instruováni se SCP-004-CS vyhýbat jak ve službě, tak mimo pracovní hodiny. To se nevztahuje na agenty pověřené špionáží v civilu nebo nasazené v zájmových skupinách souvisejících s SCP-004-CS . Od Incidentu R-0 jsou všichni Nadační agenti st…"
-        },
-        {
-          "id": "ne-pas-battu-petite-coeur-de-moi",
-          "title": "Ne pas battu, petite coeur de moi",
-          "url": "http://scp-cs.wikidot.com/ne-pas-battu-petite-coeur-de-moi",
+          "id": "svet-se-bez-vas-nezastavi",
+          "title": "Svět se bez vás nezastaví",
+          "url": "http://scp-cs.wikidot.com/svet-se-bez-vas-nezastavi",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "os": 2,
-          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
-        },
-        {
-          "id": "klicnik-a-muzikant",
-          "title": "Klíčník a Muzikant",
-          "url": "http://scp-cs.wikidot.com/klicnik-a-muzikant",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7,
-          "desc": "Název: Klíčník a Muzikant Autor: Utylike a Lyppiatt"
-        },
-        {
-          "id": "platek-ze-zivota-hezky-od-kosti",
-          "title": "Plátek ze života, hezky od kosti",
-          "url": "http://scp-cs.wikidot.com/platek-ze-zivota-hezky-od-kosti",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 18,
-          "desc": "Název: Plátek ze života, hezky od kosti Autor: Utylike"
-        },
-        {
-          "id": "niterna-kakofonie-cev",
-          "title": "Niterná kakofonie cév",
-          "url": "http://scp-cs.wikidot.com/niterna-kakofonie-cev",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 18,
-          "desc": "Název: Niterná kakofonie cév Autor: Utylike Za obrázek děkuji úžasné Azkee ."
-        },
-        {
-          "id": "prokrvena-chut-synkreze-jazyku",
-          "title": "Prokrvená chuť synkreze jazyků",
-          "url": "http://scp-cs.wikidot.com/prokrvena-chut-synkreze-jazyku",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 16,
-          "desc": "Název: Prokrvená chuť synkreze jazyků Autor: Utylike"
-        },
-        {
-          "id": "roztresena-rezonance-hlasivek",
-          "title": "Roztřesená rezonance hlasivek",
-          "url": "http://scp-cs.wikidot.com/roztresena-rezonance-hlasivek",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11,
-          "desc": "Název: Roztřesená rezonance hlasivek Autor: Utylike"
-        },
-        {
-          "id": "asynchronie-bijicich-srdci",
-          "title": "Asynchronie bijících srdcí",
-          "url": "http://scp-cs.wikidot.com/asynchronie-bijicich-srdci",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 10,
-          "desc": "Název: Asynchronie bijících srdcí Autor: Utylike"
-        },
-        {
-          "id": "ken-s-bizarre-adventure",
-          "title": "Kenovo prazvláštní dobrodružství",
-          "url": "http://scp-cs.wikidot.com/ken-s-bizarre-adventure",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11,
-          "desc": "Název: Kenovo prazvláštní dobrodružství Autor: Modular Poznámka: Očividné reference jsou očividné."
-        },
-        {
-          "id": "to-you-my-yesterday-s-me",
-          "title": "Píši ti, mé včerejší já",
-          "url": "http://scp-cs.wikidot.com/to-you-my-yesterday-s-me",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8,
-          "desc": "Název: Píši ti, mé včerejší já Autor: Modular Poznámka: Očividné reference jsou očividné."
-        },
-        {
-          "id": "i-m-not-like-them-but-i-can-pretend",
-          "title": "Nahlédnutí do života tragikomického studenta Muchovy umělecké školy Edwarda K. Norwina aneb (ne)klidný den tisíckrát jinak",
-          "url": "http://scp-cs.wikidot.com/i-m-not-like-them-but-i-can-pretend",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7,
-          "desc": "Nahlédnutí do života tragikomického studenta Muchovy umělecké školy Edwarda K. Norwina aneb (ne)klidný den tisíckrát jinak"
-        },
-        {
-          "id": "the-night-you-told-me-you-loved-me",
-          "title": "Tehdy večer, když ses mi vyznala, jsem byl jako ve snu",
-          "url": "http://scp-cs.wikidot.com/the-night-you-told-me-you-loved-me",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7,
-          "desc": "Tehdy večer, když ses mi vyznala, jsem byl jako ve snu"
-        },
-        {
-          "id": "cesta-jde-porad-dal-a-dal-kupredu-pryc-jde-od-mych-vrat",
-          "title": "Laskavé lesy podzimního smutku",
-          "url": "http://scp-cs.wikidot.com/cesta-jde-porad-dal-a-dal-kupredu-pryc-jde-od-mych-vrat",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 9,
-          "desc": "Laskavé lesy podzimního smutku"
-        },
-        {
-          "id": "sroubovana",
-          "title": "Šroubovaná",
-          "url": "http://scp-cs.wikidot.com/sroubovana",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 14,
-          "desc": "Název: Šroubovaná Autor: AtlasCZ"
-        },
-        {
-          "id": "unikovy-vychod",
-          "title": "Únikový východ",
-          "url": "http://scp-cs.wikidot.com/unikovy-vychod",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8,
-          "desc": "Název: Únikový východ Autor: AtlasCZ"
-        },
-        {
-          "id": "internarativni-ruleta",
-          "title": "Internarativní ruleta",
-          "url": "http://scp-cs.wikidot.com/internarativni-ruleta",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Internarativní ruleta Autor: AtlasCZ"
-        },
-        {
-          "id": "rozesli-se-u-petrinu",
-          "title": "Rozešli se u Petřínu",
-          "url": "http://scp-cs.wikidot.com/rozesli-se-u-petrinu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 9,
-          "desc": "Název: Rozešli se u Petřínu Autor: AiryPatotie Příspěvek do Amogus-con 2024: Slova od Utylike : netopýr a křída Slova od zozi2021 : mamlas a hostina Slova od Serirel : logopedie a Uganda"
-        },
-        {
-          "id": "zikmunduv-kopecek",
-          "title": "Bagatelizace dávné konkurence",
-          "url": "http://scp-cs.wikidot.com/zikmunduv-kopecek",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8,
-          "desc": "Název: Zikmundův kopeček Autor: Hajgrando"
-        },
-        {
-          "id": "na-kopecku-za-cejlem",
-          "title": "Na kopečku za Cejlem",
-          "url": "http://scp-cs.wikidot.com/na-kopecku-za-cejlem",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Na kopečku za Cejlem Autor: Utylike Příspěvek do Amogus-conu 2024: -slova od Airiho: tamagoči, nůžky -slova od žoži: svíčková, přilba -slova od Sary: kaďák, futanari -slova od Granka: tvaroh, recyklace"
-        },
-        {
-          "id": "nekonecne-spletence-vlastnich-synapsi",
-          "title": "Nekonečné spletence vlastních synapsí",
-          "url": "http://scp-cs.wikidot.com/nekonecne-spletence-vlastnich-synapsi",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7,
-          "desc": "Název: Nekonečné spletence vlastních synapsí Autor: Hajgrando"
-        },
-        {
-          "id": "frustrace-z-rozmotanych-uzlu",
-          "title": "Frustrace z rozmotaných uzlů",
-          "url": "http://scp-cs.wikidot.com/frustrace-z-rozmotanych-uzlu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8,
-          "desc": "Název: Frustrace z rozmotaných uzlů Autor: Utylike"
-        },
-        {
-          "id": "marnotratny-jazycek-duseneho-plamene",
-          "title": "Marnotratný jazýček dušeného plamene",
-          "url": "http://scp-cs.wikidot.com/marnotratny-jazycek-duseneho-plamene",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Marnotratný jazýček dušeného plamene Autor: Utylike"
-        },
-        {
-          "id": "scp-917-cs",
-          "title": "Sedmnáctá karta Tarotu, Hvězda",
-          "url": "http://scp-cs.wikidot.com/scp-917-cs",
-          "sourceManifest": "manifest_scp-cs",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "SCP-917-CS nelze žádným efektivním způsobem zadržet, avšak vzhledem k povaze anomálních účinků SCP-917-CS to ani není vyžadováno. Podle obecné nadační směrnice o zadržování antimemetických entit třídy Alfa-7 (humanoidní inteligentní entity bez nepřátelských úm…"
-        },
-        {
-          "id": "asi-takovej-pocit-jako-je-bodnuti-noze",
-          "title": "Osmnáctá karta Tarotu, Měsíc",
-          "url": "http://scp-cs.wikidot.com/asi-takovej-pocit-jako-je-bodnuti-noze",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11,
-          "desc": "Osmnáctá karta Tarotu, Měsíc"
-        },
-        {
-          "id": "specialita-podniku",
-          "title": "Specialita Podniku",
-          "url": "http://scp-cs.wikidot.com/specialita-podniku",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 17,
-          "desc": "Název: Specialita podniku Autor: DrCheems"
-        },
-        {
-          "id": "hvezdy-prozari-tmu",
-          "title": "Hvězdy prozáří tmu",
-          "url": "http://scp-cs.wikidot.com/hvezdy-prozari-tmu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 10,
-          "desc": "Název: Hvězdy prozáří tmu Autor: kaculik"
-        },
-        {
-          "id": "kam-odchazi-nadeje",
-          "title": "Kam odchází naděje",
-          "url": "http://scp-cs.wikidot.com/kam-odchazi-nadeje",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 5,
-          "desc": "Název: Kam odchází naděje Autor: kaculik"
-        },
-        {
-          "id": "nezastavitelny-objekt",
-          "title": "Nezastavitelný objekt",
-          "url": "http://scp-cs.wikidot.com/nezastavitelny-objekt",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 9,
-          "desc": "Název: Nezastavitelný objekt Autor: Utylike"
-        },
-        {
-          "id": "primo-pod-nosem",
-          "title": "Přímo pod nosem",
-          "url": "http://scp-cs.wikidot.com/primo-pod-nosem",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 8,
-          "desc": "Název: Přímo pod nosem Autor: chamik"
-        },
-        {
-          "id": "scp-216-cs",
-          "title": "Pes žižkovský",
-          "url": "http://scp-cs.wikidot.com/scp-216-cs",
-          "sourceManifest": "manifest_scp-cs",
-          "role": "primaryArticle",
-          "os": 11,
-          "desc": "SCP-216-CS je zadrženo ve standardní zadržovací komoře Oblasti-91. Nevyžaduje zvláštní údržbu biologických anomálií. Vyšetřování za účelem vypátrání původců anomálie stále probíhá a je věcí příslušných výkonných orgánů Oblasti-91."
-        },
-        {
-          "id": "sladkatecka",
-          "title": "Sladká Tečka",
-          "url": "http://scp-cs.wikidot.com/sladkatecka",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Sladká Tečka Autor: Lyppiatt"
-        },
-        {
-          "id": "abstinencni-priznaky",
-          "title": "Abstinenční příznaky",
-          "url": "http://scp-cs.wikidot.com/abstinencni-priznaky",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 17,
-          "desc": "Název: Abstinenční příznaky Autor: AtlasCZ"
-        },
-        {
-          "id": "scp-500-cs",
-          "title": "CHYBA: NEPLATNÝ ODKAZ",
-          "url": "http://scp-cs.wikidot.com/scp-500-cs",
-          "sourceManifest": "manifest_scp-cs",
-          "role": "primaryArticle",
-          "os": 19
-        },
-        {
-          "id": "zkrasleni-tela-za-nervy",
-          "title": "Zkrášlení těla za nervy",
-          "url": "http://scp-cs.wikidot.com/zkrasleni-tela-za-nervy",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 12,
-          "desc": "Název: Zkrášlení těla za nervy Autor: DrDickens"
-        },
-        {
-          "id": "ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
-          "title": "Dite-moi, petite coeur, pour qui tu as battu",
-          "url": "http://scp-cs.wikidot.com/ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Opus latine vel aliquid simile Autor: Miss_Martins Varování: Neskutečně moc sprostých slov."
-        },
-        {
-          "id": "studie-imanta-sarkicismus",
-          "title": "Studie sarkicismu a souvisejících témat Dr. Alfonse Kulhánka",
-          "url": "http://scp-cs.wikidot.com/studie-imanta-sarkicismus",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Studie sarkicismu a souvisejících témat Dr. Alfonse Kulhánka Na motivy SCP-688-CS od Dr Dobesh napsal Steven Choros Zdroje obrázků:"
-        },
-        {
-          "id": "palis-doutnas-nehoris",
-          "title": "Střípky z cizího života — Pálíš, doutnáš, nehoříš",
-          "url": "http://scp-cs.wikidot.com/palis-doutnas-nehoris",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 16,
-          "desc": "Název: Střípky z cizího života — Pálíš, doutnáš, nehoříš Autor: Azkee"
-        },
-        {
-          "id": "vitejte-v-zizkovske-dire",
-          "title": "Vítejte v Žižkovské Díře",
-          "url": "http://scp-cs.wikidot.com/vitejte-v-zizkovske-dire",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 12,
-          "desc": "Název: Vítejte v Žižkovské Díře Autor: zozi2021"
-        },
-        {
-          "id": "opice",
-          "title": "Opice",
-          "url": "http://scp-cs.wikidot.com/opice",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 4,
-          "desc": "Název: Opice Autor: zozi2021"
-        },
-        {
-          "id": "kategoricky-imperativ-kraliku",
-          "title": "Kategorický imperativ králíků",
-          "url": "http://scp-cs.wikidot.com/kategoricky-imperativ-kraliku",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 15,
-          "desc": "Název: Kategorický imperativ králíků Autor: Azkee"
-        },
-        {
-          "id": "coze-jsem-vcera-provedl",
-          "title": "Cože jsem včera provedl?",
-          "url": "http://scp-cs.wikidot.com/coze-jsem-vcera-provedl",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11,
-          "desc": "Název: Cože jsem včera provedl? Autor: neTo42"
-        },
-        {
-          "id": "vytrhly-nehty-vykaslany-zuby-a-kaluze-krve",
-          "title": "Vytrhlý nehty, vykašlaný zuby a kaluže krve",
-          "url": "http://scp-cs.wikidot.com/vytrhly-nehty-vykaslany-zuby-a-kaluze-krve",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 6,
-          "desc": "Název: Vytrhlý nehty, vykašlaný zuby a jiné kuriozity Autor: neTo42"
-        },
-        {
-          "id": "diravdire",
-          "title": "Díra v Díře Líže Zvíře",
-          "url": "http://scp-cs.wikidot.com/diravdire",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 11,
-          "desc": "Název: Díra v Díře Líže Zvíře Autor: Lyppiatt"
-        },
-        {
-          "id": "tripribehy",
-          "title": "Tré Příběhů ze Tří Osob",
-          "url": "http://scp-cs.wikidot.com/tripribehy",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 18,
-          "desc": "Název: Tré Příběhů ze Tří Osob Autor: Lyppiatt"
-        },
-        {
-          "id": "hospodska-sazka-se-strachem",
-          "title": "Hospodská sázka se strachem",
-          "url": "http://scp-cs.wikidot.com/hospodska-sazka-se-strachem",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 7,
-          "desc": "Název: Hospodská sázka se strachem Autor: Utylike"
-        },
-        {
-          "id": "zklidnujici-opus-hermana-fullera",
-          "title": "Zklidňující opus Hermana Fullera",
-          "url": "http://scp-cs.wikidot.com/zklidnujici-opus-hermana-fullera",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 13,
-          "desc": "Název: Zklidňující opus Hermana Fullera Autor: AtlasCZ"
-        },
-        {
-          "id": "hydrant",
-          "title": "Hydrant",
-          "url": "http://scp-cs.wikidot.com/hydrant",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 9,
-          "desc": "Název: Hydrant Autor: AtlasCZ"
-        },
-        {
-          "id": "se-slevou",
-          "title": "Se slevou",
-          "url": "http://scp-cs.wikidot.com/se-slevou",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 3,
-          "desc": "Název: Se slevou Autor: Steven Choros"
+          "desc": "Název: Svět se bez vás nezastaví Autor: Utylike"
         },
         {
           "id": "tady-zazijes-vse",
@@ -2083,17 +3633,105 @@
           "desc": "Název: Amogus-con Autor: Hajgrando"
         },
         {
-          "id": "zamalovana-osobnost",
-          "title": "Zamalovaná Osobnost",
-          "url": "http://scp-cs.wikidot.com/zamalovana-osobnost",
+          "id": "uklidova-komora",
+          "title": "Úklidová komora",
+          "url": "http://scp-cs.wikidot.com/uklidova-komora",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "os": 6,
-          "desc": "…se probere. …se zmateně posadí na posteli. Proč si nepamatuje svoje jméno? Není to ta věc, co si zrovna má pamatovat? Praštila se do hlavy? Prohlédne si vlastní ruce; jako montáž fotek toho samého místa foceného každý den v tu samou dobu, stejné, ale s pomalu…"
+          "os": 4,
+          "desc": "Název: Úklidová komora Autor: AtlasCZ"
         }
       ],
       "supplementLinks": [],
-      "description": "Základní informace o postavách příběhů z Díry, prosím používejte template a nevypisujte příliš dlouhé odstavce ohledně svých postav. Postavy se řadí abecedně podle příjmení, nebo křestního jména/přezdívky (pokud jiné nemají)."
+      "description": "Základní informace o postavách příběhů z Díry, prosím používejte template a nevypisujte příliš dlouhé odstavce ohledně svých postav. Postavy se řadí abecedně podle příjmení, nebo křestního jména/přezdívky (pokud jiné nemají).",
+      "articleSections": [
+        {
+          "id": "01-info",
+          "title": "Info",
+          "articleIDs": [
+            "zamalovana-osobnost",
+            "platek-ze-zivota-hezky-od-kosti",
+            "niterna-kakofonie-cev",
+            "prokrvena-chut-synkreze-jazyku",
+            "roztresena-rezonance-hlasivek",
+            "asynchronie-bijicich-srdci",
+            "telesnost",
+            "ken-s-bizarre-adventure",
+            "to-you-my-yesterday-s-me",
+            "i-m-not-like-them-but-i-can-pretend",
+            "the-night-you-told-me-you-loved-me",
+            "cesta-jde-porad-dal-a-dal-kupredu-pryc-jde-od-mych-vrat",
+            "sroubovana",
+            "unikovy-vychod",
+            "internarativni-ruleta",
+            "fascinujici-stvoreni",
+            "rozesli-se-u-petrinu",
+            "cesta-k-prazdnote-hub",
+            "scp-243-cs",
+            "porozumeni-chybam",
+            "co-bylo-nelze-vzit-zpet",
+            "atelier-tveho-vnitrniho-ja",
+            "jak-se-zbavit-svych-pratel",
+            "zikmunduv-kopecek",
+            "na-kopecku-za-cejlem",
+            "nekonecne-spletence-vlastnich-synapsi",
+            "frustrace-z-rozmotanych-uzlu",
+            "marnotratny-jazycek-duseneho-plamene",
+            "provlecena-smycka",
+            "scp-917-cs",
+            "asi-takovej-pocit-jako-je-bodnuti-noze",
+            "specialita-podniku",
+            "scp-004-cs",
+            "hvezdy-prozari-tmu",
+            "kam-odchazi-nadeje",
+            "nezastavitelny-objekt",
+            "klicnik-a-muzikant",
+            "primo-pod-nosem",
+            "scp-216-cs",
+            "sladkatecka",
+            "abstinencni-priznaky",
+            "scp-500-cs",
+            "zkrasleni-tela-za-nervy",
+            "ditte-moi-pettite-coeur-pour-qui-tu-as-battu",
+            "ne-pas-battu-petite-coeur-de-moi",
+            "reviving-all-thats-dead",
+            "the-thunder-before-the-storm",
+            "studie-imanta-sarkicismus",
+            "ruda-carodejka",
+            "palis-doutnas-nehoris",
+            "vitejte-v-zizkovske-dire",
+            "opice",
+            "kategoricky-imperativ-kraliku",
+            "coze-jsem-vcera-provedl",
+            "vytrhly-nehty-vykaslany-zuby-a-kaluze-krve",
+            "diravdire",
+            "tripribehy",
+            "hospodska-sazka-se-strachem",
+            "zklidnujici-opus-hermana-fullera",
+            "hydrant",
+            "se-slevou",
+            "denik-felicie"
+          ]
+        },
+        {
+          "id": "02-koutnikova-zastavarna",
+          "title": "Koutníkova zastavárna",
+          "articleIDs": [
+            "the-cool-war-hub"
+          ]
+        },
+        {
+          "id": "03-additional-tagged-articles",
+          "title": "Additional tagged articles",
+          "articleIDs": [
+            "metamorfozy-milence",
+            "nikdo-nevi",
+            "svet-se-bez-vas-nezastavi",
+            "tady-zazijes-vse",
+            "uklidova-komora"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:canon:informace-o-ceske-vetvi-nadace",
