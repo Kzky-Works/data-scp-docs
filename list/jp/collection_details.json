@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786164212,
-  "generatedAt": "2026-08-08T04:43:32Z",
-  "chunkRevision": "sha256-568772f15c8e4a1f358d2bec5e76e8dc91b6830312dd457a077045f75d45a649",
+  "listVersion": 1786180474,
+  "generatedAt": "2026-08-08T09:14:34Z",
+  "chunkRevision": "sha256-64e9b5f2f26b8df50c43589df667dc1d6c36c3b075736fa2cb33e7bcb84b80dc",
   "builtFrom": {
     "manifests": [
       {
@@ -45,7 +45,7 @@
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
+      "contentHash": "sha256-f1c9543ba69656210dd35dff9db1e4a35c71b02cb3b6a7a7565665448c4a23a8"
     },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/jp.json",
@@ -102,7 +102,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -209,7 +210,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -330,6 +332,13 @@
           "desc": "ジル・スチュアートのパーティードレスを着込んだ女が一人、喧騒の広場を抜け出し窓際の白く磨かれた抗菌素材のテーブルに着いた。 二人掛けのテーブルの向かいは空いたままだ。 普段は持ち込みを禁止されているウイスキー（ボウモアの12年。）の瓶とグラスを二つ置き、それぞれに深い琥珀色の液体を注いだ。 鞄から眼鏡と取り出してかけると、夜の闇へと視線を投げかける。"
         },
         {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
           "id": "chi-niha-heiwa-wo",
           "title": "地には平和を",
           "url": "https://scp-jp.wikidot.com/chi-niha-heiwa-wo",
@@ -383,7 +392,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -430,6 +440,21 @@
           "role": "primaryArticle",
           "os": 120,
           "desc": "2016年度 サイト-8181夏祭り企画立案書 企画名: 納涼！ サイト-8181開かずの間巡り 趣旨: 有志職員によるお化け屋敷 概略: 多目的ガレージをパーテーションで仕切り、入場者には順路に従って巡ってもらう。各仕切り内にはお化け役に扮した職員が待機、趣向を凝らして入場者を驚かせる。また、各仕切り内にはお化け役に即した内装を施す。内装の施工には、財団フロント企業ザ・シリーキャット・ピクチャーズの協力を仰ぐ予定。 各仕切りの内の趣向: 1. 恐怖！ 口裂け男の間"
+        },
+        {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "note-why-japanese-people",
+          "title": "メモ: 何者も逃れられない",
+          "url": "https://scp-jp.wikidot.com/note-why-japanese-people",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
         },
         {
           "id": "scp-1670-jp",
@@ -493,7 +518,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -576,6 +602,13 @@
           "role": "primaryArticle",
           "os": 74,
           "desc": "彼は世界に踊らされた。 しかし、狂気へと踏み込んだのは彼自身だった。 AO-████輸送任務 事後報告 以下の内容により、AO-████輸送任務は完了しました。"
+        },
+        {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -618,7 +651,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -656,6 +690,13 @@
           "role": "primaryArticle",
           "os": 64,
           "desc": "日本国滋賀県高島市・京都府南丹市 旧サイト-８１６ 巨大脅威存在合同対策本部 「オペレーション・ルーム」 ２０█年８月１２日 午後１０時５分２４秒 (ＵＴＣ＋９)"
+        },
+        {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -706,7 +747,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -744,6 +786,13 @@
           "role": "primaryArticle",
           "os": 61,
           "desc": "—-— 2時間前 —-— データの流れは常に光速だ。それは呆れるほどに素早い。本当に──人の脳ではとても追い付けないほどに。 光回線の末端を脳に直接埋め込めるようになったとき、人類は初めてその事実を体感した。最初の神経接続インプラントはデータ過剰読み込みへの制御が不安定で、まさに電子レンジみたいなものだった。それも扉がいつ閉まるかわからない──どのタイミングで庫内にマイクロ波が充満し、卵を80℃まで加熱するかは運次第だ。最初の5人の被験者は全員が15ヶ月以内に死んだ。当然だ、人間の脳は1TBのランダムテキストをコン…"
+        },
+        {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -794,7 +843,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -825,6 +875,14 @@
           "desc": "「ベネディクト、そろそろ休んだらどうだ、もう大方片付いたんだろ」 「もう少しやらせてくれよ、ダン。今いいところなんだ」 ベネディクトのやつは変に凝ったところがある。ちょっとはてっぺんを回った時計の針も気にしてくれるとありがたいんだが。『ゲーデ・フィルム』編集部屋の扉を閉め広間に戻ると、雑用もやることが無くなったアルスナがソファに転がっていた。スティックアイス片手にいかにもけだるげだ。"
         },
         {
+          "id": "h-a-3001",
+          "title": "ほ-A-3001 \"ダイレクトホニャインコくん\"販売カタログ",
+          "url": "https://scp-jp.wikidot.com/h-a-3001",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "goede-film-special",
           "title": "『ゲーデ・フィルム・スペシャル: 道具屋リョエルのお宝紹介』From: ダン監督",
           "url": "https://scp-jp.wikidot.com/goede-film-special",
@@ -850,6 +908,13 @@
           "role": "primaryArticle",
           "os": 158,
           "desc": "そのとき、一人の上位存在が亡くなった。一瞬時が止まったように皆黙り込んだ。サイトで、収容室で、戦場、地下駐車場、廃墟、海底、名前のない森、夢の世界、死体の島、赤い原野、放送室、塩漬けの湖、真西から真東まで。あるものは作業中のノートPCを閉じ、あるものは目を伏せ、あるものは額に指をあて、誰しもが祈りといった感情を心の中に思い浮かべた。"
+        },
+        {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -892,7 +957,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -950,6 +1016,13 @@
           "desc": "タイトル: 虚区高速 著者: Ryu JP ー虚区高速十三号汐留線ー あぁ､電子音に満たされている｡ 刻々と流れる風景｡変わる座標｡ どうやら私は道を間違えた様だ｡ 深く､無限に深く､それでいて無限に大きく思える立坑｡そしてその中に何千何万本も張り巡らされている高速道路らしき何か｡"
         },
         {
+          "id": "sign-of-expwy",
+          "title": "高速道路標識・情報板",
+          "url": "https://scp-jp.wikidot.com/sign-of-expwy",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
           "id": "r-sinano-chuo-co-jp-2018-5-24-914yfe5",
           "title": "アクアラインで自爆テロか 271人死亡 海外ゲリラ関与の可能性も",
           "url": "https://scp-jp.wikidot.com/r-sinano-chuo-co-jp-2018-5-24-914yfe5",
@@ -957,6 +1030,35 @@
           "role": "primaryArticle",
           "os": 16,
           "desc": "タイトル: アクアラインで自爆テロか 271人死亡 海外ゲリラ関与の可能性も 著者: Ryu JP"
+        },
+        {
+          "id": "gravitas-gradalis",
+          "title": "グラビタス・グラダリス",
+          "url": "https://scp-jp.wikidot.com/gravitas-gradalis",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "blue-dull-sign",
+          "title": "青鈍色の標識",
+          "url": "https://scp-jp.wikidot.com/blue-dull-sign",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "aonibiiro-ost",
+          "title": "「青鈍色の空」ORIGINAL SOUND TRACK",
+          "url": "https://scp-jp.wikidot.com/aonibiiro-ost",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         },
         {
           "id": "this-way-jp",
@@ -1026,7 +1128,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1084,6 +1187,14 @@
           "desc": "全てのSCP-1092-JPはサイト-8102の水槽に収容されます。飼育は通常の陸封型ベニザケに準じた方法で行われ、繁殖によって適切な個体数が保たれます。 毎年の産卵期が終わり、SCP-1092-JPの稚魚が生後2ヶ月を迎える時期に、全ての稚魚の遺伝子が検査されます。SCP-1092-JP-(+)と判定された個体は、変異段階ごとにサンプルとして適切な数が標本へと加工され、それ以外の個体は焼却処分されます。SCP-1092-JP-(-)と判定された個体は、別紙の放流プロトコルの規定に従って収容から解放されます。どちら…"
         },
         {
+          "id": "lte-5230-fiji-aurora-cherry",
+          "title": "LTE-5230-Fiji-Aurora Cherry",
+          "url": "https://scp-jp.wikidot.com/lte-5230-fiji-aurora-cherry",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "code-reverse-romeo",
           "title": "手を振り、手を振られる",
           "url": "https://scp-jp.wikidot.com/code-reverse-romeo",
@@ -1120,6 +1231,14 @@
           "desc": "SCP-1533-JPのアクセスポイントが存在する洞窟は、耐震工事が施された上で進入口を土砂と植物資源による偽装下に置かれています。洞窟の付近100m以内に進入した人物は拘留ののち記憶処理がなされます。SCP-1533-JPへの予定された進入実験は完了しています。"
         },
         {
+          "id": "ahashima",
+          "title": "アハシマ",
+          "url": "https://scp-jp.wikidot.com/ahashima",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "code-stillbirth-zulu",
           "title": "クラッシュカイザー",
           "url": "https://scp-jp.wikidot.com/code-stillbirth-zulu",
@@ -1136,6 +1255,13 @@
           "role": "primaryArticle",
           "os": 663,
           "desc": "各種調査の結果、SCP-3000-JPに関与したと考えられている神格群は現在無力化されていると判断されています。 SCP-3000-JP隠匿のため、日本国全域に対する記憶処理剤散布、インターネット及び出版物上における情報操作、カバーストーリー流布などの複数の収容作業が実施されていました。2022年9月19日、収容目標達成が認可され、当該作業の完了が宣言されました。上記内容を受け、SCP-3000-JPは2022年9月19日にNeutralizedに再分類されました。 LoI-3000-JPは神学部門の重要研究対象に…"
+        },
+        {
+          "id": "goi-balls-05",
+          "title": "GoIボールアートワーク「連作-JP」",
+          "url": "https://scp-jp.wikidot.com/goi-balls-05",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         },
         {
           "id": "scp-4133-jp",
@@ -1187,7 +1313,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1218,6 +1345,13 @@
           "desc": "SCP-2043-JPから半径5km以内のエリアは非居住地域に指定されます。SCP-2043-JPの情報はB種機密情報に指定され、これに関する財団から認可を受けていないメディアの報道は検閲されます。また、探索において使用したDクラス職員は死刑を執行されたものとみなします。 SCP-2043-JP内の居住区にはDクラス職員が常に3人以上滞在しています。これまでの探索の経験から、SCP-2043-JPは財団の派遣した職員を柔軟に受け入れることが判明しています。SCP-2043-JPの敷地内に1度立ち入った人物を回収する…"
         },
         {
+          "id": "tamagaki",
+          "title": "日辻養の提言のアートワーク",
+          "url": "https://scp-jp.wikidot.com/tamagaki",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
           "id": "shironose-kuzira-1",
           "title": "白乃瀬鯨の人間ざんまい",
           "url": "https://scp-jp.wikidot.com/shironose-kuzira-1",
@@ -1245,6 +1379,14 @@
           "desc": "本を読んだ。純文学も読んだ。娯楽小説も読んだ。吾輩が猫であるを読んで、その後にまたもう一度読んだ。人間失格を読んで作者の人間性に思いを馳せた。グッドバイを読んでからロンググッドバイも読んだ。海外の小説も読んだ。ロリータを読んだ。白鯨を読んだ。白鯨を読んでから空の中も読んだ。カラマーゾフの兄弟も読んだ。実用書を読んだ。AIについての説明を読んだ。それを知った。ディストピアも読んだ。すばらしき新世界も読んだ。1984年も華氏451度も読んだ。ディストピアを読んだ後にユートピアも読んだ。たくさんのものを読んだ。文章も好き…"
         },
         {
+          "id": "grant-request-for-the-system-of-hume-supply-by-nanomachine",
+          "title": "超小型自己複製装置を用いた限定的空間を対象とする現実性供給システムのための認可計画",
+          "url": "https://scp-jp.wikidot.com/grant-request-for-the-system-of-hume-supply-by-nanomachine",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "kamikase-gosenzosama",
           "title": "私のご先祖さま",
           "url": "https://scp-jp.wikidot.com/kamikase-gosenzosama",
@@ -1254,6 +1396,30 @@
           "desc": "あの、ちょっと、そこの君です。今暇そうにこの水晶を眺めているあなたに言っているんですよ。私、通りすがりの人に昔話を語る活動をしてまして、ちょっと聞いてもらいたいことがあるんです。え、聞きたくない？そんなご無体な。いいじゃないですかちょっとくらい。しかもこれはあなたにとっても無関係な話ではないんですよ。"
         },
         {
+          "id": "yamizushi-madscience-878",
+          "title": "闇寿司開発記No.878 \"制空権の握り\"",
+          "url": "https://scp-jp.wikidot.com/yamizushi-madscience-878",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "sb-mimonden",
+          "title": "フードファイト スシブレード：未聞伝",
+          "url": "https://scp-jp.wikidot.com/sb-mimonden",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "yamizushi-madscience-203",
+          "title": "闇寿司開発記No.203 \"恵方回し\"",
+          "url": "https://scp-jp.wikidot.com/yamizushi-madscience-203",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "terminal-hospital-supplementary-material",
           "title": "絶望的ホスピタル　補足資料",
           "url": "https://scp-jp.wikidot.com/terminal-hospital-supplementary-material",
@@ -1261,6 +1427,13 @@
           "role": "primaryArticle",
           "os": 22,
           "desc": "「それでね、それでね、今日食べるのはこれにしたんだよ」 「織音ってこういうのが好きなんだ」 「僕は嫌いだ。野菜は苦手」"
+        },
+        {
+          "id": "81q5-sadness-pink",
+          "title": "白き末期患者",
+          "url": "https://scp-jp.wikidot.com/81q5-sadness-pink",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -1311,7 +1484,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1390,7 +1564,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1483,7 +1658,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1548,6 +1724,13 @@
           "role": "primaryArticle",
           "os": 24,
           "desc": "飛行機で2時間、でもって船に30分ほど乗り、南太島に行く。この島では色覚に異常が起こる。空以外の全てが灰色に見えるのだという。原因が財団だと非難されてきたが、それも今は昔のこと。事件から数年経ち、大衆の興味は他の有象無象に移っている。"
+        },
+        {
+          "id": "grayscale-artwork-1",
+          "title": "彩色",
+          "url": "https://scp-jp.wikidot.com/grayscale-artwork-1",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -1590,7 +1773,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1669,7 +1853,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1698,6 +1883,14 @@
           "role": "primaryArticle",
           "os": 23,
           "desc": "倫理委員会直轄の特設エージェントチーム。Humane Ethical Rapid Operation、略してH. E. R. O. 異常存在との関わりの中で、ともすれば蔑ろにされてしまう尊厳の危機に対抗する部隊。"
+        },
+        {
+          "id": "hero-vs-hero",
+          "title": "超電救助隊HERO×H.E.R.オペレーション ヒーロー大戦~第2次インシデント-HERO~",
+          "url": "https://scp-jp.wikidot.com/hero-vs-hero",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -1764,7 +1957,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1847,6 +2041,21 @@
           "role": "primaryArticle",
           "os": 14,
           "desc": "朝倉 栞あさくら しおりは正直なところ、父が好きだったかどうか分からない。 幼い頃に母を亡くした自分を、父は男手一つで育ててくれた と言うと、少々語弊ごへいがある。何しろ、仕事が忙しくて、ほとんど家に帰ってこなかったのだ。頻繁に訪ねて来てくれる叔母が、実質的な育ての親だった。彼女はよくこう言っていた。"
+        },
+        {
+          "id": "quartet-interlude",
+          "title": "蛇と焚書のカルテット: 幕間",
+          "url": "https://scp-jp.wikidot.com/quartet-interlude",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "kokorikyo-7",
+          "title": "アートワーク: 蛇と焚書のカルテット",
+          "url": "https://scp-jp.wikidot.com/kokorikyo-7",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -1897,7 +2106,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -1994,7 +2204,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -2059,6 +2270,14 @@
           "role": "primaryArticle",
           "os": 32,
           "desc": "2025年の3月も既に26日目、春の訪れを感じる。 昼はもう暖房をつける必要もない程にはぽかぽかとした陽気が漂う季節。「相談室」の南向きの窓から差し込む柔らかな日光は黒檀の顧問椅子を仄かに照らしていた。"
+        },
+        {
+          "id": "oowa-murder-mystery",
+          "title": "大和博士殺人事件 密やかなる真実",
+          "url": "https://scp-jp.wikidot.com/oowa-murder-mystery",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -2101,7 +2320,11 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json",
+        "officialHubSupplementIDs": [
+          "mea-culpa-empty-title"
+        ]
       },
       "primaryArticles": [
         {
@@ -2474,6 +2697,14 @@
           "desc": "この著者の他の作品 「北村さん、また靴紐ほどけてますよ。」 私は隣を歩いている男、北村に声をかけた。北村は仕事の関係で知り合った、つい先日成人を迎えたばかりの大学生だ。私より10歳近くも年下だが、妙に大人びてた雰囲気を帯びていた。 今日は北村からの誘いで、彼のおすすめの居酒屋に向かっていた。数年前は終電の時間が過ぎても賑わいが途絶えなかったこの通りも、今は人もまばらでシャッターを閉めたままのお店も多く見られた。"
         },
         {
+          "id": "nakanaide",
+          "title": "子亡き親が流す涙は",
+          "url": "https://scp-jp.wikidot.com/nakanaide",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "rakka",
           "title": "落果",
           "url": "https://scp-jp.wikidot.com/rakka",
@@ -2600,6 +2831,14 @@
           "desc": "目を閉じている、子供の頃の私。後ろには壁や柱が見える。何も居ない。 部屋の隅、三辺が集められた角は見えないが、きっと居ない。 この写真の主役は赤ちゃん。"
         },
         {
+          "id": "misyu",
+          "title": "巳蒐",
+          "url": "https://scp-jp.wikidot.com/misyu",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "dharma",
           "title": "達磨",
           "url": "https://scp-jp.wikidot.com/dharma",
@@ -2636,6 +2875,22 @@
           "desc": "Don-Eeene 2023/08/11 (日) 22:45:36 #72211992 自分は昔、いわゆる「自分探しの旅」をしていた。特に目的地を定めずフラフラして、金が無くなれば現地でバイトなんかを見つけてその日暮らし。なるべく住み込みで雇ってくれる仕事を探したり、公民館みたいな所に泊まったり。楽じゃなかったけど、その苦労を自分からしている、頑張って生き抜いている自分スゲーって自分に酔うのが面白かった。無駄な経験では無かったと思う。"
         },
         {
+          "id": "get-a-cold",
+          "title": "止住",
+          "url": "https://scp-jp.wikidot.com/get-a-cold",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "gluttony",
+          "title": "婪獻",
+          "url": "https://scp-jp.wikidot.com/gluttony",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "muoegaku",
           "title": "無を描く",
           "url": "https://scp-jp.wikidot.com/muoegaku",
@@ -2652,6 +2907,14 @@
           "role": "primaryArticle",
           "os": 33,
           "desc": "母は自宅の庭にある『多幸の木』で首を吊っていました。 多幸の木は、髪のように根っこを枝いっぱい垂れ下げて、幹は絡み合い、きらびやかです。 ここいらの地域でこの木は珍しいものではありませんが、家の広い庭にそびえ立つこの木は大きく根を下ろし、複雑に絡み合った幹は威厳をも感じるようで、他人が見ても立派なものでした。"
+        },
+        {
+          "id": "yuki-daruma",
+          "title": "雪、だるま",
+          "url": "https://scp-jp.wikidot.com/yuki-daruma",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "bone-with-chopsticks",
@@ -2834,6 +3097,29 @@
           "desc": "「やっと捕まえたんだ、見てくれよこれ」 友人は近所のファミレスに着くや否や、注文をする前にこのような言葉を吐きました。 数年来の友人が久しぶりに連絡をしてきたので、私はてっきり結婚の知らせか、あるいは宗教の誘いなのではと疑っていました。 そのファミレスは学生時代によく友人と放課後に寄った馴染みの深い場所で、当時より古びた印象はありましたがまだまだ現役といった具合です。 彼は高揚した様子で、テーブルから身を乗り出すとこう言い出しました。"
         },
         {
+          "id": "mea-culpa-empty-title",
+          "title": "mea culpa",
+          "url": "https://scp-jp.wikidot.com/mea-culpa-empty-title",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kaigarahiroi",
+          "title": "貝殻拾い",
+          "url": "https://scp-jp.wikidot.com/kaigarahiroi",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "kata-men-005",
+          "title": "水に祈る",
+          "url": "https://scp-jp.wikidot.com/kata-men-005",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "whydonexit",
           "title": "自嘲自縛",
           "url": "https://scp-jp.wikidot.com/whydonexit",
@@ -2902,7 +3188,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -3083,6 +3370,22 @@
           "role": "primaryArticle",
           "os": 41,
           "desc": "1.本提言は、オペレーション・トーングリッドに於ける事案を受け、DWARFによって2020年5月7日に作成されました。 2.有用な意見（推薦、付加、削除）と関連データは、将来の戦技及び戦術運用の改善に役立てられる可能性がある為、逸脱戦研究開発促進グループ司令官宛てに、所定の様式に従い改善提案書、又は提言文書によって連絡されるべきです。 3.本文書は、CRITICS隷下、r分遣隊DevSec-2/PARTS、i3分遣隊Op-Sec1/FIRST、s分遣隊CopSec-2の各指揮官によって確認され、承認されています。"
+        },
+        {
+          "id": "grant-request-for-development-of-awareness-coordination",
+          "title": "特定の人員要件緩和手段としての心象概念調整機材開発の為の認可計画",
+          "url": "https://scp-jp.wikidot.com/grant-request-for-development-of-awareness-coordination",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "kte-0934-einherjar-goodrickchild",
+          "title": "KTE-0934-Einherjar-Goodrickchild",
+          "url": "https://scp-jp.wikidot.com/kte-0934-einherjar-goodrickchild",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
         }
       ],
       "supplementLinks": [],
@@ -3125,7 +3428,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -3231,9 +3535,18 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
+        {
+          "id": "poi-1933",
+          "title": "要注意人物ファイル #1933/01",
+          "url": "https://scp-jp.wikidot.com/poi-1933",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
         {
           "id": "scp-957-jp",
           "title": "無明の光",
@@ -3333,7 +3646,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -3413,7 +3727,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -3433,6 +3748,14 @@
           "role": "primaryArticle",
           "os": 68,
           "desc": "SCP-2668-JPより半径2 km圏内はゾーン-δ に指定され、当オブジェクトのセキュリティクリアランス保持者以外の侵入は禁止されています。また、半径5 km圏内は同様にゾーン-ε に指定され、財団保有の船舶による巡回、並びに衛星による監視が実施されています。 SCP-2668-JP-Aは現在、臨時サイト-ζにおいてSCP-2668-JP研究チームに一時的に雇用される形で収容されています。"
+        },
+        {
+          "id": "scp-2663-jp",
+          "title": "所定の日付",
+          "url": "https://scp-jp.wikidot.com/scp-2663-jp",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         }
       ],
       "supplementLinks": [],
@@ -3499,7 +3822,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -3570,7 +3894,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -3852,6 +4177,108 @@
           "desc": "SCP-3991-JPは腐敗を防ぐため、サイト-8123内の標準正温度遺体冷凍チャンバーに保管されています。対話などのために標準正温度遺体冷凍チャンバー外にSCP-3991-JPを搬出する際は必ず-20℃以下を保つようにしてください。SCP-3991-JPの精神衛生を保つため、担当官の大内研究員は1日18時間以上の対話が義務付けられています。 SCP-3991-JP-αを発見した際は標準正温度遺体冷凍チャンバーに併設された低脅威度物品保管ロッカー内に保管してください。"
         },
         {
+          "id": "jiraku-mogana-s-proposal-ii",
+          "title": "もがなの提言",
+          "url": "https://scp-jp.wikidot.com/jiraku-mogana-s-proposal-ii",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-cn-2186",
+          "title": "SCP-CN-2186",
+          "url": "https://scp-jp.wikidot.com/scp-cn-2186",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-cn-2632",
+          "title": "SCP-CN-2632",
+          "url": "https://scp-jp.wikidot.com/scp-cn-2632",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-cn-2874",
+          "title": "SCP-CN-2874",
+          "url": "https://scp-jp.wikidot.com/scp-cn-2874",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-cn-3615",
+          "title": "SCP-CN-3615",
+          "url": "https://scp-jp.wikidot.com/scp-cn-3615",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-cn-3804",
+          "title": "SCP-CN-3804",
+          "url": "https://scp-jp.wikidot.com/scp-cn-3804",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-6874",
+          "title": "SCP-6874",
+          "url": "https://scp-jp.wikidot.com/scp-6874",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-7212",
+          "title": "SCP-7212",
+          "url": "https://scp-jp.wikidot.com/scp-7212",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-zh-981",
+          "title": "SCP-ZH-981",
+          "url": "https://scp-jp.wikidot.com/scp-zh-981",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "world-enough-and-time-jp",
+          "title": "財団職員のためではない地球史入門",
+          "url": "https://scp-jp.wikidot.com/world-enough-and-time-jp",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "jouigokan-jp",
+          "title": "上位互換と下位存在",
+          "url": "https://scp-jp.wikidot.com/jouigokan-jp",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sian628artwork11",
+          "title": "幻に溺れて、求めて。",
+          "url": "https://scp-jp.wikidot.com/sian628artwork11",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "makuwayurika-s-proposal",
+          "title": "真桑友梨佳の提言",
+          "url": "https://scp-jp.wikidot.com/makuwayurika-s-proposal",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "find-a-corpse",
           "title": "真桑友梨佳を探せ",
           "url": "https://scp-jp.wikidot.com/find-a-corpse",
@@ -3859,6 +4286,27 @@
           "role": "primaryArticle",
           "os": 60,
           "desc": "チームコンテスト2023 銅賞 SCP-3823-JPは20██/██/██に自殺した真桑友梨佳氏の死体です。死亡場所は氏の居住していた学生用アパートであり、死因は……"
+        },
+        {
+          "id": "corpse-corpus-artwork-kaido",
+          "title": "コウプス・コウパスのアートワーク",
+          "url": "https://scp-jp.wikidot.com/corpse-corpus-artwork-kaido",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "shu-den5comedream",
+          "title": "収デン5 展示物&グッズ",
+          "url": "https://scp-jp.wikidot.com/shu-den5comedream",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "sian628artwork5",
+          "title": "原作",
+          "url": "https://scp-jp.wikidot.com/sian628artwork5",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -3901,7 +4349,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -3939,6 +4388,13 @@
           "role": "primaryArticle",
           "os": 23,
           "desc": "題: 勿死於影─走影之章─ 著: 2MeterScale 年: 2024 橫濱、山手、中華街。開国の折から外国人を押し込めていたその場所は、いまやすべてを呑み込む龍のごとく膨れ上がっていた。無理な増改築が繰り返され、中華街の天辺は橫濱貫天閣ランドマークタワーを超えてしまった。 単一の建物というわけではない。複数の鉄筋コンクリートの小部屋が、アモルファスめいたケオスの構造を作っているのだ。無垢なる魂が一度ここに迷い込んでしまえば最後、中華街はその魂を捉えて離さない。 大通りこそは観光客と、観光客向けの飲食店で賑わって…"
+        },
+        {
+          "id": "insomnianemu-art",
+          "title": "眠れない夜の為のアートワーク集",
+          "url": "https://scp-jp.wikidot.com/insomnianemu-art",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -3981,7 +4437,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -4010,6 +4467,28 @@
           "role": "primaryArticle",
           "os": 84,
           "desc": "SCP-1557-JP-Aは船渠を備えた臨時サイト-81██に収容されます。臨時サイト-81██は海洋調査研究施設に偽装し、警備員の配置によって一般人の接触を阻止します。SCP-1557-JP-Bとの協定のため、協定に従った食料支援物資を定期的にSCP-1557-JP-Aのブリッジに配置します。"
+        },
+        {
+          "id": "the-tale-of-the-great-bushdog",
+          "title": "グレートブッシュドッグ王国のおはなし",
+          "url": "https://scp-jp.wikidot.com/the-tale-of-the-great-bushdog",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "meet-henry",
+          "title": "入国審査の裏側で(SCP-1775-JPイラスト)",
+          "url": "https://scp-jp.wikidot.com/meet-henry",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "gbd-immigration-stamp",
+          "title": "グレートブッシュドック王国 出入国証印",
+          "url": "https://scp-jp.wikidot.com/gbd-immigration-stamp",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -4052,7 +4531,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -4090,6 +4570,14 @@
           "role": "primaryArticle",
           "os": 68,
           "desc": "信号の押ボタンの上に、黒い手帳が置いてあるのを見かけた。 帰りの夜道を自転車で駆けていた時の事だった。目の前の青信号はもう点滅し始めていて、私は手帳を拾うことなく通り過ぎた。"
+        },
+        {
+          "id": "hannyahara-9",
+          "title": "11月祭、京都大学SCP同好会を訪ねて",
+          "url": "https://scp-jp.wikidot.com/hannyahara-9",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "af2025-renerd-vs-snowy",
@@ -4175,7 +4663,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -4197,6 +4686,14 @@
           "desc": "フォント: 明朝体 フォント: ゴシック体 文字サイズ: デフォルト 文字サイズ: 最小 文字サイズ: 極小 文字サイズ: 小 文字サイズ: やや小"
         },
         {
+          "id": "kamiyotsugi-zyo-3",
+          "title": "序三話 - 『依頼』",
+          "url": "https://scp-jp.wikidot.com/kamiyotsugi-zyo-3",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "kamiyotsugi-hon-1",
           "title": "本一話 - 『富多楽豊会』",
           "url": "https://scp-jp.wikidot.com/kamiyotsugi-hon-1",
@@ -4204,6 +4701,14 @@
           "role": "primaryArticle",
           "os": 23,
           "desc": "フォント: 明朝体 フォント: ゴシック体 文字サイズ: デフォルト 文字サイズ: 最小 文字サイズ: 極小 文字サイズ: 小 文字サイズ: やや小"
+        },
+        {
+          "id": "kamiyotsugi-hon-2",
+          "title": "本二話 - 『祖谷』",
+          "url": "https://scp-jp.wikidot.com/kamiyotsugi-hon-2",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -4246,7 +4751,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -4313,6 +4819,14 @@
           "desc": "「こんな眺めるだけの仕事してもなって思うよな」 「座布田です。いえ、そんな事は……」 偉いな、俺がその立場だったら滅茶苦茶思うけどな、と言いながら漆原さんが俺の隣に立つ。正直思わない事はないが、思った所でどうしようもない事は思わない事と同義である。"
         },
         {
+          "id": "food-storage-worker-zabuta",
+          "title": "食材庫アルバイター座布田",
+          "url": "https://scp-jp.wikidot.com/food-storage-worker-zabuta",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "metahumantaxi",
           "title": "METAHUMAN TAXI",
           "url": "https://scp-jp.wikidot.com/metahumantaxi",
@@ -4375,9 +4889,18 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
+        {
+          "id": "scp-3554-jp-ex",
+          "title": "SCP-3554-JP-EX",
+          "url": "https://scp-jp.wikidot.com/scp-3554-jp-ex",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
         {
           "id": "scp-3664-jp",
           "title": "Dは\"夢見Dreamer\"のDじゃない",
@@ -4404,6 +4927,14 @@
           "role": "primaryArticle",
           "os": 30,
           "desc": "SCP-3856-JP-Dの遺体はサイト-885の墓地に埋葬されています。 説明（アーカイブ済）: SCP-3856-JPは1953/12/24生まれのコーカソイド男性、ダニール・ライトです。 主な特異性として、SCP-3856-JPはほぼ完全と言える程度の記憶保持特性を有しています。これに付随して、SCP-3856-JPは記憶影響・ミーム汚染・精神影響に対するクラスV相当の耐性を獲得しています。これら特異性の起源は判明していません。"
+        },
+        {
+          "id": "kankan-s-proposal-ii",
+          "title": "KanKanの提言II",
+          "url": "https://scp-jp.wikidot.com/kankan-s-proposal-ii",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         }
       ],
       "supplementLinks": [],
@@ -4446,7 +4977,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -4457,6 +4989,14 @@
           "role": "primaryArticle",
           "os": 136,
           "desc": "SCP-4100-JPの周囲50 mは封鎖し、常時2名の警備員と2台の巡視ドローン、及び複数の監視カメラで監視を行います。巡視ドローンと監視カメラには認識災害スクリーニング装置が導入されます。接近する人物にはカバーストーリー\"不安定な地盤\"を説明し退去させます。 実験時以外では、いかなる状況でも封鎖区域内に進入してはなりません。万が一予期せぬ進入が発生した場合、救助の試みは行われません。ただし、該当人物が自発的に脱出を試みて封鎖境界に帰還した場合は回収します。 [以降はクリアランスレベル2/4100-JPを有する職…"
+        },
+        {
+          "id": "hazamanotamariba",
+          "title": "終身名誉自サツ志願者",
+          "url": "https://scp-jp.wikidot.com/hazamanotamariba",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "never-be-a-hero",
@@ -4577,7 +5117,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -4617,6 +5158,14 @@
           "desc": "暗い夜道を歩く。今日の業務も無事に終了し帰宅したのだが、急用ということでまた仕事場へととんぼ返りとなった。同僚がとある理由から収容されることとなり、部隊の隊員たちは疲弊しきっている。隊員たちのケアもしなければならないし、なにより同僚だった彼のメンタルも心配だ。彼の担当研究員となったまではいいのだが、彼を救うべき手立ては未だ見つからない。そんなこともあり私自身もボロボロになっていた矢先に呼び戻されるような事態だ。本当についてない。"
         },
         {
+          "id": "i-lost-something",
+          "title": "探し物は何ですか",
+          "url": "https://scp-jp.wikidot.com/i-lost-something",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "hikaritokage",
           "title": "光源の里のシャドウ",
           "url": "https://scp-jp.wikidot.com/hikaritokage",
@@ -4642,6 +5191,14 @@
           "role": "primaryArticle",
           "os": 52,
           "desc": "拝啓 栗花落 海祢様 こちらは夏の到来を感じさせる暑さが、じめじめとした湿気とともに訪れています。鳴蝉博士がアミと虫かごを持って出掛けるには、もう少しかかりそうといった塩梅です。 そちらは如何お過ごしでしょうか？灼熱か極寒のどちらなのか、私にはわかりかねますが、健やかであるようにお祈り申し上げます。 このお手紙を書いている時に、去年の今頃に二人で海に行ったことを思い出していました。あれは私にとってかけがえのない思い出です。童心に帰って、年甲斐もなくはしゃいでしまいました。貴女があまり楽しそうではなかったのが残念です…"
+        },
+        {
+          "id": "project-shinkon-san-2020",
+          "title": "シンコンサン計画, 2020",
+          "url": "https://scp-jp.wikidot.com/project-shinkon-san-2020",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
         },
         {
           "id": "creed-and-greed-traitor",
@@ -4840,9 +5397,25 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
+        {
+          "id": "manhattan-crisis-fake-movie",
+          "title": "MANHATTAN CRISIS MOVIE PORTAL",
+          "url": "https://scp-jp.wikidot.com/manhattan-crisis-fake-movie",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "koigarezaki-news-911-1998-ver",
+          "title": "マンハッタン次元崩落 GOC介入目前か",
+          "url": "https://scp-jp.wikidot.com/koigarezaki-news-911-1998-ver",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
         {
           "id": "september-eleven-prequel",
           "title": "狂騒序曲",
@@ -4898,6 +5471,14 @@
           "desc": "2001年 9月12日 ニューヨーク セントラルパーク バリー・コスター巡査部長/エクソシスト 11日に始まったニューヨークの次元災害はいまや最悪の事態に移行しつつあった。災害対策マニュアルに基づき設置されたセントラルパークの避難所は悪魔の群れに囲まれ、息もつかせぬ攻防戦が続いている。"
         },
         {
+          "id": "testimony-by-fellowcraft-shaula",
+          "title": "職人シャウラの証言, 2001/9/11",
+          "url": "https://scp-jp.wikidot.com/testimony-by-fellowcraft-shaula",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "annihilation-of-site-28",
           "title": "サイト-28、燼滅せり",
           "url": "https://scp-jp.wikidot.com/annihilation-of-site-28",
@@ -4905,6 +5486,44 @@
           "role": "primaryArticle",
           "os": 47,
           "desc": "光源のない暗闇の下、“工事現場”の建物のキッチンの隅に隠れてからどれだけの時間が経ったのか、ハンスにはもはや確かめることはできなかった。自分の隣で共に震えている妻と一人息子、そして同じく狭い部屋の中に押し込められた家族がもう2組、それらが彼の心の支えの半分であった。事件の発生からおそらく2日半ほどの時間が過ぎており、それでも自分と愛する家族たちとがどうにか命を繋いでこれていることを、この上ない幸運なことであるとも理解していた。"
+        },
+        {
+          "id": "sc-99-734-01-506",
+          "title": "SC-99/734-01/506",
+          "url": "https://scp-jp.wikidot.com/sc-99-734-01-506",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "uiu-file-2001-745",
+          "title": "UIUファイル: 2001-745",
+          "url": "https://scp-jp.wikidot.com/uiu-file-2001-745",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "special-911-memorial-exhibition",
+          "title": "映画『MANHATTAN CRISIS』美術画集 特別展",
+          "url": "https://scp-jp.wikidot.com/special-911-memorial-exhibition",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "kte-1221-parallax-nacl-carcinoma",
+          "title": "KTE-1221-Parallax-NACL-Carcinoma",
+          "url": "https://scp-jp.wikidot.com/kte-1221-parallax-nacl-carcinoma",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "new-york-minute-hub",
+          "title": "マンハッタンクライシス: ニューヨーク・ミニット ハブ",
+          "url": "https://scp-jp.wikidot.com/new-york-minute-hub",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -4955,7 +5574,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -5020,6 +5640,21 @@
           "role": "primaryArticle",
           "os": 20,
           "desc": "【10:37 サイト-81██ 居住房】 俺 ここではD-1028という番号で管理されている は、部屋の何処へ向けるでもなく溜息をついた。 ただただ窮屈だったのだ。全てはスシブレードに出会ってから変わった。良い方にも、悪い方にも。元より使い捨ての駒であるはずのDクラス職員である俺の待遇が少しだけ良くなった。しかし、スシブレード以外の任務に駆り出されなくなり、扱いも丁重と言うよりは厳重と言う言葉が似合うようになった。それに少し太ったかもしれない。まあ、4人1組のDクラス房からいつの間にか消えていたあいつよりはマシなの…"
+        },
+        {
+          "id": "yamizushi-madscience-878",
+          "title": "闇寿司開発記No.878 \"制空権の握り\"",
+          "url": "https://scp-jp.wikidot.com/yamizushi-madscience-878",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "uksvg-jp",
+          "title": "ukwhatnのSVGアートワーク - JP",
+          "url": "https://scp-jp.wikidot.com/uksvg-jp",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -5070,7 +5705,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -5144,6 +5780,20 @@
           "role": "primaryArticle",
           "os": 26,
           "desc": "その夏の夜は、いっとう賑やかな様子でありました。 父も、母も、近所に住む秤屋の爺も、茶売りの丁壮あにさまも。みなが大いに笑い、酒を飲み、お囃子の音色が一体に響く。その日はどこに行っても提灯が吊るされていて、今が夜だというのが信じられないほどに辺りは明るく照らされていました。 いつ作ったものか、村のまんなかには大きな台が組まれていて、その周りは特にきらきら光っているのです。その上で、かりん、かりん、きらびやかな音を立てる鈴を持って、姉様方が舞う。お着物がふわりと跳ねるようになびく度に、とりどりの布がそれは綺麗にゆらめ…"
+        },
+        {
+          "id": "shionome4ono-art-1",
+          "title": "【祭り会場 \"█████\"屋台】",
+          "url": "https://scp-jp.wikidot.com/shionome4ono-art-1",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "aw-5",
+          "title": "「お祭り、たのしい？」",
+          "url": "https://scp-jp.wikidot.com/aw-5",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         },
         {
           "id": "case-n-operation-sugar-sun-1",
@@ -5221,7 +5871,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -5291,7 +5942,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -5302,6 +5954,14 @@
           "role": "primaryArticle",
           "os": 7,
           "desc": "SCP-1593-JP内は常に監視/警備されます。SCP-1593-JP内の変化は内部に駐留中の職員が記録し、レベル2文書としてアーカイブされます。 更新: 現在、この収容プロトコルは適応されていません。"
+        },
+        {
+          "id": "falsehood-s-proposal",
+          "title": "Amaryllis-en-Grappeの提言",
+          "url": "https://scp-jp.wikidot.com/falsehood-s-proposal",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         },
         {
           "id": "tanntei-yuurei-to",
@@ -5370,9 +6030,18 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
+        {
+          "id": "record-heisei-29-578",
+          "title": "東京都地下鉄網現実分離事件 第一次捜査報告書",
+          "url": "https://scp-jp.wikidot.com/record-heisei-29-578",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
         {
           "id": "tokyometro-complex",
           "title": "ランピーター記録課エントリ: トーキョーメトロ・コンプレックス",
@@ -5437,6 +6106,14 @@
           "desc": "新宿地下通路、地上への道が絶たれて数日。蛍光灯が点滅する空間。歪み切った空間。誰もが隣人を信じず、今日の飯と寝床を追い求める空間。 喧騒と狂乱の中、ブティックの中で音を確かめる。チューニングは耳頼り、ギターは年季の入った安物、アンプは粗大ゴミ直前。それでも。寒色系の婦人服を蹴飛ばして空いたスペースに機材を並べ、マイクを握った。"
         },
         {
+          "id": "grant-request-for-the-underground-artificial-sun",
+          "title": "地下東京における人工太陽製造のための認可計画(第88稿)",
+          "url": "https://scp-jp.wikidot.com/grant-request-for-the-underground-artificial-sun",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
           "id": "chikatoukyoushinwa",
           "title": "地下東京神話",
           "url": "https://scp-jp.wikidot.com/chikatoukyoushinwa",
@@ -5489,6 +6166,21 @@
           "role": "primaryArticle",
           "os": 54,
           "desc": "SCP財団とは FAQ サイトルール ライセンスガイド サイトへの参加を希望される方へ"
+        },
+        {
+          "id": "absolute-requirement-for-dawn",
+          "title": "夜明けを見るための絶対条件",
+          "url": "https://scp-jp.wikidot.com/absolute-requirement-for-dawn",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat"
+        },
+        {
+          "id": "soya-001-logo-art-02",
+          "title": "SOYA-001によるSCPで使われている/使える（かも知れない）SVGロゴ集",
+          "url": "https://scp-jp.wikidot.com/soya-001-logo-art-02",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle"
         }
       ],
       "supplementLinks": [],
@@ -5522,7 +6214,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -5610,7 +6303,8 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json"
       },
       "primaryArticles": [
         {
@@ -5713,15 +6407,6 @@
           "desc": "鋭い鳥の鳴き声がしたと思った。 実際のところは計器の警告音だ。掌に収まるほどの銀色の直方体は、見方によってはライターによく似ている。ミュートしても赤いランプの点滅が止まることはない。どうせサイト中で真っ赤な警告灯が点滅しているのだから、大した視認効果もありはしないが。電源は数分前に非常電源に切り替えられ、廊下はどこもかしこも薄暗い。俺達ふたりの影だけが廊下を舐めるように伸びている。"
         },
         {
-          "id": "eve-aic-part-thirteen",
-          "title": "#13 散輪は語らず",
-          "url": "https://scp-jp.wikidot.com/eve-aic-part-thirteen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "os": 12,
-          "desc": "結婚指輪はずっと前から私の体温と同じ暖かさを持っていて、つけている感覚はない。それが重く感じられるようになったのは娘が死んでからだ。ただ、そもそもこのまるい金属の意味は少し普通と違っていた。誰にとって？ もちろん、私達二人にとってだ。"
-        },
-        {
           "id": "eve-aic-part-fourteen",
           "title": "#14 湿砂を踏んで",
           "url": "https://scp-jp.wikidot.com/eve-aic-part-fourteen",
@@ -5729,6 +6414,15 @@
           "role": "primaryArticle",
           "os": 4,
           "desc": "まずは端的に、サイト-82は地獄と化した。 私は入院着で夜の海辺を歩いていた。点滴こそ引き連れてはいないものの、全く歩きにくくて仕方がないのは私の身体のせいだろう。まだこの肉の寄せ集めは急ごしらえもいいところだ。"
+        },
+        {
+          "id": "eve-aic-part-thirteen",
+          "title": "#13 散輪は語らず",
+          "url": "https://scp-jp.wikidot.com/eve-aic-part-thirteen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 12,
+          "desc": "結婚指輪はずっと前から私の体温と同じ暖かさを持っていて、つけている感覚はない。それが重く感じられるようになったのは娘が死んでからだ。ただ、そもそもこのまるい金属の意味は少し普通と違っていた。誰にとって？ もちろん、私達二人にとってだ。"
         }
       ],
       "supplementLinks": [],
@@ -5761,9 +6455,172 @@
         "manifest_tales"
       ],
       "memberResolution": {
-        "mode": "tagReverseLookup"
+        "mode": "tagMapReverseLookup",
+        "tagSource": "jp_tag.json",
+        "officialHubSupplementIDs": [
+          "gannba-junann",
+          "gannba-junann2",
+          "gannba-junann3",
+          "gannba-junann4",
+          "gannba-junann5",
+          "gannba-junann6",
+          "gannba-junann7",
+          "gannba-junann8",
+          "gannba-junann9",
+          "scp-1019-jp",
+          "scp-1113-jp",
+          "scp-1035-jp",
+          "scp-1703-jp",
+          "scp-2389-jp",
+          "scp-2776-jp",
+          "scp-3039-jp"
+        ]
       },
       "primaryArticles": [
+        {
+          "id": "gannba-junann",
+          "title": "岩場(がんば)博士の受難",
+          "url": "https://scp-jp.wikidot.com/gannba-junann",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 16,
+          "desc": "人は何故「恐怖」するのか。そんな疑問がふと彼の頭に浮かんだ。 目の前にある廊下の先には、もう既に消灯時間を過ぎているがために生まれた延々と続く闇が鎮座している。"
+        },
+        {
+          "id": "gannba-junann2",
+          "title": "死地送りの岩場(がんば)",
+          "url": "https://scp-jp.wikidot.com/gannba-junann2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 19,
+          "desc": "「異動なんだって？」 喫煙室内で煙草をふかしている新垣に、同僚が話しかけた。 「……左遷だよ。」 「おいおい、そんな悲観的な物言いはよせよ。」"
+        },
+        {
+          "id": "gannba-junann3",
+          "title": "岩場(がんば)博士の友人",
+          "url": "https://scp-jp.wikidot.com/gannba-junann3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 17,
+          "desc": "「ここに魚はいないんじゃないですかね。」 橋架下の河川敷にて、お手製の釣竿を用いて食料調達に勤しんでいる男に岩場は話しかけた。その相手は見るからに世捨て人という風貌で、土と煤で汚れた青色のジャージと所々が敗れている野球帽を身にまとい、顔には昔ながらの大きな黒縁メガネがかけられている。なお、メガネの左側に位置するつなぎ目は既に破損しており、それをセロテープで応急修理している状態だ。"
+        },
+        {
+          "id": "gannba-junann4",
+          "title": "ファミリーレストランの怪",
+          "url": "https://scp-jp.wikidot.com/gannba-junann4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8,
+          "desc": "濵﨑ミアムは、一向に自分達の所に来ない店員に内心苛立ちを覚えていた。向いに座る諸刃リンは、片手で操作するスマートフォン越しにその様子を見ている。それは決して、彼女を諭そうなどと考えている面持ちではなくいつ濵﨑が憤慨し暴れまわるのかを待ちわびている、そんなにやけ顔だ。"
+        },
+        {
+          "id": "gannba-junann5",
+          "title": "岩場(がんば)博士と音",
+          "url": "https://scp-jp.wikidot.com/gannba-junann5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 22,
+          "desc": "「おとさまーあれやってー」 何者も存在しない筈の地下道内にて、齢5つを迎えたばかりの童の声が響く。 「はいはい。分かりましたよ」 そう言いながら、いつも着ている筈の白衣を脱ぎ捨てた1人の男が己の顔に手をやった。男の名は織戸態おとさまと言い、日頃は形を持たぬ生き物の研究を進める科学者の端くれである。"
+        },
+        {
+          "id": "gannba-junann6",
+          "title": "透明スーツの怪",
+          "url": "https://scp-jp.wikidot.com/gannba-junann6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5,
+          "desc": "「あの～、世俗まみれさんで、良かったですよね？」 寂れた喫茶店の店内に設置してある椅子に腰を下ろしている最中、背後から不意に声を掛けられた。"
+        },
+        {
+          "id": "gannba-junann7",
+          "title": "岩場(がんば)博士と宿敵",
+          "url": "https://scp-jp.wikidot.com/gannba-junann7",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10,
+          "desc": "霊実体の研究部門、そこで働く研究者に割り当てられた専用部屋から岩場がんばが慌ただしく出て来た。その手には、半ばファイルから零れ落ちそうにはみ出している書類の束の端が見え隠れしており、それを抱える岩場は何とかそれらをまともな形に戻そうと躍起になっている。ほぼ中腰のままで行われるその行為は、他者から見れば確実に情けの無い姿に映る事だろう。"
+        },
+        {
+          "id": "gannba-junann8",
+          "title": "岩場(がんば)博士と報復",
+          "url": "https://scp-jp.wikidot.com/gannba-junann8",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 10,
+          "desc": "当初より、そこまで活気にあふれている訳では無かった霊実体研究部門の門戸ではあったが、ここ最近はいつにもまして静寂に包まれていた。 と言うのも、この研究部門の長である岩場がんば勝俊が姿を消して早2週間が経過していたからだ。"
+        },
+        {
+          "id": "gannba-junann9",
+          "title": "岩場(がんば)博士と佐久間",
+          "url": "https://scp-jp.wikidot.com/gannba-junann9",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7,
+          "desc": "「岩場がんば君て、ほんと真面目だよね」 彼の所属するゼミの教室にて、向かいに座る佐久間 洋子はそう宣った。 今も岩場は、彼女が形容したように黙々とノートに何かを書き記しており、どう揶揄されようとその手を動かし続けている。そんな彼とは対照的に佐久間の状態は、まるで己の腕を枕にする様に自身の頬をそこに載せ、上目遣いながらに岩場の顔を見つめてた。"
+        },
+        {
+          "id": "scp-1019-jp",
+          "title": "██県 ███市 ██町2丁目へ-9",
+          "url": "https://scp-jp.wikidot.com/scp-1019-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle",
+          "os": 241,
+          "desc": "SCP-1019-JPの影響下にある家屋は財団が管理する不動産会社に偽装された管理施設にて監視されます。対象は現在エージェント・ポットの所有物であると偽装されており、一般人が購入するのを防止しています。 内部はカント計数機と20台の監視カメラを設置したうえで監視されます。 Dクラス職員を起用した実験を行う場合は主任研究員の岩場博士の許可を得たうえで行ってください。 2000年現在、Dクラス職員を起用した実験は全て凍結されています。"
+        },
+        {
+          "id": "scp-1113-jp",
+          "title": "「二回目」",
+          "url": "https://scp-jp.wikidot.com/scp-1113-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle",
+          "os": 41,
+          "desc": "SCP-1113-JPはサイト-8155の低脅威度ロッカーに収容されています。無断でSCP-1113-JPを使用することは禁止されています。実験に参加する職員は全員が女性で構成され、男性職員の接触は認められません。しかし、実験に参加するDクラス職員は例外となります。 SCP-1113-JPの影響下にあるDクラス職員には専用の居住室が与えられ、内部は24時間体制で監視されます。対象の通常業務は継続される為、Dクラス職員には経過報告を目的とした自己報告用のレコーダーを配布してください。もしDクラス職員が自傷行為や鏡、ガ…"
+        },
+        {
+          "id": "scp-1035-jp",
+          "title": "闇",
+          "url": "https://scp-jp.wikidot.com/scp-1035-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle",
+          "os": 75,
+          "desc": "SCP-1035-JPの扉は財団が家屋内に設置した3台の投光器によって24時間照らされます。SCP-1035-JPの周囲環境は300lx以上の状態を維持してください。家屋内部には停電などを考慮し予備電源が併設されます。電球の交換の際は予備の投光器でSCP-1035-JPを照らしながら行ってください。 家屋内部にはセキュリティ担当者を3名常住させ、非常時は機動部隊こ-111が出動します。 SCP-1035-JPが設置されている家屋や土地は法的にはエージェント・ポーラが所有しており、家主に扮した上での近隣住人に対する偽…"
+        },
+        {
+          "id": "scp-1703-jp",
+          "title": "1万3047本目の東京タワー",
+          "url": "https://scp-jp.wikidot.com/scp-1703-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle",
+          "os": 63,
+          "desc": "SCP-1703-JPの出現地点は24時間体制で監視され、日本電波塔の職員に変装した機動部隊き-112が現地での収容体制を維持します。SCP-1703-JPの出現が確認された場合、担当職員は日本電波塔内に存在している人間を現地から速やかに退去させてください。これらの活動はSCP-1703-JPの消失が確認されるまで継続し、消失が確認されてから30分待機した後に警戒を解除してください。 もし電波塔内に一般人が侵入した場合、SCP-1703-JPの消失が確認されるまで待機した後に速やかに対象人物を確保してください。その…"
+        },
+        {
+          "id": "scp-2389-jp",
+          "title": "うしろ",
+          "url": "https://scp-jp.wikidot.com/scp-2389-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle",
+          "os": 34,
+          "desc": "SCP-2389-JPが観測される家屋は不動産業者に偽装した財団フロント企業の管理下に置かれ、記録上はエージェント・佐伯が所有しています。1999年現在、Dクラス職員を起用した実験は岩場博士の許可を得た上で行ってください。職員による家屋内部への侵入も制限されています。 家屋内部は監視カメラを用いて24時間体制で監視され、内部調査の際は遠隔用ロボットを起用し実施してください。 現在、該当家屋周辺には空間固定用のスクラントン現実錨が設置されており、行方不明となっている過去の居住者23名の捜索と並行して実験記録2389-…"
+        },
+        {
+          "id": "scp-2776-jp",
+          "title": "特例消失事案2776-JP",
+          "url": "https://scp-jp.wikidot.com/scp-2776-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle",
+          "os": 19,
+          "desc": "SCP-2776-JPはサイト-81██の低危険度収容ロッカーに収容されます。 SCP-2776-JPの異常性拡大の観点から、 現在対象オブジェクトは内部に3台の監視カメラを設置した防音処理済みの専用収容区画にて管理・収容されています。無許可のSCP-2776-JPへの接触および電源ケーブルの接続は原則禁止されます。実験の際は防音用のヘッドセットを着用した上で作業してください。 確保したSCP-2776-JP-Aは各専用医療区画に収容し、声紋分析と経過状況の記録を行ってください。SCP-2776-JP-Aの容体が急…"
+        },
+        {
+          "id": "scp-3039-jp",
+          "title": "おと",
+          "url": "https://scp-jp.wikidot.com/scp-3039-jp",
+          "sourceManifest": "manifest_scp-jp",
+          "role": "primaryArticle",
+          "os": 24,
+          "desc": "SCP-3039-JPの存在する地下道は財団が管理し、出入り口部分は一部の開閉可能な機構を設置したうえで埋め立てられます。市役所職員や関係者、地域住人へは情報操作と記憶処理を施したうえで隠蔽を行ってください。 該当地点付近には交通監視署に偽装した監視施設を配置し、地下道内部は4台の監視カメラと音感知装置によって24時間体勢で監視されます。 地下道内部へは1か月に1回給餌の為に5羽の鶏を投入してください。現在、SCP-3039-JPの知能レベルの向上が確認されているため、経過観察とインタビューが継続されています。イン…"
+        },
         {
           "id": "scp-4064-jp",
           "title": "蟲向けタクシー",
