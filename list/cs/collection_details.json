@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786193950,
-  "generatedAt": "2026-08-08T12:59:10Z",
-  "chunkRevision": "sha256-7d15783f47828227ce0f0f90a787f8aed18156d3e4b0d34ee0a8c9d608db76db",
+  "listVersion": 1786202055,
+  "generatedAt": "2026-08-08T15:14:15Z",
+  "chunkRevision": "sha256-faecd0bb11e583920fd248f08bd40f52c254f7f917e49ac4810b22dde1c3af8f",
   "builtFrom": {
     "manifests": [
       {
@@ -144,6 +144,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-75490914de7854f6ec62eced88cc31c0799c3f6b00e32e37ba7d0ab64446fd20"
       },
       "primaryArticles": [
@@ -298,6 +301,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-26804598b16cc97327aa6e87c95ff0b756b847bc07b120f85d5ca41aa83d51ae"
       },
       "primaryArticles": [
@@ -556,6 +562,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-a8552481d0a29f923d60d1e3a431b8c4ce4ff95cf33fefb847a9c508c76581e4"
       },
       "primaryArticles": [
@@ -1177,6 +1186,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-f0d61d570ca458f0c15f343890ed381b09e6fedbfeb4b3057a8d5b16ae081d0a"
       },
       "primaryArticles": [
@@ -1307,6 +1319,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-e12aa94577cb8be30349ef37673c9e0c2c1e8f24c9d10fee133750217e036b02"
       },
       "primaryArticles": [
@@ -1552,6 +1567,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-a68e78135e99b89e68f68ea6c48cf7ed9e7a9c7ae2132c44cd5407d1fff49325"
       },
       "primaryArticles": [
@@ -2212,6 +2230,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-07a832389d6153830b842011f58f013186941c714eeff7499dbce7a53950cc30"
       },
       "primaryArticles": [
@@ -2332,6 +2353,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-61ded44463bbe3f13c0ce4e8e3955709546a30c1a1599bcfad8266d70c0aeca0"
       },
       "primaryArticles": [
@@ -2551,6 +2575,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-2c8f198f87f14247d842e64c35ad6d43e7ec828a8303e40eac574468b8d17109"
       },
       "primaryArticles": [
@@ -2969,6 +2996,9 @@
           "Справка"
         ],
         "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
         "structureHash": "sha256-7221f99ccaa36a269f9b215d083f68a916a64a60abf8004b5488defbe680841e"
       },
       "primaryArticles": [
@@ -7312,14 +7342,254 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-b53302eda8b3eed2eff7ca409bfdfb9340f2fdb95fc3da5cce2a8eac51511d81"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "unreality-orientation",
+          "title": "Odpoledne (orientace Oddělení Nereality)",
+          "url": "http://scp-cs.wikidot.com/unreality-orientation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Odpoledne (orientace Oddělení Nereality) Originál: http://scp-wiki.net/unreality-orientation Autor: Fishish Překladatel: DrCheems"
+        },
+        {
+          "id": "your-imaginary-friend",
+          "title": "Tvůj Imaginární Kamarád",
+          "url": "http://scp-cs.wikidot.com/your-imaginary-friend",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Tvůj Imaginární Kamarád Originál: http://scp-wiki.net/your-imaginary-friend Autor: Fishish Překladatel: DrCheems"
+        },
+        {
+          "id": "something-glowing",
+          "title": "Něco Zářícího",
+          "url": "http://scp-cs.wikidot.com/something-glowing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Něco Zářícího Originál: http://scp-wiki.net/something-glowing Autor: Deadly Bread Překladatel: Docked"
+        },
+        {
+          "id": "the-castaway-from-unreality",
+          "title": "Vyvrhel z Nereality",
+          "url": "http://scp-cs.wikidot.com/the-castaway-from-unreality",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Vyvrhel z Nereality Originál: http://scp-wiki.net/the-castaway-from-unreality Autor: Fishish Překladatel: Docked"
+        },
+        {
+          "id": "its-not-real-it-never-was-you-pathetic-fools",
+          "title": "Není to Skutečné, a Nikdy Nebylo, vy Ubozí Blázni",
+          "url": "http://scp-cs.wikidot.com/its-not-real-it-never-was-you-pathetic-fools",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Není to Skutečné, a Nikdy Nebylo, Vy Ubozí Blázni Originál: http://scp-cs.wikidot.com/its-not-real-it-never-was-you-pathetic-fools Autor: Fishish Překladatel: Docked"
+        },
+        {
+          "id": "scp-6208",
+          "title": "Amnésie bylo její jméno",
+          "url": "http://scp-cs.wikidot.com/scp-6208",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Instance SCP-6208 musí být označeny jako neanomální a zamknuty. Nadační personál musí být informován o existenci Oddělení Nereality SCP Nadace."
+        },
+        {
+          "id": "scp-6938",
+          "title": "Alex Thorley Dostává Darovaného Koně",
+          "url": "http://scp-cs.wikidot.com/scp-6938",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-6938 je sebe-zadržující. Personál Oddělení Nereality, kterému bylo povoleno vystavení SCP-6938, by měl kontaktovat vedoucí projektu, Jane Doe."
+        },
+        {
+          "id": "haunt-me",
+          "title": "Straš mě, Straš mě, Straš mě",
+          "url": "http://scp-cs.wikidot.com/haunt-me",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Straš mě, Straš mě, Straš mě Originál: http://scp-wiki.net/haunt-me Autor: Fishish Překladatel: Docked"
+        },
+        {
+          "id": "disintegration",
+          "title": "Dezintegrace",
+          "url": "http://scp-cs.wikidot.com/disintegration",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Dezintegrace Originál: http://scp-wiki.net/disintegration Autor: Fishish Překladatel: Docked"
+        },
+        {
+          "id": "burger",
+          "title": "Alex Thorley zajde na burger",
+          "url": "http://scp-cs.wikidot.com/burger",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Alex Thorley zajde na burger Originál: https://scp-wiki.wikidot.com/burger Autor: syuzhet Překladatel: chamik"
+        },
+        {
+          "id": "bagel",
+          "title": "Alex Thorley má Chuť na Bagel",
+          "url": "http://scp-cs.wikidot.com/bagel",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "NEPŘELOŽENO"
+        },
+        {
+          "id": "scp-6478",
+          "title": "Ne Demence - Je to něco jiného",
+          "url": "http://scp-cs.wikidot.com/scp-6478",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Incidenty SCP-6478 musí být z archivářských důvodů v souboru zaznamenány a uchovány. Pokud je zjištěno, že subjekt má v držení SCP-6478-1, personál se jej musí pokusit přinutit k jejímu požití. Nepoužité instance SCP-6478-1 musí být zabaveny Farmaceutickým Odd…"
+        },
+        {
+          "id": "scp-7591",
+          "title": "Alex Thorley Zabije Chlapa",
+          "url": "http://scp-cs.wikidot.com/scp-7591",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "N/A"
+        },
+        {
+          "id": "scp-7195",
+          "title": "Alex Thorley Dostane Kočku",
+          "url": "http://scp-cs.wikidot.com/scp-7195",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-7195 je Kočička, domácí kočka neznámého plemena, která někdy navštěvuje kancelář Alexe Thorleyho. Není známo, jak je Kočička schopna lokalizovat a dostat se do fyzické lokace kanceláře, nebo kam chodí, když tam není. ‎‏‏‎ ‎ ‎‏‏ ‎‏‏‎ ‎ ‎ ‎‏‏‎ ‎ ‎‏‏ ‎‏‏‎ ‎‏‏…"
+        },
+        {
+          "id": "scp-502-cs",
+          "title": "Žádný román",
+          "url": "http://scp-cs.wikidot.com/scp-502-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-502-CS je prozatimně zadržováno v nadačním archivu písemnictví v Oblasti-03CS (kde bylo poprvé nalezeno). Dočasnou správu objektu zajišťuje Nadační oddělení jazyka českého (NOJČ), dokud nebude SCP-502-CS převedeno pod správu Oddělení Nereality."
+        },
+        {
+          "id": "scp-125-cs",
+          "title": "Pohledy odnikud",
+          "url": "http://scp-cs.wikidot.com/scp-125-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "SCP-125-CS nesmí být konceptualizováno. SCP-125-CS musí být zadrženo v alespoň čtyřech Cuilech (‽) abstrakce od základní úrovně reality 1 . V absolutních hodnotách se může jednat o lokalitu s měřením zhruba $10^{-4}$ Humů (viz Caldmann-Rzewski, 1981 ), ovšem n…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-kliknete-pro-upravu-textu",
+          "title": "[KLIKNĚTE PRO ÚPRAVU TEXTU]",
+          "articleIDs": [
+            "unreality-orientation",
+            "your-imaginary-friend",
+            "something-glowing",
+            "the-castaway-from-unreality",
+            "its-not-real-it-never-was-you-pathetic-fools",
+            "scp-6208",
+            "scp-6938",
+            "haunt-me",
+            "disintegration"
+          ]
+        },
+        {
+          "id": "02-beh-po-prazdnu",
+          "title": "Běh po prázdnu",
+          "articleIDs": [
+            "burger",
+            "bagel"
+          ]
+        },
+        {
+          "id": "03-pristup-zamitnut",
+          "title": "[PŘÍSTUP ZAMÍTNUT]",
+          "articleIDs": [
+            "scp-6478",
+            "scp-7591",
+            "scp-7195"
+          ]
+        },
+        {
+          "id": "04-mezery-mezi-radky",
+          "title": "Mezery mezi řádky",
+          "articleIDs": [
+            "scp-502-cs",
+            "scp-125-cs"
+          ]
+        }
+      ],
+      "description": "Běh po prázdnu Samostatné příběhy obsahující Oddělení Nereality (jednotné)."
     },
     {
       "id": "scp-cs:collection:series:adventures-in-capitalism-hub",
@@ -7340,14 +7610,73 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-cb9bdd48dcab1885eb60e5c9c2fae3157664dafb814dbc5aa44bb9e3efcf1b6a"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "assistance-for-the-boss-lady",
+          "title": "Asistentka Velké Šéfky",
+          "url": "http://scp-cs.wikidot.com/assistance-for-the-boss-lady",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Asistentka Velké Šéfky Originál: http://scp-wiki.net/assistance-for-the-boss-lady Autor: Djoric se neshoduje se žádným existujícím uživatelským jménem. Překladatel: Utylike"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "assistance-for-the-boss-lady"
+          ]
+        }
+      ],
+      "description": "Místo pro příběhy o Doktorce Isabel Helze Anastasii Parvati Wondertainmentové V., PhD a její věrné asistentce Emmě Aislethorp-Brownové."
     },
     {
       "id": "scp-cs:collection:series:all-that-glisters",
@@ -7368,14 +7697,113 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-4e52d042d5171abfc4a43c6bcf9b3b5bb0f106c8992e101213702fcb2db2bc59"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "the-dark-web-dke79-o2rg5-4jlw6",
+          "title": "'Dark Web' (DKE79/O2RG5/4JLW6)",
+          "url": "http://scp-cs.wikidot.com/the-dark-web-dke79-o2rg5-4jlw6",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "micky-d-s",
+          "title": "Mekáč",
+          "url": "http://scp-cs.wikidot.com/micky-d-s",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Mekáč Originál: https://scp-wiki.wikidot.com/micky-d-s Autor: DrChandra Překladatel: AtlasCZ"
+        },
+        {
+          "id": "text-message-in-a-bottle",
+          "title": "Textovka v Láhvi",
+          "url": "http://scp-cs.wikidot.com/text-message-in-a-bottle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Textovka v Láhvi Originál: http://scp-wiki.net/text-message-in-a-bottle Autor: DrChandra Překladatel: Modular"
+        },
+        {
+          "id": "dread-circuses-hub",
+          "title": "Hrůzy & Cirkusy",
+          "url": "http://scp-cs.wikidot.com/dread-circuses-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Už od svého prvního příběhu zahrnovaly Hrůzy & Cirkusy MC&D poměrně mohutně. Toto postupně přerostlo do vlastní linie, která nyní zahrnuje příběhy, GoI formáty a SCP, která nijak výslovně nezmiňují Zneklidňující Cirkus. Tento hub vznikl, aby tyto MC&D články nebyly roztroušené po celé stránce."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-seznam-predmetu",
+          "title": "Seznam předmětů",
+          "articleIDs": [
+            "the-dark-web-dke79-o2rg5-4jlw6"
+          ]
+        },
+        {
+          "id": "02-testimonialy",
+          "title": "Testimoniály",
+          "articleIDs": [
+            "micky-d-s",
+            "text-message-in-a-bottle"
+          ]
+        },
+        {
+          "id": "03-hlaseni-z-venci",
+          "title": "Hlášení z venčí",
+          "articleIDs": [
+            "dread-circuses-hub"
+          ]
+        }
+      ],
+      "description": "Už od svého prvního příběhu zahrnovaly Hrůzy & Cirkusy MC&D poměrně mohutně. Toto postupně přerostlo do vlastní linie, která nyní zahrnuje příběhy, GoI formáty a SCP, která nijak výslovně nezmiňují Zneklidňující Cirkus. Tento hub vznikl, aby tyto MC&D články nebyly roztroušené po celé stránce."
     },
     {
       "id": "scp-cs:collection:series:antimemetics-division-hub",
@@ -7396,14 +7824,305 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-0b322d82d2ce67c0373f16b9b8df144d38da8d9ae9dc65adfce5a35206c3ded0"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-055",
+          "title": "[Neznámé]",
+          "url": "http://scp-cs.wikidot.com/scp-055",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 10,
+          "desc": "Objekt je držen v místnosti o velikosti pět (5) krát pět (5) krát dva a půl (2.5) metrů postavené z cementu o tloušťce zdí padesát (50) centimetrů, cementové zdi musí obklopovat Faradayova klec. Vstup dovnitř vede skrz těžké zadržovací dveře o velikosti dva (2…"
+        },
+        {
+          "id": "we-need-to-talk-about-fifty-five",
+          "title": "Musíme si promluvit o Padesát-Pětce",
+          "url": "http://scp-cs.wikidot.com/we-need-to-talk-about-fifty-five",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Musíme si promluvit o Padesát-Pětce Originál: http://scp-wiki.net/we-need-to-talk-about-fifty-five Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "introductory-antimemetics",
+          "title": "Úvodní Antimemetika",
+          "url": "http://scp-cs.wikidot.com/introductory-antimemetics",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: Úvodní Antimemetika Originál: https://scp-wiki.wikidot.com/introductory-antimemetics Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "unforgettable-that-s-what-you-are",
+          "title": "Nezapomenutelní, stejně jako ty",
+          "url": "http://scp-cs.wikidot.com/unforgettable-that-s-what-you-are",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Nezapomenutelní, stejně jako ty Originál: https://scp-wiki.wikidot.com/unforgettable-that-s-what-you-are Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "case-colourless-green",
+          "title": "UDÁLOST \"BEZBARVÁ ZELENÁ\"",
+          "url": "http://scp-cs.wikidot.com/case-colourless-green",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: UDÁLOST \"BEZBARVÁ ZELENÁ\" Originál: https://scp-wiki.wikidot.com/case-colourless-green Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "your-last-first-day",
+          "title": "Tvůj poslední první den",
+          "url": "http://scp-cs.wikidot.com/your-last-first-day",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Tvůj poslední první den Originál: https://scp-wiki.wikidot.com/your-last-first-day Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "scp-2256",
+          "title": "Velmi Vysoké Věci",
+          "url": "http://scp-cs.wikidot.com/scp-2256",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Informace ohledně SCP-2256 podléhají graduálně antimemetickému koroznímu efektu. Koroze se objevuje podle detailu/přesnosti informace a fyzické komplexnosti úložného prostoru. Podrobné akademické spisy, fotografie a informace uložené elektronicky rychle korodu…"
+        },
+        {
+          "id": "scp-3125",
+          "title": "Uprchlík",
+          "url": "http://scp-cs.wikidot.com/scp-3125",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5
+        },
+        {
+          "id": "where-have-you-been-all-my-life",
+          "title": "Kde jsi byl celý můj život",
+          "url": "http://scp-cs.wikidot.com/where-have-you-been-all-my-life",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Kde jsi byl celý můj život Originál: http://scp-wiki.net/where-have-you-been-all-my-life Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "fresh-hell",
+          "title": "Výlety do Pekla",
+          "url": "http://scp-cs.wikidot.com/fresh-hell",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Výlety do Pekla Originál: http://scp-wiki.net/fresh-hell Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "ojai",
+          "title": "Ojai",
+          "url": "http://scp-cs.wikidot.com/ojai",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Ojai Originál: https://scp-wiki.wikidot.com/ojai Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "immemorial",
+          "title": "Nepamátník",
+          "url": "http://scp-cs.wikidot.com/immemorial",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Nepamátník Originál: https://scp-wiki.wikidot.com/immemorial Autor: qntm Překladatel: DrCheems"
+        },
+        {
+          "id": "scp-2111",
+          "title": "Pokud tohle čtete…",
+          "url": "http://scp-cs.wikidot.com/scp-2111",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1
+        },
+        {
+          "id": "scp-033",
+          "title": "Chybějící číslo",
+          "url": "http://scp-cs.wikidot.com/scp-033",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-033 musí být uchováváno na jednom listu ručně vyrobeného papíru, papyru, plátna či pergamenu nepravidelných rozměrů, pokud není zrovna studováno či na něm není prováděn test. Tento papírovitý list nesmí mít žádné rovnoběžné strany, žádné pravé úhly a délky…"
+        },
+        {
+          "id": "scp-1425",
+          "title": "Hvězdné Signály",
+          "url": "http://scp-cs.wikidot.com/scp-1425",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "Jedna kopie SCP-1425 je držena v archivu s dvojím zamykacím mechanismem ve skladovací Oblasti-40. Přístup k dokumentu je nemožný bez písemného souhlasu alespoň dvou z následujících zaměstnanců: oblastního ředitele, velitele EID, velitele CMA, nebo člena Rady O…"
+        },
+        {
+          "id": "scp-2828",
+          "title": "Antimemetická část těla",
+          "url": "http://scp-cs.wikidot.com/scp-2828",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-2828 je aktuálně nezadržitelné a a vyskytuje se u celosvětové populace. Ovšem riziko narušení bezpečnosti, nebo či veřejného objevu anomálie, je považováno za nízké, protože je anomálie nedetekovatelná bez použití silných mnestik. Utajení nadační agenti, p…"
+        },
+        {
+          "id": "scp-2358",
+          "title": "Tohle už jsem někde viděl…",
+          "url": "http://scp-cs.wikidot.com/scp-2358",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Vzhledem k sebecenzurující povaze a aktuálními omezeními spojenými s přesunem instancí SCP-2358, jsou objekty zadrženy na místě objevení. Mobilní Úderná Jednotka Epsilon-7 (\"Forget-Me-Nots\") má za úkol nepřetržitě monitorovat a narušovat civilní vývoj mnestick…"
+        },
+        {
+          "id": "numbers-lie",
+          "title": "Čísla lžou",
+          "url": "http://scp-cs.wikidot.com/numbers-lie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Čísla ne lžou Originál: Čísla Lžou Author: CityToast Přeložil: DrCheems"
+        },
+        {
+          "id": "scp-3393",
+          "title": "Pouze pro tvé Oči",
+          "url": "http://scp-cs.wikidot.com/scp-3393",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Následující procedury zde zdokumentovány jsou pro benefit Vedoucích Nadační Divize Antimemetik, O5-█ a Výzkumníka ███████ █████. Personál MTF Éta-10 bude rozmístěn po Oblasti-31 v převleku za vědce z Oblasti-31. Přístup do této složky bude možný pouze z 5 term…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-nutna-cetba",
+          "title": "Nutná četba",
+          "articleIDs": [
+            "scp-055"
+          ]
+        },
+        {
+          "id": "02-neni-zadna-antimemeticka-divize-od-qntm",
+          "title": "Není žádná Antimemetická divize od qntm",
+          "articleIDs": [
+            "we-need-to-talk-about-fifty-five",
+            "introductory-antimemetics",
+            "unforgettable-that-s-what-you-are",
+            "case-colourless-green",
+            "your-last-first-day"
+          ]
+        },
+        {
+          "id": "03-vsuvka",
+          "title": "Vsuvka",
+          "articleIDs": [
+            "scp-2256"
+          ]
+        },
+        {
+          "id": "04-pet-pet-pet-pet-pet-od-qntm",
+          "title": "Pět Pět Pět Pět Pět od qntm",
+          "articleIDs": [
+            "scp-3125",
+            "where-have-you-been-all-my-life",
+            "fresh-hell",
+            "ojai",
+            "immemorial"
+          ]
+        },
+        {
+          "id": "05-co-znaji-mrtvi-muzi-od-sirpudding",
+          "title": "Co znají mrtví muži od sirpudding",
+          "articleIDs": [
+            "scp-2111"
+          ]
+        },
+        {
+          "id": "06-predchozi-dila",
+          "title": "Předchozí Díla",
+          "articleIDs": [
+            "scp-033",
+            "scp-1425",
+            "scp-2828",
+            "scp-2358"
+          ]
+        },
+        {
+          "id": "07-dalsi-cteni",
+          "title": "Další čtení",
+          "articleIDs": [
+            "numbers-lie",
+            "scp-3393"
+          ]
+        }
+      ],
+      "description": "Antimem je myšlenka se sebe-cenzurujícími vlastnostmi . Myšlenka, která svojí přirozenou povahou zabraňuje nebo ztěžuje lidem ji šířit."
     },
     {
       "id": "scp-cs:collection:series:olympia-project",
@@ -7424,14 +8143,251 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-429085f9dfe4675e170d2631e401868fbcb1c4b44aff6b7175989e8bec0169eb"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "kain-pathos-crow-s-author-page",
+          "title": "Professor K. P. Crow",
+          "url": "http://scp-cs.wikidot.com/kain-pathos-crow-s-author-page",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Hlavní výzkumník: Professor K. P. Crow"
+        },
+        {
+          "id": "scp-040",
+          "title": "Dítě evoluce",
+          "url": "http://scp-cs.wikidot.com/scp-040",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-040 musí být zadrženo ve standardní zadržovací buňce v Zóně-12 Biologického Výzkumu. K cele musí být připojen sedativa rozptylující systém, který musí být spuštěn v případě projevu anomálních vlastností SCP-040 mimo testovací prostory. Cela musí být pod ne…"
+        },
+        {
+          "id": "scp-143",
+          "title": "Břitvostromový háj",
+          "url": "http://scp-cs.wikidot.com/scp-143",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": -5,
+          "desc": "SCP-143 je zadržené v údolí přilehlém k Bio-Výzkumné Zóně-12, o ploše asi 2 km2 . Na území obklopující SCP-143 do vzdálenosti 20 km a všechny okolní kopce, ze kterých je možné objekt spatřit je zakázán přístup veřejnosti. SCP-143 musí být pravidelně zaléváno r…"
+        },
+        {
+          "id": "scp-148",
+          "title": "\"Telekillová\" slitina",
+          "url": "http://scp-cs.wikidot.com/scp-148",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "REVIZE 3 SCP-148 se musí skladovat jako 120 odlitých ingotů, každý o váze přibližně 10 kg ve chvíli psaní. Ingoty SCP-148 nesmí být umístěny ve stejné oblasti jako jiná SCP (kvůli možnosti nepředvídatelné interakce); jinak by měly být rozděleny rovně mezi přij…"
+        },
+        {
+          "id": "scp-158",
+          "title": "Soul Extractor",
+          "url": "http://scp-cs.wikidot.com/scp-158",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "SCP-158 je umístěno v operačním sále 07 v Oblasti-12 biologického výzkumu. Není povolen vstup personálu do místnosti, ani není dovoleno místnosti dodávat energii, pokud nebyl předložen a schválen řádně vyplněná žádost o povolení vedoucímu výzkumu, Prof. █████.…"
+        },
+        {
+          "id": "scp-500",
+          "title": "Panacea",
+          "url": "http://scp-cs.wikidot.com/scp-500",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-500 musí být uchováváno v chladném a suchém místě mimo přímé světlo. Přístup k SCP-500 má pouze personál Úrovně 4, aby se předešlo nesprávnému použití."
+        },
+        {
+          "id": "scp-542",
+          "title": "Herr Chirurg",
+          "url": "http://scp-cs.wikidot.com/scp-542",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-542 musí být drženo v místnosti o rozměrech 8m x 8m, se kterou sousedí koupelna, a má povoleno zažádat o jakýkoliv vybavení místnosti. Jediným omezením je, že nesmí být upravitelné do podoby chirurgických nástrojů. Významné požadavky SCP-542 zahrnují: Jedn…"
+        },
+        {
+          "id": "scp-914",
+          "title": "Mechanismus",
+          "url": "http://scp-cs.wikidot.com/scp-914",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Pouze personál, který předloží formální žádost jež bude schválena vedením oblasti, může obsluhovat SCP-914. SCP-914 je drženo ve výzkumné jednotce 109-B, jež je neustále střežena dvěma strážnými. Kdokoliv vstoupí do 109-B musí být doprovázen alespoň jedním str…"
+        },
+        {
+          "id": "experiment-log-158-ag",
+          "title": "Záznam o Experimentu 158 AG",
+          "url": "http://scp-cs.wikidot.com/experiment-log-158-ag",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Záznam o Experimentu 158-AG:"
+        },
+        {
+          "id": "experiment-log-914-theta",
+          "title": "Záznam o Experimentu 914-THETA",
+          "url": "http://scp-cs.wikidot.com/experiment-log-914-theta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Záznam o Experimentu 914-THETA:"
+        },
+        {
+          "id": "experiment-log-040",
+          "title": "Záznam o Experimentu 040",
+          "url": "http://scp-cs.wikidot.com/experiment-log-040",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Záznam o Experimentu 040:"
+        },
+        {
+          "id": "olympia-integration-experiment-alpha",
+          "title": "Integrační Experiment Olympia ALPHA",
+          "url": "http://scp-cs.wikidot.com/olympia-integration-experiment-alpha",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Kódové označení projektu: Olympia"
+        },
+        {
+          "id": "olympia-integration-experiment-beta",
+          "title": "Integrační Experiment Olympia BETA",
+          "url": "http://scp-cs.wikidot.com/olympia-integration-experiment-beta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Kódové označení projektu: Olympia"
+        },
+        {
+          "id": "olympia-integration-experiment-gamma",
+          "title": "Integrační Experiment Olympia GAMMA",
+          "url": "http://scp-cs.wikidot.com/olympia-integration-experiment-gamma",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Kódové označení projektu: Olympia"
+        },
+        {
+          "id": "olympia-integration-experiment-omega",
+          "title": "Integrační Experiment Olympie OMEGA",
+          "url": "http://scp-cs.wikidot.com/olympia-integration-experiment-omega",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "-"
+        },
+        {
+          "id": "production-model-changes-and-procedures",
+          "title": "Změny výrobního modelu a postupy",
+          "url": "http://scp-cs.wikidot.com/production-model-changes-and-procedures",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Změny výrobního modelu a postupy:"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "kain-pathos-crow-s-author-page"
+          ]
+        },
+        {
+          "id": "02-pouzite-scp",
+          "title": "Použité SCP:",
+          "articleIDs": [
+            "scp-040",
+            "scp-143",
+            "scp-148",
+            "scp-158",
+            "scp-500",
+            "scp-542",
+            "scp-914"
+          ]
+        },
+        {
+          "id": "03-postupy-rafinace-a-upravy",
+          "title": "Postupy rafinace a úpravy:",
+          "articleIDs": [
+            "experiment-log-158-ag",
+            "experiment-log-914-theta",
+            "experiment-log-040"
+          ]
+        },
+        {
+          "id": "04-integracni-postupy",
+          "title": "Integrační postupy",
+          "articleIDs": [
+            "olympia-integration-experiment-alpha",
+            "olympia-integration-experiment-beta",
+            "olympia-integration-experiment-gamma",
+            "olympia-integration-experiment-omega"
+          ]
+        },
+        {
+          "id": "05-hromadna-vyroba",
+          "title": "Hromadná výroba:",
+          "articleIDs": [
+            "production-model-changes-and-procedures"
+          ]
+        }
+      ],
+      "description": "Cíle projektu: Úspěšné vytvoření umělého humanoida pomocí několika SCP a jeho využití ve prospěch Nadace."
     },
     {
       "id": "scp-cs:collection:series:kalinins-proposal",
@@ -7452,14 +8408,167 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-3933f96c4751f0c7fa02e3a2cef254b0ec930966eacd1d5223fde1a9dfe5ebc6"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "scp-2798-arc",
+          "title": "POHOTOVOSTNÍM PLÁNU 2798-5",
+          "url": "http://scp-cs.wikidot.com/scp-2798-arc",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "ZÁZNAM ROZHODNUTÍ - RADA O5 #16-47 (\"CON-5\") OHLEDNĚ NÁVRHU: POKRAČOVAT V POHOTOVOSTNÍM PLÁNU 2798-5 , KVŮLI DISTRIBUCI EFEKTIVNÍCH PROSTŘEDKŮ SEBEVRAŽDY ZEMSKÉ POPULACI, ABY BYLI UŠETŘENI VŠICHNI OBČANÉ ZAPOJENÍ DO SCP-001 PRO: O5-3, O5-4, O5-7, O5-9, O5-10, O5-11 PROTI: O5-2, O5-5, O5-8, O5-13 ZDRŽEL SE: O5-1, O5-6, O5-12 VÝSLEDEK: NÁVRH ZAMÍTNUT"
+        },
+        {
+          "id": "harbinger",
+          "title": "Předzvěst",
+          "url": "http://scp-cs.wikidot.com/harbinger",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Předzvěst Originál: http://scp-wiki.wikidot.com/harbinger Autor: Kalinin does not match any existing user name Překladatel: Hajgrando Mám to správně, Modu? :kek:"
+        },
+        {
+          "id": "scp001-kln",
+          "title": "scp-001.pdf",
+          "url": "http://scp-cs.wikidot.com/scp001-kln",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "continued-deliberations",
+          "title": "Probíhající Jednání",
+          "url": "http://scp-cs.wikidot.com/continued-deliberations",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Probíhající Jednání Originál: http://scp-wiki.wikidot.com/continued-deliberations Autor: Kalinin does not match any existing user name Překladatel: Hajgrando"
+        },
+        {
+          "id": "a-night-at-the-movies",
+          "title": "Noc Plná Filmů",
+          "url": "http://scp-cs.wikidot.com/a-night-at-the-movies",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: ** Noc Plná Filmů Originál:** http://scp-wiki.wikidot.com/a-night-at-the-movies Autor: Kalinin does not match any existing user name Překladatel: Hajgrando"
+        },
+        {
+          "id": "dream-report-990-1",
+          "title": "Standardní Hlášení o Snu 66-Y 990.1",
+          "url": "http://scp-cs.wikidot.com/dream-report-990-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Standardní Hlášení o Snu 66-Y 990.1 Originál: http://scp-wiki.wikidot.com/dream-report-990-1 Autor: Kalinin does not match any existing user name Překladatel: Hajgrando"
+        },
+        {
+          "id": "after-action-2272",
+          "title": "Zpráva o Akci 2272'",
+          "url": "http://scp-cs.wikidot.com/after-action-2272",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: ** Zpráva o Akci 2272' Originál:** http://scp-wiki.wikidot.com/after-action-2272 Autor: Kalinin does not match any existing user name Překladatel: Hajgrando"
+        },
+        {
+          "id": "dream-report-990-2",
+          "title": "Hlášení o Snu 66-Y 990.2",
+          "url": "http://scp-cs.wikidot.com/dream-report-990-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: ** STANDARDNÍ HLÁŠENÍ O SNU 66-Y 990-2 Originál:** http://scp-wiki.wikidot.com/dream-report-990-2 Autor: Kalinin does not match any existing user name Překladatel: Hajgrando"
+        },
+        {
+          "id": "the-man-at-the-threshold",
+          "title": "Muž na Prahu",
+          "url": "http://scp-cs.wikidot.com/the-man-at-the-threshold",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Muž na Prahu Originál: http://scp-wiki.wikidot.com/the-man-at-the-threshold Autor: Kalinin does not match any existing user name Překladatel: Hajgrando"
+        },
+        {
+          "id": "house-of-jacinta",
+          "title": "Jaci a Aurelio",
+          "url": "http://scp-cs.wikidot.com/house-of-jacinta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Jaci a Aurelio Originál: https://scp-wiki.wikidot.com/house-of-jacinta Autor: Kalinin does not match any existing user name Překladatel: Hajgrando"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-2798-arc",
+            "harbinger",
+            "scp001-kln",
+            "continued-deliberations",
+            "a-night-at-the-movies",
+            "dream-report-990-1",
+            "after-action-2272",
+            "dream-report-990-2",
+            "the-man-at-the-threshold",
+            "house-of-jacinta"
+          ]
+        }
+      ],
+      "description": "ZÁZNAM ROZHODNUTÍ - RADA O5 #16-47 (\"CON-5\") OHLEDNĚ NÁVRHU: POKRAČOVAT V POHOTOVOSTNÍM PLÁNU 2798-5 , KVŮLI DISTRIBUCI EFEKTIVNÍCH PROSTŘEDKŮ SEBEVRAŽDY ZEMSKÉ POPULACI, ABY BYLI UŠETŘENI VŠICHNI OBČANÉ ZAPOJENÍ DO SCP-001 PRO: O5-3, O5-4, O5-7, O5-9, O5-10, O5-11 PROTI: O5-2, O5-5, O5-8, O5-13 ZDRŽEL SE: O5-1, O5-6, O5-12 VÝSLEDEK: NÁVRH ZAMÍTNUT"
     },
     {
       "id": "scp-cs:collection:series:crossoverprojectindex",
@@ -7480,14 +8589,150 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-75206d1ac135121c4880eceeaf1966144091342a8f845f82f002a83fbd564048"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "vsaknes-se-do-me-jako-amnestika-tridy-f",
+          "title": "Vsákneš se do mě jako...",
+          "url": "http://scp-cs.wikidot.com/vsaknes-se-do-me-jako-amnestika-tridy-f",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Vsákneš se do mě jako… Autor: Utylike Crossover se seriálem Comeback"
+        },
+        {
+          "id": "whatcha-doing",
+          "title": "Co to děláááš?",
+          "url": "http://scp-cs.wikidot.com/whatcha-doing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Co to děláááš? Originál: http://scp-wiki.net/whatcha-doing Autor: Doktori Překladatel: Utylike"
+        },
+        {
+          "id": "timeandrelativedimensionsincontainmentprotocols",
+          "title": "Čas a relativní rozměry v zadržovacích protokolech",
+          "url": "http://scp-cs.wikidot.com/timeandrelativedimensionsincontainmentprotocols",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Čas a relativní rozměry v zadržovacích protokolech Originál: http://scp-wiki.net/timeandrelativedimensionsincontainmentprotocols Autor: AdminBright Překladatel: AtlasCZ"
+        },
+        {
+          "id": "holder-of-the-foundation",
+          "title": "Držitel Nadace",
+          "url": "http://scp-cs.wikidot.com/holder-of-the-foundation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Držitel Nadace Originál: http://scp-wiki.net/holder-of-the-foundation Autor: VAElynx Překladatel: Modular"
+        },
+        {
+          "id": "xan-vs-administrator",
+          "title": "Xan vs. Administrátor SCP Nadace",
+          "url": "http://scp-cs.wikidot.com/xan-vs-administrator",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "A ta horší zase zde: Klasické BHLko"
+        },
+        {
+          "id": "knee-deep-in-the-keter",
+          "title": "Po Kolena v Keterovi",
+          "url": "http://scp-cs.wikidot.com/knee-deep-in-the-keter",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Po Kolena v Keterovi Originál: http://scp-wiki.net/knee-deep-in-the-keter Autor: zaratustra Překladatel: chamik"
+        },
+        {
+          "id": "dr-ikari-i-presume",
+          "title": "Dr. Ikari, předpokládám",
+          "url": "http://scp-cs.wikidot.com/dr-ikari-i-presume",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: Dr. Ikari, předpokládám Originál: http://scp-wiki.net/dr-ikari-i-presume Autor: Edrobot Překladatel: Steven Choros"
+        },
+        {
+          "id": "keters-with-hats",
+          "title": "Keteři v Čepicích",
+          "url": "http://scp-cs.wikidot.com/keters-with-hats",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Keteři v Čepicích Originál: http://scp-wiki.net/keters-with-hats Autor: Crash1337 does not match any existing user name Překladatel: Modular"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "vsaknes-se-do-me-jako-amnestika-tridy-f",
+            "whatcha-doing",
+            "timeandrelativedimensionsincontainmentprotocols",
+            "holder-of-the-foundation",
+            "xan-vs-administrator",
+            "knee-deep-in-the-keter",
+            "dr-ikari-i-presume",
+            "keters-with-hats"
+          ]
+        }
+      ],
+      "description": "Takže, SCP Nadace se, i když na to ještě není připravena, stává \"věcí\" internetu. Nicméně, stále je tu jeden důležitý krok, který musíme podniknout, abychom se stali na plno touto \"věcí\"."
     },
     {
       "id": "scp-cs:collection:series:tales-of-mr-collector",
@@ -7508,14 +8753,150 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-c974793c93b8ff4e8b380394926dcbd94aa7fc41de11310ec2c2cb31ed8d2180"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "1-mr-headless",
+          "title": "1. Mr. Bezhlavý",
+          "url": "http://scp-cs.wikidot.com/1-mr-headless",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: 1. Mr. Bezhlavý Originál: http://scp-wiki.net/1-mr-headless Autor: Anaxagoras Překladatel: Modular"
+        },
+        {
+          "id": "3-mr-money",
+          "title": "3. Mr. Peníz",
+          "url": "http://scp-cs.wikidot.com/3-mr-money",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: 3. Mr. Peníz Originál: http://scp-wiki.net/3-mr-money Autor: Tanhony Překladatel: Dr-Screw"
+        },
+        {
+          "id": "interval-1",
+          "title": "Vsuvka 1",
+          "url": "http://scp-cs.wikidot.com/interval-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Vsuvka 1 Originál: http://scp-wiki.net/interval-1 Autor: Salman Corbette Překladatel: Modular"
+        },
+        {
+          "id": "6-mr-stripes",
+          "title": "6. Mr. Proužek",
+          "url": "http://scp-cs.wikidot.com/6-mr-stripes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: 6. Mr. Proužek Originál: http://scp-wiki.net/6-mr-stripes Autor: TroyL Překladatel: Modular"
+        },
+        {
+          "id": "8-mr-moon",
+          "title": "8. Mr. Měsíc",
+          "url": "http://scp-cs.wikidot.com/8-mr-moon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: 8. Mr. Moon Originál: http://www.scpwiki.com/8-mr-moon Autor: Anaxagoras Překladatel: Modular"
+        },
+        {
+          "id": "9-mr-clumsy",
+          "title": "9. Mr. Nemotorný",
+          "url": "http://scp-cs.wikidot.com/9-mr-clumsy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: 9. Mr. Nemotorný Originál: http://www.scpwiki.com/9-mr-clumsy Autor: Tanhony Překladatel: Modular"
+        },
+        {
+          "id": "interval-2",
+          "title": "Vsuvka 2",
+          "url": "http://scp-cs.wikidot.com/interval-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Vsuvka 2 Originál: http://scp-wiki.net/interval-2 Autor: Salman Corbette Překladatel: Modular"
+        },
+        {
+          "id": "mr-fish",
+          "title": "16. Mr. Ryba",
+          "url": "http://scp-cs.wikidot.com/mr-fish",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: 16. Mr. Ryba Originál: http://scp-wiki.net/mr-fish Autor: Dexanote Překladatel: Modular"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "1-mr-headless",
+            "3-mr-money",
+            "interval-1",
+            "6-mr-stripes",
+            "8-mr-moon",
+            "9-mr-clumsy",
+            "interval-2",
+            "mr-fish"
+          ]
+        }
+      ],
+      "description": "Páni! Právě jsi našel Příběhy Mr. Sběratele, limitovanou edici sbírky příběhů od Dr. Wondertainmenta!"
     },
     {
       "id": "scp-cs:collection:series:thaumiel",
@@ -7536,14 +8917,745 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-1b11db91c891878ba6bbc1d3cc15bb9299bc00d0a6d129b54d2442314863dc68"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "cygnus",
+          "title": "Cygnus",
+          "url": "http://scp-cs.wikidot.com/cygnus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Cygnus Originál: http://scp-wiki.net/cygnus Autor: TroyL Překladatel: DrCheems"
+        },
+        {
+          "id": "rota",
+          "title": "Rota",
+          "url": "http://scp-cs.wikidot.com/rota",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Rota Originál: http://scp-wiki.net/rota Autor: TroyL Překladatel: MareCZeek does not match any existing user name"
+        },
+        {
+          "id": "djkaktus-s-proposal",
+          "title": "Návrh Uživatele: djkaktus I",
+          "url": "http://scp-cs.wikidot.com/djkaktus-s-proposal",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "kate-mctiriss-s-proposal",
+          "title": "Návrh Uživatele: Kate McTiriss",
+          "url": "http://scp-cs.wikidot.com/kate-mctiriss-s-proposal",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "navrh-uzivatele-lyppiatt",
+          "title": "Návrh Uživatele: Lyppiatt",
+          "url": "http://scp-cs.wikidot.com/navrh-uzivatele-lyppiatt",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "roget-s-proposal-arc",
+          "title": "Návrh Uživatele: Roget",
+          "url": "http://scp-cs.wikidot.com/roget-s-proposal-arc",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-002-cs",
+          "title": "Tak co jsme provedli tentokrát?",
+          "url": "http://scp-cs.wikidot.com/scp-002-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 19,
+          "desc": "SCP-002-CS musí být uchováno v zabezpečené schránce 004CS/002 v Oblasti-04CS, pokud není zrovna testováno. S SCP-002-CS smějí pracovat pouze pracovníci Týmu Výzkumu SCP-002-CS, čímž se předchází znepokojení dalšího personálu obsahem přenosů SCP-002-CS. Tým Výz…"
+        },
+        {
+          "id": "scp-002-sk",
+          "title": "\"O5-8, Anglické víno a Tatry.\"",
+          "url": "http://scp-cs.wikidot.com/scp-002-sk",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "os": 6,
+          "desc": "SCP-002-SK je malá kniha o rozmeroch 15 cm na výšku a 10 cm na dĺžku. Kniha momentálne obsahuje -23 25 45 62 stránok, pričom na zadnej strane obalu sa udáva počet strán: 20. Objekt má názov: \" Ako Bohom ukradnut slnko, Od doktora SpaceGarta\". Kniha pojednáva o…"
+        },
+        {
+          "id": "scp-0110-j",
+          "title": "SCP-0110-J",
+          "url": "http://scp-cs.wikidot.com/scp-0110-j",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-030-cs-j",
+          "title": "SCP-030-CS-J",
+          "url": "http://scp-cs.wikidot.com/scp-030-cs-j",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-130-cs",
+          "title": "Studánka",
+          "url": "http://scp-cs.wikidot.com/scp-130-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 7,
+          "desc": "Vzhledem k vlastnostem a povaze SCP-130-CS, je nemožné tuto anomálii zadržet, nicméně právě díky této anomálii Nadace získala [DATA VYMAZÁNA]."
+        },
+        {
+          "id": "scp-144-cs",
+          "title": "Písař",
+          "url": "http://scp-cs.wikidot.com/scp-144-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 4,
+          "desc": "SCP-144-CS musí být drženo v humanoidní cele vybavené jako prezidentské apartmá. Žádný zaměstnanec třídy D nesmí být k SCP-144-CS vpuštěn. Ve vyhrazených nočních hodinách se SCP-144-CS může volně pohybovat po vymezeném areálu, s výjimkou zadržovacího prostoru…"
+        },
+        {
+          "id": "scp-164-cs",
+          "title": "Okraj světa",
+          "url": "http://scp-cs.wikidot.com/scp-164-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Objekt SCP-164-CS je uložen v Oblasti-10CS v uzavřeném prostoru, který napodobuje vzhled kanceláře. Objekt SCP-164-CS je nepřístupný ke každodennímu používání. SCP-164-CS je důležité aktualizovat a zálohovat každý druhý den mezi 0:00 - 2:00 hodin ráno. Aktuali…"
+        },
+        {
+          "id": "scp-179",
+          "title": "Sauelsuesor",
+          "url": "http://scp-cs.wikidot.com/scp-179",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "SCP-179 zůstává mimo dosah aktuálně známých Zájmových skupin včetně Nadace. Veškeré snahy o zadržení jsou zaměřeny na 3. stupeň zamaskování Opomenutí , spojené se zastrašováním a sabotážmi průzkumných a výzkumných misí, které se pokusí studovat Merkur, jeho bl…"
+        },
+        {
+          "id": "scp-200-cs",
+          "title": "Druhý život",
+          "url": "http://scp-cs.wikidot.com/scp-200-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 17,
+          "desc": "Irelevantní. 1"
+        },
+        {
+          "id": "scp-2000",
+          "title": "Deus Ex Machina",
+          "url": "http://scp-cs.wikidot.com/scp-2000",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Vstup do SCP-2000 je zamaskovaný jako Stanice Strážců Yellowstoneského Národního Parku . I přes několik civilních přestupků nebyl vchod nikdy kompromitován a není zapotřebí žádné dodatečné fyzické zabezpečení. Pro SCP-2000 platí Protokol Plainsight-201. Potřeb…"
+        },
+        {
+          "id": "scp-2003-arc",
+          "title": "SCP-2003-ARC",
+          "url": "http://scp-cs.wikidot.com/scp-2003-arc",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-2140",
+          "title": "Retrokonvertor",
+          "url": "http://scp-cs.wikidot.com/scp-2140",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "SCP-2140 nepředstavuje hrozbu pro pracovníky Nadace. Je povoleno nasazení v případě nepřátelské aktivity SCP-2140-1 a to za podmínek uvedených v Příloze A. Rozsáhlejší nasazení proti jiným hrozbám musí být schváleno případ po případu Radou O5 a Etickou Komisí.…"
+        },
+        {
+          "id": "scp-2217",
+          "title": "Kladivo a Kovadlina",
+          "url": "http://scp-cs.wikidot.com/scp-2217",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "SCP-2217 je uzavřeno pro veřejnost pomocí Standardního Krycího Příběhu 419 (Soukromý Pozemek) aby se předešlo vstupu. Meteorologické centrum bylo postaveno poblíž SCP-2217 aby se efektivně daly předvídat údery blesků v oblasti spolu s dalšími fenomény které př…"
+        },
+        {
+          "id": "scp-2798-arc",
+          "title": "SCP-2798-ARC",
+          "url": "http://scp-cs.wikidot.com/scp-2798-arc",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-2932",
+          "title": "Titánino Vězení",
+          "url": "http://scp-cs.wikidot.com/scp-2932",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "SCP-2932 je aktuálně zadrženo na místě svého objevení. Mobilní Úderná Jednotka Ksí-9 \"The Wardens\" má za úkol postarat se o zadržení, včetně snížení veřejného povědomí o SCP-2932 v okolních vesnicích a městech a podávání amnestik jedincům, kteří přišli do kont…"
+        },
+        {
+          "id": "scp-3000",
+          "title": "Ananta Šéša",
+          "url": "http://scp-cs.wikidot.com/scp-3000",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 7,
+          "desc": "V oblasti zadržující SCP-3000, aktuálně regionu Bengálském zálivu o průměru přibližně 300 km, musí neustále hlídkovat Nadační plavidla. Za žádných okolností nesmí být civilním osobám dovoleno provádět hlubokomořské průzkumy, nebo potápění v karanténní oblasti.…"
+        },
+        {
+          "id": "scp-3022",
+          "title": "Závislé na Pocitu",
+          "url": "http://scp-cs.wikidot.com/scp-3022",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "Každá instance VIP-576 musí mít u sebe neustále kopii SCP-3022. Všechny instance VIP-576 musí zůstat v Oblasti-19. Přebývající kopie SCP-3022 jsou uloženy v úložných skříních 813-A, 813-B a 813-C. Jakákoli osoba, vlastnící takovou věc, musí být zadržena a je n…"
+        },
+        {
+          "id": "scp-3201",
+          "title": "Dokud zbývá entropie",
+          "url": "http://scp-cs.wikidot.com/scp-3201",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Zadržovací procedury pro SCP-3201 zahrnují primárně dezinformační protokoly ohledně povahy SCP-3201, dohody, výměny a komunikaci s SCP-3201. Nadační personál musí být vždy přítomen v médiích a meteorologických organizacích uvedených v Dokumentu Q5/903. Instanc…"
+        },
+        {
+          "id": "scp-3203",
+          "title": "Švýcarský Bankovní Účet",
+          "url": "http://scp-cs.wikidot.com/scp-3203",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 1
+        },
+        {
+          "id": "scp-3287",
+          "title": "Už Žádné Děti",
+          "url": "http://scp-cs.wikidot.com/scp-3287",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "Současně může existovat maximálně 50 standardních tlakových nádob na stlačený plyn, které obsahují SCP-3287. Nádoby musí být skladovány v uzavřené místnosti při teplotě -116 °C. Přístup k nim je povolen pouze osobám s ochranným plynotěsným oblekem pro práci s…"
+        },
+        {
+          "id": "scp-3309",
+          "title": "Kam odcházíme, když zmizíme, navždy pryč",
+          "url": "http://scp-cs.wikidot.com/scp-3309",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 6,
+          "desc": "Všechny dokumenty týkající se anomálií ovlivněných SCP-3309 budou zachovány v parafrázovaném formátu uvnitř archivní databáze RAISA. Po zadržení instance budou veškerému personálu přiřazenému k ovlivněné anomálii podána amnestika a jedliví zaměstnanci budou př…"
+        },
+        {
+          "id": "scp-3377",
+          "title": "Benevolentní Znalec Vína",
+          "url": "http://scp-cs.wikidot.com/scp-3377",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "Protokol Bacchus 1 se má provádět v každém skladovacím zařízení Nadace a administračních odděleních, pokud vedení některého z nich 2 neurčí jinak. Prozatímní Oblast-386 byla postavena v oblasti Loiry ve Francii za účelem výroby vína pro zavedení protokolu Bacc…"
+        },
+        {
+          "id": "scp-342-cs",
+          "title": "Světlonoš",
+          "url": "http://scp-cs.wikidot.com/scp-342-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 15,
+          "desc": "SCP-342-CS nelze zadržet. Oběti SCP-342-CS lze zachránit pomocí zavčas zahájené procedury Světlonoš, jež vyžaduje plné soustředění dvou (2) nadačních zaměstnanců na předání \"krásných myšlenek\" oběti. Tento přenos probíhá pomocí Nadací navázaného telepatického…"
+        },
+        {
+          "id": "scp-3448",
+          "title": "Jednou Nohou v Hrobě",
+          "url": "http://scp-cs.wikidot.com/scp-3448",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "SCP-3448 zůstane aktivní v Oblasti-2718. Personál musí denně kontrolovat SCP-3448 pro případ nových zpráv od SCP-3448-A. Projekt Dammerung bude zkoumat jakoukoliv metodu úniku navrženou nebo naznačenou SCP-3448-A."
+        },
+        {
+          "id": "scp-3688",
+          "title": "Můžeš Tancovat Pokud Chceš",
+          "url": "http://scp-cs.wikidot.com/scp-3688",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Personál Nadace musí získat zpět všechny historické zdroje související s SCP-3688 a každý civilista, který si je vědom jeho existence, musí být vyléčen amnestiky. Každý aktivní člen Mobilní Úderné Jednotky a každý zaměstnanec Nadace s úrovní prověrky 3 nebo vy…"
+        },
+        {
+          "id": "scp-3797",
+          "title": "Bývalá a Budoucí Zbraň",
+          "url": "http://scp-cs.wikidot.com/scp-3797",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Jelikož SCP-3797 neexistuje, není potřeba jej zadržovat ani skladovat. Divize Časových Anomálií má postavit SCP-3797. V tomto procesu je povoleno používat jiné SCP a časové anomálie s povolením O5. Jakmile bude SCP-3797 postaveno, bude použito jednou pro zniče…"
+        },
+        {
+          "id": "scp-3878",
+          "title": "Slova Mi Neublíží",
+          "url": "http://scp-cs.wikidot.com/scp-3878",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "Procedury potřebné pro provoz SCP-3878 byly omezen na osoby s prověřením úrovně 5 a přeloženy do jazyka Giimbiyu. Dešifrování dokumentu se uskuteční pouze se souhlasem většiny Rady O5 nebo když sémantický spad vytvořený SCP-3878 zmizí, v tomto okamžiku by měl…"
+        },
+        {
+          "id": "scp-3936",
+          "title": "Práce Podle Plánu",
+          "url": "http://scp-cs.wikidot.com/scp-3936",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "Personál umístěný v SCP-3936 musí vyslat signál, potvrzující jejich přítomnost první den každého měsíce. Kopie všech záznamů, označených jako značné riziko retrospektivních změn, musí být uskladněno v SCP-3936. Všechny opravy vyžadované kontrolními systémy SCP…"
+        },
+        {
+          "id": "scp-3970",
+          "title": "já chci taky zadržovat",
+          "url": "http://scp-cs.wikidot.com/scp-3970",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Okolo SCP-3970 byla postavena Oblast-211 zamaskovaná jako geologické výzkumné zařízení. Na všech cestách vedoucích k SCP-3970 bylo postaveno několik bezpečnostních stanovišť, aby se zabránilo neoprávněnému vstupu. Vstupy do Jednotky-01 musí být neustále střeže…"
+        },
+        {
+          "id": "scp-4004",
+          "title": "Splněný Sen",
+          "url": "http://scp-cs.wikidot.com/scp-4004",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "SCP-4004 se nachází 25 metrů pod Arlingtonským národním hřbitovem v maximálně zabezpečené komoře o rozměrech 150 m x 95 m x 6 m. Každá komora, která obsahuje SCP-4004, musí být postavena tak, aby odolala trvalému útoku konvenčních i esoterických zbraní, stejně…"
+        },
+        {
+          "id": "scp-4098",
+          "title": "S-C-P jednoduché jako 19-3-16!",
+          "url": "http://scp-cs.wikidot.com/scp-4098",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 6
+        },
+        {
+          "id": "scp-4101",
+          "title": "Nejlepším učitelem na světě je historie",
+          "url": "http://scp-cs.wikidot.com/scp-4101",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Vzhledem k okolnostem týkajícím se umístění objektu a jeho obsluhy musí zůstat SCP-4101 integrováno do Oblasti-25 a jako takové nevyžaduje žádné bezpečnostní procedury, které by již nebyly nutné u samotné Oblasti. Přesto jsou informace o existenci SCP-4101 ome…"
+        },
+        {
+          "id": "scp-411",
+          "title": "Děda vševěda",
+          "url": "http://scp-cs.wikidot.com/scp-411",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "SCP-411 musí být drženo ve standardním zadržení pro humanoidní bytosti v Existenčním Izolačním Zařízení ██ v [VYŽADOVÁNA PROVĚRKA O5]. Všem požadavkům, které SCP-411 vznese, musí být vyhověno, pokud je to možné. SCP-411 musí být poskytnuta řada televizí, vysíl…"
+        },
+        {
+          "id": "scp-4322",
+          "title": "Sny beze spánku",
+          "url": "http://scp-cs.wikidot.com/scp-4322",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "CP-4322 musí být vždy aktivní, s výjimkou denního čtyřhodinové pauzy ve vysílání. Rozhovory s ovlivněnými zaměstnanci třídy D by měly být vedeny každé tři měsíce, aby byla zachována kvalita práce. Personál je instruován, aby předložili média pro potenciální za…"
+        },
+        {
+          "id": "scp-4337",
+          "title": "D-59932 neumřel kvůli takovýhle blbosti",
+          "url": "http://scp-cs.wikidot.com/scp-4337",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "SCP-4337 musí být uložen ve standardní skříňce v Oblasti 59. Zkoušky zahrnující 10-Inti proceduru mohou být prováděny na základě žádosti ředitele pracoviště Dr. Lisle Naismith. Žádosti k vyplnění jsou k dispozici v zabezpečeném křídle Oblasti-59. Testované sub…"
+        },
+        {
+          "id": "scp-4559",
+          "title": "Chcete účtenku?",
+          "url": "http://scp-cs.wikidot.com/scp-4559",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Veškeré informace týkající se SCP-4559 ve vědeckých institucích a jiných organizacích musí být odstraněny za předpokladu, že jsou nesprávné."
+        },
+        {
+          "id": "scp-469-cs",
+          "title": "🪲",
+          "url": "http://scp-cs.wikidot.com/scp-469-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 8,
+          "desc": "SCP-469-CS musí být drženo v cele o rozměru 15 m x 10 m x 5 m, v níž se nachází standardní zvířecí pelech, dvě nerezové misky, jedna zvířecí toaleta s kvalitním stelivem, dále obohacující doplňky jako jsou hračky, tři okna s výhledem na rozdílné části venkovní…"
+        },
+        {
+          "id": "scp-4813",
+          "title": "Mou jedinou cestou ven je zapomenout, že jsem potřeboval cestu ven..",
+          "url": "http://scp-cs.wikidot.com/scp-4813",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "SCP-4813 slouží jako experimentální zbraň pro využití v terénu a používá se v akcích, kde selhaly standardní bojové postupy. Agenti mohou používat SCP-4813 pouze tehdy, mají-li terapeutický výcvik, zvýšený práh odolnosti vůči mentálním hazardům a neobvykle níz…"
+        },
+        {
+          "id": "scp-4946",
+          "title": "Zabila tě úplavice",
+          "url": "http://scp-cs.wikidot.com/scp-4946",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 0,
+          "desc": "SCP-4946 není uskladněno. Sunny Skies Analytics, přední společnost Nadace, má za úkol každý den podávat hlášení o počtu lidí, kteří zemřeli na úplavici. Bez ohledu na skutečný počet úmrtí musí být výsledky všech hlášení vyjádřeny ve Fibonacciho posloupnosti F(…"
+        },
+        {
+          "id": "scp-4994",
+          "title": "Ideální Nadace",
+          "url": "http://scp-cs.wikidot.com/scp-4994",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Vzhledem k umístění SCP-4994 není nutné vynakládat téměř žádné úsilí na jeho skrývání. V blízkosti břehu jezera, v němž se SCP-4994 nachází, je nutné udržovat Provizorní Oblast-█. Provizorní Oblast-█ musí budit dojem vojenské základny Spojených států americkýc…"
+        },
+        {
+          "id": "scp-5001",
+          "title": "Sacrosanct",
+          "url": "http://scp-cs.wikidot.com/scp-5001",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 8,
+          "desc": "Provoz SCP-5001 nesmí být přerušen. Vzhledem k autonomní povaze SCP-5001 není personálu povoleno narušovat jeho mechanické funkce. Výzkum SCP-5001 je omezen na vizuální a hmatové zkoumání. Personál, který poškodí nebo přeruší funkci SCP-5001 bude odstraněn ze…"
+        },
+        {
+          "id": "scp-5004",
+          "title": "MEGALOMÁNIE",
+          "url": "http://scp-cs.wikidot.com/scp-5004",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3,
+          "desc": "SCP-5004-A je v současné době uskladněno dle podmínek protokolu 115-ASHE. Na základě současného porozumění vlastností SCP-5004-A by se anomálie měla zcela rozptýlit 20. ledna 2021 ve 12:00 EST. Vzhledem k vlivu SCP-5004-B na SCP-5004-A nejsou vyžadovány žádné…"
+        },
+        {
+          "id": "scp-5356",
+          "title": "[VYMAZÁNO]",
+          "url": "http://scp-cs.wikidot.com/scp-5356",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "scp-5370",
+          "title": "Svět Šachu",
+          "url": "http://scp-cs.wikidot.com/scp-5370",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Problémy založené na pravidlech a aktivních konfiguracích SCP-5370, byly poskytnuty vedoucím matematickým organizacím za účelem nalezení potenciálních členů MODRÉHO TÝMU. Kandidáti by měli: rozumět transfinitní herní teorii a moderním šachovým strategiím a to…"
+        },
+        {
+          "id": "scp-5983",
+          "title": "Pustý York, Pustý York",
+          "url": "http://scp-cs.wikidot.com/scp-5983",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": -1,
+          "desc": "Testování s SCP-5983 je momentálně pozastaveno Směrnicí O5 (viz Dodatek 5983.2)."
+        },
+        {
+          "id": "scp-6101",
+          "title": "To Nejsilnější SCP",
+          "url": "http://scp-cs.wikidot.com/scp-6101",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 5,
+          "desc": "SCP-6101 je tak silné, že ho nelze zadržet. Byl přenechán v péči své rodiny, dokud ho nadace znovu nezavolá na asistenci."
+        },
+        {
+          "id": "scp-6208",
+          "title": "Amnésie bylo její jméno",
+          "url": "http://scp-cs.wikidot.com/scp-6208",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Instance SCP-6208 musí být označeny jako neanomální a zamknuty. Nadační personál musí být informován o existenci Oddělení Nereality SCP Nadace."
+        },
+        {
+          "id": "scp-6222",
+          "title": "RYBÍ VĚZENÍ",
+          "url": "http://scp-cs.wikidot.com/scp-6222",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 8,
+          "desc": "SCP-6222 a okolní park byly získány do správy a přestavěny na nadační Zařízení-384. Zadržovací cely s vysokou prioritou jsou monitorovány v pravidelných intervalech. Cedule a mapy byly rozestavěny po prozkoumaných sekcích SCP-6222 pro usnadnění navigace. Vyšet…"
+        },
+        {
+          "id": "scp-6442",
+          "title": "Mimir, Mímir",
+          "url": "http://scp-cs.wikidot.com/scp-6442",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Vzhledem k roli této anomálie při preventivních zadržovacích snahách a udržování nadaačního utajení, musí být ochrana SCP-6442 zajištěna všemi dostupnými prostředky. Přístup k Zadržovacímu Zařízení [DATA VYMAZÁNA] je povolován pouze Kontrarozvědkou Nadace SCP.…"
+        },
+        {
+          "id": "scp-6470",
+          "title": "Všudypřítomný",
+          "url": "http://scp-cs.wikidot.com/scp-6470",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Nadace aktuálně pracuje na rapidní produkci a distribuci SCP-6470 ve spolupráci s vládními orgány světových velmocí a několika zájmovými skupinami. Je bezpodmínečně nezbytné, aby celá lidská populace obdržela dávku SCP-6470."
+        },
+        {
+          "id": "scp-6478",
+          "title": "Ne Demence - Je to něco jiného",
+          "url": "http://scp-cs.wikidot.com/scp-6478",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 1,
+          "desc": "Incidenty SCP-6478 musí být z archivářských důvodů v souboru zaznamenány a uchovány. Pokud je zjištěno, že subjekt má v držení SCP-6478-1, personál se jej musí pokusit přinutit k jejímu požití. Nepoužité instance SCP-6478-1 musí být zabaveny Farmaceutickým Odd…"
+        },
+        {
+          "id": "scp-6665",
+          "title": "BLACKBOX",
+          "url": "http://scp-cs.wikidot.com/scp-6665",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 7,
+          "desc": "Technická hala Oblasti-01, v níž bylo SCP-6665 zkonstruováno, byla přestavěna na jeho zadržovací zónu a doplněna veškerým nezbytným vybavením potřebným k rutinní lékařské a technické údržbě. Veškerý neautorizovaný personál, jenž se pokusí o vstup k SCP-6665, m…"
+        },
+        {
+          "id": "scp-6666",
+          "title": "Démon Hektor a Hrůzná Titania",
+          "url": "http://scp-cs.wikidot.com/scp-6666",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 11,
+          "desc": "Zadržení SCP-6666, společně s SCP-2254, SCP-4812, a SCP-4840, spadá pod přímý dohled Projektu PARAGON a Aplikované Úderné Jednotky Hēt-1 \"Lance of Longinus\". Vzhledem k potenciálním eschatologickým důsledkům aktivace SCP-6666, musí být zajištěno přísné oddělen…"
+        },
+        {
+          "id": "scp-6938",
+          "title": "Alex Thorley Dostává Darovaného Koně",
+          "url": "http://scp-cs.wikidot.com/scp-6938",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "SCP-6938 je sebe-zadržující. Personál Oddělení Nereality, kterému bylo povoleno vystavení SCP-6938, by měl kontaktovat vedoucí projektu, Jane Doe."
+        },
+        {
+          "id": "scp-6970",
+          "title": "nadace která tě mučí",
+          "url": "http://scp-cs.wikidot.com/scp-6970",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3
+        },
+        {
+          "id": "scp-7005",
+          "title": "Neonový Bůh",
+          "url": "http://scp-cs.wikidot.com/scp-7005",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4,
+          "desc": "SCP-7005 je momentálně pod dohledem nově zformovaného Oddělení pro Interdimenzionální Logistiku, které v současné době operuje mimo Oblast-565. Oddělení je pod vedením doktorky Rosie Hartlepoolové a doktora Simona Kellse. Současné operační protokoly upozaďují…"
+        },
+        {
+          "id": "scp-729-j",
+          "title": "SCP-729-J",
+          "url": "http://scp-cs.wikidot.com/scp-729-j",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-7340",
+          "title": "I jako \"Injekce\"",
+          "url": "http://scp-cs.wikidot.com/scp-7340",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "Použití SCP-7340 je přísně omezeno vedoucím výzkumu a je povoleno pouze za následujících podmínek: Život pacienta je v akutním ohrožení. Chirurgická operace je jedinou možnou metodou léčby. Zmíněná operace má 25% nebo nižší šanci na úspěch Pacient dříve prokáz…"
+        },
+        {
+          "id": "scp-7441",
+          "title": "Jak já kurva nesnáším koně",
+          "url": "http://scp-cs.wikidot.com/scp-7441",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 11,
+          "desc": "Ve světle nedávných zjištění týkajících se limitů SCP-7441 přikázala Etická Komise přerušit testování s SCP-7441 na dobu neurčitou. Další využití SCP-7441 pro nesouvisející výzkumné účely bude omezeno na metody, které nejsou uvedeny ve Směrnici Etické Komise #…"
+        },
+        {
+          "id": "scp-807-cs",
+          "title": "Projekt NITVAS",
+          "url": "http://scp-cs.wikidot.com/scp-807-cs",
+          "sourceManifest": "manifest_scp-cs",
+          "role": "primaryArticle",
+          "os": 9,
+          "desc": "Zadržení SCP-807-CS spadá pod projekt NITVAS a přímý dohled ČROD-02 . Z tohoto důvodu jsou veškeré dodatečné informace, týkající se zadržení SCP-807-CS, tajné pro úroveň prověření 5 a dostupné pouze pro personál přiřazený k objektu SCP-807-CS, zaměstnance proj…"
+        },
+        {
+          "id": "scp-8661",
+          "title": "[ACCESS DENIED]",
+          "url": "http://scp-cs.wikidot.com/scp-8661",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2,
+          "desc": "SCP-8661 je uchováno v konferenční místnosti O5. Bude distribuováno zaměstnancům, kteří prokážou dobré chování. Personál, u kterého je plánována sebevražda, nesmí tento předmět používat."
+        },
+        {
+          "id": "tanhony-s-proposal",
+          "title": "Návrh Uživatele: Tanhony",
+          "url": "http://scp-cs.wikidot.com/tanhony-s-proposal",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "wmdd-s-proposal",
+          "title": "Návrh Uživatelů: WMDD",
+          "url": "http://scp-cs.wikidot.com/wmdd-s-proposal",
+          "sourceManifest": "officialTagMap",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "cygnus",
+            "rota"
+          ]
+        },
+        {
+          "id": "02-additional-reviewed-articles",
+          "title": "Additional reviewed articles",
+          "articleIDs": [
+            "djkaktus-s-proposal",
+            "kate-mctiriss-s-proposal",
+            "navrh-uzivatele-lyppiatt",
+            "roget-s-proposal-arc",
+            "scp-002-cs",
+            "scp-002-sk",
+            "scp-0110-j",
+            "scp-030-cs-j",
+            "scp-130-cs",
+            "scp-144-cs",
+            "scp-164-cs",
+            "scp-179",
+            "scp-200-cs",
+            "scp-2000",
+            "scp-2003-arc",
+            "scp-2140",
+            "scp-2217",
+            "scp-2798-arc",
+            "scp-2932",
+            "scp-3000",
+            "scp-3022",
+            "scp-3201",
+            "scp-3203",
+            "scp-3287",
+            "scp-3309",
+            "scp-3377",
+            "scp-342-cs",
+            "scp-3448",
+            "scp-3688",
+            "scp-3797",
+            "scp-3878",
+            "scp-3936",
+            "scp-3970",
+            "scp-4004",
+            "scp-4098",
+            "scp-4101",
+            "scp-411",
+            "scp-4322",
+            "scp-4337",
+            "scp-4559",
+            "scp-469-cs",
+            "scp-4813",
+            "scp-4946",
+            "scp-4994",
+            "scp-5001",
+            "scp-5004",
+            "scp-5356",
+            "scp-5370",
+            "scp-5983",
+            "scp-6101",
+            "scp-6208",
+            "scp-6222",
+            "scp-6442",
+            "scp-6470",
+            "scp-6478",
+            "scp-6665",
+            "scp-6666",
+            "scp-6938",
+            "scp-6970",
+            "scp-7005",
+            "scp-729-j",
+            "scp-7340",
+            "scp-7441",
+            "scp-807-cs",
+            "scp-8661",
+            "tanhony-s-proposal",
+            "wmdd-s-proposal"
+          ]
+        }
+      ],
+      "description": "Je vyžadováno další potvrzení. Prosím, Zadejte Své Heslo : Vyje černý měsíc?"
     },
     {
       "id": "scp-cs:collection:series:peregrine",
@@ -7564,14 +9676,147 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-3438693433530ec0bfccdf30f0ecf17b9bc3b759d0cdd63b8fe64dfac2d8cccf"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "anderson-robotics-hub",
+          "title": "Anderson",
+          "url": "http://scp-cs.wikidot.com/anderson-robotics-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-1360",
+          "title": "PSHUD #31",
+          "url": "http://scp-cs.wikidot.com/scp-1360",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "SCP-1360 musí být drženo v humanoidní zadržovací cele v Oblasti-19. Pro vstup je vyžadována přítomnost čtyř bezpečnostních zaměstnanců. Pouta nesmí být subjektu sejmuta pokud to není nutné pro testování. Kvůli komunikaci musí být SCP-1360 vybaveno propiskou a…"
+        },
+        {
+          "id": "last-meetings",
+          "title": "Poslední Setkání",
+          "url": "http://scp-cs.wikidot.com/last-meetings",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Poslední Setkání Originál: http://scp-wiki.net/last-meetings Autor: Jacob Conwell Překladatel: chamik"
+        },
+        {
+          "id": "simple-sketches",
+          "title": "Jednoduché Skici",
+          "url": "http://scp-cs.wikidot.com/simple-sketches",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Jednoduché Nákresy Originál: http://scp-wiki.net/simple-sketches Autor: Jacob Conwell Překladatel: chamik"
+        },
+        {
+          "id": "products",
+          "title": "Produkty",
+          "url": "http://scp-cs.wikidot.com/products",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Produkty Originál: http://scp-wiki.net/products Autor: Jacob Conwell Překladatel: chamik"
+        },
+        {
+          "id": "building-up",
+          "title": "Stavět",
+          "url": "http://scp-cs.wikidot.com/building-up",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: BUILDING-UP Originál: http://scp-wiki.net/building-up Autor: Jacob Conwell Překladatel: chamik"
+        },
+        {
+          "id": "tearing-down",
+          "title": "Strhávat",
+          "url": "http://scp-cs.wikidot.com/tearing-down",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Strhávat Originál: http://scp-wiki.net/tearing-down Autor: Jacob Conwell Překladatel: chamik"
+        },
+        {
+          "id": "good-as-new",
+          "title": "Jako Nový",
+          "url": "http://scp-cs.wikidot.com/good-as-new",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Jako Nový Originál: http://scp-wiki.net/good-as-new Autor: Jacob Conwell Překladatel: chamik"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "anderson-robotics-hub",
+            "scp-1360",
+            "last-meetings",
+            "simple-sketches",
+            "products",
+            "building-up",
+            "tearing-down",
+            "good-as-new"
+          ]
+        }
+      ],
+      "description": "“Jak se jmenuje tatínku?” zeptala se malá dívka, oči měla doširoka otevřené a dívala se na nehybného droida před ní. “No, podle toho, co nám řekl Anderson , se jeho předprogramovaná osobnost jmenuje Hector, ale může se jmenovat, jak chceš, zlatíčko,” odpověděl James a projížděl rukou vlasy své dcery. “Co znamená Hector?” zeptala se, když se odtáhla od otcovy ruky. “Byl to velký válečník. Obránce města Troji.” “Je i on velký válečník?” “To by měl, po tom, co jsem zaplatil,” zasmál se James. “Tak chci, aby se taky jmenoval Hector!” “Samozřejmě zlatíčko,” řekl James s malým úsměvem. “ PSHUD #31 , od této chvíle budeš odpovídat na jméno Hector. Rozumíš?” Droid přikývl. Pak se podíval dolů, jak malá holčička popadla jeho ruku. \"Můžu si teď hrát s Hectorem, tati?\" zeptala se. Její úsměv se rozléhal od ucha k uchu a začala za droida tahat. “Samozřejmě, že můžeš,” odpověděl James. “Kdykoli tatín"
     },
     {
       "id": "scp-cs:collection:series:the-lombardi-tales",
@@ -7592,14 +9837,139 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-ed51f78c770a9ccc03b6f9d6556f887737803d00be8f9f6fb893f1beef03c1e0"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "urban-legends",
+          "title": "Městské Legendy",
+          "url": "http://scp-cs.wikidot.com/urban-legends",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Městské Legendy Originál: http://scp-wiki.net/urban-legends Autor: DrEverettMann Překladatel: Brian DAmmas"
+        },
+        {
+          "id": "grasp-on-reality",
+          "title": "Pochopení Reality",
+          "url": "http://scp-cs.wikidot.com/grasp-on-reality",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Pochopení Reality Originál: http://www.scp-wiki.net/grasp-on-reality Autor: DrEverettMann Překladatel: Brian DAmmas"
+        },
+        {
+          "id": "property-values",
+          "title": "Hodnoty Nemovitostí",
+          "url": "http://scp-cs.wikidot.com/property-values",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Hodnoty Nemovitostí Originál: http://scp-wiki.net/property-values Autor: DrEverettMann Překladatel: Brian DAmmas"
+        },
+        {
+          "id": "nobody-knows",
+          "title": "Nikdo ví",
+          "url": "http://scp-cs.wikidot.com/nobody-knows",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Nikdo ví Originál: http://scp-wiki.net/nobody-knows Autor: DrEverettMann Překladatel: Brien DAmmas"
+        },
+        {
+          "id": "going-my-way",
+          "title": "Jdu cestou vlastního zájmu",
+          "url": "http://scp-cs.wikidot.com/going-my-way",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Jdu cestou vlastního zájmu Originál: http://scp-wiki.net/going-my-way Autor: DrEverettMann Překladatel: Brian DAmmas"
+        },
+        {
+          "id": "relationskips",
+          "title": "Relacescépé",
+          "url": "http://scp-cs.wikidot.com/relationskips",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Název: Relacescépé Originál: http://scp-wiki.net/relationskips Autor: DrEverettMann Překladatel: Brian DAmmas"
+        },
+        {
+          "id": "orientation",
+          "title": "Orientace",
+          "url": "http://scp-cs.wikidot.com/orientation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Název: Orientace Originál: http://scp-wiki.net/orientation Autor: DrEverettMann Překladatel: Utylike"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "urban-legends",
+            "grasp-on-reality",
+            "property-values",
+            "nobody-knows",
+            "going-my-way",
+            "relationskips",
+            "orientation"
+          ]
+        }
+      ],
+      "description": "Takže, ty se chceš připojit k Nadaci? Myslíš si, že víš, jaký to je, když sis přečetl záznamy? Chlape, nemáš ponětí. Viděl jsem věci, kterejm bys nevěřil, ani kdyby ti je nakecala tvoje vlastní máma. Jmenuju se Max Lombardi a agentem jsem už deset zatracenejch let. Chceš vědět, jaký to je? Já ti o tom povím…"
     },
     {
       "id": "scp-cs:collection:series:remembrance",
@@ -7620,14 +9990,160 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-e9a502b443d5fd256920d2181792372f6cb571364857c1439ed156ef23b60f85"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "days-gone-by",
+          "title": "Úvod: První zvonění",
+          "url": "http://scp-cs.wikidot.com/days-gone-by",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Úvod: První zvonění Originál: http://scp-wiki.net/days-gone-by Autor: RJB_R Překladatel: Utylike"
+        },
+        {
+          "id": "in-symphony",
+          "title": "Vzpomínání: Část první",
+          "url": "http://scp-cs.wikidot.com/in-symphony",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Vzpomínání: Část první Originál: http://scp-wiki.net/in-symphony Autor: RJB_R Překladatel: Utylike"
+        },
+        {
+          "id": "lonwood",
+          "title": "První vsuvka: Stará škola",
+          "url": "http://scp-cs.wikidot.com/lonwood",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "- Dívka, která seděla za tebou."
+        },
+        {
+          "id": "reunion",
+          "title": "Vzpomínání: Část druhá",
+          "url": "http://scp-cs.wikidot.com/reunion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Vzpomínání: Část druhá Originál: http://scp-wiki.net/reunion Autor: RJB_R Překladatel: Utylike"
+        },
+        {
+          "id": "bicentennial",
+          "title": "Druhá vsuvka: Při hodině",
+          "url": "http://scp-cs.wikidot.com/bicentennial",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "- Neznámý obdivovatel."
+        },
+        {
+          "id": "the-year-that-it-was",
+          "title": "Vzpomínání: Část třetí",
+          "url": "http://scp-cs.wikidot.com/the-year-that-it-was",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Vzpomínání: Část třetí Originál: http://scp-wiki.net/the-year-that-it-was Autor: RJB_R Překladatel: Utylike"
+        },
+        {
+          "id": "looking-back",
+          "title": "Epilog: Poslední slovo",
+          "url": "http://scp-cs.wikidot.com/looking-back",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Epilog: Poslední slovo Originál: http://scp-wiki.net/looking-back Autor: RJB_R Překladatel: Utylike"
+        },
+        {
+          "id": "scp-1833",
+          "title": "Třída roku '76",
+          "url": "http://scp-cs.wikidot.com/scp-1833",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "SCP-1833 je zadrženo ve standardním zadržovacím sejfu v křídle pro objekty Třídy Safe v Oblasti-77 . Nikdo, kromě personálu Třídy D, nemá povoleno s SCP-1833 přímo manipulovat."
+        },
+        {
+          "id": "scp-1423",
+          "title": "Léto roku '76",
+          "url": "http://scp-cs.wikidot.com/scp-1423",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-1423 je zadrženo ve standardním zadržovacím sejfu v křídle pro objekty Třídy Safe v Oblasti-77 . Žádný zaměstnanec nesmí přijít do fyzického kontaktu s SCP-1423. Všechny osoby, které s ním do kontaktu přijdou, budou považovány za oběti kognitohazardu a bud…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "days-gone-by",
+            "in-symphony",
+            "lonwood",
+            "reunion",
+            "bicentennial",
+            "the-year-that-it-was",
+            "looking-back",
+            "scp-1833",
+            "scp-1423"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:series:the-cool-war-hub",
@@ -7648,14 +10164,72 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-ca2815255b233abdf3015ecf93a57dccab05086d1693d6b5d3b3b906a9bc6638"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "wowwee-go-kill-ursefl",
+          "title": "haha di se zabít",
+          "url": "http://scp-cs.wikidot.com/wowwee-go-kill-ursefl",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Název: haha di se zabít Originál: http://scp-wiki.net/wowwee-go-kill-ursefl Autor: Randomini Překladatel: Utylike"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "wowwee-go-kill-ursefl"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:series:in-his-own-image",
@@ -7676,14 +10250,237 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Series entry point; member expansion requires a separate reviewed tag or DOM structure."
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
       },
-      "memberManifests": [],
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
       "memberResolution": {
-        "mode": "officialHubOnly"
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-6b538f402428db227560e700005f78266a29d4b8b618ff8afc34e314a8822b78"
       },
-      "primaryArticles": [],
-      "supplementLinks": []
+      "primaryArticles": [
+        {
+          "id": "in-his-own-image-part-1",
+          "title": "K Obrazu Svému: Část 1",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-part-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: K Obrazu Svému: Část 1 Originál: http://scp-wiki.net/in-his-own-image-part-1 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-interlude-1",
+          "title": "K Obrazu Svému: Vsuvka 1",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-interlude-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Vsuvka 1 Originál: http://scp-wiki.net/in-his-own-image-interlude-1 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-part-2",
+          "title": "K Obrazu Svému: Část 2",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-part-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: K Obrazu Svému: Část 2 Originál: http://scp-wiki.net/in-his-own-image-part-2 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-interlude-2",
+          "title": "K Obrazu Svému: Vsuvka 2",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-interlude-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Vsuvka 2 Originál: http://scp-wiki.net/in-his-own-image-interlude-2 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-part-3",
+          "title": "K Obrazu Svému: Část 3",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-part-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Název: K Obrazu Svému: Část 3 Originál: http://scp-wiki.net/in-his-own-image-part-3 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-interlude-3",
+          "title": "K Obrazu Svému: Vsuvka 3",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-interlude-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Název: K Obrazu Svému: Vsuvka 3 Originál: http://scp-wiki.net/in-his-own-image-interlude-3 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-part-4",
+          "title": "K Obrazu Svému: Část 4",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-part-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Část 4 Originál: http://scp-wiki.net/in-his-own-image-part-4 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-interlude-4",
+          "title": "K Obrazu Svému: Vsuvka 4",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-interlude-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Vsuvka 4 Originál: http://scp-wiki.net/in-his-own-image-interlude-4 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-part-5",
+          "title": "K Obrazu Svému: Část 5",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-part-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Název: K Obrazu Svému: Část 5 Originál: http://scp-wiki.net/in-his-own-image-part-5 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-interlude-5",
+          "title": "K Obrazu Svému: Vsuvka 5",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-interlude-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: K Obrazu Svému: Vsuvka 5 Originál: http://scp-wiki.net/in-his-own-image-interlude-5 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-part-6",
+          "title": "K Obrazu Svému: Část 6",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-part-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Část 6 Originál: http://scp-wiki.net/in-his-own-image-part-6 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-interlude-6",
+          "title": "K Obrazu Svému: Vsuvka 6",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-interlude-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Vsuvka 6 Originál: http://scp-wiki.net/in-his-own-image-interlude-6 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-part-7",
+          "title": "K Obrazu Svému: Část 7",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-part-7",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Část 7 Originál: http://scp-wiki.net/in-his-own-image-part-7 Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "in-his-own-image-epilogue",
+          "title": "K Obrazu Svému: Epilog",
+          "url": "http://scp-cs.wikidot.com/in-his-own-image-epilogue",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Název: K Obrazu Svému: Epilog Originál: http://scp-wiki.net/in-his-own-image-epilogue Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "containing-yourself",
+          "title": "Zadržte sami sebe",
+          "url": "http://scp-cs.wikidot.com/containing-yourself",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Zadržte Sebe Originál: http://scp-wiki.net/containing-yourself Autor: TroyL Překladatel: Utylike"
+        },
+        {
+          "id": "a-day-in-the-life-of-alto-clef",
+          "title": "Den v životě Alto Clefa",
+          "url": "http://scp-cs.wikidot.com/a-day-in-the-life-of-alto-clef",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Den v životě Alto Clefa Originál: http://scp-wiki.net/a-day-in-the-life-of-alto-clef Autor: TroyL Překladatel: chamik"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "in-his-own-image-part-1",
+            "in-his-own-image-interlude-1",
+            "in-his-own-image-part-2",
+            "in-his-own-image-interlude-2",
+            "in-his-own-image-part-3",
+            "in-his-own-image-interlude-3",
+            "in-his-own-image-part-4",
+            "in-his-own-image-interlude-4",
+            "in-his-own-image-part-5",
+            "in-his-own-image-interlude-5",
+            "in-his-own-image-part-6",
+            "in-his-own-image-interlude-6",
+            "in-his-own-image-part-7",
+            "in-his-own-image-epilogue",
+            "containing-yourself",
+            "a-day-in-the-life-of-alto-clef"
+          ]
+        }
+      ]
     }
   ]
 }
