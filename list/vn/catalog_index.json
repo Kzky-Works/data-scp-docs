@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T16:05:49Z",
+  "generatedAt": "2026-08-08T17:34:54Z",
   "files": [
     {
       "kind": "manifest_scp-vn",
@@ -35,11 +35,11 @@
     {
       "kind": "signals_scp-main",
       "url": "signals_scp-main.json",
-      "listVersion": 1786165941,
+      "listVersion": 1786210440,
       "schemaVersion": 1,
-      "generatedAt": "2026-08-08T05:12:21Z",
-      "contentHash": "sha256-6d68d77c6a36d568bf5f7e631b64c27464e3ea6538afaaf8911ffece2f08b431",
-      "byteSize": 38023,
+      "generatedAt": "2026-08-08T17:34:00Z",
+      "contentHash": "sha256-c7eac147e678af2eb9c2d4bf461532432b1fe8dfe2cc5d856259aa4bf0bf443b",
+      "byteSize": 38025,
       "entryCount": 2004
     },
     {
@@ -75,30 +75,30 @@
     {
       "kind": "signals_tales",
       "url": "signals_tales.json",
-      "listVersion": 1786165941,
+      "listVersion": 1786210440,
       "schemaVersion": 1,
-      "generatedAt": "2026-08-08T05:12:21Z",
-      "contentHash": "sha256-4fb38cfcab796c39f3a83b8df44314729590f5c4f5d6bf21f38cf08228da6edb",
+      "generatedAt": "2026-08-08T17:34:00Z",
+      "contentHash": "sha256-43cbc355d702d241b5306a03f0c9fc1c35ce325cf580e89e4ab2d511ed6f0099",
       "byteSize": 26884,
       "entryCount": 883
     },
     {
       "kind": "manifest_canons",
       "url": "manifest_canons.json",
-      "listVersion": 1786165898,
+      "listVersion": 1786210397,
       "schemaVersion": 2,
-      "generatedAt": "2026-08-08T05:11:38Z",
-      "contentHash": "sha256-f4cc213a89a7fbec7e0d75ff8d319e424b0f3202b45930a9f76db0d495cf0d52",
+      "generatedAt": "2026-08-08T17:33:17Z",
+      "contentHash": "sha256-b0c06027410463db60869c5dc24bd424e379ae0d095a3872befb906c963cdb31",
       "byteSize": 96219,
       "entryCount": 67
     },
     {
       "kind": "collection_details",
       "url": "collection_details.json",
-      "listVersion": 1786205149,
+      "listVersion": 1786210494,
       "schemaVersion": 1,
-      "generatedAt": "2026-08-08T16:05:49Z",
-      "contentHash": "sha256-59a0ff6dc9c09c120fb41517986b5a0853eefbcdea1ca566b40834d84fcbb727",
+      "generatedAt": "2026-08-08T17:34:54Z",
+      "contentHash": "sha256-0a1f684329d9e75f61f3c3b2b2c6d041d36a522b6c4297ad580ba3ac4c15d249",
       "byteSize": 697877,
       "entryCount": 68
     },
@@ -175,12 +175,12 @@
     {
       "kind": "manifest_recent",
       "url": "manifest_recent.json",
-      "listVersion": 1786165900,
+      "listVersion": 1786210398,
       "schemaVersion": 2,
-      "generatedAt": "2026-08-08T05:11:40Z",
-      "contentHash": "sha256-5356d604a359df72b28a072a7f39c947f049cf51c759bb8ebb9c32ebe735272c",
-      "byteSize": 2011,
-      "entryCount": 7
+      "generatedAt": "2026-08-08T17:33:18Z",
+      "contentHash": "sha256-f69ec540dbe9f7695a622b63a85809a5f50b3b74b7858be52de8c5eea32b9025",
+      "byteSize": 951,
+      "entryCount": 4
     },
     {
       "kind": "manifest_scp001-proposals",
@@ -212,5 +212,25 @@
       "byteSize": 836764,
       "entryCount": 4163
     }
-  ]
+  ],
+  "sourceFreshness": {
+    "schemaVersion": 1,
+    "status": "stale",
+    "dailyDiscovery": {
+      "lastSuccessAt": "2026-08-08T17:34:57Z",
+      "maxAgeHours": 36
+    },
+    "weeklyFull": {
+      "lastSuccessAt": "",
+      "maxAgeHours": 192
+    },
+    "urlHealth": {
+      "lastSuccessAt": "",
+      "maxAgeHours": 192
+    },
+    "officialParity": {
+      "lastSuccessAt": "",
+      "maxAgeHours": 192
+    }
+  }
 }
