@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786202047,
-  "generatedAt": "2026-08-08T15:14:07Z",
-  "chunkRevision": "sha256-732927d5f5aa760019d0473cb99268e705c3bdefe7d6e8d55ddd28dd11c9cdfc",
+  "listVersion": 1786205088,
+  "generatedAt": "2026-08-08T16:04:48Z",
+  "chunkRevision": "sha256-7008d5f40bbecc2f5573e81129ad6a85d3b8449dd5d954b4cfd8935b2d94950b",
   "builtFrom": {
     "manifests": [
       {
@@ -60,6 +60,11 @@
       "listVersion": 1783429232,
       "generatedAt": "2026-07-13T09:29:57Z",
       "contentHash": "sha256-7bdb0a5d63bf3e474e5d52589399652da08fef1be1535e949e980811c628e03c"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-4d9da849dce8b02c0387045fb1bc95759f3378109b8d1e35cafe521a9b7ce37b"
     }
   },
   "collections": [
@@ -17345,13 +17350,6 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-8190",
-          "title": "VISIONNER",
-          "url": "http://fondationscp.wikidot.com/scp-8190",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "site-17-hub",
           "title": "Catalogue Deepwell du Site-17",
           "url": "https://fondationscp.wikidot.com/site-17-hub",
@@ -17372,8 +17370,7 @@
             "scp-6659",
             "scp-6488",
             "scp-6183",
-            "scp-7243",
-            "scp-8190"
+            "scp-7243"
           ]
         },
         {
@@ -17382,6 +17379,16 @@
           "articleIDs": [
             "site-17-hub"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "http://fondationscp.wikidot.com/scp-8190",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
@@ -17645,13 +17652,6 @@
           "desc": "DERNIER ARTICLE : SCP-8969 : SITE STELLAIRE : Bouteille à la mer"
         },
         {
-          "id": "scp-5549",
-          "title": "SCP-5549 SECOND PÉCHÉ",
-          "url": "https://fondationscp.wikidot.com/scp-5549",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "lord-blackwood-in-amon-iram",
           "title": "Prélude d'or : Lord Blackwood dans la cité d'Amon Iram !",
           "url": "https://fondationscp.wikidot.com/lord-blackwood-in-amon-iram",
@@ -17660,27 +17660,6 @@
           "contentKind": "tale",
           "os": 1,
           "desc": "Le passage suivant est un extrait du Journal 11 de SCP-1867, également connu sous le nom de Lord Théodore Thomas Blackwood. Avec le reste de la Collection Blackwood, il a été saisi par la Fondation dans une chambre forte souterraine à l'adresse fournie par SCP…"
-        },
-        {
-          "id": "rounderhouse-gold-proposal",
-          "title": "LA PROPOSITION D'OR AMONI-RAM",
-          "url": "https://fondationscp.wikidot.com/rounderhouse-gold-proposal",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "interregnum-blackstar",
-          "title": "INTERRÈGNE I : L'ÉTOILE NOIRE À AMONI-RAM",
-          "url": "http://fondationscp.wikidot.com/interregnum-blackstar",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "burnt-offerings",
-          "title": "OFFRANDES CONSUMÉES par Tufto",
-          "url": "http://fondationscp.wikidot.com/burnt-offerings",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "delta-wave",
@@ -17724,40 +17703,11 @@
           "desc": "Q : Veuillez indiquer votre nom pour l'enregistrement."
         },
         {
-          "id": "rounderhouse-jade-proposal",
-          "title": "LA PROPOSITION DE JADE MAMJUL & KORAR",
-          "url": "https://fondationscp.wikidot.com/rounderhouse-jade-proposal",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "interregnum-everest",
-          "title": "INTERRÈGNE II : L'ÉTOILE NOIRE À L'EVEREST",
-          "url": "http://fondationscp.wikidot.com/interregnum-everest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "heresy",
-          "title": "L'HÉRÉSIE D'HEDVIG",
-          "url": "http://fondationscp.wikidot.com/heresy",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-8600",
           "title": "SCP-8600 : Le hall des impératrices par Miss Lapis",
           "url": "http://fondationscp.wikidot.com/scp-8600",
           "role": "primaryArticle",
           "contentKind": "scp"
-        },
-        {
-          "id": "scp-5900",
-          "title": "SCP-5900 : NOIR TOTAL par Aismallard",
-          "url": "http://fondationscp.wikidot.com/SCP-5900",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "2020 SCP-5900 : NOIR TOTAL par Aismallard"
         },
         {
           "id": "scp-6000",
@@ -17780,20 +17730,6 @@
           "id": "art:act-of-creation",
           "title": "Acte de création par UncertaintyCrossing",
           "url": "http://fondationscp.wikidot.com/art:act-of-creation",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "lamb-of-god",
-          "title": "AGNEAU DE DIEU",
-          "url": "http://fondationscp.wikidot.com/lamb-of-god",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "farhan-s-flame",
-          "title": "LA FLAMME DE FARHAN",
-          "url": "http://fondationscp.wikidot.com/farhan-s-flame",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
@@ -17825,55 +17761,6 @@
           "desc": "La mer de Béring était bien plus calme que quand Ari était arrivée au Site-7. Le sturm-und-drang de ces deux derniers jours s'était finalement dissipé, révélant la beauté naturelle du Norton Sound. La collection de plateformes qui constituaient le site était t…"
         },
         {
-          "id": "humint",
-          "title": "Site-7 : ROHUM",
-          "url": "http://fondationscp.wikidot.com/humint",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "replica",
-          "title": "Site-7 : RÉPLIQUE",
-          "url": "http://fondationscp.wikidot.com/replica",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "autopsy",
-          "title": "Site-7 : AUTOPSIE",
-          "url": "http://fondationscp.wikidot.com/autopsy",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "segfault",
-          "title": "Site-7 : ERREUR DE SEGMENTATION",
-          "url": "http://fondationscp.wikidot.com/segfault",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "daemon",
-          "title": "Site-7 : DAEMON",
-          "url": "http://fondationscp.wikidot.com/daemon",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "fishskin",
-          "title": "Prélude d'os : PEAU DE POISSON",
-          "url": "http://fondationscp.wikidot.com/fishskin",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "rounderhouse-bone-proposal",
-          "title": "LA PROPOSITION D'OS ADYTUM NOIRE",
-          "url": "https://fondationscp.wikidot.com/rounderhouse-bone-proposal",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "rounderhouse-proposal",
           "title": "LA PROPOSITION DE ROUNDERHOUSE MEMENTO MORI",
           "url": "https://fondationscp.wikidot.com/rounderhouse-proposal",
@@ -17889,38 +17776,159 @@
           "title": "HISTOIRES",
           "articleIDs": [
             "scp-8969",
-            "scp-5549",
             "lord-blackwood-in-amon-iram",
-            "rounderhouse-gold-proposal",
-            "interregnum-blackstar",
-            "burnt-offerings",
             "delta-wave",
             "scp-6781",
             "scp-4776",
             "scp-7545",
             "vagabond-actual",
-            "rounderhouse-jade-proposal",
-            "interregnum-everest",
-            "heresy",
             "scp-8600",
-            "scp-5900",
             "scp-6000",
             "warpaint",
             "art:act-of-creation",
-            "lamb-of-god",
-            "farhan-s-flame",
             "secure-facility-dossier-site-7",
             "tempest",
             "airgap",
-            "humint",
-            "replica",
-            "autopsy",
-            "segfault",
-            "daemon",
-            "fishskin",
-            "rounderhouse-bone-proposal",
             "rounderhouse-proposal"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "http://fondationscp.wikidot.com/SCP-5900",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/autopsy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/burnt-offerings",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/daemon",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/farhan-s-flame",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/fishskin",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/heresy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/humint",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/interregnum-blackstar",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/interregnum-everest",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/lamb-of-god",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/replica",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://fondationscp.wikidot.com/segfault",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://fondationscp.wikidot.com/rounderhouse-bone-proposal",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://fondationscp.wikidot.com/rounderhouse-gold-proposal",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://fondationscp.wikidot.com/rounderhouse-jade-proposal",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://fondationscp.wikidot.com/scp-5549",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
@@ -23925,13 +23933,6 @@
           "desc": "Paul : Caaarl ! Pourquoi est-ce qu'il y a une statue dans notre maison ? Elle me regarde bizarrement. Carl : Qu'est-ce que tu veux dire ? Paul : La statue. Juste là. Celle qui est au milieu du salon. Carl : Oh, ça ! Je croyais que c'était une montagne. Paul :…"
         },
         {
-          "id": "too-slow",
-          "title": "Trop lent",
-          "url": "https://fondationscp.wikidot.com/too-slow",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "the-foundation-never-changes",
           "title": "La Fondation ne meurt jamais",
           "url": "https://fondationscp.wikidot.com/the-foundation-never-changes",
@@ -23940,13 +23941,6 @@
           "contentKind": "tale",
           "os": 7,
           "desc": "À ses débuts, la Fondation croyait qu'elle protégerait à jamais l'humanité des horreurs de ce monde, qu'elle serait capable de trouver et contenir ce qui ne peut être compris, qu'elle nous protégerait des monstres vivant dans nos placards. Cependant, la Fondat…"
-        },
-        {
-          "id": "theselfinsert",
-          "title": "Le Self-Insert",
-          "url": "https://fondationscp.wikidot.com/theselfinsert",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "occurrence-of-oddness",
@@ -23998,14 +23992,30 @@
           "articleIDs": [
             "projetcrossoverfrindex",
             "keters-with-hats",
-            "too-slow",
             "the-foundation-never-changes",
-            "theselfinsert",
             "occurrence-of-oddness",
             "knee-deep-in-the-keter",
             "this-is-always-a-horrible-idea",
             "incident-report-kaf-09"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://fondationscp.wikidot.com/theselfinsert",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://fondationscp.wikidot.com/too-slow",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },

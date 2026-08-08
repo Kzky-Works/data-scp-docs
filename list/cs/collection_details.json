@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786202055,
-  "generatedAt": "2026-08-08T15:14:15Z",
-  "chunkRevision": "sha256-faecd0bb11e583920fd248f08bd40f52c254f7f917e49ac4810b22dde1c3af8f",
+  "listVersion": 1786205083,
+  "generatedAt": "2026-08-08T16:04:43Z",
+  "chunkRevision": "sha256-a75646ae89a72212aeb7f801e18f6685ea70f37c82571f6ed7a686a1988142c3",
   "builtFrom": {
     "manifests": [
       {
@@ -69,6 +69,11 @@
       "listVersion": 1784623107,
       "generatedAt": "2026-07-21T08:38:27Z",
       "contentHash": "sha256-bd2331d16b30b1efb25c9e119631e2b6c161895a4e89f4ee6c2ae310abd3295e"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-4d9da849dce8b02c0387045fb1bc95759f3378109b8d1e35cafe521a9b7ce37b"
     }
   },
   "collections": [
@@ -7488,14 +7493,6 @@
           "desc": "Název: Alex Thorley zajde na burger Originál: https://scp-wiki.wikidot.com/burger Autor: syuzhet Překladatel: chamik"
         },
         {
-          "id": "bagel",
-          "title": "Alex Thorley má Chuť na Bagel",
-          "url": "http://scp-cs.wikidot.com/bagel",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "NEPŘELOŽENO"
-        },
-        {
           "id": "scp-6478",
           "title": "Ne Demence - Je to něco jiného",
           "url": "http://scp-cs.wikidot.com/scp-6478",
@@ -7567,8 +7564,7 @@
           "id": "02-beh-po-prazdnu",
           "title": "Běh po prázdnu",
           "articleIDs": [
-            "burger",
-            "bagel"
+            "burger"
           ]
         },
         {
@@ -7589,7 +7585,17 @@
           ]
         }
       ],
-      "description": "Běh po prázdnu Samostatné příběhy obsahující Oddělení Nereality (jednotné)."
+      "description": "Běh po prázdnu Samostatné příběhy obsahující Oddělení Nereality (jednotné).",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-cs.wikidot.com/bagel",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:series:adventures-in-capitalism-hub",
@@ -8321,14 +8327,6 @@
           "desc": "Kódové označení projektu: Olympia"
         },
         {
-          "id": "olympia-integration-experiment-omega",
-          "title": "Integrační Experiment Olympie OMEGA",
-          "url": "http://scp-cs.wikidot.com/olympia-integration-experiment-omega",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "-"
-        },
-        {
           "id": "production-model-changes-and-procedures",
           "title": "Změny výrobního modelu a postupy",
           "url": "http://scp-cs.wikidot.com/production-model-changes-and-procedures",
@@ -8375,8 +8373,7 @@
           "articleIDs": [
             "olympia-integration-experiment-alpha",
             "olympia-integration-experiment-beta",
-            "olympia-integration-experiment-gamma",
-            "olympia-integration-experiment-omega"
+            "olympia-integration-experiment-gamma"
           ]
         },
         {
@@ -8387,7 +8384,17 @@
           ]
         }
       ],
-      "description": "Cíle projektu: Úspěšné vytvoření umělého humanoida pomocí několika SCP a jeho využití ve prospěch Nadace."
+      "description": "Cíle projektu: Úspěšné vytvoření umělého humanoida pomocí několika SCP a jeho využití ve prospěch Nadace.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-cs.wikidot.com/olympia-integration-experiment-omega",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-cs:collection:series:kalinins-proposal",

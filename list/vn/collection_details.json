@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786202055,
-  "generatedAt": "2026-08-08T15:14:15Z",
-  "chunkRevision": "sha256-7b779f3a893e509da1594a92b0557edc9d83300c9a0fdc277e7422cf3ad0aa8e",
+  "listVersion": 1786205149,
+  "generatedAt": "2026-08-08T16:05:49Z",
+  "chunkRevision": "sha256-ef7b185439bf49f06800b6b201c1d2faee7d2ada4bd8931e5938d6612ff346bd",
   "builtFrom": {
     "manifests": [
       {
@@ -78,6 +78,11 @@
       "listVersion": 1784606960,
       "generatedAt": "2026-07-21T04:09:20Z",
       "contentHash": "sha256-3483c4f47ad288acf5cfe578bea4e68307833f968a7fdee76d7133abdc0b1858"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-4d9da849dce8b02c0387045fb1bc95759f3378109b8d1e35cafe521a9b7ce37b"
     }
   },
   "collections": [
@@ -6508,14 +6513,6 @@
       },
       "primaryArticles": [
         {
-          "id": "wilson-s-wildlife-solutions-hub",
-          "title": "Giải pháp Động vật Hoang dã Wilson",
-          "url": "https://scp-vn.wikidot.com/wilson-s-wildlife-solutions-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Tim Wilson, từ Giải pháp Động vật Hoang dã Wilson"
-        },
-        {
           "id": "critter-profile-the-polar-bear",
           "title": "Hồ sơ Sinh vật: Gấu Bắc Cực!",
           "url": "https://scp-vn.wikidot.com/critter-profile-the-polar-bear",
@@ -6552,14 +6549,23 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "wilson-s-wildlife-solutions-hub",
             "critter-profile-the-polar-bear",
             "on-the-radar",
             "uiu-file-2008-21"
           ]
         }
       ],
-      "description": "\"Chúng tôi không có tên gọi chính thức cho sinh vật này, nhưng đơn giản mà nói thì mọi người trong trung tâm đã quen gọi cậu ta là 'Gấu Bắc Cực' trong suốt thời gian ở cùng chúng tôi rồi.\""
+      "description": "\"Chúng tôi không có tên gọi chính thức cho sinh vật này, nhưng đơn giản mà nói thì mọi người trong trung tâm đã quen gọi cậu ta là 'Gấu Bắc Cực' trong suốt thời gian ở cùng chúng tôi rồi.\"",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-vn.wikidot.com/wilson-s-wildlife-solutions-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:rammer-jammer-yellow-hammer-hub",
@@ -6963,14 +6969,6 @@
       },
       "primaryArticles": [
         {
-          "id": "doomsday-contest",
-          "title": "2018 Cuộc thi Tận thế",
-          "url": "https://scp-vn.wikidot.com/doomsday-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Hub Điểu Đội (Hub Series) Hub Series tạo ra cho 2018 Cuộc thi Tận thế . Đăng ngày 29 Tháng 5 năm 2018"
-        },
-        {
           "id": "scp-3095",
           "title": "Từ đó là Chim",
           "url": "https://scp-vn.wikidot.com/scp-3095",
@@ -6983,13 +6981,6 @@
       "supplementLinks": [],
       "articleSections": [
         {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "doomsday-contest"
-          ]
-        },
-        {
           "id": "02-can-oc",
           "title": "CẦN ĐỌC",
           "articleIDs": [
@@ -6997,7 +6988,17 @@
           ]
         }
       ],
-      "description": "Đúng vậy, đồng nghiệp mới của bạn là hải âu. Thế giới này lạ lắm. Chào mừng đến với Tổ Chức. — Nghiên cứu viên Calvin"
+      "description": "Đúng vậy, đồng nghiệp mới của bạn là hải âu. Thế giới này lạ lắm. Chào mừng đến với Tổ Chức. — Nghiên cứu viên Calvin",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-vn.wikidot.com/doomsday-contest",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:integration-program-hub",
@@ -7094,20 +7095,6 @@
           "desc": "SCP-5175 được cất giữ trong tủ quản thúc 5175, đặt tại Khu-179. CNĐLT-3445 đã được tiếp nhận vào làm việc cho Tổ Chức do có mối quan hệ cộng sinh với SCP-5175, nhằm áp dụng đặc tính ưu việt của dị thể. Đội Đặc nhiệm Cơ động Ω-5 \"Những Thiên thần của Damien\" đã…"
         },
         {
-          "id": "scp-5591",
-          "title": "SCP-5591 ⁠— Những lời Ba hoa của Badalisc bởi PlaguePJP",
-          "url": "https://scp-vn.wikidot.com/scp-5591",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-6597",
-          "title": "SCP-6597 ⁠— Cá voi, tôi Lóc bởi PlaguePJP",
-          "url": "https://scp-vn.wikidot.com/scp-6597",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-6599",
           "title": "HOGSLICE",
           "url": "https://scp-vn.wikidot.com/scp-6599",
@@ -7128,20 +7115,6 @@
           "desc": "Èo vcl. Android à? Nếu ông dùng hàng android thì tại sao lại ở trên một diễn đàn về Apple chứ CÁI LŨ BÚ CẶC BỢ ĐÍT TRÁI CÂY CẦN PHẢI NGỘ RA LÀ NGƯỜI MÁY (ANDROID (NGẦU LÒI)) ĐỈNH HƠN HOA QUẢ (HOÀN TOÀN CÓ THỂ BỊ TA ĐẤM NÁT) CHỨ — HOGSLICE"
         },
         {
-          "id": "scp-3837",
-          "title": "SCP-3837 ⁠— Hiệp sĩ Bắp bởi PlaguePJP & Tstaffor",
-          "url": "https://scp-vn.wikidot.com/scp-3837",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-6453",
-          "title": "SCP-6453 ⁠— Yeti Cứt bởi J Dune",
-          "url": "https://scp-vn.wikidot.com/scp-6453",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-6593",
           "title": "Chỉ có Lòn",
           "url": "https://scp-vn.wikidot.com/scp-6593",
@@ -7150,20 +7123,6 @@
           "contentKind": "scp",
           "os": 8,
           "desc": "SCP-6593 đã được chuyển đến căn tin Điểm-322. Nhân sự tại Điểm ở mọi cấp bậc đều có thể sử dụng SCP-6593. Nên thông báo với các nhân sự xung quanh khi muốn sử dụng."
-        },
-        {
-          "id": "scp-7595",
-          "title": "SCP-7595 ⁠— Ếch Ngoại cảm bởi PlaguePJP",
-          "url": "https://scp-vn.wikidot.com/scp-7595",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-7596",
-          "title": "SCP-7596 ⁠— Sự cố bởi PlaguePJP, Rounderhouse, & J Dune",
-          "url": "https://scp-vn.wikidot.com/scp-7596",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         },
         {
           "id": "scp-8596",
@@ -7203,27 +7162,6 @@
           "desc": "bluntfiend: ừ thế nhé. bluntfiend: gặp mấy đứa sau, anh mày đi bú cần đây. juliachildenthusiast: Gặp lại sau nhé, Jude. Cứ từ từ mà tận hưởng."
         },
         {
-          "id": "scp-6121",
-          "title": "SCP-6121 ⁠— HỘI CAPSLOCK bởi HarryBlank",
-          "url": "https://scp-vn.wikidot.com/scp-6121",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-6483",
-          "title": "SCP-6483 ⁠— Chuyển phát nhanh Vùng cực bởi Ralliston & LORDXVNV",
-          "url": "https://scp-vn.wikidot.com/scp-6483",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-6984",
-          "title": "SCP-6984 ⁠— Chọc dò Tủy sốn̈g Đây này bởi GremlinGroup",
-          "url": "https://scp-vn.wikidot.com/scp-6984",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-7999",
           "title": "Gặp Lại Tôi Giữa Những Vì Sao",
           "url": "https://scp-vn.wikidot.com/scp-7999",
@@ -7234,27 +7172,6 @@
           "desc": "Do SCP-7999 đã gây ra một Viễn cảnh Vén Màn không hoàn toàn, các nỗ lực của Tổ Chức cần tập trung vào việc giải mật hiện tượng này và giúp đỡ các cá nhân SCP-7999-3 hòa nhập với xã hội. Ủy ban Hòa nhập của Điểm-120 sẽ giám sát những nỗ lực định hướng này 1 . T…"
         },
         {
-          "id": "scp-6458",
-          "title": "SCP-6458 ⁠— bồi bàn cánh cụt bởi Prismal",
-          "url": "https://scp-vn.wikidot.com/scp-6458",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-7522",
-          "title": "SCP-7522 ⁠— Quý Ngài Jamie Goodworth Mcdonald: Chuyên viên Tài chính, Vật thể Thiên hà bởi J T K C",
-          "url": "https://scp-vn.wikidot.com/scp-7522",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-6459",
-          "title": "SCP-6459 ⁠— Dù Gió Có Thổi bởi AstersQuill",
-          "url": "https://scp-vn.wikidot.com/scp-6459",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-8350",
           "title": "Phòng Ban Công Vụ",
           "url": "https://scp-vn.wikidot.com/scp-8350",
@@ -7263,20 +7180,6 @@
           "contentKind": "scp",
           "os": 5,
           "desc": "Mọi cá thể SCP-8350 đều đã được Tổ Chức tuyển dụng và cung cấp nơi ở tại Điểm-322, cùng địa điểm với trụ sở của Phòng ban Công vụ."
-        },
-        {
-          "id": "scp-1046",
-          "title": "SCP-1046 ⁠— Giấu Tôi Đi bởi Uncle Nicolini",
-          "url": "https://scp-vn.wikidot.com/scp-1046",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-8672",
-          "title": "SCP-8672 ⁠— Khẩu Súng Hình Rồng bởi Nocturned",
-          "url": "https://scp-vn.wikidot.com/scp-8672",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         }
       ],
       "supplementLinks": [],
@@ -7288,33 +7191,133 @@
             "scp-5595",
             "scp-5104",
             "scp-5175",
-            "scp-5591",
-            "scp-6597",
             "scp-6599",
             "hogslice-makes-a-friend",
-            "scp-3837",
-            "scp-6453",
             "scp-6593",
-            "scp-7595",
-            "scp-7596",
             "scp-8596",
             "plague-s-proposal",
             "scp-8000",
             "hogslice-vs-bones",
-            "scp-6121",
-            "scp-6483",
-            "scp-6984",
             "scp-7999",
-            "scp-6458",
-            "scp-7522",
-            "scp-6459",
-            "scp-8350",
-            "scp-1046",
-            "scp-8672"
+            "scp-8350"
           ]
         }
       ],
-      "description": "\"Hòa nhập\" là gì? Đó đã là một câu hỏi được đặt ra từ thuở bình minh của thời gian rồi. Bạn có thể tra Google thử."
+      "description": "\"Hòa nhập\" là gì? Đó đã là một câu hỏi được đặt ra từ thuở bình minh của thời gian rồi. Bạn có thể tra Google thử.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-vn.wikidot.com/scp-1046",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-3837",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-5591",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-6121",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-6453",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-6458",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-6459",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-6483",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-6597",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-6984",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-7522",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-7595",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-7596",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-8672",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:the-lombardi-tales",
@@ -8345,13 +8348,6 @@
           "desc": "Ánh đèn ảm đạm nhấp nháy trong một phòng nghỉ của nhân viên tại Điểm 19. Trông chúng tẻ nhạt làm sao, kì thực chỉ là một dãy những bóng đèn vàng nhấp nháy giăng xung quanh góc trần nhà, không hơn không kém. Chỉ có một cái cây nhỏ xíu làm từ cao su hiên ngang n…"
         },
         {
-          "id": "set-up-thine-altar-here",
-          "title": "Dựng Bàn Thờ Của Ngươi Ở Đây",
-          "url": "https://scp-vn.wikidot.com/set-up-thine-altar-here",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "no-one-should-be-alone",
           "title": "Chẳng Ai Nên Cô Đơn Cả",
           "url": "https://scp-vn.wikidot.com/no-one-should-be-alone",
@@ -8380,13 +8376,6 @@
           "contentKind": "tale",
           "os": 2,
           "desc": "Tiến sĩ Tâm lý, Daniel Horatio Aeslinger, đứng quay lưng với phòng, hướng mắt ra ngoài cửa sổ. Không gian bên ngoài tĩnh lặng và (chủ yếu) tối tăm. Điểm sáng duy nhất trong căn phòng phía sau y càng khiến thế giới bên ngoài trông cô quạnh hơn."
-        },
-        {
-          "id": "the-north-pole",
-          "title": "Bắc Cực",
-          "url": "https://scp-vn.wikidot.com/the-north-pole",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "too-drunk-to-be-merry",
@@ -8419,13 +8408,6 @@
           ]
         },
         {
-          "id": "02-trg-5-scp-682-nuong-thit-tren-ong-lua-ngoai-troi",
-          "title": "Trg. 5 - SCP-682 Nướng thịt trên Đống lửa Ngoài trời",
-          "articleIDs": [
-            "set-up-thine-altar-here"
-          ]
-        },
-        {
           "id": "03-trg-7-neo-scranton-ta-dung-trang-tri-sanh",
           "title": "Trg. 7 - Neo Scranton Ta Dùng Trang Trí Sảnh!",
           "articleIDs": [
@@ -8438,7 +8420,6 @@
           "articleIDs": [
             "i-hope-that-i-get-old-before-i-die",
             "the-lost-shepherd",
-            "the-north-pole",
             "too-drunk-to-be-merry"
           ]
         },
@@ -8450,7 +8431,25 @@
           ]
         }
       ],
-      "description": "GHI CHÚ: Do những sự kiện xảy ra vào buổi hát mừng năm ngoái, chúng ta sẽ không đến Cánh Keter nữa. Điều này là không tối ưu, nhưng chúng ta lẽ ra phải lan tỏa niềm vui Giáng Sinh chứ không phải là những giọt nước mắt - J. Conwell"
+      "description": "GHI CHÚ: Do những sự kiện xảy ra vào buổi hát mừng năm ngoái, chúng ta sẽ không đến Cánh Keter nữa. Điều này là không tối ưu, nhưng chúng ta lẽ ra phải lan tỏa niềm vui Giáng Sinh chứ không phải là những giọt nước mắt - J. Conwell",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-vn.wikidot.com/set-up-thine-altar-here",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/the-north-pole",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:resurrection-new-faces-hub",
@@ -8635,13 +8634,6 @@
           "contentKind": "tale",
           "os": 4,
           "desc": "Sophia Light chăm chú nhìn vào màn hình không hiển thị tín hiệu sống nào từ đội của cô. Mẹ nó. Mình chỉ ước là— cô nghĩ, nhưng bị ngắt quãng bởi tiếng bíp dồn dập từ một trong những bàn điều khiển."
-        },
-        {
-          "id": "resurrection-his-will-be-done-hub",
-          "title": "Hết…. hay là chưa?",
-          "url": "https://scp-vn.wikidot.com/resurrection-his-will-be-done-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -8679,12 +8671,21 @@
           "title": "Kết Thúc",
           "articleIDs": [
             "shut-it-down",
-            "tangled-web",
-            "resurrection-his-will-be-done-hub"
+            "tangled-web"
           ]
         }
       ],
-      "description": "Giám Đốc Sophia Light đang ở trong tình thế bấp bênh. Được chọn để dẫn đầu Đội Đặc Nhiệm Cơ Động mới thành lập (ít nhất một phần) bởi những cá nhân dị thường bởi quyền lực hiện có, Giám Đốc Light phải chịu rất nhiều áp lực. Như chúng ta đã thấy cho đến nay, việc tuyển dụng và tập hợp một nhóm diễn ra rất chậm chạp. Nhưng Giám Đốc Light luôn cảm thấy rằng một đội đơn lẻ là lỗ hổng lớn nhất trong phiên bản hiện đại của Omega-7, và cô nhấn mạnh rằng để ĐĐNCĐ Alpha-9 (\"Hy Vọng Cuối Cùng\") hoạt động hiệu quả thì cần có nhiều hơn một đội để sẵn sàng ứng phó với các tình huống khẩn cấp. Trong viễn cảnh này, câu chuyện của chúng ta bắt đầu: Giám Đốc Light đang tìm cách tuyển dụng thành viên mới cho ĐĐNCĐ tạm thời của mình."
+      "description": "Giám Đốc Sophia Light đang ở trong tình thế bấp bênh. Được chọn để dẫn đầu Đội Đặc Nhiệm Cơ Động mới thành lập (ít nhất một phần) bởi những cá nhân dị thường bởi quyền lực hiện có, Giám Đốc Light phải chịu rất nhiều áp lực. Như chúng ta đã thấy cho đến nay, việc tuyển dụng và tập hợp một nhóm diễn ra rất chậm chạp. Nhưng Giám Đốc Light luôn cảm thấy rằng một đội đơn lẻ là lỗ hổng lớn nhất trong phiên bản hiện đại của Omega-7, và cô nhấn mạnh rằng để ĐĐNCĐ Alpha-9 (\"Hy Vọng Cuối Cùng\") hoạt động hiệu quả thì cần có nhiều hơn một đội để sẵn sàng ứng phó với các tình huống khẩn cấp. Trong viễn cảnh này, câu chuyện của chúng ta bắt đầu: Giám Đốc Light đang tìm cách tuyển dụng thành viên mới cho ĐĐNCĐ tạm thời của mình.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-vn.wikidot.com/resurrection-his-will-be-done-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:in-his-own-image",
@@ -9691,20 +9692,6 @@
           "desc": "Tịch thu và điều hành SCP-7930 bằng nhân lực của Tổ Chức SCP nhằm đảm bảo ngân sách. Nhân viên điều hành phải tạo và giám sát một kho dữ liệu được cập nhật thường xuyên, chứa toàn bộ những phim đã biết; các nhân viên cần mua ngay mọi vé có sẵn trong trường hợp…"
         },
         {
-          "id": "scp-7931",
-          "title": "Xenotransplantation",
-          "url": "https://scp-vn.wikidot.com/scp-7931",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-7932",
-          "title": "Xenobiotic",
-          "url": "https://scp-vn.wikidot.com/scp-7932",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-7933",
           "title": "X tượng trưng cho Xing",
           "url": "https://scp-vn.wikidot.com/scp-7933",
@@ -9872,8 +9859,6 @@
           "title": "Đa Giáo sư",
           "articleIDs": [
             "scp-7930",
-            "scp-7931",
-            "scp-7932",
             "scp-7933"
           ]
         },
@@ -9885,7 +9870,25 @@
           ]
         }
       ],
-      "description": "TUYỂN TẬP là một sự kiện được diễn ra 31 ngày liên tục, trong đó một tác giả sẽ đăng một tác phẩm kinh dị mỗi ngày. Tất cả các SCP này đều có một chủ đề chung là “Bảng Chữ Cái Tử Thần” – một thử thách cho mỗi tác giả khi phải viết một bài SCP dựa trên một chữ hoặc kí tự đã được cung cấp. Không hề có một mạch chuyện tuyến tính nào giữa các bài cả — ngoại trừ việc đi theo bảng chữ cái đã được sắp xếp, với câu chuyện sẽ thay đổi theo nhiều cách khác nhau, hoặc sẽ thuộc về một mạch truyện hoặc canon nào đó."
+      "description": "TUYỂN TẬP là một sự kiện được diễn ra 31 ngày liên tục, trong đó một tác giả sẽ đăng một tác phẩm kinh dị mỗi ngày. Tất cả các SCP này đều có một chủ đề chung là “Bảng Chữ Cái Tử Thần” – một thử thách cho mỗi tác giả khi phải viết một bài SCP dựa trên một chữ hoặc kí tự đã được cung cấp. Không hề có một mạch chuyện tuyến tính nào giữa các bài cả — ngoại trừ việc đi theo bảng chữ cái đã được sắp xếp, với câu chuyện sẽ thay đổi theo nhiều cách khác nhau, hoặc sẽ thuộc về một mạch truyện hoặc canon nào đó.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-vn.wikidot.com/scp-7931",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-vn.wikidot.com/scp-7932",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:murphy-law-hub",
@@ -10000,13 +10003,6 @@
           "contentKind": "scp",
           "os": 9,
           "desc": "Thuật toán giám sát của Tổ Chức phải điều hành internet và các phương tiện in ấn nhằm tìm kiếm các đề cập liên quan tới SCP-2747. Tất cả các trường hợp phù hợp phải được gắn thẻ và chuyển tiếp đến Phòng Ban Phân Tích, nơi sẽ xác thực về sự xuất hiện của SCP-27…"
-        },
-        {
-          "id": "operation-overmeta",
-          "title": "Chiến Dịch ÓverMeta",
-          "url": "http://scp-vn.wikidot.com/operation-overmeta",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -10031,12 +10027,21 @@
           "id": "03-tai-lieu-co-lien-quan",
           "title": "Tài Liệu Có Liên Quan",
           "articleIDs": [
-            "scp-2747",
-            "operation-overmeta"
+            "scp-2747"
           ]
         }
       ],
-      "description": "Hắn là canon mà Tổ Chức đáng được sở hữu, nhưng chưa phải cái mà chúng ta cần lúc này. Nên ta sẽ lùng bắt hắn. Vì hắn có thể vượt qua toàn bộ. Vì hắn không phải canon của chúng ta. Hắn là một hộ vệ thầm lặng — một người bảo hộ cẩn trọng… …một đêm giông tố tối đen như mực. — Đặc vụ Frederick"
+      "description": "Hắn là canon mà Tổ Chức đáng được sở hữu, nhưng chưa phải cái mà chúng ta cần lúc này. Nên ta sẽ lùng bắt hắn. Vì hắn có thể vượt qua toàn bộ. Vì hắn không phải canon của chúng ta. Hắn là một hộ vệ thầm lặng — một người bảo hộ cẩn trọng… …một đêm giông tố tối đen như mực. — Đặc vụ Frederick",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-vn.wikidot.com/operation-overmeta",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:k-o-failure-scenario-hub",
@@ -12599,27 +12604,6 @@
           "contentKind": "tale",
           "os": 2,
           "desc": "Nó đã có thể cảm nhận được cô ấy. Cô đang tìm kiếm, phát hiện, sợ hãi. Sự kiên nhẫn của nó cuối cùng cũng đã được đền đáp. Sớm thôi, nó sẽ được minh oan."
-        },
-        {
-          "id": "siggy-and-robomonkey-and-the-rise-of-the-betrayed",
-          "title": "Cuộc Tấn Công Bắt Đầu, Và Mình Thăng Hoa",
-          "url": "http://scp-vn.wikidot.com/siggy-and-robomonkey-and-the-rise-of-the-betrayed",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "siggy-and-robomonkey-and-the-two-promises",
-          "title": "Cuộc Tấn Công Cuối Cùng",
-          "url": "http://scp-vn.wikidot.com/siggy-and-robomonkey-and-the-two-promises",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "siggy-and-robomonkey-and-the-return-of-the-witch",
-          "title": "Phù Thủy Trở Về",
-          "url": "http://scp-vn.wikidot.com/siggy-and-robomonkey-and-the-return-of-the-witch",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -12647,20 +12631,37 @@
           "title": "Đi Tìm Lana",
           "articleIDs": [
             "siggy-and-robomonkey-and-the-new-world",
-            "siggy-and-robomonkey-and-the-attack-of-the-bears",
-            "siggy-and-robomonkey-and-the-rise-of-the-betrayed"
-          ]
-        },
-        {
-          "id": "04-nut-that-long-leo",
-          "title": "Nút Thắt Lỏng Lẻo",
-          "articleIDs": [
-            "siggy-and-robomonkey-and-the-two-promises",
-            "siggy-and-robomonkey-and-the-return-of-the-witch"
+            "siggy-and-robomonkey-and-the-attack-of-the-bears"
           ]
         }
       ],
-      "description": "\"Được rồi. Xin chào! Mình tên là Sigurrós Stefansdottir , và mình là một phù thủy. Mình là cư dân- từng là một cư dân của Điểm 118, và bây giờ mình mười bốn tuổi. Đây là câu chuyện của mình. Ngày xửa ngày xưa, mình thức dậy. Mình đã ngủ trong một khoảng thời gian rất là lâuuuuuuu luôn, ít nhất cũng phải là vài tháng, và mình không thật sự hiểu được chuyện đếch- ugh- chuyện quái gì đang xảy ra. Và rồi, vài phút sau, mình nhìn thấy một con khỉ . Một con khỉ đột. Cao 7 feet, đội mũ bảo hiểm có gắn mấy cái ăng ten. Trông ngố cực. Thực ra mà nói cậu ấy thì đã khiến cho mình bị chấn thương tâm lý đến hết đời. Cậu ta muốn dọa người khác, và đó là những gì cậu ta đã làm với mình. (cười) Đấy là nơi mọi chuyện bắt đầu. Khi đó mình mới tám tuổi. Không phải là một khoảng thời gian tốt đẹp gì cho lắm, nhưng… mọi chuyện lúc đó đơn giản hơn nhiều. Như mình đã nói, giờ mình đã là một người 'phụ nữ' rồi"
+      "description": "\"Được rồi. Xin chào! Mình tên là Sigurrós Stefansdottir , và mình là một phù thủy. Mình là cư dân- từng là một cư dân của Điểm 118, và bây giờ mình mười bốn tuổi. Đây là câu chuyện của mình. Ngày xửa ngày xưa, mình thức dậy. Mình đã ngủ trong một khoảng thời gian rất là lâuuuuuuu luôn, ít nhất cũng phải là vài tháng, và mình không thật sự hiểu được chuyện đếch- ugh- chuyện quái gì đang xảy ra. Và rồi, vài phút sau, mình nhìn thấy một con khỉ . Một con khỉ đột. Cao 7 feet, đội mũ bảo hiểm có gắn mấy cái ăng ten. Trông ngố cực. Thực ra mà nói cậu ấy thì đã khiến cho mình bị chấn thương tâm lý đến hết đời. Cậu ta muốn dọa người khác, và đó là những gì cậu ta đã làm với mình. (cười) Đấy là nơi mọi chuyện bắt đầu. Khi đó mình mới tám tuổi. Không phải là một khoảng thời gian tốt đẹp gì cho lắm, nhưng… mọi chuyện lúc đó đơn giản hơn nhiều. Như mình đã nói, giờ mình đã là một người 'phụ nữ' rồi",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-vn.wikidot.com/siggy-and-robomonkey-and-the-return-of-the-witch",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/siggy-and-robomonkey-and-the-rise-of-the-betrayed",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/siggy-and-robomonkey-and-the-two-promises",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-vn:collection:series:project-paragon-hub",
@@ -13661,13 +13662,6 @@
           "contentKind": "tale",
           "os": 3,
           "desc": "Bất thình lình, tiếng ồn ong tai công kích thẳng vào tai gã khi cánh cửa phòng giam của tiến sĩ mở ra, vào lúc gã đang nằm sõng soài trên cái giường sắt, theo bản năng gã giật nảy khỏi thứ âm thanh vừa phát ra. Gã kéo một mẩu áo rách bươm để che mắt khỏi ánh s…"
-        },
-        {
-          "id": "voices-unassailable",
-          "title": "« | Giọng Nói Tuyệt Đối | Hub | Cleon | »",
-          "url": "http://scp-vn.wikidot.com/voices-unassailable",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -13679,9 +13673,18 @@
             "matryoshka-prologue",
             "matryoshka-one",
             "matryoshka-two",
-            "matryoshka-three",
-            "voices-unassailable"
+            "matryoshka-three"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-vn.wikidot.com/voices-unassailable",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
@@ -13815,92 +13818,87 @@
         "allowedHosts": [
           "scp-vn.wikidot.com"
         ],
-        "structureHash": "sha256-b40102ea4c817efc9578630c7e69a45845b5415bcdc67d58fb1ad46023c0756c"
+        "structureHash": "sha256-b40102ea4c817efc9578630c7e69a45845b5415bcdc67d58fb1ad46023c0756c",
+        "verifiedEmpty": true,
+        "allowEmpty": true
       },
-      "primaryArticles": [
-        {
-          "id": "consequences-and-collarbones",
-          "title": "vs. SCP-096",
-          "url": "http://scp-vn.wikidot.com/consequences-and-collarbones",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "snap-crackle-pop",
-          "title": "vs. SCP-106",
-          "url": "http://scp-vn.wikidot.com/snap-crackle-pop",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "with-a-target",
-          "title": "vs. Ts. Clef",
-          "url": "http://scp-vn.wikidot.com/with-a-target",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "an-ending-is-only-tragic",
-          "title": "vs. SCP-076",
-          "url": "http://scp-vn.wikidot.com/an-ending-is-only-tragic",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "come-together-right-now-over-me",
-          "title": "vs. SCP-682",
-          "url": "http://scp-vn.wikidot.com/come-together-right-now-over-me",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-melody-is-familiar",
-          "title": "vs. SCP-079",
-          "url": "http://scp-vn.wikidot.com/the-melody-is-familiar",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "everything-can-change-in-the-blink-of-an-eye",
-          "title": "vs. SCP-173",
-          "url": "http://scp-vn.wikidot.com/everything-can-change-in-the-blink-of-an-eye",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "nor-spake-nor-moved-their-eyes",
-          "title": "vs. SCP-049",
-          "url": "http://scp-vn.wikidot.com/nor-spake-nor-moved-their-eyes",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-horrors-of-an-unclean-bowl",
-          "title": "vs. SCP-789-J",
-          "url": "http://scp-vn.wikidot.com/the-horrors-of-an-unclean-bowl",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        }
-      ],
+      "primaryArticles": [],
       "supplementLinks": [],
-      "articleSections": [
+      "description": "Chào mừng đến với SCP Vs. Hub. Nơi mà tôi lưu trữ những ngoại truyện của tôi về các nhân vật SCP và các đối tượng đối đầu với nhau trong nhiều bối cảnh khác nhau. Đôi khi đó là trận đấu quyết tử. Đôi khi đó chỉ là mua sắm. Đôi khi đó là những người đang cố cứu lấy thế giới. Bạn sẽ không bao giờ biết được.",
+      "suppressedDeadURLs": [
         {
-          "id": "01-scp-vs-hub",
-          "title": "SCP Vs. Hub",
-          "articleIDs": [
-            "consequences-and-collarbones",
-            "snap-crackle-pop",
-            "with-a-target",
-            "an-ending-is-only-tragic",
-            "come-together-right-now-over-me",
-            "the-melody-is-familiar",
-            "everything-can-change-in-the-blink-of-an-eye",
-            "nor-spake-nor-moved-their-eyes",
-            "the-horrors-of-an-unclean-bowl"
-          ]
+          "url": "http://scp-vn.wikidot.com/an-ending-is-only-tragic",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/come-together-right-now-over-me",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/consequences-and-collarbones",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/everything-can-change-in-the-blink-of-an-eye",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/nor-spake-nor-moved-their-eyes",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/snap-crackle-pop",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/the-horrors-of-an-unclean-bowl",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/the-melody-is-familiar",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://scp-vn.wikidot.com/with-a-target",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
-      ],
-      "description": "Chào mừng đến với SCP Vs. Hub. Nơi mà tôi lưu trữ những ngoại truyện của tôi về các nhân vật SCP và các đối tượng đối đầu với nhau trong nhiều bối cảnh khác nhau. Đôi khi đó là trận đấu quyết tử. Đôi khi đó chỉ là mua sắm. Đôi khi đó là những người đang cố cứu lấy thế giới. Bạn sẽ không bao giờ biết được."
+      ]
     },
     {
       "id": "scp-vn:collection:series:remembrance",

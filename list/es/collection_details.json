@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786202488,
-  "generatedAt": "2026-08-08T15:21:28Z",
-  "chunkRevision": "sha256-6b0bfbd1eda05167f6a7de29ef080bb281119a0922c7ed00879d45b9e0ad9d73",
+  "listVersion": 1786205087,
+  "generatedAt": "2026-08-08T16:04:47Z",
+  "chunkRevision": "sha256-c0f9e4ac1b60ce6c0d5b1ecd6638372ef5cc9a78c4fd9ec5d882fcc349b56159",
   "builtFrom": {
     "manifests": [
       {
@@ -78,6 +78,11 @@
       "listVersion": 1782773651,
       "generatedAt": "2026-07-05T09:28:33Z",
       "contentHash": "sha256-db1469c8962d03148f01fdd50ee0e1c2531875778d330a93d511c3fb76e6cdd5"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-4d9da849dce8b02c0387045fb1bc95759f3378109b8d1e35cafe521a9b7ce37b"
     }
   },
   "collections": [
@@ -13526,14 +13531,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "dpto-irrealidad",
-          "title": "Enlace a más información",
-          "url": "https://lafundacionscp.wikidot.com/dpto-irrealidad",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "[ Enlace a más información ]"
-        },
-        {
           "id": "scp-3790",
           "title": "Departamento de Anormalidades",
           "url": "https://lafundacionscp.wikidot.com/scp-3790",
@@ -13680,7 +13677,6 @@
             "welcome-to-delta-t",
             "scp-1780",
             "unreality-hub",
-            "dpto-irrealidad",
             "scp-3790",
             "groups-of-interest",
             "secure-facilities-locations",
@@ -13688,7 +13684,17 @@
           ]
         }
       ],
-      "description": "Resumen de Archivo: La misión de la Fundación consiste en Asegurar, Contener y Proteger. Aunque se mantenga unida por estas metas, conseguir su cometido requiere de una basta variedad de especialidades. Esto ha traído la necesidad de crear numerosos departamentos, cada uno especializado en una tarea específica, una disciplina o un campo."
+      "description": "Resumen de Archivo: La misión de la Fundación consiste en Asegurar, Contener y Proteger. Aunque se mantenga unida por estas metas, conseguir su cometido requiere de una basta variedad de especialidades. Esto ha traído la necesidad de crear numerosos departamentos, cada uno especializado en una tarea específica, una disciplina o un campo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/dpto-irrealidad",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:task-forces-ua",
@@ -14010,14 +14016,6 @@
           "desc": "Las puertas y ventanas de SCP-3050 han sido equipadas con candados de acero sólido de 9 centímetros y con barras de hierro empotradas que cubren los exteriores. SCP-3050 es además monitoreado por cámaras de seguridad ubicadas a través del perímetro transmitien…"
         },
         {
-          "id": "de-goi",
-          "title": "Industrias Raptor Tec.",
-          "url": "http://lafundacionscp.wikidot.com/de-goi",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Arma anómala de Industrias Raptor Tec. . Inicialmente ordenado por la Fundación, la clasificación como objeto SCP se ha retrasado por petición del Comandante Ekblad"
-        },
-        {
           "id": "sunday-0600-mobile-task-force-central-training-facility",
           "title": "Escuela de Destacamentos Móviles: Introducciones Remarcables",
           "url": "https://lafundacionscp.wikidot.com/sunday-0600-mobile-task-force-central-training-facility",
@@ -14064,13 +14062,6 @@
           ]
         },
         {
-          "id": "03-listado-de-equipos-especiales",
-          "title": "Listado de equipos especiales",
-          "articleIDs": [
-            "de-goi"
-          ]
-        },
-        {
           "id": "04-entradas-adicionales-en-la-base-de-datos",
           "title": "Entradas Adicionales en la Base de Datos",
           "articleIDs": [
@@ -14079,7 +14070,17 @@
           ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/de-goi",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:task-forces",
@@ -14152,14 +14153,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "Destacamentos Móviles Anglosajones | Destacamentos Móviles Hispanoparlantes"
-        },
-        {
-          "id": "instalaciones",
-          "title": "Sitios e Instalaciones Seguras",
-          "url": "http://lafundacionscp.wikidot.com/instalaciones",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Tal como es mencionado en la guía de Sitios e Instalaciones Seguras , esto varía de autor a autor. Algunos creen en una Fundación vasta y ubicua, con más de cien DM especializados, mientras que otros se inclinan por una Fundación más pequeña con, quizás, sólo una docena de DM activos. Ambas son interpretaciones correctas; depende exclusivamente de cuál se adapta mejor a tu narración."
         },
         {
           "id": "task-forces-complete-list",
@@ -15794,14 +15787,6 @@
           "contentKind": "scp",
           "os": 0,
           "desc": "[PARTES NO MODIFICADAS OCULTAS] Los lugares en los que se descubran instancias de SCP-9154 creciendo en tierra firme deberán cerrarse temporalmente bajo el pretexto de derrames químicos u otros desastres pertinentes, y a los testigos se les administrarán amnés…"
-        },
-        {
-          "id": "north-star-hub",
-          "title": "Estrella Polar",
-          "url": "http://lafundacionscp.wikidot.com/north-star-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "7 Niveles del Sitio-17 El Goliat Escocés El Luminoso y Soleado Sur - Parte 1 Más Allá de las Profundidades: Activo, No Agente Más Allá de las Profundidades: En un Instante Más Allá de las Profundidades: Por el Presente Los Milicianos Nos Preocupamos por Pocos Al Borde de la Histeria"
         },
         {
           "id": "the-scottish-goliath",
@@ -19726,7 +19711,6 @@
           "title": "Articles",
           "articleIDs": [
             "destacamentos-moviles-hispanoparlantes",
-            "instalaciones",
             "task-forces-complete-list"
           ]
         },
@@ -19984,7 +19968,6 @@
           "title": "DM Delta-4 (“Milicianos”)",
           "articleIDs": [
             "scp-9154",
-            "north-star-hub",
             "the-scottish-goliath",
             "the-minutemen"
           ]
@@ -20834,7 +20817,25 @@
           ]
         }
       ],
-      "description": "Todos los DM que no reúnan los requerimientos necesarios para recibir su propio registro con arte incluido deberán ser colocados aquí. Esta lista a continuación de ninguna manera debe ser interpretada como exhaustiva; nuevos DM se forman y disuelven todo el tiempo, según la Fundación lo requiere. Si estás buscando un DM para usar, este listado podría servirte de asistencia. Aquellos DM para los que se observe un uso en múltiples artículos podrían ser añadidos a esta lista bajo solicitud."
+      "description": "Todos los DM que no reúnan los requerimientos necesarios para recibir su propio registro con arte incluido deberán ser colocados aquí. Esta lista a continuación de ninguna manera debe ser interpretada como exhaustiva; nuevos DM se forman y disuelven todo el tiempo, según la Fundación lo requiere. Si estás buscando un DM para usar, este listado podría servirte de asistencia. Aquellos DM para los que se observe un uso en múltiples artículos podrían ser añadidos a esta lista bajo solicitud.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/instalaciones",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/north-star-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:forces-intervention",
@@ -21087,14 +21088,6 @@
       },
       "primaryArticles": [
         {
-          "id": "proposta-spatial",
-          "title": "Propuesta Spatial",
-          "url": "http://lafundacionscp.wikidot.com/proposta-spatial",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Destacamentos Aplicados (DAs) son creados en situaciones extremadamente específicas, como Proyectos, que necesitan de dominio por encima de la media, pero no encajan en el modelo estándar de los DMs o DEs. Un ejemplo es la DA PT1-Θ, presente en la Propuesta Spatial ."
-        },
-        {
           "id": "scp-151-pt",
           "title": "SCP-151-PT",
           "url": "https://lafundacionscp.wikidot.com/scp-151-pt",
@@ -21112,13 +21105,6 @@
       "supplementLinks": [],
       "articleSections": [
         {
-          "id": "01-destacamentos-moviles",
-          "title": "DESTACAMENTOS MÓVILES",
-          "articleIDs": [
-            "proposta-spatial"
-          ]
-        },
-        {
           "id": "02-destacamento-movil-pt1-ojos-alados",
           "title": "DESTACAMENTO MÓVIL PT1 — \"OJOS ALADOS\"",
           "articleIDs": [
@@ -21133,7 +21119,17 @@
           ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/proposta-spatial",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:mobile-task-forces-pl",
@@ -23012,14 +23008,6 @@
           "desc": "Esto, no obstante, cambio con la llegada de James Rollander 9 en 1898 y la subsecuente construcción de la Fábrica poco despues. Enfocada cerca de Cracovia, Polonia, su nueva planta industrial fue la más grande su tiempo, utilizando numerosos metodos taumaturgicas — altamente poco eticos — para incrementar la producción, siendo construida encima de palacios Hada enterrados datados al periodo anterior a la Primera Diáspora. Diseñada como la \"fábrica definitiva\", ofreció practicamente cualquier producto requerido en el momento — anomalo y no anomalo — y naturalmente reunió gran interes en aquellos buscando un trabajo, los cuales incluyeron grandes números de ciudadanos de Esterberg debido al gr"
         },
         {
-          "id": "visions-of-bodies-being-burned",
-          "title": "Museo Británico en la Sombra",
-          "url": "https://lafundacionscp.wikidot.com/visions-of-bodies-being-burned",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "El Broche Dragon de Xia , 17 uno de los artefactos necesarios para la activación del Rito de Salomón en exhibición en el Museo de lo Oculto de la COG en Londres, el cual fu transformado del previamente secreto Museo Británico en la Sombra en 2022."
-        },
-        {
           "id": "groups-of-interest",
           "title": "Grupos de Interes",
           "url": "https://lafundacionscp.wikidot.com/groups-of-interest",
@@ -23390,7 +23378,6 @@
           "id": "06-la-segunda-guerra-mundial-y-la-septima-guerra-oculta",
           "title": "La Segunda Guerra Mundial y la Séptima Guerra Oculta",
           "articleIDs": [
-            "visions-of-bodies-being-burned",
             "groups-of-interest",
             "obskuracorps-memos",
             "saphir-centre",
@@ -23517,7 +23504,17 @@
           ]
         }
       ],
-      "description": "Este articulo usa nomenclatura obsoleta (tales como \"anómalo\", \"paranormal\", etc.) para referirse a fenómenos considerados como tal por la Fundación y organizaciones de normalidades antes de Noviembre de 2021 para facilitar el acceso. Todos los lectores son aconsejados de tomar en consideración el hecho de que solo refleja un punto de vista obsoleto durante su lectura de lo siguiente. ( Noviembre de 2032 )"
+      "description": "Este articulo usa nomenclatura obsoleta (tales como \"anómalo\", \"paranormal\", etc.) para referirse a fenómenos considerados como tal por la Fundación y organizaciones de normalidades antes de Noviembre de 2021 para facilitar el acceso. Todos los lectores son aconsejados de tomar en consideración el hecho de que solo refleja un punto de vista obsoleto durante su lectura de lo siguiente. ( Noviembre de 2032 )",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/visions-of-bodies-being-burned",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:etdp-hub-page",
@@ -24786,14 +24783,6 @@
           "desc": "SCP-2515-A debe asegurarse en una caja de vidrio dentro de una cámara de almacenamiento estéril en el Sitio-77. Para evitar la degradación del objeto, la temperatura de la cámara de almacenamiento debe mantenerse a 20°C y su humedad relativa al 45%. SCP-2515-A…"
         },
         {
-          "id": "the-high-court-with-the-magic-army",
-          "title": "Los mirlos parecen ser una especie de patrón personal",
-          "url": "http://lafundacionscp.wikidot.com/the-high-court-with-the-magic-army",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Varón. De ascendencia europea y medio-oriental. Origen americano. Alrededor de los 40 años; casi seguro que más viejo. Favorece los trajes de tweed, usualmente usados con abrigo y un sombrero con un alfiler de mirlo. Usa corbatas con pájaros. Los mirlos parecen ser una especie de patrón personal - significado desconocido, si lo hay."
-        },
-        {
           "id": "the-flytrap",
           "title": "El Atrapamoscas",
           "url": "https://lafundacionscp.wikidot.com/the-flytrap",
@@ -24924,22 +24913,6 @@
           "contentKind": "goiFormat",
           "os": 7,
           "desc": "MAGNA PETICIÓN PARA LA FABRICACIÓN DE DISPOSITIVOS PARA REGULAR EL COEFICIENTE HUME DE LA REALIDAD LOCALIZADA Las personas anómalas, aunque potencialmente útiles para fines de investigación, pueden interferir con la investigación y la tecnología no relacionada…"
-        },
-        {
-          "id": "indicted",
-          "title": "acusado",
-          "url": "http://lafundacionscp.wikidot.com/indicted",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "El título de O5-9 se transmite a cualquier personal que tenga el título de Director de la Agencia de Inteligencia. No se ha confirmado cuántos miembros del personal han ostentado el título de O5-9. Los registros indican que el consejo O5 ha acusado y expulsó al menos a un miembro del personal de su título, por reunir demasiada información sobre los demás miembros del consejo."
-        },
-        {
-          "id": "intelligence-agency-data-archive-subject-mages",
-          "title": "<<Academia de Magos>>.",
-          "url": "http://lafundacionscp.wikidot.com/intelligence-agency-data-archive-subject-mages",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "O5-9 se encarga de mantener a raya a la Agencia de Inteligencia y se sabe que participa activamente en misiones relacionadas con nuevos o desconocidos GdIs, concretamente con la <<Academia de Magos>>."
         },
         {
           "id": "scp-1985",
@@ -25161,7 +25134,6 @@
             "tales-of-mr-collector",
             "scp-140",
             "scp-2515",
-            "the-high-court-with-the-magic-army",
             "the-flytrap",
             "groups-of-interest",
             "scp-108",
@@ -25176,8 +25148,6 @@
             "scp-963",
             "scp-1851-ex",
             "grant-request-for-the-manufacture-of-devices-to-regulate",
-            "indicted",
-            "intelligence-agency-data-archive-subject-mages",
             "scp-1985",
             "scp-003",
             "scp-2863",
@@ -25203,7 +25173,33 @@
           ]
         }
       ],
-      "description": "MENSAJE DEL SISTEMA: BRECHA DE SEGURIDAD IDENTIFICADA. POR FAVOR, DESCONÉCTESE INMEDIATAMENTE."
+      "description": "MENSAJE DEL SISTEMA: BRECHA DE SEGURIDAD IDENTIFICADA. POR FAVOR, DESCONÉCTESE INMEDIATAMENTE.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/indicted",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/intelligence-agency-data-archive-subject-mages",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-high-court-with-the-magic-army",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:goc-hub-page",
@@ -28725,50 +28721,6 @@
           "desc": "Esta página enumera la mayoría de los grupos de interés activos en China continental. A diferencia de otros GDIs , estas organizaciones están fuertemente ligadas a la región y no se comunican generalmente en otros idiomas además del chino. Por estas razones, estas organizaciones han sido asignadas y son manejadas por la sucursal china de la Fundación."
         },
         {
-          "id": "scp-cn-214",
-          "title": "SCP-CN-214",
-          "url": "http://lafundacionscp.wikidot.com/scp-cn-214",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Aún se desconoce la época de origen de El Doctor, pero parece que quedó registrado en mitologías y leyendas de múltiples regiones. Al mismo tiempo, personajes famosos como William Harvey y Andreas Vesalius podrían haber sido miembros de la organización. Debido a la existencia de SCP-CN-214 , actualmente, las mitologías relacionadas con la medicina en las regiones chinas son objeto de estrictas investigaciones."
-        },
-        {
-          "id": "gpexpress",
-          "title": "GpExpress",
-          "url": "http://lafundacionscp.wikidot.com/gpexpress",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "gsf",
-          "title": "La Fundación del Gorrión Verde",
-          "url": "http://lafundacionscp.wikidot.com/gsf",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "tingforum-com",
-          "title": "Foro TING",
-          "url": "http://lafundacionscp.wikidot.com/tingforum-com",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-cn-851",
-          "title": "SCP-CN-851",
-          "url": "http://lafundacionscp.wikidot.com/scp-cn-851",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Se desconoce la fecha de creación del Foro, que está siendo investigada, pero registros poco fiables indican que el propio equipo TING podría existir desde hace tres años. SCP-CN-851 se descubrió al mismo tiempo que la Fundación descubrió la existencia del Foro."
-        },
-        {
-          "id": "pcs-administration",
-          "title": "Administración PCS",
-          "url": "http://lafundacionscp.wikidot.com/pcs-administration",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-2935",
           "title": "Oh, Muerte",
           "url": "https://lafundacionscp.wikidot.com/scp-2935",
@@ -28777,20 +28729,6 @@
           "contentKind": "scp",
           "os": 25,
           "desc": "La entrada a SCP-2935 ha sido sellada con hormigón, y el acceso a SCP-2935 está prohibido."
-        },
-        {
-          "id": "revue",
-          "title": "Troupe \"S\"",
-          "url": "http://lafundacionscp.wikidot.com/revue",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "wind-dew-travel-agency",
-          "title": "Agencia de Viajes Viento de Rocío",
-          "url": "https://lafundacionscp.wikidot.com/wind-dew-travel-agency",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -28806,25 +28744,77 @@
           "id": "02-el-doctor",
           "title": "El Doctor",
           "articleIDs": [
-            "scp-cn-214",
-            "gpexpress",
-            "gsf",
-            "tingforum-com",
-            "scp-cn-851",
-            "pcs-administration",
             "scp-2935"
-          ]
-        },
-        {
-          "id": "03-la-orquesta-magica",
-          "title": "La Orquesta Mágica",
-          "articleIDs": [
-            "revue",
-            "wind-dew-travel-agency"
           ]
         }
       ],
-      "description": "Esta página enumera la mayoría de los grupos de interés activos en China continental. A diferencia de otros GDIs , estas organizaciones están fuertemente ligadas a la región y no se comunican generalmente en otros idiomas además del chino. Por estas razones, estas organizaciones han sido asignadas y son manejadas por la sucursal china de la Fundación."
+      "description": "Esta página enumera la mayoría de los grupos de interés activos en China continental. A diferencia de otros GDIs , estas organizaciones están fuertemente ligadas a la región y no se comunican generalmente en otros idiomas además del chino. Por estas razones, estas organizaciones han sido asignadas y son manejadas por la sucursal china de la Fundación.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/gpexpress",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/gsf",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/pcs-administration",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/revue",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-cn-214",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-cn-851",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/tingforum-com",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://lafundacionscp.wikidot.com/wind-dew-travel-agency",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:grupos-de-interesse",
@@ -29380,13 +29370,6 @@
           "url": "http://lafundacionscp.wikidot.com/third-law-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
-        },
-        {
-          "id": "gendastrerie-centre",
-          "title": "Asamblea General de la Policía de lo Anormal (PANGEA (ver \"Agentes auxiliares - Personal externo\")):",
-          "url": "http://lafundacionscp.wikidot.com/gendastrerie-centre",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -29439,12 +29422,21 @@
           "id": "06-sistema-de-informacion-y-seguridad-sobre-materiales-anomalos",
           "title": "Sistema de Información y Seguridad sobre Materiales Anómalos",
           "articleIDs": [
-            "third-law-hub",
-            "gendastrerie-centre"
+            "third-law-hub"
           ]
         }
       ],
-      "description": "Nota del Dr. ██████: \"Aunque aman el arte en todas sus formas, los miembros de la Academia fomentan un profundo odio hacia el GdI: \"Are We Cool Yet?\" Y se refieren a sus trabajos como \"sórdido\" y \"sin sabor\"."
+      "description": "Nota del Dr. ██████: \"Aunque aman el arte en todas sus formas, los miembros de la Academia fomentan un profundo odio hacia el GdI: \"Are We Cool Yet?\" Y se refieren a sus trabajos como \"sórdido\" y \"sin sabor\".",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/gendastrerie-centre",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:groups-of-interest-jp",
@@ -29525,13 +29517,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "El autogobierno por parte de la oficina de barrio es frecuente en el Santuario Yōkai, y se ajusta a la definición de Puerto Libre en la Fundación. Desde el final de la Segunda Guerra Mundial, la oficina del distrito no ha cooperado con las Organizaciones de Preservación de la Normalidad, incluida la Fundación. La estancia de los empleados del gobierno está restringida con pocas excepciones. Desde su creación, la oficina del distrito ha seguido adoptando una política cerrada y aislada. Sin embargo, desde el inicio de la era Heisei , la política exterior del distrito ha pasado a una apertura gradual, lo que ha provocado una preocupación inmediata por la entrada/salida de anomalías a través de"
-        },
-        {
-          "id": "hyper-electric-rescue-organization-hub",
-          "title": "Híper Equipo de Rescate Organizado Eléctrico/HÉROE",
-          "url": "http://lafundacionscp.wikidot.com/hyper-electric-rescue-organization-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -29549,16 +29534,19 @@
           "articleIDs": [
             "nexus-series"
           ]
-        },
-        {
-          "id": "03-gogyo-kessha-asociacion-de-los-cinco-elementos",
-          "title": "Gogyō-Kessha (Asociación de los Cinco Elementos)",
-          "articleIDs": [
-            "hyper-electric-rescue-organization-hub"
-          ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/hyper-electric-rescue-organization-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:groups-of-interest-pl",
@@ -30331,28 +30319,6 @@
           "desc": "_ + Show blockSeguir navegando Advertencia: Puede estar visitando un sitio no seguro La IA ha determinado que esta página (https://headlines.yahee.co.jp/ja?3=20150517-00006678-koigaresaki-news) ha sido creada o está relacionada con el GdI-8122 Simbun de Koigar…"
         },
         {
-          "id": "nisso-medical-equipment-co-jp-rd-portal-contents-story-002",
-          "title": "¿Cómo ha afectado a la sociedad el aumento de las enfermedades anómalas?",
-          "url": "http://lafundacionscp.wikidot.com/nisso-medical-equipment-co-jp-rd-portal-contents-story-002",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "old-nest-breaks",
-          "title": "¿Qué piensan del mundo actual los que añoran una normalidad anterior?",
-          "url": "http://lafundacionscp.wikidot.com/old-nest-breaks",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "1998-911-hub",
-          "title": "Crisis en Manhattan",
-          "url": "http://lafundacionscp.wikidot.com/1998-911-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "― La serie está ambientada en Manhattan, donde todo tipo de fenómenos paranormales hacen estragos debido a un atentado terrorista que ha colapsado la realidad."
-        },
-        {
           "id": "broken-masquerade-hub",
           "title": "Mascarada Rota",
           "url": "http://lafundacionscp.wikidot.com/broken-masquerade-hub",
@@ -30367,38 +30333,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "― Hay numerosas conexiones en el aspecto paratecnológico. Tenga en cuenta que, a diferencia de allí, Laboratorios Prometheus sigue activo aquí."
-        },
-        {
-          "id": "linkage-hub",
-          "title": "linkAge",
-          "url": "http://lafundacionscp.wikidot.com/linkage-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "― Con el colapso del Velo y el desarrollo de la paratecnología, la Iglesia del Maxwellismo amplió enormemente su poder. Parece que los dispositivos cibercerebrales ya han llegado a la población general."
-        },
-        {
-          "id": "archived:r-sinano-chuo-co-jp-hub",
-          "title": "Shinano Chuo Post",
-          "url": "http://lafundacionscp.wikidot.com/archived:r-sinano-chuo-co-jp-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "― Este canon utiliza a menudo este formato, y el centro de este canon también describe el Shinano Chuo Post en su escenario."
-        },
-        {
-          "id": "shironose-hub",
-          "title": "Hub del Árbol Genealógico de la Rama Blanca",
-          "url": "http://lafundacionscp.wikidot.com/shironose-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "― La serie derivada \"Trilogía de la Rama Blanca\" está ambientada en el mundo del canon de 1998."
-        },
-        {
-          "id": "widely-containment-cases-hub",
-          "title": "Designación de la Fundación - Hub de Casos de Contención Generalizada de Anomalías",
-          "url": "http://lafundacionscp.wikidot.com/widely-containment-cases-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "― La serie derivada \"Caso:N - Batalla de Catástrofes Provocadas por el Hombre\" está ambientada en el mundo del Canon de 1998."
         },
         {
           "id": "how-to-write-an-scp",
@@ -30423,20 +30357,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "joicl-hub",
-          "title": "Equipos Médicos Nisso/Laboratorio Japonés de Mejora y Creación de Organismos",
-          "url": "http://lafundacionscp.wikidot.com/joicl-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-2042-jp",
-          "title": "Escuela Hanakago",
-          "url": "http://lafundacionscp.wikidot.com/scp-2042-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "groups-of-interest-pl",
           "title": "Culto de Chopin",
           "url": "http://lafundacionscp.wikidot.com/groups-of-interest-pl#toc2",
@@ -30452,13 +30372,6 @@
           "contentKind": "scp",
           "os": 13,
           "desc": "La amenaza planteada por SCP-3004 se ha mantenido neutralizada. La contención de SCP-3004 se centra únicamente en la interceptación de artefactos que apunten hacia la existencia del Cetlaidí. Con ese fin, los sitios arqueológicos en Irlanda y Gales deben ser m…"
-        },
-        {
-          "id": "chaos-insurgency-hub",
-          "title": "Insurgencia del Caos (IC)",
-          "url": "http://lafundacionscp.wikidot.com/chaos-insurgency-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "a-brief-explanation-on-demonics",
@@ -30477,54 +30390,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "Estudio científico de lo que se conoce como \"magia\". La Taumatología Unificada es el sistema teórico taumatúrgico más aceptado. Para más información, véase Conferencia del Profesor ████████████ sobre Taumatología Aplicada ."
-        },
-        {
-          "id": "operation-cannery-row-document-2013-451a3",
-          "title": "Tratado de Cooperación de Organizaciones Extranormales del Sur de Estados Unidos (TCOESEU)",
-          "url": "http://lafundacionscp.wikidot.com/operation-cannery-row-document-2013-451a3",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Nombre común del Nuevo Orden Mundial, un grupo de cuatro grandes potencias: Estados Unidos, la Fundación, la Coalición y Laboratorios Prometheus. Conocido así por haber sido construido utilizando el Tratado de Cooperación de Organizaciones Extranormales del Sur de Estados Unidos (TCOESEU) como base. Desde la perspectiva de la Fundación, funcionó como un caso modelo para la prevención de conflictos dentro de Norteamérica, donde se encuentran la mayoría de los activos de la Fundación y de la Coalición, así como mediante la eliminación progresiva del Protocolo del Velo. Sin embargo, el 11-S creó grietas en el seno del grupo, que se fue debilitando poco a poco."
-        },
-        {
-          "id": "scp-2041-jp",
-          "title": "Referencia",
-          "url": "http://lafundacionscp.wikidot.com/scp-2041-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "13 de agosto ― Toshiba redescubre la \"Demónica\". El descubrimiento de métodos de pago seguros hace nulo el Acuerdo de No-proliferación Demoníaca. Esto contribuye a la difusión de la paratecnología en el sector privado. [ Referencia ]"
-        },
-        {
-          "id": "uiu-file-2011-119",
-          "title": "Referencia",
-          "url": "http://lafundacionscp.wikidot.com/uiu-file-2011-119",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Evento Colombia Alternativa . El gobierno colombiano declaró su independencia de las naciones y de las organizaciones de preservación de la normalidad y la transferencia de todas las especies vivas a un cuerpo espiritual. La proyección ilusoria del estado en lo alto del cielo se conoce como \"Colombia Alternativa\". [ Referencia ]"
-        },
-        {
-          "id": "the-f-2",
-          "title": "Referencia",
-          "url": "http://lafundacionscp.wikidot.com/the-f-2",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "La Línea Chūō Shinkansen de Japón usando Carreteras Bucle es inaugurada [ Referencia ]"
-        },
-        {
-          "id": "r-sinano-chuo-co-jp-2020-03-17-7wybf8",
-          "title": "Referencia",
-          "url": "http://lafundacionscp.wikidot.com/r-sinano-chuo-co-jp-2020-03-17-7wybf8",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "17 de marzo ― El gobierno anuncia el traslado de la capital. Las funciones se dividen en 5 capitales de prefectura, con la Ciudad de Maebashi, Prefectura de Gunma, en el centro. La ciudad de Maebashi pasa a llamarse \"Nuevo Centro Urbano Capital\", y se desregula la industria paratecnológica. [ Referencia ]"
-        },
-        {
-          "id": "ahashima",
-          "title": "Referencia",
-          "url": "http://lafundacionscp.wikidot.com/ahashima",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Una entidad divina gigante emerge en la isla de Awaji, pero es destruida y despejada por las JSDF estacionadas allí. [ Referencia ]"
         }
       ],
       "supplementLinks": [],
@@ -30600,30 +30465,11 @@
           ]
         },
         {
-          "id": "08-tono-y-temas",
-          "title": "Tono y Temas",
-          "articleIDs": [
-            "nisso-medical-equipment-co-jp-rd-portal-contents-story-002",
-            "old-nest-breaks"
-          ]
-        },
-        {
-          "id": "09-series-dentro-del-canon",
-          "title": "Series dentro del Canon",
-          "articleIDs": [
-            "1998-911-hub"
-          ]
-        },
-        {
           "id": "10-series-externas",
           "title": "Series Externas",
           "articleIDs": [
             "broken-masquerade-hub",
-            "third-law-hub",
-            "linkage-hub",
-            "archived:r-sinano-chuo-co-jp-hub",
-            "shironose-hub",
-            "widely-containment-cases-hub"
+            "third-law-hub"
           ]
         },
         {
@@ -30638,18 +30484,15 @@
           "title": "La Fundación",
           "articleIDs": [
             "goc-hub-page",
-            "prometheus-labs-hub",
-            "joicl-hub"
+            "prometheus-labs-hub"
           ]
         },
         {
           "id": "13-grupo-rigaiken",
           "title": "Grupo Rigaiken",
           "articleIDs": [
-            "scp-2042-jp",
             "groups-of-interest-pl",
-            "scp-3004",
-            "chaos-insurgency-hub"
+            "scp-3004"
           ]
         },
         {
@@ -30657,23 +30500,141 @@
           "title": "Terminología",
           "articleIDs": [
             "a-brief-explanation-on-demonics",
-            "goc-supplemental-thaumatology",
-            "operation-cannery-row-document-2013-451a3"
-          ]
-        },
-        {
-          "id": "15-cronologia",
-          "title": "Cronología",
-          "articleIDs": [
-            "scp-2041-jp",
-            "uiu-file-2011-119",
-            "the-f-2",
-            "r-sinano-chuo-co-jp-2020-03-17-7wybf8",
-            "ahashima"
+            "goc-supplemental-thaumatology"
           ]
         }
       ],
-      "description": "miembros: Dr_Kasugai does not match any existing user name Tark_IOL carbon13 O-92_Mallet"
+      "description": "miembros: Dr_Kasugai does not match any existing user name Tark_IOL carbon13 O-92_Mallet",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/1998-911-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/ahashima",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/archived:r-sinano-chuo-co-jp-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/chaos-insurgency-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/joicl-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/linkage-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/nisso-medical-equipment-co-jp-rd-portal-contents-story-002",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/old-nest-breaks",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/operation-cannery-row-document-2013-451a3",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/r-sinano-chuo-co-jp-2020-03-17-7wybf8",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-2041-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-2042-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/shironose-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-f-2",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/uiu-file-2011-119",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/widely-containment-cases-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:ijamea-hub",
@@ -33364,14 +33325,6 @@
       },
       "primaryArticles": [
         {
-          "id": "the-letters-of-the-commission-on-unusual-cargo",
-          "title": "Othaniel Trower",
-          "url": "http://lafundacionscp.wikidot.com/the-letters-of-the-commission-on-unusual-cargo",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "En 1623, un oficial mercante de la Compañía de las Indias Orientales llamado Othaniel Trower fue asignado para dirigir una Comisión con el propósito de contener y proteger un cargamento peculiar bajo la Bandera de las Indias Orientales, y así mantener tanto la carga como la Compañía de las Indias Orientales a salvo de robos. La Comisión y sus regentes iniciales se tomaron a pecho esta tarea, y recogieron una serie de objetos y entidades, conservando los Manifiestos de las Cargas para describir tanto el contenido de la carga como la forma de almacenarla."
-        },
-        {
           "id": "manifest-803",
           "title": "Manifiesto 803: Licor Embriagador",
           "url": "https://lafundacionscp.wikidot.com/manifest-803",
@@ -33433,13 +33386,6 @@
       "supplementLinks": [],
       "articleSections": [
         {
-          "id": "01-la-fundacion-no-es-una-institucion-antigua",
-          "title": "La Fundación no es una institución antigua.",
-          "articleIDs": [
-            "the-letters-of-the-commission-on-unusual-cargo"
-          ]
-        },
-        {
           "id": "02-escribir-para-la-comision",
           "title": "Escribir para la Comisión",
           "articleIDs": [
@@ -33482,7 +33428,17 @@
           ]
         }
       ],
-      "description": "Una persona con un gran sentido del bien y del mal, en la que se puede depositar una gran confianza para mantener las normas de conducta para el tratamiento de la Carga Inusual, y cuya experiencia en el campo se ha demostrado a través de actos de lealtad."
+      "description": "Una persona con un gran sentido del bien y del mal, en la que se puede depositar una gran confianza para mantener las normas de conducta para el tratamiento de la Carga Inusual, y cuya experiencia en el campo se ha demostrado a través de actos de lealtad.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-letters-of-the-commission-on-unusual-cargo",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:skies-made-strange-hub",
@@ -33873,23 +33829,9 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-3323-jp",
-          "title": "SCP-3323-JP",
-          "url": "http://lafundacionscp.wikidot.com/scp-3323-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-3324-jp",
           "title": "SCP-3324-JP",
           "url": "http://lafundacionscp.wikidot.com/scp-3324-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-3326-jp",
-          "title": "SCP-3326-JP",
-          "url": "http://lafundacionscp.wikidot.com/scp-3326-jp",
           "role": "primaryArticle",
           "contentKind": "scp"
         },
@@ -33901,30 +33843,9 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-cn-2632",
-          "title": "SCP-CN-2632",
-          "url": "http://lafundacionscp.wikidot.com/scp-cn-2632",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-cn-2186",
           "title": "SCP-CN-2186",
           "url": "http://lafundacionscp.wikidot.com/scp-cn-2186",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-3423-jp",
-          "title": "SCP-3423-JP",
-          "url": "http://lafundacionscp.wikidot.com/scp-3423-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-3426-jp",
-          "title": "SCP-3426-JP",
-          "url": "http://lafundacionscp.wikidot.com/scp-3426-jp",
           "role": "primaryArticle",
           "contentKind": "scp"
         }
@@ -33936,18 +33857,55 @@
           "title": "Articles",
           "articleIDs": [
             "scp-3823-jp",
-            "scp-3323-jp",
             "scp-3324-jp",
-            "scp-3326-jp",
             "scp-zh-981",
-            "scp-cn-2632",
-            "scp-cn-2186",
-            "scp-3423-jp",
-            "scp-3426-jp"
+            "scp-cn-2186"
           ]
         }
       ],
-      "description": "Estamos recopilando información sobre el cuerpo de Makuwa Yurika, quien cometió suicidio el ██/██/20██. Gracias por su cooperación."
+      "description": "Estamos recopilando información sobre el cuerpo de Makuwa Yurika, quien cometió suicidio el ██/██/20██. Gracias por su cooperación.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-3323-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-3326-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-3423-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-3426-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-cn-2632",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:dr-wondertainment-hub",
@@ -36473,30 +36431,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "Relatos: ♡ De Pie en la Orilla al Atardecer Por ♡ ella vale la pena, lo prometo por ♡ Dulces Enfermizos de Ella Por ♡ Llena hasta el borde de alegría femenina Por ♡ Cómo Quitar La Purpurina De Un Vestido De Poliéster Por ♡ Cómo Quitar La Sangre Humana De Un Vestido De Poliéster Por ♡ Cómo Quitar El Queroseno De Un Vestido De Poliéster Por ♡ Cómo Quitar Líquido Cefalorraquídeo De Un Vestido De Poliéster Por ♡ Mujer de Poliéster (Epílogo) Por ♡ Perdiendo Mis Colores Por Alan Daris (Usuario Eliminado) ♡ Una Grieta en la Porcelana Por ♡ No podemos planear nuestras vidas, ¿o sí? Por"
-        },
-        {
-          "id": "art:justgirlydiary",
-          "title": "¡¡¡Dirario para Chicas!!!",
-          "url": "http://lafundacionscp.wikidot.com/art:justgirlydiary",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por"
-        },
-        {
-          "id": "art:jgt-character-art",
-          "title": "¡Arte de Personajes de JGT!",
-          "url": "http://lafundacionscp.wikidot.com/art:jgt-character-art",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por"
-        },
-        {
-          "id": "art:keelee-jgt",
-          "title": "KeeLee - JGT",
-          "url": "http://lafundacionscp.wikidot.com/art:keelee-jgt",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por"
         }
       ],
       "supplementLinks": [],
@@ -36506,14 +36440,37 @@
           "title": "Articles",
           "articleIDs": [
             "scp-4319",
-            "standing-on-the-shore-at-dusk",
-            "art:justgirlydiary",
-            "art:jgt-character-art",
-            "art:keelee-jgt"
+            "standing-on-the-shore-at-dusk"
           ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/art:jgt-character-art",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/art:justgirlydiary",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/art:keelee-jgt",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:hub-madao",
@@ -36579,22 +36536,6 @@
         "structureHash": "sha256-a17569c5470abbcb06e1574984ffe0fdd2d295e264df2b758fc78a04ab0b1216"
       },
       "primaryArticles": [
-        {
-          "id": "scp-121-it",
-          "title": "Real Instituto para la Unificación de Italia",
-          "url": "http://lafundacionscp.wikidot.com/scp-121-it",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Con el nacimiento del estado Italiano bajo la dirección de Saboya, la Academia, que hasta entonces había mostrado un leve apoyo a la causa del Risorgimento, se propuso como institución de referencia en el tratamiento de lo oculto para el nuevo estado Italiano, cuya capital se encontraba ahora en Florencia. La Academia apoyó la actividad del Real Instituto para la Unificación de Italia ; sin embargo, con la conquista de Roma en 1871 y la formación del Real Instituto de Anomalías Italianas (RIDIA en italiano), las prioridades de la corona dejaron de coincidir con las de la Academia. A pesar de este breve momento de crisis, la Academia no acabó siendo absorbida por el Real Instituto. Esto fue p"
-        },
-        {
-          "id": "skp-portal",
-          "title": "unidades ocultas alemanas",
-          "url": "http://lafundacionscp.wikidot.com/skp-portal",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "La situación de desamparo impuesta a Europa durante la Gran Guerra y sus consecuencias llevaron a las ramas europeas a una contracción de su fuerza y capacidad de acción. Por el contrario, las ramas de América tuvieron un gran éxito, aunque dentro de los límites impuestos por las circunstancias. Durante la Segunda Guerra Mundial, la Academia consiguió salvarse de la furia del conflicto, aunque muchas estructuras fueron saqueadas por las unidades ocultas alemanas . No obstante, gracias a las buenas relaciones con la Fundación SCP y la Coalición Oculta Global (COG) , la Academia pudo recuperar la mayoría de las obras robadas."
-        },
         {
           "id": "donatello-s-sculpting-tools-circa-1409",
           "title": "Herramientas de Escultura de Donatello, Circa 1409",
@@ -36689,8 +36630,6 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "scp-121-it",
-            "skp-portal",
             "donatello-s-sculpting-tools-circa-1409",
             "goliath-circa-1505",
             "la-foi-de-la-paix-circa-2011",
@@ -36709,7 +36648,25 @@
           ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-121-it",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/skp-portal",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:the-hive-hub",
@@ -38669,14 +38626,6 @@
           "desc": "Para más información sobre el Grupo de Cultura Anómala Xia consulte el Documento 2481 ."
         },
         {
-          "id": "scp-3391-offset-1",
-          "title": "primer documento conocido",
-          "url": "http://lafundacionscp.wikidot.com/scp-3391-offset-1",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "El Imperio mekhanita introdujo varios conceptos importantes a la teología de la Iglesia Rota, más importante aún, el establecimiento de la reconstrucción del Dios Roto como la meta final de la Iglesia. Los testimonios escritos documentan el cambio de una religión principalmente deísta a la doctrina actual de la Apoteosis desde el año 1154 a.C. Es importante remarcar que el primer documento conocido que propone esta doctrina llamó al Dios Roto «Wan» 4 ."
-        },
-        {
           "id": "scp-1564",
           "title": "Post-Nirvánico",
           "url": "https://lafundacionscp.wikidot.com/scp-1564",
@@ -40383,7 +40332,6 @@
           "id": "02-el-imperio-mekhanita",
           "title": "El Imperio mekhanita",
           "articleIDs": [
-            "scp-3391-offset-1",
             "scp-1564"
           ]
         },
@@ -40610,7 +40558,17 @@
           ]
         }
       ],
-      "description": "Título del Libro Detalles del Libro Verso 1 Verso 2 Etc…"
+      "description": "Título del Libro Detalles del Libro Verso 1 Verso 2 Etc…",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-3391-offset-1",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:second-hytoth-hub",
@@ -43368,14 +43326,6 @@
           "desc": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
         },
         {
-          "id": "projekt-trickster",
-          "title": "universo",
-          "url": "http://lafundacionscp.wikidot.com/projekt-trickster",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Gran amiga de la Sra. Mirabilis. Debido a su universo , no es la hija del Dr. C. O. Gear. Tuvo una infancia feliz y es muy amable y compasiva en comparación con la RN. Siempre se refiere a sí misma como la Gran Hermana. Por alguna razón, la gente cree que Iris Dark se parece a ella, aunque ni la propia Sra. Dark, ni Alba, ni otras reinas se ponen del todo de acuerdo al respecto."
-        },
-        {
           "id": "paris-massacre",
           "title": "La Masacre de París",
           "url": "https://lafundacionscp.wikidot.com/paris-massacre",
@@ -43989,7 +43939,6 @@
             "vital-signs",
             "the-black-queen",
             "going-out-of-book",
-            "projekt-trickster",
             "paris-massacre",
             "blood-red-summer-hub",
             "lambda-killer",
@@ -44105,7 +44054,17 @@
           ]
         }
       ],
-      "description": "Hace años, cuando aún era joven, su padre la abandonó a ella y a su madre. Sin nota, sin maletas, sin nada. Presente un minuto, y lejos al otro. Su madre poco después falleció, dejando a Alison valerse por sí misma. Con los años, se obsesionó con la idea de encontrar a su padre. A través de cualquier medio necesario, ella encontrará a su padre, y le hará pagar a los que le robaron su familia."
+      "description": "Hace años, cuando aún era joven, su padre la abandonó a ella y a su madre. Sin nota, sin maletas, sin nada. Presente un minuto, y lejos al otro. Su madre poco después falleció, dejando a Alison valerse por sí misma. Con los años, se obsesionó con la idea de encontrar a su padre. A través de cualquier medio necesario, ella encontrará a su padre, y le hará pagar a los que le robaron su familia.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/projekt-trickster",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:black-queen-hub-vo",
@@ -46873,14 +46832,6 @@
           "desc": "Una zona de exclusión de 5 km rodea a SCP-7900. Equipos de reconocimiento realizan patrullas diarias en las aguas circundantes. El acceso a la red subterránea debajo de SCP-7900 está limitado al personal entrenado en navegación de espacios anómalos. Las explor…"
         },
         {
-          "id": "the-beach-part-i",
-          "title": "se prolongará durante mucho tiempo.",
-          "url": "https://lafundacionscp.wikidot.com/the-beach-part-i",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "El culto a la Ballena Primordial, tal y como se conoce ampliamente en los escritos contemporáneos de la Hebdómada, se remonta a mucho antes del convento de Notre Dame de la Mer y, aunque no es el tema central de este libro, se prolongará durante mucho tiempo. 7"
-        },
-        {
           "id": "scp-7470",
           "title": "M de Moonlight (Luz de Luna)",
           "url": "https://lafundacionscp.wikidot.com/scp-7470",
@@ -46960,7 +46911,6 @@
           "id": "02-sobre-el-alma-y-el-mar-una-introduccion-a-notre-dame-de-la-mer",
           "title": "Sobre el Alma y el Mar: Una Introducción a Notre Dame de la Mer",
           "articleIDs": [
-            "the-beach-part-i",
             "scp-7470"
           ]
         },
@@ -47001,7 +46951,17 @@
           ]
         }
       ],
-      "description": "Ahogar… Abrumar, como si se elevara por encima de uno como una inundación; sofocar, sumergir o dominar con su importancia; extinguir o expurgar por asfixia; fusionarse con algo mayor o superior. — El Diccionario Oxford de inglés"
+      "description": "Ahogar… Abrumar, como si se elevara por encima de uno como una inundación; sofocar, sumergir o dominar con su importancia; extinguir o expurgar por asfixia; fusionarse con algo mayor o superior. — El Diccionario Oxford de inglés",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/the-beach-part-i",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:from-120-s-archives-hub",
@@ -54587,14 +54547,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "23/02/1963: Vertir la Sangre"
-        },
-        {
-          "id": "partager-le-vin",
-          "title": "diferencias ideológicas",
-          "url": "https://lafundacionscp.wikidot.com/partager-le-vin",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Los archivos de la COG muestran que SAFIRO anteriormente formaba parte del Consejo de los 108 durante la formación de la Coalición, pero la abandonaron en 1953 debido a diferencias ideológicas , así como la tendencia de la Coalición, de brindar protección a las religiones civiles y el reclutamiento de numerosos taumaturgos asesores."
         }
       ],
       "supplementLinks": [],
@@ -54617,16 +54569,19 @@
             "scp-236-fr",
             "verser-le-sang"
           ]
-        },
-        {
-          "id": "02-la-coalicion-oculta-global",
-          "title": "La Coalición Oculta Global:",
-          "articleIDs": [
-            "partager-le-vin"
-          ]
         }
       ],
-      "description": "Lo llamamos el Síndrome de Filbuson. Fue en la década de 1920, cuando la Fundación todavía era \"vivaz\" si se me permite decirlo. Recursos Humanos no era lo mismo que hoy en día y no habían todas esas pruebas que aprobar durante el reclutamiento. William Filbuson había sido uno de los mejores hombres en el ejército de los Estados Unidos, así como uno de los primeros grandes héroes de la Fuerza Aérea Americana de la época. Una mentalidad de acero, reflejos inimitables y determinación ante toda adversidad. Una lista de logros tan larga como mi brazo. Él y otros catorce hombres de las filas militares habían sido transferidos directamente del Ejército de los EE.UU. al Sitio-32, en el área de Chicago, para formar un nuevo Destacamento Móvil: Mu-8, \"Los Titanes\". Oh, habían tenido conferencias introductorias, cursos de orientación y mucha capacitación teórica y práctica. Pero nunca se habían en"
+      "description": "Lo llamamos el Síndrome de Filbuson. Fue en la década de 1920, cuando la Fundación todavía era \"vivaz\" si se me permite decirlo. Recursos Humanos no era lo mismo que hoy en día y no habían todas esas pruebas que aprobar durante el reclutamiento. William Filbuson había sido uno de los mejores hombres en el ejército de los Estados Unidos, así como uno de los primeros grandes héroes de la Fuerza Aérea Americana de la época. Una mentalidad de acero, reflejos inimitables y determinación ante toda adversidad. Una lista de logros tan larga como mi brazo. Él y otros catorce hombres de las filas militares habían sido transferidos directamente del Ejército de los EE.UU. al Sitio-32, en el área de Chicago, para formar un nuevo Destacamento Móvil: Mu-8, \"Los Titanes\". Oh, habían tenido conferencias introductorias, cursos de orientación y mucha capacitación teórica y práctica. Pero nunca se habían en",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/partager-le-vin",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:scp-anthology-hub",
@@ -56299,22 +56254,6 @@
           "desc": "El secreto de la fuerza del Sushi Oscuro yace en el equilibrio de tres principios:「Ingredientes」;「Rotación」y「Oscuridad」. Habiendo dicho esto, no es extraño asumir que existen personas capaces de llegar hasta las últimas consecuencias con tal de pulir al máximo…"
         },
         {
-          "id": "collected-item-no3434",
-          "title": "Objeto Recolectado Nº 3434 - \"Sushi Sumo\"",
-          "url": "http://lafundacionscp.wikidot.com/collected-item-no3434",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por："
-        },
-        {
-          "id": "saburo-shiro-secured-yohei",
-          "title": "Arrestos y servicio militar de Saburoshiro",
-          "url": "http://lafundacionscp.wikidot.com/saburo-shiro-secured-yohei",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por："
-        },
-        {
           "id": "the-infiltrators",
           "title": "the-infiltrators",
           "url": "https://lafundacionscp.wikidot.com/the-infiltrators",
@@ -56381,172 +56320,12 @@
           "desc": "Perfil de la Criatura: ¡Shigastán! Nombre: Shigastán Especie: Equus ferus caballus (Caballo) Cuidador Principal: Wellington Garrett Wonderhorse, Equipo Terrestre, Sección de Animales Medianos, Especialista en Caballos"
         },
         {
-          "id": "nostalgic-taste",
-          "title": "Sabor Nostálgico",
-          "url": "http://lafundacionscp.wikidot.com/nostalgic-taste",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Sabor Nostálgico Sushiblade de Nigiri Explosivo Vol.1 (Mención)"
-        },
-        {
-          "id": "sushi-battle-round01",
-          "title": "Juego Oscuro",
-          "url": "http://lafundacionscp.wikidot.com/sushi-battle-round01",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Juego Oscuro ¡Escoria! ¡Salpica y Gira! Sushiblade de Nigiri Explosivo Vol.1 (Mención) Archivo del Sushi Oscuro Nro.157 \"Shibikara Ramen\" Archivo del Sushi Oscuro Nro.876 \"Paseo del Salmón\" (Mención) Tercera Pez (Mención) Aumento de Peces en la Bahía de Tokio Salomon (Mención)"
-        },
-        {
-          "id": "django",
-          "title": "A continuación, Django en el Desierto",
-          "url": "http://lafundacionscp.wikidot.com/django",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones A continuación, Django en el Desierto Sushiblade de Nigiri Explosivo Vol.1 (Mención)"
-        },
-        {
-          "id": "shironose-kuzira-1",
-          "title": "Zanmai Humano de Ballena Blanca",
-          "url": "http://lafundacionscp.wikidot.com/shironose-kuzira-1",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Zanmai Humano de Ballena Blanca Manzai Humano de Kyoko Suetsumika Sushiblade de Nigiri Explosivo Vol.1 (Mención) Hanzai Humano de Ballena Blanca Food Fight Sushiblade: La Historia Jamás Contada"
-        },
-        {
-          "id": "scp-2042-jp",
-          "title": "SCP-2042-JP",
-          "url": "http://lafundacionscp.wikidot.com/scp-2042-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Apariciones SCP-2042-JP Zanmai Humano de Ballena Blanca Manzai Humano de Kyoko Suetsumika Sushiblade de Nigiri Explosivo Vol.1 (Mención) Hanzai Humano de Ballena Blanca Food Fight Sushiblade: La Historia Jamás Contada"
-        },
-        {
-          "id": "sushi-tokyowan",
-          "title": "Aumento de Peces en la Bahía de Tokio",
-          "url": "http://lafundacionscp.wikidot.com/sushi-tokyowan",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Aumento de Peces en la Bahía de Tokio"
-        },
-        {
-          "id": "sb-mimonden",
-          "title": "Food Fight Sushiblade: La Historia Jamás Contada",
-          "url": "http://lafundacionscp.wikidot.com/sb-mimonden",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Food Fight Sushiblade: La Historia Jamás Contada"
-        },
-        {
-          "id": "sb-ibunden",
-          "title": "\"Ibunden\"",
-          "url": "http://lafundacionscp.wikidot.com/sb-ibunden",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Sushiblader femenina, amiga de Takao. Fue victima del Lavado de Cerebro Sumeshi, pero Takao la ayudó de salir de ese aprieto. En \"Ibunden\" , no le gusta el Sushiblade porque el restaurante de oshizushi, que por generaciones perteneció a su familia, está siendo perseguido por La Asociación de la No-Rotación de Sushi y el Sushi Oscuro. Está estudiando para vivir en Sushi Yoshitsune."
-        },
-        {
-          "id": "spc-034-jp",
-          "title": "SPC-034-JP",
-          "url": "http://lafundacionscp.wikidot.com/spc-034-jp",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones SPC-034-JP"
-        },
-        {
-          "id": "koigarezaki-news-20160827",
-          "title": "El COI rechaza la petición del Comité Organizador de los Juegos Olímpicos de Tokio",
-          "url": "http://lafundacionscp.wikidot.com/koigarezaki-news-20160827",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones El COI rechaza la petición del Comité Organizador de los Juegos Olímpicos de Tokio Sushiblade de Nigiri Explosivo: La Historia Jamás Contada Archivo del Sushi Oscuro Nro.058 \"Sushi Mediocre\" SCP-1710-JP-J Sushiblade de Nigiri Explosivo Vol.1 Carta de acusación del Shinshin al gobernador en funciones por presunto uso de arroz prohibido Archivo del Sushi Oscuro Nro.1000 \"Sushi No Rotable\" (Mención) Nro.008 de la Lista Negra del Sushi Oscuro \"Madonna Lily\" Archivo del Sushi Oscuro Nro.1225 \"Pan de Sushi\" (Mención) Archivo del Sushi Oscuro Nro.016 \"Fondo Ilícito\" (Mención) Batalla Nocturna en un Parque de Atracciones Abandonado Salomon Food Fight Sushiblade: La Historia Jamás Contada"
-        },
-        {
-          "id": "ambrose-taipei",
-          "title": "Menú de Platillos de Ambrose Taipei・Caché de la Página",
-          "url": "http://lafundacionscp.wikidot.com/ambrose-taipei",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Menú de Platillos de Ambrose Taipei・Caché de la Página"
-        },
-        {
-          "id": "scp-1963-jp",
-          "title": "Agt. Ikaruga",
-          "url": "http://lafundacionscp.wikidot.com/scp-1963-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Trabaja como chef de sushi en el restaurante de su padre \"Auténtico Sushi Edomae Sakae \". Un amigo de la infancia del Agt. Ikaruga ."
-        },
-        {
-          "id": "wagnascousin-2",
-          "title": "Bailando en La Oscuridad",
-          "url": "http://lafundacionscp.wikidot.com/wagnascousin-2",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Bailando en La Oscuridad Tercera Pez"
-        },
-        {
-          "id": "yamizushi-file-no003",
-          "title": "Archivo del Sushi Oscuro Nro.003 \"Rompeolas\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no003",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Archivo del Sushi Oscuro Nro.003 \"Rompeolas\""
-        },
-        {
-          "id": "sushi-battle-round02",
-          "title": "Devorador de Veneno",
-          "url": "http://lafundacionscp.wikidot.com/sushi-battle-round02",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Devorador de Veneno"
-        },
-        {
-          "id": "aoharu-sushiblade",
-          "title": "Juventud y Sushiblade",
-          "url": "http://lafundacionscp.wikidot.com/aoharu-sushiblade",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Juventud y Sushiblade"
-        },
-        {
-          "id": "shironose-kuzira-3",
-          "title": "Hanzai Humano de Ballena Blanca",
-          "url": "http://lafundacionscp.wikidot.com/shironose-kuzira-3",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Hanzai Humano de Ballena Blanca"
-        },
-        {
-          "id": "salomon",
-          "title": "Salomon",
-          "url": "http://lafundacionscp.wikidot.com/salomon",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Salomon"
-        },
-        {
           "id": "verano-de-2035-espana",
           "title": "Nutria Española",
           "url": "http://lafundacionscp.wikidot.com/verano-de-2035-espana",
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "Una estudiante de intercambio de la rama portuguesa de la Sushiacademia. Es una Nutria Española , y competirá en el Torneo de Sushiblade con un traje de exoesqueleto reforzado para nutrias. España, es su patria, y utiliza un sushi que imita al sol hecho con carne de pez globo salino."
-        },
-        {
-          "id": "yamizushi-file-no014",
-          "title": "Archivo del Sushi Oscuro Nro.014 \"Gracias, Agua\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no014",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Archivo del Sushi Oscuro Nro.014 \"Gracias, Agua\""
-        },
-        {
-          "id": "yamizushi-file-no968",
-          "title": "Archivo del Sushi Oscuro Nro.968 \"Tarta de Lima\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no968",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Archivo del Sushi Oscuro Nro.968 \"Tarta de Lima\""
         },
         {
           "id": "scp-571-jp",
@@ -56556,14 +56335,6 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "Apariciones SCP-571-JP Nuevo programa \"Arroz Shari y Sushiblade\" El Colapso Dimensional de Manhattan; ¿Inminente intervención de la COG? (Mención) ¿Sushi que Da La Vuelta o Sushi que Da Vueltas? El Nombre del Sushi."
-        },
-        {
-          "id": "jet-black",
-          "title": "Negro como el Carbón",
-          "url": "http://lafundacionscp.wikidot.com/jet-black",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones (Fragmento) Negro como el Carbón El Colapso Dimensional de Manhattan; ¿Inminente intervención de la COG? (Mención) Sushiblade Mensual El COI rechaza la petición del Comité Organizador de los Juegos Olímpicos de Tokio Área Nacional de Especial Interés: Koigurezaki Un hombre llamado Nichibei Kashiwa conoce a un mago que usa un demonio violento para hacer que el sushi gire (Takayuki Hirosue) Archivo del Sushi Oscuro Nro.911 \"La Lucha de Takayuji Hirosue\" La CRJ intensifica el conflicto con la Comunidad Anómala Ruinas submarinas descubiertas en Hawái: ¿Una Isla Fantasma? arta de acusación del Shinshin al gobernador en funciones por presunto uso de arroz prohibido Incidente de Muerte"
         },
         {
           "id": "groups-of-interest-jp",
@@ -56581,14 +56352,6 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "Apariciones SCP-890-JP Batalla de Encuentro・Tadasunomori"
-        },
-        {
-          "id": "uiu-1970-005",
-          "title": "Archivo UdII: 1970-005",
-          "url": "http://lafundacionscp.wikidot.com/uiu-1970-005",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Archivo UdII: 1970-005 Un hombre llamado Nichibei Kashiwa conoce a un mago que usa un demonio violento para hacer que el sushi gire"
         },
         {
           "id": "scp-073",
@@ -56609,22 +56372,6 @@
           "desc": "Miembro de la \"Agencia del Imperio Japonés para la Examinación de Cuestiones Anormales\" , viajó en el tiempo desde la Segunda Guerra Mundial hasta la actualidad."
         },
         {
-          "id": "yonedu-gensui",
-          "title": "La Historia del Mariscal Yonezu",
-          "url": "http://lafundacionscp.wikidot.com/yonedu-gensui",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones La Historia del Mariscal Yonezu Área Nacional de Especial Interés: Koigurezaki El Sushiblade Secreto del Mariscal Yonezu La CRJ intensifica el conflicto con la Comunidad Anómala"
-        },
-        {
-          "id": "scp-014-jp-j",
-          "title": "SCP-014-JP-J",
-          "url": "http://lafundacionscp.wikidot.com/scp-014-jp-j",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Apariciones SCP-014-JP-J Archivo del Sushi Oscuro Nro.086 \"Sushi de Jamón Crudo\" Nubes en La Luna, Viento en las Flores"
-        },
-        {
           "id": "scp-1690",
           "title": "Hombre de Sushi Sentimental con una Estatua de Wasabi",
           "url": "https://lafundacionscp.wikidot.com/scp-1690",
@@ -56633,133 +56380,6 @@
           "contentKind": "scp",
           "os": 4,
           "desc": "SCP-1690 y SCP-1690-1 deben ser contenidos dentro de una celda de contención humanoide estándar monitoreada por las cámaras CCTV a todas horas. Al interactuar con SCP-1690, el personal debe mantener una conducta cortés para evitar irritación innecesaria. Si SC…"
-        },
-        {
-          "id": "aisurakuto-9",
-          "title": "Amo a mi gato Vainilla",
-          "url": "http://lafundacionscp.wikidot.com/aisurakuto-9",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Apariciones Amo a mi gato Vainilla Es Irreal hacer Anime como Hobby"
-        },
-        {
-          "id": "new-religion-of-deer-college",
-          "title": "La Nueva Religión del Colegio Deer",
-          "url": "http://lafundacionscp.wikidot.com/new-religion-of-deer-college",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Este es el nombre de un proyecto que está investigando Tohei Amberjack, un equipo de Sushiblade auspiciado por Industrias Pesadas Tou-Hei. Se dice que va un paso por delante de la investigación teológica moderna. Mencionado por primera vez en: La Nueva Religión del Colegio Deer"
-        },
-        {
-          "id": "the-hobby-anime-is-unreal",
-          "title": "Es Irreal hacer Anime como Hobby",
-          "url": "http://lafundacionscp.wikidot.com/the-hobby-anime-is-unreal",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Un objeto similar al sushi que cambia ruidosamente entre varios ingredientes. Fue creado para cohesionar ambos estados de sushi, correcto o incorrecto. El objeto provoca órbitas y rotaciones irregulares al cambiar de ingredientes, y la distorsión hace que sople una ráfaga de viento alrededor de la zona. Mencionado por primera vez en: Es Irreal hacer Anime como Hobby"
-        },
-        {
-          "id": "yamizushi-file-no625",
-          "title": "Archivo del Sushi Oscuro Nro.625 \"Yo\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no625",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Campo sushi acotado simplificado Un Campo Sushi desplegado para abarcar un área circular de varios metros a su alrededor. El Campo Sushi Interdimensional, que se despliega trayendo a la realidad el mundo que existe dentro del Sushi, sólo puede ser utilizado por los Sushibladers de alto rango, pero éste también puede usarse con relativa facilidad. Mencionado por primera vez en: Archivo del Sushi Oscuro Nro.625 \"Yo\""
-        },
-        {
-          "id": "making-stew-hub",
-          "title": "Hub de Haciendo Guiso",
-          "url": "http://lafundacionscp.wikidot.com/making-stew-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Un perverso plan olvidado, pero que fue recientemente descongelado y re-propuesto al Sushi Oscuro- Mencionado por primera vez en: Hub de Haciendo Guiso"
-        },
-        {
-          "id": "night-battle-in-abandoned-park",
-          "title": "Batalla Nocturna en un Parque de Atracciones Abandonado",
-          "url": "http://lafundacionscp.wikidot.com/night-battle-in-abandoned-park",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Una regla especial para Torneos de Suhiblade inventada por el Sushi Oscuro, en la que el tercer jugador participa en la final, haciéndose un duelo de 3vs3. Mencionado por primera vez en: Batalla Nocturna en un Parque de Atracciones Abandonado"
-        },
-        {
-          "id": "koigarezaki-news-20220521-thanatomania-ver",
-          "title": "Incidente de Muerte por Tanatoma en el Mercado de Toyosu: Un Efecto Dominó",
-          "url": "http://lafundacionscp.wikidot.com/koigarezaki-news-20220521-thanatomania-ver",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Se trata de un tanatoma extraído del sushi mediante un nigiri especial conocido como \"Nigiri de Vida o Muerte\". La muerte del sushiblade, es decir, la pérdida de frescura de los ingredientes y la desintegración de la neta, se extrae, y cuando la asimilan los humanos, la muerte se produce por el rápido envejecimiento y la desintegración del cuerpo más allá de su forma original. Mencionado por primera vez en: Incidente de Muerte por Tanatoma en el Mercado de Toyosu: Un Efecto Dominó"
-        },
-        {
-          "id": "yamizushi-file-no2000kari",
-          "title": "Archivo del Sushi Oscuro Nro.2000（Provisional) \"Máquina Misteriosa\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no2000kari",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Un dispositivo que inhabilita la activación del sushiblade. Priva al sushi circundante de su energía de rotación al imponer la fuerza del mundo donde el sushi no gira sobre la fuerza de rotación del sushi. Mencionado por primera vez en: Archivo del Sushi Oscuro Nro.2000（Provisional) \"Máquina Misteriosa\""
-        },
-        {
-          "id": "scp-1710-jp-j",
-          "title": "SCP-1710-JP-J",
-          "url": "http://lafundacionscp.wikidot.com/scp-1710-jp-j",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "En teología paranormal, se refiere a una entidad que se mantiene y crece a sí misma mediante la intervención cognitiva de su inteligencia en el sushi (incluidos los artículos no comestibles). También le gusta comer sushi de verdad. Mencionado por primera vez en: SCP-1710-JP-J"
-        },
-        {
-          "id": "third-raw",
-          "title": "Tercera Pez",
-          "url": "http://lafundacionscp.wikidot.com/third-raw",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Sushi de Tipo Estratégico, que es controlado por Rei Kotobuki. Como no posee metal en su estructura, no puede ser detectado por radares. Se le abrevia como ICBM 9 Mencionado por primera vez en: Tercera Pez"
-        },
-        {
-          "id": "yamizushi-file-no157",
-          "title": "Archivo del Sushi Oscuro Nro.157 \"Shibikara Ramen\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no157",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Es una parametrización del poder mágico y el poder de ataque especial del sushi. Se le abrevia como PSI 10 . Mencionado por primera vez en: Archivo del Sushi Oscuro Nro.157 \"Shibikara Ramen\""
-        },
-        {
-          "id": "yamizushi-file-no499",
-          "title": "Archivo del Sushi Oscuro Nro.499 \"Espagueti con Carne de Calamar\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no499",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Quinto emperador del Imperio Romano. Conocido como tirano, pero también amante de las artes. En sus últimos días, tras un conflicto con el Senado, se vio acorralado y se suicidó. Mencionado por primera vez en: Archivo del Sushi Oscuro Nro.499 \"Espagueti con Carne de Calamar\""
-        },
-        {
-          "id": "she-will-dance-with-the-dark",
-          "title": "Chefs de Sushi Bailan con La Oscuridad",
-          "url": "http://lafundacionscp.wikidot.com/she-will-dance-with-the-dark",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Unidad bajo el control directo del Comité Invencible de Clasificación, Utilización, Mantenimiento y Dinamización (CI-CUMD). Mencionado por primera vez en: Chefs de Sushi Bailan con La Oscuridad"
-        },
-        {
-          "id": "gekkan-sushiblade",
-          "title": "Sushiblade Mensual",
-          "url": "http://lafundacionscp.wikidot.com/gekkan-sushiblade",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Un gato que no tiene nada que ver con el sushiblade. Mencionado por primera vez en: Sushiblade Mensual"
-        },
-        {
-          "id": "yamizushi-file-no900",
-          "title": "Archivo del Sushi Oscuro Nro.900 \"Puñados de Jirafa Hakkaku\"",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no900",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Una artimaña usada en duelos de Sushiblade. Una técnica en la que el perdedor de una partida de Sushiblade invierte la regla de que el perdedor se tiene que comer su propio Sushiblade, forzando la victoria cuando el Sushiblade del oponente se mete en la boca de este. Mencionado por primera vez en: Archivo del Sushi Oscuro Nro.900 \"Puñados de Jirafa Hakkaku\""
-        },
-        {
-          "id": "yamizushi-hub",
-          "title": "¿Estás satisfecho con un Sushi tan débil?",
-          "url": "http://lafundacionscp.wikidot.com/yamizushi-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -56821,8 +56441,6 @@
             "yamizushi-file-no882",
             "yamizushi-file-053",
             "yamizushi-file-no271",
-            "collected-item-no3434",
-            "saburo-shiro-secured-yohei",
             "the-infiltrators",
             "vinegared-rice-brainwashing-orientation",
             "scp-1644-jp",
@@ -56830,57 +56448,355 @@
             "yamizushi-file-no995",
             "koigarezaki-news-911-1998-ver",
             "critter-profile-shigastan",
-            "nostalgic-taste",
-            "sushi-battle-round01",
-            "django",
-            "shironose-kuzira-1",
-            "scp-2042-jp",
-            "sushi-tokyowan",
-            "sb-mimonden",
-            "sb-ibunden",
-            "spc-034-jp",
-            "koigarezaki-news-20160827",
-            "ambrose-taipei",
-            "scp-1963-jp",
-            "wagnascousin-2",
-            "yamizushi-file-no003",
-            "sushi-battle-round02",
-            "aoharu-sushiblade",
-            "shironose-kuzira-3",
-            "salomon",
             "verano-de-2035-espana",
-            "yamizushi-file-no014",
-            "yamizushi-file-no968",
             "scp-571-jp",
-            "jet-black",
             "groups-of-interest-jp",
             "scp-890-jp",
-            "uiu-1970-005",
             "scp-073",
             "ijamea-hub",
-            "yonedu-gensui",
-            "scp-014-jp-j",
-            "scp-1690",
-            "aisurakuto-9",
-            "new-religion-of-deer-college",
-            "the-hobby-anime-is-unreal",
-            "yamizushi-file-no625",
-            "making-stew-hub",
-            "night-battle-in-abandoned-park",
-            "koigarezaki-news-20220521-thanatomania-ver",
-            "yamizushi-file-no2000kari",
-            "scp-1710-jp-j",
-            "third-raw",
-            "yamizushi-file-no157",
-            "yamizushi-file-no499",
-            "she-will-dance-with-the-dark",
-            "gekkan-sushiblade",
-            "yamizushi-file-no900",
-            "yamizushi-hub"
+            "scp-1690"
           ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/aisurakuto-9",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/ambrose-taipei",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/aoharu-sushiblade",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/collected-item-no3434",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/django",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/gekkan-sushiblade",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/jet-black",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/koigarezaki-news-20160827",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/koigarezaki-news-20220521-thanatomania-ver",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/making-stew-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/new-religion-of-deer-college",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/night-battle-in-abandoned-park",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/nostalgic-taste",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/saburo-shiro-secured-yohei",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/salomon",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/sb-ibunden",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/sb-mimonden",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-014-jp-j",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-1710-jp-j",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-1963-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-2042-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/she-will-dance-with-the-dark",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/shironose-kuzira-1",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/shironose-kuzira-3",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/spc-034-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/sushi-battle-round01",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/sushi-battle-round02",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/sushi-tokyowan",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-hobby-anime-is-unreal",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/third-raw",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/uiu-1970-005",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/wagnascousin-2",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no003",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no014",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no157",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no2000kari",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no499",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no625",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no900",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-file-no968",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yamizushi-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/yonedu-gensui",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:tactical-theology-hub",
@@ -56990,13 +56906,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "scp-6830",
-          "title": "Acceder Archivo",
-          "url": "http://lafundacionscp.wikidot.com/scp-6830",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-2406",
           "title": "El Coloso",
           "url": "https://lafundacionscp.wikidot.com/scp-2406",
@@ -57012,13 +56921,6 @@
           "url": "http://lafundacionscp.wikidot.com/sarkicism-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
-        },
-        {
-          "id": "scp-3853",
-          "title": "Acceder Archivo",
-          "url": "http://lafundacionscp.wikidot.com/scp-3853",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         },
         {
           "id": "scp-3777",
@@ -57077,14 +56979,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "a-once-and-future-king",
-          "title": "proporcionó una mayor comprensión",
-          "url": "http://lafundacionscp.wikidot.com/a-once-and-future-king",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Clasificadas como SCP-4918, estas entidades desafiaron los conceptos teológicos modernos de divinidad y proporcionó una mayor comprensión de la intersección de la creencia religiosa popular con la guerra anómala. Además, demostró que la radiación Akiva no estaba vinculada únicamente a la creencia , sino más bien al concepto mismo de creencia."
-        },
-        {
           "id": "scp-4918",
           "title": "Bergentruckung",
           "url": "https://lafundacionscp.wikidot.com/scp-4918",
@@ -57130,13 +57024,6 @@
           "desc": "Los agentes implantados dentro del Departamento de Recuperación de EE.UU. deben llevar a cabo todas las examinaciones e inspecciones en el embalse de la presa Hoover y ofuscar la presencia de SCP-4967. En el caso de que los niveles de radiación Akiva dentro de…"
         },
         {
-          "id": "undervegas-hub",
-          "title": "Acceder Archivo",
-          "url": "http://lafundacionscp.wikidot.com/undervegas-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "etdp-hub-page",
           "title": "Acceder Archivo",
           "url": "http://lafundacionscp.wikidot.com/etdp-hub-page",
@@ -57162,13 +57049,6 @@
           "contentKind": "scp",
           "os": 4,
           "desc": "Como SCP-5243 es un fallo de contención catastrófico recurrente, se \"contiene\" mediante la mejora de sus efectos. Cada año, el octavo día de septiembre, se deben realizar las siguientes acciones en el Sitio-43 : Cualquier acción cronometrada al segundo preciso…"
-        },
-        {
-          "id": "scp-6716",
-          "title": "Acceder Archivo",
-          "url": "http://lafundacionscp.wikidot.com/scp-6716",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         },
         {
           "id": "scp-7997",
@@ -57197,14 +57077,6 @@
           "desc": "La División de Demonología se concentra principalmente en el Sitio-666 como parte de la extensa Iniciativa Undervegas . Sin embargo, se pueden encontrar miembros en la mayoría de los lugares en los que está presente la Teología Táctica, debido a la existencia generalizada de Entidades Tartáreas en muchas culturas."
         },
         {
-          "id": "scp-6731",
-          "title": "Emmanuel Tirk",
-          "url": "http://lafundacionscp.wikidot.com/scp-6731",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Líder del Destacamento: Emmanuel Tirk"
-        },
-        {
           "id": "deicide",
           "title": "DEICIDIO",
           "url": "https://lafundacionscp.wikidot.com/deicide",
@@ -57215,46 +57087,6 @@
           "desc": "Mi cerebro, equipado con un motor de oración oscilante, impulsado por un monasterio en Lhasa. Mis ojos, alterados con filtros de percepción que muestran radiación Akiva y pueden inducir una muerte cerebral instantánea en caso de ser necesario. Mis músculos, me…"
         },
         {
-          "id": "scp-6130",
-          "title": "creció rápidamente en tamaño y responsabilidad",
-          "url": "http://lafundacionscp.wikidot.com/scp-6130",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Bajo su control, el departamento creció rápidamente en tamaño y responsabilidad , y empezó a abordar de puntos ciegos que antes se ignoraban en los esfuerzos de contención (como las religiones asiáticas y chamanistas). También contrató a muchos más teólogos y religiosos que el director anterior, una decisión controvertida pero eficaz en última instancia. Bajo su control, el departamento adquirió una serie de rasgos distintivos que hoy son visibles."
-        },
-        {
-          "id": "partner-s-meeting",
-          "title": "desempeñar un papel crucial",
-          "url": "http://lafundacionscp.wikidot.com/partner-s-meeting",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "En este puesto, el Subdirector Leiner ayudó a desempeñar un papel crucial en la Iniciativa Undervegas , además de ayudar directamente en la contención de otras anomalías diversas . También contribuyó al estudio del campo Akiva y de dispositivos experimentales prototípicos para contener seres divinos."
-        },
-        {
-          "id": "scp-4531",
-          "title": "cada vez más agresiva",
-          "url": "http://lafundacionscp.wikidot.com/scp-4531",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "A lo largo de su mandato en el departamento, sus colegas han observado que su forma de abordar las anomalías religiosas se hacía cada vez más agresiva . Empezó a investigar más sobre grupos de interés y religiones deicidas, y a realizar investigaciones personales sobre la nadirosis . Todo ello culminó con su desaparición en 2002, tras un supuesto avance que afirmó haber realizado."
-        },
-        {
-          "id": "prelude-to-presents",
-          "title": "en procesar informes de contención",
-          "url": "http://lafundacionscp.wikidot.com/prelude-to-presents",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Resumen: Randall Bannock trabaja para el Departamento de Teología Táctica desde 1996, y es el principal especialista en contención del departamento desde 1998. La mayor parte de su trabajo para el departamento ha consistido en en procesar informes de contención , desarrollar métodos de recuperación para anomalías sin contener o que rompieron la contención y diseñar procedimientos de contención."
-        },
-        {
-          "id": "humint",
-          "title": "no solo trabaja",
-          "url": "http://lafundacionscp.wikidot.com/humint",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Resumen: Alice Pandora no solo trabaja en el Departamento de Teología Táctica, sino que es especialista en religiones indígenas, con especial atención al continente norteamericano y sudamericano. Mantiene un archivo de religiones actuales, de transición y muertas para que el Departamento pueda construir un mapa mejor de la historia del mundo con anomalías religiosas."
-        },
-        {
           "id": "scp-4661",
           "title": "Sin City",
           "url": "https://lafundacionscp.wikidot.com/scp-4661",
@@ -57263,14 +57095,6 @@
           "contentKind": "scp",
           "os": 17,
           "desc": "El principal medio de contención es la Unidad de Vacío Teoplanar House-Nicolás, ubicada en la cúpula del Sitio-616 (conocido públicamente como el Luxor Las Vegas). La unidad ha sido diseñada para evitar otro incidente de colapso. Esto se consigue mediante el d…"
-        },
-        {
-          "id": "scp-7666",
-          "title": "pasadas interacciones",
-          "url": "http://lafundacionscp.wikidot.com/scp-7666",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Sus pasadas interacciones con demonios prominentes también le han llevado a ser un \"diplomático\" particularmente eficaz en situaciones que implican a poderosas Entidades Tartáreas. La relación entre House y estas entidades es, como era de esperar, ambigua. No obstante, a menudo se recurre a su ayuda cuando hay que tratar con demonios excepcionalmente molestos."
         }
       ],
       "supplementLinks": [],
@@ -57296,7 +57120,6 @@
             "scp-140",
             "scp-6140",
             "daevite-hub",
-            "scp-6830",
             "scp-2406",
             "sarkicism-hub"
           ]
@@ -57305,7 +57128,6 @@
           "id": "04-edad-clasica",
           "title": "Edad Clásica",
           "articleIDs": [
-            "scp-3853",
             "scp-3777"
           ]
         },
@@ -57330,17 +57152,14 @@
           "id": "07-edad-contemporanea",
           "title": "Edad Contemporánea",
           "articleIDs": [
-            "a-once-and-future-king",
             "scp-4918",
             "groups-of-interest",
             "scp-7966",
             "task-forces",
             "scp-4967",
-            "undervegas-hub",
             "etdp-hub-page",
             "scp-5993",
             "scp-5243",
-            "scp-6716",
             "scp-7997"
           ]
         },
@@ -57359,13 +57178,6 @@
           ]
         },
         {
-          "id": "10-eta-77-esferas-dentro-de-esferas",
-          "title": "Eta-77 (\"Esferas dentro de Esferas\")",
-          "articleIDs": [
-            "scp-6731"
-          ]
-        },
-        {
           "id": "11-kairos-01-sola-fide",
           "title": "Kairos-01 (\"SOLA FIDE\")",
           "articleIDs": [
@@ -57376,17 +57188,109 @@
           "id": "12-miembros-del-personal-destacables",
           "title": "Miembros del Personal Destacables",
           "articleIDs": [
-            "scp-6130",
-            "partner-s-meeting",
-            "scp-4531",
-            "prelude-to-presents",
-            "humint",
-            "scp-4661",
-            "scp-7666"
+            "scp-4661"
           ]
         }
       ],
-      "description": "Este trocito de aquí abajo controla el logotipo y los cambios de subtítulos. ¿Está curseado? Sí. ¿Es molesto y eficaz? También lo es."
+      "description": "Este trocito de aquí abajo controla el logotipo y los cambios de subtítulos. ¿Está curseado? Sí. ¿Es molesto y eficaz? También lo es.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/a-once-and-future-king",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/humint",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/partner-s-meeting",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/prelude-to-presents",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-3853",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-4531",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-6130",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-6716",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-6731",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-6830",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-7666",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/undervegas-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:blood-red-summer-hub",
@@ -60525,116 +60429,12 @@
           "desc": "\"Nuestro trabajo es vigilar las anomalías que vigilan a la gente de Sloth's Pit. Esto es algo que sólo nosotros podemos hacer. Hacemos cosas que podemos hacer. Lo que hace a un Sitio son las órdenes dadas a su personal, ¿verdad?\""
         },
         {
-          "id": "project-another-one",
-          "title": "Otro Proyecto",
-          "url": "http://lafundacionscp.wikidot.com/project-another-one",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "\"Aunque creo que el mundo se acaba. Están luchando contra ello con todas sus fuerzas. Sería deprimente si todo es en vano. Si quedara algo después del fin, sería suficiente.\""
-        },
-        {
-          "id": "doomsday-method",
-          "title": "Cómo Vencer al Fin de los Tiempos",
-          "url": "http://lafundacionscp.wikidot.com/doomsday-method",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Muéstrame cómo los protectores de la normalidad luchan contra el fin de los tiempos."
-        },
-        {
-          "id": "birds-027",
-          "title": "BIRDS-027: Pájaros de Mal Agüero Llorando en la Noche",
-          "url": "http://lafundacionscp.wikidot.com/birds-027",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Por ello, la Fundación del Gorrión Verde llevará a cabo su tarea."
-        },
-        {
-          "id": "comeout-from-arca",
-          "title": "Lo Que Sale del Arca",
-          "url": "http://lafundacionscp.wikidot.com/comeout-from-arca",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Comencemos a crear humanos."
-        },
-        {
           "id": "scp-2626-jp",
           "title": "SCP-2626-JP(SCP-262-IE) - Casadh an tSúgáin Hilo Enredado",
           "url": "https://lafundacionscp.wikidot.com/scp-2626-jp",
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "SCP-262-IE es el término general para los cambios topológicos dirigidos que se producen de forma autónoma en los objetos flexibles alargados cuando no se observan directamente"
-        },
-        {
-          "id": "pte-1422-bosch-lengle",
-          "title": "PTE-1422-Bosch-L'Engle",
-          "url": "http://lafundacionscp.wikidot.com/pte-1422-bosch-lengle",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Los detalles del Proyecto Conjunto \"Arca\" pueden consultarse en la base de datos de la División PTOLEMY basada en el Pacto de Situación de Emergencia Fundación-COG Corinto-09 y la aprobación del Consejo de los 108."
-        },
-        {
-          "id": "means-left-to-us",
-          "title": "Los Recursos Que Nos Quedan",
-          "url": "http://lafundacionscp.wikidot.com/means-left-to-us",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "\"No es algo con lo que nadie pueda estar de acuerdo. Pero, como piedra angular de la humanidad, debemos tomar la decisión.\""
-        },
-        {
-          "id": "the-veil",
-          "title": "A los Ignorantes del Otro Lado del Velo",
-          "url": "http://lafundacionscp.wikidot.com/the-veil",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Se lo diremos hasta al último ser humano, como protectores de la humanidad, protectores del mundo."
-        },
-        {
-          "id": "project-proposal-2014-512",
-          "title": "Propuesta de Proyecto 2014-512 (Pendiente): \"La Voz de Pandora\"",
-          "url": "http://lafundacionscp.wikidot.com/project-proposal-2014-512",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Que se rindan los tontos."
-        },
-        {
-          "id": "cool-not-over-yet",
-          "title": "Los Créditos Finales Llegan Más Tarde",
-          "url": "http://lafundacionscp.wikidot.com/cool-not-over-yet",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "\"Todavía no. Mi arte aún no ha terminado.\""
-        },
-        {
-          "id": "dear-dr-please-remember-us",
-          "title": "Estimado Dr., Por Favor Recuérdenos...",
-          "url": "http://lafundacionscp.wikidot.com/dear-dr-please-remember-us",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "\"Hola, Doc. ¿Se acuerda?\""
-        },
-        {
-          "id": "ambrose-the-end-of-the-world",
-          "title": "Ambrose en el Fin del Mundo",
-          "url": "http://lafundacionscp.wikidot.com/ambrose-the-end-of-the-world",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "\"Para ti, la última persona que queda, te hemos reservado el asiento más sublime.\""
-        },
-        {
-          "id": "the-clown-plays-the-audience",
-          "title": "Intermedio para Quienes No Pueden Rendirse",
-          "url": "http://lafundacionscp.wikidot.com/the-clown-plays-the-audience",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "\"Ahora, por unos instantes, ¿olvidamos nuestros problemas cotidianos y nos convertimos en espectadores de este gran drama?\""
-        },
-        {
-          "id": "unknownmothergoose",
-          "title": "Este Cuento de Hadas Desconocido para Cualquiera",
-          "url": "http://lafundacionscp.wikidot.com/unknownmothergoose",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Girasoles, girasoles, escombros, girasoles."
         },
         {
           "id": "yamizushi-file-no064",
@@ -60647,14 +60447,6 @@
           "desc": "El \"Sushi Olvidado\" es un término colectivo para el sushi cuya técnica de creación o incluso toda su existencia se han perdido en el tiempo. Como resultado, hacer este tipo de sushi es extremadamente difícil, y sólo se han encontrado dos recetas para hacer alg…"
         },
         {
-          "id": "exit-deus-ex-machina",
-          "title": "Salir del Deus Ex Machina",
-          "url": "http://lafundacionscp.wikidot.com/exit-deus-ex-machina",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Sigue así, viejo amigo."
-        },
-        {
           "id": "document-recovered-from-the-marianas-trench",
           "title": "Documento Recuperado desde la Fosa de las Marianas",
           "url": "https://lafundacionscp.wikidot.com/document-recovered-from-the-marianas-trench",
@@ -60663,35 +60455,6 @@
           "contentKind": "tale",
           "os": 16,
           "desc": "Necesito escribir esto, porque a veces suelo olvidar cosas, y creo que lo que escuché hoy fue importante. No para mí; mi tiempo o el de cualquier persona viva en la Tierra hoy para marcar la diferencia ha pasado, pero alguien, alguien quizás pueda sacarle prov…"
-        },
-        {
-          "id": "scp-flavor",
-          "title": "Texto Ambiental del SCP",
-          "url": "http://lafundacionscp.wikidot.com/scp-flavor",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "- SCP-2000"
-        },
-        {
-          "id": "withtheworld-iloveyou",
-          "title": "Juntos con el Mundo",
-          "url": "http://lafundacionscp.wikidot.com/withtheworld-iloveyou",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "making-stew-hub",
-          "title": "Hub de Haciendo Guiso",
-          "url": "http://lafundacionscp.wikidot.com/making-stew-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "goi-balls-03",
-          "title": "Arte de los GdIs Japoneses en Canones Japoneses",
-          "url": "http://lafundacionscp.wikidot.com/goi-balls-03",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "scp-963",
@@ -60715,27 +60478,9 @@
             "a-n-0064",
             "deus-ex-arca",
             "story-of-our-life",
-            "project-another-one",
-            "doomsday-method",
-            "birds-027",
-            "comeout-from-arca",
             "scp-2626-jp",
-            "pte-1422-bosch-lengle",
-            "means-left-to-us",
-            "the-veil",
-            "project-proposal-2014-512",
-            "cool-not-over-yet",
-            "dear-dr-please-remember-us",
-            "ambrose-the-end-of-the-world",
-            "the-clown-plays-the-audience",
-            "unknownmothergoose",
             "yamizushi-file-no064",
-            "exit-deus-ex-machina",
-            "document-recovered-from-the-marianas-trench",
-            "scp-flavor",
-            "withtheworld-iloveyou",
-            "making-stew-hub",
-            "goi-balls-03"
+            "document-recovered-from-the-marianas-trench"
           ]
         },
         {
@@ -60746,7 +60491,153 @@
           ]
         }
       ],
-      "description": "El intento de acceso más allá de este punto sin la autorización necesaria es causal de eliminación del empleo en la Fundación y la cancelación de todos los beneficios educacionales, médicos, de jubilación y mortuorios. Por medio de la presentación de tus credenciales de usuario, das el consentimiento para ser expuesto a una imagen cognitopeligrosa conocida, y así verificar que has sido inoculado contra esa imagen. En caso de acceso no autorizado, esta consola se volverá inoperable. El Personal de Seguridad será despachado para reanimarte y escoltarte a una celda de detención para interrogación. Intentar acceder a este archivo desde cualquier ordenador no conectado a la Intranet de la Fundación resultará en eliminación inmediata sin importar el nivel de autorización."
+      "description": "El intento de acceso más allá de este punto sin la autorización necesaria es causal de eliminación del empleo en la Fundación y la cancelación de todos los beneficios educacionales, médicos, de jubilación y mortuorios. Por medio de la presentación de tus credenciales de usuario, das el consentimiento para ser expuesto a una imagen cognitopeligrosa conocida, y así verificar que has sido inoculado contra esa imagen. En caso de acceso no autorizado, esta consola se volverá inoperable. El Personal de Seguridad será despachado para reanimarte y escoltarte a una celda de detención para interrogación. Intentar acceder a este archivo desde cualquier ordenador no conectado a la Intranet de la Fundación resultará en eliminación inmediata sin importar el nivel de autorización.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/ambrose-the-end-of-the-world",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/birds-027",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/comeout-from-arca",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/cool-not-over-yet",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/dear-dr-please-remember-us",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/doomsday-method",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/exit-deus-ex-machina",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/goi-balls-03",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/making-stew-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/means-left-to-us",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/project-another-one",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/project-proposal-2014-512",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/pte-1422-bosch-lengle",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-flavor",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-clown-plays-the-audience",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-veil",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/unknownmothergoose",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/withtheworld-iloveyou",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:project-palisade",
@@ -63495,14 +63386,6 @@
           "contentKind": "goiFormat",
           "os": 3,
           "desc": "El Adzuki Gunkan es un tipo de sushi local originario de Hong Kong, que consiste principalmente en arroz shari, pasta de habas adzuki al vapor mezclada con algas y mayonesa."
-        },
-        {
-          "id": "scp-4421",
-          "title": "dirigentes",
-          "url": "http://lafundacionscp.wikidot.com/scp-4421",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Situada en el nexo cerrado de en las afueras de Nueva Orleans, LA, la Logia Aguasnegras permanece en su mayor parte sin ser observada. Se están llevando a cabo negociaciones para que los investigadores accedan a la logia a través de los dirigentes de ."
         }
       ],
       "supplementLinks": [],
@@ -63676,16 +63559,19 @@
             "the-parables-of-pseudo-nadox",
             "yamizushi-file-053"
           ]
-        },
-        {
-          "id": "02-ordenes-conocidas",
-          "title": "Órdenes Conocidas:",
-          "articleIDs": [
-            "scp-4421"
-          ]
         }
       ],
-      "description": "La Herida, cortada desde la carne de la totalidad - profunda, cortó la línea del futuro y el pasado. Conducidos a su antiguo ulcerador, los dioses se arremolinaban como moscas a un cadáver. Esperamos dentro de venas sin sangre, fieles a lo que no podíamos saber - incapaces de imaginar que podríamos llegar a ser su más grande. Aquí, dormimos - antes que nuestras almas se vuelvan carne. Sone Alku"
+      "description": "La Herida, cortada desde la carne de la totalidad - profunda, cortó la línea del futuro y el pasado. Conducidos a su antiguo ulcerador, los dioses se arremolinaban como moscas a un cadáver. Esperamos dentro de venas sin sangre, fieles a lo que no podíamos saber - incapaces de imaginar que podríamos llegar a ser su más grande. Aquí, dormimos - antes que nuestras almas se vuelvan carne. Sone Alku",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-4421",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:spc-hub",
@@ -71822,13 +71708,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "numbers-lie",
-          "title": "Los números no mienten",
-          "url": "https://lafundacionscp.wikidot.com/numbers-lie",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "case-colourless-green",
           "title": "CASO VERDE INCOLORO",
           "url": "https://lafundacionscp.wikidot.com/case-colourless-green",
@@ -73683,20 +73562,6 @@
           "desc": "SCP-7841-ZA debe ser almacenado en una celda de contención ubicada en el Sitio-29. Se utilizarán correas para evitar que SCP-7841-ZA escape o intente autoinfligirse heridas. Los guardias tienen prohibido herir o infligir dolor a SCP-7841-ZA a menos que así lo…"
         },
         {
-          "id": "vast-suspended-ruins",
-          "title": "Vastas Ruinas Suspendidas",
-          "url": "https://lafundacionscp.wikidot.com/vast-suspended-ruins",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-6445",
-          "title": "SCP-⌘",
-          "url": "https://lafundacionscp.wikidot.com/scp-6445/",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-5145",
           "title": "Apagué el Sol",
           "url": "https://lafundacionscp.wikidot.com/scp-5145",
@@ -74862,7 +74727,6 @@
             "scp-3125",
             "introductory-antimemetics",
             "immemorial",
-            "numbers-lie",
             "case-colourless-green",
             "scp-3787",
             "antimemetics-division-hub"
@@ -75266,15 +75130,13 @@
             "scp-2000",
             "incident-zero-part-1",
             "scp-4833",
-            "scp-7841",
-            "vast-suspended-ruins"
+            "scp-7841"
           ]
         },
         {
           "id": "51-sitio",
           "title": "Sitio-⌘",
           "articleIDs": [
-            "scp-6445",
             "scp-5145"
           ]
         },
@@ -75407,7 +75269,33 @@
           ]
         }
       ],
-      "description": "La Fundación mantiene y opera un gran número de instalaciones en todo el mundo, desde pequeños puestos de avanzada con sólo un puñado de personal hasta grandes complejos con miles de personas. El siguiente documento contiene una lista de las principales instalaciones de la Fundación, pero no pretende ser exhaustiva."
+      "description": "La Fundación mantiene y opera un gran número de instalaciones en todo el mundo, desde pequeños puestos de avanzada con sólo un puñado de personal hasta grandes complejos con miles de personas. El siguiente documento contiene una lista de las principales instalaciones de la Fundación, pero no pretende ser exhaustiva.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/numbers-lie",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://lafundacionscp.wikidot.com/scp-6445",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://lafundacionscp.wikidot.com/vast-suspended-ruins",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:imbw-hub",
@@ -78757,22 +78645,6 @@
           "desc": "La red CORAIL inicia su primera colaboración fuera del viejo continente con el estudio de un templo precolombino a dos metros bajo tierra y muy centrado en el poder nuclear . Esto solo puede ir bien."
         },
         {
-          "id": "scp-531-fr",
-          "title": "SCP-531-FR — Spatial Urbex",
-          "url": "http://lafundacionscp.wikidot.com/scp-531-fr",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Y si la exploración espacial no fuera tan como pensamos? ¿Cómo podría ser y cómo tal fenómeno?"
-        },
-        {
-          "id": "scp-597-fr",
-          "title": "SCP-597-FR — Una odisea espacial",
-          "url": "http://lafundacionscp.wikidot.com/scp-597-fr",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Las excavaciones paraarqueológicas griegas de 1958 revelan secretos enterrados, despertando el interés de la administración superior. En el origen de este misterio por esclarecer, un científico ocultista llevado por los vientos y movido por el deseo de responder a esta pregunta: ¿qué es la odisea espacial ?"
-        },
-        {
           "id": "scp-586-fr",
           "title": "Punto de Ruptura",
           "url": "https://lafundacionscp.wikidot.com/scp-586-fr",
@@ -78789,14 +78661,6 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "Una epopeya bananera que comienza en Cuba, pasa por Argentina, es orquestada por el BAAO y termina en la Polinesia Francesa con el Arco Redentor Republicano como telón de fondo."
-        },
-        {
-          "id": "proposition-lga",
-          "title": "SCP-001-FR-EX — La Propuesta de ██-██",
-          "url": "http://lafundacionscp.wikidot.com/proposition-lga",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "El Departamento Psy-Prometheus, que se ha ocupado anteriormente del caso SCP-586-FR, no es lo que podríamos llamar un de la red CORAIL. Sin embargo, la historia de este departamento puede revelar más sobre la Fundación de lo que la propia Fundación está dispuesta a divulgar."
         }
       ],
       "supplementLinks": [],
@@ -78811,15 +78675,38 @@
             "scp-572-fr",
             "scp-097-int",
             "hub-sueno-nuclear",
-            "scp-531-fr",
-            "scp-597-fr",
             "scp-586-fr",
-            "scp-650-fr",
-            "proposition-lga"
+            "scp-650-fr"
           ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/proposition-lga",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-531-fr",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-597-fr",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:relatos-scp-cn",
@@ -95675,14 +95562,6 @@
           "desc": "Gwag Hen y Cwn, Swansea, Gales | Sitio-78"
         },
         {
-          "id": "on-the-radar",
-          "title": "Nx-17",
-          "url": "http://lafundacionscp.wikidot.com/on-the-radar#toc1",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Boring, Oregon | Sitio-64"
-        },
-        {
           "id": "groups-of-interest",
           "title": "Soluciones de Wilson para la Fauna Silvestre",
           "url": "http://lafundacionscp.wikidot.com/groups-of-interest#toc29",
@@ -95715,13 +95594,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "uiu-file-2008-21",
-          "title": "Archivo de la UdII 2008-021: Incidente Ursus Maritimus",
-          "url": "http://lafundacionscp.wikidot.com/uiu-file-2008-21",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-4040",
           "title": "Al Fondo de un Pozo sin Fondo",
           "url": "https://lafundacionscp.wikidot.com/scp-4040",
@@ -95730,13 +95602,6 @@
           "contentKind": "scp",
           "os": 5,
           "desc": "El personal de campo que se encuentre con SCP-4040 no debe interactuar a menos que se le ordene a hacerlo por el Comando del Sitio-87. Los equipos de expedición enviados a estudiar SCP-4040 deben estar formados por un mínimo de cuatro agentes, con ningún miemb…"
-        },
-        {
-          "id": "black-autumn-hub",
-          "title": "Hub de Otoño Oscuro",
-          "url": "http://lafundacionscp.wikidot.com/black-autumn-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "the-s-c-plastics-hub",
@@ -95773,41 +95638,6 @@
           "desc": "SCP-1936 debe estar contenido detrás de una cerca eléctrica de dos metros, que debe ser vigilada por elementos de seguridad. El área contenida es más o menos circular, de un kilómetro de diámetro. Se instalarán cámaras de seguridad para cubrir las zonas que no…"
         },
         {
-          "id": "der-machandelbaum",
-          "title": "Der Machandelbaum",
-          "url": "http://lafundacionscp.wikidot.com/der-machandelbaum",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "verdure",
-          "title": "Verdor",
-          "url": "http://lafundacionscp.wikidot.com/verdure",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-halloween-watch",
-          "title": "La vigía de Halloween",
-          "url": "http://lafundacionscp.wikidot.com/the-halloween-watch",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "hotline-eventide",
-          "title": "Hotline: Eventide",
-          "url": "http://lafundacionscp.wikidot.com/hotline-eventide",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "d-a-r-e-drugs-are-really-extreme",
-          "title": "D.A.R.E (¡Las Drogas hAcen Reacciones Extremas!)",
-          "url": "http://lafundacionscp.wikidot.com/d-a-r-e-drugs-are-really-extreme",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "critter-profile-bakugo",
           "title": "Perfil de la Criatura: ¡Bakugo!",
           "url": "https://lafundacionscp.wikidot.com/critter-profile-bakugo",
@@ -95818,13 +95648,6 @@
           "desc": "Perfil de la Criatura: ¡Bakugo! Nombre: Bakugo Especie: Híbrido de Tapirus indicus (Tapir Malayo) y Tapirus yumekui (Baku Mayor)"
         },
         {
-          "id": "an-apple-a-day",
-          "title": "Una manzana al día",
-          "url": "http://lafundacionscp.wikidot.com/an-apple-a-day",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-4886",
           "title": "El Policía y el Campo",
           "url": "https://lafundacionscp.wikidot.com/scp-4886",
@@ -95833,13 +95656,6 @@
           "contentKind": "scp",
           "os": 10,
           "desc": "Se ha establecido una Zona de Exclusión alrededor de los límites legales de SCP-4886. Está rodeada por una valla de 3 metros de altura de alambre. Los residentes cercanos creen que es propiedad privada del Agente Jonathan Lancelot; el personal asignado debe ac…"
-        },
-        {
-          "id": "wwydftltimd-hub",
-          "title": "Cuando morirás por última vez en mis sueños - Hub",
-          "url": "http://lafundacionscp.wikidot.com/wwydftltimd-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "nx-58",
@@ -95860,13 +95676,6 @@
           "desc": "SCP-2117 es la ubicación del Sitio-2117, al que puede acceder cualquier individuo que posea una instancia de SCP-2117-A-1. En la actualidad, las instancias de SCP-2117-A-1 son utilizadas por personal vital, miembros del Destacamento Móvil Omega-2 (\"¡Anti-Nihil…"
         },
         {
-          "id": "bad-end",
-          "title": "Final malo",
-          "url": "http://lafundacionscp.wikidot.com/bad-end",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-2920",
           "title": "¿Qué Esperabas?",
           "url": "https://lafundacionscp.wikidot.com/scp-2920",
@@ -95875,21 +95684,6 @@
           "contentKind": "scp",
           "os": 2,
           "desc": "Se han instalado cercas eléctricas y cámaras de seguridad alrededor de SCP-2920 a 25 metros más allá de sus fronteras. Se han instalado controles fronterizos disfrazados de cabinas de peaje en todas las carreteras que entran y salen de SCP-2920. Todas las inst…"
-        },
-        {
-          "id": "the-amityville-triumph",
-          "title": "El triunfo de Amityville",
-          "url": "http://lafundacionscp.wikidot.com/the-amityville-triumph",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "secure-facility-dossier-site-64k",
-          "title": "Nx-64",
-          "url": "http://lafundacionscp.wikidot.com/secure-facility-dossier-site-64k",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Mujin, Jeolla sur, Corea del Sur| Sitio-64K 11"
         },
         {
           "id": "scp-521-ko",
@@ -95925,20 +95719,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "portland-vice",
-          "title": "Vicio de Portland",
-          "url": "http://lafundacionscp.wikidot.com/portland-vice",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "comedown-machine-hub",
-          "title": "Comedown Machine",
-          "url": "http://lafundacionscp.wikidot.com/comedown-machine-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-3681",
           "title": "5 a 0",
           "url": "https://lafundacionscp.wikidot.com/scp-3681",
@@ -95956,37 +95736,9 @@
           "contentKind": "tale"
         },
         {
-          "id": "alternate-character-interpretations",
-          "title": "Interpretaciones alternativas de personaje",
-          "url": "http://lafundacionscp.wikidot.com/alternate-character-interpretations",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "preparation",
-          "title": "Preparación",
-          "url": "http://lafundacionscp.wikidot.com/preparation",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "speed-demon-hub",
-          "title": "Speed Demon Hub",
-          "url": "http://lafundacionscp.wikidot.com/speed-demon-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "hypervelocity",
           "title": "Hipervelocidad",
           "url": "http://lafundacionscp.wikidot.com/hypervelocity",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "terminal-velocity",
-          "title": "Velocidad terminal",
-          "url": "http://lafundacionscp.wikidot.com/terminal-velocity",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
@@ -96003,21 +95755,6 @@
           "url": "http://lafundacionscp.wikidot.com/chicago-spirit",
           "role": "primaryArticle",
           "contentKind": "tale"
-        },
-        {
-          "id": "larue-hub",
-          "title": "FP-04",
-          "url": "http://lafundacionscp.wikidot.com/larue-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "La Rue Macabre"
-        },
-        {
-          "id": "scp-4421",
-          "title": "SCP-4421: El bastón de Legba",
-          "url": "http://lafundacionscp.wikidot.com/scp-4421",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         },
         {
           "id": "scp-4476",
@@ -96038,13 +95775,6 @@
           "contentKind": "tale",
           "os": 8,
           "desc": "Acto I: Et Ecce Equus Pallidus | En Memoria, Adytum << Caso de Estudio 02: Los Divoši de Praga | Caso de Estudio 03: La Logia Aguasnegras |"
-        },
-        {
-          "id": "nancy-shoe",
-          "title": "LaRue Post - El Zapato de Nancy",
-          "url": "http://lafundacionscp.wikidot.com/nancy-shoe",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -96059,57 +95789,213 @@
             "ute-1919-discofather",
             "a-foul-storm-in-a-fair-land",
             "nx-07",
-            "on-the-radar",
             "groups-of-interest",
             "scp-3160",
             "wilson-s-wildlife-solutions-hub",
             "secure-facility-dossier-site-64",
-            "uiu-file-2008-21",
             "scp-4040",
-            "black-autumn-hub",
             "the-s-c-plastics-hub",
             "scp-936",
             "nx-33",
             "scp-1936",
-            "der-machandelbaum",
-            "verdure",
-            "the-halloween-watch",
-            "hotline-eventide",
-            "d-a-r-e-drugs-are-really-extreme",
             "critter-profile-bakugo",
-            "an-apple-a-day",
             "scp-4886",
-            "wwydftltimd-hub",
             "nx-58",
             "scp-2117",
-            "bad-end",
             "scp-2920",
-            "the-amityville-triumph",
-            "secure-facility-dossier-site-64k",
             "scp-521-ko",
             "three-portlands-hub",
             "unusual-investigations",
             "austringers",
-            "portland-vice",
-            "comedown-machine-hub",
             "scp-3681",
             "a-farewell-to-kings",
-            "alternate-character-interpretations",
-            "preparation",
-            "speed-demon-hub",
             "hypervelocity",
-            "terminal-velocity",
             "zeitgeist",
             "chicago-spirit",
-            "larue-hub",
-            "scp-4421",
             "scp-4476",
-            "anthropological-report-darkwater",
-            "nancy-shoe"
+            "anthropological-report-darkwater"
           ]
         }
       ],
-      "description": "Nexo /nek.so/ Vínculo y unión entre una cosa y otra. Punto central o focal. Una zona concentrada de actividad anómala"
+      "description": "Nexo /nek.so/ Vínculo y unión entre una cosa y otra. Punto central o focal. Una zona concentrada de actividad anómala",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/alternate-character-interpretations",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/an-apple-a-day",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/bad-end",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/black-autumn-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/comedown-machine-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/d-a-r-e-drugs-are-really-extreme",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/der-machandelbaum",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/hotline-eventide",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/larue-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/nancy-shoe",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/on-the-radar",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/portland-vice",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/preparation",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/scp-4421",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/secure-facility-dossier-site-64k",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/speed-demon-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/terminal-velocity",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-amityville-triumph",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-halloween-watch",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/uiu-file-2008-21",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/verdure",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/wwydftltimd-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:scp-series",
@@ -124881,14 +124767,6 @@
           "desc": "- Que se joda la mamá de este tipo"
         },
         {
-          "id": "scps-humorísticos",
-          "title": "SCPs-CN Humorísticos",
-          "url": "https://lafundacionscp.wikidot.com/scps-humor%C3%ADsticos#scp-j-cn",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "- Algunos de los mejores artículos de la página son inteligentes y divertidos."
-        },
-        {
           "id": "scp-ex",
           "title": "SCPs-CN EXs",
           "url": "https://lafundacionscp.wikidot.com/scp-ex",
@@ -124971,9 +124849,18 @@
           "id": "10-1900-1999-archivos",
           "title": "1900 - 1999 · Archivos",
           "articleIDs": [
-            "scps-humorísticos",
             "scp-ex"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/scps-humor%C3%ADsticos",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
@@ -125327,14 +125214,6 @@
           "desc": "- No Con Palabras"
         },
         {
-          "id": "scps-humorísticos",
-          "title": "SCPs-CN Humorísticos",
-          "url": "https://lafundacionscp.wikidot.com/scps-humor%C3%ADsticos#scp-j-cn",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "- Algunos de los mejores artículos de la página son inteligentes y divertidos."
-        },
-        {
           "id": "scp-ex",
           "title": "SCPs-CN EXs",
           "url": "https://lafundacionscp.wikidot.com/scp-ex",
@@ -125457,9 +125336,18 @@
           "id": "13-4000-4999-archivos",
           "title": "4000 - 4999 · Archivos",
           "articleIDs": [
-            "scps-humorísticos",
             "scp-ex"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/scps-humor%C3%ADsticos",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
@@ -125527,14 +125415,6 @@
         "structureHash": "sha256-65d50a7b1874b772a2882e23a646c7d3a9bc6e7633edabd20664092592417517"
       },
       "primaryArticles": [
-        {
-          "id": "serie-scp-cz",
-          "title": "Información Operacional",
-          "url": "https://lafundacionscp.wikidot.com/serie-scp-cz#operational",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Tabla de contenidos Información Operacional Lista de SCPs-CS"
-        },
         {
           "id": "object-classes",
           "title": "Clases de Objetos",
@@ -125666,13 +125546,6 @@
       "supplementLinks": [],
       "articleSections": [
         {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "serie-scp-cz"
-          ]
-        },
-        {
           "id": "02-informacion-operacional",
           "title": "Información Operacional",
           "articleIDs": [
@@ -125711,6 +125584,16 @@
           "articleIDs": [
             "joke-scps"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://lafundacionscp.wikidot.com/serie-scp-cz",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
@@ -136239,14 +136122,6 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "- Buenas Noticias"
-        },
-        {
-          "id": "scps-humorísticos",
-          "title": "SCPs-JP Humorísticos",
-          "url": "https://lafundacionscp.wikidot.com/scps-humor%C3%ADsticos#scp-j-jp",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "- Algunos de los mejores artículos de la página son inteligentes y divertidos."
         }
       ],
       "supplementLinks": [],
@@ -136327,13 +136202,16 @@
             "scp-3994-jp",
             "scp-3996-jp"
           ]
-        },
+        }
+      ],
+      "suppressedDeadURLs": [
         {
-          "id": "10-3900-3999-archivos",
-          "title": "3900 - 3999 · Archivos",
-          "articleIDs": [
-            "scps-humorísticos"
-          ]
+          "url": "https://lafundacionscp.wikidot.com/scps-humor%C3%ADsticos",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
@@ -154235,65 +154113,9 @@
           "contentKind": "tale"
         },
         {
-          "id": "shy",
-          "title": "Tímido",
-          "url": "http://lafundacionscp.wikidot.com/shy",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "dog-man",
           "title": "Hombre Perro",
           "url": "http://lafundacionscp.wikidot.com/dog-man",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "sleep-it-off",
-          "title": "Déjalo Dormir",
-          "url": "http://lafundacionscp.wikidot.com/sleep-it-off",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "puffy",
-          "title": "Alcolchado",
-          "url": "http://lafundacionscp.wikidot.com/puffy",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-rainforest-house",
-          "title": "La Casa de la Selva",
-          "url": "http://lafundacionscp.wikidot.com/the-rainforest-house",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "marathon",
-          "title": "Maratón",
-          "url": "http://lafundacionscp.wikidot.com/marathon",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "stitches",
-          "title": "Suturas",
-          "url": "http://lafundacionscp.wikidot.com/stitches",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "love-hate",
-          "title": "Amor/Odio",
-          "url": "http://lafundacionscp.wikidot.com/Love-Hate",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-dire-mother",
-          "title": "El Temor de una Madre",
-          "url": "http://lafundacionscp.wikidot.com/the-dire-mother",
           "role": "primaryArticle",
           "contentKind": "tale"
         }
@@ -154327,19 +154149,77 @@
             "breaker-1-9",
             "delia",
             "climber",
-            "shy",
-            "dog-man",
-            "sleep-it-off",
-            "puffy",
-            "the-rainforest-house",
-            "marathon",
-            "stitches",
-            "love-hate",
-            "the-dire-mother"
+            "dog-man"
           ]
         }
       ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/Love-Hate",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/marathon",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/puffy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/shy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/sleep-it-off",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/stitches",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-dire-mother",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-rainforest-house",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:all-that-glisters",
@@ -155263,13 +155143,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "carroll-305-la-pequena-habana|carroll",
-          "title": "305: La Pequeña Habana",
-          "url": "http://lafundacionscp.wikidot.com/carroll-305-la-pequena-habana|Carroll",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "are-we-cool-yet-hub",
           "title": "Sind Wir Jetzt Cool",
           "url": "https://lafundacionscp.wikidot.com/are-we-cool-yet-hub",
@@ -155902,8 +155775,7 @@
             "scp-3008",
             "dossier-lph",
             "chicago-spirit",
-            "i-57-hub",
-            "carroll-305-la-pequena-habana|carroll"
+            "i-57-hub"
           ]
         },
         {
@@ -156011,7 +155883,17 @@
           ]
         }
       ],
-      "description": "La Fundación ha identificado una serie de lugares en todo el mundo (y fuera de él) que son activamente anómalos y albergan comunidades permanentes. Aunque por lo general estos lugares recibirían la designación de SCP y serían evacuados, en algunos casos esto no es posible, debido a limitaciones prácticas o políticas. Aunque no todos los Ubicaciones de Interés están totalmente controlados por la Fundación, existen medidas de contención para garantizar que el público en general desconozca su existencia o su naturaleza anómala."
+      "description": "La Fundación ha identificado una serie de lugares en todo el mundo (y fuera de él) que son activamente anómalos y albergan comunidades permanentes. Aunque por lo general estos lugares recibirían la designación de SCP y serían evacuados, en algunos casos esto no es posible, debido a limitaciones prácticas o políticas. Aunque no todos los Ubicaciones de Interés están totalmente controlados por la Fundación, existen medidas de contención para garantizar que el público en general desconozca su existencia o su naturaleza anómala.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/carroll-305-la-pequena-habana|Carroll",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:ouroboros",

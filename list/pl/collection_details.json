@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786202051,
-  "generatedAt": "2026-08-08T15:14:11Z",
-  "chunkRevision": "sha256-13d0697f4691d94e6ee2c260809e13ea04f43a2e887457660d204161a27bab7f",
+  "listVersion": 1786205092,
+  "generatedAt": "2026-08-08T16:04:52Z",
+  "chunkRevision": "sha256-f246e861517c9c43ce439611919cd6ad7e8650f8cd572c05a1d72a3bc21f1432",
   "builtFrom": {
     "manifests": [
       {
@@ -78,6 +78,11 @@
       "listVersion": 1783292523,
       "generatedAt": "2026-07-13T09:40:33Z",
       "contentHash": "sha256-796455b9a692bbb3de0374bb249753c292c7db6f3259c9c097598aad624cf508"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-4d9da849dce8b02c0387045fb1bc95759f3378109b8d1e35cafe521a9b7ce37b"
     }
   },
   "collections": [
@@ -7044,20 +7049,6 @@
           "contentKind": "goiFormat",
           "os": 5,
           "desc": "Profil Zwierzaka: Niedźwiedź Polarny! Imię: Niedźwiedź Polarny Gatunek: Ursus Maritimus (Niedźwiedź Polarny) Główny Opiekun: N/A"
-        },
-        {
-          "id": "on-the-radar",
-          "title": "Na Radarze",
-          "url": "https://scp-pl.wikidot.com/on-the-radar",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "uiu-file-2008-21",
-          "title": "Plik UIU: 2008-21",
-          "url": "https://scp-pl.wikidot.com/uiu-file-2008-21",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -7067,13 +7058,29 @@
           "title": "Articles",
           "articleIDs": [
             "wilson-s-wildlife-solutions-hub",
-            "critter-profile-the-polar-bear",
-            "on-the-radar",
-            "uiu-file-2008-21"
+            "critter-profile-the-polar-bear"
           ]
         }
       ],
-      "description": "\"Nie mamy imienia dla tego zwierzaka, ale ludzie koło centrum dzikiej przyrody zaczęli go nazywać po prostu \"Niedźwiedź Polarny\" podczas jego pobytu u nas.\""
+      "description": "\"Nie mamy imienia dla tego zwierzaka, ale ludzie koło centrum dzikiej przyrody zaczęli go nazywać po prostu \"Niedźwiedź Polarny\" podczas jego pobytu u nas.\"",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-pl.wikidot.com/on-the-radar",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-pl.wikidot.com/uiu-file-2008-21",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:series:damocles",

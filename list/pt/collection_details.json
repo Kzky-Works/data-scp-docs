@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786202054,
-  "generatedAt": "2026-08-08T15:14:14Z",
-  "chunkRevision": "sha256-551d5af587b5420ac52b9561cacf3c04b19bdb7a213b4af453c8c00be09da944",
+  "listVersion": 1786205092,
+  "generatedAt": "2026-08-08T16:04:52Z",
+  "chunkRevision": "sha256-6e76db15e3d0c786ec6246764be0cd4de8b9e35ab7a7d1350f6479362e61d48b",
   "builtFrom": {
     "manifests": [
       {
@@ -69,6 +69,11 @@
       "listVersion": 1784590398,
       "generatedAt": "2026-07-20T23:33:18Z",
       "contentHash": "sha256-48d57b0d6ad8223040eafc57c98bfaa79c95de9ac33813d9637def660a133287"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-4d9da849dce8b02c0387045fb1bc95759f3378109b8d1e35cafe521a9b7ce37b"
     }
   },
   "collections": [
@@ -1154,44 +1159,9 @@
           "desc": "SCP-738 deve ser mantido em três câmaras seladas e vinculadas com guardas armados e um sistema de detonação remota, em todos os momentos, bem como vigilância áudiovisual completa. Devido à variedade e força das interações observadas com SCP-738, e os limites d…"
         },
         {
-          "id": "scp-6607",
-          "title": "Receita Infernal",
-          "url": "https://scp-pt-br.wikidot.com/scp-6607",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-7616",
-          "title": "A Balada de Capitão Adrian",
-          "url": "https://scp-pt-br.wikidot.com/scp-7616",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-7603",
-          "title": "P era de Plutão, Previamente.",
-          "url": "https://scp-pt-br.wikidot.com/scp-7603",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "therion-devours",
           "title": "Therion Devora",
           "url": "https://scp-pt-br.wikidot.com/therion-devours",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "sol-invictus",
-          "title": "Sol Invictus",
-          "url": "https://scp-pt-br.wikidot.com/sol-invictus",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "i-am-your-tyrant",
-          "title": "EU SOU SEU TIRANO",
-          "url": "https://scp-pt-br.wikidot.com/i-am-your-tyrant",
           "role": "primaryArticle",
           "contentKind": "tale"
         }
@@ -1209,22 +1179,53 @@
           "id": "02-anteriormente-o-diabo-encadernado",
           "title": "Anteriormente, o Diabo Encadernado",
           "articleIDs": [
-            "scp-6607",
-            "scp-7616",
-            "scp-7603",
-            "therion-devours",
-            "sol-invictus"
-          ]
-        },
-        {
-          "id": "03-novo",
-          "title": "NOVO!",
-          "articleIDs": [
-            "i-am-your-tyrant"
+            "therion-devours"
           ]
         }
       ],
-      "description": "Contato diplomático, mercenária, cirurgiã, química farmacêutica e verdadeira herdeira do Trone da Violência no 7º Círculo do Inferno. Mas, mais relevantemente, advogada da Fundação SCP."
+      "description": "Contato diplomático, mercenária, cirurgiã, química farmacêutica e verdadeira herdeira do Trone da Violência no 7º Círculo do Inferno. Mas, mais relevantemente, advogada da Fundação SCP.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-pt-br.wikidot.com/i-am-your-tyrant",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-pt-br.wikidot.com/scp-6607",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-pt-br.wikidot.com/scp-7603",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-pt-br.wikidot.com/scp-7616",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "https://scp-pt-br.wikidot.com/sol-invictus",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-pt:collection:series:burnt-bridges",
@@ -1682,13 +1683,6 @@
           "contentKind": "scp",
           "os": 0,
           "desc": "SCP-ZH-981 está contido em um contêiner de cadáver padrão com um dispositivo de rastreamento embutido no corpo. Se a localização de SCP-ZH-981 for detectada, sua Força-Tarefa deverá ser notificada para retornar ao seu contêiner e realizar o encobrimento de \"De…"
-        },
-        {
-          "id": "jiraku-mogana-s-proposal-ii",
-          "title": "SCP-001-JP",
-          "url": "http://scp-pt-br.wikidot.com/jiraku-mogana-s-proposal-ii",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         }
       ],
       "supplementLinks": [],
@@ -1697,12 +1691,21 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "scp-zh-981",
-            "jiraku-mogana-s-proposal-ii"
+            "scp-zh-981"
           ]
         }
       ],
-      "description": "Nós estamos compilando informações sobre o cadáver de Makuwa Yurika, que cometeu suicídio em ██/██/20██. Obrigado por sua cooperação."
+      "description": "Nós estamos compilando informações sobre o cadáver de Makuwa Yurika, que cometeu suicídio em ██/██/20██. Obrigado por sua cooperação.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-pt-br.wikidot.com/jiraku-mogana-s-proposal-ii",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-pt:collection:series:resurrection-old-foes-hub",
