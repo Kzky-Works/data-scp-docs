@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786194616,
-  "generatedAt": "2026-08-08T13:10:16Z",
-  "chunkRevision": "sha256-9ea4600d2791bbe75ce8f39448d4dc8bf6ff2cfe1da8d2c03385a671b5d2b31d",
+  "listVersion": 1786197160,
+  "generatedAt": "2026-08-08T13:52:40Z",
+  "chunkRevision": "sha256-cd1784e511c6dc2a2f7cd62002d08841477808fd1a07c6bac346ff0e1a14ebe8",
   "builtFrom": {
     "manifests": [
       {
@@ -78,6 +78,11 @@
       "listVersion": 1781934907,
       "generatedAt": "2026-07-13T09:36:07Z",
       "contentHash": "sha256-d1154e37a4c5b3e2c77bac88da90af5ae10848053fd43e4b1dabed7f254a9b70"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-af9273fc4eb11a5591be553a232bdbad9bd538dbaf8b89b688f2fcf97ca14508"
     }
   },
   "collections": [
@@ -20236,13 +20241,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "cite-145k-is-down",
-          "title": "제145K기지 습격 사건",
-          "url": "https://scpko.wikidot.com/cite-145k-is-down",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "scp-430-ko",
           "title": "String Theocracy",
           "url": "https://scpko.wikidot.com/scp-430-ko",
@@ -20262,12 +20260,21 @@
             "mugo-1",
             "mugo-2",
             "mugo-3",
-            "cite-145k-is-down",
             "scp-430-ko"
           ]
         }
       ],
-      "description": "여호와 하나님이 여자에게 이르시되 네가 어찌하여 이렇게 하였느냐 여자가 가로되 뱀이 나를 꾀므로 내가 먹었나이다."
+      "description": "여호와 하나님이 여자에게 이르시되 네가 어찌하여 이렇게 하였느냐 여자가 가로되 뱀이 나를 꾀므로 내가 먹었나이다.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scpko.wikidot.com/cite-145k-is-down",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-ko:collection:series:red-gaeul",

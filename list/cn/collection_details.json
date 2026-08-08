@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786194206,
-  "generatedAt": "2026-08-08T13:03:26Z",
-  "chunkRevision": "sha256-27e597d4df96801fc866317349f978223310f7a1b1efa5b223eb716b60c6b29c",
+  "listVersion": 1786197153,
+  "generatedAt": "2026-08-08T13:52:33Z",
+  "chunkRevision": "sha256-92e8e7fd0ed2b04b03e3aebec53a488d50e1ab97c49711d64f53b90cda95c0c6",
   "builtFrom": {
     "manifests": [
       {
@@ -78,6 +78,11 @@
       "listVersion": 1784437310,
       "generatedAt": "2026-07-19T05:01:50Z",
       "contentHash": "sha256-08e8b98636e42b4e1c833b6f1e9a2936ea929b0171339f93ef182825cc553345"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-af9273fc4eb11a5591be553a232bdbad9bd538dbaf8b89b688f2fcf97ca14508"
     }
   },
   "collections": [
@@ -1245,13 +1250,6 @@
           "desc": "正在调查Dr.Uni的真正死因。"
         },
         {
-          "id": "scp-2790-jp",
-          "title": "財団維持部門",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-2790-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-cn-1464",
           "title": "环球金融中心一只巨大的鹦鹉螺",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-1464",
@@ -1947,7 +1945,6 @@
             "scp-2435-jp",
             "scp-cn-015-ex",
             "scp-cn-2647",
-            "scp-2790-jp",
             "scp-cn-1464",
             "scp-cn-142-ex",
             "scp-cn-2055",
@@ -2042,7 +2039,17 @@
           ]
         }
       ],
-      "description": "我祝你终有一死 by Abigail_Ade 第一次见到她的时候， 我奋力的挣扎，挣脱了她的手； 可现在的我，却日夜期盼着与她重逢。 我亲爱的朋友啊，感谢你的陪伴。 只愿死神把你眷顾，令你能得安息。"
+      "description": "我祝你终有一死 by Abigail_Ade 第一次见到她的时候， 我奋力的挣扎，挣脱了她的手； 可现在的我，却日夜期盼着与她重逢。 我亲爱的朋友啊，感谢你的陪伴。 只愿死神把你眷顾，令你能得安息。",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/scp-2790-jp",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-cn:collection:series:caromatihub",
@@ -5002,14 +5009,6 @@
       },
       "primaryArticles": [
         {
-          "id": "all-motley-crew",
-          "title": "英雄集结",
-          "url": "https://scp-wiki-cn.wikidot.com/all-motley-crew",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "04. 英雄集结"
-        },
-        {
           "id": "pink-eye",
           "title": "眼角的红色暗影",
           "url": "https://scp-wiki-cn.wikidot.com/pink-eye",
@@ -5074,7 +5073,6 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "all-motley-crew",
             "pink-eye",
             "betweentheblacksheep2",
             "what-happened-in-the-night",
@@ -5084,7 +5082,17 @@
           ]
         }
       ],
-      "description": "当游乐场的灯渐熄 是The Critic-Doctor-Professor-Administrator-Reverend-Only God-Wondertainment三世死后发生的故事。"
+      "description": "当游乐场的灯渐熄 是The Critic-Doctor-Professor-Administrator-Reverend-Only God-Wondertainment三世死后发生的故事。",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/all-motley-crew",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-cn:collection:series:live-project-hub",
@@ -33242,20 +33250,6 @@
           "contentKind": "tale",
           "os": 21,
           "desc": "『天空为我见证』"
-        },
-        {
-          "id": "project-wingman-ls",
-          "title": "联翼共赴新征程",
-          "url": "https://scp-wiki-cn.wikidot.com/project-wingman-ls",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "project-wingman-ow",
-          "title": "蓝天寄托新希望",
-          "url": "https://scp-wiki-cn.wikidot.com/project-wingman-ow",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -33306,13 +33300,28 @@
         {
           "id": "05-part-v-neo-sky-neo-map",
           "title": "PART V：NEO SKY NEO MAP",
-          "articleIDs": [
-            "project-wingman-ls",
-            "project-wingman-ow"
-          ]
+          "articleIDs": []
         }
       ],
-      "description": "血色的天空，撕裂的云层，燃烧的大地，我们见证着世界分崩离析。 喧闹的雷达告警，刺眼的爆炸火光，坠毁的僚机同伴，战争宣告了 黄金时代 的结束。 第八次超自然大战 摧毁了我们所熟知的一切。 待世界进行冷启动，新的文明在这片饱经摧残的焦土之上重建，世界似乎正原着原来的轨迹继续运行着。 但这并不意味着战争的结束……"
+      "description": "血色的天空，撕裂的云层，燃烧的大地，我们见证着世界分崩离析。 喧闹的雷达告警，刺眼的爆炸火光，坠毁的僚机同伴，战争宣告了 黄金时代 的结束。 第八次超自然大战 摧毁了我们所熟知的一切。 待世界进行冷启动，新的文明在这片饱经摧残的焦土之上重建，世界似乎正原着原来的轨迹继续运行着。 但这并不意味着战争的结束……",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/project-wingman-ls",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/project-wingman-ow",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-cn:collection:series:project-wingman-lotusky-squadron",
@@ -33404,86 +33413,6 @@
           "contentKind": "tale",
           "os": 30,
           "desc": "『联翼共赴新征程』 [马加丹共和国 阿纳德尔防御阵地 11月16日 0530时] 65.67601°N 172.7663°W / 0530hrs 16 November AC432"
-        },
-        {
-          "id": "chain-reaction",
-          "title": "M03（上）：仇恨的连锁",
-          "url": "https://scp-wiki-cn.wikidot.com/chain-reaction",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Reprisal」 ● Operation: IRON FEATHER 前往基利亚科夫市执行巡逻任务 使用碳铀中和剂扑灭市区中的大火 拦截巡航导弹"
-        },
-        {
-          "id": "karma",
-          "title": "M03（下）：业障",
-          "url": "https://scp-wiki-cn.wikidot.com/karma",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Karmavarana」 ● Operation: GRAY SHIELD 拦截敌方轰炸机编队 夺取制空权 消灭CNF空军王牌"
-        },
-        {
-          "id": "red-line",
-          "title": "M04：斩断红线",
-          "url": "https://scp-wiki-cn.wikidot.com/red-line",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Four Horseman」 ● Operation: BEHEADING 穿越阿贝斯基隧道公路 攻击CNF前线指挥部 消灭8492中队"
-        },
-        {
-          "id": "mig-alley",
-          "title": "M05（上）：米格走廊",
-          "url": "https://scp-wiki-cn.wikidot.com/mig-alley",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「In the Zone」 ● Operation: MERLON 协助地面部队消灭CNF主力 夺取制空权 收复米格走廊"
-        },
-        {
-          "id": "closure",
-          "title": "M05（下）：安魂",
-          "url": "https://scp-wiki-cn.wikidot.com/closure",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Closure」 ● Operation: REQUEIM 重返阿纳德尔执行维和任务 服从命令 消灭CNF空军王牌"
-        },
-        {
-          "id": "the-final-overture",
-          "title": "M06：后裔",
-          "url": "https://scp-wiki-cn.wikidot.com/the-final-overture",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「The Final Overture」 ● Operation: SKYBURN 阻击CNF和雇佣兵组成的残余侵略部队 消灭卡斯卡迪亚空舰部队 保卫碳铀开采设施"
-        },
-        {
-          "id": "heart-breaker",
-          "title": "M07：绝命航班",
-          "url": "https://scp-wiki-cn.wikidot.com/heart-breaker",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Grand Flight」 ● Operation: CANIS CUSTOS 护送国家最高领导人专机“碎心一号” 迫降 在CIF军队到来前保护“碎心一号”"
-        },
-        {
-          "id": "lotusky",
-          "title": "M08：莲色天穹",
-          "url": "https://scp-wiki-cn.wikidot.com/lotusky",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Lotusky」 ● Operation: OCULUS PROCELLA 前往YANKEE线执行维和任务 消灭肯梅尔附近残存的无国界势力 搜索并消灭Infinity中队"
-        },
-        {
-          "id": "cerise-bouquet",
-          "title": "M09：残阳",
-          "url": "https://scp-wiki-cn.wikidot.com/cerise-bouquet",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Cerise Bouquet」 ● Operation: BORDER WANDERER 前往生命禁区 消灭敌方王牌 活下去"
-        },
-        {
-          "id": "be-proud",
-          "title": "终章：明日天空的誓言",
-          "url": "https://scp-wiki-cn.wikidot.com/be-proud",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "「Be proud」"
         }
       ],
       "supplementLinks": [],
@@ -33506,75 +33435,137 @@
         {
           "id": "03-operation-firefly",
           "title": "Operation: FIREFLY",
-          "articleIDs": [
-            "chain-reaction"
-          ]
+          "articleIDs": []
         },
         {
           "id": "04-operation-iron-feather",
           "title": "Operation: IRON FEATHER",
-          "articleIDs": [
-            "karma"
-          ]
+          "articleIDs": []
         },
         {
           "id": "05-operation-gray-shield",
           "title": "Operation: GRAY SHIELD",
-          "articleIDs": [
-            "red-line"
-          ]
+          "articleIDs": []
         },
         {
           "id": "06-operation-beheading",
           "title": "Operation: BEHEADING",
-          "articleIDs": [
-            "mig-alley"
-          ]
+          "articleIDs": []
         },
         {
           "id": "07-operation-merlon",
           "title": "Operation: MERLON",
-          "articleIDs": [
-            "closure"
-          ]
+          "articleIDs": []
         },
         {
           "id": "08-operation-requeim",
           "title": "Operation: REQUEIM",
-          "articleIDs": [
-            "the-final-overture"
-          ]
+          "articleIDs": []
         },
         {
           "id": "09-operation-skyburn",
           "title": "Operation: SKYBURN",
-          "articleIDs": [
-            "heart-breaker"
-          ]
+          "articleIDs": []
         },
         {
           "id": "10-operation-canis-custos",
           "title": "Operation: CANIS CUSTOS",
-          "articleIDs": [
-            "lotusky"
-          ]
+          "articleIDs": []
         },
         {
           "id": "11-operation-oculus-procella",
           "title": "Operation: OCULUS PROCELLA",
-          "articleIDs": [
-            "cerise-bouquet"
-          ]
+          "articleIDs": []
         },
         {
           "id": "12-operation-border-wanderer",
           "title": "Operation: BORDER WANDERER",
-          "articleIDs": [
-            "be-proud"
-          ]
+          "articleIDs": []
         }
       ],
-      "description": "人员编号： HN1024 所属部队： 永冻港第三航空师 战术代号： 观星者（Stargazer） 姓名： 乙宗 梢（Otomune Kozue） 生日： 6月15日 身高： 167cm 出生地： 联邦核心地区-霓虹灯群岛 军衔： 少尉（预备役） 简介： 乙宗梢，出生于联邦霓虹灯群岛-金泽区，AC321年随其家人迁居至马加丹共和国永冻港地区，其父乙宗健（已故）为SCP基金会高级研究员，兼任马加丹气象局顾问。AC328年考入永冻港空军学院，为该学院第102期的优秀学员。于AC332年六月接任莲之空航空俱乐部部长以及Lotusky预备役飞行中临时队长职务。 该人员的指挥能力和空战能力较强，但先进航电设备操作能力存在不足，建议为该人员分配后座武器官（Weapon System Opereator）。"
+      "description": "人员编号： HN1024 所属部队： 永冻港第三航空师 战术代号： 观星者（Stargazer） 姓名： 乙宗 梢（Otomune Kozue） 生日： 6月15日 身高： 167cm 出生地： 联邦核心地区-霓虹灯群岛 军衔： 少尉（预备役） 简介： 乙宗梢，出生于联邦霓虹灯群岛-金泽区，AC321年随其家人迁居至马加丹共和国永冻港地区，其父乙宗健（已故）为SCP基金会高级研究员，兼任马加丹气象局顾问。AC328年考入永冻港空军学院，为该学院第102期的优秀学员。于AC332年六月接任莲之空航空俱乐部部长以及Lotusky预备役飞行中临时队长职务。 该人员的指挥能力和空战能力较强，但先进航电设备操作能力存在不足，建议为该人员分配后座武器官（Weapon System Opereator）。",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/be-proud",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/cerise-bouquet",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/chain-reaction",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/closure",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/heart-breaker",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/karma",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/lotusky",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/mig-alley",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/red-line",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/the-final-overture",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-cn:collection:series:radio-station",
@@ -35739,34 +35730,6 @@
           "desc": "废墟之上，一个人影踽踽独行。坠落、狂奔、爆炸，一切都仿佛已经是另一个时空的往事了，只有耳边的风声还在彰显着自己的存在。泰勒的大脑一片空白，寒冷使他几乎瘫倒在地，恐惧则扯着他继续前进。终于，在不知走了多久之后，泰勒停在了一栋楼前，抬起了头。楼不高，只比周围的平房高出一截；屋顶浑圆，是典型的东正教教堂式样。房屋的墙体上爬满了血肉，但结构还算完好，看起来并不摇摇欲坠。就是这里了，泰勒心想。"
         },
         {
-          "id": "through-the-wilderness-06",
-          "title": "06 逃亡",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-06",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "through-the-wilderness-07",
-          "title": "07 出发",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-07",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "through-the-wilderness-08",
-          "title": "08 翻越雪山",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-08",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "through-the-wilderness-09",
-          "title": "09 冰面上",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-09",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "through-the-wilderness-10",
           "title": "梦",
           "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-10",
@@ -35787,27 +35750,6 @@
           "desc": "公元1204年，一个男孩出生在了君士坦丁堡，他的父母都是真主虔诚的信徒。尽管那个男孩很幸运地活过了那场浩劫，但他还是成了一个奴隶，对，一个两个月大的奴隶。他被卖给了一个威尼斯的商人。从他记事起，他的主人就把他当作一条会说话的狗来对待。每天一睁眼，他就要为了活命而努力满足主人的一切欲望。"
         },
         {
-          "id": "through-the-wilderness-12",
-          "title": "12 再出发",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-12",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "through-the-wilderness-13",
-          "title": "13 大兽与造主",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-13",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "through-the-wilderness-14",
-          "title": "14 村庄",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-14",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "through-the-wilderness-15",
           "title": "圣餐",
           "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-15",
@@ -35816,13 +35758,6 @@
           "contentKind": "tale",
           "os": 4,
           "desc": "“啊！终于，一切都结束了。晚上有空吗？我们需要好好庆祝一下。”走出考场，死党伸了个懒腰，向泰勒提议道。"
-        },
-        {
-          "id": "through-the-wilderness-16",
-          "title": "16 回家",
-          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-16",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "the-city-of-thousands-domes-01",
@@ -35866,17 +35801,9 @@
             "through-the-wilderness-03",
             "through-the-wilderness-04",
             "through-the-wilderness-05",
-            "through-the-wilderness-06",
-            "through-the-wilderness-07",
-            "through-the-wilderness-08",
-            "through-the-wilderness-09",
             "through-the-wilderness-10",
             "through-the-wilderness-11",
-            "through-the-wilderness-12",
-            "through-the-wilderness-13",
-            "through-the-wilderness-14",
-            "through-the-wilderness-15",
-            "through-the-wilderness-16"
+            "through-the-wilderness-15"
           ]
         },
         {
@@ -35886,6 +35813,72 @@
             "the-city-of-thousands-domes-01",
             "the-city-of-thousands-domes-02"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-06",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-07",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-08",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-09",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-12",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-13",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-14",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/through-the-wilderness-16",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
         }
       ]
     },
@@ -38321,20 +38314,6 @@
           "desc": "一望无际的冰原之上，一辆旧式的履带车从冰面上驶过，扬起冰尘，乌云遮蔽天空，看不到太阳的踪迹。"
         },
         {
-          "id": "wanderers:color-revolution",
-          "title": "芬文基奥太空城颜色革命事件",
-          "url": "https://scp-wiki-cn.wikidot.com/wanderers:color-revolution",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "wanderers:statue-von-gewell",
-          "title": "格韦尔太空城的雕像",
-          "url": "https://scp-wiki-cn.wikidot.com/wanderers:statue-von-gewell",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "the-foundation-dissolved",
           "title": "基金会解散",
           "url": "https://scp-wiki-cn.wikidot.com/the-foundation-dissolved",
@@ -38392,13 +38371,29 @@
           "articleIDs": [
             "mini-story",
             "fly-me-to-the-moon",
-            "wanderers:color-revolution",
-            "wanderers:statue-von-gewell",
             "the-foundation-dissolved"
           ]
         }
       ],
-      "description": "人类到如今已经繁衍了二十五万年，只有最近的四千年是有意义的，然而，这一切在宇宙的历史面前显得渺小无比。 在浩瀚星河之下，人类种族在迷茫和挫折中一步步寻找着宇宙……以及他们自身的最终意义。"
+      "description": "人类到如今已经繁衍了二十五万年，只有最近的四千年是有意义的，然而，这一切在宇宙的历史面前显得渺小无比。 在浩瀚星河之下，人类种族在迷茫和挫折中一步步寻找着宇宙……以及他们自身的最终意义。",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/wanderers:color-revolution",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/wanderers:statue-von-gewell",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-cn:collection:series:under-skin",

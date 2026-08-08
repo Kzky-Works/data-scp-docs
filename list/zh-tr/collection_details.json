@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786194214,
-  "generatedAt": "2026-08-08T13:03:34Z",
-  "chunkRevision": "sha256-1addc5c738f1100dd9e62316ce2dd255f314d6f4cac8b180d1501f3f8c184120",
+  "listVersion": 1786197161,
+  "generatedAt": "2026-08-08T13:52:41Z",
+  "chunkRevision": "sha256-9cc9882ffb63eb09981ac47cc7bfb0106fe1013beb836ee56719c83b60f25af4",
   "builtFrom": {
     "manifests": [
       {
@@ -78,6 +78,11 @@
       "listVersion": 1784627980,
       "generatedAt": "2026-07-21T09:59:40Z",
       "contentHash": "sha256-2cf4e012032530139aa7ba1ab27d00b13bcf6c68ab8833f5d40347dee680072f"
+    },
+    "deadURLSuppressions": {
+      "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-af9273fc4eb11a5591be553a232bdbad9bd538dbaf8b89b688f2fcf97ca14508"
     }
   },
   "collections": [
@@ -11456,13 +11461,6 @@
           "url": "http://scp-zh-tr.wikidot.com/goi-formats",
           "role": "primaryArticle",
           "contentKind": "tale"
-        },
-        {
-          "id": "scp-zh-tr-wikidot-com",
-          "title": "© SCP基金會",
-          "url": "http://scp-zh-tr.wikidot.com/scp-zh-tr-wikidot-com",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -11523,9 +11521,18 @@
             "scp-series-zh",
             "foundation-tales",
             "canon-hub",
-            "goi-formats",
-            "scp-zh-tr-wikidot-com"
+            "goi-formats"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-tr-wikidot-com",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
         }
       ]
     },
@@ -11666,13 +11673,6 @@
           "desc": "SCP-ZH-610在610-MATITI協議下視為部分收容。基金會相關人員應將資源集中於監督前AAP 1 之醫療紀錄與晶片數據,以避免/預防610-MATITI協議之失效。參見附錄ZH-610-1。 由遠己生醫集團出產的「All-plus 體能綜合錠」與相關的三種保健食品已在基金會人員協調下全面下架,以防止潛在欲肉產物誘導物質「Morphoxin」被平民攝取。 預防方面,基金會繁中分部應密切關注台灣地區流動數據庫中,醫療領域的SCP-ZH-610特徵關鍵字。字彙列表可在基金會內部網路,Site-ZH-44站點之網…"
         },
         {
-          "id": "scp-zh-330",
-          "title": "SCP-ZH-330",
-          "url": "http://scp-zh-tr.wikidot.com/scp-zh-330",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-zh-053",
           "title": "讓我們擦乾你的淚水",
           "url": "http://scp-zh-tr.wikidot.com/scp-zh-053",
@@ -11809,13 +11809,6 @@
           "desc": "您正在查詢的標題為： 關注組織 在多個資料庫中發現符合該標題的文件 請選擇欲查詢的資料來源，或 按此取消"
         },
         {
-          "id": "aftermath",
-          "title": "餘波",
-          "url": "http://scp-zh-tr.wikidot.com/aftermath",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "operation-nucleon-bank-minger",
           "title": "事件代號：核裂擠兌-指揮官Minger的視角",
           "url": "http://scp-zh-tr.wikidot.com/operation-nucleon-bank-minger",
@@ -11824,20 +11817,6 @@
           "contentKind": "tale",
           "os": 10,
           "desc": "您正在查詢的標題為： 關注組織 在多個資料庫中發現符合該標題的文件 請選擇欲查詢的資料來源，或 按此取消"
-        },
-        {
-          "id": "mystery",
-          "title": "初次見面",
-          "url": "http://scp-zh-tr.wikidot.com/mystery",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "incident-zh-330-2",
-          "title": "安保事故ZH-330-2與後續",
-          "url": "http://scp-zh-tr.wikidot.com/incident-zh-330-2",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "xmas-exercise",
@@ -11900,7 +11879,6 @@
             "scp-zh-60053-j",
             "scp-zh-998",
             "scp-zh-610",
-            "scp-zh-330",
             "scp-zh-053",
             "scp-zh-747",
             "scp-zh-976",
@@ -11915,10 +11893,7 @@
             "i-am-very-confused",
             "scp-zh-0100",
             "she-lives-in-my-heart",
-            "aftermath",
             "operation-nucleon-bank-minger",
-            "mystery",
-            "incident-zh-330-2",
             "xmas-exercise",
             "cat-day",
             "so-i-said-that-dinner",
@@ -11933,7 +11908,41 @@
           ]
         }
       ],
-      "description": "在創作三垣這個主題時其實難度不是太高，他算是有種規範多元，卻又接受在他們所制定的規範下產生歧異的組織，目前根據所有創作者的資訊，我們能確定的是這個組織編寫的重點如下： 在ZH的相關區域活動 在ZH區域中有著相當高的權力及地位，有時甚至等同O5。 以古星官作為編制命名的一部份 有關於三垣的組織構成，目前主要出現了兩套系統。你可以自由選擇要使用哪一套（或者用別的）。 三垣正如O5一樣有13人（或12+1人），編號由3E-1～3E-13。 三垣共分成紫微、太微、天市，並且各有人數不明的成員。編號如：紫微-3、天市-11等。"
+      "description": "在創作三垣這個主題時其實難度不是太高，他算是有種規範多元，卻又接受在他們所制定的規範下產生歧異的組織，目前根據所有創作者的資訊，我們能確定的是這個組織編寫的重點如下： 在ZH的相關區域活動 在ZH區域中有著相當高的權力及地位，有時甚至等同O5。 以古星官作為編制命名的一部份 有關於三垣的組織構成，目前主要出現了兩套系統。你可以自由選擇要使用哪一套（或者用別的）。 三垣正如O5一樣有13人（或12+1人），編號由3E-1～3E-13。 三垣共分成紫微、太微、天市，並且各有人數不明的成員。編號如：紫微-3、天市-11等。",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-zh-tr.wikidot.com/aftermath",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://scp-zh-tr.wikidot.com/incident-zh-330-2",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://scp-zh-tr.wikidot.com/mystery",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://scp-zh-tr.wikidot.com/scp-zh-330",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-zh-tr:collection:series:tsars-hub",
@@ -21641,14 +21650,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "mysterious-x",
-          "title": "神秘的X",
-          "url": "http://scp-zh-tr.wikidot.com/mysterious-x",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "報名！ 神秘的X"
-        },
-        {
           "id": "scp-zh-160",
           "title": "噤聲",
           "url": "http://scp-zh-tr.wikidot.com/scp-zh-160",
@@ -21722,7 +21723,6 @@
           "id": "02-articles",
           "title": "參加方式 ：在本文下方留言報名，並在完成作品後將文章連結貼在此討論串即可，有任何問題也歡迎留言詢問。",
           "articleIDs": [
-            "mysterious-x",
             "scp-zh-160",
             "scp-zh-052",
             "scp-zh-808",
@@ -21732,7 +21732,17 @@
           ]
         }
       ],
-      "description": "題目：老掉牙鬼故事2：經典重塑 題目說明 ：請自由的詮釋心目中經典的老掉牙鬼故事，這不是比賽請放鬆快樂的參加。 活動日期 ：即日起至 2021/11/06，23:59 接受格式： 項目檔案 1 、GOI、故事、流浪者圖書館、creepypasta。 2 3 獎品： 參與者都能獲得紀念的徽章圖片。(歡迎贊助線上獎品) 參加方式 ：在本文下方留言報名，並在完成作品後將文章連結貼在此討論串即可，有任何問題也歡迎留言詢問。"
+      "description": "題目：老掉牙鬼故事2：經典重塑 題目說明 ：請自由的詮釋心目中經典的老掉牙鬼故事，這不是比賽請放鬆快樂的參加。 活動日期 ：即日起至 2021/11/06，23:59 接受格式： 項目檔案 1 、GOI、故事、流浪者圖書館、creepypasta。 2 3 獎品： 參與者都能獲得紀念的徽章圖片。(歡迎贊助線上獎品) 參加方式 ：在本文下方留言報名，並在完成作品後將文章連結貼在此討論串即可，有任何問題也歡迎留言詢問。",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-zh-tr.wikidot.com/mysterious-x",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-zh-tr:collection:series:candy-pumpkin-2021-b",
@@ -25795,14 +25805,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "（翻譯號） 劉善俠 ：基金會助理研究員兼翻譯，嘗試塑造中性形象的香港男性，熱衷於跨學科研究與聯想的被虐狂。"
-        },
-        {
-          "id": "foundation-introduction-hub",
-          "title": "基金會介紹中心",
-          "url": "http://scp-zh-tr.wikidot.com/foundation-introduction-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "終端機來自 基金會介紹中心"
         }
       ],
       "supplementLinks": [],
@@ -25904,12 +25906,20 @@
         {
           "id": "06-articles",
           "title": "特殊成就",
-          "articleIDs": [
-            "foundation-introduction-hub"
-          ]
+          "articleIDs": []
         }
       ],
-      "description": "活動說明 久等了大家，引頸期盼的新活動出現啦！這次跟以往不同，本次活動並沒有競賽性質，而是一次「合作演出」。主辦方會記錄參與者在本次活動中的表現，然後依此在活動結算後改編成一段小故事。也可以說整個的活動是以劇情式的方式舉辦的，其中大家所有的投稿與連動創作行為都將為故事的結局帶來改變。 本次活動的題目是《頭 / 心 / 地圖 / 家》 1 ，但並不是所有作品都必須符合上述的題目，只要與本次活動的其他作品有所聯繫，就算不符合題目也無妨。不過也就是說，在活動一開始還沒有任何一篇作品時，第一篇原創作品當然就必須符合上述四選一的題目。另外還請特別注意， 本次的活動並不是只要投稿作品就好 。 這次活動整個流程是四個禮拜，每兩個禮拜為一輪，共兩輪。參與活動的原創作者若沒有特殊獎勵，則其中每一輪都至少必須跟另一位參加者達成規定形式的「接觸」，否則將會在該輪結算時出局。所謂的接觸包含： 發表一篇創作，該創作在結算時與另一名參加者的合格活動作品有聯繫（文內連結、延伸創作等等）。 如果已經有人投稿與你的作品相聯繫的活動作品，那麼到對方的作品討論區留言宣告自己要與對方接觸。 與另一名參加活動的作者一起合著一篇活動作品。 本次活動中也安排了特殊成就，只要達成就能影響劇情或是得到相應的特殊效果。在第一輪中，第一個根據題目交出原創作品的作者於該輪可以不跟任何人接觸也不會出局；另外於第一輪中獨立完成四篇作品且四篇分別各對應到上述題目《頭 / 心 / 地圖 / 家》的話，就能在該輪不跟任何人連動。 新情報！ 在第一輪中出局但依然不想放棄的參加者，還有想要中途加入的作者們，可以在本次活動的一篇原創與三篇譯作的頁面討論區留下自己對該作品的心得感想，完成後於本頁面的討論區報備，便可加入第二輪的活動。然而，與第一輪達標的作者不同，若欲在本活動的結尾依然保持存活狀態，各位將需要達成 兩次 接觸——可以是在同一篇作品裡連接兩篇不同人的作品，或者寫兩篇分別連動。另外，各位也需要至少達成一次接觸才能與第一階段達標的參加者一起競爭第二階段的特殊獎勵。 第一階段達標的各位作者們，做得好。若要維持你的角色存活至第二階段結束，"
+      "description": "活動說明 久等了大家，引頸期盼的新活動出現啦！這次跟以往不同，本次活動並沒有競賽性質，而是一次「合作演出」。主辦方會記錄參與者在本次活動中的表現，然後依此在活動結算後改編成一段小故事。也可以說整個的活動是以劇情式的方式舉辦的，其中大家所有的投稿與連動創作行為都將為故事的結局帶來改變。 本次活動的題目是《頭 / 心 / 地圖 / 家》 1 ，但並不是所有作品都必須符合上述的題目，只要與本次活動的其他作品有所聯繫，就算不符合題目也無妨。不過也就是說，在活動一開始還沒有任何一篇作品時，第一篇原創作品當然就必須符合上述四選一的題目。另外還請特別注意， 本次的活動並不是只要投稿作品就好 。 這次活動整個流程是四個禮拜，每兩個禮拜為一輪，共兩輪。參與活動的原創作者若沒有特殊獎勵，則其中每一輪都至少必須跟另一位參加者達成規定形式的「接觸」，否則將會在該輪結算時出局。所謂的接觸包含： 發表一篇創作，該創作在結算時與另一名參加者的合格活動作品有聯繫（文內連結、延伸創作等等）。 如果已經有人投稿與你的作品相聯繫的活動作品，那麼到對方的作品討論區留言宣告自己要與對方接觸。 與另一名參加活動的作者一起合著一篇活動作品。 本次活動中也安排了特殊成就，只要達成就能影響劇情或是得到相應的特殊效果。在第一輪中，第一個根據題目交出原創作品的作者於該輪可以不跟任何人接觸也不會出局；另外於第一輪中獨立完成四篇作品且四篇分別各對應到上述題目《頭 / 心 / 地圖 / 家》的話，就能在該輪不跟任何人連動。 新情報！ 在第一輪中出局但依然不想放棄的參加者，還有想要中途加入的作者們，可以在本次活動的一篇原創與三篇譯作的頁面討論區留下自己對該作品的心得感想，完成後於本頁面的討論區報備，便可加入第二輪的活動。然而，與第一輪達標的作者不同，若欲在本活動的結尾依然保持存活狀態，各位將需要達成 兩次 接觸——可以是在同一篇作品裡連接兩篇不同人的作品，或者寫兩篇分別連動。另外，各位也需要至少達成一次接觸才能與第一階段達標的參加者一起競爭第二階段的特殊獎勵。 第一階段達標的各位作者們，做得好。若要維持你的角色存活至第二階段結束，",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-zh-tr.wikidot.com/foundation-introduction-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-zh-tr:collection:series:pigeon-adoption",
@@ -26108,13 +26118,6 @@
           "desc": "您正在查詢的標題為： 關注組織 在多個資料庫中發現符合該標題的文件 請選擇欲查詢的資料來源，或 按此取消"
         },
         {
-          "id": "flower-language-canna-indica",
-          "title": "花語：曇華",
-          "url": "http://scp-zh-tr.wikidot.com/flower-language-canna-indica",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "what-the-fuck",
           "title": "What The Fuck",
           "url": "http://scp-zh-tr.wikidot.com/what-the-fuck",
@@ -26192,7 +26195,6 @@
           "title": "參與活動的作品",
           "articleIDs": [
             "dr-willow",
-            "flower-language-canna-indica",
             "what-the-fuck",
             "quantum-suicide",
             "quantum-immortality",
@@ -26203,7 +26205,17 @@
           ]
         }
       ],
-      "description": "您正在查詢的標題為： 未解明地點列表 在多個資料庫中發現符合該標題的文件 請選擇欲查詢的資料來源，或 按此取消"
+      "description": "您正在查詢的標題為： 未解明地點列表 在多個資料庫中發現符合該標題的文件 請選擇欲查詢的資料來源，或 按此取消",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-zh-tr.wikidot.com/flower-language-canna-indica",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-zh-tr:collection:canon:operation-nucleon-bank",
