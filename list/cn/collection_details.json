@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786366339,
-  "generatedAt": "2026-08-10T12:52:19Z",
-  "chunkRevision": "sha256-04c6663ae0e190cdd4620017e0f98223956ef0cf8f1737e0efdc5aa25caa855b",
+  "listVersion": 1786423574,
+  "generatedAt": "2026-08-11T04:46:14Z",
+  "chunkRevision": "sha256-47441b902c20d7b6462fe3ee983ce5c70c73b27037d453934b380e60218cdb82",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1786348254,
-        "generatedAt": "2026-08-10T07:50:54Z",
-        "contentHash": "sha256-996313a482cb41c5688b7121241f99bb5d178b7ff1c613035c6776254efc4c6f"
+        "listVersion": 1786423288,
+        "generatedAt": "2026-08-11T04:41:28Z",
+        "contentHash": "sha256-9fbbb8ca85975c9f6bcd8155313ba14849b564fe2e9e9663a5f66b24a1374f40"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1786366237,
-        "generatedAt": "2026-08-10T12:50:37Z",
-        "contentHash": "sha256-87a152ea8bd01f0dce11bdaf10618fb169430f37630fca0205afddf21447eed2"
+        "listVersion": 1786423310,
+        "generatedAt": "2026-08-11T04:41:50Z",
+        "contentHash": "sha256-f0f8fdf64103630d3c13afff79263d1d2fed454ca91551bd3933b5d48fc1c668"
       },
       {
         "kind": "manifest_scp-cn",
@@ -14127,73 +14127,6 @@
       ]
     },
     {
-      "id": "scp-cn:collection:canon:antarctic-exchange-hub",
-      "branchID": "scp-cn",
-      "kind": "canon",
-      "hubID": "antarctic-exchange-hub",
-      "title": "南极交流",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/antarctic-exchange-hub",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/antarctic-exchange-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "南极交流",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "南极交流",
-        "rejected": [],
-        "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "emptySectionTitle": "作品",
-        "structureHash": "sha256-b0dd6ef932af4a5f196804902386be1ab9490555215d64b5082998c6fdc376fe"
-      },
-      "primaryArticles": [
-        {
-          "id": "last-plane-out-of-the-south",
-          "title": "末班机飞离南方",
-          "url": "https://scp-wiki-cn.wikidot.com/last-plane-out-of-the-south",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "曾经有一架飞机在大西洋巡航。然而不管从哪方面来说, 这架飞机并不曾存在——不过这并不重要，也与当时的状况无关。重点是(虽说它还尚未明了)飞机上的人比飞机本身更重要。"
-        },
-        {
-          "id": "on-the-other-side-of-the-coin",
-          "title": "硬币的另一面",
-          "url": "https://scp-wiki-cn.wikidot.com/on-the-other-side-of-the-coin",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "原标题：On the Other Side of the Coin 作者：Bryx，更多作品见此。 发布时间：2014.02.16 译者：Alva Well 相关材料：SCP-1483"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "吾等，土地女士，众女皇之女皇，其脉第十四位，女皇Utmai Cjen六世，受神光祝福的陛下之王室，特允此次帝国超自然现象和秘密研究学会与基金会之间的学术交流，以便帝国的领土与北方未知秘境之间进一步分享知识及促进友谊。所以吾众批准本文及其附件的提议，并为这项冒险献上吾等的祝福。 以帝国之名封存之，Radeyt十世，第三帝国历四百八十七年。",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "故事",
-          "articleIDs": [
-            "last-plane-out-of-the-south",
-            "on-the-other-side-of-the-coin"
-          ]
-        }
-      ]
-    },
-    {
       "id": "scp-cn:collection:canon:apotheosis-hub",
       "branchID": "scp-cn",
       "kind": "canon",
@@ -15624,6 +15557,110 @@
       ]
     },
     {
+      "id": "scp-cn:collection:canon:chaos-on-the-monolith-hub",
+      "branchID": "scp-cn",
+      "kind": "canon",
+      "hubID": "chaos-on-the-monolith-hub",
+      "title": "巨石混生",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/chaos-on-the-monolith-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/chaos-on-the-monolith-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "chaos-on-the-monolith-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "chaos-on-the-monolith-hub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "emptySectionTitle": "作品",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-15765a7ccf89319f00fa90ea630f908f27ea0eb3e314947dd527167b64f31116"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-9373",
+          "title": "“相隔一世界”",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-9373",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-9373目前收容于Site-01的主大厅内。允许并鼓励人员在闲暇时自由使用SCP-9373。对SCP-9373光学及机械部件的清洁与维护工作应按需进行。"
+        },
+        {
+          "id": "scp-9486",
+          "title": "“I” 不是可识别指令。",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-9486",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "进行虚假信息宣传活动,声称 SCP-9486 的毁灭是由火流星所致,声称 SCP-9486-A 是骗局、网络攻击或计算机病毒的产物。"
+        },
+        {
+          "id": "unfounded-hub",
+          "title": "没有它的世界。",
+          "url": "https://scp-wiki-cn.wikidot.com/unfounded-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "SCP-173是为SCP维基撰写的第一篇文章，这也让SCP基金会成为首个兴起并逐步完善的组织。这种程度的重要性使基金会成为维基核心的支柱。以至于只有少数人真正想象过一个 没有它的世界。 然而，不管他们对现实世界写作项目和虚构地缘政治的影响如何，也许这种安排并不是最好的。 狮子或许是丛林之王，但就像所有王国的那样……"
+        },
+        {
+          "id": "djoric-dmatix-proposal",
+          "title": "SCP-001-1至-36",
+          "url": "https://scp-wiki-cn.wikidot.com/djoric-dmatix-proposal",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "圣徒（Saint）： 被基金会编为 SCP-001-1至-36 。他们是受所有人追寻的三十六名天选之人，身负神授使命要让世界重归新生。他们能消解身边所有异常，还能接收神圣的预兆。虽然“异常”的明确定义尚不清晰，但他们肩负的使命确凿无疑。"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "SCP-9254是一种与阿德利企鹅（Pygoscelis adeliae）相关的行为现象，该企鹅是南极洲海岸常见的企鹅物种。",
+      "articleSections": [
+        {
+          "id": "01-1890s",
+          "title": "1890s",
+          "articleIDs": [
+            "scp-9373"
+          ]
+        },
+        {
+          "id": "02-2009",
+          "title": "2009",
+          "articleIDs": [
+            "scp-9486"
+          ]
+        },
+        {
+          "id": "03-articles",
+          "title": "其余的尽成历史……",
+          "articleIDs": [
+            "unfounded-hub"
+          ]
+        },
+        {
+          "id": "04-articles",
+          "title": "术语",
+          "articleIDs": [
+            "djoric-dmatix-proposal"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-cn:collection:canon:the-coldest-war-hub",
       "branchID": "scp-cn",
       "kind": "canon",
@@ -16558,110 +16595,6 @@
           "title": "结局",
           "articleIDs": [
             "the-moment-of-burial"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-cn:collection:canon:chaos-on-the-monolith-hub",
-      "branchID": "scp-cn",
-      "kind": "canon",
-      "hubID": "chaos-on-the-monolith-hub",
-      "title": "巨石混生",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/chaos-on-the-monolith-hub",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/chaos-on-the-monolith-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "chaos-on-the-monolith-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "chaos-on-the-monolith-hub",
-        "rejected": [],
-        "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "emptySectionTitle": "作品",
-        "allowUntaggedMembers": true,
-        "structureHash": "sha256-15765a7ccf89319f00fa90ea630f908f27ea0eb3e314947dd527167b64f31116"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-9373",
-          "title": "“相隔一世界”",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-9373",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-9373目前收容于Site-01的主大厅内。允许并鼓励人员在闲暇时自由使用SCP-9373。对SCP-9373光学及机械部件的清洁与维护工作应按需进行。"
-        },
-        {
-          "id": "scp-9486",
-          "title": "“I” 不是可识别指令。",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-9486",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "进行虚假信息宣传活动,声称 SCP-9486 的毁灭是由火流星所致,声称 SCP-9486-A 是骗局、网络攻击或计算机病毒的产物。"
-        },
-        {
-          "id": "unfounded-hub",
-          "title": "没有它的世界。",
-          "url": "https://scp-wiki-cn.wikidot.com/unfounded-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "SCP-173是为SCP维基撰写的第一篇文章，这也让SCP基金会成为首个兴起并逐步完善的组织。这种程度的重要性使基金会成为维基核心的支柱。以至于只有少数人真正想象过一个 没有它的世界。 然而，不管他们对现实世界写作项目和虚构地缘政治的影响如何，也许这种安排并不是最好的。 狮子或许是丛林之王，但就像所有王国的那样……"
-        },
-        {
-          "id": "djoric-dmatix-proposal",
-          "title": "SCP-001-1至-36",
-          "url": "https://scp-wiki-cn.wikidot.com/djoric-dmatix-proposal",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "圣徒（Saint）： 被基金会编为 SCP-001-1至-36 。他们是受所有人追寻的三十六名天选之人，身负神授使命要让世界重归新生。他们能消解身边所有异常，还能接收神圣的预兆。虽然“异常”的明确定义尚不清晰，但他们肩负的使命确凿无疑。"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "SCP-9254是一种与阿德利企鹅（Pygoscelis adeliae）相关的行为现象，该企鹅是南极洲海岸常见的企鹅物种。",
-      "articleSections": [
-        {
-          "id": "01-1890s",
-          "title": "1890s",
-          "articleIDs": [
-            "scp-9373"
-          ]
-        },
-        {
-          "id": "02-2009",
-          "title": "2009",
-          "articleIDs": [
-            "scp-9486"
-          ]
-        },
-        {
-          "id": "03-articles",
-          "title": "其余的尽成历史……",
-          "articleIDs": [
-            "unfounded-hub"
-          ]
-        },
-        {
-          "id": "04-articles",
-          "title": "术语",
-          "articleIDs": [
-            "djoric-dmatix-proposal"
           ]
         }
       ]
@@ -28264,432 +28197,6 @@
       ]
     },
     {
-      "id": "scp-cn:collection:canon:the-trashfire",
-      "branchID": "scp-cn",
-      "kind": "canon",
-      "hubID": "the-trashfire",
-      "title": "冗废郁火",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-trashfire",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-trashfire",
-      "hubPresentation": "standard",
-      "canonicalTag": "冗废郁火",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "冗废郁火",
-        "rejected": [],
-        "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "emptySectionTitle": "作品",
-        "structureHash": "sha256-7222aa5d184050202feaf9a75895bb0004829d32a5d947c931b15e2315a0630c"
-      },
-      "primaryArticles": [
-        {
-          "id": "how-to-clean-a-polyester-dress",
-          "title": "如何清洗聚酯纤维连衣裙",
-          "url": "https://scp-wiki-cn.wikidot.com/how-to-clean-a-polyester-dress",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-3721",
-          "title": "过时武器系统",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-3721",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "随 Theta-Unseelie 计划完成,曾经分配给SCP-3721-1的研究资源将被永久分配到收容上。 SCP-3721-1被一能削弱无线电波进入的法拉第笼环绕。为此,机动特遣队Theta-18(“反地动部”) 1 被指派捣毁已发现的Obskura军团相关通讯站。作为预防措施,应持续对SCP-3721-1发送误导性无线电报告。 因SCP-3721-2的性质和所在地,收容集中在疏导与预防上。为此,多个基金会所有广播站将监控SCP-3721-2的活动。假情报广播将从所有可见到SCP-3721-2的站点向外播报,与向…"
-        },
-        {
-          "id": "scp-5012",
-          "title": "无底之洞莫能离",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5012",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "[待定] 归档的收容措施: SCP-5012是基金会前台企业Fitzwilliam农业公司的合法资产。鉴于该项目的低风险性,已为其建立了标准的反入侵措施。 应依照对待樱属( Cerasus )亚种植物的标准流程对SCP-5012进行日常维护。包括定期收获采摘SCP-5012-A以进行测试和研究。人员应忽略SCP-5012-#的存在。 SCP-5012-B实际上是处于自我收容中的。"
-        },
-        {
-          "id": "scp-378",
-          "title": "食脑虫",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-378",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-378收容于地下实体收容生态箱内。温度和湿度维持在适于 Heterodermia kaincrow 1 和 Prenolepis everettmann 2 生长栖息的范围内。须对SCP-378进行每年两次的医疗和心理检查。 将以一间消毒间把SCP-378收容箱与周边设施隔离开来。处置人员需要穿有全身防护服,且必须在消毒前扫描其是否被SCP-378-A感染。受感染人员将被处决, 除非SCP-378-1或-3编号出现空缺,此时应将其分派至相应编号。 随克拉肯协议的生效,对SCP-378的收容集中于维护三个主要…"
-        },
-        {
-          "id": "scp-4776",
-          "title": "里根武器。",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-4776",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-4776的位置数据印刷在一张小型索引卡上,存放于Site-49的高安保项目库内。SCP-4776-1记录于Site-49数据库内,不得由权限低于4级的人员访问。MTF Gamma-5(“红鲱鱼”)将出动到任何被怀疑遭到SCP-4776攻击的地点。"
-        },
-        {
-          "id": "secure-facility-dossier-site-56",
-          "title": "安保设施档案：Site-56",
-          "url": "https://scp-wiki-cn.wikidot.com/secure-facility-dossier-site-56",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-4495",
-          "title": "猪们的救世主",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-4495",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "相关人员每天需执行610-辛克莱程序,维护人员每两周对SCP-4495的收容室进行一次例行检查。 SCP-4495被收容于一个三层收容室中,每层由一个格栅地板隔开: SCP-4495位于顶层,并被绑在南墙的壁龛中。SCP-4495的胃必须与地板成锐角,使得SCP-4495-1一产生就立即穿过格栅。为防止SCP-4495-1卡住并累积的情况,格栅将每小时由一系列内置高压水枪清洗一次。为减少瘴气,需将收容室顶层的温度控制在较低的水平。 中层包括一个研磨机和焚化炉。SCP-4495-1个体通过漏斗进入机器,再于底部以惰性…"
-        },
-        {
-          "id": "scp-2677",
-          "title": "困惑",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-2677",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4,
-          "desc": "在主动招募期间,所有参与了D级人员招募流程的工作人员必须被使用A级记忆清除。对于事件中被SCP-2677影响的人员,记忆植入必须被极微地激活使用。机动特遣部队Ω-19(“双面”)之后将完成招募流程并且确定那些问题人员是否被SCP-2677-A或者SCP-2677-B所影响。在SCP-2677-B影响之下的人员将会被扣留。 SCP-2677-1周围地区已经被指定命名为Site 2677。任何接近Site 2677的未授权车辆将被停下并调查。在SCP-2677-A影响下的司机应该被施以A级记忆清除。乘客将被吸收为D级人…"
-        },
-        {
-          "id": "scp-0166",
-          "title": "SCP-166",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-0166",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "基于一篇已不存在的文章。 ⚠️ 内容警告：本文包含结构性虐待、儿童性虐待暗示、自残及脏话内容。 威胁级别： 黑 特殊收容措施：由于SCP-166的异常性质，所有关于项目的提案都将交由超形上学部门的Gray博士和Frankenstein博士审阅，包括收容程序的修订、人员分配及采访的进行。超形上学部门将在随后的三叙事日内提交一份以上行动的潜在浪漫影响。若后果包括SCP-166的收容突破、对SCP-166或PoI-9522（“Brinegash女士Madam Brinegash”）的赋权，或Area-166的运作停止，则…"
-        },
-        {
-          "id": "nadox-and-the-mekhanite",
-          "title": "纳多克斯与机神信徒",
-          "url": "https://scp-wiki-cn.wikidot.com/nadox-and-the-mekhanite",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "太阳升起，纳多克斯游荡着。 到何处去，从何处来，在狄瓦的时日里，这曾是一个重要的问题。血淋淋的玄武岩刃刻下伤疤，隐隐作痛地回避着它，再接着是亚恩的托付，宏图大业回避着它，最后，正是它自己的答案回避着它。何时，为何，何等，如何…所有这一切都愈发重要起来。"
-        },
-        {
-          "id": "jacklyn-diamandis-accountable-to-nobody",
-          "title": "杰克琳·戴曼迪斯，对nobody负责",
-          "url": "https://scp-wiki-cn.wikidot.com/jacklyn-diamandis-accountable-to-nobody",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 0,
-          "desc": "1973年6月8日 杰克琳·戴曼迪斯。杰克琳·天蝎·戴曼迪斯。这名字脱口而出的时候就像屎一样恶心。 倘若那些浪迹四海的存在中有什么算得上狄瓦隆统治最简洁的对位旋律，那便是契约之子。只有狄瓦人会傲慢到强奸执政官们以获取子嗣，却又将这些血脉浪费在如此令人作呕的怪物上。狄瓦隆以“安全”和“秩序”的谎言为基石构筑自身，与此同时它的孩子们在任何类似异议的事物中撕出一条血路。但即便在那可怕的四重奏中，也存在着清晰的堕落层次之分。 Hgan是头野兽，暴躁易怒而热衷荼毒。我能怪他吗？对于一个深红执政官的孩子来说，他算是有进步了。我…"
-        },
-        {
-          "id": "scp-4886",
-          "title": "警察与乡村",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-4886",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "围绕SCP-4886的法定边界设有一个禁区。它被一3米高的链条围栏所包围。附近的居民认为这是特工Jonathan Lancelot的私有财产;指派人员应采取相应行动。距离禁区边缘1公里处设有一个内部区,周围建有加固的防线。除了深度清洁操作外,禁止人员进入该内部区。 SCP-4886-A内的居民由特遣队He-2(\" 瑜伽士的噩梦 Yogi's Nightmare \")管理。TF-ה2负责执行现有的防侵入措施,以及无效化在SCP-4886内部区外发现的SCP-4886-A(不包括人类出生,该情况将由适当的医务人员处理)…"
-        },
-        {
-          "id": "scp-5952",
-          "title": "校内外的Warbalang",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5952",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "自09/23/2009起,SCP-5952未被收容。 特工应配合WWSCSTT校方和保安收集并记录与SCP-5952相关的目击、证词及失踪案信息。机动特遣队Theta-6(“女巫猎人”)将随需要被派入WWSCSTT地界内,在校区内巡逻找寻SCP-5952。 根据隐士协定,不得往地界内带入摄像机。禁止使用任何类型追踪设备。特工不得进入礼拜堂、宿舍或其他任何无标记建筑,除非确认在此类区域中目击到了SCP-5952。最后,特工不可与学生交流,除非受有校方指引。"
-        },
-        {
-          "id": "scp-3178",
-          "title": "经由上帝，一切皆有可能",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-3178",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "由于冬水镇与世隔绝的性质,收容措施集中于控制村庄内信息的外流。考虑到这一点,安插于主要网络服务提供商的特工将阻碍网络服务的扩张,直到SCP-3178被确认并收容。 若发生可能提高SCP-3178项目等级或威胁等级的活动,机动特遣队Gamma-691(“每有趣事生”)将保持待命。两名职员将驻留于冬水镇内以调查SCP-3178。 由于冬水镇一小时车程的范围内存在GoI-952(“奥尔尼铁业”)的一座生产制造中心,基金会正在调查SCP-3178交叉污染问题的解决方法。"
-        },
-        {
-          "id": "scp-4370",
-          "title": "后工业",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-4370",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "GoI-952必须从SCP-4370的边界处根除。在其猜想边界沿线的弃用设施将被拆除;对于运转中的设施将阻碍其运作并以尽可能便宜的手段将其获取,优先度高于拆除。 经发现由SCP-4370产生或已融入SCP-4370的建筑物将被摧毁。机动特遣队Theta-36(“瑞典狂想曲”)已被派遣拆毁不宜使用的建筑物,而安插于当地政府的特工则致力于宣告被占据的建筑不宜居住。与战术无关的SCP-4370入口将被关闭。 在事故4370-A-Zhou之后,[已编辑,等待解密]"
-        },
-        {
-          "id": "scp-7324",
-          "title": "你值得的，我保证",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-7324",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-7324为一类在整个美国大陆地区的餐厅和娱乐中心内均有提供的饮品,但主要提供点位于美国深南部。SCP-7324可在任何餐厅中被点购,只要点购者知晓项目的确切名称,名称因地区不同而存在变化。 通常而言,SCP-7324由以下原料制成: 3/4杯(177 g)全脂牛奶; 3大匙草莓冰激凌; 4茶匙草莓糖浆; 3茶匙糖浆; 1整杯糖类甜味剂; 雪碧或Starry软饮料; 1汤匙香草精; 掼奶油; 糖屑。 随后将所有原料放入搅拌机内,搅拌30秒到1分钟。在此之后,通常将其置于冰柜或冰箱中,但混合物完全冻结的准确时间…"
-        },
-        {
-          "id": "scp-4947",
-          "title": "断层与瘘管",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-4947",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "由于缺少关于SCP-4947生理学及其异常本质的信息,对象处于未收容状态。当前努力应集中于研究用于捕获并永久控制SCP-4947的方法。 [数据丢失] SCP-4947的位置通过在SCP-4947-A沿线采集的,受到远程监控的地震学读数进行追踪,准确率为52%。为收容简便起见,数个位于SCP-4947-A内的地点已被标记为具有战略或地理重要性。在SCP-4947推断位置周围的指定SCP-4947-A叶点 1 将用素混凝土填充 2 。机动特遣队Psi-16(“殉道者”)将在此期间密切关注并尝试研究和镇压SCP-494…"
-        },
-        {
-          "id": "how-to-remove-glitter-from-a-polyester-dress",
-          "title": "如何去除聚酯纤维连衣裙上的亮片",
-          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-glitter-from-a-polyester-dress",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Ella \"El\" Romero 加入姐妹阵线Line of Sisters时大概十六岁。是Theresa Petrucci把她引荐进这个团体的，那段时间里，El几乎是一上手就做得风生水起。苏荷后门街区的女权主义未来，就寄托在她这样的年轻女性身上——她们拒绝后现代主义跨权运动分子的议程，为（真正的）女性争取真正的解放。"
-        },
-        {
-          "id": "how-to-remove-kerosene-from-a-polyester-dress",
-          "title": "如何去除聚酯纤维连衣裙上的煤油污渍",
-          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-kerosene-from-a-polyester-dress",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "距离游行还有三十天。 明明五天就能敲定的计划，却拖了整整三十天。这能有多难？弄张许可，定个日子，领着一群忧心忡忡的女人走上街头，高喊着要从大型制药公司的掌控中解放出来。就这么简单。"
-        },
-        {
-          "id": "how-to-remove-human-blood-from-a-polyester-dress",
-          "title": "如何去除聚酯纤维连衣裙上的人类血迹",
-          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-human-blood-from-a-polyester-dress",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Theresa在一张不属于自己的床上醒来，眼前一片漆黑。 她快速摸索了一下，便明白了大致状况。自己没有被任何东西束缚，床上也没有其他人同眠。尽管眼皮上结着一层硬壳似的东西，但并没有东西直接挡住她的视线。这张床质地精良，与那股熟悉得令人不安的腐肉气味格格不入——"
-        },
-        {
-          "id": "how-to-remove-spinal-fluid-from-a-polyester-dress",
-          "title": "如何去除聚酯纤维连衣裙上的脑脊液",
-          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-spinal-fluid-from-a-polyester-dress",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "早上七点半，Theresa的闹钟猛地把她拽醒。她滚下床，拖着身子完成那套晨间流程 —— 只有在难得接到面试通知时，她才需要这么做。这套流程和三周前一样令人厌烦，几乎冲淡了她因面试机会稀少而感到的屈辱。"
-        },
-        {
-          "id": "polyester-woman",
-          "title": "聚酯纤维女人（尾声）",
-          "url": "https://scp-wiki-cn.wikidot.com/polyester-woman",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "四个月后…… Caryn Walsh一点都不蠢。她或许是个装腔作势的山谷女孩valley girl，顶着个拼写花里胡哨的嬉皮士名字，但她绝对不傻。Theresa当然对她忍无可忍。Theresa是个循规蹈矩的正统派，拼了命想找一份稳定的工作；而Caryn酗酒，干着一份清闲的肥差，对第二波女权主义的那套理念始终抱着无所谓的态度。没错，当初把脱口秀的活儿硬塞给她，或许是做得不地道，可Theresa闲得要命，而且对相关政治议题的理解，比组织里的任何人都要透彻。"
-        },
-        {
-          "id": "project-proposal-2014-1221",
-          "title": "項目計劃書 2014-1221：\"終於醒來\"",
-          "url": "https://scp-wiki-cn.wikidot.com/project-proposal-2014-1221",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 0,
-          "desc": "獎項：薩爾瓦多獎 獲獎者：Elisabeth Arturo 目的：表揚使用異常創作愚蠢、有​​趣或滑稽作品的異常藝術家。 項目計劃書 2014-1221：終於醒來"
-        },
-        {
-          "id": "scp-6165",
-          "title": "斋月",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-6165",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "每月一次,罗瑟勒姆镇应进行轻微的烟熏灭虫,以防止红棕象甲进一步扩散。罗瑟勒姆镇中的英裔-巴基斯坦裔社区应时刻被监控,避免 SCP-6165 复发。 一经发现,Person-Of-Interest-6165 就应被立即遣送至英国神秘勤务处进行监管与审问。"
-        },
-        {
-          "id": "scp-952",
-          "title": "NP摇滚",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-952",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "受SCP-952影响的音乐项目需以任何可能方式终止,任何储存着受SCP-952影响的音乐记录的物理媒介都需被拷贝进一个标准型C级逆模因存储设备上,而后予以销毁。需关闭所有曾接待过受SCP-952感染的音乐家的场馆,直至确认没有任何工作人员受其影响。 一种可对抗SCP-952的反模因剂正在开发中。在其完成前,所有受SCP-952影响的个体都需被扣留。 以备预防,所有驻扎于音乐产业的基金会特工都应设法诽谤“数学摇滚”作为一种流派的名声,此行动将持续至SCP-952被完全收容。有关人员应参阅文件952-32以寻求更多细节…"
-        },
-        {
-          "id": "soi-004",
-          "title": "关注物种-004",
-          "url": "https://scp-wiki-cn.wikidot.com/soi-004",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "威胁等级： 绿 身高范围： 0.5-3.8米 体重范围： 2-1022.2千克 外貌： 暗棕色，类黏土，形状各异 节律周期： 主要为夜行 预期寿命： 生物学永生"
-        },
-        {
-          "id": "scp-5931",
-          "title": "“哦，那个枪伤？不过是热气罢了。”",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5931",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "监视新闻和司法报告以获取其中存在的与SCP-5931相关的信息。应鉴别出SCP-5931造成的死亡事件,目击者应接受记忆删除并利用伪造事实“癫痫发作”对验尸报告做相应修改以掩盖真实死因。为使SCP-5931相关的信息得到更好的控制,已派遣MTF-Epsilon-23 (\"忘掉它\")潜入新闻通讯社,当地执法机构,FBI,以及黑手党的内部。 针对SCP-5931成因的调查正在展开。"
-        },
-        {
-          "id": "scp-3874",
-          "title": "六百比一",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-3874",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "因SCP-GOC 1970年协定 1 ,基金会无法直接对SCP-3874展开收容。作为替代基金会将监控GoI-616 \"五芒星\" 2 与此异常的相关行动,阻止任何对SCP-3874的刺杀尝试。"
-        },
-        {
-          "id": "irregularity-proposal-2001-489",
-          "title": "UIU档案：2001-489",
-          "url": "https://scp-wiki-cn.wikidot.com/irregularity-proposal-2001-489",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 0,
-          "desc": "综上所述，这首先是一个伟大而辉煌的时代，一个充满机遇的时代，一个需要新鲜且充满活力之思维的时代，诚然，一个生逢其时的辉煌时代。 R.J. Rushdoony, Intellectual Schizophrenia， 论述文明的灾难性崩溃。"
-        },
-        {
-          "id": "scp-5994",
-          "title": "猪上不能叠猪",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5994",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-5994及其所在建筑已从GoI-952(“奥尔尼铁业”) 1 处购得,更多收容措施被认定为无必要。 根据主管Drummond的指示,原始的遗留系统将被重新安装,无限期留在原地。"
-        },
-        {
-          "id": "ambrose-backdoor-soho",
-          "title": "安布罗斯苏荷后门店",
-          "url": "https://scp-wiki-cn.wikidot.com/ambrose-backdoor-soho",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 0,
-          "desc": "Ambrose BackDoor SoHo: 高雅艺术遇见精品美食 联合苏荷后门艺术家协会，Marshall Carter & Dark有限公司，以及国王之心艺术馆，安布罗斯餐厅隆重推出当代艺术与精品餐饮的独家结合，安布罗斯苏荷后门店。"
-        },
-        {
-          "id": "scp-654",
-          "title": "雷鸣号角",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-654",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "根据无聊镇合约 1 ,SCP-654的直接收容推迟给GoI-466(威尔逊野生动物应对组)。 SCP-654被收容于一个特别建造的栖息地内,该栖息地内需始终环流保持在-1.8°C左右的盐水。水池外围的房间墙壁已镀有绝缘陶瓷复合材料。"
-        },
-        {
-          "id": "fall-in-the-autumn",
-          "title": "秋落",
-          "url": "https://scp-wiki-cn.wikidot.com/fall-in-the-autumn",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 45,
-          "desc": "更新，于 2043-10-19：已无效化，评估及善后小组正在前往。"
-        },
-        {
-          "id": "scp-cn-5810-ex",
-          "title": "SCP-CN-5810-EX ：致爱丽丝",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-5810-ex",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-cn-1998",
-          "title": "结晶",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-1998",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 126,
-          "desc": "“睚眦”协议 /cn1998/protocol/yazi.pro > /cn1998/protocol/yazi.pro < 代号: 睚眦 优先级别: 蓝 目的: 控制 SCP-CN-1998 区域的进一步扩张 保护现存的人类保留区 措施: 废除 帷幕协议 Veil Protocol ,启动全面曝光程序,以调配更多的资源投入到控制 SCP-CN-1998 和维护保留区秩序稳定上 在必要的情况下,吸收并整合难以自我维持的国家及政府,代替其行使行政管理职能 禁止传统农业和畜牧业,作为代替,使用工业合成物提供食物 一旦发…"
-        },
-        {
-          "id": "scp-cn-1504",
-          "title": "变古乱常，成仁取义",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-1504",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 73,
-          "desc": "项目无需亦无法被收容,亦或对其进行彻底收容被认为是不可能的。现阶段,基金会唯一可行的手段即是完全依照逻辑部计划,尽可能多地对项目产生的“离线叙事”进行研究。离线叙事居民口中所述的对现实的代称来源同样需要进一步分类和统计。 SCP-CN-1504-1应被收容在C-2型人形收容室,在其提供关于项目的准确信息前,满足其全部不过分要求。 2001/10/4收容措施更新: 基金会唯一可行的手段即是完全依照演绎部计划。"
-        },
-        {
-          "id": "scp-cn-1572",
-          "title": "预定的流程",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-1572",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 52,
-          "desc": "基金会全球监视网络和康德现实扫描卫星阵列负责搜寻触发SCP-CN-1572-B的人类个体,同时社会分析学部负责同全球政府合作,鼓励公民丰富社会活动并相应减少各岗位工作流程的重复性,控制SCP-CN-1572。 MTF-Velvollisuus-03 “白色雪节”负责将SCP-CN-1572-B个体抓捕并纳入收容,该特遣队佩戴加强型号的斯克兰顿现实稳定锚,如发现个体,需要立即对其进行深度麻醉并送往Site-CN-10-C0进行收容。此外,Velvollisuus-03还负责维持Site-CN-10-C0内的工作秩序和…"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "狄瓦族，以至旧神，与继承了前奴隶主 后裔智人 Homo sapiens decensus 奇术知识的黏土人形文明伊米特敌对。狄瓦族向伊米特领地的扩张最终演变近乎灭绝伊米特的存亡之争，但也不可逆地削弱了旧神对地球的影响。",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "（按时间线顺序排列）",
-          "articleIDs": [
-            "how-to-clean-a-polyester-dress"
-          ]
-        },
-        {
-          "id": "02-articles",
-          "title": "黑桃屋的兴衰和兴衰间的时光。",
-          "articleIDs": [
-            "scp-3721",
-            "scp-5012",
-            "scp-378",
-            "scp-4776",
-            "secure-facility-dossier-site-56",
-            "scp-4495",
-            "scp-2677",
-            "scp-0166",
-            "nadox-and-the-mekhanite",
-            "jacklyn-diamandis-accountable-to-nobody",
-            "scp-4886",
-            "scp-5952",
-            "scp-3178",
-            "scp-4370",
-            "scp-7324",
-            "scp-4947",
-            "how-to-remove-glitter-from-a-polyester-dress",
-            "how-to-remove-kerosene-from-a-polyester-dress",
-            "how-to-remove-human-blood-from-a-polyester-dress",
-            "how-to-remove-spinal-fluid-from-a-polyester-dress",
-            "polyester-woman",
-            "project-proposal-2014-1221",
-            "scp-6165",
-            "scp-952",
-            "soi-004",
-            "scp-5931",
-            "scp-3874",
-            "irregularity-proposal-2001-489",
-            "scp-5994",
-            "ambrose-backdoor-soho",
-            "scp-654",
-            "fall-in-the-autumn",
-            "scp-cn-5810-ex",
-            "scp-cn-1998",
-            "scp-cn-1504",
-            "scp-cn-1572"
-          ]
-        }
-      ]
-    },
-    {
       "id": "scp-cn:collection:canon:those-twisted-pines-hub",
       "branchID": "scp-cn",
       "kind": "canon",
@@ -30803,6 +30310,73 @@
       ]
     },
     {
+      "id": "scp-cn:collection:canon:antarctic-exchange-hub",
+      "branchID": "scp-cn",
+      "kind": "canon",
+      "hubID": "antarctic-exchange-hub",
+      "title": "南极交流",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/antarctic-exchange-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/antarctic-exchange-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "南极交流",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "南极交流",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "emptySectionTitle": "作品",
+        "structureHash": "sha256-b0dd6ef932af4a5f196804902386be1ab9490555215d64b5082998c6fdc376fe"
+      },
+      "primaryArticles": [
+        {
+          "id": "last-plane-out-of-the-south",
+          "title": "末班机飞离南方",
+          "url": "https://scp-wiki-cn.wikidot.com/last-plane-out-of-the-south",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "曾经有一架飞机在大西洋巡航。然而不管从哪方面来说, 这架飞机并不曾存在——不过这并不重要，也与当时的状况无关。重点是(虽说它还尚未明了)飞机上的人比飞机本身更重要。"
+        },
+        {
+          "id": "on-the-other-side-of-the-coin",
+          "title": "硬币的另一面",
+          "url": "https://scp-wiki-cn.wikidot.com/on-the-other-side-of-the-coin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "原标题：On the Other Side of the Coin 作者：Bryx，更多作品见此。 发布时间：2014.02.16 译者：Alva Well 相关材料：SCP-1483"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "吾等，土地女士，众女皇之女皇，其脉第十四位，女皇Utmai Cjen六世，受神光祝福的陛下之王室，特允此次帝国超自然现象和秘密研究学会与基金会之间的学术交流，以便帝国的领土与北方未知秘境之间进一步分享知识及促进友谊。所以吾众批准本文及其附件的提议，并为这项冒险献上吾等的祝福。 以帝国之名封存之，Radeyt十世，第三帝国历四百八十七年。",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "故事",
+          "articleIDs": [
+            "last-plane-out-of-the-south",
+            "on-the-other-side-of-the-coin"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-cn:collection:canon:codename-green-king-hub",
       "branchID": "scp-cn",
       "kind": "canon",
@@ -32180,6 +31754,432 @@
             "cargo-date",
             "dream-date-in-bottle",
             "scp-cn-siab-j"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-cn:collection:canon:the-trashfire",
+      "branchID": "scp-cn",
+      "kind": "canon",
+      "hubID": "the-trashfire",
+      "title": "冗废郁火",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/the-trashfire",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/the-trashfire",
+      "hubPresentation": "standard",
+      "canonicalTag": "冗废郁火",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "冗废郁火",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "emptySectionTitle": "作品",
+        "structureHash": "sha256-7222aa5d184050202feaf9a75895bb0004829d32a5d947c931b15e2315a0630c"
+      },
+      "primaryArticles": [
+        {
+          "id": "how-to-clean-a-polyester-dress",
+          "title": "如何清洗聚酯纤维连衣裙",
+          "url": "https://scp-wiki-cn.wikidot.com/how-to-clean-a-polyester-dress",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3721",
+          "title": "过时武器系统",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-3721",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "随 Theta-Unseelie 计划完成,曾经分配给SCP-3721-1的研究资源将被永久分配到收容上。 SCP-3721-1被一能削弱无线电波进入的法拉第笼环绕。为此,机动特遣队Theta-18(“反地动部”) 1 被指派捣毁已发现的Obskura军团相关通讯站。作为预防措施,应持续对SCP-3721-1发送误导性无线电报告。 因SCP-3721-2的性质和所在地,收容集中在疏导与预防上。为此,多个基金会所有广播站将监控SCP-3721-2的活动。假情报广播将从所有可见到SCP-3721-2的站点向外播报,与向…"
+        },
+        {
+          "id": "scp-5012",
+          "title": "无底之洞莫能离",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5012",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "[待定] 归档的收容措施: SCP-5012是基金会前台企业Fitzwilliam农业公司的合法资产。鉴于该项目的低风险性,已为其建立了标准的反入侵措施。 应依照对待樱属( Cerasus )亚种植物的标准流程对SCP-5012进行日常维护。包括定期收获采摘SCP-5012-A以进行测试和研究。人员应忽略SCP-5012-#的存在。 SCP-5012-B实际上是处于自我收容中的。"
+        },
+        {
+          "id": "scp-378",
+          "title": "食脑虫",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-378",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-378收容于地下实体收容生态箱内。温度和湿度维持在适于 Heterodermia kaincrow 1 和 Prenolepis everettmann 2 生长栖息的范围内。须对SCP-378进行每年两次的医疗和心理检查。 将以一间消毒间把SCP-378收容箱与周边设施隔离开来。处置人员需要穿有全身防护服,且必须在消毒前扫描其是否被SCP-378-A感染。受感染人员将被处决, 除非SCP-378-1或-3编号出现空缺,此时应将其分派至相应编号。 随克拉肯协议的生效,对SCP-378的收容集中于维护三个主要…"
+        },
+        {
+          "id": "scp-4776",
+          "title": "里根武器。",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-4776",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-4776的位置数据印刷在一张小型索引卡上,存放于Site-49的高安保项目库内。SCP-4776-1记录于Site-49数据库内,不得由权限低于4级的人员访问。MTF Gamma-5(“红鲱鱼”)将出动到任何被怀疑遭到SCP-4776攻击的地点。"
+        },
+        {
+          "id": "secure-facility-dossier-site-56",
+          "title": "安保设施档案：Site-56",
+          "url": "https://scp-wiki-cn.wikidot.com/secure-facility-dossier-site-56",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-4495",
+          "title": "猪们的救世主",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-4495",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "相关人员每天需执行610-辛克莱程序,维护人员每两周对SCP-4495的收容室进行一次例行检查。 SCP-4495被收容于一个三层收容室中,每层由一个格栅地板隔开: SCP-4495位于顶层,并被绑在南墙的壁龛中。SCP-4495的胃必须与地板成锐角,使得SCP-4495-1一产生就立即穿过格栅。为防止SCP-4495-1卡住并累积的情况,格栅将每小时由一系列内置高压水枪清洗一次。为减少瘴气,需将收容室顶层的温度控制在较低的水平。 中层包括一个研磨机和焚化炉。SCP-4495-1个体通过漏斗进入机器,再于底部以惰性…"
+        },
+        {
+          "id": "scp-2677",
+          "title": "困惑",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-2677",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "在主动招募期间,所有参与了D级人员招募流程的工作人员必须被使用A级记忆清除。对于事件中被SCP-2677影响的人员,记忆植入必须被极微地激活使用。机动特遣部队Ω-19(“双面”)之后将完成招募流程并且确定那些问题人员是否被SCP-2677-A或者SCP-2677-B所影响。在SCP-2677-B影响之下的人员将会被扣留。 SCP-2677-1周围地区已经被指定命名为Site 2677。任何接近Site 2677的未授权车辆将被停下并调查。在SCP-2677-A影响下的司机应该被施以A级记忆清除。乘客将被吸收为D级人…"
+        },
+        {
+          "id": "scp-0166",
+          "title": "SCP-166",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-0166",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "基于一篇已不存在的文章。 ⚠️ 内容警告：本文包含结构性虐待、儿童性虐待暗示、自残及脏话内容。 威胁级别： 黑 特殊收容措施：由于SCP-166的异常性质，所有关于项目的提案都将交由超形上学部门的Gray博士和Frankenstein博士审阅，包括收容程序的修订、人员分配及采访的进行。超形上学部门将在随后的三叙事日内提交一份以上行动的潜在浪漫影响。若后果包括SCP-166的收容突破、对SCP-166或PoI-9522（“Brinegash女士Madam Brinegash”）的赋权，或Area-166的运作停止，则…"
+        },
+        {
+          "id": "nadox-and-the-mekhanite",
+          "title": "纳多克斯与机神信徒",
+          "url": "https://scp-wiki-cn.wikidot.com/nadox-and-the-mekhanite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "太阳升起，纳多克斯游荡着。 到何处去，从何处来，在狄瓦的时日里，这曾是一个重要的问题。血淋淋的玄武岩刃刻下伤疤，隐隐作痛地回避着它，再接着是亚恩的托付，宏图大业回避着它，最后，正是它自己的答案回避着它。何时，为何，何等，如何…所有这一切都愈发重要起来。"
+        },
+        {
+          "id": "jacklyn-diamandis-accountable-to-nobody",
+          "title": "杰克琳·戴曼迪斯，对nobody负责",
+          "url": "https://scp-wiki-cn.wikidot.com/jacklyn-diamandis-accountable-to-nobody",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 0,
+          "desc": "1973年6月8日 杰克琳·戴曼迪斯。杰克琳·天蝎·戴曼迪斯。这名字脱口而出的时候就像屎一样恶心。 倘若那些浪迹四海的存在中有什么算得上狄瓦隆统治最简洁的对位旋律，那便是契约之子。只有狄瓦人会傲慢到强奸执政官们以获取子嗣，却又将这些血脉浪费在如此令人作呕的怪物上。狄瓦隆以“安全”和“秩序”的谎言为基石构筑自身，与此同时它的孩子们在任何类似异议的事物中撕出一条血路。但即便在那可怕的四重奏中，也存在着清晰的堕落层次之分。 Hgan是头野兽，暴躁易怒而热衷荼毒。我能怪他吗？对于一个深红执政官的孩子来说，他算是有进步了。我…"
+        },
+        {
+          "id": "scp-4886",
+          "title": "警察与乡村",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-4886",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "围绕SCP-4886的法定边界设有一个禁区。它被一3米高的链条围栏所包围。附近的居民认为这是特工Jonathan Lancelot的私有财产;指派人员应采取相应行动。距离禁区边缘1公里处设有一个内部区,周围建有加固的防线。除了深度清洁操作外,禁止人员进入该内部区。 SCP-4886-A内的居民由特遣队He-2(\" 瑜伽士的噩梦 Yogi's Nightmare \")管理。TF-ה2负责执行现有的防侵入措施,以及无效化在SCP-4886内部区外发现的SCP-4886-A(不包括人类出生,该情况将由适当的医务人员处理)…"
+        },
+        {
+          "id": "scp-5952",
+          "title": "校内外的Warbalang",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5952",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "自09/23/2009起,SCP-5952未被收容。 特工应配合WWSCSTT校方和保安收集并记录与SCP-5952相关的目击、证词及失踪案信息。机动特遣队Theta-6(“女巫猎人”)将随需要被派入WWSCSTT地界内,在校区内巡逻找寻SCP-5952。 根据隐士协定,不得往地界内带入摄像机。禁止使用任何类型追踪设备。特工不得进入礼拜堂、宿舍或其他任何无标记建筑,除非确认在此类区域中目击到了SCP-5952。最后,特工不可与学生交流,除非受有校方指引。"
+        },
+        {
+          "id": "scp-3178",
+          "title": "经由上帝，一切皆有可能",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-3178",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "由于冬水镇与世隔绝的性质,收容措施集中于控制村庄内信息的外流。考虑到这一点,安插于主要网络服务提供商的特工将阻碍网络服务的扩张,直到SCP-3178被确认并收容。 若发生可能提高SCP-3178项目等级或威胁等级的活动,机动特遣队Gamma-691(“每有趣事生”)将保持待命。两名职员将驻留于冬水镇内以调查SCP-3178。 由于冬水镇一小时车程的范围内存在GoI-952(“奥尔尼铁业”)的一座生产制造中心,基金会正在调查SCP-3178交叉污染问题的解决方法。"
+        },
+        {
+          "id": "scp-4370",
+          "title": "后工业",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-4370",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "GoI-952必须从SCP-4370的边界处根除。在其猜想边界沿线的弃用设施将被拆除;对于运转中的设施将阻碍其运作并以尽可能便宜的手段将其获取,优先度高于拆除。 经发现由SCP-4370产生或已融入SCP-4370的建筑物将被摧毁。机动特遣队Theta-36(“瑞典狂想曲”)已被派遣拆毁不宜使用的建筑物,而安插于当地政府的特工则致力于宣告被占据的建筑不宜居住。与战术无关的SCP-4370入口将被关闭。 在事故4370-A-Zhou之后,[已编辑,等待解密]"
+        },
+        {
+          "id": "scp-7324",
+          "title": "你值得的，我保证",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-7324",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-7324为一类在整个美国大陆地区的餐厅和娱乐中心内均有提供的饮品,但主要提供点位于美国深南部。SCP-7324可在任何餐厅中被点购,只要点购者知晓项目的确切名称,名称因地区不同而存在变化。 通常而言,SCP-7324由以下原料制成: 3/4杯(177 g)全脂牛奶; 3大匙草莓冰激凌; 4茶匙草莓糖浆; 3茶匙糖浆; 1整杯糖类甜味剂; 雪碧或Starry软饮料; 1汤匙香草精; 掼奶油; 糖屑。 随后将所有原料放入搅拌机内,搅拌30秒到1分钟。在此之后,通常将其置于冰柜或冰箱中,但混合物完全冻结的准确时间…"
+        },
+        {
+          "id": "scp-4947",
+          "title": "断层与瘘管",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-4947",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "由于缺少关于SCP-4947生理学及其异常本质的信息,对象处于未收容状态。当前努力应集中于研究用于捕获并永久控制SCP-4947的方法。 [数据丢失] SCP-4947的位置通过在SCP-4947-A沿线采集的,受到远程监控的地震学读数进行追踪,准确率为52%。为收容简便起见,数个位于SCP-4947-A内的地点已被标记为具有战略或地理重要性。在SCP-4947推断位置周围的指定SCP-4947-A叶点 1 将用素混凝土填充 2 。机动特遣队Psi-16(“殉道者”)将在此期间密切关注并尝试研究和镇压SCP-494…"
+        },
+        {
+          "id": "how-to-remove-glitter-from-a-polyester-dress",
+          "title": "如何去除聚酯纤维连衣裙上的亮片",
+          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-glitter-from-a-polyester-dress",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Ella \"El\" Romero 加入姐妹阵线Line of Sisters时大概十六岁。是Theresa Petrucci把她引荐进这个团体的，那段时间里，El几乎是一上手就做得风生水起。苏荷后门街区的女权主义未来，就寄托在她这样的年轻女性身上——她们拒绝后现代主义跨权运动分子的议程，为（真正的）女性争取真正的解放。"
+        },
+        {
+          "id": "how-to-remove-kerosene-from-a-polyester-dress",
+          "title": "如何去除聚酯纤维连衣裙上的煤油污渍",
+          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-kerosene-from-a-polyester-dress",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "距离游行还有三十天。 明明五天就能敲定的计划，却拖了整整三十天。这能有多难？弄张许可，定个日子，领着一群忧心忡忡的女人走上街头，高喊着要从大型制药公司的掌控中解放出来。就这么简单。"
+        },
+        {
+          "id": "how-to-remove-human-blood-from-a-polyester-dress",
+          "title": "如何去除聚酯纤维连衣裙上的人类血迹",
+          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-human-blood-from-a-polyester-dress",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Theresa在一张不属于自己的床上醒来，眼前一片漆黑。 她快速摸索了一下，便明白了大致状况。自己没有被任何东西束缚，床上也没有其他人同眠。尽管眼皮上结着一层硬壳似的东西，但并没有东西直接挡住她的视线。这张床质地精良，与那股熟悉得令人不安的腐肉气味格格不入——"
+        },
+        {
+          "id": "how-to-remove-spinal-fluid-from-a-polyester-dress",
+          "title": "如何去除聚酯纤维连衣裙上的脑脊液",
+          "url": "https://scp-wiki-cn.wikidot.com/how-to-remove-spinal-fluid-from-a-polyester-dress",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "早上七点半，Theresa的闹钟猛地把她拽醒。她滚下床，拖着身子完成那套晨间流程 —— 只有在难得接到面试通知时，她才需要这么做。这套流程和三周前一样令人厌烦，几乎冲淡了她因面试机会稀少而感到的屈辱。"
+        },
+        {
+          "id": "polyester-woman",
+          "title": "聚酯纤维女人（尾声）",
+          "url": "https://scp-wiki-cn.wikidot.com/polyester-woman",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "四个月后…… Caryn Walsh一点都不蠢。她或许是个装腔作势的山谷女孩valley girl，顶着个拼写花里胡哨的嬉皮士名字，但她绝对不傻。Theresa当然对她忍无可忍。Theresa是个循规蹈矩的正统派，拼了命想找一份稳定的工作；而Caryn酗酒，干着一份清闲的肥差，对第二波女权主义的那套理念始终抱着无所谓的态度。没错，当初把脱口秀的活儿硬塞给她，或许是做得不地道，可Theresa闲得要命，而且对相关政治议题的理解，比组织里的任何人都要透彻。"
+        },
+        {
+          "id": "project-proposal-2014-1221",
+          "title": "項目計劃書 2014-1221：\"終於醒來\"",
+          "url": "https://scp-wiki-cn.wikidot.com/project-proposal-2014-1221",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 0,
+          "desc": "獎項：薩爾瓦多獎 獲獎者：Elisabeth Arturo 目的：表揚使用異常創作愚蠢、有​​趣或滑稽作品的異常藝術家。 項目計劃書 2014-1221：終於醒來"
+        },
+        {
+          "id": "scp-6165",
+          "title": "斋月",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-6165",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "每月一次,罗瑟勒姆镇应进行轻微的烟熏灭虫,以防止红棕象甲进一步扩散。罗瑟勒姆镇中的英裔-巴基斯坦裔社区应时刻被监控,避免 SCP-6165 复发。 一经发现,Person-Of-Interest-6165 就应被立即遣送至英国神秘勤务处进行监管与审问。"
+        },
+        {
+          "id": "scp-952",
+          "title": "NP摇滚",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-952",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "受SCP-952影响的音乐项目需以任何可能方式终止,任何储存着受SCP-952影响的音乐记录的物理媒介都需被拷贝进一个标准型C级逆模因存储设备上,而后予以销毁。需关闭所有曾接待过受SCP-952感染的音乐家的场馆,直至确认没有任何工作人员受其影响。 一种可对抗SCP-952的反模因剂正在开发中。在其完成前,所有受SCP-952影响的个体都需被扣留。 以备预防,所有驻扎于音乐产业的基金会特工都应设法诽谤“数学摇滚”作为一种流派的名声,此行动将持续至SCP-952被完全收容。有关人员应参阅文件952-32以寻求更多细节…"
+        },
+        {
+          "id": "soi-004",
+          "title": "关注物种-004",
+          "url": "https://scp-wiki-cn.wikidot.com/soi-004",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "威胁等级： 绿 身高范围： 0.5-3.8米 体重范围： 2-1022.2千克 外貌： 暗棕色，类黏土，形状各异 节律周期： 主要为夜行 预期寿命： 生物学永生"
+        },
+        {
+          "id": "scp-5931",
+          "title": "“哦，那个枪伤？不过是热气罢了。”",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5931",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "监视新闻和司法报告以获取其中存在的与SCP-5931相关的信息。应鉴别出SCP-5931造成的死亡事件,目击者应接受记忆删除并利用伪造事实“癫痫发作”对验尸报告做相应修改以掩盖真实死因。为使SCP-5931相关的信息得到更好的控制,已派遣MTF-Epsilon-23 (\"忘掉它\")潜入新闻通讯社,当地执法机构,FBI,以及黑手党的内部。 针对SCP-5931成因的调查正在展开。"
+        },
+        {
+          "id": "scp-3874",
+          "title": "六百比一",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-3874",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "因SCP-GOC 1970年协定 1 ,基金会无法直接对SCP-3874展开收容。作为替代基金会将监控GoI-616 \"五芒星\" 2 与此异常的相关行动,阻止任何对SCP-3874的刺杀尝试。"
+        },
+        {
+          "id": "irregularity-proposal-2001-489",
+          "title": "UIU档案：2001-489",
+          "url": "https://scp-wiki-cn.wikidot.com/irregularity-proposal-2001-489",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 0,
+          "desc": "综上所述，这首先是一个伟大而辉煌的时代，一个充满机遇的时代，一个需要新鲜且充满活力之思维的时代，诚然，一个生逢其时的辉煌时代。 R.J. Rushdoony, Intellectual Schizophrenia， 论述文明的灾难性崩溃。"
+        },
+        {
+          "id": "scp-5994",
+          "title": "猪上不能叠猪",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5994",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-5994及其所在建筑已从GoI-952(“奥尔尼铁业”) 1 处购得,更多收容措施被认定为无必要。 根据主管Drummond的指示,原始的遗留系统将被重新安装,无限期留在原地。"
+        },
+        {
+          "id": "ambrose-backdoor-soho",
+          "title": "安布罗斯苏荷后门店",
+          "url": "https://scp-wiki-cn.wikidot.com/ambrose-backdoor-soho",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 0,
+          "desc": "Ambrose BackDoor SoHo: 高雅艺术遇见精品美食 联合苏荷后门艺术家协会，Marshall Carter & Dark有限公司，以及国王之心艺术馆，安布罗斯餐厅隆重推出当代艺术与精品餐饮的独家结合，安布罗斯苏荷后门店。"
+        },
+        {
+          "id": "scp-654",
+          "title": "雷鸣号角",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-654",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "根据无聊镇合约 1 ,SCP-654的直接收容推迟给GoI-466(威尔逊野生动物应对组)。 SCP-654被收容于一个特别建造的栖息地内,该栖息地内需始终环流保持在-1.8°C左右的盐水。水池外围的房间墙壁已镀有绝缘陶瓷复合材料。"
+        },
+        {
+          "id": "fall-in-the-autumn",
+          "title": "秋落",
+          "url": "https://scp-wiki-cn.wikidot.com/fall-in-the-autumn",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 45,
+          "desc": "更新，于 2043-10-19：已无效化，评估及善后小组正在前往。"
+        },
+        {
+          "id": "scp-cn-5810-ex",
+          "title": "SCP-CN-5810-EX ：致爱丽丝",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-5810-ex",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-cn-1998",
+          "title": "结晶",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-1998",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 126,
+          "desc": "“睚眦”协议 /cn1998/protocol/yazi.pro > /cn1998/protocol/yazi.pro < 代号: 睚眦 优先级别: 蓝 目的: 控制 SCP-CN-1998 区域的进一步扩张 保护现存的人类保留区 措施: 废除 帷幕协议 Veil Protocol ,启动全面曝光程序,以调配更多的资源投入到控制 SCP-CN-1998 和维护保留区秩序稳定上 在必要的情况下,吸收并整合难以自我维持的国家及政府,代替其行使行政管理职能 禁止传统农业和畜牧业,作为代替,使用工业合成物提供食物 一旦发…"
+        },
+        {
+          "id": "scp-cn-1504",
+          "title": "变古乱常，成仁取义",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-1504",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 73,
+          "desc": "项目无需亦无法被收容,亦或对其进行彻底收容被认为是不可能的。现阶段,基金会唯一可行的手段即是完全依照逻辑部计划,尽可能多地对项目产生的“离线叙事”进行研究。离线叙事居民口中所述的对现实的代称来源同样需要进一步分类和统计。 SCP-CN-1504-1应被收容在C-2型人形收容室,在其提供关于项目的准确信息前,满足其全部不过分要求。 2001/10/4收容措施更新: 基金会唯一可行的手段即是完全依照演绎部计划。"
+        },
+        {
+          "id": "scp-cn-1572",
+          "title": "预定的流程",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-1572",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 52,
+          "desc": "基金会全球监视网络和康德现实扫描卫星阵列负责搜寻触发SCP-CN-1572-B的人类个体,同时社会分析学部负责同全球政府合作,鼓励公民丰富社会活动并相应减少各岗位工作流程的重复性,控制SCP-CN-1572。 MTF-Velvollisuus-03 “白色雪节”负责将SCP-CN-1572-B个体抓捕并纳入收容,该特遣队佩戴加强型号的斯克兰顿现实稳定锚,如发现个体,需要立即对其进行深度麻醉并送往Site-CN-10-C0进行收容。此外,Velvollisuus-03还负责维持Site-CN-10-C0内的工作秩序和…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "狄瓦族，以至旧神，与继承了前奴隶主 后裔智人 Homo sapiens decensus 奇术知识的黏土人形文明伊米特敌对。狄瓦族向伊米特领地的扩张最终演变近乎灭绝伊米特的存亡之争，但也不可逆地削弱了旧神对地球的影响。",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "（按时间线顺序排列）",
+          "articleIDs": [
+            "how-to-clean-a-polyester-dress"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "黑桃屋的兴衰和兴衰间的时光。",
+          "articleIDs": [
+            "scp-3721",
+            "scp-5012",
+            "scp-378",
+            "scp-4776",
+            "secure-facility-dossier-site-56",
+            "scp-4495",
+            "scp-2677",
+            "scp-0166",
+            "nadox-and-the-mekhanite",
+            "jacklyn-diamandis-accountable-to-nobody",
+            "scp-4886",
+            "scp-5952",
+            "scp-3178",
+            "scp-4370",
+            "scp-7324",
+            "scp-4947",
+            "how-to-remove-glitter-from-a-polyester-dress",
+            "how-to-remove-kerosene-from-a-polyester-dress",
+            "how-to-remove-human-blood-from-a-polyester-dress",
+            "how-to-remove-spinal-fluid-from-a-polyester-dress",
+            "polyester-woman",
+            "project-proposal-2014-1221",
+            "scp-6165",
+            "scp-952",
+            "soi-004",
+            "scp-5931",
+            "scp-3874",
+            "irregularity-proposal-2001-489",
+            "scp-5994",
+            "ambrose-backdoor-soho",
+            "scp-654",
+            "fall-in-the-autumn",
+            "scp-cn-5810-ex",
+            "scp-cn-1998",
+            "scp-cn-1504",
+            "scp-cn-1572"
           ]
         }
       ]
