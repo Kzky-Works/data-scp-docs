@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786738363,
-  "generatedAt": "2026-08-14T20:12:43Z",
-  "chunkRevision": "sha256-8e93e9fb533695ce75282af6f9ae4815bec03b57ae7498431e608cd982176b73",
+  "listVersion": 1786740701,
+  "generatedAt": "2026-08-14T20:51:41Z",
+  "chunkRevision": "sha256-e7b6321dc1a2fb285085d3be7683745084c454271ef2de674c389b90791f78c0",
   "builtFrom": {
     "manifests": [
       {
@@ -82,7 +82,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-6b83c12ec0e4a0ee89682b925ee808826c7f0461bc31937a3281518950aad0f8"
+      "contentHash": "sha256-ca28ca15e4ba0ec991461906be8a9881167376990ed2e0f69ef8df371adc2f22"
     }
   },
   "collections": [
@@ -34073,13 +34073,6 @@
       },
       "primaryArticles": [
         {
-          "id": "heritage-collection",
-          "title": "scp-heritage-v3",
-          "url": "https://scp-wiki-cn.wikidot.com/heritage-collection",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-cn-008",
           "title": "冠冕",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-008",
@@ -34170,13 +34163,6 @@
       "supplementLinks": [],
       "articleSections": [
         {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "heritage-collection"
-          ]
-        },
-        {
           "id": "02-articles",
           "title": "故事時序：",
           "articleIDs": [
@@ -34192,7 +34178,17 @@
           ]
         }
       ],
-      "description": "SCP-CN-008 冠冕 無論SCP-CN-008-1本身信仰如何，SCP-CN-008-3只會信奉銜著鑰匙的鳥身龍首無名神祇。"
+      "description": "SCP-CN-008 冠冕 無論SCP-CN-008-1本身信仰如何，SCP-CN-008-3只會信奉銜著鑰匙的鳥身龍首無名神祇。",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/heritage-collection",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead non-member reference on the official Series hub"
+        }
+      ]
     },
     {
       "id": "scp-cn:collection:series:shadow-milkyway-hub",

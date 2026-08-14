@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786735606,
-  "generatedAt": "2026-08-14T19:26:46Z",
-  "chunkRevision": "sha256-36c2a1d5598b8c72071b7d2d1c31084e687a02efd0f56c89f0dde2329443b094",
+  "listVersion": 1786741097,
+  "generatedAt": "2026-08-14T20:58:17Z",
+  "chunkRevision": "sha256-31b0e35836511d168d623764b6e60b3d70737fd4732b4d6958f8fc2eca78258e",
   "builtFrom": {
     "manifests": [
       {
@@ -64,7 +64,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-6b83c12ec0e4a0ee89682b925ee808826c7f0461bc31937a3281518950aad0f8"
+      "contentHash": "sha256-ca28ca15e4ba0ec991461906be8a9881167376990ed2e0f69ef8df371adc2f22"
     }
   },
   "collections": [
@@ -66060,13 +66060,6 @@
           "desc": "DS-HEAVEN is kept in a sealed records suite containing a single desk, a single chair, and a single stamp. Any stamped output is treated as a live anomaly and quarantined separately. When active use is approved, no fewer than two archivists and one Surrealistic…"
         },
         {
-          "id": "thank you for sending me an angel",
-          "title": "disk",
-          "url": "https://scp-wiki.wikidot.com/Thank%20You%20for%20Sending%20Me%20an%20Angel",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "found a job",
           "title": "disk",
           "url": "https://scp-wiki.wikidot.com/Found%20a%20Job",
@@ -66219,8 +66212,7 @@
           "title": "Full Tracklist:",
           "articleIDs": [
             "scp-9067",
-            "scp-9720",
-            "thank you for sending me an angel"
+            "scp-9720"
           ]
         },
         {
@@ -66246,7 +66238,17 @@
           ]
         }
       ],
-      "description": "Open your mind, and let your brain fall out, the war is on."
+      "description": "Open your mind, and let your brain fall out, the war is on.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki.wikidot.com/Thank%20You%20for%20Sending%20Me%20an%20Angel",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-wiki-en:collection:series:foundational-parasite-hub",
@@ -98559,7 +98561,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-2cef24d60db2be789988318bf460803584a6016425324dd49056618b7dc7423e"
+        "structureHash": "sha256-95c52480ee67a6282206fe421f26eec030bd6dd0bf4dbe61116d128a7ad342e4"
       },
       "primaryArticles": [
         {
@@ -98677,7 +98679,7 @@
         {
           "id": "lurk-d-s-personnel-file",
           "title": "LurkD",
-          "url": "https://www.scp-wiki.net/lurk-d-s-personnel-file",
+          "url": "https://scp-wiki.wikidot.com/lurk-d-s-personnel-file",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
@@ -100107,69 +100109,27 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-8c747493dd07cfc22583c8de1c9c80a6a34f82bd0b8fd1a5eed448d3605ffed0"
+        "structureHash": "sha256-966b53712bbe0ac7e676a3e60fe41e879b90d779688a2298de32ccbaedd4f4b4"
       },
       "primaryArticles": [
         {
           "id": "the-cool-war-hub",
           "title": "the cool war",
-          "url": "http://www.scpwiki.com/the-cool-war-hub",
+          "url": "https://scp-wiki.wikidot.com/the-cool-war-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
         {
           "id": "subversion-hub",
           "title": "SUBVERSION",
-          "url": "http://www.scpwiki.com/subversion-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "mikan-hub",
-          "title": "Mikan",
-          "url": "http://www.scpwiki.com/mikan-hub",
+          "url": "https://scp-wiki.wikidot.com/subversion-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
         {
           "id": "wills-and-ways-hub",
           "title": "WILLS & WAYS",
-          "url": "http://www.scpwiki.com/wills-and-ways-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "a-fuller-life-hub",
-          "title": "A FULLER LIFE",
-          "url": "http://www.scpwiki.com/a-fuller-life-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "fractured-horizon-hub",
-          "title": "Fractured Horizon",
-          "url": "http://www.scpwiki.com/fractured-horizon-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "true-wonder-hub",
-          "title": "True Wonder",
-          "url": "http://www.scpwiki.com/true-wonder-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "androids-and-automata-hub",
-          "title": "Androids and Automata",
-          "url": "http://www.scpwiki.com/androids-and-automata-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "time-hub",
-          "title": "TIME",
-          "url": "http://www.scpwiki.com/time-hub",
+          "url": "https://scp-wiki.wikidot.com/wills-and-ways-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
@@ -100481,52 +100441,10 @@
           ]
         },
         {
-          "id": "03-chaos-in-four-acts",
-          "title": "Chaos In Four Acts",
-          "articleIDs": [
-            "mikan-hub"
-          ]
-        },
-        {
           "id": "04-citrus-in-two-acts",
           "title": "Citrus In Two Acts",
           "articleIDs": [
             "wills-and-ways-hub"
-          ]
-        },
-        {
-          "id": "05-greed-in-five-acts",
-          "title": "Greed In Five Acts",
-          "articleIDs": [
-            "a-fuller-life-hub"
-          ]
-        },
-        {
-          "id": "06-joy-in-six-acts",
-          "title": "Joy In Six Acts",
-          "articleIDs": [
-            "fractured-horizon-hub"
-          ]
-        },
-        {
-          "id": "07-gods-in-one-act",
-          "title": "Gods In One Act",
-          "articleIDs": [
-            "true-wonder-hub"
-          ]
-        },
-        {
-          "id": "08-makers-in-eight-acts",
-          "title": "Makers In Eight Acts",
-          "articleIDs": [
-            "androids-and-automata-hub"
-          ]
-        },
-        {
-          "id": "09-life-in-nine-acts",
-          "title": "Life In Nine Acts",
-          "articleIDs": [
-            "time-hub"
           ]
         },
         {
@@ -100572,7 +100490,57 @@
           ]
         }
       ],
-      "description": "This series is on indefinite hiatus with no plans for continuation."
+      "description": "This series is on indefinite hiatus with no plans for continuation.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://www.scpwiki.com/a-fuller-life-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://www.scpwiki.com/androids-and-automata-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://www.scpwiki.com/fractured-horizon-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://www.scpwiki.com/mikan-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://www.scpwiki.com/time-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://www.scpwiki.com/true-wonder-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        }
+      ]
     },
     {
       "id": "scp-wiki-en:collection:series:wills-and-ways-hub",
@@ -120167,13 +120135,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "anomaly-351-a-clean-slate",
-          "title": "Anomaly 351 A Clean Slate",
-          "url": "https://scp-wiki.wikidot.com/anomaly-351-a-clean-slate",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "a-folklorist-approach-to-myth-case-study-01-the-tuatha-de-da",
           "title": "A Folklorist Approach to Myth - Case Study 01: The Tuatha Dé Danann",
           "url": "https://scp-wiki.wikidot.com/a-folklorist-approach-to-myth-case-study-01-the-tuatha-de-da",
@@ -120370,7 +120331,17 @@
           "role": "primaryArticle"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki.wikidot.com/anomaly-351-a-clean-slate",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official GoI member link"
+        }
+      ]
     },
     {
       "id": "scp-wiki-en:collection:goi:herman-fuller-hub",

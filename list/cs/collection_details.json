@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786734702,
-  "generatedAt": "2026-08-14T19:11:42Z",
-  "chunkRevision": "sha256-d12d02bfac30508f6aeb092d44ede54d74f8e31a08ce58a6a066950a0c150691",
+  "listVersion": 1786740710,
+  "generatedAt": "2026-08-14T20:51:50Z",
+  "chunkRevision": "sha256-3de52431e31c254d43f22fbc44674e52360dbbc04620d1bc8ecd84de02784ff5",
   "builtFrom": {
     "manifests": [
       {
@@ -73,7 +73,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-6b83c12ec0e4a0ee89682b925ee808826c7f0461bc31937a3281518950aad0f8"
+      "contentHash": "sha256-ca28ca15e4ba0ec991461906be8a9881167376990ed2e0f69ef8df371adc2f22"
     }
   },
   "collections": [
@@ -2385,26 +2385,6 @@
           "desc": "Název: Ořešník, kouzelník a věž Autor: Steven Choros"
         },
         {
-          "id": "ranni-nalezy",
-          "title": "Ranní nálezy",
-          "url": "http://scp-cs.wikidot.com/ranni-nalezy",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 1,
-          "desc": "Název: Ranní nálezy Autor: Steven Choros"
-        },
-        {
-          "id": "setkani-v-knihovne",
-          "title": "Setkání v knihovně",
-          "url": "http://scp-cs.wikidot.com/setkani-v-knihovne",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "Název: Setkání v knihovně Autor: Steven Choros"
-        },
-        {
           "id": "anatomie-uteku",
           "title": "Anatomie útěku z města",
           "url": "http://scp-cs.wikidot.com/anatomie-uteku",
@@ -2488,8 +2468,6 @@
           "articleIDs": [
             "volani-z-nemocnice",
             "oresnik-kouzelnik-a-vez",
-            "ranni-nalezy",
-            "setkani-v-knihovne",
             "anatomie-uteku",
             "lepidopterofagie"
           ]
@@ -2505,6 +2483,24 @@
             "tynecke-putovani-antala-sestrmistka",
             "zapal-mi-perka-cece"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-cs.wikidot.com/ranni-nalezy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "http://scp-cs.wikidot.com/setkani-v-knihovne",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Series member link"
         }
       ]
     },
@@ -3938,26 +3934,6 @@
           "desc": "Název: Ořešník, kouzelník a věž Autor: Steven Choros"
         },
         {
-          "id": "ranni-nalezy",
-          "title": "Ranní nálezy",
-          "url": "http://scp-cs.wikidot.com/ranni-nalezy",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 1,
-          "desc": "Název: Ranní nálezy Autor: Steven Choros"
-        },
-        {
-          "id": "setkani-v-knihovne",
-          "title": "Setkání v knihovně",
-          "url": "http://scp-cs.wikidot.com/setkani-v-knihovne",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "Název: Setkání v knihovně Autor: Steven Choros"
-        },
-        {
           "id": "anatomie-uteku",
           "title": "Anatomie útěku z města",
           "url": "http://scp-cs.wikidot.com/anatomie-uteku",
@@ -3977,10 +3953,26 @@
           "articleIDs": [
             "lepidopterofagie",
             "oresnik-kouzelnik-a-vez",
-            "ranni-nalezy",
-            "setkani-v-knihovne",
             "anatomie-uteku"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-cs.wikidot.com/ranni-nalezy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Canon member link"
+        },
+        {
+          "url": "http://scp-cs.wikidot.com/setkani-v-knihovne",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead official Canon member link"
         }
       ]
     },
