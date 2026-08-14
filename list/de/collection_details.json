@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786598198,
-  "generatedAt": "2026-08-13T05:16:38Z",
-  "chunkRevision": "sha256-69c1f50099580006c3ccf9a743934e9e3f6604c609a09c4a19ba9bf3991bca18",
+  "listVersion": 1786734601,
+  "generatedAt": "2026-08-14T19:10:01Z",
+  "chunkRevision": "sha256-6e50b4371f9d00e647ed6d5fcabadf5cc966288e6ed6b12f1765920c56ff3506",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1786598104,
-        "generatedAt": "2026-08-13T05:15:04Z",
-        "contentHash": "sha256-cc0968f28de679828eede1498a81bbe3a81cace53d3d3829c71c8d5e17877eef"
+        "listVersion": 1786734505,
+        "generatedAt": "2026-08-14T19:08:25Z",
+        "contentHash": "sha256-9f8277a36da843ad5db27c3a861755e3e2fc3eba5c7145ad70f24a30a1223d33"
       },
       {
         "kind": "manifest_gois",
@@ -68,7 +68,7 @@
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/de.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-c5444b3c7e9cdf388cfaf3ab9825198674fcb5a1f0bd1f7c6075bf7c0def0571"
+      "contentHash": "sha256-0db84cddd9f3bcc0ad1f14c8af24bf43434031ee1edb1d7bc9a1e9c1056828d9"
     },
     "officialTagMap": {
       "kind": "de_tag",
@@ -5771,13 +5771,14 @@
       "sourceListURL": "http://scp-wiki-de.wikidot.com/scp-foundation-in-deutschland-portal",
       "officialHubURL": "http://scp-wiki-de.wikidot.com/scp-foundation-in-deutschland-portal",
       "hubPresentation": "standard",
-      "canonicalTag": "deutsch",
+      "canonicalTag": "scp-de",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "deutsch",
+        "accepted": "scp-de",
         "rejected": [],
         "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter.",
+          "The prior reviewed contract accepted no collection-specific member tag; the official portal DOM remains the membership authority for its reference links."
         ]
       },
       "quality": {
@@ -5794,6 +5795,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
+        "allowUntaggedMembers": true,
         "structureHash": "sha256-5ab5f73b11616a9170a809a9510aa469538a202e94438e8c43aad29da1b190e6"
       },
       "primaryArticles": [
@@ -6659,10 +6661,10 @@
       "sourceListURL": "http://scp-wiki-de.wikidot.com/sapphire-portal",
       "officialHubURL": "http://scp-wiki-de.wikidot.com/sapphire-portal",
       "hubPresentation": "standard",
-      "canonicalTag": "deutsch",
+      "canonicalTag": "sapphire-u",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "deutsch",
+        "accepted": "sapphire-u",
         "rejected": [],
         "notes": [
           "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
@@ -6761,13 +6763,14 @@
       "sourceListURL": "http://scp-wiki-de.wikidot.com/skp-portal",
       "officialHubURL": "http://scp-wiki-de.wikidot.com/skp-portal",
       "hubPresentation": "standard",
-      "canonicalTag": "deutsch",
+      "canonicalTag": "skp",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "deutsch",
+        "accepted": "skp",
         "rejected": [],
         "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter.",
+          "The prior reviewed contract accepted no collection-specific member tag; the official portal DOM remains the membership authority for its setting links."
         ]
       },
       "quality": {
@@ -6784,6 +6787,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
+        "allowUntaggedMembers": true,
         "structureHash": "sha256-f9a75320b08f9a200dca8dba8922cd67f3882fa01d2c24565a8ac47fed7e5c46"
       },
       "primaryArticles": [
@@ -7107,10 +7111,10 @@
       "sourceListURL": "http://scp-wiki-de.wikidot.com/alive",
       "officialHubURL": "http://scp-wiki-de.wikidot.com/alive",
       "hubPresentation": "standard",
-      "canonicalTag": "chinesisch",
+      "canonicalTag": "tales-of-alive",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "chinesisch",
+        "accepted": "tales-of-alive",
         "rejected": [],
         "notes": [
           "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
@@ -7165,10 +7169,10 @@
       "sourceListURL": "http://scp-wiki-de.wikidot.com/f4k",
       "officialHubURL": "http://scp-wiki-de.wikidot.com/f4k",
       "hubPresentation": "standard",
-      "canonicalTag": "chinesisch",
+      "canonicalTag": "foundation4k",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "chinesisch",
+        "accepted": "foundation4k",
         "rejected": [],
         "notes": [
           "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
@@ -7751,10 +7755,10 @@
       "sourceListURL": "http://scp-wiki-de.wikidot.com/pitch-haven-hub",
       "officialHubURL": "http://scp-wiki-de.wikidot.com/pitch-haven-hub",
       "hubPresentation": "standard",
-      "canonicalTag": "audio",
+      "canonicalTag": "pitch-haven",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "audio",
+        "accepted": "pitch-haven",
         "rejected": [],
         "notes": [
           "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
