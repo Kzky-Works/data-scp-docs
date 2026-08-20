@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1787013015,
-  "generatedAt": "2026-08-18T00:30:15Z",
-  "chunkRevision": "sha256-84fd591d1820ad4a891cdec77afba8d58f21374ebaf1c178422db4c3d9d6aa1b",
+  "listVersion": 1787198759,
+  "generatedAt": "2026-08-20T04:05:59Z",
+  "chunkRevision": "sha256-778cfddbc23f6e2e19e05457d6aa2e39a5c5cff1be26c4b1d40ade79c3d580e9",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1787012674,
-        "generatedAt": "2026-08-18T00:24:34Z",
-        "contentHash": "sha256-2150173f08f5d4dca9255237b1e252aece9b533a80fbbf9ca6312ab7f4ad772b"
+        "listVersion": 1787198405,
+        "generatedAt": "2026-08-20T04:00:05Z",
+        "contentHash": "sha256-a55307de3bd733e02ab76fd899eefd5e5facc9d0803b1096c23d1c225f7873d0"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1787005654,
-        "generatedAt": "2026-08-17T22:27:34Z",
-        "contentHash": "sha256-57ea07d3cd6f0bc77eac31e6552ec51a5d63c6c1fe66cb9bbca60540ab3f57df"
+        "listVersion": 1787198469,
+        "generatedAt": "2026-08-20T04:01:09Z",
+        "contentHash": "sha256-72d33988e6eb044cedc5debb46fbca4fdee83e00bc786c3d4df2da1678afa286"
       },
       {
         "kind": "manifest_scp-fr",
@@ -350,7 +350,7 @@
         "allowedHosts": [
           "fondationscp.wikidot.com"
         ],
-        "structureHash": "sha256-8598167536bc1a6cf462a303842759e62f6294c2916948cee7b5d491624d5b68"
+        "structureHash": "sha256-7e42a45b326a617b5cc51e986e431bba02ea6efc37a9612ec41f4353f1e7f510"
       },
       "primaryArticles": [
         {
@@ -1340,6 +1340,15 @@
           "desc": "\"Ça va ?\" La rousse sursauta légèrement. \"Putain Leo, faut pas arriver furtivement comme ça quand j'ai une hache dans les mains.\" Le jeune homme fit un pas sur le côté, et rentra dans son champ de vision avec un air légèrement moqueur. \"Je suis toujours en un…"
         },
         {
+          "id": "old-black-train",
+          "title": "Old Black Train",
+          "url": "https://fondationscp.wikidot.com/old-black-train",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8,
+          "desc": "24 Avril 2020. Quelque part au sud de l'Azerbaïdjan \"Bonjour bonjour la Fondation ! Jour je-sais-plus-combien depuis que tout est parti en frites ! Encore une fois, personne me répond, j'ai l'habitude, cette radio n'a plus de pile depuis trois semaines et tout…"
+        },
+        {
           "id": "secrets-et-propheties",
           "title": "Secrets et Prophéties",
           "url": "https://fondationscp.wikidot.com/secrets-et-propheties",
@@ -1519,6 +1528,7 @@
             "le-massacre-de-palo-alto",
             "moscou-jour-130-pt1",
             "moscou-jour-130-pt2",
+            "old-black-train",
             "secrets-et-propheties",
             "une-pause-cafe",
             "une-promesse",
@@ -9380,7 +9390,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-0eb2a6bcfc2a828f40ab37603bdd4c72c34ff842bac6c3422d176b0c083b247e"
+        "structureHash": "sha256-a60d39887d0dc366610c022a552afd4d37f8bac81574f51ee4e3a83aca14d808"
       },
       "primaryArticles": [
         {
@@ -9392,11 +9402,11 @@
           "desc": "▷ SCP-7243 par Vaalxeny ▷ SCP-8808 par macro_au_micro ▷ SCP-6183 par Vaalxeny ▷ SCP-6488 par Vaalxeny ▷ SCP-6659 par Vaalxeny"
         },
         {
-          "id": "white-space-hub",
+          "id": "scp-6747",
           "title": "Choisir une page du catalogue Deepwell aléatoire ?",
-          "url": "https://fondationscp.wikidot.com/white-space-hub",
+          "url": "https://fondationscp.wikidot.com/scp-6747",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "scp"
         },
         {
           "id": "scp-4260",
@@ -9415,6 +9425,13 @@
           "desc": "Nagiros"
         },
         {
+          "id": "white-space-hub",
+          "title": "espace blanc (CENTRE)",
+          "url": "https://fondationscp.wikidot.com/white-space-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "admonition",
           "title": "CENTRE ADMONITION",
           "url": "https://fondationscp.wikidot.com/admonition",
@@ -9431,9 +9448,10 @@
           "title": "Histoires",
           "articleIDs": [
             "scp-7243",
-            "white-space-hub",
+            "scp-6747",
             "scp-4260",
             "scp-4755",
+            "white-space-hub",
             "admonition"
           ]
         }
@@ -11124,6 +11142,671 @@
             "scp-567-fr",
             "scp-575-fr",
             "scp-597-fr"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-fr:collection:canon:from-120-s-archives-hub",
+      "branchID": "scp-fr",
+      "kind": "canon",
+      "hubID": "from-120-s-archives-hub",
+      "title": "Des profondeurs des archives du Site-120",
+      "sourceListURL": "https://fondationscp.wikidot.com/from-120-s-archives-hub",
+      "officialHubURL": "https://fondationscp.wikidot.com/from-120-s-archives-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "from-120-s-archives-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "from-120-s-archives-hub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-fr",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "fr_tag.json",
+        "emptySectionTitle": "Articles",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-ef318c29140d3f6cca01a43b2efb63eb48cf16883b39fe6864f6d2a0e6e85b4d"
+      },
+      "primaryArticles": [
+        {
+          "id": "poczatki-normalnosci-i-jej-przyszlosc",
+          "title": "Convention sur les phénomènes surnaturels",
+          "url": "https://fondationscp.wikidot.com/poczatki-normalnosci-i-jej-przyszlosc",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 3,
+          "desc": "Extraits de Critiques du Mandat de la \"Normalité\" , Chapitre III : L'histoire de la \"Normalité\"."
+        },
+        {
+          "id": "scp-pl-253",
+          "title": "SCP-253-PL",
+          "url": "https://fondationscp.wikidot.com/scp-pl-253",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-5464",
+          "title": "SCP-5464 : La responsabilité que nous endoursons",
+          "url": "https://fondationscp.wikidot.com/scp-5464",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "DA120 et un bref regard humoristique sur l'absurdité même de la réalité ;"
+        },
+        {
+          "id": "scp-1000",
+          "title": "SCP-1000 : Bigfoot",
+          "url": "https://fondationscp.wikidot.com/scp-1000",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-2406",
+          "title": "SCP-2406 : Le Colosse",
+          "url": "https://fondationscp.wikidot.com/scp-2406",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "a-form-to-outlast-time",
+          "title": "Des formes qui survivent au temps — Une brève histoire de l'architecture à l'époque de l'Empire Fae",
+          "url": "https://fondationscp.wikidot.com/a-form-to-outlast-time",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "na-bestyje-przepis-jeden-kranca-wdech",
+          "title": "Pour créer un monstre // Respirer la fin",
+          "url": "https://fondationscp.wikidot.com/na-bestyje-przepis-jeden-kranca-wdech",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-3457",
+          "title": "1. SCP-3457 : Le Rite de Salomon",
+          "url": "https://fondationscp.wikidot.com/scp-3457",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "obskuracorps-memos",
+          "title": "Mémos d'Obskuracorps récupérés lors de l'Opération CORDE NOIRE",
+          "url": "https://fondationscp.wikidot.com/obskuracorps-memos",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "À ce moment, il semble que le Golem s'est réactivé, a saisi le bras du Lieutenant et l'a tordu à l'envers, enfonçant le couteau dans son œil gauche et son cerveau."
+        },
+        {
+          "id": "archival-document-hsa-008-advent",
+          "title": "3. Document d'Archive -- AHS-008-Émergence",
+          "url": "https://fondationscp.wikidot.com/archival-document-hsa-008-advent",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "a-man-of-clay-and-men-formerly-men",
+          "title": "Un homme d'argile et des hommes qui furent des hommes",
+          "url": "https://fondationscp.wikidot.com/a-man-of-clay-and-men-formerly-men",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "« Document d'Archive -- ASH-008-Advent || Aube Noire || Opération AUBE DE L'ÉON »"
+        },
+        {
+          "id": "scp-4000",
+          "title": "SCP-4000",
+          "url": "https://fondationscp.wikidot.com/scp-4000",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "L'objet SCP en question est une zone forestière extradimensionnelle présentant de nombreuses propriétés anomales, dont un phénomène de dangers nominatif. L'accès à cet emplacement anormal est possible par l'accomplissement de la Procédure 4000-Halloway (voir d…"
+        },
+        {
+          "id": "historia-polskiego-projektu-przechowawczego",
+          "title": "La Fondation SCP en Pologne - l'histoire du Projet de Confinement Polonais",
+          "url": "https://fondationscp.wikidot.com/historia-polskiego-projektu-przechowawczego",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-pl-399",
+          "title": "SCP-399-PL : Insurrection irrationnelle",
+          "url": "https://fondationscp.wikidot.com/scp-pl-399",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "goc-tale-sequence-assessment",
+          "title": "Évaluation",
+          "url": "https://fondationscp.wikidot.com/goc-tale-sequence-assessment",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "\"Il est bien trop tôt pour renvoyer l'Équipe Sparkplug sur le terrain.\""
+        },
+        {
+          "id": "lte-0851-cetus",
+          "title": "EDL-0851-Céto",
+          "url": "https://fondationscp.wikidot.com/lte-0851-cetus",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "another-goddamn-magic-system",
+          "title": "Introduction à la magie",
+          "url": "https://fondationscp.wikidot.com/another-goddamn-magic-system",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 25,
+          "desc": "\"Bonjour. Merci à tous d'être venus. Pour ceux qui ne me connaissent pas, je m'appelle Dr Tilda David Leylan. Je suis la directrice du Site-19."
+        },
+        {
+          "id": "nx-03",
+          "title": "Nx-03",
+          "url": "https://fondationscp.wikidot.com/nx-03",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Le Nx-03 est une île située à environ 100 kilomètres à l'ouest de l'Irlande, désignée Hy-Brasil dans le folklore local. Le Nx-03 était également l'emplacement d'une grande ville qui couvrait la majorité de l'île, également appelée Hy-Brasil. L'île Hy-Brasil es…"
+        },
+        {
+          "id": "a-library-empty",
+          "title": "Une Bibliothèque, Vide",
+          "url": "https://fondationscp.wikidot.com/a-library-empty",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Bibliothèque des Vagabonds , Aile Z, Section Thaumaturgique 24, Etagère 853"
+        },
+        {
+          "id": "grant-request-for-the-creation-of-remnant-hosts",
+          "title": "DEMANDE DE SUBVENTION POUR LA CRÉATION DE SYSTÈMES HÔTES POUR VESTIGES AFIN DE PRÉSERVER LA CONNAISSANCE HUMAINE POST-MORTEM",
+          "url": "https://fondationscp.wikidot.com/grant-request-for-the-creation-of-remnant-hosts",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-pl-213",
+          "title": "SCP-213-PL : Gloria Necatis",
+          "url": "https://fondationscp.wikidot.com/scp-pl-213",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-1483",
+          "title": "SCP-1483 : Le Troisième Empire antarctique",
+          "url": "https://fondationscp.wikidot.com/scp-1483",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Djoric"
+        },
+        {
+          "id": "scp-3001",
+          "title": "SCP-3001 : Réalité rouge",
+          "url": "https://fondationscp.wikidot.com/scp-3001",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "secure-facility-dossier-site-120",
+          "title": "Dossier d'Installation Sécurisée : Site-120",
+          "url": "https://fondationscp.wikidot.com/secure-facility-dossier-site-120",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-643",
+          "title": "SCP-643 : Délicieux chocolats",
+          "url": "https://fondationscp.wikidot.com/scp-643",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "morskie-opowiesci",
+          "title": "Contes des profondeurs de la mer",
+          "url": "https://fondationscp.wikidot.com/morskie-opowiesci",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "10-kwietnia-2010",
+          "title": "10 avril 2010",
+          "url": "https://fondationscp.wikidot.com/10-kwietnia-2010",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "szczupak-krol-glebin",
+          "title": "Brochet, le roi des profondeurs",
+          "url": "https://fondationscp.wikidot.com/szczupak-krol-glebin",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "krewetkowy-bol",
+          "title": "Douleurs de crevettes",
+          "url": "https://fondationscp.wikidot.com/krewetkowy-bol",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-2987",
+          "title": "SCP-2987 : Invictus",
+          "url": "https://fondationscp.wikidot.com/scp-2987",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "list-of-common-anomalous-misconceptions",
+          "title": "Liste d'idées reçues répandues sur l'anormal",
+          "url": "https://fondationscp.wikidot.com/list-of-common-anomalous-misconceptions",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Centre des Canons Anglais » Centre des profondeurs des archives du Site-120 / Centre de Non-Retour » Liste des idées reçues répandues sur l'anormal"
+        },
+        {
+          "id": "kompas-parapolityczny-na-trudne-czasy",
+          "title": "déVoilé : une boussole para-politique en ces temps difficiles",
+          "url": "https://fondationscp.wikidot.com/kompas-parapolityczny-na-trudne-czasy",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "what-s-up-with-all-the-reality-benders",
+          "title": "Qu'est-ce qui se passe avec tous les plieurs de réalité ?",
+          "url": "https://fondationscp.wikidot.com/what-s-up-with-all-the-reality-benders",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Centre des Canons Anglais » Centre des profondeurs des archives du Site-120 / Centre de Non-Retour » Qu'est-ce qui se passe avec tous les plieurs de réalité ? — Une vue d'ensemble démographique de la prévalence ontocinétique mondiale"
+        },
+        {
+          "id": "scp-5579",
+          "title": "SCP-5579 : Caviar de Boba",
+          "url": "https://fondationscp.wikidot.com/scp-5579",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-7976",
+          "title": "SCP-7976 : Furet flèche de tout bois",
+          "url": "https://fondationscp.wikidot.com/scp-7976",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "8000-dead-rats-hub",
+          "title": "8000 Rats Morts",
+          "url": "https://fondationscp.wikidot.com/8000-dead-rats-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri",
+          "title": "EDC-9817-Brisebleu-Mendel-Shelley-Renégat-Armbrusteri",
+          "url": "https://fondationscp.wikidot.com/kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-7999",
+          "title": "SCP-7999 : Rencontre-moi dans les étoiles",
+          "url": "https://fondationscp.wikidot.com/scp-7999",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-6747",
+          "title": "SCP-6747",
+          "url": "https://fondationscp.wikidot.com/scp-6747",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-5618",
+          "title": "Pacte Multi-Fondation de 1981",
+          "url": "https://fondationscp.wikidot.com/scp-5618",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Recherche et de Confinement Δt — aussi appelé ERC-Δt ou simplement Delta-T ; une force protégeant le multivers qui tire ses racines du Département des Anomalies Temporelles de la Fondation SCP. Delta-T a fini par se séparer de son organisation mère en raison de la nature de sa mission et du fait que ses opérations étaient techniquement en dehors de la hiérarchie administrative de la Fondation. ERC-Δt est composé de quasiment toutes les itérations multiverselles du Département d'origine, itérations regroupées sous une mission commune, celle d'atténuer les dommages causés aux différentes chronologies ainsi qu'à l'ensemble du multivers et d'entretenir le Pacte Multi-Fondation de 1981 . Chaque i"
+        },
+        {
+          "id": "aiad-homescreen",
+          "title": "DIAA",
+          "url": "https://fondationscp.wikidot.com/aiad-homescreen",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "L'interprétation qu'a la DIAA des Intelligences Artificielles, de sa Division des Intelligences Artificielles Autonomes et de ses personnages .iaa fait partie intégrante de l'univers de , et y apparaît souvent."
+        },
+        {
+          "id": "no-return-hub",
+          "title": "Non-Retour",
+          "url": "https://fondationscp.wikidot.com/no-return-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "-jumeau à le plus important. L'avenir de DA120 après 2021 suit la chronologie de l'Avant-Garde de Non-Retour ; par conséquent, les articles qui y sont publiés pour cette chronologie doivent être considérés pour l'essentiel comme faisant partie du canon de ce cadre, bien qu'ils puissent présenter quelques différences mineures."
+        },
+        {
+          "id": "the-s-c-plastics-hub",
+          "title": "S & C Plastiques",
+          "url": "https://fondationscp.wikidot.com/the-s-c-plastics-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Les personnages et les lieux des canons De garde au Site-43 et S & C Plastiques apparaissent souvent dans . Leurs intrigues sont donc canon, à l'exception de ce qu'il se passe dans chacun d'eux après les événements de SCP-6500. Tandis que DG43 et S&CP ont vraisemblablement lieu dans la chronologie du Seuil de Non-Retour, DA120 demeure fermement ancré dans celle de l'Avant-Garde."
+        },
+        {
+          "id": "war-on-all-fronts-hub",
+          "title": "Guerre sur tous les fronts",
+          "url": "https://fondationscp.wikidot.com/war-on-all-fronts-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "La chronologie académique de Guerre sur tous les fronts est centrale à . La destruction d'Hy-Brasil est un aspect important de l'histoire de DA120, tout comme les Fae qui résident sur l'île légendaire."
+        },
+        {
+          "id": "antarctic-exchange-hub",
+          "title": "l'Échange Antarctique",
+          "url": "https://fondationscp.wikidot.com/antarctic-exchange-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "'Échange Antarctique comme existant quelque part dans son multivers. De manière similaire, le Dr Mark Kaufmann, le directeur de l'équipe de Recherche du Site-120, a été embauché en raison de la participation du Site à l'Échange d'information et de personnel entre ces univers."
+        },
+        {
+          "id": "the-coldest-war-hub",
+          "title": "La Guerre la plus froide",
+          "url": "https://fondationscp.wikidot.com/the-coldest-war-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Plusieurs thèmes présents dans La Guerre la plus froide , Et Tam Deum Petivi , Le Golfe , Kong, Shing, Gong et What a Wonderful World sont aussi des thèmes significatifs pour . Pour cette raison, il existe quelques articles qui appartiennent à la fois à un de ces canons et à DA120, mais un pan important de leur lore et de leur cadre ne doit pas être considéré comme pleinement canon à cet univers."
+        },
+        {
+          "id": "cool-war-2-hub",
+          "title": "La Guerre Cool 2",
+          "url": "https://fondationscp.wikidot.com/cool-war-2-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "'a pas de vraie cohérence interne. Malgré ça, il quelques articles qui sont à l'interface avec et ce canon. Étant donné que GC2 ne possède pas vraiment de lore ou de cadre bien défini (hormis les indications fournies par son titre) écrire un crossover GC2 / DA120 peut se faire très facilement, quoique la plupart de ses articles ne sont juste pas canon à DA120."
+        },
+        {
+          "id": "the-alchemy-department-hub",
+          "title": "Département d'Alchimie",
+          "url": "https://fondationscp.wikidot.com/the-alchemy-department-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "L'histoire et le cadre du Département d'Alchimie contredisent grandement l'univers de . Malgré cela, son système magique de l'alchimie est reconnu comme un art obscur doté d'un équivalent dans DA120. Celui-ci a d'ailleurs été activement utilisé par le personnage d'Ann Barlowe dans la série des Chroniques de l'Irréel ."
+        },
+        {
+          "id": "the-man-who-wasnt-there-hub",
+          "title": "L'Homme qui n'était pas là",
+          "url": "https://fondationscp.wikidot.com/the-man-who-wasnt-there-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "L'idée de L'Homme qui n'était pas là au sujet des nombreuses itérations de Personne existants à travers l'histoire a été adaptée comme une part significative du lore des , mais la plupart des articles écrits pour LHQEPL ne pourraient tout simplement pas se produire dans l'univers de DA120."
+        },
+        {
+          "id": "resurrection",
+          "title": "Résurrection",
+          "url": "https://fondationscp.wikidot.com/resurrection",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "L'influence de certains thèmes et idées de Résurrection peut se voir dans , bien qu'en raison de la nature isolée du canon, bon nombre de ses événements et de ses articles ne se produisent pas dans DA120. Malgré cela, les séries Ennemis de longue date , Nouveaux visages , et Que sa volonté soit faite sont en grande partie considérées comme canon."
+        },
+        {
+          "id": "those-twisted-pines-hub",
+          "title": "Ces pins tortueux",
+          "url": "https://fondationscp.wikidot.com/those-twisted-pines-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "'interprétation d'Anderson Robotics de Ces pins tortueux . Cependant, ces deux canons divergent circa 2021, quand l'Impasse a lieu dans DA120. Tandis que dans CPT, Anderson perd face à une attaque conjointe de la Fondation et de l'U2I, dans DA120, c'est l'U2I qui fait tout le travail."
+        },
+        {
+          "id": "dread-circuses-hub",
+          "title": "De l'effroi et des cirques",
+          "url": "https://fondationscp.wikidot.com/dread-circuses-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "L'intérprétation d'Iris Dark dans De l'effroi et des cirques est juste trop différente de celle des pour que ça fonctionne. Malgré cela, DA120 accepte que l'univers d'E&C existe quelque part dans son vaste multivers, comme illustré dans Dossier de l'U2I : 2014-158 (OPÉRATION: VENENUM) ."
+        },
+        {
+          "id": "project-paragon-hub",
+          "title": "Projet PARANGON",
+          "url": "https://fondationscp.wikidot.com/project-paragon-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Bien que n'étant pas un canon en soi, il peut être judicieux de mentionner que le Projet PARANGON n'est absolument pas considéré comme faisant partie de l'univers officiel des . Son interprétation de nombreux thèmes et d'idées partagés est si fondamentalement incompatible qu'il n'est simplement pas possible que ces deux-là puissent fonctionner ensembles, et pour le bien de tous, ils ne devraient vraiment pas être mélangés."
+        },
+        {
+          "id": "third-law-hub",
+          "title": "bureau de terrain de Trois Portlands",
+          "url": "https://fondationscp.wikidot.com/third-law-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 18,
+          "desc": "Ne soyez pas découragé par la taille de ce canon ! Bien qu'il puisse sembler long, il est en réalité très facile d'en commencer la lecture. Il n'y a pas un seul récit prédominant — la plupart des contes existent séparément, ou font partie d'une courte série de…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Après des années d'une approche froide et impitoyable, la Fondation réalise enfin que ses façons d'agir sont dépassées dans le monde moderne. Essayant de s'améliorer par la coopération et l'acceptation de l'anormal, le Site-120 doit faire face aux retombées de…",
+      "articleSections": [
+        {
+          "id": "01-articles-recents",
+          "title": "Articles récents",
+          "articleIDs": [
+            "poczatki-normalnosci-i-jej-przyszlosc",
+            "scp-pl-253",
+            "scp-5464"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-1000",
+            "scp-2406"
+          ]
+        },
+        {
+          "id": "03-cornes-et-cordons",
+          "title": "Cornes et Cordons",
+          "articleIDs": [
+            "a-form-to-outlast-time"
+          ]
+        },
+        {
+          "id": "04-souffle-d-oural",
+          "title": "SOUFFLE D'OURAL",
+          "articleIDs": [
+            "na-bestyje-przepis-jeden-kranca-wdech"
+          ]
+        },
+        {
+          "id": "05-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-3457",
+            "obskuracorps-memos",
+            "archival-document-hsa-008-advent",
+            "a-man-of-clay-and-men-formerly-men",
+            "scp-4000"
+          ]
+        },
+        {
+          "id": "06-ils-avaient-un-nom",
+          "title": "Ils avaient un nom",
+          "articleIDs": [
+            "historia-polskiego-projektu-przechowawczego"
+          ]
+        },
+        {
+          "id": "07-tamiser-le-sable",
+          "title": "Tamiser le sable",
+          "articleIDs": [
+            "scp-pl-399"
+          ]
+        },
+        {
+          "id": "08-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "goc-tale-sequence-assessment",
+            "lte-0851-cetus",
+            "another-goddamn-magic-system",
+            "nx-03"
+          ]
+        },
+        {
+          "id": "09-4-scp-5795-cour-supreme",
+          "title": "4. SCP-5795 : Cour Suprême",
+          "articleIDs": [
+            "a-library-empty"
+          ]
+        },
+        {
+          "id": "10-scp-7924-la-chevre-qui-ne-cesse-de-donner-des-cadeaux",
+          "title": "SCP-7924 : La chèvre qui ne cesse de donner des cadeaux",
+          "articleIDs": [
+            "grant-request-for-the-creation-of-remnant-hosts"
+          ]
+        },
+        {
+          "id": "11-scp-7629-le-sanctuaire-des-gardiens-du-ciel",
+          "title": "SCP-7629 : Le sanctuaire des Gardiens du ciel",
+          "articleIDs": [
+            "scp-pl-213"
+          ]
+        },
+        {
+          "id": "12-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-1483",
+            "scp-3001",
+            "secure-facility-dossier-site-120"
+          ]
+        },
+        {
+          "id": "13-scp-7293-moule-pour-les-ursides",
+          "title": "SCP-7293 : Moule pour les ursidés",
+          "articleIDs": [
+            "scp-643"
+          ]
+        },
+        {
+          "id": "14-scp-054-pl-le-change-peau",
+          "title": "SCP-054-PL : Le Change-peau",
+          "articleIDs": [
+            "morskie-opowiesci"
+          ]
+        },
+        {
+          "id": "15-1-dossier-d-installation-securisee-site-69-pl",
+          "title": "1. Dossier d'Installation Sécurisée : Site-69-PL",
+          "articleIDs": [
+            "10-kwietnia-2010",
+            "szczupak-krol-glebin",
+            "krewetkowy-bol"
+          ]
+        },
+        {
+          "id": "16-les-baisers-echoient-a-dark",
+          "title": "Les baisers échoient à Dark",
+          "articleIDs": [
+            "scp-2987"
+          ]
+        },
+        {
+          "id": "17-ordre-mef-7629",
+          "title": "Ordre MEF-7629",
+          "articleIDs": [
+            "list-of-common-anomalous-misconceptions"
+          ]
+        },
+        {
+          "id": "18-scp-9415-seconde-chance",
+          "title": "SCP-9415 : Seconde chance",
+          "articleIDs": [
+            "kompas-parapolityczny-na-trudne-czasy"
+          ]
+        },
+        {
+          "id": "19-sang-poudre-et-bruyeres",
+          "title": "Sang, poudre et bruyères [🌎]",
+          "articleIDs": [
+            "what-s-up-with-all-the-reality-benders"
+          ]
+        },
+        {
+          "id": "20-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-5579",
+            "scp-7976",
+            "8000-dead-rats-hub"
+          ]
+        },
+        {
+          "id": "21-1-communication-interne-au-projet-aube-ecarlate-entre-ljaco-et-pentagramme",
+          "title": "1. Communication interne au Projet AUBE ÉCARLATE entre LJACO et Pentagramme",
+          "articleIDs": [
+            "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri"
+          ]
+        },
+        {
+          "id": "22-scp-8008-le-pervers-du-temps",
+          "title": "SCP-8008 : Le Pervers du Temps",
+          "articleIDs": [
+            "scp-7999",
+            "scp-6747"
+          ]
+        },
+        {
+          "id": "23-groupes",
+          "title": "Groupes",
+          "articleIDs": [
+            "scp-5618"
+          ]
+        },
+        {
+          "id": "24-qu-est-ce-qui-est-canon-et-qu-est-ce-qui-ne-l-est-pas",
+          "title": "Qu'est-ce qui est canon et qu'est-ce qui ne l'est pas",
+          "articleIDs": [
+            "aiad-homescreen",
+            "no-return-hub",
+            "the-s-c-plastics-hub",
+            "war-on-all-fronts-hub",
+            "antarctic-exchange-hub",
+            "the-coldest-war-hub",
+            "cool-war-2-hub",
+            "the-alchemy-department-hub",
+            "the-man-who-wasnt-there-hub",
+            "resurrection",
+            "those-twisted-pines-hub",
+            "dread-circuses-hub",
+            "project-paragon-hub",
+            "third-law-hub"
           ]
         }
       ]
@@ -15547,9 +16230,37 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-d30ae144878f290c358f5c8e7fbc4c0ad02fdc2f4194330ed7e888c054638d7a"
+        "structureHash": "sha256-d672a34ae70fea81480c7c304440ade39bc88369d1d9b3778831084e276d084f"
       },
       "primaryArticles": [
+        {
+          "id": "scp-2047",
+          "title": "SCP-2047",
+          "url": "https://fondationscp.wikidot.com/scp-2047",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Aux premières heures du 13 Juillet, le monde qu’ils connaissaient disparut, emporté par une force au-delà de leur compréhension. Les colonies lunaires, les installations orbitales secrètes de la Fondation, les vaisseaux-esprits soviétiques, et les laboratoires spatiaux chinois furent tous laissés derrière. L’activation de SCP-2047 avait remplacé la Terre par un monde froid, mort, orbité par quelques survivants dont la terre natale était à jamais perdue. Pour ces hommes et femmes, cependant, l’esprit pionnier de l’exploration n’avait pas encore rendu l’âme."
+        },
+        {
+          "id": "first55",
+          "title": "Les Cinquante-Cinq Premiers",
+          "url": "https://fondationscp.wikidot.com/first55",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Extrait de Chasser et Cueillir : Histoires de la Récupération , compilé et édité par A. Haley. Disponible en accès public aux Archives 1 de la Coalition Occulte des Nations Unies, Secteur Est."
+        },
+        {
+          "id": "all-along",
+          "title": "All Along",
+          "url": "https://fondationscp.wikidot.com/all-along",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Centre de Recherche Orbital de la Fondation 5, Salle de Réunion A. 12 Juillet 1973, 23h15 GMT."
+        },
         {
           "id": "the-watchtower",
           "title": "The Watchtower",
@@ -15559,6 +16270,105 @@
           "contentKind": "tale",
           "os": 4,
           "desc": "Centre de Recherche Orbital de la Fondation 05, CCC 13 Juillet 1973, 00h23 GMT."
+        },
+        {
+          "id": "pitchmeet",
+          "title": "Réunion de Présentation",
+          "url": "https://fondationscp.wikidot.com/pitchmeet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Site Lunaire de Recherche de la Fondation 01, Salle de Conférence Sécurisée 1-O. 19 Juillet 1973, 10:36 GMT."
+        },
+        {
+          "id": "dossier-fsf-delivery",
+          "title": "Dossier - FSF Delivery",
+          "url": "https://fondationscp.wikidot.com/dossier-fsf-delivery",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Désignation Officielle : Vaisseau Léger Varuna [Modifié] Delivery des Forces Spatiales de la Fondation"
+        },
+        {
+          "id": "minerva-lifted",
+          "title": "Levons Minerva",
+          "url": "https://fondationscp.wikidot.com/minerva-lifted",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Centre de Recherche Orbital de la Fondation 00, Bureau du Directeur von Erbach 25 Juillet 1973, 07:33 GMT"
+        },
+        {
+          "id": "moonrakers",
+          "title": "Moonrakers",
+          "url": "https://fondationscp.wikidot.com/moonrakers",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Sans dire un autre mot, von Erbach poussa la feuille de coupures sur le bureau. Dans son esprit il voulait appeler ça journal, mais la plupart étaient imprimées sur les fines feuilles de plastique recyclé qui étaient devenues de facto le matériau d’écriture à…"
+        },
+        {
+          "id": "hamibombard1",
+          "title": "Le blues du HAMI-BOMBARD, Partie I",
+          "url": "https://fondationscp.wikidot.com/hamibombard1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Hangar à accès restreint du Projet INHUHAFR, Base Sélénite de la Coalition Occulte des Nations Unies, Athena One 19 Mai 1974, 13:25 GMT"
+        },
+        {
+          "id": "five-years",
+          "title": "Five Years",
+          "url": "https://fondationscp.wikidot.com/five-years",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Équipage Actuel : Capitaine - Chance Sarridge, Docteur - Alexandrea Exendine, Mécanicien - Joseph Peck, Pilote - Marjorie Thompson"
+        },
+        {
+          "id": "report-on-planet-strora-6tpy-rhelomia-and-its-inhabitants",
+          "title": "Rapport sur la planète Strora 6TPY (\"Rhelomia\") et ses habitants",
+          "url": "https://fondationscp.wikidot.com/report-on-planet-strora-6tpy-rhelomia-and-its-inhabitants",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Présentation Rhelomia est une planète carbonée solitaire dépourvue d'atmosphère à sa surface ; il est supposé qu'elle était autrefois le noyau d'une géante gazeuse. Cependant, elle possède un système de grottes avec leurs propres atmosphère, climat, et biosphè…"
+        },
+        {
+          "id": "scp-2813",
+          "title": "SCP-2813",
+          "url": "https://fondationscp.wikidot.com/scp-2813",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-4113",
+          "title": "SCP-4113",
+          "url": "https://fondationscp.wikidot.com/scp-4113",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-6555",
+          "title": "SCP-6555",
+          "url": "https://fondationscp.wikidot.com/scp-6555",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-1822-t",
+          "title": "SCP-1822-T",
+          "url": "https://fondationscp.wikidot.com/scp-1822-t",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "1"
         }
       ],
       "supplementLinks": [],
@@ -15568,7 +16378,21 @@
           "id": "01-credits",
           "title": "Crédits",
           "articleIDs": [
-            "the-watchtower"
+            "scp-2047",
+            "first55",
+            "all-along",
+            "the-watchtower",
+            "pitchmeet",
+            "dossier-fsf-delivery",
+            "minerva-lifted",
+            "moonrakers",
+            "hamibombard1",
+            "five-years",
+            "report-on-planet-strora-6tpy-rhelomia-and-its-inhabitants",
+            "scp-2813",
+            "scp-4113",
+            "scp-6555",
+            "scp-1822-t"
           ]
         }
       ]
@@ -17550,7 +18374,7 @@
         "allowedHosts": [
           "fondationscp.wikidot.com"
         ],
-        "structureHash": "sha256-17197dfbba9a9932da3cde095350a2a88242daffc778b2b7b7f1aeb16b34a35e"
+        "structureHash": "sha256-2b409afb01789b6c2cfd31057d5c1ae25bbdf9d0dc35ca06ef3982eea0cf206f"
       },
       "primaryArticles": [
         {
@@ -17559,6 +18383,14 @@
           "url": "https://fondationscp.wikidot.com/kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri",
           "role": "primaryArticle",
           "contentKind": "tale"
+        },
+        {
+          "id": "from-120-s-archives-hub",
+          "title": "Des Profondeurs des Archives du Site-120",
+          "url": "https://fondationscp.wikidot.com/from-120-s-archives-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Des Profondeurs des Archives du Site-120 |"
         }
       ],
       "supplementLinks": [],
@@ -17569,6 +18401,13 @@
           "title": "Communication interne au Projet AUBE ÉCARLATE entre LJACO et Pentagramme",
           "articleIDs": [
             "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri"
+          ]
+        },
+        {
+          "id": "02-albert-camus",
+          "title": "Albert Camus",
+          "articleIDs": [
+            "from-120-s-archives-hub"
           ]
         }
       ]
@@ -21188,7 +22027,7 @@
         "allowedHosts": [
           "fondationscp.wikidot.com"
         ],
-        "structureHash": "sha256-f84db9fb5f48c089b844a7bd46524ee190dcfcba38330a1f9a0ee40d471d6e79"
+        "structureHash": "sha256-864a06e9bcdcb321886d7d0c3cc52e725fe9b2e834a47d5c3b96abc4e5a2635d"
       },
       "primaryArticles": [
         {
@@ -21203,6 +22042,13 @@
           "id": "groups-of-interest-jp",
           "title": "Société des Cinq Éléments",
           "url": "http://fondationscp.wikidot.com/groups-of-interest-jp#five-elements-association",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "from-120-s-archives-hub",
+          "title": "Le Boudoir Sidhe",
+          "url": "https://fondationscp.wikidot.com/from-120-s-archives-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
@@ -21349,13 +22195,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "lte-0851-cetus",
-          "title": "EDL-0851-Céto",
-          "url": "https://fondationscp.wikidot.com/lte-0851-cetus",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "edl-3512-kewpie-kringle-warhol",
           "title": "EDL-3512-Kewpie-Kringle-Warhol \"Canard Métallique Olfactif\"",
           "url": "https://fondationscp.wikidot.com/edl-3512-kewpie-kringle-warhol",
@@ -21378,6 +22217,13 @@
           "contentKind": "goiFormat",
           "os": 5,
           "desc": "Les Incroyants, Les Volontairement Aveugles, Pseudo-Rick Sanchez 1 2"
+        },
+        {
+          "id": "lte-0851-cetus",
+          "title": "EDL-0851-Céto",
+          "url": "https://fondationscp.wikidot.com/lte-0851-cetus",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "ef-5247-turing-gris-nacl",
@@ -21722,16 +22568,6 @@
           "desc": "Document : XFD-4521-2 Date : xx/xx/xxxx Objet : Structure et menaces de la cible PE-0051 (\"La Ville Écologique\") La cible PE-0051 semble avoir une structure plus complexe que les rapports préliminaires ne l'indiquait. L'indépendance décisionnelle de PE-0051 vi…"
         },
         {
-          "id": "nx-03",
-          "title": "Nx-03",
-          "url": "https://fondationscp.wikidot.com/nx-03",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 7,
-          "desc": "Le Nx-03 est une île située à environ 100 kilomètres à l'ouest de l'Irlande, désignée Hy-Brasil dans le folklore local. Le Nx-03 était également l'emplacement d'une grande ville qui couvrait la majorité de l'île, également appelée Hy-Brasil. L'île Hy-Brasil es…"
-        },
-        {
           "id": "pizzicato",
           "title": "Pizzicato",
           "url": "https://fondationscp.wikidot.com/pizzicato",
@@ -21760,6 +22596,16 @@
           "contentKind": "tale",
           "os": 8,
           "desc": "À : Sir Edward Wilfred Travis, Député Directeur De : Col. Lionel Pierce (Bletchley Park) Date : 6 Novembre 1944 Re : Projet Allemand en Haute Silésie"
+        },
+        {
+          "id": "nx-03",
+          "title": "Nx-03",
+          "url": "https://fondationscp.wikidot.com/nx-03",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Le Nx-03 est une île située à environ 100 kilomètres à l'ouest de l'Irlande, désignée Hy-Brasil dans le folklore local. Le Nx-03 était également l'emplacement d'une grande ville qui couvrait la majorité de l'île, également appelée Hy-Brasil. L'île Hy-Brasil es…"
         },
         {
           "id": "goc-tale-sequence-assessment",
@@ -22071,13 +22917,6 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-pl-259",
-          "title": "SCP-259-PL",
-          "url": "https://fondationscp.wikidot.com/scp-pl-259",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-065",
           "title": "SCP-065",
           "url": "https://fondationscp.wikidot.com/scp-065",
@@ -22102,6 +22941,13 @@
           "id": "scp-7976",
           "title": "SCP-7976",
           "url": "https://fondationscp.wikidot.com/scp-7976",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-pl-259",
+          "title": "SCP-259-PL",
+          "url": "https://fondationscp.wikidot.com/scp-pl-259",
           "role": "primaryArticle",
           "contentKind": "scp"
         },
@@ -22141,13 +22987,6 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-9830",
-          "title": "SCP-9830",
-          "url": "https://fondationscp.wikidot.com/scp-9830",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-475",
           "title": "SCP-475",
           "url": "https://fondationscp.wikidot.com/scp-475",
@@ -22175,6 +23014,13 @@
           "id": "scp-6987",
           "title": "SCP-6987",
           "url": "https://fondationscp.wikidot.com/scp-6987",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-9830",
+          "title": "SCP-9830",
+          "url": "https://fondationscp.wikidot.com/scp-9830",
           "role": "primaryArticle",
           "contentKind": "scp"
         },
@@ -22491,21 +23337,28 @@
           ]
         },
         {
-          "id": "03-l-eglise-du-dieu-brise",
+          "id": "03-les-servants-des-nornes-de-silicium",
+          "title": "Les Servants des Nornes de Silicium",
+          "articleIDs": [
+            "from-120-s-archives-hub"
+          ]
+        },
+        {
+          "id": "04-l-eglise-du-dieu-brise",
           "title": "L'Église du Dieu Brisé",
           "articleIDs": [
             "main"
           ]
         },
         {
-          "id": "04-le-marteau-ecarlate",
+          "id": "05-le-marteau-ecarlate",
           "title": "Le Marteau écarlate",
           "articleIDs": [
             "vagabonds:main"
           ]
         },
         {
-          "id": "05-manuels-et-guides-pratiques",
+          "id": "06-manuels-et-guides-pratiques",
           "title": "Manuels et guides pratiques",
           "articleIDs": [
             "goc-supplemental-basic-guide",
@@ -22516,7 +23369,7 @@
           ]
         },
         {
-          "id": "06-conferences-et-orientations",
+          "id": "07-conferences-et-orientations",
           "title": "Conférences et orientations",
           "articleIDs": [
             "goc-supplemental-thaumatology",
@@ -22526,7 +23379,7 @@
           ]
         },
         {
-          "id": "07-ressources-delocalisees",
+          "id": "08-ressources-delocalisees",
           "title": "Ressources délocalisées",
           "articleIDs": [
             "goc-far-east-orientation",
@@ -22534,16 +23387,16 @@
           ]
         },
         {
-          "id": "08-l-incident-des-cornouailles-199",
+          "id": "09-l-incident-des-cornouailles-199",
           "title": "L'incident des Cornouailles (199█)",
           "articleIDs": [
             "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri",
             "ute-1919-discofather",
             "archival-document-hsa-008-advent",
-            "lte-0851-cetus",
             "edl-3512-kewpie-kringle-warhol",
             "paralaw",
             "the-deniers",
+            "lte-0851-cetus",
             "ef-5247-turing-gris-nacl",
             "kompas-parapolityczny-na-trudne-czasy",
             "euo-2079-kewpie-blaecca-gerty",
@@ -22554,7 +23407,7 @@
           ]
         },
         {
-          "id": "09-enregistrement-d-interrogatoire",
+          "id": "10-enregistrement-d-interrogatoire",
           "title": "Enregistrement d'interrogatoire :",
           "articleIDs": [
             "that-s-the-joke",
@@ -22586,10 +23439,10 @@
             "quand-kwe-arrive-en-ville",
             "i-thought-you-died-alone",
             "la-ville-ecologique",
-            "nx-03",
             "pizzicato",
             "histoires-de-viandes",
             "memorandum-dated-6-november-1944",
+            "nx-03",
             "goc-tale-sequence-assessment",
             "icky-ichabod",
             "traite-d-anomalolithisation",
@@ -22626,21 +23479,21 @@
             "scp-4485",
             "scp-2173",
             "scp-5990",
-            "scp-pl-259",
             "scp-065",
             "scp-3477",
             "scp-4330",
             "scp-7976",
+            "scp-pl-259",
             "scp-1899",
             "scp-3457",
             "scp-4812",
             "captain-kirby-s-proposal",
             "scp-4524",
-            "scp-9830",
             "scp-475",
             "scp-2565",
             "scp-644-fr",
             "scp-6987",
+            "scp-9830",
             "scp-2635",
             "scp-2664",
             "scp-166",
