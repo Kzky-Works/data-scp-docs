@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1787693593,
+  "generatedAt": "2026-08-25T21:33:13Z",
+  "chunkRevision": "sha256-5d537fb92a615cdeb6c9bb09a511b757459ce836b520a2403edf6309bc8bcb72",
+  "builtFrom": {
+    "manifests": [
+      {
+        "kind": "manifest_canons",
+        "branchID": "scp-id",
+        "path": "DataPipeline/list/id/manifest_canons.json",
+        "schemaVersion": 2,
+        "listVersion": 1787689259,
+        "generatedAt": "2026-08-25T20:20:59Z",
+        "contentHash": "sha256-0691712c3a9a4145bb0dbccccb304e0b366bf66e6bf12b0a70149606b3a71175"
+      },
+      {
+        "kind": "manifest_gois",
+        "branchID": "scp-id",
+        "path": "DataPipeline/list/id/manifest_gois.json",
+        "schemaVersion": 3,
+        "listVersion": 1787638144,
+        "generatedAt": "2026-08-25T06:09:04Z",
+        "contentHash": "sha256-27fa19ade63cf4298eb3725f20786f5b1d333ce579f8cfb20aefa5022955d358"
+      },
+      {
+        "kind": "manifest_scp-id",
+        "branchID": "scp-id",
+        "path": "DataPipeline/list/id/manifest_scp-id.json",
+        "schemaVersion": 2,
+        "listVersion": 1787689933,
+        "generatedAt": "2026-08-25T20:32:13Z",
+        "contentHash": "sha256-523be3daab587520f0afab0bab37833ec99c8f82fa898bf43905e77fb325162c"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-id",
+        "path": "DataPipeline/list/id/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1787637923,
+        "generatedAt": "2026-08-25T06:05:23Z",
+        "contentHash": "sha256-7db47a62776b03526015dc09c4e7058b68f2d96cb47b7c900f862a8116ce6d0d"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-id",
+        "path": "DataPipeline/list/id/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1787689933,
+        "generatedAt": "2026-08-25T20:32:13Z",
+        "contentHash": "sha256-bdef9545fb329371c50de3b49d881f8f53af0dedb12ac42d8488c77c733d002a"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-id",
+        "path": "DataPipeline/list/id/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1787638025,
+        "generatedAt": "2026-08-25T06:07:05Z",
+        "contentHash": "sha256-ddfce51b88248980048aa9df21779f6d76b47eaed8c03378d91fad288f8f9e2d"
+      }
+    ],
+    "seedReview": {
+      "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
+    },
+    "officialStructureSeed": {
+      "path": "DataPipeline/collection_seeds/canon_structures/id.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-b218ffa82a9c3c248e76843389ca0ebbbcee045f689033bf0558ba5147359b85"
+    },
+    "officialTagMap": {
+      "kind": "id_tag",
+      "branchID": "scp-id",
+      "path": "DataPipeline/list/id/id_tag.json",
+      "schemaVersion": 2,
+      "listVersion": 1787689141,
+      "generatedAt": "2026-08-25T20:19:01Z",
+      "contentHash": "sha256-bf15fe014cf4854f1fa332b0a57ab55deef47020e3bad7621738e53fc9abafc9"
+    }
+  },
+  "collections": [
+    {
+      "id": "scp-id:collection:canon:ad-astra-per-aspera-hub",
+      "branchID": "scp-id",
+      "kind": "canon",
+      "hubID": "ad-astra-per-aspera-hub",
+      "title": "Ad Astra Per Aspera",
+      "sourceListURL": "http://scp-id.wikidot.com/ad-astra-per-aspera-hub",
+      "officialHubURL": "http://scp-id.wikidot.com/ad-astra-per-aspera-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ad-astra",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ad-astra",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-id",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "id_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-56ad360c8a15ec341c9325299b9b326899eddd6f5f4345bfc00fef9673850dd6"
+      },
+      "primaryArticles": [
+        {
+          "id": "amnesticization",
+          "title": "Seri ED-K Lethe",
+          "url": "http://scp-id.wikidot.com/amnesticization",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Sangat penting dalam membangun alasan-alasan peninggalan bumi , peristiwa Seri ED-K Lethe adalah salah satu bagian dari Kanon yang harus dimengerti. Artikel terkait, di dalam urutan penerbitan, adalah sebagai berikut:"
+        },
+        {
+          "id": "scp-3484",
+          "title": "Bagian yang Hilang",
+          "url": "http://scp-id.wikidot.com/scp-3484",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "( )"
+        },
+        {
+          "id": "scp-3848",
+          "title": "Sejarah Ada untuk yang Dapat Diingat",
+          "url": "http://scp-id.wikidot.com/scp-3848",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "( )"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "1. SCP-3848 diterjemahkan oleh stephenfoster 2. SCP-3484 diterjemahkan oleh stephenfoster",
+      "articleSections": [
+        {
+          "id": "01-artikel",
+          "title": "Artikel",
+          "articleIDs": [
+            "amnesticization",
+            "scp-3484",
+            "scp-3848"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-id:collection:canon:unfounded-hub",
+      "branchID": "scp-id",
+      "kind": "canon",
+      "hubID": "unfounded-hub",
+      "title": "Nircipta",
+      "sourceListURL": "http://scp-id.wikidot.com/unfounded-hub",
+      "officialHubURL": "http://scp-id.wikidot.com/unfounded-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "nircipta",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "nircipta",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-id",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "id_tag.json",
+        "emptySectionTitle": "Artikel",
+        "structureHash": "sha256-74d2963f6e0ee1de20d5f6235a871a7998fe2b4571c88343e6f39fe25da95493"
+      },
+      "primaryArticles": [
+        {
+          "id": "text-of-a-condolence-letter-federal-bureau-of-investigation",
+          "title": "Teks Sebuah Surat Belasungkawa, Biro Investigasi Federal Unit Insiden Abnormal",
+          "url": "http://scp-id.wikidot.com/text-of-a-condolence-letter-federal-bureau-of-investigation",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-6871",
+          "title": "Dalam Sekejap Mata",
+          "url": "http://scp-id.wikidot.com/scp-6871",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1
+        },
+        {
+          "id": "da-capo-al-fine",
+          "title": "Da Capo Al Fine",
+          "url": "http://scp-id.wikidot.com/da-capo-al-fine",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "nir·cip·ta a Tidak memiliki kemampuan pikiran untuk mengadakan sesuatu yang baru",
+      "articleSections": [
+        {
+          "id": "01-cerita",
+          "title": "Cerita",
+          "articleIDs": [
+            "text-of-a-condolence-letter-federal-bureau-of-investigation",
+            "scp-6871",
+            "da-capo-al-fine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-id:collection:goi:lemrusan-hub",
+      "branchID": "scp-id",
+      "kind": "goi",
+      "hubID": "lemrusan-hub",
+      "title": "Lembaga Urusan Anomali (LEMRUSAN)",
+      "sourceListURL": "http://scp-id.wikidot.com/lemrusan-hub",
+      "officialHubURL": "http://scp-id.wikidot.com/lemrusan-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "lemrusan-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "lemrusan-hub",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.id"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "id"
+      },
+      "primaryArticles": [
+        {
+          "id": "ajisaka-bhayangkara",
+          "title": "Detasemen Khusus 00 Anti Klenik",
+          "url": "http://scp-id.wikidot.com/ajisaka-bhayangkara",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-099-id",
+          "title": "SCP-099-ID",
+          "url": "http://scp-id.wikidot.com/scp-099-id",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-008-id",
+          "title": "SCP-008-ID",
+          "url": "http://scp-id.wikidot.com/scp-008-id",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-066-id",
+          "title": "SCP-066-ID",
+          "url": "http://scp-id.wikidot.com/scp-066-id",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-079-id",
+          "title": "SCP-079-ID",
+          "url": "http://scp-id.wikidot.com/scp-079-id",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-020-id",
+          "title": "SCP-020-ID",
+          "url": "http://scp-id.wikidot.com/scp-020-id",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "murni-dan-konsekuen",
+          "title": "Murni dan Konsekuen",
+          "url": "http://scp-id.wikidot.com/murni-dan-konsekuen",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "surat-edar-30",
+          "title": "SE-30/KEP.LUA/2021",
+          "url": "http://scp-id.wikidot.com/surat-edar-30",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "an-0082",
+          "title": "AN/0082",
+          "url": "http://scp-id.wikidot.com/an-0082",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ajisaka-abrip",
+          "title": "Ajisaka: Ajun Brigadir",
+          "url": "http://scp-id.wikidot.com/ajisaka-abrip",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "ajisaka-brigpol",
+          "title": "Ajisaka: Brigadir Polisi",
+          "url": "http://scp-id.wikidot.com/ajisaka-brigpol",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    }
+  ]
+}
