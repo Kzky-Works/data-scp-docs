@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788183949,
-  "generatedAt": "2026-08-31T13:45:49Z",
-  "chunkRevision": "sha256-c7e43fc43653597f1c17e043103058b9d721065055a1fbce4b397fe4a13eb83a",
+  "listVersion": 1788252562,
+  "generatedAt": "2026-09-01T08:49:22Z",
+  "chunkRevision": "sha256-c2b31925e67b44aed2ccd2c4e55ecffc0fee7bab4e445cf841d35ef85767df26",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1787459627,
-        "generatedAt": "2026-08-23T04:33:47Z",
-        "contentHash": "sha256-2bb94836c7d54bd05894ebe8c4a7120e66aa5f66f89639d3b051953364114a35"
+        "listVersion": 1788252562,
+        "generatedAt": "2026-09-01T08:49:22Z",
+        "contentHash": "sha256-82893a72f35d44a098ca2fb164db4bfc244f1f8d616f9bfd0ea6acc018611c45"
       },
       {
         "kind": "manifest_scp-cs",
@@ -2509,7 +2509,7 @@
       "branchID": "scp-cs",
       "kind": "series",
       "hubID": "zlata-klec-hub",
-      "title": "Zlatá klec",
+      "title": "Zlatá Klec",
       "sourceListURL": "http://scp-cs.wikidot.com/zlata-klec-hub",
       "officialHubURL": "http://scp-cs.wikidot.com/zlata-klec-hub",
       "hubPresentation": "standard",
@@ -3769,7 +3769,7 @@
       "branchID": "scp-cs",
       "kind": "canon",
       "hubID": "informace-o-ceske-vetvi-nadace",
-      "title": "Informace o České větvi Nadace SCP",
+      "title": "České Kanony",
       "sourceListURL": "http://scp-cs.wikidot.com/informace-o-ceske-vetvi-nadace",
       "officialHubURL": "http://scp-cs.wikidot.com/informace-o-ceske-vetvi-nadace",
       "hubPresentation": "standard",
@@ -3981,7 +3981,7 @@
       "branchID": "scp-cs",
       "kind": "canon",
       "hubID": "zlata-klec-hub",
-      "title": "Zlatá klec",
+      "title": "Zlatá Klec",
       "sourceListURL": "http://scp-cs.wikidot.com/zlata-klec-hub",
       "officialHubURL": "http://scp-cs.wikidot.com/zlata-klec-hub",
       "hubPresentation": "standard",
@@ -5433,6 +5433,95 @@
       ]
     },
     {
+      "id": "scp-cs:collection:canon:daybreak",
+      "branchID": "scp-cs",
+      "kind": "canon",
+      "hubID": "daybreak",
+      "title": "Rozbřesk Dne",
+      "sourceListURL": "http://scp-cs.wikidot.com/daybreak",
+      "officialHubURL": "http://scp-cs.wikidot.com/daybreak",
+      "hubPresentation": "standard",
+      "canonicalTag": "daybreak",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "daybreak",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "emptySectionTitle": "Články",
+        "structureHash": "sha256-2b46c7b4c21489ffac7aeb2e4c820a7701ed28256fcb206451b8b1947bbb4bf0"
+      },
+      "primaryArticles": [
+        {
+          "id": "shaggydredlocks-proposal",
+          "title": "PŘISTUP KE SLOŽCE SCP-001",
+          "url": "http://scp-cs.wikidot.com/shaggydredlocks-proposal",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-sun-ever-sets-on-the-british-empire",
+          "title": "Nechť slunce nikdy nezapadne nad britským impériem",
+          "url": "http://scp-cs.wikidot.com/the-sun-ever-sets-on-the-british-empire",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Nechť slunce nikdy nezapadne nad britským impériem Originál: http://scp-wiki.net//the-sun-ever-sets-on-the-british-empire Autor: Doctor Cimmerian Překladatel: Dr F Fisher"
+        },
+        {
+          "id": "heart-and-sol",
+          "title": "Srdce Sol",
+          "url": "http://scp-cs.wikidot.com/heart-and-sol",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Srdce Sol Originál: https://scp-wiki.wikidot.com/heart-and-sol Autor: S D Locke Překladatel: dr Chris Moonlight"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Pokud tohle čteš, tak si jedním z nás . Nezáleží na tom, zda jsi civilista, který na tohle narazil při svém boji o přežití. Nezáleží nám na tom, zda se považuješ za člena nějaké rivalské organizace, pokoušeje se orientovat v tomhle šílenství a tím tak ochránit ty, které miluješ. Vítáme tě, i když jsi něco víc než člověk, pokud se teda dokážeš přenést přes všechny ty klopýtnutí našeho druhu. Všechna ta tajemství. Malicherné střety. Cenzurování chaosu, abychom mohli mít moc. Toho všeho je konec.",
+      "articleSections": [
+        {
+          "id": "01-poznamka-od-administratora-scp-nadace",
+          "title": "Poznámka od Administrátora SCP Nadace",
+          "articleIDs": [
+            "shaggydredlocks-proposal"
+          ]
+        },
+        {
+          "id": "02-pribehy",
+          "title": "Příběhy",
+          "articleIDs": [
+            "the-sun-ever-sets-on-the-british-empire"
+          ]
+        },
+        {
+          "id": "03-pribehy-o-puvodu",
+          "title": "Příběhy o Původu",
+          "articleIDs": [
+            "heart-and-sol"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-cs:collection:canon:dread-circuses-hub",
       "branchID": "scp-cs",
       "kind": "canon",
@@ -5830,11 +5919,87 @@
       ]
     },
     {
+      "id": "scp-cs:collection:canon:fading-stars-hub",
+      "branchID": "scp-cs",
+      "kind": "canon",
+      "hubID": "fading-stars-hub",
+      "title": "Blednoucí Hvězdy",
+      "sourceListURL": "http://scp-cs.wikidot.com/fading-stars-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/fading-stars-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "fading-stars",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "fading-stars",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "emptySectionTitle": "Články",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-72615e2587ae042da53e88d283df11a0ac04a948662f90c8f4289277139709e2"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-682",
+          "title": "Těžce zničitelný plaz",
+          "url": "http://scp-cs.wikidot.com/scp-682",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-682 musí být zničeno jakmile to bude možné. V tuto chvíli neexistují žádně Nadaci dostupné prostředky, které by dokázaly zničit SCP-682, pouze schopné způsobit masivní fyzické poškození. SCP-682 by mělo být uzavřeno uvnitř místnosti o rozměrech 5 m x 5 m x…"
+        },
+        {
+          "id": "scp-7195",
+          "title": "Alex Thorley Dostane Kočku",
+          "url": "http://scp-cs.wikidot.com/scp-7195",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-7195 je Kočička, domácí kočka neznámého plemena, která někdy navštěvuje kancelář Alexe Thorleyho. Není známo, jak je Kočička schopna lokalizovat a dostat se do fyzické lokace kanceláře, nebo kam chodí, když tam není. ‎‏‏‎ ‎ ‎‏‏ ‎‏‏‎ ‎ ‎ ‎‏‏‎ ‎ ‎‏‏ ‎‏‏‎ ‎‏‏…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Umřít – spát – Spát! Možná také snít? V tomhle to vázne; o čem v tom spánku smrti můžem snít?",
+      "articleSections": [
+        {
+          "id": "01-bohove",
+          "title": "Bohové",
+          "articleIDs": [
+            "scp-682"
+          ]
+        },
+        {
+          "id": "02-postavy",
+          "title": "Postavy",
+          "articleIDs": [
+            "scp-7195"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-cs:collection:canon:the-alchemy-department-hub",
       "branchID": "scp-cs",
       "kind": "canon",
       "hubID": "the-alchemy-department-hub",
-      "title": "The Foundation Alchemy Department",
+      "title": "Nadační Oddělení Alchymie",
       "sourceListURL": "http://scp-cs.wikidot.com/the-alchemy-department-hub",
       "officialHubURL": "http://scp-cs.wikidot.com/the-alchemy-department-hub",
       "hubPresentation": "standard",
@@ -5875,7 +6040,7 @@
       "branchID": "scp-cs",
       "kind": "canon",
       "hubID": "goc-hub-page",
-      "title": "Global Occult Coalition Casefiles",
+      "title": "Složky Globální Okultní Koalice",
       "sourceListURL": "http://scp-cs.wikidot.com/goc-hub-page",
       "officialHubURL": "http://scp-cs.wikidot.com/goc-hub-page",
       "hubPresentation": "standard",
@@ -6570,7 +6735,7 @@
       "branchID": "scp-cs",
       "kind": "canon",
       "hubID": "on-mount-golgotha-hub",
-      "title": "Na hoře Golgotě",
+      "title": "Na Hoře Golgotě",
       "sourceListURL": "http://scp-cs.wikidot.com/on-mount-golgotha-hub",
       "officialHubURL": "http://scp-cs.wikidot.com/on-mount-golgotha-hub",
       "hubPresentation": "standard",
@@ -6942,18 +7107,18 @@
       ]
     },
     {
-      "id": "scp-cs:collection:canon:daybreak",
+      "id": "scp-cs:collection:canon:site-17-hub",
       "branchID": "scp-cs",
       "kind": "canon",
-      "hubID": "daybreak",
-      "title": "Rozbřesk",
-      "sourceListURL": "http://scp-cs.wikidot.com/daybreak",
-      "officialHubURL": "http://scp-cs.wikidot.com/daybreak",
+      "hubID": "site-17-hub",
+      "title": "Oblast-17 Deepwell Katalog",
+      "sourceListURL": "http://scp-cs.wikidot.com/site-17-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/site-17-hub",
       "hubPresentation": "standard",
-      "canonicalTag": "daybreak",
+      "canonicalTag": "deepwell-catalog",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "daybreak",
+        "accepted": "deepwell-catalog",
         "rejected": [],
         "notes": [
           "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
@@ -6973,172 +7138,45 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-2b46c7b4c21489ffac7aeb2e4c820a7701ed28256fcb206451b8b1947bbb4bf0"
+        "structureHash": "sha256-99edebd99705e23f27ec0ccb81a6dd575c1bb445877fe4b7a05f74bddf82e333"
       },
       "primaryArticles": [
         {
-          "id": "shaggydredlocks-proposal",
-          "title": "PŘISTUP KE SLOŽCE SCP-001",
-          "url": "http://scp-cs.wikidot.com/shaggydredlocks-proposal",
+          "id": "systems-patch",
+          "title": "Záplata Systému",
+          "url": "http://scp-cs.wikidot.com/systems-patch",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Záplata Systému Originál: https://scp-wiki.wikidot.com/systems-patch Autor: Nagiros Překladatel: DrCheems"
+        },
+        {
+          "id": "white-space-hub",
+          "title": "bílý prostor (HUB)",
+          "url": "http://scp-cs.wikidot.com/white-space-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
         {
-          "id": "the-sun-ever-sets-on-the-british-empire",
-          "title": "Nechť slunce nikdy nezapadne nad britským impériem",
-          "url": "http://scp-cs.wikidot.com/the-sun-ever-sets-on-the-british-empire",
-          "sourceManifest": "manifest_tales",
+          "id": "admonition",
+          "title": "VÝSTRAHA (HUB)",
+          "url": "http://scp-cs.wikidot.com/admonition",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 1,
-          "desc": "Název: Nechť slunce nikdy nezapadne nad britským impériem Originál: http://scp-wiki.net//the-sun-ever-sets-on-the-british-empire Autor: Doctor Cimmerian Překladatel: Dr F Fisher"
-        },
-        {
-          "id": "heart-and-sol",
-          "title": "Srdce Sol",
-          "url": "http://scp-cs.wikidot.com/heart-and-sol",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "Název: Srdce Sol Originál: https://scp-wiki.wikidot.com/heart-and-sol Autor: S D Locke Překladatel: dr Chris Moonlight"
+          "desc": "Liryn, Placeholder McD, a další"
         }
       ],
       "supplementLinks": [],
-      "description": "Pokud tohle čteš, tak si jedním z nás . Nezáleží na tom, zda jsi civilista, který na tohle narazil při svém boji o přežití. Nezáleží nám na tom, zda se považuješ za člena nějaké rivalské organizace, pokoušeje se orientovat v tomhle šílenství a tím tak ochránit ty, které miluješ. Vítáme tě, i když jsi něco víc než člověk, pokud se teda dokážeš přenést přes všechny ty klopýtnutí našeho druhu. Všechna ta tajemství. Malicherné střety. Cenzurování chaosu, abychom mohli mít moc. Toho všeho je konec.",
+      "description": "Nadace je globální, utajovaná organizace s pevnou kontrolou nad všemi médii, literaturou, a veřejným věděním. Funguje ve striktní hierachii Výzkumníků k Oblastním Ředitelům k Členům Rady, zaručující, že lidstvo zůstane v nekonečné a blažené ignoranci. Zadrží a zadrželi Boha, a nikoho to nezajímá.",
       "articleSections": [
         {
-          "id": "01-poznamka-od-administratora-scp-nadace",
-          "title": "Poznámka od Administrátora SCP Nadace",
-          "articleIDs": [
-            "shaggydredlocks-proposal"
-          ]
-        },
-        {
-          "id": "02-pribehy",
+          "id": "01-pribehy",
           "title": "Příběhy",
           "articleIDs": [
-            "the-sun-ever-sets-on-the-british-empire"
-          ]
-        },
-        {
-          "id": "03-pribehy-o-puvodu",
-          "title": "Příběhy o Původu",
-          "articleIDs": [
-            "heart-and-sol"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-cs:collection:canon:siabhub",
-      "branchID": "scp-cs",
-      "kind": "canon",
-      "hubID": "siabhub",
-      "title": "Loďka v láhvi",
-      "sourceListURL": "http://scp-cs.wikidot.com/siabhub",
-      "officialHubURL": "http://scp-cs.wikidot.com/siabhub",
-      "hubPresentation": "standard",
-      "canonicalTag": "doktor-kondraki",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "doktor-kondraki",
-        "rejected": [],
-        "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
-      },
-      "memberManifests": [
-        "manifest_scp-cs",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cs_tag.json",
-        "emptySectionTitle": "Články",
-        "structureHash": "sha256-a30c4038bcd7796d4f392f258d4801f2c9db454c3b38d3acf233baea76805ed5"
-      },
-      "primaryArticles": [
-        {
-          "id": "every-day-of-my-life-you-test-me",
-          "title": "Druhé rande",
-          "url": "http://scp-cs.wikidot.com/every-day-of-my-life-you-test-me",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 1,
-          "desc": "Název: Druhé rande Originál: http://scp-wiki.net/every-day-of-my-life-you-test-me Autor: thefriendlyvandal Překladatel: Modular"
-        },
-        {
-          "id": "just-fuck-it-up-irl",
-          "title": "Třetí rande",
-          "url": "http://scp-cs.wikidot.com/just-fuck-it-up-irl",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 1,
-          "desc": "Název: Třetí rande Originál: http://scp-wiki.net/just-fuck-it-up-irl Autor: DrClef Překladatel: Modular"
-        },
-        {
-          "id": "group-date",
-          "title": "Skupinové rande",
-          "url": "http://scp-cs.wikidot.com/group-date",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "Název: Skupinové rande Originál: http://scp-wiki.wikidot.com/group-date Autor: Captain Kirby Překladatel: Modular"
-        },
-        {
-          "id": "text-message-in-a-bottle",
-          "title": "Textovka v Láhvi",
-          "url": "http://scp-cs.wikidot.com/text-message-in-a-bottle",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4,
-          "desc": "Název: Textovka v Láhvi Originál: http://scp-wiki.net/text-message-in-a-bottle Autor: DrChandra Překladatel: Modular"
-        },
-        {
-          "id": "waffle-date",
-          "title": "Rande s vaflemi",
-          "url": "http://scp-cs.wikidot.com/waffle-date",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 1,
-          "desc": "Název: Rande s vaflemi Originál: https://scp-wiki.wikidot.com/waffle-date Autoři: Blaroth Překladatel: Polymera"
-        },
-        {
-          "id": "big-weird-dog",
-          "title": "Lízinka - Pes v Láhvi",
-          "url": "http://scp-cs.wikidot.com/big-weird-dog",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "Název: Pes v Láhvi Autor: Luvview Překladatel: Lyppiatt"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "Rok: 2056 Synagoga, přibližně 20 mil od Oblasti-17 \"Inspiroval mě k tomu, abych začal kouřit péra,\" vzlykal Draven Kondraki v předních lavicích pohřební služby. Jeho přítel k němu natáhl ruku a konejšivě ho poplácal po noze, souhlasně přikyvujíce na jeho sentiment; sám mohl potvrdit, že jeho dítě je vskutku úžasný submisiv. \"Byl opravdu dobrý ve vzdychání,\" zafňukal Alto Clef před nimi. Zaměstnanci kolem něj se souhlasem vdovci přikývli. Benjamin Kondraki byl dobrý ve vzdychání. \"Jednou mě praštil přímo do obličeje, aby získal poslední donut,\" s brekem ve tváři vyřkla nově jmenovaná ředitelka Moosová. \"Ježíši Kriste , jak moc mi bude chybět.\" \"Tohle je židovský proces, Tildo,\" ji zašeptal direktor Bright do ucha, v pokusu se jí to objasnit. Dr. Rightsová mu v odpovědi na jeho poznámku loktem vrazila do žeber. A jak Rabín dokončil své kázání a přistoupil k rakvi, tak se malá skupinka jeho",
-      "articleSections": [
-        {
-          "id": "01-prislusne-texty-v-poradi-jejich-publikace",
-          "title": "Příslušné Texty (V pořadí jejich publikace)",
-          "articleIDs": [
-            "every-day-of-my-life-you-test-me",
-            "just-fuck-it-up-irl",
-            "group-date",
-            "text-message-in-a-bottle",
-            "waffle-date",
-            "big-weird-dog"
+            "systems-patch",
+            "white-space-hub",
+            "admonition"
           ]
         }
       ]
