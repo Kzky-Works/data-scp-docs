@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788176075,
-  "generatedAt": "2026-08-31T11:34:35Z",
-  "chunkRevision": "sha256-597d143c911ef43040b80e80daa85265b9b2b52a179adfdc7d474d3bfd1d64bd",
+  "listVersion": 1788615284,
+  "generatedAt": "2026-09-05T13:34:44Z",
+  "chunkRevision": "sha256-cf2535406a99af4b23ae8b1f1ff0e1d8787fac99b8148fa855208dbda15db245",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1787461286,
-        "generatedAt": "2026-08-23T05:01:26Z",
-        "contentHash": "sha256-8bbf0d8aa37f2952f34d61513365a135ae575b5011a7d66e3a98dae2bb6b8000"
+        "listVersion": 1788614922,
+        "generatedAt": "2026-09-05T13:28:42Z",
+        "contentHash": "sha256-418d0a6f94b8c3ed811c214920acfeb6f72391e11255ce16fe5159008e4ca588"
       },
       {
         "kind": "manifest_gois",
@@ -82,7 +82,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-44f1b29bc1bbad2c04d177fbf71343d48ed60d496319263d0ae68a86e6622212"
+      "contentHash": "sha256-320dea76a1ce4fb0b3b0a46bd4a95b2816499287494fbab3cbdc57842bc8a3ac"
     }
   },
   "collections": [
@@ -40419,217 +40419,6 @@
       ]
     },
     {
-      "id": "scp-cn:collection:series:north-star-hub",
-      "branchID": "scp-cn",
-      "kind": "series",
-      "hubID": "north-star-hub",
-      "title": "北极星中心页",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/north-star-hub",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/north-star-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "north-star-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "north-star-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scp-wiki-cn.wikidot.com"
-        ],
-        "structureHash": "sha256-e0b637027ea9ef9ad72bc69a7f8724864532097c2ee100e3855dd3c03160f558"
-      },
-      "primaryArticles": [
-        {
-          "id": "series-archive",
-          "title": "故事系列",
-          "url": "https://scp-wiki-cn.wikidot.com/series-archive",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "北极星"
-        },
-        {
-          "id": "serpent-s-hand-hub",
-          "title": "-节选自 \" 蛇之手入门手册 \"",
-          "url": "https://scp-wiki-cn.wikidot.com/serpent-s-hand-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-scottish-goliath",
-          "title": "苏格兰巨人",
-          "url": "https://scp-wiki-cn.wikidot.com/the-scottish-goliath",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "作者： DrDapper 译者： Mizuhanabi 发布日期：2021年5月24日 字数总计： ~1.9k “早上好，上尉，随便坐吧。”"
-        },
-        {
-          "id": "the-minutemen",
-          "title": "民兵们",
-          "url": "https://scp-wiki-cn.wikidot.com/the-minutemen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "作者： DrDapper 译者： Mizuhanabi 发布时间：2021年6月1日 字数总计： ~1.5k “来吧，Rigby，给我来点挑战。”"
-        },
-        {
-          "id": "brink-of-hysteria",
-          "title": "疯狂的边缘",
-          "url": "https://scp-wiki-cn.wikidot.com/brink-of-hysteria",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "本文章包括如下主题： -种族主义 -强烈的憎恨主题 作者： DrDapper 译者： Mizuhanabi 发布时间：2021年7月29日 字数总计： ~9.1k"
-        },
-        {
-          "id": "beige-folder",
-          "title": "浅褐色的文件夹",
-          "url": "https://scp-wiki-cn.wikidot.com/beige-folder",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "作者：DrDapper 发布日期：2023年8月4日 词数：原文约1.6k 红海发生空难，148人遇难 上周，2004年1月3日，Flash航空公司的604号航班在起飞不久后坠入红海。所有机载人员，包括135名乘客与13名机组人员，均于事故中丧生。"
-        },
-        {
-          "id": "after-action-report-operation-thermopylae",
-          "title": "行动后报告：温泉关行动",
-          "url": "https://scp-wiki-cn.wikidot.com/after-action-report-operation-thermopylae",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "以下记录仅限5级/被授权人员查阅。若您不具有所需权限，请向最近的记录与信息安全管理部（RAISA）联络处提交误申请报告并关闭终端。抗命或不当行为将导致您立刻被拘留并接受A级记忆删除。密码认证通过后，该终端将被监控，直到报告被关闭，且安保人员将跟踪所有在此终端上进行的活动。"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "series-archive",
-            "serpent-s-hand-hub"
-          ]
-        },
-        {
-          "id": "03-articles",
-          "title": "起源",
-          "articleIDs": [
-            "the-scottish-goliath",
-            "the-minutemen",
-            "brink-of-hysteria"
-          ]
-        },
-        {
-          "id": "04-articles",
-          "title": "人类与恐怖",
-          "articleIDs": [
-            "beige-folder"
-          ]
-        },
-        {
-          "id": "05-articles",
-          "title": "平行时间线 / 衍生作品",
-          "articleIDs": [
-            "after-action-report-operation-thermopylae"
-          ]
-        }
-      ],
-      "description": "而如果你们执意不肯…如果你们继续囚禁和杀害无辜者，如果你们执意让世界停留在黑暗中…那么，你们将迎来历史上所有奴隶主和杀人犯曾遭遇的下场。",
-      "suppressedDeadURLs": [
-        {
-          "url": "https://scp-wiki-cn.wikidot.com/7-levels-of-17",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "https://scp-wiki-cn.wikidot.com/beyond-the-depths-part1",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "https://scp-wiki-cn.wikidot.com/bright-sunny-south-part-1",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "https://scp-wiki-cn.wikidot.com/operation-galvanic-ukulele",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "https://scp-wiki-cn.wikidot.com/scp-6303",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "https://scp-wiki-cn.wikidot.com/the-area10-massacre",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        }
-      ]
-    },
-    {
       "id": "scp-cn:collection:series:in-memoriam-nazare",
       "branchID": "scp-cn",
       "kind": "series",
@@ -44327,6 +44116,102 @@
         }
       ],
       "description": "这是给多元宇宙域中SCP基金会的所有人员的信息。 今晨5点56分，很明显，一系列超自然事件跨越时空同时发生了。这些事件之间没有发现任何共同点或相关性，除了一点：基金会现存的每一个站点都被摧毁了。 从果园到诺莫斯, 从哈克雷特到辛德斯，每个宇宙中的所有永久或临时设施都被摧毁了，有数百万人遇难。收容失效规模之大，难以想象。现实本身正受到威胁，但我们的人手已然四散，难以寻找。 从此刻开始，我们就是游牧者基金会。 心灵感应网络仍然可以使用。我们的部队原本有2000万，现已经减少到这个数字的十分之一——我们这些足够幸运的人，当时不在站点，也不在运输异常的途中。我们无处可归，也不能重建一切，除非我们知道到底发生了什么。 有许多同事要哀悼——我们得去哀悼——但这总是明日复明日。因为我们有很多工作要做——组织好自己，挽救可以挽救的东西，防止局势进一步失控。任务很快就会下发给你们每个人；现在，注意安全，先躲起来。走反向门径，或者在现实之外找个地方躲起来。你的用武之日很快就会来临。 我们的职责曾经是阻止现实和常态崩溃，而现在则是为了防止现实本身的湮灭。我们的方法将变得更加微妙，更加隐秘。我们将真正生活在黑暗中。但我保证，我们也终会再度步入光明。 ~The Administrator（前 O5-5）。"
+    },
+    {
+      "id": "scp-cn:collection:series:dark-stuff-for-sleepless-nights",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "dark-stuff-for-sleepless-nights",
+      "title": "Dark Stuff伴无眠之夜",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/dark-stuff-for-sleepless-nights",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/dark-stuff-for-sleepless-nights",
+      "hubPresentation": "standard",
+      "canonicalTag": "dark-stuff-for-sleepless-nights",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dark-stuff-for-sleepless-nights",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-wiki-cn.wikidot.com"
+        ],
+        "structureHash": "sha256-30e1dc8ff86f7f8529a52819136b5d60f5ccfb6b8e5b8f71f23e8d2c99c7ffdb"
+      },
+      "primaryArticles": [
+        {
+          "id": "baby-don-t-hurt-me",
+          "title": "入怀",
+          "url": "https://scp-wiki-cn.wikidot.com/baby-don-t-hurt-me",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "酒店客房的昏暗灯光只能隐约看到她的轮廓，但这已经够了。她美极了。美得连疏忽的光都掩盖不了。她挺拔的身姿，十分精致的面容。她身后那盏低矮的台灯让我看清她的连衣裙是她最爱的颜色：绿色。"
+        },
+        {
+          "id": "smoking-on-company-time",
+          "title": "上班时间抽香烟",
+          "url": "https://scp-wiki-cn.wikidot.com/smoking-on-company-time",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "我是六十六号生物站点的一个研究员。我从来没有参与过那些最重要的东西，我从来都不是那种大人物。该死，我都不知道最重要的东西是什么。我没有权限知道。但那是一种宽慰，不是诅咒。我已经得到了还是不知道为好的暗示，我们死在黑暗中所以你们得以生活中光明中，之类的。好吧，要说的话，如果我死在黑暗中，我希望手里至少还能有一把手电筒。所以这就是我为什么不觉得分配到小东西有什么不好的；这正是我所擅长的，工资很高，而且我还能得到相当长的休息时间。"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "baby-don-t-hurt-me",
+            "smoking-on-company-time"
+          ]
+        }
+      ],
+      "description": "嘿呀嘿呀嘿呀！我是 DarkStuff ，可能在这CSS和标题上已经是 极其 明显的了。我会让这段介绍尽量简短一点。我正定期接受 nosleep 的委托写作creepypasta。他的要求是我要基于单独一个主列表SCP写作，而且又能作为一篇独立文章。这些文章是为他的YouTube频道 Dr. SCP 制作的，他和他的团队来添加旁白、动画以及配音。透明起见，这也并不是 我 想去消费的内容，但是我又会在乎什么呢？只是给了我一个很好的理由去每周写一篇很恐恐恐恐恐恐怖的故事，而且我写的时候还 特别 开心。"
     },
     {
       "id": "scp-cn:collection:series:scp-anthology-hub",
@@ -60856,102 +60741,6 @@
           "reason": "Confirmed dead branch-local Series member link"
         }
       ]
-    },
-    {
-      "id": "scp-cn:collection:series:dark-stuff-for-sleepless-nights",
-      "branchID": "scp-cn",
-      "kind": "series",
-      "hubID": "dark-stuff-for-sleepless-nights",
-      "title": "Dark Stuff伴无眠之夜",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/dark-stuff-for-sleepless-nights",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/dark-stuff-for-sleepless-nights",
-      "hubPresentation": "standard",
-      "canonicalTag": "dark-stuff-for-sleepless-nights",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "dark-stuff-for-sleepless-nights",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scp-wiki-cn.wikidot.com"
-        ],
-        "structureHash": "sha256-30e1dc8ff86f7f8529a52819136b5d60f5ccfb6b8e5b8f71f23e8d2c99c7ffdb"
-      },
-      "primaryArticles": [
-        {
-          "id": "baby-don-t-hurt-me",
-          "title": "入怀",
-          "url": "https://scp-wiki-cn.wikidot.com/baby-don-t-hurt-me",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "酒店客房的昏暗灯光只能隐约看到她的轮廓，但这已经够了。她美极了。美得连疏忽的光都掩盖不了。她挺拔的身姿，十分精致的面容。她身后那盏低矮的台灯让我看清她的连衣裙是她最爱的颜色：绿色。"
-        },
-        {
-          "id": "smoking-on-company-time",
-          "title": "上班时间抽香烟",
-          "url": "https://scp-wiki-cn.wikidot.com/smoking-on-company-time",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "我是六十六号生物站点的一个研究员。我从来没有参与过那些最重要的东西，我从来都不是那种大人物。该死，我都不知道最重要的东西是什么。我没有权限知道。但那是一种宽慰，不是诅咒。我已经得到了还是不知道为好的暗示，我们死在黑暗中所以你们得以生活中光明中，之类的。好吧，要说的话，如果我死在黑暗中，我希望手里至少还能有一把手电筒。所以这就是我为什么不觉得分配到小东西有什么不好的；这正是我所擅长的，工资很高，而且我还能得到相当长的休息时间。"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "baby-don-t-hurt-me",
-            "smoking-on-company-time"
-          ]
-        }
-      ],
-      "description": "嘿呀嘿呀嘿呀！我是 DarkStuff ，可能在这CSS和标题上已经是 极其 明显的了。我会让这段介绍尽量简短一点。我正定期接受 nosleep 的委托写作creepypasta。他的要求是我要基于单独一个主列表SCP写作，而且又能作为一篇独立文章。这些文章是为他的YouTube频道 Dr. SCP 制作的，他和他的团队来添加旁白、动画以及配音。透明起见，这也并不是 我 想去消费的内容，但是我又会在乎什么呢？只是给了我一个很好的理由去每周写一篇很恐恐恐恐恐恐怖的故事，而且我写的时候还 特别 开心。"
     },
     {
       "id": "scp-cn:collection:series:into-the-void-hub",
