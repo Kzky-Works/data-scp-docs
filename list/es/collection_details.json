@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788183951,
-  "generatedAt": "2026-08-31T13:45:51Z",
-  "chunkRevision": "sha256-10c6c9ac515b2ec55b38e0471712a434756a0e404c54d5894218f32c73377d73",
+  "listVersion": 1788615962,
+  "generatedAt": "2026-09-05T13:46:02Z",
+  "chunkRevision": "sha256-d0e7ae4aa70d945cd3b5e9b590b56a0cdfd3aa1993c01f915963485e16f8017a",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1787458807,
-        "generatedAt": "2026-08-23T04:20:07Z",
-        "contentHash": "sha256-f3f92191dea3b7be72d450c72eeaaeaebcdcb38eb95f0f8b7db0203c2a42cfa5"
+        "listVersion": 1788614621,
+        "generatedAt": "2026-09-05T13:23:41Z",
+        "contentHash": "sha256-d5a07d76cabdce85615f37fe4abfe1aacfbb23e284a5cd1ff6fc84cfd124c81e"
       },
       {
         "kind": "manifest_gois",
@@ -82,7 +82,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-44f1b29bc1bbad2c04d177fbf71343d48ed60d496319263d0ae68a86e6622212"
+      "contentHash": "sha256-320dea76a1ce4fb0b3b0a46bd4a95b2816499287494fbab3cbdc57842bc8a3ac"
     }
   },
   "collections": [
@@ -125603,6 +125603,309 @@
             404
           ],
           "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
+    },
+    {
+      "id": "scp-es:collection:series:scp-series-cn-4",
+      "branchID": "scp-es",
+      "kind": "series",
+      "hubID": "scp-series-cn-4",
+      "title": "Serie SCP-CN 4",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/scp-series-cn-4",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/scp-series-cn-4",
+      "hubPresentation": "standard",
+      "canonicalTag": "scp-series-cn-4",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "scp-series-cn-4",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-es",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "es_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "lafundacionscp.wikidot.com"
+        ],
+        "structureHash": "sha256-301664a351eff9fd76c4f9a61b99d680fae1831c8eec4286c841b1363a1d0e80"
+      },
+      "primaryArticles": [
+        {
+          "id": "serie-scp-cn",
+          "title": "Información Operacional",
+          "url": "https://lafundacionscp.wikidot.com/serie-scp-cn#operational",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Tabla de contenidos Información Operacional Lista de SCPs-CN"
+        },
+        {
+          "id": "security-clearance-levels",
+          "title": "Niveles de Autorización de Seguridad",
+          "url": "https://lafundacionscp.wikidot.com/security-clearance-levels",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "object-classes",
+          "title": "Clases de Objetos",
+          "url": "https://lafundacionscp.wikidot.com/object-classes",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "groups-of-interest-cn",
+          "title": "Grupos de Interés Chinos",
+          "url": "https://lafundacionscp.wikidot.com/groups-of-interest-cn",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-cn-3018",
+          "title": "Cuervos",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3018",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-CN-3018 continua sin contener. De acuerdo a la Sexta Enmienda del Acuerdo de Boring, cualquier nuevo avistamiento de SCP-CN-3018 debe ser confirmado al GdI-466 (Soluciones Wilson Para la Fauna Silvestre)."
+        },
+        {
+          "id": "scp-cn-3019",
+          "title": "El Sueño Americano",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3019",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-CN-3019 ha sido recuperado y está esperando análisis en profundidad. La habitación en la que el objeto fue descubierta debe ser permanentemente cerrada con llave."
+        },
+        {
+          "id": "scp-cn-3349",
+          "title": "La Necesidad de Dormir",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3349",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Ninguno"
+        },
+        {
+          "id": "scp-cn-3505",
+          "title": "Desechos Médicos",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3505",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "La Fundación actualmente está investigando el origen de SCP-CN-3505. Al mismo tiempo, es necesario seguir monitoreando los contenedores de desechos médicos de todos los hospitales y clínicas ginecológicas en China para rastrear instancias adicionales de SCP-CN…"
+        },
+        {
+          "id": "scp-cn-3607",
+          "title": "Galletas de Arándanos",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3607",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Todas las instancias de SCP-CN-3607 están contenidas en una caja opaca llena de helio, dentro de una cámara de contención mantenida constantemente a 20°C. El eje está sujetado y los huecos entre los discos están llenos de goma de silicona. Los discos deben ser…"
+        },
+        {
+          "id": "scp-cn-3693",
+          "title": "Un Gatito Muy Muy Muy Muy Grande",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3693",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Se ha sellado un radio de 0.5 kilómetros alrededor de SCP-CN-3693 para prevenir el acceso de civiles. Por lo menos 5 miembros del personal de seguridad deben patrullar el área regularmente. Si el objeto se mueve, el Sitio más cercano debe ser notificado, y los…"
+        },
+        {
+          "id": "scp-cn-3804",
+          "title": "El Rostro de la Muerte",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3804",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "SCP-CN-3804 debe ser abierto a las organizaciones públicas con fines de investigación con el objetivo de traer de vuelta la muerte. SCP-CN-3804 se ha descompuesto y se ha perdido porque la tecnología de embalsamamiento y preservación de cadáveres no existe, mi…"
+        },
+        {
+          "id": "scp-cn-3811",
+          "title": "Shhhhh…",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3811",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Shhhhh..."
+        },
+        {
+          "id": "scp-cn-3838",
+          "title": "Der Freischütz",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3838",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Irrelevantes."
+        },
+        {
+          "id": "scp-cn-3971",
+          "title": "Contacto Instantáneo",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-3971",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "El Objeto no puede ser contenido. Se ha propagado un meme a nivel mundial para que individuos humanos que observan los fenómenos causados por SCP-CN-3971 los perciban los perciban como un efecto de plasma acompañado de luz intensa, alta tensión eléctrica y un…"
+        },
+        {
+          "id": "scp-cn-4012",
+          "title": "El Dilema del Carruaje",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-4012",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "La Fundación planea activar el Protocolo Ennui para neutralizar los efectos de SCP-CN-4012."
+        },
+        {
+          "id": "scp-cn-4789",
+          "title": "No Con Palabras",
+          "url": "https://lafundacionscp.wikidot.com/scp-cn-4789",
+          "sourceManifest": "manifest_scp-int",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Se ha confirmado que SCP-CN-4789 está afectando a tan pocos sujetos que no puede ser descrito efectivamente. Como estos sujetos no comparten características físicas, patrones de comportamiento o coordenadas espaciales definidas, la contención de SCP-CN-4789 [E…"
+        },
+        {
+          "id": "scp-ex",
+          "title": "SCPs-CN EXs",
+          "url": "https://lafundacionscp.wikidot.com/scp-ex",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- SCPs que ya no se consideran paranormales o extraordinarios según los estándares actuales. Son escritos teniendo en cuenta esto."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "serie-scp-cn"
+          ]
+        },
+        {
+          "id": "02-informacion-operacional",
+          "title": "Información Operacional",
+          "articleIDs": [
+            "security-clearance-levels",
+            "object-classes",
+            "groups-of-interest-cn"
+          ]
+        },
+        {
+          "id": "03-3000-3099",
+          "title": "3000 - 3099",
+          "articleIDs": [
+            "scp-cn-3018",
+            "scp-cn-3019"
+          ]
+        },
+        {
+          "id": "04-3300-3399",
+          "title": "3300 - 3399",
+          "articleIDs": [
+            "scp-cn-3349"
+          ]
+        },
+        {
+          "id": "05-3500-3599",
+          "title": "3500 - 3599",
+          "articleIDs": [
+            "scp-cn-3505"
+          ]
+        },
+        {
+          "id": "06-3600-3699",
+          "title": "3600 - 3699",
+          "articleIDs": [
+            "scp-cn-3607",
+            "scp-cn-3693"
+          ]
+        },
+        {
+          "id": "07-3800-3899",
+          "title": "3800 - 3899",
+          "articleIDs": [
+            "scp-cn-3804",
+            "scp-cn-3811",
+            "scp-cn-3838"
+          ]
+        },
+        {
+          "id": "08-3900-3999",
+          "title": "3900 - 3999",
+          "articleIDs": [
+            "scp-cn-3971"
+          ]
+        },
+        {
+          "id": "09-4000-4999",
+          "title": "4000 - 4999",
+          "articleIDs": [
+            "scp-cn-4012",
+            "scp-cn-4789"
+          ]
+        },
+        {
+          "id": "10-4000-4999-archivos",
+          "title": "4000 - 4999 · Archivos",
+          "articleIDs": [
+            "scp-ex"
+          ]
         }
       ]
     },
