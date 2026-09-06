@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788658256,
-  "generatedAt": "2026-09-06T01:30:56Z",
-  "chunkRevision": "sha256-106b7c2be168a6fa1756ed26fd179d925358c1c62b1284695355b6e175aca8f1",
+  "listVersion": 1788676141,
+  "generatedAt": "2026-09-06T06:29:01Z",
+  "chunkRevision": "sha256-98e2e4235ad2889247fa2ebab7b99f9e2a130c81915919d262b3a47e2373d5bb",
   "builtFrom": {
     "manifests": [
       {
@@ -82,7 +82,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-524c4d2ad7093d36bcae90123d48a0663ad7152131e3a822742bc103026a7a44"
+      "contentHash": "sha256-520ecaecf0ad946d7746c312af9833ba82d73846368f0ba7ed91c29dc25f3c64"
     }
   },
   "collections": [
@@ -7888,13 +7888,6 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "Autorstwa"
-        },
-        {
-          "id": "resurrection",
-          "title": "odrodzenie_pl",
-          "url": "https://scp-pl.wikidot.com/resurrection",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -7908,12 +7901,21 @@
             "such-a-shame-it-didn-t-work",
             "him-and-the-other-him",
             "the-siege-of-site-19",
-            "give-it",
-            "resurrection"
+            "give-it"
           ]
         }
       ],
-      "description": "W ciągu ostatniej dekady Fundacja poświęciła mnóstwo czasu i absurdalne ilości pieniędzy na przywrócenie do działania swoich starych sztuczek. Chyba nie sądzisz, że ich wrogowie też tego nie robili?"
+      "description": "W ciągu ostatniej dekady Fundacja poświęciła mnóstwo czasu i absurdalne ilości pieniędzy na przywrócenie do działania swoich starych sztuczek. Chyba nie sądzisz, że ich wrogowie też tego nie robili?",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-pl.wikidot.com/resurrection",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-pl:collection:series:the-lombardi-tales",
