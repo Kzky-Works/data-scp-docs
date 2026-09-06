@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788176076,
-  "generatedAt": "2026-08-31T11:34:36Z",
-  "chunkRevision": "sha256-31866a7ef997123a6c12f8ec8a1686cdf6065bef8176decaef9a8b26077ba907",
+  "listVersion": 1788652170,
+  "generatedAt": "2026-09-05T23:49:30Z",
+  "chunkRevision": "sha256-7e9fa042c99af6f68da9f1c880df87e4f4e5e869aaf31c553845b88d7dee0f0e",
   "builtFrom": {
     "manifests": [
       {
@@ -19,36 +19,36 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1788176032,
-        "generatedAt": "2026-08-31T11:33:52Z",
-        "contentHash": "sha256-b91b1df0b40cf7f617a0207f7fccdb0644b4b2e32877de0995342fd2f1f6ed8d"
+        "listVersion": 1788652116,
+        "generatedAt": "2026-09-05T23:48:36Z",
+        "contentHash": "sha256-890ef87a7b75de7e896f869ed8780bee653e9a10eee25cd022b4bde4c7a3b77b"
       },
       {
         "kind": "manifest_scp-it",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-it.json",
         "schemaVersion": 2,
-        "listVersion": 1787005655,
-        "generatedAt": "2026-08-17T22:27:35Z",
-        "contentHash": "sha256-5d7ba8ef5358d9fddc8848593632ffee20a1ce6c7bbdb23fc31c64af5fcb81c8"
+        "listVersion": 1788652144,
+        "generatedAt": "2026-09-05T23:49:04Z",
+        "contentHash": "sha256-46223ca83679c0193963da7d3ef95b34565f7c2c96fd1e7509c3eb077444971f"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1787005655,
-        "generatedAt": "2026-08-17T22:27:35Z",
-        "contentHash": "sha256-a05ff8aaa32e2a186ffa2089b69554faab4cb7fa81ab8ad532e0e72c164054d8"
+        "listVersion": 1788652144,
+        "generatedAt": "2026-09-05T23:49:04Z",
+        "contentHash": "sha256-baf962495834d85231feb2bcf68baff98f8c182cd754603d16259b9600798ac9"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1787005655,
-        "generatedAt": "2026-08-17T22:27:35Z",
-        "contentHash": "sha256-d0d25324bc2fb0ba13c8ee9aa1d5e1ac0403a36df1cbad21732ea8afbfaead76"
+        "listVersion": 1788652144,
+        "generatedAt": "2026-09-05T23:49:04Z",
+        "contentHash": "sha256-39915645a3806575002104d8c1f0fe74c2fd48904627a0b908b4e4df02f98d67"
       }
     ],
     "seedReview": {
@@ -287,7 +287,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-f00d9d8dbd99e945ce05f0df76bc43699a0c42f8bec80180dc1bbee5e781a972"
+        "structureHash": "sha256-cc52c1bf166bd10408895b26fb1dea82b03021c15361b7fc2ee13ee13fe34c02"
       },
       "primaryArticles": [
         {
@@ -334,17 +334,21 @@
           "id": "hurt",
           "title": "A Pezzi",
           "url": "http://fondazionescp.wikidot.com/hurt",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "CelesteKara"
+          "os": 1,
+          "desc": "“Nonostante tutto, non sono abbastanza forte.” Continuava a faticare a scrivere le frasi su quel foglio. Kassidy dà uno sguardo a sua moglie, Rosa, che stava dormendo alla sua sinistra. Si mise le mani nei capelli mentre continua a scrutare il blocco note."
         },
         {
           "id": "somnambulant-directives-take-the-helm",
           "title": "Le Direttive Sonnambule Hanno La Priorità",
           "url": "http://fondazionescp.wikidot.com/somnambulant-directives-take-the-helm",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Nagiros"
+          "os": 1,
+          "desc": "I suoi colleghi sognavano l'irreale, ma a Kassidy non rimanevano che tagli fatti con la carta. Soosh il fascicolo fu sollevato dalla scrivania, rimase attaccato alla garza insanguinata sul suo pollice per un po'. Il plico venne poi riappoggiato sul legno di mo…"
         },
         {
           "id": "white-space-hub",
@@ -413,37 +417,38 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-eddf6d91edca7b504d670afd0e9e4b8d408c8e3a9a8a81791588c4143203eb82"
+        "structureHash": "sha256-6abdd8242085e5bb8ac16f5d8fefe2fb6a6e6f09fa0f0a0d5c07ac83341e41d3"
       },
       "primaryArticles": [
         {
           "id": "the-edge-of-all-light",
-          "title": "1. Il Confine di Tutta la Luce",
+          "title": "Il Confine di Tutta la Luce",
           "url": "http://fondazionescp.wikidot.com/the-edge-of-all-light",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "2. Dagli Archivi del Sito-120 — di 3. Proposta di Pickman/Blank — di"
+          "os": 0,
+          "desc": "Di più da questo autore"
         },
         {
-          "id": "fresh-blood",
-          "title": "Sangue Fresco",
-          "url": "http://fondazionescp.wikidot.com/fresh-blood",
+          "id": "they-had-names",
+          "title": "Loro Avevano dei Nomi",
+          "url": "http://fondazionescp.wikidot.com/they-had-names",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Musica raccomandata per la lettura La nostra gente è stata massacrata in un istante. Ogni nostra storia comincia in modo differente. Uno stava mangiando con i propri figli, uno stava danzando con il suo amore, uno stava tornando a casa dopo un lungo giorno di…"
         },
         {
           "id": "tears-and-bone",
           "title": "Lacrime e Ossa",
           "url": "http://fondazionescp.wikidot.com/tears-and-bone",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "they-had-names",
-          "title": "Avevano dei Nomi",
-          "url": "http://fondazionescp.wikidot.com/they-had-names",
-          "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Al tempo in cui le città Fae furono piazzate, a ogni cosa venne dato un rango. Anche la bassa Casa dei Centopiedi e le alti Corti Seelie trovarono i loro posti in questa gerarchia, e tutti gli Dei presiedettero le loro corti ben organizzate. Sotto i loro tallo…"
         },
         {
           "id": "pickman-blank-proposal",
@@ -491,6 +496,13 @@
           "contentKind": "tale"
         },
         {
+          "id": "fresh-blood",
+          "title": "Sangue Fresco",
+          "url": "http://fondazionescp.wikidot.com/fresh-blood",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "scp-7278",
           "title": "La Furia di un Fae",
           "url": "http://fondazionescp.wikidot.com/scp-7278",
@@ -509,10 +521,13 @@
         },
         {
           "id": "in-life-as-in-language",
-          "title": "Vivere la Vita Come una Lingua",
+          "title": "Vivere La Vita Come Una Lingua",
           "url": "http://fondazionescp.wikidot.com/in-life-as-in-language",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Questo racconto è stato scritto per Ralliston in occasione dello scambio di regali artisctici del 2021. Mi ci è voluto qualche giorno per capire cosa volessi scriverci in quanto Ralliston ha lasciato aperto il come il Direttore Alistair Vemhoff vada esplorato.…"
         },
         {
           "id": "scp-6172",
@@ -543,57 +558,57 @@
           "title": "Articoli più Recenti",
           "articleIDs": [
             "the-edge-of-all-light",
-            "fresh-blood",
+            "they-had-names",
             "tears-and-bone"
           ]
         },
         {
-          "id": "02-scricchiolii-nelle-crepe",
-          "title": "Scricchiolii nelle Crepe",
-          "articleIDs": [
-            "they-had-names"
-          ]
-        },
-        {
-          "id": "03-scp-7600-due-metri-sotto",
+          "id": "02-scp-7600-due-metri-sotto",
           "title": "SCP-7600 - Due Metri Sotto",
           "articleIDs": [
             "pickman-blank-proposal"
           ]
         },
         {
-          "id": "04-profilo-della-creatura-fuffi",
+          "id": "03-profilo-della-creatura-fuffi",
           "title": "Profilo della Creatura: Fuffi!",
           "articleIDs": [
             "and-every-time-we-meet-again-hub"
           ]
         },
         {
-          "id": "05-5-una-biblioteca-vuota",
+          "id": "04-5-una-biblioteca-vuota",
           "title": "5. Una Biblioteca, Vuota",
           "articleIDs": [
             "o4-s-summit"
           ]
         },
         {
-          "id": "06-articoli",
+          "id": "05-articoli",
           "title": "Articoli",
           "articleIDs": [
             "secure-facility-dossier-site-120"
           ]
         },
         {
-          "id": "07-8-testimonianza-parte-2",
+          "id": "06-8-testimonianza-parte-2",
           "title": "8. Testimonianza - Parte 2",
           "articleIDs": [
             "scp-6596"
           ]
         },
         {
-          "id": "08-scp-pl-389-fornax-aeterna",
+          "id": "07-scp-pl-389-fornax-aeterna",
           "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
           "articleIDs": [
             "ambrose-esterberg"
+          ]
+        },
+        {
+          "id": "08-scp-7672-alla-corte-del-re-dei-goblin",
+          "title": "SCP-7672 - Alla Corte del Re dei Goblin",
+          "articleIDs": [
+            "fresh-blood"
           ]
         },
         {
@@ -659,22 +674,28 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-fa79438ad57ab0919328f8dc3afeac5187096c9aa1bf62cdbdc81e72c57cce73"
+        "structureHash": "sha256-93bfa72901cb939e71cc374f3331957266954d6658644df45a35f3139813fe8a"
       },
       "primaryArticles": [
         {
           "id": "make-portland-weirder",
           "title": "Si Renda Portland Più Strana",
           "url": "http://fondazionescp.wikidot.com/make-portland-weirder",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Agosto, 1970 L'agente Josephine Creed sedendosi sotto ad un pino nel Parco Statale Milo McIver dell'Oregon, si rese conto di odiare l'incarico assegnatole. Vestirsi in borghese durante un'operazione sul campo era una cosa, ma la maglietta multicolore, i pantal…"
         },
         {
           "id": "paper-pusher",
-          "title": "Mastica Numeri",
+          "title": "Spingicarte",
           "url": "http://fondazionescp.wikidot.com/paper-pusher",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Il ricercatore Clayton si trovava davanti alla porta del piccolo ufficio, assicurandosi di essere nel posto giusto. La stanza era così isolata che sembrava essere stata costruita all’ultimo minuto. Clayton diede una rapida occhiata intorno a sé, poi bussò. Que…"
         },
         {
           "id": "scp-1360",
@@ -700,8 +721,11 @@
           "id": "realignment",
           "title": "Riallineamento",
           "url": "http://fondazionescp.wikidot.com/realignment",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Molti anni fa, quando era una giovane Specialista di Operazioni Cibernetiche, il Sito in cui si trovava era vivo, vibrava dell'energia di centinaia di server, fremeva della fretta dei ricercatori che si muovevano a passo svelto nei corridoi dei loro progetti s…"
         },
         {
           "id": "scp-3108",
@@ -1354,7 +1378,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-3f51f3f2f6fe64d7ec503c57aa744f470a9c82e013ac7a3209e63a52eb513b09"
+        "structureHash": "sha256-148cb5feb5efeee7a142e1c130d8968deb6d739927bcce77f6523b29605369ff"
       },
       "primaryArticles": [
         {
@@ -1408,16 +1432,21 @@
           "id": "qlippoth-and-sefiros",
           "title": "Qelipot e Sefiros",
           "url": "http://fondazionescp.wikidot.com/qlippoth-and-sefiros",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "(Biblioteca del Viandante) tradotto da"
+          "os": 2,
+          "desc": "Nella vasta e desolata distesa del Principio, vi era un'immensa scorza priva di mente, ora nota come Qelipot. In questo angolo del Principio, Qelipot era solo. Qelipot non pensava, poiché non vi era nulla a cui pensare. Qelipot non si muoveva, poiché non vi er…"
         },
         {
           "id": "nadox-and-the-mekhanite",
           "title": "Nadox e il Mekhanita",
           "url": "http://fondazionescp.wikidot.com/nadox-and-the-mekhanite",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Il sole sorse e Nadox si incamminò. Verso dove, da dove, ai tempi dei daeviti erano domande assai importanti, domande vociferate dalla ferite ancora aperte lasciate dal basalto insanguinato, poi vociferate dai suoi doveri verso Ion, ora vociferate dalle sue st…"
         },
         {
           "id": "jacklyn-diamandis-accountable-to-nobody",
@@ -1430,23 +1459,31 @@
           "id": "christ-in-scarlet",
           "title": "Cristo Scarlatto",
           "url": "http://fondazionescp.wikidot.com/christ-in-scarlet",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "È il 2008 e hai dieci anni. Tuo padre ha un'impresa di camionisti, tua madre è un'infermiera e vivete nei sobborghi di Brooklyn. Un giorno, imparerai che la casa era \"sotto affitto\",e ciò ti farà arrabbiare tanto, davvero tanto — ma per ora, sei solo un ragazz…"
         },
         {
           "id": "a-crack-in-the-porcelain",
           "title": "Una Crepa nella Porcellana",
           "url": "http://fondazionescp.wikidot.com/a-crack-in-the-porcelain",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "(esplicito) tradotto da"
+          "os": 0,
+          "desc": "La prima volta in cui Madeleine von Schaeffer si ricorda di aver strappato le ali ad una farfalla… sarà stata nel 1896? 1905? È difficile da capire."
         },
         {
           "id": "filled-to-the-brim-with-girlish-glee",
           "title": "Ripiena Fino All'Orlo Di Gioia Femminile",
           "url": "http://fondazionescp.wikidot.com/filled-to-the-brim-with-girlish-glee",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "#CDR_ChatGenerale #CDR_2punto0 #CDR_ChatGenerale #CDR_ChatGenerale #CDR_2punto0 #CDR_ChatGenerale #CDR_ChatJess Fate le brave, ragazze! Le vere ragazze sono sempre educate. Argomento impostato da KeeLee di Ven 01 Set 2010 09:52:05 GMT-0400 (Fuso Orario Orienta…"
         },
         {
           "id": "project-proposal-2014-1221",
@@ -1459,8 +1496,11 @@
           "id": "are-we-gentrified-yet",
           "title": "Are We Gentrified Yet?",
           "url": "http://fondazionescp.wikidot.com/are-we-gentrified-yet",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Da: krd.liamhcrot|ehtrotaruc#krd.liamhcrot|ehtrotaruc A: krd.liamhcrot|citircasydobon#krd.liamhcrot|citircasydobon Oggetto: Sono al limite. Data: 1 febbraio, 2018 alle 15:31:59"
         },
         {
           "id": "scp-952",
@@ -1476,8 +1516,11 @@
           "id": "soi-004",
           "title": "Specie di Interesse-004",
           "url": "http://fondazionescp.wikidot.com/soi-004",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Livello di Minaccia: Verde Circa gli Individui Gamma d'Altezza: 0,5-3,8 metri Gamma di Peso: 2-1022,2 kg Parvenza: Marrone scura, argilloide, forma variabile"
         },
         {
           "id": "scp-3874",
@@ -1518,17 +1561,23 @@
         },
         {
           "id": "a-eulogy-in-eleven-eight-time",
-          "title": "Un'Eulogia In Tempo 11/8",
+          "title": "Un'Eulogia in Tempo 11/8",
           "url": "http://fondazionescp.wikidot.com/a-eulogy-in-eleven-eight-time",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Il giorno più bello della vita di Sara Yarkoni fu il giorno in cui finalmente si fece un po' di spina dorsale e si impiccò da un ventilatore."
         },
         {
           "id": "they-were-beautiful",
           "title": "Roccia Spaziale (Poesia Ritrovata)",
           "url": "http://fondazionescp.wikidot.com/they-were-beautiful",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Stella smarrita, l'ho vista lo giuro Quasi ricorda, il nostro rifugio Un cuore cadente e sbriciolato Una stella smarrita nel creato"
         }
       ],
       "supplementLinks": [],
@@ -1595,7 +1644,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-6fc9d8d5c68e87943b4724c1f65fe796499a84c849c5a3b67dc8a997cdbbed28"
+        "structureHash": "sha256-ffb63fd62b2086c75eb5ba14acf58ca58cc896bf93d309aeb89fede4cbf3a56d"
       },
       "primaryArticles": [
         {
@@ -1682,8 +1731,11 @@
           "id": "on-the-outskirts",
           "title": "In Avanscoperta",
           "url": "http://fondazionescp.wikidot.com/on-the-outskirts",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "di stormbreath La mia prima interazione con la Fondazione è stata nell'estate del 1994. Ero appena uscito dal college e avevo ottenuto un lavoro come guardia forestale. Quello sì che era il mio lavoro dei sogni sin da quando ero bambino. Non questo, in nessuna…"
         },
         {
           "id": "no-esteemed-deed",
@@ -2109,104 +2161,126 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-ba3fa8dcf392cd330132ad5b48ba63f291a385489c22419232ffd6291ea0f66d"
+        "structureHash": "sha256-12cc5ed00b18bc421d387c739295c1969d7b95c3c581ca7960b5fd487d4b519d"
       },
       "primaryArticles": [
         {
           "id": "the-birthday",
           "title": "Mente in Pezzi",
           "url": "http://fondazionescp.wikidot.com/the-birthday",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Vivax"
+          "os": 1,
+          "desc": "Ricordo la mia nascita. Vi erano spasmi di vita prima che nascessi. Il Se è stato il primo. Il Pensiero è stato il secondo. Attacca o Fuggi arrivarono assieme. Non ero che incosciente fino al giorno della mia nascita."
         },
         {
           "id": "the-tale-of-the-library",
           "title": "Il Racconto della Biblioteca",
           "url": "http://fondazionescp.wikidot.com/the-tale-of-the-library",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Rumetzen"
+          "os": 0,
+          "desc": "La parola venne incisa nella roccia. L'uomo vi stava sopra e, nel fondo dei suoi pensieri, sentì qualcosa di turbolento. Non sapeva di aver appena mutato il corso di tutti i mondi, ma poteva sentire che qualcosa era diverso. Il mondo era diventato un po' più o…"
         },
         {
           "id": "there-was-one-there-was-not-one",
           "title": "Ce N'Era Uno, Non Ce N'Era Uno",
           "url": "http://fondazionescp.wikidot.com/there-was-one-there-was-not-one",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Gaffsey"
+          "os": 0,
+          "desc": "\"Cos'è successo al ragazzo?\" I bambini fissarono intensamente il loro fratellone al falò. \"Perché, è stato mangiato dal Leone che si Aggira di Notte, ovvio. Ciascuno dei suoi arti è stato mangiato da una delle sue bocche e il resto è stato diviso tra la sesta…"
         },
         {
           "id": "the-king-in-chains",
           "title": "Il Re Incatenato",
           "url": "http://fondazionescp.wikidot.com/the-king-in-chains",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Gaffsey"
+          "os": 1,
+          "desc": "L'essere si ergeva nel suo reame infinito, il suo corpo impossibilmente immenso era avvolto da catene. Ogni punto della sua forma avvizzita e rigonfia in cui le catene affondavano, veniva congelata una parte infinitesima di una possibilità, immobile e concreta…"
         },
         {
           "id": "interlude-scenes-from-the-fall",
           "title": "Interludio - Scene Dalla Caduta",
           "url": "http://fondazionescp.wikidot.com/interlude-scenes-from-the-fall",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Vivax"
+          "os": 0,
+          "desc": "Due bambini, un fratello ed una sorella, stavano giocando in un giardino tra i tralicci coperti di rampicanti e i torrenti gorgoglianti che la loro madre si era dedicata così tanto a coltivare. I due fratelli erano stati cresciuti e cullati fianco a fianco. Si…"
         },
         {
           "id": "on-the-origins",
           "title": "Sulle Origini dei Rituali Carnofoni Premoderni",
           "url": "http://fondazionescp.wikidot.com/on-the-origins",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Riemann e Gaffsey"
+          "os": 1,
+          "desc": "È impensabile considerare il Sarkicismo senza le Sei Traversie di Ion. Nei primi anni dell'antropologia sarkica vi erano grandi dibattiti circa la veridicità di queste traversie. Nonostante gli studiosi contemporanei considerino in gran parte la questione come…"
         },
         {
           "id": "a-child-to-teach",
           "title": "Un Bambino a cui Insegnare",
           "url": "http://fondazionescp.wikidot.com/a-child-to-teach",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Pixeltasim"
+          "os": 1,
+          "desc": "Si rilassò per un istante, così da godersi il momento. Gli piaceva vere margine di manovra, e i bambini impauriti dal buio glene davano molto. Si chiese cosa avrebbe dovuta fare questa volta, mettersi sotto al letto? No… il bambino teneva dei peluche la sotto,…"
         },
         {
           "id": "competitive-teleology",
           "title": "Teleologia Competitiva",
           "url": "http://fondazionescp.wikidot.com/competitive-teleology",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Riemann"
+          "os": 1,
+          "desc": "Solenne e paffuto, Buck Mulligan comparve dall'alto delle scale, portando un bacile di schiuma su cui erano posati in croce uno specchio ed un rasoio. Un mantello giallo, discinto, gli levitava delicatamente dietro, al soffio della mite aria mattutina. Fece di…"
         },
         {
           "id": "the-faraday-girls",
           "title": "Interludio - Le Ragazze Faraday",
           "url": "http://fondazionescp.wikidot.com/the-faraday-girls",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Rumetzen"
+          "os": 0,
+          "desc": "“Merda merda merda,” disse Donna. Era in ritardo per la scuola. Quella stupida sveglia era partita con un'ora di ritardo e ora le toccava farsela a piedi. “Merda,” disse di nuovo aprendo l'armadio e scegliendo tra i vestiti al suo interno. Dopo cinque minuti d…"
         },
         {
           "id": "the-end",
           "title": "La Fine",
           "url": "http://fondazionescp.wikidot.com/the-end",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Gaffsey"
+          "os": 0,
+          "desc": "I due figuri si incontrarono come al solito, ossia sui sofà. Entrambi sembravano sfarfallare, i loro contorni erano sfocati e incerti. Come sempre accadeva, la più bassa cominciò a parlare."
         },
         {
           "id": "the-edge-of-all-light",
-          "title": "Il Confine Di Tutta la Luce",
+          "title": "Il Confine di Tutta la Luce",
           "url": "http://fondazionescp.wikidot.com/the-edge-of-all-light",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Ralliston"
+          "os": 0,
+          "desc": "Di più da questo autore"
         }
       ],
       "supplementLinks": [],
       "description": "\" Io contro mio fratello, mio fratello ed io contro i miei cugini, poi i miei cugini ed io contro gli estranei. \" - Proverbio beduino",
       "articleSections": [
         {
-          "id": "01-crediti",
-          "title": "Crediti",
+          "id": "01-articoli",
+          "title": "Articoli",
           "articleIDs": [
             "the-birthday",
             "the-tale-of-the-library",
