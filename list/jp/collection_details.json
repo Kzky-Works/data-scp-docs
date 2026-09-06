@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788655431,
-  "generatedAt": "2026-09-06T00:43:51Z",
-  "chunkRevision": "sha256-ac3ee4758251f639a0f7d48f1fc310b6bfd8e922d00e98769327b23bf6736073",
+  "listVersion": 1788658202,
+  "generatedAt": "2026-09-06T01:30:02Z",
+  "chunkRevision": "sha256-b40a96d0ab878d46ee82a37a92a56b80ef9c271faa83377e6c43c3c455b6fa98",
   "builtFrom": {
     "manifests": [
       {
@@ -64,7 +64,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-9da743933af8dd314bc7b24f637e00195fe8e76dccb4ae6a916b4a12e3b6bfc7"
+      "contentHash": "sha256-524c4d2ad7093d36bcae90123d48a0663ad7152131e3a822742bc103026a7a44"
     }
   },
   "collections": [
@@ -10722,7 +10722,7 @@
         "excludedSections": [
           "クレジット"
         ],
-        "structureHash": "sha256-514d3e7901cdf90f10e91af4b242a5968fb770568e09d0955878cbf7d8588b6f"
+        "structureHash": "sha256-9990f1bf1a6b831a626d20dafac30eb90de102f51e7a888fc6cc0b484a361e66"
       },
       "primaryArticles": [
         {
@@ -10744,14 +10744,14 @@
           "desc": "よし来た！それじゃあまずは 入門者用のエッセイ を確認してみるといいぞ。"
         },
         {
-          "id": "the-encounter-match",
-          "title": "邂逅戦・糺ノ森",
-          "url": "https://scp-jp.wikidot.com/the-encounter-match",
-          "sourceManifest": "manifest_tales",
+          "id": "yamizushi-file-no864",
+          "title": "闇寿司ファイルNo.864 \"ユムシ軍艦\"",
+          "url": "https://scp-jp.wikidot.com/yamizushi-file-no864",
+          "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 53,
-          "desc": "ある夜半、下鴨神社の参道から少し外れた林の中に、赤い灯火が揺れていた。 鬱蒼とした木々に月光すら遮られた闇の中、ゆらゆらと浮かぶ光はまるで人魂のようにも見えたであろう。しかし慎重に目を凝らせば、それは人魂などではなく赤提灯の灯りだと判る。 弥生の初め、まだ肌寒い早春の宵である。 赤提灯は小さな木製の屋台を照らし出す。洛中洛外屈指の観光名所とはいえ、夜はほとんど人も通らない場所である。そんな場所に出没する屋台となれば、あの猫ラーメンを措おいて他にない。 人口百五十万を擁する京都市中にあっても、猫ラーメンの存在を知る者…"
+          "contentKind": "goiFormat",
+          "os": 69,
+          "desc": "\"ユムシ軍艦\"はユムシの切り身をネタにした軍艦巻きサ。ユムシって何かって？ はッ、無知な童貞のために、姐さんが特別に教えてやるよ。耳の穴かっぽじってよーくお聞き。"
         },
         {
           "id": "scp-1710-jp-j",
@@ -10902,6 +10902,16 @@
           "contentKind": "tale",
           "os": 59,
           "desc": "本記事は、CC BY-SA 4.0ライセンスの下で提供されます。これに加えて、本記事の作成者、著者、翻訳者、または編集者が著作権を有するコンテンツは、別段の定めがない限りCC BY-SA 3.0ライセンスが付与されており、同ライセンスの下で利用することができます。"
+        },
+        {
+          "id": "the-encounter-match",
+          "title": "邂逅戦・糺ノ森",
+          "url": "https://scp-jp.wikidot.com/the-encounter-match",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 53,
+          "desc": "ある夜半、下鴨神社の参道から少し外れた林の中に、赤い灯火が揺れていた。 鬱蒼とした木々に月光すら遮られた闇の中、ゆらゆらと浮かぶ光はまるで人魂のようにも見えたであろう。しかし慎重に目を凝らせば、それは人魂などではなく赤提灯の灯りだと判る。 弥生の初め、まだ肌寒い早春の宵である。 赤提灯は小さな木製の屋台を照らし出す。洛中洛外屈指の観光名所とはいえ、夜はほとんど人も通らない場所である。そんな場所に出没する屋台となれば、あの猫ラーメンを措おいて他にない。 人口百五十万を擁する京都市中にあっても、猫ラーメンの存在を知る者…"
         },
         {
           "id": "sushi-go-round-or-spining-sushi",
@@ -11804,16 +11814,6 @@
           "desc": "“ありがとう水”は魔性の寿司である。 時に、闇寿司のスシブレードは使い手を選ばないという利点は周知の事実であると思う。我々はその特性を活かし、量産性と安定性を両立したスシブレードを開発し、武器として数々の顧客に提供してきた。これが闇寿司の大きな資金源となり、勢力の拡大に貢献している。しかし、近年では協会の制定したスシブレード運用法に基づく一方的な武力介入もあり、海外のマフィアに向けた武力スシブレードのコンテナ輸送は難しくなっている。そのため、顧客側から頂いていた要望に応えて制作したのが当該スシブレードである。"
         },
         {
-          "id": "yamizushi-file-no864",
-          "title": "闇寿司ファイルNo.864 \"ユムシ軍艦\"",
-          "url": "https://scp-jp.wikidot.com/yamizushi-file-no864",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 69,
-          "desc": "\"ユムシ軍艦\"はユムシの切り身をネタにした軍艦巻きサ。ユムシって何かって？ はッ、無知な童貞のために、姐さんが特別に教えてやるよ。耳の穴かっぽじってよーくお聞き。"
-        },
-        {
           "id": "yamizushi-file-no1051",
           "title": "全ジャンル寿司ネタ最強議論スレ",
           "url": "https://scp-jp.wikidot.com/yamizushi-file-no1051",
@@ -12461,7 +12461,7 @@
           "articleIDs": [
             "scp-1134-jp",
             "alors-comme-ca-vous-voulez-tourner-des-sushis",
-            "the-encounter-match"
+            "yamizushi-file-no864"
           ]
         },
         {
@@ -12489,6 +12489,7 @@
             "sushi-battle-round01",
             "egg-drago",
             "django",
+            "the-encounter-match",
             "sushi-go-round-or-spining-sushi",
             "shironose-kuzira-1",
             "scum-splatter-and-spin",
@@ -12585,7 +12586,6 @@
             "yamizushi-file-no0721",
             "takao",
             "yamizushi-file-no014",
-            "yamizushi-file-no864",
             "yamizushi-file-no1051",
             "yamizushi-file-no1714",
             "yamizushi-file-noxxx",
@@ -18551,7 +18551,7 @@
         "tagSource": "jp_tag.json",
         "emptySectionTitle": "記事",
         "allowUntaggedMembers": true,
-        "structureHash": "sha256-ecedfdde37dea3629318472bc07f34cf31b367de400ba75fa9dafaf4ca80d484"
+        "structureHash": "sha256-e8bd31664a490d1f33fd32ee76b5b502b4090974a3df044ed881e3d8cb329cb3"
       },
       "primaryArticles": [
         {
@@ -18565,14 +18565,14 @@
           "desc": "2. 休眠で利息を稼ごうとしてはいけない - 定命種エミュレータ事例集 by 3. 相手が悪夢にうなされている時は、手を握ってあげるとよい - 定命種エミュレータ事例集 by 4. 人間の将来の夢は不変ではない - 定命種エミュレータ事例集 by 5. 笑顔は人間にとって安全とは限らない - 定命種エミュレータ事例集 by"
         },
         {
-          "id": "mortal-emulator-math",
-          "title": "数学はほとんどの定命種にとってかなり難しい - 定命種エミュレータ事例集",
-          "url": "https://scp-jp.wikidot.com/mortal-emulator-math",
+          "id": "mortal-emulator-laodeng",
+          "title": "時代遅れの経験則で人間の行動を判断してはならない - 定命種エミュレータ事例集",
+          "url": "https://scp-jp.wikidot.com/mortal-emulator-laodeng",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 25,
-          "desc": "2. 超常コミュニティの運営は無闇に引き受けない方がよい - 定命種エミュレータ事例集 by 3. 洞窟籠もりをしていた者は二度と人間と関わらないほうが良い - 定命種エミュレータ事例集 by 4. 定命種エミュレータ事例集 メインページ by 5. 定命種に山奥の美容室を勧めるべきではない - 定命種エミュレータ事例集 by"
+          "os": 5,
+          "desc": "2. 相手が悪夢にうなされている時は、手を握ってあげるとよい - 定命種エミュレータ事例集 by 3. 繁殖する時は毎年同じ時期にするべきではない - 定命種エミュレータ事例集 by 4. 人間の将来の夢は不変ではない - 定命種エミュレータ事例集 by 5. 定命種が「モンスターハンターをする」と言ってきてもそれは我々への宣戦布告ではない - 定命種エミュレータ事例集 by"
         },
         {
           "id": "mortal-emulator",
@@ -18782,16 +18782,6 @@
           "desc": "登録日：2025/3/23 タグ： 死 人間 友人関係 決定論 時間を巻き戻して事故死を回避した経験があるため、定命種に対しても同じことが出来ると思った。"
         },
         {
-          "id": "mortal-emulator-laodeng",
-          "title": "時代遅れの経験則で人間の行動を判断してはならない - 定命種エミュレータ事例集",
-          "url": "https://scp-jp.wikidot.com/mortal-emulator-laodeng",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 5,
-          "desc": "(translated by )"
-        },
-        {
           "id": "mortal-emulator-waiting",
           "title": "人を待つことはつらいものではない - 定命種エミュレータ事例集",
           "url": "https://scp-jp.wikidot.com/mortal-emulator-waiting",
@@ -18860,6 +18850,16 @@
           "os": 49
         },
         {
+          "id": "mortal-emulator-math",
+          "title": "数学はほとんどの定命種にとってかなり難しい - 定命種エミュレータ事例集",
+          "url": "https://scp-jp.wikidot.com/mortal-emulator-math",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 25,
+          "desc": "(translated by )"
+        },
+        {
           "id": "mortal-emulator-dream",
           "title": "人間の将来の夢は不変ではない - 定命種エミュレータ事例集",
           "url": "https://scp-jp.wikidot.com/mortal-emulator-dream",
@@ -18913,7 +18913,7 @@
           "id": "02-5",
           "title": "ランダム記事5選",
           "articleIDs": [
-            "mortal-emulator-math"
+            "mortal-emulator-laodeng"
           ]
         },
         {
@@ -18941,7 +18941,6 @@
             "mortal-emulator-april-fool",
             "sadgati",
             "mortal-emulator-fate",
-            "mortal-emulator-laodeng",
             "mortal-emulator-waiting",
             "mortal-emulator-fake-partner",
             "mortal-emulator-friend",
@@ -18949,6 +18948,7 @@
             "mortal-emulator-vam-right",
             "mortal-emulator-tenbu",
             "mortal-emulator-otohime",
+            "mortal-emulator-math",
             "mortal-emulator-dream"
           ]
         },
@@ -19986,16 +19986,6 @@
           "desc": "SCP-9000-ARCは常に施錠された輸送用コンテナに収容され、 サイト-28 に保管されます。移送中は、コンテナ内を生分解性緩衝材で満たしてください。"
         },
         {
-          "id": "scp-102",
-          "title": "SCP-102",
-          "url": "https://scp-jp.wikidot.com/scp-102",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 26,
-          "desc": "SCP-102は現在マーシャル・カーター＆ダーク株式会社が所有しています。収用権から外れた法実証主義に縛られた”所有権”なので、今後財団がSCP-102を確保することはできません。"
-        },
-        {
           "id": "scp-2088",
           "title": "SCP-2088",
           "url": "https://scp-jp.wikidot.com/scp-2088",
@@ -20077,7 +20067,6 @@
             "scp-7669",
             "scp-3084",
             "scp-9433",
-            "scp-102",
             "scp-2088",
             "black-lungs",
             "more-than-secret-lovers-1917"
@@ -20097,6 +20086,16 @@
             "rich-man-s-world",
             "y-ai"
           ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-jp.wikidot.com/scp-102",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
         }
       ]
     },
@@ -22692,7 +22691,7 @@
         "mode": "officialHubStructure",
         "tagSource": "jp_tag.json",
         "emptySectionTitle": "記事",
-        "structureHash": "sha256-a196e9eb854e1bf6d5f4d37b039a1f2f5463163ed67338b33019ead7aa341dc7"
+        "structureHash": "sha256-d49137daf3d48ffb149d415a0348ae9138b0422c1f54a090aa62e458e20340e5"
       },
       "primaryArticles": [
         {
@@ -22704,9 +22703,9 @@
           "desc": "1. 廃亡郷エリケシュの残映 — by 2. ピックマン-ブランクの提言 — by 3. 8000匹の死んだネズミ ハブ — by"
         },
         {
-          "id": "scp-pl-054",
-          "title": "SCP-PL-054",
-          "url": "https://scp-jp.wikidot.com/scp-pl-054",
+          "id": "scp-8008",
+          "title": "SCP-8008",
+          "url": "https://scp-jp.wikidot.com/scp-8008",
           "role": "primaryArticle",
           "contentKind": "scp"
         },
@@ -22932,6 +22931,13 @@
           "desc": "SCP-3084-Aは サイト-120 の隔離区域にある標準的なヒト型生物収容室に収容されます。収容室は厚さ2m以上の 反奇跡術スペロファン で絶縁され、厚さ5cmのスクラントナイト合金板で裏打ちされます。収容室の建造に使用される全ての材質は、まずカトリック教会の大司教1人、歯車仕掛正教の総主教1人、ナルカ信仰のカルキスト1人、サタンと科学者の統一教会の高位魔術師1人、第五主義の集いの手指聖者1人によって祝福され、その後SAPHIRの聖職排斥者1人によって祝福を打ち消されなければなりません。 SCP-3084を用い…"
         },
         {
+          "id": "scp-pl-054",
+          "title": "SCP-PL-054:",
+          "url": "https://scp-jp.wikidot.com/scp-pl-054",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
           "id": "morskie-opowiesci",
           "title": "海の底からの物語",
           "url": "https://scp-jp.wikidot.com/morskie-opowiesci",
@@ -23094,13 +23100,6 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-8008",
-          "title": "SCP-8008: 時間の変質者",
-          "url": "https://scp-jp.wikidot.com/scp-8008",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-7999",
           "title": "SCP-7999: 星空で会いましょう",
           "url": "https://scp-jp.wikidot.com/scp-7999",
@@ -23130,7 +23129,7 @@
           "title": "最近の記事",
           "articleIDs": [
             "pickman-blank-proposal",
-            "scp-pl-054",
+            "scp-8008",
             "ralliston-s-proposal",
             "a-faerie-tale-of-twin-queens",
             "tears-and-bone",
@@ -23245,6 +23244,7 @@
           "id": "16-publin",
           "title": "Publin",
           "articleIDs": [
+            "scp-pl-054",
             "morskie-opowiesci"
           ]
         },
@@ -23365,7 +23365,6 @@
           "id": "33-the-lord-of-the",
           "title": "The Lord of the ██████",
           "articleIDs": [
-            "scp-8008",
             "scp-7999",
             "scp-6747",
             "scp-0110-j"
@@ -35429,16 +35428,9 @@
         "allowedHosts": [
           "scp-jp.wikidot.com"
         ],
-        "structureHash": "sha256-81bc44e4a89318e33223a45b8cc05e75cffd84a2b13a02b28e2c7102ef3cb34d"
+        "structureHash": "sha256-0f656fd3ad9c8dcf9b6170565ec7d1694e633eea90cfab745ad3cf079157430a"
       },
       "primaryArticles": [
-        {
-          "id": "heritage-collection-arc",
-          "title": "scp-heritage-v3",
-          "url": "https://scp-jp.wikidot.com/heritage-collection-arc",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
         {
           "id": "the-lake-oahe-monster",
           "title": "オアへ湖の怪物",
@@ -35496,7 +35488,6 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "heritage-collection-arc",
             "the-lake-oahe-monster",
             "welcome-to-site-19",
             "the-pilot",
@@ -37219,16 +37210,9 @@
         "allowedHosts": [
           "scp-jp.wikidot.com"
         ],
-        "structureHash": "sha256-cf24cb9a3f735647599909dbc26998c374f1cd751e7d261b997cd8ae79317940"
+        "structureHash": "sha256-fd637ab4122f4239ac90e137f6a81ebe4883a878a4ae913fe831900684d2c194"
       },
       "primaryArticles": [
-        {
-          "id": "heritage-collection-arc",
-          "title": "scp-heritage-v3",
-          "url": "https://scp-jp.wikidot.com/heritage-collection-arc",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
         {
           "id": "a-world-unto-yourself",
           "title": "世界は君自身へ",
@@ -37246,7 +37230,6 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "heritage-collection-arc",
             "a-world-unto-yourself"
           ]
         }
@@ -43349,16 +43332,9 @@
         "allowedHosts": [
           "scp-jp.wikidot.com"
         ],
-        "structureHash": "sha256-eb8155b77c9108ae70887929d4e72175d8527fdb2685a8038ae51169f093651e"
+        "structureHash": "sha256-560508672fb2169f21a2cd6192d9d08199e22fb073ad12c9e62fd157c1f32f49"
       },
       "primaryArticles": [
-        {
-          "id": "heritage-collection-arc",
-          "title": "scp-heritage-v3",
-          "url": "https://scp-jp.wikidot.com/heritage-collection-arc",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
         {
           "id": "scp-9371",
           "title": "ナホム書 3章6節",
@@ -43390,7 +43366,6 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "heritage-collection-arc",
             "scp-9371",
             "project-consonance",
             "3portsplaysitself"
@@ -55017,16 +54992,9 @@
         "allowedHosts": [
           "scp-jp.wikidot.com"
         ],
-        "structureHash": "sha256-9c25a923d23e8b46181779fcebca1fbdeb845d9f200d7e1009dcdf1c9d74f8c7"
+        "structureHash": "sha256-ef66558e758a11a95b3fb9b259e7156d47c284549dadc0984372ef5c41e4f3e1"
       },
       "primaryArticles": [
-        {
-          "id": "heritage-collection-arc",
-          "title": "scp-heritage-v3",
-          "url": "https://scp-jp.wikidot.com/heritage-collection-arc",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
         {
           "id": "resurrection",
           "title": "リザレクション",
@@ -56441,7 +56409,6 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "heritage-collection-arc",
             "resurrection"
           ]
         },
@@ -56655,7 +56622,17 @@
           ]
         }
       ],
-      "description": "何年も前、彼女がまだとても幼かったころ、父親が彼女と彼女の母親を捨てて姿を消しました。書き置きも、スーツケースも、なにもかも残さずに行ってしまいました。ついさっきまではいたのに次の瞬間にはいなくなっていたのです。彼女の母はまもなく精神的に崩壊してしまい、アリソンはほとんど自力で生活することを余儀なくされました。何年かのうちに彼女は父親を見つけることに執着するようになりました。彼女は必要ならどんな手段でも用い、父親を見つけ、家庭を奪った者が釈明せざるを得ないようにするでしょう。"
+      "description": "何年も前、彼女がまだとても幼かったころ、父親が彼女と彼女の母親を捨てて姿を消しました。書き置きも、スーツケースも、なにもかも残さずに行ってしまいました。ついさっきまではいたのに次の瞬間にはいなくなっていたのです。彼女の母はまもなく精神的に崩壊してしまい、アリソンはほとんど自力で生活することを余儀なくされました。何年かのうちに彼女は父親を見つけることに執着するようになりました。彼女は必要ならどんな手段でも用い、父親を見つけ、家庭を奪った者が釈明せざるを得ないようにするでしょう。",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-jp.wikidot.com/dream-killer",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-jp:collection:series:chicago-spirit",
@@ -77620,7 +77597,17 @@
           ]
         }
       ],
-      "description": "“この世界において、正常性を保つのは困難だ。異常の規制は、あらゆる方面から関与する全ての者たちにとって負担となる。資金、人員、我々の人間性にさえも重荷が負わされる。しかし、財団の最優先指令の一部であり、また今後もそうあり続けるように、正常の維持こそが最も重要な事項となる。"
+      "description": "“この世界において、正常性を保つのは困難だ。異常の規制は、あらゆる方面から関与する全ての者たちにとって負担となる。資金、人員、我々の人間性にさえも重荷が負わされる。しかし、財団の最優先指令の一部であり、また今後もそうあり続けるように、正常の維持こそが最も重要な事項となる。",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-jp.wikidot.com/adoption-poster-enet",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-jp:collection:series:1111event",

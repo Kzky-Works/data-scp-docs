@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788650459,
-  "generatedAt": "2026-09-05T23:20:59Z",
-  "chunkRevision": "sha256-8ac73c2ed22c3d6c02f4adda67d74ba577abe3b54014ddc808f86857bc4ef9bb",
+  "listVersion": 1788658205,
+  "generatedAt": "2026-09-06T01:30:05Z",
+  "chunkRevision": "sha256-d4a4f0c021a39327483ddf2eaeebe4cc49a58906a296b9f72d50718c46e34941",
   "builtFrom": {
     "manifests": [
       {
@@ -64,7 +64,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-320dea76a1ce4fb0b3b0a46bd4a95b2816499287494fbab3cbdc57842bc8a3ac"
+      "contentHash": "sha256-524c4d2ad7093d36bcae90123d48a0663ad7152131e3a822742bc103026a7a44"
     }
   },
   "collections": [
@@ -63385,14 +63385,6 @@
       },
       "primaryArticles": [
         {
-          "id": "pte-0121-templum-windmill-kruiden",
-          "title": "PTE-0121-Templum-Windmill-Kruiden",
-          "url": "https://scp-wiki.wikidot.com/pte-0121-templum-windmill-kruiden",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "The Institute was still young. But young doesn't mean naive."
-        },
-        {
           "id": "an-0189",
           "title": "AN/0189 (\"Alang Kakung\")",
           "url": "https://scp-wiki.wikidot.com/an-0189",
@@ -63428,7 +63420,6 @@
           "id": "01-jakartan-methodology",
           "title": "Jakartan Methodology",
           "articleIDs": [
-            "pte-0121-templum-windmill-kruiden",
             "an-0189",
             "an-1119",
             "an-1712",
@@ -63436,7 +63427,17 @@
           ]
         }
       ],
-      "description": "1. Details Jakartan Methodology is anthology (of sorts) created by the \" Indonesians, or The Rightful Claimants to Tung Tung Tung Sahur \" team for the Groups of Interest Contest 2026. Jakartan Methodology currently comprises of 4 articles based on the Institute for Anomalous Affairs ( Lembaga Urusan Anomali , LEMRUSAN in Indonesian) and its activities."
+      "description": "1. Details Jakartan Methodology is anthology (of sorts) created by the \" Indonesians, or The Rightful Claimants to Tung Tung Tung Sahur \" team for the Groups of Interest Contest 2026. Jakartan Methodology currently comprises of 4 articles based on the Institute for Anomalous Affairs ( Lembaga Urusan Anomali , LEMRUSAN in Indonesian) and its activities.",
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki.wikidot.com/pte-0121-templum-windmill-kruiden",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-wiki-en:collection:series:no-gamer-left-behind-hub",
@@ -101397,51 +101398,9 @@
           "contentKind": "tale"
         },
         {
-          "id": "mikan-hub",
-          "title": "Mikan",
-          "url": "https://scp-wiki.wikidot.com/mikan-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "wills-and-ways-hub",
           "title": "WILLS & WAYS",
           "url": "https://scp-wiki.wikidot.com/wills-and-ways-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "a-fuller-life-hub",
-          "title": "A FULLER LIFE",
-          "url": "https://scp-wiki.wikidot.com/a-fuller-life-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "fractured-horizon-hub",
-          "title": "Fractured Horizon",
-          "url": "https://scp-wiki.wikidot.com/fractured-horizon-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "true-wonder-hub",
-          "title": "True Wonder",
-          "url": "https://scp-wiki.wikidot.com/true-wonder-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "androids-and-automata-hub",
-          "title": "Androids and Automata",
-          "url": "https://scp-wiki.wikidot.com/androids-and-automata-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "time-hub",
-          "title": "TIME",
-          "url": "https://scp-wiki.wikidot.com/time-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
@@ -101753,52 +101712,10 @@
           ]
         },
         {
-          "id": "03-chaos-in-four-acts",
-          "title": "Chaos In Four Acts",
-          "articleIDs": [
-            "mikan-hub"
-          ]
-        },
-        {
           "id": "04-citrus-in-two-acts",
           "title": "Citrus In Two Acts",
           "articleIDs": [
             "wills-and-ways-hub"
-          ]
-        },
-        {
-          "id": "05-greed-in-five-acts",
-          "title": "Greed In Five Acts",
-          "articleIDs": [
-            "a-fuller-life-hub"
-          ]
-        },
-        {
-          "id": "06-joy-in-six-acts",
-          "title": "Joy In Six Acts",
-          "articleIDs": [
-            "fractured-horizon-hub"
-          ]
-        },
-        {
-          "id": "07-gods-in-one-act",
-          "title": "Gods In One Act",
-          "articleIDs": [
-            "true-wonder-hub"
-          ]
-        },
-        {
-          "id": "08-makers-in-eight-acts",
-          "title": "Makers In Eight Acts",
-          "articleIDs": [
-            "androids-and-automata-hub"
-          ]
-        },
-        {
-          "id": "09-life-in-nine-acts",
-          "title": "Life In Nine Acts",
-          "articleIDs": [
-            "time-hub"
           ]
         },
         {
@@ -101893,6 +101810,54 @@
             404
           ],
           "reason": "Confirmed dead official Series member link"
+        },
+        {
+          "url": "https://scp-wiki.wikidot.com/a-fuller-life-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        },
+        {
+          "url": "https://scp-wiki.wikidot.com/androids-and-automata-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        },
+        {
+          "url": "https://scp-wiki.wikidot.com/fractured-horizon-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        },
+        {
+          "url": "https://scp-wiki.wikidot.com/mikan-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        },
+        {
+          "url": "https://scp-wiki.wikidot.com/time-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        },
+        {
+          "url": "https://scp-wiki.wikidot.com/true-wonder-hub",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
         }
       ]
     },
@@ -122088,17 +122053,7 @@
           "role": "primaryArticle"
         }
       ],
-      "supplementLinks": [],
-      "suppressedDeadURLs": [
-        {
-          "url": "https://scp-wiki.wikidot.com/anomaly-351-a-clean-slate",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead official GoI member link"
-        }
-      ]
+      "supplementLinks": []
     },
     {
       "id": "scp-wiki-en:collection:goi:herman-fuller-hub",
@@ -138292,16 +138247,19 @@
           "url": "https://scp-wiki.wikidot.com/thorne-v-united-states",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
-        },
-        {
-          "id": "uiu-location-dossier-new-york",
-          "title": "UIU Location Dossier — \"New York\"",
-          "url": "https://scp-wiki.wikidot.com/uiu-location-dossier-new-york",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki.wikidot.com/uiu-location-dossier-new-york",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-wiki-en:collection:goi:valravn-corporation-hub",

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788653774,
-  "generatedAt": "2026-09-06T00:16:14Z",
-  "chunkRevision": "sha256-19aa83c654bc0c433982b709336e6ef26b8a1989fa5677828f617d2af6c337a2",
+  "listVersion": 1788658206,
+  "generatedAt": "2026-09-06T01:30:06Z",
+  "chunkRevision": "sha256-7089c2066e526189b8cfd0683977347af817c9bfd886735d419074efbbd2c8a0",
   "builtFrom": {
     "manifests": [
       {
@@ -73,7 +73,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-9da743933af8dd314bc7b24f637e00195fe8e76dccb4ae6a916b4a12e3b6bfc7"
+      "contentHash": "sha256-524c4d2ad7093d36bcae90123d48a0663ad7152131e3a822742bc103026a7a44"
     }
   },
   "collections": [
@@ -1837,13 +1837,6 @@
           "contentKind": "tale",
           "os": 1,
           "desc": "General George Bowe (nasceu em 1930, presumivelmente morto em 1983) é melhor conhecido pelos olhos do publico pela sua inúmeras vitorias durante a guerra fria. Para a Fundação, muitos funcionários dizem que ele foi a ligação com o Exercito dos Estados Unidos.…"
-        },
-        {
-          "id": "resurrection",
-          "title": "AR13y7i",
-          "url": "http://scp-pt-br.wikidot.com/resurrection",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -1853,12 +1846,21 @@
           "title": "História Completada em 14/10/2020!",
           "articleIDs": [
             "blood-in-the-water",
-            "footage-recovered-from-a-private-server",
-            "resurrection"
+            "footage-recovered-from-a-private-server"
           ]
         }
       ],
-      "description": "Nas últimas décadas, a Fundação gastou muito tempo e quantias absurdas de dinheiro trazendo de volta seus velhos truques. Você não pode pensar que seus inimigos também não têm feito isso?"
+      "description": "Nas últimas décadas, a Fundação gastou muito tempo e quantias absurdas de dinheiro trazendo de volta seus velhos truques. Você não pode pensar que seus inimigos também não têm feito isso?",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-pt-br.wikidot.com/resurrection",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-pt:collection:series:project-paragon-hub",
@@ -4256,13 +4258,6 @@
           "contentKind": "scp",
           "os": 20,
           "desc": "SCP-5000 deve ser mantido em estado inativo dentro de uma unidade padrão de armazenamento localizada no Sítio-22. Todos os arquivos e inteligência recuperados de SCP-5000 hão de ser armazenados em um servidor protegido, com cópias de segurança disponíveis à re…"
-        },
-        {
-          "id": "art:goc-unit-insignia",
-          "title": "735-Sparkplug",
-          "url": "http://scp-pt-br.wikidot.com/art:goc-unit-insignia",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         }
       ],
       "supplementLinks": [],
@@ -4421,16 +4416,19 @@
             "scp-005-int",
             "scp-5000"
           ]
-        },
-        {
-          "id": "08-curriculo-de-orientacao-profissional",
-          "title": "Currículo de Orientação Profissional",
-          "articleIDs": [
-            "art:goc-unit-insignia"
-          ]
         }
       ],
-      "description": "DECIDIDO: Que, nos primeiros anos do século 20, o surgimento crescente de entidades paranormais, paracientíficas e paratemporais hostis constitui uma ameaça clara e presente à sobrevivência da humanidade. DECIDIDO: Que, após a Segunda Guerra Mundial e a simultânea Sétima Guerra Oculta, nenhuma nação pode ser confiada a responder de forma eficaz às para-ameaças, devido às preocupações de nacionalismo e conflito internacional. DECIDIDO: Que a necessidade de responder a essas para-ameaças é de extrema importância e deve, por necessidade, sobrepor qualquer preocupação de interesse próprio nacional, regional ou cultural. PORTANTO: Nós, os líderes abaixo assinados de cento e oito grandes organizações paranormais, autorizamos a formação de uma organização internacional dedicada a manter a paz e identificar, neutralizar e conter as referidas para-ameaças, sendo a autoridade máxima em tais assunt"
+      "description": "DECIDIDO: Que, nos primeiros anos do século 20, o surgimento crescente de entidades paranormais, paracientíficas e paratemporais hostis constitui uma ameaça clara e presente à sobrevivência da humanidade. DECIDIDO: Que, após a Segunda Guerra Mundial e a simultânea Sétima Guerra Oculta, nenhuma nação pode ser confiada a responder de forma eficaz às para-ameaças, devido às preocupações de nacionalismo e conflito internacional. DECIDIDO: Que a necessidade de responder a essas para-ameaças é de extrema importância e deve, por necessidade, sobrepor qualquer preocupação de interesse próprio nacional, regional ou cultural. PORTANTO: Nós, os líderes abaixo assinados de cento e oito grandes organizações paranormais, autorizamos a formação de uma organização internacional dedicada a manter a paz e identificar, neutralizar e conter as referidas para-ameaças, sendo a autoridade máxima em tais assunt",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-pt-br.wikidot.com/art:goc-unit-insignia",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-pt:collection:series:tales-of-mr-collector",
