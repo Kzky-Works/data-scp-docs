@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788681656,
-  "generatedAt": "2026-09-06T08:00:56Z",
-  "chunkRevision": "sha256-856e19c15e48fc7c883e1fed06eba943f4b1c3886a19c8d2a943538f6a24e515",
+  "listVersion": 1788769379,
+  "generatedAt": "2026-09-07T08:22:59Z",
+  "chunkRevision": "sha256-b1bf64716e5a49accb398ce654e2979a4185f251e399456049f856cf76cf8c2c",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1788681577,
-        "generatedAt": "2026-09-06T07:59:37Z",
-        "contentHash": "sha256-e5c337589976bad8259f3c5ef1fafc96696dc546ad7a8a88ed27f01435a82c70"
+        "listVersion": 1788769225,
+        "generatedAt": "2026-09-07T08:20:25Z",
+        "contentHash": "sha256-f5940a06fed9b9c7e91c0133a09dc3f23d4f03e965abac72524ca2b8f91264ad"
       },
       {
         "kind": "manifest_gois",
@@ -28,9 +28,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-de.json",
         "schemaVersion": 2,
-        "listVersion": 1788652462,
-        "generatedAt": "2026-09-05T23:54:22Z",
-        "contentHash": "sha256-6fa83d13bb1f65728249f9903f12f4e6f369058dc25ddd63c3d0714e1d0bc8ed"
+        "listVersion": 1788769330,
+        "generatedAt": "2026-09-07T08:22:10Z",
+        "contentHash": "sha256-0e60cd0c52fcd7fa62b6e445935477c0ee9e17a425fcd1848adb4b6b23f12b48"
       },
       {
         "kind": "manifest_scp-int",
@@ -48,16 +48,16 @@
         "schemaVersion": 2,
         "listVersion": 1788652462,
         "generatedAt": "2026-09-05T23:54:22Z",
-        "contentHash": "sha256-c9efc26ed9f0906a6904bdd8e5b78bf1bb255b76ce71ab6ef5232884f94b80c7"
+        "contentHash": "sha256-c1eb7c17d08dbe0ca827accb7f2eae393dbd87f16baee4880982c1ac4e6a73ef"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1788652462,
-        "generatedAt": "2026-09-05T23:54:22Z",
-        "contentHash": "sha256-3cf62ff86b3ea4bb34c8753cafd1a5fb2667fc04d0eef7f5bda5d85784472c99"
+        "listVersion": 1788769300,
+        "generatedAt": "2026-09-07T08:21:40Z",
+        "contentHash": "sha256-5c243ee614ca7487d7480869c27873bc2f63e6d102b69e5709c0cebf5b5ac8a0"
       }
     ],
     "seedReview": {
@@ -82,7 +82,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-520ecaecf0ad946d7746c312af9833ba82d73846368f0ba7ed91c29dc25f3c64"
+      "contentHash": "sha256-e19be7c7f4989c5a0d926de074e0a4ec112ca6394f3f518a547ff9d7bd754fce"
     }
   },
   "collections": [
@@ -6229,7 +6229,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-ad2c128338e5c30c33d6e49e6149782050778b05dbe715698da63ae5ed994d6e"
+        "structureHash": "sha256-bc2e3cc9a4736b644979c821ecc75c46cdb0660d87af787b24e8ace072be2c86"
       },
       "primaryArticles": [
         {
@@ -6571,6 +6571,13 @@
           "desc": "Trickster Heist Teil 1 / Teil 2 / Teil 3"
         },
         {
+          "id": "nexus-11-3",
+          "title": "Trickster Heist, Teil 3",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-11-3",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "verlust-2",
           "title": "Verlust, Episode 2: Gejagt",
           "url": "http://scp-wiki-de.wikidot.com/verlust-2",
@@ -6579,13 +6586,6 @@
           "contentKind": "tale",
           "os": 2,
           "desc": "Artikel: Verlust, Episode 2: Gejagt Autor: Flaming2204"
-        },
-        {
-          "id": "nexus-11-3",
-          "title": "Trickster Heist, Teil 3",
-          "url": "http://scp-wiki-de.wikidot.com/nexus-11-3",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "nexus-11-2",
@@ -6701,8 +6701,8 @@
             "ein-seltsamer-tagtraum-so-suess-wie-gift",
             "verlust-1",
             "nexus-11-1",
-            "verlust-2",
             "nexus-11-3",
+            "verlust-2",
             "nexus-11-2",
             "budgetkuerzungen",
             "wie-lange-dauert-die-unendlichkeit",
@@ -7504,7 +7504,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-3944e6bf88784480ca01876d42b664f530d9dcf81bc0d437abbb4eaaadcb9407"
+        "structureHash": "sha256-2dcd68d5edb4bc56ca3a483fe043644b60b8735628ceedcef8bbf8bbc4d6b48a"
       },
       "primaryArticles": [
         {
@@ -7518,24 +7518,24 @@
           "desc": "Da sich SCP-1134-JP nicht aus seinem Gebiet entfernt, können Überwachungskameras um und im Geschäft aufgestellt werden, um seine Aktivitäten zu überwachen. Wenn SCP-1134-JP Anzeichen von Misstrauen gegenüber den Überwachungskameras zeigt, sind ihm diese als Si…"
         },
         {
+          "id": "yamizushi-hub",
+          "title": "Finstersushi-Hub",
+          "url": "http://scp-wiki-de.wikidot.com/yamizushi-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "Die Empfehlung für heute? Nun, da hätten wir Finstersushi-Hub ."
+        },
+        {
           "id": "nexus-13-2",
           "title": "Der Zornregulator, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-2",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Die Empfehlung für heute? Nun, da hätten wir Der Zornregulator, Teil 2 ."
+          "contentKind": "tale"
         },
         {
           "id": "nexus-13-3",
           "title": "Der Zornregulator, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "yamizushi-hub",
-          "title": "Gibst du dich mit solch schwachem Sushi zufrieden?",
-          "url": "http://scp-wiki-de.wikidot.com/yamizushi-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         }
@@ -7548,15 +7548,15 @@
           "title": "Artikel",
           "articleIDs": [
             "scp-1134-jp",
-            "nexus-13-2"
+            "yamizushi-hub"
           ]
         },
         {
           "id": "02-sushi-aus-der-ganzen-welt",
           "title": "Sushi aus der ganzen Welt",
           "articleIDs": [
-            "nexus-13-3",
-            "yamizushi-hub"
+            "nexus-13-2",
+            "nexus-13-3"
           ]
         }
       ]
