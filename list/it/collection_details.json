@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788652170,
-  "generatedAt": "2026-09-05T23:49:30Z",
-  "chunkRevision": "sha256-7e9fa042c99af6f68da9f1c880df87e4f4e5e869aaf31c553845b88d7dee0f0e",
+  "listVersion": 1788769617,
+  "generatedAt": "2026-09-07T08:26:57Z",
+  "chunkRevision": "sha256-64c475acf11f8a8787d4cab642e13e202d93555a0304f4b71c117744556f73a6",
   "builtFrom": {
     "manifests": [
       {
@@ -19,18 +19,18 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1788652116,
-        "generatedAt": "2026-09-05T23:48:36Z",
-        "contentHash": "sha256-890ef87a7b75de7e896f869ed8780bee653e9a10eee25cd022b4bde4c7a3b77b"
+        "listVersion": 1788769572,
+        "generatedAt": "2026-09-07T08:26:12Z",
+        "contentHash": "sha256-9b31eb388a5eef5f16fd8997f92ecf6e63ab3e514c813065b4027fce8cfa6ad4"
       },
       {
         "kind": "manifest_scp-it",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-it.json",
         "schemaVersion": 2,
-        "listVersion": 1788652144,
-        "generatedAt": "2026-09-05T23:49:04Z",
-        "contentHash": "sha256-46223ca83679c0193963da7d3ef95b34565f7c2c96fd1e7509c3eb077444971f"
+        "listVersion": 1788769593,
+        "generatedAt": "2026-09-07T08:26:33Z",
+        "contentHash": "sha256-0aec8b9f73190ada1e0f190ebfd0876e3f050768ae41e1054c4eb91efe00b6ff"
       },
       {
         "kind": "manifest_scp-main",
@@ -39,16 +39,16 @@
         "schemaVersion": 2,
         "listVersion": 1788652144,
         "generatedAt": "2026-09-05T23:49:04Z",
-        "contentHash": "sha256-baf962495834d85231feb2bcf68baff98f8c182cd754603d16259b9600798ac9"
+        "contentHash": "sha256-0c133bfdac25b3f518616f797f3c80944aad07057cf6e766641655932f9f6695"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1788652144,
-        "generatedAt": "2026-09-05T23:49:04Z",
-        "contentHash": "sha256-39915645a3806575002104d8c1f0fe74c2fd48904627a0b908b4e4df02f98d67"
+        "listVersion": 1788769528,
+        "generatedAt": "2026-09-07T08:25:28Z",
+        "contentHash": "sha256-43a3b6fa35f24256c7b7865f848a53a9cd2ab502dbabf1edc1826eb1a894a82f"
       }
     ],
     "seedReview": {
@@ -417,7 +417,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-6abdd8242085e5bb8ac16f5d8fefe2fb6a6e6f09fa0f0a0d5c07ac83341e41d3"
+        "structureHash": "sha256-191885cfeeb9c88823d2c3e98e9804e0fd65517b4e5c1f011ff5530c8e17af75"
       },
       "primaryArticles": [
         {
@@ -431,14 +431,11 @@
           "desc": "Di più da questo autore"
         },
         {
-          "id": "they-had-names",
-          "title": "Loro Avevano dei Nomi",
-          "url": "http://fondazionescp.wikidot.com/they-had-names",
-          "sourceManifest": "manifest_tales",
+          "id": "ambrose-esterberg",
+          "title": "Ambrose Esterberg",
+          "url": "http://fondazionescp.wikidot.com/ambrose-esterberg",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "Musica raccomandata per la lettura La nostra gente è stata massacrata in un istante. Ogni nostra storia comincia in modo differente. Uno stava mangiando con i propri figli, uno stava danzando con il suo amore, uno stava tornando a casa dopo un lungo giorno di…"
+          "contentKind": "tale"
         },
         {
           "id": "tears-and-bone",
@@ -449,6 +446,16 @@
           "contentKind": "tale",
           "os": 2,
           "desc": "Al tempo in cui le città Fae furono piazzate, a ogni cosa venne dato un rango. Anche la bassa Casa dei Centopiedi e le alti Corti Seelie trovarono i loro posti in questa gerarchia, e tutti gli Dei presiedettero le loro corti ben organizzate. Sotto i loro tallo…"
+        },
+        {
+          "id": "they-had-names",
+          "title": "Loro Avevano dei Nomi",
+          "url": "http://fondazionescp.wikidot.com/they-had-names",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Musica raccomandata per la lettura La nostra gente è stata massacrata in un istante. Ogni nostra storia comincia in modo differente. Uno stava mangiando con i propri figli, uno stava danzando con il suo amore, uno stava tornando a casa dopo un lungo giorno di…"
         },
         {
           "id": "pickman-blank-proposal",
@@ -487,13 +494,6 @@
           "contentKind": "scp",
           "os": 2,
           "desc": "Il contenimento diretto di SCP-6596 risulta impossibile al momento. Ciononostante, a causa della sua relazione col Sito-120, SCP-6596 non pone alcuna minaccia al Velo. Ciò, combinato col pattern delle apparizioni di SCP-6596, ha spostato gli sforzi principali…"
-        },
-        {
-          "id": "ambrose-esterberg",
-          "title": "Ambrose Esterberg",
-          "url": "http://fondazionescp.wikidot.com/ambrose-esterberg",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "fresh-blood",
@@ -558,50 +558,50 @@
           "title": "Articoli più Recenti",
           "articleIDs": [
             "the-edge-of-all-light",
-            "they-had-names",
+            "ambrose-esterberg",
             "tears-and-bone"
           ]
         },
         {
-          "id": "02-scp-7600-due-metri-sotto",
+          "id": "02-scricchiolii-nelle-crepe",
+          "title": "Scricchiolii nelle Crepe",
+          "articleIDs": [
+            "they-had-names"
+          ]
+        },
+        {
+          "id": "03-scp-7600-due-metri-sotto",
           "title": "SCP-7600 - Due Metri Sotto",
           "articleIDs": [
             "pickman-blank-proposal"
           ]
         },
         {
-          "id": "03-profilo-della-creatura-fuffi",
+          "id": "04-profilo-della-creatura-fuffi",
           "title": "Profilo della Creatura: Fuffi!",
           "articleIDs": [
             "and-every-time-we-meet-again-hub"
           ]
         },
         {
-          "id": "04-5-una-biblioteca-vuota",
+          "id": "05-5-una-biblioteca-vuota",
           "title": "5. Una Biblioteca, Vuota",
           "articleIDs": [
             "o4-s-summit"
           ]
         },
         {
-          "id": "05-articoli",
+          "id": "06-articoli",
           "title": "Articoli",
           "articleIDs": [
             "secure-facility-dossier-site-120"
           ]
         },
         {
-          "id": "06-8-testimonianza-parte-2",
+          "id": "07-8-testimonianza-parte-2",
           "title": "8. Testimonianza - Parte 2",
           "articleIDs": [
             "scp-6596"
-          ]
-        },
-        {
-          "id": "07-scp-pl-389-fornax-aeterna",
-          "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
-          "articleIDs": [
-            "ambrose-esterberg"
           ]
         },
         {
