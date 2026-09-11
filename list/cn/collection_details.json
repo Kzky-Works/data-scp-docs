@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788941741,
-  "generatedAt": "2026-09-09T08:15:41Z",
-  "chunkRevision": "sha256-c4060f7c4e675fd60935a2a6757151c4587deebb6acfd91616e3361aa20dce2a",
+  "listVersion": 1789099543,
+  "generatedAt": "2026-09-11T04:05:43Z",
+  "chunkRevision": "sha256-b3b4a972fafc4dc840df0f7a875c71d13e97ad7dad9139893d172448faedc23b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1788941613,
-        "generatedAt": "2026-09-09T08:13:33Z",
-        "contentHash": "sha256-c12eecf432ec5f24871943da5309d0e4a6a67c8eb80cfdc9f7b0cb6043ecf21c"
+        "listVersion": 1789098880,
+        "generatedAt": "2026-09-11T03:54:40Z",
+        "contentHash": "sha256-64a3df993faa03c52f9c8d991e5b687e7e2629599aeccb37179e68c4cd52b22a"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1788855313,
-        "generatedAt": "2026-09-08T08:15:13Z",
-        "contentHash": "sha256-d9fcfa1d08314e0b378d695a0c0791fbecd7be06301f074aa576ebdbb8c811be"
+        "listVersion": 1789098979,
+        "generatedAt": "2026-09-11T03:56:19Z",
+        "contentHash": "sha256-9ce58545e4c93b60a1d3b1ab79d35b671700846ad38a1a4585269b2a4bfbd49e"
       },
       {
         "kind": "manifest_scp-cn",
@@ -82,7 +82,7 @@
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-e19be7c7f4989c5a0d926de074e0a4ec112ca6394f3f518a547ff9d7bd754fce"
+      "contentHash": "sha256-c7fbf67875b3e62046912228a05268634546209ef46ae2670529cf4dd41156b0"
     }
   },
   "collections": [
@@ -43321,102 +43321,6 @@
       "description": "欢迎回到观谬维基月度讨论。向不熟悉这一概念的人介绍一下，每个月观谬维基管理团队都会寻找一些帖子、讨论串和评论，它们是超自然现象和另一个世界存在的有力证据。你可以将它们的内容当做真相，亦可仅仅将它们作为故事欣赏，我们希望能够展现出网站上最为有趣和令人毛骨悚然的故事。"
     },
     {
-      "id": "scp-cn:collection:series:devils-advocate-hub",
-      "branchID": "scp-cn",
-      "kind": "series",
-      "hubID": "devils-advocate-hub",
-      "title": "魔鬼代言人中心",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/devils-advocate-hub",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/devils-advocate-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "devils-advocate-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "devils-advocate-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scp-wiki-cn.wikidot.com"
-        ],
-        "structureHash": "sha256-411a2097d3d946a234e0cc9e5af15ab40c1026e3c2d1ffe2cdd93bfa556a25f1"
-      },
-      "primaryArticles": [
-        {
-          "id": "kill-the-feeling",
-          "title": "扼杀情感",
-          "url": "https://scp-wiki-cn.wikidot.com/kill-the-feeling",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "你最后一次被别人感动是在十五岁的时候，他们把你从Site-17的医疗侧区放出去的前一天。从那时起你就被感动了，在Ben Palmer医生必须经常取出你的右眼做标准体检的时候，但你尽己所能回避着。你研究怎样尽可能对自己多做点检查，这至少能打发时间。自从Omega-7解散，所有陪伴你的人都以这样或那样的方式离开，你除了时间一无所有。体检时，你尽量将自己与肉体分离，只需担心简单的指令时这并不难。抬胳膊。伸舌头。转身。给我看看手腕。"
-        },
-        {
-          "id": "swimming-lessons",
-          "title": "游泳课",
-          "url": "https://scp-wiki-cn.wikidot.com/swimming-lessons",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Iris瞪着更衣室上方挂着的时钟。过去五分钟里，她一直盯着秒针，盯着它一圈圈划过表盘。 她不知道自己为什么在拖延，或者说，至少不明白为什么她要欺骗自己说是在拖延。Adams通常要到十点四十五分才出现，这意味着在更衣室里干坐着根本无济于事。实际上，这只会增加在Adams出现时Iris还在场的风险。意味着她得和Adams共处一室，看着对方换上两件式泳衣。这场景Iris可一点也不想遇到。"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "kill-the-feeling",
-            "swimming-lessons"
-          ]
-        }
-      ],
-      "description": "许多人形异常并不能真正领会到的是一些软技能。我的意思不是这儿的教育系统不是真正擅长教给我们那样的东西，而是，唔——听着，那是另一码事。对我们来说，最重要的就是 闭上鸟嘴 。要知道，在很多情况下，基金会甚至不会把咱们关起来。如果他们觉得你没问题，他们就不会管你。不过，呃，我想我还在跟你说话一点让整件事没什么意义了。所以，嘛…就当我的建议吧。"
-    },
-    {
       "id": "scp-cn:collection:series:aftermath-hub",
       "branchID": "scp-cn",
       "kind": "series",
@@ -44322,6 +44226,240 @@
         }
       ],
       "description": "嘿呀嘿呀嘿呀！我是 DarkStuff ，可能在这CSS和标题上已经是 极其 明显的了。我会让这段介绍尽量简短一点。我正定期接受 nosleep 的委托写作creepypasta。他的要求是我要基于单独一个主列表SCP写作，而且又能作为一篇独立文章。这些文章是为他的YouTube频道 Dr. SCP 制作的，他和他的团队来添加旁白、动画以及配音。透明起见，这也并不是 我 想去消费的内容，但是我又会在乎什么呢？只是给了我一个很好的理由去每周写一篇很恐恐恐恐恐恐怖的故事，而且我写的时候还 特别 开心。"
+    },
+    {
+      "id": "scp-cn:collection:series:into-the-void-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "into-the-void-hub",
+      "title": "进军虚空 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/into-the-void-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/into-the-void-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "into-the-void-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "into-the-void-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-wiki-cn.wikidot.com"
+        ],
+        "structureHash": "sha256-c0575580cdeef9a652b842c83d63e681bda91c430521bade974345456cdaa4b2"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-5857",
+          "title": "双子星",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5857",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-5857现因基金会的持续使用及其独立运作的能力而无法收容。 SCP-5857的代码与文件可在O5-8的判断下供5级人员查看。这些操作必须在你当前使用的终端上进行。"
+        },
+        {
+          "id": "scp-5623",
+          "title": "眠星者",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5623",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "近地轨道上的遥感成像卫星将监控所有的深空观测天文台。 新型深空望远镜和人造卫星的生产和交易活动需限制在有足够数量的基金会卧底人员的公司之间,以成功在所有相关硬件中植入Binary_Star.aic的文件。 所有SCP-5623的图像需被基金会AI “双子星” Binary Star 拦截并保存在基金会数据库中,随后从公共记录中删除。目击到异常的人员需被施以B级记忆删除。"
+        },
+        {
+          "id": "scp-4524",
+          "title": "血肉新世界",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-4524",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "基金会将调拨大量资金进行一项全球性的虚假信息传播行动,其旨在毁谤任何声称发现SCP-4524的(专业或业余的)个体组织。 如果人类统一实现载人太空旅行,资金将用于保密SCP-4524,以防止在现阶段帷幕无损的情况下发生“破碎面纱”情景。"
+        },
+        {
+          "id": "scp-5651",
+          "title": "苦恶核心",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5651",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "安插在各类国家及国际太空项目内的潜伏人员将把文件双子星.aic植入到控制中心及所有发射项目的硬件当中。禁止基金会星际项目进入到Omicron-5651区域内。 基金会AI双子星将拦截并保存所有在基金会数据库内与SCP-5651相关的数据,并将其从非基金会记录中全部删除。 SCP-5651-1当前收容在SCP-5651之内。若观察到SCP-5651的形状或SCP-5651-1的行为发生变化,将警告全体基金会人员。 SCP-5651"
+        },
+        {
+          "id": "scp-5979",
+          "title": "恶星情人",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5979",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "针对任何相关SCP-5979已发表科学发现的禁止措施均已实施,并将持续生效,直至SCP-5979能够由肉眼观察到。任何来自SCP-5979的无线电通信都必须被视为来自当地阴谋论者与可疑来源的骗局而不予置理。可见宇宙的直播也必须通过审查直至SCP-5979进入太阳系。 鉴于SCP-5979的巨大规模和质量,对项目的收容不可能实现。SCP-5979必须一直处于基金会观察之下,以防其速度和位置出现任何进一步的变化。"
+        },
+        {
+          "id": "scp-3195",
+          "title": "星运里的错",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-3195",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "因SCP-3195的不可移动性,临时站点Site-44已被就近建立。目前,虚假信息正被持续散播以掩盖Celestia事件的真实情况直至SCP-3195因其伤势过重而死亡。"
+        },
+        {
+          "id": "scp-5943",
+          "title": "星际对话",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-5943",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "由于SCP-5943的异常性质,收容该异常在理论上是不可能的,任何权限低于3+级的,发现和听到SCP-5943的传输信息的人员将被拘留并进行记忆消除。 任何试图报告该现象的非基金会人员将被噤声,并根据他们发现SCP-5943的时间被给予记忆消除。 双子星将继续对SCP-5943现象的研究。 1"
+        },
+        {
+          "id": "scp-6701",
+          "title": "Shooting Star Swallow",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-6701",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "在多次收容SCP-6701失败后,它被认定为无法收容。由卫星或其他太空设备创建的SCP-6701图像将由 基金会AI双子星 予以拦截并删除,在此之前应上传至基金会数据库。 若有必要应对平民施以B或C级记忆删除。 刻有奇术符文的物品不得在被无效化后重复使用,直至另行通知。"
+        },
+        {
+          "id": "scp-6983",
+          "title": "开尔文",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-6983",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "卧底在各个国家及国际太空计划中的特工人员在其控制中心的硬件和所有已启动项目的数字组件中植入文件双子星.aic。 基金会AI“ 双子星 ”将会拦截并在基金会数据库记录所有有关SCP-6983的数据,同时将立即从非基金会数据中将其删除。 必要时可对相关目击者执行B级记忆清除。"
+        },
+        {
+          "id": "scp-6143",
+          "title": "幽灵宇宙骷髅",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-6143",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "各个国家和国际太空计划中的卧底人员需将文件‎ 双子星.aic 植入所有已启动项目的控制中心硬件和数字组件中。上述人员必须劝阻和解散登月空间项目。 基金会AI“双子星”将为基金会数据库拦截并记录有关SCP-6143的所有数据,并将其从非基金会记录中立即删除。出于安全原因,基金会资产不得记录SCP-6143或任何SCP-6143-1个体。 必须对描述了SCP-6143的平民进行C级记忆消除。如果记忆消除无效,可以进行进一步的记忆消除或处决。"
+        },
+        {
+          "id": "scp-7928",
+          "title": "威胁等级：无",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-7928",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-7928位于离地球足够远的地方,因此不会构成任何威胁。 如果SCP-7928确实对地球构成威胁(预测概率为0.1%),使用Tau-Rho排险协议。旁观者-15号正在观察SCP-7928。 见记录3。因此,双子星.aic已手动将自己的副本分离到旁观者-15号中以防止故障。旁观者-15号在受到伤害时具有修复能力。"
+        },
+        {
+          "id": "scp-7169",
+          "title": "大气行星女朋友",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-7169",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "常态科学界对于SCP-7169的察觉应当被监控。 SCP-7169的Tinder个人资料现已被删除。基金会制的网络爬虫已隐秘部署在网站的源代码中,以拦截未来异常的任何通讯尝试。 从太空部队3号观察到SCP-7169"
+        },
+        {
+          "id": "space-cadet-semantics",
+          "title": "太空学员语义学",
+          "url": "https://scp-wiki-cn.wikidot.com/space-cadet-semantics",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "我完全没想到他们会把我送到这里。但他们确实把理由说得头头是道。我还记得那个博士一边看他的夹板一边漫步。天啊，那个人真是个天才。 我第一次见到他的时候很特别。他衣冠不整，打着哈欠走进来，说：“你好，D-13733，我们希望你能参加下一次实验。你现在感觉怎么样？”"
+        },
+        {
+          "id": "it-s-better-to-burn-out-than-to-fade-away",
+          "title": "从容地燃烧，总比慢慢消逝的好",
+          "url": "https://scp-wiki-cn.wikidot.com/it-s-better-to-burn-out-than-to-fade-away",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "在这里漂浮的一个不太令人兴奋的部分是，无论我怎么看，我都注定要失败。永远迷失和遭受饥饿对我来说似乎不是一个更好的选择。至少比不上被重力吸引和很快的被活活烧死或被砸成碎片。我的尸体，如果我一开始就留下了任何东西，在任何一种情况下都不会被找回和埋葬。即使是基金会的那帮穿白大褂的蠢货也无法做到这一点。"
+        },
+        {
+          "id": "ad-fundum-universum-ad-fundum",
+          "title": "宇宙在上，干杯",
+          "url": "https://scp-wiki-cn.wikidot.com/ad-fundum-universum-ad-fundum",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "剧透警告：这个故事破坏了以下文章的内容和曲折性，这些文章来自进军虚空 中心页。 SCP-5623 “眠星者” SCP-5651 “苦恶核心”"
+        },
+        {
+          "id": "what-s-an-art-style-skorpt-s-art-page",
+          "title": "艺作页",
+          "url": "https://scp-wiki-cn.wikidot.com/what-s-an-art-style-skorpt-s-art-page",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "旁观者程序",
+          "articleIDs": [
+            "scp-5857",
+            "scp-5623",
+            "scp-4524",
+            "scp-5651",
+            "scp-5979",
+            "scp-3195",
+            "scp-5943",
+            "scp-6701",
+            "scp-6983",
+            "scp-6143",
+            "scp-7928",
+            "scp-7169",
+            "space-cadet-semantics",
+            "it-s-better-to-burn-out-than-to-fade-away",
+            "ad-fundum-universum-ad-fundum",
+            "what-s-an-art-style-skorpt-s-art-page"
+          ]
+        }
+      ],
+      "description": "您好，我叫做Dr. Rynhart。我是负责管理“ 旁观者程序 Beholder Program ”的首席研究员。基于您的职业道德、人际交往技能及未曾有重大违纪行为的履历，您已被我亲自选定参与该程序。合作愉快！"
     },
     {
       "id": "scp-cn:collection:series:scp-anthology-hub",
@@ -60908,240 +61046,6 @@
           "reason": "Confirmed dead branch-local Series member link"
         }
       ]
-    },
-    {
-      "id": "scp-cn:collection:series:into-the-void-hub",
-      "branchID": "scp-cn",
-      "kind": "series",
-      "hubID": "into-the-void-hub",
-      "title": "进军虚空 中心页",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/into-the-void-hub",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/into-the-void-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "into-the-void-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "into-the-void-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scp-wiki-cn.wikidot.com"
-        ],
-        "structureHash": "sha256-c0575580cdeef9a652b842c83d63e681bda91c430521bade974345456cdaa4b2"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-5857",
-          "title": "双子星",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5857",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-5857现因基金会的持续使用及其独立运作的能力而无法收容。 SCP-5857的代码与文件可在O5-8的判断下供5级人员查看。这些操作必须在你当前使用的终端上进行。"
-        },
-        {
-          "id": "scp-5623",
-          "title": "眠星者",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5623",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "近地轨道上的遥感成像卫星将监控所有的深空观测天文台。 新型深空望远镜和人造卫星的生产和交易活动需限制在有足够数量的基金会卧底人员的公司之间,以成功在所有相关硬件中植入Binary_Star.aic的文件。 所有SCP-5623的图像需被基金会AI “双子星” Binary Star 拦截并保存在基金会数据库中,随后从公共记录中删除。目击到异常的人员需被施以B级记忆删除。"
-        },
-        {
-          "id": "scp-4524",
-          "title": "血肉新世界",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-4524",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "基金会将调拨大量资金进行一项全球性的虚假信息传播行动,其旨在毁谤任何声称发现SCP-4524的(专业或业余的)个体组织。 如果人类统一实现载人太空旅行,资金将用于保密SCP-4524,以防止在现阶段帷幕无损的情况下发生“破碎面纱”情景。"
-        },
-        {
-          "id": "scp-5651",
-          "title": "苦恶核心",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5651",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "安插在各类国家及国际太空项目内的潜伏人员将把文件双子星.aic植入到控制中心及所有发射项目的硬件当中。禁止基金会星际项目进入到Omicron-5651区域内。 基金会AI双子星将拦截并保存所有在基金会数据库内与SCP-5651相关的数据,并将其从非基金会记录中全部删除。 SCP-5651-1当前收容在SCP-5651之内。若观察到SCP-5651的形状或SCP-5651-1的行为发生变化,将警告全体基金会人员。 SCP-5651"
-        },
-        {
-          "id": "scp-5979",
-          "title": "恶星情人",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5979",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "针对任何相关SCP-5979已发表科学发现的禁止措施均已实施,并将持续生效,直至SCP-5979能够由肉眼观察到。任何来自SCP-5979的无线电通信都必须被视为来自当地阴谋论者与可疑来源的骗局而不予置理。可见宇宙的直播也必须通过审查直至SCP-5979进入太阳系。 鉴于SCP-5979的巨大规模和质量,对项目的收容不可能实现。SCP-5979必须一直处于基金会观察之下,以防其速度和位置出现任何进一步的变化。"
-        },
-        {
-          "id": "scp-3195",
-          "title": "星运里的错",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-3195",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "因SCP-3195的不可移动性,临时站点Site-44已被就近建立。目前,虚假信息正被持续散播以掩盖Celestia事件的真实情况直至SCP-3195因其伤势过重而死亡。"
-        },
-        {
-          "id": "scp-5943",
-          "title": "星际对话",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-5943",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "由于SCP-5943的异常性质,收容该异常在理论上是不可能的,任何权限低于3+级的,发现和听到SCP-5943的传输信息的人员将被拘留并进行记忆消除。 任何试图报告该现象的非基金会人员将被噤声,并根据他们发现SCP-5943的时间被给予记忆消除。 双子星将继续对SCP-5943现象的研究。 1"
-        },
-        {
-          "id": "scp-6701",
-          "title": "Shooting Star Swallow",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-6701",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "在多次收容SCP-6701失败后,它被认定为无法收容。由卫星或其他太空设备创建的SCP-6701图像将由 基金会AI双子星 予以拦截并删除,在此之前应上传至基金会数据库。 若有必要应对平民施以B或C级记忆删除。 刻有奇术符文的物品不得在被无效化后重复使用,直至另行通知。"
-        },
-        {
-          "id": "scp-6983",
-          "title": "开尔文",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-6983",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "卧底在各个国家及国际太空计划中的特工人员在其控制中心的硬件和所有已启动项目的数字组件中植入文件双子星.aic。 基金会AI“ 双子星 ”将会拦截并在基金会数据库记录所有有关SCP-6983的数据,同时将立即从非基金会数据中将其删除。 必要时可对相关目击者执行B级记忆清除。"
-        },
-        {
-          "id": "scp-6143",
-          "title": "幽灵宇宙骷髅",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-6143",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "各个国家和国际太空计划中的卧底人员需将文件‎ 双子星.aic 植入所有已启动项目的控制中心硬件和数字组件中。上述人员必须劝阻和解散登月空间项目。 基金会AI“双子星”将为基金会数据库拦截并记录有关SCP-6143的所有数据,并将其从非基金会记录中立即删除。出于安全原因,基金会资产不得记录SCP-6143或任何SCP-6143-1个体。 必须对描述了SCP-6143的平民进行C级记忆消除。如果记忆消除无效,可以进行进一步的记忆消除或处决。"
-        },
-        {
-          "id": "scp-7928",
-          "title": "威胁等级：无",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-7928",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-7928位于离地球足够远的地方,因此不会构成任何威胁。 如果SCP-7928确实对地球构成威胁(预测概率为0.1%),使用Tau-Rho排险协议。旁观者-15号正在观察SCP-7928。 见记录3。因此,双子星.aic已手动将自己的副本分离到旁观者-15号中以防止故障。旁观者-15号在受到伤害时具有修复能力。"
-        },
-        {
-          "id": "scp-7169",
-          "title": "大气行星女朋友",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-7169",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "常态科学界对于SCP-7169的察觉应当被监控。 SCP-7169的Tinder个人资料现已被删除。基金会制的网络爬虫已隐秘部署在网站的源代码中,以拦截未来异常的任何通讯尝试。 从太空部队3号观察到SCP-7169"
-        },
-        {
-          "id": "space-cadet-semantics",
-          "title": "太空学员语义学",
-          "url": "https://scp-wiki-cn.wikidot.com/space-cadet-semantics",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "我完全没想到他们会把我送到这里。但他们确实把理由说得头头是道。我还记得那个博士一边看他的夹板一边漫步。天啊，那个人真是个天才。 我第一次见到他的时候很特别。他衣冠不整，打着哈欠走进来，说：“你好，D-13733，我们希望你能参加下一次实验。你现在感觉怎么样？”"
-        },
-        {
-          "id": "it-s-better-to-burn-out-than-to-fade-away",
-          "title": "从容地燃烧，总比慢慢消逝的好",
-          "url": "https://scp-wiki-cn.wikidot.com/it-s-better-to-burn-out-than-to-fade-away",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "在这里漂浮的一个不太令人兴奋的部分是，无论我怎么看，我都注定要失败。永远迷失和遭受饥饿对我来说似乎不是一个更好的选择。至少比不上被重力吸引和很快的被活活烧死或被砸成碎片。我的尸体，如果我一开始就留下了任何东西，在任何一种情况下都不会被找回和埋葬。即使是基金会的那帮穿白大褂的蠢货也无法做到这一点。"
-        },
-        {
-          "id": "ad-fundum-universum-ad-fundum",
-          "title": "宇宙在上，干杯",
-          "url": "https://scp-wiki-cn.wikidot.com/ad-fundum-universum-ad-fundum",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "剧透警告：这个故事破坏了以下文章的内容和曲折性，这些文章来自进军虚空 中心页。 SCP-5623 “眠星者” SCP-5651 “苦恶核心”"
-        },
-        {
-          "id": "what-s-an-art-style-skorpt-s-art-page",
-          "title": "艺作页",
-          "url": "https://scp-wiki-cn.wikidot.com/what-s-an-art-style-skorpt-s-art-page",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "旁观者程序",
-          "articleIDs": [
-            "scp-5857",
-            "scp-5623",
-            "scp-4524",
-            "scp-5651",
-            "scp-5979",
-            "scp-3195",
-            "scp-5943",
-            "scp-6701",
-            "scp-6983",
-            "scp-6143",
-            "scp-7928",
-            "scp-7169",
-            "space-cadet-semantics",
-            "it-s-better-to-burn-out-than-to-fade-away",
-            "ad-fundum-universum-ad-fundum",
-            "what-s-an-art-style-skorpt-s-art-page"
-          ]
-        }
-      ],
-      "description": "您好，我叫做Dr. Rynhart。我是负责管理“ 旁观者程序 Beholder Program ”的首席研究员。基于您的职业道德、人际交往技能及未曾有重大违纪行为的履历，您已被我亲自选定参与该程序。合作愉快！"
     },
     {
       "id": "scp-cn:collection:series:void-dancer-hub",

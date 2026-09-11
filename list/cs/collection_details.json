@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788855171,
-  "generatedAt": "2026-09-08T08:12:51Z",
-  "chunkRevision": "sha256-6ea9f033d5ff34264a384a4a582e59690bf345c913da20ab48f28ea9d0314519",
+  "listVersion": 1789100049,
+  "generatedAt": "2026-09-11T04:14:09Z",
+  "chunkRevision": "sha256-6e422f9658b96ca725210c6e4d48113ef45bb24cd388f6cc91c78eca9786c3f2",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1788855146,
-        "generatedAt": "2026-09-08T08:12:26Z",
-        "contentHash": "sha256-362c0c7cfc62dca525357309d1b66e2aa4c22795dbe7196f5c2c3e56d3556790"
+        "listVersion": 1789099364,
+        "generatedAt": "2026-09-11T04:02:44Z",
+        "contentHash": "sha256-e2c0e49acf9351c19c545154c664621936b74a365498a885c750572702a27dde"
       },
       {
         "kind": "manifest_scp-cs",
@@ -66,14 +66,14 @@
       "branchID": "scp-cs",
       "path": "DataPipeline/list/cs/cs_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1784623107,
-      "generatedAt": "2026-08-10T10:59:28Z",
-      "contentHash": "sha256-42526b1816bf0a4329e78a12cdd0a1da1e766f0af4164bebf343c00d163145d3"
+      "listVersion": 1789099976,
+      "generatedAt": "2026-09-11T04:12:56Z",
+      "contentHash": "sha256-8d809f51c3ede9c58a88616432d2500394495dfa03f466bf1cf2ea61091306e8"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-e19be7c7f4989c5a0d926de074e0a4ec112ca6394f3f518a547ff9d7bd754fce"
+      "contentHash": "sha256-c7fbf67875b3e62046912228a05268634546209ef46ae2670529cf4dd41156b0"
     }
   },
   "collections": [
@@ -6008,10 +6008,10 @@
       "sourceListURL": "http://scp-cs.wikidot.com/the-alchemy-department-hub",
       "officialHubURL": "http://scp-cs.wikidot.com/the-alchemy-department-hub",
       "hubPresentation": "standard",
-      "canonicalTag": "the-alchemy-department-hub",
+      "canonicalTag": "oddělení-alchymie",
       "tagReview": {
         "status": "reviewed",
-        "accepted": "the-alchemy-department-hub",
+        "accepted": "oddělení-alchymie",
         "rejected": [],
         "notes": [
           "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
@@ -6749,6 +6749,116 @@
             "scp-189-cs",
             "scp-5000",
             "scp-4205"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-cs:collection:canon:no-return-hub",
+      "branchID": "scp-cs",
+      "kind": "canon",
+      "hubID": "no-return-hub",
+      "title": "Za Bodem Návratu",
+      "sourceListURL": "http://scp-cs.wikidot.com/no-return-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/no-return-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "no-return-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "no-return-hub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "emptySectionTitle": "Články",
+        "allowUntaggedMembers": true,
+        "structureHash": "sha256-0ab25ad56d5e3341fde1db291b6eeb9c0c6429ed96a566bce1812d0f869446fc"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-2075",
+          "title": "Cesta Veškerého Masa",
+          "url": "http://scp-cs.wikidot.com/scp-2075",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-2075 je nutno držet v izolaci v zadržovací cele, kterou je možné v případě potřeby neprodyšně uzavřít. Zadržovací cela musí denně projít dálkovou dekontaminací (je-li potřeba, může tak být učiněno i častěji). SCP-2075 musí být třikrát denně poskytnuta skrz…"
+        },
+        {
+          "id": "scp-2480",
+          "title": "Nedokončený rituál",
+          "url": "http://scp-cs.wikidot.com/scp-2480",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "Dimenzionální Výzkumná Oblast-13 byla vystavěna poblíž Bodfelova sídla v lokaci SCP-2480. Je povoleno využít nenásilné metody k zabránění civilistům ve vstupu na pozemek. Terénní agenti mohou využívat amnestika Tříd A, B a C. Nadační personál byl integrován do…"
+        },
+        {
+          "id": "scp-2191",
+          "title": "\"Továrna na Drákuly\"",
+          "url": "http://scp-cs.wikidot.com/scp-2191",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Nadace v lokaci udržuje pozorovací operace, ale jinak přímo nezasahuje do záležitostí SCP-2191, ani rituálních praktik komunit žijících v okolí lesu Hoia. Průzkum SCP-2191 je povolen pouze za použití dálkově ovládaných dronů. Nadační agenti se v oblasti ukrýva…"
+        },
+        {
+          "id": "scp-939",
+          "title": "S mnoha hlasy",
+          "url": "http://scp-cs.wikidot.com/scp-939",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-939-1, -3, -19, -53, -89, -96, -98, -99, a –109 jsou držena v cele 1163-A nebo 1163-B. Obě cely mají rozměry 10 x 10 x 3 metry a jsou umístěny v Militarizované Bio-Zadržovací Oblasti-14. Obě cely jsou vybaveny systémem řízení klimatu. Uvnitř je udržován ní…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Jediné rozhodnutí dva světy dělí, A zrcadlová tapisérie se rozvíjí, Vanguardu záštita září, A svět stojí na práhu …",
+      "articleSections": [
+        {
+          "id": "01-sarkic-heat",
+          "title": "Sarkic Heat",
+          "articleIDs": [
+            "scp-2075"
+          ]
+        },
+        {
+          "id": "02-a-sarkic-by-any-other-name",
+          "title": "A Sarkic By Any Other Name",
+          "articleIDs": [
+            "scp-2480"
+          ]
+        },
+        {
+          "id": "03-an-assembly-of-sarkics",
+          "title": "An Assembly of Sarkics",
+          "articleIDs": [
+            "scp-2191"
+          ]
+        },
+        {
+          "id": "04-with-many-choices",
+          "title": "With Many Choices",
+          "articleIDs": [
+            "scp-939"
           ]
         }
       ]
