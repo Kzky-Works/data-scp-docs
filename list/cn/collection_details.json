@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789114663,
-  "generatedAt": "2026-09-11T08:17:43Z",
-  "chunkRevision": "sha256-fa12c24182ccaa4a9206d7bc3a37f15119234f02e89ca0f68e246c6ea3c8c2c4",
+  "listVersion": 1789264054,
+  "generatedAt": "2026-09-13T01:47:34Z",
+  "chunkRevision": "sha256-b74d9de9dc76885692d3539376ff5298ae8cf040537b16900545f79b26bf9eab",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1789114429,
-        "generatedAt": "2026-09-11T08:13:49Z",
-        "contentHash": "sha256-3fbe252fb9b85138c46fe48a93f252d3fbe97dd39cc16e901785c7ee7a523e3e"
+        "listVersion": 1789263723,
+        "generatedAt": "2026-09-13T01:42:03Z",
+        "contentHash": "sha256-3a029a60b45adaad100d9f0d8fdabe9d3196282fcbee9c335637cbbb9f7d2aff"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1789098979,
-        "generatedAt": "2026-09-11T03:56:19Z",
-        "contentHash": "sha256-9ce58545e4c93b60a1d3b1ab79d35b671700846ad38a1a4585269b2a4bfbd49e"
+        "listVersion": 1789263817,
+        "generatedAt": "2026-09-13T01:43:37Z",
+        "contentHash": "sha256-bca1aa948fd9f7bc6b77a0e244173813ef0cdd7c431a76a072e7aca0c720ebfb"
       },
       {
         "kind": "manifest_scp-cn",
@@ -41318,152 +41318,6 @@
       "description": "每年的9月8日，七个不幸的人都要重复他们人生中最糟糕的六分钟。要是他们没做对，全人类就会面临一场更大规模的不幸。这件事看上去永远不会结束，而他们也不会永远年轻。"
     },
     {
-      "id": "scp-cn:collection:series:crowne-thorne-hub",
-      "branchID": "scp-cn",
-      "kind": "series",
-      "hubID": "crowne-thorne-hub",
-      "title": "荆棘王冠",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/crowne-thorne-hub",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/crowne-thorne-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "crowne-thorne-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "crowne-thorne-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scp-wiki-cn.wikidot.com"
-        ],
-        "structureHash": "sha256-85cc7306c290383e16af65a0dc0ecbbdf8efab27412b651859ba1fd502f05da9"
-      },
-      "primaryArticles": [
-        {
-          "id": "secure-facility-dossier-site-246",
-          "title": "Site-246",
-          "url": "https://scp-wiki-cn.wikidot.com/secure-facility-dossier-site-246",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "2008年5月11日 Site-246"
-        },
-        {
-          "id": "florence-thorne-hub",
-          "title": "凤凰，夜莺与喜鹊",
-          "url": "https://scp-wiki-cn.wikidot.com/florence-thorne-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "By GreenWolf"
-        },
-        {
-          "id": "researcher-conwell-s-personnel-file",
-          "title": "Jacob Conwell",
-          "url": "https://scp-wiki-cn.wikidot.com/researcher-conwell-s-personnel-file",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "当平行线发散时 — By Jacob Conwell 与 GreenWolf"
-        },
-        {
-          "id": "austringers",
-          "title": "鹰猎者",
-          "url": "https://scp-wiki-cn.wikidot.com/austringers",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "By Jacob Conwell"
-        },
-        {
-          "id": "unusual-investigations",
-          "title": "对Kenneth Spencer和Robin Thorne的特异调查",
-          "url": "https://scp-wiki-cn.wikidot.com/unusual-investigations",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "By GreenWolf"
-        },
-        {
-          "id": "the-blackbird-and-the-falcon",
-          "title": "黑鸟与猎鹰",
-          "url": "https://scp-wiki-cn.wikidot.com/the-blackbird-and-the-falcon",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "例行心理健康检查记录 2022年11月17号 顾问：D.H. Aeslinger，心理学博士 患者：Jacob Conwell Aeslinger: 下午好，Jacob。"
-        },
-        {
-          "id": "comedown-machine-hub",
-          "title": "衰败机器",
-          "url": "https://scp-wiki-cn.wikidot.com/comedown-machine-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "By TyGently"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "secure-facility-dossier-site-246"
-          ]
-        },
-        {
-          "id": "02-articles",
-          "title": "一段鸟鸣",
-          "articleIDs": [
-            "florence-thorne-hub",
-            "researcher-conwell-s-personnel-file",
-            "austringers",
-            "unusual-investigations",
-            "the-blackbird-and-the-falcon",
-            "comedown-machine-hub"
-          ]
-        }
-      ],
-      "description": "这个系列已经筹划了五年多，现在即将迎来那些追溯到第三定律还未成为设定之前的剧情线的倒数第二个高潮。伙计们，我们现在已经进入最后的冲刺阶段了。多年的写作和世界构建即将迎来回报。"
-    },
-    {
       "id": "scp-cn:collection:series:8000-dead-rats-hub",
       "branchID": "scp-cn",
       "kind": "series",
@@ -44460,6 +44314,200 @@
         }
       ],
       "description": "您好，我叫做Dr. Rynhart。我是负责管理“ 旁观者程序 Beholder Program ”的首席研究员。基于您的职业道德、人际交往技能及未曾有重大违纪行为的履历，您已被我亲自选定参与该程序。合作愉快！"
+    },
+    {
+      "id": "scp-cn:collection:series:void-dancer-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "void-dancer-hub",
+      "title": "虚空舞者 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/void-dancer-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/void-dancer-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "void-dancer-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "void-dancer-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-wiki-cn.wikidot.com"
+        ],
+        "structureHash": "sha256-0b4d5fb89251895142bcd0bd247b9f441ab2dd759880a6529ac75977ee0d4330"
+      },
+      "primaryArticles": [
+        {
+          "id": "olicus-art",
+          "title": "由 OLICUS 所作",
+          "url": "https://scp-wiki-cn.wikidot.com/olicus-art",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-423",
+          "title": "自插入角色",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-423",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-423应被收容于有着3个2m x 3m的书架的5m x 5m房间里。在其附近应配备一个焚化炉。所有进入或离开这个房间的人都应被搜查以检查是否携带了书面材料。所有携带的书写材料都应被检查是否有SCP-423的痕迹,并且如果没有,将进行焚化。 在夜间,SCP-423应被放置于一个小型的滑动轴承上,不能在指定的时间内将SCP-423安置在这个轴承上将会导致在试验计划外的阅读材料损失。"
+        },
+        {
+          "id": "scp-3309",
+          "title": "化为泡影之时，我们去往何方",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-3309",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "所有被SCP-3309异常影响的文档都将以转述格式保存,并保存在RAISA的存档数据库中。在收容一名实例后,分配负责受影响项目的所有人员都必须接受记忆消除处理,并转移到不相关的计划。"
+        },
+        {
+          "id": "scp-3090",
+          "title": "这个女孩玩游戏把自己玩坏了！",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-3090",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "SCP-3090当被收容于Site-17的一间标准人形收容间中。除测试期间外,不允许个人电子设备,如手机、电脑以及手持式电子游戏主机出现在SCP-3090为中心的12米半径范围内。每周二Dr. August Lichen和青少年心理学家Blake Maxson Yamagusuku将对SCP-3090进行心理评估。 修订后的收容措施 02/18/17: 由于SCP-3090的自我机能终止之可能会导致可预见的收容失效, 机动特遣队Kappa-10 (\"天网\") 负责定位疑似为SCP-3090或拥有类似SCP-3090…"
+        },
+        {
+          "id": "the-abyss-gazes-back",
+          "title": "深渊回望（ASCII码在CRT屏幕上）",
+          "url": "https://scp-wiki-cn.wikidot.com/the-abyss-gazes-back",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "他在夜里是一只隼，悬飞在刺眼天际中。隼在灌木林里寻找着猎物，而野兽们哺育着它们的幼崽。可惜星光微弱，只供这隼独赏，野兽遁形其中。带着对那星光，对那野兽，甚至对他化身为隼的蔑视，他动了动身。他畏惧地回到那片荒凉的广袤土地，然后在一切的悖逆中置身于空乏。"
+        },
+        {
+          "id": "buggy-hardware",
+          "title": "纰漏百出硬件（我为什么不玩暴力电子游戏）",
+          "url": "https://scp-wiki-cn.wikidot.com/buggy-hardware",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "纰漏百出硬件（我为什么不玩暴力电子游戏） 作者： Lt Flops 发布于2018年9月23日 该故事是为SCP原创角色锦标赛第二轮写作的。"
+        },
+        {
+          "id": "danger-in-the-manger",
+          "title": "你拥有家庭",
+          "url": "https://scp-wiki-cn.wikidot.com/danger-in-the-manger",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "梦见她的过往…… 尚且无名的女孩瑟缩在厚厚的连帽衫中御寒，面对着游戏不知所措。寂静岭3。很吸引人的游戏名。除了这个光盘装在破塑料袋里的样子——她学校里的朋友装进去的（她要藏在房间里衣柜的哪一处呢？）——以及他告诉她的之外，她什么也不知道。"
+        },
+        {
+          "id": "scp-2852",
+          "title": "蝉鸣表兄",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-2852",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 25,
+          "desc": "SCP-2852的收容重点集中于在可能情况下追踪并解决事件,以及对 SCP-2852多发人口聚集地进行监控。所有参与进蓝级和白级的人员将接受全面监控,其身份将作为潜在的恐怖分子被给予当地执法部门进行关注。即使事件本身被解决,所有参与进蓝级或白级事件的人员须被记录在册,其姓名将被送给当地执法机构。目击事件的人员须接受B级记忆删除。 黑级事件须给予持续监控直至结束。之后所有参与人员须接受A级记忆删除并接受和其他受事件影响者一样的治疗。机动特遣队Upsilon-36, Upsilon-52和Upsilon-99的人员若目…"
+        },
+        {
+          "id": "scp-3004",
+          "title": "意象成虫",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-3004",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 22,
+          "desc": "SCP-3004的威胁已被无效化。SCP-3004的收容仅关注干预指向Cétlaidí存在的文物。为此,爱尔兰及威尔士的考古现场应被密切监控。相关文物将被查收、清点并焚毁。 SCP-3004相关材料将由神学部处理。若可能与SCP-3004相关事件发生,应立即通知Clark主管。 SCP-3004-1被确信为已经消灭,或是从物质位面中被逐出,不再需要收容。 任何关于 Cicadetta luculenta 存在的信息因与SCP-3004相关,将对其进行销毁,相关平民会被记忆删除。"
+        },
+        {
+          "id": "scp-2",
+          "title": "SCP-2",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "I'm going to take a Tylenol for my tension headache, grab some tea, and maybe get to work on this never-ending backlog of technical issues plaguing my inbox."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "olicus-art",
+            "scp-423"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "必读",
+          "articleIDs": [
+            "scp-3309",
+            "scp-3090"
+          ]
+        },
+        {
+          "id": "03-articles",
+          "title": "目前的故事",
+          "articleIDs": [
+            "the-abyss-gazes-back",
+            "buggy-hardware"
+          ]
+        },
+        {
+          "id": "04-articles",
+          "title": "进一步阅读（参考）",
+          "articleIDs": [
+            "danger-in-the-manger",
+            "scp-2852",
+            "scp-3004",
+            "scp-2"
+          ]
+        }
+      ],
+      "description": "虚空 比多数人所了解的事物更可塑。或许它看上去像一块白色石板，但你能够推动它。通过练习，你可以把它塑造成心灵的眼睛（只要你一路都没有失去它）。重要的是，这个地方是你的，也只有你自己。或许其他人会来这里；他们或许会塑造他们希望的事物。但是这里没有怪物。这里没有灾难预言家。而且没有人会告诉你该怎样生活。"
     },
     {
       "id": "scp-cn:collection:series:scp-anthology-hub",
@@ -61046,200 +61094,6 @@
           "reason": "Confirmed dead branch-local Series member link"
         }
       ]
-    },
-    {
-      "id": "scp-cn:collection:series:void-dancer-hub",
-      "branchID": "scp-cn",
-      "kind": "series",
-      "hubID": "void-dancer-hub",
-      "title": "虚空舞者 中心页",
-      "sourceListURL": "https://scp-wiki-cn.wikidot.com/void-dancer-hub",
-      "officialHubURL": "https://scp-wiki-cn.wikidot.com/void-dancer-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "void-dancer-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "void-dancer-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-cn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "cn_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scp-wiki-cn.wikidot.com"
-        ],
-        "structureHash": "sha256-0b4d5fb89251895142bcd0bd247b9f441ab2dd759880a6529ac75977ee0d4330"
-      },
-      "primaryArticles": [
-        {
-          "id": "olicus-art",
-          "title": "由 OLICUS 所作",
-          "url": "https://scp-wiki-cn.wikidot.com/olicus-art",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-423",
-          "title": "自插入角色",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-423",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-423应被收容于有着3个2m x 3m的书架的5m x 5m房间里。在其附近应配备一个焚化炉。所有进入或离开这个房间的人都应被搜查以检查是否携带了书面材料。所有携带的书写材料都应被检查是否有SCP-423的痕迹,并且如果没有,将进行焚化。 在夜间,SCP-423应被放置于一个小型的滑动轴承上,不能在指定的时间内将SCP-423安置在这个轴承上将会导致在试验计划外的阅读材料损失。"
-        },
-        {
-          "id": "scp-3309",
-          "title": "化为泡影之时，我们去往何方",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-3309",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "所有被SCP-3309异常影响的文档都将以转述格式保存,并保存在RAISA的存档数据库中。在收容一名实例后,分配负责受影响项目的所有人员都必须接受记忆消除处理,并转移到不相关的计划。"
-        },
-        {
-          "id": "scp-3090",
-          "title": "这个女孩玩游戏把自己玩坏了！",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-3090",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "SCP-3090当被收容于Site-17的一间标准人形收容间中。除测试期间外,不允许个人电子设备,如手机、电脑以及手持式电子游戏主机出现在SCP-3090为中心的12米半径范围内。每周二Dr. August Lichen和青少年心理学家Blake Maxson Yamagusuku将对SCP-3090进行心理评估。 修订后的收容措施 02/18/17: 由于SCP-3090的自我机能终止之可能会导致可预见的收容失效, 机动特遣队Kappa-10 (\"天网\") 负责定位疑似为SCP-3090或拥有类似SCP-3090…"
-        },
-        {
-          "id": "the-abyss-gazes-back",
-          "title": "深渊回望（ASCII码在CRT屏幕上）",
-          "url": "https://scp-wiki-cn.wikidot.com/the-abyss-gazes-back",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "他在夜里是一只隼，悬飞在刺眼天际中。隼在灌木林里寻找着猎物，而野兽们哺育着它们的幼崽。可惜星光微弱，只供这隼独赏，野兽遁形其中。带着对那星光，对那野兽，甚至对他化身为隼的蔑视，他动了动身。他畏惧地回到那片荒凉的广袤土地，然后在一切的悖逆中置身于空乏。"
-        },
-        {
-          "id": "buggy-hardware",
-          "title": "纰漏百出硬件（我为什么不玩暴力电子游戏）",
-          "url": "https://scp-wiki-cn.wikidot.com/buggy-hardware",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "纰漏百出硬件（我为什么不玩暴力电子游戏） 作者： Lt Flops 发布于2018年9月23日 该故事是为SCP原创角色锦标赛第二轮写作的。"
-        },
-        {
-          "id": "danger-in-the-manger",
-          "title": "你拥有家庭",
-          "url": "https://scp-wiki-cn.wikidot.com/danger-in-the-manger",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "梦见她的过往…… 尚且无名的女孩瑟缩在厚厚的连帽衫中御寒，面对着游戏不知所措。寂静岭3。很吸引人的游戏名。除了这个光盘装在破塑料袋里的样子——她学校里的朋友装进去的（她要藏在房间里衣柜的哪一处呢？）——以及他告诉她的之外，她什么也不知道。"
-        },
-        {
-          "id": "scp-2852",
-          "title": "蝉鸣表兄",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-2852",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 25,
-          "desc": "SCP-2852的收容重点集中于在可能情况下追踪并解决事件,以及对 SCP-2852多发人口聚集地进行监控。所有参与进蓝级和白级的人员将接受全面监控,其身份将作为潜在的恐怖分子被给予当地执法部门进行关注。即使事件本身被解决,所有参与进蓝级或白级事件的人员须被记录在册,其姓名将被送给当地执法机构。目击事件的人员须接受B级记忆删除。 黑级事件须给予持续监控直至结束。之后所有参与人员须接受A级记忆删除并接受和其他受事件影响者一样的治疗。机动特遣队Upsilon-36, Upsilon-52和Upsilon-99的人员若目…"
-        },
-        {
-          "id": "scp-3004",
-          "title": "意象成虫",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-3004",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 22,
-          "desc": "SCP-3004的威胁已被无效化。SCP-3004的收容仅关注干预指向Cétlaidí存在的文物。为此,爱尔兰及威尔士的考古现场应被密切监控。相关文物将被查收、清点并焚毁。 SCP-3004相关材料将由神学部处理。若可能与SCP-3004相关事件发生,应立即通知Clark主管。 SCP-3004-1被确信为已经消灭,或是从物质位面中被逐出,不再需要收容。 任何关于 Cicadetta luculenta 存在的信息因与SCP-3004相关,将对其进行销毁,相关平民会被记忆删除。"
-        },
-        {
-          "id": "scp-2",
-          "title": "SCP-2",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-2",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "I'm going to take a Tylenol for my tension headache, grab some tea, and maybe get to work on this never-ending backlog of technical issues plaguing my inbox."
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "olicus-art",
-            "scp-423"
-          ]
-        },
-        {
-          "id": "02-articles",
-          "title": "必读",
-          "articleIDs": [
-            "scp-3309",
-            "scp-3090"
-          ]
-        },
-        {
-          "id": "03-articles",
-          "title": "目前的故事",
-          "articleIDs": [
-            "the-abyss-gazes-back",
-            "buggy-hardware"
-          ]
-        },
-        {
-          "id": "04-articles",
-          "title": "进一步阅读（参考）",
-          "articleIDs": [
-            "danger-in-the-manger",
-            "scp-2852",
-            "scp-3004",
-            "scp-2"
-          ]
-        }
-      ],
-      "description": "虚空 比多数人所了解的事物更可塑。或许它看上去像一块白色石板，但你能够推动它。通过练习，你可以把它塑造成心灵的眼睛（只要你一路都没有失去它）。重要的是，这个地方是你的，也只有你自己。或许其他人会来这里；他们或许会塑造他们希望的事物。但是这里没有怪物。这里没有灾难预言家。而且没有人会告诉你该怎样生活。"
     },
     {
       "id": "scp-cn:collection:series:double-hometown-hub",
