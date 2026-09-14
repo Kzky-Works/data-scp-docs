@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789372806,
-  "generatedAt": "2026-09-14T08:00:06Z",
-  "chunkRevision": "sha256-2e0ac8e18f3d26c8920ee19aac67be75783b5a85a2ac5c9edd82eaa207297e0b",
+  "listVersion": 1789386555,
+  "generatedAt": "2026-09-14T11:49:15Z",
+  "chunkRevision": "sha256-44a7aa6cb7e0c4e68a8427111d1a84aedd9a7cde2a74864777cf5a981fd65f19",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1789372764,
-        "generatedAt": "2026-09-14T07:59:24Z",
-        "contentHash": "sha256-5e23fc0eb8a06aab8ac63b11bfb0521486bfa94f55d8fbdfe4c05661d5897efa"
+        "listVersion": 1789386396,
+        "generatedAt": "2026-09-14T11:46:36Z",
+        "contentHash": "sha256-ed6136a85191b83c52b1d0f184680d163056852c4c915de089fac5219c864d37"
       },
       {
         "kind": "manifest_gois",
@@ -28,9 +28,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-de.json",
         "schemaVersion": 2,
-        "listVersion": 1788769330,
-        "generatedAt": "2026-09-07T08:22:10Z",
-        "contentHash": "sha256-0e60cd0c52fcd7fa62b6e445935477c0ee9e17a425fcd1848adb4b6b23f12b48"
+        "listVersion": 1789386504,
+        "generatedAt": "2026-09-14T11:48:24Z",
+        "contentHash": "sha256-57e9b8100313de8a8fd0dfb50ffb0b7f4cdfebf53eeb74fdc3414890b7a716cc"
       },
       {
         "kind": "manifest_scp-int",
@@ -46,18 +46,18 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1788652462,
-        "generatedAt": "2026-09-05T23:54:22Z",
-        "contentHash": "sha256-c1eb7c17d08dbe0ca827accb7f2eae393dbd87f16baee4880982c1ac4e6a73ef"
+        "listVersion": 1789386374,
+        "generatedAt": "2026-09-14T11:46:14Z",
+        "contentHash": "sha256-d9d810a73c1f5b4689c7e2b4b767e624dc1cacdf3d5d4596d3a121124ee81a85"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1788769300,
-        "generatedAt": "2026-09-07T08:21:40Z",
-        "contentHash": "sha256-5c243ee614ca7487d7480869c27873bc2f63e6d102b69e5709c0cebf5b5ac8a0"
+        "listVersion": 1789386504,
+        "generatedAt": "2026-09-14T11:48:24Z",
+        "contentHash": "sha256-218392e72e343bc3ea721811f9b6dde353de706917b80606a71253124d3cfdd1"
       }
     ],
     "seedReview": {
@@ -4114,7 +4114,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-c8d28fa40a4889669ae4746d9e2cb7fd81d4d8b55ba0bba68d0075188272b7ed"
+        "structureHash": "sha256-9f6a86098708f066277a19a0cc5c629b12c9f6e212b52dd0bdaa473846f13b2b"
       },
       "primaryArticles": [
         {
@@ -4527,6 +4527,16 @@
           "desc": "SCP-4812-S: SCP-4812-S wird an seinem Entdeckungsort eingedämmt. Der Eingang zu der Höhle, in der sich SCP-4812-S befindet, ist durch drei Hochsicherheitstüren zu versiegeln. Der Zutritt zum Eindämmungsstandort von SCP-4812-S ist Personen ohne entsprechende Be…"
         },
         {
+          "id": "scp-3117",
+          "title": "Ein monsterförmiges Loch",
+          "url": "http://scp-wiki-de.wikidot.com/scp-3117",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "Ein Foundation-betriebener Bot (I/O-SPIRAL) hat Online-Communities auf Diskussionen über SCP-3117 zu überwachen. MTF Phi-11 (\"Promise-Keepers\") hat diese Diskussionen zu untersuchen und von Fall zu Fall über geeignete Maßnahmen zu entscheiden. MTF Iota-10 (\"Da…"
+        },
+        {
           "id": "scp-4485",
           "title": "Such Black Light",
           "url": "http://scp-wiki-de.wikidot.com/scp-4485",
@@ -4853,6 +4863,7 @@
             "scp-475",
             "scp-6008",
             "scp-4812",
+            "scp-3117",
             "scp-4485",
             "scp-1522",
             "scp-321-de",
@@ -6233,7 +6244,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-bc2e3cc9a4736b644979c821ecc75c46cdb0660d87af787b24e8ace072be2c86"
+        "structureHash": "sha256-ad2c128338e5c30c33d6e49e6149782050778b05dbe715698da63ae5ed994d6e"
       },
       "primaryArticles": [
         {
@@ -6575,13 +6586,6 @@
           "desc": "Trickster Heist Teil 1 / Teil 2 / Teil 3"
         },
         {
-          "id": "nexus-11-3",
-          "title": "Trickster Heist, Teil 3",
-          "url": "http://scp-wiki-de.wikidot.com/nexus-11-3",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "verlust-2",
           "title": "Verlust, Episode 2: Gejagt",
           "url": "http://scp-wiki-de.wikidot.com/verlust-2",
@@ -6590,6 +6594,13 @@
           "contentKind": "tale",
           "os": 2,
           "desc": "Artikel: Verlust, Episode 2: Gejagt Autor: Flaming2204"
+        },
+        {
+          "id": "nexus-11-3",
+          "title": "Trickster Heist, Teil 3",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-11-3",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "nexus-11-2",
@@ -6705,8 +6716,8 @@
             "ein-seltsamer-tagtraum-so-suess-wie-gift",
             "verlust-1",
             "nexus-11-1",
-            "nexus-11-3",
             "verlust-2",
+            "nexus-11-3",
             "nexus-11-2",
             "budgetkuerzungen",
             "wie-lange-dauert-die-unendlichkeit",
@@ -7508,7 +7519,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-2dcd68d5edb4bc56ca3a483fe043644b60b8735628ceedcef8bbf8bbc4d6b48a"
+        "structureHash": "sha256-f7617a1795d66ef9a199a697b34497090b90e9e4ef6cb3864017b40078d9237a"
       },
       "primaryArticles": [
         {
@@ -7522,12 +7533,12 @@
           "desc": "Da sich SCP-1134-JP nicht aus seinem Gebiet entfernt, können Überwachungskameras um und im Geschäft aufgestellt werden, um seine Aktivitäten zu überwachen. Wenn SCP-1134-JP Anzeichen von Misstrauen gegenüber den Überwachungskameras zeigt, sind ihm diese als Si…"
         },
         {
-          "id": "yamizushi-hub",
-          "title": "Finstersushi-Hub",
-          "url": "http://scp-wiki-de.wikidot.com/yamizushi-hub",
+          "id": "nexus-13-3",
+          "title": "Der Zornregulator, Teil 3",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Die Empfehlung für heute? Nun, da hätten wir Finstersushi-Hub ."
+          "desc": "Die Empfehlung für heute? Nun, da hätten wir Der Zornregulator, Teil 3 ."
         },
         {
           "id": "nexus-13-2",
@@ -7537,9 +7548,9 @@
           "contentKind": "tale"
         },
         {
-          "id": "nexus-13-3",
-          "title": "Der Zornregulator, Teil 3",
-          "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
+          "id": "yamizushi-hub",
+          "title": "Gibst du dich mit solch schwachem Sushi zufrieden?",
+          "url": "http://scp-wiki-de.wikidot.com/yamizushi-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
         }
@@ -7552,7 +7563,7 @@
           "title": "Artikel",
           "articleIDs": [
             "scp-1134-jp",
-            "yamizushi-hub"
+            "nexus-13-3"
           ]
         },
         {
@@ -7560,7 +7571,7 @@
           "title": "Sushi aus der ganzen Welt",
           "articleIDs": [
             "nexus-13-2",
-            "nexus-13-3"
+            "yamizushi-hub"
           ]
         }
       ]
