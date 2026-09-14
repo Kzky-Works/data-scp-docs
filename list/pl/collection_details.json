@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789372742,
-  "generatedAt": "2026-09-14T07:59:02Z",
-  "chunkRevision": "sha256-bbc115f932cf608b155ccbdb00185bbaa56e0b085bbd305ad1247eb424fce522",
+  "listVersion": 1789383553,
+  "generatedAt": "2026-09-14T10:59:13Z",
+  "chunkRevision": "sha256-fb4d6de58b831513ad371c26cbdd811dee6bbb3018359cb26d84c51483373525",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1789372695,
-        "generatedAt": "2026-09-14T07:58:15Z",
-        "contentHash": "sha256-4bae9463181c55f7812c96237ee3140c6affc6fe4064e06d4d6a6c66d3bf8902"
+        "listVersion": 1789383274,
+        "generatedAt": "2026-09-14T10:54:34Z",
+        "contentHash": "sha256-4d8d6b1206fee806818395a01ca6269ae57b2ea19d6ab7d47254b93a4083223d"
       },
       {
         "kind": "manifest_gois",
@@ -37,27 +37,27 @@
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1788766895,
-        "generatedAt": "2026-09-07T07:41:35Z",
-        "contentHash": "sha256-2a75ce7a89e39a5fe933281096fd47162b7459239e51566a063df067f72b5066"
+        "listVersion": 1789383528,
+        "generatedAt": "2026-09-14T10:58:48Z",
+        "contentHash": "sha256-754898fd0cbe6671392cab9fa54cf8641e3abe1ca7cc7df3489200603b31c74d"
       },
       {
         "kind": "manifest_scp-pl",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-pl.json",
         "schemaVersion": 2,
-        "listVersion": 1788766895,
-        "generatedAt": "2026-09-07T07:41:35Z",
-        "contentHash": "sha256-1ffc4516f93b9f0164a65e1c81ba84645d1c227a61b11f64942fe59465741810"
+        "listVersion": 1789383528,
+        "generatedAt": "2026-09-14T10:58:48Z",
+        "contentHash": "sha256-8ccf6ae91b4b98b0881b53f242dfc9a1a11a488f53517914ecdb77fdc7bd3ff0"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1788766895,
-        "generatedAt": "2026-09-07T07:41:35Z",
-        "contentHash": "sha256-4093acd8c1bb8a8189553d2245c136f514686b1d99b2097b590c6bf45000321d"
+        "listVersion": 1789383528,
+        "generatedAt": "2026-09-14T10:58:48Z",
+        "contentHash": "sha256-1d7c080e0cf5ebcc550a9c303a7fdf194f1601b268988cdab4f8c958ab6ef676"
       }
     ],
     "seedReview": {
@@ -748,19 +748,9 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-0c78d80ce31bb7830ef8d140e37db546430b84ef135e4c6715cbc7392b9dd7b7"
+        "structureHash": "sha256-f158b4b3f00ada2a9494642f42405350f90d0b57b66a17c9fedf8c94de34d633"
       },
       "primaryArticles": [
-        {
-          "id": "spowiedz-dozorcy-anonim",
-          "title": "Spowiedź dozorcy — Anonim",
-          "url": "https://scp-pl.wikidot.com/spowiedz-dozorcy-anonim",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 9,
-          "desc": "Ów \"D\" twierdził, że pracuje dla Fundacji SCP, specjalizując się w anomaliach międzywymiarowych. Nigdy co prawda nie zaznaczył, w jakim Ośrodku dokładnie pracuje, ale potwierdził, że cieszy się tam wysoką pozycją. Przyznaję, że na początku byłem dosyć sceptycz…"
-        },
         {
           "id": "scp-pl-266",
           "title": "Kości Zostały Rzucone",
@@ -856,21 +846,14 @@
       "description": "Poniższy hub kanonu obecnie przechodzi gruntowną przebudowę i przepisanie. W związku z tym niektóre informacje zawarte na tej stronie mogę być nieaktualne lub błędne. Po więcej informacji prosimy skontaktować się z głównym autorem kanonu, BlazingPie . Przebudowa powinna zostać zakończona w najbliższym czasie, dziękujemy za cierpliwość.",
       "articleSections": [
         {
-          "id": "01-najnowsza-praca",
-          "title": "NAJNOWSZA PRACA",
-          "articleIDs": [
-            "spowiedz-dozorcy-anonim"
-          ]
-        },
-        {
-          "id": "02-baza-danych-wymiarowego-osrodka-pl-174",
+          "id": "01-baza-danych-wymiarowego-osrodka-pl-174",
           "title": "BAZA DANYCH WYMIAROWEGO OŚRODKA PL-174",
           "articleIDs": [
             "scp-pl-266"
           ]
         },
         {
-          "id": "03-alea-iacta-est",
+          "id": "02-alea-iacta-est",
           "title": "Alea Iacta Est",
           "articleIDs": [
             "klamka-zapadla",
@@ -882,7 +865,7 @@
           ]
         },
         {
-          "id": "04-prace-poboczne",
+          "id": "03-prace-poboczne",
           "title": "Prace poboczne",
           "articleIDs": [
             "kolubryna-w-ladach-poludnia",
@@ -8343,7 +8326,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-1a45272211a5052e4bd906a4efe5c47a3405db65a5e6537ae6b03a89caa4a98a"
+        "structureHash": "sha256-ca8fdd4e136bbdb436293425ef335f508e5dd062277ece8a50f88bea8c14f252"
       },
       "primaryArticles": [
         {
@@ -8487,6 +8470,14 @@
           "desc": "Kryptonim Projektu: Olimpia Identyfikator Projektu: PRJOLM-000134 Pozwolenie oraz Kartoteka#: NPF-00051473 Główny Naukowiec: Profesor K. P. Crow"
         },
         {
+          "id": "olympia-integration-experiment-omega",
+          "title": "Eksperyment Połączenia Olimpia OMEGA",
+          "url": "https://scp-pl.wikidot.com/olympia-integration-experiment-omega",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "-"
+        },
+        {
           "id": "production-model-changes-and-procedures",
           "title": "Zmiany Modelu Produkcji oraz Procedury",
           "url": "https://scp-pl.wikidot.com/production-model-changes-and-procedures",
@@ -8528,7 +8519,8 @@
           "articleIDs": [
             "olympia-integration-experiment-alpha",
             "olympia-integration-experiment-beta",
-            "olympia-integration-experiment-gamma"
+            "olympia-integration-experiment-gamma",
+            "olympia-integration-experiment-omega"
           ]
         },
         {
