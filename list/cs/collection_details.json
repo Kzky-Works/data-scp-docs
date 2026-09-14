@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789372842,
-  "generatedAt": "2026-09-14T08:00:42Z",
-  "chunkRevision": "sha256-453c62c08e3c3cbd30597a0f0963f576d0df46c1a47870768d7e1487000d85ce",
+  "listVersion": 1789391052,
+  "generatedAt": "2026-09-14T13:04:12Z",
+  "chunkRevision": "sha256-a0a637c9cdc0671e5127e32cd7dcb88643b9f423e51ce844bb35401fbaaec5c5",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1789372816,
-        "generatedAt": "2026-09-14T08:00:16Z",
-        "contentHash": "sha256-d18979abaa751aca8fe6fbad606957aaaa4b90d8e0d45ec564c50083ad5cef9d"
+        "listVersion": 1789390944,
+        "generatedAt": "2026-09-14T13:02:24Z",
+        "contentHash": "sha256-a6c77c4f529e588ec180f3faadeae597e87a0a8d805b30653b0d16dea3424011"
       },
       {
         "kind": "manifest_scp-cs",
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_scp-cs.json",
         "schemaVersion": 2,
-        "listVersion": 1788650746,
-        "generatedAt": "2026-09-05T23:25:46Z",
-        "contentHash": "sha256-b96fdbd230b205e5a6be7ed92239bf1b1964d1c4e12df4e0b45bffb877544574"
+        "listVersion": 1789391030,
+        "generatedAt": "2026-09-14T13:03:50Z",
+        "contentHash": "sha256-9cfdc222ea6c97402ee34e4f6a751e586a7b77e898edee66c3a7f4ba80da1203"
       },
       {
         "kind": "manifest_scp-int",
@@ -37,18 +37,18 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1788650746,
-        "generatedAt": "2026-09-05T23:25:46Z",
-        "contentHash": "sha256-620a7ef9d3316a4ccc9411adad9f2e7a15498abb341e5ed83e0d8ebdf0d0f996"
+        "listVersion": 1789390927,
+        "generatedAt": "2026-09-14T13:02:07Z",
+        "contentHash": "sha256-6184df5d97eef71919fae8370bac1e3ef3d2c640e22d7e809d6e3e40a4390bdb"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1788770672,
-        "generatedAt": "2026-09-07T08:44:32Z",
-        "contentHash": "sha256-6d33701cb08ed83a540694186979ceab710e06d9f90c7f846c85ab860fd14e1c"
+        "listVersion": 1789391030,
+        "generatedAt": "2026-09-14T13:03:50Z",
+        "contentHash": "sha256-645cbd9a26dcfe916fbd230ffb68e8af57a7c439d50e71e59806157661fae9ce"
       }
     ],
     "seedReview": {
@@ -2370,7 +2370,7 @@
         "allowedHosts": [
           "scp-cs.wikidot.com"
         ],
-        "structureHash": "sha256-a3e18ee044eecb0a1412b42cdbdee2ab41348d119bef5e7aaa16c36fc08aa658"
+        "structureHash": "sha256-3115a03ed64d8d6e88821be52ffe7a0e606ce7892f29aaa3888521e0807fc9e4"
       },
       "primaryArticles": [
         {
@@ -3009,7 +3009,7 @@
         "allowedHosts": [
           "scp-cs.wikidot.com"
         ],
-        "structureHash": "sha256-6ec165763dc628b42871cdb7eb2df8e7562469789475e39c9f712874f98dfb1a"
+        "structureHash": "sha256-b5a0abc8bb4b9b2fc09bd51e07f70e1cbb730d36a19c1dc8a038b53793c784b3"
       },
       "primaryArticles": [
         {
@@ -3637,6 +3637,15 @@
           "desc": "Inspiraci je možné načerpat v původní anglické sérii příběhů Cool War . Pro nějakou česky psanou inspiraci o umělcích čtěte Bergmannův Paradox nebo příběh Tahy štětcem ."
         },
         {
+          "id": "duhova-intervence",
+          "title": "Duhová intervence",
+          "url": "http://scp-cs.wikidot.com/duhova-intervence",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 7,
+          "desc": "Houkání projíždějící sanitky za oknem je to, co mě vytrhne ze spánku. Šedé světlo zataženého nebe. Už asi bude odpoledne. Zase jsem prospala oběd, ale stejně nemám hlad. Venku je horko a cítím, že jsem propocená."
+        },
+        {
           "id": "metamorfozy-milence",
           "title": "Metamorfózy Milence",
           "url": "http://scp-cs.wikidot.com/metamorfozy-milence",
@@ -3764,6 +3773,7 @@
           "id": "03-additional-reviewed-articles",
           "title": "Additional reviewed articles",
           "articleIDs": [
+            "duhova-intervence",
             "metamorfozy-milence",
             "nikdo-nevi",
             "svet-se-bez-vas-nezastavi",
@@ -3919,18 +3929,18 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-40dcbedc9714f9b5462620c4239a52eff8adbcd5a938c8867f53d1725b401c8d"
+        "structureHash": "sha256-1dc8feae52bcdbce3998ec8c48209e3fff18f6477fd94c1f336d242acc431075"
       },
       "primaryArticles": [
         {
-          "id": "lepidopterofagie",
-          "title": "Lepidoptero(fóbie/fílie)",
-          "url": "http://scp-cs.wikidot.com/lepidopterofagie",
+          "id": "volani-z-nemocnice",
+          "title": "Volání z nemocnice",
+          "url": "http://scp-cs.wikidot.com/volani-z-nemocnice",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 1,
-          "desc": "Název: Lepidoptero(fóbie/fílie) Autor: Totally Human Person"
+          "os": 6,
+          "desc": "Dva roky před přelomem tisíciletí, 6. května, mě rodiče poslali za tetou do malého města, o kterém jsem nikdy předtím neslyšel. Tvrdili, že tam konečně zjistím, že svět nekončí za hranicemi našeho města. Tehdy mi to znělo spíš jako trest převlečený za dárek."
         },
         {
           "id": "oresnik-kouzelnik-a-vez",
@@ -3951,6 +3961,16 @@
           "contentKind": "tale",
           "os": 6,
           "desc": "Název: Anatomie útěku z města Autor: Totally Human Person"
+        },
+        {
+          "id": "lepidopterofagie",
+          "title": "Lepidoptero(fóbie/fílie)",
+          "url": "http://scp-cs.wikidot.com/lepidopterofagie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Název: Lepidoptero(fóbie/fílie) Autor: Totally Human Person"
         }
       ],
       "supplementLinks": [],
@@ -3960,9 +3980,10 @@
           "id": "01-nx-151-tynec-nad-cenzurou",
           "title": "Nx-151: Týnec nad Cenzurou",
           "articleIDs": [
-            "lepidopterofagie",
+            "volani-z-nemocnice",
             "oresnik-kouzelnik-a-vez",
-            "anatomie-uteku"
+            "anatomie-uteku",
+            "lepidopterofagie"
           ]
         }
       ],
@@ -4370,18 +4391,18 @@
         "mode": "officialHubStructure",
         "tagSource": "cs_tag.json",
         "emptySectionTitle": "Články",
-        "structureHash": "sha256-2eb1d63352689ba5312f9ab0ae9947ce5318e335d0bc7757d8c4377ff1a48039"
+        "structureHash": "sha256-9ddc9b2ed0b80452a884547e6f288cf130db15060c9dd71d3202525c3462b56d"
       },
       "primaryArticles": [
         {
-          "id": "svet-se-bez-vas-nezastavi",
-          "title": "Svět se bez vás nezastaví",
-          "url": "http://scp-cs.wikidot.com/svet-se-bez-vas-nezastavi",
+          "id": "zamalovana-osobnost",
+          "title": "Zamalovaná Osobnost",
+          "url": "http://scp-cs.wikidot.com/zamalovana-osobnost",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 2,
-          "desc": "Název: Svět se bez vás nezastaví Autor: Utylike"
+          "os": 9,
+          "desc": "…se probere. …se zmateně posadí na posteli. Proč si nepamatuje svoje jméno? Není to ta věc, co si zrovna má pamatovat? Praštila se do hlavy? Prohlédne si vlastní ruce; jako montáž fotek toho samého místa foceného každý den v tu samou dobu, stejné, ale s pomalu…"
         },
         {
           "id": "platek-ze-zivota-hezky-od-kosti",
@@ -4990,7 +5011,7 @@
           "id": "01-clanky",
           "title": "Články",
           "articleIDs": [
-            "svet-se-bez-vas-nezastavi",
+            "zamalovana-osobnost",
             "platek-ze-zivota-hezky-od-kosti",
             "niterna-kakofonie-cev",
             "prokrvena-chut-synkreze-jazyku",
@@ -7663,7 +7684,7 @@
         "allowedHosts": [
           "scp-cs.wikidot.com"
         ],
-        "structureHash": "sha256-54ad59ad26b556831904963de0dda35c346042089b83f942fd06c9847f7b4ec6"
+        "structureHash": "sha256-ab48c03ef4ad10ab11e63e5b0d73fed634aae0cc7c6cd7e0b8ac376016ce7fe4"
       },
       "primaryArticles": [
         {
@@ -7758,10 +7779,13 @@
         },
         {
           "id": "really-long-unreality-tale-title-revised",
-          "title": "Alex thorley je lowkey těďka trochu opilej",
+          "title": "Alex thorley je lowkey teďka trochu opilej",
           "url": "http://scp-cs.wikidot.com/really-long-unreality-tale-title-revised",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Základní vlohy tobě propůjčené vytáhlými uzlinkami pulzující bílé hmoty a pronikající šedou hmotou opatrně reagující na mdlé světlo prázdného, zchátralého, cizíma rukama nedotčeného, nemilovaného, špinavého výklenku zaseknutého někde v bezcitné a ohromné hrudn…"
         },
         {
           "id": "burger",
