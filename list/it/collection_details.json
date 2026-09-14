@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1788769617,
-  "generatedAt": "2026-09-07T08:26:57Z",
-  "chunkRevision": "sha256-64c475acf11f8a8787d4cab642e13e202d93555a0304f4b71c117744556f73a6",
+  "listVersion": 1789386854,
+  "generatedAt": "2026-09-14T11:54:14Z",
+  "chunkRevision": "sha256-527cbd34c33ed1a833f235555ef62eada5800c414387f8cc69ad585768db577a",
   "builtFrom": {
     "manifests": [
       {
@@ -19,36 +19,36 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1788769572,
-        "generatedAt": "2026-09-07T08:26:12Z",
-        "contentHash": "sha256-9b31eb388a5eef5f16fd8997f92ecf6e63ab3e514c813065b4027fce8cfa6ad4"
+        "listVersion": 1789386806,
+        "generatedAt": "2026-09-14T11:53:26Z",
+        "contentHash": "sha256-d793059ff2ca28b8376ed3e75aaa6e7dc967c7dc4e0885ff6a293af362e11d7b"
       },
       {
         "kind": "manifest_scp-it",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-it.json",
         "schemaVersion": 2,
-        "listVersion": 1788769593,
-        "generatedAt": "2026-09-07T08:26:33Z",
-        "contentHash": "sha256-0aec8b9f73190ada1e0f190ebfd0876e3f050768ae41e1054c4eb91efe00b6ff"
+        "listVersion": 1789386831,
+        "generatedAt": "2026-09-14T11:53:51Z",
+        "contentHash": "sha256-8c8aca4e428598517fde8a6eb54299adc2f8fffcbecf781b0c10c3de08c81dc7"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1788652144,
-        "generatedAt": "2026-09-05T23:49:04Z",
-        "contentHash": "sha256-0c133bfdac25b3f518616f797f3c80944aad07057cf6e766641655932f9f6695"
+        "listVersion": 1789386831,
+        "generatedAt": "2026-09-14T11:53:51Z",
+        "contentHash": "sha256-8ae9330539ecd8076fe9a852aa4526994a512a0b681141f101503d2f2b836a84"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1788769528,
-        "generatedAt": "2026-09-07T08:25:28Z",
-        "contentHash": "sha256-43a3b6fa35f24256c7b7865f848a53a9cd2ab502dbabf1edc1826eb1a894a82f"
+        "listVersion": 1789386832,
+        "generatedAt": "2026-09-14T11:53:52Z",
+        "contentHash": "sha256-c27f3c688da4b78c5dd02f0d0a024b9aca95d1d5a8f990b12f2651c1fa1ad8da"
       }
     ],
     "seedReview": {
@@ -417,7 +417,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-191885cfeeb9c88823d2c3e98e9804e0fd65517b4e5c1f011ff5530c8e17af75"
+        "structureHash": "sha256-f930c49739f8f7fc10b2c29c9343b2d84ba51d298ea6210613cf25f2decfbfde"
       },
       "primaryArticles": [
         {
@@ -431,11 +431,14 @@
           "desc": "Di più da questo autore"
         },
         {
-          "id": "ambrose-esterberg",
-          "title": "Ambrose Esterberg",
-          "url": "http://fondazionescp.wikidot.com/ambrose-esterberg",
+          "id": "in-life-as-in-language",
+          "title": "Vivere La Vita Come Una Lingua",
+          "url": "http://fondazionescp.wikidot.com/in-life-as-in-language",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Questo racconto è stato scritto per Ralliston in occasione dello scambio di regali artisctici del 2021. Mi ci è voluto qualche giorno per capire cosa volessi scriverci in quanto Ralliston ha lasciato aperto il come il Direttore Alistair Vemhoff vada esplorato.…"
         },
         {
           "id": "tears-and-bone",
@@ -496,6 +499,13 @@
           "desc": "Il contenimento diretto di SCP-6596 risulta impossibile al momento. Ciononostante, a causa della sua relazione col Sito-120, SCP-6596 non pone alcuna minaccia al Velo. Ciò, combinato col pattern delle apparizioni di SCP-6596, ha spostato gli sforzi principali…"
         },
         {
+          "id": "ambrose-esterberg",
+          "title": "Ambrose Esterberg",
+          "url": "http://fondazionescp.wikidot.com/ambrose-esterberg",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "fresh-blood",
           "title": "Sangue Fresco",
           "url": "http://fondazionescp.wikidot.com/fresh-blood",
@@ -518,16 +528,6 @@
           "url": "http://fondazionescp.wikidot.com/scp-it-120",
           "role": "primaryArticle",
           "contentKind": "scp"
-        },
-        {
-          "id": "in-life-as-in-language",
-          "title": "Vivere La Vita Come Una Lingua",
-          "url": "http://fondazionescp.wikidot.com/in-life-as-in-language",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "Questo racconto è stato scritto per Ralliston in occasione dello scambio di regali artisctici del 2021. Mi ci è voluto qualche giorno per capire cosa volessi scriverci in quanto Ralliston ha lasciato aperto il come il Direttore Alistair Vemhoff vada esplorato.…"
         },
         {
           "id": "scp-6172",
@@ -558,7 +558,7 @@
           "title": "Articoli più Recenti",
           "articleIDs": [
             "the-edge-of-all-light",
-            "ambrose-esterberg",
+            "in-life-as-in-language",
             "tears-and-bone"
           ]
         },
@@ -605,25 +605,25 @@
           ]
         },
         {
-          "id": "08-scp-7672-alla-corte-del-re-dei-goblin",
+          "id": "08-scp-pl-389-fornax-aeterna",
+          "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
+          "articleIDs": [
+            "ambrose-esterberg"
+          ]
+        },
+        {
+          "id": "09-scp-7672-alla-corte-del-re-dei-goblin",
           "title": "SCP-7672 - Alla Corte del Re dei Goblin",
           "articleIDs": [
             "fresh-blood"
           ]
         },
         {
-          "id": "09-scp-5659-odium-dei-amoris",
+          "id": "10-scp-5659-odium-dei-amoris",
           "title": "SCP-5659 - Odium Dei Amoris",
           "articleIDs": [
             "scp-7278",
             "scp-it-120"
-          ]
-        },
-        {
-          "id": "10-danimali",
-          "title": "Danimali",
-          "articleIDs": [
-            "in-life-as-in-language"
           ]
         },
         {
