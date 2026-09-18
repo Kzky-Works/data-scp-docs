@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789634319,
-  "generatedAt": "2026-09-17T08:38:39Z",
-  "chunkRevision": "sha256-1b415dc70964956111e716ba341b43b6ad8153c56ac5df11369f0272c077d184",
+  "listVersion": 1789719491,
+  "generatedAt": "2026-09-18T08:18:11Z",
+  "chunkRevision": "sha256-371a9f0155843123254574e20bfae1b8811fcc668b7947c12bd728df8c14e373",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1789634298,
-        "generatedAt": "2026-09-17T08:38:18Z",
-        "contentHash": "sha256-d482f0869e00efc7d9001fed494842c6004200a97a53172089f60fec4953909b"
+        "listVersion": 1789719490,
+        "generatedAt": "2026-09-18T08:18:10Z",
+        "contentHash": "sha256-8c8656642ea25f808efa7475a8af4c6173c9062618d6258ff549762f49622295"
       },
       {
         "kind": "manifest_gois",
@@ -75,9 +75,9 @@
       "branchID": "scp-es",
       "path": "DataPipeline/list/es/es_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1789456677,
-      "generatedAt": "2026-09-15T07:17:57Z",
-      "contentHash": "sha256-271f3cea637d97a790426379d3117d153d32b93d263f13f0fd3e27c21eec0a6b"
+      "listVersion": 1789719219,
+      "generatedAt": "2026-09-18T08:13:39Z",
+      "contentHash": "sha256-52bec53c4a96cf35f1945c833a9db16803beee5d3309aa08c8fb84a68471ef97"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -7783,6 +7783,97 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-es:collection:canon:series-0",
+      "branchID": "scp-es",
+      "kind": "canon",
+      "hubID": "series-0",
+      "title": "Serie 0",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/series-0",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/series-0",
+      "hubPresentation": "standard",
+      "canonicalTag": "serie-0",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "serie-0",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-es",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "es_tag.json",
+        "emptySectionTitle": "Artículos",
+        "structureHash": "sha256-f4cecfe3a4f760568f6e2202f4531887fb5b59fd42811b756f4d36638ec7bfb5"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-9083",
+          "title": "Cartas para Tachar.",
+          "url": "https://lafundacionscp.wikidot.com/scp-9083",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Todos los 72 individuos afectados están bajo vigilancia de Clase-A para asegurar que cualquier filtración informativa es reportada y registrada. Las campañas de desinformación se consideran innecesarias debido a la naturaleza del evento anómalo."
+        },
+        {
+          "id": "scp-1538",
+          "title": "La Lámpara de la Plaga.",
+          "url": "https://lafundacionscp.wikidot.com/scp-1538",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "SCP-1538 debe guardarse en un casillero en el Sitio-Rojo, el cual ha sido modernizado con una cámara ventilada de materiales peligrosos. Todo el personal que entre en la taquilla debe llevar respiradores elastómeros equipados con cartuchos químicos. El persona…"
+        },
+        {
+          "id": "scp-9614",
+          "title": "Muñeca Vieja.",
+          "url": "https://lafundacionscp.wikidot.com/scp-9614",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "El lugar de recuperación se ha vuelto propiedad de la Fundación SCP. El objeto debe ser monitoreado y guardado en su cámara en todo momento. Las bajas en el Sitio-20 están siendo investigadas."
+        },
+        {
+          "id": "scp-8353",
+          "title": "Soñador.",
+          "url": "https://lafundacionscp.wikidot.com/scp-8353",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Como las Fuerzas Armadas de los Estados Unidos se han retirado de la República de Níger, los procedimientos de contención de SCP-8353 se han suspendido. Debido a los acontecimientos recientes que rodean a la anomalía, las posibilidades de redescubrimiento de c…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articulos",
+          "title": "Artículos",
+          "articleIDs": [
+            "scp-9083",
+            "scp-1538",
+            "scp-9614",
+            "scp-8353"
+          ]
+        }
+      ],
+      "description": "La Serie 0 es un canon creado por Crow-Cat , Animal Hospital , ratking666 , y Liryn ."
     },
     {
       "id": "scp-es:collection:canon:but-a-dream",
