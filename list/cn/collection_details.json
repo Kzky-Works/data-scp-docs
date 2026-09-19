@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789719630,
-  "generatedAt": "2026-09-18T08:20:30Z",
-  "chunkRevision": "sha256-93453f39f5061fed3f452352cbef30898251e7e086b0d00080c187fbb7dea1cf",
+  "listVersion": 1789805418,
+  "generatedAt": "2026-09-19T08:10:18Z",
+  "chunkRevision": "sha256-4df5680db62065ea26881f0f57ea80f80798eede84113e25b18bd158ceb729b2",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1789719372,
-        "generatedAt": "2026-09-18T08:16:12Z",
-        "contentHash": "sha256-5847885f81da0d28eba6be053fbe3f09523784d4bd9be1a15adc32d1f9a58212"
+        "listVersion": 1789805149,
+        "generatedAt": "2026-09-19T08:05:49Z",
+        "contentHash": "sha256-f0ca27039672b56b50df5bcf3831d16a6f22f3bcbe48027c863d7ec55aa3673d"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1789719390,
-        "generatedAt": "2026-09-18T08:16:30Z",
-        "contentHash": "sha256-70984d85234a1dcf96465b3f43ff100229effe45ef73888b12fb2fb5ce8eb1e8"
+        "listVersion": 1789805168,
+        "generatedAt": "2026-09-19T08:06:08Z",
+        "contentHash": "sha256-5d3b2b3fa850a414481eeb5924eea7e4212a6cb50665a2b3667144d61e73cd37"
       },
       {
         "kind": "manifest_scp-cn",
@@ -84711,7 +84711,17 @@
           "role": "primaryArticle"
         }
       ],
-      "supplementLinks": []
+      "supplementLinks": [],
+      "suppressedDeadURLs": [
+        {
+          "url": "https://scp-wiki-cn.wikidot.com/yamizushi-file-no064",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed deleted official member link"
+        }
+      ]
     },
     {
       "id": "scp-cn:collection:goi:skp-portal",
