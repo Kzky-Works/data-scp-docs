@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789805418,
-  "generatedAt": "2026-09-19T08:10:18Z",
-  "chunkRevision": "sha256-4df5680db62065ea26881f0f57ea80f80798eede84113e25b18bd158ceb729b2",
+  "listVersion": 1789893446,
+  "generatedAt": "2026-09-20T08:37:26Z",
+  "chunkRevision": "sha256-e3cb84b39b102b75e9a86eb9453bc2d9496a62db79b4e19b0382c135fc5b56e7",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1789805149,
-        "generatedAt": "2026-09-19T08:05:49Z",
-        "contentHash": "sha256-f0ca27039672b56b50df5bcf3831d16a6f22f3bcbe48027c863d7ec55aa3673d"
+        "listVersion": 1789893206,
+        "generatedAt": "2026-09-20T08:33:26Z",
+        "contentHash": "sha256-41de5c7acf3057dcbf55c6cc6e32d940fbad673aa12bbb252c9512752c128305"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1789805168,
-        "generatedAt": "2026-09-19T08:06:08Z",
-        "contentHash": "sha256-5d3b2b3fa850a414481eeb5924eea7e4212a6cb50665a2b3667144d61e73cd37"
+        "listVersion": 1789893211,
+        "generatedAt": "2026-09-20T08:33:31Z",
+        "contentHash": "sha256-4880c36ec58e60fb98972d152fbe714f0fe8ac17f26a80c5a7babcf1cd4bd9d9"
       },
       {
         "kind": "manifest_scp-cn",
@@ -75,9 +75,9 @@
       "branchID": "scp-cn",
       "path": "DataPipeline/list/cn/cn_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1789114429,
-      "generatedAt": "2026-09-11T08:13:49Z",
-      "contentHash": "sha256-fd8bce18f1a9b1c14d24aeef5d629d4f7748c883e96344947ab67626e99e3793"
+      "listVersion": 1789893206,
+      "generatedAt": "2026-09-20T08:33:26Z",
+      "contentHash": "sha256-2adcb0e63097d4ba7514ec2a5c1f5e0376fe8d07ecc5028a399ffa29c418f105"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -34877,6 +34877,247 @@
         }
       ],
       "description": "“纵使人生被阴影所遮蔽……也总是会有光的。 支撑我们前行的事物不会因为痛苦和磨难而消失。 这些人生的灰暗将使那些微小而不易得的闪光弥足珍贵，让人愿为此热爱生活。 或微弱如萤火、或璀璨似繁星，阴影越漆黑，光就因此被反衬得越亮越耀眼。”"
+    },
+    {
+      "id": "scp-cn:collection:series:shancheng2024-hub",
+      "branchID": "scp-cn",
+      "kind": "series",
+      "hubID": "shancheng2024-hub",
+      "title": "山城2024 故事系列 中心页",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/shancheng2024-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/shancheng2024-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "shancheng2024-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "shancheng2024-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-wiki-cn.wikidot.com"
+        ],
+        "structureHash": "sha256-1b6eafd1d086653f439e07a2d032980023c519c79cbb35e5fc929db442e03a33"
+      },
+      "primaryArticles": [
+        {
+          "id": "shan-cheng-2024",
+          "title": "山城2024：哪怕洪水滔天",
+          "url": "https://scp-wiki-cn.wikidot.com/shan-cheng-2024",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 322,
+          "desc": "图源： https://commons.wikimedia.org/wiki/File:Chongqing_center.jpg 字体为汇文明朝"
+        },
+        {
+          "id": "never-forget-your-father-1",
+          "title": "山城2024+3：再难遗忘乃父之相（一）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 46,
+          "desc": "本文章包含成人内容，可能并不适合所有读者阅读。"
+        },
+        {
+          "id": "never-forget-your-father-2",
+          "title": "山城2024+3：再难遗忘乃父之相（二）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 41,
+          "desc": "你从口袋里摸出一根被挤压得有些变形的烟，看着火星一点点跳动着，青色的烟气在空气中腾起，与雨雾相交会后逐渐变得不分彼此。"
+        },
+        {
+          "id": "never-forget-your-father-3",
+          "title": "山城2024+3：再难遗忘乃父之相（三）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 41,
+          "desc": "在药剂施舍的安眠中，你坠入一场无边梦境。"
+        },
+        {
+          "id": "never-forget-your-father-4",
+          "title": "山城2024+3：再难遗忘乃父之相（四）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 45,
+          "desc": "你打量着那个看起来有些困顿疲倦的人，不到两秒便推断出他那副无精打采的样子一定是基金会研制的吐真剂导致的结果——这一技术在三年间已经发展得相当成熟，并且几乎配给了所有配备牢房或起到类似作用的房间的站点——不过基金会的站点，真的有哪座是不兼职牢房的吗？你不禁腹诽了半句。"
+        },
+        {
+          "id": "never-forget-your-father-5",
+          "title": "山城2024+3：再难遗忘乃父之相（五）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 52,
+          "desc": "山城大概快到了。"
+        },
+        {
+          "id": "never-forget-your-father-6",
+          "title": "山城2024+3：再难遗忘乃父之相（六）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 33,
+          "desc": "带着浓厚水汽的湿润雨雾被划成两半，一颗银色子弹拖拽着一圈圈EVE粒子残迹的弹道旋转着击中前方一人肋骨。骨片与鲜血于是飞泄而出，宛若一朵怒放在雨雾中的玫瑰。"
+        },
+        {
+          "id": "never-forget-your-father-7",
+          "title": "山城2024+3：再难遗忘乃父之相（七）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-7",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 47,
+          "desc": "你在Site-CN-30站点的走廊中穿行。"
+        },
+        {
+          "id": "never-forget-your-father-8",
+          "title": "山城2024+3：再难遗忘乃父之相（八）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-8",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 33,
+          "desc": "“告诉我……那天究竟发生了什么。”望着金文站在不远处的露天阳台上抽烟的背影，你惶恐不安地开了口：“我是说，山城图书馆陷落那天。”"
+        },
+        {
+          "id": "never-forget-your-father-9",
+          "title": "山城2024+3：再难遗忘乃父之相（九）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-9",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 28,
+          "desc": "“你是……”雨丝擦过你的脸，你望着面前那眉目中透出一股熟悉的金发男孩，一个大胆的猜测在脑海中逐渐成型。"
+        },
+        {
+          "id": "never-forget-your-father-end",
+          "title": "山城2024+3：再难遗忘乃父之相（完）",
+          "url": "https://scp-wiki-cn.wikidot.com/never-forget-your-father-end",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 36,
+          "desc": "一个破损的痛苦之梨搁置在你脚下，你颇为随意地将它踢开，就像踢走一条发臭的死狗。头顶几滴渗水滴下，年久失修的照明灯光一闪一闪，黑暗与惨白交织着勾勒出走廊和杂物的形状。你走进去，一股陈腐浊气扑来。"
+        },
+        {
+          "id": "when-you-in-a-war",
+          "title": "山城2024+4：征伐得偿所愿",
+          "url": "https://scp-wiki-cn.wikidot.com/when-you-in-a-war",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 66,
+          "desc": "“终有一天……你将忆起所爱之人的亲吻，随后这场毫无任何正义可言的战争便要终结。”"
+        },
+        {
+          "id": "silver-bay",
+          "title": "流放",
+          "url": "https://scp-wiki-cn.wikidot.com/silver-bay",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 155,
+          "desc": "我到现在都还能背出那则通讯。二零二四年，山城。当看到它的时候，我心底便隐约有什么在晃荡，我起身开窗，站点外两江洪流的轰鸣滔滔作响。之后我离开、世界各地满处跑、再回来，涛声依旧。如今我发现，或许那声音是某种预启。"
+        },
+        {
+          "id": "go-to-the-sea",
+          "title": "印记",
+          "url": "https://scp-wiki-cn.wikidot.com/go-to-the-sea",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "我们一起去海滩吧。她说。 今天是我妹妹死后第七年的纪念日，我连如何流泪的方式都早已忘却。 微风撩动窗帘，我只是呆滞地静坐着，任凭雨丝从窗纱缝隙里飘入，打在脸上。妹妹送的骨质风铃仍在阳台门上晃动，发出一串如她生前那般动听的笑声——她是山城地区曾经相当有名的异常乐器师，死在了曝光战争的第三年——公元2027年8月31日。死时，她身上所携带的全部乐器都被基金会特工摔成碎片，塞进了她全身所有的孔洞里。这里的孔洞包括但不限于口腔，鼻孔，生殖器官，肛门和特工们用武器制造的伤口——在六年前对奇术战争部剩余成员的审判中，他们对此供…"
+        },
+        {
+          "id": "shan-cheng-hou-xu",
+          "title": "山城2024+0：宿命曲折回环",
+          "url": "https://scp-wiki-cn.wikidot.com/shan-cheng-hou-xu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 47,
+          "desc": "小雨依旧淅沥沥的下着，但山城不再藏于雨幕后。 EVE粒子流动的嗡嗡轻响此刻却在愤怒地轰鸣。山城图书馆 被团团人群围住，大量蓝色的星点在它的上空飘荡。"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "shan-cheng-2024",
+            "never-forget-your-father-1",
+            "never-forget-your-father-2",
+            "never-forget-your-father-3",
+            "never-forget-your-father-4",
+            "never-forget-your-father-5",
+            "never-forget-your-father-6",
+            "never-forget-your-father-7",
+            "never-forget-your-father-8",
+            "never-forget-your-father-9",
+            "never-forget-your-father-end",
+            "when-you-in-a-war",
+            "silver-bay",
+            "go-to-the-sea",
+            "shan-cheng-hou-xu"
+          ]
+        }
+      ],
+      "description": "这场攻击间接导致了时任馆长欧怀水的死亡，同时，奇术战争部上位，使用思维强化药剂（类似三体的思想钢印和1984的洗脑）控制奇术师，曝光战争开始了。"
     },
     {
       "id": "scp-cn:collection:series:shengxiang-chenyan",
@@ -82309,6 +82550,13 @@
           "id": "the-skull",
           "title": "髑髅",
           "url": "https://scp-wiki-cn.wikidot.com/the-skull",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "the-traveller-myf",
+          "title": "莫游圃，又称“旅行家”",
+          "url": "https://scp-wiki-cn.wikidot.com/the-traveller-myf",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
