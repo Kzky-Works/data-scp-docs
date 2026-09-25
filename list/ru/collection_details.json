@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1790237518,
-  "generatedAt": "2026-09-24T08:11:58Z",
-  "chunkRevision": "sha256-732f6b31b163eda6f65f6937b95d2ab78655c1fa667b5dbb7d6332a5bb3d2170",
+  "listVersion": 1790357163,
+  "generatedAt": "2026-09-25T17:26:03Z",
+  "chunkRevision": "sha256-43ff59cf1aa6a09ccb0bcea6b5f5fbf0b182dce3c2c87019342e5539357bb7a2",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1790151488,
-        "generatedAt": "2026-09-23T08:18:08Z",
-        "contentHash": "sha256-e74ad8135fbecfb3d2bf564359bbf788c5f80ef9dd09da405948ffbaff69b11d"
+        "listVersion": 1790356800,
+        "generatedAt": "2026-09-25T17:20:00Z",
+        "contentHash": "sha256-851d6001f7016ed751bf0c4ab214b5e2d167cfc905c9819a5502efd51752d785"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1790151497,
-        "generatedAt": "2026-09-23T08:18:17Z",
-        "contentHash": "sha256-7e7eea4530b79d6ce841f2e9b23daab2c6a8a6410c2fbf44c8c0c6dcbc6ec508"
+        "listVersion": 1790356940,
+        "generatedAt": "2026-09-25T17:22:20Z",
+        "contentHash": "sha256-a8fa0b3429e8dcce50284fc3b05f83ce2d7a2de0110df132c2a5af86f2f5b5aa"
       },
       {
         "kind": "manifest_scp-int",
@@ -37,27 +37,27 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1790151497,
-        "generatedAt": "2026-09-23T08:18:17Z",
-        "contentHash": "sha256-0ba7fb8bdcab8d0cbdcb78cd2cb5903d8dcb99d30d8c33979a3631929093b294"
+        "listVersion": 1790356823,
+        "generatedAt": "2026-09-25T17:20:23Z",
+        "contentHash": "sha256-67c8f8e731d4638a4d8f447a300368587b4a1b73423d1f3b4e3a5393f4f82ade"
       },
       {
         "kind": "manifest_scp-ru",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-ru.json",
         "schemaVersion": 2,
-        "listVersion": 1789377510,
-        "generatedAt": "2026-09-14T09:18:30Z",
-        "contentHash": "sha256-d79f11c5e0922bf044a20303b2db0548c4d6dc5c43c689e3bbe0fca66059e90b"
+        "listVersion": 1790356823,
+        "generatedAt": "2026-09-25T17:20:23Z",
+        "contentHash": "sha256-1517b481c885c8b2573b5421dfaeee8ff0d09c0a1f47554cbe28b7341c62c1fc"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1790237369,
-        "generatedAt": "2026-09-24T08:09:29Z",
-        "contentHash": "sha256-63004e6e302b6cdba4fac63325434965854d2557f7e1d51c1cb669208adce22d"
+        "listVersion": 1790356797,
+        "generatedAt": "2026-09-25T17:19:57Z",
+        "contentHash": "sha256-e41056934b1794b1fe4967a024fd5cf2739bffe17a2340372a7234e969cadee0"
       }
     ],
     "seedReview": {
@@ -80,9 +80,9 @@
       "branchID": "scp-ru",
       "path": "DataPipeline/list/ru/ru_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1790237369,
-      "generatedAt": "2026-09-24T08:09:29Z",
-      "contentHash": "sha256-33b3d7c05260810a394f315ae2e0e020ca2e88e712d332444f921ee22920559c"
+      "listVersion": 1790356944,
+      "generatedAt": "2026-09-25T17:22:24Z",
+      "contentHash": "sha256-f4f1b23a06b2b1fcd546e9e1acf4fb1e28b4dcdb344dc300f3236658b09f6ef3"
     }
   },
   "collections": [
@@ -13019,6 +13019,87 @@
       "supplementLinks": []
     },
     {
+      "id": "scp-ru:collection:goi:pte-9492-corona",
+      "branchID": "scp-ru",
+      "kind": "goi",
+      "hubID": "pte-9492-corona",
+      "title": "ВУС-9492 \"Сложности перевода\"",
+      "sourceListURL": "https://scpfoundation.net/pte-9492-corona",
+      "officialHubURL": "https://scpfoundation.net/pte-9492-corona",
+      "hubPresentation": "standard",
+      "canonicalTag": "pte-9492-corona",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "pte-9492-corona",
+        "notes": [
+          "auto-derived from manifest_gois.goiRegions.ru"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "auto-derived from GoI region articles"
+      },
+      "memberManifests": [
+        "manifest_gois"
+      ],
+      "memberResolution": {
+        "mode": "goiRegionArticles",
+        "region": "ru"
+      },
+      "primaryArticles": [
+        {
+          "id": "wans-image-png",
+          "title": "Образ_WAN.png",
+          "url": "https://scpfoundation.net/wans-image-png",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "pepsi-coke-territorial-holdings",
+          "title": "Внутренний документ PSYCHE 75-03718: Зоны контроля «ПепсиКо» и «Кока-Колы»",
+          "url": "https://scpfoundation.net/pepsi-coke-territorial-holdings",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "Конец маскараду",
+          "url": "https://scpfoundation.net/piercing-the-veil",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "5th-global-occult-coalition-donation",
+          "title": "Пятое Пожертвование Глобальной Оккультной Коалиции",
+          "url": "https://scpfoundation.net/5th-global-occult-coalition-donation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1484-ru",
+          "title": "UTE-1500 «Дадо»",
+          "url": "https://scpfoundation.net/scp-1484-ru",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "a-sympathetic-thorn-in-the-side-of-the-bookburners",
+          "title": "Сочувствующая заноза в боку Книгожогов",
+          "url": "https://scpfoundation.net/a-sympathetic-thorn-in-the-side-of-the-bookburners",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "memorandum-083-regarding-project-guardianship",
+          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
+          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        }
+      ],
+      "supplementLinks": []
+    },
+    {
       "id": "scp-ru:collection:goi:wip:what-about-ai",
       "branchID": "scp-ru",
       "kind": "goi",
@@ -13121,87 +13202,6 @@
           "id": "impossible-murder",
           "title": "Невозможное убийство",
           "url": "https://scpfoundation.net/impossible-murder",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        }
-      ],
-      "supplementLinks": []
-    },
-    {
-      "id": "scp-ru:collection:goi:pte-9492-corona",
-      "branchID": "scp-ru",
-      "kind": "goi",
-      "hubID": "pte-9492-corona",
-      "title": "ВУС-9492 \"Сложности перевода\"",
-      "sourceListURL": "https://scpfoundation.net/pte-9492-corona",
-      "officialHubURL": "https://scpfoundation.net/pte-9492-corona",
-      "hubPresentation": "standard",
-      "canonicalTag": "pte-9492-corona",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "pte-9492-corona",
-        "notes": [
-          "auto-derived from manifest_gois.goiRegions.ru"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "auto-derived from GoI region articles"
-      },
-      "memberManifests": [
-        "manifest_gois"
-      ],
-      "memberResolution": {
-        "mode": "goiRegionArticles",
-        "region": "ru"
-      },
-      "primaryArticles": [
-        {
-          "id": "wans-image-png",
-          "title": "Образ_WAN.png",
-          "url": "https://scpfoundation.net/wans-image-png",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "pepsi-coke-territorial-holdings",
-          "title": "Внутренний документ PSYCHE 75-03718: Зоны контроля «ПепсиКо» и «Кока-Колы»",
-          "url": "https://scpfoundation.net/pepsi-coke-territorial-holdings",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "piercing-the-veil",
-          "title": "Конец маскараду",
-          "url": "https://scpfoundation.net/piercing-the-veil",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "5th-global-occult-coalition-donation",
-          "title": "Пятое Пожертвование Глобальной Оккультной Коалиции",
-          "url": "https://scpfoundation.net/5th-global-occult-coalition-donation",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-1484-ru",
-          "title": "UTE-1500 «Дадо»",
-          "url": "https://scpfoundation.net/scp-1484-ru",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "a-sympathetic-thorn-in-the-side-of-the-bookburners",
-          "title": "Сочувствующая заноза в боку Книгожогов",
-          "url": "https://scpfoundation.net/a-sympathetic-thorn-in-the-side-of-the-bookburners",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "memorandum-083-regarding-project-guardianship",
-          "title": "МЕМОРАНДУМ 083 КАСАТЕЛЬНО ПРОЕКТА \"ОПЕКА\"",
-          "url": "https://scpfoundation.net/memorandum-083-regarding-project-guardianship",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
