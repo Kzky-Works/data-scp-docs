@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1790238153,
-  "generatedAt": "2026-09-24T08:22:33Z",
-  "chunkRevision": "sha256-d3a251b34b0ce12622e24ef7c923800b5d6cc9350c7ab86fa72099bdb68e8217",
+  "listVersion": 1790362249,
+  "generatedAt": "2026-09-25T18:50:49Z",
+  "chunkRevision": "sha256-9ed937a75407f8665347c55caf2f871687c7072bb28eb5522800587486c581fc",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1790238134,
-        "generatedAt": "2026-09-24T08:22:14Z",
-        "contentHash": "sha256-213befb8ff2678086415ee04d6fe0ffd3f020ebedc6ec6e07b989ca7e0aa69cf"
+        "listVersion": 1790362024,
+        "generatedAt": "2026-09-25T18:47:04Z",
+        "contentHash": "sha256-421f69c458e4623354ffda6356d043605a0673c24b805db0730780416110efe7"
       },
       {
         "kind": "manifest_gois",
@@ -28,9 +28,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-de.json",
         "schemaVersion": 2,
-        "listVersion": 1789386504,
-        "generatedAt": "2026-09-14T11:48:24Z",
-        "contentHash": "sha256-57e9b8100313de8a8fd0dfb50ffb0b7f4cdfebf53eeb74fdc3414890b7a716cc"
+        "listVersion": 1790362213,
+        "generatedAt": "2026-09-25T18:50:13Z",
+        "contentHash": "sha256-d11aa099028e9cda160852ac9282261455db13ea9d7b83e8375f3c3728465ed4"
       },
       {
         "kind": "manifest_scp-int",
@@ -46,18 +46,18 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1789386374,
-        "generatedAt": "2026-09-14T11:46:14Z",
-        "contentHash": "sha256-d9d810a73c1f5b4689c7e2b4b767e624dc1cacdf3d5d4596d3a121124ee81a85"
+        "listVersion": 1790362213,
+        "generatedAt": "2026-09-25T18:50:13Z",
+        "contentHash": "sha256-ec55954b7575332b65a1b1ef41a468e23ea1dd173a3657567ccfc4bfb5d0590a"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1789446780,
-        "generatedAt": "2026-09-15T04:33:00Z",
-        "contentHash": "sha256-65ec0ad0fcdadc6f78a9c7c65b90af5d322b42585961daa92bf1c193d681ffe6"
+        "listVersion": 1790362214,
+        "generatedAt": "2026-09-25T18:50:14Z",
+        "contentHash": "sha256-397de62d6eb293f5971ed0ff74fb25ec3dcc541ab01c81695ca1ec4ed21ec928"
       }
     ],
     "seedReview": {
@@ -152,7 +152,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-7ab5b78873dba707cb33ef530a337b0fec481afe369ed780a3d9ca8a31828ba2"
+        "structureHash": "sha256-d6a4f702030d4ca089a717017b8014f0de05606d098c3063821ccd95b6f77b6e"
       },
       "primaryArticles": [
         {
@@ -207,10 +207,13 @@
         },
         {
           "id": "seher-hub",
-          "title": "\"Seher\"-Geschichten",
+          "title": "\"Seher\"-Geschichten-Hub",
           "url": "http://scp-wiki-de.wikidot.com/seher-hub",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Dies ist eine Anthologie von Geschichten rund um Einsätze und Erlebnisse des Beta-Teams der MTF DE20-ℜ (\"Seher\"). Es spielt überwiegend in den Jahren 2011 bis 2023, aber Abweichungen können vorkommen."
         },
         {
           "id": "der-restaurator-und-die-soeldnerin",
@@ -234,10 +237,13 @@
         },
         {
           "id": "rbf-hub",
-          "title": "\"Reißend, Beißend, Flehend\"-Reihe",
+          "title": "\"Reißend, Beißend, Flehend\"-Hub",
           "url": "http://scp-wiki-de.wikidot.com/rbf-hub",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Geschichten aus den Alpen, 7. August 1909 geschr. & gez. Lupus Ferris Dorien Esthar \"Dort stand sie, direkt vor mir. Und blickte mich an."
         },
         {
           "id": "ein-geschenk-fuer-eine-loewin",
@@ -293,8 +299,11 @@
           "id": "ritterlichkeit",
           "title": "Ritterlichkeit",
           "url": "http://scp-wiki-de.wikidot.com/ritterlichkeit",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "\"Hey, Großväterchen, wie war das damals eigentlich, mit den Damen?\" Der mehrere Jahrhunderte jüngere Mann ließ den Pfeil von dem Kabel schnellen und traf das Ziel mit einer für ihn gewohnten Präzision, trotzdem erntete er ein abschätziges Schnalzen von dem and…"
         },
         {
           "id": "der-anfang-vom-ende",
@@ -901,7 +910,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-39404f4b89281d0d8291ccf6e2d56f3d1dded5492811e674f4600b31364d6311"
+        "structureHash": "sha256-c0b6a7b80a691d5144446d1fed75acd842714a019639bf726928596044a3bb2b"
       },
       "primaryArticles": [
         {
@@ -926,24 +935,33 @@
         },
         {
           "id": "ein-baum-kapitel-5-6",
-          "title": "Leiser Schnee / Kenotaph",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 5 & 6",
           "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-5-6",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "< Kapitel 3 & 4 | Ein Baum, Ein Juwel, Eine Familie - Hub | Kapitel 7 & 8 > Die kalte, stechende Luft machte es schwer zu atmen. Die kleinen, unterschiedlichen Schneeflocken rieselten leise auf die nächstgelegenen Hütten und Nadelbaumäste. Die bereits am Boden…"
         },
         {
           "id": "ein-baum-kapitel-7-8",
-          "title": "Weißer Hase / Haubitzen in meinem Kopf",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 7 & 8",
           "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-7-8",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "< Kapitel 5 & 6 | Ein Baum, Ein Juwel, Eine Familie - Hub | Kapitel 9 > Mit sicheren Schritten und einem geflochtenem Korb in den Händen ging sie den Waldweg entlang, vorbei an den frisch duftenden Laubbäumen, den jungen Pilzen die aus dem nassen Humus sprießt…"
         },
         {
           "id": "ein-baum-kapitel-9",
-          "title": "Danse Macabre",
+          "title": "Ein Baum, Ein Juwel, Eine Familie - Kapitel 9",
           "url": "http://scp-wiki-de.wikidot.com/ein-baum-kapitel-9",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "< Kapitel 7 & 8 | Ein Baum, Ein Juwel, Eine Familie - Hub | Kapitel 10 > \"Wir haben nicht viel Zeit, also macht eure Lauschen auf. Zug Berta und Detlef werden mit ihren gepanzerten DUROs transportiert und sind für die Eindämmung ausgestattet, allerdings wird d…"
         }
       ],
       "supplementLinks": [],
@@ -1024,16 +1042,18 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-bc9eaef3bca23e0d0177a6235f644c28a7b2e2c71a79e5afe5e44e2900cb10c4"
+        "structureHash": "sha256-4859ef67e939c01dbf1bc9e420c8ba7b247527ae576a85a7cb2580843c236a62"
       },
       "primaryArticles": [
         {
           "id": "raptor-tec-industries",
           "title": "Raptor Tec. Industries",
           "url": "http://scp-wiki-de.wikidot.com/raptor-tec-industries",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Ich verwendete mit Erlaubnis vom Autor die GoI Raptor Tec. Industries Es ist aber nicht untersagt aller in dieser Serie vorkommender Figuren zu verwenden, muss aber mit mir besprochen werden, da diese Serie innerhalb eines Graubereichs spielt."
+          "os": 26,
+          "desc": "Raptor Tec. Industries Beziehung zu anderen Interessengruppen Produkte Preisliste Am 22. März 2008 tauchten unerwartet Produkte von Raptor Tec."
         },
         {
           "id": "gestatten-mein-name-ist-ridter",
@@ -1099,9 +1119,11 @@
           "id": "imbw-hub",
           "title": "Institut für menschliche Bildung und Weiterentwicklung",
           "url": "http://scp-wiki-de.wikidot.com/imbw-hub",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Prof. Haas - Direktor einer Einrichtung des Institut für menschliche Bildung und Weiterentwicklung . Möchte die Menschheit auf die nächste Evolutionsstufe helfen, selbst, wenn dafür Menschenversuche nötig sind."
+          "os": 17,
+          "desc": "Organisation Personen von Interesse Beziehung zu anderen Interessengruppen Artikel/Geschichten Infos für Autoren Das Institut für menschliche Bildung und Weiterentwicklung (häufig als \"IMBW\" abgekürzt) ist eine Forschungseinrichtung, die laut erhaltenen Daten…"
         },
         {
           "id": "anderson-robotics-hub",
@@ -1227,7 +1249,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-fa0e06edfb80d9cca5645d49053eef1dade99b02544d55b5be7f0c80bbf2ee89"
+        "structureHash": "sha256-482fa1d3b144216e38dcefacc10188004fe79bd6676cb38ca8721820732dfa32"
       },
       "primaryArticles": [
         {
@@ -1282,11 +1304,13 @@
         },
         {
           "id": "4r-hub",
-          "title": "Vierten Reichs",
+          "title": "Das Vierte Reich (4R)",
           "url": "http://scp-wiki-de.wikidot.com/4r-hub",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Seitdem die Foundation von der Existenz des Vierten Reichs weiß, häufen sich die Sichtungen von sogenannten \"Reichsdämonen\" ( SCP-097-DE ) ebenso wie die Sichtungen ähnlicher, \"dämonischer\" Wesen. Als Reaktion darauf wurde von den O4 beschlossen, eine neue, auf die Bekämpfung derartiger Wesen spezialisierte Mobile Task Force ins Leben zu rufen: MTF DE11-𝔉. Diese wird zwar offiziell als \"11-Friedrich\" bezeichnet, die Meisten benutzen aber den Spitznamen \"Faust\"."
+          "os": 32,
+          "desc": "Aufzeichnungen 4R-Objekte/Geschichten Notizen für Autoren Das Vierte Reich (4R), von ihren Mitgliedern als \"einzig wahre\" Nachfolgeorganisation des Dritten Reichs bezeichnet und wird von einem Okkultisten und Wissenschaftler, der als \"Herr Rass\" bekannt ist, a…"
         },
         {
           "id": "scp-084-de",
@@ -1390,148 +1414,208 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-370fdb0f0cd9dfd5e4382630ff8c7133877cd14f12d8f5ca8f93707bc3d0cdf8"
+        "structureHash": "sha256-4d3a67879b1f91118427778fb8456222a587a19b9516541e4083a88347e414fd"
       },
       "primaryArticles": [
         {
           "id": "neun-1",
           "title": "Der Engel, der vom Himmel fiel",
           "url": "http://scp-wiki-de.wikidot.com/neun-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Jetzt war es also endlich passiert. Die Welt ging unter. Und das trotz aller Bemühungen des realitätenumspannenden Imperiums Ultima, seinen Universen mehr Zeit zu geben. Doch jemand hatte das Schicksal in die eigenen Hände genommen. Aus einer fernen Galaxie, w…"
         },
         {
           "id": "neun-2",
           "title": "Das Dreamteam",
           "url": "http://scp-wiki-de.wikidot.com/neun-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Der Engel, der vom Himmel fiel Richard hatte Gerüchte gehört. Angeblich beschäftigten andere Zweige der Foundation ziemlich merkwürdige Typen. Da gab es einen Professor, der immer noch angestellt war, obwohl er in einen Hund verwandelt…"
         },
         {
           "id": "neun-3",
           "title": "Der Mörderwürfel",
           "url": "http://scp-wiki-de.wikidot.com/neun-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Das Dreamteam \"Shit! Shit! Shit\" SHIT!\" Jochen raste mit seinem Motorrad durch die Straßen Weimars. Ihm dicht auf den Versen war ein Polizeiwagen mit eingeschaltetem Blaulicht. Sein braunes Haar war unter seinem blauen Helm verborgen u…"
         },
         {
           "id": "neun-4",
           "title": "Die Abteilung für Zukunftsarchäologie",
           "url": "http://scp-wiki-de.wikidot.com/neun-4",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Der Mörderwürfel O4-12 war gerade damit beschäftigt, sich die neuesten Berichte von Standort-DE7 durchzulesen, als er von seinem Rechner für eine Videokonferenz verlangt wurde."
         },
         {
           "id": "neun-5",
           "title": "Sankt Winter",
           "url": "http://scp-wiki-de.wikidot.com/neun-5",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Neun: Die Abteilung für Zukunftsarchäologie Die Nacht lag über dem Hamburger Hafen, aber Ruhe herrschte dort nie. Ein Teil des Hafens war gerade wegen einer Drogenrazzia evakuiert worden, aber das war nur ein Vorwand. Wenn MTF DE20-ℜ \"Seher\"…"
         },
         {
           "id": "neun-6",
           "title": "Der Infiltrator",
           "url": "http://scp-wiki-de.wikidot.com/neun-6",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Sankt Winter \"Denken Sie, es ist essbar?\", fragte Richard Winter und schaute erstaunt auf die durchscheinend grüne, gallertartige Masse, die vor der Nachwuchsforscherin auf dem Teller lag."
         },
         {
           "id": "neun-7",
           "title": "Neuns Leere",
           "url": "http://scp-wiki-de.wikidot.com/neun-7",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Der Infiltrator Für Richard war es völlig ungewohnt, sich frei bewegen zu können, ohne dass ihn jemand auf Schritt und Tritt verfolgte. Neun war seit dem Vorfall mit dem Magier nicht mehr aufgewacht. Gelegentlich zuckte irgendein Körpe…"
         },
         {
           "id": "neun-8",
           "title": "Der Kampf der Freien",
           "url": "http://scp-wiki-de.wikidot.com/neun-8",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Neuns Leere Die Global Occult Coalition unterhielt als weltweiter Zusammenschluss zahlreicher im anomalen angesiedelten Gruppierungen Horchposten in aller Herren Lande, um schnell auf Vorfälle reagieren zu können. Davon betroffen war a…"
         },
         {
           "id": "neun-9",
           "title": "Zeitbombe",
           "url": "http://scp-wiki-de.wikidot.com/neun-9",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Der Kampf der Freien Winter tanzte ihren Safety Dance und blieb damit weiterhin unangreifbar für Reier, der sie langsam umkreiste, auf der Suche nach einer Schwachstelle in ihrer Verteidigung."
         },
         {
           "id": "neun-10",
           "title": "Die Bitte",
           "url": "http://scp-wiki-de.wikidot.com/neun-10",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Neun: Zeitbombe Die Ringe des Saturns drehten sich majestätisch um ihren Planeten in der Stille des Alls. In diesem Vakuum übertrug sich kein Schall, darum war es absolut still, als ein gewaltiges Konstrukt aus Stahl, Glas und Plastik aus de…"
         },
         {
           "id": "neun-11",
           "title": "Das Geisterschiff",
           "url": "http://scp-wiki-de.wikidot.com/neun-11",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Neun: Die Bitte Sie mochte es nicht. Neun versuchte, sich und anderen einzureden, dass es einfach nur unnötiger Neid und Besitzsucht war. Liebe, eine völlig unnötige Emotion, aber sie mochte es nicht, wenn Richard mit Frauen anderen Frauen r…"
         },
         {
           "id": "neun-12",
           "title": "Alte Feinde",
           "url": "http://scp-wiki-de.wikidot.com/neun-12",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Das letzte Mal bei Neun: Das Geisterschiff \"Ist das eklig!\", stöhnte Richard. \"Iiih! Ist das überhaupt hygienisch?\", setzte Winter nach."
         },
         {
           "id": "neun-13",
           "title": "Ein Mann und seine Mordmaschine",
           "url": "http://scp-wiki-de.wikidot.com/neun-13",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Ein Mann und seine Mordmaschine Original-Autor: Dr Ore Das letzte Mal bei Neun: Alte Feinde \"Winter, wer ist das?!\", fragte Richard eindringlich, während sich der Mann mit dem schmutzigblonden Pferdeschwanz und sein Leibwächter aus dem Bild bewegten."
         },
         {
           "id": "neun-14",
           "title": "Die Frau aus dem Nichts",
           "url": "http://scp-wiki-de.wikidot.com/neun-14",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Die Frau aus dem Nichts Original-Autor: Dr Ore Das letzte Mal bei Neun: Ein Mann und seine Mordmaschine Dr. Laschet arbeitete sich gerade in seinem Büro durch die Forschungsberichte seines Teams, als Agent Oster eintrat."
         },
         {
           "id": "neun-15",
           "title": "Geständnisse",
           "url": "http://scp-wiki-de.wikidot.com/neun-15",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Artikel: Geständnisse Original-Autor: Dr Ore Das letzte Mal bei Neun: Die Frau aus dem Nichts Professor Butter las in seinem Büro stirnrunzelnd die Berichte, die Winter zusammengestellt hatte. Er unterstützte mittlerweile ihre Position, dass es sich bei der SC…"
         },
         {
           "id": "neun-16",
           "title": "Machtlosigkeit",
           "url": "http://scp-wiki-de.wikidot.com/neun-16",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Artikel: Machtlosigkeit Original-Autor: Dr Ore Das letzte Mal bei Neun: Geständnisse Standortleiter Dr. Theodor Joch beobachtete das Geschehen über die Feeds von Überwachungskameras und Bodycams. Eine merkwürdige Gestalt in einer Rüstung war aufgetaucht, just…"
         },
         {
           "id": "neun-17",
           "title": "Die Wahrheit",
           "url": "http://scp-wiki-de.wikidot.com/neun-17",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Artikel: Die Wahrheit Original-Autor: Dr Ore Das letzte Mal bei Neun: Machtlosigkeit Richard stand in dem Salon, ihm gegenüber am zum Kaffeetrinken gedeckten Tisch saß die blonde Frau, die sich ihm als \"Elli\" vorgestellt hatte."
         },
         {
           "id": "neun-18",
           "title": "Die letzten Völker",
           "url": "http://scp-wiki-de.wikidot.com/neun-18",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Die letzten Völker Original-Autor: Dr Ore Das letzte Mal bei Neun: Die Wahrheit Agentin Jürgen war heute mit Wachdienst dran. Sie vertrieb sich die Zeit damit, Gymnastik zu machen, denn in der Schwerelosigkeit der Orbitalstation verlor man schnell an…"
         },
         {
           "id": "neun-19",
           "title": "Enden und Anfänge",
           "url": "http://scp-wiki-de.wikidot.com/neun-19",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Artikel: Enden und Anfänge Original-Autor: Dr Ore Das letzte Mal bei Neun: Die letzten Völker Neun hing schlaff über der Schulter der Gerüsteten. Hinter dem schwarzen Portal hatte sich ein Strudel aus Sternen und Planeten verborgen, die sich in einem ewigen Ta…"
         },
         {
           "id": "nach-dem-ende",
           "title": "Nach dem Ende",
           "url": "http://scp-wiki-de.wikidot.com/nach-dem-ende",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Nach dem Ende Original-Autor: Dr Ore Der Himmel hatte ein tiefes Grau angenommen und es regnete in Strömen. Neun hielt das nicht davon ab, in ihrem schwarzen Kleid Wache zu halten. Ihr Flügel waren verborgen und mit leerem Blick betrachtete sie das Gr…"
         }
       ],
       "supplementLinks": [],
@@ -1627,450 +1711,638 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-946ca81ac3cffde85ed057b1113b0e5264016495c3e8e51d5dffc11b598291ce"
+        "structureHash": "sha256-36caf128fd8bf905f65f967a26c02f51070d06d869edb8c6becb1b1d783ab254"
       },
       "primaryArticles": [
         {
           "id": "nexus-1-1",
-          "title": "Teil 1",
+          "title": "Die Strafe eines Gottes, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-1-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Es gibt Leute, denen fliegt das Glück einfach zu. Die werden mit überragendem Talent geboren, erhalten eine gute Schulbildung, finden gleichgesinnte Freunde, eine erfolgreiche erste Liebe und einen gut bezahlten Job."
         },
         {
           "id": "nexus-1-2",
-          "title": "Teil 2",
+          "title": "Die Strafe eines Gottes, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-1-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Das letzte Mal bei Nexus: Die Strafe eines Gottes, Teil 1 Fallen. Chloe wusste nicht wie lang sie fiel, während sie voller Panik um sich schlug, aber es war auf jeden Fall zu lang, um beim Aufschlag nicht zu sterben. Umso überraschter war sie, als sie einfach…"
         },
         {
           "id": "nexus-1-3",
-          "title": "Teil 3",
+          "title": "Die Strafe eines Gottes, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-1-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Das letzte Mal bei Nexus: Die Strafe eines Gottes, Teil 2 Tadao Akai saß in seinem Kabuff und tat das wofür er bezahlt wurde, nämlich Überwachungsbildschirme anstarren. Es gab wesentlich aufregendere Arbeiten innerhalb der Saiga-Fraktionen, aber einer musste d…"
         },
         {
           "id": "nexus-2-1",
-          "title": "Teil 1",
+          "title": "Der Bessere Mensch? Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-2-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Das letzte Mal bei Nexus: Die Strafe eines Gottes, Teil 3 Pierre wusste nicht so recht, wo er zuerst hinschauen sollte. Der braunhaarige Junge im zarten Alter von 14 entschied sich schließlich, verlegen auf sein verschlissenes Hemd zu starren. Das war neben se…"
         },
         {
           "id": "nexus-2-2",
-          "title": "Teil 2",
+          "title": "Der Bessere Mensch? Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-2-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Das letzte Mal bei Nexus: Der Bessere Mensch? Teil 1 Wenn jemand in Paris nach der Beschreibung von Fernand Petit fragte, war die Antwort meist sehr kurz und prägnant. Genaugenommen besteht sie nur aus den Worten \"Er ist ein Arschloch\". Damit war im Grunde all…"
         },
         {
           "id": "nexus-2-3",
-          "title": "Teil 3",
+          "title": "Der Bessere Mensch? Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-2-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Das letzte Mal bei Nexus: Der Bessere Mensch? Teil 2 Efeuranken zeichnen sich durch die Fähigkeit aus, sich auch an glatten und harten Flächen verankern zu können. Das, zusammen mit ihrer bemerkenswerten Zähigkeit, machte sie zu passablen Kletterhilfen, mit de…"
         },
         {
           "id": "nexus-3-1",
-          "title": "Teil 1",
+          "title": "Der Mörder der Unsterblichen, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-3-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Der Bessere Mensch? Teil 3 Hawaii ist von jeher ein Ort, der für seine Schönheit gepriesen wird. Seine warmen Temperaturen und weißen Strände ziehen ganzjährig abertausende Touristen an, die sich auf den Inseln eine schöne Zeit machen…"
         },
         {
           "id": "nexus-3-2",
-          "title": "Teil 2",
+          "title": "Der Mörder der Unsterblichen, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-3-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Der Mörder der Unsterblichen, Teil 1 Chloes Kreischen versetzte Dean sofort in Alarmbereitschaft. Es dauerte nur Sekunden bis er ungeachtet aller Etikette die Tür zur Damentoilette aufriss, aber in dieser Zeit kamen ihm bereits fünfzi…"
         },
         {
           "id": "nexus-3-3",
-          "title": "Teil 3",
+          "title": "Der Mörder der Unsterblichen, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-3-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Der Mörder der Unsterblichen, Teil 2 Chloe stand zusammen mit Dean und Ms Pukui vor dem Überwachungsraum. Chloe war größtenteils nur mitgegangen, weil sie sich in der Gegenwart der anderen nicht sicher fühlte, zu einem Teil aber auch…"
         },
         {
           "id": "nexus-4-1",
-          "title": "Teil 1",
+          "title": "Gnadenloses Eis, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-4-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Der Mörder der Unsterblichen, Teil 3 In letzter Zeit hatte Chloe Spaß. Mehr Spaß als sie je zuvor in ihrem Leben gehabt hatte. In mehr Welten als sie sich je hätte erträumen können."
         },
         {
           "id": "nexus-4-2",
-          "title": "Teil 2",
+          "title": "Gnadenloses Eis, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-4-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Das letzte Mal bei Nexus: Gnadenloses Eis, Teil 1 Chloe hatte sich nie wirklich darüber Gedanken gemacht, wie sich Krieg eigentlich anfühlte. Jetzt bekam sie Eindrücke aus erster Hand. Soldaten feuerten mit ihren MPs auf den herannahenden Feind, der da durch d…"
         },
         {
           "id": "nexus-4-3",
-          "title": "Teil 3",
+          "title": "Gnadenloses Eis, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-4-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Gnadenloses Eis, Teil 2 In seinem Büro klatschte Steuer vor Elli und Dean einen Aktenordner auf den Tisch. Sowjetisches Kauderwelsch stand darauf geschrieben."
         },
         {
           "id": "nexus-5-1",
-          "title": "Teil 1",
+          "title": "Ein Gutes Mädchen, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-5-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Gnadenloses Eis, Teil 3 Chloe wusste, dass sie träumte. Ihre Rippen hatten immer noch weh getan, als sie nach dem Abenteuer im Jahre 1943 aus ihrem Schrank gestolpert war, sich im Halbschlaf umgezogen hatte und dann zu drei Vierteln a…"
         },
         {
           "id": "nexus-5-2",
-          "title": "Teil 2",
+          "title": "Ein Gutes Mädchen, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-5-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Ein Gutes Mädchen, Teil 1 Chloe schaute ziemlich griesgrämig. Ku hingegen grinste wie ein Honigkuchenpferd."
         },
         {
           "id": "nexus-5-3",
-          "title": "Teil 3",
+          "title": "Ein Gutes Mädchen, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-5-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Das letzte Mal bei Nexus: Ein Gutes Mädchen, Teil 2 \"Wow, schicke Haare. Jetzt sieht jeder, was für ein Freak du bist.\" \"Das war eine Färbung vom Feinsten. Wie hast du das gemacht? Bleiche geschluckt, um dir endlich das Licht auszublasen?\""
         },
         {
           "id": "nexus-6-1",
-          "title": "Teil 1",
+          "title": "Schnittlauch und Beifuß, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-6-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Ein gutes Mädchen, Teil 3 Es lebten einmal in einer Höhle eine Bärin und eine Tigerin. Tagein, tagaus betrachteten sie die Menschen und beneideten sie. Sehnlich wünschten sie sich, ebenfalls Menschen zu sein. Mit diesem Begehren sucht…"
         },
         {
           "id": "nexus-6-2",
-          "title": "Teil 2",
+          "title": "Schnittlauch und Beifuß, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-6-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Schnittlauch und Beifuß, Teil 1 Elli hatte Spaß an diesem bizarren Fall. Der Grund für diesen plötzlichen Wahnsinn war offensichtlich, es war der aufgetauchte Baum. Aber das Wie war es, das sie nicht losließ. Sie mochte solche Rätsel.…"
         },
         {
           "id": "nexus-6-3",
-          "title": "Teil 3",
+          "title": "Schnittlauch und Beifuß, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-6-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Schnittlauch und Beifuß, Teil 2 Ihr Weg führte sie an mehreren Passanten vorbei. Einige schauten ihnen stirnrunzelnd nach, andere … verhielten sich merkwürdig …"
         },
         {
           "id": "nexus-7-1",
-          "title": "Teil 1",
+          "title": "Die Anderen, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-7-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Schnittlauch und Beifuß, Teil 3 Die Anonym-Augen GmbH ist ein multinationales Unternehmen, das ein sehr spezielles Klientel mit sehr spezieller Ware bedient. Es nutzt nämlich seine zahlreichen Geheimagenten in der ganzen Welt, um Info…"
         },
         {
           "id": "nexus-7-2",
-          "title": "Teil 2",
+          "title": "Die Anderen, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-7-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Die Anderen, Teil 1 Guerra stieg genervt aus seinem roten Fiat Punto, ebenso wie sein Mitfahrer. Sie befanden sich in Madrid, der Hauptstadt Spaniens. Und wie in Hauptstädten üblich, war erstens der Verkehr eine absolute Katastrophe u…"
         },
         {
           "id": "nexus-7-3",
-          "title": "Teil 3",
+          "title": "Die Anderen, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-7-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Die Anderen, Teil 2 Guerra schüttelte sich innerlich immer noch, als er in sein Hauptquartier zurückkehrte. Sowas hatte er noch nie erlebt. Allerdings waren die Einblicke, die ihm der Künstler und die Zeichnung gewährt hatten, lehrrei…"
         },
         {
           "id": "nexus-8-1",
-          "title": "Teil 1",
+          "title": "Doppelt Gemoppelt, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-8-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Die Anderen, Teil 3 Irgendwo in den blauen Weiten des Pazifiks liegt eine kleine Insel. Sie ragte wie die Spitze eines Berges aus dem Meer. Viele Riffe umgaben die Insel, sodass sie kaum angesteuert werden konnte. Die Menschen die auf…"
         },
         {
           "id": "nexus-8-2",
-          "title": "Teil 2",
+          "title": "Doppelt Gemoppelt, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-8-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Doppelt Gemoppelt, Teil 1 \"Und dann hat ihm der General den Kopf abgeschlagen\", beendete Mang ihre kleine Anekdote."
         },
         {
           "id": "nexus-8-3",
-          "title": "Teil 3",
+          "title": "Doppelt Gemoppelt, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-8-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Doppelt Gemoppelt, Teil 2 Chloe hasste es, wenn Dean sie unter dem Arm trug. Sicher, sie waren wesentlich schneller, aber erstens war es total entwürdigend und zweitens taten ihr von dem Geruckel hinterher ständig alle Knochen weh."
         },
         {
           "id": "nexus-9-1",
-          "title": "Teil 1",
+          "title": "Der Herold des Zerbrochenen, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-9-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Doppelt Gemoppelt, Teil 3 Olaf wischte sich den Schweiß von der Stirn. Der blondbärtige Wikinger saß jetzt seit dreißig Minuten hier drin und er merkte langsam, wie die Spannung von ihm abfiel. Der Jarl des Dorfes, Sven, ein riesiger…"
         },
         {
           "id": "nexus-9-2",
-          "title": "Teil 2",
+          "title": "Der Herold des Zerbrochenen, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-9-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Der Herold des Zerbrochenen, Teil 1 Allmählich füllte sich der Platz vor Mekhanes Tempel. Chloe hatte sich nie eine Vorstellung darüber gemacht, was das Wort Religion überhaupt bedeutete. Sie war durch ihre Umwelt zur Atheistin geword…"
         },
         {
           "id": "nexus-9-3",
-          "title": "Teil 3",
+          "title": "Der Herold des Zerbrochenen, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-9-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Der Herold des Zerbrochenen, Teil 2 Chloe dachte nicht, Chloe handelte nur. Das Pflaster war heiß vom Feuer. Hitze war gefährlich. Sie musste weg von der Hitze. Er durfte ihren Rücken mit der Hitze nicht zu fassen kriegen."
         },
         {
           "id": "nexus-10-1",
-          "title": "Teil 1",
+          "title": "Dean, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-10-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Der Herold des Zerbrochenen, Teil 3 Es gibt viele Szenarien, in denen die Menschheit zugrunde geht. Klimawandel, Atomkriege, Killerviren, selbstpropagierende Memes, das Verschwinden der Erde, die Möglichkeiten sind endlos. In zahlreic…"
         },
         {
           "id": "nexus-10-2",
-          "title": "Teil 2",
+          "title": "Dean, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-10-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Dean, Teil 1 \"Was machst du denn hier?\", fragte Dean Elli. Er mochte den Namen. \"Ich habe mich nach einem Ort zum Alleinsein umgesehen, dann haben mich aber ein paar böse Roboter entdeckt und ich musste fliehen. Dann bin ich deinen Le…"
         },
         {
           "id": "nexus-10-3",
-          "title": "Teil 3",
+          "title": "Dean, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-10-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Dean, Teil 2 Dean hatte Angst. Mehr Angst als jemals zuvor. Er wollte zurück in seinen Raum und mit LEGO spielen. Er wollte mit Elsa Fernsehen gucken. Er wollte Elli nach den Menschen fragen."
         },
         {
           "id": "nexus-11-1",
-          "title": "Teil 1",
+          "title": "Trickster Heist, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-11-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Dean, Teil 3 Viktor war glücklich. Endlich saß er mal ganz in Ruhe auf seiner Terrasse, schlürfte einen Kakao, die Vögel zwitscherten und mit einer gewissen Belustigung hörte er, wie sich Mathilda unten lautstark mit dem Rasenmäher ab…"
         },
         {
           "id": "nexus-11-2",
-          "title": "Teil 2",
+          "title": "Trickster Heist, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-11-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Trickster Heist, Teil 1 \"GpExpress?\", fragte Viktor. Von einer solchen Firma hatte er noch nie etwas gehört."
         },
         {
           "id": "nexus-11-3",
-          "title": "Teil 3",
+          "title": "Trickster Heist, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-11-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Folge 12"
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Trickster Heist, Teil 2 Das Einfangen des blauen Lastenkrokodils war noch in vollem Gange, als Viktor und die anderen den Waggon wieder erreichten. Mathilda erschien plötzlich am anderen Ende des Raums aus dem Nichts."
         },
         {
           "id": "nexus-12-1",
-          "title": "Teil 1",
+          "title": "Sankt Chloe, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-12-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Trickster Heist, Teil 3 Die amerikanische Hauptstadt war ein Ort, an dem man auf so ziemlich alle Arten von Leuten in allen Arten von Etablissements treffen konnte."
         },
         {
           "id": "nexus-12-2",
-          "title": "Teil 2",
+          "title": "Sankt Chloe, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-12-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Sankt Chloe, Teil 1 Es war früher morgen im Vatikan. Der Heilige Vater schlummerte noch in seinem Bett. Er befand sich in jener wohligen Art des Halbschlafs, in der man weiß, dass man wach ist, aber keinen klaren Gedanken fasst."
         },
         {
           "id": "nexus-12-3",
-          "title": "Teil 3",
+          "title": "Sankt Chloe, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-12-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Sankt Chloe, Teil 2 Die Schemen in der Wüste waren jetzt fast greifbar und kamen immer näher. Der Himmel über Las Vegas war einem leuchtenden Rot gewichen, dass eher wie das Innere eines gewaltigen Lochs aussah."
         },
         {
           "id": "nexus-13-1",
-          "title": "Teil 1",
+          "title": "Der Zornregulator, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Sankt Chloe, Teil 3 Monde, anders als Planeten, sind in ihrer Bevölkerung und der Regierung relativ homogen, was vermutlich mit ihrer Größe zusammenhängt. Menschen schienen sich immer in mehrere Staaten aufzuteilen, wenn sich genug vo…"
         },
         {
           "id": "nexus-13-2",
-          "title": "Teil 2",
+          "title": "Der Zornregulator, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 1 Die Raumstation Brym liegt ganz am Rand des Sternenclusters Terzan 2. Einstmals eine Bastion der Orthotanischen Koalition, war dieser Raumhafen von den Zwölf Sternen, einer Zivilisation, die mit der Koalition…"
         },
         {
           "id": "nexus-13-3",
-          "title": "Teil 3",
+          "title": "Der Zornregulator, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 2 Beim Sushiblade wird das Sushi traditionell vor dem Kampf von den Kontrahenten angefertigt. Aura und Herr Maehara kneteten in einer Ecke auf einem Tisch ihren Reis zurecht, während Elli in der anderen Ecke zu…"
         },
         {
           "id": "nexus-14-1",
-          "title": "Teil 1",
+          "title": "Träumen mit Elli, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-14-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 3 Elli war zum Zerreißen gespannt, während sie die gewaltigen Hallen durchschritt, die sich in Weiß und Grau über ihr auftürmten. Durch Fenster konnte man die gnadenlose Leere des Weltalls sehen."
         },
         {
           "id": "nexus-14-2",
-          "title": "Teil 2",
+          "title": "Träumen mit Elli, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-14-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Träumen mit Elli, Teil 1 Irgendwas stimmte nicht. Während Chloe in Ellis Träume sank, spürte sie, wie etwas an ihren Geist zu zerren begann."
         },
         {
           "id": "nexus-14-3",
-          "title": "Teil 3",
+          "title": "Träumen mit Elli, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-14-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Träumen mit Elli, Teil 2 Dieses Mal dauerte es länger, bis sich die Welt um Elli herum wieder konsolidierte."
         },
         {
           "id": "nexus-15-1",
-          "title": "Teil 1",
+          "title": "Die Hexe, die Zauberin und die Dimensionsreisende, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-15-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Das letzte Mal bei Nexus: Träumen mit Elli, Teil 3 Nahe der polnisch-tschechischen Grenze liegt auf polnischer Seite der Nationalpark Riesengebirge. Er erstreckt sich über mehrere Kilometer und ist als Ausflugsziel für Mountainbiker und Wanderer bekannt."
         },
         {
           "id": "nexus-15-2",
-          "title": "Teil 2",
+          "title": "Die Hexe, die Zauberin und die Dimensionsreisende, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-15-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Das letzte Mal bei Nexus: Die Hexe, die Zauberin und die Dimensionsreisende, Teil 1 Zenon Zwiefka, Sicherheitschef bei diesem Event der Polnischen Vereinigung für das Sammeln anomaler Pilze, war gerade auf dem Weg zu seinem Transporter, den er am Rand des Nati…"
         },
         {
           "id": "nexus-15-3",
-          "title": "Teil 3",
+          "title": "Die Hexe, die Zauberin und die Dimensionsreisende, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-15-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Die Hexe, die Zauberin und die Dimensionsreisende, Teil 2 Während Annemarie flog, zogen sich ihre Räder in das Innere des Fahrzeugs zurück und machten Steuerrudern und Turbinen Platz."
         },
         {
           "id": "nexus-16-1",
-          "title": "Teil 1",
+          "title": "Der Gefallen, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-16-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Das letzte Mal bei Nexus: Die Hexe, die Zauberin und die Dimensionsreisende, Teil 3 Jede Streitmacht mit geopolitischem Einfluss hat so etwas wie Eliteeinheiten. Leute, die so ausgiebig ausgebildet waren, dass man sie ruhigen Gewissens zu zehnt losschicken kon…"
         },
         {
           "id": "nexus-16-2",
-          "title": "Teil 2",
+          "title": "Der Gefallen, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-16-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Der Gefallen, Teil 1 Die griechischen Götter vor ihnen trugen keine Kampfrüstung wie Deimos, sondern Togen, auch wenn Ares seine mit ein paar Rüstungsteilen verziert hatte. Außerdem trug er einen Speer bei sich. Phobos neben ihm schau…"
         },
         {
           "id": "nexus-16-3",
-          "title": "Teil 3",
+          "title": "Der Gefallen, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-16-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Der Gefallen, Teil 2 Die Raben kreischten über ihnen und flogen mittlerweile so tief in der engen Kammer, dass Dean sie vermutlich aus der Luft pflücken konnte. MTF Tau-5 hielt sich weiterhin mit seinen Waffen gegenseitig im Schach, w…"
         },
         {
           "id": "nexus-17-1",
-          "title": "Teil 1",
+          "title": "Ruinen des Wahnsinns, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-17-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Der Gefallen, Teil 3 Donner grollte am Nachhimmel, doch es regnete noch nicht. Für Matheus war das ein schlechtes Omen. Der braunbärtige Mann hatte sein Schwert an sich genommen, um sich den Widrigkeiten zu stellen, die sich ihm entge…"
         },
         {
           "id": "nexus-17-2",
-          "title": "Teil 2",
+          "title": "Ruinen des Wahnsinns, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-17-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Ruinen des Wahnsinns, Teil 1 Elli war wie erstarrt. \"Ähm, Elli, was ist Standort-13?\", fragte Dean. \"Klingt nach Foundation, aber die existiert in dieser Welt nicht.\""
         },
         {
           "id": "nexus-17-3",
-          "title": "Teil 3",
+          "title": "Ruinen des Wahnsinns, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-17-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Das letzte Mal bei Nexus: Ruinen des Wahnsinns, Teil 2 Ein Malidramagiuan ist eine ziemlich merkwürdige Kreatur. Groß wie ein Baum, besitzt er einen humanoiden Aufbau. Da hörte seine Ähnlichkeit mit Menschen aber auch schon auf. Es besaß graubraune Haut, sechs…"
         },
         {
           "id": "nexus-18-1",
-          "title": "Teil 1",
+          "title": "Das Schlimmste Geschenk, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-18-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Ruinen des Wahnsinns, Teil 3 Chloe wusste nicht, wie lange sie unterwegs gewesen waren. Erst waren sie in einem Auto gewesen, das durch eine Art Lichttunnel gefahren war, dann in einem Zug, dann wieder in einem Auto und jetzt saß sie,…"
         },
         {
           "id": "nexus-18-2",
-          "title": "Teil 2",
+          "title": "Das Schlimmste Geschenk, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-18-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Das letzte Mal bei Nexus: Das Schlimmste Geschenk, Teil 1 Es kam selten vor, aber Fernand war außer sich vor Wut, während er auf den immer noch qualmenden Lumiére-Induktor starrte. Seine Techniker waren bereits damit beschäftigt, das Gerät wieder instand zu se…"
         },
         {
           "id": "nexus-18-3",
-          "title": "Teil 3",
+          "title": "Das Schlimmste Geschenk, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-18-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Das Schlimmste Geschenk, Teil 2 \"Herr Maron, wir haben sie vor vielleicht zwanzig Minuten eingesammelt-\""
         },
         {
           "id": "nexus-19-1",
-          "title": "Teil 1",
+          "title": "Weltenzerstörer, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-19-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Das Schlimmste Geschenk, Teil 3 \"Und das soll ich Ihnen glauben?\" SS-Brigadeführer Riesling funkelte den ihn unterstehenden Bunkerkommandanten Steuer an. Beide befanden sich in Rieslings Büro, ein mit Gemälden, Flaggen und allerlei we…"
         },
         {
           "id": "nexus-19-2",
-          "title": "Teil 2",
+          "title": "Weltenzerstörer, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-19-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Weltenzerstörer, Teil 1 Elli entstammte dem Staat Logos, der eigentlich keinen Namen mehr brauchte. Denn er war überall. Und er war ein Utopia."
         },
         {
           "id": "nexus-19-3",
-          "title": "Teil 3",
+          "title": "Weltenzerstörer, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-19-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Weltenzerstörer, Teil 2 Elli konnte keinen klaren Gedanken fassen. Vor ihrem geistigen Auge durchlebte sie alle ihre Gräueltaten, wie sie auf die Planeten unter sich hinabsah, oder wie sie vor einem angsterfüllten Flüchtling stand und…"
         },
         {
           "id": "nexus-20-1",
-          "title": "Teil 1",
+          "title": "Letzter Wille, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-20-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Weltenzerstörer, Teil 3 Dean war langweilig. Irgendwo schallte ein Alarm, soweit er das über das Mikrofon des Rechners beurteilen konnte und die Ingenieure hatten den Raum verlassen."
         },
         {
           "id": "nexus-20-2",
-          "title": "Teil 2",
+          "title": "Letzter Wille, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-20-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Letzter Wille, Teil 1 Das Heimdall-System ist ein Array von Satelliten, das es dem SKP ermöglicht, starke Veränderungen der Realität auf der Welt auszumachen. Wenn sie im Weltraum oder in den oberen Atmosphärenschichten stattfanden, k…"
         },
         {
           "id": "nexus-20-3",
-          "title": "Teil 3",
+          "title": "Letzter Wille, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-20-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Das letzte Mal bei Nexus: Letzter Wille, Teil 2 \"Und du bist sicher, dass das funktioniert?\", fragte Dean skeptisch. Elli hatte den Göttlichkeitssauger aufgebrochen und einige Kabelanschlüsse geändert. Jetzt füllte sie gerade zwei Gläser Link ab."
         },
         {
           "id": "nexus-21-1",
-          "title": "Teil 1",
+          "title": "Abschied, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-21-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Letzter Wille, Teil 3 Elli schlug die Augen auf. Vor ihr war nichts. Nichts außer Sand. Meilenweit nichts als Sand, unter einem grünen Himmel, an dem drei Monde Licht spendeten. Einer von ihnen befand sich im Zustand des Zerbröselns.…"
         },
         {
           "id": "nexus-21-2",
-          "title": "Teil 2",
+          "title": "Abschied, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-21-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Das letzte Mal bei Nexus: Abschied Teil 1 Der Bogalberg ragt über Corbenic auf wie eine Mauer. Mit über dreißig Kilometern Höhe schlägt er sogar den größten Berg des Sonnensystems, Olympus Mons. Menschen gab es hier nur wenige, denn dies war das Herz des Terri…"
         },
         {
           "id": "nexus-21-3",
-          "title": "Teil 3",
+          "title": "Abschied, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-21-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Nexus: Abschied, Teil 2 Elli hackte auf die Tasten ein wie im Fieber, während im ganzen technologisierten Corbenic nach und nach das Chaos ausbrach. Natürlich hatten die anderen Rechenzentren, auf die HUB 1 zugegriffen hatte, versucht, die V…"
         },
         {
           "id": "neun-hub",
@@ -2079,7 +2351,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 4,
+          "os": 5,
           "desc": "Eigentlich war Richard nur ein ganz gewöhnlicher Kampfagent, der für die SCP-Foundation arbeitete. In letzter Zeit hat er allerdings ein Problem: Der einem weiblichen Engel nachempfundene und unaufhaltbare Wachcyborg Neun hat ihn als schutzwürdig auserkoren un…"
         },
         {
@@ -2096,8 +2368,11 @@
           "id": "nach-dem-ende",
           "title": "Nach dem Ende",
           "url": "http://scp-wiki-de.wikidot.com/nach-dem-ende",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Nach dem Ende Original-Autor: Dr Ore Der Himmel hatte ein tiefes Grau angenommen und es regnete in Strömen. Neun hielt das nicht davon ab, in ihrem schwarzen Kleid Wache zu halten. Ihr Flügel waren verborgen und mit leerem Blick betrachtete sie das Gr…"
         },
         {
           "id": "das-gespenst-im-fenster",
@@ -2143,8 +2418,11 @@
           "id": "pitch-meeting-nexus",
           "title": "Pitch Meeting: Nexus",
           "url": "http://scp-wiki-de.wikidot.com/pitch-meeting-nexus",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Dieser Witzartikel enthält übelste Spoiler für die Nexus-Serie! Ihr wurdet gewarnt! Admin: Also, Sie haben eine Idee für eine Serie für mich?"
         },
         {
           "id": "scp-258-de",
@@ -2336,7 +2614,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-35c2befbce5599a58f330741bb5e241c6e7ba65cce840df1d98a296d473f2968"
+        "structureHash": "sha256-8240484043b12546bfd09a6410f1b86c1ffd5bb65ef0ad05683dddd57a0413d0"
       },
       "primaryArticles": [
         {
@@ -2346,281 +2624,398 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 20,
+          "os": 21,
           "desc": "Das Artwork wurde von Tanija zur Verfügung gestellt. Begleiten Sie Elli, die Meisterin des Nexus, deren Abenteuer sie zusammen mit ihrem Compagnon Dean und der kleinen Chloe Winter quer durch das ganze SCP-Multiversum führen."
         },
         {
           "id": "nuri-1-1",
-          "title": "Teil 1",
+          "title": "Verloren und Gefunden, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-1-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Nuri kannte die Buchstaben nur als Symbole, denn sie konnte nicht lesen. Irgendjemand hatte mal versucht, ihr zu erklären, was sie bedeuteten, aber sie hatte diese komplizierten Worte nie begriffen."
         },
         {
           "id": "nuri-1-2",
-          "title": "Teil 2",
+          "title": "Verloren und Gefunden, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-1-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Letztes Mal bei Nuri: Verloren und Gefunden, Teil 1 Nuri hatte schon bei ihrer ersten Begegnung mit dem Geistermann Angst gehabt. Nicht wegen der Gespenster, Nuri hielt sich für mutig genug, um ihnen zu trotzen. Es war der Mann selbst, der ihr die Knie weich w…"
         },
         {
           "id": "nuri-2-1",
-          "title": "Teil 1",
+          "title": "Das Wunderland, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-2-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Letztes Mal bei Nuri: Verloren und Gefunden, Teil 2 Elli versuchte verzweifelt, mit Dean zu reden, der wie ein Puma im Käfig im Kosmoskopraum auf und ab ging."
         },
         {
           "id": "nuri-2-2",
-          "title": "Teil 2",
+          "title": "Das Wunderland, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-2-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Letztes Mal bei Nuri: Das Wunderland, Teil 1 Die Geschichte der Beziehungen zwischen Menschen und Feen ist eine Geschichte zweier Völker, die nie auch nur daran gedacht hatten, sich gegenseitig zu verstehen. Die Menschen waren zu ignorant, um den Standpunkt de…"
         },
         {
           "id": "nuri-3-1",
-          "title": "Teil 1",
+          "title": "Die Fuchsjagd, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-3-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Das Wunderland, Teil 2 Der Jagdverein von Fauna und Flora ist ein Club für besser betuchte Personen, die die Jagd über alles liebten und in den extremsten Formen zu erfüllen versuchten. Um das zu erreichen, sondierte der Club die Welt auf…"
         },
         {
           "id": "nuri-3-2",
-          "title": "Teil 2",
+          "title": "Die Fuchsjagd, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-3-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Letztes Mal bei Nuri: Die Fuchsjagd, Teil 1 \"Hoya?\", fragte Dean. \"Das ist ein Stein.\" Hoya hatte sie in den nächtlichen Wald geführt, wobei sich Dean Nuri unter den Arm geklemmt hatte, da sie in dem unwegsamen Gelände Schwierigkeiten hatte. Nun standen sie vo…"
         },
         {
           "id": "nuri-4-1",
-          "title": "Teil 1",
+          "title": "Weihnachten bei Winters, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-4-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Die Fuchsjagd, Teil 2 Dafür, das Nuri ihre Eltern verloren hatte, lebte sie sich beängstigend schnell ein, fand zu zumindest Dean."
         },
         {
           "id": "nuri-4-2",
-          "title": "Teil 2",
+          "title": "Weihnachten bei Winters, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-4-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Letztes Mal bei Nuri: Weihnachten bei Winters, Teil 1 Es war die zweite Nacht des neuen Jahres. Marie und Mira lagen im Bett, Vincent schlief ebenfalls und auch Chloe war kurz vor dem Einschlafen."
         },
         {
           "id": "nuri-5-1",
-          "title": "Teil 1",
+          "title": "Findet Nuri, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-5-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Weihnachten bei Winters, Teil 2 Vincent und Chloe Winter saßen auf der Couch in ihrem Haus. Er guckte Fußball im Fernsehen, sie laß einen Internetartikel über koreanische Sagengestalten auf dem Tablet."
         },
         {
           "id": "nuri-5-2",
-          "title": "Teil 2",
+          "title": "Findet Nuri, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-5-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Letztes Mal bei Nuri: Findet Nuri, Teil 1 Elli hatte sich mit einem Laptop, den sie noch irgendwo rumliegen hatte, in das Sicherheitssystem von Eurtec gehackt. Die Stadt und ihre Informationsstruktur mochte der restlichen Welt um Jahrzehnte voraus sein, doch E…"
         },
         {
           "id": "nuri-6-1",
-          "title": "Teil 1",
+          "title": "Der Gott im Code, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-6-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Findet Nuri, Teil 2 Nuri ging es nicht gut. Seitdem sie Elli angefallen hatte, war sie extrem lethargisch geworden und lachte nicht mehr. Lediglich der Gang ins Badezimmer konnte sie animieren, andernfalls bewegte sie sich überhaupt nicht…"
         },
         {
           "id": "nuri-6-2",
-          "title": "Teil 2",
+          "title": "Der Gott im Code, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-6-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Der Gott im Code, Teil 1 Nuri starrte stumpf aus dem Fenster des Zugs, in dem sie gerade saß. Der Fakt, dass er an einer Bergkette vorbeiflog, beeindruckte sie aufgrund ihrer Gemütsverfassung nicht sonderlich."
         },
         {
           "id": "nuri-7-1",
-          "title": "Teil 1",
+          "title": "Byakko, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-7-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Letztes Mal bei Nuri: Der Gott im Code, Teil 2 \"Byakko! Nein! Aus! Böser Fuchs! Lass- Lass sie los, komm!\" \"Böser Fuchs! Aus! Gib!\""
         },
         {
           "id": "nuri-7-2",
-          "title": "Teil 2",
+          "title": "Byakko, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-7-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Byakko, Teil 1 Nuri ging allmählich die Puste aus. Die Wanderung den Berg hinauf war ziemlich anstrengend. Sogar Byakko war bereits ins Schwitzen gekommen. Einzig Frau Fukuda schien noch topfit zu sein. Und dabei trug sie diesen riesigen…"
         },
         {
           "id": "nuri-8-1",
-          "title": "Teil 1",
+          "title": "Die unglaubliche Elli & Magic Dean, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-8-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Letztes Mal bei Nuri: Byakko, Teil 2 Elli hatte manchmal schon merkwürdige Ideen, fand Nuri. Ihnen dreien war bewusst, dass Nuri unvermittelt Leute anfallen konnte, aber trotzdem bestand Elli darauf, dass Nuri zusammen mit anderen Kindern auf einem großen Spie…"
         },
         {
           "id": "nuri-8-2",
-          "title": "Teil 2",
+          "title": "Die unglaubliche Elli & Magic Dean, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-8-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Die unglaubliche Elli & Magic Dean, Teil 1 Es kam selten vor, dass Dean und Elli gleichzeitig dasselbe dachten. Allerdings war es fast immer der Fall, dass beide rechthaben wollten. Daher war es sehr erstaunlich, dass nun der Fall eintrat…"
         },
         {
           "id": "nuri-9-1",
-          "title": "Teil 1",
+          "title": "Zuschlagen und Wegrennen, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-9-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Letztes Mal bei Nuri: Die unglaubliche Elli & Magic Dean, Teil 2 Es gibt wohl kaum eine größere, semi-permanente Ansammlung von Kindern auf der Welt, auf der sich nicht irgendwer als Rüpel hervortut. Auf Nuris Stammspielplatz, den sie nun mit ihren fünf neuen…"
         },
         {
           "id": "nuri-9-2",
-          "title": "Teil 2",
+          "title": "Zuschlagen und Wegrennen, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-9-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Letztes Mal bei Nuri: Zuschlagen und Wegrennen, Teil 1 Sensei, so hatte sich der alte Meister vorgestellt, hatte sich bereiterklärt, den Unterricht mit Nuri zu beginnen, schon während Elli ihre Besorgung erledigte. Dean war dageblieben, um auf Nuri aufzupassen…"
         },
         {
           "id": "nuri-10-1",
-          "title": "Teil 1",
+          "title": "Die Fleischmafia, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-10-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Letztes Mal bei Nuri: Zuschlagen und Wegrennen, Teil 2 Es ist eine Sache, wenn sich ein Kind als das stärkste auf dem Spielplatz erweist. Es ist eine völlig andere Sache, wenn es das unter Beweis stellt, indem es drei andere Kinder stemmt."
         },
         {
           "id": "nuri-10-2",
-          "title": "Teil 2",
+          "title": "Die Fleischmafia, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-10-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Letztes Mal bei Nuri: Die Fleischmafia, Teil 1 Vor langer, langer Zeit, da wurde das friedliche Dorf Sak von einem Monster heimgesucht. Makkun wurde es genannt. Es war ein gigantischer Wurm, der nicht aus Fleisch und Blut, sondern aus abscheulichem Metall best…"
         },
         {
           "id": "nuri-11-1",
-          "title": "Teil 1",
+          "title": "Restaurant der Killer, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-11-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Restaurant der Killer, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Die Fleischmafia, Teil 2 Elli machte Fortschritte dabei, Nuris Tier zu entschlüsseln. Sie war sich mittlerweile sicher, dass es eine Art Trance-Zustand war, hervorgerufen durch…"
         },
         {
           "id": "nuri-11-2",
-          "title": "Teil 2",
+          "title": "Restaurant der Killer, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-11-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Restaurant der Killer, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Restaurant der Killer, Teil 1 Nuri hatte mittlerweile ernsthaft Hunger. Leider würde es noch eine Weile dauern, bis ihre Würstchen kamen."
         },
         {
           "id": "nuri-12-1",
-          "title": "Teil 1",
+          "title": "Der Verlorene Dämonenfuchs, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-12-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Der Verlorene Dämonenfuchs, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Das Restaurant der Killer, Teil 2"
         },
         {
           "id": "nuri-12-2",
-          "title": "Teil 2",
+          "title": "Der Verlorene Dämonenfuchs, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-12-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Der Verlorene Dämonenfuchs, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Der Verlorene Dämonenfuchs, Teil 1"
         },
         {
           "id": "nuri-13-1",
-          "title": "Teil 1",
+          "title": "Das Ergebnis Guter Absichten, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-13-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Das Ergebnis Guter Absichten, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Der verlorene Dämonenfuchs, Teil 2"
         },
         {
           "id": "nuri-13-2",
-          "title": "Teil 2",
+          "title": "Das Ergebnis guter Absichten, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-13-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Das Ergebnis guter Absichten, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Das Ergebnis guter Absichten, Teil 1"
         },
         {
           "id": "nuri-14-1",
-          "title": "Teil 1",
+          "title": "Sechs Freunde, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-14-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Sechs Freunde, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Das Ergebnis guter Absichten, Teil 2 Martin, Saul, Nick, Anna und Julia hatten eine Mission. Ihre Freundin Nuri war nämlich merkwürdig."
         },
         {
           "id": "nuri-14-2",
-          "title": "Teil 2",
+          "title": "Sechs Freunde, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-14-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Sechs Freunde, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Sechs Freunde, Teil 1 Elli hätte heute im Bett bleiben sollen. Sie hatte die Lösung des Rätsels eigentlich gewusst, aber jetzt waren Komplikationen aufgetreten, sie hatte Nuri ungewoll…"
         },
         {
           "id": "nuri-15-1",
-          "title": "Teil 1",
+          "title": "Kleine Nuri, ganz groß, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-15-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Kleine Nuri, ganz groß, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Sechs Freunde, Teil 2 Kleine Kinder machen Fehler. Es ist völlig natürlich, dass sie Fehler machen, woher sollen sie es denn besser wissen? Es ist aber immer nützlich, wenn Ki…"
         },
         {
           "id": "nuri-15-2",
-          "title": "Teil 2",
+          "title": "Kleine Nuri, Ganz Groß, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-15-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Kleine Nuri, Ganz Groß, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Kleine Nuri, Ganz Groß, Teil 1 Nuri war ihr Körper immer noch unangenehm. Sie gingen im Moment zur Fabrik und obwohl Dean protestiert hatte, war Elli der Überzeugung, dass es…"
         },
         {
           "id": "nuri-16-1",
-          "title": "Teil 1",
+          "title": "Das Uria-Survival-Training, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-16-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Das Uria-Survival-Training, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Kleine Nuri ganz groß, Teil 2 Irgendwo jenseits des heute observierbaren Universums jagte die Second Chance durch die Leere. Dieses Raumschiff war menschlicher Bauart und…"
         },
         {
           "id": "nuri-16-2",
-          "title": "Teil 2",
+          "title": "Das Uria-Survivaltraining, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-16-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Artikel: Das Uria-Survivaltraining, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Das Uria-Survivaltraining, Teil 1"
         },
         {
           "id": "nuri-17-1",
-          "title": "Teil 1",
+          "title": "Das unschuldige Monster, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-17-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Das unschuldige Monster, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Das Uria-Survivaltraining, Teil 2 In den tiefen Kerkern des königlichen Palastes von Alagadda kam es dieser Tage zu noch absonderlicheren Aktivitäten, als es sonst für die fi…"
         },
         {
           "id": "nuri-17-2",
-          "title": "Teil 2",
+          "title": "Das unschuldige Monster, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-17-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Das unschuldige Monster, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Das unschuldige Monster, Teil 1 Nuri schlummerte schon halb und stand wieder vor der Tür, als ihre Lebensgeister von Kälte und frischer Luft wieder geweckt wurden. Dean trug…"
         },
         {
           "id": "nuri-18-1",
-          "title": "Teil 1",
+          "title": "Machbarkeitsnachweis, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-18-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Machbarkeitsnachweis, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Das unschuldige Monster, Teil 2 Nuri war völlig teilnahmslos, als man sie aus dem Helikopter zerrte und auf ein Flugzeug verlud. Sie reagierte wie auf Autopilot. Frau Fukuda hat…"
         },
         {
           "id": "nuri-18-2",
-          "title": "Teil 2",
+          "title": "Machbarkeitsbeweis, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-18-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Artikel: Machbarkeitsbeweis, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Machbarkeitsnachweis, Teil 1 Der Botschafter von Alagadda war zufrieden. Er hatte seinem Ego genüge getan und endlich ein Problem bereinigt, dass ihn über Jahrhunderte hinweg gepl…"
         },
         {
           "id": "nuri-19-1",
-          "title": "Teil 1",
+          "title": "Womit niemand rechnete, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-19-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Womit niemand rechnete, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Machbarkeitsbeweis, Teil 2 Das Mädchen namens Nuri sprang gegen das Glas und hinterließ mit ihrer Faust merkliche Sprünge darin."
         },
         {
           "id": "nuri-19-2",
-          "title": "Teil 2",
+          "title": "Womit niemand rechnete, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-19-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Womit niemand rechnete, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Womit niemand rechnete, Teil 1 Die Trauerfeier vom Oma Nikitin war schlicht und einfach, wie fast alles im Dorf. Trotzdem war am Sarg Bestürzung zu hören, als man die sterblic…"
         },
         {
           "id": "nach-dem-ende",
           "title": "Nach dem Ende",
           "url": "http://scp-wiki-de.wikidot.com/nach-dem-ende",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Artikel: Nach dem Ende Original-Autor: Dr Ore Der Himmel hatte ein tiefes Grau angenommen und es regnete in Strömen. Neun hielt das nicht davon ab, in ihrem schwarzen Kleid Wache zu halten. Ihr Flügel waren verborgen und mit leerem Blick betrachtete sie das Gr…"
         },
         {
           "id": "die-frau-und-die-ratten",
@@ -2889,7 +3284,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-b0e44ad17c6d510545582b11427ff293b90d9bac26acf86f9e2670e34c552e6e"
+        "structureHash": "sha256-1984546bac2145d4b284688b9aeebd810f8a826fc80c3840ed1d3ecd6c28bfc5"
       },
       "primaryArticles": [
         {
@@ -2974,10 +3369,13 @@
         },
         {
           "id": "antihelden-hub",
-          "title": "Antihelden-Serie",
+          "title": "\"Antihelden\"-Hub",
           "url": "http://scp-wiki-de.wikidot.com/antihelden-hub",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Antihelden Oder: Eine lose Sammlung von Erzählungen um zwei tragische Figuren Artikel (chronologisch) Artikel (alphabetisch)"
         },
         {
           "id": "truppen-dossier-mtf-de20-r",
@@ -2998,11 +3396,13 @@
         },
         {
           "id": "personaldatenblatt-henrik-jensen",
-          "title": "Lt. Henrik Jensen",
+          "title": "Personaldatenblatt: Henrik Jensen",
           "url": "http://scp-wiki-de.wikidot.com/personaldatenblatt-henrik-jensen",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Elitesoldat, Scharfschütze und Spezialist für verdeckte Operationen in der MTF seit 2010."
+          "os": 2,
+          "desc": "Vollständiger Name: Henrik Jensen Geboren am: 28. August 1981 in Kopenhagen, Dänemark Dänisch (da-N), südjütischer Dialekt"
         },
         {
           "id": "personaldatenblatt-johan-frey",
@@ -4114,7 +4514,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-9f6a86098708f066277a19a0cc5c629b12c9f6e212b52dd0bdaa473846f13b2b"
+        "structureHash": "sha256-83507ec0db5136943ab233b83f6214572a9f2da0de80c91ec452679c8fb687b6"
       },
       "primaryArticles": [
         {
@@ -4281,15 +4681,21 @@
           "id": "nuri-11-1",
           "title": "Restaurant der Killer, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nuri-11-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Restaurant der Killer, Teil 1 Original-Autor: Dr Ore Letztes Mal bei Nuri: Die Fleischmafia, Teil 2 Elli machte Fortschritte dabei, Nuris Tier zu entschlüsseln. Sie war sich mittlerweile sicher, dass es eine Art Trance-Zustand war, hervorgerufen durch…"
         },
         {
           "id": "nuri-11-2",
           "title": "Restaurant der Killer, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nuri-11-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Restaurant der Killer, Teil 2 Original-Autor: Dr Ore Letztes Mal bei Nuri: Restaurant der Killer, Teil 1 Nuri hatte mittlerweile ernsthaft Hunger. Leider würde es noch eine Weile dauern, bis ihre Würstchen kamen."
         },
         {
           "id": "o5-goc",
@@ -4309,15 +4715,21 @@
           "id": "neun-8",
           "title": "Der Kampf der Freien",
           "url": "http://scp-wiki-de.wikidot.com/neun-8",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Neuns Leere Die Global Occult Coalition unterhielt als weltweiter Zusammenschluss zahlreicher im anomalen angesiedelten Gruppierungen Horchposten in aller Herren Lande, um schnell auf Vorfälle reagieren zu können. Davon betroffen war a…"
         },
         {
           "id": "neun-9",
           "title": "Zeitbombe",
           "url": "http://scp-wiki-de.wikidot.com/neun-9",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Das letzte Mal bei Neun: Der Kampf der Freien Winter tanzte ihren Safety Dance und blieb damit weiterhin unangreifbar für Reier, der sie langsam umkreiste, auf der Suche nach einer Schwachstelle in ihrer Verteidigung."
         },
         {
           "id": "keine-eingaben-erhalten",
@@ -5750,15 +6162,18 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-9e29b03dc1a0dd03fccee467766f74a5693da5122211077228c426afc0ac1fd0"
+        "structureHash": "sha256-a12077fc92de96084503d572f523ffce8e738a83be7a1fe0e87f26a12d9f5735"
       },
       "primaryArticles": [
         {
           "id": "apres-aleph-team-10",
-          "title": "Team 10",
+          "title": "Team 10: Faust, Peterson und Sturm",
           "url": "http://scp-wiki-de.wikidot.com/apres-aleph-team-10",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Erster Handlungsbogen: Das Ende, aber auch ein Neuanfang Kapitel 1: Willkommen im Berg von Einer von Rabe Kapitel 2: Huckepack von Einer von Rabe"
         },
         {
           "id": "apres-aleph-partie-1-le-commencement",
@@ -5944,24 +6359,28 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-6f90d6aff9ed6cb7d5ab5a0cb2050fa10267d063ae51d4aa279734612e01885d"
+        "structureHash": "sha256-0eb732d0f910cf3af439a76a0f27f869c01faccf4cb9c25795407223d37bdc17"
       },
       "primaryArticles": [
         {
           "id": "initiative-zur-wiederherstellung-der-menschheit",
-          "title": "Die Initiative zur Wiederherstellung der Menschheit",
+          "title": "Initiative zur Wiederherstellung der Menschheit",
           "url": "http://scp-wiki-de.wikidot.com/initiative-zur-wiederherstellung-der-menschheit",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Die Initiative zur Wiederherstellung der Menschheit setzt sich aus ehemaligen Foundation-Androiden zusammen, die versuchen die Menschheit auf einem alternativen Weg wiederzubeleben. Zu diesem Zweck versuchen sie verschiedenen Lebewesen einen menschlichen Geist zu geben oder menschenähnliche Organismen zu kreieren, deren Genom von den Nanomaschinen nicht als Ziel angesehen wird. Ein weiterer Versuch stellt das Unterfangen dar, die Androiden selbst mit variierendem Erfolge zu \"vermenschlichen\". In der Initiative gibt es verschiedene Lager, zwischen denen eine unterschiedliche Dynamik herrscht."
+          "os": 6,
+          "desc": "Initiative zur Wiederherstellung der Menschheit Lager der Initiative Beziehungen zu anderen Interessengruppen Objekte/Geschichten"
         },
         {
           "id": "antihuman-fraktion",
-          "title": "Antihuman-Fraktion",
+          "title": "Antihuman Fraktion",
           "url": "http://scp-wiki-de.wikidot.com/antihuman-fraktion",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Die Antihuman-Fraktion, auch Antihumans genannt, ist eine Gruppe ehemaliger Foundationandroiden, die durch ihren Lernprozess ihre Programmierung überwunden haben und nun mit allen Mitteln versuchen die Wiederauferstehung der Menschheit zu unterbinden. Als Argumente führt sie die Fehlerhaftigkeit des Menschen, seine historischen Verbrechen und die unkontrollierbare Natur des Lebens allgemein an. Die Fanatischsten unter ihnen haben sich sogar ihre Fähigkeit der Emulierung von Emotionen genommen, da sie diese als menschliche Schwäche ansehen. Die Antihuman-fraktion experimentiert außerdem mit alternativen Androidenkörpern, die auf verschiedenen Tierarten basieren."
+          "os": 9,
+          "desc": "Antihuman Fraktion Beziehungen zu anderen Interessengruppen Personen der Antihuman Fraktion Objekte/Geschichten Infos für Autoren"
         },
         {
           "id": "asp-073",
@@ -6244,7 +6663,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-ad2c128338e5c30c33d6e49e6149782050778b05dbe715698da63ae5ed994d6e"
+        "structureHash": "sha256-1ce13f9c5cfc45f8e24befb6793cc8c32ebef45d2491b12c1887ebcea49a0bcd"
       },
       "primaryArticles": [
         {
@@ -6579,11 +6998,13 @@
         },
         {
           "id": "nexus-11-1",
-          "title": "Teil 1",
+          "title": "Trickster Heist, Teil 1",
           "url": "http://scp-wiki-de.wikidot.com/nexus-11-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Trickster Heist Teil 1 / Teil 2 / Teil 3"
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Dean, Teil 3 Viktor war glücklich. Endlich saß er mal ganz in Ruhe auf seiner Terrasse, schlürfte einen Kakao, die Vögel zwitscherten und mit einer gewissen Belustigung hörte er, wie sich Mathilda unten lautstark mit dem Rasenmäher ab…"
         },
         {
           "id": "verlust-2",
@@ -6599,15 +7020,21 @@
           "id": "nexus-11-3",
           "title": "Trickster Heist, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-11-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Trickster Heist, Teil 2 Das Einfangen des blauen Lastenkrokodils war noch in vollem Gange, als Viktor und die anderen den Waggon wieder erreichten. Mathilda erschien plötzlich am anderen Ende des Raums aus dem Nichts."
         },
         {
           "id": "nexus-11-2",
           "title": "Trickster Heist, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-11-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Trickster Heist, Teil 1 \"GpExpress?\", fragte Viktor. Von einer solchen Firma hatte er noch nie etwas gehört."
         },
         {
           "id": "budgetkuerzungen",
@@ -6760,7 +7187,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-7f6de9f1d57fa50c4a314daafafe2ea5e59e80989e0afcc76a6621c46c2c9bc0"
+        "structureHash": "sha256-7c894facf010f17ed3ecd83c4c5e4119c6a9b57db49ed6d6a9cb31341e10b965"
       },
       "primaryArticles": [
         {
@@ -6787,8 +7214,11 @@
           "id": "brv-dokument-blaue-aufruestung",
           "title": "BRV-Dokument - Operation \"blaue Aufrüstung\"",
           "url": "http://scp-wiki-de.wikidot.com/brv-dokument-blaue-aufruestung",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Das folgende Dokument beschreibt die bevorstehende Operation \"blaue Aufrüstung\". Um dieses Dokument vor Fremdzugriff zu schützen, ist das Protokoll BRAVA-SP10 stetig zu beachten. Weiterhin darf dieses Dokument auf keinen Fall an die Öffentlichkeit gelangen, be…"
         },
         {
           "id": "leben-im-untergrund",
@@ -6804,8 +7234,11 @@
           "id": "fcs-krk-b3",
           "title": "Informationsdatenblatt: FCS KRK B3",
           "url": "http://scp-wiki-de.wikidot.com/fcs-krk-b3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Informationen Technische Informationen Unter dem dritten Flotten-Zusammenschluss der FCS versteht man einen Himmelskriegsschiff-Verband, der ein Teil der Streitkraft der FCS ist und dem direktem Befehl des Ministeriums für militärische Angelegenheiten unterste…"
         }
       ],
       "supplementLinks": [],
@@ -6864,7 +7297,7 @@
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
         "allowUntaggedMembers": true,
-        "structureHash": "sha256-7cc366b5c83fbdd1570f06fa5dff0e52069f35e7b727ab2b2261e2faa80f5509"
+        "structureHash": "sha256-d83c72423eed04515f8af5f1d8e5c629d693c7d3bd261e9e7dc11e9711ea60bb"
       },
       "primaryArticles": [
         {
@@ -6894,11 +7327,13 @@
         },
         {
           "id": "psw-hub",
-          "title": "Panslawischer Widerstand (PSW)",
+          "title": "Panslawischer Widerstand (PSW) - Portal",
           "url": "http://scp-wiki-de.wikidot.com/psw-hub",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Der Panslawische Widerstand, kurz PSW genannt, entstand 1964 auf einem Slawenkongress, welcher von den Widerstandsbewegungen der Slawen einberufen wurde und den Zusammenschluss der slawischen Freiheitskämpfer zu Folge hatte. Der daraus resultierende Panslawische Widerstand führt seitdem einen verdeckten Kampf gegen das Großdeutsche Reich und nutzt dabei Paranormalien mit einem slawischen Ursprung. Mit der Zeit verbreitete sich unter den Mitgliedern ein heidnischer Kult um die Paranormalien, wodurch der slawische Glaube den Panslawischen Widerstand dauerhaft prägen sollte. Für eine Liste der mit getaggten Artikel, siehe hier ."
+          "os": 10,
+          "desc": "Der Panslawische Widerstand ist eine heidnische Untergrundorganisation von separatistischen Panslawisten aus dem SKP-Universum, welche dem Großdeutschen Reich feindlich gesonnen sind."
         },
         {
           "id": "skp-017",
@@ -6922,11 +7357,13 @@
         },
         {
           "id": "skp-hintergrund",
-          "title": "hier",
+          "title": "Bericht über Realität R-3378-DE \"SKP-Universum\"",
           "url": "http://scp-wiki-de.wikidot.com/skp-hintergrund",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Dies ist nur eine Zusammenfassung, einen ausführlicheren Hintergund findet ihr hier ."
+          "os": 10,
+          "desc": "Diese Dokumente enthalten eine Zusammenfassung an Informationen, die während einer teilweisen Realitätenkonjunktion (Zwischenfall #028-DE/I2) aus dem lokalen Netzwerk aus der Parallel-Realität-3378-DE (inoffiziell auch \"SKP-Universum'' genannt) geborgen wurden…"
         },
         {
           "id": "hilfe",
@@ -7117,9 +7554,9 @@
           "id": "uebernahme-der-scp-foundation-durch-das-skp",
           "title": "Übernahme der SCP Foundation",
           "url": "http://scp-wiki-de.wikidot.com/uebernahme-der-scp-foundation-durch-das-skp",
-          "sourceManifest": "manifest_gois",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
+          "contentKind": "tale",
           "os": 11,
           "desc": "Vorwort: Als die USA kapitulierten, und mit Kanada und dem Freistaat Alaska die Bundeskolonie Nordamerika bildeten, bekamen wir endlich Zugang zur SCP Foundation, jener Organisation, die schon lange vor dem Krieg auf der ganzen Welt Paranormalien einfing, um s…"
         },
@@ -7127,8 +7564,11 @@
           "id": "ueber-das-skp",
           "title": "Über das Sonderkommando für Paranormales",
           "url": "http://scp-wiki-de.wikidot.com/ueber-das-skp",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "Dieser Artikel ist archiviert und nicht mehr als kanonisch zu betrachten! Die Menschheit existiert in ihrer heutigen Form seit etwa einer viertel Millionen Jahren, doch nur die letzten 4.000 waren von Bedeutung."
         }
       ],
       "supplementLinks": [],
@@ -7519,7 +7959,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-f7617a1795d66ef9a199a697b34497090b90e9e4ef6cb3864017b40078d9237a"
+        "structureHash": "sha256-a8718aea8c2c2db495fd20953ce1fb9bf9a467a5055498be388dc8ec6b14d2e6"
       },
       "primaryArticles": [
         {
@@ -7533,19 +7973,24 @@
           "desc": "Da sich SCP-1134-JP nicht aus seinem Gebiet entfernt, können Überwachungskameras um und im Geschäft aufgestellt werden, um seine Aktivitäten zu überwachen. Wenn SCP-1134-JP Anzeichen von Misstrauen gegenüber den Überwachungskameras zeigt, sind ihm diese als Si…"
         },
         {
-          "id": "nexus-13-3",
-          "title": "Der Zornregulator, Teil 3",
-          "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "Die Empfehlung für heute? Nun, da hätten wir Der Zornregulator, Teil 3 ."
-        },
-        {
           "id": "nexus-13-2",
           "title": "Der Zornregulator, Teil 2",
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 1 Die Raumstation Brym liegt ganz am Rand des Sternenclusters Terzan 2. Einstmals eine Bastion der Orthotanischen Koalition, war dieser Raumhafen von den Zwölf Sternen, einer Zivilisation, die mit der Koalition…"
+        },
+        {
+          "id": "nexus-13-3",
+          "title": "Der Zornregulator, Teil 3",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 2 Beim Sushiblade wird das Sushi traditionell vor dem Kampf von den Kontrahenten angefertigt. Aura und Herr Maehara kneteten in einer Ecke auf einem Tisch ihren Reis zurecht, während Elli in der anderen Ecke zu…"
         },
         {
           "id": "yamizushi-hub",
@@ -7563,14 +8008,14 @@
           "title": "Artikel",
           "articleIDs": [
             "scp-1134-jp",
-            "nexus-13-3"
+            "nexus-13-2"
           ]
         },
         {
           "id": "02-sushi-aus-der-ganzen-welt",
           "title": "Sushi aus der ganzen Welt",
           "articleIDs": [
-            "nexus-13-2",
+            "nexus-13-3",
             "yamizushi-hub"
           ]
         }
@@ -8236,12 +8681,12 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-ed6fbca5622faedc1503d30b1b31c9763984cf1a26f563bd4d3b00e63b9d915b"
+        "structureHash": "sha256-140e928c5187b4074d45487ec476492921889bb61d75c5f85216ecb15ed24aff"
       },
       "primaryArticles": [
         {
           "id": "noctua-arkana-1",
-          "title": "Noctua Arkana",
+          "title": "Blutige Anfänge",
           "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-1",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
@@ -8253,36 +8698,51 @@
           "id": "noctua-arkana-2",
           "title": "Die Wanderer's Library",
           "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Das letzte Mal bei Noctua Arkana: Blutige Anfänge Auf dem Friedhof gab es einen steinernen Bogen. Jakob zeichnete auf einem der Pfeiler eine Art Symbol nach und plötzlich öffnete sich in dem Bogen der Weg zu etwas, das wie eine Bibliothek aussah."
         },
         {
           "id": "noctua-arkana-3",
           "title": "Die Leiden der jungen Mira",
           "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Das letzte Mal bei Notgeboren: Die Wanderer's Library Mira war zurück in Berlin. Wie sich herausstellte, war ihr keine Polizei auf die Pelle gerückt. Anscheinend wirkte sich Jakobs Warnung, niemand würde Miras Geschichte glauben auch auf die Staatsgewalt aus,…"
         },
         {
           "id": "noctua-arkana-4",
-          "title": "Erster Tag auf Arbeit",
+          "title": "Der erste Tag auf Arbeit",
           "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-4",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Das letzte Mal bei Noctua Arcana: Die Leiden der jungen Mira Wer an Schizophrenie denkt, stellt sich zumeist Menschen vor, für die ein normales Leben nicht mehr möglich ist, weil sie eine Gefahr für sich oder andere darstellen. Meistens schreien sie oder tuen…"
         },
         {
           "id": "noctua-arkana-5",
           "title": "Das erste Spukhaus von Beelitz-Heilstätten",
           "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-5",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Das letzte Mal bei Noctua Arcana: Der erste Tag auf Arbeit Es gab einen Haufen Geschrei in der Wohnung von Klaus. Frau Amsel schrie ihre Frustration über Miras Naivität heraus, Klaus brüllte der Erscheinung zu, sie solle verschwinden, Lukas beweinte Miras plöt…"
         },
         {
           "id": "noctua-arkana-6",
           "title": "Aus der Tiefe",
           "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-6",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Das letzte Mal bei Noctua Arcana: Das erste Spukhaus von Beelitz-Heilstätten Im Skagerrak tobte der heftigste Sturm, den Sörensen je erlebt hatte. Er war eigentlich mit seinen beiden Kollegen bei strahlendem Sonnenschein mit seinem kleinen Fischkutter Dagny au…"
         }
       ],
       "supplementLinks": [],
