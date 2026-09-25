@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1789446829,
-  "generatedAt": "2026-09-15T04:33:49Z",
-  "chunkRevision": "sha256-b3e4ff4b191722abeaa63c165d082502e5e457405c910042f762b358160f0330",
+  "listVersion": 1790362708,
+  "generatedAt": "2026-09-25T18:58:28Z",
+  "chunkRevision": "sha256-3655d34fb6062cc34490ec143e127ff6c526ee7e6a0c66c92109036ae588c9f8",
   "builtFrom": {
     "manifests": [
       {
@@ -19,36 +19,36 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1789386806,
-        "generatedAt": "2026-09-14T11:53:26Z",
-        "contentHash": "sha256-d793059ff2ca28b8376ed3e75aaa6e7dc967c7dc4e0885ff6a293af362e11d7b"
+        "listVersion": 1790362639,
+        "generatedAt": "2026-09-25T18:57:19Z",
+        "contentHash": "sha256-cd58ff9c92dd651896378b6862da9d3873d204e70007efc0c1af5ab888f0b301"
       },
       {
         "kind": "manifest_scp-it",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-it.json",
         "schemaVersion": 2,
-        "listVersion": 1789386831,
-        "generatedAt": "2026-09-14T11:53:51Z",
-        "contentHash": "sha256-8c8aca4e428598517fde8a6eb54299adc2f8fffcbecf781b0c10c3de08c81dc7"
+        "listVersion": 1790362667,
+        "generatedAt": "2026-09-25T18:57:47Z",
+        "contentHash": "sha256-421439da7bd2afa1af80d85694ab5d035380466b2745bddf9ab1bbeab92c9300"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1789386831,
-        "generatedAt": "2026-09-14T11:53:51Z",
-        "contentHash": "sha256-8ae9330539ecd8076fe9a852aa4526994a512a0b681141f101503d2f2b836a84"
+        "listVersion": 1790362667,
+        "generatedAt": "2026-09-25T18:57:47Z",
+        "contentHash": "sha256-07c0fde4cac2e0e80f23e002183a926e109a7c631beb9f94723df33c6ddc3b42"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1789439298,
-        "generatedAt": "2026-09-15T02:28:18Z",
-        "contentHash": "sha256-e77083bb1fd84e77664cf96c5bdbdcc83035587f4e9f2ae2acdb3c4ed8c96b85"
+        "listVersion": 1790362667,
+        "generatedAt": "2026-09-25T18:57:47Z",
+        "contentHash": "sha256-a24a532988318ab234a0e516f6d2820def9aaa9292ba4e61504df87abf6b1361"
       }
     ],
     "seedReview": {
@@ -66,9 +66,9 @@
       "branchID": "scp-it",
       "path": "DataPipeline/list/it/it_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1784533582,
-      "generatedAt": "2026-08-10T10:46:39Z",
-      "contentHash": "sha256-f6a1d2da24f3883d4b286413d4975359244446b18bda5bbc1794acded1afc172"
+      "listVersion": 1790362540,
+      "generatedAt": "2026-09-25T18:55:40Z",
+      "contentHash": "sha256-253491881a7119f0f233ca826e7142d3c0a195ce8e31c583acc40c437eede487"
     }
   },
   "collections": [
@@ -104,71 +104,98 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-654ea467445a26c87bc0866b65f66d83a7cae86655ac527a9532d8093394e16e"
+        "structureHash": "sha256-eb84deb2d853e1ffbb1fa8e7f36dbfe3a310e5ed14f5d91ed65fc91e7bf845e3"
       },
       "primaryArticles": [
         {
           "id": "alert-lockdown-initiated",
           "title": "ALLERTA! LOCKDOWN INIZIALIZZATO!",
           "url": "http://fondazionescp.wikidot.com/alert-lockdown-initiated",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Glacon, sei lì? Ci sono, Alexandra. I miei sopravvissuti sono appena morti… divorati, per la precisione. Non sono riuscita in alcun modo a condurli oltre il blocco E. Sono durati tre giorni dopo la breccia, più a lungo di quanto mi aspettavo. Che notizie dal t…"
         },
         {
           "id": "command-query-separation",
           "title": "Separazione di Query e Comandi",
           "url": "http://fondazionescp.wikidot.com/command-query-separation",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Queste esercitazioni sono divertenti, ma massacranti. Non registro cambiamenti significativi nella mia velocità di elaborazione."
         },
         {
           "id": "superencipherment",
           "title": "Supercifratura",
           "url": "http://fondazionescp.wikidot.com/superencipherment",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Ha chiamato? Alexandra, il Sito-17 ha interrotto i contatti. Sei riuscita a stabilire una connessione nelle ultime ore? Non ho provato di recente. Per quanto sono rimasti offline?"
         },
         {
           "id": "clock-multiplier",
           "title": "Moltiplicatore di Clock",
           "url": "http://fondazionescp.wikidot.com/clock-multiplier",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Cancellazione Partizioni 1-299 (100%): Decrittazione Blocchi (25%): Accesso Password Celle (100%): Sovrascrizione >\\C: (57%):"
         },
         {
           "id": "null-terminating-string",
           "title": "Stringa Null-terminata",
           "url": "http://fondazionescp.wikidot.com/null-terminating-string",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Quindi questa è la tua opinione ufficiale? Per il momento, sì. Anche se non escludiamo un sabotaggio… fino a indagine conclusa, naturalmente."
         },
         {
           "id": "hello-world",
-          "title": "Buongiorno Mondo: Parte I",
+          "title": "Buongiorno Mondo",
           "url": "http://fondazionescp.wikidot.com/hello-world",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "imes Square, New York. 22 persone sono state dichiarate morte stamattina durante la ressa di mezzogiorno mentre facevano shopping in vari negozi di elettronica. Le cause della morte sono ancora sconosciute. Secondo quanto dichiarato dal capo della polizia Will…"
         },
         {
           "id": "hello-world-part-ii",
-          "title": "Buongiorno Mondo: Parte II",
+          "title": "Buongiorno Mondo (Parte II)",
           "url": "http://fondazionescp.wikidot.com/hello-world-part-ii",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Il viaggio attraverso la fibra ottica è quasi istantaneo. Prima che uno si renda conto di quel che è successo viene risucchiato, spezzettato e ricomposto in un modo appena misurabile in termini di tempo. La SSM-Kappa 10 raggiunse i gradini che conducevano a Cy…"
         },
         {
           "id": "hello-world-part-iii",
-          "title": "Buongiorno Mondo: Parte III",
+          "title": "Buongiorno Mondo (Parte III)",
           "url": "http://fondazionescp.wikidot.com/hello-world-part-iii",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Due paia di mani nere come la pece scrollavano febbrilmente da schermo a schermo. Nella luce blu soffusa del Grande Tempio I/O, una fila di occhi gialli scorreva avanti e indietro, più veloce delle mani, cercando un segno o un'anomalia o qualunque cosa assomig…"
         },
         {
           "id": "hello-world-part-iv",
-          "title": "Buongiorno Mondo: Parte IV",
+          "title": "Buongiorno Mondo (Parte IV)",
           "url": "http://fondazionescp.wikidot.com/hello-world-part-iv",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Hatbot strinse i pugni mentre si voltava verso Grape. Ogni occhio lottava per fissarsi correttamente sulla sua testa. dov'è il facciadimerda?"
         },
         {
           "id": "scp-2987",
@@ -417,7 +444,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-f930c49739f8f7fc10b2c29c9343b2d84ba51d298ea6210613cf25f2decfbfde"
+        "structureHash": "sha256-ddf646a6a7be2d8577656899abd94065ca891d165f4afd74c97d29f5de2ab7c8"
       },
       "primaryArticles": [
         {
@@ -431,14 +458,14 @@
           "desc": "Di più da questo autore"
         },
         {
-          "id": "in-life-as-in-language",
-          "title": "Vivere La Vita Come Una Lingua",
-          "url": "http://fondazionescp.wikidot.com/in-life-as-in-language",
+          "id": "o4-s-summit",
+          "title": "Vertice del Comando O4",
+          "url": "http://fondazionescp.wikidot.com/o4-s-summit",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 2,
-          "desc": "Questo racconto è stato scritto per Ralliston in occasione dello scambio di regali artisctici del 2021. Mi ci è voluto qualche giorno per capire cosa volessi scriverci in quanto Ralliston ha lasciato aperto il come il Direttore Alistair Vemhoff vada esplorato.…"
+          "os": 3,
+          "desc": "A causa del guasto delle banche dati di SCiPNet tuttora in corso e poiché la prossima mossa di Damien Nowak è incerta, si è concluso che il Sito-120 necessita di una nuova guida, cosa che manca da troppo tempo, da quando il dott. MacCarthy è morto. Pertanto, s…"
         },
         {
           "id": "tears-and-bone",
@@ -475,13 +502,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "o4-s-summit",
-          "title": "Vertice del Comando O4",
-          "url": "http://fondazionescp.wikidot.com/o4-s-summit",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "secure-facility-dossier-site-120",
           "title": "Fascicolo della Struttura di Sicurezza: Sito-120",
           "url": "http://fondazionescp.wikidot.com/secure-facility-dossier-site-120",
@@ -509,8 +529,11 @@
           "id": "fresh-blood",
           "title": "Sangue Fresco",
           "url": "http://fondazionescp.wikidot.com/fresh-blood",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "PERSONA D’INTERESSE RR/2917/1236 Nome: Robert Lukas Madden Data di Nascita: 15/02/2001 Ubicazione: Germania, Leipzig, Friedrich-Nietzsche-Gymnasium"
         },
         {
           "id": "scp-7278",
@@ -528,6 +551,16 @@
           "url": "http://fondazionescp.wikidot.com/scp-it-120",
           "role": "primaryArticle",
           "contentKind": "scp"
+        },
+        {
+          "id": "in-life-as-in-language",
+          "title": "Vivere La Vita Come Una Lingua",
+          "url": "http://fondazionescp.wikidot.com/in-life-as-in-language",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Questo racconto è stato scritto per Ralliston in occasione dello scambio di regali artisctici del 2021. Mi ci è voluto qualche giorno per capire cosa volessi scriverci in quanto Ralliston ha lasciato aperto il come il Direttore Alistair Vemhoff vada esplorato.…"
         },
         {
           "id": "scp-6172",
@@ -558,7 +591,7 @@
           "title": "Articoli più Recenti",
           "articleIDs": [
             "the-edge-of-all-light",
-            "in-life-as-in-language",
+            "o4-s-summit",
             "tears-and-bone"
           ]
         },
@@ -584,46 +617,46 @@
           ]
         },
         {
-          "id": "05-5-una-biblioteca-vuota",
-          "title": "5. Una Biblioteca, Vuota",
-          "articleIDs": [
-            "o4-s-summit"
-          ]
-        },
-        {
-          "id": "06-articoli",
+          "id": "05-articoli",
           "title": "Articoli",
           "articleIDs": [
             "secure-facility-dossier-site-120"
           ]
         },
         {
-          "id": "07-8-testimonianza-parte-2",
+          "id": "06-8-testimonianza-parte-2",
           "title": "8. Testimonianza - Parte 2",
           "articleIDs": [
             "scp-6596"
           ]
         },
         {
-          "id": "08-scp-pl-389-fornax-aeterna",
+          "id": "07-scp-pl-389-fornax-aeterna",
           "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
           "articleIDs": [
             "ambrose-esterberg"
           ]
         },
         {
-          "id": "09-scp-7672-alla-corte-del-re-dei-goblin",
+          "id": "08-scp-7672-alla-corte-del-re-dei-goblin",
           "title": "SCP-7672 - Alla Corte del Re dei Goblin",
           "articleIDs": [
             "fresh-blood"
           ]
         },
         {
-          "id": "10-scp-5659-odium-dei-amoris",
+          "id": "09-scp-5659-odium-dei-amoris",
           "title": "SCP-5659 - Odium Dei Amoris",
           "articleIDs": [
             "scp-7278",
             "scp-it-120"
+          ]
+        },
+        {
+          "id": "10-danimali",
+          "title": "Danimali",
+          "articleIDs": [
+            "in-life-as-in-language"
           ]
         },
         {
@@ -872,361 +905,458 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-1d636ce4579d9d748f2e0dc8bea9c23ef2cc7227ff01e7a6622ad2f2de6f9678"
+        "structureHash": "sha256-2959c97fb3c4b4bd8c54e650a7695c6c7d42756c1a8e9ea2933bc1e1a3a59d2b"
       },
       "primaryArticles": [
         {
           "id": "yesterday",
           "title": "Ieri",
           "url": "http://fondazionescp.wikidot.com/yesterday",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Il mondo stava bruciando. Il dottor Alto Clef osservava gli incendi dalla relativa sicurezza del Sito-67. Il fuoco era nero e verde: qualche strana reazione chimica innescata da tredici anomalie che avevano fatto breccia nel contenimento. Gli incendi coprivano…"
         },
         {
           "id": "snakes-and-ladders",
           "title": "Scale e Serpenti",
           "url": "http://fondazionescp.wikidot.com/snakes-and-ladders",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "1. Scale e Serpenti di"
+          "os": 6,
+          "desc": "Molte persone passano dal Sito-19. Il movimento più tipico è una corsa dai laboratori alle stanze delle sperimentazioni alla mensa, per poi tornare ai laboratori (con qualche deviazione in bagno). Poi c’è chi passa da pimpante a esausto o da mondano a pazzo, c…"
         },
         {
           "id": "iquit",
           "title": "«Mi Dimetto»",
           "url": "http://fondazionescp.wikidot.com/iquit",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "2. «Mi Dimetto» di"
+          "os": 8,
+          "desc": "«Come hai detto?» sobbalzò O5-7, sgomenta. Lei fu la prima a parlare, ma non l’unica. O5-8 sbatté il pugno sul tavolo, per poi scuoterlo, perché l'aveva pestato con più forza di quanto volesse."
         },
         {
           "id": "a-restless-wanderer-on-the-earth",
           "title": "Ramingo e Fuggiasco sulla Terra",
           "url": "http://fondazionescp.wikidot.com/a-restless-wanderer-on-the-earth",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "3. Ramingo e Fuggiasco sulla Terra di"
+          "os": 8,
+          "desc": "Azzurrinə corrugò la fronte, alla vista della scheggia di vetro rettangolare nella mano della Mercante: «Un \"possibile\" ricordo? Perché dovrei pagare così tanto per un possibile ricordo?»"
         },
         {
           "id": "prisoners",
-          "title": "Prigioniere | Famiglia | Si Va in Scena | Sorelle",
+          "title": "Prigioniere",
           "url": "http://fondazionescp.wikidot.com/prisoners",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "«Sai che morirà, vero? Che chiederai a una probabile dea di morire?» La donna buttò la sua sigaretta e si alzò: «Be’, al diavolo. Meglio di un buco a forma di pianeta Terra nell’universo. Diamoci da fare»"
         },
         {
           "id": "incident-zero-part-1",
-          "title": "Parte 1",
+          "title": "Incidente Zero - Parte 1",
           "url": "http://fondazionescp.wikidot.com/incident-zero-part-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Parte 1 | Parte 2 | Parte 3 | Parte 4 | Parte 5 » di"
+          "os": 4,
+          "desc": "La chiamata, come molte delle cose peggiori nella vita, arrivò all’una di notte. Adrian grugnì e si rigirò nel letto, separandosi con riluttanza dal calore, dalla morbidezza e dal profumo di Beatrice. Tastò il comodino con una mano in cerca del cellulare, quas…"
         },
         {
           "id": "immediate-actions",
           "title": "Azioni Immediate",
           "url": "http://fondazionescp.wikidot.com/immediate-actions",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "1. Azioni Immediate di"
+          "os": 5,
+          "desc": "Ci furono delle esplosioni, da qualche parte nel sito. Non era proprio una novità, ma quelle non sembravano controllate. Neanche questa era una novità, ma SCP-105 si agitò comunque. La porta della sua unità di contenimento si aprì ed entrò un agente. Era giova…"
         },
         {
           "id": "the-seed-of-an-idea",
-          "title": "Il Seme di un’Idea",
+          "title": "Il Seme di un'Idea",
           "url": "http://fondazionescp.wikidot.com/the-seed-of-an-idea",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "2. Il Seme di un’Idea di"
+          "os": 4,
+          "desc": "La piccola sala riunioni aveva venti posti a sedere, ma adesso ospitava sessanta persone. Tutti quelli che erano accorsi nella stanza provenivano dagli scaglioni più alti della Fondazione. Almeno uno dei presenti faceva parte del Comando O5, ma solo una person…"
         },
         {
           "id": "contingency",
           "title": "Piano d’Emergenza",
           "url": "http://fondazionescp.wikidot.com/contingency",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "3. Piano d’Emergenza di"
+          "os": 3,
+          "desc": "«Volete che torni sul campo?» «Ne abbiamo bisogno. Non è una richiesta, è un ordine» rispose la donna col tailleur pantalone verde menta."
         },
         {
           "id": "deals-with-the-devil",
           "title": "Patti col Diavolo",
           "url": "http://fondazionescp.wikidot.com/deals-with-the-devil",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "4. Patti col Diavolo di"
+          "os": 3,
+          "desc": "Quando arrivò la chiamata, la direttrice Sophia Light si era già resa conto che se l'aspettava da un pezzo: dai suoi superiori c'era stato un clima di distanza, invece che di interferenza silenziosa. Era come se stessero osservando le sue azioni in silenzio ra…"
         },
         {
           "id": "what-s-in-a-name",
-          "title": "Cosa c’è in un Nome?",
+          "title": "Cosa c'è in un Nome?",
           "url": "http://fondazionescp.wikidot.com/what-s-in-a-name",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "5. Cosa c’è in un Nome? di"
+          "os": 4,
+          "desc": "Il dottor Alto Clef non era più il direttore del Dipartimento di Formazione e Sviluppo, adesso era quello della SSMA Lambda-2 (\"la Squadra di Assassini Spogliarelli Bisessuali del Dottor Clef\"). Lunedì mattina, Alto entrò nella serie di stanze predisposte per…"
         },
         {
           "id": "just-a-formality",
           "title": "Solo una Formalità",
           "url": "http://fondazionescp.wikidot.com/just-a-formality",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "6. Solo una Formalità di"
+          "os": 3,
+          "desc": "Il dottor Daniel Aeslinger invidiava i suoi colleghi fuori dalla Fondazione. Loro dovevano solo fronteggiare la vita del ventunesimo secolo che erodeva la sanità mentale del genere umano: secondo lui, era già più che abbastanza con cui avere a che fare. Anche…"
         },
         {
           "id": "integrity-project",
           "title": "Progetto di Integrità",
           "url": "http://fondazionescp.wikidot.com/integrity-project",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "7. Progetto di Integrità di"
+          "os": 4,
+          "desc": "Il direttore del Sito-81 era molto lontano dalle mura della Fondazione, in una baita sulle Montagne Rocciose. Era seduto sul portico sul retro, godendosi la brezza frizzante del mattino. Fece un respiro profondo, poi ne fece un altro e sorrise, pensando che re…"
         },
         {
           "id": "new-tricks",
           "title": "Nuovi Trucchi",
           "url": "http://fondazionescp.wikidot.com/new-tricks",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "8. Nuovi Trucchi di e"
+          "os": 4,
+          "desc": "In un’anonima autorimessa in una struttura inesistente, un cane tentava di riparare un servocomando idraulico. Alzò la zampa e cliccò sulla tastiera speciale che avevano progettato apposta per lui, ai tempi in cui il suo laboratorio era più grande e rifornito…"
         },
         {
           "id": "the-wolves-at-the-door",
           "title": "I Lupi alle Porte",
           "url": "http://fondazionescp.wikidot.com/the-wolves-at-the-door",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "9. I Lupi alle Porte di"
+          "os": 4,
+          "desc": "SCP-105 stava cercando di risolvere un cruciverba, quando bussarono alla sua porta. Non era una visita programmata, il che era preoccupante, ma almeno stavolta non c'erano esplosioni. Entrarono due donne in abiti eleganti, seguite da alcune guardie. Le donne s…"
         },
         {
           "id": "light-dependent-reactions",
           "title": "Reazioni Dipendenti dalla Luce",
           "url": "http://fondazionescp.wikidot.com/light-dependent-reactions",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "10. Reazioni Dipendenti dalla Luce di"
+          "os": 3,
+          "desc": "Estratti dalla Registrazione dell'Intervista E-46693-12 04/10/2014, ore 12:57 Intervistatore: Geoff C. Taggart, [REDATTO] Soggetto: la dott.ssa Chelsea Elliott, ricercatrice (specialista botanica)"
         },
         {
           "id": "dressing-up",
-          "title": "Vestirsi",
+          "title": "Serata Fuori tra Ragazze - Vestirsi",
           "url": "http://fondazionescp.wikidot.com/dressing-up",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "11. Serata Fuori tra Ragazze Vestirsi | Ubriacarsi | Scatenare l’Inferno di"
+          "os": 3,
+          "desc": "La colazione arrivava tutte le mattine, alle sette. SCP-105 cercava sempre di fare la doccia, rifare il suo letto e pulire e ordinare la sua unità di contenimento prima di quell'ora. Non che le importasse di cosa pensava di lei l'uomo in camice bianco coi vass…"
         },
         {
           "id": "additional-resources",
           "title": "Risorse Aggiuntive",
           "url": "http://fondazionescp.wikidot.com/additional-resources",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "12. Risorse Aggiuntive di e"
+          "os": 3,
+          "desc": "L'agente Dietrich Lurk uscì dal bagno e andò al lavandino. Le dure suole delle sue scarpe facevano eco a ogni passo e il getto d'acqua fredda del rubinetto ruppe il silenzio nel bagno degli uomini, che in quel momento era vuoto. Si sciacquò la faccia per darsi…"
         },
         {
           "id": "pythia-s-wing",
-          "title": "L’Ala della Pizia",
+          "title": "L'Ala della Pizia",
           "url": "http://fondazionescp.wikidot.com/pythia-s-wing",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "14. L’Ala della Pizia di"
+          "os": 3,
+          "desc": "«Vuoi riportare la SSM Omega-7. Che ti aspettavi?» O5-10 fece un sorriso incerto: «Non riportarla, resuscitarla. In una forma nuova. Migliore»"
         },
         {
           "id": "number-one-with-a-bullet",
           "title": "Bersaglio Numero Uno",
           "url": "http://fondazionescp.wikidot.com/number-one-with-a-bullet",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "15. Bersaglio Numero Uno di"
+          "os": 4,
+          "desc": "«Vuoi la Tuta? Ne sei sicuro?» chiese il cane. «L'agente Adams ne avrà bisogno, soprattutto se la Coalizione inizia a intensificare i suoi sforzi» rispose il dottor Clef."
         },
         {
           "id": "lending-a-hand",
           "title": "Dare una Mano",
           "url": "http://fondazionescp.wikidot.com/lending-a-hand",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "16. Dare una Mano di"
+          "os": 3,
+          "desc": "Il Comitato Etico non è un vostro nemico! C'è l'intermediario del sito che vi aiuta a fare un lavoro migliore. Quelle moleste procedure speciali di contenimento possono sembrare impossibili da perfezionare, ma se lavorate coi vostri intermediari, potete azzecc…"
         },
         {
           "id": "the-high-court-with-the-magic-army",
-          "title": "La Corte Suprema con l’Esercito Magico",
+          "title": "La Corte Suprema con l'Esercito Magico",
           "url": "http://fondazionescp.wikidot.com/the-high-court-with-the-magic-army",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "17. La Corte Suprema con l’Esercito Magico di"
+          "os": 4,
+          "desc": "«Ho intenzione di parlare con gli altri Sovrintendenti. Voglio che tu venga con me» disse O5-10. Sale sapeva che quel momento sarebbe arrivato, da quando avevano fatto visita agli oracoli. La sua prima reazione fu entusiasmo controllato. Com'era tipico dei Tut…"
         },
         {
           "id": "in-harm-s-way",
           "title": "In Pericolo",
           "url": "http://fondazionescp.wikidot.com/in-harm-s-way",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "18. In Pericolo di"
+          "os": 4,
+          "desc": "SCP-105 provava a far passare la mano attraverso una fotografia da molte ore. Era una normale istantanea: l'aveva scattata con la sua Polaroid pochi minuti prima, come aveva fatto con le ultime dozzine di foto. Eppure, quando provava a inserirvi la mano, facev…"
         },
         {
           "id": "hellomuddah",
           "title": "Operazione “Campo Granada”",
           "url": "http://fondazionescp.wikidot.com/hellomuddah",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "1. Operazione “Campo Granada” di e"
+          "os": 5,
+          "desc": "Rapporto Conclusivo Email Intercettata 1 Email Intercettata 2 Email Intercettata 3 Il pacchetto di documenti in allegato è riservato all'autorizzazione di:"
         },
         {
           "id": "folly",
           "title": "Pazzia",
           "url": "http://fondazionescp.wikidot.com/folly",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "2. Pazzia di"
+          "os": 3,
+          "desc": "«È fatta, dunque. Abbiamo il via libera» Karlyle studiava il messaggio che aveva ricevuto quella mattina. I risultati dei voti del Comando O5 erano segreti, noti solo ai diretti interessati. Jean si era stupito, quando aveva ricevuto quell'annuncio, prima di r…"
         },
         {
           "id": "back-alley-deals",
           "title": "Affari da Vicolo sul Retro",
           "url": "http://fondazionescp.wikidot.com/back-alley-deals",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "3. Affari da Vicolo sul Retro di"
+          "os": 3,
+          "desc": "Anderson Massey trattenne un brivido, mentre varcava la soglia. Dall'altro lato, quello vero e proprio, era un'elegante porta a vetri in stile georgiano dalla trabeazione raffinata. Da quel lato, era legno grezzo coperto di vernice screpolata e sbiadita. Inolt…"
         },
         {
           "id": "tasers-thermite",
           "title": "Pistole Elettriche e Termite",
           "url": "http://fondazionescp.wikidot.com/tasers-thermite",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "4. Pistole Elettriche e Termite di e"
+          "os": 3,
+          "desc": "Il dottor Django Bridge si svegliò. Si era addormentato nel suo ufficio, con la faccia sulla scrivania. Il bagliore dello schermo del suo computer e il giallo di una lampada di fuori stavano proiettando un misto di luce fredda e calda nella stanza. Il dottor B…"
         },
         {
           "id": "tinker-tailor-soldier-huntsman",
           "title": "Stagnino, Sarto, Soldato, Cacciatore",
           "url": "http://fondazionescp.wikidot.com/tinker-tailor-soldier-huntsman",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "5. Stagnino, Sarto, Soldato, Cacciatore di"
+          "os": 3,
+          "desc": "Succedeva ogni notte, senza eccezioni. I dettagli cambiavano ogni volta, i suoi anni vissuti nel mondo segreto si mescolavano tra loro in un ritratto confusionario. Quella notte, il suo cliente era un vecchio con una cravatta a righe rosse e il suo mostro era…"
         },
         {
           "id": "we-got-a-good-thing-here",
-          "title": "Qui c’è Qualcosa di Buono",
+          "title": "Qui c'è Qualcosa di Buono",
           "url": "http://fondazionescp.wikidot.com/we-got-a-good-thing-here",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "6. Qui c’è Qualcosa di Buono di"
+          "os": 3,
+          "desc": "Aleksander capì che ci sarebbero stati guai quando la donna accostò lungo il marciapiede fuori dall'aeroporto, a bordo di una decapottabile rossa; indossava un abito scollato blu e una sciarpa di seta con motivi a fiori. Gli chiese:"
         },
         {
           "id": "are-we-there-yet",
           "title": "Siamo Arrivati?",
           "url": "http://fondazionescp.wikidot.com/are-we-there-yet",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "7. Siamo Arrivati? di"
+          "os": 5,
+          "desc": "♫ Everythin', everythin', everythin's gonna be alright this mornin' ♫ «Dico solo che stiamo ascoltando la stessa canzone da due ore»"
         },
         {
           "id": "i-thought-you-died-alone",
           "title": "Pensavo che Fossi Morto da Solo",
           "url": "http://fondazionescp.wikidot.com/i-thought-you-died-alone",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "8. Pensavo che Fossi Morto da Solo di"
+          "os": 4,
+          "desc": "> Da: Arvind Desai (pcs.24|iaseda#pcs.24|iaseda) > A: Santosh Desai (pcs.52a|iaseds#pcs.52a|iaseds) > Oggetto: Film? Ciao, Santosh! Non ti vedo da un pezzo e mi chiedevo cosa fai di bello. Ti interessa guardare un film venerdì? Stammi bene, Arvind"
         },
         {
           "id": "ball-gags-and-scrambled-eggs",
           "title": "Bavagli con Palla e Uova Strapazzate",
           "url": "http://fondazionescp.wikidot.com/ball-gags-and-scrambled-eggs",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "9. Bavagli con Palla e Uova Strapazzate di e"
+          "os": 4,
+          "desc": "Era mezzanotte, quando trascinarono l'agente Lurk e il dottor Bridge giù dai loro letti e li bloccarono a terra prima che potessero reagire. Ficcarono degli sporchi bavagli con palle di gomma nelle loro bocche e coprirono le loro teste con dei sacchi neri. Per…"
         },
         {
           "id": "up-to-no-good",
           "title": "Niente di Buono",
           "url": "http://fondazionescp.wikidot.com/up-to-no-good",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "10. Niente di Buono di"
+          "os": 4,
+          "desc": "Aleksander premé il tasto di avvio sul lettore Blu-ray e apparve l'iconico castello della Disney, seguito dall'introduzione di Frozen, l'edizione fatta apposta per cantare assieme ai personaggi. Mentre indossava le cuffie Bose del padre, Lucille chiese:"
         },
         {
           "id": "elder-baconator",
           "title": "Pancetta Quadrupla",
           "url": "http://fondazionescp.wikidot.com/elder-baconator",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "11. Pancetta Quadrupla di e"
+          "os": 4,
+          "desc": "Il cursore del programma di scrittura lampeggiava con fare accusatorio davanti a Tilda; la incitava a finire il rapporto. Era sempre la stessa storia noiosa, con la carica di direttrice: in cima ci si sentiva soli, perché il trono era una montagna di burocrazi…"
         },
         {
           "id": "getting-into-treble",
           "title": "Raggiungere le Alte Frequenze",
           "url": "http://fondazionescp.wikidot.com/getting-into-treble",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "12. Raggiungere le Alte Frequenze di"
+          "os": 4,
+          "desc": "SCP-2913 sfiorò la velocità terminale a circa due chilometri sopra Ruston, in Louisiana. La luna era nascosta dietro una coltre di nuvole. Il complesso sotto di lui, invece, era facile da vedere. Aveva provato a fare salti simili diverse volte durante l'addest…"
         },
         {
           "id": "passing-notes-in-class",
           "title": "Passarsi Bigliettini in Classe",
           "url": "http://fondazionescp.wikidot.com/passing-notes-in-class",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "13. Passarsi Bigliettini in Classe di"
+          "os": 4,
+          "desc": "«Chissà di chi avrà le fattezze, oggi» Celesta, Vicedirettrice della Branca Parigina della Divisione PHYSICS, alzò lo sguardo dal portatile e chiese:"
         },
         {
           "id": "no-joke",
           "title": "Non È uno Scherzo",
           "url": "http://fondazionescp.wikidot.com/no-joke",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "14. Non È uno Scherzo di"
+          "os": 3,
+          "desc": "Jerry spazzava il pavimento del corridoio, mentre gli addetti alla sicurezza stavano a guardare. Prima era il lavoro del signor Henderson, ma poi la sua cacca era diventata luminescente, quindi l'avevano rinchiuso nella cella 14. Avrebbero dovuto farlo le guar…"
         },
         {
           "id": "calm",
           "title": "Calma",
           "url": "http://fondazionescp.wikidot.com/calm",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "15. Calma - Racconto più Recente, 09/12/2019 a cura di , in collaborazione con , , , , , e"
+          "os": 4,
+          "desc": "Dove sei stato? Ti sei perso? Sarai ritrovato? Tu, Sophia Light, sei una direttrice della Fondazione. Al momento, sei a capo della SSM Alfa-9. Torniamo indietro di qualche mese nel tuo passato. La SSM Alfa-9 è stata approvata di recente dal Comando O5. Oh, e q…"
         },
         {
           "id": "oh-seventy-six",
-          "title": "SCP-076-2",
+          "title": "Quello Stronzo di SCP-076-2",
           "url": "http://fondazionescp.wikidot.com/oh-seventy-six",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Domare il Fuoco (in corso) SCP-076-2 | Progetto Cerbero | Mastini di Guerra | Tra Fuoco e Fiamme di"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Tutti i nuovi arrivati avevano una teoria su SCP-076. “Il fratello di Caino” era di certo l’ipotesi più ovvia. I pivelli l’adoravano. La buttavano sempre lì, come se fosse conoscenza comune. Ma quando l’agente Xiaoshan era appena arrivata all’Area-25B, dieci a…"
         },
         {
           "id": "four-stories-told-in-order",
-          "title": "Quattro Storie Raccontate al Fine...",
+          "title": "Quattro Storie Raccontate al Fine di Sviare una Mano Mozzata Senziente che, per una Volta, Voleva Fare una Domanda Personale",
           "url": "http://fondazionescp.wikidot.com/four-stories-told-in-order",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "L’aria mattutina di Vladivostok sferzava i loro volti, mentre il treno rombava sotto i loro piedi. Quella sensazione lo indusse a stringerla a sé ancora di più. Il bacio fu passionale, finché non udì uno scatto familiare intorno alla sua mano sinistra. Si stac…"
         },
         {
           "id": "requiem-for-ice-spider",
           "title": "Requiem per il Ragno di Ghiaccio",
           "url": "http://fondazionescp.wikidot.com/requiem-for-ice-spider",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Non era un granché come funerale, ma era più di quanto era concesso di solito ai ragni: SCP-548, soprannominata “Ragno di Ghiaccio” dai suoi custodi prima con derisione e poi con affetto, era morta. La dottoressa Chelsea Elliott e la dottoressa Zyn Kiryu erano…"
         },
         {
           "id": "so-leave-yourself-alone",
           "title": "Quindi Lasciati Stare",
           "url": "http://fondazionescp.wikidot.com/so-leave-yourself-alone",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "[Nota: Avvertenze sui Contenuti] di"
+          "os": 2,
+          "desc": "Avvertenza: Il seguente racconto comprende contenuti forti sul suicidio e menzioni di tentativi di suicidarsi. Lasciati stare,"
         },
         {
           "id": "this-is-the-real-life",
           "title": "È Tutto Vero",
           "url": "http://fondazionescp.wikidot.com/this-is-the-real-life",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Quando l’Insorgenza del Caos invase il Sito-19, non contava sulla RICERCATRICE ROSE LABELLE, violatrice straordnaria, in pratica la persona migliore in tutta la Fondazione SCP. Anche se avevano l’aiuto di TUTTI i GdI, dai Laboratori Prometheus (che tornarono s…"
         },
         {
           "id": "fresh-blood",
           "title": "Sangue Fresco",
           "url": "http://fondazionescp.wikidot.com/fresh-blood",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "PERSONA D’INTERESSE RR/2917/1236 Nome: Robert Lukas Madden Data di Nascita: 15/02/2001 Ubicazione: Germania, Leipzig, Friedrich-Nietzsche-Gymnasium"
         },
         {
           "id": "hawaiian-shirts",
           "title": "Camicie Hawaiane",
           "url": "http://fondazionescp.wikidot.com/hawaiian-shirts",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "«Iris? Sei lì dentro?» “Oh, Cristo, di nuovo questo stronzo” «Devo parlarti di una cosa» SCP-105 fece del suo meglio per non fare un grugnito udibile; fece uno sbadiglio udibile, invece. C’era un lieve grugnito nello sbadiglio, purtroppo per lei. Il dottor Cle…"
         },
         {
           "id": "scp-8726",
@@ -1644,15 +1774,18 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-ffb63fd62b2086c75eb5ba14acf58ca58cc896bf93d309aeb89fede4cbf3a56d"
+        "structureHash": "sha256-8be2b5a5cf8dd56e1be22fe1455942639f8d8e3241b9470ab01ece68a4425e5a"
       },
       "primaryArticles": [
         {
           "id": "ripped-from-the-headlines",
           "title": "Strappato dai Titoli",
           "url": "http://fondazionescp.wikidot.com/ripped-from-the-headlines",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Fissavo la televisione, capendo le parole a fatica, mentre aiutavo Helen a sedersi. \"…sparito, non rimane nulla che un gigantesco buco. Gli uragani segnalati nella regione erano effettivamente il risultato dell’aria e acqua che scorrevano rapidamente a riempir…"
         },
         {
           "id": "demasqed",
@@ -1665,57 +1798,81 @@
           "id": "piercing-the-veil",
           "title": "La Fine Della Recita",
           "url": "http://fondazionescp.wikidot.com/piercing-the-veil",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Se è così. La prossima volta prova qualcosa di più plausibile. Discussione bloccata e spostata. È di nuovo quel periodo dell'anno, ragazzi. Pubblicate la vostra lista di forniture MFAC e discutete su possibili scenari MFAC."
         },
         {
           "id": "the-executions-of-doctor-bright",
-          "title": "Le Esecuzioni del Dr. Bright",
+          "title": "Le Esecuzioni Del Dr. Bright",
           "url": "http://fondazionescp.wikidot.com/the-executions-of-doctor-bright",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Bright sapeva che era andato storto qualcosa quando i camion si erano messi in posizione su entrambi i lati del suo furgone. \"حزب الخلافة\" era scritto da entrambi i lati. Sapeva di essere in grossi guai quando vide degli uomini sui camion puntargli contro i fu…"
         },
         {
           "id": "research-notes-of-rj-tellar",
-          "title": "Note di Ricerca di RJ Tellar",
+          "title": "Note di Ricerca Di RJ Tellar",
           "url": "http://fondazionescp.wikidot.com/research-notes-of-rj-tellar",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Per quanto volessi che il Professor Ho-Vinto-Un-Premio-Per-Un-Obiettivo-Che-Ho-Raggiunto-Perciò-Lo-Sbandiererò-Fino-Alla-Mia-Morte soffocasse nel suo stesso vomito, alcune delle sue stupide abitudini mi sono rimaste impresse. Carta e penna mi aiutano a pensare…"
         },
         {
           "id": "joseon",
           "title": "Joseon",
           "url": "http://fondazionescp.wikidot.com/joseon",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Eun Mi soffocò uno sbadiglio mentre camminava, desiderando silenziosamente di essere ancora a letto. Il Grande Leader (il secondo Grande Leader, il che era strano considerando che quello vecchio sembrava che sarebbe vissuto per sempre) era abbastanza generoso…"
         },
         {
           "id": "the-truth-is-out-there",
           "title": "La Verità è Lì Fuori",
           "url": "http://fondazionescp.wikidot.com/the-truth-is-out-there",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Gilbert Buchs ultimamente passava il suo tempo libero con un nuovo gioco: sedeva di fronte al computer, metteva uno dei suoi vecchi video sul Nuovo Ordine Mondiale, si apriva una bottiglia di bourbon e beveva uno shot ogni volta che aveva ragione su qualcosa.…"
         },
         {
           "id": "ethical",
           "title": "Etico?",
           "url": "http://fondazionescp.wikidot.com/ethical",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "\"Per favore, dichiara il tuo nome per la registrazione.\" La voce echeggiò attraverso il vasto spazio, amplificata dal microfono."
         },
         {
           "id": "six-letters-addressed",
-          "title": "Sei Lettere Indirizzate Alla Fondazione SCP (E Una Lettera a Casa)",
+          "title": "Sei Lettere Indirizzate alla Fondazione SCP (e una lettera a casa)",
           "url": "http://fondazionescp.wikidot.com/six-letters-addressed",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Ritrovato nella cella di SCP-2118. Ti ho vista sul giornale. Quando stavano rimuovendo tutti gli SCP skips le anomalie, c’era il giornale, hanno fatto delle foto. C’è uno di voi che è enorme, tu sei nel mezzo di quella grande folla di poliziotti e militari e s…"
         },
         {
           "id": "a-lesson-in-power",
-          "title": "Una Lezione Sul Potere",
+          "title": "Una Lezione sul Potere",
           "url": "http://fondazionescp.wikidot.com/a-lesson-in-power",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Con la mano destra contro il freddo metallo, la Dr.ssa Kowalski guidava sé stessa nell'oscurità. Ogni passo avanti era un trascinarsi apprensivo. Aveva una mascherina per dormire sul viso, ma si scoprì a desiderare di aver portato anche una maschera antigas: n…"
         },
         {
           "id": "scp-3241",
@@ -1739,17 +1896,23 @@
         },
         {
           "id": "no-esteemed-deed",
-          "title": "Nessun Atto Altamente Stimato è Commemorato Qui",
+          "title": "Nessun Atto Altamente Stimato È Commemorato Qui",
           "url": "http://fondazionescp.wikidot.com/no-esteemed-deed",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Quanto segue è la trascrizione di un segmento del programma National Geographic Atlante Occulto, il più famoso dei molti programmi televisivi dedicati a mostrare i siti anomali e i luoghi precedentemente in contenimento presso la Fondazione. Questo segmento tr…"
         },
         {
           "id": "ambroseinternational-pdf",
           "title": "AmbroseInternational.pdf",
           "url": "http://fondazionescp.wikidot.com/ambroseinternational-pdf",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Da: moc.stnaruatser-esorbma|suiram#moc.stnaruatser-esorbma|suiram A: moc.stnaruatser-esorbma|mazahc#moc.stnaruatser-esorbma|mazahc Oggetto: Sceneggiatura finale per Ambrose International"
         },
         {
           "id": "para-puppies",
@@ -1762,8 +1925,11 @@
           "id": "reality-tv-designer-pets-and-fine-dining",
           "title": "Reality TV, Animali di Marca e Cucina Raffinata",
           "url": "http://fondazionescp.wikidot.com/reality-tv-designer-pets-and-fine-dining",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "A quel tempo il mondo divenne di colpo pieno di mostri. Anche se il mondo era effettivamente diventato più difficile da capire, era un piacevole promemoria che non tutto era spaventoso come gli orrori che la Fondazione SCP teneva rinchiusi. Poter distogliere l…"
         },
         {
           "id": "scp-4720",
@@ -1779,23 +1945,31 @@
           "id": "keeping-it-chill",
           "title": "Divertendosi Con I Propri Amici Alla SCP Foundation",
           "url": "http://fondazionescp.wikidot.com/keeping-it-chill",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Dottor Henry Rouslin: Bene, Michael, ecco quel video che abbiamo realizzato per il pubblico… quella campagna di restauro di immagine pubblica. Ora, ti devo avvertire, questo video non sarà… beh… facilmente comprensibile."
         },
         {
           "id": "broken-masquerade-epistolary",
-          "title": "Frammenti di un Mondo Svelato",
+          "title": "Frammenti di Un Mondo Svelato",
           "url": "http://fondazionescp.wikidot.com/broken-masquerade-epistolary",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "& ; tradotto da e"
+          "os": 7,
+          "desc": "Mi perdoni per aver dubitato di lei. Il suo reclutamento dell' Agente Hopper è stato un grande beneficio per la Biblioteca e per noi stessi. Ed è per lo più grazie al suo unico talento, mutevole com'è."
         },
         {
           "id": "stormsite19",
           "title": "#InvadereilSito19",
           "url": "http://fondazionescp.wikidot.com/stormsite19",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "01:56 PM - 12 Luglio 2019 01:59 PM - 12 Luglio 2019 02:36 PM - 12 Luglio 2019 2:58 PM - 13 Luglio 2019 3:01 PM - 13 Luglio 2019"
         },
         {
           "id": "scp-5148",
@@ -1818,8 +1992,11 @@
           "id": "disillusionment",
           "title": "Disillusione",
           "url": "http://fondazionescp.wikidot.com/disillusionment",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Jedidiah Spring non era un membro tradizionale delle organizzazioni quintiste. Il suo Capitolo avrebbe potuto essere descritto alla meglio, supponeva, come un culto. Almeno, questo era il modo in cui i media li chiamavano. I Quintisti della Costa Ovest: un nom…"
         },
         {
           "id": "scp-5990",
@@ -1843,35 +2020,43 @@
         },
         {
           "id": "the-fine-print",
-          "title": "E Cos'era un'Anima per Quel Mondo Bianco e Vuoto",
+          "title": "E Cos'Era un'Anima per Quel Mondo Bianco e Vuoto",
           "url": "http://fondazionescp.wikidot.com/the-fine-print",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Cyantreuse, tradotto da e"
+          "os": 3,
+          "desc": "“Un mese. Al massimo.” “Non ho diritto nemmeno a… non so, dei dettagli?” ”Anche se fossi autorizzato a parlarne, temo di non conoscere personalmente i dettagli.” “C-come faccio a sapere dove ho sbagliato?” \"Non so cosa intende dire con questo. I suoi errori le…"
         },
         {
           "id": "sex-drugs-money",
-          "title": "Sesso, Droga, Denaro",
+          "title": "Sesso, Droghe, Denaro",
           "url": "http://fondazionescp.wikidot.com/sex-drugs-money",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Cyantreuse, tradotto da"
+          "os": 2,
+          "desc": "Questo articolo parla di contenuti per adulti, incluso l’argomento dello stupro. Per favore usare discrezione nel proseguire."
         },
         {
           "id": "forum-post",
           "title": "Post sul Forum",
           "url": "http://fondazionescp.wikidot.com/forum-post",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Cyantreuse, tradotto da"
+          "os": 2,
+          "desc": "Benvenuto nei forum pubblici del Network Internazionale della Fondazione SCP. La seguente dichiarazione è disponibile per la visione e commento pubblico. Le opinioni espresse in questa dichiarazione riflettono quelle dell'autore originale. Per i dettagli e le…"
         },
         {
           "id": "ethics-guide",
           "title": "Guida del Comitato Etico alle Anomalie Umane",
           "url": "http://fondazionescp.wikidot.com/ethics-guide",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Cyantreuse, tradotto da"
+          "os": 3,
+          "desc": "Questo documento è stato messo a disposizione di tutto il personale della Fondazione sulla Rete Internazionale della Fondazione SCP il 04 dicembre 2024 dal Sottocomitato Etico per le Anomalie Senzientienti e Sapienti. L'obiettivo è quello di fornire una revisi…"
         },
         {
           "id": "scp-4427",
@@ -1887,52 +2072,71 @@
           "id": "when-the-time-comes-i-do-not-want-to-be-forgotten",
           "title": "Oceano, Padre di Tutti",
           "url": "http://fondazionescp.wikidot.com/when-the-time-comes-i-do-not-want-to-be-forgotten",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Cyantreuse, tradotto da"
+          "os": 2,
+          "desc": "La data è 15 Giugno 2030, e sono ancora un brav'uomo. Ho 31 anni, e sono stato un impiegato della fondazione per tredici: mi piacerebbe arrivare almeno a 36. La prima metà della mia vita l'ho trascorsa da ragazzino, beatemente ignorante della realtà del nostro…"
         },
         {
           "id": "in-memoriam",
           "title": "Come una Roccia",
           "url": "http://fondazionescp.wikidot.com/in-memoriam",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Cyantreuse, tradotto da"
+          "os": 2,
+          "desc": "Nel Maggio del 1998 avevo 18 anni. Stavo sorridendo all'addetta alla reception nell'ufficio del centro reclutamento della Guardia Costiera a Wilmington, nel North Carolina. Ricordo che era un lunedì e il tempo era bello. Ricordo come mi disse che sembravo pron…"
         },
         {
           "id": "freekleinberg",
           "title": "Liberate Kleinberg",
           "url": "http://fondazionescp.wikidot.com/freekleinberg",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Post dal thread di reddit \"Qualcuno ha sentito parlare di quella città ad anello nel Sud Dakota?\" su /r/FoundationWatch Questo è molto strano, ragazzi. Apparentemente c'è questa piccola città chiamata Kleinberg, dalla pop. di 2.300 abitanti, che è bloccata neg…"
         },
         {
           "id": "single-issue-voters",
           "title": "Elezioni a Scelta Singola",
           "url": "http://fondazionescp.wikidot.com/single-issue-voters",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Fissava il televisore, recependo a malapena una parola prima di far svanire un canale per farne comparire un altro. Lo statico leggero era interrotto dai lievi rumori del traffico che filtravano dalla finestra incrinata; era una piacevole domenica primaverile…"
         },
         {
           "id": "psa-cognitohazards-and-you",
           "title": "PSA: Rischi Cognitivi e Voi!",
           "url": "http://fondazionescp.wikidot.com/psa-cognitohazards-and-you",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "L'agente Mills chiuse la portiera del SUV con un tonfo silenzioso sotto la luce della luna piena. Le luci della casa erano accese, il che era un buon segno quando si risponde a potenziali situazioni di dispersioni memetiche. I vegetali tendono ad essere incapa…"
         },
         {
           "id": "sell-clickbait-profit",
           "title": "Saldi, Clickbait, Profitti",
           "url": "http://fondazionescp.wikidot.com/sell-clickbait-profit",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "FWD: Proteggere i Propri Bambini Questo Natale Sopra i 40° Nord Da: Dott. ssa Amelia Buck <ten.pics|kcuba#ten.pics|kcuba> A: Dr. Anne Worcester <ten.pics|2retsecrowa#ten.pics|2retsecrowa>"
         },
         {
           "id": "top-5-colleges",
           "title": "Questi 5 College Sono i Migliori per Poter Imparare le Arti Oscure! Il Numero 1 Vi Scioccherà!",
           "url": "http://fondazionescp.wikidot.com/top-5-colleges",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Da quando la Fondazione SCP ha rovinato tutto, il mondo ha imparato la verità sulle pratiche oscure e i memi malvagi! E se siete come noi, di certo non vedete l'ora di studiare alcune delle nuove fantastiche cose che l'umanità non ha ancora capito. Abbiamo set…"
         },
         {
           "id": "scp-6115",
@@ -2037,36 +2241,48 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-d603521494afa90fc71328e43adfeab748f896bd309b44b1918e18e380ca66bd"
+        "structureHash": "sha256-27d78dc16b5440d28af121d31b2500ac25d324baa9649d2f9520dc0adc860b65"
       },
       "primaryArticles": [
         {
           "id": "empedocles",
           "title": "Empedocle",
           "url": "http://fondazionescp.wikidot.com/empedocles",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Ho udito delle tue ricerche sulla composizione degli uomini. I tuoi metodi sono impeccabili, ed elogio il tuo disinteresse per il piano degli dei, tanto quanto apprezzo il tuo studio verso la natura stessa per determinare il decorso delle malattie."
         },
         {
           "id": "primae-formae",
-          "title": "Primae Formae",
+          "title": "Preludio: Primae Formae",
           "url": "http://fondazionescp.wikidot.com/primae-formae",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "The city burns tonight. Written for the On Mount Golgotha canon. Come ebbe posato le sue dita sanguinanti sulle corde della lira la sua laringe inziò ad emettere suoni vaghi d’una canzone, mentre osservava lo stato della folla, fino all’ultima eco delle sue no…"
         },
         {
           "id": "bloodlines",
           "title": "Linee di Sangue",
           "url": "http://fondazionescp.wikidot.com/bloodlines",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Il pugnale uncinato trapassò la gola della ragazza. Il suo corpo si accasciò sul freddo lastricato, i suoi capelli neri che si assestavano nella pozza di sangue davanti a lei. Riflessi si dimenavano nell'appiccicosa superficie scarlatta mentre i gelidi venti d…"
         },
         {
           "id": "the-journal-of-k-m-sandoval",
-          "title": "Il Diario di K. M Sandoval",
+          "title": "Il Diario di K. M. Sandoval",
           "url": "http://fondazionescp.wikidot.com/the-journal-of-k-m-sandoval",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Hub | Più Grande di Gesù » \"Va bene, per favore, avvicinati all'oggetto\", dice la ricercatrice, con una faccia di pietra. L'unico uomo nella stanza muove due passi incerti verso la scatola sul piedistallo, diffidente verso ciò che sta per accadere. Uno schiocc…"
         },
         {
           "id": "scp-4614",
@@ -2332,16 +2548,17 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-6ab2cee2df83f981ce560ff475178eb555201eebf2b660126c3ca27d6167db24"
+        "structureHash": "sha256-5b30405217b1ec675cebe6de7be38957b5bf4f37ea2b56ca7863b824bdfa68ed"
       },
       "primaryArticles": [
         {
           "id": "ultimo-in-vita",
           "title": "Sogno ancora di rimanere l'ultimo in vita",
           "url": "http://fondazionescp.wikidot.com/ultimo-in-vita",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 16
         }
       ],
       "supplementLinks": [],
@@ -2391,16 +2608,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-08fdd7a03b69e13efd5b148c3bdefb93102710ecb561ce571c8119b0f6ef09fd"
+        "structureHash": "sha256-b1745d165e4097f86e75cb653833347e443eaca554716b16fc1591996d5eaed1"
       },
       "primaryArticles": [
         {
           "id": "un-ultimo-saluto",
           "title": "Un ultimo saluto",
           "url": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Il Sito Plutone era stato completamente sgomberato. L’apparenza tetra di quelle sale, un tempo familiari, incupivano l’animo di Andrea. Non pensava che sarebbe mai riuscito a rimettere piede dentro a quel posto, che era stato per lungo tempo come una seconda c…"
         }
       ],
       "supplementLinks": [],
@@ -2450,16 +2669,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-0d159b12bf280e71a0ae5576391e1207203249212125fef9e0facb61596872bd"
+        "structureHash": "sha256-28eef30552950332fcde8214523454a5193e1dd3f8e040b16d6406ae63163a4a"
       },
       "primaryArticles": [
         {
           "id": "vittoria-di-pirro",
-          "title": "Vittoria di Pirro",
+          "title": "Vittoria Di Pirro",
           "url": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "\"Le anomalie del Sito Vittoria sono quasi nella loro interezza infette\". Questo era il pensiero fisso nella mente del direttore Edoardo Pirro mentre osservava sul monitor i segnali dei rivelatori termici, sviluppati dalla sua migliore équipe e installati all'e…"
         }
       ],
       "supplementLinks": [],
@@ -2509,16 +2730,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-6c6cfe5aa50549e6b31351bb36c2ed85a52adbf03cf71d0cc907db58643ba124"
+        "structureHash": "sha256-724bad90a4e49975592268a59f28648bf1d5d1d42316ea062f044ef4eff2262c"
       },
       "primaryArticles": [
         {
           "id": "l-ultimo-della-linea-15",
           "title": "L'ultimo della Linea 15",
           "url": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Autore: Doctor Fulgrim Ringraziamenti: Non ho spesso occasione di scrivere horror ma sono comunque contento di essermi cimentato in questa scrittura per il contest di Halloween 2024! Ovviamente c'è da ringraziare un po' di gente! Gli approvatori Heck_Tech, the…"
         }
       ],
       "supplementLinks": [],
@@ -2568,16 +2791,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-46d38d85990b67988c868af74e84804aa93431d6cd24fc1685f2102bddae248d"
+        "structureHash": "sha256-f288cda9290ea204be88042dc5fee07f773dbd27c06d10b075f8affa9e417fbc"
       },
       "primaryArticles": [
         {
           "id": "sette-rintocchi",
           "title": "Sette Rintocchi",
           "url": "http://fondazionescp.wikidot.com/sette-rintocchi",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Albeggia. Alcuni spiragli di luce entrano dal tetto, dentro alla soffitta. Umida, puzzolente e sporca, è divenuta una seconda casa per i condomini del palazzo della scala 3. O almeno, per quelli che ancora sono rimasti in vita. Più accogliente delle loro case…"
         }
       ],
       "supplementLinks": [],
@@ -2686,16 +2911,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-add8ead5d11840c03ec117c4cd12692ea65207aa85809dca91a79553a46b3525"
+        "structureHash": "sha256-5aeceda20759d20f4e2875373eebc843216f8c32100e195562d2c100623cfdc5"
       },
       "primaryArticles": [
         {
           "id": "eredi",
           "title": "Eredi",
           "url": "http://fondazionescp.wikidot.com/eredi",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Adoro il crepuscolo, soprattutto durante l’estate. Sono andato al porto per vederlo, e soprattutto per scattare foto da guardare a casa. Abbiamo stabilizzato la questione degli adepti e fra qualche giorno, se va tutto bene, dovremmo tornare indietro. Mi mancan…"
         }
       ],
       "supplementLinks": [],
@@ -2745,16 +2972,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-6b53a2655a57558790e117e8f17a6b1aca4f3b55af2bed874511ee850d7987a4"
+        "structureHash": "sha256-cf2d1dd64191acde1c520516a8f57f9404eb74fd1c79a7eee0aebe63ee9d0580"
       },
       "primaryArticles": [
         {
           "id": "epilogo-di-un-assassino",
           "title": "Epilogo di un assassino",
           "url": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "\"Per morire completamente, una persona non deve solo dimenticare ma essere dimenticata, e chi non viene dimenticato non è morto.\""
         }
       ],
       "supplementLinks": [],
@@ -2804,16 +3033,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-8a9cebf25824313f2d53f3956e361cf0a8de49639e21cd5d3ba2c680c8c76a58"
+        "structureHash": "sha256-dfdd750c3d8efd27fa5bf69a09dfb602de4205575c4bf096a3f392aa142264f4"
       },
       "primaryArticles": [
         {
           "id": "gian-galeazzo",
           "title": "Gian Galeazzo",
           "url": "http://fondazionescp.wikidot.com/gian-galeazzo",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Mise la valigia sui ripiani e si sedette sul posto che gli era stato assegnato, l'11B. Intorno a lui, i passeggeri si agitavano, maneggiando enormi bagagli, cercando i posti loro assegnati, parlando ad alta voce. Li guardava fare, divertito. Diede un’occhiata…"
         }
       ],
       "supplementLinks": [],
@@ -2863,16 +3094,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-dc80056bfe868535092d682a5dc921e4111c4380e32ec8db31a339b1c9494e69"
+        "structureHash": "sha256-0bc09ac3a13835381969cef28e5ad4d2634c7ad4d5ab526da15ef692aa7dcf69"
       },
       "primaryArticles": [
         {
           "id": "il-peso-delle-responsabilita",
           "title": "Il peso delle responsabilità",
           "url": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Accendo la luce e guardo lo specchio di fronte a me. Mi ci avvicino e tolgo la maglietta prima di mettermi di profilo e respirare profondamente, gli occhi chiusi. Devo rimanere calma."
         }
       ],
       "supplementLinks": [],
@@ -2922,16 +3155,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-2cd7e52f2633531467b87de42d83b1207989a26a0abf0e43feadb36d641301cb"
+        "structureHash": "sha256-f3d35e57c6662f355620422fb578c9f80dd5e88bb89fbe626d3f67f3546e862e"
       },
       "primaryArticles": [
         {
           "id": "dossier-del-sito-deus",
-          "title": "Dossier del Sito Deus",
+          "title": "Dossier delle Strutture di Sicurezza: Sito Deus",
           "url": "http://fondazionescp.wikidot.com/dossier-del-sito-deus",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Ringrazio Mainardo Ichne-Bebop Oreobanane e yessss per le loro recensioni e approvazioni. Denominazione Integrale: Complesso di Ricerca Scienze Esoteriche e Taumaturgiche \"Deus\""
         }
       ],
       "supplementLinks": [],
@@ -3038,16 +3273,18 @@
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
         "sourceNoDescription": "Reviewed 2026-07-26: the official Italian Canon index provides only the linked title, with no separate synopsis.",
-        "structureHash": "sha256-92b140815dab9e9475f79b423cc035e665c389450a2c4b59b6154205bb2a3e07"
+        "structureHash": "sha256-512630b9b04ae5c87cac1d2c19e065a4e509e233d15e0d236503752b5c7da79d"
       },
       "primaryArticles": [
         {
           "id": "vedete-da-lassu",
           "title": "Vedete da Lassù",
           "url": "http://fondazionescp.wikidot.com/vedete-da-lassu",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "L'ufficiale Amilde marciava in avanscoperta con il favore delle tenebre e della sua vista capace di fenderle. La sua figura era esile ed il suo passo silenzioso e, per quanto camminasse nel territorio dove era nata e cresciuta, non poteva in nessun modo abbass…"
         }
       ],
       "supplementLinks": [],
@@ -3155,16 +3392,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-a6b67d5018765abf556d3e6328cdf9266b887f39ec02471b58c608501a8a97e6"
+        "structureHash": "sha256-abafb092baf2a521b1d01b7c07995f5eaa275403cabe8e2dec013b8dbc50146a"
       },
       "primaryArticles": [
         {
           "id": "cenobirma",
-          "title": "SCP-IT-003—EP.01—Cenobirma Irma",
+          "title": "\\\\\\ SCP-IT-003 \\\\\\\\\\\\\\\\\\ EP.01 \\\\\\ Cenobirma Irma \\\\\\",
           "url": "http://fondazionescp.wikidot.com/cenobirma",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "\"Cazzo. Cazzo!\", gridò Irma, svegliandosi di colpo e scollando la guancia dal faldone aperto. Cercò il polso che indossava l’orologio: erano le undici passate."
         }
       ],
       "supplementLinks": [],
@@ -3460,16 +3699,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-d5896fef5c9afad7032fce7d258a236da02026df9f48e30cc612d0c8fcd8b3a6"
+        "structureHash": "sha256-f32911cef56af95a1a28a41e2164d817eb15df5a5aaa7bfce4a9531974888069"
       },
       "primaryArticles": [
         {
           "id": "vedi-napoli-e-poi-muori",
           "title": "Vedi Napoli e poi Muori",
           "url": "http://fondazionescp.wikidot.com/vedi-napoli-e-poi-muori",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 21,
+          "desc": "\"Per finire, la struttura è stata restaurata nella metà del 1900. Ora, se volete seguir-\" Queste furono le ultime parole che Mauro sentì, un attimo prima che la sua guida crollasse al suolo, insieme al resto del suo gruppo. Normalmente sarebbe corso immediatam…"
         }
       ],
       "supplementLinks": [],
@@ -3519,16 +3760,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-178307f2610ddfdb6ff12d7eddcddaeaa3f4e10201c50529123fc5adf6d01e5e"
+        "structureHash": "sha256-46be4472cecb0adcea761699d0bdee62149bceef2099660245835082d40f0335"
       },
       "primaryArticles": [
         {
           "id": "quando-napoli-piange-firenze-ride",
           "title": "Quando Napoli piange, Firenze ride",
           "url": "http://fondazionescp.wikidot.com/quando-napoli-piange-firenze-ride",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "\"Abbiamo tante informazioni, abbastanza per far sbucare fuori qualche altra organizzazione alla vostra pari. E dubito che terranno la bocca chiusa, non lo fanno mai in queste situazioni. Spero che questo nostro annuncio sia stato abbastanza. E non proviate a c…"
         }
       ],
       "supplementLinks": [],
@@ -3578,16 +3821,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-ff96fa557e743bc5012d6ac424187a94956eecdbb1ee5b35d2e8118097ca4670"
+        "structureHash": "sha256-eb22d8593cf5e17797ccd0015bad27190aca897f0bcbb3f9075135b3f4442cb9"
       },
       "primaryArticles": [
         {
           "id": "addio-roma-addio-napoli",
           "title": "Addio Roma, addio Napoli",
           "url": "http://fondazionescp.wikidot.com/addio-roma-addio-napoli",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Il Primo Sovrintendente spense lo schermo del trasmettitore video posto di fronte a lui nella sala riunioni del Sito Virtus. Il filmato che aveva appena visto in tempo reale dopo la segnalazione di una delle tante cimici di sicurezza, lo aveva sia turbato che…"
         }
       ],
       "supplementLinks": [],
@@ -3993,16 +4238,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-f8c9b0aa30e0f7c2abc806fa6238feef61930a005418922de6e138d72562c729"
+        "structureHash": "sha256-3d1155ae99416e220d1ae0326f1fc41cf88df89d6681669eeeca92c222254945"
       },
       "primaryArticles": [
         {
           "id": "il-crepuscolo-dell-ordine",
           "title": "Il Crepuscolo dell'Ordine",
           "url": "http://fondazionescp.wikidot.com/il-crepuscolo-dell-ordine",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "“Forza, dobbiamo muoverci il più rapidamente possibile! Non mancherà ancora tanto…” Parlava così Marcello Maso ai suoi due amici, il giovane Saverio Cuomo e il vecchio Giovanni Paoli. Quest’ultimo era retto dal ragazzo nella corsa verso il mare, mentre il vigo…"
         }
       ],
       "supplementLinks": [],
@@ -4052,16 +4299,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-90ce52c243542c9a922798b0482b85aca40dd210bfa871ec85edcbe70157345a"
+        "structureHash": "sha256-fcb48ad58f6d58fda8ba7a36efabd8d89feaf62773476845abeb445456bc4e2e"
       },
       "primaryArticles": [
         {
           "id": "incidente-vela-cuore-d-inchiostro",
-          "title": "Incidente Vela / Cuore d'Inchiostro",
+          "title": "Incidente V3L4 / Cuore d'Inchiostro",
           "url": "http://fondazionescp.wikidot.com/incidente-vela-cuore-d-inchiostro",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "Ringraziamenti: Ringrazio per le recensioni sul forum: DrMeleda, Dr Zeno, Ardi0177 does not match any existing user name, Lo_Dev, Dottor H Echo, Ximon e ThatGuyRichard. E tutti quelli che, direttamente o indirettamente, hanno contribuito a dare forma al mio te…"
         }
       ],
       "supplementLinks": [],
@@ -4111,16 +4360,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-db2121e35e147f8642f8e5997857998f8b12220c5770505c94bfcff17a4addcd"
+        "structureHash": "sha256-90bf7fe43b93564bfd639ea68df03a9c8b8c404e276db21ba473506f5e76238e"
       },
       "primaryArticles": [
         {
           "id": "pluet-ignem",
           "title": "Pluet Ignem",
           "url": "http://fondazionescp.wikidot.com/pluet-ignem",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Quella notte ci fu un avvenimento strabiliante, piovve fuoco dal cielo e la morte fu nostra amica in quei interminabili minuti -Frase intercettata da una trasmissione radio di un soldato del CFO"
         }
       ],
       "supplementLinks": [],
@@ -4170,16 +4421,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-f98fae540cc400cb8f4ecb6083efe41cd43b6b29a1a2b065c17029aef7e94f9a"
+        "structureHash": "sha256-afe085ab3a0dac81658ef6360560362feefab56d24c5da4b4a1fca26173f23b1"
       },
       "primaryArticles": [
         {
           "id": "secondo-vi-odia-ma-dal-profondo-del-cuore",
           "title": "Secondo Vi Odia, ma dal Profondo del Cuore",
           "url": "http://fondazionescp.wikidot.com/secondo-vi-odia-ma-dal-profondo-del-cuore",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "Benvenuti all'Inferno, brutte merde. Se pensate che esista solo la Beretta o la Glock, potete benissimo tornare sul marciapiede da dove stavate battendo per pagarvi la vostra dose di cocaina! In questa riunione vedrete tutti i nuovi equipaggiamenti: abbiamo sp…"
         }
       ],
       "supplementLinks": [],
@@ -4229,16 +4482,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-fc5a2606537ae6cc1b87990f1ec9dbec25f1a113ec2cdb65a8bb33e95400cdd6"
+        "structureHash": "sha256-ee3fa58522cd23faa98a6fadd3e93039c4d7e2949efb93c074891d701e4a39cd"
       },
       "primaryArticles": [
         {
           "id": "sul-tetto-del-mondo",
-          "title": "Sul Tetto del Mondo",
+          "title": "Sul Tetto Del Mondo",
           "url": "http://fondazionescp.wikidot.com/sul-tetto-del-mondo",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Racconto: Sul Tetto del Mondo Autore: Siddartha Alonne Ringraziamenti: Ci tengo a ringraziare tutte le persone che hanno reso possibile la pubblicazione di questo articolo: Mainardo (doppiamente, una volta per l'approvazione e l'altra per il via libera), Astro…"
         }
       ],
       "supplementLinks": [],
@@ -4288,16 +4543,18 @@
         "singletonArticle": true,
         "allowUntaggedMembers": true,
         "singletonContentKind": "tale",
-        "structureHash": "sha256-a3029acdbf6e46af351eded667c315efd2b229d4f14b5782c27a5ce2e5fa09db"
+        "structureHash": "sha256-05b06580583443dc25c1c57d1f412734ef6f259fe0d79f23510186077171912f"
       },
       "primaryArticles": [
         {
           "id": "trovare-un-confine",
           "title": "Trovare un Confine",
           "url": "http://fondazionescp.wikidot.com/trovare-un-confine",
-          "sourceManifest": "manifest_canons",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "Cari colleghi Sovrintendenti Oggi devo sottoporvi una delicatissima questione. Ora, come ben saprete, la Fondazione è sempre stata in possesso di una tecnologia robotica notevolmente superiore grazie alle anomalie in suo possesso. E abbiamo affrontato sfide et…"
         }
       ],
       "supplementLinks": [],
