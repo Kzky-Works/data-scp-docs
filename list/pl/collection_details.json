@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1790238110,
-  "generatedAt": "2026-09-24T08:21:50Z",
-  "chunkRevision": "sha256-8cb0c37221bed5b55a487d148c817837659cb1008934dc5f9e63609c92dcefdb",
+  "listVersion": 1790361356,
+  "generatedAt": "2026-09-25T18:35:56Z",
+  "chunkRevision": "sha256-68d6118db79ef8d792c2e5cfaaea8271895721d8d2d9d189f901e8ef32d91b68",
   "builtFrom": {
     "manifests": [
       {
@@ -10,54 +10,54 @@
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1790238097,
-        "generatedAt": "2026-09-24T08:21:37Z",
-        "contentHash": "sha256-980700d0ba782880dc9f5ef5891ec4b3f0ae3a0e22642740a9a9fc834fc9c1b8"
+        "listVersion": 1790361161,
+        "generatedAt": "2026-09-25T18:32:41Z",
+        "contentHash": "sha256-ed1e2be9973e463b7e40829b46c52509f11ff624d308ce096aacaae30403de78"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1788657652,
-        "generatedAt": "2026-09-06T01:20:52Z",
-        "contentHash": "sha256-dfeb364a77fe7e456ae20396f35e599297b75ee7fa59a9a7d12d868b670495b5"
+        "listVersion": 1790361320,
+        "generatedAt": "2026-09-25T18:35:20Z",
+        "contentHash": "sha256-7ccc6943a9ebaca80489797ae82f42b050d2632b0ab90685796e09bdf2bfb0b6"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1788846583,
-        "generatedAt": "2026-09-08T05:49:43Z",
-        "contentHash": "sha256-9854258106063cc76e37cbfd0936fc96a714e001254382664a019f1235395124"
+        "listVersion": 1790361320,
+        "generatedAt": "2026-09-25T18:35:20Z",
+        "contentHash": "sha256-3cbe7e4ed523a080c9dfd1a8e3a95919cd803803924812bd72a6448278288f86"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1789383528,
-        "generatedAt": "2026-09-14T10:58:48Z",
-        "contentHash": "sha256-754898fd0cbe6671392cab9fa54cf8641e3abe1ca7cc7df3489200603b31c74d"
+        "listVersion": 1790361320,
+        "generatedAt": "2026-09-25T18:35:20Z",
+        "contentHash": "sha256-7e66d8e6e3f7ca81f69675588613c269da40ecf48a58a36f501b7f21492cbf7a"
       },
       {
         "kind": "manifest_scp-pl",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_scp-pl.json",
         "schemaVersion": 2,
-        "listVersion": 1789383528,
-        "generatedAt": "2026-09-14T10:58:48Z",
-        "contentHash": "sha256-8ccf6ae91b4b98b0881b53f242dfc9a1a11a488f53517914ecdb77fdc7bd3ff0"
+        "listVersion": 1790361320,
+        "generatedAt": "2026-09-25T18:35:20Z",
+        "contentHash": "sha256-6aa86542b5999e30013a29542468e29dafa79fdfad498d5ed32d74b48b5f04fc"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-pl",
         "path": "DataPipeline/list/pl/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1789439688,
-        "generatedAt": "2026-09-15T02:34:48Z",
-        "contentHash": "sha256-ff11057e4b68756c39d5fcfc399a7d7dca63d2133ed2b41c07b8d557af648c3b"
+        "listVersion": 1790361320,
+        "generatedAt": "2026-09-25T18:35:20Z",
+        "contentHash": "sha256-ba009ae876ce635b111e570cf46886c8cb4299b5f822dbfcfaa1149f3d9c73da"
       }
     ],
     "seedReview": {
@@ -293,7 +293,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-1354adb76e54002c851af080a854eb809470d4bf157d9bb339c2b4fd005c2377"
+        "structureHash": "sha256-e6daa5723b11e0a938f79af97264978119d6a77424c6ade352021eb2d5d5eb8f"
       },
       "primaryArticles": [
         {
@@ -380,8 +380,11 @@
           "id": "dwie-strony-z-pamietnika-gorala",
           "title": "Dwie strony z pamiętnika górala",
           "url": "https://scp-pl.wikidot.com/dwie-strony-z-pamietnika-gorala",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "Znowu strzyga jakaś z lasu wylazła. Miałem szczęście, że jak przyleciała, to Pompon zaczął na nią szczekać, więc się zorientowałem na czas i bydlaka zestrzeliłem. Nie wiem, co zrobię z truchłem sowy z zębami, ale nie będę tego palił, bo a nuż się przyda. Może…"
         },
         {
           "id": "scp-pl-238",
@@ -565,7 +568,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-e747658d2ec246334c2040dc65c4b4c58d6d50f2a34d7813845f2d005f33b89c"
+        "structureHash": "sha256-547c62112e2a259bfbec3aedec93363e3ec89011e1304d4649f88908ef36cbc5"
       },
       "primaryArticles": [
         {
@@ -611,7 +614,7 @@
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 15
+          "os": 16
         },
         {
           "id": "scp-pl-353",
@@ -906,7 +909,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-c8e6fe6fc6fddcb432a040b434203290a6e319693a5bf891ed265f7baab3eb36"
+        "structureHash": "sha256-0d39b664d0745bd4bf4507bfc96c2c0faf9bea3253fea2b50465e94716dc7f11"
       },
       "primaryArticles": [
         {
@@ -956,7 +959,7 @@
           "sourceManifest": "manifest_scp-pl",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 18,
+          "os": 19,
           "desc": "Opakowania zawierające SCP-PL-083 są przechowywane w magazynie na obiekty anomalne w Ośrodku PL-13. Do obiektu może mieć dostęp tylko osoba dysponująca zezwoleniem kierownika projektu. 1 Obecnie w posiadaniu Fundacji znajdują się dwa opakowania SCP-PL-083 zawi…"
         },
         {
@@ -1256,15 +1259,18 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-9d99f1abb9c019026063236ff335103f074c6497c48ade4456daa01420f8fa25"
+        "structureHash": "sha256-12f12ec094f29037b33715c867ccddfbf1c1147c676001563f1e313bf9f7cb6a"
       },
       "primaryArticles": [
         {
           "id": "w-osrodku-101-bez-zmian",
-          "title": "W Ośrodku PL-101 bez zmian",
+          "title": "W Ośrodku PL-101 Bez Zmian",
           "url": "https://scp-pl.wikidot.com/w-osrodku-101-bez-zmian",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Kolejny dzień w Ośrodku PL-101 — pomyślał Dr Oskar Wysocki, pojawiając się na swojej zmianie. Oczywiście, zawsze lubił swoją pracę. Całymi dniami grzebał w starożytnych artefaktach, przywiezionych z całego świata, często przed jakąkolwiek inną organizacją, aby…"
         },
         {
           "id": "scp-pl-295",
@@ -1564,7 +1570,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-7d7d30254a6f8ca7b9ce57a19106900205228d6e4dac3beb01787ab4e73af4fd"
+        "structureHash": "sha256-d39a958a3bc2f81ce15c350751907572abbaff4723caf6e5f3e9745d0c758eca"
       },
       "primaryArticles": [
         {
@@ -1581,7 +1587,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 8,
+          "os": 9,
           "desc": "Nazywam się Jacob Hawkeswith. Dr Oliver powiedział nam, że nagrywanie naszych myśli powstrzyma nas od popadnięcia w szaleństwo w tym mroku. Nie jestem na tyle znudzony ani przestraszony, by się tym martwić, ale rozkazy to rozkazy."
         },
         {
@@ -1591,7 +1597,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 6,
+          "os": 7,
           "desc": "Często spekuluje się, która z różnorodnych form miłości jest najpotężniejsza. Jeden może twierdzić, że jest to rodzinna Storge; powołując się na czystą miłość i nadzieję w sercu matki lub sprawiedliwą dumę, z jaką wojownik broni swojego narodu i krewnych. Inny…"
         },
         {
@@ -1726,7 +1732,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-f0eea793499bb08261913074d3c46872c309de9482e58b3a88956019f4ffa3cb"
+        "structureHash": "sha256-e195b9d21340353e68d9322b707a6f89eef5e9a856b82cce43017393af075f1d"
       },
       "primaryArticles": [
         {
@@ -1824,7 +1830,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 8,
+          "os": 9,
           "desc": "Fundacyjne kontakty w sferach edukacji, literatury i filozofii mają na celu monitorowanie ogólnej świadomości społecznej na temat SCP-4755 jako zjawiska. Dodatkowo nie wolno dopuścić do zatajenia i/lub przerwania badań nad SCP-4755 w tych dziedzinach. Te dwa w…"
         },
         {
@@ -1942,7 +1948,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-317c11b1059bc6a2f3ef9a2d1b9d57457e40857dab4eb8a81ab488d0bbfd4412"
+        "structureHash": "sha256-428dcd2bf8552beef432b20b0fd5744861c9eac0ecb7db80c3b5d0082137984a"
       },
       "primaryArticles": [
         {
@@ -2012,7 +2018,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 12,
+          "os": 13,
           "desc": "W dowolnym momencie, nie może istnieć więcej niż 50 standardowych butli Klasy E z płynnym gazem każdego typu SCP-3287. Zbiorniki te mają być trzymane w komorze próżniowej pod ciśnieniem w 112 stopniach Kelwina, oraz obsługiwane tylko przez personel wyposażony…"
         },
         {
@@ -2062,7 +2068,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 12,
+          "os": 13,
           "desc": "SCP-4514 to zwyczajny nóż sprężynowy. Do manifestacji właściwości anomalnych SCP-4514 dochodzi, gdy: Zrani się nim osobę tak, że straci ona 40% swojej krwi Zrani się nim osobę, powodując znaczne obrażenia mózgu Zrani się nim osobę, powodując znaczne obrażenia…"
         },
         {
@@ -2072,7 +2078,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 10,
+          "os": 11,
           "desc": "Fundacja nigdy nie spóźniała się na próby terminacji. 22 dnia każdego miesiąca, punktualnie o godzinie 15:00 otwierały się drzwi od celi 682. Alarmy ryczałyby, ośrodek wszedłby w standardową konfigurację izolacji, a następnie rozpocząłby się występ. Potem nast…"
         },
         {
@@ -2094,6 +2100,16 @@
           "contentKind": "scp",
           "os": 5,
           "desc": "SCP-6872 ma zostać aktywowany tylko jako ostatnia deska ratunku w przypadku nieuchronnego wystąpienia globalnego Scenariusza Klasy K. Aktywacja SCP-6872 wymaga pilnej autoryzacji większości członków Rady O5. Osoby nienależące do Rady O5, próbujące uzyskać dost…"
+        },
+        {
+          "id": "scp-pl-391",
+          "title": "Między życiem, a śmiercią",
+          "url": "https://scp-pl.wikidot.com/scp-pl-391",
+          "sourceManifest": "manifest_scp-pl",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "Ze względu na swoją odległość od jakiejkolwiek osady zamieszkiwanej przez ludność Theta-Psi-40, SCP-PL-391 nie wymaga wzmożonego nadzoru."
         }
       ],
       "supplementLinks": [],
@@ -2129,7 +2145,8 @@
           "articleIDs": [
             "impossible-to-destroy-reptile",
             "scp-4322",
-            "scp-6872"
+            "scp-6872",
+            "scp-pl-391"
           ]
         }
       ]
@@ -2345,7 +2362,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-590d24b623fe7e3b8cb9f9df3c518ee4d794d6b7187cb525283ce857cc38afb7"
+        "structureHash": "sha256-20fbc09a5396f73aaf333f26bc4d04dcb3a05ae04d5ce65b28a1a67ed640a056"
       },
       "primaryArticles": [
         {
@@ -2396,7 +2413,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Wokół strefy zero zjawiska SCP-7676 wyznaczono Obszar Kwarantanny Zulu-9, który ma być w pełni obsadzony przez personel spełniający kryteria \"Null-Engram\". W związku z obecnymi brakami odpowiedniego personelu wewnątrz naszej organizacji, Departamentowi Anality…"
         },
         {
@@ -2406,7 +2423,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 19,
+          "os": 20,
           "desc": "SCP-012 ma być przez cały czas przechowywany w zaciemnionym pomieszczeniu. Jeżeli obiekt zostanie wystawiony na działanie światła lub zobaczony przez pracowników w innym zakresie światła niż podczerwień, należy bezzwłocznie poddać personel badaniom psychiatryc…"
         }
       ],
@@ -2613,7 +2630,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-3fea294dfe320d54af1ee2bf9344b98f0afba855afea54373078834da52d67cc"
+        "structureHash": "sha256-874ced728ab49c4603e7a291c1e35589dfd236845cfb1fec7eef7df222d04413"
       },
       "primaryArticles": [
         {
@@ -2643,7 +2660,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 8,
+          "os": 9,
           "desc": "Instrukcje dotyczące potrzebnych składników oraz przeprowadzenia SCP-6871 są dostępne tylko dla Rady O5 Administratora. Wszystkie nieupoważnione osoby próbujące uzyskać te informacje mają zostać zlikwidowane na miejscu. Wszystkie testy z udziałem SCP-6871 mają…"
         }
       ],
@@ -2693,7 +2710,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-6c7fa33dd7484a34f6492c527dc4d4bdb771629c64023776d6767c9bcd6f73c9"
+        "structureHash": "sha256-6c35245008892f2b14cd8e6fba4ae8fe958a56f6707042767e3e5f41b665c58c"
       },
       "primaryArticles": [
         {
@@ -2713,7 +2730,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 14,
+          "os": 15,
           "desc": "Wszystkie strony sieci społecznościowych pod wpływem SCP-4991 zostały poddane procedurze całkowitego usunięcia zapisów incydentu. Historia przykrywkowa dotycząca ARG (Gra w Alternatywnej Rzeczywistości) została zaimplementowana na wypadek przetrwania jakiegoko…"
         },
         {
@@ -2783,7 +2800,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-68c01a261c06067e254ed8358bcb664c23f57d043b5a26b95125e8e7aa888a0e"
+        "structureHash": "sha256-567008b8d507ad3f1e3ed8ec35cc854cf8b5c3ace9a7037d14dafcf5556d8df0"
       },
       "primaryArticles": [
         {
@@ -2820,7 +2837,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 7,
+          "os": 8,
           "desc": "SCP-1342 ma być przechowywany w Ośrodku 15. SCP-1342-1 ma być przechowywany w klatce Faradaya, mierzącej 15m x 15m x 20m, w celu zapobiegnięcia transmisji telemetrii oraz innych danych dotyczących SCP-1342. SCP-1342-2 ma być przechowywany w standardowej szafce…"
         },
         {
@@ -2830,7 +2847,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 4,
+          "os": 5,
           "desc": "SCP-2117 jest lokalizacją Ośrodka 2117, do którego dostęp ma każda osoba posiadająca instancję SCP-2117-A-1. Obecnie instancje SCP-2117-A-1 są używane przez niezbędny personel, członków Mobilnej Formacji Operacyjnej Omega-2 (\"Anti-Nihilism IN SPACE!\") oraz ins…"
         },
         {
@@ -3048,7 +3065,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-8741307a2882e82c1aa532a0475c8f45d4805f5d13db21dc9f31a2297e6f8f66"
+        "structureHash": "sha256-296c305e01b94c5ffad73749074103d403e357f5e71a82cf1f3e609962f5249c"
       },
       "primaryArticles": [
         {
@@ -3085,7 +3102,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-1360 musi być przechowywany w celi przechowawczej dla humanoidów w Ośrodku 19. Przed wejściem wymagana jest obecność czterech pracowników ochrony. Ograniczenia nie mogą zostać usunięte, chyba że jest to wymagane do przeprowadzenia testu. W celu komunikacji…"
         },
         {
@@ -3135,7 +3152,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Ze względu na bliskie położenie względem istniejącego już Ośrodka przechowawczego Fundacji, SCP-3560 jest obecnie przechowywany przez personel Ośrodka 64 . Wszystkie ścieżki prowadzące do SCP-3560 mają zostać odcięte od publicznego dostępu pod przykrywką poważ…"
         },
         {
@@ -3155,7 +3172,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 4,
+          "os": 5,
           "desc": "SCP-3860 jest przechowywany w Antytaumaturgicznej Celi dla Humanoidów Typu S, w humanoidalnym skrzydle przechowawczym o wysokim poziomie bezpieczeństwa Ośrodka 19. Cela ma być codziennie sprawdzana pod kątem obecności kontrabandy bądź wszelakich próby przełama…"
         }
       ],
@@ -3213,7 +3230,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-6ec604671b9150191fb21ef4c0781ecdfb85b823b755e2ccb161634de52ad88e"
+        "structureHash": "sha256-9b5d75c2b99265186df5a15d536d9fc2a1458b471e6252da3511fb8522dfc296"
       },
       "primaryArticles": [
         {
@@ -3223,7 +3240,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 9,
+          "os": 10,
           "desc": "autorstwa stormbreath Nx-03 is an island approximately 100 kilometers west of Ireland, referred to as Hy-Brasil in civilian folklore."
         },
         {
@@ -3243,7 +3260,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 5,
+          "os": 6,
           "desc": "Nie był to rodzaj deszczu, do którego przywykli. Był lodowaty i bezwzględny, lecąc na nich niczym seria płynnych strzał. Chmury nawałnicy były tak czarne, jak dym z paskudnych fabryk śmiertelników, zasłaniając blask gwiazd i księżyca. Jedyne naturalne światło…"
         },
         {
@@ -3344,7 +3361,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-f80ddfcb35b0618510076f8920dab185c90b700fd4b59fc2b00c2e812b9cfec2"
+        "structureHash": "sha256-17a1cc559534e3d3b5346e709591eece0b7a0b98acbb3835c1c28488f5197387"
       },
       "primaryArticles": [
         {
@@ -3372,7 +3389,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Obiekt jest dużą, nieeuklidesową biblioteką znajdującą się około 60 metrów pod ziemią w Częstochowskich kopalniach w Polsce, z wieloma nieprzetłumaczonymi frazami napisanymi w języku Fae nad wejściem. Choć z zewnątrz wygląda jedynie na 100 m x 100 m x 20 m, je…"
         },
         {
@@ -3418,7 +3435,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 18,
+          "os": 19,
           "desc": "Autorstwa Jasiu06"
         },
         {
@@ -3458,7 +3475,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Pomieszczenie, w którym znajduje się SCP-6789 jak i sąsiadujące z nim komory mają zostać zamknięte dla pracowników Rollander Steel i reszty społeczeństwa. Piwniczne podpoziomy fabryki mają zostać zapieczętowane i usunięte z oficjalnych planów architektonicznyc…"
         },
         {
@@ -3468,7 +3485,7 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 4,
+          "os": 5,
           "desc": "W związku z ostatnimi wydarzeniami, Profil Zwierzaka dla naszego dobrego pieska Sparky'ego nie jest już aktualny. Postaram się osobiście zaktualizować go o istotne informacje dotyczące jego i naszego gościa w ciągu najbliższych kilku dni. Po prostu muszę przez…"
         },
         {
@@ -3528,7 +3545,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 16,
+          "os": 17,
           "desc": "Podczas nieaktywnej fazy SCP-5464 ma pozostać na swoim wybiegu znajdującym się w parku wokół Ośrodka 120 . Ma być również monitorowany pod kątem wszelakich zmian swojego zachowania. Gdy SCP-5464 wejdzie w fazę aktywną, MFO Omega-6 (\"Ścigać Nie Chce Misię”) ma…"
         },
         {
@@ -3546,7 +3563,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Personel stacjonujący w Ośrodku 120 obecnie tworzy materiały skierowane do ludności cywilnej, nawołujące do grzebania swoich bliskich z myślą o metodach zapobiegawczych SCP-5572. Jednakże, jeżeli Rada Nadzorcza otrzyma sygnał \" potrzebne zasoby \", kampania ta…"
         },
         {
@@ -3596,7 +3613,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 3,
+          "os": 4,
           "desc": "Pełne Imię: Robert Lukas Madden Data Urodzenia: 15.02.2001 r. Lokalizacja: Friedrich-Nietzsche-Gymnasium, Lipsk, Niemcy Opis: 16. Biały mężczyzna. 185 cm wzrostu. 58 kg wagi. IQ 152. Wada wzroku -1,25 w obu oczach. Oboje rodzice zmarli w 2002 roku w wyniku wyp…"
         },
         {
@@ -3614,7 +3631,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 7,
+          "os": 8,
           "desc": "The difference between a fairy tale and a sea tale? A fairy tale starts with \"Once upon a time.\" A sea tale starts with \"This ain’t no shit!\""
         },
         {
@@ -3635,7 +3652,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 14,
-          "desc": "\"Szczupak król głębin\""
+          "desc": "— Głębokość 5000 metrów, widać uszkodzone światła przy śluzie — powiedział spokojnie Grusza, trzymając komunikator w ręku."
         },
         {
           "id": "krewetkowy-bol",
@@ -3772,7 +3789,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 8,
+          "os": 7,
           "desc": "SCP-6747 jest ostatecznym celem PROJEKTU X/MACHINA (zobacz DODATEK 6747/V ) stanowiącego priorytet KLASY AMIDA ; w związku z tym, na rzecz jego ukończenia zostały udostępnione praktycznie nieograniczone zasoby. Wspomniany projekt ma być prowadzony przez kworum…"
         },
         {
@@ -3913,7 +3930,7 @@
         "mode": "officialHubStructure",
         "tagSource": "pl_tag.json",
         "emptySectionTitle": "Artykuły",
-        "structureHash": "sha256-2021cd000187c35b1dddf7f742e830d6daed7d1f20d7ff3fc4698c094556ccde"
+        "structureHash": "sha256-a9f92a9e3add2686cd91f89171674fbe690223262db0367b3fb0d90063c73c92"
       },
       "primaryArticles": [
         {
@@ -3963,7 +3980,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 5,
+          "os": 4,
           "desc": "Bright wiedział, że coś poszło nie tak, gdy ciężarówki ustawiły się po obu stronach jego furgonetki. Na bokach namalowany był farbą w spreju napis \"حزب الخلافة\". Wiedział, że wpadł w duże kłopoty, gdy na platformach zobaczył mężczyzn celujących w niego z karab…"
         },
         {
@@ -3973,7 +3990,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 7,
+          "os": 8,
           "desc": "Dr Kowalska z ręką zaciśniętą na zimnej stalowej poręczy. Szła niepewnymi krokami przed siebie, w ciemności. Oczy miała zakryte opaską, choć wolałaby mieć na głowie maskę przeciwgazową. Nikt nie powiedział jej, że to coś tak cuchnie. W sumie nikt, kto podszedł…"
         },
         {
@@ -4003,7 +4020,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 10,
+          "os": 11,
           "desc": "0BUDZC13S13L3M1NG1 04.12.18 (Czw) 12:06:22 #12766349 [UŻYTKOWNIK ZOSTAŁ ZBANOWANY ZA TEN POST] 🗿 mr_sen 04.12.18 (Czw) 12:19:20 #12766349"
         },
         {
@@ -4013,7 +4030,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 3,
+          "os": 4,
           "desc": "SARC 1 ma w dalszym ciągu pracować nad bezpieczną i skuteczną strategią zabezpieczenia SCP-3241. Dopóki takowa nie zostanie opracowana, czynności przechowawcze SCP-3241 mają skupiać się na dezinformacji, obserwacji i zapobieganiu zewnętrznemu kontaktowi. Perso…"
         }
       ],
@@ -4512,7 +4529,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-1e5cac240d088c6d081c63b47687b4ae0db0f2dd737a22a94c7b23c4baae262b"
+        "structureHash": "sha256-36ddef0fbdfa9518cc10a92f865c857116ec8c7dae196f56ac94bbf06f8b7b09"
       },
       "primaryArticles": [
         {
@@ -4527,25 +4544,31 @@
           "id": "dominacja",
           "title": "Dominacja",
           "url": "https://scp-pl.wikidot.com/dominacja",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Bohater zawsze dominuje swojego przeciwnika"
+          "os": 17,
+          "desc": "Drażniący pisk małego głośnika zaczął rozbrzmiewać w momencie, kiedy Badgaj puszczał kolejną serię w stronę terrorysty. Alarm spełnił swoje zadanie, skutecznie uniemożliwiając trafienie strzelcowi w cel, co wywołało w nim jeszcze większą frustrację."
         },
         {
           "id": "improwizacja",
           "title": "Improwizacja",
           "url": "https://scp-pl.wikidot.com/improwizacja",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Bohater musi działać w sposób nieprzewidywalny"
+          "os": 13,
+          "desc": "Bór sosnowy, pokryty śniegiem, zdawał się nie kończyć, mimo zdeterminowanego Badgaja wciąż pewnie stawiającego kolejne kroki. Jasno świecące słońce odbijało swe promienie od grubej warstwy białego pyłu, przez co dzień wyglądał jak wyjęty ze środka wakacji na u…"
         },
         {
           "id": "wiernosc",
           "title": "Wierność",
           "url": "https://scp-pl.wikidot.com/wiernosc",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Bohater nigdy nie łamie danego słowa, gdyż łamie inne rzeczy."
+          "os": 9,
+          "desc": "Większość świadomości dąży do wspięcia się jak najwyżej na szczeblu przetrwania. Może to być powodowane mylnym poglądem, jakoby wyższa pozycja miała zapewniać bezpieczeństwo czy spokój. Ale już na pierwszy rzut oka widać, że jest dokładnie odwrotnie: skoro każ…"
         }
       ],
       "supplementLinks": [],
@@ -5341,7 +5364,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-8efd0572a3d954861fde15ed3c5de915c41e7d20559dbb5630a8fa9eb157c1dc"
+        "structureHash": "sha256-86c7be7921d2da6b9089a3d80dabeb9f594392e2c4c862a33f87416500c5442a"
       },
       "primaryArticles": [
         {
@@ -5376,7 +5399,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 14,
-          "desc": "\"Szczupak król głębin\""
+          "desc": "— Głębokość 5000 metrów, widać uszkodzone światła przy śluzie — powiedział spokojnie Grusza, trzymając komunikator w ręku."
         },
         {
           "id": "krewetkowy-bol",
@@ -5528,7 +5551,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-4cf0a3b9316bb149b6f40ad0fed95004a9b122a044abc8dcce2ccd6488c43d42"
+        "structureHash": "sha256-d5c36d0473e334a9f2ad0ac97bcc3ba10f1ef8e106b3afd58357e7e379f5e059"
       },
       "primaryArticles": [
         {
@@ -5542,22 +5565,31 @@
           "id": "ultra-fajny-prolog",
           "title": "Ultra Fajny Prolog!",
           "url": "https://scp-pl.wikidot.com/ultra-fajny-prolog",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Epicka Saga Oliwii"
         },
         {
           "id": "art-is-dead",
-          "title": "Art is dead",
+          "title": "Art is Dead",
           "url": "https://scp-pl.wikidot.com/art-is-dead",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Drzwi otwierają się. Andrzej wchodzi do domu. Zdejmuje buty, kładzie swój plecak na schodach i idzie do kuchni. Zagląda do lodówki i szafek, nie wiedząc, co by mógł zjeść."
         },
         {
           "id": "aura",
           "title": "Aura",
           "url": "https://scp-pl.wikidot.com/aura",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Jest sobotnie popołudnie. Oliwia i Julia siedzą w kawiarni, przy stoliku na zewnątrz. Julia je gofra z dżemem truskawkowym, a Oliwia lody śmietankowe z polewą czekoladową."
         },
         {
           "id": "ma-jej-oczy",
@@ -5573,8 +5605,10 @@
           "id": "pokazac-ci-cos",
           "title": "Pokazać ci coś?",
           "url": "https://scp-pl.wikidot.com/pokazac-ci-cos",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 13
         }
       ],
       "supplementLinks": [],
@@ -5685,16 +5719,18 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-74a8dd89d4498efd0d41c2c69217052a6bd815f14fd2b5513ced7170f26a0dfb"
+        "structureHash": "sha256-6c361b7489e82d718b91fb3500280252b8d3fc127cf265e98014ae031ee3dd92"
       },
       "primaryArticles": [
         {
           "id": "druga-szansa",
           "title": "Druga Szansa",
           "url": "https://scp-pl.wikidot.com/druga-szansa",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Każda historia ma swój początek w pewnym punkcie."
+          "os": 22,
+          "desc": "Tego dnia przyszedłem do pracy trochę wcześniej niż zwykle. Kupiłem sobie kawę w automacie i powlokłem się do swojego biura by przejrzeć dzisiejsze zadania. Usiadłem w niezbyt wygodnym krześle biurowym i nacisnąłem przycisk uruchamiający mój służbowy komputer.…"
         },
         {
           "id": "scp-pl-137",
@@ -5710,25 +5746,31 @@
           "id": "niepewnosc",
           "title": "Niepewność",
           "url": "https://scp-pl.wikidot.com/niepewnosc",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Gdy inne światy wydają ostatnie tchnienie, przychodzi czas by działać."
+          "os": 9,
+          "desc": "Mój nowy gabinet nie był niczym specjalnym. Właściwie bardzo przypominał ten, który posiadałem w poprzednim świecie. Biurko z komputerem, tablica na ścianie, duża roślinka w kącie, obok niej miniaturowa konewka. Tylko ściany były dla odmiany jasnoniebieskie, p…"
         },
         {
           "id": "nadzieja",
           "title": "Nadzieja",
           "url": "https://scp-pl.wikidot.com/nadzieja",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Kiedy wszystko inne zawodzi, każdy trzyma się nawet najbardziej złudnej iskry nadziei."
+          "os": 6,
+          "desc": "Skinąłem głową i podniosłem z blatu SCP-PL-081, po czym wstukałem na klawiaturze odpowiedni numer i przyłożyłem telefon do ucha. Dokładnie tak jak się spodziewałem, usłyszałem standardowy sygnał towarzyszący nawiązywanemu połączeniu. Podrapałem się po nosie i…"
         },
         {
           "id": "dezorientacja",
           "title": "Dezorientacja",
           "url": "https://scp-pl.wikidot.com/dezorientacja",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "W Fundacji rzadko kiedy wszystko idzie zgodnie z planem."
+          "os": 7,
+          "desc": "Szybkim krokiem ruszyłem w stronę jednego z przejść, za którym widać było puste pomieszczenie. Tak jak przewidywałem, gdy przekroczyłem próg zmieniło się ono w pokój ze stołem i kilkoma krzesłami. Wszystko wydawało się być w porządku, dopóki jedno z siedzisk n…"
         }
       ],
       "supplementLinks": [],
@@ -5808,36 +5850,48 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-17af92e7ee00faf160337054fb6fba967cd0d12b3c3f3d26ccdbfb3474f71356"
+        "structureHash": "sha256-352291e30316c5a50ad2f72335a9f672acfc4776e8fa05c9da7c7dff7c229650"
       },
       "primaryArticles": [
         {
           "id": "ostatnie-dni-jesieni-prolog",
-          "title": "Prolog",
+          "title": "Ostatnie dni jesieni: Prolog",
           "url": "https://scp-pl.wikidot.com/ostatnie-dni-jesieni-prolog",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Lesina górna, Specjalna Strefa Ekonomiczna. 19 października, godzina 22:31 Pogoda w tym rejonie była bardzo zmienna. Jeszcze popołudniu delikatny wiatr rozbrzmiewał szumem drzew i złotych liści na chodnikach. Słońce świeciło mocno, jakby za wszelką cenę starał…"
         },
         {
           "id": "ostatnie-dni-jesieni-1",
-          "title": "Część 1",
+          "title": "Ostatnie dni Jesieni: Część 1",
           "url": "https://scp-pl.wikidot.com/ostatnie-dni-jesieni-1",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Lesina górna, Specjalna Strefa Ekonomiczna. 20 października, godzina 07:14 Po całym wieczorze i nocy opadów powietrze nad ranem było orzeźwiająco wilgotne. Światło wschodzącego słońca jeszcze nie ani nie raziło, ani nie grzało za mocno, dopełniając obrazu rześ…"
         },
         {
           "id": "ostatnie-dni-jesieni-2",
-          "title": "Część 2",
+          "title": "Ostatnie dni Jesieni: Część 2",
           "url": "https://scp-pl.wikidot.com/ostatnie-dni-jesieni-2",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Lesina górna, Specjalna Strefa Ekonomiczna. 20 października, godzina 07:29 Nim skończyła rozmawiać z Radczyńskim, reszta techników skończyła już swoje prace i dała zielone światło oczekującej ekipie sprzątającej. Idąc w stronę budynków i patrząc pod nogi, aby…"
         },
         {
           "id": "ostatnie-dni-jesieni-3",
-          "title": "Część 3",
+          "title": "Ostatnie dni Jesieni: Część 3",
           "url": "https://scp-pl.wikidot.com/ostatnie-dni-jesieni-3",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Lesina górna, Specjalna Strefa Ekonomiczna. 20 października, godzina 07:41 Kiedy już wszyscy zjechali z miejsca zdarzenia, dwójka agentów stała przed czarnym, sportowym samochodem Wierzby. Jak na tutejsze warunki był zbyt czysty i nowoczesny, ale właśnie dlate…"
         }
       ],
       "supplementLinks": [],
@@ -5916,7 +5970,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-56245fa21212823f3e011e2e4bb4973db8190d44cca173f841ee8a44865063d5"
+        "structureHash": "sha256-f80a20865dd9db91bdffdb2fe4848b96f70b58c894e4b25765d29670354bf16e"
       },
       "primaryArticles": [
         {
@@ -5933,15 +5987,21 @@
           "id": "redakcja",
           "title": "Redakcja",
           "url": "https://scp-pl.wikidot.com/redakcja",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Autostrada A1, Województwo śląskie, Polska - No panowie, zbliżają się wakacje, jakie plany na urlop? - zaczął kierowca samochodu."
         },
         {
           "id": "herbicydy",
           "title": "Herbicydy",
           "url": "https://scp-pl.wikidot.com/herbicydy",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Olsztyn, Województwo warmińsko-mazurskie, Polska Obudził się. Powoli wysunął się ze swojego łóżka i ogarnął wzrokiem swoje otoczenie, którym było jego pochłonięte ciemnością pokój. Jedynym wynaturzeniem w nim była odbita poświata latarni zza okna, przesłonięta…"
         },
         {
           "id": "scp-pl-348",
@@ -6168,7 +6228,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-7eea59ef4393154086edb8677f8643ca2f5731931c8b65bd950227fc6d95273a"
+        "structureHash": "sha256-84b0dc092164d0ab44ee1790c12619bb9f58080f57415290789d4d8a72d70539"
       },
       "primaryArticles": [
         {
@@ -6183,61 +6243,81 @@
           "id": "cisza-przed-burza",
           "title": "Cisza przed burzą",
           "url": "https://scp-pl.wikidot.com/cisza-przed-burza",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Jednakże okazało się to być jedynie ciszą przed burzą."
+          "os": 26,
+          "desc": "Mężczyzna powoli otworzył drzwi na tyle, by móc spokojnie wejść do mieszkania. Zanim zdążył na spokojnie zdjąć płaszcz i buty, został powitany, a raczej napadnięty przez dwójkę małych dzieci, które rzuciły się ojcu na szyję, wykrzykując radośnie \"Tatuś\"."
         },
         {
           "id": "dziewczynka-i-bestie",
           "title": "Piękna i bestie",
           "url": "https://scp-pl.wikidot.com/dziewczynka-i-bestie",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Emilii i jej znajomych zmienia się w walkę o przetrwanie, ale nie wszystko zdaje się jakie jest na pierwszy rzut oka."
+          "os": 17,
+          "desc": "<<Poprzednia opowieść Emilia, jej brat Damian, Asia i Marcin wpatrywali się w Dominika, który właśnie skończył opowiadać im swoją historię, którą chciał przekazać. Wszyscy siedzieli na trawie w ciszy, przez około minutę próbując zrozumieć bełkot jaki opowiedzi…"
         },
         {
           "id": "lekcja-anatomii",
           "title": "Lekcja anatomii",
           "url": "https://scp-pl.wikidot.com/lekcja-anatomii",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Wiekowy już samochód sprawnie pokonywał kolejne kilometry trasy, położonej równolegle do budowanej drogi głównej do Roztrzyna. Wokół nich rozpościerały się lasy przeplatane łąkami i polami z pobliskich wsi, przez które przejeżdżali, bądź omijali. Co chwilę mij…"
         },
         {
           "id": "dlaczego-strzelilem",
           "title": "Dlaczego strzeliłem?",
           "url": "https://scp-pl.wikidot.com/dlaczego-strzelilem",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "<< Poprzednia opowieść Pięcioosobowy oddział powoli i systematycznie przechodził przez fragmenty lasu, stopniowo zajmowanego przez ciemną, szybko rozrastającą się i przekształcaną plechę. Drzewa i krzewy powoli obumierały, gnijąc i próchniejąc zarówno od środk…"
         },
         {
           "id": "taran",
           "title": "Taran",
           "url": "https://scp-pl.wikidot.com/taran",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "<< Poprzednia opowieść Pole walki to był istny chaos. Nieważne jak się starał, formacja była łamana przez skoncentrowane ataki tych wszystkich stworzeń, z którymi jego oddział musiał się zmierzyć."
         },
         {
           "id": "gdzie-zabladzilem",
           "title": "Gdzie zabłądziłem?",
           "url": "https://scp-pl.wikidot.com/gdzie-zabladzilem",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Ci nic innego, jak zadanie sobie tego pytania w miejscu, którego nie znasz i do którego nigdy nie chciałeś trafić."
+          "os": 7,
+          "desc": "<< Poprzednia opowieść Nic nie potrafię sobie przypomnieć. Mój umysł to chaos i anarchia. Anarchia… Chaos… Nie potrafię stwierdzić, czy widzę rzeczywistość, czy może kolejny koszmar."
         },
         {
           "id": "nowy-przybysz",
           "title": "Nowy przybysz",
           "url": "https://scp-pl.wikidot.com/nowy-przybysz",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "<< Poprzednia opowieść Gwiazdy rozpościerały się po ciemnym sklepieniu, dla niewprawnego oka wręcz losowo. Jednakże oni wiedzieli, że układają się one we wzory, gromady i inne skupiska, upiększając ludzkości widok na nocne niebo."
         },
         {
           "id": "chrzest-bojowy",
-          "title": "Chrzest bojowy",
+          "title": "Chrzest Bojowy",
           "url": "https://scp-pl.wikidot.com/chrzest-bojowy",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Przyszedł czas spotkania się ze złem, czającym w gnijącym sercu miasta i przejściu przez chrzest bojowy."
+          "os": 5,
+          "desc": "<< Poprzednia opowieść Przedzierał się szybkim tempem przez to kolejne zarośla, które zagrodziły mu drogę. Kłuły i kąsały go przy każdym zetknięciu jego skóry rąk i nóg z ich liśćmi i gałązkami. Jednakże on nie zwracał na nie uwagi. Wciąż biegł dalej i dalej……"
         }
       ],
       "supplementLinks": [],
@@ -6600,7 +6680,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-c2d8b6f9d192bafe6774df2591c57c98509cfbc13f4e8ac6be03e24ad0643fcc"
+        "structureHash": "sha256-c90378dc8345df8264d09c4f70bc747eff6bd1518e3b6be73e6deed5cb71965e"
       },
       "primaryArticles": [
         {
@@ -6610,7 +6690,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-5109 nie może być wypowiadany. Restrykcja ta nie obowiązuje w przypadku nieuchronnego zagrożenia dla życia jego strażnika; w takim przypadku musi być wypowiedziany do kontaktu O5 danego strażnika z użyciem jednokierunkowego nadajnika radiowego. Tożsamości…"
         },
         {
@@ -6620,7 +6700,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 7,
+          "os": 8,
           "desc": "SCP-5056 jest zabezpieczany przez Sekcję Sprzątania i Konserwacji Ośrodka 43 . Lokalizacja obiektu zależy od, jest określana przez i może być kontrolowana przez plan pracy Philipa Eugene'a Deeringa (JM64/SCP-5056-B). SCP-5056-B jest ograniczony do Ośrodka 43.…"
         },
         {
@@ -6630,7 +6710,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 6,
+          "os": 7,
           "desc": "Jako że SCP-5243 jest nawracającym katastrofalnym niepowodzeniem zabezpieczeń, podmiot jest \"zabezpieczony\" poprzez załagodzenie jego efektów. Każdego roku, dnia ósmego września w Ośrodku 43 należy podjąć następujące działania: Działania wyznaczone na dokładne…"
         },
         {
@@ -6654,7 +6734,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-5494 jest zabezpieczony przez praktyki kulturowe Rdzennych Ludów Wielkich Jezior. . Obiekty klasy Ticonderoga nie mogą być zabezpieczone przez Fundację, ale zabezpieczenie ich nie jest wymagane."
         }
       ],
@@ -6961,7 +7041,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-41667ee939190e158922508dc08cd8147437b61525d0d394a95c3391b2e90a6b"
+        "structureHash": "sha256-ee5d166d177c2a3a757020a8b1886be818625a525962cb9aa24812beb258ff12"
       },
       "primaryArticles": [
         {
@@ -6987,7 +7067,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 40,
+          "os": 41,
           "desc": "Wszelkie raporty medialne powiązane z SCP-1000 należy badać pod kątem potencjalnej wiarygodności. Wszelkie organizacje i osoby przeprowadzające dochodzenia w sprawie SCP-1000 muszą być monitorowane przez Mobilną Formację Operacyjną Zeta-1000 i dyskredytowane l…"
         },
         {
@@ -7005,7 +7085,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Obiekt jest dużą, nieeuklidesową biblioteką znajdującą się około 60 metrów pod ziemią w Częstochowskich kopalniach w Polsce, z wieloma nieprzetłumaczonymi frazami napisanymi w języku Fae nad wejściem. Choć z zewnątrz wygląda jedynie na 100 m x 100 m x 20 m, je…"
         },
         {
@@ -7025,7 +7105,7 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 4,
+          "os": 5,
           "desc": "W związku z ostatnimi wydarzeniami, Profil Zwierzaka dla naszego dobrego pieska Sparky'ego nie jest już aktualny. Postaram się osobiście zaktualizować go o istotne informacje dotyczące jego i naszego gościa w ciągu najbliższych kilku dni. Po prostu muszę przez…"
         }
       ],
@@ -7228,7 +7308,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-51303063cd75c4e11885680209fe73ce29aba4cc92e7eb6ecd426b4a58179003"
+        "structureHash": "sha256-7bf2804afd6f0e323eedc56401fe5be8f06362065f3a78fe3b7cdfa7aedd85b5"
       },
       "primaryArticles": [
         {
@@ -7256,7 +7336,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 6,
+          "os": 7,
           "desc": "Pojedyncza kopia SCP-1425 ma być trzymana w podwójnie zamykanym archiwum Magazynowego Ośrodka 40. Dostęp do tego dokumentu ma być udzielany jedynie przy okazaniu wyraźnej pisemnej zgody od co najmniej dwóch z następujących osób: Dyrektora Ośrodka, Kierownika E…"
         },
         {
@@ -7394,7 +7474,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-bcf2d152fd80fa4dc7d29d965e45b025b7edadf56ec38f295811dd2cf9e7292a"
+        "structureHash": "sha256-cdcd5a5473ff436dce1894b895ce6e3c31875087e6c6ff85fa59c1a80cb0b762"
       },
       "primaryArticles": [
         {
@@ -7404,7 +7484,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 3,
+          "os": 4,
           "desc": "SCP-423 jest zabezpieczony w pokoju o wymiarach 5 x 5 metrów zawierającym trzy (3) biblioteczki o wymiarach 2 x 3 metry. Obok zlokalizowana jest spalarka. Cały personel wchodzący lub wychodzący z pokoju musi być przeszukany pod kątem materiałów pisanych. Wszel…"
         },
         {
@@ -7444,7 +7524,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Obecnie trwa opracowywanie efektywnych czynności przechowawczych dla SCP-4028. W międzyczasie, personel ma skupić się na usuwaniu wszystkich odchyleń od kanonu w narracjach spowodowanych przez SCP-4028. Aby to osiągnąć, wdrożono następujące środki: Fundacyjny…"
         },
         {
@@ -7454,7 +7534,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 6,
+          "os": 7,
           "desc": "Algorytmy strażnicze Fundacji mają za zadanie monitorować media internetowe i drukowane pod kątem wzmianek o frazach kluczowych, aktywujących SCP-2747. Wszystkie dopasowania mają być oznaczane i przekazywane do Departamentu Analityki, który dostarczy dalsze po…"
         }
       ],
@@ -7548,7 +7628,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-744e5885a1ce89835d702c53f41900ee35af703d5f77c08e2671de3e4a728fab"
+        "structureHash": "sha256-fb3a619ae5e26cd20ffa7fc9f78f36daeb54b25172898a6f7623a7b20476022f"
       },
       "primaryArticles": [
         {
@@ -7558,7 +7638,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 9,
+          "os": 10,
           "desc": "autorstwa stormbreath Nx-03 is an island approximately 100 kilometers west of Ireland, referred to as Hy-Brasil in civilian folklore."
         },
         {
@@ -7578,7 +7658,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 5,
+          "os": 6,
           "desc": "Nie był to rodzaj deszczu, do którego przywykli. Był lodowaty i bezwzględny, lecąc na nich niczym seria płynnych strzał. Chmury nawałnicy były tak czarne, jak dym z paskudnych fabryk śmiertelników, zasłaniając blask gwiazd i księżyca. Jedyne naturalne światło…"
         },
         {
@@ -7634,7 +7714,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-1936 należy zabezpieczyć dwumetrowym ogrodzeniem elektrycznym, które ma być patrolowane przez służby ochrony. Zabezpieczony obszar ma w przybliżeniu kolisty kształt i średnicę 1 km. W obszarach, które nie są obecnie patrolowane, należy zainstalować kamery…"
         },
         {
@@ -7644,7 +7724,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 4,
+          "os": 5,
           "desc": "SCP-2117 jest lokalizacją Ośrodka 2117, do którego dostęp ma każda osoba posiadająca instancję SCP-2117-A-1. Obecnie instancje SCP-2117-A-1 są używane przez niezbędny personel, członków Mobilnej Formacji Operacyjnej Omega-2 (\"Anti-Nihilism IN SPACE!\") oraz ins…"
         },
         {
@@ -7674,7 +7754,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-5494 jest zabezpieczony przez praktyki kulturowe Rdzennych Ludów Wielkich Jezior. . Obiekty klasy Ticonderoga nie mogą być zabezpieczone przez Fundację, ale zabezpieczenie ich nie jest wymagane."
         },
         {
@@ -7691,7 +7771,7 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 6,
+          "os": 7,
           "desc": "Wymiar kieszonkowy/Miasto-państwo Miasto Three Portlands, potocznie nazywane Three Portlands, Three Ports (3Ports) lub po prostu Portlands, jest autonomicznym miastem-państwem i paranormalną enklawą znajdującą się w zamkniętym, kieszonkowym wszechświecie, dost…"
         },
         {
@@ -7708,7 +7788,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "Obiekt jest dużą, nieeuklidesową biblioteką znajdującą się około 60 metrów pod ziemią w Częstochowskich kopalniach w Polsce, z wieloma nieprzetłumaczonymi frazami napisanymi w języku Fae nad wejściem. Choć z zewnątrz wygląda jedynie na 100 m x 100 m x 20 m, je…"
         },
         {
@@ -7718,7 +7798,7 @@
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 4,
+          "os": 5,
           "desc": "W związku z ostatnimi wydarzeniami, Profil Zwierzaka dla naszego dobrego pieska Sparky'ego nie jest już aktualny. Postaram się osobiście zaktualizować go o istotne informacje dotyczące jego i naszego gościa w ciągu najbliższych kilku dni. Po prostu muszę przez…"
         },
         {
@@ -7821,7 +7901,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-ab40a59df72b02ccabb7a099d51fa56e98ac8354018e6ae69dde66f322d373f7"
+        "structureHash": "sha256-9e464c481330fbf05abe0c2b31ba1bab2229147fae1879f383827d3ae9fccdc7"
       },
       "primaryArticles": [
         {
@@ -7831,7 +7911,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 5,
+          "os": 6,
           "desc": "Ziemia była miękka i mokra. Delikatny wietrzyk poruszał zaroślami otaczającymi niewielkie sterty gruzu. Polana była opustoszała, być może opuszczona już od lat. Promienie słońca odbijały się od kawałków pogniecionego metalu, powoli zanurzając się w zielonych s…"
         },
         {
@@ -7841,7 +7921,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 5,
+          "os": 6,
           "desc": "Generał George Bowe (ur. 1930, przypuszczalnie zm. 1983) znany opinii publicznej z licznych zwycięstw z okresu zimnej wojny. W Fundacji wielu pracowników wie, że pełnił funkcję łącznika z wojskiem amerykańskim. Jednakże często pomijanym szczegółem jest to, że…"
         },
         {
@@ -7965,7 +8045,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-0c06771d6ef1500ce43511fc5b3cd280d6682f47ac016d6da8d41f247cbcb18a"
+        "structureHash": "sha256-491a683ca52ea795317b68c3baa442b2cf2a9ac10d4d352a73a63ae95c448751"
       },
       "primaryArticles": [
         {
@@ -7975,7 +8055,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 13,
+          "os": 14,
           "desc": "Nie pieprz mi tu o żadnych miejskich legendach. Jezu, w naszej pracy powinieneś wiedzieć. O czym ja gadam? Że to kurwa nie są zwykłe historie, baranie. Dobra, niektóre owszem. Znaczy, jasne, żaden gangster cię nie zastrzeli bo mrugnąłeś światłami. No ale wiele…"
         },
         {
@@ -7985,7 +8065,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 14,
+          "os": 15,
           "desc": "Pozwól, że opowiem ci o manipulatorach rzeczywistości. Więc… lubimy nazywać je Bixbie. Czemu? Po pierwsze, jak wygadasz się przy cywilu to się nie zdradzisz. Po drugie, jeśli gadasz z manipulatorem rzeczywistości, on może nie wiedzieć o wszystkim co potrafi, a…"
         },
         {
@@ -7995,7 +8075,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 14,
+          "os": 15,
           "desc": "Naprawdę mi przykro z tego powodu. Wiedziałem, że jesteśmy w tarapatach w momencie gdy Barnes postrzelił twoją córkę. Hej, nie płacz, nic jej nie będzie. Chujowy z niego strzelec."
         },
         {
@@ -8005,7 +8085,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 11,
+          "os": 12,
           "desc": "Tia, powiedziałbym, że go dorwałeś. Nie robią się już raczej bardziej martwi. Dobra, spokojnie. Nie zostaniesz De-klasowany. Oddychaj dzieciaku."
         },
         {
@@ -8015,7 +8095,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 13,
+          "os": 14,
           "desc": "No więc jeśli mam opisać co się stało… Nie sir, nie okłamałbym pana. Ograniczę się do samych faktów. Tak sir. Nie sir. Tak, kałamarnica była faktem. Mam zdjęcia. Nie sir, nie było kałamarnic w wiosce."
         },
         {
@@ -8025,7 +8105,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 14,
+          "os": 15,
           "desc": "Nie opłaca się zbliżać zbytnio do kogokolwiek w tej robocie. Mówią ci to cały czas. Ale i tak to zrobisz. Jesteśmy na tyle durni."
         },
         {
@@ -8035,7 +8115,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 10,
+          "os": 11,
           "desc": "Witam na waszym wprowadzeniu. Jestem Agent Max Lombardi. Jestem waszym instruktorem, głównie dlatego, że moja noga jest złamana i ktoś z Personelu mnie nienawidzi."
         },
         {
@@ -8045,7 +8125,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 11,
+          "os": 12,
           "desc": "Hej, koleżko, fajny kostium. Ta. Podoba mi się, że to tylko twoja twarz z paroma nitkami. Dobra, to wystarczy. Ta, to oryginał, więc czemu nie pójdziesz po dobroci? O to chodzi. Tutaj, żebyśmy mogli pogadać."
         },
         {
@@ -8055,7 +8135,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 10,
+          "os": 11,
           "desc": "Kurwa! Jebany… Otworzyć ogień! Otworzyć ogień! Kurwa! Nadal się zbliża. Nie strzelajcie temu w łeb. Ja… Kimura! Kurwa! W nogi! Strzelajcie kurwa w nogi!"
         },
         {
@@ -8065,7 +8145,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 14,
+          "os": 15,
           "desc": "Heh. To zabawne. Zawsze mówię moim chłopcom, nie oddawajcie życia za Fundację. Sprawcie, by inny sukinsyn oddał swoje. Ale oto jestem. Jebany hipokryta, tym jestem. Ale nikt nigdy nie obiecał mi emerytury, więc jest okej."
         }
       ],
@@ -8326,7 +8406,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-ca8fdd4e136bbdb436293425ef335f508e5dd062277ece8a50f88bea8c14f252"
+        "structureHash": "sha256-473e068382c66dc660de3bddfd98db97ab69dc2109b7b931489a4ac06e99adf5"
       },
       "primaryArticles": [
         {
@@ -8336,7 +8416,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-040-1a, SCP-040-1c oraz SCP-040-1j zostały autoryzowane do pozostania w przechowalni SCP-040, w celu zapewnienia dobrostanu psychologicznego podmiotu (Specjalny rozkaz kierownika ochrony 392-5: ██.██.████ r.). Wszystkie inne byty, zmodyfikowane przez SCP-0…"
         },
         {
@@ -8346,7 +8426,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 4,
+          "os": 5,
           "desc": "SCP-143 zabezpieczony jest w dolinie przyległej do Biostrefy Badawczej 12, o polu ponad 2 [km 2 ]. Obszar otaczający SCP-143 w promieniu do 20 [km], oraz wszystkie linie widokowe umożliwiające wejrzenie na teren z otaczających wzgórz, są niedostępne dla sfery…"
         },
         {
@@ -8356,7 +8436,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 3,
+          "os": 4,
           "desc": "REWIZJA 3 SCP-148 zabezpieczony jest w 120 sztabkach, spośród których każda waży ok. 10 kg w czasie pisania niniejszego raportu. Sztabki SCP-148 nie mogą być przechowywane w placówce, w której znajdują się inne obiekty SCP (w związku z potencjałem nieprzewidzi…"
         },
         {
@@ -8366,7 +8446,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-158 zainstalowany jest w Teatrze Operacyjnym 07, w Biostrefie Badawczej 12. Personel nie ma prawa do wchodzenia do pomieszczenia ani nie może ono zostać zasilone, o ile odpowiedni pracownik nie otrzymał odpowiedniej zgody od Głowy Projektu, prof. █████. Pr…"
         },
         {
@@ -8386,7 +8466,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 26,
+          "os": 27,
           "desc": "SCP-500 musi być przetrzymywany w chłodnym i suchym pomieszczeniu z dala od silnego światła. Dostęp SCP-500 jest dozwolony tylko dla osób o poziomie upoważnienia powyżej 4. Ma to zapobiec niewłaściwemu użyciu obiektu."
         },
         {
@@ -8396,7 +8476,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 4,
+          "os": 5,
           "desc": "SCP-542 ma być przetrzymywany w pokoju o wymiarach 8m x 8m z małą przylegającą łazienką, oraz może wnosić prośby o umeblowanie, poza tym, które można zmodyfikować do formy przyrządów chirurgicznych. Znaczące wnioski SCP-542 zawierają: Jedno łóżko rozmiaru król…"
         },
         {
@@ -8406,7 +8486,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 35,
+          "os": 36,
           "desc": "Tylko personel, który złoży pisemne podanie rozpatrzone pozytywnie przez dowództwo, może uzyskać dostęp do SCP-914. Podmiot musi być zamknięty w celi badawczej 109-B strzeżonej cały czas przez dwóch strażników. Każdemu naukowcowi wchodzącemu do 109-B musi towa…"
         },
         {
@@ -8416,7 +8496,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 2,
+          "os": 3,
           "desc": "Dziennik eksperymentów: Profesora K. P. Crowa, odnośnie SCP-158 w celu użycia obiektu w \"Projekcie Olimpia\". Data: 29.11.2008"
         },
         {
@@ -8426,7 +8506,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 2,
+          "os": 3,
           "desc": "Dziennik Eksperymentów: Profesora K. P. Crowa, użycie SCP-914 w celu pozyskania materiałów dla \"Projektu Olimpia\". Data: 05.12.2008"
         },
         {
@@ -8436,7 +8516,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 1,
+          "os": 2,
           "desc": "Dziennik Eksperymentów: Profesora K. P. Crowa, użycie SCP-040 w celu pozyskania materiałów dla \"Projektu Olimpia\". Data: 13.12.2008"
         },
         {
@@ -8446,7 +8526,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 0,
+          "os": 1,
           "desc": "Kryptonim Projektu: Olimpia Identyfikator Projektu: PRJOLM-000134 Pozwolenie oraz Kartoteka#: NPF-00051473 Główny Naukowiec: Profesor K. P. Crow"
         },
         {
@@ -8456,7 +8536,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 1,
+          "os": 2,
           "desc": "Kryptonim Projektu: Olimpia Identyfikator Projektu: PRJOLM-000134 Pozwolenie oraz Kartoteka#: NPF-00051473 Główny Naukowiec: Profesor K. P. Crow"
         },
         {
@@ -8466,7 +8546,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 0,
+          "os": 1,
           "desc": "Kryptonim Projektu: Olimpia Identyfikator Projektu: PRJOLM-000134 Pozwolenie oraz Kartoteka#: NPF-00051473 Główny Naukowiec: Profesor K. P. Crow"
         },
         {
@@ -8484,7 +8564,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 1,
+          "os": 2,
           "desc": "Kryptonim Projektu: Olimpia Identyfikator Projektu: PRJOLM-000134 Pozwolenie oraz Kartoteka#: NPF-00051473 Zmiany w Pierwowzorze Olimpia (Model Szablonowy Produkcji):"
         }
       ],
@@ -8594,7 +8674,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-5efeeef1c7bf53bcb464d25dcd839eac152590568018e660d7dacb9b077d90c2"
+        "structureHash": "sha256-9a0239bdc942f7c495b37f861e8a0b85378c4dbb3635459360977f3f75917538"
       },
       "primaryArticles": [
         {
@@ -8604,7 +8684,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 6,
+          "os": 7,
           "desc": "Asystent Badawczy Richard Moss uciekał. Z ręką na sercu mógłby przysiąc, że nigdy w całym swoim życiu nie był tak przerażony. Wydarzenia ostatnich dwudziestu minut kłębiły się w jego głowie jak rój pszczół. Wybuch. Syreny. Naruszenie przechowalni. Agresorzy. C…"
         }
       ],
@@ -9090,7 +9170,7 @@
         "allowedHosts": [
           "scp-pl.wikidot.com"
         ],
-        "structureHash": "sha256-ee04750555f4ebd72dc919a3f1af4b9f586691e259eefbf22b9a304eef67e4f7"
+        "structureHash": "sha256-9e1c8835837446b3ba9b386401f31ae778352aa49b476a094599aa206fd89325"
       },
       "primaryArticles": [
         {
@@ -9100,7 +9180,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 57,
+          "os": 58,
           "desc": "Obiekt przechowywany jest w prostopadłościanie o wymiarach pięć (5) na pięć (5) na dwa i pół (2,5) metrów. Pomieszczenie wykonane jest z cementu (ściany grubości pięćdziesięciu (50) centymetrów), którego ściany otoczone są klatką Faradaya. Dostęp do przechowal…"
         },
         {
@@ -9110,7 +9190,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 9,
+          "os": 10,
           "desc": "— Mogę zapalić? Tym razem oczy recepcjonistki patrzącej na Marion się zmrużyły. — Nie — mówi — nie… Nigdzie nie wolno palić w Ośrodku 200. To, że to budynek administracyjny nie znaczy, że nie mamy płuc. Albo prawa pracy."
         },
         {
@@ -9120,7 +9200,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 8,
+          "os": 9,
           "desc": "Młodszy badacz Kim pracuje dla Fundacji całe cztery godziny, a już czuje się rozbity, jakby podczas tego pierwszego, wprowadzającego wykładu zrzucono mu na głowę kowadło. Jest przerwa na lunch, a on znalazł sobie kąt tak daleko wewnątrz stołówki, że nikt go ni…"
         },
         {
@@ -9140,7 +9220,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 6
+          "os": 7
         },
         {
           "id": "scp-033",
@@ -9149,7 +9229,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 6,
+          "os": 7,
           "desc": "Kiedy nie przeprowadza się na nim aktywnych eksperymentów bądź obserwacji, SCP-033 powinien być zapisany na papierze mającym nieregularne krawędzie i będącym tworem ręcznym: papirusem, płótnem lub welinem. Żadne wymiary produktu papierowego nie powinny być rów…"
         },
         {
@@ -9159,7 +9239,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 6,
+          "os": 7,
           "desc": "Pojedyncza kopia SCP-1425 ma być trzymana w podwójnie zamykanym archiwum Magazynowego Ośrodka 40. Dostęp do tego dokumentu ma być udzielany jedynie przy okazaniu wyraźnej pisemnej zgody od co najmniej dwóch z następujących osób: Dyrektora Ośrodka, Kierownika E…"
         },
         {
@@ -9169,7 +9249,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 7,
+          "os": 8,
           "desc": "Poniższe procedury tu udokumentowane są na rzecz Dyrektora Fundacyjnego Wydziału Antymemetyki, O5-█ i Badacza ███████ █████. Personel MFO Eta-10 stacjonują w Ośrodku 31 pod przykrywką normalnych badaczy. Dostęp do tego pliku jest ograniczony do pięciu wybranyc…"
         },
         {
@@ -9179,7 +9259,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
+          "os": 6,
           "desc": "SCP-4773-2 zostało przeniesione do celi przechowawczej o wymiarach 4m x 4m x 4m 1 znajdującej się w Ośrodku 96 na potrzeby badań."
         }
       ],
