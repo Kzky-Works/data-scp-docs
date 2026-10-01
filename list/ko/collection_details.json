@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1790359459,
-  "generatedAt": "2026-09-25T18:04:19Z",
-  "chunkRevision": "sha256-085f173a95079a0e82857a0ce1a8adc0b7a8a9931e3b30a9ae7b7e4330ca90d7",
+  "listVersion": 1790848515,
+  "generatedAt": "2026-10-01T09:55:15Z",
+  "chunkRevision": "sha256-27571b8ee9ff66131e059d2cb37fefd26a82e136f9f8aec1c2e1945b547ee355",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1790359148,
-        "generatedAt": "2026-09-25T17:59:08Z",
-        "contentHash": "sha256-e9b066ae3b0db44854e3ffdf1bfae8338f28e0112e3d585ab027a7532e66877e"
+        "listVersion": 1790848358,
+        "generatedAt": "2026-10-01T09:52:38Z",
+        "contentHash": "sha256-d5138864c1618f6fecbf6077d9486f7e80859d8f02a6086fe9929f7159c9e239"
       },
       {
         "kind": "manifest_gois",
@@ -21,7 +21,7 @@
         "schemaVersion": 3,
         "listVersion": 1790359340,
         "generatedAt": "2026-09-25T18:02:20Z",
-        "contentHash": "sha256-2e852a8ad380a1afc2f5fbc16ba14bec3101d190440355bb77137406f0288c6f"
+        "contentHash": "sha256-c38706b8daefc35d0b88b56f140484117405ccba57d42f8eb37b910d581b3b77"
       },
       {
         "kind": "manifest_scp-int",
@@ -75,9 +75,9 @@
       "branchID": "scp-ko",
       "path": "DataPipeline/list/ko/ko_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1790359127,
-      "generatedAt": "2026-09-25T17:58:47Z",
-      "contentHash": "sha256-4e2602ae04f8dadf3cad665909c3c3b513daa0e6e8e811244bfc0da26b325a45"
+      "listVersion": 1790848358,
+      "generatedAt": "2026-10-01T09:52:38Z",
+      "contentHash": "sha256-127706f1eb2dea032bdcb559b8c182c5d4c15024724fd4e825daf711f79b1e50"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -28355,6 +28355,100 @@
       ]
     },
     {
+      "id": "scp-ko:collection:series:monarchs-and-maestros",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "monarchs-and-maestros",
+      "title": "제왕과 거장 허브",
+      "sourceListURL": "https://scpko.wikidot.com/monarchs-and-maestros",
+      "officialHubURL": "https://scpko.wikidot.com/monarchs-and-maestros",
+      "hubPresentation": "standard",
+      "canonicalTag": "monarchs-and-maestros",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "monarchs-and-maestros",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-2d5139ae6c8b4e555bd10cc5813ecedc3799b0c8e2baeecd65cd898678a1f9f3"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-7408",
+          "title": "SCP-7408 - 변태",
+          "url": "https://scpko.wikidot.com/scp-7408",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "1장: SCP-7408 - 변태"
+        },
+        {
+          "id": "dr-kondraki-cut-up-while-thinking",
+          "title": "생각 중에 다친 콘드라키 박사",
+          "url": "https://scpko.wikidot.com/dr-kondraki-cut-up-while-thinking",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "2장: 생각 중에 다친 콘드라키 박사"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-1",
+          "title": "1막: 종이 키메라들",
+          "articleIDs": [
+            "scp-7408",
+            "dr-kondraki-cut-up-while-thinking"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-ko:collection:series:stop-making-sense",
       "branchID": "scp-ko",
       "kind": "series",
@@ -29802,126 +29896,6 @@
         }
       ],
       "description": "MA급 대규모의인화 (Mass Animation) 시나리오 는 대규모의 무생물들이 지능이나 이동성을 나타냄으로써 정상성이 위협받는 수준까지 이르는 시나리오를 재단이 가리키는 용어입니다. 이 시나리오는 새로 생명을 얻은 사물들의 능력 및 자원에 따라 \"SK급 지배권 이동\" 시나리오를 따라 일으킬 수도 있습니다. MA급 대규모의인화 시나리오는 이하 중 최소 1개의 조건을 만족하여야 선언할 수 있습니다. 새로 생명을 얻은 독립체들이 비활성화되고 사건 관련 기억이 모두 지워지거나 하는, 정상이 완전히 회복되는 상황이 실현 불가능할 때 영향을 입은 사물들을 전부 추적 및 파괴하는 절차가 비현실적이거나 비윤리적이라고 판정받을 때"
-    },
-    {
-      "id": "scp-ko:collection:series:amnesticization",
-      "branchID": "scp-ko",
-      "kind": "series",
-      "hubID": "amnesticization",
-      "title": "잊어뻐리우 팀 허브",
-      "sourceListURL": "https://scpko.wikidot.com/amnesticization",
-      "officialHubURL": "https://scpko.wikidot.com/amnesticization",
-      "hubPresentation": "standard",
-      "canonicalTag": "amnesticization",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "amnesticization",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-ko",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ko_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scpko.wikidot.com",
-          "ko.scp-wiki.net"
-        ],
-        "structureHash": "sha256-96fe0d656d29232fdd004b15fef64a5585a364bebcf3d2ffb1fd39762f94805b"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-3484",
-          "title": "잃어버린 조각들",
-          "url": "https://scpko.wikidot.com/scp-3484",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 14,
-          "desc": "SCP-3484 및 영어 번역본이 제66기지의 표준 변칙개체 보관함에 보관되어 있다. 표준형 자물쇠 및 점검 절차 외의 특별한 격리는 필요하지 않다. SCP-3484를 탐독할 수 있는 것은 로더릭 아전트 Roderick Argent 박사 관리 하의 D계급 인원으로 제한되며, 해당 인원은 밈적 지식의 전파를 막기 위해 다른 인원으로부터 격리해야 한다."
-        },
-        {
-          "id": "scp-3848",
-          "title": "기억에 남을 만한 것들의 역사",
-          "url": "https://scpko.wikidot.com/scp-3848",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 14,
-          "desc": "이 문서의 디지털 및 물리적 사본을 모든 재단 기지에 보관한다. 이 문서에 대한 재단 인원의 접근은 인가 등급을 막론하고 제한하지 않는다. 완전한 ED-K급 레테 시나리오 1 가 발생하여 인류의 80% 이상이 영향을 받았을 경우 이 문서 및 재단의 존재를 대중에 알릴 수 있으며, O5 평의회 대행 및 윤리위원회 대행의 과반수가 찬성할 경우 실행할 수 있다. 모든 재단 시설마다 최소 한 명의 Mk. III 기억상실저항 표적 기억소생제 노출 훈련 Amnesia Re…"
-        },
-        {
-          "id": "excerpt-from-the-astrolabe-institute-journal",
-          "title": "아스트롤라베 연구원 학술지 발췌문",
-          "url": "https://scpko.wikidot.com/excerpt-from-the-astrolabe-institute-journal",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4,
-          "desc": "전화 (814)-555-3346 아스트롤라베 연구원THE ASTROLABE INSTITUTE 본 문서는 과학자들이 운영하며 변칙개체의 격리에 전념하는 공공매체 및 격리 회사 아스트롤라베 연구원의 공개 자료입니다"
-        },
-        {
-          "id": "schulman-ny-programmable-mnestic-device-ac34d-nc77q-95dcs",
-          "title": "‘슐만-NY 프로그램식 기억소생장치’ (AC34D/NC77Q/95DCS)",
-          "url": "https://scpko.wikidot.com/schulman-ny-programmable-mnestic-device-ac34d-nc77q-95dcs",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 3,
-          "desc": "프로그램식의 전자 부품과 생화학적 정맥/요추주사 부품이 달린 작은 장치로, 사용자의 정신에서 말소된 기억을 억지로 되살리는 데 사용한다. 이 상품을 사용해 변칙적 및 비변칙적인 방식으로 지워진 기억을 되살리는 작업은 94%의 성공률을 보인다. 유한책임조합 마셜, 카터 & 다크 초기 보고서 작성자 브루스 슐만 주니어 날짜 2014년 1월 15일 관심도 중 식별자 슐만-NY 프로그램식 기억소생장치 재단과 세계 오컬트 연합의 비변칙적인 화학적 기억소거제건, 변칙적인…"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "scp-3484",
-            "scp-3848",
-            "excerpt-from-the-astrolabe-institute-journal",
-            "schulman-ny-programmable-mnestic-device-ac34d-nc77q-95dcs"
-          ]
-        }
-      ]
     },
     {
       "id": "scp-ko:collection:series:1998-911-hub",
