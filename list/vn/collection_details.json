@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1790933152,
-  "generatedAt": "2026-10-02T09:25:52Z",
-  "chunkRevision": "sha256-3f0ee2149118824c4aa842cfd7db1d72add97b203c2f86f7e085871801f389be",
+  "listVersion": 1791017997,
+  "generatedAt": "2026-10-03T08:59:57Z",
+  "chunkRevision": "sha256-cc2470289ac16004ba0201172f0a8f1fb21b2f8e557dc3376aa70ed33a8f6421",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-vn",
         "path": "DataPipeline/list/vn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1790933141,
-        "generatedAt": "2026-10-02T09:25:41Z",
-        "contentHash": "sha256-8bb34592ace26a6deebc7023d11a403326cd8ffafe817680e50ac0e4946ca912"
+        "listVersion": 1791017936,
+        "generatedAt": "2026-10-03T08:58:56Z",
+        "contentHash": "sha256-73f8c996e55538e5567fd22f7a6ab97d3ba1ec0b211e17ad5f8d8282103f5381"
       },
       {
         "kind": "manifest_gois",
@@ -7084,6 +7084,121 @@
       ]
     },
     {
+      "id": "scp-vn:collection:series:monarchs-and-maestros",
+      "branchID": "scp-vn",
+      "kind": "series",
+      "hubID": "monarchs-and-maestros",
+      "title": "Bướm vua Và Nhạc trưởng",
+      "sourceListURL": "https://scp-vn.wikidot.com/monarchs-and-maestros",
+      "officialHubURL": "https://scp-vn.wikidot.com/monarchs-and-maestros",
+      "hubPresentation": "standard",
+      "canonicalTag": "monarchs-and-maestros",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "monarchs-and-maestros",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-vn.wikidot.com"
+        ],
+        "structureHash": "sha256-3f82a6243d6fde759ef2b549c25b44467482448c502f3bed82b6ddac2db35a56"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-7408",
+          "title": "Hóa Thân",
+          "url": "https://scp-vn.wikidot.com/scp-7408",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "SCP-7408-A không được phép tách rời khỏi SCP-7408-B trong mọi trường hợp. SCP-7408-B sẽ tiếp quản nhiệm vụ chăm sóc SCP-7408-A. . Memet: Dị thể có khả năng tự quản thúc. SCP-7408-B được phép tiếp tục làm việc tại Tổ Chức và duy trì Quyền hạn An ninh Cấp độ 3,…"
+        },
+        {
+          "id": "dr-kondraki-cut-up-while-thinking",
+          "title": "TS. KONDRAKI CẮT MẠCH SUY NGHĨ",
+          "url": "https://scp-vn.wikidot.com/dr-kondraki-cut-up-while-thinking",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Khoảng một tháng sau đàn bướm và viên đạn, dòng suy nghĩ mạch lạc đầu tiên trườn qua đầu bạn. Ngứa mông vãi, bạn nghĩ. Ngay từ giây phút đầu tiên, không có gì cả."
+        },
+        {
+          "id": "six-codas",
+          "title": "Sáu Hồi kết",
+          "url": "https://scp-vn.wikidot.com/six-codas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Lần đầu tiên Jae-Seong giết người đặc biệt hơn những lần sau, trừ một điều: một núi thủ tục hành chính dang tay chào đón gã ở cuối con đường."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-7408"
+          ]
+        },
+        {
+          "id": "02-hoi-1-chimera-giay",
+          "title": "Hồi 1: Chimera Giấy",
+          "articleIDs": [
+            "dr-kondraki-cut-up-while-thinking",
+            "six-codas"
+          ]
+        }
+      ],
+      "description": "Đã từng có một người đàn ông chết đi trong giây lát. Nhiều năm sau, ông ta qua đời thêm một lần nữa, như mọi người khác phải thế."
+    },
+    {
       "id": "scp-vn:collection:series:integration-program-hub",
       "branchID": "scp-vn",
       "kind": "series",
@@ -10121,93 +10236,6 @@
       ]
     },
     {
-      "id": "scp-vn:collection:series:k-o-failure-scenario-hub",
-      "branchID": "scp-vn",
-      "kind": "series",
-      "hubID": "k-o-failure-scenario-hub",
-      "title": "Hub Viễn Cảnh cấp K/O Thất Bại",
-      "sourceListURL": "https://scp-vn.wikidot.com/k-o-failure-scenario-hub",
-      "officialHubURL": "https://scp-vn.wikidot.com/k-o-failure-scenario-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "k-o-failure-scenario-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "k-o-failure-scenario-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-vn",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "vn_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "scp-vn.wikidot.com"
-        ],
-        "structureHash": "sha256-e20af6415cc211a7114661ec2d28bc1a6f2a42ddaa33a28837a186bce67d59a3"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-3760",
-          "title": "Nó có đôi mắt vô hồn, đen hoắm tựa búp bê.",
-          "url": "https://scp-vn.wikidot.com/scp-3760",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 5,
-          "desc": "Tác nhân Nhận thức Bậc cao Kappa/Omicron (\"SMA-K/O\") cần được giữ lưu thông trên toàn cầu bằng cách truyền bá dưới dạng một \"sự thật khoa học\" giả. Phòng ban Thông tin Sai lệch có nhiệm vụ loại bỏ bất kỳ quan niệm nào cho rằng tác nhân lan truyền SMA-K/O là th…"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "scp-3760"
-          ]
-        }
-      ],
-      "description": "Người Đấu sĩ Điều hành lướt qua tiêu đề bài đề xuất của người nghiên cứu viên trẻ tuổi rồi cau mày. \"Viễn Cảnh Tận Thế cấp K/O Thất Bại là cái quái gì?\" Người nghiên cứu viên mỉm cười, hảo hứng nói về thành quả của mình. \"Mọi viễn cảnh khi mà Trung Tâm bị tổn hại tới mức nó hoàn toàn và vĩnh viễn không còn khả năng hoàn thành nhiệm vụ của mình, thưa ngài. Nói đơn giản thì, lũ cá mập thắng.\" \"Chẳng phải nghe hơi chung chung sao?\" \"Có thể, nhưng ta có thật sự cần hàng triệu phân loại phụ chỉ để nói với độc giả rằng X khiến Trung Tâm sụp đổ theo một cách cụ thể này không? Cuối cùng thì, lũ cá mập luôn luôn thắng.\" \"Cũng có lý,\" ông nhún vai. \"Tôi đoán nó sẽ trở nên hơi dư thừa sau một khoảng thời gian. Tôi sẽ gửi cái này lên cho những người khác ở Hội đồng Đấu sĩ Quản lý. Nhưng tôi không hứa họ sẽ làm gì với nó đâu.\" \"Tuyệt vời,\" người nghiên cứu viên mừng rỡ. \"Tôi cũng có tự ý thêm một vài"
-    },
-    {
       "id": "scp-vn:collection:series:admonition",
       "branchID": "scp-vn",
       "kind": "series",
@@ -12537,6 +12565,93 @@
         }
       ],
       "description": "Cạn Dần Những Tác Phẩm Truyện Độc Lập Liên Quan Đến Phòng Ban Vô Thực. (thiểu số)."
+    },
+    {
+      "id": "scp-vn:collection:series:k-o-failure-scenario-hub",
+      "branchID": "scp-vn",
+      "kind": "series",
+      "hubID": "k-o-failure-scenario-hub",
+      "title": "Hub Viễn Cảnh cấp K/O Thất Bại",
+      "sourceListURL": "https://scp-vn.wikidot.com/k-o-failure-scenario-hub",
+      "officialHubURL": "https://scp-vn.wikidot.com/k-o-failure-scenario-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "k-o-failure-scenario-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "k-o-failure-scenario-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-vn.wikidot.com"
+        ],
+        "structureHash": "sha256-e20af6415cc211a7114661ec2d28bc1a6f2a42ddaa33a28837a186bce67d59a3"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-3760",
+          "title": "Nó có đôi mắt vô hồn, đen hoắm tựa búp bê.",
+          "url": "https://scp-vn.wikidot.com/scp-3760",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "Tác nhân Nhận thức Bậc cao Kappa/Omicron (\"SMA-K/O\") cần được giữ lưu thông trên toàn cầu bằng cách truyền bá dưới dạng một \"sự thật khoa học\" giả. Phòng ban Thông tin Sai lệch có nhiệm vụ loại bỏ bất kỳ quan niệm nào cho rằng tác nhân lan truyền SMA-K/O là th…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-3760"
+          ]
+        }
+      ],
+      "description": "Người Đấu sĩ Điều hành lướt qua tiêu đề bài đề xuất của người nghiên cứu viên trẻ tuổi rồi cau mày. \"Viễn Cảnh Tận Thế cấp K/O Thất Bại là cái quái gì?\" Người nghiên cứu viên mỉm cười, hảo hứng nói về thành quả của mình. \"Mọi viễn cảnh khi mà Trung Tâm bị tổn hại tới mức nó hoàn toàn và vĩnh viễn không còn khả năng hoàn thành nhiệm vụ của mình, thưa ngài. Nói đơn giản thì, lũ cá mập thắng.\" \"Chẳng phải nghe hơi chung chung sao?\" \"Có thể, nhưng ta có thật sự cần hàng triệu phân loại phụ chỉ để nói với độc giả rằng X khiến Trung Tâm sụp đổ theo một cách cụ thể này không? Cuối cùng thì, lũ cá mập luôn luôn thắng.\" \"Cũng có lý,\" ông nhún vai. \"Tôi đoán nó sẽ trở nên hơi dư thừa sau một khoảng thời gian. Tôi sẽ gửi cái này lên cho những người khác ở Hội đồng Đấu sĩ Quản lý. Nhưng tôi không hứa họ sẽ làm gì với nó đâu.\" \"Tuyệt vời,\" người nghiên cứu viên mừng rỡ. \"Tôi cũng có tự ý thêm một vài"
     },
     {
       "id": "scp-vn:collection:series:the-adventures-of-siggy-and-robomonkey-hub",
