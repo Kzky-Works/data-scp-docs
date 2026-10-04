@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "listVersion": 1791105724,
   "generatedAt": "2026-10-04T09:22:04Z",
-  "chunkRevision": "sha256-35c009843e5cfafd8f60615385de9a9592562407b68b5146cdb085fa69ce98a3",
+  "chunkRevision": "sha256-7e7c2b49d12c714d9fdd674e430cf5566ebc7e30df41b5984d5e71fa387a0448",
   "builtFrom": {
     "manifests": [
       {
@@ -68,7 +68,7 @@
     "officialMemberSeed": {
       "path": "DataPipeline/collection_seeds/ru_official_canon_members.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-3c8f6983a6754bcee9c917893abfec76b95433cd913226be4057371ad8e681cd"
+      "contentHash": "sha256-438d882d7af1f1b33f94bda2bd79e6a26502a5d8d2b933fe6580c9b427bcec9b"
     },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/ru.json",
@@ -1693,7 +1693,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -1702,14 +1702,101 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-6d4c114ccc242615aa13de47c49db80f9f116f9f94dd83aaf2a10d738bcd9919",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "the-list-of-wonders",
+          "title": "Список Диковин",
+          "url": "https://scpfoundation.net/the-list-of-wonders",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "Звонарь шел по Пустоши, не оставляя следов. Он был высокий, долговязый, черноволосый, с глазами-бусинками. Одет он был в серое, на шее носил маленький безъязыкий колокольчик, а на пальце -- кольцо с символом Йорка, покровителя воров и мошен…"
+        },
+        {
+          "id": "wonder",
+          "title": "Искатель",
+          "url": "https://scpfoundation.net/wonder",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "На доме Цендера было благословение Старой Агги. Семь его дочерей и двадцать одна внучка служили тому доказательством. Но сейчас, стоя пред изваянием богини, он лишь дрожал где-то глубоко внутри себя. Все-таки он готовился к смерти. Цендер о…"
+        },
+        {
+          "id": "scp-one-million",
+          "title": "SCP Номер Миллион",
+          "url": "https://scpfoundation.net/scp-one-million",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "-- Опиши мне его, -- велел шаман. -- Оно живет в... -- начал я. -- Нет! -- По пальцам резко ударили палкой. -- Начинай с того, как его остановить и сдержать. Всегда. Что оно такое -- это подождет. Я потер руку и начал заново: -- Люди всегда…"
+        },
+        {
+          "id": "thebook",
+          "title": "Книга",
+          "url": "https://scpfoundation.net/thebook",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "- Книга поучает. Книга направляет. - дрожащим голосом повторяла Алия свою мантру. Хранительница Книги свершила своё Последнее Прочтение неделю назад, и сейчас её тело готовили к путешествию в царство Барита. Само собой, работа Хранительницы…"
+        },
+        {
+          "id": "the-word",
+          "title": "Слово",
+          "url": "https://scpfoundation.net/the-word",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Я поворачиваюсь на звук. Из-под капюшона рясы на меня смотрит лицо брата Уллара. -- Отец? Деревня собралась. Полагаю, они ждут вас. Брат Уллар - самый недавний мой ученик. Он усерден и благочестив, однако немного робок. Мне придется отучить…"
+        },
+        {
+          "id": "addressing-the-second",
+          "title": "Размышления о Втором",
+          "url": "https://scpfoundation.net/addressing-the-second",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "Владыка Гордыни восседает напротив Владыки Мудрости. Он из вида Катар, и знак его -- корона. Справа от него -- непостижимый, что невидим и бесцветен лишь для него одного, ибо не желает Владыка смотреть на него. Слева от него -- отважный, ве…"
+        },
+        {
+          "id": "learning",
+          "title": "Обучение",
+          "url": "https://scpfoundation.net/learning",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Настоящей меккой для торговцев был Калефет, Сердце Калефа . Среди них ходили бесчисленные байки о глупых богачах, которые скупали реликвии вдесятеро дороже настоящей цены, и о бедняках, что просыпались голодными, а вечером уходили на покой.…"
+        },
+        {
+          "id": "those-you-leave-behind",
+          "title": "Те, кого оставил ты",
+          "url": "https://scpfoundation.net/those-you-leave-behind",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Часть Первая Его мать иногда говорила, что отцом его был Йорк. Но верховные жрицы так часто пичкали ее дурманящими снадобьями, что она редко узнавала своих гостей. К тому же, временами она признавалась, что его отцом был слепой рыбак. Изо р…"
+        },
+        {
+          "id": "wayward-denouement",
+          "title": "Развязка и эпилог",
+          "url": "https://scpfoundation.net/wayward-denouement",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "ОРИЗАСИ ЭСПИ ХАЙМЕК ФИО ОРОВИН III СТРОНЕК Хаймек отвела взгляд. - У Зо Вет много вопросов, вопросов, ответы на которые они желают знать. Есть ли среди этих вопросов те, на которые ты знаешь ответ? Ответ, которым ты... не хочешь делиться? -…"
+        },
+        {
+          "id": "the-brave-little",
+          "title": "Храбрый Малютка",
+          "url": "https://scpfoundation.net/the-brave-little",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "977 был особенным. Его номер был простым, что имело особую важность для его народа. Не такую важность, конечно, как если бы он был матерью. Но всё же народ ждал от него великих свершений. Создатель считал всё это бредом, но был склонен позв…"
+        }
+      ],
       "supplementLinks": [],
       "description": "В течение нескольких тысячелетий после конца света человечеству приходилось иметь дело с тем, над чем не закончил работу Фонд SCP."
     },
@@ -1733,7 +1820,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -1742,14 +1829,128 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-fda5a4fb215f0aa0fb885859ed5470af6af5a216eff7bf10c11c2be3e0f0010f",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "rascal-one-actual",
+          "title": "На связи Пройдоха-1",
+          "url": "https://scpfoundation.net/rascal-one-actual",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "- Так вот... ситуация с этой \"аномалией Хартл\" становится напряжённой. Как думаешь, нас туда пошлют? - Хартл - штука научная, а не паранормальная, - сказал Жаба, тщательно прилаживая крышку батарейного отсека к тонкому трёхдюймовому ЖК-экра…"
+        },
+        {
+          "id": "taken-from-a-global-occult-coalition-casefile",
+          "title": "Документы из базы данных ГОК",
+          "url": "https://scpfoundation.net/taken-from-a-global-occult-coalition-casefile",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "__ Субъект представляла собой человека женского пола смешанного европейского происхождения. По всем параметрам она являлась обычным представителем Homo sapiens , исключая описанные ниже отклонения. Хотя никаких поддающихся проверке средств…"
+        },
+        {
+          "id": "finding-the-machine",
+          "title": "Найти механизм",
+          "url": "https://scpfoundation.net/finding-the-machine",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "Мы собирались, как на войну. С самого начала было ясно, что дело предстоит серьёзное. Зачастую перед выходом на задание какой-нибудь менеджер или вице-президент присылал напутственные слова, но видеть вас лично - событие редкое. Обычно мы с…"
+        },
+        {
+          "id": "interlude-excerpt-from-an-auction-catalog-marshall-carter-an",
+          "title": "Интерлюдия - Выдержка из каталога аукциона \"Маршалл, Картер и Дарк\", 2012",
+          "url": "https://scpfoundation.net/interlude-excerpt-from-an-auction-catalog-marshall-carter-an",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Лот №: 50621-173 ++ ЖИВАЯ БЕТОННАЯ СТАТУЯ Минимальная ставка: 20 000 000 $ Это прекрасное произведение искусства из бетона и арматуры было создано в 1987 году неизвестным скульптором. Высота статуи 2 метра, она выкрашена в бежевый цвет с бо…"
+        },
+        {
+          "id": "six-little-mice",
+          "title": "Шестеро мышат",
+          "url": "https://scpfoundation.net/six-little-mice",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.1,
+          "desc": "Шесть смелых маленьких мышей по лестнице бежало - Эдди, ты сейчас что, серьёзно читаешь новости? Я поднял голову от номера \"Тайм\" и поглядел на Джастина. - Чувак, да ладно тебе! - ответил я. - Хартл - штука интересная, вокруг уже два часа о…"
+        },
+        {
+          "id": "text-of-a-condolence-letter-federal-bureau-of-investigation",
+          "title": "Текст письма с выражением соболезнования, Отдел необычных происшествий ФБР",
+          "url": "https://scpfoundation.net/text-of-a-condolence-letter-federal-bureau-of-investigation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.9,
+          "desc": "[МЕСТО ДЛЯ ОФИЦИАЛЬНОЙ ЭМБЛЕМЫ ФБР] Федеральное бюро расследований Министерство юстиции США Вашингтон, округ Колумбия. [ДАТА] Ув. [ПОЛУЧАТЕЛЬ], Я пишу вам сегодня, чтобы выразить мою великую скорбь в связи с гибелью Вашего/Вашей [РОДСТВЕННА…"
+        },
+        {
+          "id": "special-assets",
+          "title": "Особые средства",
+          "url": "https://scpfoundation.net/special-assets",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Госпиталь Святой Елены ни на одной карте не значился. Его нельзя было найти в Гугле или поискать в \"Жёлтых страницах\". Единственный способ туда попасть - точно знать, где он находится. Вылезать из \"Smart\"-а самому и вытаскивать оттуда покла…"
+        },
+        {
+          "id": "all-things-considered",
+          "title": "Все \"за\" и \"против\"",
+          "url": "https://scpfoundation.net/all-things-considered",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "ВЫДЕРЖКА ИЗ ЗАПИСИ: «Все \"за\" и \"против\"», радио WOSU 89.7, 28 января 2013, 16:05 АЛИША КЛАРК, ВЕДУЩАЯ: В то время, как президент трудится над тем, чтобы искоренить беспорядки на Ближнем Востоке, НАСА общается с людьми из совсем другого мир…"
+        },
+        {
+          "id": "da-capo-al-fine",
+          "title": "От начала и до конца",
+          "url": "https://scpfoundation.net/da-capo-al-fine",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "На пятый день рождения Сигуррос Стефансдоттир взглянула на пирог, что испекла ей приёмная мать, и загадала, чтобы её настоящие родители на самом деле не умерли. Моргнув, она очутилась в незнакомом доме рядом с мужчиной и женщиной, которых н…"
+        },
+        {
+          "id": "putting-a-ghost-in-the-machine",
+          "title": "Вкладывая дух в машину",
+          "url": "https://scpfoundation.net/putting-a-ghost-in-the-machine",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "На улицах города завывал ветер. Укрываясь от него, два мрачных силуэта зашли в переулок. С их поднятыми от дождя воротниками лиц было не различить даже в ярком свете неоновых знаков, оповещавших прохожих, что здесь находится забегаловка для…"
+        },
+        {
+          "id": "a-sympathetic-thorn-in-the-side-of-the-bookburners",
+          "title": "Сочувствующая заноза в боку Книгожогов",
+          "url": "https://scpfoundation.net/a-sympathetic-thorn-in-the-side-of-the-bookburners",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Сочувствующая заноза в боку Книгожогов footnoteЗвучит претенциозно, как чёрт знает что. — М.К./footnotefootnoteЯ думал, ты не хочешь иметь никакого дела с документацией. — Ф.Л./footnotefootnoteНу, я бы не стал лезть, если бы вы действительн…"
+        },
+        {
+          "id": "let-the-factory-fail",
+          "title": "#ПустьФабрикаПадёт",
+          "url": "https://scpfoundation.net/let-the-factory-fail",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 1.6,
+          "desc": "Amazon ##grey|@amazon · 1 авг## Изменение климата -- это битва нашего поколения. Вместе с Tesla мы рады представить Automazon — самую первую полностью автоматизированную систему складирования и доставки. Из нашего дома до вашего: 100% элект…"
+        },
+        {
+          "id": "scp-6871",
+          "title": "В мгновенье ока",
+          "url": "https://scpfoundation.net/scp-6871",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "SCP-6871 – это тауматургический ритуал, позволяющий удалять людей, объекты и/или явления из основной временной линии. При надлежащем выполнении ритуала влияние и действия, осуществлённые объектом ритуала в пределах временной линии, будут ре…"
+        }
+      ],
       "supplementLinks": [],
       "description": "Мы привыкли считать Фонд SCP необходимым злом. Но что, если это не так?"
     },
@@ -1967,7 +2168,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -1976,14 +2177,416 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-b125ea126560a51ae3826a2e380e1b7c542c7bc697338cb76fc183701b3738ec",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "in-the-clutches-of-life",
+          "title": "В когтях жизни",
+          "url": "https://scpfoundation.net/in-the-clutches-of-life",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "Женщина, сидящая на стуле возле больничной койки, смотрела, как грудная клетка ее отца мерно вздымается и опускается. Кардиомонитор пищал в ритм песне, играющей в наушниках. Она надеялась, что сможет немного поболтать напоследок, но болтать…"
+        },
+        {
+          "id": "scp-3984",
+          "title": "Потыкай в смерть палочкой",
+          "url": "https://scpfoundation.net/scp-3984",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "SCP-3984 -- феномен, при котором любые живые организмы из царства Animalia (животные) по таксономии Кавалье-СмитаfootnoteЦарство Animalia по Кавалье-Смиту включает всех животных, но не включает бактерий, грибов, водорослей и растений./footn…"
+        },
+        {
+          "id": "omega-k",
+          "title": "ΩK",
+          "url": "https://scpfoundation.net/omega-k",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "2020 12-е СЕНТЯБРЯ, 14:02 -- Э-эм... Мисс Майклс? -- Да? -- Мне кажется, врач хочет, эм, кое-что вам сказать]. Отец Джойс Майклс сидел на больничной койке -- сидел впервые за несколько месяцев. Кардиомонитор возле койки издавал долгий ровны…"
+        },
+        {
+          "id": "surgical-identity-perpetuation",
+          "title": "ЗАЯВКА НА ГРАНТ ДЛЯ УЛУЧШЕНИЯ ПРОЦЕДУРЫ ПЕРЕСАДКИ МОЗГА ДЛЯ СОХРАНЕНИЯ ЛИЧНОСТИ КАК ЛЕЧЕНИЕ ВОЗРАСТНЫХ НАРУШЕНИЙ БЕССМЕРТИЯ",
+          "url": "https://scpfoundation.net/surgical-identity-perpetuation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "ЗАЯВКА НА ГРАНТ ДЛЯ УЛУЧШЕНИЯ ПРОЦЕДУРЫ ПЕРЕСАДКИ МОЗГА ДЛЯ СОХРАНЕНИЯ ЛИЧНОСТИ КАК ЛЕЧЕНИЕ ВОЗРАСТНЫХ НАРУШЕНИЙ БЕССМЕРТИЯ ПРОБЛЕМА В настоящий момент организм, в отличие от мозга, продолжает стареть, как обычно. Данное условное] бессмерти…"
+        },
+        {
+          "id": "with-the-reaper-on-retirement",
+          "title": "Смерть на пенсии",
+          "url": "https://scpfoundation.net/with-the-reaper-on-retirement",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "Джойс Майклс натянула на голову наушники и включила ту же песню, что включала в каждую из этих поездок -- \"When the Sun Sets\" Джеймса Бланта. Именно эту песню она слушала в тот день, когда ее отец должен был умереть]. Она поставила трек на…"
+        },
+        {
+          "id": "the-foundation-wants-a-robot-army",
+          "title": "Истории Комитета по Этике: 5 причин, почему Фонду нужна армия роботов",
+          "url": "https://scpfoundation.net/the-foundation-wants-a-robot-army",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "Среда складывалась на редкость удачно. Это был единственный день на неделе, когда одна из них могла забронировать конференц-зал в \"Корделия Роял\", у второй была возможность слетать из своего штата на место встречи и обратно, не пропустив ни…"
+        },
+        {
+          "id": "scp-3448",
+          "title": "Полусмертие",
+          "url": "https://scpfoundation.net/scp-3448",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "SCP-3448 является средством связи, разработанным и созданным \"Проектом Даммерунг\". Благодаря использованию технологии МРТ, ускорителей частиц и некоторых аномальных ритуалов, SCP-3448 позволяет человеку умереть, при этом сохраняя контакт с…"
+        },
+        {
+          "id": "scp-3287",
+          "title": "Противозачаточный газ",
+          "url": "https://scpfoundation.net/scp-3287",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.1,
+          "desc": "SCP-3287 - это обозначение газообразного стерилизующего средства, созданного Фондом для сокращения и контроля популяций некоторых аномальных и неаномальных видов животных. С момента того, как SCP-3287 был создан для сдерживания распростране…"
+        },
+        {
+          "id": "populated-control-led",
+          "title": "Популяция под контролем(?)",
+          "url": "https://scpfoundation.net/populated-control-led",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "Трудно выкинуть из головы картину неба, которое на девяносто процентов скрыто летящими насекомыми. Даже если до того на своей работе вы сталкивались с очень неприятными вещами. Мы уже мало что могли сделать с тех пор, как мир свихнулся и лю…"
+        },
+        {
+          "id": "scp-3866",
+          "title": "Это в Азии от дадо",
+          "url": "https://scpfoundation.net/scp-3866",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "SCP-3866 -- небольшое количество немаркированных таблеток, которые были обнаружены во время рейда на нелицензированное медицинское учреждение в Палм-Бич, Флорида (для получения более подробных сведений см. Приложение 3866-1). Субъект, прогл…"
+        },
+        {
+          "id": "societal-census-programme",
+          "title": "Выдержки из отчета Организации Учета Сограждан о событии класса ΩK",
+          "url": "https://scpfoundation.net/societal-census-programme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "+++ Вступление С момента начала сценария класса ΩK (\"Конец Смерти\") Фонд начал кампанию по пересмотру и переоценке базового поведения человечества. Для проведения переоценки Фонд организовал очередную фирму-прикрытие под названием \"Организа…"
+        },
+        {
+          "id": "hypnotraline",
+          "title": "\"Гипнотралин\" (TR7K2/2UD9X/53GN8)",
+          "url": "https://scpfoundation.net/hypnotraline",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "||||~ TR7K2/2UD9X/53GN8|| ||~ Статус||В резерве|| ||~ Спрос||Отсутствует/Высокий|| ||~ Цена||5000000.00$/3711675.00£ за капсулу (65 мг)|| ||~ Доступность||Налажен канал поставок|| ||~ Обозначение||\"Гипнотралин\"|| ||~ Описание||Предмет предс…"
+        },
+        {
+          "id": "ii-tab-po-c-h20-qhs-prn-pain",
+          "title": "2 таб п/о с вод п/с при боли",
+          "url": "https://scpfoundation.net/ii-tab-po-c-h20-qhs-prn-pain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "-- Хочу сказать, у меня еще не было настолько молодого клиента, мистер Фендрель. -- И все еще нет. Мы уже встречались, Мардбери. -- Нет, что вы, в записях все точно. Мы никогда не встречались, мистер Фендрель. Возможно, я работал с вашим др…"
+        },
+        {
+          "id": "scp-4514",
+          "title": "Этой штукой и убить можно",
+          "url": "https://scpfoundation.net/scp-4514",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "SCP-4514 - обыкновенный выкидной нож. Аномальные свойства SCP-4514 проявляются в том случае, если с помощью объекта нанести человеку: * Ранение, приводящее к потере 40% объёма крови или более; * Значительные повреждения головного мозга; * З…"
+        },
+        {
+          "id": "do-you-remember-funerals",
+          "title": "Помнишь ли ты похороны?",
+          "url": "https://scpfoundation.net/do-you-remember-funerals",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "Примерно сто лет тому назад доктор Эмили Янг сидела за столом в своем кабинете в Зоне 2718 и молча стирала данные, пока мир снаружи кричал. Казалось уместным, что ушедший последним вернется первым. Уже около века никто не входил в Зону 2718…"
+        },
+        {
+          "id": "hundred-year-favor",
+          "title": "Столетний должок",
+          "url": "https://scpfoundation.net/hundred-year-favor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "-- В каком это смысле \"все удалить\"? -- Мне... мне сказали избавиться от всех улик. -- Это сущий идиотизм! И ты отлично это понимаешь! -- Джаред сжал кулаки. -- Мы же можем хоть что-то сделать? Ты ведь не собираешься просто взять и сдаться?…"
+        },
+        {
+          "id": "project-damn-oh-fuck",
+          "title": "Проект Даблерунг",
+          "url": "https://scpfoundation.net/project-damn-oh-fuck",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "До сегодняшнего дня O5-4 еще ни разу не получал сообщений во время собрания О5. Почувствовав вибрацию телефона, Четвертый вынул его и собрался было установить на режим \"Не беспокоить\", как его взгляд случайно зацепился за сообщение на экран…"
+        },
+        {
+          "id": "where-death-used-to-live",
+          "title": "Где раньше Смерть жила",
+          "url": "https://scpfoundation.net/where-death-used-to-live",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "УВЕДОМЛЕНИЕ ОТ АДМИНИСТРАЦИИ ПО АРХИВНО-ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ Данный файл не существует. Локация особой значимости: Где раньше Смерть жила (ЛОЗ-3448) Исследовательская группа: * Джойс Майклс (Д-1) * Джойс Майклс (Д-2) * Я (Д-3) * Джой…"
+        },
+        {
+          "id": "from-the-clutches-of-life",
+          "title": "Из когтей жизни",
+          "url": "https://scpfoundation.net/from-the-clutches-of-life",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "Женщина, сидящая на стуле возле больничной койки, смотрела, как грудная клетка ее отца мерно вздымается и опускается. Кардиомонитор пищал в ритм все той же песне Джеймса Бланта, которую она тихо мурлыкала про себя. Она надеялась, что сможет…"
+        },
+        {
+          "id": "new-buteo-series-mechanical-exoskeleton",
+          "title": "Руководство по установке от Андерсон Роботикс: Ваш новый механический экзоскелет серии \"Бутео\"!",
+          "url": "https://scpfoundation.net/new-buteo-series-mechanical-exoskeleton",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "++ Поздравляем с покупкой механического экзоскелета серии \"Бутео\"]! ++ Об установке, использовании и мерах предосторожности вам расскажет наш пернатый друг, Сокол Финн! И я расскажу вам все о вашей новой покупке -- механическом экзоскелете…"
+        },
+        {
+          "id": "eat-your-greenes",
+          "title": "Не имей мозги",
+          "url": "https://scpfoundation.net/eat-your-greenes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Военный транспортник Фонда прибыл в Зону 01. Из него высыпались несколько тяжеловооруженных солдат в бронежилетах, но их одноцветную черную униформу тут же затмил блеск розово-золотого платья той, кого они сопровождали. Она была высокой --…"
+        },
+        {
+          "id": "scp-4725",
+          "title": "Предложение Повстанцев",
+          "url": "https://scpfoundation.net/scp-4725",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3.4,
+          "desc": "SCP-4725 -- это модифицированный механический экзоскелет серии \"Бутео\"], на данный момент имеющий внешний вид бывшего сотрудника Комитета по этике и настоящего агента Повстанцев Хаоса Картера Корнелла. Внешне SCP-4725 почти полностью иденти…"
+        },
+        {
+          "id": "the-doctor-s-dilemma",
+          "title": "Дилемма доктора",
+          "url": "https://scpfoundation.net/the-doctor-s-dilemma",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.1,
+          "desc": "[SCP-3774] — механически видоизмененный подвид комара, созданный как часть ПРОЕКТА: НАЙТИ И ПРИХЛОПНУТЬ для осуществления тайной слежки и сбора информации о различных ЛПИ. Фонд свернул проект вскоре после внедрения прототипа речевого аппара…"
+        },
+        {
+          "id": "digging-up-the-past",
+          "title": "Копаясь в прошлом",
+          "url": "https://scpfoundation.net/digging-up-the-past",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Двери зала совещаний 12-го Отдела Биоисследований плавно открылись. Старшие исследователи и руководители проектов в оцепенении расходились по кабинетам. Кейн Пэйтос Кроу покинул зал, держа лапу на пульте управления своего электрического инв…"
+        },
+        {
+          "id": "who-wants-to-live-forever",
+          "title": "Кто хочет жить вечно?",
+          "url": "https://scpfoundation.net/who-wants-to-live-forever",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "У младшего исследователя Шепарда выдался тяжелый денек. Машина], накренившись, неподвижно стояла посреди мастерской, на центральном экране управления сердито мигали ярко-красные буквы: \"Оборонительные системы подготовлены!\" Круглое отверсти…"
+        },
+        {
+          "id": "the-hermit-death-and-the-devil",
+          "title": "Отшельник, Смерть и Дьявол",
+          "url": "https://scpfoundation.net/the-hermit-death-and-the-devil",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "Доктор К. Стафф, направлявшийся в операционную, широко зевнул и потер глаза, упорно пытаясь стряхнуть остатки сонливости. Было 03:30 утра, и он проклинал свое невезение за то, что оказался единственным ветеринаром по вызову. Очередной зевок…"
+        },
+        {
+          "id": "persephone-project",
+          "title": "Проект \"Персефона\"",
+          "url": "https://scpfoundation.net/persephone-project",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "Канон-хаб] » Хаб Конца Смерти] » Проект Персефона ----- Альто, Предоставленная вами информация вызывает беспокойство. Я разрешаю вам использовать мой допуск 5-го уровня, чтобы узнать, что именно он задумал, и убедиться, что подобного произо…"
+        },
+        {
+          "id": "omega-k-049",
+          "title": "SCP-049-ΩK",
+          "url": "https://scpfoundation.net/omega-k-049",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "SCP-049 -- гуманоидное существо ростом около 1.9 м, имеющее внешность средневекового \"чумного доктора\". Хотя объект покрыт тем, что выглядит как традиционный костюм «чумного доктора» Европы XV-XVI вв., этот материал фактически является част…"
+        },
+        {
+          "id": "the-existential-maw-of-despair-national-park",
+          "title": "Национальный парк «Бездна экзистенциального отчаяния»!",
+          "url": "https://scpfoundation.net/the-existential-maw-of-despair-national-park",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "По ту сторону звезд Второй Ночи, дальше Континуума Майклс и Запретной Линии, на одной из самых дальних точек Кол-Роадс находится разрыв. Разрыв не в ткани или бумаге, но в самой реальности; разрыв, возле которого законы физики и здравого см…"
+        },
+        {
+          "id": "memento-vivere",
+          "title": "Memento Vivere",
+          "url": "https://scpfoundation.net/memento-vivere",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "1977. -- …мы значительно продвинулись. Надеемся закончить всё за год, может за два, - гордо говорит полный уверенности в себе и в своей работе, Лин Марнесс], шагая по коридору. Секретари, посланные О5, шуршат следом за его почти двухметрово…"
+        },
+        {
+          "id": "what-you-are-in-the-light",
+          "title": "Кто ты на самом деле",
+          "url": "https://scpfoundation.net/what-you-are-in-the-light",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "Звездолёт A3-281 «Бесшумный ход» не был кораблём, предназначенным для комфорта, но люди всегда находят выход, если настроены решительно. Функциональное, незатейливое машинное отделение могло стать уютным местечком; тёплые пространства, успо…"
+        },
+        {
+          "id": "impossible-to-destroy-reptile",
+          "title": "Совершенно неуничтожимая рептилия",
+          "url": "https://scpfoundation.net/impossible-to-destroy-reptile",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.9,
+          "desc": "--SCP-682 должен быть уничтожен в ближайшее возможное время.-- ------ Ящеру хотелось умереть."
+        },
+        {
+          "id": "yuletide-joy",
+          "title": "Святочная радость",
+          "url": "https://scpfoundation.net/yuletide-joy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "-- Мамочка, смотри, мы следующие! -- Элизабет в нетерпении подпрыгивала на месте, сияя счастливой улыбкой. Подняв голову, она увидела, что мать смотрит на нее сверху вниз с напряженной улыбкой на губах. Через пару мгновений мама обернулась…"
+        },
+        {
+          "id": "there-s-a-hole-in-the-bottom-of-the-wishing-well",
+          "title": "Дыра на дне колодца желаний",
+          "url": "https://scpfoundation.net/there-s-a-hole-in-the-bottom-of-the-wishing-well",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.9,
+          "desc": "Вообрази, если угодно, дыру. Но это дыра не в земле. Земля где-то далеко, далеко внизу. Это дыра во всём том, что над землёй. Шесть сотен метров стали и бетона постепенно охватывают всё, что внизу, встают сплошной преградой между землёй и н…"
+        },
+        {
+          "id": "a-passed-away-pup",
+          "title": "Скончавшийся щенок",
+          "url": "https://scpfoundation.net/a-passed-away-pup",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "----- = 8:00 AM хей ник да как ты? да норм просто много думала о пинто ой сочувствую она была хорошей собакой, если тебе от этого лучше да была ее фотки были оч милыми помнищь ту фоточку где вы катаетесь на санках ты жаловалась что она упал…"
+        },
+        {
+          "id": "scp-2304",
+          "title": "\"Лайкни это, чтобы сдохнуть\"",
+          "url": "https://scpfoundation.net/scp-2304",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "SCP-2304 -- общее обозначение для не менее чем 14 изображений, имеющих разную степень признаков когнитивной угрозыfootnoteПрисвоены обозначения от SCP-2304-1 до -14./footnote. SCP-2304 принимают форму распространенных интернет-мемовfootnote…"
+        },
+        {
+          "id": "fifteenth-anonymous-donation",
+          "title": "Пятнадцатое Анонимное Пожертвование",
+          "url": "https://scpfoundation.net/fifteenth-anonymous-donation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "= Великодушно пожертвовано анонимным благотворителем путем массовой отправки. Характеристики: медицинский, сон, исследуется, простой и удобный, пожертвование Описание Ресурса: Ниже приведен отчет, написанный международным координатором Мура…"
+        },
+        {
+          "id": "freedom-forever",
+          "title": "Навеки свободны",
+          "url": "https://scpfoundation.net/freedom-forever",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "Все это умирает в темноте. В одиночестве. С криком. /module Его называли портным. Портным он, конечно же не был, а был ученым, причем ученым очень умным. Когда-то, было время, он стоял на переднем крае новых разработок. Был человеком силы,…"
+        },
+        {
+          "id": "scp-4935",
+          "title": "Послежизнь",
+          "url": "https://scpfoundation.net/scp-4935",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "SCP-4935 -- групповое обозначение двух феноменов. Первый, обозначенный как SCP-4935-α — темпоральная аномалия на территории природного заповедника Санкуру в Демократической Республике Конго. Аномалию можно определить визуально, поскольку по…"
+        },
+        {
+          "id": "until-death-do-us-part",
+          "title": "Пока смерть не разлучит нас",
+          "url": "https://scpfoundation.net/until-death-do-us-part",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "-- Я... я думаю, нам надо развестись. Элль ушам своим не поверила. Был только пятый день, как они с Джонатаном прилетели из Перу — там они провели пятидесятую годовщину свадьбы. Три дня они шли пешком до Мачу-Пикчу -- и увидели, что с их ме…"
+        },
+        {
+          "id": "scp-4206",
+          "title": "Взвешивание сердца",
+          "url": "https://scpfoundation.net/scp-4206",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "SCP-4206 — бальзамировочная маска, выполненная по образу и подобию древнеегипетского бога Анубиса. Маска выполнена из картонажаfootnoteОсобый материал, состоящий из нескольких слоев холста или папируса, покрытых гипсом/footnote и лишена отв…"
+        },
+        {
+          "id": "scp-4979",
+          "title": "В далеком темном будущем",
+          "url": "https://scpfoundation.net/scp-4979",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 3.6,
+          "desc": "SCP-4979 — коллективное обозначение для лишенных тел человеческих мозгов в количестве примерно 750 000. Каждый экземпляр SCP-4979 содержится в личной емкости объемом десять литров, изготовленной из медицинского пластика, заполненной непреры…"
+        },
+        {
+          "id": "scp-4322",
+          "title": "Бессонные сны",
+          "url": "https://scpfoundation.net/scp-4322",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "SCP-4322 -- это радиопередатчик с аномальными модификациями для передачи псионических волн вместо электромагнитного излучения. Он получает ввод по стандартному кабелю Ψ-5footnoteКоаксиальный кабель, разработанный для передачи аномальной мем…"
+        },
+        {
+          "id": "starlight-for-cannibals",
+          "title": "И людоедам светят звезды",
+          "url": "https://scpfoundation.net/starlight-for-cannibals",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "В мире, лишенном смерти], слова \"войти в роль\" обретают новое значение. В каком-то смысле играют роль теперь все. Мозг непрерывно меняет тела, каждое из которых -- новое и незнакомое, и такое количество нового опыта вынуждает запоминать, ка…"
+        },
+        {
+          "id": "gluttony-is-impossible",
+          "title": "Чревоугодие невозможно",
+          "url": "https://scpfoundation.net/gluttony-is-impossible",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "= ##red|Занавес. Свет. Прожектор.## = ##red|Аплодисменты -- и тишина. Занавес поднимается.## = ##red|Передвижная камера пробития времени Лабораторий Прометея.## = ##red|Женское тело, голое, бездушное -- клон.] Представление явно будет убойн…"
+        }
+      ],
       "supplementLinks": [],
       "description": "Смерть обещает, что все испытания, с которыми нам приходится сталкиваться в жизни, рано или поздно подойдут к концу. Но что, если однажды она перестанет выполнять свои обещания? Что, если испытания все никак не закончатся? У нас не осталось бы выбора, кроме как продолжить преодолевать их. Всегда."
     },
@@ -2007,7 +2610,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -2016,14 +2619,128 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-602056b2e9c763688be13be88640c8e5ee0bdd91eaa460535269cffe4611d840",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "long-live-the-king",
+          "title": "Да здравствует Кинг",
+          "url": "https://scpfoundation.net/long-live-the-king",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "[!-- Long Live The King by Roget --] Меня зовут доктор Кинг, и знаете, что я ненавижу сильнее всего того, что было создано руками человечества? Яблочные семечки. Они всегда отравляли моё жалкое существование. Сраные яблочные семечки, мать и…"
+        },
+        {
+          "id": "my-brother-the-ape",
+          "title": "Брат мой, обезьяна",
+          "url": "https://scpfoundation.net/my-brother-the-ape",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "Обстановка: заваленный барахлом кабинет, обитель одного из самых умных и опытных сотрудников Фонда. Не слишком большой или навороченный, скорее, просто рабочее место. Мы не будем упоминать имя хозяина кабинета. Историю об этом парне мы расс…"
+        },
+        {
+          "id": "send-in-the-clowns",
+          "title": "Запускайте клоунов!",
+          "url": "https://scpfoundation.net/send-in-the-clowns",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.0,
+          "desc": "Агент Уитакер проснулся и застонал. У него было ощущение адского похмелья; в голове стоял ужасный шум, похожий на тот мерзкий сигнал предупреждения Национальной Метеослужбы, а лицо было… словно в масле. Он проморгался и внезапно осознал, чт…"
+        },
+        {
+          "id": "in-gods-name",
+          "title": "Ради всего святого",
+          "url": "https://scpfoundation.net/in-gods-name",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2.5,
+          "desc": "Икарус Шарп, ловкий шутник и мастер подпольных интриг, вошел и выстрелил Альто Клефу прямо в его глупое лицо. Он (решив на этот раз быть Мэтью) широко улыбался, пока кровь хлестала из сквозной раны в голове Клефа, орошая стену за его спиной…"
+        },
+        {
+          "id": "no-one-else-will-protect-us",
+          "title": "Никто другой нас не защитит",
+          "url": "https://scpfoundation.net/no-one-else-will-protect-us",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Меня зовут Администратор. Не знаю, кем я был, пока всё это не ... случилось? Или переменилось? Называйте как хотите, в итоге всё едино. Изменилась сама история, если такое вообще возможно. Мы пытались вернуться в прошлое, вычистить из истор…"
+        },
+        {
+          "id": "overview-of-mtf-psi-7-home-improvement",
+          "title": "Обзор МОГ Пси-7 \"Большой ремонт\"",
+          "url": "https://scpfoundation.net/overview-of-mtf-psi-7-home-improvement",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.8,
+          "desc": "Мобильная Оперативная Группа Пси-7 специализируется на скрытном расследовании, содержании и/или сносе аномальных или попавших под таковое воздействие строений, в особенности - жилых домов в населённых районах. В то время, как основное занят…"
+        },
+        {
+          "id": "the-czar-cometh",
+          "title": "Явление царя народу",
+          "url": "https://scpfoundation.net/the-czar-cometh",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2.8,
+          "desc": "По большой, ничем не примечательной комнате без дела слонялась огромная толпа. Данное помещение выглядело так, как будто в нем совсем недавно закончили ремонт, хотя, если повнимательнее осмотреть углы, можно было наткнуться на обгоревшие ко…"
+        },
+        {
+          "id": "private-hell",
+          "title": "Персональный ад",
+          "url": "https://scpfoundation.net/private-hell",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "В тот момент, когда Кондраки взорвал наполненный монахинями автобус, чтобы произвести захват летающих огнедышащих моржей, у доктора Альто Клефа зародилось подозрение, что что-то идет не так. Он понимал, что это должно было быть круто. И это…"
+        },
+        {
+          "id": "waffling-about",
+          "title": "Вафли",
+          "url": "https://scpfoundation.net/waffling-about",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.7,
+          "desc": "Будильник решил, что пора прокричать Клефу прямо в лицо, и сон разлетелся вдребезги. Клеф продрал глаза и стал шарить непослушной рукой, чтобы выключить звонок. Еще один день, снова вставать в пять утра, снова бороться с собой, чтобы застав…"
+        },
+        {
+          "id": "funfiction",
+          "title": "Funfiction",
+          "url": "https://scpfoundation.net/funfiction",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.7,
+          "desc": "O5-7 приехала в разрушенный блок содержания на самый нижний подземный уровень Зоны 19. Директор Брайт ждал ее вместе со специалистом по содержанию. – Рада видеть вас снова, Джек, – сказала смотритель, – Извините за ожидание, пришлось добира…"
+        },
+        {
+          "id": "date-night",
+          "title": "Романтический вечер",
+          "url": "https://scpfoundation.net/date-night",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Альварез постучался в незапертую дверь и вошёл в кабинет. - Вы меня искали, сэр? Доктор Гирс поднял взгляд от документов на столе и уставился на молодого охранника. - Да. Я весь вечер пытаюсь связаться с доктором Клефом, но он не отвечает н…"
+        },
+        {
+          "id": "dr-cimmerian-is-no-longer-allowed-to-use-temporal-anomalies",
+          "title": "Доктору Брайту запрещается использовать временные аномалии, чтобы перенестись назад во времени и убить Гитлера",
+          "url": "https://scpfoundation.net/dr-cimmerian-is-no-longer-allowed-to-use-temporal-anomalies",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "Доктор Брайт, одетый в униформу СС и вооружённый пистолетом Walther P38, материализовался в бункере Гитлера. Он достал оружие из кобуры и подошёл к стальной двери. - Хальт ! - прозвучал выкрик за спиной. Он развернулся и поднял пистолет. Пе…"
+        },
+        {
+          "id": "scp-6747",
+          "title": "ТЕОРИЯ ХАОСА",
+          "url": "https://scpfoundation.net/scp-6747",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "SCP-6747 -- это мезохудожественное введение: теоретический процесс, с помощью которого возможно воскрешение умерших сотрудников. Данный процесс обуславливает необходимость бессрочного поддержания Пузыря причинности-6747 (ПП-6747) -- карманн…"
+        }
+      ],
       "supplementLinks": [],
       "description": "Все мы смеялись, но теперь не до смеха."
     },
@@ -2222,7 +2939,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -2231,12 +2948,19 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-bdbc9a64b14f43c5e52b75e38c5040e70f8e9669224e000e17428ac7547b903c"
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
       "primaryArticles": [
+        {
+          "id": "the-birthday",
+          "title": "Измышления",
+          "url": "https://scpfoundation.net/the-birthday",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.4,
+          "desc": "Я помню своё рождение. Вспышки жизни были и до него. Первым было Я. Вторым - Группа. Бой и Бегство появились одновременно. До дня моего рождения у меня было сознание, но сознания не было. Моё рождение произошло на краю джунглей, чуть поодал…"
+        },
         {
           "id": "the-tale-of-the-library",
           "title": "Предание о Библиотеке",
@@ -2246,19 +2970,19 @@
           "contentKind": "tale",
           "os": 5.0,
           "desc": "Она началась со слова. Со временем она разрастётся, обретёт величие, иное качество. Она окутает реальность, станет сердцевиной всех вселенных. Она соединит миры с мирами, в её залах объединятся люди. Но началась она со слова, и с человека.…"
+        },
+        {
+          "id": "there-was-one-there-was-not-one",
+          "title": "Было и не было",
+          "url": "https://scpfoundation.net/there-was-one-there-was-not-one",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "- И что стало с мальчиком? - дети, сидящие вокруг костра, ловили каждое слово своего старшего брата. - Само собой, его съел Лев, Крадущийся в Ночи. Двум пастям достались руки, двум - ноги, одна сожрала голову, а тело разорвали пополам шеста…"
         }
       ],
       "supplementLinks": [],
-      "description": "На краю разума проглядывает нечто, что молится за смерть по определению. Оно отступило на какое-то время, и мир стал познаваем, исчезли белые пятна, перестали появляться демоны. Следите за ним там, где знание лжёт, стремящимся разрушить всё, что известно.",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Материалы",
-          "articleIDs": [
-            "the-tale-of-the-library"
-          ]
-        }
-      ]
+      "description": "На краю разума проглядывает нечто, что молится за смерть по определению. Оно отступило на какое-то время, и мир стал познаваем, исчезли белые пятна, перестали появляться демоны. Следите за ним там, где знание лжёт, стремящимся разрушить всё, что известно."
     },
     {
       "id": "scp-ru:collection:canon:the-s-c-plastics-hub",
@@ -2666,7 +3390,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -2675,14 +3399,74 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-3c068629800c552fdf94cd29cf3e9693d61b3743177c98f9ae7949046b22a810",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "a-canticle-for-bright",
+          "title": "Страсти по Брайту",
+          "url": "https://scpfoundation.net/a-canticle-for-bright",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.5,
+          "desc": "Брат Жак сидел в одиночестве на скамейке в большом зале Cобора Наблюдателей. Солнце, тускло просвечивавшее сквозь витражи над ним, было не в силах разогнать зимний холод. Святые Доктора толпились в своих торжественных белых одеяниях, готовя…"
+        },
+        {
+          "id": "by-one-iota",
+          "title": "Ни на йоту",
+          "url": "https://scpfoundation.net/by-one-iota",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Глубоко в катакомбах под Собором Наблюдателей, в конце длинного коридора размещалась объёмистая и изолированная камера. Историки Святого Фонда могли лишь догадываться, какой цели она могла служила до Великого Нарушения, - некоторые утвержда…"
+        },
+        {
+          "id": "quid-est-non-scitum",
+          "title": "Quid Non Scitum Est",
+          "url": "https://scpfoundation.net/quid-est-non-scitum",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 1.8,
+          "desc": "Бывший Большой Зал Развалин Девятнадцатой в первый раз за этот год был целиком заполнен, на что Кардинал Фрэйкс взирал с немалой долей гордости. Здесь были почтенные гости из каждого монастыря, от дьякона Коллингса (из Храма Алого Озера) до…"
+        },
+        {
+          "id": "though-i-walk-through-the-valley",
+          "title": "Если я пойду и долиною...",
+          "url": "https://scpfoundation.net/though-i-walk-through-the-valley",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.0,
+          "desc": "20 ярнаря 708 Это самая лютая зима на моём веку. Я боюсь, что не успею вернуться до того, как перевал завалит снегом. Всё ещё можно повернуть назад - Редмонт в четырёх днях пути за спиной. Но если я поверну, то не увижу Рейчел и Эйба до отт…"
+        },
+        {
+          "id": "placere-non-trinus",
+          "title": "Placere Non Trinus",
+          "url": "https://scpfoundation.net/placere-non-trinus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Сэр Андо, собиравшийся покинуть монастырь, запахнул плащ. Над ним и конём, которого он седлал, возвышалось огромное здание из крупного камня. Он поспешно бросил свиток и припасы в суму, притороченную к седлу скакуна и вывел его из конюшен,…"
+        },
+        {
+          "id": "deus-vult",
+          "title": "Deus Vult",
+          "url": "https://scpfoundation.net/deus-vult",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "Полная луна светила над плотным пологом девственного леса так ярко, что лучи бледного света достигали земли. Лёгкий летний ветерок качал верхушки деревьев, согревая существ на поляне у озера. Сотни животных собрались в полукруг у высокой ск…"
+        },
+        {
+          "id": "indwelling-of-bright",
+          "title": "Пребывание Брайта",
+          "url": "https://scpfoundation.net/indwelling-of-bright",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.5,
+          "desc": "За Монастырями Святого Фонда и городом простолюдинов, деревни Расходных сформировали остатки цивилизованной земли. Окруженные стеной и гарнизонами управляемыми Стражами Омега, мужчины и женщины из числа Расходных рождались и вырастали внутр…"
+        }
+      ],
       "supplementLinks": [],
       "description": "Шестьсот лет назад мир закончился. Сегодня только одна группа хранит тайны древнего мира до того времени, когда они смогут быть постигнуты снова — священники Святого Фонда."
     },
@@ -5049,7 +5833,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -5058,12 +5842,91 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-a4c9ce2cfaa8fd57dd7711f76495ee54f4338c817d70845fbf0279825cfbcc0c"
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
       "primaryArticles": [
+        {
+          "id": "ripped-from-the-headlines",
+          "title": "Из последних известий",
+          "url": "https://scpfoundation.net/ripped-from-the-headlines",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "Я слушал телепередачу вполуха, усаживая Хелен на стул. {{\"...снесены, не осталось ничего кроме огромной дыры. Ураганы, отмеченные в этом регионе, на самом деле представляют собой результат движения воздуха и воды, устремившихся в...\"}} - Да…"
+        },
+        {
+          "id": "piercing-the-veil",
+          "title": "Конец маскараду",
+          "url": "https://scpfoundation.net/piercing-the-veil",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "##white| WAK3UPSH33PL3 ## 04/12/18 (Чт) 12:06:22 #12766349 ОЧНИСЬ, БЫДЛО ЭЛ ГОР - МАРИОНЕТКА ПРИШЕЛЬЦЕВ ЭЛ ГОР - МАРИОНЕТКА ПРИШЕЛЬЦЕВ ЭЛ ГОР - МАРИОНЕТКА ПРИШЕЛЬЦЕВ ЭЛ ГОР - МАРИОНЕТКА ПРИШЕЛЬЦЕВ ЭЛ ГОР - МАРИОНЕТКА ПРИШЕЛЬЦЕВ ЭЛ ГОР - МАР…"
+        },
+        {
+          "id": "the-executions-of-doctor-bright",
+          "title": "Казни доктора Брайта",
+          "url": "https://scpfoundation.net/the-executions-of-doctor-bright",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Брайт понял, что они влипли, когда по обе стороны их фургона выехали грузовики. На их бортах было граффити \"حزب الخلافة\". Когда же бородачи, сидевшие в кузовах, направили на них стволы автоматов, Брайт понял, что они влипли по-крупному . Ст…"
+        },
+        {
+          "id": "research-notes-of-rj-tellar",
+          "title": "Расследование журналиста Теллара",
+          "url": "https://scpfoundation.net/research-notes-of-rj-tellar",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "Так как я искренне желаю Профессору Награда-Машем-Рукой-Так-Горд-Достижением-Что-Буду-Хвастаться-До-Самой-Смерти подавиться блевотиной, дурацкие мои привычки остаются при мне. Ручка и бумага помогают мне думать, вот и записываю все это говн…"
+        },
+        {
+          "id": "joseon",
+          "title": "Чосон",
+          "url": "https://scpfoundation.net/joseon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.7,
+          "desc": "Ын Ми на ходу с трудом подавила зевок, молчаливо тоскуя по кровати. Великий Вождь (уже второй Великий Вождь, что само по себе было странно, учитывая, что предыдущий твердо намеревался жить вечно) был настолько милостив, что обеспечил народу…"
+        },
+        {
+          "id": "the-truth-is-out-there",
+          "title": "Истина где-то рядом",
+          "url": "https://scpfoundation.net/the-truth-is-out-there",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.7,
+          "desc": "У Гилберта Бухса была маленькая игра, в которую он играл свободными вечерами: он садился перед компьютером, включал записи шоу \"Разоблачение Нового Мирового Порядка\", открывал бутылку бурбона и наливал себе всякий раз, как угадывал ответ. С…"
+        },
+        {
+          "id": "ethical",
+          "title": "Этично?",
+          "url": "https://scpfoundation.net/ethical",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "- Представьтесь, пожалуйста, для протокола. - Усиленный микрофоном голос разнёсся по огромному пространству. - Эм, доктор, гм, доктор Роберт Фелдон, сэр, - робко произнёс он в микрофон. Робость он проявлял впервые за всю сознательную жизнь.…"
+        },
+        {
+          "id": "six-letters-addressed",
+          "title": "Шесть писем, адресованных Фонду (и одно письмо домой)",
+          "url": "https://scpfoundation.net/six-letters-addressed",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "Найдено в камере содержания SCP-2118. Дорогая Карли], Я увидела тебя в газете. Когда выпускали на свободу все неопасные --SCP-- --цы-- аномалии, журналисты были рядом, делали снимки. Есть одно __прекрасное__ фото с тобой, ты посередине боль…"
+        },
+        {
+          "id": "a-lesson-in-power",
+          "title": "Урок, посвящённый власти",
+          "url": "https://scpfoundation.net/a-lesson-in-power",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "Не отнимая правой ладони от холодной стали, доктор Ковальски нащупывала свой путь во тьме. Осторожными, шаркающими шагами. Её глаза закрывала маска для сна, но Ковальски жалела, что не прихватила с собой противогаз. Никто ведь не предупреди…"
+        },
         {
           "id": "live-air",
           "title": "Прямой эфир",
@@ -5073,6 +5936,42 @@
           "contentKind": "tale",
           "os": 4.9,
           "desc": "Разглядев через ветровое стекло бронированного джипа ограду Зоны, Мальбург обреченно вздохнул и откинулся на сидение. Неприличные надписи метрового размера вкупе с иллюстрациями к ним никуда не исчезли и на этот раз. Помнится, за то, чтобы…"
+        },
+        {
+          "id": "top-5-colleges",
+          "title": "Топ-5 колледжей для изучения темной магии! Первое место вас ШОКИРУЕТ!",
+          "url": "https://scpfoundation.net/top-5-colleges",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "После грандиозного провала Фонда SCP мир наконец узнал правду о чёрной магии и тех мемах, которые скрывали от нас десятилетиями. И если вы хоть немного похожи на нас, вам уже не терпится погрузиться в мир невероятных, пугающих и пока непоня…"
+        },
+        {
+          "id": "scp-6101",
+          "title": "Самый сильный SCP-объект",
+          "url": "https://scpfoundation.net/scp-6101",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 2.4,
+          "desc": "SCP-6101 – это самый сильный SCP-объект. Его имя – Итан Проспер. На момент создания досье его возраст составляет девять лет. Полный спектр возможностей SCP-6101 неизвестен, однако он продемонстрировал такие умения, как полёт, суперсила, нев…"
+        },
+        {
+          "id": "main-page-wikipedia",
+          "title": "Заглавная страница — Википедия",
+          "url": "https://scpfoundation.net/main-page-wikipedia",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "lines 1 Добро пожаловать в [# Википедию], [# свободную энциклопедию], которую [# может редактировать каждый]. Сейчас в Википедии [# 4 259 082 статей] на [# русском языке] Избранная статья Реактор Штейн-III в состоянии покоя [# Реактор Штейн…"
+        },
+        {
+          "id": "fragment-of-the-new-world",
+          "title": "Фрагменты нового мира",
+          "url": "https://scpfoundation.net/fragment-of-the-new-world",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.9,
+          "desc": "toc + Журнал \"Вопросы религии\" №3 от 2016 г, с. 13-14. Фрагмент статьи \"Новые формы религиозности или Атеизм в мире чудес\", автор - Дэвид Мур. ...и перед нами встаёт вопрос: во что верить теперь? Ситуация кажется парадоксальной: если ранее…"
         },
         {
           "id": "riders-of-justice",
@@ -5086,17 +5985,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Тайное стало явным. Как Фонд выживет в мире, где секретности больше нет?",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Материалы",
-          "articleIDs": [
-            "live-air",
-            "riders-of-justice"
-          ]
-        }
-      ]
+      "description": "Тайное стало явным. Как Фонд выживет в мире, где секретности больше нет?"
     },
     {
       "id": "scp-ru:collection:canon:competitive-eschatology-hub",
@@ -5118,7 +6007,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -5127,14 +6016,227 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-958ed52bd4d2525a89471facac6da2cbe05bc067bb575a459e9bee151ae16f85",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "apakht",
+          "title": "Апахт",
+          "url": "https://scpfoundation.net/apakht",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "На одном из подземных уровней Зоны 10 доктор Яра Мирски подняла затянутой в перчатку рукой драгоценный камень и посмотрела его на просвет. Этот жест она уже делала не одну сотню раз. Её восхищали чёрные грани, по которым растекался белый уз…"
+        },
+        {
+          "id": "the-gate-opens",
+          "title": "Врата открыты",
+          "url": "https://scpfoundation.net/the-gate-opens",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "В одной из комнат Зоны 17 в Своем человеческом воплощении пробудился Яхве, зная, что настал час. В мгновение ока Он переместил себя в Зону 0. Когда Он появился в пункте управления, полусонные люди вскочили с мест. Мельком взглянув на их лиц…"
+        },
+        {
+          "id": "revelation",
+          "title": "Откровение",
+          "url": "https://scpfoundation.net/revelation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.5,
+          "desc": "Яхве вошел в Долину в изумлении, какого никогда раньше не испытывал. В изумлении, какое нельзя было выразить словами. А Ему всегда хватало слов. Долина -- Его Долина -- кишела духами, крылатыми созданиями, ползучими гадами, чудовищами, людь…"
+        },
+        {
+          "id": "stormfront",
+          "title": "Грозовой фронт",
+          "url": "https://scpfoundation.net/stormfront",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Незваный гость является ей, когда она стоит на коленях в зарослях колышущейся красной травы высотой человеку по пояс, заполонившей пологий склон. Ветер налетает на ее полевой блокнот, переворачивая страницы. По траве расходятся концентричес…"
+        },
+        {
+          "id": "awakenings",
+          "title": "Пробуждающиеся",
+          "url": "https://scpfoundation.net/awakenings",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "Они пришли извне, с небес, из глубин земли. Они пришли из звездных ядер и из-за пелены дождя. Они пришли с изведанных земель и из тайников древности. Те гиганты, что вдыхали туманности, и те крохи, которых не заботила жизнь на земле дальше…"
+        },
+        {
+          "id": "the-white-horse",
+          "title": "Конь белый (Победительница в золотом венце)",
+          "url": "https://scpfoundation.net/the-white-horse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Яхве шёл через пшеничное поле в юго-западной части Изреельской долины, и был Он взволнован. Он не стал задерживаться в другой Долине, \"Его\" Долине. Там было слишком беспокойно. В этой пьесе роли у Него не было, и таких ощущений Он припомнит…"
+        },
+        {
+          "id": "the-red-horse",
+          "title": "Конь красный (Ироническая метафора)",
+          "url": "https://scpfoundation.net/the-red-horse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "И вышел второй конь, рыжий; и сидящему на нём дано взять мир с земли, чтобы убивали друг друга; и дан ему большой меч. ----------- В Зоне 12 ревели клаксоны. Экраны по всему зданию мерцали, полные статических помех. Телевизоры, мобильные те…"
+        },
+        {
+          "id": "internal-memo-regarding-a-theft",
+          "title": "Интерлюдия: служебная записка касательно кражи",
+          "url": "https://scpfoundation.net/internal-memo-regarding-a-theft",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "Прилагаю запрошенные вами документы. Протокол вторжения в Зону 62 ██.██.████. ██.██.██, 01:34: Неизвестная сущность появляется снаружи главного входа Зоны 62. Охрана в панике отступает. ██.██.██, 01:40: Неизвестная сущность открывает двери…"
+        },
+        {
+          "id": "the-black-horse",
+          "title": "Конь чёрный (Кишащее море)",
+          "url": "https://scpfoundation.net/the-black-horse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2.8,
+          "desc": "Я взглянул, и вот, конь вороной, и на нём всадник, имеющий меру в руке своей. И слышал я голос посреди четырёх животных, говорящий: хиникс пшеницы за динарий, и три хиникса ячменя за динарий; елея же и вина не повреждай. --------------- --…"
+        },
+        {
+          "id": "last-words-from-svalbard",
+          "title": "Интерлюдия: Последнее сообщение со Свальбарда",
+          "url": "https://scpfoundation.net/last-words-from-svalbard",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Они отвернулись от взрыва, затем взглянули обратно, чтобы увидеть матовый гриб, быстро выраставший из остатков Зоны. Трое пассажиров тесного основного отсека успели заметить аморфную чёрную массу на пляже, прежде чем всё заволокло дымом. Эл…"
+        },
+        {
+          "id": "the-pale-horse",
+          "title": "Конь бледный (Непослушные дети)",
+          "url": "https://scpfoundation.net/the-pale-horse",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "И я взглянул, и вот, конь бледный, и на нём всадник, имя которому \"смерть\"; и ад следовал за ним; и дана ему власть над четвёртою частью земли - умерщвлять мечом и голодом, мором и земными зверями. ------------ Живое создание забилось в сво…"
+        },
+        {
+          "id": "the-bloody-autumn",
+          "title": "Кровавая Осень",
+          "url": "https://scpfoundation.net/the-bloody-autumn",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "Агента Мэтьюза разбудила оружейная пальба. Затем раздался смех. Холодный, нечеловеческий смех, заполнивший воздух. Мэтьюз уснул прямо на посту, в радиовышке в нескольких ярдах от основного строения. Вспомогательная Зона 097, размещённая воз…"
+        },
+        {
+          "id": "stirrings",
+          "title": "Волнения",
+          "url": "https://scpfoundation.net/stirrings",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Фредди Джонс бродил по болотистой почве с ружьём в одной руке и расщеплённой палкой в другой. Он создавал достаточно шума, чтобы распугать любую дичь в радиусе полумили, но ему было на это абсолютно начхать: Солнце сияло в сыром голубом неб…"
+        },
+        {
+          "id": "interlude-new-toys",
+          "title": "Интерлюдия: Новые Игрушки",
+          "url": "https://scpfoundation.net/interlude-new-toys",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Это была тёмная и кровавая ночь. Подлинный парад ужаса под предводительством неуклюжего, смеющегося, поющего дьявола, играющего на флейте из кости, ворвался в маленький городок на Среднем Западе. Теперь, на рассвете, дьявол и его цирк смерт…"
+        },
+        {
+          "id": "ganymede",
+          "title": "Ганимед",
+          "url": "https://scpfoundation.net/ganymede",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Эрихтоний родил Троса, царя троянцев, и было у Троса три славных сына: Ил, Ассарак и Ганимед, который был прекраснейшим из смертных; потому боги унесли его, чтобы служил он виночерпием Юпитера, за его красоту позволив ему жить среди бессмер…"
+        },
+        {
+          "id": "tenebrae",
+          "title": "Заутреня",
+          "url": "https://scpfoundation.net/tenebrae",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Все началось, когда он вспомнил свое имя. С этого момента все части головоломки стали складываться вместе. Все-таки в этом проблема амнезиаков. Отголоски воспоминаний иногда могут пронестись в голове. И запахи хуже всего. На пикнике в Зоне…"
+        },
+        {
+          "id": "now-this",
+          "title": "А теперь... вот что",
+          "url": "https://scpfoundation.net/now-this",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Возможное будущее, три недели от нашего времени… ЭТО - СРОЧНАЯ СТЕНОГРАММА. ТЕКСТ ДОКУМЕНТА МОЖЕТ БЫТЬ НЕ ОКОНЧАТЕЛЬНЫМ И МОЖЕТ БЫТЬ ДОПОЛНЕН Ранди Кэй, ведущий CNN: С вами программа \"Ранний Старт\", выпуск перед выходными, мировая штаб-квар…"
+        },
+        {
+          "id": "intheendmonkeybusiness",
+          "title": "Под конец: История с обезьянами",
+          "url": "https://scpfoundation.net/intheendmonkeybusiness",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 2.5,
+          "desc": "В офисе, на полке, в запертой клетке сидят три маленькие обезьянки. Они годами сидели там, не двигаясь, только делая свою работу. Теперь… Теперь что-то изменилось. Они изменились. Снова могут двигаться, говорить, как и в прежние времена… Пе…"
+        },
+        {
+          "id": "intheendelite",
+          "title": "Под конец: Элита",
+          "url": "https://scpfoundation.net/intheendelite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Боль. Боль и огонь, а после - покой. Впервые за долгое время она вспомнила, что такое покой. Был свет - такой красивый и спокойный, что она плыла к нему. Ее родители, правда, ее родители будут скучать по ней, не так ли? Она слышала их, и их…"
+        },
+        {
+          "id": "intheendfinally",
+          "title": "Под конец: Европа",
+          "url": "https://scpfoundation.net/intheendfinally",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "-- Уже почти пора, -- Аллен держал руку на кнопке. Его взгляд был прикован к монитору. Он сидел в кабине один, как и неизвестное множество его соотечественников. Система была разработана таким образом, что невозможно было определить, кто уп…"
+        },
+        {
+          "id": "intheendrawhide",
+          "title": "Под конец: Сыромять",
+          "url": "https://scpfoundation.net/intheendrawhide",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "Ал внезапно проснулся -- сам не зная почему. Что-то, что-то там, на краю сознания ... Очередной прорыв? Ему они снились так часто. Он винил в этом объект, хотя Роберт сказал бы, что всё дело в его врожденой способности. Ал теперь не был в э…"
+        },
+        {
+          "id": "sunset",
+          "title": "Закат",
+          "url": "https://scpfoundation.net/sunset",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.5,
+          "desc": "Жар. Их слишком много, СЛИШКОМ МНОГО! Жар немыслимый. Без пламени, которого здесь не может быть, но жар не имеющий себе равных. Переливающаяся плазма и жгучие пары исторгаются с поверхности великой желтой сферы. Вот он! Вот он! Он движется!…"
+        },
+        {
+          "id": "when-moses-goes-wrong",
+          "title": "Когда Моисей бывает неправ",
+          "url": "https://scpfoundation.net/when-moses-goes-wrong",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Дэвид проснулся с сильной головной болью. Похоже, он в очередной раз каким-то образом заснул в Библиотеке, или же Гид шел за ним до самого дома. Стол, стул и множество стопок книг, простирающихся от пола до потолка, указывали на первый вари…"
+        },
+        {
+          "id": "fire-and-brimstone",
+          "title": "Пламя и сера",
+          "url": "https://scpfoundation.net/fire-and-brimstone",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Замок был открыт, и вместе с ним пробудились Губители Мира, каждый из которых принес свой Армагеддон. Некоторые пожелали очистить мир огнем, немногие — льдом, а другие — тьмой, но в конце концов все это приведет к порабощению или истреблени…"
+        }
+      ],
       "supplementLinks": [],
       "description": "Настал конец света. Но не по одному сценарию, а по всем сразу, и сценарии состязаются между собой. А где-то посередине Фонд — и человечество."
     },
@@ -5896,7 +6998,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -5905,14 +7007,83 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-16b642af64ca658dd73e93dfe57c942b81aeb86e35363e09060332c0f4e258bc",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "voices-unassailable",
+          "title": "Неопровержимое мнение",
+          "url": "https://scpfoundation.net/voices-unassailable",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.8,
+          "desc": "Здесь то, что вы должны знать о Холодной Войне. ------ 19 августа 1949: Испытание первой советской атомной бомбы. Столкнувшись с утратой ядерной монополии и стремясь сохранить американское технологическое преимущество, президент Трумэн нача…"
+        },
+        {
+          "id": "in-the-shadow-of-a-high-wall",
+          "title": "В тени высокой стены",
+          "url": "https://scpfoundation.net/in-the-shadow-of-a-high-wall",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.8,
+          "desc": "++ 16 июня 1963 года группа агентов Фонда в Западном Берлине попыталась и не смогла восстановить содержание бежавшего SCP-2030. Следующий текст является выдержкой из опроса главы группы Луиса Франклина. Интервью взято 18 июня 1963 года Марс…"
+        },
+        {
+          "id": "audio-of-war",
+          "title": "Звуки войны",
+          "url": "https://scpfoundation.net/audio-of-war",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "Аудиотранскрипция 1035 Добро пожаловать в Зону 76. Именно здесь, в глубине египетской пустыни, мы содержим много аномального конфиската, изъятого у двух сверхдержав, сцепившихся между собой, и сюда вас, новичков, отправляют, чтобы изучать э…"
+        },
+        {
+          "id": "what-the-spybird-saw",
+          "title": "Что видно с самолёта-разведчика",
+          "url": "https://scpfoundation.net/what-the-spybird-saw",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.2,
+          "desc": "СОВЕРШЕННО СЕКРЕТНО (PILLAR GARDEN) -- НЕ КОПИРОВАТЬ -- НЕ ПРОНОСИТЬ НА БОРТ ВОЗДУШНОГО СУДНА ОТЧЁТ ОБ ИСПОЛНЕНИИ ПОЛЁТНОГО ЗАДАНИЯ - КАПИТАН АВИАЦИИ ██████████████████████ ------ {{Дата получения отчёта: 29 ЯНВАРЯ 1963"
+        },
+        {
+          "id": "they-will-leave-us-with-a-shaken-earth",
+          "title": "Нам останется лишь потрясенный мир",
+          "url": "https://scpfoundation.net/they-will-leave-us-with-a-shaken-earth",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.3,
+          "desc": "|| Из статьи Бернарда Фолла «Новые технологии и проверенные стратегии во Вьетнаме», опубликованной 28-го декабря 1966 года. || Отчаянное сражение разгорелось на дальней стороне площади Макнамары, стоило мне присесть, намереваясь взять интер…"
+        },
+        {
+          "id": "the-end-of-history",
+          "title": "Конец Истории",
+          "url": "https://scpfoundation.net/the-end-of-history",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "Девятое ноября 1989 года. Восточный Берлин. Так он называется в последний раз. На пресс-конференции, посвящённой либерализации правил выезда и въезда из Германской Демократической Республики, выступавший без должной подготовки пресс-секрета…"
+        },
+        {
+          "id": "scp-2350",
+          "title": "Из сознания Малинальшочи",
+          "url": "https://scpfoundation.net/scp-2350",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.5,
+          "desc": "SCP-2350 — это военный звуковой мемагент, внедряющий в разум пострадавшего идею о преследующем и атакующем его рое комаров. Объект ни оказывает никакого воздействия на личностей, страдающих глухотой. Каждые 12 секунд слухового восприятия ме…"
+        },
+        {
+          "id": "scp-2664",
+          "title": "Отсечка",
+          "url": "https://scpfoundation.net/scp-2664",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "os": 4.6,
+          "desc": "SCP-2664 - характеристическое псионное оружие, разработанное Отделом \"П\" ГРУ (организация, занимавшаяся в СССР исследованием аномальных вопросов) в период с 1950 по 1961 год под названием \"Проект \"Отсечка\". Согласно приказу Генерального Сек…"
+        }
+      ],
       "supplementLinks": [],
       "description": "Из-за охватившего мир столкновения коммунизма и капитализма самая скрытная организация уходит глубже в подполье. Что нужно сделать, чтобы остаться нейтральным перед правительством, которое видит в аномалиях всего лишь ещё один способ увеличить своё влияние? Что сделают агенты, когда преданность партии сталкивается с долгом перед человечеством? И что сделает Фонд, чтобы избежать мировой войны?"
     },
@@ -5936,7 +7107,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -5945,14 +7116,92 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "ru_tag.json",
-        "emptySectionTitle": "Материалы",
-        "structureHash": "sha256-589d22a489b2eafac0fb8bf590d53c9746552c544aa8682a5c14a034cebfd7b3",
-        "verifiedEmpty": true,
-        "allowEmpty": true
+        "mode": "officialHubLinks",
+        "verificationPolicy": "browser-required"
       },
-      "primaryArticles": [],
+      "primaryArticles": [
+        {
+          "id": "prelude-nobody",
+          "title": "Вступление: Точка завершения",
+          "url": "https://scpfoundation.net/prelude-nobody",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.0,
+          "desc": "По лестнице вверх я однажды шагал, И вдруг, кого не было там, повстречал. Назавтра опять не пришлось нам встречаться. Когда ж перестанет он мне не являться? \"Энтигониш\", Уильям Хьюз Мирнз, 1899 Он взглянул на себя в зеркало и изучил свой се…"
+        },
+        {
+          "id": "foreign-aid",
+          "title": "Помощь со стороны",
+          "url": "https://scpfoundation.net/foreign-aid",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Мария Нвосу утёрла пот со лба, стоя в ожидании на краю деревни. От сильного ветра юбка колыхалась и хлопала ей по ногам. Приставив ладонь козырьком ко лбу, она оглядела вельд, пытаясь увидеть где-нибудь облака пыли, возвещающие о появлении…"
+        },
+        {
+          "id": "board-meeting-transcript",
+          "title": "Интерлюдия: Выдержка",
+          "url": "https://scpfoundation.net/board-meeting-transcript",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Выдержка из заседания правления \"Лабораторий Прометея\" [ДАТА УДАЛЕНА] Ген. директор, Д. дель Рей: Итак, следующий деловой вопрос. Доктор Развлечудов. Фин. директор, А. Андерсон: Боже мой, в какую теперь катастрофу ввязался НИОКР? Начальник…"
+        },
+        {
+          "id": "the-stranger-and-the-secretary",
+          "title": "Незнакомец и секретарша",
+          "url": "https://scpfoundation.net/the-stranger-and-the-secretary",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "- О, здравствуйте! - воскликнула секретарша. Удивление от внезапного появления прямо перед ней незнакомца никак не сказалось на ширине её улыбки. Посетитель мало вписывался в окружающую обстановку, его тёмно-серый костюм и шляпа смотрелись…"
+        },
+        {
+          "id": "wondertainment-special-letter",
+          "title": "Интерлюдия: Особое письмо",
+          "url": "https://scpfoundation.net/wondertainment-special-letter",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 5.0,
+          "desc": "Данный документ был обнаружен среди личных вещей Д████ Р█████, изъятых во время операции \"Фиолетовый конверт\" Дражайший Тэпер Воус Пьютоум, Вы являетесь одним из самых лучших покупателей Доктора Развлечудова. Вы заказали больше __ ВСЕХ!!! _…"
+        },
+        {
+          "id": "concerto-in-d-major",
+          "title": "Концерт в ре-мажоре для кисти художника и шляпы-федоры",
+          "url": "https://scpfoundation.net/concerto-in-d-major",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.8,
+          "desc": "Хиро П. всегда говорил, что для успешного арт-налёта нужно действовать с умом, быстро, и, превыше всего, стильно . Хотя, если вспомнить, он ничего не говорил про \"художественное видение\" или \"способность отбиться от Мастеров Буги\". А когда…"
+        },
+        {
+          "id": "library-gallery-exhibition",
+          "title": "Интерлюдия: Выставка",
+          "url": "https://scpfoundation.net/library-gallery-exhibition",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.0,
+          "desc": "^^\"Каждый день - это среда\", фотография^^ Найдена в 2012 г., на выставке, организованной Библиотекой: \"На плечах Феникса: Открытия и переоткрытия в постмилленарном рекреационистическом анархическом искусстве\" Майкл Петракович Канадец, 1976-…"
+        },
+        {
+          "id": "snippetsfromtheserpent",
+          "title": "Сброшенное Змеем",
+          "url": "https://scpfoundation.net/snippetsfromtheserpent",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 3.0,
+          "desc": "->> Вы зашли на канал #booksudontreadfootnote\"Книги, которые вы не читаете\" - прим. пер./footnote ->> Тема: #booksudontread приветствует вас. ПРАВИЛА: Мудаком не быть. Своих не сдавать. Если вы здесь, значит вас пригласили. Если вас удалили…"
+        },
+        {
+          "id": "postlude-nobody",
+          "title": "Заключение: Точка завершения",
+          "url": "https://scpfoundation.net/postlude-nobody",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 4.1,
+          "desc": "Она взглянула на себя в зеркало и изучила свой сегодняшний костюм. Серая шляпа-клош без каких-либо украшений; серый юбочный костюм хорошего покроя; выглаженная и накрахмаленная белая рубашка; затянутый удавкой чёрный шарф. Она немного ослаб…"
+        }
+      ],
       "supplementLinks": [],
       "description": "Существо, известное как \"Никто\", подобно силе природы: его действия непредсказуемы, а методы неясны. Его намерения и истинная личность — тайна для всех, в том числе и для него самого. Но достигнув желаемой цели, он исчезает. Такое уже случалось по меньшей мере один раз."
     },
