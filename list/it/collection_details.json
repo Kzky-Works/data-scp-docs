@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1790362708,
-  "generatedAt": "2026-09-25T18:58:28Z",
-  "chunkRevision": "sha256-3655d34fb6062cc34490ec143e127ff6c526ee7e6a0c66c92109036ae588c9f8",
+  "listVersion": 1791198635,
+  "generatedAt": "2026-10-05T11:10:35Z",
+  "chunkRevision": "sha256-df472254cac305d9f4b679bc2bd84811e34054ab5837d9b1584c20c17f2e2c1f",
   "builtFrom": {
     "manifests": [
       {
@@ -19,36 +19,36 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1790362639,
-        "generatedAt": "2026-09-25T18:57:19Z",
-        "contentHash": "sha256-cd58ff9c92dd651896378b6862da9d3873d204e70007efc0c1af5ab888f0b301"
+        "listVersion": 1791198600,
+        "generatedAt": "2026-10-05T11:10:00Z",
+        "contentHash": "sha256-f0a2feece782cc1a8166f59ba5e8030f171877045080a9a3db5c26edffcfa08c"
       },
       {
         "kind": "manifest_scp-it",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-it.json",
         "schemaVersion": 2,
-        "listVersion": 1790362667,
-        "generatedAt": "2026-09-25T18:57:47Z",
-        "contentHash": "sha256-421439da7bd2afa1af80d85694ab5d035380466b2745bddf9ab1bbeab92c9300"
+        "listVersion": 1791198238,
+        "generatedAt": "2026-10-05T11:03:58Z",
+        "contentHash": "sha256-d1dcfb035ba944646da0f31c12744d6affb0dddb8b2b2cc0b1bce8ad7c106c76"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1790362667,
-        "generatedAt": "2026-09-25T18:57:47Z",
-        "contentHash": "sha256-07c0fde4cac2e0e80f23e002183a926e109a7c631beb9f94723df33c6ddc3b42"
+        "listVersion": 1791198266,
+        "generatedAt": "2026-10-05T11:04:26Z",
+        "contentHash": "sha256-14b06433868eebbc0748008167a57aec4cf2db3173d68eb92aa2772631b5e301"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1790362667,
-        "generatedAt": "2026-09-25T18:57:47Z",
-        "contentHash": "sha256-a24a532988318ab234a0e516f6d2820def9aaa9292ba4e61504df87abf6b1361"
+        "listVersion": 1791198328,
+        "generatedAt": "2026-10-05T11:05:28Z",
+        "contentHash": "sha256-599b2a07848dcb63ff76f4adf72aaaa24decff9eb29f183a3f4cd3cd9e3b5dfe"
       }
     ],
     "seedReview": {
@@ -66,9 +66,9 @@
       "branchID": "scp-it",
       "path": "DataPipeline/list/it/it_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1790362540,
-      "generatedAt": "2026-09-25T18:55:40Z",
-      "contentHash": "sha256-253491881a7119f0f233ca826e7142d3c0a195ce8e31c583acc40c437eede487"
+      "listVersion": 1791198328,
+      "generatedAt": "2026-10-05T11:05:28Z",
+      "contentHash": "sha256-b15ef8033821c1a720c4a840433c10a2633fd085a11c6a7234567248df904450"
     }
   },
   "collections": [
@@ -444,7 +444,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-ddf646a6a7be2d8577656899abd94065ca891d165f4afd74c97d29f5de2ab7c8"
+        "structureHash": "sha256-831578f8c1c96af9378288dfec2510dbcfb25f92355783af461139be2db4857f"
       },
       "primaryArticles": [
         {
@@ -458,14 +458,14 @@
           "desc": "Di più da questo autore"
         },
         {
-          "id": "o4-s-summit",
-          "title": "Vertice del Comando O4",
-          "url": "http://fondazionescp.wikidot.com/o4-s-summit",
-          "sourceManifest": "manifest_tales",
+          "id": "scp-6747",
+          "title": "TEORIA DEL CAOS",
+          "url": "http://fondazionescp.wikidot.com/scp-6747",
+          "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 3,
-          "desc": "A causa del guasto delle banche dati di SCiPNet tuttora in corso e poiché la prossima mossa di Damien Nowak è incerta, si è concluso che il Sito-120 necessita di una nuova guida, cosa che manca da troppo tempo, da quando il dott. MacCarthy è morto. Pertanto, s…"
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-6747 è lo scopo ultimo del PROGETTO X/MACHINA vedi ADDENDUM 6747/V ), una priorità di CLASSE-AMIDA ; che in quanto tale, le sono state rese disponibili risorse virtualmente infinite per il completamento. Tale progetto deve essere presidiato da un quorum di…"
         },
         {
           "id": "tears-and-bone",
@@ -500,6 +500,16 @@
           "url": "http://fondazionescp.wikidot.com/and-every-time-we-meet-again-hub",
           "role": "primaryArticle",
           "contentKind": "tale"
+        },
+        {
+          "id": "o4-s-summit",
+          "title": "Vertice del Comando O4",
+          "url": "http://fondazionescp.wikidot.com/o4-s-summit",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "A causa del guasto delle banche dati di SCiPNet tuttora in corso e poiché la prossima mossa di Damien Nowak è incerta, si è concluso che il Sito-120 necessita di una nuova guida, cosa che manca da troppo tempo, da quando il dott. MacCarthy è morto. Pertanto, s…"
         },
         {
           "id": "secure-facility-dossier-site-120",
@@ -571,16 +581,6 @@
           "contentKind": "scp",
           "os": 3,
           "desc": "Per ordine diretto del Comando O5, la priorità del progetto Ermes è stata giudicata bassa; pertanto, i fondi per esso e gli impieghi alternativi di SCP-6172 sono stati accantonati. Ora il completamento del progetto Ermes è l’obiettivo primario e assoluto della…"
-        },
-        {
-          "id": "scp-6747",
-          "title": "TEORIA DEL CAOS",
-          "url": "http://fondazionescp.wikidot.com/scp-6747",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4,
-          "desc": "SCP-6747 è lo scopo ultimo del PROGETTO X/MACHINA vedi ADDENDUM 6747/V ), una priorità di CLASSE-AMIDA ; che in quanto tale, le sono state rese disponibili risorse virtualmente infinite per il completamento. Tale progetto deve essere presidiato da un quorum di…"
         }
       ],
       "supplementLinks": [],
@@ -591,7 +591,7 @@
           "title": "Articoli più Recenti",
           "articleIDs": [
             "the-edge-of-all-light",
-            "o4-s-summit",
+            "scp-6747",
             "tears-and-bone"
           ]
         },
@@ -617,35 +617,42 @@
           ]
         },
         {
-          "id": "05-articoli",
+          "id": "05-5-una-biblioteca-vuota",
+          "title": "5. Una Biblioteca, Vuota",
+          "articleIDs": [
+            "o4-s-summit"
+          ]
+        },
+        {
+          "id": "06-articoli",
           "title": "Articoli",
           "articleIDs": [
             "secure-facility-dossier-site-120"
           ]
         },
         {
-          "id": "06-8-testimonianza-parte-2",
+          "id": "07-8-testimonianza-parte-2",
           "title": "8. Testimonianza - Parte 2",
           "articleIDs": [
             "scp-6596"
           ]
         },
         {
-          "id": "07-scp-pl-389-fornax-aeterna",
+          "id": "08-scp-pl-389-fornax-aeterna",
           "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
           "articleIDs": [
             "ambrose-esterberg"
           ]
         },
         {
-          "id": "08-scp-7672-alla-corte-del-re-dei-goblin",
+          "id": "09-scp-7672-alla-corte-del-re-dei-goblin",
           "title": "SCP-7672 - Alla Corte del Re dei Goblin",
           "articleIDs": [
             "fresh-blood"
           ]
         },
         {
-          "id": "09-scp-5659-odium-dei-amoris",
+          "id": "10-scp-5659-odium-dei-amoris",
           "title": "SCP-5659 - Odium Dei Amoris",
           "articleIDs": [
             "scp-7278",
@@ -653,24 +660,17 @@
           ]
         },
         {
-          "id": "10-danimali",
+          "id": "11-danimali",
           "title": "Danimali",
           "articleIDs": [
             "in-life-as-in-language"
           ]
         },
         {
-          "id": "11-cronache-dellirreale-serie",
+          "id": "12-cronache-dellirreale-serie",
           "title": "Cronache dell’Irreale (serie)",
           "articleIDs": [
             "scp-6172"
-          ]
-        },
-        {
-          "id": "12-scp-7999-incontrami-fra-le-stelle",
-          "title": "SCP-7999 - Incontrami fra le Stelle",
-          "articleIDs": [
-            "scp-6747"
           ]
         }
       ]
@@ -3568,7 +3568,7 @@
         "mode": "officialHubStructure",
         "tagSource": "it_tag.json",
         "emptySectionTitle": "Articoli",
-        "structureHash": "sha256-9dc80c51cc546dd2d1767f61834560cda7ff58848df3aab204c51c7aab72aa47"
+        "structureHash": "sha256-6bded1d883970db07332c7b6ba3bf72d69ca6213f7b8a15ab8ca8dc0d86008cf"
       },
       "primaryArticles": [
         {
@@ -3591,8 +3591,11 @@
           "id": "vomito",
           "title": "Questo Vomito Ti Sarà Utile",
           "url": "http://fondazionescp.wikidot.com/vomito",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Non aveva mai avuto grandi aspettative per la festa, ma di certo queste erano state superate in senso negativo. Era rimasta in uno spazio angusto e buio e pertanto decise di impiegare la lucidità appena tornatale per prendere nota della situazione."
         },
         {
           "id": "scp-it-116",
@@ -3612,10 +3615,13 @@
         },
         {
           "id": "canta-il-gallo",
-          "title": "Canta il Gallo",
+          "title": "Canta Il Gallo",
           "url": "http://fondazionescp.wikidot.com/canta-il-gallo",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Vestita come una ragazzina modello, con un pigiama ricamato dalla nonna su misura e con un berretto da notte, Amanda si rimboccava le coperte, portandosele un po’ più su del labbro superiore, senza mai arrivare a coprirsi il naso, altrimenti le sarebbe mancato…"
         },
         {
           "id": "scp-it-179",
