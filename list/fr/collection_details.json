@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791106276,
-  "generatedAt": "2026-10-04T09:31:16Z",
-  "chunkRevision": "sha256-31513cc58be780e0e22d3fa29fdcaf97207dbefe32e390c7fe2ac2fdeeadaba6",
+  "listVersion": 1791189357,
+  "generatedAt": "2026-10-05T08:35:57Z",
+  "chunkRevision": "sha256-7f11eeb7b3c7117e062305c6b5d6559ec9d78de3a2b977ff93a6798733dd4749",
   "builtFrom": {
     "manifests": [
       {
@@ -10,36 +10,36 @@
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791106259,
-        "generatedAt": "2026-10-04T09:30:59Z",
-        "contentHash": "sha256-e760bcd9ef6735f8a2a520d57b1f3e6e4eda366b2611714efb80c45334f757cc"
+        "listVersion": 1791189357,
+        "generatedAt": "2026-10-05T08:35:57Z",
+        "contentHash": "sha256-1d9b682671c5c584a77eeedfec13646b45554df0f900e50dcaab278eac160008"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1790849102,
-        "generatedAt": "2026-10-01T10:05:02Z",
-        "contentHash": "sha256-9a6c0877b77f2d9f08c9c1e8e0a8bc71c0324bf786166b08ff550b093ae45aee"
+        "listVersion": 1791188960,
+        "generatedAt": "2026-10-05T08:29:20Z",
+        "contentHash": "sha256-3b20bb44865d2c6893927978b3a71d3a497157595627634f615e732c648f38bf"
       },
       {
         "kind": "manifest_scp-fr",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_scp-fr.json",
         "schemaVersion": 2,
-        "listVersion": 1790356115,
-        "generatedAt": "2026-09-25T17:08:35Z",
-        "contentHash": "sha256-8c566b39c694b192bc5a77bc0a82ba2dc9f316a2ee0480c0522a97aba1f0d28a"
+        "listVersion": 1791188791,
+        "generatedAt": "2026-10-05T08:26:31Z",
+        "contentHash": "sha256-063682d13693d2aaca757ce6f983f83860de7e54abcd67c7a942c2c713dc5ac4"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1790356115,
-        "generatedAt": "2026-09-25T17:08:35Z",
-        "contentHash": "sha256-9a591d7264eedadd8a65c5e34e67cb2b7e9b5c660aae29e3c50e6b8c61adc97a"
+        "listVersion": 1791188930,
+        "generatedAt": "2026-10-05T08:28:50Z",
+        "contentHash": "sha256-4414582c41db97b5463e7990241a23bd3b0395611a7e761fe4991b244fc265cd"
       }
     ],
     "seedReview": {
@@ -57,9 +57,9 @@
       "branchID": "scp-fr",
       "path": "DataPipeline/list/fr/fr_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1790355733,
-      "generatedAt": "2026-09-25T17:02:13Z",
-      "contentHash": "sha256-3bdffdfae351ec9aa5ef1cba39d39647e0acf019c66bc5199a691a04ea2fc418"
+      "listVersion": 1791188930,
+      "generatedAt": "2026-10-05T08:28:50Z",
+      "contentHash": "sha256-1d53be93a7bfe88561dfa43c0703320cba86b01d4f087228b652cc16f607f665"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -9394,7 +9394,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-291989f8fdf218e6b1a166d4848e010964cfe829a7b4ff35d062c205251ad05d"
+        "structureHash": "sha256-7674a282916aa565836d6360b025403b136fcb5b68c342ecb2634ddf1cab915d"
       },
       "primaryArticles": [
         {
@@ -9406,11 +9406,19 @@
           "desc": "▷ SCP-7243 par Vaalxeny ▷ SCP-8808 par macro_au_micro ▷ SCP-6183 par Vaalxeny ▷ SCP-6488 par Vaalxeny ▷ SCP-6659 par Vaalxeny"
         },
         {
-          "id": "scp-4260",
+          "id": "scp-6488",
           "title": "Choisir une page du catalogue Deepwell aléatoire ?",
-          "url": "https://fondationscp.wikidot.com/scp-4260",
+          "url": "https://fondationscp.wikidot.com/scp-6488",
           "role": "primaryArticle",
           "contentKind": "scp"
+        },
+        {
+          "id": "scp-4260",
+          "title": "SCP-4260 :",
+          "url": "https://fondationscp.wikidot.com/scp-4260",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Nagiros"
         },
         {
           "id": "scp-4755",
@@ -9444,6 +9452,7 @@
           "title": "Histoires",
           "articleIDs": [
             "scp-7243",
+            "scp-6488",
             "scp-4260",
             "scp-4755",
             "white-space-hub",
@@ -11171,9 +11180,16 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-339286bd805c0e65d027debc54c6993357604bbb462c847066211b707cbc91f8"
+        "structureHash": "sha256-b0b40f072cd6364d5391157895c995a94424234f96c96025a8945997c2aa68d6"
       },
       "primaryArticles": [
+        {
+          "id": "scp-pl-399",
+          "title": "SCP-399-PL",
+          "url": "https://fondationscp.wikidot.com/scp-pl-399",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
         {
           "id": "scp-5464",
           "title": "SCP-5464 : La responsabilité que nous endoursons",
@@ -11215,13 +11231,6 @@
           "contentKind": "tale",
           "os": 3,
           "desc": "Extraits de Critiques du Mandat de la \"Normalité\", Chapitre III : L'histoire de la \"Normalité\". Ce manifeste a originellement été publié en 1934 par un mi-Fae mi-humain, Osvendor Sarrian Enzan. À ce jour, l'œuvre suivante est la source de la fondation idéologi…"
-        },
-        {
-          "id": "scp-pl-399",
-          "title": "SCP-399-PL : Insurrection irrationnelle",
-          "url": "https://fondationscp.wikidot.com/scp-pl-399",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         },
         {
           "id": "a-library-empty",
@@ -11361,6 +11370,7 @@
           "id": "01-articles-recents",
           "title": "Articles récents",
           "articleIDs": [
+            "scp-pl-399",
             "scp-5464"
           ]
         },
@@ -11393,49 +11403,42 @@
           ]
         },
         {
-          "id": "06-tamiser-le-sable",
-          "title": "Tamiser le sable",
-          "articleIDs": [
-            "scp-pl-399"
-          ]
-        },
-        {
-          "id": "07-4-scp-5795-cour-supreme",
+          "id": "06-4-scp-5795-cour-supreme",
           "title": "4. SCP-5795 : Cour Suprême",
           "articleIDs": [
             "a-library-empty"
           ]
         },
         {
-          "id": "08-scp-7924-la-chevre-qui-ne-cesse-de-donner-des-cadeaux",
+          "id": "07-scp-7924-la-chevre-qui-ne-cesse-de-donner-des-cadeaux",
           "title": "SCP-7924 : La chèvre qui ne cesse de donner des cadeaux",
           "articleIDs": [
             "grant-request-for-the-creation-of-remnant-hosts"
           ]
         },
         {
-          "id": "09-scp-7629-le-sanctuaire-des-gardiens-du-ciel",
+          "id": "08-scp-7629-le-sanctuaire-des-gardiens-du-ciel",
           "title": "SCP-7629 : Le sanctuaire des Gardiens du ciel",
           "articleIDs": [
             "scp-pl-213"
           ]
         },
         {
-          "id": "10-articles",
+          "id": "09-articles",
           "title": "Articles",
           "articleIDs": [
             "secure-facility-dossier-site-120"
           ]
         },
         {
-          "id": "11-scp-054-pl-le-change-peau",
+          "id": "10-scp-054-pl-le-change-peau",
           "title": "SCP-054-PL : Le Change-peau",
           "articleIDs": [
             "morskie-opowiesci"
           ]
         },
         {
-          "id": "12-1-dossier-d-installation-securisee-site-69-pl",
+          "id": "11-1-dossier-d-installation-securisee-site-69-pl",
           "title": "1. Dossier d'Installation Sécurisée : Site-69-PL",
           "articleIDs": [
             "10-kwietnia-2010",
@@ -11444,49 +11447,49 @@
           ]
         },
         {
-          "id": "13-scp-7292-l-heritage-de-l-amour-tm",
+          "id": "12-scp-7292-l-heritage-de-l-amour-tm",
           "title": "SCP-7292 : L'héritage de l'amour ™️",
           "articleIDs": [
             "scp-pl-253"
           ]
         },
         {
-          "id": "14-ordre-mef-7629",
+          "id": "13-ordre-mef-7629",
           "title": "Ordre MEF-7629",
           "articleIDs": [
             "list-of-common-anomalous-misconceptions"
           ]
         },
         {
-          "id": "15-scp-9415-seconde-chance",
+          "id": "14-scp-9415-seconde-chance",
           "title": "SCP-9415 : Seconde chance",
           "articleIDs": [
             "kompas-parapolityczny-na-trudne-czasy"
           ]
         },
         {
-          "id": "16-sang-poudre-et-bruyeres",
+          "id": "15-sang-poudre-et-bruyeres",
           "title": "Sang, poudre et bruyères [🌎]",
           "articleIDs": [
             "what-s-up-with-all-the-reality-benders"
           ]
         },
         {
-          "id": "17-articles",
+          "id": "16-articles",
           "title": "Articles",
           "articleIDs": [
             "8000-dead-rats-hub"
           ]
         },
         {
-          "id": "18-1-communication-interne-au-projet-aube-ecarlate-entre-ljaco-et-pentagramme",
+          "id": "17-1-communication-interne-au-projet-aube-ecarlate-entre-ljaco-et-pentagramme",
           "title": "1. Communication interne au Projet AUBE ÉCARLATE entre LJACO et Pentagramme",
           "articleIDs": [
             "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri"
           ]
         },
         {
-          "id": "19-scp-8008-le-pervers-du-temps",
+          "id": "18-scp-8008-le-pervers-du-temps",
           "title": "SCP-8008 : Le Pervers du Temps",
           "articleIDs": [
             "scp-7999",
@@ -15013,7 +15016,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-9d3327a0855a00e86967b25934b06f432f773866d24b949976bf141c9c8fab57"
+        "structureHash": "sha256-39734daa3b0f02ac661527bb6705c7af835592b9c68606a2480372af060c79f2"
       },
       "primaryArticles": [
         {
@@ -15045,6 +15048,16 @@
           "contentKind": "tale",
           "os": 3,
           "desc": "Il y eut des explosions sur site. Ce n'était pas totalement inédit, mais celles-ci ne semblaient pas contrôlées. Ce n'était pas inhabituel, mais cela rendait tout de même Iris nerveuse."
+        },
+        {
+          "id": "the-wolves-at-the-door",
+          "title": "Les loups à la porte",
+          "url": "https://fondationscp.wikidot.com/the-wolves-at-the-door",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Iris essayait de résoudre des mots croisés quand on frappa à sa porte. Ce n'était pas une visite planifiée, ce qui était quelque peu préoccupant, mais au moins il n'y avait pas d'explosion, cette fois."
         },
         {
           "id": "the-high-court-with-the-magic-army",
@@ -15119,6 +15132,7 @@
           "title": "PARTIE UNE : Un nouveau commencement",
           "articleIDs": [
             "immediate-actions",
+            "the-wolves-at-the-door",
             "the-high-court-with-the-magic-army"
           ]
         },
@@ -18506,7 +18520,7 @@
         "allowedHosts": [
           "fondationscp.wikidot.com"
         ],
-        "structureHash": "sha256-90791199f2793e5dd97b2893fea5239dcadbd1b9d6566c580e58aa74b3d3d094"
+        "structureHash": "sha256-19ae50ec15d3afe2a992d6bb8e487c282805a28737af97566b78f498fb25663b"
       },
       "primaryArticles": [
         {
@@ -18533,7 +18547,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 53,
-          "desc": "Cette fois, la réceptionniste plisse des yeux en regardant Marion. \"Non, dit-elle, vous… Non, vous ne pouvez pas fumer où que ce soit sur le Site 200. Vous savez, on a des poumons ici, même si ce n’est qu’un bâtiment d’administration. On a des règles, aussi.\""
+          "desc": "\"Je peux fumer ?\" Cette fois, la réceptionniste plisse des yeux en regardant Marion. \"Non, dit-elle, vous… Non, vous ne pouvez pas fumer où que ce soit sur le Site-200. Vous savez, c’est pas parce qu’on est dans un bâtiment d’administration qu’on n’a pas de po…"
         },
         {
           "id": "introductory-antimemetics",
@@ -18542,8 +18556,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 35,
-          "desc": "À ce moment, les portes de l'ascenseur s'ouvrent sur le huitième sous-sol. Alastair Grey attend, souriant toujours de manière désarmante. Il fait un pas en avant. Désespéré, Kim lance son téléphone par-dessus son épaule sur le front de la créature. Il s'agit d…"
+          "os": 36,
+          "desc": "Cela fait à peine quatre heures que le chercheur junior Kim travaille pour la Fondation et il se sent pulvérisé, comme s'il avait reçu une enclume sur la tête durant cette première conférence d'introduction. C'est l'heure du déjeuner, et il a trouvé un coin si…"
         },
         {
           "id": "unforgettable-that-s-what-you-are",
@@ -18553,7 +18567,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 25,
-          "desc": "Lyn Marness a plus de quatre-vingt-dix ans et n'a pas atteint sa taille complète en dix ans. C'était un colosse dans la force de l'âge, de deux mètres de haut et taillé comme un boxeur. Presque aucune des personnes qu'il ait jamais rencontrées n'a été capable…"
+          "desc": "\"El, c'est fini.\" Lyn Marness a plus de quatre-vingt-dix ans et ne s'est pas tenu de toute sa hauteur en dix ans. C'était un colosse dans la force de l'âge, de deux mètres de haut et taillé comme un boxeur. Presque personnes qu'il n'a jamais rencontré n'a été…"
         },
         {
           "id": "case-colourless-green",
@@ -18562,8 +18576,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 22,
-          "desc": "Objet # : SCP-3125 Classe : Keter Procédures de Confinement Spéciales : SCP-3125 est gardé à l'intérieur de l'Unité de Confinement pour Danger-sensitif 3125 au premier étage du Site 41. Cette unité de confinement est une pièce cuboïdale de 10 m sur 15 m sur 3…"
+          "os": 23,
+          "desc": "Objet # : SCP-3125 Classe : Keter Procédures de Confinement Spéciales : SCP-3125 est gardé à l'intérieur de l'Unité de Confinement pour Danger-cognitif 3125 au premier étage du Site-41. Cette unité de confinement est une pièce cuboïdale de 10 m sur 15 m sur 3…"
         },
         {
           "id": "your-last-first-day",
@@ -18572,8 +18586,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 26,
-          "desc": "Marion Wheeler est accroupie dans un coin du monte-charge principal du Site 41, et serre dans sa main un pistolet laser rouge étincelant dont la longueur est comparable à sa taille. Au lieu d'un canon, l'arme possède une pointe dotée de deux dents, et sa cross…"
+          "os": 27,
+          "desc": "Précédemment Marion Wheeler est accroupie dans un coin du monte-charge principal du Site 41, et serre dans sa main un pistolet laser rouge étincelant dont la longueur est comparable à sa taille. Au lieu d'un canon, l'arme possède une pointe dotée de deux dents…"
         },
         {
           "id": "scp-2256",
