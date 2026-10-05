@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791106495,
-  "generatedAt": "2026-10-04T09:34:55Z",
-  "chunkRevision": "sha256-6adc5a0e28404f034b89b20770fec35f82ac20ee35bfea88e6263f3fce05c77a",
+  "listVersion": 1791194079,
+  "generatedAt": "2026-10-05T09:54:39Z",
+  "chunkRevision": "sha256-7b0166cabaf49fdd52cc01367f60613f2c05e851d1955b1dc60d154b303dabb5",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791106478,
-        "generatedAt": "2026-10-04T09:34:38Z",
-        "contentHash": "sha256-82a26362e16e84c8cf43aeb6dd74f9c8c3b69fa789c1da53e323555036fa9d1e"
+        "listVersion": 1791193663,
+        "generatedAt": "2026-10-05T09:47:43Z",
+        "contentHash": "sha256-0dd478c150ac08614a8836e239593b306cde93571866f56694ee58f4f73a41a5"
       },
       {
         "kind": "manifest_gois",
@@ -28,36 +28,36 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_scp-es.json",
         "schemaVersion": 2,
-        "listVersion": 1790360240,
-        "generatedAt": "2026-09-25T18:17:20Z",
-        "contentHash": "sha256-a6ed59fa62c0a2bff7bf0ac3bb1440923b9226eeea2ea6539170b0b172390d60"
+        "listVersion": 1791193502,
+        "generatedAt": "2026-10-05T09:45:02Z",
+        "contentHash": "sha256-e760be8611127b089959b4749bead347e187034f9f53cb159b1e485e6663c90b"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1790360240,
-        "generatedAt": "2026-09-25T18:17:20Z",
-        "contentHash": "sha256-9e0893e800e2f724ce16a49b2e851b96902a9bc92b15c96e23e1f022a2ff7d11"
+        "listVersion": 1791193572,
+        "generatedAt": "2026-10-05T09:46:12Z",
+        "contentHash": "sha256-2c398eac8b2df838982c031d0172d1bb02cae60f6f8a58296bfc5503e47616d5"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1790360240,
-        "generatedAt": "2026-09-25T18:17:20Z",
-        "contentHash": "sha256-c4960c5cc5087c3cbeb8093970a9c9dc5780c8bb415109dcd8bafbc1e289f050"
+        "listVersion": 1791193542,
+        "generatedAt": "2026-10-05T09:45:42Z",
+        "contentHash": "sha256-7ccd29812fbc41927c7b09841602282cb26e8212ee9b93f056e700f5d1196a3b"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1790360241,
-        "generatedAt": "2026-09-25T18:17:21Z",
-        "contentHash": "sha256-9848ad298564082c0f67e9d62cdf7a6fea0115bdfc4fb926f1d35944d7a62fff"
+        "listVersion": 1791193596,
+        "generatedAt": "2026-10-05T09:46:36Z",
+        "contentHash": "sha256-67ec753cf7a71a156a76ac670e76c1b115a088d3571cd1c69d5d8ec70699dfd6"
       }
     ],
     "seedReview": {
@@ -5175,7 +5175,7 @@
         "mode": "officialHubStructure",
         "tagSource": "es_tag.json",
         "emptySectionTitle": "Artículos",
-        "structureHash": "sha256-185b1ef3b6b192fd21fe073d34d75e17f7cee50eabe1ab1a95031edcb8083936"
+        "structureHash": "sha256-46a1db3b61862682c1e2a4d8e055ab51bfbb85ec41135edef6a62a3c8159167b"
       },
       "primaryArticles": [
         {
@@ -5548,6 +5548,16 @@
           "contentKind": "scp",
           "os": 23,
           "desc": "El acceso al área donde se encuentra SCP-ES-182 está restringido mediante señales que indican peligro de derrumbes, manteniéndose además la anomalía al interior de un recinto bajo la apariencia de instalaciones mineras en desuso. Se realizará vigilancia median…"
+        },
+        {
+          "id": "scp-es-344",
+          "title": "Muerte, Mi Amor",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-344",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 35,
+          "desc": "SCP-ES-344 debe ser contenido en una celda estándar para entidades de gran tamaño ubicada en el Sitio-38. La celda debe ser monitorizada a las 5:45 y a las 18:00 para asegurarse que SCP-ES-344 ha cambiado de forma. Todos los guardias en el área circundante ser…"
         }
       ],
       "supplementLinks": [],
@@ -5621,7 +5631,8 @@
             "scp-4979",
             "scp-4322",
             "scp-4056",
-            "scp-es-182"
+            "scp-es-182",
+            "scp-es-344"
           ]
         }
       ]
@@ -12749,58 +12760,18 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-fb6ea569e44ed1064aae9e1448430207d8987aec84ed033d158f47f963640eed"
+        "structureHash": "sha256-df73eea8d2ff94d72c939a60f48bf825a67a84a66d09d7dbf3117819adcd4043"
       },
       "primaryArticles": [
         {
-          "id": "scp-5555",
-          "title": "Made in Heaven",
-          "url": "https://lafundacionscp.wikidot.com/scp-5555",
+          "id": "scp-5682",
+          "title": "Un Breve Momento de Revelación",
+          "url": "https://lafundacionscp.wikidot.com/scp-5682",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 14,
-          "desc": "El SCP-5555 está contenido en el lugar de su descubrimiento."
-        },
-        {
-          "id": "scp-5800",
-          "title": "La Quinta Puerta",
-          "url": "https://lafundacionscp.wikidot.com/scp-5800",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 9,
-          "desc": "Se debe evitar que las instituciones científicas y los observatorios descubran a SCP-5800-1. La información filtrada y diseminada sobre SCP-5800-1 debe ser eliminada y mantenerse fuera del conocimiento público o abordarse como una falsedad. Los protocolos de l…"
-        },
-        {
-          "id": "scp-5012",
-          "title": "No hay Escapatoria del Pozo sin Fondo",
-          "url": "https://lafundacionscp.wikidot.com/scp-5012",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 16,
-          "desc": "[pendientes] Procedimientos de Contención Heredados: SCP-5012 es propiedad legal de Fitzwilliam Agriculture, una empresa pantalla de la Fundación. Se han implementado medidas estándar contra el traspaso, según sea apropiado para los proyectos de bajo riesgo. S…"
-        },
-        {
-          "id": "scp-5321",
-          "title": "El Spoiler",
-          "url": "https://lafundacionscp.wikidot.com/scp-5321",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 14,
-          "desc": "Exceptuando la neutralización, la contención es imposible."
-        },
-        {
-          "id": "scp-5999",
-          "title": "Aquí es Donde Morí",
-          "url": "https://lafundacionscp.wikidot.com/scp-5999",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 35,
-          "desc": "Dc_Yerko"
+          "os": 5,
+          "desc": "Los Objetos Anómalos recuperados anteriormente de SCP-5682-β deben ser almacenados en casilleros de almacenamiento individuales en el Sitio-64. Los objetos deben mantenerse discretos entre sí para evitar interacciones erróneas, pero deben permanecer específica…"
         },
         {
           "id": "scp-5505",
@@ -12813,24 +12784,24 @@
           "desc": "La investigación sobre SCP-5505 y la desaparición de la Investigadora Cynthia Oswald está en curso. Más información sobre los procedimientos de contención de SCP-5505 se puede encontrar en el documento de Investigación - SCP-5505."
         },
         {
-          "id": "scp-5790",
-          "title": "[DATOS ASESINADOS]",
-          "url": "https://lafundacionscp.wikidot.com/scp-5790",
+          "id": "scp-5060",
+          "title": "Planeta Sentinelés del Norte",
+          "url": "https://lafundacionscp.wikidot.com/scp-5060",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 11,
-          "desc": "[DATOS BORRADOS] Ámbito Operativo: Administración de Seguridad de Registros e Información; División de Memética e Info-peligros; Departamento de Fenómenos Espectrales; Oficina de Necromancia Aplicada; Departamento de Malentendidos Procedimientos de Manejo de I…"
+          "os": 10,
+          "desc": "La contención física de SCP-5060 es actualmente imposible. Por lo tanto, los esfuerzos de la Fundación se centrarán en la reducción de la conciencia pública sobre SCP-5060. Los operativos de la Fundación dentro de la Unión Astronómica Internacional deben repor…"
         },
         {
-          "id": "scp-5055",
-          "title": "Pandora",
-          "url": "https://lafundacionscp.wikidot.com/scp-5055",
+          "id": "scp-5100",
+          "title": "Cronofobia",
+          "url": "https://lafundacionscp.wikidot.com/scp-5100",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 5,
-          "desc": "La contención de SCP-5055 ya no es posible. Un Evento de Reestructuración de Clase-LK “Agni Desatado” ha ocurrido."
+          "os": 1,
+          "desc": "El conocimiento de SCP-5100 está restringido a todo el personal a nivel mundial, excepto a los miembros de la administración superior y al personal de los sitios regionales relevantes. Se prohíbe al personal de esos sitios que discuta sobre SCP-5100 con el per…"
         },
         {
           "id": "scp-5666",
@@ -12843,14 +12814,114 @@
           "desc": "Se debe mantener una estructura de hangar construida sobre SCP-5666 para evitar una mayor degradación de SCP-5666. La pista de aterrizaje que sale de la estructura se debe limpiar rutinariamente de nieve y escombros, permitiendo el despegue adecuado de SCP-566…"
         },
         {
-          "id": "scp-5682",
-          "title": "Un Breve Momento de Revelación",
-          "url": "https://lafundacionscp.wikidot.com/scp-5682",
+          "id": "scp-5678",
+          "title": "En la Espesura del Bambú",
+          "url": "https://lafundacionscp.wikidot.com/scp-5678",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "Hammeriano"
+        },
+        {
+          "id": "scp-5030",
+          "title": "Andrés Bolívar, el Investigador Junior, murió durante una Brecha de Contención el 21/12/2018",
+          "url": "https://lafundacionscp.wikidot.com/scp-5030",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "El personal de seguridad del Sitio-34 ha sido instruido de reportar cualquier mención de SCP-5030. Los sujetos involucrados deberán ser entrevistados por miembros del personal que participan en el proyecto, y deberán ser inoculados con una contramedida específ…"
+        },
+        {
+          "id": "scp-5000",
+          "title": "¿Por qué?",
+          "url": "https://lafundacionscp.wikidot.com/scp-5000",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 67,
+          "desc": "SCP-5000 debe ser mantenido en estado desactivado dentro de una unidad de almacenamiento estándar ubicada en el Sitio-22. Todos los archivos e información recuperados de SCP-5000 deben ser almacenados en un servidor seguro, con copias de seguridad disponibles…"
+        },
+        {
+          "id": "scp-5012",
+          "title": "No hay Escapatoria del Pozo sin Fondo",
+          "url": "https://lafundacionscp.wikidot.com/scp-5012",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 16,
+          "desc": "[pendientes] Procedimientos de Contención Heredados: SCP-5012 es propiedad legal de Fitzwilliam Agriculture, una empresa pantalla de la Fundación. Se han implementado medidas estándar contra el traspaso, según sea apropiado para los proyectos de bajo riesgo. S…"
+        },
+        {
+          "id": "scp-5775",
+          "title": "Deimos",
+          "url": "https://lafundacionscp.wikidot.com/scp-5775",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "Debido al tamaño y ubicación de SCP-5775, la contención no es posible en este momento. Por lo tanto, el conocimiento público de la verdadera composición de SCP-5775 debe ser suprimido por cualquier medio necesario. Esto incluye la difusión de datos geológicos…"
+        },
+        {
+          "id": "scp-5800",
+          "title": "La Quinta Puerta",
+          "url": "https://lafundacionscp.wikidot.com/scp-5800",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "Se debe evitar que las instituciones científicas y los observatorios descubran a SCP-5800-1. La información filtrada y diseminada sobre SCP-5800-1 debe ser eliminada y mantenerse fuera del conocimiento público o abordarse como una falsedad. Los protocolos de l…"
+        },
+        {
+          "id": "scp-5005",
+          "title": "Farol",
+          "url": "https://lafundacionscp.wikidot.com/scp-5005",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 20,
+          "desc": "Las relaciones diplomáticas con SCP-5005 se han establecido de acuerdo con los términos del Tratado de Sarai. Un investigador permanente estará destinado en todo momento en SCP-5005, cuya presencia solo puede ser permitida o rescindida por acuerdo del director…"
+        },
+        {
+          "id": "scp-5777",
+          "title": "Exuberancia Irracional",
+          "url": "https://lafundacionscp.wikidot.com/scp-5777",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 5,
-          "desc": "Los Objetos Anómalos recuperados anteriormente de SCP-5682-β deben ser almacenados en casilleros de almacenamiento individuales en el Sitio-64. Los objetos deben mantenerse discretos entre sí para evitar interacciones erróneas, pero deben permanecer específica…"
+          "desc": "Se ha construido una valla eléctrica alrededor del territorio donde se encuentra SCP-5777. Los intrusos serán capturados (por medios no letales si es posible), amnestizados y liberados. Por su propia seguridad, el personal debe permanecer al menos a 50 metros…"
+        },
+        {
+          "id": "scp-5321",
+          "title": "El Spoiler",
+          "url": "https://lafundacionscp.wikidot.com/scp-5321",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "Exceptuando la neutralización, la contención es imposible."
+        },
+        {
+          "id": "scp-5454",
+          "title": "Terratoma",
+          "url": "https://lafundacionscp.wikidot.com/scp-5454",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "El software ejecutado en equipos médicos (Ultrasonidos, Imágenes por Resonancia Magnética, Tomografías Computarizadas, etc.) será modificado para ocultar la presencia de SCP-5454 y alertar a los activos de la Fundación en caso de detección. Las personas afecta…"
+        },
+        {
+          "id": "scp-5790",
+          "title": "[DATOS ASESINADOS]",
+          "url": "https://lafundacionscp.wikidot.com/scp-5790",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "[DATOS BORRADOS] Ámbito Operativo: Administración de Seguridad de Registros e Información; División de Memética e Info-peligros; Departamento de Fenómenos Espectrales; Oficina de Necromancia Aplicada; Departamento de Malentendidos Procedimientos de Manejo de I…"
         },
         {
           "id": "scp-5900",
@@ -12861,6 +12932,154 @@
           "contentKind": "scp",
           "os": 5,
           "desc": "El Departamento de Vigilancia de la ASRI está determinando la causa de SCP-5900 (boleta #E4K07U2) y desarrollando contramedidas técnicas para reducir la gravedad de un evento similar en el futuro (boleta #30VNI4F). El Director de la Contención de SCP-5900 está…"
+        },
+        {
+          "id": "scp-5999",
+          "title": "Aquí es Donde Morí",
+          "url": "https://lafundacionscp.wikidot.com/scp-5999",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 35,
+          "desc": "Dc_Yerko"
+        },
+        {
+          "id": "scp-5007",
+          "title": "Estrecho de Bass",
+          "url": "https://lafundacionscp.wikidot.com/scp-5007",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-5007-S1 debe estar contenido en la Celda-5007-A, una cámara de contención cilíndrica de 20 x 60 metros dentro del Sitio 40-R. La Celda-5007-A está construida con hormigón armado y vidrio balístico de 25 cm de grosor. En la Celda-5007-A no se pueden introdu…"
+        },
+        {
+          "id": "scp-5055",
+          "title": "Pandora",
+          "url": "https://lafundacionscp.wikidot.com/scp-5055",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "La contención de SCP-5055 ya no es posible. Un Evento de Reestructuración de Clase-LK “Agni Desatado” ha ocurrido."
+        },
+        {
+          "id": "scp-5555",
+          "title": "Made in Heaven",
+          "url": "https://lafundacionscp.wikidot.com/scp-5555",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "El SCP-5555 está contenido en el lugar de su descubrimiento."
+        },
+        {
+          "id": "scp-5995",
+          "title": "La Víbora y el Recién Nacido",
+          "url": "https://lafundacionscp.wikidot.com/scp-5995",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-5995 actualmente no se considera contenido y su ubicación es desconocida. La contención es una prioridad luego de la investigación completa sobre el asesino del señor Jake Brown, en colaboración con la Coalición Oculta Global."
+        },
+        {
+          "id": "scp-5001",
+          "title": "Sacrosanto",
+          "url": "https://lafundacionscp.wikidot.com/scp-5001",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 18,
+          "desc": "SCP-5001 no debe cesar operaciones. Debido a la naturaleza autónoma de SCP-5001, ningún personal debe interrumpir sus funciones mecánicas. Los intentos de estudio de SCP-5001 deben estar limitados a la observación visual y táctil. El personal que dañe o interr…"
+        },
+        {
+          "id": "scp-5931",
+          "title": "Nadie me disparó.",
+          "url": "https://lafundacionscp.wikidot.com/scp-5931",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Las noticias y los informes policiales deben ser vigilados para obtener información sobre SCP-5931. En caso de que se detecten las muertes causadas por SCP-5931, los testigos deben ser amnestizados y los informes coronarios deben modificarse para ocultar la ve…"
+        },
+        {
+          "id": "scp-5998",
+          "title": "El Hombre Ascendente",
+          "url": "https://lafundacionscp.wikidot.com/scp-5998",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 15,
+          "desc": "El Puesto de Observación Provisional-5998 ha sido construido alrededor de SCP-5998, y debe asignarse sólo a personas que no hayan expresado previamente una fe religiosa y sean fuertemente ateas. Cualquier cambio observado en la condición de SCP-5998 debe repor…"
+        },
+        {
+          "id": "scp-5003",
+          "title": "Impotente",
+          "url": "https://lafundacionscp.wikidot.com/scp-5003",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "La entrada a SCP-5003 ha sido sellada."
+        },
+        {
+          "id": "scp-5000-j",
+          "title": "SCP-5000-J",
+          "url": "https://lafundacionscp.wikidot.com/scp-5000-j",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "Saito Okami"
+        },
+        {
+          "id": "scp-5997",
+          "title": "El Río de Mnemósine",
+          "url": "https://lafundacionscp.wikidot.com/scp-5997",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-5997 se considera autocontenido. El uso de SCP-5997 y agentes derivados en las operaciones de la Fundación debe continuar de acuerdo con los protocolos estándar establecidos antes de su clasificación como un objeto SCP. El proyecto recién formado de invest…"
+        },
+        {
+          "id": "scp-5006",
+          "title": "No Confíes en Nadie",
+          "url": "https://lafundacionscp.wikidot.com/scp-5006",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "Hasta el momento en que se pueda restablecer la contención adecuada de SCP-5006, el Sitio-608 debe mantenerse bajo encierro indefinido. Equipo de ataque Echelon1 1 ha sido asignado a los detalles de contención primaria y se le ha instruido que dispare a cualqu…"
+        },
+        {
+          "id": "scp-5002",
+          "title": "Una Muerte En Contención",
+          "url": "https://lafundacionscp.wikidot.com/scp-5002",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "Los restos de SCP-5002 se mantendrán en una bandeja segura para cadáveres en la morgue del Sitio-06. Puede solicitarse una nueva autopsia con la autorización del Departamento de Análisis. Todos los materiales asociados a SCP-5002 deben permanecer en un almacen…"
+        },
+        {
+          "id": "scp-5010",
+          "title": "Un Crimen Fue Escrito",
+          "url": "https://lafundacionscp.wikidot.com/scp-5010",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-5010 se ubicará en una Unidad Residencial Especial (URE) que se ha construido en un matorral propiedad de la Fundación a 1,5 kilómetros al noreste del Sitio-221 1 . No se permite la presencia de más de 3 individuos en las proximidades de esta URE simultáne…"
+        },
+        {
+          "id": "scp-5008",
+          "title": "CALLA",
+          "url": "https://lafundacionscp.wikidot.com/scp-5008",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "El sitio de SCP-5008-Prima está físicamente contenido por el DM Gamma-7 (\"Diadema Ardiente\") según los procedimientos de seguridad estándar para los lugares arqueológicos anómalos de alta prioridad, que incluyen el cercado perimetral, las minas terrestres y la…"
         },
         {
           "id": "scp-5370",
@@ -12881,214 +13100,6 @@
           "contentKind": "scp",
           "os": 7,
           "desc": "Actualmente se están desarrollando soluciones para la contención integral de SCP-5400."
-        },
-        {
-          "id": "scp-5007",
-          "title": "Estrecho de Bass",
-          "url": "https://lafundacionscp.wikidot.com/scp-5007",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 7,
-          "desc": "SCP-5007-S1 debe estar contenido en la Celda-5007-A, una cámara de contención cilíndrica de 20 x 60 metros dentro del Sitio 40-R. La Celda-5007-A está construida con hormigón armado y vidrio balístico de 25 cm de grosor. En la Celda-5007-A no se pueden introdu…"
-        },
-        {
-          "id": "scp-5777",
-          "title": "Exuberancia Irracional",
-          "url": "https://lafundacionscp.wikidot.com/scp-5777",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 5,
-          "desc": "Se ha construido una valla eléctrica alrededor del territorio donde se encuentra SCP-5777. Los intrusos serán capturados (por medios no letales si es posible), amnestizados y liberados. Por su propia seguridad, el personal debe permanecer al menos a 50 metros…"
-        },
-        {
-          "id": "scp-5003",
-          "title": "Impotente",
-          "url": "https://lafundacionscp.wikidot.com/scp-5003",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 9,
-          "desc": "La entrada a SCP-5003 ha sido sellada."
-        },
-        {
-          "id": "scp-5454",
-          "title": "Terratoma",
-          "url": "https://lafundacionscp.wikidot.com/scp-5454",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4,
-          "desc": "El software ejecutado en equipos médicos (Ultrasonidos, Imágenes por Resonancia Magnética, Tomografías Computarizadas, etc.) será modificado para ocultar la presencia de SCP-5454 y alertar a los activos de la Fundación en caso de detección. Las personas afecta…"
-        },
-        {
-          "id": "scp-5030",
-          "title": "Andrés Bolívar, el Investigador Junior, murió durante una Brecha de Contención el 21/12/2018",
-          "url": "https://lafundacionscp.wikidot.com/scp-5030",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 8,
-          "desc": "El personal de seguridad del Sitio-34 ha sido instruido de reportar cualquier mención de SCP-5030. Los sujetos involucrados deberán ser entrevistados por miembros del personal que participan en el proyecto, y deberán ser inoculados con una contramedida específ…"
-        },
-        {
-          "id": "scp-5678",
-          "title": "En la Espesura del Bambú",
-          "url": "https://lafundacionscp.wikidot.com/scp-5678",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 6,
-          "desc": "Hammeriano"
-        },
-        {
-          "id": "scp-5775",
-          "title": "Deimos",
-          "url": "https://lafundacionscp.wikidot.com/scp-5775",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 3,
-          "desc": "Debido al tamaño y ubicación de SCP-5775, la contención no es posible en este momento. Por lo tanto, el conocimiento público de la verdadera composición de SCP-5775 debe ser suprimido por cualquier medio necesario. Esto incluye la difusión de datos geológicos…"
-        },
-        {
-          "id": "scp-5931",
-          "title": "Nadie me disparó.",
-          "url": "https://lafundacionscp.wikidot.com/scp-5931",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4,
-          "desc": "Las noticias y los informes policiales deben ser vigilados para obtener información sobre SCP-5931. En caso de que se detecten las muertes causadas por SCP-5931, los testigos deben ser amnestizados y los informes coronarios deben modificarse para ocultar la ve…"
-        },
-        {
-          "id": "scp-5008",
-          "title": "CALLA",
-          "url": "https://lafundacionscp.wikidot.com/scp-5008",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4,
-          "desc": "El sitio de SCP-5008-Prima está físicamente contenido por el DM Gamma-7 (\"Diadema Ardiente\") según los procedimientos de seguridad estándar para los lugares arqueológicos anómalos de alta prioridad, que incluyen el cercado perimetral, las minas terrestres y la…"
-        },
-        {
-          "id": "scp-5006",
-          "title": "No Confíes en Nadie",
-          "url": "https://lafundacionscp.wikidot.com/scp-5006",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 2,
-          "desc": "Hasta el momento en que se pueda restablecer la contención adecuada de SCP-5006, el Sitio-608 debe mantenerse bajo encierro indefinido. Equipo de ataque Echelon1 1 ha sido asignado a los detalles de contención primaria y se le ha instruido que dispare a cualqu…"
-        },
-        {
-          "id": "scp-5995",
-          "title": "La Víbora y el Recién Nacido",
-          "url": "https://lafundacionscp.wikidot.com/scp-5995",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 1,
-          "desc": "SCP-5995 actualmente no se considera contenido y su ubicación es desconocida. La contención es una prioridad luego de la investigación completa sobre el asesino del señor Jake Brown, en colaboración con la Coalición Oculta Global."
-        },
-        {
-          "id": "scp-5060",
-          "title": "Planeta Sentinelés del Norte",
-          "url": "https://lafundacionscp.wikidot.com/scp-5060",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 10,
-          "desc": "La contención física de SCP-5060 es actualmente imposible. Por lo tanto, los esfuerzos de la Fundación se centrarán en la reducción de la conciencia pública sobre SCP-5060. Los operativos de la Fundación dentro de la Unión Astronómica Internacional deben repor…"
-        },
-        {
-          "id": "scp-5998",
-          "title": "El Hombre Ascendente",
-          "url": "https://lafundacionscp.wikidot.com/scp-5998",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 15,
-          "desc": "El Puesto de Observación Provisional-5998 ha sido construido alrededor de SCP-5998, y debe asignarse sólo a personas que no hayan expresado previamente una fe religiosa y sean fuertemente ateas. Cualquier cambio observado en la condición de SCP-5998 debe repor…"
-        },
-        {
-          "id": "scp-5000",
-          "title": "¿Por qué?",
-          "url": "https://lafundacionscp.wikidot.com/scp-5000",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 67,
-          "desc": "SCP-5000 debe ser mantenido en estado desactivado dentro de una unidad de almacenamiento estándar ubicada en el Sitio-22. Todos los archivos e información recuperados de SCP-5000 deben ser almacenados en un servidor seguro, con copias de seguridad disponibles…"
-        },
-        {
-          "id": "scp-5000-j",
-          "title": "SCP-5000-J",
-          "url": "https://lafundacionscp.wikidot.com/scp-5000-j",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Saito Okami"
-        },
-        {
-          "id": "scp-5005",
-          "title": "Farol",
-          "url": "https://lafundacionscp.wikidot.com/scp-5005",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 20,
-          "desc": "Las relaciones diplomáticas con SCP-5005 se han establecido de acuerdo con los términos del Tratado de Sarai. Un investigador permanente estará destinado en todo momento en SCP-5005, cuya presencia solo puede ser permitida o rescindida por acuerdo del director…"
-        },
-        {
-          "id": "scp-5997",
-          "title": "El Río de Mnemósine",
-          "url": "https://lafundacionscp.wikidot.com/scp-5997",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 1,
-          "desc": "SCP-5997 se considera autocontenido. El uso de SCP-5997 y agentes derivados en las operaciones de la Fundación debe continuar de acuerdo con los protocolos estándar establecidos antes de su clasificación como un objeto SCP. El proyecto recién formado de invest…"
-        },
-        {
-          "id": "scp-5010",
-          "title": "Un Crimen Fue Escrito",
-          "url": "https://lafundacionscp.wikidot.com/scp-5010",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 1,
-          "desc": "SCP-5010 se ubicará en una Unidad Residencial Especial (URE) que se ha construido en un matorral propiedad de la Fundación a 1,5 kilómetros al noreste del Sitio-221 1 . No se permite la presencia de más de 3 individuos en las proximidades de esta URE simultáne…"
-        },
-        {
-          "id": "scp-5100",
-          "title": "Cronofobia",
-          "url": "https://lafundacionscp.wikidot.com/scp-5100",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 1,
-          "desc": "El conocimiento de SCP-5100 está restringido a todo el personal a nivel mundial, excepto a los miembros de la administración superior y al personal de los sitios regionales relevantes. Se prohíbe al personal de esos sitios que discuta sobre SCP-5100 con el per…"
-        },
-        {
-          "id": "scp-5002",
-          "title": "Una Muerte En Contención",
-          "url": "https://lafundacionscp.wikidot.com/scp-5002",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 6,
-          "desc": "Los restos de SCP-5002 se mantendrán en una bandeja segura para cadáveres en la morgue del Sitio-06. Puede solicitarse una nueva autopsia con la autorización del Departamento de Análisis. Todos los materiales asociados a SCP-5002 deben permanecer en un almacen…"
-        },
-        {
-          "id": "scp-5001",
-          "title": "Sacrosanto",
-          "url": "https://lafundacionscp.wikidot.com/scp-5001",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 18,
-          "desc": "SCP-5001 no debe cesar operaciones. Debido a la naturaleza autónoma de SCP-5001, ningún personal debe interrumpir sus funciones mecánicas. Los intentos de estudio de SCP-5001 deben estar limitados a la observación visual y táctil. El personal que dañe o interr…"
         }
       ],
       "supplementLinks": [],
@@ -13097,40 +13108,40 @@
           "id": "01-entradas",
           "title": "Entradas",
           "articleIDs": [
-            "scp-5555",
-            "scp-5800",
-            "scp-5012",
-            "scp-5321",
-            "scp-5999",
-            "scp-5505",
-            "scp-5790",
-            "scp-5055",
-            "scp-5666",
             "scp-5682",
-            "scp-5900",
-            "scp-5370",
-            "scp-5400",
-            "scp-5007",
-            "scp-5777",
-            "scp-5003",
-            "scp-5454",
-            "scp-5030",
-            "scp-5678",
-            "scp-5775",
-            "scp-5931",
-            "scp-5008",
-            "scp-5006",
-            "scp-5995",
+            "scp-5505",
             "scp-5060",
-            "scp-5998",
-            "scp-5000",
-            "scp-5000-j",
-            "scp-5005",
-            "scp-5997",
-            "scp-5010",
             "scp-5100",
+            "scp-5666",
+            "scp-5678",
+            "scp-5030",
+            "scp-5000",
+            "scp-5012",
+            "scp-5775",
+            "scp-5800",
+            "scp-5005",
+            "scp-5777",
+            "scp-5321",
+            "scp-5454",
+            "scp-5790",
+            "scp-5900",
+            "scp-5999",
+            "scp-5007",
+            "scp-5055",
+            "scp-5555",
+            "scp-5995",
+            "scp-5001",
+            "scp-5931",
+            "scp-5998",
+            "scp-5003",
+            "scp-5000-j",
+            "scp-5997",
+            "scp-5006",
             "scp-5002",
-            "scp-5001"
+            "scp-5010",
+            "scp-5008",
+            "scp-5370",
+            "scp-5400"
           ]
         }
       ],
@@ -14548,7 +14559,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-5be8b7d6a4d017a91224ad12aeddfce2d6d63cc5e97308ddc5771309344f07de"
+        "structureHash": "sha256-a276dc7e5b197ea4dd2e7b63e2482d0867c2eefbff11236a3ff582985f40abd9"
       },
       "primaryArticles": [
         {
@@ -17127,7 +17138,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 0,
-          "desc": "SCP-1687 se mantendrá guardado con llave en un estuche de violín en el almacén de seguridad del Sitio 19. Todo el personal que no sea de Clase D que interactúe con el objeto debe forzosamente carecer de conocimientos musicales. El personal de Clase D asignado…"
+          "desc": "SCP-1687 se mantendrá guardado con llave en un estuche de violín en el almacén asegurado del Sitio 19. Es requerido que todo el personal que no sea de Clase-D que interactúe con el objeto carezca de oído musical. El personal de Clase-D asignado a los experimen…"
         },
         {
           "id": "scp-1844",
@@ -17789,7 +17800,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 6,
-          "desc": "Actualmente no hay un sitio de contención permanente para SCP-514 (ver Anexo 2). SCP-514 está actualmente siendo rastreado por el Destacamento Móvil Lambda-4 (\"Pájaro En Mano\"), quienes tienen ordenes de vigilar a SCP-514. En el caso de que SCP-514 se pose cer…"
+          "desc": "Actualmente no hay un sitio de contención permanente para SCP-514 (ver Anexo 2). SCP-514 está actualmente siendo rastreado por el Destacamento Móvil Lambda-4 (\"Aficionados a los Pájaros\"), quienes tienen ordenes de vigilar a SCP-514. En el caso de que SCP-514…"
         },
         {
           "id": "scp-1476",
@@ -17860,6 +17871,16 @@
           "contentKind": "scp",
           "os": 2,
           "desc": "Miembros del DM Lambda-4 (\"Aficionados a los Pájaros\") han de ser estacionados en los principales centros de población a nivel global para responder a cualquier reporte de SCP-4396 o SCP-4396-1. Ante cualquier ocurrencia de SCP-4396, agentes han de investigar…"
+        },
+        {
+          "id": "scp-7511",
+          "title": "LLENO DE OJOS",
+          "url": "https://lafundacionscp.wikidot.com/scp-7511",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP #7511-I es una entidad demoníaca aérea que ataca a residentes y viajeros a lo largo de la Vía Santiago , Provincia de Hispania. En su forma plana, SCP #7511-I se asemeja a un gran óculo de iris verde, con múltiples zarcillos, suspendido sobre numerosas ala…"
         },
         {
           "id": "scp-4199",
@@ -18870,7 +18891,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 1,
-          "desc": "SCP-6857 debe ser contenido en el Sitio-56, Nevada. Se debe colocar a SCP-6857 en el centro de una cámara de contención cúbica de diez (10) metros por lado. La contención debe cumplir los requerimientos de máxima seguridad estándar para objetos Seguros del Sit…"
+          "desc": "SCP-6857 debe ser contenido en el Sitio-56, Nevada. Se debe colocar a SCP-6857 en el centro de una cámara cúbica de diez (10) metros por lado. Este ambiente cerrado debe cumplir los requerimientos de máxima seguridad estándar para objetos Seguros en el Sitio-5…"
         },
         {
           "id": "incident-668-a",
@@ -20727,7 +20748,8 @@
             "scp-2967",
             "scp-3497",
             "scp-3531",
-            "scp-4396"
+            "scp-4396",
+            "scp-7511"
           ]
         },
         {
@@ -38107,9 +38129,19 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-ef3859d92e0c8c6457ff58a1b011029f3dc95534fb0a3bfb2335f37355df131e"
+        "structureHash": "sha256-e77f323027d1cac313c461e824805b16f9dfee002601199e248a887bd7cff8fe"
       },
       "primaryArticles": [
+        {
+          "id": "scp-9311",
+          "title": "Una Serie de Precauciones Complejas",
+          "url": "https://lafundacionscp.wikidot.com/scp-9311",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Los experimentos con SCP-9311 continuarán hasta que sus propósitos hayan sido identificados. Todas las instancias de SCP-9311 deben ser almacenadas dentro del Almacén 14-B, 14-C y 14-D en el Sitio-19. La contención adicional está pendiente."
+        },
         {
           "id": "scp-8058",
           "title": "2.600.000 Baterías",
@@ -38744,6 +38776,7 @@
           "id": "01-la-fabrica",
           "title": "La Fábrica",
           "articleIDs": [
+            "scp-9311",
             "scp-8058",
             "scp-8772",
             "scp-958",
@@ -38888,19 +38921,9 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-610c43fb90e0443e39ccece48e9d6c4a69b99ec95183f8e78594b308c43b5b23"
+        "structureHash": "sha256-87169d16cb419fe8f2e3f9773d7c3b7085cbefeca5c7ad6ab6d98805c6d367a0"
       },
       "primaryArticles": [
-        {
-          "id": "dead-end",
-          "title": "Fin del Camino",
-          "url": "https://lafundacionscp.wikidot.com/dead-end",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 0,
-          "desc": "Arkady sabía que este era el final. Estaba cansado de correr y podía reconocer un callejón sin salida metafórico cuando golpeaba su cabeza metafórica en él. Minutos a partir de ahora, lo alcanzarían. Al principio, serían amables y le pedirían que abriera la pu…"
-        },
         {
           "id": "scp-2617",
           "title": "Comando del Batallón de Invierno",
@@ -38920,6 +38943,16 @@
           "contentKind": "tale",
           "os": 1,
           "desc": "N.º DE EXPEDIENTE: CDR-4396 #7 OFICINA DE MANEJO: DIRECCIÓN DE DESTACAMENTOS Este documento está destinado ÚNICAMENTE al personal del Destacamento Mercurio. Contiene información que se considera sensible para la seguridad de la Fundación y sus operaciones. Su…"
+        },
+        {
+          "id": "dead-end",
+          "title": "Fin del Camino",
+          "url": "https://lafundacionscp.wikidot.com/dead-end",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Arkady sabía que este era el final. Estaba cansado de huir y podía reconocer un callejón sin salida metafórico cuando golpeaba su cabeza metafórica contra él. En cuestión de minutos lo alcanzarían. Al principio, serían amables y le pedirían que abriera la puer…"
         },
         {
           "id": "ankoshoku",
@@ -39150,9 +39183,9 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "dead-end",
             "scp-2617",
             "casefileforsimferopol",
+            "dead-end",
             "ankoshoku",
             "scp-1118",
             "scp-2762",
@@ -45525,7 +45558,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-1a8149a29a2832de309e9a82935e5cd33f9cc81ec3a7ca0fbe3660975620b4f8"
+        "structureHash": "sha256-a657d625c93493b50feecc25ef9f9d3ac5fbad7c58bc65c33f16741081bca6fb"
       },
       "primaryArticles": [
         {
@@ -45818,16 +45851,6 @@
           "desc": "La cámara de contención de SCP-633, ubicada en el Sitio-77 , es una jaula de Faraday subterránea. El acceso está restringido al personal Nivel 3/633. La red controlada por SCP-633 debe comunicarse a través de una computadora Apple Macintosh 520kb. Además, tres…"
         },
         {
-          "id": "scp-922",
-          "title": "Otra Versión de la Verdad",
-          "url": "https://lafundacionscp.wikidot.com/scp-922",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 2,
-          "desc": "Dado que SCP-922 está localizado en el campus de la Universidad de █████ 1 y en los barrios circundantes, los esfuerzos de contención se restringen a las áreas designadas por la Directora al-Zarqa, conjuntamente designadas como Sitio-305. El personal debe mant…"
-        },
-        {
           "id": "scp-6310",
           "title": "Caminos Falsos",
           "url": "https://lafundacionscp.wikidot.com/scp-6310",
@@ -45856,6 +45879,16 @@
           "contentKind": "scp",
           "os": 2,
           "desc": "SCP-541-FR permanecerá en la celda de contención humanoide estándar C-025 del Sitio-Beth, equipada con cámaras de alta resolución para captar la dirección de la mirada de la anomalía como parte del Procedimiento Espejo Negro. Todos los documentos relativos a l…"
+        },
+        {
+          "id": "scp-922",
+          "title": "Otra Versión de la Verdad",
+          "url": "https://lafundacionscp.wikidot.com/scp-922",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "Dado que SCP-922 está localizado en el campus de la Universidad de █████ 1 y en los barrios circundantes, los esfuerzos de contención se restringen a las áreas designadas por la Directora al-Zarqa, conjuntamente designadas como Sitio-305. El personal debe mant…"
         },
         {
           "id": "scp-2472",
@@ -46415,10 +46448,10 @@
             "scp-2972",
             "scp-285",
             "scp-633",
-            "scp-922",
             "scp-6310",
             "scp-5460",
             "scp-541-fr",
+            "scp-922",
             "scp-2472",
             "scp-378",
             "scp-457-jp",
@@ -47840,7 +47873,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-3263dd001fac1bd94e7eda2ce6da2c403248a0fc046cc084f7520ba12f3f5793"
+        "structureHash": "sha256-7009dc95eaa4aa19943faf5e9f8b1d4504a1d6649d1f1b318b394afafb0c1c5f"
       },
       "primaryArticles": [
         {
@@ -47852,14 +47885,14 @@
           "desc": "2. Hub De Los Archivos del Sitio-120 — by 3. Cuernos y Cuerdas — by"
         },
         {
-          "id": "scp-8372",
-          "title": "Cenizas de la Eternidad",
-          "url": "https://lafundacionscp.wikidot.com/scp-8372",
+          "id": "scp-2987",
+          "title": "Invictus",
+          "url": "https://lafundacionscp.wikidot.com/scp-2987",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 4,
-          "desc": "Hasta que concluya la investigación dirigida por ASRI sobre cómo la existencia de SCP-8372 no fue conocida por la Fundación, el personal que entre en la instalación no debe interactuar con ninguno de los objetos contenidos en su interior. Se debe impedir la en…"
+          "desc": "SCP-2987 ha de ser mantenido en el piso 17 del Sitio-88 . Retirarlo del lugar para pruebas requiere de la aprobación del director del proyecto de SCP-2987. Las pruebas que involucren interacciones de SCP-2987 con inteligencias artificiales requieren de la apro…"
         },
         {
           "id": "scp-1000",
@@ -48028,6 +48061,16 @@
           "contentKind": "tale"
         },
         {
+          "id": "scp-8372",
+          "title": "Cenizas de la Eternidad",
+          "url": "https://lafundacionscp.wikidot.com/scp-8372",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "Hasta que concluya la investigación dirigida por ASRI sobre cómo la existencia de SCP-8372 no fue conocida por la Fundación, el personal que entre en la instalación no debe interactuar con ninguno de los objetos contenidos en su interior. Se debe impedir la en…"
+        },
+        {
           "id": "scp-pl-273",
           "title": "La Flota Pepsi",
           "url": "https://lafundacionscp.wikidot.com/scp-pl-273",
@@ -48116,16 +48159,6 @@
           "contentKind": "goiFormat",
           "os": 2,
           "desc": "LEMA DEL ERRANTE: Mientras que debe resaltarse que los planes operativos escritos abajo llevan siendo innecesarios por casi un año, eso no quiere decir que los registros que juntamos estén desactualizados en lo más mínimo; todo lo contrario. Solo porque el pro…"
-        },
-        {
-          "id": "scp-2987",
-          "title": "Invictus",
-          "url": "https://lafundacionscp.wikidot.com/scp-2987",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4,
-          "desc": "SCP-2987 ha de ser mantenido en el piso 17 del Sitio-88 . Retirarlo del lugar para pruebas requiere de la aprobación del director del proyecto de SCP-2987. Las pruebas que involucren interacciones de SCP-2987 con inteligencias artificiales requieren de la apro…"
         },
         {
           "id": "scp-5659",
@@ -48375,7 +48408,7 @@
           "title": "Últimos Artículos",
           "articleIDs": [
             "laid-in-blood",
-            "scp-8372"
+            "scp-2987"
           ]
         },
         {
@@ -48458,21 +48491,28 @@
           ]
         },
         {
-          "id": "12-encontrando-a-avalon",
+          "id": "12-scp-8280-escapandose-por-las-grietas",
+          "title": "SCP-8280: Escapándose por las Grietas",
+          "articleIDs": [
+            "scp-8372"
+          ]
+        },
+        {
+          "id": "13-encontrando-a-avalon",
           "title": "Encontrando a Avalon",
           "articleIDs": [
             "scp-pl-273"
           ]
         },
         {
-          "id": "13-scp-7629-santuario-de-los-guardianes-del-cielo",
+          "id": "14-scp-7629-santuario-de-los-guardianes-del-cielo",
           "title": "SCP-7629: Santuario de los Guardianes del Cielo",
           "articleIDs": [
             "scp-pl-213"
           ]
         },
         {
-          "id": "14-articulos",
+          "id": "15-articulos",
           "title": "Artículos",
           "articleIDs": [
             "scp-1483",
@@ -48481,38 +48521,31 @@
           ]
         },
         {
-          "id": "15-expediente-de-instalacion-segura-sitio-120",
+          "id": "16-expediente-de-instalacion-segura-sitio-120",
           "title": "Expediente de Instalación Segura: Sitio-120",
           "articleIDs": [
             "scp-5464"
           ]
         },
         {
-          "id": "16-scp-7293-elenco-de-ursine",
+          "id": "17-scp-7293-elenco-de-ursine",
           "title": "SCP-7293: Elenco de Ursine",
           "articleIDs": [
             "scp-643"
           ]
         },
         {
-          "id": "17-scp-pl-389-fornax-aeterna",
+          "id": "18-scp-pl-389-fornax-aeterna",
           "title": "SCP-PL-389 : Fornax Aeterna [🌎]",
           "articleIDs": [
             "ambrose-esterberg"
           ]
         },
         {
-          "id": "18-la-reina-de-verde",
+          "id": "19-la-reina-de-verde",
           "title": "La Reina de Verde",
           "articleIDs": [
             "the-deathless-merchant-of-london"
-          ]
-        },
-        {
-          "id": "19-beso-beso-cae-en-la-oscuridad",
-          "title": "Beso Beso Cae en la Oscuridad",
-          "articleIDs": [
-            "scp-2987"
           ]
         },
         {
@@ -50024,7 +50057,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-e1d0518b8bc4a6a879a94b7811c2047d7f147260ae91fee5fdf40b666a7136d9"
+        "structureHash": "sha256-44b65ad947c8d430c25911da2314ea4da843363a4b91b87ac8de01d6686076a9"
       },
       "primaryArticles": [
         {
@@ -51119,16 +51152,6 @@
           "desc": "SCP-2201 está almacenado en un casillero estándar de contención de Objetos Anómalos de Clase Seguro ubicado en el Ala Gamma del Sitio-118. Los investigadores que deseen realizar pruebas con el objeto deben presentar un formulario de solicitud al Dr. Louef, act…"
         },
         {
-          "id": "scp-es-315",
-          "title": "La Fundación entra en sesion",
-          "url": "https://lafundacionscp.wikidot.com/scp-es-315",
-          "sourceManifest": "manifest_scp-es",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 8,
-          "desc": "El uso de SCP-ES-315 como método de desmantelamiento de objetos SCP está regulado bajo la normativa de Departamento de Desmantelamiento de la Fundación SCP y bajo consultoría del Departamento Legal de la Fundación SCP. La información de cómo iniciar un proceso…"
-        },
-        {
           "id": "scp-4057",
           "title": "Salvadla",
           "url": "https://lafundacionscp.wikidot.com/scp-4057",
@@ -51167,6 +51190,16 @@
           "contentKind": "scp",
           "os": 9,
           "desc": "Cada instancia de SCP-3477 debe estar contenida en una Celda de Contención de Anomalías Humanoides Estándar separada y modificada adecuadamente para cada instancia ubicada en el Sitio-72. Las instancias pueden ser informadas de la existencia de otras instancia…"
+        },
+        {
+          "id": "scp-es-315",
+          "title": "La Fundación entra en sesion",
+          "url": "https://lafundacionscp.wikidot.com/scp-es-315",
+          "sourceManifest": "manifest_scp-es",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "El uso de SCP-ES-315 como método de desmantelamiento de objetos SCP está regulado bajo la normativa de Departamento de Desmantelamiento de la Fundación SCP y bajo consultoría del Departamento Legal de la Fundación SCP. La información de cómo iniciar un proceso…"
         },
         {
           "id": "scp-434",
@@ -51848,11 +51881,11 @@
             "scp-3484",
             "scp-4566",
             "scp-2201",
-            "scp-es-315",
             "scp-4057",
             "scp-2501",
             "scp-4982",
             "scp-3477",
+            "scp-es-315",
             "scp-434",
             "scp-5462",
             "scp-1007",
@@ -56928,7 +56961,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-94418bcb0edc56c0147f615bd62cdeebf16e6e05d6c6cd9a000d0592f7517ab5"
+        "structureHash": "sha256-43552ad49bfea5368cffb379e56de79ccbe9c2aabcefd840e2aaec858346731c"
       },
       "primaryArticles": [
         {
@@ -56940,14 +56973,14 @@
           "desc": "Muy bien, aquí vamos! Quizás quieras leer el ensayo introductorio ."
         },
         {
-          "id": "yamizushi-file-noxxx",
-          "title": "yamizushi-file-noxxx",
-          "url": "https://lafundacionscp.wikidot.com/yamizushi-file-noxxx",
-          "sourceManifest": "manifest_gois",
+          "id": "yamizushi-file-noxyz",
+          "title": "Archivo del Sushi Oscuro Nro.縺ゅ′繧 \"Agujero Negro\"",
+          "url": "https://lafundacionscp.wikidot.com/yamizushi-file-noxyz",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 2,
-          "desc": "Este archivo ha sido clasificado por el Comité Invencible de Clasificación, Utilización, Mantenimiento y Dinamización (CI-CUMD) a Nivel Extra Confidencial. Si ignora esta advertencia y continua leyéndolo, será castigado con una multa de ATS por parte del Maest…"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Habían pasado varios años desde que su hermano mayor, Katsu, murió. Cuando a Sakae se le pidió por primera vez que se hiciera cargo de la tienda de su hermano, tuvo sentimientos encontrados. Sakae solía ser un artesano del nigiri que trabajaba duro con Katsu,…"
         },
         {
           "id": "scp-1134-jp",
@@ -56998,16 +57031,6 @@
           "contentKind": "tale",
           "os": 4,
           "desc": "\"¡No sé quién eres, pero esto es el Nigiri Dojo! ¡Nadie pasará sin permiso!\" Cinco cocineros de sushi estaban de pie frente a la puerta. Cada hombre llevaba un flamante traje de cocina blanco, pero la aspereza de sus manos demostraban que no eran un mero adorn…"
-        },
-        {
-          "id": "yamizushi-file-noxyz",
-          "title": "Archivo del Sushi Oscuro Nro.縺ゅ′繧 \"Agujero Negro\"",
-          "url": "https://lafundacionscp.wikidot.com/yamizushi-file-noxyz",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 3,
-          "desc": "Habían pasado varios años desde que su hermano mayor, Katsu, murió. Cuando a Sakae se le pidió por primera vez que se hiciera cargo de la tienda de su hermano, tuvo sentimientos encontrados. Sakae solía ser un artesano del nigiri que trabajaba duro con Katsu,…"
         },
         {
           "id": "sushi-go-round-or-spining-sushi",
@@ -57190,6 +57213,16 @@
           "desc": "La Tierra es un planeta de nuestro sistema solar en el que viven muchas formas de vida, incluidos los seres humanos. El autor de este Archivo del Sushi Oscuro asume que la humanidad, o la mayor parte de la humanidad, vive en la Tierra. La Tierra es el tercer p…"
         },
         {
+          "id": "yamizushi-file-noxxx",
+          "title": "yamizushi-file-noxxx",
+          "url": "https://lafundacionscp.wikidot.com/yamizushi-file-noxxx",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 2,
+          "desc": "Este archivo ha sido clasificado por el Comité Invencible de Clasificación, Utilización, Mantenimiento y Dinamización (CI-CUMD) a Nivel Extra Confidencial. Si ignora esta advertencia y continua leyéndolo, será castigado con una multa de ATS por parte del Maest…"
+        },
+        {
           "id": "yamizushi-file-no882",
           "title": "yamizushi-file-no882",
           "url": "https://lafundacionscp.wikidot.com/yamizushi-file-no882",
@@ -57363,7 +57396,7 @@
           "title": "Articles",
           "articleIDs": [
             "alors-comme-ca-vous-voulez-tourner-des-sushis",
-            "yamizushi-file-noxxx"
+            "yamizushi-file-noxyz"
           ]
         },
         {
@@ -57381,7 +57414,6 @@
             "sushi-3-2-1-hey-rassyai",
             "itamae-yami",
             "egg-drago",
-            "yamizushi-file-noxyz",
             "sushi-go-round-or-spining-sushi"
           ]
         },
@@ -57405,7 +57437,8 @@
             "yamizushi-file-no110",
             "yamizushi-file-no314-d",
             "koigarezaki-news-20210809",
-            "yamizushi-file-no795-d"
+            "yamizushi-file-no795-d",
+            "yamizushi-file-noxxx"
           ]
         },
         {
@@ -64709,18 +64742,18 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-c83eacd7b64ded6760c57f493e35c75fced94654f70838c5e16fff975097ec59"
+        "structureHash": "sha256-c8722d55bff3cb89e55b392e465585cd28059b810222da09664a3edf96245def"
       },
       "primaryArticles": [
         {
-          "id": "spc-2000",
-          "title": "SPC-2000",
-          "url": "https://lafundacionscp.wikidot.com/spc-2000",
+          "id": "spc-446",
+          "title": "SPC-446",
+          "url": "https://lafundacionscp.wikidot.com/spc-446",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 2,
-          "desc": "SPC-2000 actualmente está activo. Toda la información requerida está archivada. La replicación de entidades Selacimorfas debe continuar hasta nuevo aviso por parte de la CICAPOCO. El radio de entidades Selacimorfas Tipo-Base no modificadas y de entidades Selac…"
+          "os": 3,
+          "desc": "Proyecto #: SPC-446 Capacidades Pugilísticas contra Selacimorfos: SPC-446 ha demostrado ser sumamente eficaz cuando se utiliza contra enemigos que no son selacimorfos. El rango de efectividad de SPC-446 es superior a la mayoría de los medios de combate pugilís…"
         },
         {
           "id": "the-deviant",
@@ -64758,6 +64791,16 @@
           "contentKind": "goiFormat",
           "os": 3,
           "desc": "Proyecto #: SPC-001 Capacidades Pugilísticas contra Selacimorfos: El uso de SPC-001 ha incrementado la efectividad del proceso pugilístico y ha reducido el riesgo para el personal del Centro. El rango efectivo de SPC-001 ha superado con creces todo lo anterior…"
+        },
+        {
+          "id": "spc-2000",
+          "title": "SPC-2000",
+          "url": "https://lafundacionscp.wikidot.com/spc-2000",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 2,
+          "desc": "SPC-2000 actualmente está activo. Toda la información requerida está archivada. La replicación de entidades Selacimorfas debe continuar hasta nuevo aviso por parte de la CICAPOCO. El radio de entidades Selacimorfas Tipo-Base no modificadas y de entidades Selac…"
         },
         {
           "id": "spc-2615",
@@ -64798,16 +64841,6 @@
           "contentKind": "goiFormat",
           "os": 5,
           "desc": "SPC-3787 actualmente se encuentra en hiato debido al fracaso de las pruebas betas. La Operación CABALLO-DE-MAR resumirá su funcionalidad cuando el miedo a los selacimorfos pueda ser removido de todas las instancias de SPC-3787. Varios métodos de remover este m…"
-        },
-        {
-          "id": "spc-446",
-          "title": "SPC-446",
-          "url": "https://lafundacionscp.wikidot.com/spc-446",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 3,
-          "desc": "Proyecto #: SPC-446 Capacidades Pugilísticas contra Selacimorfos: SPC-446 ha demostrado ser sumamente eficaz cuando se utiliza contra enemigos que no son selacimorfos. El rango de efectividad de SPC-446 es superior a la mayoría de los medios de combate pugilís…"
         },
         {
           "id": "spc-507",
@@ -65189,16 +65222,16 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "spc-2000",
+            "spc-446",
             "the-deviant",
             "captain-kirby-s-holistic-proposal",
             "peppersghosts-stupid-proposal",
             "nicos-stupid-proposal",
+            "spc-2000",
             "spc-2615",
             "spc-2922",
             "spc-2970",
             "spc-3787",
-            "spc-446",
             "spc-507",
             "spc-6500",
             "spc-993",
@@ -66828,39 +66861,9 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-d02ad7edcc585d7a3e09f9ed5a71031995b9fb0e2a6ae1f4c731d8ac7f7aeeaf"
+        "structureHash": "sha256-71b0a844a0f18c09ae562d40f952bdd0871d8ff2e45a9ffadcec04d9463c0269"
       },
       "primaryArticles": [
-        {
-          "id": "spc-126-j",
-          "title": "SPC-126-J",
-          "url": "https://lafundacionscp.wikidot.com/spc-126-j",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 6,
-          "desc": "La instancia menos peligrosa conocida de SPC-126-A-J está contenida debajo. Verla tiene una probabilidad superior a cero de causar comportamiento Aberrante. ¿Desea verlo?"
-        },
-        {
-          "id": "10-30-a-m",
-          "title": "10:30 AM",
-          "url": "https://lafundacionscp.wikidot.com/10-30-a-m",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 11,
-          "desc": "Ok gente, sienten sus traseros y callen sus bocazas. Tengo lugares a los que ir, y gente más importante que ustedes que ver, porque casualmente yo soy un Científico y nosotros los científicos tenemos una tendencia a ser gente realmente ocupada e importante. Si…"
-        },
-        {
-          "id": "scp-4416",
-          "title": "Historias del Sitio-42: Por Qué La Fundación Golpea Tiburones",
-          "url": "https://lafundacionscp.wikidot.com/scp-4416",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 9,
-          "desc": "No se interferirá en todos los aspectos de las propiedades de SCP-4416; los ataques organizados a tiburones seguirán siendo comunes en el estado de Carolina del Norte. Cualquier caso de golpes a tiburones que se encuentre fuera del estado debe ser monitoreado…"
-        },
         {
           "id": "captain-kirby-s-holistic-proposal",
           "title": "Propuesta de Captain Kirby, o Algo Asi.",
@@ -66872,14 +66875,21 @@
           "desc": "Uso Costo Bomba Aqua Higiénica Poder primario seco efervescente concentrado de los pugilistas cuando hacen contacto con el agua. Proteína molecular con forma de puño que entrega golpes rápidos contra toda superficie selaciforme que toque. Óptimo para la pugili…"
         },
         {
-          "id": "spc-2615",
-          "title": "SPC-2615",
-          "url": "https://lafundacionscp.wikidot.com/spc-2615",
-          "sourceManifest": "manifest_gois",
+          "id": "how-the-spc-ruined-halloween",
+          "title": "Como el SPC Arruinó Halloween",
+          "url": "https://lafundacionscp.wikidot.com/how-the-spc-ruined-halloween",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 1,
-          "desc": "SPC-2615 está actualmente en pausa debido al robo del Sujeto ERIN VERDE por parte de elementos inter-universales. La reanudación de SPC-2615 solo podrá comenzar bajo una de las siguientes circunstancias:"
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-6426",
+          "title": "Barco Vampiro",
+          "url": "https://lafundacionscp.wikidot.com/scp-6426",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "SCP-6426 se encuentra confinado en una cámara de contención de 39m x 39m x 50m, debajo de la cual hay un tubo artificial de lava de 38.5m en diámetro. La anomalía se mantiene paralizada por un ariete naval actualmente incrustado dentro de su casco, perforando…"
         },
         {
           "id": "spc-446",
@@ -66890,6 +66900,16 @@
           "contentKind": "goiFormat",
           "os": 3,
           "desc": "Proyecto #: SPC-446 Capacidades Pugilísticas contra Selacimorfos: SPC-446 ha demostrado ser sumamente eficaz cuando se utiliza contra enemigos que no son selacimorfos. El rango de efectividad de SPC-446 es superior a la mayoría de los medios de combate pugilís…"
+        },
+        {
+          "id": "spc-2615",
+          "title": "SPC-2615",
+          "url": "https://lafundacionscp.wikidot.com/spc-2615",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 1,
+          "desc": "SPC-2615 está actualmente en pausa debido al robo del Sujeto ERIN VERDE por parte de elementos inter-universales. La reanudación de SPC-2615 solo podrá comenzar bajo una de las siguientes circunstancias:"
         },
         {
           "id": "spc-6500",
@@ -66957,16 +66977,6 @@
           "contentKind": "tale"
         },
         {
-          "id": "scp-6426",
-          "title": "Barco Vampiro",
-          "url": "https://lafundacionscp.wikidot.com/scp-6426",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 0,
-          "desc": "SCP-6426 se encuentra confinado en una cámara de contención de 39m x 39m x 50m, debajo de la cual hay un tubo artificial de lava de 38.5m en diámetro. La anomalía se mantiene paralizada por un ariete naval actualmente incrustado dentro de su casco, perforando…"
-        },
-        {
           "id": "scp-1767",
           "title": "Un Agente del Shark Punching Center",
           "url": "https://lafundacionscp.wikidot.com/scp-1767",
@@ -67005,6 +67015,16 @@
           "contentKind": "goiFormat",
           "os": 3,
           "desc": "AVISO GENERAL 001-Alfa: Con el fin de mantener la información de SPC-001 lejos de los simpatizantes selacimorfes, se han creados varios archivos SPC-001 no/falsos se han creado junto con el/los verdadero/s archivo/archivos. Todos los expedientes relativos a la…"
+        },
+        {
+          "id": "spc-126-j",
+          "title": "SPC-126-J",
+          "url": "https://lafundacionscp.wikidot.com/spc-126-j",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 6,
+          "desc": "La instancia menos peligrosa conocida de SPC-126-A-J está contenida debajo. Verla tiene una probabilidad superior a cero de causar comportamiento Aberrante. ¿Desea verlo?"
         },
         {
           "id": "spc-172-j",
@@ -67051,12 +67071,11 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "spc-126-j",
-            "10-30-a-m",
-            "scp-4416",
             "captain-kirby-s-holistic-proposal",
-            "spc-2615",
+            "how-the-spc-ruined-halloween",
+            "scp-6426",
             "spc-446",
+            "spc-2615",
             "spc-6500",
             "spc-993",
             "spc-2000",
@@ -67065,11 +67084,11 @@
             "umbral-migratory-sequence",
             "avian-anthology-i",
             "crispy-sex-pirates",
-            "scp-6426",
             "scp-1767",
             "is-it-weird-if-i-want-to-fuck-the-shark",
             "scp-1569",
             "spc-001",
+            "spc-126-j",
             "spc-172-j",
             "spc-1057-j",
             "spc-169-j",
@@ -67210,7 +67229,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-18e6abf1384656c9d13614b0b4f1c2fc9deae45e5cb52a879df735cf5e2ca4af"
+        "structureHash": "sha256-f72d3e562534ae2747c364116cd85cab1e5d6d422e1a7bab964567e257a179cf"
       },
       "primaryArticles": [
         {
@@ -67354,6 +67373,13 @@
           "contentKind": "tale"
         },
         {
+          "id": "personal-log-of-gordon-richards",
+          "title": "Diario personal de Gordon Richards",
+          "url": "https://lafundacionscp.wikidot.com/personal-log-of-gordon-richards",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "document-087-iii",
           "title": "Documento #087-III",
           "url": "https://lafundacionscp.wikidot.com/document-087-iii",
@@ -67380,13 +67406,6 @@
           "url": "https://lafundacionscp.wikidot.com/scp-1444-rescue-log",
           "role": "primaryArticle",
           "contentKind": "scp"
-        },
-        {
-          "id": "personal-log-of-gordon-richards",
-          "title": "Diario personal de Gordon Richards",
-          "url": "https://lafundacionscp.wikidot.com/personal-log-of-gordon-richards",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "scp-1444-exploration-log-2",
@@ -67760,6 +67779,13 @@
           "contentKind": "tale"
         },
         {
+          "id": "termination-report-269",
+          "title": "Informe de Terminación SCP-269",
+          "url": "https://lafundacionscp.wikidot.com/termination-report-269",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
           "id": "scp-069-j-research-log",
           "title": "SCP-069-J Registro De Investigaciones",
           "url": "https://lafundacionscp.wikidot.com/scp-069-j-research-log",
@@ -67896,11 +67922,11 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-2284-a",
-          "title": "SCP-2284",
-          "url": "https://lafundacionscp.wikidot.com/scp-2284-a",
+          "id": "goc-supplemental-humanoid-guide",
+          "title": "Extractos del Manual de Campo de la División PHYSICS 13: Circunstancias Especiales, Entidades Amenaza Humanoides",
+          "url": "https://lafundacionscp.wikidot.com/goc-supplemental-humanoid-guide",
           "role": "primaryArticle",
-          "contentKind": "scp"
+          "contentKind": "tale"
         },
         {
           "id": "techissues",
@@ -67957,13 +67983,6 @@
           "id": "ask-lord-blackwood",
           "title": "Pregúntale a Lord Blackwood",
           "url": "https://lafundacionscp.wikidot.com/ask-lord-blackwood",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "goc-supplemental-humanoid-guide",
-          "title": "Extractos del Manual de Campo de la División PHYSICS 13: Circunstancias Especiales, Entidades Amenaza Humanoides",
-          "url": "https://lafundacionscp.wikidot.com/goc-supplemental-humanoid-guide",
           "role": "primaryArticle",
           "contentKind": "tale"
         },
@@ -68062,11 +68081,11 @@
           "id": "02-exploraciones",
           "title": "Exploraciones",
           "articleIDs": [
+            "personal-log-of-gordon-richards",
             "document-087-iii",
             "document-087-ii",
             "document-087-i",
             "scp-1444-rescue-log",
-            "personal-log-of-gordon-richards",
             "scp-1444-exploration-log-2",
             "scp-1444-exploration-log-1",
             "scp-186-jp-log",
@@ -68138,6 +68157,7 @@
           "id": "05-suplementos-independientes",
           "title": "Suplementos Independientes",
           "articleIDs": [
+            "termination-report-269",
             "scp-069-j-research-log",
             "document-2481",
             "registro-fotografico",
@@ -68156,14 +68176,14 @@
             "log-1251-01",
             "rhizopus-muscalenae-es-369",
             "reproduction-of-scp-939",
-            "scp-pl-000-j-1",
-            "scp-2284-a"
+            "scp-pl-000-j-1"
           ]
         },
         {
           "id": "06-paginas-colaborativas",
           "title": "Páginas Colaborativas",
           "articleIDs": [
+            "goc-supplemental-humanoid-guide",
             "techissues",
             "operation-galahad",
             "scp-fronts",
@@ -68171,7 +68191,6 @@
             "goc-supplemental-equipment",
             "broken-masquerade-epistolary",
             "ask-lord-blackwood",
-            "goc-supplemental-humanoid-guide",
             "interviews-with-prospective-groups-of-interest",
             "channel-surfing",
             "goc-supplemental-threat-entities",
@@ -68245,7 +68264,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-e6a5272c760521feb525e276b0d1b61c238ea162cb2f7dc3b4cf6fe31ec7cb8d"
+        "structureHash": "sha256-b6fd99c90bc1da01506ae3eb1f0af4f62deb3c9fe19b9060e719afa703c36b50"
       },
       "primaryArticles": [
         {
@@ -75065,7 +75084,7 @@
         },
         {
           "id": "scp-058",
-          "title": "Corazón de la Obscuridad",
+          "title": "Corazón de la Oscuridad",
           "url": "https://lafundacionscp.wikidot.com/scp-058",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
@@ -80932,7 +80951,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-2cc5d697015c2f85cec04acb37285c4df749e50440a8888a8c62323ee6947488"
+        "structureHash": "sha256-089286fc9f558be5a97db3cf4fc54b7d813e1b3669c69ef72795fd0dc9b918d9"
       },
       "primaryArticles": [
         {
@@ -82591,7 +82610,7 @@
         },
         {
           "id": "scp-058",
-          "title": "Corazón de la Obscuridad",
+          "title": "Corazón de la Oscuridad",
           "url": "https://lafundacionscp.wikidot.com/scp-058",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
@@ -88338,7 +88357,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 6,
-          "desc": "Actualmente no hay un sitio de contención permanente para SCP-514 (ver Anexo 2). SCP-514 está actualmente siendo rastreado por el Destacamento Móvil Lambda-4 (\"Pájaro En Mano\"), quienes tienen ordenes de vigilar a SCP-514. En el caso de que SCP-514 se pose cer…"
+          "desc": "Actualmente no hay un sitio de contención permanente para SCP-514 (ver Anexo 2). SCP-514 está actualmente siendo rastreado por el Destacamento Móvil Lambda-4 (\"Aficionados a los Pájaros\"), quienes tienen ordenes de vigilar a SCP-514. En el caso de que SCP-514…"
         },
         {
           "id": "scp-515",
@@ -97302,7 +97321,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-06ab2ca933a2039faeaf721fed405ccf81284e21d882496be6990192a512efea"
+        "structureHash": "sha256-5a0073e2520baefd87ee162478933f221dfb09cf74c8d3598e812e6af3d186aa"
       },
       "primaryArticles": [
         {
@@ -97920,7 +97939,7 @@
         },
         {
           "id": "scp-058",
-          "title": "Corazón de la Obscuridad",
+          "title": "Corazón de la Oscuridad",
           "url": "https://lafundacionscp.wikidot.com/scp-058",
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
@@ -102456,7 +102475,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 6,
-          "desc": "Actualmente no hay un sitio de contención permanente para SCP-514 (ver Anexo 2). SCP-514 está actualmente siendo rastreado por el Destacamento Móvil Lambda-4 (\"Pájaro En Mano\"), quienes tienen ordenes de vigilar a SCP-514. En el caso de que SCP-514 se pose cer…"
+          "desc": "Actualmente no hay un sitio de contención permanente para SCP-514 (ver Anexo 2). SCP-514 está actualmente siendo rastreado por el Destacamento Móvil Lambda-4 (\"Aficionados a los Pájaros\"), quienes tienen ordenes de vigilar a SCP-514. En el caso de que SCP-514…"
         },
         {
           "id": "scp-515",
@@ -108441,7 +108460,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-7c25582f7a59a5fb9ee5e8ae1e416b27080ce1ea7e0cb6ee87b9edafe15149ea"
+        "structureHash": "sha256-e7af84d8d477785f31b840f6ce49c2e2a35bbece05cd440aa8fc719c16ce28b1"
       },
       "primaryArticles": [
         {
@@ -115093,7 +115112,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 0,
-          "desc": "SCP-1687 se mantendrá guardado con llave en un estuche de violín en el almacén de seguridad del Sitio 19. Todo el personal que no sea de Clase D que interactúe con el objeto debe forzosamente carecer de conocimientos musicales. El personal de Clase D asignado…"
+          "desc": "SCP-1687 se mantendrá guardado con llave en un estuche de violín en el almacén asegurado del Sitio 19. Es requerido que todo el personal que no sea de Clase-D que interactúe con el objeto carezca de oído musical. El personal de Clase-D asignado a los experimen…"
         },
         {
           "id": "scp-1689",
@@ -124841,7 +124860,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-8025e665ab281bd09b926ce3015031b22a335ce75c5e64ecddf8d354cc05a433"
+        "structureHash": "sha256-9612b571324d4eddd070ddc55ac81bd1cd02917ead21e5d64fc956bfcd9953ed"
       },
       "primaryArticles": [
         {
@@ -125200,7 +125219,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 0,
-          "desc": "Debido a la información en el Anexo PL-302/2, el navío KENNEDY-3848-XK está vetada de responder a cualquier transmisión de radio."
+          "desc": "Debido a la información en el Anexo PL-302/2, el navío KENNEDY-3848-XK está vetado de responder a cualquier transmisión de radio."
         },
         {
           "id": "scp-pl-380",
@@ -148892,7 +148911,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-acecdf662d8b4bd00a29875abb311af4133a8b94f3ea34bd5deac1f486efa4db"
+        "structureHash": "sha256-d14a817d4d79cf28084ba8df42dfc7e9f89ffdf42ff1f761e8f114f80a52cb99"
       },
       "primaryArticles": [
         {
@@ -150616,7 +150635,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 1,
-          "desc": "SCP-6857 debe ser contenido en el Sitio-56, Nevada. Se debe colocar a SCP-6857 en el centro de una cámara de contención cúbica de diez (10) metros por lado. La contención debe cumplir los requerimientos de máxima seguridad estándar para objetos Seguros del Sit…"
+          "desc": "SCP-6857 debe ser contenido en el Sitio-56, Nevada. Se debe colocar a SCP-6857 en el centro de una cámara cúbica de diez (10) metros por lado. Este ambiente cerrado debe cumplir los requerimientos de máxima seguridad estándar para objetos Seguros en el Sitio-5…"
         },
         {
           "id": "scp-6863",
@@ -151310,7 +151329,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-9cd198b616ba2cfe7e7d508f32bea39392978f4161fc44005fa40073d2de9c31"
+        "structureHash": "sha256-154119acb0d268a02542b7ad1fd6ada541077ded6a63ef96d9441889235b307b"
       },
       "primaryArticles": [
         {
@@ -151935,6 +151954,16 @@
           "contentKind": "scp",
           "os": 3,
           "desc": "SCP-7505 debe estar contenido dentro de una unidad de contención estándar de gran tamaño ubicada dentro del Área Subterránea-49, junto con las 25 instancias de SCP-7505-A existentes. SCP-7505 debe permanecer físicamente cerrado en todo momento. A cualquier per…"
+        },
+        {
+          "id": "scp-7511",
+          "title": "LLENO DE OJOS",
+          "url": "https://lafundacionscp.wikidot.com/scp-7511",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP #7511-I es una entidad demoníaca aérea que ataca a residentes y viajeros a lo largo de la Vía Santiago , Provincia de Hispania. En su forma plana, SCP #7511-I se asemeja a un gran óculo de iris verde, con múltiples zarcillos, suspendido sobre numerosas ala…"
         },
         {
           "id": "scp-7533",
@@ -152592,6 +152621,7 @@
           "articleIDs": [
             "scp-7500",
             "scp-7505",
+            "scp-7511",
             "scp-7533",
             "scp-7539",
             "scp-7546",
@@ -153041,7 +153071,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-8a4305f835a64184675f55445da2a081f8e929711ae58c48808db9107ae16d21"
+        "structureHash": "sha256-777c4584bc91f673f227499991933552302ad358479fce367012594da9d63fdb"
       },
       "primaryArticles": [
         {
@@ -153226,6 +153256,16 @@
           "contentKind": "scp",
           "os": 1,
           "desc": "Queda estrictamente prohibido el acercamiento o la observación no autorizados por parte de personal ajeno a la Fundación. El Sitio Orbital-083 supervisará todo el tráfico en el sistema de la Estrella de Barnard e impedirá el uso no autorizado por parte de la F…"
+        },
+        {
+          "id": "scp-9311",
+          "title": "Una Serie de Precauciones Complejas",
+          "url": "https://lafundacionscp.wikidot.com/scp-9311",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 0,
+          "desc": "Los experimentos con SCP-9311 continuarán hasta que sus propósitos hayan sido identificados. Todas las instancias de SCP-9311 deben ser almacenadas dentro del Almacén 14-B, 14-C y 14-D en el Sitio-19. La contención adicional está pendiente."
         },
         {
           "id": "scp-9330",
@@ -153497,6 +153537,7 @@
           "title": "9300 - 9399",
           "articleIDs": [
             "scp-9300",
+            "scp-9311",
             "scp-9330",
             "scp-9339",
             "scp-9369",
@@ -153633,7 +153674,7 @@
         "allowedHosts": [
           "lafundacionscp.wikidot.com"
         ],
-        "structureHash": "sha256-30785a4b773591b25a45b90414dc274274b8f3df314a9c20bfa587ff88603192"
+        "structureHash": "sha256-816fd36204408a52a7f390303379f3b3cba207df45c3db1449e3a270fc16b345"
       },
       "primaryArticles": [
         {
@@ -153708,7 +153749,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 0,
-          "desc": "Debido a su naturaleza, la contención de SCP-ZH-115 es imposible. Si bien el fenómeno es poco común 1 y supone una amenaza baja, solo son necesarias las operaciones de inteligencia y encubrimiento post-incidente."
+          "desc": "Debido a su naturaleza, la contención de SCP-ZH-115 es imposible. Si bien el fenómeno es poco común 1 y supone una baja amenaza, solo son necesarias las operaciones de inteligencia y encubrimiento post-incidente."
         },
         {
           "id": "scp-zh-132",
