@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791106660,
-  "generatedAt": "2026-10-04T09:37:40Z",
-  "chunkRevision": "sha256-fdf1b8c7f8ca7bb90d4e4f42c06eb8a2ddb88d37851d52cea0f0ba3fb71ad2fd",
+  "listVersion": 1791197580,
+  "generatedAt": "2026-10-05T10:53:00Z",
+  "chunkRevision": "sha256-70f0fc83b3e7b07cda1873f9cc514e6ae6c6cb06edefb32f997453115e62f07b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791106572,
-        "generatedAt": "2026-10-04T09:36:12Z",
-        "contentHash": "sha256-59c18669ab0bc9f95ee19fad082b3842469175d681324d9ae6e89609ff2de9a2"
+        "listVersion": 1791197412,
+        "generatedAt": "2026-10-05T10:50:12Z",
+        "contentHash": "sha256-efc8b4848e0e46fc32d01a4a25ac8d6d4325ce5f5eb9cd086253328cbbeab283"
       },
       {
         "kind": "manifest_gois",
@@ -28,9 +28,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-de.json",
         "schemaVersion": 2,
-        "listVersion": 1790362213,
-        "generatedAt": "2026-09-25T18:50:13Z",
-        "contentHash": "sha256-d11aa099028e9cda160852ac9282261455db13ea9d7b83e8375f3c3728465ed4"
+        "listVersion": 1791197310,
+        "generatedAt": "2026-10-05T10:48:30Z",
+        "contentHash": "sha256-8ce4f07e9a1beecfeccab3824ea16754c08b8ec425ebd50ab59d280baa5e8f51"
       },
       {
         "kind": "manifest_scp-int",
@@ -46,18 +46,18 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1790362213,
-        "generatedAt": "2026-09-25T18:50:13Z",
-        "contentHash": "sha256-ec55954b7575332b65a1b1ef41a468e23ea1dd173a3657567ccfc4bfb5d0590a"
+        "listVersion": 1791197359,
+        "generatedAt": "2026-10-05T10:49:19Z",
+        "contentHash": "sha256-9ad96779f250eeffa9d56d25a11cc5da01d340b9fbcd77ef1df28e40a9bf22e5"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1790362214,
-        "generatedAt": "2026-09-25T18:50:14Z",
-        "contentHash": "sha256-397de62d6eb293f5971ed0ff74fb25ec3dcc541ab01c81695ca1ec4ed21ec928"
+        "listVersion": 1791197400,
+        "generatedAt": "2026-10-05T10:50:00Z",
+        "contentHash": "sha256-05402ac5c6873168508b5a1b74d0198ca19482bc012917ad8533fa8fe463f33c"
       }
     ],
     "seedReview": {
@@ -75,9 +75,9 @@
       "branchID": "scp-de",
       "path": "DataPipeline/list/de/de_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1789456677,
-      "generatedAt": "2026-09-15T07:17:57Z",
-      "contentHash": "sha256-d18ac65754b5d5c785ad9e3bfdc8d68884322690a3575e3d96cc99483ecbb436"
+      "listVersion": 1791197401,
+      "generatedAt": "2026-10-05T10:50:00Z",
+      "contentHash": "sha256-98ec2c828cf3fb64ecd1f6800c959d03b4ca6fe65cf32cb5fc8ab163e6597ee7"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -6663,7 +6663,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-1ce13f9c5cfc45f8e24befb6793cc8c32ebef45d2491b12c1887ebcea49a0bcd"
+        "structureHash": "sha256-ab0e2641099c469e37f103b822125cb423c2feb413be457d500f8383a8b5cdcd"
       },
       "primaryArticles": [
         {
@@ -7007,6 +7007,16 @@
           "desc": "Das letzte Mal bei Nexus: Dean, Teil 3 Viktor war glücklich. Endlich saß er mal ganz in Ruhe auf seiner Terrasse, schlürfte einen Kakao, die Vögel zwitscherten und mit einer gewissen Belustigung hörte er, wie sich Mathilda unten lautstark mit dem Rasenmäher ab…"
         },
         {
+          "id": "budgetkuerzungen",
+          "title": "Budgetkürzungen",
+          "url": "http://scp-wiki-de.wikidot.com/budgetkuerzungen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Artikel: Budgetkürzungen"
+        },
+        {
           "id": "verlust-2",
           "title": "Verlust, Episode 2: Gejagt",
           "url": "http://scp-wiki-de.wikidot.com/verlust-2",
@@ -7035,16 +7045,6 @@
           "contentKind": "tale",
           "os": 7,
           "desc": "Das letzte Mal bei Nexus: Trickster Heist, Teil 1 \"GpExpress?\", fragte Viktor. Von einer solchen Firma hatte er noch nie etwas gehört."
-        },
-        {
-          "id": "budgetkuerzungen",
-          "title": "Budgetkürzungen",
-          "url": "http://scp-wiki-de.wikidot.com/budgetkuerzungen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 8,
-          "desc": "Artikel: Budgetkürzungen"
         },
         {
           "id": "wie-lange-dauert-die-unendlichkeit",
@@ -7143,10 +7143,10 @@
             "ein-seltsamer-tagtraum-so-suess-wie-gift",
             "verlust-1",
             "nexus-11-1",
+            "budgetkuerzungen",
             "verlust-2",
             "nexus-11-3",
             "nexus-11-2",
-            "budgetkuerzungen",
             "wie-lange-dauert-die-unendlichkeit",
             "to-whom-it-may-concern",
             "mirror-in-your-mind",
@@ -7959,7 +7959,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-a8718aea8c2c2db495fd20953ce1fb9bf9a467a5055498be388dc8ec6b14d2e6"
+        "structureHash": "sha256-b90b50fef2a3975e5e82a4c53cf41ded9b2e40f574eebb1bcbcc1cff9802cfa5"
       },
       "primaryArticles": [
         {
@@ -8007,14 +8007,14 @@
           "id": "01-artikel",
           "title": "Artikel",
           "articleIDs": [
-            "scp-1134-jp",
-            "nexus-13-2"
+            "scp-1134-jp"
           ]
         },
         {
           "id": "02-sushi-aus-der-ganzen-welt",
           "title": "Sushi aus der ganzen Welt",
           "articleIDs": [
+            "nexus-13-2",
             "nexus-13-3",
             "yamizushi-hub"
           ]
@@ -8681,7 +8681,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-140e928c5187b4074d45487ec476492921889bb61d75c5f85216ecb15ed24aff"
+        "structureHash": "sha256-fa00889fa5cceac79bae6b5cdddbb1d16815ea173073a47c97674f7b4b33cbb5"
       },
       "primaryArticles": [
         {
@@ -8743,6 +8743,33 @@
           "contentKind": "tale",
           "os": 0,
           "desc": "Das letzte Mal bei Noctua Arcana: Das erste Spukhaus von Beelitz-Heilstätten Im Skagerrak tobte der heftigste Sturm, den Sörensen je erlebt hatte. Er war eigentlich mit seinen beiden Kollegen bei strahlendem Sonnenschein mit seinem kleinen Fischkutter Dagny au…"
+        },
+        {
+          "id": "noctua-arkana-7",
+          "title": "U22",
+          "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-7",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "noctua-arkana-8",
+          "title": "Ashmore Ranch",
+          "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-8",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Das letzte Mal bei Noctua Arcana: Margret, eine Frau mit einem braunen Pferdeschwanz, die mittlerweile wesentlich älter wirkte als sie mit sechsunddreißig war, saß den Tränen nahe in der Küche ihres Bauernhauses. Sie wollte anfangen zu heulen, aber sie musste…"
+        },
+        {
+          "id": "noctua-arkana-9",
+          "title": "Der Beobachter",
+          "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-9",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Das letzte Mal bei Noctua Arcana: Ashmore Ranch Das Haus wackelte so stark, dass Möbel anfingen, über den Boden zu rutschen. Der Esstisch schien davon nicht betroffen zu sein, weil er auf Filzlappen stand, wie Mira nun bemerkte. Nelly rannte zu ihrer Mutter, w…"
         }
       ],
       "supplementLinks": [],
@@ -8756,7 +8783,10 @@
             "noctua-arkana-3",
             "noctua-arkana-4",
             "noctua-arkana-5",
-            "noctua-arkana-6"
+            "noctua-arkana-6",
+            "noctua-arkana-7",
+            "noctua-arkana-8",
+            "noctua-arkana-9"
           ]
         }
       ],
