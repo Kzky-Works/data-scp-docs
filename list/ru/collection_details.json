@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791105724,
-  "generatedAt": "2026-10-04T09:22:04Z",
-  "chunkRevision": "sha256-7e7c2b49d12c714d9fdd674e430cf5566ebc7e30df41b5984d5e71fa387a0448",
+  "listVersion": 1791192277,
+  "generatedAt": "2026-10-05T09:24:37Z",
+  "chunkRevision": "sha256-c4d4dd098de88810115970d3fb72e752c0e96a3595abc808dd09170dac82916b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791105708,
-        "generatedAt": "2026-10-04T09:21:48Z",
-        "contentHash": "sha256-77a3dd93f409e49ccbe6b75b33aec8fe0bbb6438f99d55989fc33b5f38911216"
+        "listVersion": 1791191943,
+        "generatedAt": "2026-10-05T09:19:03Z",
+        "contentHash": "sha256-038635412d8522bd595f402b07290b0235b8333830634b96d0716ed7b0247f3c"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1791017725,
-        "generatedAt": "2026-10-03T08:55:25Z",
-        "contentHash": "sha256-3b0ccdf87e08a03fa43f0f5888c13f746cf2409714b9818a44819db6c0bc9cf7"
+        "listVersion": 1791192073,
+        "generatedAt": "2026-10-05T09:21:13Z",
+        "contentHash": "sha256-7aec8fc9b04cc8d8305a037b5e1eee23fa8499e7b3d708555564a9759c0a1c7b"
       },
       {
         "kind": "manifest_scp-int",
@@ -37,27 +37,27 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1791105717,
-        "generatedAt": "2026-10-04T09:21:57Z",
-        "contentHash": "sha256-033d4c945fd77c90c21c5e3e2cc46b77f3f571223e1a4eb744aef8dba465c14a"
+        "listVersion": 1791191959,
+        "generatedAt": "2026-10-05T09:19:19Z",
+        "contentHash": "sha256-87db60fe4502620af2f037b3dd15535b12bdcb9158814246fc7fd2d5a19e6575"
       },
       {
         "kind": "manifest_scp-ru",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-ru.json",
         "schemaVersion": 2,
-        "listVersion": 1791017725,
-        "generatedAt": "2026-10-03T08:55:25Z",
-        "contentHash": "sha256-9ac607f4e76f0fde7f6e97a84cee85fb40f0632e2f30c1efe242de3c961f45fe"
+        "listVersion": 1791191959,
+        "generatedAt": "2026-10-05T09:19:19Z",
+        "contentHash": "sha256-632ebfeb1c86f6fe6dfa390ec0cd9fd8df48373f3b201c48f14cb07bcffde445"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1791105717,
-        "generatedAt": "2026-10-04T09:21:57Z",
-        "contentHash": "sha256-ecbb62b950ac1c955d3cf4e6344d7e31aef04fbf71348c380183505b6a5f1d39"
+        "listVersion": 1791191940,
+        "generatedAt": "2026-10-05T09:19:00Z",
+        "contentHash": "sha256-7fe2c180d9b242914758a8861884c14d6ee4a194ef282cce20ca52eeadf9d58f"
       }
     ],
     "seedReview": {
@@ -80,9 +80,9 @@
       "branchID": "scp-ru",
       "path": "DataPipeline/list/ru/ru_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1791105718,
-      "generatedAt": "2026-10-04T09:21:58Z",
-      "contentHash": "sha256-64d85c4f96c28e3f901cda299b6237bdee0df2d5dc6d2c7721ba55c0327c1364"
+      "listVersion": 1791192078,
+      "generatedAt": "2026-10-05T09:21:18Z",
+      "contentHash": "sha256-2a93ceb419e8805cd954156e64c29b7bac9b0eb67c10d90901f17a924570fcce"
     }
   },
   "collections": [
@@ -1693,7 +1693,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -1820,7 +1820,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -2168,7 +2168,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -2610,7 +2610,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -2939,7 +2939,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -3390,7 +3390,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -5833,7 +5833,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -6007,7 +6007,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -6998,7 +6998,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -7107,7 +7107,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Selective source-backed additions; existing entrances retained. Partial source coverage/existence holds are retained separately. Individual body fetch not verified."
+        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
       },
       "memberManifests": [
         "manifest_scp-ru",
