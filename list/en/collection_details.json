@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791367219,
-  "generatedAt": "2026-10-07T10:00:19Z",
-  "chunkRevision": "sha256-43ce621ef22ed904448a875857958e1e2d26e1a5dd795b331876ba41a95e9677",
+  "listVersion": 1791454204,
+  "generatedAt": "2026-10-08T10:10:04Z",
+  "chunkRevision": "sha256-4c963b81eb742cc5a06a6b2ead428e50004f307ecd9719e40b993075c2a00bc7",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791366615,
-        "generatedAt": "2026-10-07T09:50:15Z",
-        "contentHash": "sha256-ecc9ede014a05837b2baf5329538af702e908abfb3b2b606036e782d00147aa7"
+        "listVersion": 1791453635,
+        "generatedAt": "2026-10-08T10:00:35Z",
+        "contentHash": "sha256-582e0df437b4e33060ca328cec65d9650256419b81c27a92291b5bffe14f68e8"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1791366723,
-        "generatedAt": "2026-10-07T09:52:03Z",
-        "contentHash": "sha256-147fbe6b3a594a9fb34598ce6570eb7793ce61e37d9447e065aa4d48b67452ce"
+        "listVersion": 1791453738,
+        "generatedAt": "2026-10-08T10:02:18Z",
+        "contentHash": "sha256-f5c579f09f5392bc9ceccdc8a0a8d91aacd6c49a3e37a8f236794f6c9d32021c"
       },
       {
         "kind": "manifest_scp-foundation",
@@ -2330,7 +2330,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-c6ca140be404dccfb0fc8b0543729ddd3da110e55f7c99150ce5f9792ff98266"
+        "structureHash": "sha256-e40f37bafe2e012140fa782919ff44cfcf7bf427f61a762ff784ff7e6b363e71"
       },
       "primaryArticles": [
         {
@@ -2814,13 +2814,6 @@
           "desc": "Foundation agents within aerospace organizations are to monitor for discovery of SCP-3485. Class-A amnestics are to be administered to personnel with memories of SCP-3485. In the event that the discovery of SCP-3485 is published, false information is to be dis…"
         },
         {
-          "id": "scp-4800-j",
-          "title": "SCP-4800-J",
-          "url": "https://scp-wiki.wikidot.com/scp-4800-j",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-4799",
           "title": "Mariachi's Merchants",
           "url": "https://scp-wiki.wikidot.com/scp-4799",
@@ -2829,6 +2822,13 @@
           "contentKind": "scp",
           "os": 127,
           "desc": "In the event that any member of SCP-4799 manifests within a Foundation-controlled universe, efforts are to be undertaken to prevent them from using technology to exit our timeline as detailed below. Once captured, they are to undergo analysis and be detained i…"
+        },
+        {
+          "id": "scp-4800-j",
+          "title": "SCP-4800-J",
+          "url": "https://scp-wiki.wikidot.com/scp-4800-j",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         },
         {
           "id": "scp-5981",
@@ -3230,6 +3230,13 @@
           "contentKind": "scp"
         },
         {
+          "id": "scp-093-j-blue-test",
+          "title": "SCP-093-J Blue Test",
+          "url": "https://scp-wiki.wikidot.com/scp-093-j-blue-test",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
           "id": "scp-4785-exploration-2",
           "title": "\"Cube\" Incursion Log #1",
           "url": "https://scp-wiki.wikidot.com/scp-4785-exploration-2",
@@ -3240,13 +3247,6 @@
           "id": "scp-4785-exploration-3",
           "title": "\"Cube\" Incursion Log #2",
           "url": "https://scp-wiki.wikidot.com/scp-4785-exploration-3",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-093-j-blue-test",
-          "title": "SCP-093-J Blue Test",
-          "url": "https://scp-wiki.wikidot.com/scp-093-j-blue-test",
           "role": "primaryArticle",
           "contentKind": "scp"
         },
@@ -6043,8 +6043,8 @@
             "scp-199",
             "scp-7234",
             "scp-3485",
-            "scp-4800-j",
             "scp-4799",
+            "scp-4800-j",
             "scp-5981",
             "scp-3833",
             "scp-4808",
@@ -6087,9 +6087,9 @@
             "scp-4785-exploration-4",
             "scp-4785-exploration-1",
             "scp-093-j-recovered-documents",
+            "scp-093-j-blue-test",
             "scp-4785-exploration-2",
             "scp-4785-exploration-3",
-            "scp-093-j-blue-test",
             "scp-093-j-purple-test",
             "scp-093-j-green-test",
             "the-ballad-of-neapolio",
@@ -10658,7 +10658,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-85093a6cb7df8686222ca8d21cf600ee62271d4210feb34f3f9634034050b8b0"
+        "structureHash": "sha256-5eada0add094599a0095df799b4c950af85806c3686105f17d2d4c14769f5851"
       },
       "primaryArticles": [
         {
@@ -14271,7 +14271,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Explore every way things can go wrong for each SCP-001 proposal. Choose random file? Illac decrypted.",
+      "description": "Explore every way things can go wrong for each SCP-001 proposal. Choose random file? Umbra decrypted.",
       "manualTagReason": "EN canon hub rows carry no hub metadata.g. Auto-derived 2026-06-21: canonical tag 'thaumiel' = hub slug form; 335 members via reverse-lookup across ['manifest_scp-foundation', 'manifest_tales']. Batch-approved method (slug=canonical, members>=3); pending per-hub spot-check.",
       "articleSections": [
         {
@@ -19035,7 +19035,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-8e5fe2715823a061e32ae64e92a7a245ca64fc5e9e016e806d994988b56100a5"
+        "structureHash": "sha256-cd4c6f4c86cce086c3e37ada23614252726b1fb10e3e54b77c511669ebd754e4"
       },
       "primaryArticles": [
         {
@@ -19278,34 +19278,14 @@
           "contentKind": "tale"
         },
         {
-          "id": "scp-7372",
-          "title": "Killers, Thieves, and Lawyers",
-          "url": "https://scp-wiki.wikidot.com/scp-7372",
+          "id": "scp-7672",
+          "title": "In the Court of the Goblin King",
+          "url": "https://scp-wiki.wikidot.com/scp-7672",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 54,
-          "desc": "EE-7372 refers to an event during which an area of 13 km x 27 km x 23 km located in the Nubian Desert in Sudan entirely disappeared from all physical and digital records. Previously housing a small town of approximately 300 citizens, the location was the frequ…"
-        },
-        {
-          "id": "scp-5572",
-          "title": "I Ain't No Skeleton's Son",
-          "url": "https://scp-wiki.wikidot.com/scp-5572",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 191,
-          "desc": "Personnel stationed at Site-120 are currently creating materials directed at civilians, exhorting to bury their loved ones with SCP-5572 prevention methods in mind. Should Overwatch Command receive the \" supplies needed \" signal however, this campaign is to be…"
-        },
-        {
-          "id": "scp-7572",
-          "title": "Crossfire",
-          "url": "https://scp-wiki.wikidot.com/scp-7572",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 62,
-          "desc": "Due to its location, SCP-7572 necessitates no real containment. All further research inquiries regarding SCP-7572 — including attempts to access its topmost floor — are to be directed to Site-45 ."
+          "os": 99,
+          "desc": "Foundation personnel are forbidden from owning carpets until further notice. Department of Ontokinetics personnel captured attempting to recreate the SCP-7672 phenomenon in isolation (carpet not pictured)."
         },
         {
           "id": "scp-6483",
@@ -19318,52 +19298,64 @@
           "desc": "Per new Foundation-wide orders in accordance with Directive Alpha/1911 and the Integration Program , 1 SCP-6483 is to be employed at Site-322 as maintenance personnel and seasonal entertainment. He is no longer to be referred to by the standard object pronouns…"
         },
         {
-          "id": "scp-9372",
-          "title": "Radial Threads",
-          "url": "https://scp-wiki.wikidot.com/scp-9372",
+          "id": "scp-6672",
+          "title": "Arbitrary Apotheosis",
+          "url": "https://scp-wiki.wikidot.com/scp-6672",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 39,
-          "desc": "As SCP-9372's location effectively shields the general populace from its existence, its containment is technically unneccessary. However, to facilitate better containment, research is nevertheless currently ongoing to ascertain whether SCP-9372 is an anomalous…"
+          "os": 92,
+          "desc": "As the Foundation cannot physically come into possession of SCP-6672, it is currently contained at its point of initial construction, and is overseen by its creators. 1 As such, its containment currently consists entirely of obtaining weekly information regard…"
         },
         {
-          "id": "scp-8120",
-          "title": "Bloodbound",
-          "url": "https://scp-wiki.wikidot.com/scp-8120",
+          "id": "scp-7572",
+          "title": "Crossfire",
+          "url": "https://scp-wiki.wikidot.com/scp-7572",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 129,
-          "desc": "In spite of standard procedures, information regarding PoI-8120 must be handled in accordance with data protected by the O5 Council Identity Protection Protocol. Specific instructions regarding SCP-8120's execution are to be limited solely to the O5 Council. A…"
+          "os": 62,
+          "desc": "Due to its location, SCP-7572 necessitates no real containment. All further research inquiries regarding SCP-7572 — including attempts to access its topmost floor — are to be directed to Site-45 ."
         },
         {
-          "id": "scp-6072",
-          "title": "Wherever Death Goes",
-          "url": "https://scp-wiki.wikidot.com/scp-6072",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 139,
-          "desc": "SCP-6072 currently remains uncontained. Its proper localization and anchoring using Scranton Reality Anchors in cooperation with Site-88 personnel due to their experience with humanoid anomalies is to be considered top priority for Site-120 personnel. All pote…"
-        },
-        {
-          "id": "scp-6292",
-          "title": "Don't Beer the Reaper",
-          "url": "https://scp-wiki.wikidot.com/scp-6292",
+          "id": "scp-5572",
+          "title": "I Ain't No Skeleton's Son",
+          "url": "https://scp-wiki.wikidot.com/scp-5572",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 191,
-          "desc": "SCP-6292's containment has been deemed impossible. Civilians reporting SCP-6292 after a Fifth-Night Event are provided misinformation suggesting it is a non-anomalous human. Any further recovered historical material referencing those events is to be immediatel…"
+          "desc": "Personnel stationed at Site-120 are currently creating materials directed at civilians, exhorting to bury their loved ones with SCP-5572 prevention methods in mind. Should Overwatch Command receive the \" supplies needed \" signal however, this campaign is to be…"
         },
         {
-          "id": "scp-0000-ex",
-          "title": "SCP-0000-EX",
-          "url": "https://scp-wiki.wikidot.com/scp-0000-ex",
+          "id": "scp-7372",
+          "title": "Killers, Thieves, and Lawyers",
+          "url": "https://scp-wiki.wikidot.com/scp-7372",
+          "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "desc": "•"
+          "os": 54,
+          "desc": "EE-7372 refers to an event during which an area of 13 km x 27 km x 23 km located in the Nubian Desert in Sudan entirely disappeared from all physical and digital records. Previously housing a small town of approximately 300 citizens, the location was the frequ…"
+        },
+        {
+          "id": "scp-6079",
+          "title": "Digital Dissociation",
+          "url": "https://scp-wiki.wikidot.com/scp-6079",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 112,
+          "desc": "All SCP Foundation Sites are currently undergoing a digital lockdown. This includes the inter-Site movement of Foundation Artificially Intelligent Conscripts (.aics) and other Artificial Intelligence programs. This state is to be maintained until SCP-6079's so…"
+        },
+        {
+          "id": "scp-8772",
+          "title": "The Screed",
+          "url": "https://scp-wiki.wikidot.com/scp-8772",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 116,
+          "desc": "As the containment of SCP-8772 would impair the operational capabilities of Overwatch Command, it is not to be attempted. All personnel transferred to Site-01 are to be briefed on the phenomenon's nature; each manifestation is to be reviewed accordingly as a s…"
         },
         {
           "id": "scp-9600",
@@ -19376,146 +19368,32 @@
           "desc": "Under no circumstances is SCP-9600 to reach the Earth's terrestrial surface or impact any man-made objects orbiting the planet. To this end, the Astrophysics Department has been granted full access to all Foundation military assets, including its orbital and t…"
         },
         {
-          "id": "scp-0110-j",
-          "title": "SCP-0110-J",
-          "url": "https://scp-wiki.wikidot.com/scp-0110-j",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "•"
-        },
-        {
-          "id": "scp-5659",
-          "title": "Deus Sex Machina",
-          "url": "https://scp-wiki.wikidot.com/scp-5659",
+          "id": "scp-5464",
+          "title": "The Responsibility We Bear",
+          "url": "https://scp-wiki.wikidot.com/scp-5464",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 294,
-          "desc": "SCP-5659's location has been cut off from the public. Any non- Site-120 personnel attempting to enter are to be denied access. The only individuals that are to be allowed entry to Section B are personnel trained for a lack of any emotional response to outside…"
+          "os": 346,
+          "desc": "During its inactive phase, SCP-5464 is to remain within its enclosure located in the park around Site-120 . It is to be monitored for any changes. Should SCP-5464 enter its activation phase, MTF Omega-6 (\"Bearly Enough\") is to locate the entity through the GPS…"
         },
         {
-          "id": "scp-8372",
-          "title": "Ashes of Eternity",
-          "url": "https://scp-wiki.wikidot.com/scp-8372",
+          "id": "scp-0000-ex",
+          "title": "SCP-0000-EX",
+          "url": "https://scp-wiki.wikidot.com/scp-0000-ex",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "•"
+        },
+        {
+          "id": "scp-6789",
+          "title": "Return. Return. Return.",
+          "url": "https://scp-wiki.wikidot.com/scp-6789",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 191,
-          "desc": "Until the RAISA-led investigation into how the existence of SCP-8372 has escaped Foundation notice can be concluded, personnel entering the facility are not to interact with any of the objects contained inside. Civilian entry into SCP-8372 is to be prevented p…"
-        },
-        {
-          "id": "scp-pl-401",
-          "title": "SCP-PL-401",
-          "url": "https://scp-wiki.wikidot.com/scp-pl-401",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "•"
-        },
-        {
-          "id": "the-liberal-vampire",
-          "title": "Casefile #03/12/2021-A (\"The Liberal Vampire\")",
-          "url": "https://scp-wiki.wikidot.com/the-liberal-vampire",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 61,
-          "desc": "INTERNAL ZM \"WITCH SLAYER\" DIVISION CASEFILE DOCUMENTATION Case ID: #03/12/2021-A (\"The Liberal Vampire\") Case Status: ACTIVE"
-        },
-        {
-          "id": "the-mind-electric",
-          "title": "The Mind Electric",
-          "url": "https://scp-wiki.wikidot.com/the-mind-electric",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 47,
-          "desc": "KTE-7395-Blue-Moro-Ragweed (\"Quantum Leap\") Authorized Response Level: 3 (Moderate Threat) Description: Threat entity consists of 3 individuals originating from outside baseline reality with unknown objective, presumed hostile to Coalition forces."
-        },
-        {
-          "id": "four-knights-tango",
-          "title": "Four Knights' Tango",
-          "url": "https://scp-wiki.wikidot.com/four-knights-tango",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 49,
-          "desc": "11th of January Overwatch Command, 25 kilometers south of Kraków, Poland Site-01 wasn't a quiet place. Ever since its creation in the wake of the 20th century, its endless corridors were always filled with one sound or another. At first, it was the humming of…"
-        },
-        {
-          "id": "bury-the-light",
-          "title": "Bury the Light",
-          "url": "https://scp-wiki.wikidot.com/bury-the-light",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 37,
-          "desc": "Bury the Light Canon Hub » NIGHTFALL Hub » Bury the Light Recommended reading music He didn't think the man could get inside his house. But the man was full of surprises."
-        },
-        {
-          "id": "dark-sushi-file-no-120",
-          "title": "Dark Sushi File No. 120 \"Mab Maki\"",
-          "url": "https://scp-wiki.wikidot.com/dark-sushi-file-no-120",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 39,
-          "desc": "Mab Maki is an exclusive, never-before-seen piece of sushi. Developed by Dark Sushi with Fae history in mind, it serves both as a powerful conduit between thaumaturgic forces and the body of the customer and as a lesson in the olden days."
-        },
-        {
-          "id": "vox-populi-vox-dei",
-          "title": "Vox Populi, Vox Dei",
-          "url": "https://scp-wiki.wikidot.com/vox-populi-vox-dei",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 38,
-          "desc": "In the heart of a thrice-nailed Empire, D.C. al Fine stands at the cusp of eternity. She puts her hands behind her back as her sigh rings like a scream inside the empty halls of Saint Peter's Basilica. She breathes again, and considers her surroundings for the…"
-        },
-        {
-          "id": "carter-courier-channel",
-          "title": "'Carter Courier Channel' (D24CF/S54CX/4MR8L)",
-          "url": "https://scp-wiki.wikidot.com/carter-courier-channel",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 39,
-          "desc": "A series of MC&D-owned warehouses connected together by a network of portals, allowing for the instantaneous transportation of non-living goods between all active instances around the world. Staffed utilizing revolutionary operational approaches, the product a…"
-        },
-        {
-          "id": "detonation",
-          "title": "Detonation",
-          "url": "https://scp-wiki.wikidot.com/detonation",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "•"
-        },
-        {
-          "id": "ambrose-esterberg",
-          "title": "Ambrose Esterberg",
-          "url": "https://scp-wiki.wikidot.com/ambrose-esterberg",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 116,
-          "desc": "Ambrose Esterberg About the Event For as long as the city has existed, the Esterbergian elite had the unfortunate displeasure of dining with the poor, down in the dirt of the Living District. This of course was not by design, but rather due to the fact of the…"
-        },
-        {
-          "id": "the-most-important-thing-in-the-world",
-          "title": "the most important thing in the world",
-          "url": "https://scp-wiki.wikidot.com/the-most-important-thing-in-the-world",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 49,
-          "desc": "FILE UNCLASSIFIED TO ALL PERSONNEL Event Prevention: Means of full prevention remain currently impossible due to SCP-169's nature and size. As of writing, the only actions undertaken by the Foundation have been focused on limiting the event's scope and consequ…"
-        },
-        {
-          "id": "first-marshall-carter-and-dark-donation",
-          "title": "First Marshall, Carter & Dark Donation",
-          "url": "https://scp-wiki.wikidot.com/first-marshall-carter-and-dark-donation",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "•"
+          "os": 371,
+          "desc": "The room hosting SCP-6789 and its adjacent chambers are to be cut off from employees of Rollander Steel and the public at large. The sub-basement level of the factory is to be sealed and expunged from the building's blueprints. The sole access to SCP-6789 is t…"
         },
         {
           "id": "people-without-meaning",
@@ -19528,17 +19406,137 @@
           "desc": "13th of January Somewhere in Esterberg: Częstochowa, Silesian Voivodeship, Poland The only thing she could feel was darkness."
         },
         {
-          "id": "art:witches-on-the-moon",
-          "title": "Artwork: Witches on the Moon",
-          "url": "https://scp-wiki.wikidot.com/art:witches-on-the-moon",
+          "id": "beneath-the-tides",
+          "title": "Beneath the Tides",
+          "url": "https://scp-wiki.wikidot.com/beneath-the-tides",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
+          "os": 25,
+          "desc": "Recommended reading music What does it mean to kill a god? To slay a man, truly, is a simple act; even an utter nobody can do as little as put a bullet between their colleague's eyes. It's dirty, but it gets the job done quickly enough. But to slay a god, to c…"
+        },
+        {
+          "id": "stray-pigs",
+          "title": "Stray Pigs",
+          "url": "https://scp-wiki.wikidot.com/stray-pigs",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 25,
+          "desc": "Assistant Director Celesta is a study in contrast. Though of a small posture, she carries herself with the dignity and grandeur her title calls for, each movement a monument to hubris and unbroken spirit. She indeed bears little height save for that of her pla…"
+        },
+        {
+          "id": "jaeger-part-1",
+          "title": "Jäger, Part 1",
+          "url": "https://scp-wiki.wikidot.com/jaeger-part-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 30,
+          "desc": "Recommended reading music Roisin Dar'ren feared no man. For many years, he led the forces obeying Queen Mab's command. He stood by her side during the Sixth War, relentlessly guiding her cavalry to break the measly forces of the scattered humanity. He stood by…"
+        },
+        {
+          "id": "the-first-occult-flame-war",
+          "title": "The First Occult Flame War",
+          "url": "https://scp-wiki.wikidot.com/the-first-occult-flame-war",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 299,
+          "desc": "As you should already know, the 22nd of August — or, today — is the tenth anniversary of our lord Grand Karcist Ion's disappearance and foretold return into the mortal realm. To celebrate this, I have decided to allow you to glimpse into a part of my brilliant…"
+        },
+        {
+          "id": "wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+          "title": "GRANT REQUEST FOR THE CREATION OF A CURE FOR THE IRON ALLERGY NATIVE TO THE HOMO SAPIENS SIDHE SPECIES",
+          "url": "https://scp-wiki.wikidot.com/wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 107,
+          "desc": "It is estimated that over one-tenth of non-aristocratic Fae (Homo sapiens sidhe) suffers from a hypersensitive allergic reaction to iron, a metal not only used in virtually every aspect of everyday life, but one that is also essential to all oxygen-breathing o…"
+        },
+        {
+          "id": "second-phoenix-technologies-donation",
+          "title": "Second Phoenix Technologies Donation",
+          "url": "https://scp-wiki.wikidot.com/second-phoenix-technologies-donation",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 31,
+          "desc": "device, donation, ongoing programme, portable, radar, search aid, user-friendly, WARTIME USAGE So that individuals handling the device can properly fulfill its intended function, all of its users must be tested to ensure they are not suffering from pathologica…"
+        },
+        {
+          "id": "darkest-dreams",
+          "title": "Darkest Dreams",
+          "url": "https://scp-wiki.wikidot.com/darkest-dreams",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 23,
           "desc": "•"
+        },
+        {
+          "id": "the-deathless-merchant-of-london",
+          "title": "The Deathless Merchant of London",
+          "url": "https://scp-wiki.wikidot.com/the-deathless-merchant-of-london",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 67,
+          "desc": "The Deathless Merchant of London Percival Darke He Who Bargains With Death The Businessman PoI-012-1 Father of Darkness \"That Bitchass Whore\""
+        },
+        {
+          "id": "carter-courier-channel",
+          "title": "'Carter Courier Channel' (D24CF/S54CX/4MR8L)",
+          "url": "https://scp-wiki.wikidot.com/carter-courier-channel",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 39,
+          "desc": "A series of MC&D-owned warehouses connected together by a network of portals, allowing for the instantaneous transportation of non-living goods between all active instances around the world. Staffed utilizing revolutionary operational approaches, the product a…"
+        },
+        {
+          "id": "burn-baby-burn",
+          "title": "Burn, Baby, Burn",
+          "url": "https://scp-wiki.wikidot.com/burn-baby-burn",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 31,
+          "desc": "A long time ago, I've heard someone say that war is worse than hell. That in hell, there are no innocent bystanders, or something equally meaningless. But they were wrong. Tonight, here, this is hell. And I deserve every single moment of it."
+        },
+        {
+          "id": "carroll-022-the-last-stand",
+          "title": "carroll-022-the-last-stand",
+          "url": "https://scp-wiki.wikidot.com/carroll-022-the-last-stand",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 35,
+          "desc": "RAISA FILE: Group of Interest [DEFUNCT] GoI-001: Chicago Spirit FILE CREATED: c. 1933 FILE LAST REVISED BY GOI: July 1933 FILE RECOVERED: July 1933 [TEXT REPRODUCED BELOW]"
+        },
+        {
+          "id": "creaking-at-the-seams",
+          "title": "Creaking at the Seams",
+          "url": "https://scp-wiki.wikidot.com/creaking-at-the-seams",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 77,
+          "desc": "Most wizards do not like change. They are creatures of habit, their customs perhaps born from the years of isolation and sacrifice it takes to truly master their Art. Most wizards spend their entire lives like they spend their childhoods: alone with their thou…"
         },
         {
           "id": "art:public-release-of-operation-witness-materials",
           "title": "Public Release of OPERATION: WITNESS Materials",
           "url": "https://scp-wiki.wikidot.com/art:public-release-of-operation-witness-materials",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "•"
+        },
+        {
+          "id": "art:witches-on-the-moon",
+          "title": "Artwork: Witches on the Moon",
+          "url": "https://scp-wiki.wikidot.com/art:witches-on-the-moon",
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "•"
@@ -19603,34 +19601,33 @@
             "gaslight-gatekeep-girlboss-hub",
             "secure-facility-dossier-site-120",
             "multiverse-threat-recovery-log-scp-6936",
-            "scp-7372",
-            "scp-5572",
-            "scp-7572",
+            "scp-7672",
             "scp-6483",
-            "scp-9372",
-            "scp-8120",
-            "scp-6072",
-            "scp-6292",
-            "scp-0000-ex",
+            "scp-6672",
+            "scp-7572",
+            "scp-5572",
+            "scp-7372",
+            "scp-6079",
+            "scp-8772",
             "scp-9600",
-            "scp-0110-j",
-            "scp-5659",
-            "scp-8372",
-            "scp-pl-401",
-            "the-liberal-vampire",
-            "the-mind-electric",
-            "four-knights-tango",
-            "bury-the-light",
-            "dark-sushi-file-no-120",
-            "vox-populi-vox-dei",
-            "carter-courier-channel",
-            "detonation",
-            "ambrose-esterberg",
-            "the-most-important-thing-in-the-world",
-            "first-marshall-carter-and-dark-donation",
+            "scp-5464",
+            "scp-0000-ex",
+            "scp-6789",
             "people-without-meaning",
-            "art:witches-on-the-moon",
+            "beneath-the-tides",
+            "stray-pigs",
+            "jaeger-part-1",
+            "the-first-occult-flame-war",
+            "wniosek-o-dotacje-na-opracowanie-srodka-przeciwko-alergii",
+            "second-phoenix-technologies-donation",
+            "darkest-dreams",
+            "the-deathless-merchant-of-london",
+            "carter-courier-channel",
+            "burn-baby-burn",
+            "carroll-022-the-last-stand",
+            "creaking-at-the-seams",
             "art:public-release-of-operation-witness-materials",
+            "art:witches-on-the-moon",
             "ralliston-s-authorpage"
           ]
         }
@@ -19699,7 +19696,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-8bd1e15d8712e5abdfc466181d4dac25123ecd4833d62a05e9038fc74b37ea17"
+        "structureHash": "sha256-89f96ce721dc014c86fa0bee57f3274cccb89ffe673167d64f8b36c03efa9037"
       },
       "primaryArticles": [
         {
@@ -19934,7 +19931,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Pick an item from the Log Of Anomalous Items , and make an interesting tale about it. A random object for you: Penny for Your Thoughts? .",
+      "description": "Pick an item from the Log Of Anomalous Items , and make an interesting tale about it. A random object for you: Do Not Collect $200 .",
       "manualTagReason": "EN Canon/Series hub metadata is region-only; the canonical tag was verified against the current EN tag index and official hub on 2026-07-24.",
       "articleSections": [
         {
@@ -21256,7 +21253,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-a652c114fd1b9a5b60f8fb30c5f56835eb0df3754154676674fe446fb130c75d"
+        "structureHash": "sha256-ff553803c965c8b0f159e84944340eb9e3021cb8fa79e94efe8049a4e73586a4"
       },
       "primaryArticles": [
         {
@@ -21638,16 +21635,6 @@
           "desc": "PTT-1666-Gray-Templum is the whole of the Second Tartarean Realm of Irkalla, the Sumerian Netherworld, containing the sum total of spirits that lived and died in the geographic region of Mesopotamia beginning in the Protoliterate Period (>6000 BC) and ending a…"
         },
         {
-          "id": "ute-1919-discofather",
-          "title": "ute-1919-discofather",
-          "url": "https://scp-wiki.wikidot.com/ute-1919-discofather",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 105,
-          "desc": "UTE-1919-Discofather is a humanoid parathreat, believed to be the founder of both the Chicago Spirit and the Chicago Spectre. Currently, UTE-1919-Discofather is in control of the majority of Chicago Spectre operations. UTE-1919-Discofather is believed to posse…"
-        },
-        {
           "id": "lte-8686-yellow-kewpie",
           "title": "lte-8686-yellow-kewpie",
           "url": "https://scp-wiki.wikidot.com/lte-8686-yellow-kewpie",
@@ -21656,6 +21643,16 @@
           "contentKind": "goiFormat",
           "os": 106,
           "desc": "Threat entity is a female Caucasian of average build, named Penny Williams. Threat entity is a former employee of the SCP Foundation, but an unknown incident resulted in its developing anomalous traits. Threat entity's primary ability is that any form of curre…"
+        },
+        {
+          "id": "ute-1919-discofather",
+          "title": "ute-1919-discofather",
+          "url": "https://scp-wiki.wikidot.com/ute-1919-discofather",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 105,
+          "desc": "UTE-1919-Discofather is a humanoid parathreat, believed to be the founder of both the Chicago Spirit and the Chicago Spectre. Currently, UTE-1919-Discofather is in control of the majority of Chicago Spectre operations. UTE-1919-Discofather is believed to posse…"
         },
         {
           "id": "archival-document-hsa-008-advent",
@@ -22392,16 +22389,6 @@
           "desc": "The valley was starkly beautiful. At its centre wound a river of mercury, framed by thickets of fractaline ceramic shrubbery, whose reflected flickerings made the ridges on either side shudder with seeming activity. Ahead the two walls met and the river issued…"
         },
         {
-          "id": "you-shall-not-die",
-          "title": "You Shall Not Die",
-          "url": "https://scp-wiki.wikidot.com/you-shall-not-die",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 32,
-          "desc": "« More Cunning Than Any Beast The hard part of running a Global Occult Coalition operation was usually not the termination of the KTE, since bullets almost always worked. The hard part was keeping the whole thing secret - they weren't called the \"Occult\" coali…"
-        },
-        {
           "id": "system-boot",
           "title": "System Boot",
           "url": "https://scp-wiki.wikidot.com/system-boot",
@@ -22410,6 +22397,16 @@
           "contentKind": "tale",
           "os": 32,
           "desc": "On the 25th of March, 2021, at 11:55:50 GMT, a tiny tear in the fabric of reality manifested within the sun. The importance attributed to the tear by members of the anomalous and civilian world was by all means nonexistent, partially due to its impossibly smal…"
+        },
+        {
+          "id": "you-shall-not-die",
+          "title": "You Shall Not Die",
+          "url": "https://scp-wiki.wikidot.com/you-shall-not-die",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 32,
+          "desc": "« More Cunning Than Any Beast The hard part of running a Global Occult Coalition operation was usually not the termination of the KTE, since bullets almost always worked. The hard part was keeping the whole thing secret - they weren't called the \"Occult\" coali…"
         },
         {
           "id": "as-it-happened",
@@ -23157,13 +23154,6 @@
           "desc": "Because of the sudden and rapid outbreak of SCP-6828, Operation Red Eagle has been designed to mitigate the advance of SCP-6828. Joint Task Force Zeta-7 (\"Watchful Eagles\") is responsible to cooperate with national paranormal security agencies to slow down the…"
         },
         {
-          "id": "scp-es-019",
-          "title": "SCP-ES-019",
-          "url": "https://scp-wiki.wikidot.com/scp-es-019",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-8870",
           "title": "The Controversy",
           "url": "https://scp-wiki.wikidot.com/scp-8870",
@@ -23172,6 +23162,13 @@
           "contentKind": "scp",
           "os": 33,
           "desc": "SCP-8870 is currently uncontained. Efforts are focused on locating and capturing, and if necessary, terminating SCP-8870 on the first available opportunity. Foundation webcrawlers are to monitor the internet and major news outlets for any mentions and/or sight…"
+        },
+        {
+          "id": "scp-es-019",
+          "title": "SCP-ES-019",
+          "url": "https://scp-wiki.wikidot.com/scp-es-019",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         },
         {
           "id": "scp-8530",
@@ -26708,8 +26705,8 @@
             "lte-7433-goodrick-kringle",
             "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri",
             "ptt-1666-gray-templum",
-            "ute-1919-discofather",
             "lte-8686-yellow-kewpie",
+            "ute-1919-discofather",
             "archival-document-hsa-008-advent",
             "kte-6024-blit-nuntius",
             "kte-5634-ex-machina-bosch",
@@ -26790,8 +26787,8 @@
             "out-of-the-darkness",
             "possible-kill-screen",
             "humeanitarianism",
-            "you-shall-not-die",
             "system-boot",
+            "you-shall-not-die",
             "as-it-happened",
             "bowegate",
             "stray-katz",
@@ -26870,8 +26867,8 @@
             "scp-9208",
             "scp-6126",
             "scp-6828",
-            "scp-es-019",
             "scp-8870",
+            "scp-es-019",
             "scp-8530",
             "scp-5536",
             "scp-5773",
@@ -66220,7 +66217,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-250702792df3ab3dd755e4e2b184986015a2ec853300910dd0997556c08f386d"
+        "structureHash": "sha256-0efc0f679314dce7a8a55cfc83d72666f96bde4247d95eb75b8cac1ce2e12f09"
       },
       "primaryArticles": [
         {
@@ -66373,16 +66370,6 @@
           "desc": "SCP-9858 cannot be contained. When a manifestation of SCP-9858 is reported, the relevant target of SCP-9858 (Hence SCP-9858-1) must be located. If a SCP-9858-1 is a ‘failed’ deceased or living victim of SCP-9858, any traces of abnormality must be purged. If th…"
         },
         {
-          "id": "scp-foundation-presents-the-hod-golem-series",
-          "title": "SCP FOUNDATION PRESENTS: THE HOD GOLEM SERIES",
-          "url": "https://scp-wiki.wikidot.com/scp-foundation-presents-the-hod-golem-series",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 9,
-          "desc": "Page 1: Cover SCP FOUNDATION PRESENTS: THE HOD GOLEM SERIES Drones With Diverse Utility Edited By Dr. Maze (A photograph of a row of Hod Golem being lead by Dr. Lunok.)"
-        },
-        {
           "id": "now-you-find-out",
           "title": "Now You Find Out",
           "url": "https://scp-wiki.wikidot.com/now-you-find-out",
@@ -66391,6 +66378,16 @@
           "contentKind": "tale",
           "os": 17,
           "desc": "Death stood at the foot of the Foundation. In truth, they need not come in person for Death was as the atoms themselves. Universal and fundamentally running without observation or intervention. Shepherding a soul was broadly for symbolism, maintaining the huma…"
+        },
+        {
+          "id": "scp-foundation-presents-the-hod-golem-series",
+          "title": "SCP FOUNDATION PRESENTS: THE HOD GOLEM SERIES",
+          "url": "https://scp-wiki.wikidot.com/scp-foundation-presents-the-hod-golem-series",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "Page 1: Cover SCP FOUNDATION PRESENTS: THE HOD GOLEM SERIES Drones With Diverse Utility Edited By Dr. Maze (A photograph of a row of Hod Golem being lead by Dr. Lunok.)"
         },
         {
           "id": "doctor-zurvan-s-author-page",
@@ -66446,8 +66443,8 @@
             "scp-7281",
             "scp-6878",
             "scp-9858",
-            "scp-foundation-presents-the-hod-golem-series",
             "now-you-find-out",
+            "scp-foundation-presents-the-hod-golem-series",
             "doctor-zurvan-s-author-page"
           ]
         }
@@ -70496,7 +70493,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-e50474bef2b8f3177178b014004ee923c654ac9b7ed6cb5f6fee362bff489502"
+        "structureHash": "sha256-272990333f5b6518435ad0b9ce7966619afaffa3e531de9b5a051bb05657de7f"
       },
       "primaryArticles": [
         {
@@ -70720,32 +70717,88 @@
           "contentKind": "tale"
         },
         {
-          "id": "scp-4432",
-          "title": "mr mister by dado",
-          "url": "https://scp-wiki.wikidot.com/scp-4432",
+          "id": "scp-4726",
+          "title": "G A M E R M I L K",
+          "url": "https://scp-wiki.wikidot.com/scp-4726",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 275,
-          "desc": "SCP-4432 is currently contained in a padded and soundproofed room within Site-55 's Euclid containment wing."
+          "os": 158,
+          "desc": "SCP-4726 is contained in a humanoid containment chamber with direct access to a shower. SCP-4726-1 may be collected as necessary and is stored in Site-17's Chemical Laboratory. Consumption of SCP-4726-1 is currently permitted but discouraged."
         },
         {
-          "id": "scp-6938",
-          "title": "Alex Thorley Gets A Gift Horse",
-          "url": "https://scp-wiki.wikidot.com/scp-6938",
+          "id": "scp-8728",
+          "title": "Roaring Through the Cosmos",
+          "url": "https://scp-wiki.wikidot.com/scp-8728",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 265,
-          "desc": "SCP-6938 is self-containing. Department of Unreality personnel cleared for exposure to SCP-6938 should contact the project lead, Jane Doe."
+          "os": 39,
+          "desc": "AIC SAURON has been tasked with removing any instances of SCP-8728 appearing on forums, instant messaging services, and imageboards. A single contained instance of SCP-8728 is stored on a Deepwell server at Site-81 for research purposes. Due to the low threat…"
         },
         {
-          "id": "scp-es-297",
-          "title": "SCP-ES-297",
-          "url": "https://scp-wiki.wikidot.com/scp-es-297",
+          "id": "scp-4982",
+          "title": "Heavy lies the crown.",
+          "url": "https://scp-wiki.wikidot.com/scp-4982",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 198,
+          "desc": "SCP-4982 is kept in a high-security isolation chamber accessible only to Level-4 personnel and above, outfitted with a surveillance system. Due to the self-containing nature of SCP-4982-1 instances, no additional containment procedures are necessary."
+        },
+        {
+          "id": "scp-5231",
+          "title": "127.0.0.WAN",
+          "url": "https://scp-wiki.wikidot.com/scp-5231",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 123,
+          "desc": "A Foundation agent has been planted within the Bird-In-Hand Amish community with the purpose of keeping SCP-5231 from being discovered. The object is currently buried 10 meters underground, marked by a wooden shed directly above it. Additionally, the Foundatio…"
+        },
+        {
+          "id": "scp-admonition-j",
+          "title": "SCP-ADMONITION-J",
+          "url": "https://scp-wiki.wikidot.com/scp-admonition-j",
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "•"
+        },
+        {
+          "id": "scp-l056",
+          "title": "SCP-L056",
+          "url": "https://scp-wiki.wikidot.com/scp-l056",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "•"
+        },
+        {
+          "id": "scp-7724",
+          "title": "The incredible shrinking Jack Waltzer",
+          "url": "https://scp-wiki.wikidot.com/scp-7724",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 136,
+          "desc": "Personnel are encouraged to no longer make short jokes at the expense of SCP-7724-1. SCP-7724-1 has been supplied with platform shoes, stilts, and doll clothing so that he may continue his work at the Foundation."
+        },
+        {
+          "id": "scp-l726",
+          "title": "SCP-L726",
+          "url": "https://scp-wiki.wikidot.com/scp-l726",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "•"
+        },
+        {
+          "id": "scp-5148",
+          "title": "Qlippoth",
+          "url": "https://scp-wiki.wikidot.com/scp-5148",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 268,
+          "desc": "Procedure 5148-Alpha is to be observed when referring to the object class between Chokhmah and Binah for all anomalies registered in the Site-19 SCiPnet database. The object class may be spoken aloud, but not typed into the SCiPnet database to prevent the effe…"
         },
         {
           "id": "scp-3867",
@@ -70758,82 +70811,42 @@
           "desc": "Foundation web crawlers are to track and erase any mention of SCP-3867 on the internet. Artificial Intelligence Construct TSAT has been programmed to monitor the Dark Web for any information relating to SCP-3867 or its creator(s)."
         },
         {
-          "id": "scp-l726",
-          "title": "SCP-L726",
-          "url": "https://scp-wiki.wikidot.com/scp-l726",
+          "id": "scp-6467",
+          "title": "Boblin the Goblin",
+          "url": "https://scp-wiki.wikidot.com/scp-6467",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 162,
+          "desc": "Due to the harmless nature of SCP-6467, it has been decided to permit it to remain uncontained. Foundation staff are encouraged to host game nights where tabletop roleplaying games are the focus in order to further the study of SCP-6467. Copies of popular tabl…"
+        },
+        {
+          "id": "scp-7260",
+          "title": "Daisy",
+          "url": "https://scp-wiki.wikidot.com/scp-7260",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 139,
+          "desc": "SCP-7260 is currently contained in an unfurnished standard containment chamber. Personnel are to escort the entity to the Site-16 D-Class exercise yard and allow it to walk for 30-45 minutes once daily."
+        },
+        {
+          "id": "scp-9056",
+          "title": "Something Truly Terrible",
+          "url": "https://scp-wiki.wikidot.com/scp-9056",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 87,
+          "desc": "Reports of SCP-9056's manifestation are to be written off as guerilla marketing for a canceled Cloverfield film. Any footage of the object is to be taken down under cover story CC-1221 (\"Copyright Claims\"). SCP-9056 is currently contained in a standard contain…"
+        },
+        {
+          "id": "scp-es-113",
+          "title": "SCP-ES-113",
+          "url": "https://scp-wiki.wikidot.com/scp-es-113",
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "•"
-        },
-        {
-          "id": "scp-4726",
-          "title": "G A M E R M I L K",
-          "url": "https://scp-wiki.wikidot.com/scp-4726",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 158,
-          "desc": "SCP-4726 is contained in a humanoid containment chamber with direct access to a shower. SCP-4726-1 may be collected as necessary and is stored in Site-17's Chemical Laboratory. Consumption of SCP-4726-1 is currently permitted but discouraged."
-        },
-        {
-          "id": "scp-4026",
-          "title": "guardian \"angel\"",
-          "url": "https://scp-wiki.wikidot.com/scp-4026",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 380,
-          "desc": "No containment procedures are necessary at this time."
-        },
-        {
-          "id": "scp-7726",
-          "title": "So long, and thanks for all the fish.",
-          "url": "https://scp-wiki.wikidot.com/scp-7726",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 395,
-          "desc": "SCP-7726 is to be kept in a standard anomalous object lockbox in Site-55 . Fire Suppression Department personnel are permitted unrestricted access to the object."
-        },
-        {
-          "id": "scp-4003",
-          "title": "On Cowboys, Catholicism, and the Cretaceous",
-          "url": "https://scp-wiki.wikidot.com/scp-4003",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 520,
-          "desc": "A 2km area surrounding SCP-4003 and Provisional Site-1200 has been designated a protected area. Civilians entering the perimeter are to be intercepted and turned away. Only personnel specializing in archeology, paleontology, and geology may be assigned to Prov…"
-        },
-        {
-          "id": "scp-4206",
-          "title": "The Weighing of the Heart",
-          "url": "https://scp-wiki.wikidot.com/scp-4206",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 142,
-          "desc": "SCP-4206 is stored in a low-priority anomalous objects locker. The 56 instances of SCP-4206-1 are contained in Site-19's Intensive Animal Care Unit. SCP-4206-1 instances are to be fed puréed dry dog food and walked on the underwater treadmill for 20 minutes da…"
-        },
-        {
-          "id": "scp-7337",
-          "title": "Yata no Karasu",
-          "url": "https://scp-wiki.wikidot.com/scp-7337",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 89,
-          "desc": "Due to its comparatively minor anomalous properties and low Veil-threatening status, SCP-7337 is permitted to remain uncontained. Personnel tasked with studying SCP-7337 are to maintain a suitable roost for it and up to 20 other crows in the Site-88 botanical…"
-        },
-        {
-          "id": "scp-7221",
-          "title": "It's Mime-tic",
-          "url": "https://scp-wiki.wikidot.com/scp-7221",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 150,
-          "desc": "MTF Theta-1221 (\"We Hate Clowns\") is to be deployed to SCP-7221's location upon its manifestation. Members of Theta-1221 are to be trained in mimetic combat techniques in order to capture and contain SCP-7221."
         },
         {
           "id": "scp-4934",
@@ -70846,130 +70859,134 @@
           "desc": "The Jones estate has been purchased by a Foundation front company, and a 4 meter privacy fence has been installed. SCP-4934 researchers are housed within the property under cover story C5-A, \"mourning relatives\"."
         },
         {
-          "id": "scp-5726",
-          "title": "Sparkling Magical Girl ♥ Darling Pink!!",
-          "url": "https://scp-wiki.wikidot.com/scp-5726",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 287,
-          "desc": "SCP-5726 is to be kept cryogenically frozen in a high-security chamber within Site-19. In the event that SCP-5726 regains consciousness, MTF-Rho-36 (“Breacher’s Pets”) is to subdue the anomaly with minimal force. SCP-5726-1 is to be kept in storage at Site-19…"
-        },
-        {
-          "id": "nicos-stupid-proposal",
-          "title": "UN's Proposal… Maybe.",
-          "url": "https://scp-wiki.wikidot.com/nicos-stupid-proposal",
+          "id": "uiu-file-2001-745",
+          "title": "by O-92_Mallet",
+          "url": "https://scp-int.wikidot.com/uiu-file-2001-745",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 164,
-          "desc": "Project #: SPC-001 Selachian Pugnātorial Capabilities: Use of SPC-001 has increased the effectiveness of pugilistic processes and reduced risks posed to Center personnel. The effective range of SPC-001 far exceeds previously known means of selachian pugilistic…"
+          "os": 19,
+          "desc": "Initial Report Suspect Summary/Capabilities Bureau Records Interrogation Additional Information In accordance with the Federal Records Act, an electronic copy of this file is attached below."
         },
         {
-          "id": "joicl8kdr",
-          "title": "魂-S-2049 \"Anima Back-Ups\"",
-          "url": "https://scp-wiki.wikidot.com/joicl8kdr",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 74,
-          "desc": "Specially constructed somatic backups to house your anima. Each body, depending on the model, comes with the capability to perform alchemy or thaumaturgy."
-        },
-        {
-          "id": "vktm-product-catalogue-breach-highlights",
-          "title": "VKTM Online Store: The Breach that Keeps on Breaching Highlights, All Years, by VKTM!",
-          "url": "https://scp-wiki.wikidot.com/vktm-product-catalogue-breach-highlights",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "•"
-        },
-        {
-          "id": "the-containment-of-arsene-lupin",
-          "title": "The Containment Of Arsène Lupin",
-          "url": "https://scp-wiki.wikidot.com/the-containment-of-arsene-lupin",
+          "id": "if-horses-were-wishes",
+          "title": "If Horses Were Wishes",
+          "url": "https://scp-wiki.wikidot.com/if-horses-were-wishes",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 89,
-          "desc": "It wasn't often that Site-19 security guards were forced to exit the impenetrable fortress to check up on something outside its perimeter."
+          "os": 36,
+          "desc": "It was a dark and stormy night somewhere in Canada, probably near Ipperwash Beach. Actually, it was Ipperwash Beach — Site-43 to be exact. It was here where Placeholder McDoctorate, mad genius extraordinaire and slightly redder than the norm for people in this…"
         },
         {
-          "id": "critter-profile-jerry",
-          "title": "Critter Profile: Jeremy Thornhill!",
-          "url": "https://scp-wiki.wikidot.com/critter-profile-jerry",
+          "id": "critter-profile-sandra-and-george",
+          "title": "Critter Profile: Sandra And George!",
+          "url": "https://scp-wiki.wikidot.com/critter-profile-sandra-and-george",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 49,
-          "desc": "Critter Profile: Jeremy Thornhill! Name: Jeremy Thornhill (We just call him Jerry though.) Species: Homo aedificator (Common engineer)"
+          "os": 181,
+          "desc": "Sent by: Faeowynn Wilson Recipient(s): Professor Gosa Hello Professor, Just wanted to check in and get a status update on your research into our little project. I hope everything is going well."
         },
         {
-          "id": "grant-request-post-mortem-neural-preservation",
-          "title": "GRANT REQUEST FOR THE RE-CREATION OF AN ADVANCED POSTMORTEM NEURAL PRESERVATION SYSTEM",
-          "url": "https://scp-wiki.wikidot.com/grant-request-post-mortem-neural-preservation",
+          "id": "chasing-the-union",
+          "title": "Chasing The Union",
+          "url": "https://scp-wiki.wikidot.com/chasing-the-union",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 41,
+          "desc": "Jay sat alone in the Site-87 cafeteria, pondering on their most recent assignment. They were still tired from their flight over from 55, which had been quite the infodump. For the duration of the flight, they had been bombarded with information on how 87 was l…"
+        },
+        {
+          "id": "the-color-of-static",
+          "title": "The Color of Static",
+          "url": "https://scp-wiki.wikidot.com/the-color-of-static",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
+          "os": 29,
+          "desc": "THE STAGE begins in darkness, as all house lights FADE DOWN. A LIGHT turns on overhead, creating a spotlight on the stage over a GIANT CATERPILLAR."
+        },
+        {
+          "id": "its-beginning-to-look-a-lot-like-breachmas",
+          "title": "It's Beginning To Look A Lot Like Breachmas",
+          "url": "https://scp-wiki.wikidot.com/its-beginning-to-look-a-lot-like-breachmas",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 48,
+          "desc": "It's beginning to look a lot like Breachmas Hear the sirens roar Take a look at Site-43, seems a right mess to me With Del Olmo paste and Giftschreiber waste galore"
+        },
+        {
+          "id": "a-passing-rain",
+          "title": "A Passing Rain",
+          "url": "https://scp-wiki.wikidot.com/a-passing-rain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 45,
+          "desc": "\"Again? I… I mean… I understand. Sorry.\" Alex sighed, getting up from a kneeling position and stashing a gold ring in his shirt pocket."
+        },
+        {
+          "id": "tim-wilson-s-close-shave",
+          "title": "Tim Wilson's Close Shave",
+          "url": "https://scp-wiki.wikidot.com/tim-wilson-s-close-shave",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 62,
+          "desc": "A dried twig snapped in half under the weight of Tim Wilson's boot, filling the otherwise silent backwater woods of Clackamas County with sound. The nature enthusiast paused for a moment, removing his Stratton hat from his head allowing it to hang from his nec…"
+        },
+        {
+          "id": "la-persistencia-de-la-memoria",
+          "title": "La Persistencia De La Memoria",
+          "url": "https://scp-wiki.wikidot.com/la-persistencia-de-la-memoria",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 26,
+          "desc": "It was a particularly hot day in Site-55, as the climate control was under repairs. The typical lab coats and button-ups worn by the personnel of the GoI research lab had been traded in for t-shirts and shorts, a decision made in advance by the team lead. Desp…"
+        },
+        {
+          "id": "the-remains-of-the-day",
+          "title": "The Remains Of The Day",
+          "url": "https://scp-wiki.wikidot.com/the-remains-of-the-day",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 20,
+          "desc": "Justine Everwood sat alone in their lab, poring over research notes of their new project. Their entire career had been devoted to knowing all about the various groups of interest which populated the anomalous world. At least, of course, until everything change…"
+        },
+        {
+          "id": "robin",
+          "title": "Robin",
+          "url": "https://scp-wiki.wikidot.com/robin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
           "os": 60,
-          "desc": "The transition into undeath (a state of \"living\" beyond clinical death) causes irreparable damage to the human body's nervous system, often resulting in severe cognitive deterioration of the affected person.[1] This outcome occurs because of an imperfection in…"
+          "desc": "Oh hey, Rex. Yeah, I'm just thinking again. Well, back when I was just starting out there was a researcher I was friends with. Their name was Robin. Yeah. Like the bird. Anyways, we got to be pretty good friends back then. We were both brand new in the Foundat…"
         },
         {
-          "id": "koigarezaki-news-911-1998-ver",
-          "title": "by stengan774",
-          "url": "https://scp-int.wikidot.com/koigarezaki-news-911-1998-ver",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 23,
-          "desc": "This article is an archival electronic version of the 09/13/2001 evening edition of the Koigarezaki Shimbun. Please note that the contents of the article are out of date, except for the advertisements. — — Koigarezaki Shimbun"
-        },
-        {
-          "id": "lillian-lillihammer-and-the-great-meme-war",
-          "title": "Lillian Lillihammer And The Great Meme War",
-          "url": "https://scp-wiki.wikidot.com/lillian-lillihammer-and-the-great-meme-war",
+          "id": "gentle-wings-flutter-quietly-in-the-dark",
+          "title": "Gentle Wings Flutter Quietly In The Dark",
+          "url": "https://scp-wiki.wikidot.com/gentle-wings-flutter-quietly-in-the-dark",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 64,
-          "desc": "Hello, our beloved. We would have preferred to do this in person, but we were busy, you were busy, there was a whole ordeal trying to get things sorted in order to kidnap you and we decided to just send an email instead. We wanted to let you know that we have…"
+          "os": 139,
+          "desc": "The gentle flapping of wings catapulted her awake. Her eyes shot open, darting from side to side in the pitch black void she found herself in. It was cold. Her arms instinctively shot up to cover herself as she began to shiver, their movements accentuated by t…"
         },
         {
-          "id": "project-proposal-2018-145",
-          "title": "Project Proposal 2018-145: \"Drinking With the Jocks\"",
-          "url": "https://scp-wiki.wikidot.com/project-proposal-2018-145",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 98,
-          "desc": "Name: Valerie Sinclaire Title: Drinking With the Jocks Material Requirements: a banana (already in my possession) two tangerines (already in my possession)"
-        },
-        {
-          "id": "yamizushi-file-no271",
-          "title": "Dark Sushi File No. 271 \"Euler\"",
-          "url": "https://scp-wiki.wikidot.com/yamizushi-file-no271",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "•"
-        },
-        {
-          "id": "uiu-file-2008-21",
-          "title": "UIU File: 2008-021",
-          "url": "https://scp-wiki.wikidot.com/uiu-file-2008-21",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 119,
-          "desc": "Initial Report Event/Locale Preface Creature Description/Capabilities Bureau Record Electronic copy below as per Federal Records Act"
-        },
-        {
-          "id": "hogslice-vs-bones",
-          "title": "HOGSLICE vs bones",
-          "url": "https://scp-wiki.wikidot.com/hogslice-vs-bones",
+          "id": "sightseeing-canadian-problems",
+          "title": "Sightseeing Canadian Problems",
+          "url": "https://scp-wiki.wikidot.com/sightseeing-canadian-problems",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 258,
-          "desc": "bluntfiend: so yeah. bluntfiend: ill see you guys later, im gonna go smoke a fat one. juliachildenthusiast: Later, Jude. Take it easy."
+          "os": 26,
+          "desc": "Site-43: Lambton County, Ontario, Canada Doctor Lillian S. Lillihammer stood opposite a wall, staring at it intently. She walked about the Theology and Teleology offices aimlessly, eyes still fixated upon the central rotunda's wall as she babbled nonsense. Tru…"
         },
         {
           "id": "theres-ngo-helping-this-one",
@@ -70982,29 +70999,19 @@
           "desc": "\"I just feel like I get no respect around here, Dr. Ngo, no respect.\" William Wettle sighed, burying his face in his hands, which caused his glasses to get smudged up. He grumbled and grabbed at his mustard-stained lab coat to clean the smudge, only for one of…"
         },
         {
-          "id": "uiu-file-2001-745",
-          "title": "by O-92_Mallet",
-          "url": "https://scp-int.wikidot.com/uiu-file-2001-745",
+          "id": "peligro-hipopotamos-de-medellin",
+          "title": "Danger: Medellin Hippos!",
+          "url": "https://scp-int.wikidot.com/peligro-hipopotamos-de-medellin",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 19,
-          "desc": "Initial Report Suspect Summary/Capabilities Bureau Records Interrogation Additional Information In accordance with the Federal Records Act, an electronic copy of this file is attached below."
+          "os": 42,
+          "desc": "Danger: Medellin Hippos! Hello, I am a Medellin Hippo. I am almost identical to my African cousins and, in fact, am not very different from them biologically. Basically, if you know what a hippopotamus looks like, you know what I look like. The only difference…"
         },
         {
-          "id": "critter-profile-slappy",
-          "title": "Critter Profile: Slappy!",
-          "url": "https://scp-wiki.wikidot.com/critter-profile-slappy",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 70,
-          "desc": "Enjoy an ice-cold glass of Clown Milk, brought to you by the one and only Bambousio Starswinger! Ethically sourced and sustainably farmed. Clown Milk: It's crazy good!"
-        },
-        {
-          "id": "sciptember-2022-art",
-          "title": "Sciptember 2022 Art Highlights",
-          "url": "https://scp-wiki.wikidot.com/sciptember-2022-art",
+          "id": "uncle-nicolini-author-page",
+          "title": "uncle nicolini author page",
+          "url": "https://scp-wiki.wikidot.com/uncle-nicolini-author-page",
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "•"
@@ -71018,9 +71025,9 @@
           "desc": "•"
         },
         {
-          "id": "uncle-nicolini-author-page",
-          "title": "uncle nicolini author page",
-          "url": "https://scp-wiki.wikidot.com/uncle-nicolini-author-page",
+          "id": "sciptember-2022-art",
+          "title": "Sciptember 2022 Art Highlights",
+          "url": "https://scp-wiki.wikidot.com/sciptember-2022-art",
           "role": "primaryArticle",
           "contentKind": "tale",
           "desc": "•"
@@ -71103,38 +71110,39 @@
           "title": "TO BE CONTINUED…",
           "articleIDs": [
             "art:moment",
-            "scp-4432",
-            "scp-6938",
-            "scp-es-297",
-            "scp-3867",
-            "scp-l726",
             "scp-4726",
-            "scp-4026",
-            "scp-7726",
-            "scp-4003",
-            "scp-4206",
-            "scp-7337",
-            "scp-7221",
+            "scp-8728",
+            "scp-4982",
+            "scp-5231",
+            "scp-admonition-j",
+            "scp-l056",
+            "scp-7724",
+            "scp-l726",
+            "scp-5148",
+            "scp-3867",
+            "scp-6467",
+            "scp-7260",
+            "scp-9056",
+            "scp-es-113",
             "scp-4934",
-            "scp-5726",
-            "nicos-stupid-proposal",
-            "joicl8kdr",
-            "vktm-product-catalogue-breach-highlights",
-            "the-containment-of-arsene-lupin",
-            "critter-profile-jerry",
-            "grant-request-post-mortem-neural-preservation",
-            "koigarezaki-news-911-1998-ver",
-            "lillian-lillihammer-and-the-great-meme-war",
-            "project-proposal-2018-145",
-            "yamizushi-file-no271",
-            "uiu-file-2008-21",
-            "hogslice-vs-bones",
-            "theres-ngo-helping-this-one",
             "uiu-file-2001-745",
-            "critter-profile-slappy",
-            "sciptember-2022-art",
+            "if-horses-were-wishes",
+            "critter-profile-sandra-and-george",
+            "chasing-the-union",
+            "the-color-of-static",
+            "its-beginning-to-look-a-lot-like-breachmas",
+            "a-passing-rain",
+            "tim-wilson-s-close-shave",
+            "la-persistencia-de-la-memoria",
+            "the-remains-of-the-day",
+            "robin",
+            "gentle-wings-flutter-quietly-in-the-dark",
+            "sightseeing-canadian-problems",
+            "theres-ngo-helping-this-one",
+            "peligro-hipopotamos-de-medellin",
+            "uncle-nicolini-author-page",
             "ode-to-the-unknown-author",
-            "uncle-nicolini-author-page"
+            "sciptember-2022-art"
           ]
         }
       ],
@@ -74742,7 +74750,7 @@
           "www.scp-wiki.net",
           "scpwiki.com"
         ],
-        "structureHash": "sha256-927b6f2b40ac4cee32721a7c15936de9db3b0ac326bd1a3091f4627ba3823d83"
+        "structureHash": "sha256-dfbe0340bb9fb9f61f6db968596a1468d6c098a17b9097982d6aec749d6df1eb"
       },
       "primaryArticles": [
         {
@@ -74853,130 +74861,34 @@
           "desc": "\"What is it, Tayler?\" I… About the thing, last night. Could I just give you more of an explanation? Maybe I didn't say it right or I was— I was too messy to tell you how much I hate this body so could I"
         },
         {
-          "id": "scp-6467",
-          "title": "Boblin the Goblin",
-          "url": "https://scp-wiki.wikidot.com/scp-6467",
+          "id": "scp-4003",
+          "title": "On Cowboys, Catholicism, and the Cretaceous",
+          "url": "https://scp-wiki.wikidot.com/scp-4003",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 162,
-          "desc": "Due to the harmless nature of SCP-6467, it has been decided to permit it to remain uncontained. Foundation staff are encouraged to host game nights where tabletop roleplaying games are the focus in order to further the study of SCP-6467. Copies of popular tabl…"
+          "os": 520,
+          "desc": "A 2km area surrounding SCP-4003 and Provisional Site-1200 has been designated a protected area. Civilians entering the perimeter are to be intercepted and turned away. Only personnel specializing in archeology, paleontology, and geology may be assigned to Prov…"
         },
         {
-          "id": "scp-4206",
-          "title": "The Weighing of the Heart",
-          "url": "https://scp-wiki.wikidot.com/scp-4206",
+          "id": "scp-8728",
+          "title": "Roaring Through the Cosmos",
+          "url": "https://scp-wiki.wikidot.com/scp-8728",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 142,
-          "desc": "SCP-4206 is stored in a low-priority anomalous objects locker. The 56 instances of SCP-4206-1 are contained in Site-19's Intensive Animal Care Unit. SCP-4206-1 instances are to be fed puréed dry dog food and walked on the underwater treadmill for 20 minutes da…"
+          "os": 39,
+          "desc": "AIC SAURON has been tasked with removing any instances of SCP-8728 appearing on forums, instant messaging services, and imageboards. A single contained instance of SCP-8728 is stored on a Deepwell server at Site-81 for research purposes. Due to the low threat…"
         },
         {
-          "id": "scp-8913",
-          "title": "Site-333 Open Mic Night",
-          "url": "https://scp-wiki.wikidot.com/scp-8913",
+          "id": "scp-5148",
+          "title": "Qlippoth",
+          "url": "https://scp-wiki.wikidot.com/scp-5148",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 102,
-          "desc": "As SCP-8913 only affects Site-333's interior, no direct containment procedures are necessary. All personnel stationed at Site-333 are to be briefed on SCP-8913 and must report any instances of the anomaly taking place in their presence."
-        },
-        {
-          "id": "scp-3863",
-          "title": "Hole-y cow! I can't bee-lieve it!",
-          "url": "https://scp-wiki.wikidot.com/scp-3863",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 174,
-          "desc": "Containment of SCP-3863 is deferred to GoI-466 (Wilson's Wildlife Solutions) as per the Boring Agreement 1 . Instances of SCP-3863-1 are to be milked twice daily by personnel who are not allergic to bees. Hosts suitable for SCP-3863 instances are to be provide…"
-        },
-        {
-          "id": "scp-9725",
-          "title": "Do homunculi dream of alchemical sheep?",
-          "url": "https://scp-wiki.wikidot.com/scp-9725",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 93,
-          "desc": "Knowledge of SCP-9725 is limited to personnel with Level-4 and above clearance. SCP-9725-1 is to be kept in a high-security anomalous object locker. No experiments involving the object are to take place without the approval of both Director Diaghilev and Docto…"
-        },
-        {
-          "id": "scp-2681",
-          "title": "Animal Man",
-          "url": "https://scp-wiki.wikidot.com/scp-2681",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 24,
-          "desc": "No anomalous animals are to be contained at Site-██. SCP-2681 is to be contained in a standard humanoid containment cell in Site-██. SCP-2681 may only be removed from its cell by level 2 personnel or higher. The subject's basic needs are to be maintained at al…"
-        },
-        {
-          "id": "scp-654",
-          "title": "Thunderhorn",
-          "url": "https://scp-wiki.wikidot.com/scp-654",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 150,
-          "desc": "Direct containment of SCP-654 is deferred to GoI-466 (Wilson's Wildlife Solutions) as per the Boring Agreement 1 . SCP-654 is contained in a specially constructed habitat that constantly circulates saltwater kept at a temperature of approximately -1.8 °C. Cham…"
-        },
-        {
-          "id": "scp-1542",
-          "title": "The Feral Cats of Site-34",
-          "url": "https://scp-wiki.wikidot.com/scp-1542",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 48,
-          "desc": "Due to the unknown nature of SCP-1542 manifestations, no direct containment procedures have been devised. Research into SCP-1542 has been assigned to the Spectral Division."
-        },
-        {
-          "id": "scp-6832",
-          "title": "Site-55's Ant Problem",
-          "url": "https://scp-wiki.wikidot.com/scp-6832",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 131,
-          "desc": "As SCP-6832 is neutralized, no containment procedures are necessary."
-        },
-        {
-          "id": "nico-queer-001",
-          "title": "Nico and Queerious' Proposal",
-          "url": "https://scp-wiki.wikidot.com/nico-queer-001",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "•"
-        },
-        {
-          "id": "scp-7337",
-          "title": "Yata no Karasu",
-          "url": "https://scp-wiki.wikidot.com/scp-7337",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 89,
-          "desc": "Due to its comparatively minor anomalous properties and low Veil-threatening status, SCP-7337 is permitted to remain uncontained. Personnel tasked with studying SCP-7337 are to maintain a suitable roost for it and up to 20 other crows in the Site-88 botanical…"
-        },
-        {
-          "id": "scp-7725",
-          "title": "S is for Saintly",
-          "url": "https://scp-wiki.wikidot.com/scp-7725",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 197,
-          "desc": "SCP-7725-A has been seized by the Foundation. The structure has been condemned and a 2-meter tall fence has been constructed to keep civilians from entering the premises. The fence is to be brought down upon SCP-7725-C manifestation and put back in place follo…"
-        },
-        {
-          "id": "scp-2910-jp",
-          "title": "SCP-2910-JP",
-          "url": "https://scp-wiki.wikidot.com/scp-2910-jp",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "•"
+          "os": 268,
+          "desc": "Procedure 5148-Alpha is to be observed when referring to the object class between Chokhmah and Binah for all anomalies registered in the Site-19 SCiPnet database. The object class may be spoken aloud, but not typed into the SCiPnet database to prevent the effe…"
         },
         {
           "id": "scp-3297",
@@ -74989,54 +74901,176 @@
           "desc": "SCP-3297 is to be held within a standard humanoid containment chamber. Cleaning of SCP-3297's containment cell is to be carried out once weekly only when it is dormant. The dormant state can be triggered by lowering the temperature of its containment cell belo…"
         },
         {
-          "id": "scp-1538",
-          "title": "The Plague Lamp.",
-          "url": "https://scp-wiki.wikidot.com/scp-1538",
+          "id": "scp-7728",
+          "title": "A File Found Open on Dr. Reynders' Laptop, Written By A Certain 6 Year-Old",
+          "url": "https://scp-wiki.wikidot.com/scp-7728",
           "sourceManifest": "manifest_scp-foundation",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 109,
-          "desc": "SCP-1538 is kept in a locker at Site-Red, which has been retrofitted into a ventilated hazardous materials chamber. All personnel entering the locker must be issued elastomeric respirators equipped with chemical cartridges. Personnel selected to interact with…"
+          "os": 116,
+          "desc": "•"
         },
         {
-          "id": "lillian-lillihammer-and-the-great-meme-war",
-          "title": "Lillian Lillihammer And The Great Meme War",
-          "url": "https://scp-wiki.wikidot.com/lillian-lillihammer-and-the-great-meme-war",
+          "id": "abraka-davids-proposal",
+          "title": "Abraka David's Proposal",
+          "url": "https://scp-wiki.wikidot.com/abraka-davids-proposal",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "•"
+        },
+        {
+          "id": "scp-4967",
+          "title": "Thaumielvis",
+          "url": "https://scp-wiki.wikidot.com/scp-4967",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 350,
+          "desc": "Plants within the US Department of Reclamation are to conduct all examinations and inspections on the Hoover Dam reservoir and obfuscate the presence of SCP-4967. In the event Akiva radiation levels within the reservoir exceed 135 centiakiva, SCP-4967 is to be…"
+        },
+        {
+          "id": "scp-2912-jp",
+          "title": "SCP-2912-JP",
+          "url": "https://scp-wiki.wikidot.com/scp-2912-jp",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "•"
+        },
+        {
+          "id": "scp-pl-274",
+          "title": "SCP-PL-274",
+          "url": "https://scp-wiki.wikidot.com/scp-pl-274",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "•"
+        },
+        {
+          "id": "scp-9726",
+          "title": "This Land Was Made For You And Me",
+          "url": "https://scp-wiki.wikidot.com/scp-9726",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 209,
+          "desc": "Due to the nature of SCP-9726 as an Archon object, it is not to be contained. Only US residents born within the country's borders may be assigned to SCP-9726 research. Maintaining SCP-9726 is considered a top Foundation directive as of July 1999. Means of ensu…"
+        },
+        {
+          "id": "scp-1799",
+          "title": "Mr. Laugh",
+          "url": "https://scp-wiki.wikidot.com/scp-1799",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 182,
+          "desc": "SCP-1799 is to be contained in a soundproofed humanoid containment cell, with the other Misters in Hall 34-B of Site-55 . Personnel entering SCP-1799's cell are to be fitted with a voice-canceling helmet to prevent communication with the subject."
+        },
+        {
+          "id": "scp-mystery-j",
+          "title": "SCP-MYSTERY-J",
+          "url": "https://scp-wiki.wikidot.com/scp-mystery-j",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "•"
+        },
+        {
+          "id": "scp-3863",
+          "title": "Hole-y cow! I can't bee-lieve it!",
+          "url": "https://scp-wiki.wikidot.com/scp-3863",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 174,
+          "desc": "Containment of SCP-3863 is deferred to GoI-466 (Wilson's Wildlife Solutions) as per the Boring Agreement 1 . Instances of SCP-3863-1 are to be milked twice daily by personnel who are not allergic to bees. Hosts suitable for SCP-3863 instances are to be provide…"
+        },
+        {
+          "id": "scp-1542",
+          "title": "The Feral Cats of Site-34",
+          "url": "https://scp-wiki.wikidot.com/scp-1542",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 48,
+          "desc": "Due to the unknown nature of SCP-1542 manifestations, no direct containment procedures have been devised. Research into SCP-1542 has been assigned to the Spectral Division."
+        },
+        {
+          "id": "scp-3879",
+          "title": "Musical Jolly Ape™ by Dr. Wondertainment",
+          "url": "https://scp-wiki.wikidot.com/scp-3879",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 160,
+          "desc": "Full containment is deferred to GoI-466 ( Wilson's Wildlife Solutions ) as per the Boring Agreement 1 . SCP-3879 has been transferred to Foundation containment in Site-64 as per"
+        },
+        {
+          "id": "square-your-shoulders",
+          "title": "Square your shoulders, lift your pack, and leave your friends and go.",
+          "url": "https://scp-wiki.wikidot.com/square-your-shoulders",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 64,
-          "desc": "Hello, our beloved. We would have preferred to do this in person, but we were busy, you were busy, there was a whole ordeal trying to get things sorted in order to kidnap you and we decided to just send an email instead. We wanted to let you know that we have…"
+          "os": 56,
+          "desc": "Boston had changed. What had once been a vibrant city full of optimism and a 'piece of cake' attitude for the War of the Rebellion had turned grey. Countless beggars missing limbs, no doubt veterans, littered the streets. Posters depicting Uncle Sam, Columbia,…"
         },
         {
-          "id": "the-good-ending",
-          "title": "SCP-5057 Additional Documentation",
-          "url": "https://scp-wiki.wikidot.com/the-good-ending",
+          "id": "expert-in-a-dying-field",
+          "title": "Expert In A Dying Field",
+          "url": "https://scp-wiki.wikidot.com/expert-in-a-dying-field",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 168,
-          "desc": "Addendum 5057.3 SCP-5057 was successfully transferred to the recently formed Professor Funtastic Researcher Team lead by Dr. Cole. The following interviews/interactions were recorded by Dr. Cole and the GoI-563 research team."
+          "os": 55,
+          "desc": "The age of magic had ended 15 years ago, and yet the Foundation and a handful of other organizations remained. Some, like the Global Occult Coalition, had chosen to remain vigilant in the event the anomalous came back. Some, like the UIU, still believed in big…"
         },
         {
-          "id": "sublimation",
-          "title": "Sublimation",
-          "url": "https://scp-wiki.wikidot.com/sublimation",
+          "id": "clef-goes-to-the-dmv",
+          "title": "Clef Goes To The DMV",
+          "url": "https://scp-wiki.wikidot.com/clef-goes-to-the-dmv",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 97,
-          "desc": "In the months since escaping the prison that was the Anomalous Documents Disposal Chamber of Site-43's AAF-A, Ilse Reynders had developed quite the lust for life."
+          "os": 112,
+          "desc": "Though the seats at the DMV office would typically be packed tightly with people waiting to be called up to the counter, no one seemed to be interested in sitting next to Clef. It might have been because he looked quite suspicious wearing a duster hat and coat…"
         },
         {
-          "id": "critter-profile-chuck",
-          "title": "Critter Profile: Chuck.",
-          "url": "https://scp-wiki.wikidot.com/critter-profile-chuck",
+          "id": "we-will-fall-together",
+          "title": "We Will Fall Together",
+          "url": "https://scp-wiki.wikidot.com/we-will-fall-together",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 46,
+          "desc": "bones: May I speak with you, Lyris? acuterobot: yeah eli? bones: I think something is wrong. acuterobot: i feel it too :("
+        },
+        {
+          "id": "uiu-file-2008-21",
+          "title": "UIU File: 2008-021",
+          "url": "https://scp-wiki.wikidot.com/uiu-file-2008-21",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle",
           "contentKind": "goiFormat",
-          "os": 255,
-          "desc": "Critter Profile: Chuck. Species: Hippopotamus amphibius (Hippopotamus) Primary Caretaker: Aquatics Team, Elliot Ackerman (Can't anyone else take him off my hands?)"
+          "os": 119,
+          "desc": "Initial Report Event/Locale Preface Creature Description/Capabilities Bureau Record Electronic copy below as per Federal Records Act"
+        },
+        {
+          "id": "divine-intervention",
+          "title": "Divine Intervention",
+          "url": "https://scp-wiki.wikidot.com/divine-intervention",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 56,
+          "desc": "Why hello there. Come to chat up an old man, have you? Eh? Another interview? Fine, fine. I see no reason to deny it. Could you do me a favor, though? Pass me that grape juice box on the bedside table. I would get up and grab it, but my bones aren't what they…"
+        },
+        {
+          "id": "critter-profile-teemo",
+          "title": "Critter Profile: Teemo!",
+          "url": "https://scp-wiki.wikidot.com/critter-profile-teemo",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 91,
+          "desc": "Critter Profile: Teemo! Species: Tibetan Fox (Vulpes ferrilata) Primary Caretaker: Alex Molina, Terrestrial Team Diet: Any meats, I'm not picky!"
         },
         {
           "id": "i-told-you-that-i-was-afraid",
@@ -75049,102 +75083,64 @@
           "desc": "All it took was an email. One that explained why the latest Dr. Wondertainment product had been particularly devoid of charm. One that explained why their Anderson Robotics prosthetic arm wasn't working anymore. One that explained why the Breach hadn't happene…"
         },
         {
-          "id": "coming-out-to-the-woods",
-          "title": "I Don't Get It, But I'll Figure It Out.",
-          "url": "https://scp-wiki.wikidot.com/coming-out-to-the-woods",
+          "id": "dark-sushi-file-no-726-under-ice",
+          "title": "Dark Sushi File No. 726 \"Kōri Roll\"",
+          "url": "https://scp-wiki.wikidot.com/dark-sushi-file-no-726-under-ice",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 44,
+          "desc": "The Kōri Roll is a new invention in sushiblading form, created by sushibladers who have fallen on hard times and can no longer afford to waste the shari water or fish stock. This breakthrough invention recycles water and stock used in the cooking of shari by r…"
+        },
+        {
+          "id": "seven-days-with-mr-fish",
+          "title": "Seven Days With Mr. Fish",
+          "url": "https://scp-wiki.wikidot.com/seven-days-with-mr-fish",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 122,
-          "desc": "Tim Wilson and his son, Felix, came to a stop on their hike. Two boulders jutted out of the forest floor, like monoliths in a sea of red and orange leaves. The patriarch Wilson approached one and eagerly took a seat, removing his campaign hat and wiping the sw…"
+          "os": 147,
+          "desc": "A knock on the containment chamber door alerted Mr. Fish that his quarters were next to be cleaned. He sat up on his bed and set down his newspaper, ready to move out of the way should he need to. Though he appreciated the fact that the Foundation were very pr…"
         },
         {
-          "id": "los-zapaticos-de-rosa",
-          "title": "Los zapaticos de rosa",
-          "url": "https://scp-wiki.wikidot.com/los-zapaticos-de-rosa",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "•"
-        },
-        {
-          "id": "aces-deuces",
-          "title": "Aces Deuces",
-          "url": "https://scp-wiki.wikidot.com/aces-deuces",
+          "id": "from-their-lips-to-gods-ears",
+          "title": "From Their Lips To Gods Ears",
+          "url": "https://scp-wiki.wikidot.com/from-their-lips-to-gods-ears",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 35,
-          "desc": "Dating was never easy for Jay. Sure, they'd had a bunch of relationships in the past, but nothing that lasted. They were looking for someone willing to understand them and all their idiosyncrasies. In a moment of weakness, they had confessed the difficulties o…"
+          "os": 22,
+          "desc": "Grand Cove: Grand Bend, Lambton County, Ontario, Canada Jay stood naked in front of the steamed-up bathroom mirror, analyzing themselves in the reflection."
         },
         {
-          "id": "sc-99-734-01-506",
-          "title": "SC-99/734/01/506",
-          "url": "https://scp-wiki.wikidot.com/sc-99-734-01-506",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 16,
-          "desc": "Document Type: Step Compilation Dates Received: 22-10-1999 to 19-08-2001 Operation Status: Open Foreword: When the invisible veil that enveloped the world split open, people began to meet beings the existence of which they couldn't fathom. It became a nightmar…"
-        },
-        {
-          "id": "dossier-lph",
-          "title": "UIU Location Dossier - \"Little Havana\"",
-          "url": "https://scp-int.wikidot.com/dossier-lph",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 35,
-          "desc": "Pocket-Dimension/City-State Little Havana (La Pequeña Habana), commonly called Habanita, She Who Has Freedom (SWHF), La Que Tiene Libertad (LQTL) or simply Habanados, is an independent city-state and a paranormal enclave located within a self-contained pocket…"
-        },
-        {
-          "id": "adoption-poster-bandit",
-          "title": "Adoption Poster: Bandit!",
-          "url": "https://scp-wiki.wikidot.com/adoption-poster-bandit",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 196,
-          "desc": "Hi! My name is Bandit! Get To Know Me! I'm looking for a good and loving home in the Three Portlands-Boring area. I get along well with most people, but I'm some sort of magnet for meanness in other critters. As you might imagine, this means I'm pretty shy and…"
-        },
-        {
-          "id": "the-color-of-static",
-          "title": "The Color of Static",
-          "url": "https://scp-wiki.wikidot.com/the-color-of-static",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 29,
-          "desc": "THE STAGE begins in darkness, as all house lights FADE DOWN. A LIGHT turns on overhead, creating a spotlight on the stage over a GIANT CATERPILLAR."
-        },
-        {
-          "id": "wanted-the-thieves-domain",
-          "title": "WANTED: THE THIEVES' DOMAIN",
-          "url": "https://scp-wiki.wikidot.com/wanted-the-thieves-domain",
+          "id": "moon-champion-s-cinco-de-mayo-extravaganza",
+          "title": "Moon Champion's Cinco de Mayo Extravaganza",
+          "url": "https://scp-wiki.wikidot.com/moon-champion-s-cinco-de-mayo-extravaganza",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 75,
-          "desc": "\"Hey, Harrington.\" \"Morning, Smith. Got the new wanted posters?\" \"Yep. I was just gonna go put them up outside.\" \"Sounds good. By the way, did you see the Foundation is assigning some detectives to help us out?\""
+          "os": 167,
+          "desc": "A bright streak illuminated the darkening autumn sky over Boring, Oregon. Though the citizens were no strangers to the weird, a fiery projectile of destruction was definitely not normal to them. A kangaroo causing earthquakes? Sure. A singing and dancing bear?…"
         },
         {
-          "id": "corncrake-of-destiny",
-          "title": "The Corncrake Of Destiny",
-          "url": "https://scp-wiki.wikidot.com/corncrake-of-destiny",
-          "sourceManifest": "manifest_gois",
+          "id": "ace-of-hearts",
+          "title": "Ace Of Hearts",
+          "url": "https://scp-wiki.wikidot.com/ace-of-hearts",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 88,
-          "desc": "the corncrake of destiny is a small bird that talks very loud. almost like its yelling all the time, really. Records across various timelines confirm his volume as extraordinarily loud. It is also inexplicably knowledgeable in topics of sciences, French cuisin…"
+          "contentKind": "tale",
+          "os": 80,
+          "desc": "Hello, it's nice to meet you. Hey, I'm John, nice to meet you. Alright, Jay. It's a pleasure. So what's a classy person such as yourself doing in a place like this?"
         },
         {
-          "id": "uiu-file-2008-21",
-          "title": "UIU File: 2008-021",
-          "url": "https://scp-wiki.wikidot.com/uiu-file-2008-21",
-          "sourceManifest": "manifest_gois",
+          "id": "myocardial-infarction",
+          "title": "Myocardial Infarction",
+          "url": "https://scp-wiki.wikidot.com/myocardial-infarction",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 119,
-          "desc": "Initial Report Event/Locale Preface Creature Description/Capabilities Bureau Record Electronic copy below as per Federal Records Act"
+          "contentKind": "tale",
+          "os": 40,
+          "desc": "It had been a long time since Tim had taken some time for himself, and even longer since he had gone on a hike. Between all the meetings, critter care, public appearances, and other things the leadership of Wilson's Wildlife Solutions entailed, he felt like he…"
         },
         {
           "id": "ode-to-the-unknown-author",
@@ -75192,36 +75188,35 @@
             "uncle-nicolini-author-page",
             "high-pressure-low",
             "true-trans-soul-rebel",
-            "scp-6467",
-            "scp-4206",
-            "scp-8913",
-            "scp-3863",
-            "scp-9725",
-            "scp-2681",
-            "scp-654",
-            "scp-1542",
-            "scp-6832",
-            "nico-queer-001",
-            "scp-7337",
-            "scp-7725",
-            "scp-2910-jp",
+            "scp-4003",
+            "scp-8728",
+            "scp-5148",
             "scp-3297",
-            "scp-1538",
-            "lillian-lillihammer-and-the-great-meme-war",
-            "the-good-ending",
-            "sublimation",
-            "critter-profile-chuck",
-            "i-told-you-that-i-was-afraid",
-            "coming-out-to-the-woods",
-            "los-zapaticos-de-rosa",
-            "aces-deuces",
-            "sc-99-734-01-506",
-            "dossier-lph",
-            "adoption-poster-bandit",
-            "the-color-of-static",
-            "wanted-the-thieves-domain",
-            "corncrake-of-destiny",
+            "scp-7728",
+            "abraka-davids-proposal",
+            "scp-4967",
+            "scp-2912-jp",
+            "scp-pl-274",
+            "scp-9726",
+            "scp-1799",
+            "scp-mystery-j",
+            "scp-3863",
+            "scp-1542",
+            "scp-3879",
+            "square-your-shoulders",
+            "expert-in-a-dying-field",
+            "clef-goes-to-the-dmv",
+            "we-will-fall-together",
             "uiu-file-2008-21",
+            "divine-intervention",
+            "critter-profile-teemo",
+            "i-told-you-that-i-was-afraid",
+            "dark-sushi-file-no-726-under-ice",
+            "seven-days-with-mr-fish",
+            "from-their-lips-to-gods-ears",
+            "moon-champion-s-cinco-de-mayo-extravaganza",
+            "ace-of-hearts",
+            "myocardial-infarction",
             "ode-to-the-unknown-author",
             "sciptember-2022-art"
           ]
@@ -114310,7 +114305,7 @@
       "branchID": "scp-wiki-en",
       "kind": "goi",
       "hubID": "church-of-the-broken-god-hub",
-      "title": "The Church of the Broken God",
+      "title": "Church of the Broken God",
       "sourceListURL": "https://scp-wiki.wikidot.com/church-of-the-broken-god-hub",
       "officialHubURL": "https://scp-wiki.wikidot.com/church-of-the-broken-god-hub",
       "hubPresentation": "standard",
@@ -116453,7 +116448,7 @@
       "branchID": "scp-wiki-en",
       "kind": "goi",
       "hubID": "unusual-cargo-hub",
-      "title": "Commission on Unusual Cargo",
+      "title": "The Commission on Unusual Cargo",
       "sourceListURL": "https://scp-wiki.wikidot.com/unusual-cargo-hub",
       "officialHubURL": "https://scp-wiki.wikidot.com/unusual-cargo-hub",
       "hubPresentation": "standard",
@@ -123372,13 +123367,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5332",
-          "title": "SCP-5332",
-          "url": "https://scp-wiki.wikidot.com/scp-5332",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-2823",
           "title": "SCP-2823",
           "url": "https://scp-wiki.wikidot.com/scp-2823",
@@ -123386,23 +123374,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-6078",
-          "title": "SCP-6078",
-          "url": "https://scp-wiki.wikidot.com/scp-6078",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-2500",
           "title": "SCP-2500",
           "url": "https://scp-wiki.wikidot.com/scp-2500",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-6614",
-          "title": "SCP-6614",
-          "url": "https://scp-wiki.wikidot.com/scp-6614",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -123449,13 +123423,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-8899",
-          "title": "SCP-8899",
-          "url": "https://scp-wiki.wikidot.com/scp-8899",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8343",
           "title": "SCP-8343",
           "url": "https://scp-wiki.wikidot.com/scp-8343",
@@ -123470,23 +123437,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-9120",
-          "title": "SCP-9120",
-          "url": "https://scp-wiki.wikidot.com/scp-9120",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8601",
           "title": "SCP-8601",
           "url": "https://scp-wiki.wikidot.com/scp-8601",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-6145",
-          "title": "SCP-6145",
-          "url": "https://scp-wiki.wikidot.com/scp-6145",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -123501,6 +123454,48 @@
           "id": "scp-7264",
           "title": "SCP-7264",
           "url": "https://scp-wiki.wikidot.com/scp-7264",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8073",
+          "title": "SCP-8073",
+          "url": "https://scp-wiki.wikidot.com/scp-8073",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8181",
+          "title": "SCP-8181",
+          "url": "https://scp-wiki.wikidot.com/scp-8181",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5613",
+          "title": "SCP-5613",
+          "url": "https://scp-wiki.wikidot.com/scp-5613",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4077",
+          "title": "SCP-4077",
+          "url": "https://scp-wiki.wikidot.com/scp-4077",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3668",
+          "title": "SCP-3668",
+          "url": "https://scp-wiki.wikidot.com/scp-3668",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8638",
+          "title": "SCP-8638",
+          "url": "https://scp-wiki.wikidot.com/scp-8638",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -137288,7 +137283,7 @@
       "branchID": "scp-wiki-en",
       "kind": "goi",
       "hubID": "spc-hub",
-      "title": "Shark Punching Center (SPC)",
+      "title": "The Shark Punching Center (SPC)",
       "sourceListURL": "https://scp-wiki.wikidot.com/spc-hub",
       "officialHubURL": "https://scp-wiki.wikidot.com/spc-hub",
       "hubPresentation": "standard",
@@ -138504,7 +138499,7 @@
       "branchID": "scp-wiki-en",
       "kind": "goi",
       "hubID": "unusual-incidents-unit-hub",
-      "title": "Unusual Incidents Unit (UIU), Federal Bureau of Investigation",
+      "title": "Unusual Incidents Unit (UIU)",
       "sourceListURL": "https://scp-wiki.wikidot.com/unusual-incidents-unit-hub",
       "officialHubURL": "https://scp-wiki.wikidot.com/unusual-incidents-unit-hub",
       "hubPresentation": "standard",
@@ -139376,13 +139371,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-9444",
-          "title": "SCP-9444",
-          "url": "https://scp-wiki.wikidot.com/scp-9444",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8514",
           "title": "SCP-8514",
           "url": "https://scp-wiki.wikidot.com/scp-8514",
@@ -139411,20 +139399,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5685",
-          "title": "SCP-5685",
-          "url": "https://scp-wiki.wikidot.com/scp-5685",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-5442",
-          "title": "SCP-5442",
-          "url": "https://scp-wiki.wikidot.com/scp-5442",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4579",
           "title": "SCP-4579",
           "url": "https://scp-wiki.wikidot.com/scp-4579",
@@ -139435,13 +139409,6 @@
           "id": "scp-5982",
           "title": "SCP-5982",
           "url": "https://scp-wiki.wikidot.com/scp-5982",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8172",
-          "title": "SCP-8172",
-          "url": "https://scp-wiki.wikidot.com/scp-8172",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139481,23 +139448,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4204",
-          "title": "SCP-4204",
-          "url": "https://scp-wiki.wikidot.com/scp-4204",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-5141",
           "title": "SCP-5141",
           "url": "https://scp-wiki.wikidot.com/scp-5141",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-6310",
-          "title": "SCP-6310",
-          "url": "https://scp-wiki.wikidot.com/scp-6310",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139537,23 +139490,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5853",
-          "title": "SCP-5853",
-          "url": "https://scp-wiki.wikidot.com/scp-5853",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-5017",
           "title": "SCP-5017",
           "url": "https://scp-wiki.wikidot.com/scp-5017",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-2414",
-          "title": "SCP-2414",
-          "url": "https://scp-wiki.wikidot.com/scp-2414",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139579,30 +139518,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2972",
-          "title": "SCP-2972",
-          "url": "https://scp-wiki.wikidot.com/scp-2972",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-4506",
-          "title": "SCP-4506",
-          "url": "https://scp-wiki.wikidot.com/scp-4506",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-5487",
           "title": "SCP-5487",
           "url": "https://scp-wiki.wikidot.com/scp-5487",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-1949-ex",
-          "title": "SCP-1949-EX",
-          "url": "https://scp-wiki.wikidot.com/scp-1949-ex",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139621,34 +139539,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5082",
-          "title": "SCP-5082",
-          "url": "https://scp-wiki.wikidot.com/scp-5082",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-5177",
-          "title": "SCP-5177",
-          "url": "https://scp-wiki.wikidot.com/scp-5177",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8477",
-          "title": "SCP-8477",
-          "url": "https://scp-wiki.wikidot.com/scp-8477",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3742",
-          "title": "SCP-3742",
-          "url": "https://scp-wiki.wikidot.com/scp-3742",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "dyfl001",
           "title": "Foolish David's Lost Proposal",
           "url": "https://scp-wiki.wikidot.com/dyfl001",
@@ -139663,23 +139553,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-6426",
-          "title": "SCP-6426",
-          "url": "https://scp-wiki.wikidot.com/scp-6426",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4444",
           "title": "SCP-4444",
           "url": "https://scp-wiki.wikidot.com/scp-4444",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-9810",
-          "title": "SCP-9810",
-          "url": "https://scp-wiki.wikidot.com/scp-9810",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139698,30 +139574,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2635",
-          "title": "SCP-2635",
-          "url": "https://scp-wiki.wikidot.com/scp-2635",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3410",
-          "title": "SCP-3410",
-          "url": "https://scp-wiki.wikidot.com/scp-3410",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-9999-j",
           "title": "SCP-9999-J",
           "url": "https://scp-wiki.wikidot.com/scp-9999-j",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8086",
-          "title": "SCP-8086",
-          "url": "https://scp-wiki.wikidot.com/scp-8086",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139761,27 +139616,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2600",
-          "title": "SCP-2600",
-          "url": "https://scp-wiki.wikidot.com/scp-2600",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-4871",
-          "title": "SCP-4871",
-          "url": "https://scp-wiki.wikidot.com/scp-4871",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-7890",
-          "title": "SCP-7890",
-          "url": "https://scp-wiki.wikidot.com/scp-7890",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-6681",
           "title": "SCP-6681",
           "url": "https://scp-wiki.wikidot.com/scp-6681",
@@ -139806,13 +139640,6 @@
           "id": "scp-9098",
           "title": "SCP-9098",
           "url": "https://scp-wiki.wikidot.com/scp-9098",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3250",
-          "title": "SCP-3250",
-          "url": "https://scp-wiki.wikidot.com/scp-3250",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139845,30 +139672,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2147",
-          "title": "SCP-2147",
-          "url": "https://scp-wiki.wikidot.com/scp-2147",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8734",
-          "title": "SCP-8734",
-          "url": "https://scp-wiki.wikidot.com/scp-8734",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scantron-s-proposal",
           "title": "Scantron's Proposal",
           "url": "https://scp-wiki.wikidot.com/scantron-s-proposal",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-9998",
-          "title": "SCP-9998",
-          "url": "https://scp-wiki.wikidot.com/scp-9998",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -139887,16 +139693,205 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-3127",
-          "title": "SCP-3127",
-          "url": "https://scp-wiki.wikidot.com/scp-3127",
+          "id": "scp-4566",
+          "title": "SCP-4566",
+          "url": "https://scp-wiki.wikidot.com/scp-4566",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4566",
-          "title": "SCP-4566",
-          "url": "https://scp-wiki.wikidot.com/scp-4566",
+          "id": "scp-3535",
+          "title": "SCP-3535",
+          "url": "https://scp-wiki.wikidot.com/scp-3535",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9110",
+          "title": "SCP-9110",
+          "url": "https://scp-wiki.wikidot.com/scp-9110",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7692",
+          "title": "SCP-7692",
+          "url": "https://scp-wiki.wikidot.com/scp-7692",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3231",
+          "title": "SCP-3231",
+          "url": "https://scp-wiki.wikidot.com/scp-3231",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5512",
+          "title": "SCP-5512",
+          "url": "https://scp-wiki.wikidot.com/scp-5512",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8870",
+          "title": "SCP-8870",
+          "url": "https://scp-wiki.wikidot.com/scp-8870",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7061",
+          "title": "SCP-7061",
+          "url": "https://scp-wiki.wikidot.com/scp-7061",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3256",
+          "title": "SCP-3256",
+          "url": "https://scp-wiki.wikidot.com/scp-3256",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-633",
+          "title": "SCP-633",
+          "url": "https://scp-wiki.wikidot.com/scp-633",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6828",
+          "title": "SCP-6828",
+          "url": "https://scp-wiki.wikidot.com/scp-6828",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "captain-kirby-s-proposal",
+          "title": "Captain Kirby's Proposal",
+          "url": "https://scp-wiki.wikidot.com/captain-kirby-s-proposal",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2906",
+          "title": "SCP-2906",
+          "url": "https://scp-wiki.wikidot.com/scp-2906",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5050",
+          "title": "SCP-5050",
+          "url": "https://scp-wiki.wikidot.com/scp-5050",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-378",
+          "title": "SCP-378",
+          "url": "https://scp-wiki.wikidot.com/scp-378",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-285",
+          "title": "SCP-285",
+          "url": "https://scp-wiki.wikidot.com/scp-285",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5675",
+          "title": "SCP-5675",
+          "url": "https://scp-wiki.wikidot.com/scp-5675",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6635",
+          "title": "SCP-6635",
+          "url": "https://scp-wiki.wikidot.com/scp-6635",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4665",
+          "title": "SCP-4665",
+          "url": "https://scp-wiki.wikidot.com/scp-4665",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8320",
+          "title": "SCP-8320",
+          "url": "https://scp-wiki.wikidot.com/scp-8320",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8507",
+          "title": "SCP-8507",
+          "url": "https://scp-wiki.wikidot.com/scp-8507",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3935",
+          "title": "SCP-3935",
+          "url": "https://scp-wiki.wikidot.com/scp-3935",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7293",
+          "title": "SCP-7293",
+          "url": "https://scp-wiki.wikidot.com/scp-7293",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7993",
+          "title": "SCP-7993",
+          "url": "https://scp-wiki.wikidot.com/scp-7993",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1131-j",
+          "title": "SCP-1131-J",
+          "url": "https://scp-wiki.wikidot.com/scp-1131-j",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5460",
+          "title": "SCP-5460",
+          "url": "https://scp-wiki.wikidot.com/scp-5460",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7115",
+          "title": "SCP-7115",
+          "url": "https://scp-wiki.wikidot.com/scp-7115",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4406",
+          "title": "SCP-4406",
+          "url": "https://scp-wiki.wikidot.com/scp-4406",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4985",
+          "title": "SCP-4985",
+          "url": "https://scp-wiki.wikidot.com/scp-4985",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -140363,7 +140358,7 @@
       "branchID": "scp-wiki-en",
       "kind": "goi",
       "hubID": "vikander-kneed-technical-media-hub",
-      "title": "Vikander-Kneed Technical Media",
+      "title": "Vikander-Kneed Technical Media (VKTM)",
       "sourceListURL": "https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub",
       "officialHubURL": "https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub",
       "hubPresentation": "standard",
