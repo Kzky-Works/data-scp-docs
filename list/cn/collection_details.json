@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791454425,
-  "generatedAt": "2026-10-08T10:13:45Z",
-  "chunkRevision": "sha256-60ac9bdee131783b52263ed82782ddd0059ce31cebf522ed0c2f31a4d16571f0",
+  "listVersion": 1791541132,
+  "generatedAt": "2026-10-09T10:18:52Z",
+  "chunkRevision": "sha256-7d616a8c800986b1eebedff80c34da50a03cdaa7daa3a0c03464b970b46b7c87",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791454191,
-        "generatedAt": "2026-10-08T10:09:51Z",
-        "contentHash": "sha256-792a727bfca3dc725e924460a02575df3cb24cf9bc00df9622b918d78abc6783"
+        "listVersion": 1791541131,
+        "generatedAt": "2026-10-09T10:18:51Z",
+        "contentHash": "sha256-4025b44a46174d09e7b821ae972f0fc0f5964d0f8bb7a11caa581247ee1ea5bf"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1791367235,
-        "generatedAt": "2026-10-07T10:00:35Z",
-        "contentHash": "sha256-b41c927138d2aeb35f07646c4b4780597035506b791a212e5fab506ac04bfbfe"
+        "listVersion": 1791540840,
+        "generatedAt": "2026-10-09T10:14:00Z",
+        "contentHash": "sha256-2ea15a1d29f1be2e55b9359e87ab11af743d178bba4bc85e032be672e5368038"
       },
       {
         "kind": "manifest_scp-cn",
@@ -75,9 +75,9 @@
       "branchID": "scp-cn",
       "path": "DataPipeline/list/cn/cn_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1789893206,
-      "generatedAt": "2026-09-20T08:33:26Z",
-      "contentHash": "sha256-2adcb0e63097d4ba7514ec2a5c1f5e0376fe8d07ecc5028a399ffa29c418f105"
+      "listVersion": 1791540835,
+      "generatedAt": "2026-10-09T10:13:55Z",
+      "contentHash": "sha256-f7c58e10d365f09aad7103f85bebdc377b55e96f149c78f11c77f57355d059a6"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -18282,6 +18282,81 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-cn:collection:canon:forgotten-memories-hub",
+      "branchID": "scp-cn",
+      "kind": "canon",
+      "hubID": "forgotten-memories-hub",
+      "title": "已逝记忆",
+      "sourceListURL": "https://scp-wiki-cn.wikidot.com/forgotten-memories-hub",
+      "officialHubURL": "https://scp-wiki-cn.wikidot.com/forgotten-memories-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "garrison博士",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "garrison博士",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-cn",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cn_tag.json",
+        "emptySectionTitle": "作品",
+        "structureHash": "sha256-97374cad27ab0b846f4dbbe8ed59ba449505938a2e355020506cd56db8308dbe"
+      },
+      "primaryArticles": [
+        {
+          "id": "the-deadname-meme",
+          "title": "弃名模因",
+          "url": "https://scp-wiki-cn.wikidot.com/the-deadname-meme",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "作者：Queerious ⚠警告：性暗示、提及性别焦虑及使用旧名 收件人: Heather Garrison博士 发件人: Tad Trainor 主题: 欢迎来到Site-43!"
+        },
+        {
+          "id": "anomalous-ontology-orientation",
+          "title": "异常本体论指南",
+          "url": "https://scp-wiki-cn.wikidot.com/anomalous-ontology-orientation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "WARNING — ALL VIEWERS MUST BE LITERATE 下列抄录中包含有本体论重联与叠加、认知危害符号以及模因性含义。所有基金会文档皆是如此。事实上，所有词语都具有本体论、认知危害性和模因性含义！现在你已收到建议，即便你应该已经了解过这一点了。"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "“缺席”",
+          "articleIDs": [
+            "the-deadname-meme"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "想了解整个宇宙的概况？请从这里开始：",
+          "articleIDs": [
+            "anomalous-ontology-orientation"
+          ]
+        }
+      ],
+      "description": "理念圈是所有人类已知或可能被认知的理念或概念的维度。理念圈 并非 已逝记忆中所有人类意识的总和，而是人类心智能够理解的所有现有和潜在概念的总和。与其说像社交媒体的动态，不如说更像一部百科全书。"
     },
     {
       "id": "scp-cn:collection:canon:the-alchemy-department-hub",
@@ -85053,6 +85128,13 @@
           "id": "the-traveller-myf",
           "title": "莫游圃，又称“旅行家”",
           "url": "https://scp-wiki-cn.wikidot.com/the-traveller-myf",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "yakubyo-gami",
+          "title": "疫病神",
+          "url": "https://scp-wiki-cn.wikidot.com/yakubyo-gami",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }

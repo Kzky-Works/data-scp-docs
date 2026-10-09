@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791453804,
-  "generatedAt": "2026-10-08T10:03:24Z",
-  "chunkRevision": "sha256-b6d2b0061c4d62591ee9093feb8667e6ee373d10b92d2f195ee4ae0593a396c9",
+  "listVersion": 1791540509,
+  "generatedAt": "2026-10-09T10:08:29Z",
+  "chunkRevision": "sha256-7f9a13ba492dba0028115244e1b6f49da36cd5caf1b3f334af57023817d3a0ee",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791453788,
-        "generatedAt": "2026-10-08T10:03:08Z",
-        "contentHash": "sha256-266e4bb1dc72bb1256a8daa3ae38e70ab50e6a2618bc8387a6cc545b2feeb94e"
+        "listVersion": 1791540427,
+        "generatedAt": "2026-10-09T10:07:07Z",
+        "contentHash": "sha256-f58a1238d5b5801fd14b8fe76f553e1db09952373c569727b9f7c298444325b3"
       },
       {
         "kind": "manifest_gois",
@@ -75,9 +75,9 @@
       "branchID": "scp-ko",
       "path": "DataPipeline/list/ko/ko_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1791192939,
-      "generatedAt": "2026-10-05T09:35:38Z",
-      "contentHash": "sha256-980b2c762eac459c05d8bae3e77c9cad3822b9c7eeaac2809df99f03c06b17e9"
+      "listVersion": 1791540427,
+      "generatedAt": "2026-10-09T10:07:07Z",
+      "contentHash": "sha256-f288f41b0fc4f7bd4fe8697b8e3e6704d308b9e0f890618400467f2cdcd87f91"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -8767,6 +8767,171 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-ko:collection:series:raid-on-jugol",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "raid-on-jugol",
+      "title": "주골대토벌 허브",
+      "sourceListURL": "https://scpko.wikidot.com/raid-on-jugol",
+      "officialHubURL": "https://scpko.wikidot.com/raid-on-jugol",
+      "hubPresentation": "standard",
+      "canonicalTag": "raid-on-jugol",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "raid-on-jugol",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesKo archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-aed12d4337adb43031d2ccb6f4ba62e7a05f69f493dadbdea81da2d3227025e9"
+      },
+      "primaryArticles": [
+        {
+          "id": "golbungstonk",
+          "title": "스올 내 헤지펀드들의 대규모 손실, 투자자의 책임은 없나",
+          "url": "https://scpko.wikidot.com/golbungstonk",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "golbungstonk2",
+          "title": "WoI 연구과 보고자료 : \"주골대폭주\" 사건",
+          "url": "https://scpko.wikidot.com/golbungstonk2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "작성자: WoI 연구과 심시영 2023년 스올 솔파라노말애니 공매도 사건은 초상개인투자자들이 스올의 기관투자자들을 상대로 단합하여 상당한 손실을 일으킨 사건이다. 스올 내 자산운용사들은 경영실적이 악화된 애니메이션 제작 회사의 가치 하락에 베팅하여 이득을 보려 시도했고, 이를 막으려는 개인투자자들을 상대로 공개적인 협박 시도를 진행했다. 이러한 시도는 요주의 웹사이트에서 큰 파장을 일으키며 다수의 이용자들을 결집, 가치를 방어하도록 유도했다. 결과적으로, 스올의…"
+        },
+        {
+          "id": "the-alleys-hub",
+          "title": "골목길",
+          "url": "https://scpko.wikidot.com/the-alleys-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 39,
+          "desc": "앞골목은 골목길에서 파생된 초상세계의 \"대나무숲\" 사이트입니다. 이 사이트는 뒷골목, 골목길의 개설일인 20██년에 개설되었으며, 초상단체 소속 인원들을 대상으로 다양한 커뮤니티 서비스를 제공합니다."
+        },
+        {
+          "id": "the-first-occult-flame-war",
+          "title": "제1차 오컬트 키보드 대전",
+          "url": "https://scpko.wikidot.com/the-first-occult-flame-war",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "이미 알고 있어야 하겠지만, 8월 22일, 혹은 금일은 우리의 주군 위대한 카르시스트 이온의 실종과 물질계로의 예언된 귀환 10주년 기념일이오. 이를 축하하기 위해, 본인은 그대들에게 이 몸의 놀라운 정신의 일부를 엿볼 기회를 드리는 바이오. 그대들의 요즘 말로는 \"Q&A\"를 열겠다는 말이오. 그러니 맘 편히 뭐든 물어보시오. 많은 답변이 그대를 기다리고 있을 터이니."
+        },
+        {
+          "id": "pamwac-hub",
+          "title": "애니캐릭터와 결혼하기 위한 연구계획국 (PAMWAC) :",
+          "url": "https://scpko.wikidot.com/pamwac-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "통칭 ' 파무왁 .' 다양한 주제를 다루지만 일단 이름대로 서브컬쳐를 주로 다루는 일본 스레드식 커뮤니티. 오타쿠들의 집단이자 경제 사태와 유관하다 하여 뒷골목 유저들의 습격을 받았으나, 파무왁도 만만치 않은 테러능력을 지니고 있었습니다…"
+        },
+        {
+          "id": "woi-research-division-hub",
+          "title": "WoI 연구과 :",
+          "url": "https://scpko.wikidot.com/woi-research-division-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "요주의 웹사이트를 연구하는 재단 부서. 국내에는 제21K기지 와 제24K기지에 있습니다. 주골대토벌이 터지고 온갖 유관한 사건이 벌어지던 2023년 이들은 최고로 빛나고 있었습니다. 야근했다는 뜻이죠."
+        },
+        {
+          "id": "nx-666",
+          "title": "넥서스 기록 서류: Nx-666 \"스올\"",
+          "url": "https://scpko.wikidot.com/nx-666",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 27,
+          "desc": "제목: 저자: Navla ⏳:"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "전쟁",
+          "articleIDs": [
+            "golbungstonk",
+            "golbungstonk2"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "낙진",
+          "articleIDs": [
+            "the-alleys-hub",
+            "the-first-occult-flame-war"
+          ]
+        },
+        {
+          "id": "03-articles",
+          "title": "알쏭달쏭 인터넷 세상",
+          "articleIDs": [
+            "pamwac-hub"
+          ]
+        },
+        {
+          "id": "04-articles",
+          "title": "현실",
+          "articleIDs": [
+            "woi-research-division-hub",
+            "nx-666"
+          ]
+        }
+      ],
+      "description": "사소한 경제 사건으로 인해 골목길의 한량 머저리들은 분노했다. 그 분노는 반드시 누군가가 받아내야 한다. 골목길의 분탕들은 수없는 요주의 웹사이트에 테러를 거행하고 웹사이트 연합군, 재단 WOI 연구과, 온갖 이해집단들이 분탕과 맞서 싸운다."
     },
     {
       "id": "scp-ko:collection:series:ao-monogatari",
