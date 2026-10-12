@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791711732,
-  "generatedAt": "2026-10-11T09:42:12Z",
-  "chunkRevision": "sha256-90f060e470ba7f0b9577a336e0f964de7502441efb8ff838d8b32fda66bbec84",
+  "listVersion": 1791795808,
+  "generatedAt": "2026-10-12T09:03:28Z",
+  "chunkRevision": "sha256-f141a5f6ce07fce6a6fed2ae3c69d86af97613630aa8636601188b0bc095f21a",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791711716,
-        "generatedAt": "2026-10-11T09:41:56Z",
-        "contentHash": "sha256-2c43d082091e640f41d068d8f25a661c8f567ddfe84cf8a2c6cda89b688439dd"
+        "listVersion": 1791795808,
+        "generatedAt": "2026-10-12T09:03:28Z",
+        "contentHash": "sha256-a62c1168ea2b6f4c5e37748a41b09a04df5326ec419d4784e06487a826171600"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1791280607,
-        "generatedAt": "2026-10-06T09:56:47Z",
-        "contentHash": "sha256-fb356bdae20cf022644e47ea9c5a9f3a2941fb40439fe5f8a22ba6d9702b2300"
+        "listVersion": 1791795414,
+        "generatedAt": "2026-10-12T08:56:54Z",
+        "contentHash": "sha256-af14d75859c39515749a1b1bbf66e834a337fa72d507681c166a6abecf89a7c7"
       },
       {
         "kind": "manifest_scp-fr",
@@ -37,9 +37,9 @@
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1791188930,
-        "generatedAt": "2026-10-05T08:28:50Z",
-        "contentHash": "sha256-4414582c41db97b5463e7990241a23bd3b0395611a7e761fe4991b244fc265cd"
+        "listVersion": 1791795386,
+        "generatedAt": "2026-10-12T08:56:26Z",
+        "contentHash": "sha256-7ee3abd973eca1c494cfdfacceacb3c46a30bad8975b97d27d2e3585a6827e8b"
       }
     ],
     "seedReview": {
@@ -9394,7 +9394,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-7674a282916aa565836d6360b025403b136fcb5b68c342ecb2634ddf1cab915d"
+        "structureHash": "sha256-f8e87ab028d2079965ac23c03cea31070775af96d09edc472b693bc1fe44da6a"
       },
       "primaryArticles": [
         {
@@ -9404,13 +9404,6 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "▷ SCP-7243 par Vaalxeny ▷ SCP-8808 par macro_au_micro ▷ SCP-6183 par Vaalxeny ▷ SCP-6488 par Vaalxeny ▷ SCP-6659 par Vaalxeny"
-        },
-        {
-          "id": "scp-6488",
-          "title": "Choisir une page du catalogue Deepwell aléatoire ?",
-          "url": "https://fondationscp.wikidot.com/scp-6488",
-          "role": "primaryArticle",
-          "contentKind": "scp"
         },
         {
           "id": "scp-4260",
@@ -9452,7 +9445,6 @@
           "title": "Histoires",
           "articleIDs": [
             "scp-7243",
-            "scp-6488",
             "scp-4260",
             "scp-4755",
             "white-space-hub",
@@ -11180,15 +11172,18 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-b0b40f072cd6364d5391157895c995a94424234f96c96025a8945997c2aa68d6"
+        "structureHash": "sha256-2fef72e058869d6c20c48d414c18368cb27db7deeda6f42188fa1414384f610a"
       },
       "primaryArticles": [
         {
-          "id": "scp-pl-399",
-          "title": "SCP-399-PL",
-          "url": "https://fondationscp.wikidot.com/scp-pl-399",
+          "id": "list-of-common-anomalous-misconceptions",
+          "title": "Liste d'idées reçues répandues sur l'anormal",
+          "url": "https://fondationscp.wikidot.com/list-of-common-anomalous-misconceptions",
+          "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
-          "contentKind": "scp"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Centre des Canons Anglais » Centre des profondeurs des archives du Site-120 / Centre de Non-Retour » Liste des idées reçues répandues sur l'anormal"
         },
         {
           "id": "scp-5464",
@@ -11231,6 +11226,13 @@
           "contentKind": "tale",
           "os": 3,
           "desc": "Extraits de Critiques du Mandat de la \"Normalité\", Chapitre III : L'histoire de la \"Normalité\". Ce manifeste a originellement été publié en 1934 par un mi-Fae mi-humain, Osvendor Sarrian Enzan. À ce jour, l'œuvre suivante est la source de la fondation idéologi…"
+        },
+        {
+          "id": "scp-pl-399",
+          "title": "SCP-399-PL : Insurrection irrationnelle",
+          "url": "https://fondationscp.wikidot.com/scp-pl-399",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         },
         {
           "id": "a-library-empty",
@@ -11308,16 +11310,6 @@
           "contentKind": "scp"
         },
         {
-          "id": "list-of-common-anomalous-misconceptions",
-          "title": "Liste d'idées reçues répandues sur l'anormal",
-          "url": "https://fondationscp.wikidot.com/list-of-common-anomalous-misconceptions",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 6,
-          "desc": "Centre des Canons Anglais » Centre des profondeurs des archives du Site-120 / Centre de Non-Retour » Liste des idées reçues répandues sur l'anormal"
-        },
-        {
           "id": "kompas-parapolityczny-na-trudne-czasy",
           "title": "déVoilé : une boussole para-politique en ces temps difficiles",
           "url": "https://fondationscp.wikidot.com/kompas-parapolityczny-na-trudne-czasy",
@@ -11370,7 +11362,7 @@
           "id": "01-articles-recents",
           "title": "Articles récents",
           "articleIDs": [
-            "scp-pl-399",
+            "list-of-common-anomalous-misconceptions",
             "scp-5464"
           ]
         },
@@ -11403,42 +11395,49 @@
           ]
         },
         {
-          "id": "06-4-scp-5795-cour-supreme",
+          "id": "06-tamiser-le-sable",
+          "title": "Tamiser le sable",
+          "articleIDs": [
+            "scp-pl-399"
+          ]
+        },
+        {
+          "id": "07-4-scp-5795-cour-supreme",
           "title": "4. SCP-5795 : Cour Suprême",
           "articleIDs": [
             "a-library-empty"
           ]
         },
         {
-          "id": "07-scp-7924-la-chevre-qui-ne-cesse-de-donner-des-cadeaux",
+          "id": "08-scp-7924-la-chevre-qui-ne-cesse-de-donner-des-cadeaux",
           "title": "SCP-7924 : La chèvre qui ne cesse de donner des cadeaux",
           "articleIDs": [
             "grant-request-for-the-creation-of-remnant-hosts"
           ]
         },
         {
-          "id": "08-scp-7629-le-sanctuaire-des-gardiens-du-ciel",
+          "id": "09-scp-7629-le-sanctuaire-des-gardiens-du-ciel",
           "title": "SCP-7629 : Le sanctuaire des Gardiens du ciel",
           "articleIDs": [
             "scp-pl-213"
           ]
         },
         {
-          "id": "09-articles",
+          "id": "10-articles",
           "title": "Articles",
           "articleIDs": [
             "secure-facility-dossier-site-120"
           ]
         },
         {
-          "id": "10-scp-054-pl-le-change-peau",
+          "id": "11-scp-054-pl-le-change-peau",
           "title": "SCP-054-PL : Le Change-peau",
           "articleIDs": [
             "morskie-opowiesci"
           ]
         },
         {
-          "id": "11-1-dossier-d-installation-securisee-site-69-pl",
+          "id": "12-1-dossier-d-installation-securisee-site-69-pl",
           "title": "1. Dossier d'Installation Sécurisée : Site-69-PL",
           "articleIDs": [
             "10-kwietnia-2010",
@@ -11447,17 +11446,10 @@
           ]
         },
         {
-          "id": "12-scp-7292-l-heritage-de-l-amour-tm",
+          "id": "13-scp-7292-l-heritage-de-l-amour-tm",
           "title": "SCP-7292 : L'héritage de l'amour ™️",
           "articleIDs": [
             "scp-pl-253"
-          ]
-        },
-        {
-          "id": "13-ordre-mef-7629",
-          "title": "Ordre MEF-7629",
-          "articleIDs": [
-            "list-of-common-anomalous-misconceptions"
           ]
         },
         {
@@ -15016,7 +15008,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-39734daa3b0f02ac661527bb6705c7af835592b9c68606a2480372af060c79f2"
+        "structureHash": "sha256-5825500276460f9a89f594c2ee4e72b964b130a5b780ec2229c42b16d9472971"
       },
       "primaryArticles": [
         {
@@ -15037,7 +15029,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 2,
-          "desc": "L'appel, comme beaucoup des pires choses dans la vie, survint à 1 heure du matin."
+          "desc": "L'appel, comme beaucoup des pires choses dans la vie, survint à 1 heure du matin. Adrian grogna et se retourna dans son lit, quittant à contrecœur la chaleur, la douceur et le parfum de Beats. Fouillant d'une main la table de chevet à la recherche de son télép…"
         },
         {
           "id": "immediate-actions",
@@ -21725,7 +21717,7 @@
         "allowedHosts": [
           "fondationscp.wikidot.com"
         ],
-        "structureHash": "sha256-a6a43faedac271aba52040b389139fedc86b29f569cb946fb45efb45dcd8cd98"
+        "structureHash": "sha256-3ad961f98dfd789076cc3806641c578a04fe5ddccfa12a7b36bc852bf532b090"
       },
       "primaryArticles": [
         {
@@ -22751,13 +22743,6 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-9830",
-          "title": "SCP-9830",
-          "url": "https://fondationscp.wikidot.com/scp-9830",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-2815",
           "title": "SCP-2815",
           "url": "https://fondationscp.wikidot.com/scp-2815",
@@ -22787,6 +22772,13 @@
           "contentKind": "scp",
           "os": 9,
           "desc": "SCP-707-FR-A est un cylindre en bronze de 74 cm de diamètre et d'une longueur de 3,7m avec une ouverture de chaque côté. Une plaque en or avec un œil d'origine inconnue est présente sur une de ses extrémités. L'objet est creux et composé d'une ossature en bois…"
+        },
+        {
+          "id": "scp-9830",
+          "title": "SCP-9830",
+          "url": "https://fondationscp.wikidot.com/scp-9830",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         },
         {
           "id": "scp-1710-jp",
@@ -23210,11 +23202,11 @@
             "scp-2664",
             "scp-166",
             "scp-6987",
-            "scp-9830",
             "scp-2815",
             "scp-5001",
             "scp-021-int",
             "scp-707-fr",
+            "scp-9830",
             "scp-1710-jp",
             "scp-015-de-j",
             "scp-1522",
