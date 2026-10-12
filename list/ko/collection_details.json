@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791711919,
-  "generatedAt": "2026-10-11T09:45:19Z",
-  "chunkRevision": "sha256-ec4c4b23f4d6beacac78335274d6edceef38ce49cb5d7f8320986890d15df99f",
+  "listVersion": 1791799166,
+  "generatedAt": "2026-10-12T09:59:26Z",
+  "chunkRevision": "sha256-4abe95de60711a879fdd6f9790c919389b84b046dfdd3608dee52d339befc365",
   "builtFrom": {
     "manifests": [
       {
@@ -12,7 +12,7 @@
         "schemaVersion": 2,
         "listVersion": 1791711856,
         "generatedAt": "2026-10-11T09:44:16Z",
-        "contentHash": "sha256-c0dc103fcb22a94d9ce7786beb1169605998c5a5ef6232ce95ef1d692924b2c3"
+        "contentHash": "sha256-0a9ad6ec7e527f2748d44ef4d14b4cdac8d9ec9e34b894ff72fdd3b4ebe09e3d"
       },
       {
         "kind": "manifest_gois",
@@ -28,36 +28,36 @@
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1791192671,
-        "generatedAt": "2026-10-05T09:31:11Z",
-        "contentHash": "sha256-08a8011b5128d0c7196e2621ab09de7204dacbf440d12c24721a752e1e4876a4"
+        "listVersion": 1791798700,
+        "generatedAt": "2026-10-12T09:51:40Z",
+        "contentHash": "sha256-764e65feb95742248b872c26f792f08854b3ba401c8ca05aeb20e94326230677"
       },
       {
         "kind": "manifest_scp-ko",
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_scp-ko.json",
         "schemaVersion": 2,
-        "listVersion": 1791192502,
-        "generatedAt": "2026-10-05T09:28:22Z",
-        "contentHash": "sha256-f7f2b88157d03a99ed96a4f292320c3b8213803d8e177659e5bc7612129a8659"
+        "listVersion": 1791798522,
+        "generatedAt": "2026-10-12T09:48:42Z",
+        "contentHash": "sha256-d63398cdce7f9d51c4f64cb82fff092841b5e77635b2831409ee1520e1bf3ac8"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1791192552,
-        "generatedAt": "2026-10-05T09:29:12Z",
-        "contentHash": "sha256-ab9e66c88a3517bdfa64ed6baac93c37121a0e140c6bf28fbce1ae23e592d8f6"
+        "listVersion": 1791798576,
+        "generatedAt": "2026-10-12T09:49:36Z",
+        "contentHash": "sha256-aac980e6c04288338f7abefb9b749d7aa4708ced50af2cacfc07229677b6eb30"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1791192939,
-        "generatedAt": "2026-10-05T09:35:39Z",
-        "contentHash": "sha256-db720272d640fdfa039cd4f38127555f8dbc41855e7138933192af9c034d5f1f"
+        "listVersion": 1791798960,
+        "generatedAt": "2026-10-12T09:56:00Z",
+        "contentHash": "sha256-ae51a104cd981444ca5547839c65dcb369731759a810c9411ff088ba320ac5f7"
       }
     ],
     "seedReview": {
@@ -75,9 +75,9 @@
       "branchID": "scp-ko",
       "path": "DataPipeline/list/ko/ko_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1791540427,
-      "generatedAt": "2026-10-09T10:07:07Z",
-      "contentHash": "sha256-f288f41b0fc4f7bd4fe8697b8e3e6704d308b9e0f890618400467f2cdcd87f91"
+      "listVersion": 1791798961,
+      "generatedAt": "2026-10-12T09:56:00Z",
+      "contentHash": "sha256-c3d882e4cd86d7a0eaf2994dbbcb64b4cb34349493ef29d252cd5e95b1448c55"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -8677,7 +8677,7 @@
         "mode": "officialHubStructure",
         "tagSource": "ko_tag.json",
         "emptySectionTitle": "작품",
-        "structureHash": "sha256-88a89f1ebf07783ea34c6316ea6bad6a20e373625e661bc77119a8b380006b50"
+        "structureHash": "sha256-3ca2e66c34f0486231a193929b2967cda6a11dd13e3561ec138e3a63bec19141"
       },
       "primaryArticles": [
         {
@@ -8697,7 +8697,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 11,
+          "os": 12,
           "desc": "관련 인원은 매일 610-싱클레어 절차를 실시하며, 유지관리 인원은 SCP-4495의 격리실을 격주마다 점검한다. SCP-4495는 각 층이 쇠격자로 분리된 3층 격리실에 격리한다. SCP-4495는 상층에 위치하며, 남쪽 벽 벽감에 묶여있다. SCP-4495의 복부는 바닥과 예각을 이루도록 배치되어 SCP-4495-1이 생성 즉시 쇠격자 사이로 빠지도록 되어 있다. SCP-4495-1 개체가 달라붙어 쌓이는 것을 막기 위해서, 쇠격자는 매시간마다 고정된 고압…"
         },
         {
@@ -10552,7 +10552,7 @@
           "scpko.wikidot.com",
           "ko.scp-wiki.net"
         ],
-        "structureHash": "sha256-410f18dea8787b1c458814bc49cbf838462ef1d54c7649c84adbfd7d08c4d3a3"
+        "structureHash": "sha256-1e64d504b84e06a1847df8a0e068dc48f5072d8516f5fc7dcd8f5d5071469fcc"
       },
       "primaryArticles": [
         {
@@ -10682,7 +10682,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 6,
+          "os": 7,
           "desc": "불 너머로 밤은 가물거렸다. 다다미로 덮인, 료칸을 연상케 하는 일본식 방. 호롱불의 타오르는 주홍색 전등만은 방 안을 따스하게 달구고 있었으나 그 중앙에 앉은 자의 형상은 철의 광채로 번들거렸다. 전구를 닮은 기계의 머리. 그 머리 안에 떠 있는 구체들. 기계장치 아래에서 구체가 오르락내리락 할 때마다 부글거리는 소리가, 물 깊은 곳에서 들리듯이 먹먹하게 울렸다. 기계장치의 사내는 은회색의 유카타를 걸쳤다. 다다미 방 이곳저곳에는 꺾꽂이된 꽃나무 가지가 꽃병에…"
         },
         {
@@ -12274,7 +12274,7 @@
           "scpko.wikidot.com",
           "ko.scp-wiki.net"
         ],
-        "structureHash": "sha256-7b47c3160ef43f52a497593f3d9c2b0fc4a7dc8dc75ac94415c9ab8c418bf013"
+        "structureHash": "sha256-e556479433c25fd3210f76624827c6608e25ab270802cdfddca9b432cde30d91"
       },
       "primaryArticles": [
         {
@@ -12576,7 +12576,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 15,
-          "desc": "SCP-1090-KO는 확보 즉시 5급 방령 ectoproof 인간형 격리실에 격리한다. 해당 격리실에는 표준형 5급 방령 프로토콜이 적용되어야 한다. 또한 격리실 내부 스피커를 통해 녹음된 경문을 24시간 재생해 두어야 한다. 표준형 5급 방령 프로토콜의 구성은 팔문금쇄진(八門金鎖陣) 1 과 철망(鐵網) 2 으로 이루어져 있다. 팔문금쇄진과 철망의 구성과 그 기작은 이하와 같다. 팔문금쇄진 팔문금쇄진이란 영적 실체의 행동을 차단함으로써 격리 효과의 증대를 노리…"
+          "desc": "SCP-1090-KO는 확보 즉시 5급 방령 ectoproof 인간형 격리실에 격리한다. 해당 격리실에는 표준형 5급 방령 프로토콜이 적용되어야 한다. 또한 격리실 내부 스피커를 통해 녹음된 경문을 24시간 재생해 두어야 한다. 표준형 5급 방령 프로토콜의 구성은 팔문금쇄진(八門金鎖陣) 1 과 철망(鐵網) 2 으로 이루어져 있다. 팔문금쇄진과 철망의 구성과 그 기작은 이하와 같다. 팔문금쇄진 팔문금쇄진이란 영적 실체의 행동을 차단함으로써 격리 효과의 증대를 노리…"
         },
         {
           "id": "ijamea-hub",
@@ -14758,7 +14758,7 @@
           "scpko.wikidot.com",
           "ko.scp-wiki.net"
         ],
-        "structureHash": "sha256-f30f1d5976d0d19dcd9b8fdfde46b6ce891a3966d0f82c85d15a85dad0f2ec11"
+        "structureHash": "sha256-6e15209491c171dd8696ec9e2db5c64b791cd3f83803bd2901d02e5530868bf7"
       },
       "primaryArticles": [
         {
@@ -14796,7 +14796,7 @@
           "sourceManifest": "manifest_scp-ko",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 18,
+          "os": 19,
           "desc": "SCP-1480-KO는 해저 협곡 내부에 위치한 특성상 별도의 지리적 격리를 요구하지 않는다. 음파 탐지기를 장착한 재단 소속의 정찰함이 주기적으로 SCP-1480-KO의 입구가 위치한 해역의 해상을 순회하며 해상 및 해저를 순찰, SCP-1480-KO-A를 비롯한 협곡 내외부로 출입하는 독립체들의 동태를 파악한다."
         },
         {
@@ -18517,7 +18517,7 @@
           "scpko.wikidot.com",
           "ko.scp-wiki.net"
         ],
-        "structureHash": "sha256-8201c62cc75bdd771a0d75b5b9be11db4e7068d32b63e593411b6fd3d5350703"
+        "structureHash": "sha256-fc459fd77e55033960dfbb6bf15edcd2fe184db77efc708abb9eddb319f7dfd4"
       },
       "primaryArticles": [
         {
@@ -18567,7 +18567,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 6,
+          "os": 7,
           "desc": "불 너머로 밤은 가물거렸다. 다다미로 덮인, 료칸을 연상케 하는 일본식 방. 호롱불의 타오르는 주홍색 전등만은 방 안을 따스하게 달구고 있었으나 그 중앙에 앉은 자의 형상은 철의 광채로 번들거렸다. 전구를 닮은 기계의 머리. 그 머리 안에 떠 있는 구체들. 기계장치 아래에서 구체가 오르락내리락 할 때마다 부글거리는 소리가, 물 깊은 곳에서 들리듯이 먹먹하게 울렸다. 기계장치의 사내는 은회색의 유카타를 걸쳤다. 다다미 방 이곳저곳에는 꺾꽂이된 꽃나무 가지가 꽃병에…"
         }
       ],
