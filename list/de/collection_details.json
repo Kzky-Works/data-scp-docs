@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791712804,
-  "generatedAt": "2026-10-11T10:00:04Z",
-  "chunkRevision": "sha256-b1394b309db17426bde2b6748292a40fbfe4f3cc731076da63056a888386d8e0",
+  "listVersion": 1791803238,
+  "generatedAt": "2026-10-12T11:07:18Z",
+  "chunkRevision": "sha256-9b35b153ad0988b68e539c9b3b504d2ee2c1fd360b84b0e3d348bbdfaae29341",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791712712,
-        "generatedAt": "2026-10-11T09:58:32Z",
-        "contentHash": "sha256-9c12e7f9c46908bd5d5df7de55dfb9c748a40159bc026c0b91ae1da0b2148f0e"
+        "listVersion": 1791803066,
+        "generatedAt": "2026-10-12T11:04:26Z",
+        "contentHash": "sha256-f4e3a188f8f7f91cb88f66b90274c55e01adf4980037584e39c6f9bcf7548896"
       },
       {
         "kind": "manifest_gois",
@@ -28,9 +28,9 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-de.json",
         "schemaVersion": 2,
-        "listVersion": 1791197310,
-        "generatedAt": "2026-10-05T10:48:30Z",
-        "contentHash": "sha256-8ce4f07e9a1beecfeccab3824ea16754c08b8ec425ebd50ab59d280baa5e8f51"
+        "listVersion": 1791802967,
+        "generatedAt": "2026-10-12T11:02:47Z",
+        "contentHash": "sha256-1e67571c4922e0f8e76b445f766c43f2cd64a40706d48e2118cde65219253705"
       },
       {
         "kind": "manifest_scp-int",
@@ -46,18 +46,18 @@
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1791197359,
-        "generatedAt": "2026-10-05T10:49:19Z",
-        "contentHash": "sha256-9ad96779f250eeffa9d56d25a11cc5da01d340b9fbcd77ef1df28e40a9bf22e5"
+        "listVersion": 1791803014,
+        "generatedAt": "2026-10-12T11:03:34Z",
+        "contentHash": "sha256-094eb9b6c0aae8b33eb0272f8bbc41cfcb22be323547e3f8a99ad7b5664220b2"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-de",
         "path": "DataPipeline/list/de/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1791197400,
-        "generatedAt": "2026-10-05T10:50:00Z",
-        "contentHash": "sha256-05402ac5c6873168508b5a1b74d0198ca19482bc012917ad8533fa8fe463f33c"
+        "listVersion": 1791803054,
+        "generatedAt": "2026-10-12T11:04:14Z",
+        "contentHash": "sha256-98ec2edc7e395424a6cb0d8d96f4ea01ca7966c77d783d24e0c931fe49cab246"
       }
     ],
     "seedReview": {
@@ -75,9 +75,9 @@
       "branchID": "scp-de",
       "path": "DataPipeline/list/de/de_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1791197401,
-      "generatedAt": "2026-10-05T10:50:00Z",
-      "contentHash": "sha256-98ec2c828cf3fb64ecd1f6800c959d03b4ca6fe65cf32cb5fc8ab163e6597ee7"
+      "listVersion": 1791803054,
+      "generatedAt": "2026-10-12T11:04:14Z",
+      "contentHash": "sha256-9a5d3e5be0f545105bbc420998cd6420bffaa8ad7cd508a45be4615bf3f8887c"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -6663,7 +6663,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-ab0e2641099c469e37f103b822125cb423c2feb413be457d500f8383a8b5cdcd"
+        "structureHash": "sha256-b545fb0374683747b0cb247249f3f6cc186ec8de85f9a810668820445e8c6881"
       },
       "primaryArticles": [
         {
@@ -6785,6 +6785,16 @@
           "contentKind": "tale",
           "os": 6,
           "desc": "Artikel: Hexenjagd Autor: Dr Himy"
+        },
+        {
+          "id": "wer-wohnt-da-drin",
+          "title": "Wer wohnt da drin?",
+          "url": "http://scp-wiki-de.wikidot.com/wer-wohnt-da-drin",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Artikel: Wer wohnt da drin? Autor: Dr Himy Mit Grüßen und allen guten Wünschen an Rabe. Vor den riesigen Glasfenstern tobte ein schwerer Schneesturm. Es durfte also in etwa Winter sein in Sjhlfels, aber wer konnte das schon festlegen. Manchmal machten sich die…"
         },
         {
           "id": "scp-101-de",
@@ -7007,16 +7017,6 @@
           "desc": "Das letzte Mal bei Nexus: Dean, Teil 3 Viktor war glücklich. Endlich saß er mal ganz in Ruhe auf seiner Terrasse, schlürfte einen Kakao, die Vögel zwitscherten und mit einer gewissen Belustigung hörte er, wie sich Mathilda unten lautstark mit dem Rasenmäher ab…"
         },
         {
-          "id": "budgetkuerzungen",
-          "title": "Budgetkürzungen",
-          "url": "http://scp-wiki-de.wikidot.com/budgetkuerzungen",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 8,
-          "desc": "Artikel: Budgetkürzungen"
-        },
-        {
           "id": "verlust-2",
           "title": "Verlust, Episode 2: Gejagt",
           "url": "http://scp-wiki-de.wikidot.com/verlust-2",
@@ -7045,6 +7045,16 @@
           "contentKind": "tale",
           "os": 7,
           "desc": "Das letzte Mal bei Nexus: Trickster Heist, Teil 1 \"GpExpress?\", fragte Viktor. Von einer solchen Firma hatte er noch nie etwas gehört."
+        },
+        {
+          "id": "budgetkuerzungen",
+          "title": "Budgetkürzungen",
+          "url": "http://scp-wiki-de.wikidot.com/budgetkuerzungen",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "Artikel: Budgetkürzungen"
         },
         {
           "id": "wie-lange-dauert-die-unendlichkeit",
@@ -7102,7 +7112,8 @@
             "feste-feiern-wie-sie-fallen",
             "im-trichter-und-unter-der-huette",
             "gespraechskreis-zur-angstbehandlung",
-            "hexenjagd"
+            "hexenjagd",
+            "wer-wohnt-da-drin"
           ]
         },
         {
@@ -7143,10 +7154,10 @@
             "ein-seltsamer-tagtraum-so-suess-wie-gift",
             "verlust-1",
             "nexus-11-1",
-            "budgetkuerzungen",
             "verlust-2",
             "nexus-11-3",
             "nexus-11-2",
+            "budgetkuerzungen",
             "wie-lange-dauert-die-unendlichkeit",
             "to-whom-it-may-concern",
             "mirror-in-your-mind",
@@ -7959,7 +7970,7 @@
         "mode": "officialHubStructure",
         "tagSource": "de_tag.json",
         "emptySectionTitle": "Artikel",
-        "structureHash": "sha256-b90b50fef2a3975e5e82a4c53cf41ded9b2e40f574eebb1bcbcc1cff9802cfa5"
+        "structureHash": "sha256-e48e53aaa4d6cf29948c6227f2644818cb3527ee53e0d13f22452b2e9b50158b"
       },
       "primaryArticles": [
         {
@@ -7973,16 +7984,6 @@
           "desc": "Da sich SCP-1134-JP nicht aus seinem Gebiet entfernt, können Überwachungskameras um und im Geschäft aufgestellt werden, um seine Aktivitäten zu überwachen. Wenn SCP-1134-JP Anzeichen von Misstrauen gegenüber den Überwachungskameras zeigt, sind ihm diese als Si…"
         },
         {
-          "id": "nexus-13-2",
-          "title": "Der Zornregulator, Teil 2",
-          "url": "http://scp-wiki-de.wikidot.com/nexus-13-2",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 7,
-          "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 1 Die Raumstation Brym liegt ganz am Rand des Sternenclusters Terzan 2. Einstmals eine Bastion der Orthotanischen Koalition, war dieser Raumhafen von den Zwölf Sternen, einer Zivilisation, die mit der Koalition…"
-        },
-        {
           "id": "nexus-13-3",
           "title": "Der Zornregulator, Teil 3",
           "url": "http://scp-wiki-de.wikidot.com/nexus-13-3",
@@ -7991,6 +7992,16 @@
           "contentKind": "tale",
           "os": 6,
           "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 2 Beim Sushiblade wird das Sushi traditionell vor dem Kampf von den Kontrahenten angefertigt. Aura und Herr Maehara kneteten in einer Ecke auf einem Tisch ihren Reis zurecht, während Elli in der anderen Ecke zu…"
+        },
+        {
+          "id": "nexus-13-2",
+          "title": "Der Zornregulator, Teil 2",
+          "url": "http://scp-wiki-de.wikidot.com/nexus-13-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "Das letzte Mal bei Nexus: Der Zornregulator, Teil 1 Die Raumstation Brym liegt ganz am Rand des Sternenclusters Terzan 2. Einstmals eine Bastion der Orthotanischen Koalition, war dieser Raumhafen von den Zwölf Sternen, einer Zivilisation, die mit der Koalition…"
         },
         {
           "id": "yamizushi-hub",
@@ -8007,7 +8018,8 @@
           "id": "01-artikel",
           "title": "Artikel",
           "articleIDs": [
-            "scp-1134-jp"
+            "scp-1134-jp",
+            "nexus-13-3"
           ]
         },
         {
@@ -8015,7 +8027,6 @@
           "title": "Sushi aus der ganzen Welt",
           "articleIDs": [
             "nexus-13-2",
-            "nexus-13-3",
             "yamizushi-hub"
           ]
         }
@@ -8681,7 +8692,7 @@
         "allowedHosts": [
           "scp-wiki-de.wikidot.com"
         ],
-        "structureHash": "sha256-fa00889fa5cceac79bae6b5cdddbb1d16815ea173073a47c97674f7b4b33cbb5"
+        "structureHash": "sha256-21137c840bb61358a2e0f92593a94684fdf0731bbecd28e661a6fe9b86ced7e6"
       },
       "primaryArticles": [
         {
@@ -8763,7 +8774,7 @@
         },
         {
           "id": "noctua-arkana-9",
-          "title": "Der Beobachter",
+          "title": "Alienaktivitäten",
           "url": "http://scp-wiki-de.wikidot.com/noctua-arkana-9",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
