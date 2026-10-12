@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791712078,
-  "generatedAt": "2026-10-11T09:47:58Z",
-  "chunkRevision": "sha256-799e4249caff27064092190dc5661bf777bf5009c2bef5042143c7b66f053506",
+  "listVersion": 1791801926,
+  "generatedAt": "2026-10-12T10:45:26Z",
+  "chunkRevision": "sha256-b22dab0e7ab99bdadb010f16bd2ac39b8a95ffc76343f0606b6d53137e2433d5",
   "builtFrom": {
     "manifests": [
       {
@@ -19,45 +19,45 @@
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1791711806,
-        "generatedAt": "2026-10-11T09:43:26Z",
-        "contentHash": "sha256-9470f542efe9739aad676d2ab9124b34e3d4a1f002e40cfe609ef21fc9ed5a7d"
+        "listVersion": 1791801283,
+        "generatedAt": "2026-10-12T10:34:43Z",
+        "contentHash": "sha256-8f419c3433ff2ff173da62d9b707e6d1492f3888fe0e092c0a768becb00b3ec1"
       },
       {
         "kind": "manifest_scp-cn",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-cn.json",
         "schemaVersion": 2,
-        "listVersion": 1791194931,
-        "generatedAt": "2026-10-05T10:08:51Z",
-        "contentHash": "sha256-f37d51a3ade05a4b7b438d76b1eb7f64c0ca697b3a899b600580198d18ef213d"
+        "listVersion": 1791800959,
+        "generatedAt": "2026-10-12T10:29:19Z",
+        "contentHash": "sha256-2ed42f2b90639fbe809ae9b4e0f4408a39b78eb9e377076ed9a1e72005ba7709"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1791195809,
-        "generatedAt": "2026-10-05T10:23:29Z",
-        "contentHash": "sha256-a5b41684bc8241354aa949fc503073a93f2d28ddacc3f0ddccd0df0a0cae4a71"
+        "listVersion": 1791801559,
+        "generatedAt": "2026-10-12T10:39:19Z",
+        "contentHash": "sha256-176176754156f5963d4584a0465c953b85dddbe26a5f8da8d4034e64687c1a74"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1791195013,
-        "generatedAt": "2026-10-05T10:10:13Z",
-        "contentHash": "sha256-39b35ea54e75f7ca9b9631a58b94f85687fd773ca0796798e9060299e767f6d7"
+        "listVersion": 1791801046,
+        "generatedAt": "2026-10-12T10:30:46Z",
+        "contentHash": "sha256-f8f2d1773451d30012f19191f9bf11eb1c15709cefb4b60a84018a3fbefed84f"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-cn",
         "path": "DataPipeline/list/cn/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1791195813,
-        "generatedAt": "2026-10-05T10:23:33Z",
-        "contentHash": "sha256-c5ff2bad058370acc23f323d5e5d4330d209b4db27ecb8513aca0d810eaec449"
+        "listVersion": 1791801563,
+        "generatedAt": "2026-10-12T10:39:23Z",
+        "contentHash": "sha256-62590a2f32306ccda7145d16b49d4a4930c8f54516448787d3aa7f37182bdfef"
       }
     ],
     "seedReview": {
@@ -5003,7 +5003,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-de88322659e408ab2202732da62d7aab1590535e1d56461284a2482e00d5ba01"
+        "structureHash": "sha256-02076b430a8b9f5dd0d9350e3fde46da266d04f94b3e3c7e34198422525ead2c"
       },
       "primaryArticles": [
         {
@@ -5031,6 +5031,16 @@
           "url": "https://scp-wiki-cn.wikidot.com/aieditor059-s-proposal-password",
           "role": "primaryArticle",
           "contentKind": "tale"
+        },
+        {
+          "id": "liran1",
+          "title": "《2984，“李然”传》序·副",
+          "url": "https://scp-wiki-cn.wikidot.com/liran1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 19,
+          "desc": "“往前？”身着一身白袍的孩子问道。白袍上，四颗金色的星星闪闪发光。"
         }
       ],
       "supplementLinks": [],
@@ -5048,6 +5058,13 @@
           "articleIDs": [
             "scp-cn-059",
             "aieditor059-s-proposal-password"
+          ]
+        },
+        {
+          "id": "03-articles",
+          "title": "序章",
+          "articleIDs": [
+            "liran1"
           ]
         }
       ],
@@ -6194,7 +6211,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-5775b53beb583396517a44a213d361aa356820cb387e60d67bf31617f1bad57b"
+        "structureHash": "sha256-4de7153e1bd5efa80ac1e4d1bc868da0ddc127586ec50e9b490f91e0662bc99c"
       },
       "primaryArticles": [
         {
@@ -6213,7 +6230,7 @@
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-4000-ex",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "desc": "(评分: 921， 评语： 110)"
+          "desc": "(评分: 926， 评语： 110)"
         },
         {
           "id": "scp-last",
@@ -6256,16 +6273,6 @@
           "desc": "这里是 Oblivionnnnn does not match any existing user name ,笔名一清水泓，作者页： 《顾影自怜》 。"
         },
         {
-          "id": "no-doubt-they-died",
-          "title": "毫无疑问，他们死了",
-          "url": "https://scp-wiki-cn.wikidot.com/no-doubt-they-died",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 287,
-          "desc": "但它知道有什么东西失去了。"
-        },
-        {
           "id": "scp-cn-4003",
           "title": "命名混沌",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-4003",
@@ -6274,6 +6281,16 @@
           "contentKind": "scp",
           "os": 276,
           "desc": "SCP-CN-4003应永久保持开启状态。Site-Alpha(简称Site-A)及SCP-CN-4003所在地点不可知且不应被探明。所有现存基金会站点应至少有一台终端与Site-01信息枢纽Alpha连接,全天候监测并定位来自该站点的一切通讯,向其开放档案库权限,于每月一号进行统一录入。所有对于录入文档的来源、其历史真实性的考究应被制止。 SCP-CN-4003与其录入程序的存在仅由监督者及主管权限者知晓。一切对于SCP-CN-4003通讯内容的录入操作应由对应站点主管亲自完成。站点内置机动特遣队随时响应调遣,此…"
+        },
+        {
+          "id": "no-doubt-they-died",
+          "title": "毫无疑问，他们死了",
+          "url": "https://scp-wiki-cn.wikidot.com/no-doubt-they-died",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 287,
+          "desc": "但它知道有什么东西失去了。"
         },
         {
           "id": "deep-in-my-bones",
@@ -6352,8 +6369,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 32,
-          "desc": "『联翼共赴新征程』"
+          "os": 33,
+          "desc": "『联翼共赴新征程』 那天，碎星坠落，同时带来战争。 大洋洲战争的爆发摧毁了过往的一切，人类再次步入太空的时代被宣告终结。这对于我——一个对浩瀚星空充满向往的孩子来说，无疑是个巨大的打击，那段时间我一直守在电视机前，望着联军的战地记者随着战局推进而一步步深入大洋洲腹地，然后眼睁睁地看着他们摧毁掉掉那些珍贵的天体观测设施。"
         },
         {
           "id": "scp-cn-4333",
@@ -6379,8 +6396,8 @@
             "about-the-scp-foundation-now",
             "back-to-you",
             "fuck-you-scp",
-            "no-doubt-they-died",
             "scp-cn-4003",
+            "no-doubt-they-died",
             "deep-in-my-bones",
             "fall-and-alive"
           ]
@@ -8337,7 +8354,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-811b88caa6672566f22e61cf8ba97869539035cc45f7455399a3437e774d9cbb"
+        "structureHash": "sha256-76f58ddc24d14dc3e7b1ab1ce5a95ff92365f5002617a0b18f9ed6a32d75262c"
       },
       "primaryArticles": [
         {
@@ -8884,16 +8901,6 @@
           "desc": "标题 ：看不见的城市"
         },
         {
-          "id": "move-image",
-          "title": "行动记录：镜像",
-          "url": "https://scp-wiki-cn.wikidot.com/move-image",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 26,
-          "desc": "。WAN在重叠，递归是个陷阱，里面不是现实，让我离开这里，我在递减偏移失效毁灭裂解放逐湮灭清空重新编辑消失消逝陨灭陨灭陨灭。"
-        },
-        {
           "id": "that-s-it",
           "title": "仅此而已",
           "url": "https://scp-wiki-cn.wikidot.com/that-s-it",
@@ -8996,8 +9003,7 @@
             "scp-cn-1933",
             "cloudy-girl",
             "so-you-want-to-write-a-project-proposal",
-            "invisible-city",
-            "move-image"
+            "invisible-city"
           ]
         },
         {
@@ -9942,7 +9948,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-06d3ee8c5ce8a0a436c3bee106d746b9ef63810d2f82019c2d37858d88c32a76"
+        "structureHash": "sha256-d51fdf4998be4ab2ea52b7db05f6e3e913a0abc67f4b4f7302b0e5f8e7fb146c"
       },
       "primaryArticles": [
         {
@@ -10020,7 +10026,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 35,
-          "desc": "作者： Illusion Planet"
+          "desc": "作者：Illusion Planet 进入人事档案可查看该作者更多作品 发布日期：2020年3月11日 “马上进入战场环境。装备检查。无线电检查。”"
         },
         {
           "id": "operation-night-cloud",
@@ -10324,37 +10330,9 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-390c76ada854247d8e8b70ff9c76606d178cbb459950378ad881f3971a8e520b"
+        "structureHash": "sha256-e97a94d3adcf7985224b2457ff5625cc074fa10538e29964379085463d325a77"
       },
       "primaryArticles": [
-        {
-          "id": "gu-dao-de-lan-jing",
-          "title": "我是一只化身孤岛的蓝鲸",
-          "url": "https://scp-wiki-cn.wikidot.com/gu-dao-de-lan-jing",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 87,
-          "desc": "作者： Agent Phage ，可于 人事档案 查看该作者的其他作品。"
-        },
-        {
-          "id": "sun-set-on-shujia",
-          "title": "太阳落在术加",
-          "url": "https://scp-wiki-cn.wikidot.com/sun-set-on-shujia",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "-"
-        },
-        {
-          "id": "before-the-eighth-occult-war",
-          "title": "在第八次超自然大战之前",
-          "url": "https://scp-wiki-cn.wikidot.com/before-the-eighth-occult-war",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 52,
-          "desc": "恋昏崎新闻社"
-        },
         {
           "id": "duvetofyonder",
           "title": "我们现在前去原野",
@@ -10366,104 +10344,12 @@
           "desc": "曼特常常在梦中醒来。那是蕾蒂丝离开的第三天，曼特梦到在怀俄明洲弗里蒙特乡间的某栋小木屋里与她做爱，窗外是黑乎乎的针叶林地。不过蕾蒂丝与他在一块的一年里从未去过怀俄明。曼特允诺总有一天会带她过去。他们就去弗里蒙特，那是曼特长大的地方。针叶林里总有喜欢滑翔的松鼠。"
         },
         {
-          "id": "scp-cn-3948",
-          "title": "永护遗产",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-3948",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 54,
-          "desc": "鉴于SCP-CN-3948来源为基金会自身且出现技术失传和权限失传的情况,基金会超形上学部应不断尝试在旧有结构的基础上修缮维护该项目并增添基于基金会现有技术的防护结构和监视设备。该项目如有与现有资料不符的意外情况出现,知晓该项目的基金会成员应立即直接上报O5议会。 与此同时,基金会记录与信息安全管理部应努力寻回和重新编纂与SCP-CN-3948相关的任意技术说明手册/操作指导/工程结构蓝图,并在经过O5议会的审核批准后发放给基金会超形上学部成员。"
-        },
-        {
-          "id": "shujia-summer-concert",
-          "title": "公款旅游：术加夏日焰火音乐大会",
-          "url": "https://scp-wiki-cn.wikidot.com/shujia-summer-concert",
-          "sourceManifest": "manifest_tales",
+          "id": "sun-set-on-shujia",
+          "title": "太阳落在术加",
+          "url": "https://scp-wiki-cn.wikidot.com/sun-set-on-shujia",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 42,
-          "desc": "“空气在颤抖，仿佛天空在燃烧！” “是啊，暴风雨就要来了！” ——《瓦尔特保卫萨拉热窝》"
-        },
-        {
-          "id": "comawhite",
-          "title": "昏迷白",
-          "url": "https://scp-wiki-cn.wikidot.com/comawhite",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 64,
-          "desc": "这个在月台的女人告诉我一个秘密，我从未想过的秘密。"
-        },
-        {
-          "id": "the-final-sky",
-          "title": "朝",
-          "url": "https://scp-wiki-cn.wikidot.com/the-final-sky",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 22,
-          "desc": "朝的哥哥飞奔在那个雨夜：彼时仿佛天空所有的晦暗的阴云，不留余力地对他发出轰鸣的咆哮，在那咆哮之中，那副单薄的身躯止不住地急剧颤动；彼刻仿佛全世界全部的雨水都毫不留情地向他倾盆而下，犹如一种冰冷冷的燃烧，持久审判着他渺小的魂魄。"
-        },
-        {
-          "id": "offwegointothewildpaleyonder",
-          "title": "丑河子",
-          "url": "https://scp-wiki-cn.wikidot.com/offwegointothewildpaleyonder",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 38,
-          "desc": "贝贝很快开口，他那把好嗓子细细地吸进气。"
-        },
-        {
-          "id": "sexy-star-jiao",
-          "title": "不知为何每每问起，谈论的总是未来，但讲到眼前的我，总是敷衍了事。",
-          "url": "https://scp-wiki-cn.wikidot.com/sexy-star-jiao",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 25,
-          "desc": "我举起双手，用余光看着身后三三两两的人。他们由街道涌入我所处的小巷，举着枪围着我。一步，两步，步步紧逼，我逐步后退，寻找着逃跑的道路，但我为什么要逃？或是再说一句，我为什么会被抓？"
-        },
-        {
-          "id": "my-minnaloushe",
-          "title": "没有答案的童话",
-          "url": "https://scp-wiki-cn.wikidot.com/my-minnaloushe",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 73,
-          "desc": "在我还是个孩提的时候，母亲常凝望着我舍不得闭上的双眼，替我把棉被的边压到身下，带着盈盈的笑靥愉快地给我讲起她最拿手的睡前童话。"
-        },
-        {
-          "id": "glowing-blow",
-          "title": "焚风过境之年",
-          "url": "https://scp-wiki-cn.wikidot.com/glowing-blow",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 77,
-          "desc": "看这男人。三十出头，身形精悍，皮肤被风沙和硝烟磨砺过。他在往长途大巴的窗外看。他看见灰败的工业园区，浓烟从烟囱中涌出，远处的荒原里藏有几座废弃的冷却塔。铅色的云层低垂。他靠着椅背，手里把玩着一枚勋章。"
-        },
-        {
-          "id": "un-asesinato-premeditado",
-          "title": "一桩事先张扬的谋杀案",
-          "url": "https://scp-wiki-cn.wikidot.com/un-asesinato-premeditado",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 162,
-          "desc": "本文为 SCP-6061 外围。推荐配合配乐食用。"
-        },
-        {
-          "id": "mangmang",
-          "title": "茫茫",
-          "url": "https://scp-wiki-cn.wikidot.com/mangmang",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 242,
-          "desc": "脚步嘈杂，我在人流中被冲散了，身影小小的。"
+          "desc": "-"
         },
         {
           "id": "wontonescape",
@@ -10476,176 +10362,6 @@
           "desc": "明澄澄的白炽灯管下，一个人影正打理着手头的文件。刚刚撰写完毕报告的他哼着小曲，将那薄薄数页的A4纸翻来覆去看了又看。正当要装进纸袋时，他手边的平板发出了一声铃响。"
         },
         {
-          "id": "maple",
-          "title": "昔日，新日",
-          "url": "https://scp-wiki-cn.wikidot.com/maple",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 18,
-          "desc": "四方阶梯，三箭头，两人。"
-        },
-        {
-          "id": "scp-cn-3088",
-          "title": "基金会癌",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-3088",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 48,
-          "desc": "SCP-CN-3088当前不再存在,基金会理念层监控算法将实时检测项目再现倾向,当确认为SCP-CN-3088的概念出现时,所有体内含SCP-CN-3088样肿瘤组织的个体全部纳入收容,一次 紫杉醇程序 Paclitaxel Procedure 将被立即执行(详细内容请查阅附录CN-3088-4)。"
-        },
-        {
-          "id": "scp-cn-2530",
-          "title": "1976年12月30日，Site-CN-24-D。",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-2530",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 67,
-          "desc": "Site-CN-24-D已在1976/12/30与掩盖设施一并按计划拆除以节省基金会开支,除已调任新建站点Site-CN-12设施主管的高级研究员Metic外所有人员已按原定站点拆除流程辞退 . 76年的最后一个月我们本该继续留在基金会,你还记得,对吗? ,因此,Site-CN-24-D现已不存在。编号Site-CN-24与掩盖设施██中学已在数据库内除名,禁止再次使用,继续保持对遗址的封锁,禁止人员再次入内。 原属Site-CN-24-D管辖项目 已全部 仅回收40%至其他站点,剩余项目均未找回。"
-        },
-        {
-          "id": "dcl-1",
-          "title": "杜承来：狂花怒放",
-          "url": "https://scp-wiki-cn.wikidot.com/dcl-1",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 36,
-          "desc": "作者： HuaNianQWQ"
-        },
-        {
-          "id": "sunset-site",
-          "title": "日落Site-19",
-          "url": "https://scp-wiki-cn.wikidot.com/sunset-site",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 71,
-          "desc": "有座房子在金色的沙漠中"
-        },
-        {
-          "id": "cannibalsynecdoche",
-          "title": "西江提喻法",
-          "url": "https://scp-wiki-cn.wikidot.com/cannibalsynecdoche",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 11,
-          "desc": "一时雾浓，见对行缆车新漆的锈，扬子开始想象自己缠着灯带，朝另一端滑去。"
-        },
-        {
-          "id": "save-our-souls-s",
-          "title": "斯捷潘·拉辛",
-          "url": "https://scp-wiki-cn.wikidot.com/save-our-souls-s",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 26,
-          "desc": "在一种现世当中，只能容忍一个真理的存在。"
-        },
-        {
-          "id": "the-seventh-shot-and-lazarus",
-          "title": "我与第七声枪响，甜甜圈",
-          "url": "https://scp-wiki-cn.wikidot.com/the-seventh-shot-and-lazarus",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 42,
-          "desc": "审判即将来临 There's a reckonin' a-comin'"
-        },
-        {
-          "id": "lazarus",
-          "title": "拉撒路",
-          "url": "https://scp-wiki-cn.wikidot.com/lazarus",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 24,
-          "desc": "故事中所充斥的是一种日常式的语调，至少在那个年代如此，这种语调好比置弃的橱柜上长年累日积满灰尘，或是一座无名山峰上的寒风白雪。但是这样一来，所谓特别的属性又从何而来呢？那就是遗忘。过去经常听闻一个年代风华正茂、一个年代恶贯满盈，或者评价道那是懦弱的、那是大胆的……但我要说这是个遗忘的年代，才正符合这篇故事的基调。"
-        },
-        {
-          "id": "the-fire-is-out-of-contain",
-          "title": "失火",
-          "url": "https://scp-wiki-cn.wikidot.com/the-fire-is-out-of-contain",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 34,
-          "desc": "2019年 5月6日 10点 人力资源部办公室 超密码学部 火化服务部 计算办公室 … 这份名单被分发到了Grande的手上。由部门管理委员会在上个月的会议初步起草，考虑到SCP基金会日益衰落的经济环境，管理层们必须为将来的发展开源节流，第一刀便节在了这些非必要的庞杂部门上。伴随着这些部门的解散，随之而来的便是大量的人员流动，但这不是委员会负责考虑的事，现在头疼的是人力资源部职员Grande。介于人事主管逐渐摆烂的工作态度，这份苦差事被踢到了他的手上————事实上他也差不多，现在的SCP基金会很难让人提起工作的热情…"
-        },
-        {
-          "id": "honour-of-die",
-          "title": "荣光之陨",
-          "url": "https://scp-wiki-cn.wikidot.com/honour-of-die",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 42,
-          "desc": "我将STRIKER阻燃服的领子翻下来盖住，拍了拍粗花呢风衣沾上的烟灰，然后将烟屁股扔在脚下碾碎。面前的保安亭没有人，两侧的行道木在昏黄路灯下摇曳，仿佛死人的手指和胳膊在挥舞，散发出腐朽的甜味。"
-        },
-        {
-          "id": "loaf-loaf-1",
-          "title": "梦程终点",
-          "url": "https://scp-wiki-cn.wikidot.com/loaf-loaf-1",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 24,
-          "desc": "「梦程终点」"
-        },
-        {
-          "id": "202112",
-          "title": "蛇环",
-          "url": "https://scp-wiki-cn.wikidot.com/202112",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 45,
-          "desc": "发布时间： 2020年1月2日"
-        },
-        {
-          "id": "lust-of-sea",
-          "title": "情欲海",
-          "url": "https://scp-wiki-cn.wikidot.com/lust-of-sea",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 50,
-          "desc": "本文章包含成人内容，可能并不适合所有读者阅读。"
-        },
-        {
-          "id": "freeloan",
-          "title": "无息贷款",
-          "url": "https://scp-wiki-cn.wikidot.com/freeloan",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 41,
-          "desc": "我死在水泥地上。"
-        },
-        {
-          "id": "chen-yu-chi",
-          "title": "嗔与痴",
-          "url": "https://scp-wiki-cn.wikidot.com/chen-yu-chi",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 17,
-          "desc": "本文之记录同SCP基金会漠不相关。"
-        },
-        {
-          "id": "project-proposal-2059-059",
-          "title": "项目计划书 2059-059：只是一段燃烧的记忆",
-          "url": "https://scp-wiki-cn.wikidot.com/project-proposal-2059-059",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 30,
-          "desc": "姓名： P.Alba"
-        },
-        {
           "id": "kill-that-foundation-man",
           "title": "杀死那个基金会人",
           "url": "https://scp-wiki-cn.wikidot.com/kill-that-foundation-man",
@@ -10656,14 +10372,24 @@
           "desc": "如今的他总是垮着一张脸，没有打理的胡须爬满了他的下巴，泛白的鬓角显得他有些沧桑。站点里的人总是有些怕他，一不留神他就会窜到你的座位旁边，看看你有没有在认真工作；或是大声呵斥你去为他写一些无关紧要的报告。"
         },
         {
-          "id": "death-of-metic",
-          "title": "Metic，候汝入梦",
-          "url": "https://scp-wiki-cn.wikidot.com/death-of-metic",
+          "id": "mangmang",
+          "title": "茫茫",
+          "url": "https://scp-wiki-cn.wikidot.com/mangmang",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 29,
-          "desc": "HuaNianQWQ ：Hua Nixotn 观众。"
+          "os": 242,
+          "desc": "脚步嘈杂，我在人流中被冲散了，身影小小的。"
+        },
+        {
+          "id": "save-our-souls-s",
+          "title": "斯捷潘·拉辛",
+          "url": "https://scp-wiki-cn.wikidot.com/save-our-souls-s",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 26,
+          "desc": "在一种现世当中，只能容忍一个真理的存在。"
         },
         {
           "id": "water-logging",
@@ -10686,6 +10412,166 @@
           "desc": "White Cheese"
         },
         {
+          "id": "sunset-site",
+          "title": "日落Site-19",
+          "url": "https://scp-wiki-cn.wikidot.com/sunset-site",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 71,
+          "desc": "有座房子在金色的沙漠中"
+        },
+        {
+          "id": "scp-cn-3948",
+          "title": "永护遗产",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-3948",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 54,
+          "desc": "鉴于SCP-CN-3948来源为基金会自身且出现技术失传和权限失传的情况,基金会超形上学部应不断尝试在旧有结构的基础上修缮维护该项目并增添基于基金会现有技术的防护结构和监视设备。该项目如有与现有资料不符的意外情况出现,知晓该项目的基金会成员应立即直接上报O5议会。 与此同时,基金会记录与信息安全管理部应努力寻回和重新编纂与SCP-CN-3948相关的任意技术说明手册/操作指导/工程结构蓝图,并在经过O5议会的审核批准后发放给基金会超形上学部成员。"
+        },
+        {
+          "id": "my-minnaloushe",
+          "title": "没有答案的童话",
+          "url": "https://scp-wiki-cn.wikidot.com/my-minnaloushe",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 73,
+          "desc": "在我还是个孩提的时候，母亲常凝望着我舍不得闭上的双眼，替我把棉被的边压到身下，带着盈盈的笑靥愉快地给我讲起她最拿手的睡前童话。"
+        },
+        {
+          "id": "honour-of-die",
+          "title": "荣光之陨",
+          "url": "https://scp-wiki-cn.wikidot.com/honour-of-die",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 42,
+          "desc": "我将STRIKER阻燃服的领子翻下来盖住，拍了拍粗花呢风衣沾上的烟灰，然后将烟屁股扔在脚下碾碎。面前的保安亭没有人，两侧的行道木在昏黄路灯下摇曳，仿佛死人的手指和胳膊在挥舞，散发出腐朽的甜味。"
+        },
+        {
+          "id": "offwegointothewildpaleyonder",
+          "title": "丑河子",
+          "url": "https://scp-wiki-cn.wikidot.com/offwegointothewildpaleyonder",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 38,
+          "desc": "贝贝很快开口，他那把好嗓子细细地吸进气。"
+        },
+        {
+          "id": "gu-dao-de-lan-jing",
+          "title": "我是一只化身孤岛的蓝鲸",
+          "url": "https://scp-wiki-cn.wikidot.com/gu-dao-de-lan-jing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 87,
+          "desc": "作者： Agent Phage ，可于 人事档案 查看该作者的其他作品。"
+        },
+        {
+          "id": "shujia-summer-concert",
+          "title": "公款旅游：术加夏日焰火音乐大会",
+          "url": "https://scp-wiki-cn.wikidot.com/shujia-summer-concert",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 42,
+          "desc": "“空气在颤抖，仿佛天空在燃烧！” “是啊，暴风雨就要来了！” ——《瓦尔特保卫萨拉热窝》"
+        },
+        {
+          "id": "un-asesinato-premeditado",
+          "title": "一桩事先张扬的谋杀案",
+          "url": "https://scp-wiki-cn.wikidot.com/un-asesinato-premeditado",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 162,
+          "desc": "本文为 SCP-6061 外围。推荐配合配乐食用。"
+        },
+        {
+          "id": "death-of-metic",
+          "title": "Metic，候汝入梦",
+          "url": "https://scp-wiki-cn.wikidot.com/death-of-metic",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 29,
+          "desc": "HuaNianQWQ ：Hua Nixotn 观众。"
+        },
+        {
+          "id": "cannibalsynecdoche",
+          "title": "西江提喻法",
+          "url": "https://scp-wiki-cn.wikidot.com/cannibalsynecdoche",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "一时雾浓，见对行缆车新漆的锈，扬子开始想象自己缠着灯带，朝另一端滑去。"
+        },
+        {
+          "id": "scp-cn-2530",
+          "title": "1976年12月30日，Site-CN-24-D。",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-2530",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 67,
+          "desc": "Site-CN-24-D已在1976/12/30与掩盖设施一并按计划拆除以节省基金会开支,除已调任新建站点Site-CN-12设施主管的高级研究员Metic外所有人员已按原定站点拆除流程辞退 . 76年的最后一个月我们本该继续留在基金会,你还记得,对吗? ,因此,Site-CN-24-D现已不存在。编号Site-CN-24与掩盖设施██中学已在数据库内除名,禁止再次使用,继续保持对遗址的封锁,禁止人员再次入内。 原属Site-CN-24-D管辖项目 已全部 仅回收40%至其他站点,剩余项目均未找回。"
+        },
+        {
+          "id": "chen-yu-chi",
+          "title": "嗔与痴",
+          "url": "https://scp-wiki-cn.wikidot.com/chen-yu-chi",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "本文之记录同SCP基金会漠不相关。"
+        },
+        {
+          "id": "project-proposal-2059-059",
+          "title": "项目计划书 2059-059：只是一段燃烧的记忆",
+          "url": "https://scp-wiki-cn.wikidot.com/project-proposal-2059-059",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 30,
+          "desc": "姓名： P.Alba"
+        },
+        {
+          "id": "comawhite",
+          "title": "昏迷白",
+          "url": "https://scp-wiki-cn.wikidot.com/comawhite",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 64,
+          "desc": "这个在月台的女人告诉我一个秘密，我从未想过的秘密。"
+        },
+        {
+          "id": "freeloan",
+          "title": "无息贷款",
+          "url": "https://scp-wiki-cn.wikidot.com/freeloan",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 41,
+          "desc": "我死在水泥地上。"
+        },
+        {
+          "id": "loaf-loaf-1",
+          "title": "梦程终点",
+          "url": "https://scp-wiki-cn.wikidot.com/loaf-loaf-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 24,
+          "desc": "「梦程终点」"
+        },
+        {
           "id": "scp-cn-3611",
           "title": "无名女王的指环",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-3611",
@@ -10694,6 +10580,126 @@
           "contentKind": "scp",
           "os": 46,
           "desc": "+ 已归档的收容措施1923.4.11 - 隐藏 SCP-CN-3611应被收容于Site-CN-03的Safe级异常收容区的一个尺寸为 30cm x 30cm x 30cm 的铅衬里合金收容箱内,至少有两名安保人员全天候看守。对项目进行的任何测试应当先向项目负责人申请,获得批准后在至少一名研究人员的陪同下进行。测试者完成测试后,应当由医护人员进行观察,2小时内无特殊异常情况方可离开。 + 已归档的收容措施1937.7.28 - 隐藏 SCP-CN-3611应被收容于Site-44 1 的Safe级收容区的一个尺寸…"
+        },
+        {
+          "id": "lust-of-sea",
+          "title": "情欲海",
+          "url": "https://scp-wiki-cn.wikidot.com/lust-of-sea",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 50,
+          "desc": "本文章包含成人内容，可能并不适合所有读者阅读。"
+        },
+        {
+          "id": "scp-cn-3088",
+          "title": "基金会癌",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-3088",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 48,
+          "desc": "SCP-CN-3088当前不再存在,基金会理念层监控算法将实时检测项目再现倾向,当确认为SCP-CN-3088的概念出现时,所有体内含SCP-CN-3088样肿瘤组织的个体全部纳入收容,一次 紫杉醇程序 Paclitaxel Procedure 将被立即执行(详细内容请查阅附录CN-3088-4)。"
+        },
+        {
+          "id": "dcl-1",
+          "title": "杜承来：狂花怒放",
+          "url": "https://scp-wiki-cn.wikidot.com/dcl-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 36,
+          "desc": "作者： HuaNianQWQ"
+        },
+        {
+          "id": "lazarus",
+          "title": "拉撒路",
+          "url": "https://scp-wiki-cn.wikidot.com/lazarus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 24,
+          "desc": "故事中所充斥的是一种日常式的语调，至少在那个年代如此，这种语调好比置弃的橱柜上长年累日积满灰尘，或是一座无名山峰上的寒风白雪。但是这样一来，所谓特别的属性又从何而来呢？那就是遗忘。过去经常听闻一个年代风华正茂、一个年代恶贯满盈，或者评价道那是懦弱的、那是大胆的……但我要说这是个遗忘的年代，才正符合这篇故事的基调。"
+        },
+        {
+          "id": "glowing-blow",
+          "title": "焚风过境之年",
+          "url": "https://scp-wiki-cn.wikidot.com/glowing-blow",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 77,
+          "desc": "看这男人。三十出头，身形精悍，皮肤被风沙和硝烟磨砺过。他在往长途大巴的窗外看。他看见灰败的工业园区，浓烟从烟囱中涌出，远处的荒原里藏有几座废弃的冷却塔。铅色的云层低垂。他靠着椅背，手里把玩着一枚勋章。"
+        },
+        {
+          "id": "the-fire-is-out-of-contain",
+          "title": "失火",
+          "url": "https://scp-wiki-cn.wikidot.com/the-fire-is-out-of-contain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 34,
+          "desc": "2019年 5月6日 10点 人力资源部办公室 超密码学部 火化服务部 计算办公室 … 这份名单被分发到了Grande的手上。由部门管理委员会在上个月的会议初步起草，考虑到SCP基金会日益衰落的经济环境，管理层们必须为将来的发展开源节流，第一刀便节在了这些非必要的庞杂部门上。伴随着这些部门的解散，随之而来的便是大量的人员流动，但这不是委员会负责考虑的事，现在头疼的是人力资源部职员Grande。介于人事主管逐渐摆烂的工作态度，这份苦差事被踢到了他的手上————事实上他也差不多，现在的SCP基金会很难让人提起工作的热情…"
+        },
+        {
+          "id": "sexy-star-jiao",
+          "title": "不知为何每每问起，谈论的总是未来，但讲到眼前的我，总是敷衍了事。",
+          "url": "https://scp-wiki-cn.wikidot.com/sexy-star-jiao",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 25,
+          "desc": "我举起双手，用余光看着身后三三两两的人。他们由街道涌入我所处的小巷，举着枪围着我。一步，两步，步步紧逼，我逐步后退，寻找着逃跑的道路，但我为什么要逃？或是再说一句，我为什么会被抓？"
+        },
+        {
+          "id": "the-seventh-shot-and-lazarus",
+          "title": "我与第七声枪响，甜甜圈",
+          "url": "https://scp-wiki-cn.wikidot.com/the-seventh-shot-and-lazarus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 42,
+          "desc": "审判即将来临 There's a reckonin' a-comin'"
+        },
+        {
+          "id": "maple",
+          "title": "昔日，新日",
+          "url": "https://scp-wiki-cn.wikidot.com/maple",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 18,
+          "desc": "四方阶梯，三箭头，两人。"
+        },
+        {
+          "id": "the-final-sky",
+          "title": "朝",
+          "url": "https://scp-wiki-cn.wikidot.com/the-final-sky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 22,
+          "desc": "朝的哥哥飞奔在那个雨夜：彼时仿佛天空所有的晦暗的阴云，不留余力地对他发出轰鸣的咆哮，在那咆哮之中，那副单薄的身躯止不住地急剧颤动；彼刻仿佛全世界全部的雨水都毫不留情地向他倾盆而下，犹如一种冰冷冷的燃烧，持久审判着他渺小的魂魄。"
+        },
+        {
+          "id": "202112",
+          "title": "蛇环",
+          "url": "https://scp-wiki-cn.wikidot.com/202112",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 45,
+          "desc": "发布时间： 2020年1月2日"
+        },
+        {
+          "id": "before-the-eighth-occult-war",
+          "title": "在第八次超自然大战之前",
+          "url": "https://scp-wiki-cn.wikidot.com/before-the-eighth-occult-war",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 52,
+          "desc": "恋昏崎新闻社"
         }
       ],
       "supplementLinks": [],
@@ -10703,43 +10709,43 @@
           "id": "01-articles",
           "title": "-作品目录-",
           "articleIDs": [
-            "gu-dao-de-lan-jing",
-            "sun-set-on-shujia",
-            "before-the-eighth-occult-war",
             "duvetofyonder",
-            "scp-cn-3948",
-            "shujia-summer-concert",
-            "comawhite",
-            "the-final-sky",
-            "offwegointothewildpaleyonder",
-            "sexy-star-jiao",
-            "my-minnaloushe",
-            "glowing-blow",
-            "un-asesinato-premeditado",
-            "mangmang",
+            "sun-set-on-shujia",
             "wontonescape",
-            "maple",
-            "scp-cn-3088",
-            "scp-cn-2530",
-            "dcl-1",
-            "sunset-site",
-            "cannibalsynecdoche",
-            "save-our-souls-s",
-            "the-seventh-shot-and-lazarus",
-            "lazarus",
-            "the-fire-is-out-of-contain",
-            "honour-of-die",
-            "loaf-loaf-1",
-            "202112",
-            "lust-of-sea",
-            "freeloan",
-            "chen-yu-chi",
-            "project-proposal-2059-059",
             "kill-that-foundation-man",
-            "death-of-metic",
+            "mangmang",
+            "save-our-souls-s",
             "water-logging",
             "otto",
-            "scp-cn-3611"
+            "sunset-site",
+            "scp-cn-3948",
+            "my-minnaloushe",
+            "honour-of-die",
+            "offwegointothewildpaleyonder",
+            "gu-dao-de-lan-jing",
+            "shujia-summer-concert",
+            "un-asesinato-premeditado",
+            "death-of-metic",
+            "cannibalsynecdoche",
+            "scp-cn-2530",
+            "chen-yu-chi",
+            "project-proposal-2059-059",
+            "comawhite",
+            "freeloan",
+            "loaf-loaf-1",
+            "scp-cn-3611",
+            "lust-of-sea",
+            "scp-cn-3088",
+            "dcl-1",
+            "lazarus",
+            "glowing-blow",
+            "the-fire-is-out-of-contain",
+            "sexy-star-jiao",
+            "the-seventh-shot-and-lazarus",
+            "maple",
+            "the-final-sky",
+            "202112",
+            "before-the-eighth-occult-war"
           ]
         }
       ]
@@ -16908,7 +16914,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-d2f08901dd9511743d3d04863b27f523a55ef71fa3c004a951e25cffd1f23165"
+        "structureHash": "sha256-62bf3e7471a2731150dde36142cbe67fad242edf37dd5225f3fb41760d813a7c"
       },
       "primaryArticles": [
         {
@@ -16918,7 +16924,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 407,
+          "os": 406,
           "desc": "收容SCP-3000的区域,当前为孟加拉湾一处直径约300公里的区域,由基金会军舰定期巡逻。绝对禁止任何平民在隔离区尝试深海探索或潜水活动。确信被SCP-3000接触过的人员将在Site-151被收容、隔离和处置。受SCP-3000异常性质影响的人员将被无限期收容。 基金会核潜艇 SCPF Eremita 号将监控SCP-3000的前端部分,当前位于恒河扇区,约海平面下0.7千米。 Eremita 号被指派执行Atzak协议,船上人员规章遵照协议指南。Atzak协议完整描述参见附录3000.2。 当前没有已知方法能…"
         },
         {
@@ -18780,7 +18786,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-d65215984a2a5f4464c890c87436a43dce6260397ee4d300ef4607b3f1a07068"
+        "structureHash": "sha256-c27818fc379a5a0ca8929e7211c783a0e12fb8f31144b40c634940d8ae7e4e92"
       },
       "primaryArticles": [
         {
@@ -18794,14 +18800,14 @@
           "desc": "设定中心 » 120站档案馆 中心页 / 无悔之道 中心页 » 零时 由Jasiu06和Ralliston合著 ► Jasiu06的作者页 ► Ralliston的作者页"
         },
         {
-          "id": "welcome-to-vanguard-threshold-must-die",
-          "title": "惊天秘密！为什么你应该成为现实扭曲者或逆模因",
-          "url": "https://scp-wiki-cn.wikidot.com/welcome-to-vanguard-threshold-must-die",
-          "sourceManifest": "manifest_tales",
+          "id": "scp-7904",
+          "title": "一次非常耶夫勒羊的圣诞",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-7904",
+          "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 87,
-          "desc": "惊天秘密！为什么你应该成为现实扭曲者或逆模因"
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "每年一次,基金会成员将被派往 SCP-7904,以确保其在每年 12 月 13 日至 12 月 31 日期间遭遇重大火灾。分配到这项任务的人员应当确保导致 SCP-7904 被焚烧的行为与普通的纵火行为无异。 查明 SCP-7940 创造者是谁的工作仍在进行。一则它是由当地社区组织所建造的传闻已广为流传,并为公众所接受。 如果基金会焚烧 SCP-7904 的努力失败,机动特遣队Theta-7(“Goat Herders”-牧羊人)将被调动至 SCP-7904 所在位置,并监视潜在的 “Getens Natt” 1…"
         },
         {
           "id": "ralliston-s-proposal",
@@ -18958,6 +18964,16 @@
           "contentKind": "tale",
           "os": 47,
           "desc": "幕后： 蹴鞠尝试"
+        },
+        {
+          "id": "welcome-to-vanguard-threshold-must-die",
+          "title": "惊天秘密！为什么你应该成为现实扭曲者或逆模因",
+          "url": "https://scp-wiki-cn.wikidot.com/welcome-to-vanguard-threshold-must-die",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 87,
+          "desc": "惊天秘密！为什么你应该成为现实扭曲者或逆模因"
         },
         {
           "id": "wniosek-o-dotacje-na-wykorzystanie-paryskiej-architektury",
@@ -19720,16 +19736,6 @@
           "desc": "Site-120：波兰，西里西亚省，琴斯托霍瓦 Eileen Veiksaar的多疑既是天性使然也是职业习惯。她不是间谍，不是心理医生，也不是律师，但是在信息技术工作中度过的二十年使她无比了解谎言。她知道从来不会有人直接承认自己踩到、坐到或者摔到了公司的笔记本电脑或平板电脑上。她知道每一个被配发了能连上网的电脑的人都用它浏览过私人的东西。她知道没有哪种软件能完全避免漏洞，没有哪种硬件能彻底无误地运行，也没有哪份软件或硬件的说明文档能完美地与它们的实物相匹配。"
         },
         {
-          "id": "scp-7904",
-          "title": "一次非常耶夫勒羊的圣诞",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-7904",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 1,
-          "desc": "每年一次,基金会成员将被派往 SCP-7904,以确保其在每年 12 月 13 日至 12 月 31 日期间遭遇重大火灾。分配到这项任务的人员应当确保导致 SCP-7904 被焚烧的行为与普通的纵火行为无异。 查明 SCP-7940 创造者是谁的工作仍在进行。一则它是由当地社区组织所建造的传闻已广为流传,并为公众所接受。 如果基金会焚烧 SCP-7904 的努力失败,机动特遣队Theta-7(“Goat Herders”-牧羊人)将被调动至 SCP-7904 所在位置,并监视潜在的 “Getens Natt” 1…"
-        },
-        {
           "id": "the-furmen",
           "title": "皮毛人",
           "url": "https://scp-wiki-cn.wikidot.com/the-furmen",
@@ -20342,7 +20348,7 @@
           "title": "最新译作",
           "articleIDs": [
             "hour-zero",
-            "welcome-to-vanguard-threshold-must-die",
+            "scp-7904",
             "ralliston-s-proposal",
             "a-faerie-tale-of-twin-queens",
             "tears-and-bone",
@@ -20400,7 +20406,8 @@
           "id": "08-articles",
           "title": "中文分部原创",
           "articleIDs": [
-            "play-termination-attempt"
+            "play-termination-attempt",
+            "welcome-to-vanguard-threshold-must-die"
           ]
         },
         {
@@ -20660,7 +20667,6 @@
           "id": "38-scp-pl-284",
           "title": "SCP-PL-284：我日，我操",
           "articleIDs": [
-            "scp-7904",
             "the-furmen"
           ]
         },
@@ -26964,7 +26970,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-19f9a3d3ff44946b2b919b103f295c9235457488ea02373457af620602266127"
+        "structureHash": "sha256-6215f33589e31b182984163a52d46343f9a57ad838e3981e00fee0660127ab71"
       },
       "primaryArticles": [
         {
@@ -27061,7 +27067,7 @@
           "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
           "contentKind": "scp",
-          "os": 2,
+          "os": 3,
           "desc": "对项目的录像存放于 Site-12 。SCP-9308的创造者身份仍不明确。"
         },
         {
@@ -31714,7 +31720,7 @@
         "mode": "officialHubStructure",
         "tagSource": "cn_tag.json",
         "emptySectionTitle": "作品",
-        "structureHash": "sha256-fdfbe93a9f927316ec7f25c088c40d67c17bc6733543df78742baca9783708d3"
+        "structureHash": "sha256-3f958fdc4c32285249343d9fbec12ef8e62bf3729f4ec7d4e2010dc25ecd8754"
       },
       "primaryArticles": [
         {
@@ -32185,14 +32191,14 @@
           "desc": "观前须知：故事荒诞，情节抽象，语言粗俗，不适合任何人阅读。"
         },
         {
-          "id": "thats-it-upload",
-          "title": "就这样，上传！",
-          "url": "https://scp-wiki-cn.wikidot.com/thats-it-upload",
+          "id": "travel-by-public-missing-agent",
+          "title": "公款旅游：失踪人员回收行动",
+          "url": "https://scp-wiki-cn.wikidot.com/travel-by-public-missing-agent",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 12,
-          "desc": "作者： JacKeTJioNG 发布日期：2024年8月26日"
+          "os": 84,
+          "desc": "“贾队长。”于佳雪翻开手里的一摞文档，“我们最近找回了很多特遣队员，死的。”"
         }
       ],
       "supplementLinks": [],
@@ -32255,7 +32261,7 @@
             "cn4kproject-ice",
             "scp-cn-756-j",
             "document-format-standard",
-            "thats-it-upload"
+            "travel-by-public-missing-agent"
           ]
         }
       ]
@@ -34830,7 +34836,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-217100d954eb1c4e302b9dfe2ae615e4c58b82d8dd436353b3f992e69dd7a7b2"
+        "structureHash": "sha256-1cd85b82226955db86e377139a5be78e2f76da32bf0513b1306319168ce3e9e2"
       },
       "primaryArticles": [
         {
@@ -34840,8 +34846,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 32,
-          "desc": "『联翼共赴新征程』"
+          "os": 33,
+          "desc": "『联翼共赴新征程』 那天，碎星坠落，同时带来战争。 大洋洲战争的爆发摧毁了过往的一切，人类再次步入太空的时代被宣告终结。这对于我——一个对浩瀚星空充满向往的孩子来说，无疑是个巨大的打击，那段时间我一直守在电视机前，望着联军的战地记者随着战局推进而一步步深入大洋洲腹地，然后眼睁睁地看着他们摧毁掉掉那些珍贵的天体观测设施。"
         },
         {
           "id": "first-flight",
@@ -35158,7 +35164,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-75ab81e4a0c2f9094db553068e90233bc19da2f3bfc40456c326f28f6f6cb32c"
+        "structureHash": "sha256-bae5938003bec169194a4f179ba8e45186299c528b790d3036d921c03d02f207"
       },
       "primaryArticles": [
         {
@@ -35310,16 +35316,6 @@
           "contentKind": "tale",
           "os": 67,
           "desc": "一般情况下，我谁也不是，所以哪儿也不该去，但今天路过一间实验室时，我注意到一件有意思的事。 眼前的实验室内，一位研究员正盯着报告，他的神情专注而凝重，却遏制不住眼神里的狂喜。我被这种喜悦所感染，于是上前打了个招呼，好奇究竟发生了什么好事。"
-        },
-        {
-          "id": "sanfu-with-yanhuo-2",
-          "title": "清河今日无轶事，也无梦",
-          "url": "https://scp-wiki-cn.wikidot.com/sanfu-with-yanhuo-2",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 12,
-          "desc": "林理洵躺在床上，高烧不退。他刚刚从第十个噩梦里醒来。 在往常，他的父亲会温柔地安慰他，用那双粗糙的手臂将他抱在怀里，给他唱笨拙的摇篮曲调子——而现在，这些寻常之事都变得遥不可及。"
         }
       ],
       "supplementLinks": [],
@@ -35342,8 +35338,7 @@
             "admission-and-a-physics-teacher",
             "at-the-same-sometimes",
             "childhood-qinghe-magician",
-            "water-scatters",
-            "sanfu-with-yanhuo-2"
+            "water-scatters"
           ]
         }
       ],
@@ -38076,68 +38071,28 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-e4bcbca904a021a5cbd12e955158c8d4d66061b1dd359f4b209b9087becc77ab"
+        "structureHash": "sha256-180415fd6b520df211e7d4c8903e98d5a9e0bd0710d10504e4e7010942ba85bc"
       },
       "primaryArticles": [
         {
-          "id": "nobody-would-sing-the-rhythm-in-the-wing-again-and-again",
-          "title": "无人更唱风中曲",
-          "url": "https://scp-wiki-cn.wikidot.com/nobody-would-sing-the-rhythm-in-the-wing-again-and-again",
+          "id": "yixue018",
+          "title": "异学零壹捌 感孕寄胎",
+          "url": "https://scp-wiki-cn.wikidot.com/yixue018",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 49,
-          "desc": "自由的旋风，吹遍草原每一个角落 英俊的少年，骑着骏马如雄鹰飞过"
+          "os": 42,
+          "desc": "志： 异学零壹捌"
         },
         {
-          "id": "the-lost-book-of-documents-in-shang-that-golden-declaration",
-          "title": "逸商书 · 金誓 · 注疏",
-          "url": "https://scp-wiki-cn.wikidot.com/the-lost-book-of-documents-in-shang-that-golden-declaration",
+          "id": "beyond-the-wall-of-syllable",
+          "title": "那梨石音尺",
+          "url": "https://scp-wiki-cn.wikidot.com/beyond-the-wall-of-syllable",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 59,
-          "desc": "经名《逸商书》，原著人不详，底本见于岿阳道藏。 言发于楚地竹简，总叙夫子所删怪力乱神之言。 异学会攷厥迹，疑为假托。 原稿见此 。"
-        },
-        {
-          "id": "sharkypedia-eoyemlau",
-          "title": "游音流 - 鲨击百科",
-          "url": "https://scp-wiki-cn.wikidot.com/sharkypedia-eoyemlau",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 306,
-          "desc": "此条目经 殴打鲨鱼中心 滑齿龙议会秘书处 认定。 （20██年██月██日） 可信层次：基本符合事实，需专业人士进一步编辑。"
-        },
-        {
-          "id": "the-kismet-ephemeris-of-kalpas-vol-7-part-2",
-          "title": "万劫历数混元通纪 · 十纪卮言第七 · 中",
-          "url": "https://scp-wiki-cn.wikidot.com/the-kismet-ephemeris-of-kalpas-vol-7-part-2",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 135,
-          "desc": "[ ▽ 直达底部 ]"
-        },
-        {
-          "id": "history-drowned-in-the-ash-of-memories",
-          "title": "万里河山沉旧画 百年风雨醉新觞",
-          "url": "https://scp-wiki-cn.wikidot.com/history-drowned-in-the-ash-of-memories",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 299,
-          "desc": "开始访问基金会数据库"
-        },
-        {
-          "id": "ending",
-          "title": "最期之艦",
-          "url": "https://scp-wiki-cn.wikidot.com/ending",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 57,
-          "desc": "▶ 跳过动画"
+          "os": 34,
+          "desc": "七弦琴骨、朽涩断执戒具、彩夜陨星、白德尔丁的梦语、殴打之杖 1 2"
         },
         {
           "id": "yixue671",
@@ -38150,6 +38105,46 @@
           "desc": "号： 异学陆柒壹"
         },
         {
+          "id": "history-drowned-in-the-ash-of-memories",
+          "title": "万里河山沉旧画 百年风雨醉新觞",
+          "url": "https://scp-wiki-cn.wikidot.com/history-drowned-in-the-ash-of-memories",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 299,
+          "desc": "开始访问基金会数据库"
+        },
+        {
+          "id": "took-notes-in-lu-town",
+          "title": "鲁镇纪略",
+          "url": "https://scp-wiki-cn.wikidot.com/took-notes-in-lu-town",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 69,
+          "desc": "12月20日 。。 北平的冬格外抑郁。大雪纷纷而下，堵塞了前方的道路。鸟儿倒是在一片惨白中相互嬉戏，啄食着不知是谁家的饵料。此时风儿可是紧得很，我只能裹着大衣，缓缓走到没有人知道的地方。自几日前蒋委员长被囚禁以来，全国沸反盈天，各地的人马颇有起兵讨董卓的阵势。而起义前的鸿门宴便是必不可少的了，或许不是鸿门宴，大概罢。在盛情邀请下，我登上了蓝衣社准备的火车，带着阵阵聒噪声，朝着鲁镇驶去。窗外的景物不断变化消逝，晃花了我的眼。只好闭上眼睛，盘算着此次国难会议究竟会如何。想要说些什么，然而没有人肯在我身旁听我的唠叨。"
+        },
+        {
+          "id": "the-old-gospel-of-fuxi-that-wuyou",
+          "title": "三坟崖书 · 人才卷 · 无囿",
+          "url": "https://scp-wiki-cn.wikidot.com/the-old-gospel-of-fuxi-that-wuyou",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 78,
+          "desc": "经名《崖书》，又作《洞玄体道大衍通化三才参同书》，凡天地人三卷。原著者不详，底本见于岿阳道藏。言录于藐姑射山揲玄洞崖，总叙上古圣君伏羲、神农、黄帝遗事，或云其乃夫子所谓《三坟》也。"
+        },
+        {
+          "id": "ending",
+          "title": "最期之艦",
+          "url": "https://scp-wiki-cn.wikidot.com/ending",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 57,
+          "desc": "▶ 跳过动画"
+        },
+        {
           "id": "the-kythera-creed",
           "title": "破碎公教之基西拉信经",
           "url": "https://scp-wiki-cn.wikidot.com/the-kythera-creed",
@@ -38160,14 +38155,14 @@
           "desc": "隐藏 移出鼠标 | 关闭"
         },
         {
-          "id": "yixue299",
-          "title": "异学贰玖玖 巫山神女",
-          "url": "https://scp-wiki-cn.wikidot.com/yixue299",
+          "id": "nobody-would-sing-the-rhythm-in-the-wing-again-and-again",
+          "title": "无人更唱风中曲",
+          "url": "https://scp-wiki-cn.wikidot.com/nobody-would-sing-the-rhythm-in-the-wing-again-and-again",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 38,
-          "desc": "开始访问基金会数据库"
+          "os": 49,
+          "desc": "自由的旋风，吹遍草原每一个角落 英俊的少年，骑着骏马如雄鹰飞过"
         },
         {
           "id": "introduction-to-pataphysics",
@@ -38191,6 +38186,16 @@
           "contentKind": "tale"
         },
         {
+          "id": "the-kismet-ephemeris-of-kalpas-vol-7-part-2",
+          "title": "万劫历数混元通纪 · 十纪卮言第七 · 中",
+          "url": "https://scp-wiki-cn.wikidot.com/the-kismet-ephemeris-of-kalpas-vol-7-part-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 135,
+          "desc": "[ ▽ 直达底部 ]"
+        },
+        {
           "id": "wanderers:the-court-of-the-hanged-king",
           "title": "愚者史诗 —— 缢王深殿里",
           "url": "https://scp-wiki-cn.wikidot.com/wanderers:the-court-of-the-hanged-king",
@@ -38208,14 +38213,14 @@
           "desc": "三只饥饿的乌鸦盘旋在天空 目光扫过被烈焰围困的皇宫 看呐 ， 有个戴着金冠的家伙 静静吊死在后山的古林之中 他曾高坐于狄瓦的王位 想必吃遍天下一切名贵 其尸体可以当作晚餐的肥虫"
         },
         {
-          "id": "the-old-gospel-of-fuxi-that-wuyou",
-          "title": "三坟崖书 · 人才卷 · 无囿",
-          "url": "https://scp-wiki-cn.wikidot.com/the-old-gospel-of-fuxi-that-wuyou",
+          "id": "the-lost-book-of-documents-in-shang-that-golden-declaration",
+          "title": "逸商书 · 金誓 · 注疏",
+          "url": "https://scp-wiki-cn.wikidot.com/the-lost-book-of-documents-in-shang-that-golden-declaration",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 78,
-          "desc": "经名《崖书》，又作《洞玄体道大衍通化三才参同书》，凡天地人三卷。原著者不详，底本见于岿阳道藏。言录于藐姑射山揲玄洞崖，总叙上古圣君伏羲、神农、黄帝遗事，或云其乃夫子所谓《三坟》也。"
+          "os": 59,
+          "desc": "经名《逸商书》，原著人不详，底本见于岿阳道藏。 言发于楚地竹简，总叙夫子所删怪力乱神之言。 异学会攷厥迹，疑为假托。 原稿见此 。"
         },
         {
           "id": "ow1-first",
@@ -38224,7 +38229,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 419,
+          "os": 420,
           "desc": "作者：Confucian Lee 二三子人事页：异学太尉帝尧李██逸事状 图1：https://pixabay.com/zh/photos/ancient-ruins-middle-east-2917848/"
         },
         {
@@ -38234,7 +38239,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 291,
+          "os": 292,
           "desc": "作者：Confucian Lee，LogicWu，CTorJSChen，haplocalyx 二三子人事页：异学太尉帝尧李██逸事状 CT人事页：Site-CN-19-6数据库"
         },
         {
@@ -38314,14 +38319,14 @@
           "desc": "开始访问基金会数据库"
         },
         {
-          "id": "yixue018",
-          "title": "异学零壹捌 感孕寄胎",
-          "url": "https://scp-wiki-cn.wikidot.com/yixue018",
+          "id": "yixue299",
+          "title": "异学贰玖玖 巫山神女",
+          "url": "https://scp-wiki-cn.wikidot.com/yixue299",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 42,
-          "desc": "志： 异学零壹捌"
+          "os": 38,
+          "desc": "开始访问基金会数据库"
         },
         {
           "id": "zibuyu-875",
@@ -38334,14 +38339,14 @@
           "desc": "道光初，岁在大荒落，维庚申之日，于静海草米店中，有一张姓民户阖家暴毙。或呼之不应，破门乃见其尸安卧于床，颜色不改，却无生息。"
         },
         {
-          "id": "beyond-the-wall-of-syllable",
-          "title": "那梨石音尺",
-          "url": "https://scp-wiki-cn.wikidot.com/beyond-the-wall-of-syllable",
+          "id": "sharkypedia-eoyemlau",
+          "title": "游音流 - 鲨击百科",
+          "url": "https://scp-wiki-cn.wikidot.com/sharkypedia-eoyemlau",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 34,
-          "desc": "七弦琴骨、朽涩断执戒具、彩夜陨星、白德尔丁的梦语、殴打之杖 1 2"
+          "os": 306,
+          "desc": "此条目经 殴打鲨鱼中心 滑齿龙议会秘书处 认定。 （20██年██月██日） 可信层次：基本符合事实，需专业人士进一步编辑。"
         },
         {
           "id": "holy-ship",
@@ -38356,16 +38361,6 @@
           "url": "https://scp-wiki-cn.wikidot.com/wanderers:the-gospel-of-lotus-that-bloom-in-the-wonderland",
           "role": "primaryArticle",
           "contentKind": "tale"
-        },
-        {
-          "id": "took-notes-in-lu-town",
-          "title": "鲁镇纪略",
-          "url": "https://scp-wiki-cn.wikidot.com/took-notes-in-lu-town",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 69,
-          "desc": "12月20日 。。 北平的冬格外抑郁。大雪纷纷而下，堵塞了前方的道路。鸟儿倒是在一片惨白中相互嬉戏，啄食着不知是谁家的饵料。此时风儿可是紧得很，我只能裹着大衣，缓缓走到没有人知道的地方。自几日前蒋委员长被囚禁以来，全国沸反盈天，各地的人马颇有起兵讨董卓的阵势。而起义前的鸿门宴便是必不可少的了，或许不是鸿门宴，大概罢。在盛情邀请下，我登上了蓝衣社准备的火车，带着阵阵聒噪声，朝着鲁镇驶去。窗外的景物不断变化消逝，晃花了我的眼。只好闭上眼睛，盘算着此次国难会议究竟会如何。想要说些什么，然而没有人肯在我身旁听我的唠叨。"
         },
         {
           "id": "deleted:uiu-file-1996-005",
@@ -38410,7 +38405,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 110,
+          "os": 111,
           "desc": "知识之树初植时，所有事物皆被给定。那黑暗之下的深水与黑暗之上的穹顶也逐渐成形，许多古老神祇诞生于此。这些常被遗忘了名讳的古神当中，就有Khahrahk。"
         },
         {
@@ -39385,15 +39380,15 @@
           "id": "01-articles",
           "title": "Articles",
           "articleIDs": [
-            "nobody-would-sing-the-rhythm-in-the-wing-again-and-again",
-            "the-lost-book-of-documents-in-shang-that-golden-declaration",
-            "sharkypedia-eoyemlau",
-            "the-kismet-ephemeris-of-kalpas-vol-7-part-2",
-            "history-drowned-in-the-ash-of-memories",
-            "ending",
+            "yixue018",
+            "beyond-the-wall-of-syllable",
             "yixue671",
+            "history-drowned-in-the-ash-of-memories",
+            "took-notes-in-lu-town",
+            "the-old-gospel-of-fuxi-that-wuyou",
+            "ending",
             "the-kythera-creed",
-            "yixue299"
+            "nobody-would-sing-the-rhythm-in-the-wing-again-and-again"
           ]
         },
         {
@@ -39409,9 +39404,10 @@
           "articleIDs": [
             "wanderers:the-poem-in-dust-that-xuanpin",
             "wanderers:the-serpent-who-hold-a-flower-in-mouth",
+            "the-kismet-ephemeris-of-kalpas-vol-7-part-2",
             "wanderers:the-court-of-the-hanged-king",
             "the-three-corbies",
-            "the-old-gospel-of-fuxi-that-wuyou",
+            "the-lost-book-of-documents-in-shang-that-golden-declaration",
             "ow1-first",
             "ow1-second",
             "to-be-a-couple"
@@ -39442,7 +39438,7 @@
           "title": "╣ 虚漠旧史 ╠",
           "articleIDs": [
             "yixue012",
-            "yixue018",
+            "yixue299",
             "zibuyu-875"
           ]
         },
@@ -39450,7 +39446,7 @@
           "id": "07-articles",
           "title": "╣ 凿凿的奇妙冒险 ╠",
           "articleIDs": [
-            "beyond-the-wall-of-syllable",
+            "sharkypedia-eoyemlau",
             "holy-ship"
           ]
         },
@@ -39459,7 +39455,6 @@
           "title": "╣ 现代演义 ╠",
           "articleIDs": [
             "wanderers:the-gospel-of-lotus-that-bloom-in-the-wonderland",
-            "took-notes-in-lu-town",
             "deleted:uiu-file-1996-005",
             "blooming-on-the-remains",
             "huayi-bc02-y-3579",
@@ -44553,7 +44548,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-646ec95def1bc6ea7fe5b79c7b4e5cabfc19f25070d4946e4cd3ac70cc882a22"
+        "structureHash": "sha256-0e5202466f0956c3aec5f21337f088ab8502829cbb7e520cfb5f5ebf65f1312f"
       },
       "primaryArticles": [
         {
@@ -44584,7 +44579,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 69,
-          "desc": "SCP-738应被保存于一个时刻由武装守卫,遥控爆炸装置和音频/视频监控三重封锁的保管室内。根据与SCP-738的交流中观察到的变化,力量以及未知的极限,以下程序必须被严格遵守。 当SCP-738闲置时,其每个组成部分都必须被分开放置。组装或拆分SCP-738时须使用保管区域中内置的机械完成。 如果机械组装系统失效,测试必须被取消直到一个戴着爆炸项圈的工程师被派遣修理机械系统。若此工程师试图与SCP-738的任何部分交流,则立即引爆项圈。 如果远程机械组装失败,则由事先安装的锥形炸弹拆分SCP-738,然后派遣一个…"
+          "desc": "SCP-738应被保存于一个时刻由武装守卫,遥控爆炸装置和音频/视频监控三重封锁的保管室内。根据与SCP-738的交流中观察到的变化,力量以及未知的极限,以下程序必须被严格遵守。 当SCP-738闲置时,其每个组成部分都必须被分开放置。组装或拆分SCP-738时须使用保管区域中内置的机械完成。 如果机械组装系统失效,测试必须被取消直到一个戴着爆炸项圈的工程师被派遣修理机械系统。若此工程师试图与SCP-738的任何部分交流,则立即引爆项圈。 如果远程机械拆分失败,则由事先安装的锥形炸弹拆分SCP-738,然后派遣一个…"
         },
         {
           "id": "therion-devours",
@@ -48518,7 +48513,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-3057aafe7934f1fa3587b3540afc5338632e4f3af6de39c246c2078b56e03fc3"
+        "structureHash": "sha256-f51c5405414ddc3e0887c4a5155e95a77455cf179d02f0c0e8f8b430ea2b140c"
       },
       "primaryArticles": [
         {
@@ -48570,6 +48565,16 @@
           "contentKind": "tale",
           "os": 6,
           "desc": "新罗马主教、基督在世代表、宗徒之长继承人、普世教会最高教宗、美洲首席主教、西方总主教兼都主教、梵蒂冈城国君主、天主众仆之仆，Maximilian教皇，正捧着一只泡沫塑料杯喝着咖啡。"
+        },
+        {
+          "id": "lovecraft-parody-title",
+          "title": "第四礼拜堂第15小队及黑皮书之事实",
+          "url": "https://scp-wiki-cn.wikidot.com/lovecraft-parody-title",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "在其他那些远不如我们这个世界这般离奇古怪的世界里，《死灵之书》对某些人而言不过是日常生活的一部分。密斯卡托尼克大学，位于虚构的马萨诸塞州小镇阿卡姆，那里的研究者们几乎每天都在埋头钻研这本书，窥探其中那些因过于亵渎或疯狂而无法公诸现世的秘密。而在我们这个宇宙中，《死灵之书》是一部虚构作品中的虚构作品……至少它曾被认为如此。"
         },
         {
           "id": "scp-cn-4699",
@@ -48692,7 +48697,8 @@
             "shepherds",
             "mud-on-the-carpet",
             "when-we-came-home",
-            "those-thin-penultimate-hours"
+            "those-thin-penultimate-hours",
+            "lovecraft-parody-title"
           ]
         },
         {
@@ -48816,7 +48822,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-4a239a6eb55f2123aeaa2b5a45d07a3ab9d7a1f72d89ea20b08979e6efb44e64"
+        "structureHash": "sha256-a49437b01e8beae717d5956eaaa365358dbf447195a2449be04ed071f3f89c64"
       },
       "primaryArticles": [
         {
@@ -49698,6 +49704,16 @@
           "desc": "« 大机器 || 中心页 || 为你燃烧 » 全球超自然联盟仪式场地“北风之神” 格陵兰岛冰原 点火前3小时 只花了九个月。九个月的彻夜无眠，九个月的锲而不舍，九个月的统筹地球上的几千人和太空中的一百多人。Jess难以相信马上就要完成了。最后一批船员，她自己和另外几个掉队者。然后他们的任务就终于可以开始。"
         },
         {
+          "id": "delta-wave",
+          "title": "德尔塔波",
+          "url": "https://scp-wiki-cn.wikidot.com/delta-wave",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "A ROUNDERHOUSE Joint http://www.scp-wiki.net/rounderhouse-s-author-pagehttp:www-scp-wiki-net-rounderhouse-s-author-page▸ 该作者的更多作品 ◂（原文链接）http://www.scp-wiki.net/rounderhouse-s-author-page▸ 该作者的更多作品 ◂"
+        },
+        {
           "id": "special-assets",
           "title": "特别的资产",
           "url": "https://scp-wiki-cn.wikidot.com/special-assets",
@@ -50408,16 +50424,6 @@
           "desc": "基金会里没有人——从最低级别的守卫到O5议会——可以确切解释到底是什么结束了。如果他们敢大胆地猜想的话，那么可能的答案将会是“一切”。 作为一个普遍认知，第一个注意到此事的人是Victor Balakirev博士。Balakirev博士，一个久经各种高危实验考验，不会轻易惊慌的人，不敢相信他的眼睛，甚至是他的高能天文望远镜，正在告诉他什么。他所不敢相信的事是，在对蟹状星云的例行扫描中，本应存在一颗显眼又令人厌恶的恒星的位置变得空空荡荡。警报响起，有一打的天文望远镜被从各个设施和机构中征收，同时伴随着不小的骚动。不过…"
         },
         {
-          "id": "clef-and-dimitri-hit-the-road",
-          "title": "Clef和Dimitri出发了",
-          "url": "https://scp-wiki-cn.wikidot.com/clef-and-dimitri-hit-the-road",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 55,
-          "desc": "“至少一个月，”Glass博士说着，紧张地拨弄着他的剪贴板下的紧急按钮。坐在他对面的人物缓慢地眨了眨它那不可思议的多彩的眼睛（该死的，他从来没弄清楚过它们到底是什么颜色）并认真地看着他手中的粉色纸条。“你们的心理评估显示，你们的上一次休假已经是很多年以前的事情了。你们需要去释放一下。”"
-        },
-        {
           "id": "411",
           "title": "徘徊的现在时",
           "url": "https://scp-wiki-cn.wikidot.com/411",
@@ -50426,16 +50432,6 @@
           "contentKind": "tale",
           "os": 3,
           "desc": "日子循环往复的度过，记忆愈发模糊。自由的灵魂被钢筋水泥所拘束。蜗居在这众人所向往的牢笼。生活依然在重蹈覆辙，体会着循环中的意义。灵魂深处眷恋着那些未知而神秘的事物。"
-        },
-        {
-          "id": "fulvou",
-          "title": "伊莎贝尔的度假之旅",
-          "url": "https://scp-wiki-cn.wikidot.com/fulvou",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 5,
-          "desc": "好诶，独属于我们三个的完美自驾游！伊莎贝尔·海尔格·阿纳斯塔西娅·帕瓦蒂·Wondertainment五世博士在拍摄完独属于她主演的剧集《真实的资本主义大冒险》两季后，终于迎来了难得的假期，这部剧集赚来的钱已经够堵上那些执行董事会的嘴喽。"
         },
         {
           "id": "yangwen2002",
@@ -50458,6 +50454,16 @@
           "desc": "5K：循风系列 · 第二章"
         },
         {
+          "id": "fulvou",
+          "title": "伊莎贝尔的度假之旅",
+          "url": "https://scp-wiki-cn.wikidot.com/fulvou",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "好诶，独属于我们三个的完美自驾游！伊莎贝尔·海尔格·阿纳斯塔西娅·帕瓦蒂·Wondertainment五世博士在拍摄完独属于她主演的剧集《真实的资本主义大冒险》两季后，终于迎来了难得的假期，这部剧集赚来的钱已经够堵上那些执行董事会的嘴喽。"
+        },
+        {
           "id": "longhuyehua",
           "title": "龙虎山夜话",
           "url": "https://scp-wiki-cn.wikidot.com/longhuyehua",
@@ -50476,6 +50482,16 @@
           "contentKind": "tale",
           "os": 11,
           "desc": "夏雨第一次见到她，是在工地上。"
+        },
+        {
+          "id": "originium-sky",
+          "title": "源石天空行动",
+          "url": "https://scp-wiki-cn.wikidot.com/originium-sky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "克拉克 欧内斯特坐在一个小方凳上，此时此刻，他正位于靠近 FCU（中央尤吉亚联邦）东南部的 GOCS“尖锐”号航空母舰的甲板上。 这是他漫长无聊的平叛日常的一部分，在灯塔战争过后，IUN 属下的国际联合国全球超自然联盟（IUNGOC）负责监视那些形迹可疑的爱尔吉亚人。而他，作为经历过那场 FCU、欧西亚和爱尔吉亚之间围绕轨道电梯而展开的惨烈的大战的舰载航空兵，自然而然来到了这艘在开战初期爱尔吉亚海空突袭中幸存下来的 GOCS“尖锐”号航空母舰上。"
         },
         {
           "id": "emerald-island",
@@ -51008,7 +51024,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 35,
-          "desc": "作者： Illusion Planet"
+          "desc": "作者：Illusion Planet 进入人事档案可查看该作者更多作品 发布日期：2020年3月11日 “马上进入战场环境。装备检查。无线电检查。”"
         },
         {
           "id": "fantasy-toilet-paper",
@@ -51291,16 +51307,6 @@
           "desc": "移动端下页面视觉效果可能不佳，建议使用宽屏设备或模式以获得最佳阅读体验"
         },
         {
-          "id": "mount-ararat-incident",
-          "title": "亚拉腊山事件 — 维基百科",
-          "url": "https://scp-wiki-cn.wikidot.com/mount-ararat-incident",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 43,
-          "desc": "作者： CogitoErgoMeow"
-        },
-        {
           "id": "wt-1-penguin-island",
           "title": "企鹅岛一日游",
           "url": "https://scp-wiki-cn.wikidot.com/wt-1-penguin-island",
@@ -51329,6 +51335,16 @@
           "contentKind": "tale",
           "os": 46,
           "desc": "太阳历2062年，殖民船SCPs坎特伯雷号在经过一次长程FTL航行后与地球失去联络。其于同年7月18日最后一次与地球进行同步奇术通信时所附带的坐标显示其位于飞马座HR8799附近，在这之后其再也没有对任何通信尝试做出回应。该飞船所在的飞马座HR8799距离太阳系约133.3光年，与其本应抵达的目标星系天秤座格利泽581偏差高达约134.8光年。"
+        },
+        {
+          "id": "mount-ararat-incident",
+          "title": "亚拉腊山事件 — 维基百科",
+          "url": "https://scp-wiki-cn.wikidot.com/mount-ararat-incident",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 43,
+          "desc": "作者： CogitoErgoMeow"
         },
         {
           "id": "comppp",
@@ -51401,14 +51417,13 @@
           "desc": "« 空地狂想曲 中心 | 湍流—其一 | 湍流--其二 »"
         },
         {
-          "id": "anaccident",
-          "title": "人间，异常，人生",
-          "url": "https://scp-wiki-cn.wikidot.com/anaccident",
-          "sourceManifest": "manifest_tales",
+          "id": "it-is-about-time",
+          "title": "进望渊旅",
+          "url": "https://scp-wiki-cn.wikidot.com/it-is-about-time",
+          "sourceManifest": "manifest_scp-int",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 52,
-          "desc": "陈老头和平常一样坐在校门口和其他老人打扑克，一边锻炼牌技一边等着他的孙子放学。"
+          "contentKind": "scp",
+          "os": 1
         },
         {
           "id": "riders-of-justice",
@@ -52284,16 +52299,6 @@
           "desc": "对SCP-6019的描述应储存于Site-102 C13亚层的遗物储存区。根据联合国际超自然法庭裁决456(c),对信仰系统以SCP-6019为基础的孤立宗教予以保护。因此,对这些社群的收容仅限于维护帷幕、保护平民。若涉及SCP-6019的宗教活动开始向异常社群之外扩张,SCP基金会保留对其进行压制的权力。 1963年1月17日更新: 根据监督者指令6019-19d,已宣告对于SCP-6019的进一步研究不具效率且浪费资源。因此,监督者指令已事先否决将SCP-6019用于研究目的。对指令6019-19d的任何申诉应…"
         },
         {
-          "id": "scp-6004",
-          "title": "彩虹巨蛇",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-6004",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 6,
-          "desc": "儘管基金會已盡最大的努力,但SCP-6004仍無法被收容,除非基金會能制訂出更強力的收容計畫,或SCP-6004自行回到非活躍狀態。因此現時的收容措施圍繞這方面的準備工作及最小化它所造成的附帶傷害展開。 SCP-6004將通過仍在運作的衛星進行持續的視像監控,如有需要,可直接徵用各國政府的衛星陣列。它的位置、移動方向、速度及活動需實時匯報,以便調派全球各地的特遣隊前往其可能的襲擊地點及區域疏散民眾。由於死傷人數眾多,在場特遣隊成員可酌情優先疏散更有可能生還的民眾。將於包括小鎮、基金會收容站點、被SCP-6004襲擊…"
-        },
-        {
           "id": "scp-6314",
           "title": "从帷幕时代中走出的宠物Post-Veil Pets",
           "url": "https://scp-wiki-cn.wikidot.com/scp-6314",
@@ -52359,6 +52364,16 @@
           "url": "https://scp-wiki-cn.wikidot.com/scp-9999-j",
           "role": "primaryArticle",
           "contentKind": "scp"
+        },
+        {
+          "id": "scp-6004",
+          "title": "彩虹巨蛇",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-6004",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "儘管基金會已盡最大的努力,但SCP-6004仍無法被收容,除非基金會能制訂出更強力的收容計畫,或SCP-6004自行回到非活躍狀態。因此現時的收容措施圍繞這方面的準備工作及最小化它所造成的附帶傷害展開。 SCP-6004將通過仍在運作的衛星進行持續的視像監控,如有需要,可直接徵用各國政府的衛星陣列。它的位置、移動方向、速度及活動需實時匯報,以便調派全球各地的特遣隊前往其可能的襲擊地點及區域疏散民眾。由於死傷人數眾多,在場特遣隊成員可酌情優先疏散更有可能生還的民眾。將於包括小鎮、基金會收容站點、被SCP-6004襲擊…"
         },
         {
           "id": "scp-9231",
@@ -52595,16 +52610,6 @@
           "desc": "SCP-CN-4514的依凭体当处于基金会与全球超自然联盟的共同监视下活动,为保障其安全并降低可能存在的之于常态社会的影响,该人员已在监督者议会之指令下纳入基金会中,由Site-CN-999负责管理。SCP-CN-4514的真实信息应当始终对其保密。 至2030年0█月██日,监督者议会宣布SCP-CN-4514已被摧毁,剩余旧版收容措施已无执行必要,同本档案剩余内容一并全部归档。 本项目档案及其附属资料应由Site-CN-999站点下属部门 巨兽危祸综合灾防班 Squad for Kaiju-integrated…"
         },
         {
-          "id": "scp-cn-184",
-          "title": "共同意识",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-184",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 16,
-          "desc": "由于项目的特殊性质,完全收容几乎是不可能的。SCP-CN-184-1作为基金会与SCP-CN-184的交涉对象被收容于标准人性SCP收容室内,每月批准其1500美元的消费额度,并允许其在每天的10:00PM-13:00PM以及17:00PM-20:00PM时间段内于SITE内作为0级人员活动,但必须处于至少两名安保人员的贴身监视下。"
-        },
-        {
           "id": "scp-cn-2532",
           "title": "世界上最安全的地方",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-2532",
@@ -52623,6 +52628,16 @@
           "contentKind": "scp",
           "os": 16,
           "desc": "SCP-CN-2152-1应被收容于Site-CN-05人形异常收容区的█号改造型I类人形异常收容室。 其收容室的主要修改在于对空间的进一步扩大与拥有更完备的日常基础设施与娱乐设施,于收容室的内部与外部皆装设总计十台斯克兰顿现实稳定锚。收容室内墙壁上被刻有奇术符文以限制SCP-CN-2152-1,符文的完整度应被监控实时监测。除此之外,符文也需每个月被检查一次,在发现符文缺失后应及时补充。 SCP-CN-2152应被放置于收容室中央的玻璃展台中被实时监视,收容人员应对包括但不限于温度、气压、休谟指数等数值的异常变化…"
+        },
+        {
+          "id": "scp-cn-184",
+          "title": "共同意识",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-184",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 16,
+          "desc": "由于项目的特殊性质,完全收容几乎是不可能的。SCP-CN-184-1作为基金会与SCP-CN-184的交涉对象被收容于标准人性SCP收容室内,每月批准其1500美元的消费额度,并允许其在每天的10:00PM-13:00PM以及17:00PM-20:00PM时间段内于SITE内作为0级人员活动,但必须处于至少两名安保人员的贴身监视下。"
         },
         {
           "id": "scp-cn-777",
@@ -53073,13 +53088,6 @@
           "desc": "作为SCP-CN-3156载体的电子收音机须被存放于Site-CN-97标准异常物品收容间中,收容环境需配备连续温度监测装置,当检测到舱室温度低于0°C触发警报。对SCP-CN-3156的访谈应每三天被进行一次,任何进入该收容间的人员应携带3个经改造的 SCP-504 ,以防止任何机密情报被泄露,人员不能携带任何电子设备。如发生收容突破事件,应摧毁SCP-CN-3156的新载体,并将其转移至新的电子收音机上。"
         },
         {
-          "id": "scp-cn-142-ex",
-          "title": "SCP-CN-142-EX",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-142-ex",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-cn-2960",
           "title": "深渊珍兽园",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-2960",
@@ -53098,6 +53106,13 @@
           "contentKind": "scp",
           "os": 46,
           "desc": "+ 已归档的收容措施1923.4.11 - 隐藏 SCP-CN-3611应被收容于Site-CN-03的Safe级异常收容区的一个尺寸为 30cm x 30cm x 30cm 的铅衬里合金收容箱内,至少有两名安保人员全天候看守。对项目进行的任何测试应当先向项目负责人申请,获得批准后在至少一名研究人员的陪同下进行。测试者完成测试后,应当由医护人员进行观察,2小时内无特殊异常情况方可离开。 + 已归档的收容措施1937.7.28 - 隐藏 SCP-CN-3611应被收容于Site-44 1 的Safe级收容区的一个尺寸…"
+        },
+        {
+          "id": "scp-cn-142-ex",
+          "title": "SCP-CN-142-EX",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-142-ex",
+          "role": "primaryArticle",
+          "contentKind": "scp"
         },
         {
           "id": "scp-cn-2762",
@@ -53160,16 +53175,6 @@
           "desc": "依据《行星级异常掩盖协议》,应在通用星图上掩盖SCP-CN-2113的存在,并虚构一个高危航行区来使常规航线规避SCP-CN-2113所在区域。 空间掩盖部 1 需每年在SCP-CN-2113附近设置一千个以上伪造的跃迁落点,来保证SCP-CN-2113不会向别处转移。 4038年5月11日更新: 由绝对反射镜面组成的直径约30个天文单位的球状巨型构造体“棱镜”已上线,该构造体需要一个包括了10,000名维护人员,120名光学异常收容专家和120名深空建筑师的收容团队在其中常驻。“棱镜”包含十层,每层被分为1.5*…"
         },
         {
-          "id": "scp-cn-2703",
-          "title": "我超，现实公有主义战士",
-          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-2703",
-          "sourceManifest": "manifest_scp-cn",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 56,
-          "desc": "介于SCP-CN-2703与高危性异常产生接触带来的高风险性,项目应被尽快捕获、控制并收容。对于项目传送能力的更优压制方案、与项目交涉和解的可能性正在研究中。其与全球超自然联盟的联系正在调查中。 目前SCP-CN-2703已被标记为GOI-918,此档案已归档,仅供参考。"
-        },
-        {
           "id": "scp-cn-3126",
           "title": "地平线-25℃",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-3126",
@@ -53188,6 +53193,16 @@
           "contentKind": "scp",
           "os": 57,
           "desc": "SCP-CN-1006目前仅允许被1级人员持有。SCP-CN-1006的持有者应在24小时内将该项目给予一位不处于项目名单上的基金会1级员工,一个员工数据库应被建立以用于安排项目在不同员工间的转移顺序。 当SCP-CN-1006的持有者开始寻找SCP-CN-1006时,他/她应被提醒SCP-CN-1006正处于其后背上。若SCP-CN-1006的持有者死亡,对项目的回收工作应被列为应急反应小组的V级优先事项。禁止在秘密站点工作的员工持有SCP-CN-1006。"
+        },
+        {
+          "id": "scp-cn-2703",
+          "title": "我超，现实公有主义战士",
+          "url": "https://scp-wiki-cn.wikidot.com/scp-cn-2703",
+          "sourceManifest": "manifest_scp-cn",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 56,
+          "desc": "介于SCP-CN-2703与高危性异常产生接触带来的高风险性,项目应被尽快捕获、控制并收容。对于项目传送能力的更优压制方案、与项目交涉和解的可能性正在研究中。其与全球超自然联盟的联系正在调查中。 目前SCP-CN-2703已被标记为GOI-918,此档案已归档,仅供参考。"
         },
         {
           "id": "scp-cn-034",
@@ -53900,6 +53915,7 @@
             "with-many-choices",
             "the-edge-of-all-light",
             "fire-of-unknown-origin",
+            "delta-wave",
             "special-assets",
             "goc-tale-sequence-awtok",
             "goc-tale-sequence-diplomacy",
@@ -53971,13 +53987,13 @@
             "another-goddamn-magic-system",
             "goc-or-that-guy-with-a-gun-fetish",
             "quiet-days",
-            "clef-and-dimitri-hit-the-road",
             "411",
-            "fulvou",
             "yangwen2002",
             "wt-2-fight-back-to-school",
+            "fulvou",
             "longhuyehua",
             "yangwen2001",
+            "originium-sky",
             "emerald-island",
             "zed-clef",
             "elliptic-geometry",
@@ -54060,10 +54076,10 @@
             "author-till-dawn",
             "alone-rain",
             "destroy-the-skip-1",
-            "mount-ararat-incident",
             "wt-1-penguin-island",
             "deserted-years",
             "operation-kellion-arrow",
+            "mount-ararat-incident",
             "comppp",
             "the-burning-jhor",
             "nobody-would-sing-the-rhythm-in-the-wing-again-and-again",
@@ -54071,7 +54087,7 @@
             "what-sin-we-shall-be",
             "109council",
             "turbulence-1",
-            "anaccident",
+            "it-is-about-time",
             "riders-of-justice",
             "means-left-to-us",
             "the-long-name",
@@ -54162,7 +54178,6 @@
             "scp-5525",
             "scp-6946",
             "scp-6019",
-            "scp-6004",
             "scp-6314",
             "scp-9728",
             "scp-2490",
@@ -54170,6 +54185,7 @@
             "scp-5400",
             "scp-5909",
             "scp-9999-j",
+            "scp-6004",
             "scp-9231",
             "scp-1583",
             "scp-2461",
@@ -54194,9 +54210,9 @@
             "scp-cn-760",
             "scp-cn-3892",
             "scp-cn-4514",
-            "scp-cn-184",
             "scp-cn-2532",
             "scp-cn-2152",
+            "scp-cn-184",
             "scp-cn-777",
             "scp-cn-2775",
             "scp-cn-1735",
@@ -54242,18 +54258,18 @@
             "scp-cn-2037",
             "scp-cn-2821",
             "scp-cn-3156",
-            "scp-cn-142-ex",
             "scp-cn-2960",
             "scp-cn-3611",
+            "scp-cn-142-ex",
             "scp-cn-2762",
             "scp-cn-1556",
             "scp-cn-4068",
             "scp-cn-2705",
             "scp-cn-455",
             "scp-cn-2113",
-            "scp-cn-2703",
             "scp-cn-3126",
             "scp-cn-1006",
+            "scp-cn-2703",
             "scp-cn-034",
             "scp-cn-644",
             "scp-cn-2699",
@@ -55965,7 +55981,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-5d856680dc0e94682d239e7ad80eba0d552432411e1c82fd0b5896811675c76c"
+        "structureHash": "sha256-25788d98cb20f194294a6e566d39c5745c46957306cb07fb54e7b468091022cc"
       },
       "primaryArticles": [
         {
@@ -56015,7 +56031,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 11,
+          "os": 12,
           "desc": "Ronald Stimson博士轻轻叹了一口气，走向设施深处。绑在他手臂上的重皮箱让他每走一步就晃一下，额外的重物不仅让他失去平衡还足以让他闪腰，一次又一次的把疼痛输送过他的身体。他不知道为什么是他被选中来执行这个使命，只知道他被选中了。只是不幸的遭遇吧，他认为。"
         },
         {
@@ -56056,7 +56072,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 5,
-          "desc": "Capitis 作者：Oboebandgeek99 本篇为Thaumiel计划而写。 http://scp-wiki.wikidot.com/oboebandgeek99http:scp-wiki-wikidot-com-oboebandgeek99▸ 该作者的更多作品 ◂（原文链接）http://scp-wiki.wikidot.com/oboebandgeek99▸ 该作者的更多作品 ◂"
+          "desc": "Capitis 作者：Oboebandgeek99 本篇为Thaumiel计划而写。 https://scp-wiki.wikidot.com/oboebandgeek99https:scp-wiki-wikidot-com-oboebandgeek99▸ 该作者的更多作品 ◂（原文链接）https://scp-wiki.wikidot.com/oboebandgeek99▸ 该作者的更多作品 ◂"
         },
         {
           "id": "exanimis",
@@ -56096,7 +56112,7 @@
           "role": "primaryArticle",
           "contentKind": "tale",
           "os": 2,
-          "desc": "Elenee FishTruck著。为Thaumiel计划而写。以 qnmt的提案 - 锁 为背景。 http://scp-wiki.wikidot.com/elenee-s-author-pagehttp:scp-wiki-wikidot-com-elenee-s-author-page▸ 该作者的更多作品 ◂（原文链接）http://scp-wiki.wikidot.com/elenee-s-author-page▸ 该作者的更多作品 ◂"
+          "desc": "Elenee FishTruck著。为Thaumiel计划而写。以 qnmt的提案 - 锁 为背景。 https://scp-wiki.wikidot.com/elenee-s-author-pagehttps:scp-wiki-wikidot-com-elenee-s-author-page▸ 该作者的更多作品 ◂（原文链接）https://scp-wiki.wikidot.com/elenee-s-author-page▸ 该作者的更多作品 ◂"
         },
         {
           "id": "serus",
@@ -64128,7 +64144,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-0b7359cb8db9e555d16816f165ba2c8e0e21077210ca6ab5766eb224323d6a8b"
+        "structureHash": "sha256-22988706592c93b07afcb9aab2a674cd8a0c82ee72c02288daee703a5bdb3d42"
       },
       "primaryArticles": [
         {
@@ -64140,14 +64156,14 @@
           "desc": "- 爆旋握饭：寿司陀螺 著："
         },
         {
-          "id": "yamizushi-blacklist-031",
-          "title": "禁止入店名单No.031 \"🎃·瓜人\"",
-          "url": "https://scp-wiki-cn.wikidot.com/yamizushi-blacklist-031",
+          "id": "yamizushi-file-no488",
+          "title": "闇壽司檔案 No.488 \"月餅\"",
+          "url": "https://scp-wiki-cn.wikidot.com/yamizushi-file-no488",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 59,
-          "desc": "食用寿司频率"
+          "os": 101,
+          "desc": "闇壽司檔案 No.488 \"月餅\" 作者： MScarlet ， 點此觀看我寫的其他作品 2025地點競賽 ，桂門隊參賽作品，“基石”主題 當共通的意義仍然存在，或許我們仍都是在過著同一個節日，一個致敬滿月的節日。"
         },
         {
           "id": "scp-1710-jp-j",
@@ -64386,6 +64402,16 @@
           "desc": "沒有回頭路的旅行 作者： MScarlet ， 點此觀看我寫的其他作品 2024夏季征文 參賽作品，「孤獨」主題"
         },
         {
+          "id": "yamizushi-blacklist-031",
+          "title": "禁止入店名单No.031 \"🎃·瓜人\"",
+          "url": "https://scp-wiki-cn.wikidot.com/yamizushi-blacklist-031",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 59,
+          "desc": "食用寿司频率"
+        },
+        {
           "id": "scp-cn-3961",
           "title": "鏡面閃店",
           "url": "https://scp-wiki-cn.wikidot.com/scp-cn-3961",
@@ -64414,16 +64440,6 @@
           "contentKind": "tale",
           "os": 43,
           "desc": "「寿司菜单」的一角。"
-        },
-        {
-          "id": "yamizushi-file-no488",
-          "title": "闇壽司檔案 No.488 \"月餅\"",
-          "url": "https://scp-wiki-cn.wikidot.com/yamizushi-file-no488",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 101,
-          "desc": "闇壽司檔案 No.488 \"月餅\" 作者： MScarlet ， 點此觀看我寫的其他作品 2025地點競賽 ，桂門隊參賽作品，“基石”主題 當共通的意義仍然存在，或許我們仍都是在過著同一個節日，一個致敬滿月的節日。"
         },
         {
           "id": "hatsumei-sentai-episode-49",
@@ -64516,7 +64532,7 @@
           "title": "Articles",
           "articleIDs": [
             "scp-1134-jp",
-            "yamizushi-blacklist-031"
+            "yamizushi-file-no488"
           ]
         },
         {
@@ -64572,10 +64588,10 @@
             "scp-cn-2693",
             "scp-622-fr",
             "the-travler-of-parallel-worlds",
+            "yamizushi-blacklist-031",
             "scp-cn-3961",
             "yamizushi-file-no491",
             "yamizushi-file-no000",
-            "yamizushi-file-no488",
             "hatsumei-sentai-episode-49",
             "yamizushi-file-no1221",
             "yamizushi-file-no010",
@@ -71396,7 +71412,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-dd74f2661dd42dac1287a6c267a6af7494f4ef5c8c483dfa393cf73758770def"
+        "structureHash": "sha256-fe2fb70816c50f2e8ca48beab8e9639074a597588b852fb75cd3d425534f6b04"
       },
       "primaryArticles": [
         {
@@ -71417,7 +71433,7 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "os": 10,
-          "desc": "SCP-347目前被安置在Site-17中一个5米x5米的房间中,与包含淋浴喷头与浴缸的卫生间相连,房间按其要求进行布置,包括一张大双人床,数件SUMO牌的家具,两张带扶手的椅子,一张桌子及转椅,数个书架及一台带有DVD播放器的电视。书架填满了各种书籍,主要是冒险小说,纯爱小说与艺术书籍。她被允许观看在她到达SCP基金会设施之前所摄电影或电视节目的DVD,并可以偶尔提出审查一些新作品以供观看的申请。虽然SCP-347大部分时间不穿衣服,她被允许拥有一个装有她要求的任何衣服的衣柜,以及用于自娱自乐的化妆品和假发。她每…"
+          "desc": "SCP-347目前被安置在Site-17中一个5米x5米的房间中,与包含淋浴喷头与浴缸的卫生间相连,房间按其要求进行布置,包括一张大双人床,数件SUMO牌的家具,两张带扶手的椅子,一张桌子及转椅,数个书架及一台带有DVD播放器的电视。书架填满了各种书籍,主要是冒险小说,禾林言情小说与艺术书籍。她被允许观看在她到达SCP基金会设施之前所摄电影或电视节目的DVD,并可以偶尔提出审查一些新作品以供观看的申请。虽然SCP-347大部分时间不穿衣服,她被允许拥有一个装有她要求的任何衣服的衣柜,以及用于自娱自乐的化妆品和假发。…"
         },
         {
           "id": "scp-444",
@@ -73397,7 +73413,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-c42c846ce29380509b69fd656c7545e62c374722868aeb6d75be2b076afffb79"
+        "structureHash": "sha256-daae460f2e05839323d36f2937fa3c585c60e2f967bae1fc9ca510ef2d6c311f"
       },
       "primaryArticles": [
         {
@@ -73901,6 +73917,16 @@
           "url": "https://scp-wiki-cn.wikidot.com/new-from-atf-cryptid-currency",
           "role": "primaryArticle",
           "contentKind": "tale"
+        },
+        {
+          "id": "76-stopwatch",
+          "title": "按停秒表",
+          "url": "https://scp-wiki-cn.wikidot.com/76-stopwatch",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "彵站在一个……房间？里面。四周一片白茫茫，看不出墙壁与天花板与地板的分界。就像虚空世界的反面，但仍然空无一物。 “有人吗？”彵说，反虚空随即变成了发光的塑料、缓缓闪烁的灯还有几张困惑而忧虑的脸庞。"
         }
       ],
       "supplementLinks": [],
@@ -73960,7 +73986,8 @@
             "scp-cn-3572",
             "found-in-a-dusty-corner-of-the-library",
             "histories",
-            "new-from-atf-cryptid-currency"
+            "new-from-atf-cryptid-currency",
+            "76-stopwatch"
           ]
         }
       ],
@@ -79000,7 +79027,7 @@
         "allowedHosts": [
           "scp-wiki-cn.wikidot.com"
         ],
-        "structureHash": "sha256-668878b390a2c59f42bda815f3fe4f3a1557ee4fcd697a13e1b5c5f6ed625b93"
+        "structureHash": "sha256-1b98f821254b3e3cff46cff8e33896e04e7740387cdf6783b07019c6909145c1"
       },
       "primaryArticles": [
         {
@@ -79554,13 +79581,183 @@
           "desc": "所涉人员：特工S████，特工F███ 日期： ██/██/████ 地点： ███████，奥地利 描述：继有关该地区异常活动的报告后，特工S████和F███被派往奥地利███████镇。抵达后，很明显的是，一位当地居民（██████ █████，之前是旅行推销员）已经自发地转变为一个大型的、种类不明的生物，类似于一种昆虫。对象有一层坚硬但并非无法穿透的外骨骼，并表现出类似节肢动物的解剖分段。值得注意的是，对象似乎保留了他之前人类形态时的大部分认知能力和记忆。对象是可以发声的，但他的声音到目前为止还不可能转化为…"
         },
         {
+          "id": "object-rememberus",
+          "title": "物件_记住我们（OBJECT_REMEMBERUS）",
+          "url": "https://scp-wiki-cn.wikidot.com/object-rememberus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "在吗，亲爱的操纵者？ 操纵者发现《你好夏洛特》的程序打开之后出现的不是他的那位夏洛特·威尔特夏，而是另一个人，那个克里斯在电视上看到的，白衣的夏洛特。"
+        },
+        {
+          "id": "fall-of-erathia",
+          "title": "埃拉西亚的沦陷",
+          "url": "https://scp-wiki-cn.wikidot.com/fall-of-erathia",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "On the first day man was granted a soul And with it , charity One the second day upon Earth was planted an irrevocable poison"
+        },
+        {
+          "id": "winnkibot",
+          "title": "一个机器少女在卡莫纳的奇遇",
+          "url": "https://scp-wiki-cn.wikidot.com/winnkibot",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "伊甸园马上就要迎来它的末日。在数据之海，夏生和亚托莉静静坐在海边，等待着消逝。 “亚托莉，对不起，我只能陪你到这了。” “没事的，夏生先生。这六十年已经够多了，我们彼此之间已经没有什么遗憾可，可是。“亚托莉停顿了一下。"
+        },
+        {
+          "id": "nightmare-spreads",
+          "title": "无处安眠之地，梦魇生生不息",
+          "url": "https://scp-wiki-cn.wikidot.com/nightmare-spreads",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "可是，这又是谁的噩梦？ 你我的噩梦。 “县”是一座孤独的小镇，在这隔绝之地，她如母亲般安抚每一名来到此处的镇民，告诉他们不必彷徨与惊慌，今后，你我的归宿唯有此处。"
+        },
+        {
+          "id": "pjgt",
+          "title": "穿越虹色之殿",
+          "url": "https://scp-wiki-cn.wikidot.com/pjgt",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "“嗨~大家好~我们，就是为大家所知的「怪盗团」……最近社会上不断爆发的要人负面事件，突如其来的精神异常事件以及废人化，其实并非原因不明…….那个混蛋想把整个国家都沉到海底，我们可不会坐视不管，对吧，团长？ 在那之前，我们会先收下这个国家！”"
+        },
+        {
+          "id": "half-life-and-portal",
+          "title": "针对黑山基地与光圈科技的监视报告及其附属文件",
+          "url": "https://scp-wiki-cn.wikidot.com/half-life-and-portal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "日志：针对黑山基地与光圈科技的监控 文档编号： ████ 保密等级：4级 前言：以下内容汇编自基金会驻黑山基地观测站（Site-██-B）与驻光圈科技观测站（Site-██-A）的监视记录、MTF Epsilon-6行动日志、Site-██指挥部通讯档案，MTF Zeta-9行动日志以及补充调查。本文件以时间顺序编排，包含监视周期内的合规审查记录、串联共振事件、光圈观测站遇袭、MTF行动、传送门风暴、状态评估。文件末尾附有关于异常高维人形“G-Man”与相关组织“Nobody”潜在关联的分析备忘录。"
+        },
+        {
+          "id": "teri-5k",
+          "title": "为什么，但是德丽傻",
+          "url": "https://scp-wiki-cn.wikidot.com/teri-5k",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 43,
+          "desc": "https://scpsandboxcn.wikidot.com/local--files/yourdearterim/TeriFoundation5%3A6 https://scpsandboxcn.wikidot.com/local--files/yourdearterim/TeriFoundation8%3A3"
+        },
+        {
+          "id": "maskstoryandfuture",
+          "title": "帷幕，故事与未来",
+          "url": "https://scp-wiki-cn.wikidot.com/maskstoryandfuture",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "“MTF-乙丑-10广东分队报告，已到达南廷市上空，行动代号“胎动”，目标目视可见。” “MTF-乙亥-36第二小队报告，海特洛市外围情况正常，我部已伪装成异象管理局行动小队与鉴定师汇合。” 一片赤红映入眼帘，夜幕里，有翼的超实体和异象们嘶鸣着，淋漓着鲜血。 Dr.Maple扶着直升机的扶手，静静地回忆着。他已无心眼前的混乱，几十年来，他的心血或将在这一夜付之东流。"
+        },
+        {
+          "id": "motorway-south-e-acc",
+          "title": "南向高速（E/ACC）路",
+          "url": "https://scp-wiki-cn.wikidot.com/motorway-south-e-acc",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 38,
+          "desc": "古老的爬虫脑 - 甜心，没必要踊过██将*那个词*救回来，你还记得自己4岁时死皮赖脸着想要家长为你买单的玩具吗？我想你大概不会嘴硬称自己还记得。你终究会忘记*那个词*，它与你无甚关联。"
+        },
+        {
+          "id": "isekai-girl-overdose",
+          "title": "异世界女孩重度依赖",
+          "url": "https://scp-wiki-cn.wikidot.com/isekai-girl-overdose",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 21,
+          "desc": "一只蓝紫色的眼睛凑得太近，失焦的屏幕上只能看见被LED照亮的睫毛。接着镜头晃了一下，银白色的双马尾、三色的蝴蝶结和新宿站外流动的人群终于对焦在合适的位置。"
+        },
+        {
+          "id": "hard-to-name-20261008",
+          "title": "但公主候补是什么啊你是说隔壁平行宇宙要打仗了吗",
+          "url": "https://scp-wiki-cn.wikidot.com/hard-to-name-20261008",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 21,
+          "desc": "和平的侵蚀有时候是一种比武力更强大的东西。 总而言之，若是放在退役之前、比如说十年前，前勇者应该在听到动静的第一时间就立刻拔剑；但这里实在和平——虽然还是常有纷乱，但至少不打仗——他又怠惰太久，漫长的宁静已经消解了战斗本能，于是他只来得及把牛奶瓶放到窗台上。从门口冲进来的是一个稍显熟悉的身影：深色肤色、尖耳和浑浊的黄色兽瞳，勇者想了半天，总算翻找出来一点关于老家的回忆。"
+        },
+        {
+          "id": "omori-and-gap",
+          "title": "心隙复于灯形",
+          "url": "https://scp-wiki-cn.wikidot.com/omori-and-gap",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "“在梦中迷失的孩子呀，请允许我向你讲一个故事吧。” Sunny的双手被一对粗糙的掌包裹着，不带一丝温度，面前的男人看不清面容，唯有闪烁着的影子。他想要触碰，却最终什么也没有摸到。白色的房间中，灯泡的裂隙爬满了两人的身形……"
+        },
+        {
+          "id": "originium-sky",
+          "title": "源石天空行动",
+          "url": "https://scp-wiki-cn.wikidot.com/originium-sky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "克拉克 欧内斯特坐在一个小方凳上，此时此刻，他正位于靠近 FCU（中央尤吉亚联邦）东南部的 GOCS“尖锐”号航空母舰的甲板上。 这是他漫长无聊的平叛日常的一部分，在灯塔战争过后，IUN 属下的国际联合国全球超自然联盟（IUNGOC）负责监视那些形迹可疑的爱尔吉亚人。而他，作为经历过那场 FCU、欧西亚和爱尔吉亚之间围绕轨道电梯而展开的惨烈的大战的舰载航空兵，自然而然来到了这艘在开战初期爱尔吉亚海空突袭中幸存下来的 GOCS“尖锐”号航空母舰上。"
+        },
+        {
+          "id": "cyberpunk-die",
+          "title": "《赛博的终结：第五次公司战争简明史》（节选）",
+          "url": "https://scp-wiki-cn.wikidot.com/cyberpunk-die",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 56,
+          "desc": "第八次超自然大战以超自然解放同盟的惨胜告终。在这场毁天灭地的战争中，数亿人口死亡，世界满目疮痍。作为战败方，曾经不可一世的SCP基金会被毁灭，破碎之神教会遭到清算，主战场欧洲遍布废墟。而战胜方的情况也不逞多让：美国内部社会矛盾激烈，并在之后的两次中美洲战争中惨败而解体，其西海岸诸州至今没有收回；俄罗斯在崩溃中重组为新苏联，对中东发动核战以垄断石油；中国也在混乱中发生巨大动荡，曾被基金会盘踞的西南地区百废待兴，中华新异会开始不安分地躁动……"
+        },
+        {
+          "id": "bunnyparable",
+          "title": "和动物森友会的大家一起玩，又称兔子寓言(The Bunny Parable)",
+          "url": "https://scp-wiki-cn.wikidot.com/bunnyparable",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 84,
+          "desc": "这是一只叫粉粉兔的兔子男人的故事。粉粉兔在草原快乐地生活着。粉粉兔喜欢草原。 粉粉兔每天的生活很简单：它每天醒来就会开始吃草。如果它还饿，就继续吃；如果它吃饱了，就不吃了。"
+        },
+        {
+          "id": "diyian",
+          "title": "生蚝列车杀人谜题",
+          "url": "https://scp-wiki-cn.wikidot.com/diyian",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 27,
+          "desc": "我一打开车厢门，送我来的两个侍者立马就退了回去，一直倒退入载我来的那辆马自达里，像乐高人偶放进卡座一样，流利地开走了。 我有点心虚地朝车厢里望去，果然，我是来得最晚的那个。这节车厢被造成了酒店大堂的样子，富丽的橙色灯光和四颗盆栽包绕着一个圆桌。可惜桌子边已经坐了五个人，再加上我，就显得有点小了。"
+        },
+        {
+          "id": "fuck-scp-foundation-mom",
+          "title": "The City，the Foundation",
+          "url": "https://scp-wiki-cn.wikidot.com/fuck-scp-foundation-mom",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 32,
+          "desc": "灰暗的天空压倒在“郊区”那荒芜土地上。 一具具楼房的残骸斜插在土层里，断裂的管线伸出来，吐出稀薄的冷雾。混凝土和钢铁的缝隙里隐约能看见灰绿而干枯的野草从中钻出，它们的生命已经走到终点了。锈蚀的交通轨道如同蜿蜒的蛇一般，从荒原延伸到看不见的地平线那一头。"
+        },
+        {
           "id": "1999umas",
           "title": "已归档暴雨落下的故事",
           "url": "https://scp-wiki-cn.wikidot.com/1999umas",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 0,
+          "os": 37,
           "desc": ">欢迎访问基金会信息管理中心。 >我是Rain.aic 1.0.0版本，承担辅助访问功能。 >请输入身份认证号码以获取您的权限等级，若未输入，则默认为0级权限。"
         },
         {
@@ -79574,22 +79771,13 @@
           "desc": "项目编号：SCP-CN-EGO 项目等级：Apollyon 特殊收容措施：推测SCP-CN-EGO于过去某时间点引发ϗK级“白夜黑昼”情景。为该项目制定收容措施被认为是不可能的。"
         },
         {
-          "id": "ls",
-          "title": "失效",
-          "url": "https://scp-wiki-cn.wikidot.com/ls",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 8
-        },
-        {
           "id": "europaclipper-barotrauma-cod13",
           "title": "欧罗巴快船",
           "url": "https://scp-wiki-cn.wikidot.com/europaclipper-barotrauma-cod13",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 8,
+          "os": 20,
           "desc": "科纳马拉混沌 聚居地 大厅 时钟指向下午，但万米冰壳之下的欧罗巴从未见过太阳的升起。因此，在这个时间点，所有木卫二的居民们大多遵循着自己的生物钟行事。聚居地的大厅内，行人匆匆走过，前往自己的目的地，却有两道身影立在大厅的过道内，不知道在等些什么。"
         },
         {
@@ -79599,7 +79787,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 19,
+          "os": 36,
           "desc": "亲爱的塞斯，我的操纵者： 我是夏洛特！好久不见了，对吧？弗雷和雨伞人说我们要搬家（按照霍尼克的说法，也许是把“房子”中我家的大门变成对着另一个空间的传送门？）去另一个地方完成学业，所以不得不暂时与您分离，搞得我一直很担心您。"
         },
         {
@@ -79619,7 +79807,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 12,
+          "os": 14,
           "desc": "林理洵躺在床上，高烧不退。他刚刚从第十个噩梦里醒来。 在往常，他的父亲会温柔地安慰他，用那双粗糙的手臂将他抱在怀里，给他唱笨拙的摇篮曲调子——而现在，这些寻常之事都变得遥不可及。"
         },
         {
@@ -79629,7 +79817,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 17,
+          "os": 42,
           "desc": "事件编号：shutdown-s-f-t 0 事件描述：承载SCP-2639-A运行的改造桌面计算机（SCP-2639-C）即将关机 事件原因：尽管基金会进行了深度维护策略，但替换主机与优化内件修缮工作由于异常改造不可行，难以阻止老式电脑主机的硬件缺陷。内存模式的超负荷运载与不可逆的硬件损毁即将导致强制关机。"
         },
         {
@@ -79639,18 +79827,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 43,
+          "os": 64,
           "desc": "空屋 The Empty House 《空屋》（英文：The Empty House)是一款卡牌类Roguelike游戏，由新晋团体——Reichenbach Studio（莱辛巴赫工作室）开发，由Letters娱乐发行。本游戏将在2026年10月至11月间发布。尽管这是一个非确定的日期，但考虑到该工作室初出茅庐，及许多老牌厂商在自信地宣布发售日期后仍然频繁跳票，审核部门相信这是可以理解的。"
-        },
-        {
-          "id": "drhennesy",
-          "title": "入侵",
-          "url": "https://scp-wiki-cn.wikidot.com/drhennesy",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 15,
-          "desc": "“本次更新的简要说明” “ESR的任务和设施运维人员不同。他们需要在陌生的地点根据自己的经验和能力来发现问题、尝试用手边的电工胶简单粘住它、不让它变得更大，然后等到能把事情真正解决的人来。有时候那个人来了，有时候那个人没来。但只要你尝试过，只要它没有变得更糟，这就是我们的使命。”"
         },
         {
           "id": "vacation-start",
@@ -79669,7 +79847,7 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 48
+          "os": 46
         },
         {
           "id": "noise-noise",
@@ -79898,8 +80076,8 @@
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 32,
-          "desc": "『联翼共赴新征程』"
+          "os": 33,
+          "desc": "『联翼共赴新征程』 那天，碎星坠落，同时带来战争。 大洋洲战争的爆发摧毁了过往的一切，人类再次步入太空的时代被宣告终结。这对于我——一个对浩瀚星空充满向往的孩子来说，无疑是个巨大的打击，那段时间我一直守在电视机前，望着联军的战地记者随着战局推进而一步步深入大洋洲腹地，然后眼睁睁地看着他们摧毁掉掉那些珍贵的天体观测设施。"
         },
         {
           "id": "parviz-rose",
@@ -81878,153 +82056,6 @@
           "desc": "« 西风·凶浪 | 荏苒荒凉 中心 | 待续 »"
         },
         {
-          "id": "the-last-day",
-          "title": "异常攻略手册：在最后一天，世界是铁做的",
-          "url": "https://scp-wiki-cn.wikidot.com/the-last-day",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 58,
-          "desc": "我剥开梦境，从思想的云端坠入现实。睁开眼，独自一人躲在床上，赤身裸体。半透的窗帘把花纹贴满了全身，只有脚踝上印有一条细腻阴郁的阳光。"
-        },
-        {
-          "id": "west-wind-03",
-          "title": "西风·凶浪",
-          "url": "https://scp-wiki-cn.wikidot.com/west-wind-03",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 28,
-          "desc": "« 西风·一字路口 | 荏苒荒凉 中心 | 西风·淘沙 »"
-        },
-        {
-          "id": "west-wind-02",
-          "title": "西风·一字路口",
-          "url": "https://scp-wiki-cn.wikidot.com/west-wind-02",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 23,
-          "desc": "作者： Agt_LEAZOV"
-        },
-        {
-          "id": "west-wind-01",
-          "title": "西风·起源",
-          "url": "https://scp-wiki-cn.wikidot.com/west-wind-01",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 28,
-          "desc": "作者： Agt_LEAZOV"
-        },
-        {
-          "id": "never-forget",
-          "title": "念念不忘，必有重逢",
-          "url": "https://scp-wiki-cn.wikidot.com/never-forget",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 20,
-          "desc": "“ 欢迎来到逆模因部 ，Pollux队长。还有，这不是你第一天——”"
-        },
-        {
-          "id": "af-cn-2021",
-          "title": "基金會假面—精選劇照合集（2021愚人節CN）",
-          "url": "https://scp-wiki-cn.wikidot.com/af-cn-2021",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 59,
-          "desc": "自文明的火光亮起，無窮無盡的惡意想要將之熄滅， 而我們至今仍然能在陽光下行走，全因為它的活躍……"
-        },
-        {
-          "id": "arknights-revue",
-          "title": "天上掉下来个LG~骡德岛贺岁新片拍摄中~",
-          "url": "https://scp-wiki-cn.wikidot.com/arknights-revue",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 40,
-          "desc": "作者： Misaka19092nd"
-        },
-        {
-          "id": "gensokyo-satori",
-          "title": "旧地狱专项研究报告系列-其一",
-          "url": "https://scp-wiki-cn.wikidot.com/gensokyo-satori",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 74,
-          "desc": "警告：下列文件为4级机密"
-        },
-        {
-          "id": "gensokyo-border",
-          "title": "结界的基本观点及举例",
-          "url": "https://scp-wiki-cn.wikidot.com/gensokyo-border",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 48,
-          "desc": "LAFCADIO HEARN,M. J. And Filósofo(1978c). The basic power science view.Magic 77,494-500"
-        },
-        {
-          "id": "steppenwolf",
-          "title": "荒原狼：S生物计划",
-          "url": "https://scp-wiki-cn.wikidot.com/steppenwolf",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 23,
-          "desc": "看着自己眼前这棵从巨大的榕树中凿出的神殿，麦格·克里莫森（Meg Crimson）不由得发出了惊叹。"
-        },
-        {
-          "id": "watshar-convention",
-          "title": "20200913五大湖奇異點事件-亞特蘭提斯毀滅-19370707北京奇異點事件",
-          "url": "https://scp-wiki-cn.wikidot.com/watshar-convention",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 24,
-          "desc": "重要資訊： 本文檔乃為了理解一連串統稱為「20200913五大湖奇異點事件」的孿生宇宙增加現象原因而建立於2040/2/29，下文的「至今」皆為截至今日。"
-        },
-        {
-          "id": "j-and-pictures-homepage",
-          "title": "我房里有些好康的——JAND的申必画室",
-          "url": "https://scp-wiki-cn.wikidot.com/j-and-pictures-homepage",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "sharkypedia-eoyemlau",
-          "title": "游音流 - 鲨击百科",
-          "url": "https://scp-wiki-cn.wikidot.com/sharkypedia-eoyemlau",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 306,
-          "desc": "此条目经 殴打鲨鱼中心 滑齿龙议会秘书处 认定。 （20██年██月██日） 可信层次：基本符合事实，需专业人士进一步编辑。"
-        },
-        {
-          "id": "night-voyager-ps-02",
-          "title": "PS-02 坏运",
-          "url": "https://scp-wiki-cn.wikidot.com/night-voyager-ps-02",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 32,
-          "desc": "作者： Agent Phage ，可于 人事档案 查看该作者的其他作品。"
-        },
-        {
-          "id": "the-opreation-0-the-light-of-the-door",
-          "title": "第零章：“风暴异门”",
-          "url": "https://scp-wiki-cn.wikidot.com/the-opreation-0-the-light-of-the-door",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 19,
-          "desc": "前传：地球往事 »第一部分·“身先士卒” ——第零章：“风暴异门”"
-        },
-        {
           "id": "fondation-a-valnuit",
           "title": "基金會在夜谷",
           "url": "https://scp-wiki-cn.wikidot.com/fondation-a-valnuit",
@@ -82110,16 +82141,31 @@
           "id": "02-articles",
           "title": "中文原创",
           "articleIDs": [
+            "object-rememberus",
+            "fall-of-erathia",
+            "winnkibot",
+            "nightmare-spreads",
+            "pjgt",
+            "half-life-and-portal",
+            "teri-5k",
+            "maskstoryandfuture",
+            "motorway-south-e-acc",
+            "isekai-girl-overdose",
+            "hard-to-name-20261008",
+            "omori-and-gap",
+            "originium-sky",
+            "cyberpunk-die",
+            "bunnyparable",
+            "diyian",
+            "fuck-scp-foundation-mom",
             "1999umas",
             "scp-cn-ego",
-            "ls",
             "europaclipper-barotrauma-cod13",
             "device-deus-ex-machina",
             "sanfu-with-yanhuo-1",
             "sanfu-with-yanhuo-2",
             "dragon-dianjing",
             "teh",
-            "drhennesy",
             "vacation-start",
             "usb",
             "noise-noise",
@@ -82344,22 +82390,7 @@
             "nagano-fire",
             "terra-ib-01",
             "ebma-7355",
-            "west-wind-04",
-            "the-last-day",
-            "west-wind-03",
-            "west-wind-02",
-            "west-wind-01",
-            "never-forget",
-            "af-cn-2021",
-            "arknights-revue",
-            "gensokyo-satori",
-            "gensokyo-border",
-            "steppenwolf",
-            "watshar-convention",
-            "j-and-pictures-homepage",
-            "sharkypedia-eoyemlau",
-            "night-voyager-ps-02",
-            "the-opreation-0-the-light-of-the-door"
+            "west-wind-04"
           ]
         },
         {
