@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791712936,
-  "generatedAt": "2026-10-11T10:02:16Z",
-  "chunkRevision": "sha256-773d66e0a486aff85da2df6995bdad6685ed2da9e06387da5c5086e14456bcbc",
+  "listVersion": 1791887130,
+  "generatedAt": "2026-10-13T10:25:30Z",
+  "chunkRevision": "sha256-7dbfbd1d0a94482a80dfdb17e5aa194a15c21c5d0f1527bcd49b91a9ea085eb0",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791712819,
-        "generatedAt": "2026-10-11T10:00:19Z",
-        "contentHash": "sha256-100f48af3c2e95df50cb125280e3bf66f59095b6e72b37285bc2630b5a4a1acd"
+        "listVersion": 1791886974,
+        "generatedAt": "2026-10-13T10:22:54Z",
+        "contentHash": "sha256-3072a85392a5f74a365be5927823adb5fdbe675da6c95aa4471f2d848207335c"
       },
       {
         "kind": "manifest_scp-cs",
@@ -7619,6 +7619,169 @@
             "scp-2987",
             "scp-2806",
             "scp-5560"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-cs:collection:series:jeste-jednu-rundu-hub",
+      "branchID": "scp-cs",
+      "kind": "series",
+      "hubID": "jeste-jednu-rundu-hub",
+      "title": "Ještě jednu rundu hub",
+      "sourceListURL": "http://scp-cs.wikidot.com/jeste-jednu-rundu-hub",
+      "officialHubURL": "http://scp-cs.wikidot.com/jeste-jednu-rundu-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "jeste-jednu-rundu-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "jeste-jednu-rundu-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesCs archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Native Series membership is the union of official hub works and the reviewed canonical tag."
+      },
+      "memberManifests": [
+        "manifest_scp-cs",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "cs_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-cs.wikidot.com"
+        ],
+        "structureHash": "sha256-d9520f83ce1c1a53788b8cba7e2fdc4d16b0f25f8e16bd2ee4829c2fe40d0fe4"
+      },
+      "primaryArticles": [
+        {
+          "id": "jeste-jednu-rundu",
+          "title": "Ještě jednu rundu?",
+          "url": "http://scp-cs.wikidot.com/jeste-jednu-rundu",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "Název: Ještě jednu rundu? Autor: Brian DAmmas"
+        },
+        {
+          "id": "na-rozcesti-loajality",
+          "title": "Na rozcestí loajality",
+          "url": "http://scp-cs.wikidot.com/na-rozcesti-loajality",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Na rozcesti loajality Autor: Brian DAmmas"
+        },
+        {
+          "id": "bolestive-vzpominky",
+          "title": "Bolestivé vzpomínky",
+          "url": "http://scp-cs.wikidot.com/bolestive-vzpominky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Bolestivé vzpomínky Autor: Brian DAmmas"
+        },
+        {
+          "id": "vyzvednuti-zasilky",
+          "title": "Vyzvednutí zásilky",
+          "url": "http://scp-cs.wikidot.com/vyzvednuti-zasilky",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Ještě jednu rundu? Autor: Brian DAmmas"
+        },
+        {
+          "id": "slzy-v-doutnajicim-oblaku-koure",
+          "title": "Slzy v doutnajícím oblaku kouře",
+          "url": "http://scp-cs.wikidot.com/slzy-v-doutnajicim-oblaku-koure",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Slzy v doutnajícím oblaku kouře Autor: Brian DAmmas"
+        },
+        {
+          "id": "sermirsky-valcik-na-rozloucenou",
+          "title": "Šermířský valčík na rozloučenou",
+          "url": "http://scp-cs.wikidot.com/sermirsky-valcik-na-rozloucenou",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Název: Šermířský valčík na rozloučenou Autor: Brian DAmmas"
+        },
+        {
+          "id": "kat-vi-ze-vyhraje",
+          "title": "Kat ví, že vyhraje",
+          "url": "http://scp-cs.wikidot.com/kat-vi-ze-vyhraje",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Kat ví, že vyhraje Autor: Brian DAmmas"
+        },
+        {
+          "id": "stary-znamy",
+          "title": "Starý známý",
+          "url": "http://scp-cs.wikidot.com/stary-znamy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "Název: Starý známý Autor: Brian DAmmas"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "jeste-jednu-rundu",
+            "na-rozcesti-loajality",
+            "bolestive-vzpominky",
+            "vyzvednuti-zasilky",
+            "slzy-v-doutnajicim-oblaku-koure",
+            "sermirsky-valcik-na-rozloucenou",
+            "kat-vi-ze-vyhraje",
+            "stary-znamy"
           ]
         }
       ]
