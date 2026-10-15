@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791802766,
-  "generatedAt": "2026-10-12T10:59:26Z",
-  "chunkRevision": "sha256-ff04498c31f0891d4801181082a262aa8c0c3ef14431ed1b6f87f285ec6e85c8",
+  "listVersion": 1792051413,
+  "generatedAt": "2026-10-15T08:03:33Z",
+  "chunkRevision": "sha256-ea502785acd57456892a9d9922659c5ae4d663b2022b8b628c71cf4b7da5d2f9",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-th",
         "path": "DataPipeline/list/th/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1786510298,
-        "generatedAt": "2026-08-12T04:51:38Z",
-        "contentHash": "sha256-a067566c8013491de32a008d61486f9219505e1e99aae6f96bbadfc440a8c31a"
+        "listVersion": 1792051413,
+        "generatedAt": "2026-10-15T08:03:33Z",
+        "contentHash": "sha256-6fcb11b275c7ecbe9e23413add3c04d1b4e7a2e8a382a157f5ed59332e6a6895"
       },
       {
         "kind": "manifest_scp-int",
@@ -66,9 +66,9 @@
       "branchID": "scp-th",
       "path": "DataPipeline/list/th/th_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1784451344,
-      "generatedAt": "2026-08-10T10:39:53Z",
-      "contentHash": "sha256-c47252307bd7695a6746455320733664eb576d8cb5cef5f45867a385e26172e8"
+      "listVersion": 1792051362,
+      "generatedAt": "2026-10-15T08:02:42Z",
+      "contentHash": "sha256-41a0a0f0cf0f3298a6f27bf9dc9489550e6855295c993e32ee426074a0d1daea"
     }
   },
   "collections": [
@@ -546,6 +546,46 @@
       "primaryArticles": [],
       "supplementLinks": [],
       "description": "เบนจามิน คอนดรากิ ผู้ชายที่โตเป็นผู้ใหญ่และผู้อำนวยการไซต์-17 ที่ดันเจอปัญหาเข้าให้แล้วนะสิ"
+    },
+    {
+      "id": "scp-th:collection:canon:the-world-kept-turning-hub",
+      "branchID": "scp-th",
+      "kind": "canon",
+      "hubID": "the-world-kept-turning-hub",
+      "title": "โลกยังผันจรเรื่อยไป",
+      "sourceListURL": "http://scp-th.wikidot.com/the-world-kept-turning-hub",
+      "officialHubURL": "http://scp-th.wikidot.com/the-world-kept-turning-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ศูนย์กลาง",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ศูนย์กลาง",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-th",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "th_tag.json",
+        "emptySectionTitle": "บทความ",
+        "allowEmpty": true,
+        "verifiedEmpty": true,
+        "structureHash": "sha256-b352330737b2664607e7db8e318df5441a8e0d47e9e201015a7a27c290c61586"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "มนตราจากไปแล้ว ไม่มีใครรู้ว่ามันเกิดขึ้นได้อย่างไรหรือเพราะว่าอะไร แต่ที่สำคัญนั่นก็คือ ความผิดปกตินั้นได้สิ้นสูญลงแล้ว สำหรับบางคน มันได้หายไปพร้อมเสียงอึกทึกใหญ่โต แต่สำหรับคนหมู่มาก มันได้ดับวูบไปด้วยเพียงเสียงกระซาบแผ่วเบา ทุกคนจึงทำได้แค่รวบรวมเศษซากที่หลงเหลือเอาไว้ สุดท้ายแล้ว โลกก็ยังผันจรเรื่อยไป"
     }
   ]
 }
