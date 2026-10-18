@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791199187,
-  "generatedAt": "2026-10-05T11:19:47Z",
-  "chunkRevision": "sha256-7a6422dbfc9049dc6315b847204bc5263128c164661bc4bbbc69d511815ea4b4",
+  "listVersion": 1792310623,
+  "generatedAt": "2026-10-18T08:03:43Z",
+  "chunkRevision": "sha256-68f88864920c5af5d445838e24d1cbd6d1eeb511f088eef196ec7b4329e60f21",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-pt",
         "path": "DataPipeline/list/pt/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791198961,
-        "generatedAt": "2026-10-05T11:16:01Z",
-        "contentHash": "sha256-93b01b05fdde02dcffa5e02016a234b5478348dce4f74eef9e8f165d56864584"
+        "listVersion": 1792310623,
+        "generatedAt": "2026-10-18T08:03:43Z",
+        "contentHash": "sha256-ac610379f9c4c438cdb1ed091ef1281f4c014ec304096e7da4c19ab752d50a37"
       },
       {
         "kind": "manifest_scp-int",
@@ -66,9 +66,9 @@
       "branchID": "scp-pt",
       "path": "DataPipeline/list/pt/pt_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1789456678,
-      "generatedAt": "2026-09-15T07:17:58Z",
-      "contentHash": "sha256-dab127b24075bce016c36e8db55f20b3acdadc62cbddc9c10f4c31f21a2d4392"
+      "listVersion": 1792310559,
+      "generatedAt": "2026-10-18T08:02:39Z",
+      "contentHash": "sha256-5bd79b5fe09b91bb50e7f4c37a2d862f317dded960fbd5df695354b990872aea"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -12962,6 +12962,106 @@
       "primaryArticles": [],
       "supplementLinks": [],
       "description": "A Fundação Lusófona, \"Filial Lusófona da Fundação\" ou \"SCP-PT\", é uma instituição autônoma parte da grande SCP Foundation. Institucionalmente, possui jurisdição e jurisprudência para operar promovendo ações de segurança, contenção, proteção e quaisquer outras ações necessárias para assegurar a proteção da normalidade nos territórios lusófonos (falantes de Português) ao redor do mundo. Relevantemente, a Fundação Lusófona é reconhecida pelos governos de Brasil, e Portugal como a organização oficialmente responsável pela proteção destes territórios nacionais."
+    },
+    {
+      "id": "scp-pt:collection:series:jakartan-methodology",
+      "branchID": "scp-pt",
+      "kind": "series",
+      "hubID": "jakartan-methodology",
+      "title": "Metodologia Jacartana",
+      "sourceListURL": "http://scp-pt-br.wikidot.com/jakartan-methodology",
+      "officialHubURL": "http://scp-pt-br.wikidot.com/jakartan-methodology",
+      "hubPresentation": "standard",
+      "canonicalTag": "jakartan-methodology",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "jakartan-methodology",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-pt",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "pt_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scp-pt-br.wikidot.com"
+        ],
+        "structureHash": "sha256-cbd52b0edc430bb14c4d12859733b7e1d75ecc3d077e4b582c744d5ca73be47b"
+      },
+      "primaryArticles": [
+        {
+          "id": "an-0189",
+          "title": "AN/0189 (\"Alang Kakung\")",
+          "url": "http://scp-pt-br.wikidot.com/an-0189",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "an-1712",
+          "title": "AN/1712 (\"Lacuna de Kudus\")",
+          "url": "http://scp-pt-br.wikidot.com/an-1712",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "indonesian-occult-games-thread",
+          "title": "Thread sobre Jogos Ocultos Indonésios",
+          "url": "http://scp-pt-br.wikidot.com/indonesian-occult-games-thread",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-metodologia-jacartana",
+          "title": "Metodologia Jacartana",
+          "articleIDs": [
+            "an-0189",
+            "an-1712",
+            "indonesian-occult-games-thread"
+          ]
+        }
+      ],
+      "description": "PTE-0121-Templo-Moinho-Kruiden Rigen O Instituto ainda era jovem. Mas jovem não significa ingênuo."
     },
     {
       "id": "scp-pt:collection:series:end-of-line-hub",
