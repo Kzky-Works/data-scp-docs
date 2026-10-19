@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1792137863,
-  "generatedAt": "2026-10-16T08:04:23Z",
-  "chunkRevision": "sha256-e6cc27b5f0d483203c68671f4f4ec76fe9828b6d00059c6a75f8349cb3a840ef",
+  "listVersion": 1792394458,
+  "generatedAt": "2026-10-19T07:20:58Z",
+  "chunkRevision": "sha256-e57a772121f7acc6a4e3d71fd315147b5e4c16cc13f8093c3873217781d01e2f",
   "builtFrom": {
     "manifests": [
       {
@@ -10,36 +10,36 @@
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791886453,
-        "generatedAt": "2026-10-13T10:14:13Z",
-        "contentHash": "sha256-abd62d8f34fa93f9b42ec17702d02e659266d12b6725a788afc5cc7d551582ad"
+        "listVersion": 1792394458,
+        "generatedAt": "2026-10-19T07:20:58Z",
+        "contentHash": "sha256-c304b1d2995d77a46c4a9e0671d048a5b09c8d43f959c16638ff0bfadf92ca6f"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1792137714,
-        "generatedAt": "2026-10-16T08:01:54Z",
-        "contentHash": "sha256-d4662184c341d93ee7367dd16d0a54c19b20e68f92a011fbebb7607b09431c08"
+        "listVersion": 1792394024,
+        "generatedAt": "2026-10-19T07:13:44Z",
+        "contentHash": "sha256-37904a122805c40d529887a64ec2a76d0fef0c6b7390a80f576770b5a558585b"
       },
       {
         "kind": "manifest_scp-fr",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_scp-fr.json",
         "schemaVersion": 2,
-        "listVersion": 1791188791,
-        "generatedAt": "2026-10-05T08:26:31Z",
-        "contentHash": "sha256-063682d13693d2aaca757ce6f983f83860de7e54abcd67c7a942c2c713dc5ac4"
+        "listVersion": 1792393858,
+        "generatedAt": "2026-10-19T07:10:58Z",
+        "contentHash": "sha256-d2415a1fbbbb3add7e64cf4453b0fbb99bafedaafb9c16bd78ea3c87f022c5c2"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-fr",
         "path": "DataPipeline/list/fr/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1791795386,
-        "generatedAt": "2026-10-12T08:56:26Z",
-        "contentHash": "sha256-7ee3abd973eca1c494cfdfacceacb3c46a30bad8975b97d27d2e3585a6827e8b"
+        "listVersion": 1792393990,
+        "generatedAt": "2026-10-19T07:13:10Z",
+        "contentHash": "sha256-dfbf1b84d80c13097fee24e7eac9ffba8613bbf4dcceab31280eaf18e2f143d0"
       }
     ],
     "seedReview": {
@@ -57,9 +57,9 @@
       "branchID": "scp-fr",
       "path": "DataPipeline/list/fr/fr_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1791188930,
-      "generatedAt": "2026-10-05T08:28:50Z",
-      "contentHash": "sha256-1d53be93a7bfe88561dfa43c0703320cba86b01d4f087228b652cc16f607f665"
+      "listVersion": 1792393990,
+      "generatedAt": "2026-10-19T07:13:10Z",
+      "contentHash": "sha256-bf684ff08c780fe9c193862d4290d4c7afbb2a0887e4155fb44b5485dd8f2f46"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -3777,7 +3777,7 @@
         "allowedHosts": [
           "fondationscp.wikidot.com"
         ],
-        "structureHash": "sha256-24caa76c4c1932f659c3bd0f7f489b4be6bbfe89dad0c14ce32b953413079597"
+        "structureHash": "sha256-38f67121e35d64d085e42097d16c57342c002e72a2fc5d0c48755db968a1e489"
       },
       "primaryArticles": [
         {
@@ -3979,6 +3979,15 @@
           "role": "primaryArticle",
           "os": 22,
           "desc": "Le couteau passa une nouvelle fois au ras de sa peau, et une mèche brune tomba comme une feuille morte. Chaque passage de la lame crissait légèrement, un crépitement organique qui lui rappelait celui du cuir qu’on arrache d’une carcasse."
+        },
+        {
+          "id": "lanouvellegeneration",
+          "title": "La Nouvelle Génération - Chapitre 1",
+          "url": "https://fondationscp.wikidot.com/lanouvellegeneration",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "os": 8,
+          "desc": "Sur les pentes ardues d'un bois coréen, une poignée de chevrettes des marais broutaient ensemble. Ce n'était pas la saison des amours, alors leur territorialité avait diminué. Leur groupe, constitué d'à peine une demi-douzaine de têtes, n'était qu'une goutte d…"
         },
         {
           "id": "le-pacte",
@@ -4189,6 +4198,7 @@
             "gds-ichor",
             "gds-typeo",
             "je-crois-qu-on-va-s-en-sortir",
+            "lanouvellegeneration",
             "le-pacte",
             "le-phare-dans-la-tempete",
             "le-son-des-clochettes",
@@ -9394,7 +9404,7 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-f8e87ab028d2079965ac23c03cea31070775af96d09edc472b693bc1fe44da6a"
+        "structureHash": "sha256-0eb2a6bcfc2a828f40ab37603bdd4c72c34ff842bac6c3422d176b0c083b247e"
       },
       "primaryArticles": [
         {
@@ -9404,6 +9414,13 @@
           "role": "primaryArticle",
           "contentKind": "scp",
           "desc": "▷ SCP-7243 par Vaalxeny ▷ SCP-8808 par macro_au_micro ▷ SCP-6183 par Vaalxeny ▷ SCP-6488 par Vaalxeny ▷ SCP-6659 par Vaalxeny"
+        },
+        {
+          "id": "white-space-hub",
+          "title": "Choisir une page du catalogue Deepwell aléatoire ?",
+          "url": "https://fondationscp.wikidot.com/white-space-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
         },
         {
           "id": "scp-4260",
@@ -9422,13 +9439,6 @@
           "desc": "Nagiros"
         },
         {
-          "id": "white-space-hub",
-          "title": "espace blanc (CENTRE)",
-          "url": "https://fondationscp.wikidot.com/white-space-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
           "id": "admonition",
           "title": "CENTRE ADMONITION",
           "url": "https://fondationscp.wikidot.com/admonition",
@@ -9445,9 +9455,9 @@
           "title": "Histoires",
           "articleIDs": [
             "scp-7243",
+            "white-space-hub",
             "scp-4260",
             "scp-4755",
-            "white-space-hub",
             "admonition"
           ]
         }
@@ -11172,18 +11182,15 @@
         "mode": "officialHubStructure",
         "tagSource": "fr_tag.json",
         "emptySectionTitle": "Articles",
-        "structureHash": "sha256-2fef72e058869d6c20c48d414c18368cb27db7deeda6f42188fa1414384f610a"
+        "structureHash": "sha256-9e1c5d2c7c5ada8cae4e7dd2e6fbd5f0e69d6572edf8da9d75cb166ca64367da"
       },
       "primaryArticles": [
         {
-          "id": "list-of-common-anomalous-misconceptions",
-          "title": "Liste d'idées reçues répandues sur l'anormal",
-          "url": "https://fondationscp.wikidot.com/list-of-common-anomalous-misconceptions",
-          "sourceManifest": "manifest_tales",
+          "id": "8000-dead-rats-hub",
+          "title": "Centre de 8000 Rats Morts",
+          "url": "https://fondationscp.wikidot.com/8000-dead-rats-hub",
           "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 6,
-          "desc": "Centre des Canons Anglais » Centre des profondeurs des archives du Site-120 / Centre de Non-Retour » Liste des idées reçues répandues sur l'anormal"
+          "contentKind": "tale"
         },
         {
           "id": "scp-5464",
@@ -11310,6 +11317,16 @@
           "contentKind": "scp"
         },
         {
+          "id": "list-of-common-anomalous-misconceptions",
+          "title": "Liste d'idées reçues répandues sur l'anormal",
+          "url": "https://fondationscp.wikidot.com/list-of-common-anomalous-misconceptions",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Centre des Canons Anglais » Centre des profondeurs des archives du Site-120 / Centre de Non-Retour » Liste des idées reçues répandues sur l'anormal"
+        },
+        {
           "id": "kompas-parapolityczny-na-trudne-czasy",
           "title": "déVoilé : une boussole para-politique en ces temps difficiles",
           "url": "https://fondationscp.wikidot.com/kompas-parapolityczny-na-trudne-czasy",
@@ -11325,13 +11342,6 @@
           "contentKind": "tale",
           "os": 2,
           "desc": "Centre des Canons Anglais » Centre des profondeurs des archives du Site-120 / Centre de Non-Retour » Qu'est-ce qui se passe avec tous les plieurs de réalité ? — Une vue d'ensemble démographique de la prévalence ontocinétique mondiale"
-        },
-        {
-          "id": "8000-dead-rats-hub",
-          "title": "8000 Rats Morts",
-          "url": "https://fondationscp.wikidot.com/8000-dead-rats-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
         },
         {
           "id": "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri",
@@ -11362,7 +11372,7 @@
           "id": "01-articles-recents",
           "title": "Articles récents",
           "articleIDs": [
-            "list-of-common-anomalous-misconceptions",
+            "8000-dead-rats-hub",
             "scp-5464"
           ]
         },
@@ -11453,24 +11463,24 @@
           ]
         },
         {
-          "id": "14-scp-9415-seconde-chance",
+          "id": "14-ordre-mef-7629",
+          "title": "Ordre MEF-7629",
+          "articleIDs": [
+            "list-of-common-anomalous-misconceptions"
+          ]
+        },
+        {
+          "id": "15-scp-9415-seconde-chance",
           "title": "SCP-9415 : Seconde chance",
           "articleIDs": [
             "kompas-parapolityczny-na-trudne-czasy"
           ]
         },
         {
-          "id": "15-sang-poudre-et-bruyeres",
+          "id": "16-sang-poudre-et-bruyeres",
           "title": "Sang, poudre et bruyères [🌎]",
           "articleIDs": [
             "what-s-up-with-all-the-reality-benders"
-          ]
-        },
-        {
-          "id": "16-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "8000-dead-rats-hub"
           ]
         },
         {
