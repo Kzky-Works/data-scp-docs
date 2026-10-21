@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1792398405,
-  "generatedAt": "2026-10-19T08:26:45Z",
-  "chunkRevision": "sha256-4b1486bac423a181f26e29781cda5cd5b03b0a0fe22779df2a6592d8a95b6e97",
+  "listVersion": 1792570788,
+  "generatedAt": "2026-10-21T08:19:48Z",
+  "chunkRevision": "sha256-b3766a3db45189e81c08c610147cb868990fab348b2550398d54d57ff1fb8076",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-ko",
         "path": "DataPipeline/list/ko/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1792398405,
-        "generatedAt": "2026-10-19T08:26:45Z",
-        "contentHash": "sha256-dc6c39bbd9e9260c9cada5de9fddc8120b4a37dc43a3b0b353ba7e8b8eddd3ce"
+        "listVersion": 1792570788,
+        "generatedAt": "2026-10-21T08:19:48Z",
+        "contentHash": "sha256-41418ea3e9017e5ee280dc547cfdd7a3bddf7a85d6c389357128743e97630ef0"
       },
       {
         "kind": "manifest_gois",
@@ -30141,6 +30141,5135 @@
           ]
         }
       ]
+    },
+    {
+      "id": "scp-ko:collection:series:amnesticization",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "amnesticization",
+      "title": "잊어뻐리우 팀 허브",
+      "sourceListURL": "https://scpko.wikidot.com/amnesticization",
+      "officialHubURL": "https://scpko.wikidot.com/amnesticization",
+      "hubPresentation": "standard",
+      "canonicalTag": "amnesticization",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "amnesticization",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-96fe0d656d29232fdd004b15fef64a5585a364bebcf3d2ffb1fd39762f94805b"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-3484",
+          "title": "잃어버린 조각들",
+          "url": "https://scpko.wikidot.com/scp-3484",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "SCP-3484 및 영어 번역본이 제66기지의 표준 변칙개체 보관함에 보관되어 있다. 표준형 자물쇠 및 점검 절차 외의 특별한 격리는 필요하지 않다. SCP-3484를 탐독할 수 있는 것은 로더릭 아전트 Roderick Argent 박사 관리 하의 D계급 인원으로 제한되며, 해당 인원은 밈적 지식의 전파를 막기 위해 다른 인원으로부터 격리해야 한다."
+        },
+        {
+          "id": "scp-3848",
+          "title": "기억에 남을 만한 것들의 역사",
+          "url": "https://scpko.wikidot.com/scp-3848",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "이 문서의 디지털 및 물리적 사본을 모든 재단 기지에 보관한다. 이 문서에 대한 재단 인원의 접근은 인가 등급을 막론하고 제한하지 않는다. 완전한 ED-K급 레테 시나리오 1 가 발생하여 인류의 80% 이상이 영향을 받았을 경우 이 문서 및 재단의 존재를 대중에 알릴 수 있으며, O5 평의회 대행 및 윤리위원회 대행의 과반수가 찬성할 경우 실행할 수 있다. 모든 재단 시설마다 최소 한 명의 Mk. III 기억상실저항 표적 기억소생제 노출 훈련 Amnesia Re…"
+        },
+        {
+          "id": "excerpt-from-the-astrolabe-institute-journal",
+          "title": "아스트롤라베 연구원 학술지 발췌문",
+          "url": "https://scpko.wikidot.com/excerpt-from-the-astrolabe-institute-journal",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "전화 (814)-555-3346 아스트롤라베 연구원THE ASTROLABE INSTITUTE 본 문서는 과학자들이 운영하며 변칙개체의 격리에 전념하는 공공매체 및 격리 회사 아스트롤라베 연구원의 공개 자료입니다"
+        },
+        {
+          "id": "schulman-ny-programmable-mnestic-device-ac34d-nc77q-95dcs",
+          "title": "‘슐만-NY 프로그램식 기억소생장치’ (AC34D/NC77Q/95DCS)",
+          "url": "https://scpko.wikidot.com/schulman-ny-programmable-mnestic-device-ac34d-nc77q-95dcs",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 3,
+          "desc": "프로그램식의 전자 부품과 생화학적 정맥/요추주사 부품이 달린 작은 장치로, 사용자의 정신에서 말소된 기억을 억지로 되살리는 데 사용한다. 이 상품을 사용해 변칙적 및 비변칙적인 방식으로 지워진 기억을 되살리는 작업은 94%의 성공률을 보인다. 유한책임조합 마셜, 카터 & 다크 초기 보고서 작성자 브루스 슐만 주니어 날짜 2014년 1월 15일 관심도 중 식별자 슐만-NY 프로그램식 기억소생장치 재단과 세계 오컬트 연합의 비변칙적인 화학적 기억소거제건, 변칙적인…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-3484",
+            "scp-3848",
+            "excerpt-from-the-astrolabe-institute-journal",
+            "schulman-ny-programmable-mnestic-device-ac34d-nc77q-95dcs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-ko:collection:series:cack-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "cack-hub",
+      "title": "깨액 허브",
+      "sourceListURL": "https://scpko.wikidot.com/cack-hub",
+      "officialHubURL": "https://scpko.wikidot.com/cack-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "cack-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "cack-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-acc32b89ef90cdf746259a3036a6d842581d9d29a762f1522ea027e1925de5d7"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-4498",
+          "title": "일라이어스 쇼는 단수가 아니다",
+          "url": "https://scpko.wikidot.com/scp-4498",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 24,
+          "desc": "모든 SCP-4498 개체들의 소재는 미국 펜실베이니아 주 피츠버그 인근의 4498 격리차단지역 4498 Quarantined Exclusion Zone (예전에는 제53기지였던 곳)으로 제한되어야 한다. SCP-4498 개체와의 상호작용은 공식적인 외교 작전 이외에는 모두 금지되어야 한다. 어떠한 SCP-4498 개체들도 격리 구역을 벗어날 수 없다. 추가적인 폭동 사건이 발생할 경우, 응용특무부대 쇼-99 \"아 시발 잠깐만\"이 SCP-4498 개체를 제압하는…"
+        },
+        {
+          "id": "scp-4852",
+          "title": "제19기지, 겨울을 나러 남쪽으로 가다!",
+          "url": "https://scpko.wikidot.com/scp-4852",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 15,
+          "desc": "SCP-4852 발생 원인에 대한 조사가 진행 중이다. 사건 4852.7과 관련된 물체들은 제19기지 증거물품 로커 38E에 보관한다."
+        },
+        {
+          "id": "seven-days-with-mr-fish",
+          "title": "물고기 씨와 함께한 7일간",
+          "url": "https://scpko.wikidot.com/seven-days-with-mr-fish",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "격리실 문을 두드리는 소리에 물고기 씨는 자기 방이 청소될 차례인 것을 알았다. 그는 침대 위에 일어나서 신문을 정리하고 필요할 경우 옆으로 비킬 준비까지 마쳤다. 그는 재단이 모든 것을 깔끔하게 유지하려는 것에 열심인 사실을 이해는 했지만, D계급이 소모되는 것이 그의 취향에는 지나치게 빨라 보였다. 매주마다 자기 독방에 찾아오는 사람이 딴 사람으로 바뀌는 것은 다소 불쾌했다. 게다가 그 손님들이 대개 멍청이 풋내기였으니까."
+        },
+        {
+          "id": "cimmerian-sends-650-pms",
+          "title": "시메리안 박사 전체 회신을 누르다",
+          "url": "https://scpko.wikidot.com/cimmerian-sends-650-pms",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "여러분 모두 행복한 연말 되세요. O5 사령부가 인사드립니다. 웃음 넘치는 즐거운 시간 보내시고 새해에 기쁨 충만하기를. 확보, 격리, 보호"
+        },
+        {
+          "id": "critter-profile-wobbles",
+          "title": "조물딱지 프로필: 와블스!",
+          "url": "https://scpko.wikidot.com/critter-profile-wobbles",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 8,
+          "desc": "최근 사건을 감안하여, 윌슨의 운영진은 와블스에 대한 정보를 감춰 두는 편이 최선일 것 같다고 결정을 내렸어요. 저나 앨리스, 앨의 허가를 받지 않았다면 화면 맨 위 오른쪽에 있는 'X' 버튼을 누르고 다른 조물딱지 프로필을 보러 가 주세요."
+        },
+        {
+          "id": "project-koza",
+          "title": "1942년 코오자 계획",
+          "url": "https://scpko.wikidot.com/project-koza",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 6,
+          "desc": "목적: 바이조가 제국을, 그리고 만주국과 태평양에 있는 제국의 영토들을 향해 진격해옴에 따라, 이자메아와 우리 대군의 다른 지부들은 수세에 몰리고 있다. 비록 우리는 우리 군대의 병사들을 신뢰하고 지난 몇 달간 양키들과 영국인들에 맞서 싸운 그들의 용맹한 업적을 칭찬하는 바이지만, 우리의 땅에 발을 들여놓는 바이조의 위협은 날이 갈수록 현실이 되어가고 있다. 우리는 침략자들의 첩보와 통신에 훼방을 놓음으로서 그들과 맞서 싸우고 있는 우리의 형제들에게 도움의 손길…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-crack-cack",
+          "title": "약빤(crack) 소설? 그보단 깨액(cack) 소설!",
+          "articleIDs": [
+            "scp-4498",
+            "scp-4852",
+            "seven-days-with-mr-fish",
+            "cimmerian-sends-650-pms",
+            "critter-profile-wobbles",
+            "project-koza"
+          ]
+        }
+      ],
+      "description": "\"그 절은 카니에의 오랫동안 기다려왔던 앨범에 레드카펫을 깔아줬지만, 찬스의 새 컬러링 북(당시 찬스 3이라는 가제가 주어졌었음)의 발표로 두 배가 됐고, 이는 실체 음반 레이블에 소속되지 않은 올해 최고의 기대 힙합 프로젝트일 수도 있다.\" - Pitchfork"
+    },
+    {
+      "id": "scp-ko:collection:series:all-that-glisters",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "all-that-glisters",
+      "title": "모든 반짝이는 것",
+      "sourceListURL": "https://scpko.wikidot.com/all-that-glisters",
+      "officialHubURL": "https://scpko.wikidot.com/all-that-glisters",
+      "hubPresentation": "standard",
+      "canonicalTag": "all-that-glisters",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "all-that-glisters",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-72d087fc15a9cbe2de77e035bc4eb54bb07933c512cfc55fcb396d37ea9b2f33"
+      },
+      "primaryArticles": [
+        {
+          "id": "kaiju-caviar-ocn39-t5fg6-7hjl2",
+          "title": "‘괴수 캐비아’ (OCN39/T5FG6/7HJL2)",
+          "url": "https://scpko.wikidot.com/kaiju-caviar-ocn39-t5fg6-7hjl2",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 15,
+          "desc": "1988년 히브라실 환상섬을 공격했던 거대 수생독립체의 알집을 염장한 것. 알의 직경은 21⁄4 인치이고, 각도에 따라 해록색을 띰. 알 각각을 앙트레 용으로 엄선해서 대접함. 현재 본사의 요식업 계열사인 \"돈지랄 식당( Pretty Penny )\"에서 맛볼 수 있음. 자개박 컬렉션 메뉴로 구입해 식사, 또는 6개들이 단지를 소매 구입 가능. 유한책임조합 마셜, 카터 & 다크 초기 보고서 작성자 루프레히트 카터 일자 1988년 8월 22일 관심도 고 식별자 괴수…"
+        },
+        {
+          "id": "the-dark-web-dke79-o2rg5-4jlw6",
+          "title": "‘다크 웹’ (DKE79/O2RG5/4JLW6)",
+          "url": "https://scpko.wikidot.com/the-dark-web-dke79-o2rg5-4jlw6",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 11,
+          "desc": "다크 웹은 변칙사회를 대상층으로 삼는 클라우드 컴퓨팅 서비스다. 구독자는 일반 스마트폰과 개인용 컴퓨터로 변칙적 애플리케이션에 접근할 수 있게 된다. 서비스는 고객들이 마셜, 카터 & 다크 브랜드에 가지고 있을지 모를 좋지 않은 인상과 관련되는 것을 피하기 위해 유령 회사가 운영한다. 다크 웹은 현재 전기기적 electro-thaumic 서버에 수용되어 있으며 다크 에너지 3.0으로 기동한다. 이들 서버는 에테르 연결을 사용하며, 기기 대신 사용자를 인식함으로써…"
+        },
+        {
+          "id": "text-message-in-a-bottle",
+          "title": "병 속의 문자 메시지",
+          "url": "https://scpko.wikidot.com/text-message-in-a-bottle",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "다크에너지 모바일OS 3.1 다크 양, 다음으로부터 읽지 않은 메시지가 왔습니다. 초미친 광대 여자애 (CotD) 오늘, 19:30"
+        },
+        {
+          "id": "scp-3549",
+          "title": "달달한 중세 비트코인",
+          "url": "https://scpko.wikidot.com/scp-3549",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "SCP-3549는 제76기지의 중간 단계 보안 수납장에 격리되어야 한다. 연구원 편의상 해독된 텍스트 인쇄본 한 부를 항상 SCP-3549의 곁에 놓아 두어야 하며, 전자 사본은 재단 서버에 안전히 보관하여야 한다."
+        },
+        {
+          "id": "dread-circuses-hub",
+          "title": "겁과 서커스",
+          "url": "https://scpko.wikidot.com/dread-circuses-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "성공적인 첫 번째 이야기에서부터, 겁과 서커스 는 MC&D를 상당히 비중있게 다루었습니다. 이것은 결국 자기만의 연작으로 발전했는데, 거기에는 이야기, GoI 서식, 그리고 결국에는 불온한 서커스를 확실히 언급하지 않는 SCP들을 포함됩니다. 그러한 이유로, 저는 제 MC&D 수집품들이 사이트 곳곳으로 흩어지게 하는 대신, 그들에게 자기들만의 허브를 주는 것이 타당하겠다고 판단했습니다."
+        },
+        {
+          "id": "wills-and-ways-hub",
+          "title": "의지와 방법",
+          "url": "https://scpko.wikidot.com/wills-and-ways-hub",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "가져간 것이 뭐든지 얻어라 얻은 것이 뭐든지 가져가라 고요하며 부드럽게, 살짝 흔들리며 황갈색이 되거나 또는 살짝 태워져라 새로운 것은 어느 것도 잘못되지 않았다 낡은 것은 어느 것도 새로워지지 않았다 아침에 우리는 깨어났다 환영 인사와 작별 인사"
+        },
+        {
+          "id": "unicorn-horn",
+          "title": "‘유니콘의 뿔’ (HYTCH/8FNE6/B77KT)",
+          "url": "https://scpko.wikidot.com/unicorn-horn",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 6,
+          "desc": "상품은 분말 형태의 유니콘의 뿔로 순수한 분말은 사람들이 섭취하기에 적합한 식용 캡슐 형태로 이용할 수 있고, 순수하지 않은 분말은 공업용 살충제용으로 이용하기 위한 벽돌 형태로 이용할 수 있음. 상품은 강력한 역인과 피임제로 작용하며 성관계와 번식 행위로 인한 모든 물리적 효과를 제거함. 순수하지 않은 분말 상품은 효과가 포유류와 기타 척추동물에 작용하지 않게 만드는 몇몇 첨가제가 포함되어있음. 유한책임조합 마셜, 카터 & 다크 초기 보고서 작성자 휴고 보일…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "상품 목록",
+          "articleIDs": [
+            "kaiju-caviar-ocn39-t5fg6-7hjl2",
+            "the-dark-web-dke79-o2rg5-4jlw6"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "추천서",
+          "articleIDs": [
+            "text-message-in-a-bottle"
+          ]
+        },
+        {
+          "id": "03-articles",
+          "title": "외부 보고서",
+          "articleIDs": [
+            "scp-3549",
+            "dread-circuses-hub",
+            "wills-and-ways-hub",
+            "unicorn-horn"
+          ]
+        }
+      ],
+      "description": "저는 이 허브의 괜찮은 이름을 생각해내는 데 약간의 어려움을 겪었습니다. 많은 사람들이 '모든 반짝이들(All that glitters)'이라는 취지의 제안들을 해주셨지만, 조금 진부해 보였습니다. 그래서 저는 뭔가 적절한 것을 찾을 수 있기를 바라면서 베니스의 상인의 인용구를 찾아보고 있었고, 하 이것 봐라 셰익스피어의 원래 인용구가 사실은 \"모든 반짝이는 것(All that glisters)이 금은 아니다\"였음을 알게 되었습니다. 그것은 의미는 똑같지만, 엘리자베스 시대의 구식 동의어는 제게 이 시리즈의 제목으로 적합하다고 생각하는 고풍스럽고 가식적인 느낌을 주었습니다."
+    },
+    {
+      "id": "scp-ko:collection:series:speed-demon-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "speed-demon-hub",
+      "title": "속도광 허브",
+      "sourceListURL": "https://scpko.wikidot.com/speed-demon-hub",
+      "officialHubURL": "https://scpko.wikidot.com/speed-demon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "speed-demon-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "speed-demon-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-2d1cc9383795c83f7a62578498e6b9abeac11fbeb0c72d63df8bfe0be20ad12f"
+      },
+      "primaryArticles": [
+        {
+          "id": "hypervelocity",
+          "title": "초고속도",
+          "url": "https://scpko.wikidot.com/hypervelocity",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 13,
+          "desc": "30분 뒤면, 그녀는 죽거나, 아니면 에우르텍 최악의 범죄자로 명성을 얻거나 둘 중 하나가 될 것이다. 어느 쪽이 되든, 그녀는 이제 한바탕 난장을 벌릴 참이다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "hypervelocity"
+          ]
+        }
+      ],
+      "description": "과자로 만든 집에 사는 마녀를 기억하는가? 그녀는 어린아이들을 자기 집으로 유인해서 잡아먹었다. 엿이나 먹으라지."
+    },
+    {
+      "id": "scp-ko:collection:series:black-as-night",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "black-as-night",
+      "title": "밤처럼 검은 허브",
+      "sourceListURL": "https://scpko.wikidot.com/black-as-night",
+      "officialHubURL": "https://scpko.wikidot.com/black-as-night",
+      "hubPresentation": "standard",
+      "canonicalTag": "black-as-night",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "black-as-night",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-3e89897ecf36bed52d1c8dbb4f7ab62d6b67a412093a5384a6dcd6fa3342a7ee"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-4002",
+          "title": "검은 달은 시간의 끝자락 너머에서 운다",
+          "url": "https://scpko.wikidot.com/scp-4002",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 16,
+          "desc": "SCP-4002와 직접적으로 연관된 모든 정보는 일반 데이터베이스에서 말소되고, 오직 유일한 예외로 봉인된 파일은 O5 평의회의 일원만 접근할 수 있도록 한다. 의도적이었는지의 여부와는 상관 없이 허가받지 않은 개인이 SCP-4002 관련 정보를 입수할 경우, 예외 없이 제거되어야 한다. 수메르 왕들의 계보에서 선택된 자들을 다루는 유물들이 새로 발굴될 경우 기동 특무부대 알파-1(\"붉은 오른손Red Right hand\")가 즉시 유물을 압류하고 검사하도록 한다…"
+        },
+        {
+          "id": "scp-2004",
+          "title": "신의 개인 정보 단말기",
+          "url": "https://scpko.wikidot.com/scp-2004",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-2004는 무장 성물 격리 지구-02에 격리되어있다. 표준 밈적 대항장치는 과거에 대상에 대해 무력함이 입증되었으므로, SCP-2004는 격리조치-2004, \"맹인이 이끄는 맹인\"를 통해 관리하도록 한다. 더 많은 정보를 위해 ARC A-02 Clearance-04 Procedures 문건을 참조할 것. SCP-2004의 영향을 받은 인원(이하 SCP-2004-1로 서술)또한 같은 격리조치로 관리하도록 한다."
+        },
+        {
+          "id": "night-s-collection",
+          "title": "‘나이트의 소장품’ (Lot C3S81)",
+          "url": "https://scpko.wikidot.com/night-s-collection",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 5,
+          "desc": "본 물품은 작은 흑요석 거미 조각으로, 작은 루비들을 박아서 눈깔들을 표현했다. 사용자는 이 물품으로 특정 개념, 개인, 또는 물체에 대한 모든 기억을 지울 수 있다. 사용법은 기억을 지울 사람의 앞에서 조각을 들어올려 조각과 눈을 마주치게 하는 것이다. 이렇게 해서 제거된 기억들은 모두 거미떼의 기억으로 대체되며, 영향을 받은 개념들 또한 거미와 관련된 것으로 대체된다. 비고: 내 경험상 이놈으로 기억을 지우는 건 효율이 끔찍히도 나쁘다오. 그보다는 차라리 고…"
+        },
+        {
+          "id": "uiu-file-1941-016",
+          "title": "UIU 파일: 1941-016",
+          "url": "https://scpko.wikidot.com/uiu-file-1941-016",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 3,
+          "desc": "수사국 기록 이하는 연방기록법에 따른 전자문서사본임 UIU 파일 1941-016: 시카고 레버넌트 요약: 변칙적 범죄조직 \"시카고 스피릿\"과 관련된 피해자들에게 발생한 연쇄 살인(현재까지 6차례 발생함)이다."
+        },
+        {
+          "id": "contract-negotiations-01029",
+          "title": "계약협상 (N-01029)",
+          "url": "https://scpko.wikidot.com/contract-negotiations-01029",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 7,
+          "desc": "시카고 스피릿의 설립자인 미스터 나이트는 공장과 재건된 시카고 스피릿 간의 계약을 협상하기 위한 공장 이사진 구성원과의 회의를 마련하기 위해 공장 행정부에 연락했다. 미스터 나이트는 이 단체를 시카고 스펙터라고 불렀다. 나이트는 이사회의 특정한 구성원을, 투자자와의 만남을 요청했다. 회의는 4월 8일 메사추세츠 로웰에 위치한 공장 본사에서 마련되었다. 투자자는 충분한 준비 시간을 가질 수 있도록 회의 시간보다 51시간 38분 5초 일찍 도착했다. 미스터 나이트는…"
+        },
+        {
+          "id": "adoption-poster-ol-shock",
+          "title": "입양 공고: 올드 쇼크!",
+          "url": "https://scpko.wikidot.com/adoption-poster-ol-shock",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 9
+        },
+        {
+          "id": "ute-1919-discofather",
+          "title": "UTE-1919-디스코파더",
+          "url": "https://scpko.wikidot.com/ute-1919-discofather",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 4,
+          "desc": "UTE-1919-디스코 파더는 시카고 스펙터와 시카고 스피릿의 설립자로 추정되는 인간형 초상위협이다. 현재 UTE-1919-디스코파더는 시카고 스펙터의 사업 대부분을 장악하고 있다. UTE-1919-디스코파더는 일종의 현실 조작능력을 가지고 있다고 추정되지만 확인된 것은 아니다. UTE-1919-디스코파더의 아라드 판독 결과를 입수하는 것이 현재 연합 요원들의 우선 과제이다. 해당 초상위협은 인간이거나 인간이었던 존재라고 추정되지는 않는다. 통일기적학연구소의 켈…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-4002",
+            "scp-2004",
+            "night-s-collection",
+            "uiu-file-1941-016",
+            "contract-negotiations-01029",
+            "adoption-poster-ol-shock",
+            "ute-1919-discofather"
+          ]
+        }
+      ],
+      "description": "초록 결정적으로 지혜의 성질은 변칙성과 밀접하게 연관되어 있으며 [ 1 ] 인류의 감정은 전체적으로 현실조작적 특성을 가지고 있다고 확정되어 왔다 [ 2 ]. 집단적 감정이 현실에 상응하는 영향을 미친다는 점을 감안할 때, 원함과 필요와 같은 인간의 가장 강력한 감정은 [ 3 ] 현실에 극단적인 영향을 미친다는 가설을 세울 필요가 있다. 이는 그러한 개념의 의인화에 의해 더욱 복잡해지고, 알려지지 않은 효과를 발생시킬 것이다."
+    },
+    {
+      "id": "scp-ko:collection:series:ao-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "ao-hub",
+      "title": "변칙 개체 이야기",
+      "sourceListURL": "https://scpko.wikidot.com/ao-hub",
+      "officialHubURL": "https://scpko.wikidot.com/ao-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "ao-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "ao-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-53aada24f45d68b4832bcce905303b646172d41ed433d7f524b1e6a843c17f96"
+      },
+      "primaryArticles": [
+        {
+          "id": "tjalla",
+          "title": "샬라",
+          "url": "https://scpko.wikidot.com/tjalla",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "그녀는 멀리서 직원 세 명이 지나가는 것을 지켜보았다. 낮에 그들이 어떤 목적을 갖고 뭉쳐 다니는 모습은 드문 일이었다. 하지만 들어본 적은 있었다. 불이 켜져 있는 동안에는 그 무시무시한 것들이 자신을 무시한다는 것을 알고 있었지만, 그렇다고 굳이 근처에 가고 싶지는 않았다. 불이 꺼졌을 때 직원들이 무엇을 하는지 봐왔으니까."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "이야기:",
+          "articleIDs": [
+            "tjalla"
+          ]
+        }
+      ],
+      "description": "자유롭게 당신의 투고작의 서식과 형식을 원하는 데로 구성할 수 있으며, 저는 도전과제를 이상 징후 및 미해명 장소 기록의 항목들 까지 열어놓았습니다. 더 많은 이야기는 더 좋습니다!"
+    },
+    {
+      "id": "scp-ko:collection:series:the-hanged-king-s-comedy",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "the-hanged-king-s-comedy",
+      "title": "목매달린 왕의 희극",
+      "sourceListURL": "https://scpko.wikidot.com/the-hanged-king-s-comedy",
+      "officialHubURL": "https://scpko.wikidot.com/the-hanged-king-s-comedy",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-hanged-king-s-comedy",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-hanged-king-s-comedy",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-4c5237743dbac5c7a46ea883b6374706fa193eb30dd251d23a0d5f1aaa2e6bd8"
+      },
+      "primaryArticles": [
+        {
+          "id": "a-wandsman-in-the-court-of-the-hanged-king",
+          "title": "목매달린 왕의 궁정의 한 남권사",
+          "url": "https://scpko.wikidot.com/a-wandsman-in-the-court-of-the-hanged-king",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 16,
+          "desc": "무광의 바다가 노오란 하늘이 비친 상을 거부하는 곳. 검은 별들이 뜨지도 않고 군림하고, 어떠한 의미도 없는 메아리 울리는 곳."
+        },
+        {
+          "id": "everyone-wears-a-mask",
+          "title": "모두가 가면을 쓴다",
+          "url": "https://scpko.wikidot.com/everyone-wears-a-mask",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "의사는 자기 격리실의 푹신한 매트리스 위에 기대 앉아 있었다. 머리는 공기가 빠져 형편없는 상태의 베개 뭉치에 놓여 있었고, 살균한 흰 리넨은 여전히 몸 아래에 고이 접혀 있었다. 그는 자신의 일기를 집어들었고, 딱딱한 가죽은 그의 손에 친숙하게 느껴졌다. 그는 가장 최근 '환자'에 대해 다룬 최신 기록을 검토하고 있었다. 집돼지 말이다. 질병에 대해서는 잘 규명되어 있었고 그의 현 모형에 부합하는 속도로 나아가고 있었다. 안타깝게도, 그 불쌍한 것은 그에게 보…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "목매달린 왕의 희극",
+          "articleIDs": [
+            "a-wandsman-in-the-court-of-the-hanged-king"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "지금까지의 이야기…",
+          "articleIDs": [
+            "everyone-wears-a-mask"
+          ]
+        }
+      ],
+      "description": "앙심을 품은 이들의 고통이 세계가 나뉘는 곳에서 힘을 훔칠 수 있게 하리라. 그리고 검은 별들은 쉼없이 증오한다. 왕의 치명적인 계략이 쓰였다. 십조 번은 실패한 찬탈자는, 죄짓지 않은 자들에 힘을 입는구나. 그러니 이제 내 통치가 열리기 시작한다, 고통과, 불화와 죄악의 궁정이. 내 지배 안의 존재, 모든 영혼을 뒤트는 고통. 그러니, 나는 왕에게 그의 죄악을 먹이리라, 다시 죽지 못할 때까지 죽이도록! 그 후에 나는 내 왕좌를 차지하고, 모든 살점은 뼈만 남기리라. 모든 생명은 번민하는 왕의 졸병이요 내 꼭두각시 줄에 매여 고통받고 죽으리라."
+    },
+    {
+      "id": "scp-ko:collection:series:k-o-failure-scenario-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "k-o-failure-scenario-hub",
+      "title": "K/O 실패 시나리오 허브",
+      "sourceListURL": "https://scpko.wikidot.com/k-o-failure-scenario-hub",
+      "officialHubURL": "https://scpko.wikidot.com/k-o-failure-scenario-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "k-o-failure-scenario-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "k-o-failure-scenario-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-b8bed57311ef7a3ea57c040a751195e374c63254e169ad64e45673954a93f53d"
+      },
+      "primaryArticles": [
+        {
+          "id": "spc-001",
+          "title": "SPC-001",
+          "url": "https://scpko.wikidot.com/spc-001",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "페퍼스 고스트의 제안, 아마도"
+        },
+        {
+          "id": "peppersghosts-stupid-proposal",
+          "title": "페퍼스 고스트의 제안, 아마도",
+          "url": "https://scpko.wikidot.com/peppersghosts-stupid-proposal",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 15
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "spc-001",
+            "peppersghosts-stupid-proposal"
+          ]
+        }
+      ],
+      "description": "권투 행정관은 젊은 연구원의 제안서 제목을 훑어보고는 이맛살을 찌푸렸다. \"대관절 세계멸망 K/O 실패 시나리오가 뭔가?\" 연구원은 그녀 자신의 연구에 대해서 논할 생각에 들떠 씩 웃었다. \"센터가 영구적으로 그리고 완전히 제 임무를 완수할 수 없게 위태로워지는 모든 시나리오입니다, 선생님. 전문용어로는, 상어들의 승리죠.\" \"좀 광범위하지 않나?\" \"어쩌면요, 하지만 X가 어떤 특정한 방법으로 센터를 실패하게 만든다고 독자들에게 일일이 말해 줄 백만 가지 하위분류가 정말 필요한가요? 최후에는, 언제나 상어들이 승리하죠.\" \"괜찮은 제안이네,\" 그가 어께를 으쓱했다. \"시간이 지나면 약간의 중복이 생길 거라 생각하네. 나머지 권투 행정부에 보내도록 하지. 그들이 이걸로 뭔가를 할지에 대해서는 장담 못하지만.\" \"멋지네요,\" 연구원이 활짝 웃었다. \"실례가 되겠지만 서류상자 안에 몇 가지 다른 예시들을 넣었습니다. 공상적인 건 없고, 시나리오를 중단시킬 수 있는 몇 가지 독특한 방법들입니다.\" 권투 행정관은 고개를 끄덕이며 젊은 연구원이 나가는 모습을 지켜보았다."
+    },
+    {
+      "id": "scp-ko:collection:series:end-of-olympians-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "end-of-olympians-hub",
+      "title": "올림피아의 끝 허브",
+      "sourceListURL": "https://scpko.wikidot.com/end-of-olympians-hub",
+      "officialHubURL": "https://scpko.wikidot.com/end-of-olympians-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "end-of-olympians-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "end-of-olympians-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-d669875603f983b901f0823ca692931f19e159483db544dc6622f02c0b755561"
+      },
+      "primaryArticles": [
+        {
+          "id": "remembrance",
+          "title": "추억",
+          "url": "https://scpko.wikidot.com/remembrance",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "서곡: 첫 종소리 첫 번째 막간: 옛 학교 두 번째 막간: 연주 중에 에필로그: 마지막 말 연관 자료: 76년도 졸업반 1976년 커크 론우드 고등학교 악단"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "remembrance"
+          ]
+        }
+      ],
+      "description": "프로메테우스 연구소 데이터베이스 #-2-320 텔레킬 합금 구상 프로젝트 개요 텔레킬 합금은 정신감응선이나 장이 인간 정신에 끼치는 영향을 막기 위해 고안되었습니다. 지금까지 시험 대상자들은 이러한 힘이 자기들의 정신에 접근하는 것을 막아냈지만, 그들의 나머지 시험들은 그렇게 희망적이지 않았습니다. 오직 6명의 대상자들 만이 심령 공격에 쓰러지지 않고 시험을 끝마칠 수 있었습니다. 시험 대상자들이 쓰러지고 재활 치료를 받아야 하는 상황을 막지 못했던 작년 결과를 기반으로 개선되었습니다. 다행스럽게도, 단 한 명도 심한 부상을 입지 않았습니다. 내년에는, 저희 팀이 다음 과업들을 완수하기를 요구합니다. 우리가 1976년 제품 출시 기간을 맞추기를 원한다면 말입니다. 명심하세요, 미군과의 계약이 영원히 지속되지는 않을 것입니다. 목표 #1: 합금이 보유한 특성에 대한 지속적인 연구, 견본-22b를 사용하는 시험이 특히 추천되는 방법. 목표 #2: 부실하게 문서화된 물품의 사용을 배제하고 합금을 복제, 혹은 해당 물품들에 대한 우수한 문서를 준비. 현재 작업에 추가해 두 가지 유형의 현상에 대한 보고를 기대. 목표 #3: 삭마성 감소. 이것은 중요 목표 #4: 시험 재개 전 노출과 사기에 미치는 영향을 연구. prometheans meeting-of-the-minds psychiatric-profile-for-researcher-lee-byron preaching-to-the-choir when-we-reach-the-crescendo a-few-more-words-from-the-administrator"
+    },
+    {
+      "id": "scp-ko:collection:series:atzak-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "atzak-hub",
+      "title": "애트잭 허브",
+      "sourceListURL": "https://scpko.wikidot.com/atzak-hub",
+      "officialHubURL": "https://scpko.wikidot.com/atzak-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "atzak-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "atzak-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "allowEmpty": true,
+        "verifiedEmpty": true,
+        "structureHash": "sha256-c2ba41736bf53a63782969528e3468c566a35c7d95079aa050ed8a04091f30c5"
+      },
+      "primaryArticles": [],
+      "supplementLinks": []
+    },
+    {
+      "id": "scp-ko:collection:series:mainline-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "mainline-hub",
+      "title": "정맥주사 허브",
+      "sourceListURL": "https://scpko.wikidot.com/mainline-hub",
+      "officialHubURL": "https://scpko.wikidot.com/mainline-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "mainline-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "mainline-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-dd5f568129108d394ff95eaf17bf42e24bfe003ea5ce8213c8956a7cd0e2c91c"
+      },
+      "primaryArticles": [
+        {
+          "id": "spirit-dust",
+          "title": "스피릿 더스트",
+          "url": "https://scpko.wikidot.com/spirit-dust",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "준비는 거의 마쳤다. 카오루는 작은 라이터 위에 조심스럽게 숟가락을 들었다. 시계를 본 후, 왼손으로 작은 봉투를 뜯고 오른손으로는 숟가락과 그 위에 담긴 내용물을 조심스럽게 들었다."
+        },
+        {
+          "id": "of-meetings-and-meals",
+          "title": "만남과 식사",
+          "url": "https://scpko.wikidot.com/of-meetings-and-meals",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "“아빠, 아빠! 어린 소녀가 앙칼진 목소리로 문을 여는 타나카 카츠오를 맞이했다. 형사는 지친 미소를 띠며 무릎을 꿇고 딸을 안아 올렸다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "spirit-dust",
+            "of-meetings-and-meals"
+          ]
+        }
+      ],
+      "description": "개요: SCP 재단 세계관의 변칙성은 온갖 형태와 크기를 갖는다. 어떤 것은 조각상, 어떤 것은 토마토. 우리는 토스터, 도마뱀, 선인장맨, 인간선인장, 기타 등등을 갖고 있다."
+    },
+    {
+      "id": "scp-ko:collection:series:in-his-own-image",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "in-his-own-image",
+      "title": "그의 형상대로",
+      "sourceListURL": "https://scpko.wikidot.com/in-his-own-image",
+      "officialHubURL": "https://scpko.wikidot.com/in-his-own-image",
+      "hubPresentation": "standard",
+      "canonicalTag": "in-his-own-image",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "in-his-own-image",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-5856353f0c5342209f13f86e50671e5b55fbbb112acc8d6f8c24e69a137c17c1"
+      },
+      "primaryArticles": [
+        {
+          "id": "in-his-own-image-part-1",
+          "title": "그의 형상대로: 제1부",
+          "url": "https://scpko.wikidot.com/in-his-own-image-part-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "2011년 9월 19일: 러멘트가 여자의 관심을 끌려 그녀의 몸을 흔들 때, 다행스럽게도 러멘트의 것이 아닌 피는 그의 팔에서 흘러내렸다. 그녀의 관심을 끄는데 실패했다고, 그는 추측했다. 그녀의 눈빛과 표정을 보건대…. 심히 충격받은 듯했다. 그리고 불행하게도, 러멘트는 그녀를 데리고 나갈 시간이 없었다. 그는 한숨을 쉬며 다시 일어섰고, 그녀를 그곳에 남겨두고는 묵직한 금속 문을 열었다. 움직이는 벽이 내는 삐걱임과 신음하는 듯한 소리를 들으며 바깥을 내다보…"
+        },
+        {
+          "id": "in-his-own-image-interlude-1",
+          "title": "그의 형상대로: 막간 1",
+          "url": "https://scpko.wikidot.com/in-his-own-image-interlude-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "2007년 8월 18일: 러멘트의 손가락이 잠시 크롬 프레임을 쓸어내렸다. 선물은 꽤 비쌌지만, 자기가 생각하기에도 아무도 웃지 않을 거 같은 그 농담은 가치가 있었다. 최후의 환호를 위한 그의 첫 실패일 뿐이다. 그는 입술을 잠시 실룩이며 사진을 내려다보았고, 거의 비정상적인 미소를 보이는 남자를 보자 웃음을 터트렸다."
+        },
+        {
+          "id": "in-his-own-image-part-2",
+          "title": "그의 형상대로: 제2부",
+          "url": "https://scpko.wikidot.com/in-his-own-image-part-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "1998년 2월 11일: 그는 머리 벗어진 남자에게 미소를 보내며 남는 손이 없어 팔꿈치를 흔들었다. 그리고 책상 끄트머리에 잔을 놓았다. 커피, 블랙으로."
+        },
+        {
+          "id": "in-his-own-image-interlude-2",
+          "title": "그의 형상대로: 막간 2",
+          "url": "https://scpko.wikidot.com/in-his-own-image-interlude-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "2005년 7월 7일: 책상에 앉아 있던 러멘트는 소스라치게 놀랐다. 몸을 돌려 고개를 드니 한 여인이 눈에 들어왔다. 길고, 살짝 곱슬곱슬한 갈색 머리칼. 한결같이 샐쭉 웃는 얼굴. 즐거운 기색이 감도는 두 눈."
+        },
+        {
+          "id": "in-his-own-image-part-3",
+          "title": "그의 형상대로: 제3부",
+          "url": "https://scpko.wikidot.com/in-his-own-image-part-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "1998년 11월 1일: 러멘트 요원은 오늘이 만성절이라고 지나가다시피 말하며 달력을 한 장 뜯었다. 그리고 어제 자는 옆으로 치우고 오늘 자를 보며 픽 웃었다. \"과학자들이 온 사방에서 잠자리를 했다네요.\" 러멘트가 말문을 열었다. \"와트는 전력을 다해, 줄은 에너지 넘치게, 옴은 저항을 견디고, 파스칼은 압력을 받으면서.\" 그는 씨익 웃었다."
+        },
+        {
+          "id": "in-his-own-image-interlude-3",
+          "title": "그의 형상대로: 막간 3",
+          "url": "https://scpko.wikidot.com/in-his-own-image-interlude-3",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "2004년 7월 5일: 귀청 떨어지게 왁자한 아우성이 두 사람을 둘러싸고 있었다. 여기저기서 고함이 터져 나왔다. 제19기지 연례 기념사진 촬영에 주어진 시간은 단 15분이었다. 그리고 글라스 박사는 사람들의 주의를 모으는 대목부터 진땀을 빼고 있었다. 위치 맞추는 일은 말할 것도 없고."
+        },
+        {
+          "id": "in-his-own-image-part-4",
+          "title": "그의 형상대로: 제4부",
+          "url": "https://scpko.wikidot.com/in-his-own-image-part-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "1998년 11월 8일: \"거부되었습니다, 요원.\" 러멘트는 침을 꿀꺽 삼키고 입술을 살짝 핥으면서, 세 박사로 구성된 위원단을 올려다보았다. \"네?\""
+        },
+        {
+          "id": "in-his-own-image-interlude-4",
+          "title": "그의 형상대로: 막간 4",
+          "url": "https://scpko.wikidot.com/in-his-own-image-interlude-4",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "2009년 2월 19일: \"히. 히. 히. 히. 히이.\" 러멘트는 식은땀에 젖은 채 깨어났다. 귓가에 울리는 웃음소리가 멈추지 않았다. 그는 눈을 질끈 감고서 머릿속에서 그 소리를 몰아내려고 해 보았다. 그리고 휘청이는 다리를 이끌어 샤워부스로 향했다."
+        },
+        {
+          "id": "in-his-own-image-part-5",
+          "title": "그의 형상대로: 제5부",
+          "url": "https://scpko.wikidot.com/in-his-own-image-part-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "1998년 11월 26일: 러멘트는 압도감과 공포가 뒤섞인 묘한 얼굴로 눈살을 찌푸린 채 유리창 너머 허공에 매달린 상자를 바라보았다. 직접 보는 건 이번이 처음인데, 마음이… 어지러웠다… 러멘트는 저 상자에 목숨을 걸고 하루하루 사선을 넘는 군인이 아니었다. 프로젝트에 배정된 중요 연구원조차 아니었다. 그저, 그런 사람들을 지키고자 애쓰는 한 남자에 불과했다. 지금은 실패를 맛보고 있었지만."
+        },
+        {
+          "id": "in-his-own-image-interlude-5",
+          "title": "그의 형상대로: 막간 5",
+          "url": "https://scpko.wikidot.com/in-his-own-image-interlude-5",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "2007년 8월 16일: 러멘트 요원은 제19기지 식당 안에 서서 창밖의 풍경을 바라다보았다. 마음 한구석으로는, 세상이 여전하다는 사실을 부지런히 되새기고 있었다. 이 세상 사람들이 정말로 살아 있다는 사실을. 그 일이 실제로 일어났었다는 사실을. 뱃속에 복잡한 매듭이 옭매인 것처럼 괴로웠다. 혼자만의 시간이 간절했다. 그러나 그는 혼자가 아니었다."
+        },
+        {
+          "id": "in-his-own-image-part-6",
+          "title": "그의 형상대로: 제6부",
+          "url": "https://scpko.wikidot.com/in-his-own-image-part-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "1998년 11월 27일: 러멘트는 의료동 벽에 등을 기대고 주저앉아 있었다. 그는 양팔을 끼고 비비다가, 정신을 차리고 멈추었다. 거북한 순간이었다. 주변에 정말로 치료가 필요한 사람들이 널려 있는데 이렇게 앉아 있으면 안 될 것 같았다. 화상, 상처, 그리고 온갖 유독물에 노출된 부위를 살피러 분주히 뛰어다니는 의사들은 또 어떻고…"
+        },
+        {
+          "id": "in-his-own-image-interlude-6",
+          "title": "그의 형상대로: 막간 6",
+          "url": "https://scpko.wikidot.com/in-his-own-image-interlude-6",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "2007년 8월 18일: \"죄송합니다… 정말… 정말로요…\" 목소리가 갈라지지 않도록 침을 넘기면서 러멘트가 말했다. \"저는… 저는 박사님을 아버지처럼 의지했어요… 이해 못하시겠지만 그냥… 전 그냥… 더는 못하겠어요… 현장 업무로 전근을 신청했어요. 제14기지로.\""
+        },
+        {
+          "id": "in-his-own-image-part-7",
+          "title": "그의 형상대로: 제7부",
+          "url": "https://scpko.wikidot.com/in-his-own-image-part-7",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "1998년 12월 22일: 러멘트는 의자에 기대어 앉아 커피를 홀짝이고, 샌드위치를 찾아 한 입 베어 물었다. 점심은 혼자만의 시간이 된 지 오래였다. 남들은 약을 택했다는 사실을 알게 된 후로는 더더욱. 샌들마이어의 시신, 도저히 같은 사람이라고는 믿을 수 없는 그 시체의 사진을 106의 파일에 끼워넣고, 러멘트는 묵직한 서류철을 책상 한편에 밀어두었다."
+        },
+        {
+          "id": "in-his-own-image-epilogue",
+          "title": "그의 형상대로: 에필로그",
+          "url": "https://scpko.wikidot.com/in-his-own-image-epilogue",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "2011년 9월 21일: 문 덜거덕거리는 소리에 러멘트는 화들짝 놀라 깨어났다. 또 생각에 잠긴 채로, 꿈을 꾸고 있었나 보다. 안타깝지만 이게 현실이었다. 러멘트는 문에 총부리를 겨누며 흘끔 탄피를 세었다. 이렇게 하면 자기나 친구에게 필요할 때 대비해 총알이 얼마나 남았는지 알 수 있었다. 기지 경비원의 광택 없는 새까만 제복이 보이자, 긴장이 탁 풀렸다."
+        },
+        {
+          "id": "containing-yourself",
+          "title": "스스로를 격리하라",
+          "url": "https://scpko.wikidot.com/containing-yourself",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "이봐요, 안녕하세요. 어….네. 제 이름은 러멘트입니다. 절 박사라고 부르지 말아주세요. 전 박사가 아니에요. 가끔 박사를 위해 일하기는 하지만요. 어쨌든, 그 박사님들이 저보고 오늘 여기 와서 당신들에게 약간 이야기를 해주랬어요. 보통은 다른 사람이 이 일을 하니까 지금은 그냥… 저로 참아주세요. 알겠어요? 네. 음… 들으세요. 저는 이 일을 당신들에게 제가 할 수 있는 최대한 친절한 방법으로 전하기 위해 노력할거에요."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "in-his-own-image-part-1",
+            "in-his-own-image-interlude-1",
+            "in-his-own-image-part-2",
+            "in-his-own-image-interlude-2",
+            "in-his-own-image-part-3",
+            "in-his-own-image-interlude-3",
+            "in-his-own-image-part-4",
+            "in-his-own-image-interlude-4",
+            "in-his-own-image-part-5",
+            "in-his-own-image-interlude-5",
+            "in-his-own-image-part-6",
+            "in-his-own-image-interlude-6",
+            "in-his-own-image-part-7",
+            "in-his-own-image-epilogue",
+            "containing-yourself"
+          ]
+        }
+      ],
+      "description": "재단에서의 삶과 그곳에서 살아가는 이들에 대한 이야기. TroyL가 글을 썼고, SunnyClockwork가 삽화를 그렸습니다."
+    },
+    {
+      "id": "scp-ko:collection:series:stealingsolidarityhub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "stealingsolidarityhub",
+      "title": "솔리다리티호 훔치기 허브",
+      "sourceListURL": "https://scpko.wikidot.com/stealingsolidarityhub",
+      "officialHubURL": "https://scpko.wikidot.com/stealingsolidarityhub",
+      "hubPresentation": "standard",
+      "canonicalTag": "stealingsolidarityhub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "stealingsolidarityhub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "allowEmpty": true,
+        "verifiedEmpty": true,
+        "structureHash": "sha256-8d4048f92fafda3cc9e7f646d627556252e4bb045ccc4c30ced4ea34ff1c682d"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "보스 (Boss) 신장: 1.95 m (6 피트 4 ½ 인치) 체중: 83 kg (183lbs) 모발: 삼색털(Calico) 생일: 04/15/05 가명: 쿠사나기 모토코 소령, 보예보다, 인테그라 헬싱 기사"
+    },
+    {
+      "id": "scp-ko:collection:series:glittering-horizon-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "glittering-horizon-hub",
+      "title": "눈부신 지평선",
+      "sourceListURL": "https://scpko.wikidot.com/glittering-horizon-hub",
+      "officialHubURL": "https://scpko.wikidot.com/glittering-horizon-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "glittering-horizon-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "glittering-horizon-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-b06a22cc1bbdf536097fe9f5a6cc50986aa0e97d029641751beb141ad358b07a"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-2006",
+          "title": "너무 무시무시한",
+          "url": "https://scpko.wikidot.com/scp-2006",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 35,
+          "desc": "SCP-2006은 제118기지 기밀(氣密) 격리실 내에 격리한다. SCP-2006은 그 형태가 바뀔 때마다 지속적으로 감시되며 그 즉시 기록된다. SCP-2006에 접근하는 모든 인원은 공포와 놀람을 연기하는 법을 배우는 강좌에 등록해야한다. 매달마다, SCP-2006에게 최소한 한 번 공포스러운 요소가 들어있는 새로운 질 낮은 공포 영화나 공상 과학 영화를 보여준다. SCP-2006과의 모든 상호작용에서 SCP-2006으로 하여금 자신이 한 일이 사람들에게 극…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "배경",
+          "articleIDs": [
+            "scp-2006"
+          ]
+        }
+      ],
+      "description": "이 연작은 아직 진행 중인 실험적 서사다. 여러 가지 형태를 사용할 수 있으나 뚜렷한 줄거리를 따라간다. 여기서 다루는 것은 살인, 그 뒷처리, 사진학 부서, 제2하이토스 교단, 평행우주, 정체불명의 이사관 밴 터너 Van Turner , 그 외 등등."
+    },
+    {
+      "id": "scp-ko:collection:series:matryoshka",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "matryoshka",
+      "title": "마트료시카",
+      "sourceListURL": "https://scpko.wikidot.com/matryoshka",
+      "officialHubURL": "https://scpko.wikidot.com/matryoshka",
+      "hubPresentation": "standard",
+      "canonicalTag": "matryoshka",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "matryoshka",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-3ced822ebd5b780a5d06322e9383f4602b005102da5a7d0a345350caf791263f"
+      },
+      "primaryArticles": [
+        {
+          "id": "matryoshka-prologue",
+          "title": "마트료시카: 프롤로그",
+          "url": "https://scpko.wikidot.com/matryoshka-prologue",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "O5-8은 문을 열고 청명한 아침 햇살이 밝게 비추는 전망대에 들어섰다. 86층에서 바깥을 내다보는 사람들은, 전날 폭풍이 뿌리고 간 눈에 여전히 뒤덮여있는 맨해튼 전경을 또렷이 볼 수 있었다. 양복을 빼입은 남자들과 모피 코트를 두른 여자들이 콘크리트 벽을 따라 잔뜩 운집해 빌딩 저 아래를 내려다보며 사진을 찍는 모습이 보였다. 태양을 피해 눈을 찡그리던 O5-8의 시선이 벽 쪽에 꽂혔다. 그 벽의 남동쪽, 군중과 떨어진 구석에 서서 하늘을 올려다보는 검은 장…"
+        },
+        {
+          "id": "voices-unassailable",
+          "title": "확고부동한 목소리들",
+          "url": "https://scpko.wikidot.com/voices-unassailable",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "이것은 냉전에 대해서 당신이 알아 두어야 할 사항들이다. 1949년 8월 19일: 소련의 첫 원자폭탄 실험. 핵전력 독점의 상실을 목도하며, 미국의 기술적 우위를 유지하려는 노력으로서, 트루먼 대통령이 갓 태동하는 분야인 초상과학적 무기 연구에 대한 상당한 지원 증강을 포함한 대대적인 재군비 과정을 명령하다. 미국과 소련의 간섭을 배제하기로 결정한 재단이 그들의 가장 민감하고 강력한 개체들을 이집트, 유고슬라비아, 인도네시아와 같은 비동맹 국가들로 재배치하다.…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "matryoshka-prologue",
+            "voices-unassailable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-ko:collection:series:peregrine",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "peregrine",
+      "title": "송골매",
+      "sourceListURL": "https://scpko.wikidot.com/peregrine",
+      "officialHubURL": "https://scpko.wikidot.com/peregrine",
+      "hubPresentation": "standard",
+      "canonicalTag": "peregrine",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "peregrine",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-7d86a261cf359cc47f2034a0b9ec5426f42d472a8d7181a312649cb40370a602"
+      },
+      "primaryArticles": [
+        {
+          "id": "anderson-robotics-hub",
+          "title": "앤더슨 로보틱스",
+          "url": "https://scpko.wikidot.com/anderson-robotics-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 4,
+          "desc": "앤더슨 로보틱스는 변칙적 로봇, 안드로이드, 인공지능, 컴퓨터 프로그램 판매를 특화되어 있는 초상기술 회사이다. 앤더슨 로보틱스는 1990년대부터 영업을 해온 것으로 생각되지만 재단의 주의 대상이 되기 시작한 것은 2007년 시애틀의 창고에서 초상기술 밀매매 현장을 덮쳐서 SCP-1360 을 포획한 이후이다. 이 최초 접촉 이후 앤더슨 로보틱스는 로봇공학 분야 초상기술의 으뜸가는 거간꾼으로 인지되고 있다. 2014년경의 앤더슨 로보틱스 트레이드마크 로고. 앤더슨…"
+        },
+        {
+          "id": "scp-1360",
+          "title": "PSHUD #31",
+          "url": "https://scpko.wikidot.com/scp-1360",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 8,
+          "desc": "SCP-1360은 제19기지에 있는 인간형 격리실에 구속되어야 한다. 격리실에 입장하기 전에는 보안 요원 4명이 있어야 하며, 구속은 실험을 위해 특별히 요구되지 않는 한 제거될 수 없다. 의사 소통을 목적으로 SCP-1360에게는 펜과 공책이 제공된다."
+        },
+        {
+          "id": "last-meetings",
+          "title": "마지막 만남들",
+          "url": "https://scpko.wikidot.com/last-meetings",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "자신의 마지막 소지품 하나를 상자에 넣으며, 호두나무 지팡이를 짚고 있는 한 노인이 마지막으로 방을 둘러보았다. 그의 이름은 재커리 존슨 박사였으며, 그가 35년 동안 일해온 사무실은 재단에서 받은 가구를 제외하고는 이제 비어있었다. 그 35년이라는 세월은 참으로 즐거웠었다. 그는 6개 항목의 주요 조사관이었으며 다른 최소 12개 항목의 주요 연구기여자이기도 했다. 그러나 아아, 이제는 은퇴할 시간이었고, 그는 우울한 미소를 지은 채 모래밭에 있던 불을 끈 뒤…"
+        },
+        {
+          "id": "simple-sketches",
+          "title": "간단한 스케치",
+          "url": "https://scpko.wikidot.com/simple-sketches",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "콘웰 연구원은 격리실 책상을 옆에서 지켜보면서 서 있었다. SCP-1360이 콘웰을 되쳐다봤다. 1360의 흰색 플라스틱 눈은 아무 감정없이 콘웰의 움직임을 따라갔다. 4명의 경비요원들이 근처에 서 있었고, 각각의 요원들은 옴짝달싹 못하는 로봇이 탈출을 할까봐 로봇을 예의주시 하고 있었다. 콘웰은 서둘러 고개를 끄덕였다. 그는 옆에 있던 수술대 위에 올려진 녹음기 버튼을 누르고 녹음을 하기 시작했다."
+        },
+        {
+          "id": "products",
+          "title": "제품",
+          "url": "https://scpko.wikidot.com/products",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "헤리슨은 낡아 빠진 도시 속 한 아파트 방에 앉아있었다. 그녀가 앉은 의자와 그 앞에 있는 책상만이 방 안에 있는 유일한 가구였다. 그녀의 맞은편에는 검은색 시트로 가려진 4개의 물건들이 있었다. 헤리슨은 자신의 갈색 머리를 빗은 뒤 자신의 손에 몸을 기대면서 한숨을 쉬었다. 이윽고 헤리슨은 자신의 시계를 확인해봤다. 헤리슨의 시계와 그녀가 입은 옷은 그녀가 무언가를 오랫동안 기다리는 것에 익숙지 않다는 것을 보여주고 있었다. 헤리슨이 만나고자 하는 사람은 그녀…"
+        },
+        {
+          "id": "building-up",
+          "title": "쌓아올리다",
+          "url": "https://scpko.wikidot.com/building-up",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "콘웰 연구원은 자기 사무실을 둘러봤다. 장식용으로 쓰던 몇 안 되는 삭막한 물건들은 이젠 책상 위에 놓인 상자 속에 들어가 있었다."
+        },
+        {
+          "id": "tearing-down",
+          "title": "허물어내리다",
+          "url": "https://scpko.wikidot.com/tearing-down",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "세이커 #76은 그렉 콜린스 박사의 책상 너머에 같은 이름의 박사와 유전적으로 일치하는 합성 생물성 외피를 입고 앉아 있었다. #76은 거의 2년 전쯤에 콜린스 박사를 뒤쫓아 죽였고, 피와 장기를 채집하고 신원을 도용했다. 납치는 소리소문 없이 이루어졌고 콜린스 박사의 유해는 누구도 찾지 못할 방식으로 처리되었다. 세이커의 구조는 훔친 생물학적 물질로 된 껍질이 덮어씌워지고 나면 탐지할 방법이 사실상 없었고, #76은 그 덕에 콜린스의 인체 구조를 완벽히 모방했…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "anderson-robotics-hub",
+            "scp-1360",
+            "last-meetings",
+            "simple-sketches",
+            "products",
+            "building-up",
+            "tearing-down"
+          ]
+        }
+      ],
+      "description": "\"이 로봇 이름이 뭐에요, 아빠?\" 어린 소녀가 물었다. 어린 소녀의 눈은 꿈적조차 않는 키 큰 드로이드를 바라보면서 점점 커져만 갔다. \"음, 앤더슨 이 우리한테 준 지시서에 따르면, 이 친구한테 미리 설치해 놓은 자아는 헥토르라고 불린다만, 우린 이 로봇을 네가 원하는 이름대로 부를 수 있단다, 내 딸아.\" 제임스가 어린 소녀의 머리를 헝클어주면서 대답했다. \"헥토르가 무슨 뜻이에요?\" 어린 소녀가 그녀의 아버지의 손에서 벗어나면서 물어보았다. \"그는 멋진 영웅이었단다. 트로이아 시의 수호자였지.\" \"얘도 멋진 영웅이었나요?'' ''내가 쓴 액수를 생각하면 그래야겠지.\" 제임스가 웃으면서 말했다. \"그러면 나도 얘를 헥토르라고 부르고 싶어요!\" \"물론이지, 내 딸아.\" 제임스가 작은 미소를 지으면서 말했다. \" PSHUD #31 , 지금 이 순간부터 너는 헥토르라는 이름에 반응해야 해. 내 말 이해했지?\" 드로이드는 고개를 끄덕였다. 어린 소녀가 드로이드의 손을 잡자 드로이드는 그녀를 내려다보았다. \"지금 헥토르하고 놀아도 돼요, 아빠?'' 어린 소녀가 드로이드를 힘껏 끌어당기고 입이 귀에 걸릴 정도로 활짝 웃으며 물었다. \"그럼, 물론이지.\" 제임스가 대답했다. \"아빠가 헥토르를 사용하지 않을 때에는 얼마든지 너희 둘이서 놀 수 있단다. 헥터는 항상 세라 너를 위해 이 자리에 계속 있을 거야. 항상.\""
+    },
+    {
+      "id": "scp-ko:collection:series:the-stuff-industry-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "the-stuff-industry-hub",
+      "title": "잡동사니 산업 허브",
+      "sourceListURL": "https://scpko.wikidot.com/the-stuff-industry-hub",
+      "officialHubURL": "https://scpko.wikidot.com/the-stuff-industry-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-stuff-industry-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-stuff-industry-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-0d945adaa9c01f09cabb7446663a4706ea8151970e76422160e1e86a51b43980"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-2021",
+          "title": "단면 종이",
+          "url": "https://scpko.wikidot.com/scp-2021",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 20,
+          "desc": "SCP-2021은 최소 30 cm x 20 cm x 10 cm 크기의 불투명한 용기 안에 보관된다. SCP-2021의 모든 개체는 등록되어야 하며, 실험 도중 소실된 경우 기록되어야 한다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "잡동사니 산업에 입사한 것을 환영합니다!",
+          "articleIDs": [
+            "scp-2021"
+          ]
+        }
+      ],
+      "description": "받는이: 잡동사니 이사회 보내는이: PGT_Chev2000@.net CC: 제목: 조심해라 조심해, 친구들. 우리 \"잡동사니\" 산업을 찾아다니는 것 같은 사람들이 있다는 걸 알았어. 거의 십년 가까이 된 일이었으니 별 큰 문제는 아닐 거야. 하지만 너희들 중 누구 하나라도 방겐 밑에 있을 시절에 무언가 추잡한 것들을 파묻는 일을 했다면, 조심해. 자기를 \"닷저 Dodger \"라고 하는 웬 머저리년이 그 사업에 관해 모든 걸 묻고 다니고 있어. 그 여자는 별 위험이 아닌 것 같지만, 그 여자가 일하는 단체에 대해 좀 조사해 봤는데, 그들은 모든 걸 잘 \"알고\" 있는 것 같아. 이게 무슨 뜻인지 알겠다면 말이지. 다들 저 쪽에서 보자 파제 셰발리에 Paget Chevalier 11/19/99 첫 번째 목격 두 번째 목격 세 번째 목격 네 번째 목격"
+    },
+    {
+      "id": "scp-ko:collection:series:antimemetics-division-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "antimemetics-division-hub",
+      "title": "항밈학과 허브",
+      "sourceListURL": "https://scpko.wikidot.com/antimemetics-division-hub",
+      "officialHubURL": "https://scpko.wikidot.com/antimemetics-division-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "antimemetics-division-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "antimemetics-division-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-0c7c1945472a5c4e89c97a762b886ccee4a0155531990cfc36f98bf44d63475c"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-055",
+          "title": "[정체불명]",
+          "url": "https://scpko.wikidot.com/scp-055",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 71,
+          "desc": "대상은 5 m x 5 m x 2.5 m의 두께 50 cm의 시멘트 재질의 직사각형 방 안에 시멘트로 벽을 친 패러데이 상자 안에 격리되어 있다. 2 m x 2.5 m 크기의 두꺼운 문을 통해서만 출입 가능하며, 이 문은 의도적으로 잡고 있지 않는 한 자동으로 잠기도록 만들어져 있다. 절대로 SCP-055의 방 밖에 경비대원을 배치해서는 안 된다. 또한 해당 격리실 주변에 있는 다른 SCP 개체를 관리 또는 연구하기 위해 배치된 인원들은 가급적 방 중심으로부터 5…"
+        },
+        {
+          "id": "qntm-s-author-page",
+          "title": "qntm",
+          "url": "https://scpko.wikidot.com/qntm-s-author-page",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "we-need-to-talk-about-fifty-five",
+          "title": "공오오 이야기를 좀 해 보아요",
+          "url": "https://scpko.wikidot.com/we-need-to-talk-about-fifty-five",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 36,
+          "desc": "\"담배 태워도 되나요?\" 이번엔 접수계원이 매리언에게 눈을 찌푸렸다. \"아니요.\" 접수계원이 말했다. \"여기서는… 아니요, 제200기지 어디서도 태우시면 안 됩니다. 본부라고 해서 저희한테 허파가 없다는 건 아닙니다. 노동법도 물론이고요.\""
+        },
+        {
+          "id": "introductory-antimemetics",
+          "title": "항밈학 개론",
+          "url": "https://scpko.wikidot.com/introductory-antimemetics",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 43,
+          "desc": "하급연구원 김(Kim)은 재단에서 일하기 시작한 지 달랑 네 시간 되었으면서도 방금 첫 신입 개론 강의에서 머리에 모루라도 맞은 마냥 완전히 갈려 나간 느낌이었다. 때는 점심시간이었고, 자리는 식당 저 멀리 구석 아무도 귀찮게 하지 않을 만한 곳을 찾아 앉은 참이었다. 그곳에서 김은 비변칙적 음식을 씹어 삼키고, 세상의 종말만큼 강렬한 커피를 마시고, 아침의 그 힘든 교육 내용을 뱃속에서 소화할 수 있었다."
+        },
+        {
+          "id": "unforgettable-that-s-what-you-are",
+          "title": "망각 불가, 그게 바로 당신",
+          "url": "https://scpko.wikidot.com/unforgettable-that-s-what-you-are",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 20,
+          "desc": "\"끝났어요, 엘.\" 린 마르네스Lyn Marness는 구십 살이 넘었으며 지난 십 년 동안은 허리를 쭉 펴고 서본 적이 없다. 한창때에는 탑과도 같아, 키는 2미터가 넘으며 권투 선수와 같은 몸을 하고 있었다. 그의 눈을 똑바로 바라볼 수 있는 사람은 거의 없었다. 쳐다본다 해도, 그러면서 \"아니\"라고 말할 수 있는 사람도 거의 없었다. 병은 시간이 흐르며 조금씩 그를 좀먹어 갔다. 꼭 자신이 깊은 욕조 밑바닥에 살고, 지금까지 만나 보았던 모든 이가 미끄럽고…"
+        },
+        {
+          "id": "case-colourless-green",
+          "title": "사건명 무색의 녹색",
+          "url": "https://scpko.wikidot.com/case-colourless-green",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 15,
+          "desc": "일련번호: SCP-3125 등급: 케테르 특수 격리 절차: SCP-3125는 제41기지 1층의 제3125인식재해격리단위 내에 보관되어 있다. 이 격리단위는 10 m × 15 m × 3 m의 입방형 방으로, 내벽이 납으로 발라져 있고 방음 및 텔레파시 차폐 처리가 되어 있다. 접근하기 위해서는 격리단위 한쪽 끝의 에어락 시스템을 통해야 한다. 이 에어락은 한 번에 한 사람만 격리단위 안으로 들여보내며, 먼저 들어간 사람이 나오기 전까지 잠김으로써 다른 사람이 들어…"
+        },
+        {
+          "id": "your-last-first-day",
+          "title": "당신의 마지막 첫날",
+          "url": "https://scpko.wikidot.com/your-last-first-day",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 19,
+          "desc": "매리언 휠러는 하강하고 있는 제41기지 주 화물 엘리베이터 구석에 웅크린 채로, 본인의 키 정도 되는 크기의 반짝이는 붉은색 광선 총을 움켜쥔다. 총은 총열을 대신하여 두 갈래가 나 있으며 개머리판은 이상하게 비대칭적인 배관으로 만들어져, 무기라기보다는 스위스제 시계나 작은 장관에 더 가깝다. 이 총은 SCP-7381로, 기존의 천문학에서는 아직 관측하지 못한, 이미 오래전에 죽어버린 행성 — 여러모로 행성에 그다지 가깝다고는 할 수 없다 — 의 물건이다."
+        },
+        {
+          "id": "scp-2256",
+          "title": "엄청 키 큰 애들",
+          "url": "https://scpko.wikidot.com/scp-2256",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 17,
+          "desc": "SCP-2256에 관한 정보는 점진적 항밈 부식효과의 대상이다. 그 정보가 얼마나 상세한지 또 정확한지 정도 및 기억매체의 물리적 복잡성에 따라 부식 속도는 달라진다. 철저하고 상세한 학술 논문, 사진, 전자적으로 저장된 정보들은 매우 빠르게 부식한다. 이에 비해 두루뭉술한 묘사, 연필 스케치, 종이 문서 등은 상대적으로 느리게 부식한다. 고로 전자 데이터베이스상의 본 항목은 SCP-2256을 개괄적으로만 설명해야 한다. SCP-2256의 외모, 가설상의 진화계…"
+        },
+        {
+          "id": "scp-3125",
+          "title": "탈주자",
+          "url": "https://scpko.wikidot.com/scp-3125",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 41
+        },
+        {
+          "id": "where-have-you-been-all-my-life",
+          "title": "내 일생 동안 어디에 있었던가",
+          "url": "https://scpko.wikidot.com/where-have-you-been-all-my-life",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "어떤 미친놈이 선임 재단 임원의 집에, 그것도 당사자가 집에 있는 동안 침입한단 말인가? 매리언 휠러는 가장 가까운 도시에서나, 그와 반대 방향에 위치한 제41기지에서나 마찬가지로 장거리 운행을 해야지 닿을 수 있는 침엽수림 깊은 곳에 산다. 게다가 밤도 깊었고, 침대에 누워 책을 읽고 있는 그때, 휠러는 현관문의 잠금장치가 풀리면서 나는 작지만 결코 헷갈릴 수는 없는 소리를 듣는다. 휠러는 시선을 들어 올려, 복도에서 나는 작은 발소리를 들으며 잠깐 멍하니 벽…"
+        },
+        {
+          "id": "fresh-hell",
+          "title": "생지옥",
+          "url": "https://scpko.wikidot.com/fresh-hell",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "바로 전 방에 또 다른 절단된 손가락 복합체가 방 내부를 터진 코끼리의 내장처럼 뒤덮고 있다. 팔다리 일부가 곰팡이처럼 약장으로 퍼져나가고 있고, 나머지는 의료용 들것 위에서 태아처럼 널브러져 있다. 휠러가 문을 열자 덩어리는 새로운 빛에 빠르게 반응하며, 그 자리를 박차고 뛰어올라 몸 일부분을 휠러에게로 낚시하듯이 쏘아 보낸다. 휠러는 뒤로 비틀거리며 물러나 겨우 문을 당긴다. 덩어리가 저 멀리서 문을 때리자 둔탁하고 살이 부딪히는 쾅 소리가 난다. 문은 아직…"
+        },
+        {
+          "id": "ojai",
+          "title": "오하이",
+          "url": "https://scpko.wikidot.com/ojai",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "재단의 요원 조지 바신George Barsin은 돌덩이같은 사람이다. 브루스 W. 팀의 만화에 등장하는 인물처럼 거의 2미터에 이르는 키에 떡 벌어진 어깨를 가졌다. 머리가 벗겨지고 턱수염이 났으며 완벽한 모습을 유지한다. 조지에게 맞는 기성품은 거의 없기에 그의 정장은 맞춤제작되었다."
+        },
+        {
+          "id": "immemorial",
+          "title": "잊음비",
+          "url": "https://scpko.wikidot.com/immemorial",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "\"휠러 씨! 휠러 씨!\" 매리언 휠러는 예정되어 있던 SCP-8473 점검을 지금 막 마치고 담배나 한 대 태우러 가던 참이었다. 누군가 달려와 SCP-8473 격리 단위 밖에서 그녀와 마주쳤다. 휠러는 그 사람이 엘리 모레노 박사라는 걸 알아본다. 고작 6개월 전에 항밈학과에 합류한 수습 현장 연구원이다."
+        },
+        {
+          "id": "case-hate-red",
+          "title": "사건명 증오의 적색",
+          "url": "https://scpko.wikidot.com/case-hate-red",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "만약 애덤 휠러가 조금이라도 생각을 해봤더라면, 누군가 그에게 적절한 질문을 던져 떠올리게 했다면, 그는 자신의 존재가 스스로에게 어떠한 만족감도 가져오지 못한다는 사실을 말로 표현할 수 있었으리라. 자신이 실은 전혀 \"행복\"하지 않고, 삶에서 무언가 거대하고 중요한 것이 사라진 상태라는 걸 알아내거나, 성찰할 수 있었을 것이다. 하지만 그는 전혀 그런 생각을 하지 않는다. 그러한 의문과 그의 사이에는 거대한 공동이 있다. 객관적으로나 학문적으로나, 그의 삶은…"
+        },
+        {
+          "id": "ara-orun",
+          "title": "아라 오룬",
+          "url": "https://scpko.wikidot.com/ara-orun",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "하지만 아닐 리가 없다. 비인간들은 휠러를 땅바닥에 찍어 누르고는 팔을 내밀게 붙잡는다. 그러고는 쥐고 있던 손을 강제로 열어 왼손 검지를 내보인다. 끔찍한 생각이 성난 듯 그의 정신에 난 문을 두드리며, 들여보낼 것을 요구한다. 잘못된 생각이다. 그 생각의 모양은 끔찍하며 너무 큰 데다가 독이 잔뜩 발려 있어 들여보내면 휠러가 무엇인지에 대한 모든 걸 집어삼키고, 그의 집을 쓰레기와 부서진 유리 조각으로 가득 채울 것이다. 그 생각은 그러한 것들에 휠러를 빠트…"
+        },
+        {
+          "id": "unthreaded",
+          "title": "풀림",
+          "url": "https://scpko.wikidot.com/unthreaded",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "매리언 휠러는 평생 거의 매일 강한 기억제를 사용했다. 기동특무부대 ω-0 \"아라 오룬\" 소속 정체성 전사들은, 그녀가 죽는다면 정신권으로 승천하리라 믿어 의심치 않았다. 그녀가 베이더-람진 정보형태 독립체나 타입 VI 의지정신환영 혹은 \"유령\"이든 뭐든 그녀가 새로운 자신을 묘사하고자 하는 방향으로 될 거라고 말이다. 이윽고, 천국의 시민에 합류하여, 더 높은 곳에서 항밈학과의 싸움을 이어나갈 것이라 믿었다. 어마어마하게 힘을 실어주며 말이다."
+        },
+        {
+          "id": "the-wild-light",
+          "title": "야생광",
+          "url": "https://scpko.wikidot.com/the-wild-light",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "회의실은 제S167-00-1006격리단위로, 사산된 크립토모르파 기간테스의 두개골이다. 텅 빈 두개강 내 공간은 프로토타입 베가스룸이다. 무엇이든 그 안에서 일어난 일은, 그 안에 남는 곳이다. 사람들은 그 안에 들어가고 다시 나온다. 그러면 나올 때 안에서의 기억은 세상에서 걸러지고, 아무것도 기억하지 못하게 된다. 두개골은 90년대에 확보한 것이다. 정보 억제 효과는 해당 종의 자연적인 항밈적 위장의 부산물이다. 해당 위장은 이 엄청나게 큰 생물체를 야생에서…"
+        },
+        {
+          "id": "blood-brain",
+          "title": "피/뇌",
+          "url": "https://scpko.wikidot.com/blood-brain",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "밤낮의 구분이 없어졌다. 걷기 시작하고 한 일주일 정도 지났을 때, 휠러는 실험을 해볼 수 있겠다는 걸 깨닫는다. 그는 잠을 잘 때 도서관같이 천장이 높은 건물을 고른다. 잠들기 전에, 휠러는 건물 안에 푸코의 진자를 설치한다. 천장에 와이어와 무거운 돌을 매단 뒤 흔들리게 한다. 다음 날 아침, 느리게 흔들리던 진자는 여전히 흔들리고 있다. 세차 운동을 하며 말이다. 잠들기 전에 마킹을 해둔 위치와 거의 직각 방향에서 흔들리고 있다."
+        },
+        {
+          "id": "tombstone",
+          "title": "묘석",
+          "url": "https://scpko.wikidot.com/tombstone",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "모든 밈적 호러는 제쳐두고, 휠러는 제41기지가 일하기에는 충분히 괜찮은 장소처럼 보인다 생각했다. 적어도 지상층은 말이다. 매력적이지는 않아도 제법 널찍한 사무실과 너른 창문, 풍부한 자연광과 운치 있는 숲 전망까지. 안전하기도 하고 말이다."
+        },
+        {
+          "id": "champions-of-nothing",
+          "title": "부존재의 승리자",
+          "url": "https://scpko.wikidot.com/champions-of-nothing",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "\"…그리하여 우리는 무엇을 배웠을까?\" O5-8이 제 질문에 답하기까지 상당한 시간이 걸린다. 그는 계산된 평온한 목소리로 말한다. 서두를 필요는 없으니 말이다."
+        },
+        {
+          "id": "scp-2111",
+          "title": "이 글을 읽을 수 있다면…",
+          "url": "https://scpko.wikidot.com/scp-2111",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 22
+        },
+        {
+          "id": "in-the-trenches-with-the-dead",
+          "title": "망자와 함께 참호에서",
+          "url": "https://scpko.wikidot.com/in-the-trenches-with-the-dead",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "이 글을 읽을 수 있다면, 당신은 이미 죽었습니다. 2.10 — 5대 방어 도그마 : 정체성 전사(Identity Warrior)는 정체성전투훈련에서 방어는 물론, 장기간 살아남기 위해 정체성의 5대 요소를 믿어야 한다. 우린 이 다섯 요소를 \"도그마(dogma)\"라 부르는데, 당신이 살아남기 위해서는 이 요소들을 반드시 믿고 있어야 하기 때문이다. 2.10.1 — NAMES: 다섯 가지 도그마는 서사(Narrative), 닻(Anchor), 임무(Mission…"
+        },
+        {
+          "id": "a-thin-dangerous-line",
+          "title": "위험한 선긋기",
+          "url": "https://scpko.wikidot.com/a-thin-dangerous-line",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "이런 생각은 위험한 선긋기이다. 목적도 이루지 못하면서 죽는다면 개죽음, 얼빠진 짓이다. 하지만 수치는 아니다. 이것이 무사도에 사는 사나이 본연의 자세다. — 야마모토 쓰네토모, 《하가쿠레》"
+        },
+        {
+          "id": "antimemetics-division-timeline",
+          "title": "항밈학과 타임라인",
+          "url": "https://scpko.wikidot.com/antimemetics-division-timeline",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-033",
+          "title": "잃어버린 수",
+          "url": "https://scpko.wikidot.com/scp-033",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 17,
+          "desc": "SCP-033은 관찰이나 실험 중일 때 이외에는 불규칙한 모양을 가진 수제의 종이, 파피루스, 캔버스 혹은 피지에 기록되어야 한다. 이때 사용되는 종이류 물품의 규격에는 서로 평행한 변, 직각, 서로 같은 길이의 변이 없어야 한다. (033-안전 규격) 대상이 기록된 이러한 종이류 물품은 암호를 사용하지 않는 금고에 보관하며 전산 및 기록 장치에서 30 m 이상 거리를 두어야 한다. SCP-033의 반출 및 반입 내용이 기록되는 종이 물품이나 전자기기의 오염 가…"
+        },
+        {
+          "id": "revenants",
+          "title": "망령들",
+          "url": "https://scpko.wikidot.com/revenants",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "그의 손에는 총이 들려 있다. AR-15 자동소총이고 (그의 정신이 기계적으로 떠올린다), 신입 요원에게 아니면 긴급 상황에 주어지는 표준 규격 배급품에, 꽤 새것이며, 상태는 별로 좋지 않다. 그는 이 총이 익숙하고, 또 좋아하기도 했다. 살면서 쏴 본 다른 총들보다 훨씬 더 중요하게 느껴지기 때문이다. 지금 그는 그 총을 단련된 능숙함으로 분해하고 있고, 그리고—"
+        },
+        {
+          "id": "scp-1425",
+          "title": "별의 신호들",
+          "url": "https://scpko.wikidot.com/scp-1425",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 24,
+          "desc": "SCP-1425 사본 하나를 제40저장기지의 이중잠금된 기록실에 보관한다. 기지 이사관, EID 총책임자, CMA 수장, O5 평의원 중 두 명 이상의 서면 허가를 받은 경우가 아니라면 문서 접근은 완전히 제한된다. 두 번째 사본은 O5 평의원들에게만 공개되는 절차에 따라 비밀 장소에 보관한다. 미합중국 전역의 모든 인쇄 및 방송 매체를 감시하여 CMA 문서 1425-A 에 제시된 키워드나 핵심 상징이 나타나는지 확인한다. 추가적인 SCP-1425 사본을 찾아내…"
+        },
+        {
+          "id": "scp-2828",
+          "title": "항밈적 신체 부위",
+          "url": "https://scpko.wikidot.com/scp-2828",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 14,
+          "desc": "SCP-2828은 현재 격리할 수 없으며 전 세계 사람들에게 존재한다. 하지만, 강력한 기억제를 사용하지 않는 이상 감지할 수 없으므로 보안 파기가 일어나거나 대중이 발견할 확률은 아주 낮다고 판단된다. 주로 MTF ε-7 (\"물망초\") 부대원인 위장 재단 첩보원들은 제약기업과 화학기업의 고위 임원으로 위장하여 기억제가 될 가능성이 있는 화학 물질을 제조하는 프로젝트를 감시하며, 프로토타입을 손에 넣어 SCP-2828을 인지할 수 있는지를 확인한 뒤, 그 결과에…"
+        },
+        {
+          "id": "scp-2358",
+          "title": "이거 전에 어디선가 본 적이 있는데…",
+          "url": "https://scpko.wikidot.com/scp-2358",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "자가 검열성과 현재 이동에 대한 제약으로 인해, SCP-2358 개체들은 현 위치에 계속해서 남는다. 기동특무부대 엡실론-7(\"물망초 Forget-Me-Nots \")은 계속해서 민간 기억제 개발을 감시하고 방해한다."
+        },
+        {
+          "id": "scp-scp-033",
+          "title": "SCP-SCP-033",
+          "url": "https://scpko.wikidot.com/scp-scp-033",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "제41기지: 항밈학과 본부 엘리제 던월Elise Dunwall은 스크린 오른편의 창을 본다. …기호들의 \"합계\"는 (허친슨Hutchinson 교수가 θ'으로 명명한) 이전까지 알려지지 않은 두 정수 5와 6의 중간값이다."
+        },
+        {
+          "id": "numbers-lie",
+          "title": "숫자는 거짓말쟁이다",
+          "url": "https://scpko.wikidot.com/numbers-lie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "숫자는 거짓말쟁이가 아니다 ▶ 숫자는 거짓말쟁이다 ▷ Re: Potential Anomalous Activity ▷ The Transfer ▷ Journeys: The Tale of Dane ▷ Just Enough"
+        },
+        {
+          "id": "scp-3393",
+          "title": "일급 기밀",
+          "url": "https://scpko.wikidot.com/scp-3393",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 22,
+          "desc": "걱정 말아요. 참을만 하니까."
+        },
+        {
+          "id": "scp-3211",
+          "title": "카논은 없다",
+          "url": "https://scpko.wikidot.com/scp-3211",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 32,
+          "desc": "Croquembouche"
+        },
+        {
+          "id": "scp-4773",
+          "title": "와 봉제 곰 인형",
+          "url": "https://scpko.wikidot.com/scp-4773",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 17,
+          "desc": "SCP-4773-2는 실험을 위해 제96기지에 위치한 4 m X 4 m X 4 m 격리실 1 로 이동되었다. 격리 과정 중 최초의 초기 분석 단계 동안 격리팀 CT-4773이 대기하고 있어야 하며, 해당 과정은 현재 진행 중이다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "중요한 배경 읽을거리",
+          "articleIDs": [
+            "scp-055",
+            "qntm-s-author-page",
+            "we-need-to-talk-about-fifty-five",
+            "introductory-antimemetics",
+            "unforgettable-that-s-what-you-are",
+            "case-colourless-green",
+            "your-last-first-day"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "막간",
+          "articleIDs": [
+            "scp-2256"
+          ]
+        },
+        {
+          "id": "03-five-five-five-five-five-by-qntm",
+          "title": "『 오 Five 오 Five 오 Five 오 Five 오 Five 』 by qntm",
+          "articleIDs": [
+            "scp-3125",
+            "where-have-you-been-all-my-life",
+            "fresh-hell",
+            "ojai",
+            "immemorial",
+            "case-hate-red",
+            "ara-orun",
+            "unthreaded",
+            "the-wild-light",
+            "blood-brain",
+            "tombstone",
+            "champions-of-nothing"
+          ]
+        },
+        {
+          "id": "04-by-sirpudding",
+          "title": "『망자가 아는 것』 by sirpudding",
+          "articleIDs": [
+            "scp-2111",
+            "in-the-trenches-with-the-dead",
+            "a-thin-dangerous-line"
+          ]
+        },
+        {
+          "id": "05-articles",
+          "title": "참고용",
+          "articleIDs": [
+            "antimemetics-division-timeline"
+          ]
+        },
+        {
+          "id": "06-articles",
+          "title": "효시 작품",
+          "articleIDs": [
+            "scp-033",
+            "revenants",
+            "scp-1425",
+            "scp-2828",
+            "scp-2358"
+          ]
+        },
+        {
+          "id": "07-articles",
+          "title": "그 외 이야기들",
+          "articleIDs": [
+            "scp-scp-033",
+            "numbers-lie",
+            "scp-3393",
+            "scp-3211",
+            "scp-4773"
+          ]
+        }
+      ],
+      "description": "항밈(antimeme)이란 스스로를 검열하는 특성이 있는 개념 이다. 다시 말해 그 자체의 고유한 본질에 의하여 사람들이 그 개념을 확산시키는 것을 방해하거나 막는 성질이 있는 개념이다."
+    },
+    {
+      "id": "scp-ko:collection:series:wills-and-ways-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "wills-and-ways-hub",
+      "title": "의지와 방법",
+      "sourceListURL": "https://scpko.wikidot.com/wills-and-ways-hub",
+      "officialHubURL": "https://scpko.wikidot.com/wills-and-ways-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "wills-and-ways-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "wills-and-ways-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-24abe9d9937c8361a1ae1f559b5fc07420f3482977a21b85a23aa270cdd65844"
+      },
+      "primaryArticles": [
+        {
+          "id": "marshall-carter-and-dark-hub",
+          "title": "유한회사 마셜, 카터 & 다크",
+          "url": "https://scpko.wikidot.com/marshall-carter-and-dark-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 15,
+          "desc": "설명 항목은 그냥 상품에 대한 설명 입니다. 상품의 현 소유자나 제작자에 대한 서술처럼 순수하게 현 상태의 상품에 대한 설명이 아닌 것들은 들어가선 안 됩니다. 여기에는 상품의 물리적인 묘사는 물론, 그 변칙적인 특성에 대한 서술이 들어가야 합니다. 정보 누락 없이 최대한 간결해야 합니다. 경험에 따르자면 네 문장 정도가 적절합니다. 이 단락에서 지나치게 과학적으로 설명할 필요는 없습니다. 쉽게 풀어 쓰는 게 더 유용합니다. 추신: 그냥 추신입니다. 좀 오래된…"
+        },
+        {
+          "id": "iris-dark",
+          "title": "아이리스 다크",
+          "url": "https://scpko.wikidot.com/iris-dark",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "아이리스 다크는 안락하게도 막연한 성취감으로 가득 차 있었다. 그녀는 따뜻한 코코아를 홀짝이며 흐릿하게 빛나는 화면을 응시했다. 바깥에서는 빗줄기가 쏟아지고 있었고, 음산한 구름 사이로 태양이 간간히 모습을 비추었다. 런던의 집값은 굉장히 비쌌지만 알고리즘 거래 시스템을 사용하면 1000분의 1초 동안의 시장 가격 변동으로 열 배 가량 돈을 불릴 수 있었다. 보이지 않는 찰나의 시간이 이 시스템의 핵심이었다. 특히 런던의 주식 거래소에서는 밀레니엄 교환 플랫폼을…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "marshall-carter-and-dark-hub",
+            "iris-dark"
+          ]
+        }
+      ],
+      "description": "가져간 것이 뭐든지 얻어라 얻은 것이 뭐든지 가져가라 고요하며 부드럽게, 살짝 흔들리며 황갈색이 되거나 또는 살짝 태워져라 새로운 것은 어느 것도 잘못되지 않았다 낡은 것은 어느 것도 새로워지지 않았다 아침에 우리는 깨어났다 환영 인사와 작별 인사"
+    },
+    {
+      "id": "scp-ko:collection:series:the-works-of-doc-burns",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "the-works-of-doc-burns",
+      "title": "번즈 박사 작품집",
+      "sourceListURL": "https://scpko.wikidot.com/the-works-of-doc-burns",
+      "officialHubURL": "https://scpko.wikidot.com/the-works-of-doc-burns",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-works-of-doc-burns",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-works-of-doc-burns",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-2cb093a163574eb8389cd245cee6a1f39523c8220741f1a0f1b65c1f05ce3b61"
+      },
+      "primaryArticles": [
+        {
+          "id": "the-tailor",
+          "title": "재단사",
+          "url": "https://scpko.wikidot.com/the-tailor",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "그들은 이해하지 못할 거란다, 얘야. 할 수 없어. 그들은 무의식적인 질투와 알지 못하는 것에 대한 두려움으로 인해 판단력이 흐려지고, 눈이 멀어버린 것이란다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "the-tailor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-ko:collection:series:anabasis-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "anabasis-hub",
+      "title": "아나바시스 허브",
+      "sourceListURL": "https://scpko.wikidot.com/anabasis-hub",
+      "officialHubURL": "https://scpko.wikidot.com/anabasis-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "anabasis-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "anabasis-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-f5c75924cee6a5f3a21cbbf04a8e9e8a3db308c89b942dd304719074f80221e3"
+      },
+      "primaryArticles": [
+        {
+          "id": "manna-charitable-foundation-hub",
+          "title": "만나 자선재단",
+          "url": "https://scpko.wikidot.com/manna-charitable-foundation-hub",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 5,
+          "desc": "[[footnoteblock]]"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "manna-charitable-foundation-hub"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-ko:collection:series:subversion-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "subversion-hub",
+      "title": "전복",
+      "sourceListURL": "https://scpko.wikidot.com/subversion-hub",
+      "officialHubURL": "https://scpko.wikidot.com/subversion-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "subversion-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "subversion-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-c829b2032e31089f270d42cb20d3b4b6ac38852f1a4c2e6c7852d70de7784544"
+      },
+      "primaryArticles": [
+        {
+          "id": "vaccination",
+          "title": "예방접종",
+          "url": "https://scpko.wikidot.com/vaccination",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "비주 대시우드Bijou Dashwood는 두 강사를 바라보며 심드렁히 칠판 앞에 앉아있었다. 왼쪽에는 열두 살짜리 소년이 있었다. 얼굴 아래쪽은 먼지투성이에 누렇게 변색된 반창고가 잔뜩 붙어있어, 숨을 들이쉬고 내쉴 때마다 조금씩 바스락거렸다. 머리 꼭대기에 자라나 있는 작은 갈색 머리카락 뭉치는 빗지도 않고 바람에 완전히 헝클어진 상태였다. 날카로운 초록색 눈은 비주 대시우드를 요리조리 뜯어보며, 조용히 그를 평가하고 있었다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "vaccination"
+          ]
+        }
+      ],
+      "description": "런던 동업조합 London Livery Companies 과 풋내기들에게는 “혼돈의 반란 The Chaos Insurgency ” 이라고 알려진, 조합을 구성하는 여러 세포들의 일백 하고 쉰일곱번째 그림자 부시장 Shadow Alderman 인 비주 대시우드 Bijou Dashwood 의 삶과 시대"
+    },
+    {
+      "id": "scp-ko:collection:series:adventures-in-capitalism-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "adventures-in-capitalism-hub",
+      "title": "자본주의 모험기 허브",
+      "sourceListURL": "https://scpko.wikidot.com/adventures-in-capitalism-hub",
+      "officialHubURL": "https://scpko.wikidot.com/adventures-in-capitalism-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "adventures-in-capitalism-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "adventures-in-capitalism-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-3c24eb510ea6cbb05185bf222b2c1e146ba208a67d25c47896109b1eb13475e3"
+      },
+      "primaryArticles": [
+        {
+          "id": "assistance-for-the-boss-lady",
+          "title": "사장 아가씨 모시기",
+          "url": "https://scpko.wikidot.com/assistance-for-the-boss-lady",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "\"제레미Jeremy, 너한테 실망인걸.\" 이사벨 헬가 아나스타샤 파르바티 원더테인먼트 5세Isabel Helga Anastasia Parvati Wondertainment V 박사: PhD 가 접은 손가락 너머를 쏘아봤다. 책상에 앉은 코기는 앞발의 살짝 축축해진 봉투가 세상에서 제일 자랑스럽기라도 한 듯 이사벨에게 웃어주었다. 이사벨은 몸을 젖혀 의자에 기대어 한숨을 내쉬었다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "assistance-for-the-boss-lady"
+          ]
+        }
+      ],
+      "description": "철학박사 닥터 이사벨 헬가 아나스타샤 파르바티 원더테인먼트 5세 Doctor Isabel Helga Anastasia Parvati Wondertainment V, PhD 와 그녀의 충성스러운 조교 엠마 아일소프브라운 Emma Aislethorp-Brown 의 이야기."
+    },
+    {
+      "id": "scp-ko:collection:series:december-24th-2011-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "december-24th-2011-hub",
+      "title": "2011년 12월 24일 허브",
+      "sourceListURL": "https://scpko.wikidot.com/december-24th-2011-hub",
+      "officialHubURL": "https://scpko.wikidot.com/december-24th-2011-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "december-24th-2011-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "december-24th-2011-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-c2dea417619d311680473a5df3f435bcf1b3a440003dc823f1a37f38d02e7cd2"
+      },
+      "primaryArticles": [
+        {
+          "id": "twistedgears-personnel-file",
+          "title": "트위스티드 기어스",
+          "url": "https://scpko.wikidot.com/twistedgears-personnel-file",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "crayne-author",
+          "title": "크래인",
+          "url": "https://scpko.wikidot.com/crayne-author",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-north-pole",
+          "title": "북극점",
+          "url": "https://scpko.wikidot.com/the-north-pole",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "Santa Baby의 테크노 리믹스 버전인 것 같은 노래가 음향 시스템에서 울려 펴지는 동안, \"폴리\"가 스트립쇼를 시작했다. 오늘은 SCP-2713 안에서 보내는 크리스마스 이브였고, 즉 기묘한 정도가 한 단계 올라갈 거라는 소리였다. 비무장 상태 요원 3명이 잠재적 위협요인은 없는지 살피고 있었다. 배지에 재단 휘장을 단 두 명의 박사는 바에 앉아 주변의 혼란스러운 모습을 관찰하고 있었다."
+        },
+        {
+          "id": "dr-cimmerian-s-personnel-file",
+          "title": "시메리안 박사",
+          "url": "https://scpko.wikidot.com/dr-cimmerian-s-personnel-file",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "lurk-d-s-personnel-file",
+          "title": "러크 D",
+          "url": "https://scpko.wikidot.com/lurk-d-s-personnel-file",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "djkaktus",
+          "title": "dj 서닌장",
+          "url": "https://scpko.wikidot.com/djkaktus",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-pg-4",
+          "title": "Pg. 4 - 나바로가 크리스마스를 구했다네",
+          "articleIDs": [
+            "twistedgears-personnel-file"
+          ]
+        },
+        {
+          "id": "02-pg-12",
+          "title": "Pg. 12 - 길 잃은 양치기",
+          "articleIDs": [
+            "crayne-author",
+            "the-north-pole",
+            "dr-cimmerian-s-personnel-file"
+          ]
+        },
+        {
+          "id": "03-pg-15",
+          "title": "Pg. 15 - 즐거워 하기에는 너무 취했다네",
+          "articleIDs": [
+            "lurk-d-s-personnel-file"
+          ]
+        },
+        {
+          "id": "04-pg-18",
+          "title": "Pg. 18 - 화해",
+          "articleIDs": [
+            "djkaktus"
+          ]
+        }
+      ],
+      "description": "비고: 작년 찬송 와중에 발생했던 사건들로 인해, 올해부터는 케테르 동은 방문하지 않기로 했습니다. 이것이 최선의 선택은 아니지만, 우리 일은 크리스마스 cheers를 나누려고 하는 것이지, 크리스마스 tears를 나누려는 게 아님을 명심해 주십쇼. - J. 콘웰"
+    },
+    {
+      "id": "scp-ko:collection:series:learning-the-alphabet-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "learning-the-alphabet-hub",
+      "title": "알파벳 배우기 허브",
+      "sourceListURL": "https://scpko.wikidot.com/learning-the-alphabet-hub",
+      "officialHubURL": "https://scpko.wikidot.com/learning-the-alphabet-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "learning-the-alphabet-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "learning-the-alphabet-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-0c15c8f628579cb0fad33da451846288b279c2390717a8f99586ab3bd43c0e40"
+      },
+      "primaryArticles": [
+        {
+          "id": "anart-antics",
+          "title": "변칙예술 행위",
+          "url": "https://scpko.wikidot.com/anart-antics",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "제이콥 알돈은 그녀의 얼굴만 수면 위에 나올 정도로 욕조 안에 기대앉아 욕실 천장을 응시했다. 그녀는 최근 구매가 후회되기 시작했다. 빌어먹을 성급함. 만약 그녀가 시간을 들여 자신의 의식을 복제해 무생물에 묶어두는 방법만 배웠더라면, 그녀의 삶은 훨씬 편안했을 것이다. 하지만 대신 그녀는 빠른 길, 게으른 길을 택했고 멍청한 미국인 욕조와 멍청한 러시아인 물을 구입했다. 그리고 그들은 그녀에게 자기들이 어떻게 이리 되었는지는 말조차 해주지 않았고, 그들이 하는…"
+        },
+        {
+          "id": "boron-blisters",
+          "title": "붕소 물집",
+          "url": "https://scpko.wikidot.com/boron-blisters",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "자컵 알돈은 자신의 침실 천장을 쳐다보고 있었다. 팔다리는 이상한 곳에 놓여있었고 식은땀이 옷에 스며들어 있었다. 심호흡을 깊게 몇 번 하고 팔다리를 좀 더 가지런하게 정돈한 다음 자명종 시계를 힐끗했다. 오전 5:38. 세 시간 잤다. 와아. 이상한 꿈 때문에 잠에서 깼다. 그녀는 그게 꿈이었을 뿐이라고 상당히 확신하고 있었다. 알돈은 팬티의 고무줄 당기고 자기 페니스를 보고는 답지 않게 기뻐했다."
+        },
+        {
+          "id": "djkaktus",
+          "title": "dj서닌장",
+          "url": "https://scpko.wikidot.com/djkaktus",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "중간 휴식 시간 1 (by dj서닌장 ) \"H\" 로 시작하는 말은 휴고 히진크스 Hugo Hijinks"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-aldon-finnegan",
+          "title": "알돈 Aldon & 피네간 Finnegan 과 알파벳 배우기",
+          "articleIDs": [
+            "anart-antics",
+            "boron-blisters",
+            "djkaktus"
+          ]
+        }
+      ],
+      "description": "이 시리즈는 더 이상 계속되지 않습니다. 버려졌어요. 완전히 끝장났습니다. 실망했다면 사과드립니다만, 더 이상 신경쓰지 않게 되었어요. 무관심이란 지독한 법이죠."
+    },
+    {
+      "id": "scp-ko:collection:series:acidverse",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "acidverse",
+      "title": "액시드버스",
+      "sourceListURL": "https://scpko.wikidot.com/acidverse",
+      "officialHubURL": "https://scpko.wikidot.com/acidverse",
+      "hubPresentation": "standard",
+      "canonicalTag": "acidverse",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "acidverse",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-ce75b8593cfbeecdbc67d2b50f78734a9a00e410d14af2931d7a2f1516d61cb4"
+      },
+      "primaryArticles": [
+        {
+          "id": "angel-of-red-and-white",
+          "title": "적과 백의 천사",
+          "url": "https://scpko.wikidot.com/angel-of-red-and-white",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "살면서 내가 가장 추웠던 날은 태어나던 날이었다. 물론 알래스카는 말할 것 없이 가장 추운 주이다. 심지어 한여름에도. 난 겨울에 태어났다. 29년 전의 새해였고, 중고 픽업트럭 뒤쪽에서 어머니의 둔부로부터 인정사정없이 밀려 나왔다. 부모님은 제시간에 병원에 도착하지 못하리란 것을 알고 계셨다. 어머니는 침착하셨다. 트럭 안에는 자리가 없었기에, 아버지는 어머니를 안아 들고는 눈 쌓인 화물칸에 눕히셨다. 차가움 덕분에 고통이 무뎌졌다. 20분 뒤, 난 내 아버지…"
+        },
+        {
+          "id": "the-cool-war-hub",
+          "title": "쿨전",
+          "url": "https://scpko.wikidot.com/the-cool-war-hub",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 22,
+          "desc": ">unzip the_C00L_war.7z 23개의 파일 압축 해제중… 압축 해제됨! >del the_C00L_war.7z 삭제중… 삭제됨! >dir > 01. 이얏호_나가_돼져(wowwee_go_kill_ursefl).txt > 02. 그냥_박살_났다(It_Just_Shattered).txt > 03. 더_쿨한_선언(A_C00L3R_M4N1F3570).txt > 04. 싹뚝싹뚝싹뚝(Sn1pSn1pSn1p).rtf > 05. 유연성(Flexibility).txt…"
+        },
+        {
+          "id": "subversion-hub",
+          "title": "전복",
+          "url": "https://scpko.wikidot.com/subversion-hub",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "런던 동업조합London Livery Companies 과 풋내기들에게는 “혼돈의 반란The Chaos Insurgency” 이라고 알려진, 조합을 구성하는 여러 세포들의 일백 하고 쉰일곱번째 그림자 부시장Shadow Alderman 인 비주 대시우드Bijou Dashwood 의 삶과 시대"
+        },
+        {
+          "id": "mikan-hub",
+          "title": "Mikan",
+          "url": "https://scpko.wikidot.com/mikan-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "wills-and-ways-hub",
+          "title": "의지와 방법",
+          "url": "https://scpko.wikidot.com/wills-and-ways-hub",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "가져간 것이 뭐든지 얻어라 얻은 것이 뭐든지 가져가라 고요하며 부드럽게, 살짝 흔들리며 황갈색이 되거나 또는 살짝 태워져라 새로운 것은 어느 것도 잘못되지 않았다 낡은 것은 어느 것도 새로워지지 않았다 아침에 우리는 깨어났다 환영 인사와 작별 인사"
+        },
+        {
+          "id": "a-fuller-life-hub",
+          "title": "Fuller",
+          "url": "https://scpko.wikidot.com/a-fuller-life-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "fractured-horizon-hub",
+          "title": "Horizon",
+          "url": "https://scpko.wikidot.com/fractured-horizon-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "true-wonder-hub",
+          "title": "Wonder",
+          "url": "https://scpko.wikidot.com/true-wonder-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "androids-and-automata-hub",
+          "title": "Androids",
+          "url": "https://scpko.wikidot.com/androids-and-automata-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "time-hub",
+          "title": "TIME",
+          "url": "https://scpko.wikidot.com/time-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "learning-the-alphabet-hub",
+          "title": "알파벳 배우기 허브",
+          "url": "https://scpko.wikidot.com/learning-the-alphabet-hub",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "이 시리즈는 더 이상 계속되지 않습니다. 버려졌어요. 완전히 끝장났습니다. 실망했다면 사과드립니다만, 더 이상 신경쓰지 않게 되었어요."
+        },
+        {
+          "id": "anart-antics",
+          "title": "변칙예술 행위",
+          "url": "https://scpko.wikidot.com/anart-antics",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "제이콥 알돈은 그녀의 얼굴만 수면 위에 나올 정도로 욕조 안에 기대앉아 욕실 천장을 응시했다. 그녀는 최근 구매가 후회되기 시작했다. 빌어먹을 성급함. 만약 그녀가 시간을 들여 자신의 의식을 복제해 무생물에 묶어두는 방법만 배웠더라면, 그녀의 삶은 훨씬 편안했을 것이다. 하지만 대신 그녀는 빠른 길, 게으른 길을 택했고 멍청한 미국인 욕조와 멍청한 러시아인 물을 구입했다. 그리고 그들은 그녀에게 자기들이 어떻게 이리 되었는지는 말조차 해주지 않았고, 그들이 하는…"
+        },
+        {
+          "id": "boron-blisters",
+          "title": "붕소 물집",
+          "url": "https://scpko.wikidot.com/boron-blisters",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "자컵 알돈은 자신의 침실 천장을 쳐다보고 있었다. 팔다리는 이상한 곳에 놓여있었고 식은땀이 옷에 스며들어 있었다. 심호흡을 깊게 몇 번 하고 팔다리를 좀 더 가지런하게 정돈한 다음 자명종 시계를 힐끗했다. 오전 5:38. 세 시간 잤다. 와아. 이상한 꿈 때문에 잠에서 깼다. 그녀는 그게 꿈이었을 뿐이라고 상당히 확신하고 있었다. 알돈은 팬티의 고무줄 당기고 자기 페니스를 보고는 답지 않게 기뻐했다."
+        },
+        {
+          "id": "are-we-christmas-yet",
+          "title": "Are We Christmas Yet?",
+          "url": "https://scpko.wikidot.com/are-we-christmas-yet",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "\"이거 여전히 개 별로인 것 같은데.\" \"아냐, 오진다고! 뭐시냐, 해체주의나 그런 것처럼 말이야.\" 오버갱과 조이는 수심에 잠긴 채로 에그노그를 홀짝이며 근처 건물보다 높이 치솟은 거대한 크리스마스 트리의 장식용 방울을 바라봤다. 수많은 미니 트리가 그 주위에 매달려 있었다. 오버갱이 의문을 제기했다."
+        },
+        {
+          "id": "watching-corpses",
+          "title": "시체를 본다는 것",
+          "url": "https://scpko.wikidot.com/watching-corpses",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "처음이 언제였는지는 잘 기억 안 나지만, 부모님께서 말씀해 주시더군. 내가 한… 5살쯤? 5살이나 6살쯤인가, 그때일 거요. 내 친구네 아빠였지. 그냥 운동장에 괴물이 있다고 도망치면서 선생님에게 소리 질렀소. 어른에게 짓궂다면서 야단맞았지. 그다음 주에 그분은 익사하셨더군. 낚싯배에서 떨어졌거든."
+        },
+        {
+          "id": "assistance-for-the-boss-lady",
+          "title": "사장 아가씨 모시기",
+          "url": "https://scpko.wikidot.com/assistance-for-the-boss-lady",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "\"제레미Jeremy, 너한테 실망인걸.\" 이사벨 헬가 아나스타샤 파르바티 원더테인먼트 5세Isabel Helga Anastasia Parvati Wondertainment V 박사: PhD 가 접은 손가락 너머를 쏘아봤다. 책상에 앉은 코기는 앞발의 살짝 축축해진 봉투가 세상에서 제일 자랑스럽기라도 한 듯 이사벨에게 웃어주었다. 이사벨은 몸을 젖혀 의자에 기대어 한숨을 내쉬었다."
+        },
+        {
+          "id": "the-super-cool-road-trip-adventure",
+          "title": "완전 쩌는 자동차 여행 모험",
+          "url": "https://scpko.wikidot.com/the-super-cool-road-trip-adventure",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "사장 아가씨 모시기로부터 얼마 뒤… 원더테인먼트 박사 주식회사의 이사회는 장난감 공장이나 경이의 작업장Workshops of Wonder과는 상당히 달라 보이는 회색 상자 같은 건물 꼭대기 층에 있는 네모난 방의 둥근 테이블에 앉아있었다. 그 건물에는 네모난 방이 정말로 많았는데, 그 방은 또 네모난 공간으로 나누어지고, 그 각각의 네모난 공간에는 회계사나, 관리자나, 관리자의 조수나, 지방 대표자나, 부서장이나 부서말단이나, 감독관이나, 감독관의 감독관이나,…"
+        },
+        {
+          "id": "dread-circuses-hub",
+          "title": "겁과 서커스",
+          "url": "https://scpko.wikidot.com/dread-circuses-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "에서 묘사된 MC&D, 특히 아이리스 다크에 대한 묘사는 의지와 방법에서 크게 영향을 받았습니다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "두번째로 최근인 이야기: 합리적 유산 몇가지",
+          "articleIDs": [
+            "angel-of-red-and-white",
+            "the-cool-war-hub"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "세 막의 예술",
+          "articleIDs": [
+            "subversion-hub"
+          ]
+        },
+        {
+          "id": "03-articles",
+          "title": "네 막의 혼돈",
+          "articleIDs": [
+            "mikan-hub"
+          ]
+        },
+        {
+          "id": "04-articles",
+          "title": "두 막의 귤",
+          "articleIDs": [
+            "wills-and-ways-hub"
+          ]
+        },
+        {
+          "id": "05-articles",
+          "title": "다섯 막의 탐욕",
+          "articleIDs": [
+            "a-fuller-life-hub"
+          ]
+        },
+        {
+          "id": "06-articles",
+          "title": "여섯 막의 희열",
+          "articleIDs": [
+            "fractured-horizon-hub"
+          ]
+        },
+        {
+          "id": "07-articles",
+          "title": "한 막의 신들",
+          "articleIDs": [
+            "true-wonder-hub"
+          ]
+        },
+        {
+          "id": "08-articles",
+          "title": "여덟 막의 창조자들",
+          "articleIDs": [
+            "androids-and-automata-hub"
+          ]
+        },
+        {
+          "id": "09-articles",
+          "title": "아홉 막의 생명",
+          "articleIDs": [
+            "time-hub"
+          ]
+        },
+        {
+          "id": "10-articles",
+          "title": "보충 자료",
+          "articleIDs": [
+            "learning-the-alphabet-hub",
+            "anart-antics",
+            "boron-blisters",
+            "are-we-christmas-yet",
+            "watching-corpses",
+            "assistance-for-the-boss-lady",
+            "the-super-cool-road-trip-adventure",
+            "dread-circuses-hub"
+          ]
+        }
+      ],
+      "description": "진짜 가장 최근 이야기: 어쩌면 자본주의는 나쁜 생각이었을지도 몰라 가장 최근 이야기: 운동량 보존 최근 이야기: 수치 연산 두번째로 최근인 이야기: 합리적 유산 몇가지 세번째로 최근인 이야기: 적과 백의 천사"
+    },
+    {
+      "id": "scp-ko:collection:series:green-thumb",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "green-thumb",
+      "title": "타고난 원예가 허브",
+      "sourceListURL": "https://scpko.wikidot.com/green-thumb",
+      "officialHubURL": "https://scpko.wikidot.com/green-thumb",
+      "hubPresentation": "standard",
+      "canonicalTag": "green-thumb",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "green-thumb",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "allowEmpty": true,
+        "verifiedEmpty": true,
+        "structureHash": "sha256-25b78bd18570cf0f2266b51c61f2b653cf2ea94494823d4d125efa3686958307"
+      },
+      "primaryArticles": [],
+      "supplementLinks": [],
+      "description": "LMTF-237 \"타고난 원예가\"는 플로리다 주 피넬라스 군을 중심으로 활동하는 지역 기동특무부대이며, 플로리다 주 탬파 시의 제237 지역사령부와 플로리다 주 클리어워터 시의 제237현장사무소로 출장한다. 그들의 관할 구역은 피넬라스 군, 힐스버러 군, 파스코 군, 매너티 군, 폴크 군, 하디 군이다. 현재 부대 지도자는 전직 탬퍼 대학교 생화학 교수인 조너선 하트(Jonathan Hart) 박사이다."
+    },
+    {
+      "id": "scp-ko:collection:series:dixieland-nightmare-magic-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "dixieland-nightmare-magic-hub",
+      "title": "딕시랜드 나이트메어 매직 허브",
+      "sourceListURL": "https://scpko.wikidot.com/dixieland-nightmare-magic-hub",
+      "officialHubURL": "https://scpko.wikidot.com/dixieland-nightmare-magic-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "dixieland-nightmare-magic-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dixieland-nightmare-magic-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-1b8167c5a01f325a7051ecca68fd44bedf0e1d95ff37d7442fd9d7fdb6f24e4a"
+      },
+      "primaryArticles": [
+        {
+          "id": "kate-mctiriss-s-personnel-file",
+          "title": "케이트 맥티리스",
+          "url": "https://scpko.wikidot.com/kate-mctiriss-s-personnel-file",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "kate-mctiriss-s-proposal",
+          "title": "SCP-001",
+          "url": "https://scpko.wikidot.com/kate-mctiriss-s-proposal",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-2072",
+          "title": "수상 각하 애완동물 묘지",
+          "url": "https://scpko.wikidot.com/scp-2072",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "최소 한 명의 재단 직원(1등급-SCP-2072 또는 그 이상의 직위에 임명)이 항시에 보급현 휴대무기로 무장하여 주둔한다. SCP-2072로의 접근은 일반 대중에게 제한된다. SCP-2072 개체들은 항시에 불투명 방수포로 덮어둔다. SCP-2072-8부터 SCP-2072-22까지의 개체들의 묘비가 표면에 쓰여진 글씨를 읽는 데에 지장을 줄 정도로 손상되면, 묘비 복구 담당 직원을 시켜 복구시킨 직후에 기억소거제를 투여시킨다. 몬테네그로의 수상이 다른 이로 교…"
+        },
+        {
+          "id": "scp-2558",
+          "title": "호스슈비치 제일침례교회 (이전됨)",
+          "url": "https://scpko.wikidot.com/scp-2558",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "지역 기동특무부대 352-달레트(“딕시랜드 나이트메어 매직”)는 SCP-2558이 파너시아 경로(Panacea Course)를 따라 이동하고 있는 지를 감시하기 위해 무인 감시 잠수정으로 대상의 움직임을 감시한다. 대상이 예정대로 파너시아 경로에 따라 이동한다면, 2043년까지는 별다른 조치가 요구되지 않으며, 상륙 예정일이 되기까지 대략 5년 남은 시점에서부터 개정된 격리 절차(파일 2558-F에 서술)가 수행된다. 만약 SCP-2558이 파너시아 경로에서 벗…"
+        },
+        {
+          "id": "scp-2172",
+          "title": "이 신호는 절대 청색으로 바뀌지 않음",
+          "url": "https://scpko.wikidot.com/scp-2172",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-2172는 특성을 보이는 징표에 주의하며 지역 신문사에 허위 정보를 퍼뜨리는 활동을 하고, 오류를 막기 위해 \"현지의 기묘한\" 관광 명소의 상태를 확실시 하기 위한 활동을 실시한다. 현지 재단 자산들에게는 SCP-2172가 위치한 곳의 감시 카메라로 대상을 감시하도록 지시가 내려졌다. SCP-2172가 황신호 또는 청신호로 변하거나 또는 방해하려는 시도가 있었을 경우, 지역 기동특무부대 352-달레트 (\"딕시랜드 나이트메어 매직\")은 즉각 조사를 하며,…"
+        },
+        {
+          "id": "scp-2930",
+          "title": "크로스시시 시시청",
+          "url": "https://scpko.wikidot.com/scp-2930",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCCP-2930이란, 플로리다주 크로스시시 City City 의 지방정부인 크로스시시 City City 시시청 City City Hall 안에서 진행된 회의를 기록한 의사록, 속기록, 녹취록 따위 기록을 포함하는포함하는 containing containing 모든 전자문서들에 발생하는 현상이다. 해당 장소에서 진행된 회의 중 발언된 말이 정확히 기록된 텍스트가 포함된포함된 contain contain 모든 전자문서는 영문자 “c c”로 시작하는 단어들이 복제되…"
+        },
+        {
+          "id": "scp-2272",
+          "title": "펜사콜라 블루와후스 투수 엘리스 카나스토타",
+          "url": "https://scpko.wikidot.com/scp-2272",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 6,
+          "desc": "재단은 메이저리그와 접촉하여 펜사콜라 블루와후스의 단장을 지역 기동특무부대 352-달레트(“딕시랜드 나이트메어 매직”) 소속의 롭 포츠담(Rob Potsdam) 요원으로 갈아치운다. 단장으로 임명되면 포츠담 요원은 엘리스 카나스토타를 재단이 운영하는 플로리다 세인트피터스버그의 서머리그 팀과 트레이드한다. 이것이 완료되면 그때 가서 격리 절차가 개정될 것이다. 사건 2272-도미노(후술할"
+        },
+        {
+          "id": "scp-2972",
+          "title": "세바스토폴에 있는 누군가 다른 이의 주차장",
+          "url": "https://scpko.wikidot.com/scp-2972",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-2972가 위치한 부지는 재단의 유령 회사 1 인 소우그래스 지주회사 Sawgrass Holdings 가 달러 제너럴 법인회사 Dollar General Corporation 로부터 사들인 상태다. SCP-2972와 인접한 건물은 철거되었으며, SCP-2972 주위로 장막이 세워졌다. 지역기동특무부대 769-아인(\"클랭가 2 \")이 부지 내 보안 카메라를 관리하며 SCP-2972 내에 그 어떤 차량도 진입하지 못하게 한다. SCP-2972 효과 확산을 방…"
+        },
+        {
+          "id": "the-one-thousand-deaths-of-pastor-lewis-robinson-the-ethics",
+          "title": "루이스 로빈슨 목사의 일천 번의 죽음: 반복적으로 익사하는 침례교도의 윤리학",
+          "url": "https://scpko.wikidot.com/the-one-thousand-deaths-of-pastor-lewis-robinson-the-ethics",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "이하의 편지는 다수의 유사한 송부되지 않은 편지 중 하나로, 제이콥스 박사가 최초로 회수한 것으로 여겨진다. 회수 이후, 제이콥스 박사의 요청에 따라 심리학적 검토가 명령되었다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-dixieland-nightmare-magic",
+          "title": "『딕시랜드 나이트메어 매직』 Dixieland Nightmare Magic",
+          "articleIDs": [
+            "kate-mctiriss-s-personnel-file",
+            "kate-mctiriss-s-proposal",
+            "scp-2072",
+            "scp-2558",
+            "scp-2172",
+            "scp-2930",
+            "scp-2272",
+            "scp-2972"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "다른 작가",
+          "articleIDs": [
+            "the-one-thousand-deaths-of-pastor-lewis-robinson-the-ethics"
+          ]
+        }
+      ],
+      "description": "재앙이로다 나여 나는 여름 실과를 딴 후와 포도를 거둔 후 같아서 먹을 송이가 없으며 내 마음에 사모하는 처음 익은 무화과가 없도다. 이와 같이 선인이 세상에서 끊쳤고 정직자가 인간에 없도다 무리가 다 피를 흘리려고 매복하며 각기 그물로 형제를 잡으려 하고 두 손으로 악을 부지런히 행하도다 그 군장과 재판자는 뇌물을 구하며 대인은 마음의 악한 사욕을 발하며 서로 연락을 취하니 그들의 가장 선한 자라도 가시 같고 가장 정직한 자라도 찔레 울타리보다 더하도다 그들의 파수꾼들의 날 곧 그들의 형벌의 날이 임하였으니 이제는 그들이 요란하리로다. 너희는 이웃을 믿지 말며 친구를 의지하지 말며 네 품에 누운 여인에게라도 네 입의 문을 지킬지어다. 아들이 아비를 멸시하며 딸이 어미를 대적하며 며느리가 시어미를 대적하리니 사람의 원수가 곧 자기의 집안 사람이로다 오직 나는 주 를 우러러보며 나를 구원하시는 하나님을 바라보나니 하나님이 나를 들으시리로다 - 미가서 7장 1 ~ 7절"
+    },
+    {
+      "id": "scp-ko:collection:series:thaumiel",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "thaumiel",
+      "title": "프로젝트 타우미엘",
+      "sourceListURL": "https://scpko.wikidot.com/thaumiel",
+      "officialHubURL": "https://scpko.wikidot.com/thaumiel",
+      "hubPresentation": "standard",
+      "canonicalTag": "thaumiel",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "thaumiel",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-5c405cebbf3f533a01edff0efd4d92182dd7b0fbbcbfcf54838320c2b921c61d"
+      },
+      "primaryArticles": [
+        {
+          "id": "clavis",
+          "title": "열쇠",
+          "url": "https://scpko.wikidot.com/clavis",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "엑스레이-줄루-줄루 단계 긴급 상황. 프로젝트 001-미래예지가 실행되었고 성공적인 것으로 간주됨. 제██기지에서 SCP-187이 터미널을 검사하여 글을 복구하였다. 그녀가 복사한 글은 SCP-758에 보내어 바로잡았고, ████████ 박사가 번역하였다. O5-██, O5-██ 그리고 O5-██와 즉시 연락이 이루어졌다. 타우미엘 작전이 시작되었다. 반복한다. 이 상황은 훈련이 아니다. 타우미엘 작전이 시작되었다. 무시하지 마라. 반복한다. 엑스레이-줄루-줄루…"
+        },
+        {
+          "id": "corvus",
+          "title": "까마귀",
+          "url": "https://scpko.wikidot.com/corvus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "만져보지 않아도 내 눈이 퀭하다는 것은 알 수 있다. 요즘은 항상 그렇다. 두 눈이 모두 내 심장 바로 위쪽 가슴에 고정된 게 느껴진다. 그리고 억겁 중 처음으로 내 얼굴에 미소를 띈다. 그럼 이게 그거로군. 마지막 한 방이자, 최후의… 결말. 그래도 확실히 가치 있는 일이었지?"
+        },
+        {
+          "id": "cygnus",
+          "title": "백조",
+          "url": "https://scpko.wikidot.com/cygnus",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "“더 나중에 일어나길 바라고 있었네, 제군들,” 의자에 앉아 무거운 한숨을 내쉬며 O5-1이 말했다. “유감이지만, 이 정체가 바로 그것이었다니…” 11이 손가락으로 머리카락을 귀 뒤로 넘기며 대답했다. “정말로 할 생각인가요? 우리가 원래 고려했던 것보다 영향 범위가 훨씬 넓을 가능성도 상당히 있어요.”"
+        },
+        {
+          "id": "pila",
+          "title": "구",
+          "url": "https://scpko.wikidot.com/pila",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "로날드 스팀슨 박사는 스스로 작게 한숨짓고는, 시설 깊고 깊은 곳으로 들어갔다. 팔에 사슬로 묶인 커다란 서류가방 탓에 매 걸음마다 움찔거렸다. 그때마다 가방의 무게에 균형이 무너져 등 근육이 경련했고, 온몸에 날카로운 통증이 몇 번이고 퍼져나갔다. 그는 자신이 왜 이 일에 선택되었는지 알지 못했고, 단지 그렇게 되었을 뿐이었다. 상황이 안 좋았겠지. 그는 그렇게 생각했다."
+        },
+        {
+          "id": "rota",
+          "title": "바퀴",
+          "url": "https://scpko.wikidot.com/rota",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "아파… 놈들은 모르겠지만, 아파. 너무 고통스러워. 말하려고 할 때마다, 점점 심해지고있어. 놈들이 내게 와서는, 찌르고, 검사하고… 놈들이 내 몸을 열고는, 살점을 잘라가고… 내가 달아나려고 하면, 놈들은 점점 심해질 뿐이야. 놈들을 처다볼 때도, 점점 심해지고 있어…"
+        },
+        {
+          "id": "flos",
+          "title": "꽃",
+          "url": "https://scpko.wikidot.com/flos",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "나의 가장 친한 친구들, 시간이 다가왔어. (나디르 샤히드 박사는 호수 옆 꽃밭에 누워 있는 소냐 크로스워스 디자이너에게 다가간다.)"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "clavis",
+            "corvus",
+            "cygnus",
+            "pila",
+            "rota",
+            "flos"
+          ]
+        }
+      ],
+      "description": "접속기에서 물러나 두 손을 머리 위에 올려주시기 바랍니다. 귀하는 파일 상태: 타우미엘 에 접속할 권한이 없습니다 . 곧 경비원이 갈 것입니다. 저항하지 마시기 바랍니다."
+    },
+    {
+      "id": "scp-ko:collection:series:remembrance",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "remembrance",
+      "title": "추억",
+      "sourceListURL": "https://scpko.wikidot.com/remembrance",
+      "officialHubURL": "https://scpko.wikidot.com/remembrance",
+      "hubPresentation": "standard",
+      "canonicalTag": "remembrance",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "remembrance",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-b27d74984339710d757d4e6acd863c4635e7b0c90d33760f0faf4638bc4e3dce"
+      },
+      "primaryArticles": [
+        {
+          "id": "days-gone-by",
+          "title": "서곡: 첫 종소리",
+          "url": "https://scpko.wikidot.com/days-gone-by",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 12,
+          "desc": "« | 허브 | 1부 »"
+        },
+        {
+          "id": "in-symphony",
+          "title": "추억: 1부",
+          "url": "https://scpko.wikidot.com/in-symphony",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "1976년 6월 12일 안녕, 난 리Lee야. 지금 이걸 보고 있다면, 너한테 몹시 화가 날 것 같아. 왜냐하면 이건 신장개업한 몽고메리 와드Montgomery Ward에서 어제 막 사 온 개인 일기니까 말이야. 어쨌든, 내 소개를 좀 해볼까. 일기를 쓸 때 보통 하는 건가 봐. 난 17살이고, KL고등학교 졸업반이야. 악단에 들어가 있고. 또 동전도 모아. 다른 사람들은 그게 뭔 재미냐고는 하지만, 나한테는 재밌어. 졸업하면 공학 쪽으로 가볼까 생각 중인데,…"
+        },
+        {
+          "id": "lonwood",
+          "title": "첫 번째 막간: 옛 학교",
+          "url": "https://scpko.wikidot.com/lonwood",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "학생 여러분! 부디 이번 토요일에 강당에서 수업 계획을 짜게 된다는 것을 알아두시기 바랍니다. 수업 수강 신청서를 가져와 주시고, 수강 선택지를 놓고 지도 상담사와 시간을 보낼 준비를 하시기 바랍니다. 졸업반 학생들은 이중 등록을 원할 경우, 방과 후 베르너Wehrner 교장 선생님을 만나 뵈시면 됩니다. 모두들 멋진 2학기가 되길 바랍니다."
+        },
+        {
+          "id": "reunion",
+          "title": "추억: 2부",
+          "url": "https://scpko.wikidot.com/reunion",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "리가 거기 있었다. 다림질한 교복을 입은 채, 무너져가는 복도와 망가진 문을 헤집고 다녔다. 그들은 그를 두고 갔다. 모두를 데리고 공연하러 나갔다. 리는 행진을 계속했다. 곧 돌아올 것이었다. 신코피에는 언제나 리가 타악기를 연주할 자리가 남아있을 것이다. 위에서는 진행자들도 제 발걸음을 박자에 더하고 있었다. 리는 고개를 들고, 보조를 맞추며 오늘의 선율은 무엇일지 보았다."
+        },
+        {
+          "id": "bicentennial",
+          "title": "두 번째 막간: 연주 중에",
+          "url": "https://scpko.wikidot.com/bicentennial",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "드디어 여행을 떠나. 여기까지 오는데 엄청나게 오래 걸렸지만, 결국에는 가게 됐다고. 길 위에서 여름 내내 보낸 다라. 이 앞에 있는 건 커브 길을 돌고, 우리가 원할 때마다 어디서든 차를 돌릴 수 있는 자유뿐이지. 러스티가 자기 아빠의 낡아빠진 쉐보레를 가져왔고, 걔가 운전할 거야."
+        },
+        {
+          "id": "the-year-that-it-was",
+          "title": "추억: 3부",
+          "url": "https://scpko.wikidot.com/the-year-that-it-was",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "리는 언제나 그러했듯 손목시계를 확인하고는 환영 매트를 넘어갔다. 집이었다. 올이 다 드러난 붉은 카펫에 때 묻고, 씻지 않은 창문이 있는, 딱히 특별할 것 없는 집이지만, 그의 집이었다. 지난 3년 동안 소유하고 있던 집이며, 딱히 부모님 집에 남는 방으로 돌아가고픈 마음은 없었다. 굳이 방학 동안에 집에 돌아갔을 때 쏟아져 오던 기죽이는 시선은 이미 충분하디 충분했다."
+        },
+        {
+          "id": "looking-back",
+          "title": "에필로그: 마지막 말",
+          "url": "https://scpko.wikidot.com/looking-back",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "« 3부 | 허브 |우린 결코 잊지 않아 »"
+        },
+        {
+          "id": "scp-1833",
+          "title": "76년도 졸업반",
+          "url": "https://scpko.wikidot.com/scp-1833",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 12,
+          "desc": "SCP-1833은 제77기지 안전 SCP 동에 위치한 표준형 격리 사물함에 넣어서 격리한다. D계급 이외의 인원이 SCP-1833을 다루는 것은 승인되지 않는다."
+        },
+        {
+          "id": "scp-332",
+          "title": "1976년 커크 론우드 고등학교 악단",
+          "url": "https://scpko.wikidot.com/scp-332",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 21,
+          "desc": "커크 론우드 고등학교 건물은 부적합 판정이 선언되었다. 따라서 SCP-332는 1월부터 8월까지는 (통상의 보안 순찰 외에) 격리가 필요하지 않다. 9월부터 12월 사이에 SCP-332에는 항상 무장 호위가 상주하며, SCP-332 옆에서 높은 볼륨으로 백색소음 발생기를 작동한다. 이때 백색소음은 주변과 어우러지는 것이어야 한다. 대표적으로는 공사 현장, 날씨나 차량에서 나오는 소리가 있다."
+        },
+        {
+          "id": "scp-1423",
+          "title": "76년의 여름",
+          "url": "https://scpko.wikidot.com/scp-1423",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-1423은 제77기지 의 안전 SCP 동 표준 격리 로커에 보관되어야 한다. SCP-1423에 대한 물리적 접촉은 어떤 인원에게도 인정되지 않으며, 접촉한 인원은 인식재해 희생자로 간주되어 활동중인 업무에서 제외된다. SCP-1423의 연구에 할당된 인원은 영향을 받았는지 확인하기 위해 4주마다 최대한의 정신 감정을 받아야 한다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "days-gone-by",
+            "in-symphony",
+            "lonwood",
+            "reunion",
+            "bicentennial",
+            "the-year-that-it-was",
+            "looking-back",
+            "scp-1833",
+            "scp-332",
+            "scp-1423"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-ko:collection:series:etdp-hub-page",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "etdp-hub-page",
+      "title": "엣 탐 데움 페티비 허브 페이지",
+      "sourceListURL": "https://scpko.wikidot.com/etdp-hub-page",
+      "officialHubURL": "https://scpko.wikidot.com/etdp-hub-page",
+      "hubPresentation": "standard",
+      "canonicalTag": "etdp-hub-page",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "etdp-hub-page",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-796b39cc0c17efd8712bb1e87ed95982c74754d55ecbd82cad2f69d332b543fd"
+      },
+      "primaryArticles": [
+        {
+          "id": "just-a-word-to-me",
+          "title": "나에게 보내는 말",
+          "url": "https://scpko.wikidot.com/just-a-word-to-me",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "메리앤 르위트는 교회 바깥의 보도에 서 있었다. 방금 전 빠져나간 수많은 군중들은 주차장 쪽으로 퍼져나갔으며, 몇 명은 출입구에 남아서 이야기하고 있었다. 메리앤은 거리를 계속 응시했다. 3월의 춥고 맑은 하늘 아래에서 보이는 세상은 매우 멀게 느껴졌다."
+        },
+        {
+          "id": "shepherds",
+          "title": "목자",
+          "url": "https://scpko.wikidot.com/shepherds",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "메리앤 르위트는 담요를 다시 끌어 올렸다. 11월 밤의 창밖에선 바람이 휘몰아치고, 냉기가 아파트 틈새를 파고들고 있었다. 물론, 실제로 일어나는 일은 온기가 빠져나가는 것이고 \"냉기\"같은 건 없지만, 메리앤은 그런 정의는 진짜 냉기를 겪어보지도 못한 과학자들이나 하는 말이라 자주 생각하곤 했다."
+        },
+        {
+          "id": "tolerance",
+          "title": "관용",
+          "url": "https://scpko.wikidot.com/tolerance",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "다섯 시 반, 비가 내렸다. 바스커빌 출신의 래이몬드 수도사는 아케른 교도 거주지역을 떠나 집으로 되돌아가고 있었다. 그 주변의 기름진 농토는 진흙탕으로 변했고, 그의 부츠는 진창에 푹푹 빠졌다. 날씨는 끔찍했지만 그는 아직 지평선 구상 지휘 본부로 돌아가는 것이 썩 달갑진 않았다. 정확히 말하면, 아케른 교도들에게 복음을 전파하는 데 처참하게 실패했다는 것을 보고하고 싶지 않았다. 그렇다고 그가 선임들의 질책을 두려워하는 건 아니었다. 그는 그들이 이해해줄 거…"
+        },
+        {
+          "id": "the-written-god",
+          "title": "쓰여진 신",
+          "url": "https://scpko.wikidot.com/the-written-god",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "로저 르그랑은 다섯번째로 글자 가득한 종이를 구겨서 쓰레기통으로 던졌다. \"빌어먹을, 오늘은 왜 글이 안 나오는거야?\" 그는 책상에 엎어져 머리를 쥐어뜯었다. 팔꿈치는 반쯤 완성된 아이디어가 적힌, 버려진 브래인스토밍 용지 더미 위에 얹혀있었다."
+        },
+        {
+          "id": "fire-on-the-horizon",
+          "title": "지평선의 불",
+          "url": "https://scpko.wikidot.com/fire-on-the-horizon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "땅거미가 지기 시작한 구 예루살렘의 아르메니아 지구의 좁은 골목길은 먼 옛날에 지어진 석조 건물의 그림자에 덮여 어둑어둑해졌다. 앙리 드몽포르는 이 도시가 지나온 세월에 압도되었고, 도시가 겪어온 거대한 역사 앞에서 그 자신이 별것 아닌 왜소한 존재처럼 느껴졌다. 오래된 시장의 모퉁이에 있는 인적이 드문 듯한 건물에 도착하자, 그는 그저 뒤돌아서 도망치고 싶을 뿐이었다. 드몽포르는 조용히 욕지거리를 뱉었다. 이딴 곳을 선정한 빌어먹을 멍청한 늙은이들. 드몽포르는…"
+        },
+        {
+          "id": "the-horizon-blues",
+          "title": "호라이즌 블루스",
+          "url": "https://scpko.wikidot.com/the-horizon-blues",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "매일 아침, 목과 허리 사이에 새로운 패치를 붙이십시오. 피부 자극을 최소화하기 위해 매일 새로운 곳에 패치를 붙이십시오. 8주 이상 사용하지 마십시오. 약한 피부 발진이 일어날 경우 패치를 뗀 후 다시 붙이십시오. 심한 발진이 일어날 경우, 주치의와 상담하십시오."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "이야기와 이야기 시리즈",
+          "articleIDs": [
+            "just-a-word-to-me",
+            "shepherds",
+            "tolerance",
+            "the-written-god"
+          ]
+        },
+        {
+          "id": "02-articles",
+          "title": "사건 연대표",
+          "articleIDs": [
+            "fire-on-the-horizon",
+            "the-horizon-blues"
+          ]
+        }
+      ],
+      "description": "이것은 지평선 구상의 요원들의 삶에 집중하는 모음집인 \"엣 탐 데움 페티비\" 카논의 허브 페이지입니다. 여기서 카논 내의 배경 세계관 정보와 이야기 그리고 이야기 시리즈를 찾게 되실 겁니다."
+    },
+    {
+      "id": "scp-ko:collection:series:the-cool-war-hub",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "the-cool-war-hub",
+      "title": "쿨전",
+      "sourceListURL": "https://scpko.wikidot.com/the-cool-war-hub",
+      "officialHubURL": "https://scpko.wikidot.com/the-cool-war-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-cool-war-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-cool-war-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-1fd86eb7550872669e84ab13953ac49264b9f8bf218108606960a5f67b5fc7b6"
+      },
+      "primaryArticles": [
+        {
+          "id": "wowwee-go-kill-ursefl",
+          "title": "이얏호 나가 돼져",
+          "url": "https://scpko.wikidot.com/wowwee-go-kill-ursefl",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 28,
+          "desc": "“자네 전시회에서 세 명이나 죽었어.” “각서에 서명한 사람들입니다.” “알지 모르겠지만 나에게도 위에서 압박이 들어오고 있다네.”"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "wowwee-go-kill-ursefl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-ko:collection:series:dr-gears-storytime-entries",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "dr-gears-storytime-entries",
+      "title": "기어스 박사의 이야기 시간",
+      "sourceListURL": "https://scpko.wikidot.com/dr-gears-storytime-entries",
+      "officialHubURL": "https://scpko.wikidot.com/dr-gears-storytime-entries",
+      "hubPresentation": "standard",
+      "canonicalTag": "dr-gears-storytime-entries",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dr-gears-storytime-entries",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-16ba32b98f367042f88736aa3e44c4955669a4a3997ad07b03cc16ace2388ba6"
+      },
+      "primaryArticles": [
+        {
+          "id": "reentry",
+          "title": "재돌입",
+          "url": "https://scpko.wikidot.com/reentry",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "모든 것이 비명을 질러댔다. 다이얼, 송신기, 모든 것이 비명을 질러댔다. 하지만 그는 그 중 아무것도 느끼지 못했다. 그가 느낀 것은 다름아닌 열이었다. 그는 타오르고 있었다. 불이 붙지는 않았지만, 몸 속으로부터, 화끈거리는 열기가 그를 까뒤집어 익히고 있었다. 더 심각한 것은, 조그마한 캅셀은 너무 기밀되어 있고, 또 너무 완벽하게 꼭 맞아서, 그는 몸을 구부리거나 뒤트는 것조차 할 수가 없었다. 무전기가 두어번 꽥꽥 꺆꺆거리더니 침묵했다. 작은 판은 조잡…"
+        },
+        {
+          "id": "influenza",
+          "title": "독감",
+          "url": "https://scpko.wikidot.com/influenza",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "며칠째 아팠다. 그 부글거리는 메스꺼움이 네 목구멍을 채우고, 네가 트림을 하거나 심지어 숨을 쉴 때마다 토할 것처럼 느끼게 한다. 변기통에 매달려서, 머리를 차갑고, 차가운 도자기에 올려놓고는, 나는 왜 이 망할 구토를 하지 않고서는 그냥 끝낼 수 없는지 의문이 들었다. 이건 그저 내가 할 수 있는 것이 아니다…격렬하게 내 말문을 막을 생각을 하고…웩, 이것은 지금 느끼는 것보다 더 심하다. 거의."
+        },
+        {
+          "id": "life-saver",
+          "title": "생명 구조원",
+          "url": "https://scpko.wikidot.com/life-saver",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "해명문: 이건 몇 달 전에 일어난, (어느 정도) 저와 관련된 친구의 이야기입니다. 그 사건이 친구에게 도움이 되었을지는 모르겠으나, 지금은 괜찮습니다. 이 이야기가 그렇게 무서운지는 잘 모르겠습니다만… 엄청나게 이상한 이야기이긴 합니다."
+        },
+        {
+          "id": "sa-jin-photo",
+          "title": "Sa Jin 사진",
+          "url": "https://scpko.wikidot.com/sa-jin-photo",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "나는 4년 동안 해외에 배치되어 남한 주둔 미군을 강화하는 업무를 돕고 있었다. 흔히들 사람들이 무작위로 총에 맞고, 환경이 불결하다는 등 갖은 무시무시한 이야기가 퍼져 있지만, 그렇게까지 나쁜 곳은 아니었다. 그래도 별천지라는 점은 의심할 여지가 없는 사실이다. 그 문화가 아주… 달랐다. 가치관, 이상, 그런 것들이 모두 온통 뒤죽박죽으로 느껴졌다. 적응은 하겠지만, 시간이 걸리기 마련이다. 남한 여행 초반 때, 나는 동료 몇 명과 함께 모여 앉아서 내가 읍내…"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "서문",
+          "articleIDs": [
+            "reentry",
+            "influenza",
+            "life-saver",
+            "sa-jin-photo"
+          ]
+        }
+      ],
+      "description": "나는 여기 내 항목에 대해 여러 모로 의문을 갖고 있다. 나 따위를 블랙 페도라(Black Fedora)나 조지프 K(Josef K)와 같은 반열에 올린다는 것은 그 시도만으로도 끔찍한 신성모독에 해당할 것이다. 그렇지만 채팅 중의 내 소소한 이야기들이 괴담으로서 가치가 있다는 이야기를 많이 들었고, 위대한 오락 정신에 입각하여 여러분이 즐길 수 있도록 여기에 그것들을 올려 두도록 하겠다."
+    },
+    {
+      "id": "scp-ko:collection:series:olympia-project",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "olympia-project",
+      "title": "올림피아 프로젝트",
+      "sourceListURL": "https://scpko.wikidot.com/olympia-project",
+      "officialHubURL": "https://scpko.wikidot.com/olympia-project",
+      "hubPresentation": "standard",
+      "canonicalTag": "olympia-project",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "olympia-project",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-b3f08f4debb4c90c9ff3619e9f660b51c48e83059a7705e835574c10037646c6"
+      },
+      "primaryArticles": [
+        {
+          "id": "kain-pathos-crow-s-author-page",
+          "title": "케인 파토스 크로우 교수",
+          "url": "https://scpko.wikidot.com/kain-pathos-crow-s-author-page",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "연구 총책임자 : 케인 파토스 크로우 교수"
+        },
+        {
+          "id": "scp-040",
+          "title": "진화의 아이",
+          "url": "https://scpko.wikidot.com/scp-040",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "SCP-040-1a, 1c 및 1j는 SCP-040의 정신건강 관리를 위해 대상의 격리실에 남겨두는 것이 허용된다. (보안 책임자 특별 명령 392-5: ██/██/██). SCP-040이 조작한 그외의 모든 개체들은 문서 CDP-BIO-EN-1에 명시된 표준 생물 표본 제거 규약에 따라 처리한다. 생년월일: 2000년경 (발견 당시 대상은 8세라 주장함) 출생지: 불명 발견일자: 2008년 ██월 ██일 신장: 111 cm 체중: 20.7 kg 모발색상: 밝은…"
+        },
+        {
+          "id": "scp-143",
+          "title": "칼나무 숲",
+          "url": "https://scpko.wikidot.com/scp-143",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4,
+          "desc": "SCP-143은 제12생물연구구역에 인접한 2km² 면적의 골짜기에 격리되어야 한다. 대상이 내려다보이는 언덕 및 SCP-143으로부터 최대 반경 20 km 이내에 민간인의 접근은 금지된다. 비가 오지 않는 한 SCP-143에는 대규모 살수 장치를 이용해 하루 두 번의 급수가 이루어진다. 4등급 이상의 보안 등급을 지니지 않은 인원이 해당 구역에 출입하는 것은 금지된다. 적절한 방호복을 착용하지 않는 한 SCP-143 아래에 서거나 SCP-143과 접촉할 순 없…"
+        },
+        {
+          "id": "scp-148",
+          "title": "\"텔레킬\" 합금",
+          "url": "https://scpko.wikidot.com/scp-148",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 23,
+          "desc": "3차 개정 SCP-148은 서술 시점에서 각각 약 10 kg의 주괴 120개의 형태로 보관된다. SCP-148 주괴들은 (예측할 수 없는 상호 작용의 가능성으로 인해) 다른 SCP들처럼 하나의 기지에 보관해서는 안 된다. 그 대신, 주괴들은 수용이 가능한 기지들에 같은 양 분배되어야 한다. 각 SCP-148 주괴들의 질량은 매달 측정 및 보고되어야 한다. 어떠한 경우에도 정신조작이나 초지각적 extrasensory 특성을 가진 SCP를 SCP-148과 접촉시킬…"
+        },
+        {
+          "id": "scp-158",
+          "title": "영혼 추출기",
+          "url": "https://scpko.wikidot.com/scp-158",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-158은 제12생물연구구역의 실험관측실 07에 설치되어 있다. 허가받지 않은 인원들은 출입이 금지되고, 전력도 공급되지 않는다. 접근이나 전원 공급에 대한 승인은 담당 연구팀 책임자 █████가 내린다. 이 기기를 사용하기 위해서는 먼저 허가를 받고 이 기기의 번역된 사용법을 읽고 숙지해야 한다. 이 기기를 작동시키는 경우 2명의 무장 경비원이 방 밖에서 대기하고 있어야 한다. 사고가 발생했을 경우 방의 모든 전원이 차단되고, 기기를 사용한 사람의 과실…"
+        },
+        {
+          "id": "scp-291",
+          "title": "해체기/재조립기",
+          "url": "https://scpko.wikidot.com/scp-291",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-291은 시험 용도로 쓰일 때를 제외하면 항상 전원으로부터 끊겨 있어야 한다. SCP-291이 보관되어 있는 방은 2명의 인원이 지키며, 매주 교대된다. 전원으로부터 끊겨 있는 상태의 SCP-291은 안전하다고 취급한다. SCP-291의 주 입구는 전원이 끊길 때 닫히고 잠기게 되어 있지만, 그 안에 사람이 갇혀 있을 때 수동으로 안에서부터 열 수 있다. 모든 해체된 생물체의 블록은 격리용 방에 있는 보관함에 보관하며, 매직 마커로 올바르게 표기를 해야…"
+        },
+        {
+          "id": "scp-500",
+          "title": "만병통치약",
+          "url": "https://scpko.wikidot.com/scp-500",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 34,
+          "desc": "SCP-500은 건조하고 서늘하며 직사광선이 들어오지 않는 곳에 보관해야 한다. SCP-500의 남용을 막기 위해 접근은 4등급 보안 인가가 있는 인원으로 제한한다."
+        },
+        {
+          "id": "scp-542",
+          "title": "외과 의사 선생",
+          "url": "https://scpko.wikidot.com/scp-542",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 1,
+          "desc": "SCP-542는 작은 욕실이 딸린 8m x 8m의 방에 격리되어야 하며, 수술용 도구로 개조될 가능성이 있는 것을 제외한 가구를 요청할 수 있다. SCP-542의 주요 요청은 다음과 같다. 모포와 시트가 없는 매트리스가 드러난 퀸 사이즈 침대 하나(승인됨) 라지 사이즈의 작업용 책상 두개 (승인됨) 라지 사이즈의 옷 한벌 (승인됨) 두꺼운 코트, 실험복, 바지 (승인됨) 전신 거울 몇가지 (거부됨) 바느질 용품, 두루마리 천 하나 (처음에는 승인되었으나, 사건…"
+        },
+        {
+          "id": "scp-784-arc",
+          "title": "SCP-784",
+          "url": "https://scpko.wikidot.com/scp-784-arc",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "-"
+        },
+        {
+          "id": "scp-914",
+          "title": "태엽장치",
+          "url": "https://scpko.wikidot.com/scp-914",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 44,
+          "desc": "정식 요청을 통해 기지 사령관에게 허가를 받은 인원만이 SCP-914를 작동시킬 수 있다. SCP-914는 109-B 연구동에 위치해 있으며, 두 명의 당직 감시 인원이 24시간 감시한다. 109-B에 들어온 모든 연구원은 실험 전 과정 동안 적어도 한 명의 감시원을 동반해야 하며, 당직 감시 인원에게 모든 실험 내용을 목록화하여 제출해야 한다. 목록에서 하나라도 빠진 것이 있다면, 실험은 즉시 중단되고 해당 연구원은 109-B에서 쫓겨나 기지 사령관의 재량에…"
+        },
+        {
+          "id": "experiment-log-914-theta",
+          "title": "실험기록 914-세타",
+          "url": "https://scpko.wikidot.com/experiment-log-914-theta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "실험 기록: 케인 파토스 크로우 교수, SCP-914를 이용하여 \"올림피아 프로젝트\"에 사용할 만한 물질을 얻어내는 실험. 날짜: 2008년 05월 12일"
+        },
+        {
+          "id": "olympia-integration-experiment-alpha",
+          "title": "올림피아 융합 실험기록 알파",
+          "url": "https://scpko.wikidot.com/olympia-integration-experiment-alpha",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "프로젝트 코드네임: 올림피아 프로젝트 일련번호: PRJOLM-000134 승인 일련번호: NPF-00051473 연구 총책임자: 케인 파토스 크로우 교수"
+        },
+        {
+          "id": "olympia-integration-experiment-beta",
+          "title": "올림피아 융합 실험기록 베타",
+          "url": "https://scpko.wikidot.com/olympia-integration-experiment-beta",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 1,
+          "desc": "프로젝트 코드네임: 올림피아 프로젝트 일련번호: PRJOLM-000134 승인 일련번호: NPF-00051473 연구 총책임자: 케인 파토스 크로우 교수"
+        },
+        {
+          "id": "olympia-integration-experiment-gamma",
+          "title": "올림피아 융합 실험기록 감마",
+          "url": "https://scpko.wikidot.com/olympia-integration-experiment-gamma",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "프로젝트 코드네임: 올림피아 프로젝트 일련번호: PRJOLM-000134 승인 일련번호: NPF-00051473 연구 총책임자: 케인 파토스 크로우 교수"
+        },
+        {
+          "id": "deleted:olympia-integration-experiment-omega",
+          "title": "올림피아 융합 실험기록 오메가",
+          "url": "https://scpko.wikidot.com/deleted:olympia-integration-experiment-omega",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "-"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "kain-pathos-crow-s-author-page"
+          ]
+        },
+        {
+          "id": "02-scp",
+          "title": "이용한 SCP:",
+          "articleIDs": [
+            "scp-040",
+            "scp-143",
+            "scp-148",
+            "scp-158",
+            "scp-291",
+            "scp-500",
+            "scp-542",
+            "scp-784-arc",
+            "scp-914"
+          ]
+        },
+        {
+          "id": "03-articles",
+          "title": "정제와 변환 과정:",
+          "articleIDs": [
+            "experiment-log-914-theta"
+          ]
+        },
+        {
+          "id": "04-articles",
+          "title": "통합 결과체 도출 과정:",
+          "articleIDs": [
+            "olympia-integration-experiment-alpha",
+            "olympia-integration-experiment-beta",
+            "olympia-integration-experiment-gamma",
+            "deleted:olympia-integration-experiment-omega"
+          ]
+        }
+      ],
+      "description": "목표 : SCP들을 이용해 인간형 인공물을 만들고, 그것을 재단의 활동에 도움이 되는 방향으로 이용한다."
+    },
+    {
+      "id": "scp-ko:collection:series:the-lombardi-tales",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "the-lombardi-tales",
+      "title": "롬바르디 이야기",
+      "sourceListURL": "https://scpko.wikidot.com/the-lombardi-tales",
+      "officialHubURL": "https://scpko.wikidot.com/the-lombardi-tales",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-lombardi-tales",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-lombardi-tales",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-a47661998918334c84fa5f9995adf53e24ad58b80a26b57d67312421f6032490"
+      },
+      "primaryArticles": [
+        {
+          "id": "nobody-knows",
+          "title": "아무도 아니 알다",
+          "url": "https://scpko.wikidot.com/nobody-knows",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "그래 씨바. 맞아, 네가 그 새끼 잡았다고 해야겠다. 그 정도면 죽고도 남았을테니. 좋아, 진정하고. D계급으로 떨어뜨리거나 하진 않을거니깐. 심호흡 해 임마."
+        },
+        {
+          "id": "orientation",
+          "title": "오리엔테이션",
+          "url": "https://scpko.wikidot.com/orientation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "오리엔테이션에 온 걸 환영한다. 난 맥스 롬바르디 요원일세. 난 당신들 강사야. 왜냐하면 내 다리가 부러졌고 직원 중 누군가가 날 증오하기 때문이지."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "nobody-knows",
+            "orientation"
+          ]
+        }
+      ],
+      "description": "재단에 들어오고 싶다고? 네가 그 보고서들에 정통한 줄 아나 보지? 이보게 친구, 자넨 그것들의 반도 모르고 있어. 난 자네 어머니가 주일학교에서 이야기하던 그 빌어먹을 정도로 믿을 수 없는 엿 같은 걸 본 적도 있어. 내 이름은 맥스 롬바르디 Max Lombardi 고, 망할 10년 동안 요원으로 있었지. 이게 뭘 말하는지 알고 싶어? 한번 말해볼까…"
+    },
+    {
+      "id": "scp-ko:collection:series:gamedayindex",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "gamedayindex",
+      "title": "게임데이",
+      "sourceListURL": "https://scpko.wikidot.com/gamedayindex",
+      "officialHubURL": "https://scpko.wikidot.com/gamedayindex",
+      "hubPresentation": "standard",
+      "canonicalTag": "gamedayindex",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "gamedayindex",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-aca2e6d38d73619eae6ff774de4de2fc5124e78aba086c3f3b96f5fd8175cae9"
+      },
+      "primaryArticles": [
+        {
+          "id": "gamedaypart1index",
+          "title": "게임데이 제1단계: 확보",
+          "url": "https://scpko.wikidot.com/gamedaypart1index",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 10,
+          "desc": "234-900-폭풍의 밤 사건에 관하여 알토 클레프 박사에 의해 정리된 공식 전투 후 기록의 일부. ██-██-████ 0811 시에, 인간형 격리 기지인 17 기지에서 당시에는 밝혀지지 않았던 조직이 시설의 주요 부위에 가져다 놓은 여러 개의 폭발 장치로 인해 여러 격리 실패가 일어났다. 사건 전 몇달간 격리 실패가 일어나지 않았기에 이 시점에서 시설에 어떻게 해서 장치가 부착되었는지는 불명이였다. 가장 그럴듯한 방법(내부 보안 유출)은 관련된 직원과/혹은 그…"
+        },
+        {
+          "id": "guide-to-newbies",
+          "title": "페이지",
+          "url": "http://ko.scp-wiki.net/guide-to-newbies",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "말하기는 어렵지만, 여기 경험의 법칙이 하나 있습니다. 이 페이지 로 가세요. 당신의 캐릭터 이름 아래에 있는 중요 항목이 많을 수록, 하위 직원이 아닐 확률이 높아집니다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "gamedaypart1index"
+          ]
+        },
+        {
+          "id": "02-3",
+          "title": "게임데이 제3단계: 보호",
+          "articleIDs": [
+            "guide-to-newbies"
+          ]
+        }
+      ],
+      "description": "발신자: 알토 클레프 박사 수신자: O5 평의회 RE: ██-██-████ (234-900-폭풍의 밤 사건)일자 제17기지에서 일어난 탈주 기록 첨부되어있으며, ██-██-████일자 제17기지에서 일어난 탈주 사건과 그 후에 일어난 일에 대한 제 기록을 찾아주시기 바랍니다. 이 보고서가 그 날에 일어났던 일과 ██-██-████일자에 일어났던 \"피의 금요일\" 공격으로 향하는 사건들의 연쇄에 관한 포괄적이고 완벽한 기록이 되기를 바랍니다…"
+    },
+    {
+      "id": "scp-ko:collection:series:tales-of-mr-collector",
+      "branchID": "scp-ko",
+      "kind": "series",
+      "hubID": "tales-of-mr-collector",
+      "title": "수집가 씨의 이야기",
+      "sourceListURL": "https://scpko.wikidot.com/tales-of-mr-collector",
+      "officialHubURL": "https://scpko.wikidot.com/tales-of-mr-collector",
+      "hubPresentation": "standard",
+      "canonicalTag": "tales-of-mr-collector",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "tales-of-mr-collector",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-ko",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "ko_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "scpko.wikidot.com",
+          "ko.scp-wiki.net"
+        ],
+        "structureHash": "sha256-6efc127ec6acb1eb3719417e140417bfaf37a3cebc0f33a96da212c742110494"
+      },
+      "primaryArticles": [
+        {
+          "id": "1-mr-headless",
+          "title": "1. 머리없음 씨",
+          "url": "https://scpko.wikidot.com/1-mr-headless",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "오 씨발오씨발오씨발오씨발오씨발. 내 이름은 제레미 아담스고 나는 22살이고 나는 괴물에게 쫓기고 있다. 무슨 일이 벌어지고 있는 지 전혀 모르겠다. 이게 어떻게 가능한지, 혹은 내가 뭘 해야 하는지도 모르겠다. 저게 멈추질 않고 있다. 나는 — 오 하나님 — 겨우 15분 동안 달리고 있었다. 더 긴 것 같았는데. 나는 지쳤지만 그놈은 멈추질 않는다."
+        },
+        {
+          "id": "mr-clank",
+          "title": "2. 땡그랑 씨",
+          "url": "https://scpko.wikidot.com/mr-clank",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "땡그랑 씨는 언제나처럼 갑자기 깨어나, 눈을 깜빡이며 주위를 둘러보았다. 구름의 잔해 사이로 보이는 태양은 아직 약간은 밝았다. 멀리 보이는 곳에서 반짝이는 웅장한 도시는 새 은식기처럼 밝고 새로웠다. 땡그랑 씨는 기지개를 켰고, 그의 척추를 따라 부착되어있는 태엽장치의 부드러운 움직임을 느꼈다. 힘든 선택이었지만, 깜빡거리는 삶이라도 삶은 삶이었다. 장치의 열쇠가 천천히 돌려지며 두번째 심장소리와 같이 딸깍였다. 그것은 그가 진실로 살아있다는 것을 작게 일깨워…"
+        },
+        {
+          "id": "3-mr-money",
+          "title": "3. 돈 씨",
+          "url": "https://scpko.wikidot.com/3-mr-money",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 7,
+          "desc": "이봐 안녕. 내 이름은 돈 씨야. 걱정하지 마. 나는 대화상대가 필요할 뿐이니까. 이 버스에 타고 있는 사람은 나와 당신밖에 없으니까, 당신이 해주었으면 좋겠어."
+        },
+        {
+          "id": "4-mr-lie",
+          "title": "4. 거짓말 씨",
+          "url": "https://scpko.wikidot.com/4-mr-lie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "난 감옥을 싫어해. 내가 이 여행을 시작했을때부터 얼마나 많이 감옥에 들어갔는지 알아? 열두번. 물론 나는 증거가 없을 때마다 자연스레 빠져나갔지만, 그게 얼마나 빌어먹게 짜증나는데. 솔직히, 비누를 떨어뜨릴때의 공포를 제외하고도, 물자는 적었고 간수들은 항상 날 두들겨 팼단 말이야. 그들은 항상 내가 자신들을 이상하게 본다고 말하곤 했었지."
+        },
+        {
+          "id": "5-mr-mad",
+          "title": "5. 화남 씨",
+          "url": "https://scpko.wikidot.com/5-mr-mad",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "그 망할 미친놈의 줄무늬. 방금 뉴스를 들었어 - 그놈이 다른 두놈을 죽였더군. 최소한 중지되지는 않았잖아. 하지만 그래도. 원더테인먼트 박사가 했지, 물론. 줄무늬는 원더테인먼트가 먼저 생각하지 않은 씨발 잡것의 생각이라도 먼저 생각하지 않는단 말이야. 혹은 원더테인먼트에 있는 누군가. 씨발 내가 그걸 알면 말이지. 사실 원더테인먼트 박사가 하나만 있고, 실존하고는 있는거야? 그들은 우리에게 씨발 아무것도 말해주지 않아. 하지만 줄무늬는 항상 알아야 할 것 보…"
+        },
+        {
+          "id": "interval-1",
+          "title": "중간 휴식 시간 1",
+          "url": "https://scpko.wikidot.com/interval-1",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "\"안녕 꼬마들아!\" 나는 그들 사이를 돌아다니며 기쁨에 차 외쳤다. \"너흰 정말 사랑스러운 아이들이구나! 네 이름이 뭐니?\" 아이들이 킥킥거렸다. 한 남자아이가 나를 바라보았다. \"난 토미에요. 난 6살 반이고 세상에 무서운건 아무것도 없어요!\""
+        },
+        {
+          "id": "6-mr-stripes",
+          "title": "6. 줄무늬 씨",
+          "url": "https://scpko.wikidot.com/6-mr-stripes",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "나에게는 긴 다리가 있어. 아주 긴 다리가. 내가 원할때 계곡을 넘어 뻗어갈 정도로 긴 다리. 내가 필요할 때 말이야. 피아니스트, 혹은 목조르는 자의 손가락. 길고 얇지. 목을 조르기 위해 있어. 피아니스트의 것이 아니야."
+        },
+        {
+          "id": "ohhello",
+          "title": "7. ███████████ 씨",
+          "url": "https://scpko.wikidot.com/ohhello",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "아, 그래. 그래. 난 당신이 보러온 사람이 나라고 생각하네. 솔직히 말해, 난 당신을 기다리고 있었어. 오, 제발. 거기 앉진 말아줘. 난 조용히 따라가 주겠지만 대신 당신은 반드시… 음, 어쨌든, 거기 앉아야 한다면 소란은 피우지 말아줘. 난 스트레스를 잘 다루지 못한다고."
+        },
+        {
+          "id": "8-mr-moon",
+          "title": "8. 달 씨",
+          "url": "https://scpko.wikidot.com/8-mr-moon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "난 달 씨야. 당신들은 날 이 생산과정의 가장 불행한 이라고 생각하겠지. 하지만 그렇다면 당신은 틀렸어. 난 재단에 의해 잘 보호받고 있고, 그들은 내가 얼굴이 가려질때 내 필요를 충족해주며 내 진정한 시력이 돌아왔을때 내가 혼자 있게 해주지. 지금처럼 말이야."
+        },
+        {
+          "id": "9-mr-clumsy",
+          "title": "9. 덜렁 씨",
+          "url": "https://scpko.wikidot.com/9-mr-clumsy",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "내 이름은 덜렁 씨고 난 오늘 마흔 일곱 번이나 죽었어. 첫번째는 내가 길을 따라 걸어가고 있었을 때라고 생각해. 난 그냥 물을 마시고 싶어서 선인장에 다가갔을 뿐이야. 그 후 내 펜나이프를 꺼내 작은 구멍을 내려고 했지. 그 대신 일어난 일은 내가 비틀거려서 나이프를 심장에 꽃고, 선인장 위에 뒤로 넘어졌다는 거야."
+        },
+        {
+          "id": "10-mr-mission",
+          "title": "10. 임무 씨",
+          "url": "https://scpko.wikidot.com/10-mr-mission",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "시간: 한밤중. 장소: 도시가 만들어낸 결과물 중 더욱 그늘 속에 있는 곳. 사람: 물론, 내 자신. 나는 그곳에 앉아 영원으로 느껴질 정도로 오래전에 시킨 씨 피즈를 간혹 들이키며 거의 한시간 동안 앉아있었다. 나이트클럽의 깊은 베이스가 하위층 시민들의 열정적인 마음과 맞춰 고동하며 그들의 존재로 세상을 축복하는 것을 어두운 방에 앉아 듣는 것은 마치 영원과도 같이 느껴졌다. 나는 바메이드를 흘끗 쳐다보았다."
+        },
+        {
+          "id": "interval-2",
+          "title": "중간 휴식 시간 2",
+          "url": "https://scpko.wikidot.com/interval-2",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "사과씨 씨. 진지하게 말하는건데, 그게 내 이름이다. 혹시나 모를까봐 말해주는건데, 내가 재채기하거나, 기침하거나, 방귀를 뀔때마다, 사과씨가 나와. 정말 기분 더럽지. 이건 물론, 내가 방금 재단에 잡혔다는 사실 때문에 점점 악화되고 있었고 덕분에 이제 슬슬 재채기가 나오려고 하고 있었다."
+        },
+        {
+          "id": "11-mr-feather",
+          "title": "11. 깃털 씨",
+          "url": "https://scpko.wikidot.com/11-mr-feather",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "깃털 씨는 절벽 위에서 둥실둥실 떠내려가 4백 피트 높이에서 떨어졌다. 그는 풀무더기와 산비둘기 둥지를 지나간 후 바닥에 쿵소리를 내며 부딫혔다. 그는 신음하며 팔꿈치로 땅을 딛고 몸을 일으켰다. 그리고 그는 산골짜기에 서 있는 작고 검은 머리의 동그란 얼굴을 가진 소녀의 눈과 마주쳤다. 그녀는 조용히 눈을 깜빡였다."
+        },
+        {
+          "id": "mr-laugh",
+          "title": "12. 웃음 씨",
+          "url": "https://scpko.wikidot.com/mr-laugh",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "그래, 그래, 내 이름은 웃음 씨야! 그러니까 '하하! 히히!' 같은거! 그래서 내가 이 거대한 쇼핑 센터 한가운데 있잖아? 옆면이 전부 스트립 몰로 되어있는 것 같이, 하하? 근데 그건 그렇게 재미있지는 않아! 애들 몇명이 내 괴상한 페이스페인트와 내 옷의 줄무늬를 보고 웃어댔는데, 사실 그 중 어느것도 그렇게 웃기지는 않았고, 그 애들이 웃는건 그렇게 친절한 게 아니였어. 내 기분을 약간 상하게 했지, 하하."
+        },
+        {
+          "id": "13-mr-purple",
+          "title": "13. 미사여구 씨",
+          "url": "https://scpko.wikidot.com/13-mr-purple",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "나의 지팡이의 밑부분은 건조되어 말라있었다. 이 지팡이 끝의 모난 욕구를 채워준다 한들 말라버린 이 지팡이의 갈증은 쉽게 채워지지 않았다. 그럼에도 불구하고 루비 빛의 피를 뚝뚝 흘리는 강철의 혀는 세입자의 두개골에 그어진 틈으로 부터 번영, 뒤틀린 꼬임, 그리고 매력으로 빠져나왔다. 남자의 외침과 신음소리가 - 최근에 상처를 입은 개의 경직된 움찔거림 - 그의 가슴이 움직임을 멈출때까지 계속해서 울려퍼졌다. 강철의 이빨이 다시 또다시 살점에 구멍을 뚫으며, 억…"
+        },
+        {
+          "id": "14-mr-brass",
+          "title": "14. 황동 씨",
+          "url": "https://scpko.wikidot.com/14-mr-brass",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "당신은 여행 친구와 함께 일렬로 걷고 있다. 당신은 그의 뒤로 몇발자국 정도 떨어져 있다. 당신은 그를 처음만났을때 생각만큼 친근하다고 생각했었다. \"재미있는 동료\". 그것이 당신이 그를 기억한 내용이다. 그는 당신의 실용적인 침묵과는 다르게 말 하기를 좋아했다. 당신은 위대한 작곡가와 음악가의 이야기를 들어보았지만, 이 남자의 지혜는 그들을 모두 가릴 정도였다. 당신은 그가 모르는 노래를 부르지 못했고, 심지어는 스스로 생각해낸듯 한 소절까지 모두 간파당했다.…"
+        },
+        {
+          "id": "15-ms-sweetie",
+          "title": "15. 달콤 양",
+          "url": "https://scpko.wikidot.com/15-ms-sweetie",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 9,
+          "desc": "그래서 이게 끝이군요. 안 그런가요. 네, 그게 맞아요. 제가 달콤 양이에요. 처음 몇개의 미스터들 가운데서 유일한 아가씨죠. 그 여성 스머프 하나처럼 말이에요. 유일한 여성 캐릭터죠."
+        },
+        {
+          "id": "mr-fish",
+          "title": "16. 물고기 씨",
+          "url": "https://scpko.wikidot.com/mr-fish",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "가끔 나는 물 속에 앉아서 생각하는 것을 좋아한다. 나는 이 곳이 좋다. 평화롭다. 축축하고. 밖은 따뜻하다. 구름이 많이 끼었다. 난 구름이 좋다."
+        },
+        {
+          "id": "end",
+          "title": "종장",
+          "url": "https://scpko.wikidot.com/end",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "내가 죄책감을 느끼지 않는 것은 아니였다. 물론 나는 죄책감을 느꼈다. 하지만 살아남기 위해서는 때때로 해야 할 일이 있는 것이다. 내 마지막 과제였던 물고기 씨를 담은 수조를 바라보면서도 내가 할 수 있는 것은 그에게 슬픈 눈빛을 한번 보내고 떠나는 것뿐이었다. 내가 내 목을 올가미에 걸지 않고서 그 불쌍한 녀석에게 해줄 수 있는 것은 없었다."
+        },
+        {
+          "id": "epilogue",
+          "title": "에필로그",
+          "url": "https://scpko.wikidot.com/epilogue",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 8,
+          "desc": "당신은 하얀색의 방에서 천천히 깨어났다. 당신은 아무것도 기억할 수 없었다. 잠깐, 그건 아닌 것 같다. 당신은 말할 줄 알고, 걸을 줄 알고, 사물이 무엇인지 알고 있다. 그러나 당신은 몇가지, 예를 들자면 어떻게 당신이 여기 왔는지, 여기가 어딘지, 당신이 누구인지 같은 것들만은 정신의 손아귀가 닿지 않는 저 편에서 헤엄치고 있었다. 당신은 이름이란 것을 찾아 뒤졌지만, 아무것도 없었다."
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "1-mr-headless",
+            "mr-clank",
+            "3-mr-money",
+            "4-mr-lie",
+            "5-mr-mad",
+            "interval-1",
+            "6-mr-stripes",
+            "ohhello",
+            "8-mr-moon",
+            "9-mr-clumsy",
+            "10-mr-mission",
+            "interval-2",
+            "11-mr-feather",
+            "mr-laugh",
+            "13-mr-purple",
+            "14-mr-brass",
+            "15-ms-sweetie",
+            "mr-fish",
+            "end",
+            "epilogue"
+          ]
+        }
+      ],
+      "description": "Salman Corbette 와 TheDeadlyMoose가 편집함. 제휴 편집자: Dexanote 와 TroyL"
     },
     {
       "id": "scp-ko:collection:series:1998-911-hub",
