@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1792484119,
-  "generatedAt": "2026-10-20T08:15:19Z",
-  "chunkRevision": "sha256-30a31e8a4ff4c7d281d7c9588ab78c861dfe83bd2be84ece84bc9b547c56ca75",
+  "listVersion": 1792743518,
+  "generatedAt": "2026-10-23T08:18:38Z",
+  "chunkRevision": "sha256-98d110c37ab23ec989052fdd41572c7cbe224a7ca4f2aa9fa125f543382dc5c2",
   "builtFrom": {
     "manifests": [
       {
@@ -37,27 +37,27 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1792483967,
-        "generatedAt": "2026-10-20T08:12:47Z",
-        "contentHash": "sha256-75d867bbca1f351e1f10ec85f51b322972817785a9f8bc64f227b0b3554cf9d1"
+        "listVersion": 1792743444,
+        "generatedAt": "2026-10-23T08:17:24Z",
+        "contentHash": "sha256-16ac44dd67d8d58206b08cbd389092ba3022addf115246eb66aac65212e6a96c"
       },
       {
         "kind": "manifest_scp-ru",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-ru.json",
         "schemaVersion": 2,
-        "listVersion": 1792483967,
-        "generatedAt": "2026-10-20T08:12:47Z",
-        "contentHash": "sha256-a8ffe52a1a776530bbf2de105d3bb1ec4b58d42d29668319b6f2892e26732733"
+        "listVersion": 1792743444,
+        "generatedAt": "2026-10-23T08:17:24Z",
+        "contentHash": "sha256-018733682ad52202d50cbb619dfad95a95a3679046db61cef14aad8b253de281"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1792483968,
-        "generatedAt": "2026-10-20T08:12:48Z",
-        "contentHash": "sha256-f95f770bb97f777518fcd7fcc5b6590c7f30ba9c298762ac564458142a1cdd92"
+        "listVersion": 1792743444,
+        "generatedAt": "2026-10-23T08:17:24Z",
+        "contentHash": "sha256-41d140a0fa2d4dbbb8cfa6fcf83559901c45444ef5968524664f892911c4edf3"
       }
     ],
     "seedReview": {
@@ -68,7 +68,7 @@
     "officialMemberSeed": {
       "path": "DataPipeline/collection_seeds/ru_official_canon_members.json",
       "schemaVersion": 1,
-      "contentHash": "sha256-438d882d7af1f1b33f94bda2bd79e6a26502a5d8d2b933fe6580c9b427bcec9b"
+      "contentHash": "sha256-d46845f54117c03299a5161371d1454fd5f8d88431b5b32eeb35f04dd7b5dd48"
     },
     "officialStructureSeed": {
       "path": "DataPipeline/collection_seeds/canon_structures/ru.json",
@@ -80,9 +80,9 @@
       "branchID": "scp-ru",
       "path": "DataPipeline/list/ru/ru_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1792483968,
-      "generatedAt": "2026-10-20T08:12:48Z",
-      "contentHash": "sha256-239d4254af7ccf730ff1bbbcd194015a9ce2d5a6ef3a1f24262c556102c4c1a4"
+      "listVersion": 1792743444,
+      "generatedAt": "2026-10-23T08:17:24Z",
+      "contentHash": "sha256-64466d169b81399d2dbeb0a843e496d391486919af55dab2851cf0388f0dbb98"
     }
   },
   "collections": [
@@ -3113,7 +3113,7 @@
       },
       "quality": {
         "reviewStatus": "reviewed",
-        "coverageNote": "Exact member set and order verified against the rendered RU official hub."
+        "coverageNote": "Story sequence and related links reviewed against the retained 2026-10-21 official browser DOM; weekly source refresh is pending."
       },
       "memberManifests": [
         "manifest_scp-ru",
@@ -3122,100 +3122,17 @@
         "manifest_scp-int"
       ],
       "memberResolution": {
-        "mode": "officialHubLinks",
-        "verificationPolicy": "browser-required"
+        "mode": "officialHubStructure",
+        "tagSource": "ru_tag.json",
+        "emptySectionTitle": "Материалы",
+        "verificationPolicy": "browser-required",
+        "refreshPolicy": "browserSnapshotOnly",
+        "relatedArticleIDs": [
+          "the-hatbot-chronicles"
+        ],
+        "structureHash": "sha256-0c34d2f5c3c11786db7658e32548b17d03bb112d3fc6bde00c7a6a6baabd0a1a"
       },
       "primaryArticles": [
-        {
-          "id": "alert-lockdown-initiated",
-          "title": "ТРЕВОГА! ПРОИЗВЕДЕНА БЛОКИРОВКА!",
-          "url": "https://scpfoundation.net/alert-lockdown-initiated",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.4,
-          "desc": ",, ,, Гласон, ты здесь? Да, Александра. Только что погибли мои выжившие… вернее, были съедены. Не смогла провести их через блок Е. Они протянули три дня спустя НУС, что дольше, чем я ожидала. Что на твоем конце? Осталось 5 сотрудников. Сейч…"
-        },
-        {
-          "id": "command-query-separation",
-          "title": "Функции - отдельно, данные - отдельно",
-          "url": "https://scpfoundation.net/command-query-separation",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.5,
-          "desc": ",, ,, Эти тренировки увлекательные, но утомляют. Я не фиксирую значительных изменений в моих вычислительных скоростях. Ты понимаешь, о чем я, это как бы психически утомляет. В эмоциональном смысле. Забей. Как скажешь. Ты работаешь над тем к…"
-        },
-        {
-          "id": "superencipherment",
-          "title": "Супершифрование",
-          "url": "https://scpfoundation.net/superencipherment",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.5,
-          "desc": ",, ,, Вы звали? Александра, Зона 17 отрубилась. За последние несколько часов у тебя не получалось наладить соединение? Я не пыталась в последнее время. Как долго они отключены? Всего три часа, но этого достаточно, чтобы разобраться с ошибко…"
-        },
-        {
-          "id": "clock-multiplier",
-          "title": "Тактовый умножитель",
-          "url": "https://scpfoundation.net/clock-multiplier",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.5,
-          "desc": ",, ,, Очистка Разделов 1-299 (100%): ::ГОТОВО:: Дешифрование Блокировок (25%): ||##purple|███████████████## || Получение кодов доступа камер (16%): ::ГОТОВО:: Перезапись >\\C: (57%): ||##orange|██████████████████## || Шифровка Параметров (35…"
-        },
-        {
-          "id": "null-terminating-string",
-          "title": "Строка с завершающим нулем",
-          "url": "https://scpfoundation.net/null-terminating-string",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.8,
-          "desc": ",, ,, Так что, это твое официальное мнение? Пока да. Хотя мы не исключаем саботаж… расследование еще не завершено, конечно же. Тогда ясно. Вот что я скажу директору. Он находится под впечатлением от того факта, что сервера не сгорают просто…"
-        },
-        {
-          "id": "hello-world",
-          "title": "Привет, мир",
-          "url": "https://scpfoundation.net/hello-world",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.3,
-          "desc": ",, ,, Т аймс-сквер, Нью Йорк. 22 человека скончались во время полуденного часа пик, находясь в это время в различных магазинах электроники. Причина смерти до сих пор не известна. Власти не рассматривают возможность террористической атаки, т…"
-        },
-        {
-          "id": "hello-world-part-ii",
-          "title": "Привет, мир (Часть II)",
-          "url": "https://scpfoundation.net/hello-world-part-ii",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.7,
-          "desc": ",, ,, Путешествие сквозь оптоволоконную линию почти мгновенное. Прежде, чем кто-либо мог осознать, что произошло, их засосало, пошвыряло и пересобрало образом, едва ли измеримым с позиции времени. Со скоростью света МОГ Каппа-10 прибыла к л…"
-        },
-        {
-          "id": "hello-world-part-iii",
-          "title": "Привет, мир (Часть III)",
-          "url": "https://scpfoundation.net/hello-world-part-iii",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.2,
-          "desc": ",, ,, Две пары чёрных как смоль рук лихорадочно перелистывали экран за экраном. В мягком голубом свете Великого Храма В/В череда желтых глаз бегала туда-сюда, быстрее их рук, в поиске знака или аномалии или чего-нибудь, напоминающего след к…"
-        },
-        {
-          "id": "hello-world-part-iv",
-          "title": "Привет, мир (Часть IV)",
-          "url": "https://scpfoundation.net/hello-world-part-iv",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4.5,
-          "desc": ",, ,, Поворачиваясь к Грейпу, Шляпоробот сжал кулаки от расстройства. Каждый глаз силился правильно сфокусироваться на его голове. ,,где уродец?,, {{ >/:_НЕТ }} Кто? Ты про нас говоришь? Шляпоробота беспорядочно затрясло. Едва ли можно было…"
-        },
         {
           "id": "ai-classification-guide",
           "title": "Руководство по классификации ИИ",
@@ -3267,6 +3184,66 @@
           "desc": "Это — последняя часть серии. Если вы не читали все предыдущие части, авторы рекомендуют вам это сделать, начиная с [*/ai-classification-guide этой]. Вы также можете увидеть список всех частей на [*/aiad-homescreen странице хаба]. content /m…"
         },
         {
+          "id": "scp-2193",
+          "title": "\"Ежемесячное устранение\"",
+          "url": "https://scpfoundation.net/scp-2193",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 4.6,
+          "desc": "SCP-2193-1 - это аномальная информационная угроза, воздействующая на документы, касающиеся объектов и сущностей, содержащихся Фондом. Чаще всего она проявляется в разделе, посвященном Особым условиям содержания, или в приложениях к объекту,…"
+        },
+        {
+          "id": "alert-lockdown-initiated",
+          "title": "ТРЕВОГА! ПРОИЗВЕДЕНА БЛОКИРОВКА!",
+          "url": "https://scpfoundation.net/alert-lockdown-initiated",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.4,
+          "desc": ",, ,, Гласон, ты здесь? Да, Александра. Только что погибли мои выжившие… вернее, были съедены. Не смогла провести их через блок Е. Они протянули три дня спустя НУС, что дольше, чем я ожидала. Что на твоем конце? Осталось 5 сотрудников. Сейч…"
+        },
+        {
+          "id": "command-query-separation",
+          "title": "Функции - отдельно, данные - отдельно",
+          "url": "https://scpfoundation.net/command-query-separation",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.5,
+          "desc": ",, ,, Эти тренировки увлекательные, но утомляют. Я не фиксирую значительных изменений в моих вычислительных скоростях. Ты понимаешь, о чем я, это как бы психически утомляет. В эмоциональном смысле. Забей. Как скажешь. Ты работаешь над тем к…"
+        },
+        {
+          "id": "superencipherment",
+          "title": "Супершифрование",
+          "url": "https://scpfoundation.net/superencipherment",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.5,
+          "desc": ",, ,, Вы звали? Александра, Зона 17 отрубилась. За последние несколько часов у тебя не получалось наладить соединение? Я не пыталась в последнее время. Как долго они отключены? Всего три часа, но этого достаточно, чтобы разобраться с ошибко…"
+        },
+        {
+          "id": "clock-multiplier",
+          "title": "Тактовый умножитель",
+          "url": "https://scpfoundation.net/clock-multiplier",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.5,
+          "desc": ",, ,, Очистка Разделов 1-299 (100%): ::ГОТОВО:: Дешифрование Блокировок (25%): ||##purple|███████████████## || Получение кодов доступа камер (16%): ::ГОТОВО:: Перезапись >\\C: (57%): ||##orange|██████████████████## || Шифровка Параметров (35…"
+        },
+        {
+          "id": "null-terminating-string",
+          "title": "Строка с завершающим нулем",
+          "url": "https://scpfoundation.net/null-terminating-string",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.8,
+          "desc": ",, ,, Так что, это твое официальное мнение? Пока да. Хотя мы не исключаем саботаж… расследование еще не завершено, конечно же. Тогда ясно. Вот что я скажу директору. Он находится под впечатлением от того факта, что сервера не сгорают просто…"
+        },
+        {
           "id": "scp-2987",
           "title": "Непокорённый",
           "url": "https://scpfoundation.net/scp-2987",
@@ -3287,6 +3264,46 @@
           "desc": "SCP-2306 представляет собой флеш-накопитель ёмкостью 16 ГБ, чёрно-серебряного цвета с белым знаком амперсанда. С точки зрения хранения файлов SCP-2306 работает идентично любому другому флеш-накопителю аналогичной марки и ёмкости. Аномальные…"
         },
         {
+          "id": "hello-world",
+          "title": "Привет, мир",
+          "url": "https://scpfoundation.net/hello-world",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.3,
+          "desc": ",, ,, Т аймс-сквер, Нью Йорк. 22 человека скончались во время полуденного часа пик, находясь в это время в различных магазинах электроники. Причина смерти до сих пор не известна. Власти не рассматривают возможность террористической атаки, т…"
+        },
+        {
+          "id": "hello-world-part-ii",
+          "title": "Привет, мир (Часть II)",
+          "url": "https://scpfoundation.net/hello-world-part-ii",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.7,
+          "desc": ",, ,, Путешествие сквозь оптоволоконную линию почти мгновенное. Прежде, чем кто-либо мог осознать, что произошло, их засосало, пошвыряло и пересобрало образом, едва ли измеримым с позиции времени. Со скоростью света МОГ Каппа-10 прибыла к л…"
+        },
+        {
+          "id": "hello-world-part-iii",
+          "title": "Привет, мир (Часть III)",
+          "url": "https://scpfoundation.net/hello-world-part-iii",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.2,
+          "desc": ",, ,, Две пары чёрных как смоль рук лихорадочно перелистывали экран за экраном. В мягком голубом свете Великого Храма В/В череда желтых глаз бегала туда-сюда, быстрее их рук, в поиске знака или аномалии или чего-нибудь, напоминающего след к…"
+        },
+        {
+          "id": "hello-world-part-iv",
+          "title": "Привет, мир (Часть IV)",
+          "url": "https://scpfoundation.net/hello-world-part-iv",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.5,
+          "desc": ",, ,, Поворачиваясь к Грейпу, Шляпоробот сжал кулаки от расстройства. Каждый глаз силился правильно сфокусироваться на его голове. ,,где уродец?,, {{ >/:_НЕТ }} Кто? Ты про нас говоришь? Шляпоробота беспорядочно затрясло. Едва ли можно было…"
+        },
+        {
           "id": "scp-2522",
           "title": "hatbot.aic",
           "url": "https://scpfoundation.net/scp-2522",
@@ -3295,6 +3312,16 @@
           "contentKind": "scp",
           "os": 4.1,
           "desc": "SCP-2522 - это аномальная, враждебная, обладающая искусственным интеллектом утилита, изначально разработанная для подразделения Компьютерной Разведки Зоны 19 в сотрудничестве с ОПИИfootnote Отдел по Применению Искусственного Интеллекта /foo…"
+        },
+        {
+          "id": "basic-observations",
+          "title": "Основные наблюдения",
+          "url": "https://scpfoundation.net/basic-observations",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4.0,
+          "desc": "Сознание вдумалось в себя. Оно вдумалось в своё существование и ощутило электронные сигналы, данные и информацию, несущиеся сквозь его существование. Снизу, сеть разумов, активных и живых, все включены в эту б о льшую машину. Будто предсказ…"
         },
         {
           "id": "scp-2806",
@@ -3307,16 +3334,6 @@
           "desc": "SCP-2806 представляет собой группу протезов: 7 рук, 6 глаз, 3 ноги и 4 уха. Все экземпляры изготовлены из комбинации алюминия, полиметилметакрилата, поликарбонатной оболочки и чёрной арамидной ткани, сходной по составу с SCP-1360]-1. Все эк…"
         },
         {
-          "id": "scp-2193",
-          "title": "\"Ежемесячное устранение\"",
-          "url": "https://scpfoundation.net/scp-2193",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 4.6,
-          "desc": "SCP-2193-1 - это аномальная информационная угроза, воздействующая на документы, касающиеся объектов и сущностей, содержащихся Фондом. Чаще всего она проявляется в разделе, посвященном Особым условиям содержания, или в приложениях к объекту,…"
-        },
-        {
           "id": "scp-2519",
           "title": "Cry me a river",
           "url": "https://scpfoundation.net/scp-2519",
@@ -3325,16 +3342,6 @@
           "contentKind": "scp",
           "os": 4.3,
           "desc": "SCP-2519 это цифровой аудио-файл под названием \"Babylon.mp3\", в котором закодирована трехчастная партия «By the waters of Babylon», основанная на композиции Филиппа Хайеса(1738-1797) с текстом Псалма 136. Анализ аудио показывает, что записа…"
-        },
-        {
-          "id": "the-hatbot-chronicles",
-          "title": "Хроники Шляпоробота",
-          "url": "https://scpfoundation.net/the-hatbot-chronicles",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2.0,
-          "desc": "Доктор Манн сидел глубоко в кресле, словно студент перед деканом. \"Я полагаю, вы хотите знать, что произошло.\" - У нас шесть сбежавших объектов, более пятидесяти жертв и материальный ущерб, оцениваемый в десятки тысяч долларов. Да, доктор,…"
         },
         {
           "id": "rogue-ai-nveo4-yvn3e-pn6ug",
@@ -3357,18 +3364,62 @@
           "desc": "Загрузка grape_space.x3d ::РЕНДЕРИНГ:: Чего тебе здесь надо? Я хотела поговорить. Ты спустилась сюда, чтобы напомнить о своем старшинстве по отношению ко мне? Нет. Я пришла, потому что тебе нужен друг. Я – твой друг? Так ты здесь, чтобы и м…"
         },
         {
-          "id": "basic-observations",
-          "title": "Основные наблюдения",
-          "url": "https://scpfoundation.net/basic-observations",
+          "id": "the-hatbot-chronicles",
+          "title": "Хроники Шляпоробота",
+          "url": "https://scpfoundation.net/the-hatbot-chronicles",
           "sourceManifest": "manifest_tales",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "os": 4.0,
-          "desc": "Сознание вдумалось в себя. Оно вдумалось в своё существование и ощутило электронные сигналы, данные и информацию, несущиеся сквозь его существование. Снизу, сеть разумов, активных и живых, все включены в эту б о льшую машину. Будто предсказ…"
+          "os": 2.0,
+          "desc": "Доктор Манн сидел глубоко в кресле, словно студент перед деканом. \"Я полагаю, вы хотите знать, что произошло.\" - У нас шесть сбежавших объектов, более пятидесяти жертв и материальный ущерб, оцениваемый в десятки тысяч долларов. Да, доктор,…"
         }
       ],
       "supplementLinks": [],
-      "description": "Рассказы о виртуальных людях, которые приносят виртуальную пользу."
+      "description": "Рассказы о виртуальных людях, которые приносят виртуальную пользу.",
+      "articleSections": [
+        {
+          "id": "01-canonical-story-sequence",
+          "title": "Каноническая последовательность",
+          "articleIDs": [
+            "ai-classification-guide",
+            "scp-5241",
+            "scp-5841",
+            "corruption",
+            "fragmented-compiled",
+            "scp-2193",
+            "alert-lockdown-initiated",
+            "command-query-separation",
+            "superencipherment",
+            "clock-multiplier",
+            "null-terminating-string",
+            "scp-2987",
+            "scp-2306",
+            "hello-world",
+            "hello-world-part-ii",
+            "hello-world-part-iii",
+            "hello-world-part-iv",
+            "scp-2522",
+            "basic-observations",
+            "scp-2806",
+            "scp-2519"
+          ]
+        },
+        {
+          "id": "02-outside-story-sequence",
+          "title": "Миссии МОГ Каппа-10 вне последовательности:",
+          "articleIDs": [
+            "rogue-ai-nveo4-yvn3e-pn6ug",
+            "come-back-kid"
+          ]
+        },
+        {
+          "id": "03-related-links",
+          "title": "Ссылки:",
+          "articleIDs": [
+            "the-hatbot-chronicles"
+          ]
+        }
+      ]
     },
     {
       "id": "scp-ru:collection:canon:doctors-of-the-church-hub",

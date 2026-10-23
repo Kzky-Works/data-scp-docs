@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1791800239,
-  "generatedAt": "2026-10-12T10:17:19Z",
-  "chunkRevision": "sha256-0e42fc1d5420567b71ae3c38e36ec9b4bc0cc4fcd7f5f689d2f85dc0cac32bb9",
+  "listVersion": 1792743646,
+  "generatedAt": "2026-10-23T08:20:46Z",
+  "chunkRevision": "sha256-e56f1e29b516d13d9be3735f39bb0c9207f9effe07703ff8114f7cbeb991b344",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-es",
         "path": "DataPipeline/list/es/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1791712603,
-        "generatedAt": "2026-10-11T09:56:43Z",
-        "contentHash": "sha256-b83bcfd25e448f7eb3cab09ca643a4a2085bf4b23db7550081b317746af5dc76"
+        "listVersion": 1792743400,
+        "generatedAt": "2026-10-23T08:16:40Z",
+        "contentHash": "sha256-e3fba22d7247473490556dd9ffad43e540be6f077acbeab13d04fcff44efe162"
       },
       {
         "kind": "manifest_gois",
@@ -23251,6 +23251,340 @@
         }
       ],
       "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo."
+    },
+    {
+      "id": "scp-es:collection:series:dr-gears-storytime-entries",
+      "branchID": "scp-es",
+      "kind": "series",
+      "hubID": "dr-gears-storytime-entries",
+      "title": "Entradas de Cuentos de Hoguera del Dr Gears",
+      "sourceListURL": "https://lafundacionscp.wikidot.com/dr-gears-storytime-entries",
+      "officialHubURL": "https://lafundacionscp.wikidot.com/dr-gears-storytime-entries",
+      "hubPresentation": "standard",
+      "canonicalTag": "dr-gears-storytime-entries",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "dr-gears-storytime-entries",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-es",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "es_tag.json",
+        "memberSelector": "a[href]",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
+        "allowedHosts": [
+          "lafundacionscp.wikidot.com"
+        ],
+        "structureHash": "sha256-21530f7c5bb4b4f40e812f03c3972fe7d4ddf06b5f3e48660cdfff6ba5e9126e"
+      },
+      "primaryArticles": [
+        {
+          "id": "reentry",
+          "title": "Reentrada",
+          "url": "http://lafundacionscp.wikidot.com/reentry",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "swimmer",
+          "title": "Nadador",
+          "url": "http://lafundacionscp.wikidot.com/swimmer",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-vault",
+          "title": "La Bóveda",
+          "url": "http://lafundacionscp.wikidot.com/the-vault",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "influenza",
+          "title": "Influenza",
+          "url": "http://lafundacionscp.wikidot.com/influenza",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "meteor",
+          "title": "Meteoro",
+          "url": "http://lafundacionscp.wikidot.com/meteor",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "late-night",
+          "title": "Tarde en la Noche",
+          "url": "http://lafundacionscp.wikidot.com/late-night",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "peeled",
+          "title": "Pelada",
+          "url": "http://lafundacionscp.wikidot.com/peeled",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "knives",
+          "title": "Cuchillos",
+          "url": "http://lafundacionscp.wikidot.com/knives",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "jaywalk",
+          "title": "Cruzar la carretera",
+          "url": "http://lafundacionscp.wikidot.com/jaywalk",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "devotion",
+          "title": "Devoción",
+          "url": "http://lafundacionscp.wikidot.com/devotion",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "feverish",
+          "title": "Febril",
+          "url": "http://lafundacionscp.wikidot.com/feverish",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "cold",
+          "title": "Frío",
+          "url": "http://lafundacionscp.wikidot.com/cold",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "alone",
+          "title": "Solo",
+          "url": "http://lafundacionscp.wikidot.com/alone",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "mice",
+          "title": "Ratón",
+          "url": "http://lafundacionscp.wikidot.com/mice",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "elevator",
+          "title": "Elevador",
+          "url": "http://lafundacionscp.wikidot.com/elevator",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "potty",
+          "title": "Orinal",
+          "url": "http://lafundacionscp.wikidot.com/potty",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "life-saver",
+          "title": "Salvavidas",
+          "url": "http://lafundacionscp.wikidot.com/life-saver",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "bloody",
+          "title": "Sangriento",
+          "url": "http://lafundacionscp.wikidot.com/bloody",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "mad-love",
+          "title": "Loco de amor",
+          "url": "http://lafundacionscp.wikidot.com/mad-love",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "sa-jin-photo",
+          "title": "Sa Jin (foto)",
+          "url": "http://lafundacionscp.wikidot.com/sa-jin-photo",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "breaker-1-9",
+          "title": "Breaker 1 9",
+          "url": "http://lafundacionscp.wikidot.com/breaker-1-9",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "delia",
+          "title": "Delia",
+          "url": "http://lafundacionscp.wikidot.com/delia",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "climber",
+          "title": "Escalador",
+          "url": "http://lafundacionscp.wikidot.com/climber",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "dog-man",
+          "title": "Hombre Perro",
+          "url": "http://lafundacionscp.wikidot.com/dog-man",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "articleSections": [
+        {
+          "id": "01-introduccion",
+          "title": "Introducción",
+          "articleIDs": [
+            "reentry",
+            "swimmer",
+            "the-vault",
+            "influenza",
+            "meteor",
+            "late-night",
+            "peeled",
+            "knives",
+            "jaywalk",
+            "devotion",
+            "feverish",
+            "cold",
+            "alone",
+            "mice",
+            "elevator",
+            "potty",
+            "life-saver",
+            "bloody",
+            "mad-love",
+            "sa-jin-photo",
+            "breaker-1-9",
+            "delia",
+            "climber",
+            "dog-man"
+          ]
+        }
+      ],
+      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
+      "suppressedDeadURLs": [
+        {
+          "url": "http://lafundacionscp.wikidot.com/Love-Hate",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/marathon",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/puffy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/shy",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/sleep-it-off",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/stitches",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-dire-mother",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        },
+        {
+          "url": "http://lafundacionscp.wikidot.com/the-rainforest-house",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
+        }
+      ]
     },
     {
       "id": "scp-es:collection:series:k-o-failure-scenario-hub",
@@ -156722,340 +157056,6 @@
       "primaryArticles": [],
       "supplementLinks": [],
       "description": "NO TE AGREGUES A LA LISTA A MENOS QUE CUMPLAS CON LOS SIGUIENTES REQUISITOS: Debes tener ya sea un título, experiencia profesional significativa (que significa por lo menos varios años), o tener un conocimiento académico profundo en el campo. Si eres simplemente un aficionado o tienes algún interés pasajero en un tema, no debes considerarte un experto en la materia. Debes estar disponible regularmente a través de los foros y/o el chat. Si la gente no puede llegar a ti fácilmente, entonces realmente no serías de ayuda. Si tu apodo del chat es diferente del nombre en el sitio, por favor, anota eso también. Debes estar dispuesto a ayudar a otros con tu experiencia en la materia. Esto no es un concurso de jactancia o espectáculo de talentos, esto es un esfuerzo por poner en contacto a los expertos que pueden ayudarte con detalles técnicos. Por favor, solo contribuyentes activos. Incluso si e"
-    },
-    {
-      "id": "scp-es:collection:series:dr-gears-storytime-entries",
-      "branchID": "scp-es",
-      "kind": "series",
-      "hubID": "dr-gears-storytime-entries",
-      "title": "Tiempo de Cuentos del Dr Gears",
-      "sourceListURL": "https://lafundacionscp.wikidot.com/dr-gears-storytime-entries",
-      "officialHubURL": "https://lafundacionscp.wikidot.com/dr-gears-storytime-entries",
-      "hubPresentation": "standard",
-      "canonicalTag": "dr-gears-storytime-entries",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "dr-gears-storytime-entries",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-es",
-        "manifest_tales",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "es_tag.json",
-        "memberSelector": "a[href]",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorksUnionCanonicalTag",
-        "allowedHosts": [
-          "lafundacionscp.wikidot.com"
-        ],
-        "structureHash": "sha256-21530f7c5bb4b4f40e812f03c3972fe7d4ddf06b5f3e48660cdfff6ba5e9126e"
-      },
-      "primaryArticles": [
-        {
-          "id": "reentry",
-          "title": "Reentrada",
-          "url": "http://lafundacionscp.wikidot.com/reentry",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "swimmer",
-          "title": "Nadador",
-          "url": "http://lafundacionscp.wikidot.com/swimmer",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-vault",
-          "title": "La Bóveda",
-          "url": "http://lafundacionscp.wikidot.com/the-vault",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "influenza",
-          "title": "Influenza",
-          "url": "http://lafundacionscp.wikidot.com/influenza",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "meteor",
-          "title": "Meteoro",
-          "url": "http://lafundacionscp.wikidot.com/meteor",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "late-night",
-          "title": "Tarde en la Noche",
-          "url": "http://lafundacionscp.wikidot.com/late-night",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "peeled",
-          "title": "Pelada",
-          "url": "http://lafundacionscp.wikidot.com/peeled",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "knives",
-          "title": "Cuchillos",
-          "url": "http://lafundacionscp.wikidot.com/knives",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "jaywalk",
-          "title": "Cruzar la carretera",
-          "url": "http://lafundacionscp.wikidot.com/jaywalk",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "devotion",
-          "title": "Devoción",
-          "url": "http://lafundacionscp.wikidot.com/devotion",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "feverish",
-          "title": "Febril",
-          "url": "http://lafundacionscp.wikidot.com/feverish",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "cold",
-          "title": "Frío",
-          "url": "http://lafundacionscp.wikidot.com/cold",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "alone",
-          "title": "Solo",
-          "url": "http://lafundacionscp.wikidot.com/alone",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "mice",
-          "title": "Ratón",
-          "url": "http://lafundacionscp.wikidot.com/mice",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "elevator",
-          "title": "Elevador",
-          "url": "http://lafundacionscp.wikidot.com/elevator",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "potty",
-          "title": "Orinal",
-          "url": "http://lafundacionscp.wikidot.com/potty",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "life-saver",
-          "title": "Salvavidas",
-          "url": "http://lafundacionscp.wikidot.com/life-saver",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "bloody",
-          "title": "Sangriento",
-          "url": "http://lafundacionscp.wikidot.com/bloody",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "mad-love",
-          "title": "Loco de amor",
-          "url": "http://lafundacionscp.wikidot.com/mad-love",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "sa-jin-photo",
-          "title": "Sa Jin (foto)",
-          "url": "http://lafundacionscp.wikidot.com/sa-jin-photo",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "breaker-1-9",
-          "title": "Breaker 1 9",
-          "url": "http://lafundacionscp.wikidot.com/breaker-1-9",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "delia",
-          "title": "Delia",
-          "url": "http://lafundacionscp.wikidot.com/delia",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "climber",
-          "title": "Escalador",
-          "url": "http://lafundacionscp.wikidot.com/climber",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "dog-man",
-          "title": "Hombre Perro",
-          "url": "http://lafundacionscp.wikidot.com/dog-man",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        }
-      ],
-      "supplementLinks": [],
-      "articleSections": [
-        {
-          "id": "01-introduccion",
-          "title": "Introducción",
-          "articleIDs": [
-            "reentry",
-            "swimmer",
-            "the-vault",
-            "influenza",
-            "meteor",
-            "late-night",
-            "peeled",
-            "knives",
-            "jaywalk",
-            "devotion",
-            "feverish",
-            "cold",
-            "alone",
-            "mice",
-            "elevator",
-            "potty",
-            "life-saver",
-            "bloody",
-            "mad-love",
-            "sa-jin-photo",
-            "breaker-1-9",
-            "delia",
-            "climber",
-            "dog-man"
-          ]
-        }
-      ],
-      "description": "Traducción sin revisar. Es posible que encuentres errores en este documento. Puedes corregir los problemas que veas, pero la revisión no será aprobada hasta que el Equipo de Traducciones se haga cargo.",
-      "suppressedDeadURLs": [
-        {
-          "url": "http://lafundacionscp.wikidot.com/Love-Hate",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "http://lafundacionscp.wikidot.com/marathon",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "http://lafundacionscp.wikidot.com/puffy",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "http://lafundacionscp.wikidot.com/shy",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "http://lafundacionscp.wikidot.com/sleep-it-off",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "http://lafundacionscp.wikidot.com/stitches",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "http://lafundacionscp.wikidot.com/the-dire-mother",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        },
-        {
-          "url": "http://lafundacionscp.wikidot.com/the-rainforest-house",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        }
-      ]
     },
     {
       "id": "scp-es:collection:series:all-that-glisters",
