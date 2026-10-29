@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1786763855,
-  "generatedAt": "2026-08-15T03:17:35Z",
-  "chunkRevision": "sha256-2abe1103e3cb55570eb695c058b0f93a9537827690e040aeeae432f48db084d6",
+  "listVersion": 1793265792,
+  "generatedAt": "2026-10-29T09:23:12Z",
+  "chunkRevision": "sha256-a297eaf7a766edf2bb1a19d5caaf4fb2589bed139cc33576cff303934c8a8ef9",
   "builtFrom": {
     "manifests": [
       {
@@ -10,16 +10,252 @@
         "branchID": "scp-tr",
         "path": "DataPipeline/list/tr/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1786763759,
-        "generatedAt": "2026-08-15T03:15:59Z",
-        "contentHash": "sha256-0c18036d6eea96118343d3c5bbb7fa5318359c0b9aaf431ee28cba3d48c56640"
+        "listVersion": 1792838806,
+        "generatedAt": "2026-10-24T10:46:45Z",
+        "contentHash": "sha256-071f0f6697bec3820f93a07d5f182b9a771de6b02a058ad031f713a7ee9c65b2"
+      },
+      {
+        "kind": "manifest_scp-int",
+        "branchID": "scp-tr",
+        "path": "DataPipeline/list/tr/manifest_scp-int.json",
+        "schemaVersion": 2,
+        "listVersion": 1788649972,
+        "generatedAt": "2026-09-05T23:12:52Z",
+        "contentHash": "sha256-1b796793133dba6f71d32a051a956f7de71ed528f8b8379e1572760c8f4fd9fb"
+      },
+      {
+        "kind": "manifest_scp-main",
+        "branchID": "scp-tr",
+        "path": "DataPipeline/list/tr/manifest_scp-main.json",
+        "schemaVersion": 2,
+        "listVersion": 1792985665,
+        "generatedAt": "2026-10-26T03:34:25Z",
+        "contentHash": "sha256-f8bb9601f9dcf87ece170bd60cf33efd7e6c1cafe536c0f7fc00df1b54e56e44"
+      },
+      {
+        "kind": "manifest_scp-tr",
+        "branchID": "scp-tr",
+        "path": "DataPipeline/list/tr/manifest_scp-tr.json",
+        "schemaVersion": 2,
+        "listVersion": 1792985665,
+        "generatedAt": "2026-10-26T03:34:25Z",
+        "contentHash": "sha256-fed0b3f167a5c963a272d06a91f5a278cb4c509108c7ec1cc275a7e5e5b39d74"
+      },
+      {
+        "kind": "manifest_tales",
+        "branchID": "scp-tr",
+        "path": "DataPipeline/list/tr/manifest_tales.json",
+        "schemaVersion": 2,
+        "listVersion": 1788650024,
+        "generatedAt": "2026-09-05T23:13:44Z",
+        "contentHash": "sha256-0f8faf4af55fc133831c2c386327cbd77abce39b1bff84d2df8ccbc448f60fa4"
       }
     ],
     "seedReview": {
       "path": "DataPipeline/collection_seeds/collection_tag_reviews.json",
       "schemaVersion": 1,
       "contentHash": "sha256-6b12b5011bd07f7c9b59bfa6a2b4552e291a75c9cef7ae8eb757df118b45291b"
+    },
+    "officialStructureSeed": {
+      "path": "DataPipeline/collection_seeds/canon_structures/tr.json",
+      "schemaVersion": 1,
+      "contentHash": "sha256-3d386a1b0478b1b6709bbc4531ea503daef9f756746df920be7316f277d534e9"
+    },
+    "officialTagMap": {
+      "kind": "tr_tag",
+      "branchID": "scp-tr",
+      "path": "DataPipeline/list/tr/tr_tag.json",
+      "schemaVersion": 2,
+      "listVersion": 1792986921,
+      "generatedAt": "2026-10-26T03:55:21Z",
+      "contentHash": "sha256-12e31ca1f7a1c0887e2ad91ab397faf79d76767f4e34158f2c4981a4e38e9b2b"
     }
   },
-  "collections": []
+  "collections": [
+    {
+      "id": "scp-tr:collection:series:end-of-death-hub",
+      "branchID": "scp-tr",
+      "kind": "series",
+      "hubID": "end-of-death-hub",
+      "title": "Ölümün Sonu",
+      "sourceListURL": "https://scpvakfi.wikidot.com/end-of-death-hub",
+      "officialHubURL": "https://scpvakfi.wikidot.com/end-of-death-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "end-of-death-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "end-of-death-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "tr_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scpvakfi.wikidot.com"
+        ],
+        "structureHash": "sha256-1fc3dcdcc30bb62d21c3486d2f5fd0ccd456a8f6fe58f4c7b09952b9c94b7922"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-4514",
+          "title": "Seni Öldüren Şey",
+          "url": "http://scpvakfi.wikidot.com/scp-4514",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2
+        },
+        {
+          "id": "omega-k-049",
+          "title": "Omega K 049",
+          "url": "http://scpvakfi.wikidot.com/omega-k-049",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 5,
+          "desc": "Aşağıdaki belgede detayları verilen SCP Varlığın bilgileri ΩK olaylarından sonra büyük ölçüde yeniden yazılmıştır. Orjinal belgenin bir kopyası bu sayfada saklanmaktadır. Sorularınız için şu anki SCP-049 Araştırma Lideri Doktor Elijah Itkin'e ulaşabilirsiniz."
+        }
+      ],
+      "supplementLinks": [],
+      "description": "VAKFIN K-SINIFI DURUM OLASILIKLARI VERİTABANINDAN ALINMIŞTIR Senaryo İsmi: ΩK-Sınıfı Olasılık: Neredeyse İmkansız Şiddeti: Hayatta kalınabilir fakat uygarlığın orta ölçüde yeniden yapılandırılmasını gerektirir. Açıklama: ΩK-Sınıfı (\"Ölümün Sonu\") senaryosu, ölümsüzlüğün başka bir biyolojik değişiklik(örneğin yaşlanmanın durdurması veya kısırlık) olmaksızın tüm yaşam formlarını etkilediği durumdur. Bu senaryo ile ilgili tüm protokollerde, vakfın gizliliğinin bozulduğu herhangi bir 'Maskenin Düşmesi' durumunun önlenmesi için gerekli tüm adımların atılacağı varsayılır. Ayrıca bu senaryoda vakfın mevcut alt bölümlerinin ve yapısının aynı şekilde devam ettiği varsayılır. Öncelikler: 1. Nüfus Kontrolü: Böcek nüfusunun çoğalma oranları nedeniyle bu durumun, böcek nüfusu WK-Sınıfı senaryo eşiğine ulaşmadan önce ele alınması gerekir. Bu adımdan sonra diğer organizmalar için de uzun vadeli bir çöz",
+      "articleSections": [
+        {
+          "id": "01-ikinci-sezon",
+          "title": "İkinci Sezon",
+          "articleIDs": [
+            "scp-4514"
+          ]
+        },
+        {
+          "id": "02-persephone-projesi",
+          "title": "PERSEPHONE PROJESİ",
+          "articleIDs": [
+            "omega-k-049"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-tr:collection:series:pitch-haven-merkezi",
+      "branchID": "scp-tr",
+      "kind": "series",
+      "hubID": "pitch-haven-merkezi",
+      "title": "ㄗitch 卄aven",
+      "sourceListURL": "https://scpvakfi.wikidot.com/pitch-haven-merkezi",
+      "officialHubURL": "https://scpvakfi.wikidot.com/pitch-haven-merkezi",
+      "hubPresentation": "standard",
+      "canonicalTag": "pitch-haven-merkezi",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "pitch-haven-merkezi",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-tr",
+        "manifest_tales",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "tr_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scpvakfi.wikidot.com"
+        ],
+        "structureHash": "sha256-3355eae5c7b5bd8ec5afde6220c738f765a31d8d71a308b1dac3298e5e62375d"
+      },
+      "primaryArticles": [
+        {
+          "id": "o-n-d-o-r-t-onuc",
+          "title": "ONÜ-1314",
+          "url": "http://www.scpvakfi.wikidot.com/o-n-d-o-r-t-onuc",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\" İnsan zihni tam olarak anlayamadığı şeyleri açıklamak için her zaman şu üç basit tanımdan birine güvenecektir: büyü, din, ya da bilim onlar için bilinmezdir. 'Ve' hiçbir zaman bir görünümleri yoktur… \"",
+      "articleSections": [
+        {
+          "id": "01-dokumantasyon",
+          "title": "Dokümantasyon",
+          "articleIDs": [
+            "o-n-d-o-r-t-onuc"
+          ]
+        }
+      ]
+    }
+  ]
 }
