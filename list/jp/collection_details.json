@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1793621668,
-  "generatedAt": "2026-11-02T12:14:28Z",
-  "chunkRevision": "sha256-516ff4ebfe0fbae65380b41bed7fda6f1559955d3f72b45261df6f7b9a6e4b3e",
+  "listVersion": 1793622338,
+  "generatedAt": "2026-11-02T12:25:38Z",
+  "chunkRevision": "sha256-a886a4f2e8ee5cbfc940630e3cff17174cf0071c168277ead12ae9edb8da3e6b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-jp",
         "path": "DataPipeline/list/jp/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1793613741,
-        "generatedAt": "2026-11-02T10:02:20Z",
-        "contentHash": "sha256-80f272db7bbcc6863a7acd643c5cb66622c6625852305e89221a31e3ad0c9751"
+        "listVersion": 1793622043,
+        "generatedAt": "2026-11-02T12:20:43Z",
+        "contentHash": "sha256-310b3af9273401df52f217ad4667635d5170e19e9380bce08e1ba22d0a54b68b"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-jp",
         "path": "DataPipeline/list/jp/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1793613411,
-        "generatedAt": "2026-11-02T09:56:51Z",
-        "contentHash": "sha256-d166c126863c5f421fb657d5d25087d39750a1591f5a825eb8697f2fbbc39147"
+        "listVersion": 1793622050,
+        "generatedAt": "2026-11-02T12:20:50Z",
+        "contentHash": "sha256-7c37e0147f3a9e483a992185b40ad52b00436d8a010dff458052fef7e29f64de"
       },
       {
         "kind": "manifest_scp-jp",
@@ -57,9 +57,9 @@
       "branchID": "scp-jp",
       "path": "DataPipeline/list/jp/jp_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1792986921,
-      "generatedAt": "2026-10-26T03:55:21Z",
-      "contentHash": "sha256-345087960a07a0c4020fa90c744e1d4ee56eef1ed251d85fdf44da4d587142b6"
+      "listVersion": 1793622042,
+      "generatedAt": "2026-11-02T12:20:42Z",
+      "contentHash": "sha256-18dd5c9c50babba2159bc2eacaf25ebaad9119de7dc4a3a1c07096ec8927016c"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -27523,6 +27523,62 @@
       ]
     },
     {
+      "id": "scp-jp:collection:canon:doctors-of-the-church-hub",
+      "branchID": "scp-jp",
+      "kind": "canon",
+      "hubID": "doctors-of-the-church-hub",
+      "title": "教会の博士",
+      "sourceListURL": "https://scp-wiki.wikidot.com/doctors-of-the-church-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/doctors-of-the-church-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "doctors-of-the-church-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "doctors-of-the-church-hub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "jp_tag.json",
+        "emptySectionTitle": "記事",
+        "allowUntaggedMembers": true,
+        "membershipPolicy": "officialHubWorks",
+        "structureHash": "sha256-aeec579ea4c48e883c9df587eb7e2cf5eaa0e2197fcd468ec51e6676ca8a4412"
+      },
+      "primaryArticles": [
+        {
+          "id": "daevite-hub",
+          "title": "Daevite Empire",
+          "url": "https://scp-wiki.wikidot.com/daevite-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "- a empire that, according to the few Wandermen that have traveled through it, stretches from the Black Sea to the Pacific Ocean, and from the Arctic Ocean to the Indian Ocean. Fearsome conquerors with a well-earned reputation for slavery, human sacrifice, monstrous deities , blood magic, and botanical warfare, the Daevites are nonetheless the most developed and diverse empire on the map, and the \" \" in their land facilitates extensive cross-continental commerce and cultural exchange. At war with the Sarkic States, Horizon Imperium, and the City-States of the Broken God, but peaceful with the Valravn Clans, their primary trading partners in the Baltic Sea. They are possible aligned with a tr"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "600年前、世界は終わった。今日(こんにち)、一集団のみが再び理解される時が来るまで、古代世界の秘密を保護し続けている。聖なる財団の聖職者が。",
+      "articleSections": [
+        {
+          "id": "04-setting-summary",
+          "title": "Setting Summary",
+          "articleIDs": [
+            "daevite-hub"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-jp:collection:canon:dread-circuses-hub",
       "branchID": "scp-jp",
       "kind": "canon",
@@ -31255,6 +31311,61 @@
       ]
     },
     {
+      "id": "scp-jp:collection:canon:the-man-who-wasnt-there-hub",
+      "branchID": "scp-jp",
+      "kind": "canon",
+      "hubID": "the-man-who-wasnt-there-hub",
+      "title": "存在しなかった者",
+      "sourceListURL": "https://scp-wiki.wikidot.com/the-man-who-wasnt-there-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/the-man-who-wasnt-there-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-man-who-wasnt-there-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-man-who-wasnt-there-hub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "jp_tag.json",
+        "emptySectionTitle": "記事",
+        "allowUntaggedMembers": true,
+        "membershipPolicy": "officialHubWorks",
+        "structureHash": "sha256-f1dc2286ff8982e97fe0cd684b0d63e6851e0c9df6ec9b9787f0ca41f144ca77"
+      },
+      "primaryArticles": [
+        {
+          "id": "the-man-in-the-white-suit-hub",
+          "title": "Series Hub",
+          "url": "https://scp-wiki.wikidot.com/the-man-in-the-white-suit-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "誰にも知られていないという事は、自然の力を持っている事と同じだ。彼の行動は予測出来ず、彼のやり方は不透明だ。彼の目的と真の本意は、彼自身にとっても全くもって不詳だ。だが、何かが成し遂げられた時、彼は姿を消すだろう。それはもうすでに、少なくとも一度は発生しているのだ。",
+      "articleSections": [
+        {
+          "id": "04-past-the-point-of-no-return",
+          "title": "Past the Point of No Return",
+          "articleIDs": [
+            "the-man-in-the-white-suit-hub"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-jp:collection:canon:nightfall-hub",
       "branchID": "scp-jp",
       "kind": "canon",
@@ -31339,6 +31450,61 @@
           "title": "A Deal With Death",
           "articleIDs": [
             "swatches-of-a-sunrise"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-jp:collection:canon:the-ninth-world-hub",
+      "branchID": "scp-jp",
+      "kind": "canon",
+      "hubID": "the-ninth-world-hub",
+      "title": "第九世界",
+      "sourceListURL": "https://scp-wiki.wikidot.com/the-ninth-world-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/the-ninth-world-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "the-ninth-world-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "the-ninth-world-hub",
+        "rejected": [],
+        "notes": [
+          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "jp_tag.json",
+        "emptySectionTitle": "記事",
+        "allowUntaggedMembers": true,
+        "membershipPolicy": "officialHubWorks",
+        "structureHash": "sha256-3a26711bed92ddd90150c042ba259f1b6dda46a690a10fc5fa7c79541fc72a8b"
+      },
+      "primaryArticles": [
+        {
+          "id": "sandrewswann-s-proposal",
+          "title": "S. Andrew Swann's Proposal",
+          "url": "https://scp-wiki.wikidot.com/sandrewswann-s-proposal",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "異常の新時代がやって来る。古来より散逸し続けていた、楽園の到来を約束する9つの本。これら伝説の魔導書の支配をめぐり、世界中の組織の間で影の戦いが幕を開けた。こんな時代には思いがけないヒーローが待望されるけど、中西部のとある予算不足の施設こそが僕らの探しているものかもしれない。",
+      "articleSections": [
+        {
+          "id": "02-2025",
+          "title": "2025",
+          "articleIDs": [
+            "sandrewswann-s-proposal"
           ]
         }
       ]
@@ -40931,172 +41097,6 @@
       ]
     },
     {
-      "id": "scp-jp:collection:canon:doctors-of-the-church-hub",
-      "branchID": "scp-jp",
-      "kind": "canon",
-      "hubID": "doctors-of-the-church-hub",
-      "title": "教会の博士",
-      "sourceListURL": "https://scp-wiki.wikidot.com/doctors-of-the-church-hub",
-      "officialHubURL": "https://scp-wiki.wikidot.com/doctors-of-the-church-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "doctors-of-the-church-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "doctors-of-the-church-hub",
-        "rejected": [],
-        "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
-      },
-      "memberManifests": [
-        "manifest_scp-jp",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "jp_tag.json",
-        "emptySectionTitle": "記事",
-        "allowUntaggedMembers": true,
-        "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-aeec579ea4c48e883c9df587eb7e2cf5eaa0e2197fcd468ec51e6676ca8a4412"
-      },
-      "primaryArticles": [
-        {
-          "id": "daevite-hub",
-          "title": "Daevite Empire",
-          "url": "https://scp-wiki.wikidot.com/daevite-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "- a empire that, according to the few Wandermen that have traveled through it, stretches from the Black Sea to the Pacific Ocean, and from the Arctic Ocean to the Indian Ocean. Fearsome conquerors with a well-earned reputation for slavery, human sacrifice, monstrous deities , blood magic, and botanical warfare, the Daevites are nonetheless the most developed and diverse empire on the map, and the \" \" in their land facilitates extensive cross-continental commerce and cultural exchange. At war with the Sarkic States, Horizon Imperium, and the City-States of the Broken God, but peaceful with the Valravn Clans, their primary trading partners in the Baltic Sea. They are possible aligned with a tr"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "600年前、世界は終わった。今日(こんにち)、一集団のみが再び理解される時が来るまで、古代世界の秘密を保護し続けている。聖なる財団の聖職者が。",
-      "articleSections": [
-        {
-          "id": "04-setting-summary",
-          "title": "Setting Summary",
-          "articleIDs": [
-            "daevite-hub"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-jp:collection:canon:the-man-who-wasnt-there-hub",
-      "branchID": "scp-jp",
-      "kind": "canon",
-      "hubID": "the-man-who-wasnt-there-hub",
-      "title": "存在しなかった者",
-      "sourceListURL": "https://scp-wiki.wikidot.com/the-man-who-wasnt-there-hub",
-      "officialHubURL": "https://scp-wiki.wikidot.com/the-man-who-wasnt-there-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "the-man-who-wasnt-there-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "the-man-who-wasnt-there-hub",
-        "rejected": [],
-        "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
-      },
-      "memberManifests": [
-        "manifest_scp-jp",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "jp_tag.json",
-        "emptySectionTitle": "記事",
-        "allowUntaggedMembers": true,
-        "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-f1dc2286ff8982e97fe0cd684b0d63e6851e0c9df6ec9b9787f0ca41f144ca77"
-      },
-      "primaryArticles": [
-        {
-          "id": "the-man-in-the-white-suit-hub",
-          "title": "Series Hub",
-          "url": "https://scp-wiki.wikidot.com/the-man-in-the-white-suit-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "誰にも知られていないという事は、自然の力を持っている事と同じだ。彼の行動は予測出来ず、彼のやり方は不透明だ。彼の目的と真の本意は、彼自身にとっても全くもって不詳だ。だが、何かが成し遂げられた時、彼は姿を消すだろう。それはもうすでに、少なくとも一度は発生しているのだ。",
-      "articleSections": [
-        {
-          "id": "04-past-the-point-of-no-return",
-          "title": "Past the Point of No Return",
-          "articleIDs": [
-            "the-man-in-the-white-suit-hub"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-jp:collection:canon:the-ninth-world-hub",
-      "branchID": "scp-jp",
-      "kind": "canon",
-      "hubID": "the-ninth-world-hub",
-      "title": "第九世界",
-      "sourceListURL": "https://scp-wiki.wikidot.com/the-ninth-world-hub",
-      "officialHubURL": "https://scp-wiki.wikidot.com/the-ninth-world-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "the-ninth-world-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "the-ninth-world-hub",
-        "rejected": [],
-        "notes": [
-          "Official branch hub DOM owns Canon membership, grouping, and source order; the branch tag map is a safety filter."
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official Canon structure refreshed by the weekly full crawl."
-      },
-      "memberManifests": [
-        "manifest_scp-jp",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "jp_tag.json",
-        "emptySectionTitle": "記事",
-        "allowUntaggedMembers": true,
-        "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-3a26711bed92ddd90150c042ba259f1b6dda46a690a10fc5fa7c79541fc72a8b"
-      },
-      "primaryArticles": [
-        {
-          "id": "sandrewswann-s-proposal",
-          "title": "S. Andrew Swann's Proposal",
-          "url": "https://scp-wiki.wikidot.com/sandrewswann-s-proposal",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "異常の新時代がやって来る。古来より散逸し続けていた、楽園の到来を約束する9つの本。これら伝説の魔導書の支配をめぐり、世界中の組織の間で影の戦いが幕を開けた。こんな時代には思いがけないヒーローが待望されるけど、中西部のとある予算不足の施設こそが僕らの探しているものかもしれない。",
-      "articleSections": [
-        {
-          "id": "02-2025",
-          "title": "2025",
-          "articleIDs": [
-            "sandrewswann-s-proposal"
-          ]
-        }
-      ]
-    },
-    {
       "id": "scp-jp:collection:canon:alive",
       "branchID": "scp-jp",
       "kind": "canon",
@@ -43339,6 +43339,164 @@
           "title": "Articles",
           "articleIDs": [
             "assistance-for-the-boss-lady"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-jp:collection:series:aleph-hub",
+      "branchID": "scp-jp",
+      "kind": "series",
+      "hubID": "aleph-hub",
+      "title": "ALEPH ハブ",
+      "sourceListURL": "https://scp-jp.wikidot.com/aleph-hub",
+      "officialHubURL": "https://scp-jp.wikidot.com/aleph-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "aleph-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "aleph-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "jp_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-jp.wikidot.com"
+        ],
+        "structureHash": "sha256-ae26a9a9aa0413661fd9f591eddeb2d4a694161051ef7f9a5da84fa25f51dc93"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-l064",
+          "title": "二つの庭を隔てる壁",
+          "url": "https://scp-jp.wikidot.com/scp-l064",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
+        },
+        {
+          "id": "scp-9311",
+          "title": "SCP-9311",
+          "url": "https://scp-jp.wikidot.com/scp-9311",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 19,
+          "desc": "SCP-9311の試験は、その用途が断定されるまで続行されます。全てのSCP-9311実例はサイト-19の倉庫14-B、14-C、14-Dに保管されます。更なる収容措置は検討中です。"
+        },
+        {
+          "id": "scp-9596",
+          "title": "二点間の最長距離",
+          "url": "https://scp-jp.wikidot.com/scp-9596",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
+        },
+        {
+          "id": "whatfilthyrottenblood",
+          "title": "なんて汚れて腐った血",
+          "url": "https://scp-jp.wikidot.com/whatfilthyrottenblood",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": -6,
+          "desc": "タイトル: なんて汚れて腐った血 翻訳責任者: Tetsu1 翻訳年: 2026 著作権者: TroutMaskReplica, ThanTheDemoness 原題: What Filthy Rotten Blood 作成年: 2026 初訳時参照リビジョン: 16 元記事リンク: https://scp-wiki.wikidot.com/whatfilthyrottenblood"
+        },
+        {
+          "id": "you-feel-a-stillness",
+          "title": "You Feel a Stillness All Around You, Caressing Your Face",
+          "url": "https://scp-jp.wikidot.com/you-feel-a-stillness",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
+        },
+        {
+          "id": "whodyoukillnow",
+          "title": "I Watched You Enter Your Home From Inside a Dumpster",
+          "url": "https://scp-jp.wikidot.com/whodyoukillnow",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
+        },
+        {
+          "id": "scp-9190",
+          "title": "清掃用品をこまめに活用するメリット",
+          "url": "https://scp-jp.wikidot.com/scp-9190",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
+        },
+        {
+          "id": "scp-8534",
+          "title": "あるささやかな奇跡に対する執着",
+          "url": "https://scp-jp.wikidot.com/scp-8534",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
+        },
+        {
+          "id": "scp-l119",
+          "title": "アメリカの失敗に関する項目別明細",
+          "url": "https://scp-jp.wikidot.com/scp-l119",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "タイトル: ALEPH ハブ 翻訳責任者: Tetsu1 翻訳年: 2026 著作権者: TroutMaskReplica , popsioak 原題: ALEPH HUB 作成年: 2026 初訳時参照リビジョン: 27 元記事リンク: https://scp-wiki.wikidot.com/aleph-hub",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-l064",
+            "scp-9311",
+            "scp-9596",
+            "whatfilthyrottenblood",
+            "you-feel-a-stillness",
+            "whodyoukillnow",
+            "scp-9190",
+            "scp-8534",
+            "scp-l119"
           ]
         }
       ]
@@ -46551,6 +46709,585 @@
             "tower-b",
             "whitetail",
             "wolf-hollow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-jp:collection:series:contest-archive",
+      "branchID": "scp-jp",
+      "kind": "series",
+      "hubID": "contest-archive",
+      "title": "コンテストアーカイブ",
+      "sourceListURL": "https://scp-jp.wikidot.com/contest-archive",
+      "officialHubURL": "https://scp-jp.wikidot.com/contest-archive",
+      "hubPresentation": "standard",
+      "canonicalTag": "contest-archive",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "contest-archive",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-jp",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "jp_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-jp.wikidot.com"
+        ],
+        "structureHash": "sha256-a8864eef1edcc0adea016c733ac2b33a603a771cd483503ed51508a5413ed7d2"
+      },
+      "primaryArticles": [
+        {
+          "id": "contest-archive-cn",
+          "title": "CN",
+          "url": "https://scp-jp.wikidot.com/contest-archive-cn",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "EN | RU | KO | CN | FR | PL | ES | TH | DE | IT | UA | PT-BR | CS | ZH-TR | VN | INT"
+        },
+        {
+          "id": "the-great-short-story-contest-archives",
+          "title": "グレート・ショート・ストーリー・コンテスト・アーカイブ",
+          "url": "https://scp-jp.wikidot.com/the-great-short-story-contest-archives",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "gears-birthday-contest-2009",
+          "title": "2009年ギアーズ博士の誕生日コンテスト",
+          "url": "https://scp-jp.wikidot.com/gears-birthday-contest-2009",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp1000contesthub",
+          "title": "SCP-1000 コンテスト '11",
+          "url": "https://scp-jp.wikidot.com/scp1000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "1"
+        },
+        {
+          "id": "new-years-contest",
+          "title": "カノンコンテスト '13",
+          "url": "https://scp-jp.wikidot.com/new-years-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp2000contesthub",
+          "title": "SCP-2000 コンテスト '13",
+          "url": "https://scp-jp.wikidot.com/scp2000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "under-appreciated-contest",
+          "title": "過小評価されているSCPコンテスト '14",
+          "url": "https://scp-jp.wikidot.com/under-appreciated-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "reimagining-contest",
+          "title": "新解釈コンテスト '15",
+          "url": "https://scp-jp.wikidot.com/reimagining-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "short-works-contest",
+          "title": "短編コンテスト '15",
+          "url": "https://scp-jp.wikidot.com/short-works-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "mobile-task-force-contest",
+          "title": "機動部隊コンテスト '16",
+          "url": "https://scp-jp.wikidot.com/mobile-task-force-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "an-incredibly-important-announcement",
+          "title": "April Fools Crack Fiction Contest '16",
+          "url": "https://scp-jp.wikidot.com/an-incredibly-important-announcement",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "d-class-contest",
+          "title": "Dクラスコンテスト '16",
+          "url": "https://scp-jp.wikidot.com/d-class-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "history-contest",
+          "title": "歴史コンテスト '17",
+          "url": "https://scp-jp.wikidot.com/history-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp3000contesthub",
+          "title": "SCP-3000コンテスト '17",
+          "url": "https://scp-jp.wikidot.com/scp3000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "social-media-art-contest",
+          "title": "ソーシャルメディアアートコンテスト",
+          "url": "https://scp-jp.wikidot.com/social-media-art-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "72-hour-jam-contest",
+          "title": "72時間ジャムコンテスト'18",
+          "url": "https://scp-jp.wikidot.com/72-hour-jam-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "doomsday-contest",
+          "title": "終末の日コンテスト'18",
+          "url": "https://scp-jp.wikidot.com/doomsday-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp4000contesthub",
+          "title": "SCP-4000コンテスト'18",
+          "url": "https://scp-jp.wikidot.com/scp4000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp-oct-hub",
+          "title": "SCPオリジナルキャラクタートーナメント'18",
+          "url": "https://scp-jp.wikidot.com/scp-oct-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "halloween-contest-2018",
+          "title": "ハロウィンコンテスト'18",
+          "url": "https://scp-jp.wikidot.com/halloween-contest-2018",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "cliche-con-2019",
+          "title": "クリシェコンテスト2019",
+          "url": "https://scp-jp.wikidot.com/cliche-con-2019",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "144-hour-jam-contest",
+          "title": "144時間ジャムコンテスト'19",
+          "url": "https://scp-jp.wikidot.com/144-hour-jam-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp5000contesthub",
+          "title": "SCP-5000コンテスト '20",
+          "url": "https://scp-jp.wikidot.com/scp5000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "144-hour-jam-contest-two",
+          "title": "144時間ジャムコンテスト2 '20",
+          "url": "https://scp-jp.wikidot.com/144-hour-jam-contest-two",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "exquisite-corpse-contest",
+          "title": "優美な屍骸コンテスト '20",
+          "url": "https://scp-jp.wikidot.com/exquisite-corpse-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "canon-renaissance-contest",
+          "title": "カノン復興コンテスト '20",
+          "url": "https://scp-jp.wikidot.com/canon-renaissance-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "the-man-in-the-white-suit-hub",
+          "title": "The Man In The White Suit",
+          "url": "https://scp-jp.wikidot.com/the-man-in-the-white-suit-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "cupid-contest-2021",
+          "title": "キューピッドコンテスト '21",
+          "url": "https://scp-jp.wikidot.com/cupid-contest-2021",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "jam-con-2021",
+          "title": "ジャムコン '21",
+          "url": "https://scp-jp.wikidot.com/jam-con-2021",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp6000contesthub",
+          "title": "SCP-6000コンテスト '21",
+          "url": "https://scp-jp.wikidot.com/scp6000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "department-contest",
+          "title": "部門コンテスト '22",
+          "url": "https://scp-jp.wikidot.com/department-contest",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp7000contesthub",
+          "title": "SCP-7000コンテスト",
+          "url": "https://scp-jp.wikidot.com/scp7000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "coldpostcon",
+          "title": "ColdpostCon",
+          "url": "https://scp-jp.wikidot.com/coldpostcon",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "goblincon",
+          "title": "GoblinCon",
+          "url": "https://scp-jp.wikidot.com/goblincon",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "remixcon2023",
+          "title": "リミックスコン'23",
+          "url": "https://scp-jp.wikidot.com/remixcon2023",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp8000contesthub",
+          "title": "SCP-8000コンテスト'24",
+          "url": "https://scp-jp.wikidot.com/scp8000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "classic-con",
+          "title": "クラシック・コン",
+          "url": "https://scp-jp.wikidot.com/classic-con",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp9000contesthub",
+          "title": "SCP-9000コンテスト",
+          "url": "https://scp-jp.wikidot.com/scp9000contesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "sportscon",
+          "title": "スポーツコン",
+          "url": "https://scp-jp.wikidot.com/sportscon",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "goicon-2026",
+          "title": "Groups of Interest Contest 2026",
+          "url": "https://scp-jp.wikidot.com/goicon-2026",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "contest-archive-ko",
+          "title": "コンテストアーカイブ-KO",
+          "url": "https://scp-jp.wikidot.com/contest-archive-ko",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "le-concours-des-histoires-courtes",
+          "title": "掌編コンテスト",
+          "url": "https://scp-jp.wikidot.com/le-concours-des-histoires-courtes",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "le-concours-des-2-ans-de-la-fondation",
+          "title": "財団フランス支部2周年のコンテスト",
+          "url": "https://scp-jp.wikidot.com/le-concours-des-2-ans-de-la-fondation",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "concours-des-trois-ans-de-la-branche-francaise",
+          "title": "フランス支部3周年のコンテスト",
+          "url": "https://scp-jp.wikidot.com/concours-des-trois-ans-de-la-branche-francaise",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "concours-du-scp-de-moins-de-500-mots",
+          "title": "500語未満コンテスト",
+          "url": "https://scp-jp.wikidot.com/concours-du-scp-de-moins-de-500-mots",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "le-concours-des-quatre-ans",
+          "title": "4周年のコンテスト",
+          "url": "https://scp-jp.wikidot.com/le-concours-des-quatre-ans",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "concours-nos-meilleurs-ennemis",
+          "title": "コンテスト:我々の最高の敵",
+          "url": "https://scp-jp.wikidot.com/concours-nos-meilleurs-ennemis",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "le-concours-des-cinq-ans",
+          "title": "5周年のコンテスト",
+          "url": "https://scp-jp.wikidot.com/le-concours-des-cinq-ans",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "le-concours-des-404-ans",
+          "title": "404周年のコンテスト",
+          "url": "https://scp-jp.wikidot.com/le-concours-des-404-ans",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-100-de-wettbewerb",
+          "title": "SCP-100-DEコンテスト",
+          "url": "https://scp-jp.wikidot.com/scp-100-de-wettbewerb",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "goi-wettbewerb-2017",
+          "title": "GoIコンテスト2017",
+          "url": "https://scp-jp.wikidot.com/goi-wettbewerb-2017",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp-200-de-wettbewerb",
+          "title": "SCP-200-DEコンテスト",
+          "url": "https://scp-jp.wikidot.com/scp-200-de-wettbewerb",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "halloween-wettbewerb-2020",
+          "title": "ハロウィンコンテスト2020",
+          "url": "https://scp-jp.wikidot.com/halloween-wettbewerb-2020",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "concurso-historico-2020",
+          "title": "2020年の歴史コンテスト",
+          "url": "https://scp-jp.wikidot.com/concurso-historico-2020",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "cz-contest-i-hub",
+          "title": "SCP-CSコンテスト1",
+          "url": "https://scp-jp.wikidot.com/cz-contest-i-hub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "cz-contest-ii-hub",
+          "title": "SCP-CSコンテスト2",
+          "url": "https://scp-jp.wikidot.com/cz-contest-ii-hub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "cz-contest-iii-hub",
+          "title": "SCP-CSコンテスト3",
+          "url": "https://scp-jp.wikidot.com/cz-contest-iii-hub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "cz-contest-iv-hub",
+          "title": "SCP-CSコンテスト4",
+          "url": "https://scp-jp.wikidot.com/cz-contest-iv-hub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "cz-contest-v-hub",
+          "title": "SCP-CSコンテスト5",
+          "url": "https://scp-jp.wikidot.com/cz-contest-v-hub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "cs-contest-vi-hub",
+          "title": "SCP-CSコンテスト6",
+          "url": "https://scp-jp.wikidot.com/cs-contest-vi-hub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "soutez-znovuzrozeni2025-hub",
+          "title": "2025再誕コンテスト",
+          "url": "https://scp-jp.wikidot.com/soutez-znovuzrozeni2025-hub",
+          "role": "primaryArticle",
+          "contentKind": "tale"
+        },
+        {
+          "id": "scp100vncontesthub",
+          "title": "SCP-100-VNコンテスト",
+          "url": "https://scp-jp.wikidot.com/scp100vncontesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        },
+        {
+          "id": "scp200vncontesthub",
+          "title": "SCP-200-VNコンテスト",
+          "url": "https://scp-jp.wikidot.com/scp200vncontesthub",
+          "role": "primaryArticle",
+          "contentKind": "scp"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "グレート・ショート・ストーリー・コンテスト・アーカイブ Dr. Rights マリアナ海溝から回収された文書 Doctor Gears 2009年ギアーズ博士の誕生日コンテスト Dr. Gears Opportunity Knocks tunedtoadeadchannel SCP-1000 コンテスト '11 1 SCP Administration SCP-1000 thedeadlymoose ハロウィンコンテスト '12 TroyL Treats Dr. Gears カノンコンテスト '13 TroyL 財団のない世界 DrClef, Fantem, Photosynthetic, & Pig_Catapult 五つの謎掛けコンテスト'13 Pt. 1 Dr. Mann 反復 0 HammerMaiden \" \" 神のように Rikks \" \" Children of Doubt Roget \" \" 微睡みが私の心を閉じ込めて Dmatix \" \" バグ Giant Enemy Spycrab Time Contest '13 Drewbear そして勝者は… Smapti SCP-2000 コンテスト '13 SCP Administration SCP-2000 FortunateFavorsBold 過小評価されているSCPコンテスト '14 CryogenChaos Exit History FortuneFavorsBold \" \" Exploded Diagram of a Young Woman Chubert 要注意団体コンテスト '14 TroyL 蛇の手 thedeadlymoose, Dexanote, Vivax, & Zyn ディストピアコンテスト '14 Reject 使命要綱 Dr. Reach 新解釈コンテスト '15 Moose & TroyL The Lucky Dinosaur Sophia Light 短編コンテスト '15 Sophia Light ●●|●●●●●|●●|● LurkD 機動部隊コンテスト '16 De",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "このページのコンテンツは現在 [機密指定] となっています。",
+          "articleIDs": [
+            "contest-archive-cn",
+            "the-great-short-story-contest-archives",
+            "gears-birthday-contest-2009",
+            "scp1000contesthub",
+            "new-years-contest",
+            "scp2000contesthub",
+            "under-appreciated-contest",
+            "reimagining-contest",
+            "short-works-contest",
+            "mobile-task-force-contest",
+            "an-incredibly-important-announcement",
+            "d-class-contest",
+            "history-contest",
+            "scp3000contesthub",
+            "social-media-art-contest",
+            "72-hour-jam-contest",
+            "doomsday-contest",
+            "scp4000contesthub",
+            "scp-oct-hub",
+            "halloween-contest-2018",
+            "cliche-con-2019",
+            "144-hour-jam-contest",
+            "scp5000contesthub",
+            "144-hour-jam-contest-two",
+            "exquisite-corpse-contest",
+            "canon-renaissance-contest",
+            "the-man-in-the-white-suit-hub",
+            "cupid-contest-2021",
+            "jam-con-2021",
+            "scp6000contesthub",
+            "department-contest",
+            "scp7000contesthub",
+            "coldpostcon",
+            "goblincon",
+            "remixcon2023",
+            "scp8000contesthub",
+            "classic-con",
+            "scp9000contesthub",
+            "sportscon",
+            "goicon-2026",
+            "contest-archive-ko",
+            "le-concours-des-histoires-courtes",
+            "le-concours-des-2-ans-de-la-fondation",
+            "concours-des-trois-ans-de-la-branche-francaise",
+            "concours-du-scp-de-moins-de-500-mots",
+            "le-concours-des-quatre-ans",
+            "concours-nos-meilleurs-ennemis",
+            "le-concours-des-cinq-ans",
+            "le-concours-des-404-ans",
+            "scp-100-de-wettbewerb",
+            "goi-wettbewerb-2017",
+            "scp-200-de-wettbewerb",
+            "halloween-wettbewerb-2020",
+            "concurso-historico-2020",
+            "cz-contest-i-hub",
+            "cz-contest-ii-hub",
+            "cz-contest-iii-hub",
+            "cz-contest-iv-hub",
+            "cz-contest-v-hub",
+            "cs-contest-vi-hub",
+            "soutez-znovuzrozeni2025-hub",
+            "scp100vncontesthub",
+            "scp200vncontesthub"
           ]
         }
       ]
@@ -87671,743 +88408,6 @@
           "title": "12",
           "articleIDs": [
             "tj"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-jp:collection:series:aleph-hub",
-      "branchID": "scp-jp",
-      "kind": "series",
-      "hubID": "aleph-hub",
-      "title": "ALEPH ハブ",
-      "sourceListURL": "https://scp-jp.wikidot.com/aleph-hub",
-      "officialHubURL": "https://scp-jp.wikidot.com/aleph-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "aleph-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "aleph-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-jp",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "jp_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-jp.wikidot.com"
-        ],
-        "structureHash": "sha256-ae26a9a9aa0413661fd9f591eddeb2d4a694161051ef7f9a5da84fa25f51dc93"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-l064",
-          "title": "二つの庭を隔てる壁",
-          "url": "https://scp-jp.wikidot.com/scp-l064",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
-        },
-        {
-          "id": "scp-9311",
-          "title": "SCP-9311",
-          "url": "https://scp-jp.wikidot.com/scp-9311",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 19,
-          "desc": "SCP-9311の試験は、その用途が断定されるまで続行されます。全てのSCP-9311実例はサイト-19の倉庫14-B、14-C、14-Dに保管されます。更なる収容措置は検討中です。"
-        },
-        {
-          "id": "scp-9596",
-          "title": "二点間の最長距離",
-          "url": "https://scp-jp.wikidot.com/scp-9596",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
-        },
-        {
-          "id": "whatfilthyrottenblood",
-          "title": "なんて汚れて腐った血",
-          "url": "https://scp-jp.wikidot.com/whatfilthyrottenblood",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": -6,
-          "desc": "タイトル: なんて汚れて腐った血 翻訳責任者: Tetsu1 翻訳年: 2026 著作権者: TroutMaskReplica, ThanTheDemoness 原題: What Filthy Rotten Blood 作成年: 2026 初訳時参照リビジョン: 16 元記事リンク: https://scp-wiki.wikidot.com/whatfilthyrottenblood"
-        },
-        {
-          "id": "you-feel-a-stillness",
-          "title": "You Feel a Stillness All Around You, Caressing Your Face",
-          "url": "https://scp-jp.wikidot.com/you-feel-a-stillness",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
-        },
-        {
-          "id": "whodyoukillnow",
-          "title": "I Watched You Enter Your Home From Inside a Dumpster",
-          "url": "https://scp-jp.wikidot.com/whodyoukillnow",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
-        },
-        {
-          "id": "scp-9190",
-          "title": "清掃用品をこまめに活用するメリット",
-          "url": "https://scp-jp.wikidot.com/scp-9190",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
-        },
-        {
-          "id": "scp-8534",
-          "title": "あるささやかな奇跡に対する執着",
-          "url": "https://scp-jp.wikidot.com/scp-8534",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
-        },
-        {
-          "id": "scp-l119",
-          "title": "アメリカの失敗に関する項目別明細",
-          "url": "https://scp-jp.wikidot.com/scp-l119",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: 二つの庭を隔てる壁 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: 一連の綿密な予防措置 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Buildings 024: Some Vast Unknown 025: Tale"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "タイトル: ALEPH ハブ 翻訳責任者: Tetsu1 翻訳年: 2026 著作権者: TroutMaskReplica , popsioak 原題: ALEPH HUB 作成年: 2026 初訳時参照リビジョン: 27 元記事リンク: https://scp-wiki.wikidot.com/aleph-hub",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "scp-l064",
-            "scp-9311",
-            "scp-9596",
-            "whatfilthyrottenblood",
-            "you-feel-a-stillness",
-            "whodyoukillnow",
-            "scp-9190",
-            "scp-8534",
-            "scp-l119"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-jp:collection:series:contest-archive",
-      "branchID": "scp-jp",
-      "kind": "series",
-      "hubID": "contest-archive",
-      "title": "コンテストアーカイブ",
-      "sourceListURL": "https://scp-jp.wikidot.com/contest-archive",
-      "officialHubURL": "https://scp-jp.wikidot.com/contest-archive",
-      "hubPresentation": "standard",
-      "canonicalTag": "contest-archive",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "contest-archive",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-jp",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "jp_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-jp.wikidot.com"
-        ],
-        "structureHash": "sha256-a8864eef1edcc0adea016c733ac2b33a603a771cd483503ed51508a5413ed7d2"
-      },
-      "primaryArticles": [
-        {
-          "id": "contest-archive-cn",
-          "title": "CN",
-          "url": "https://scp-jp.wikidot.com/contest-archive-cn",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "EN | RU | KO | CN | FR | PL | ES | TH | DE | IT | UA | PT-BR | CS | ZH-TR | VN | INT"
-        },
-        {
-          "id": "the-great-short-story-contest-archives",
-          "title": "グレート・ショート・ストーリー・コンテスト・アーカイブ",
-          "url": "https://scp-jp.wikidot.com/the-great-short-story-contest-archives",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "gears-birthday-contest-2009",
-          "title": "2009年ギアーズ博士の誕生日コンテスト",
-          "url": "https://scp-jp.wikidot.com/gears-birthday-contest-2009",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp1000contesthub",
-          "title": "SCP-1000 コンテスト '11",
-          "url": "https://scp-jp.wikidot.com/scp1000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "1"
-        },
-        {
-          "id": "new-years-contest",
-          "title": "カノンコンテスト '13",
-          "url": "https://scp-jp.wikidot.com/new-years-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp2000contesthub",
-          "title": "SCP-2000 コンテスト '13",
-          "url": "https://scp-jp.wikidot.com/scp2000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "under-appreciated-contest",
-          "title": "過小評価されているSCPコンテスト '14",
-          "url": "https://scp-jp.wikidot.com/under-appreciated-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "reimagining-contest",
-          "title": "新解釈コンテスト '15",
-          "url": "https://scp-jp.wikidot.com/reimagining-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "short-works-contest",
-          "title": "短編コンテスト '15",
-          "url": "https://scp-jp.wikidot.com/short-works-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "mobile-task-force-contest",
-          "title": "機動部隊コンテスト '16",
-          "url": "https://scp-jp.wikidot.com/mobile-task-force-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "an-incredibly-important-announcement",
-          "title": "April Fools Crack Fiction Contest '16",
-          "url": "https://scp-jp.wikidot.com/an-incredibly-important-announcement",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "d-class-contest",
-          "title": "Dクラスコンテスト '16",
-          "url": "https://scp-jp.wikidot.com/d-class-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "history-contest",
-          "title": "歴史コンテスト '17",
-          "url": "https://scp-jp.wikidot.com/history-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp3000contesthub",
-          "title": "SCP-3000コンテスト '17",
-          "url": "https://scp-jp.wikidot.com/scp3000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "social-media-art-contest",
-          "title": "ソーシャルメディアアートコンテスト",
-          "url": "https://scp-jp.wikidot.com/social-media-art-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "72-hour-jam-contest",
-          "title": "72時間ジャムコンテスト'18",
-          "url": "https://scp-jp.wikidot.com/72-hour-jam-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "doomsday-contest",
-          "title": "終末の日コンテスト'18",
-          "url": "https://scp-jp.wikidot.com/doomsday-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp4000contesthub",
-          "title": "SCP-4000コンテスト'18",
-          "url": "https://scp-jp.wikidot.com/scp4000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp-oct-hub",
-          "title": "SCPオリジナルキャラクタートーナメント'18",
-          "url": "https://scp-jp.wikidot.com/scp-oct-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "halloween-contest-2018",
-          "title": "ハロウィンコンテスト'18",
-          "url": "https://scp-jp.wikidot.com/halloween-contest-2018",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "cliche-con-2019",
-          "title": "クリシェコンテスト2019",
-          "url": "https://scp-jp.wikidot.com/cliche-con-2019",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "144-hour-jam-contest",
-          "title": "144時間ジャムコンテスト'19",
-          "url": "https://scp-jp.wikidot.com/144-hour-jam-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp5000contesthub",
-          "title": "SCP-5000コンテスト '20",
-          "url": "https://scp-jp.wikidot.com/scp5000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "144-hour-jam-contest-two",
-          "title": "144時間ジャムコンテスト2 '20",
-          "url": "https://scp-jp.wikidot.com/144-hour-jam-contest-two",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "exquisite-corpse-contest",
-          "title": "優美な屍骸コンテスト '20",
-          "url": "https://scp-jp.wikidot.com/exquisite-corpse-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "canon-renaissance-contest",
-          "title": "カノン復興コンテスト '20",
-          "url": "https://scp-jp.wikidot.com/canon-renaissance-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "the-man-in-the-white-suit-hub",
-          "title": "The Man In The White Suit",
-          "url": "https://scp-jp.wikidot.com/the-man-in-the-white-suit-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "cupid-contest-2021",
-          "title": "キューピッドコンテスト '21",
-          "url": "https://scp-jp.wikidot.com/cupid-contest-2021",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "jam-con-2021",
-          "title": "ジャムコン '21",
-          "url": "https://scp-jp.wikidot.com/jam-con-2021",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp6000contesthub",
-          "title": "SCP-6000コンテスト '21",
-          "url": "https://scp-jp.wikidot.com/scp6000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "department-contest",
-          "title": "部門コンテスト '22",
-          "url": "https://scp-jp.wikidot.com/department-contest",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp7000contesthub",
-          "title": "SCP-7000コンテスト",
-          "url": "https://scp-jp.wikidot.com/scp7000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "coldpostcon",
-          "title": "ColdpostCon",
-          "url": "https://scp-jp.wikidot.com/coldpostcon",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "goblincon",
-          "title": "GoblinCon",
-          "url": "https://scp-jp.wikidot.com/goblincon",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "remixcon2023",
-          "title": "リミックスコン'23",
-          "url": "https://scp-jp.wikidot.com/remixcon2023",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp8000contesthub",
-          "title": "SCP-8000コンテスト'24",
-          "url": "https://scp-jp.wikidot.com/scp8000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "classic-con",
-          "title": "クラシック・コン",
-          "url": "https://scp-jp.wikidot.com/classic-con",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp9000contesthub",
-          "title": "SCP-9000コンテスト",
-          "url": "https://scp-jp.wikidot.com/scp9000contesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "sportscon",
-          "title": "スポーツコン",
-          "url": "https://scp-jp.wikidot.com/sportscon",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "goicon-2026",
-          "title": "Groups of Interest Contest 2026",
-          "url": "https://scp-jp.wikidot.com/goicon-2026",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "contest-archive-ko",
-          "title": "コンテストアーカイブ-KO",
-          "url": "https://scp-jp.wikidot.com/contest-archive-ko",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "le-concours-des-histoires-courtes",
-          "title": "掌編コンテスト",
-          "url": "https://scp-jp.wikidot.com/le-concours-des-histoires-courtes",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "le-concours-des-2-ans-de-la-fondation",
-          "title": "財団フランス支部2周年のコンテスト",
-          "url": "https://scp-jp.wikidot.com/le-concours-des-2-ans-de-la-fondation",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "concours-des-trois-ans-de-la-branche-francaise",
-          "title": "フランス支部3周年のコンテスト",
-          "url": "https://scp-jp.wikidot.com/concours-des-trois-ans-de-la-branche-francaise",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "concours-du-scp-de-moins-de-500-mots",
-          "title": "500語未満コンテスト",
-          "url": "https://scp-jp.wikidot.com/concours-du-scp-de-moins-de-500-mots",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "le-concours-des-quatre-ans",
-          "title": "4周年のコンテスト",
-          "url": "https://scp-jp.wikidot.com/le-concours-des-quatre-ans",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "concours-nos-meilleurs-ennemis",
-          "title": "コンテスト:我々の最高の敵",
-          "url": "https://scp-jp.wikidot.com/concours-nos-meilleurs-ennemis",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "le-concours-des-cinq-ans",
-          "title": "5周年のコンテスト",
-          "url": "https://scp-jp.wikidot.com/le-concours-des-cinq-ans",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "le-concours-des-404-ans",
-          "title": "404周年のコンテスト",
-          "url": "https://scp-jp.wikidot.com/le-concours-des-404-ans",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-100-de-wettbewerb",
-          "title": "SCP-100-DEコンテスト",
-          "url": "https://scp-jp.wikidot.com/scp-100-de-wettbewerb",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "goi-wettbewerb-2017",
-          "title": "GoIコンテスト2017",
-          "url": "https://scp-jp.wikidot.com/goi-wettbewerb-2017",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp-200-de-wettbewerb",
-          "title": "SCP-200-DEコンテスト",
-          "url": "https://scp-jp.wikidot.com/scp-200-de-wettbewerb",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "halloween-wettbewerb-2020",
-          "title": "ハロウィンコンテスト2020",
-          "url": "https://scp-jp.wikidot.com/halloween-wettbewerb-2020",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "concurso-historico-2020",
-          "title": "2020年の歴史コンテスト",
-          "url": "https://scp-jp.wikidot.com/concurso-historico-2020",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "cz-contest-i-hub",
-          "title": "SCP-CSコンテスト1",
-          "url": "https://scp-jp.wikidot.com/cz-contest-i-hub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "cz-contest-ii-hub",
-          "title": "SCP-CSコンテスト2",
-          "url": "https://scp-jp.wikidot.com/cz-contest-ii-hub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "cz-contest-iii-hub",
-          "title": "SCP-CSコンテスト3",
-          "url": "https://scp-jp.wikidot.com/cz-contest-iii-hub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "cz-contest-iv-hub",
-          "title": "SCP-CSコンテスト4",
-          "url": "https://scp-jp.wikidot.com/cz-contest-iv-hub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "cz-contest-v-hub",
-          "title": "SCP-CSコンテスト5",
-          "url": "https://scp-jp.wikidot.com/cz-contest-v-hub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "cs-contest-vi-hub",
-          "title": "SCP-CSコンテスト6",
-          "url": "https://scp-jp.wikidot.com/cs-contest-vi-hub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "soutez-znovuzrozeni2025-hub",
-          "title": "2025再誕コンテスト",
-          "url": "https://scp-jp.wikidot.com/soutez-znovuzrozeni2025-hub",
-          "role": "primaryArticle",
-          "contentKind": "tale"
-        },
-        {
-          "id": "scp100vncontesthub",
-          "title": "SCP-100-VNコンテスト",
-          "url": "https://scp-jp.wikidot.com/scp100vncontesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
-          "id": "scp200vncontesthub",
-          "title": "SCP-200-VNコンテスト",
-          "url": "https://scp-jp.wikidot.com/scp200vncontesthub",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "グレート・ショート・ストーリー・コンテスト・アーカイブ Dr. Rights マリアナ海溝から回収された文書 Doctor Gears 2009年ギアーズ博士の誕生日コンテスト Dr. Gears Opportunity Knocks tunedtoadeadchannel SCP-1000 コンテスト '11 1 SCP Administration SCP-1000 thedeadlymoose ハロウィンコンテスト '12 TroyL Treats Dr. Gears カノンコンテスト '13 TroyL 財団のない世界 DrClef, Fantem, Photosynthetic, & Pig_Catapult 五つの謎掛けコンテスト'13 Pt. 1 Dr. Mann 反復 0 HammerMaiden \" \" 神のように Rikks \" \" Children of Doubt Roget \" \" 微睡みが私の心を閉じ込めて Dmatix \" \" バグ Giant Enemy Spycrab Time Contest '13 Drewbear そして勝者は… Smapti SCP-2000 コンテスト '13 SCP Administration SCP-2000 FortunateFavorsBold 過小評価されているSCPコンテスト '14 CryogenChaos Exit History FortuneFavorsBold \" \" Exploded Diagram of a Young Woman Chubert 要注意団体コンテスト '14 TroyL 蛇の手 thedeadlymoose, Dexanote, Vivax, & Zyn ディストピアコンテスト '14 Reject 使命要綱 Dr. Reach 新解釈コンテスト '15 Moose & TroyL The Lucky Dinosaur Sophia Light 短編コンテスト '15 Sophia Light ●●|●●●●●|●●|● LurkD 機動部隊コンテスト '16 De",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "このページのコンテンツは現在 [機密指定] となっています。",
-          "articleIDs": [
-            "contest-archive-cn",
-            "the-great-short-story-contest-archives",
-            "gears-birthday-contest-2009",
-            "scp1000contesthub",
-            "new-years-contest",
-            "scp2000contesthub",
-            "under-appreciated-contest",
-            "reimagining-contest",
-            "short-works-contest",
-            "mobile-task-force-contest",
-            "an-incredibly-important-announcement",
-            "d-class-contest",
-            "history-contest",
-            "scp3000contesthub",
-            "social-media-art-contest",
-            "72-hour-jam-contest",
-            "doomsday-contest",
-            "scp4000contesthub",
-            "scp-oct-hub",
-            "halloween-contest-2018",
-            "cliche-con-2019",
-            "144-hour-jam-contest",
-            "scp5000contesthub",
-            "144-hour-jam-contest-two",
-            "exquisite-corpse-contest",
-            "canon-renaissance-contest",
-            "the-man-in-the-white-suit-hub",
-            "cupid-contest-2021",
-            "jam-con-2021",
-            "scp6000contesthub",
-            "department-contest",
-            "scp7000contesthub",
-            "coldpostcon",
-            "goblincon",
-            "remixcon2023",
-            "scp8000contesthub",
-            "classic-con",
-            "scp9000contesthub",
-            "sportscon",
-            "goicon-2026",
-            "contest-archive-ko",
-            "le-concours-des-histoires-courtes",
-            "le-concours-des-2-ans-de-la-fondation",
-            "concours-des-trois-ans-de-la-branche-francaise",
-            "concours-du-scp-de-moins-de-500-mots",
-            "le-concours-des-quatre-ans",
-            "concours-nos-meilleurs-ennemis",
-            "le-concours-des-cinq-ans",
-            "le-concours-des-404-ans",
-            "scp-100-de-wettbewerb",
-            "goi-wettbewerb-2017",
-            "scp-200-de-wettbewerb",
-            "halloween-wettbewerb-2020",
-            "concurso-historico-2020",
-            "cz-contest-i-hub",
-            "cz-contest-ii-hub",
-            "cz-contest-iii-hub",
-            "cz-contest-iv-hub",
-            "cz-contest-v-hub",
-            "cs-contest-vi-hub",
-            "soutez-znovuzrozeni2025-hub",
-            "scp100vncontesthub",
-            "scp200vncontesthub"
           ]
         }
       ]

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1793610405,
-  "generatedAt": "2026-11-02T09:06:45Z",
-  "chunkRevision": "sha256-cfd9cc81edc00685d120d4e5de8b4c7971b98c424a626fbc8a2a54f23e32ce42",
+  "listVersion": 1793622804,
+  "generatedAt": "2026-11-02T12:33:24Z",
+  "chunkRevision": "sha256-e8658b73c81dd501d957ff95910bf3e3f4692106a24b8717b8813623eca002df",
   "builtFrom": {
     "manifests": [
       {
@@ -10,18 +10,18 @@
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1793610372,
-        "generatedAt": "2026-11-02T09:06:11Z",
-        "contentHash": "sha256-8c2c528061655a6e75c596b450ed47b317d26794bb0da7c43465b660edce9955"
+        "listVersion": 1793622116,
+        "generatedAt": "2026-11-02T12:21:56Z",
+        "contentHash": "sha256-ea02cf6b820ccd7db0d72f5e4be3702ee7b2305c989e1fd2843aa01e3d863c0f"
       },
       {
         "kind": "manifest_gois",
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1793609756,
-        "generatedAt": "2026-11-02T08:55:56Z",
-        "contentHash": "sha256-d2257d821bf47179d6e5953d688cf24604db7fc2d75dc0acb1b52b7a2228ebb3"
+        "listVersion": 1793622213,
+        "generatedAt": "2026-11-02T12:23:33Z",
+        "contentHash": "sha256-99846c4a785afedca5315390c4a8ec5995eaa2227a43929aa5d9b50b21fd523f"
       },
       {
         "kind": "manifest_scp-foundation",
@@ -57,9 +57,9 @@
       "branchID": "scp-wiki-en",
       "path": "DataPipeline/list/en/en_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1792986920,
-      "generatedAt": "2026-10-26T03:55:20Z",
-      "contentHash": "sha256-067911a626bb426b9a1d119784547f8a81ed5302607f5775982529577bc1b2cc"
+      "listVersion": 1793622116,
+      "generatedAt": "2026-11-02T12:21:56Z",
+      "contentHash": "sha256-0a893a9c2567b134d2b9326d72d1df14bc88218c89d1de85e810af61480d6a2b"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -7856,7 +7856,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Explore every way things can go wrong for each SCP-001 proposal. Choose random file? Illac decrypted.",
+      "description": "Explore every way things can go wrong for each SCP-001 proposal. Choose random file? Cygnus decrypted.",
       "manualTagReason": "EN canon hub rows carry no hub metadata.g. Auto-derived 2026-06-21: canonical tag 'thaumiel' = hub slug form; 335 members via reverse-lookup across ['manifest_scp-foundation', 'manifest_tales']. Batch-approved method (slug=canonical, members>=3); pending per-hub spot-check.",
       "articleSections": [
         {
@@ -12350,7 +12350,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Pick an item from the Log Of Anomalous Items , and make an interesting tale about it. A random object for you: Tales of Anomalous Items .",
+      "description": "Pick an item from the Log Of Anomalous Items , and make an interesting tale about it. A random object for you: One Good Turn Deserves Another (An AO Tale) .",
       "manualTagReason": "EN Canon/Series hub metadata is region-only; the canonical tag was verified against the current EN tag index and official hub on 2026-07-24.",
       "articleSections": [
         {
@@ -64668,6 +64668,144 @@
       ]
     },
     {
+      "id": "scp-wiki-en:collection:series:be-your-best-self-hub",
+      "branchID": "scp-wiki-en",
+      "kind": "series",
+      "hubID": "be-your-best-self-hub",
+      "title": "BE YOUR / BEST SELF HUB",
+      "sourceListURL": "https://scp-wiki.wikidot.com/be-your-best-self-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/be-your-best-self-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "be-your-best-self-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "be-your-best-self-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Native Series membership is the works the official hub lists."
+      },
+      "memberManifests": [
+        "manifest_scp-foundation",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "en_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-wiki.wikidot.com",
+          "scp-wiki.net",
+          "www.scp-wiki.net",
+          "scpwiki.com"
+        ],
+        "structureHash": "sha256-c433d4ffa1279f682a664383266f31c690322d5ef3c2d2e023e3ee86da2dfeb2"
+      },
+      "primaryArticles": [
+        {
+          "id": "accidentally-became-important-at-work-and-it-s-ruining-my-li",
+          "title": "accidentally became important at work and it's ruining my life",
+          "url": "https://scp-wiki.wikidot.com/accidentally-became-important-at-work-and-it-s-ruining-my-li",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "I still don’t know which version of myself made it out of Optimization. Almost every day since then, I take count of my impulses to try and guess which one I am. Violent thoughts? Too many of those, and I might be Fourteen. Protective? That’s the part of me th…"
+        },
+        {
+          "id": "fucked-up-evil-mrs-rachel-gives-me-a-promotion-prank-gone-wr",
+          "title": "fucked up evil mrs rachel gives me a promotion prank gone wrong",
+          "url": "https://scp-wiki.wikidot.com/fucked-up-evil-mrs-rachel-gives-me-a-promotion-prank-gone-wr",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "\"Mateo,\" The Supervisor's voice chides like she's correcting a toddler, though I'm not the biggest fan being the toddler in question. \"Mateo, this is going to go over a lot easier if we have our listening ears on.\""
+        },
+        {
+          "id": "i-get-my-shit-rocked-by-a-boyband",
+          "title": "i get my shit rocked by a boyband",
+          "url": "https://scp-wiki.wikidot.com/i-get-my-shit-rocked-by-a-boyband",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "The Supervisor had told me I had other clones. I wasn't prepared to meet them in the slightest, but she had also made it clear that that choice was no longer mine. Let's be honest, most folks dread having to look at themselves in the mirror after just a bad ni…"
+        },
+        {
+          "id": "the-sight",
+          "title": "The Sight",
+          "url": "https://scp-wiki.wikidot.com/the-sight",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 4,
+          "desc": "It is fall on campus, and the school's biggest donor isn't even allowed to be here. It wasn't like anybody was going to tell him to leave, though, even if they knew. After thirty-one years at the top of his field, there were precious few people who had that so…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "The Supervisor explains what Mateo is meant to become, and how she will ensure he does.",
+      "articleSections": [
+        {
+          "id": "01-part-i",
+          "title": "PART I.",
+          "articleIDs": [
+            "accidentally-became-important-at-work-and-it-s-ruining-my-li"
+          ]
+        },
+        {
+          "id": "02-part-ii",
+          "title": "PART II.",
+          "articleIDs": [
+            "fucked-up-evil-mrs-rachel-gives-me-a-promotion-prank-gone-wr"
+          ]
+        },
+        {
+          "id": "03-part-iii",
+          "title": "PART III.",
+          "articleIDs": [
+            "i-get-my-shit-rocked-by-a-boyband"
+          ]
+        },
+        {
+          "id": "04-part-iv",
+          "title": "PART IV.",
+          "articleIDs": [
+            "the-sight"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-wiki-en:collection:series:test-run-hub",
       "branchID": "scp-wiki-en",
       "kind": "series",
@@ -66225,6 +66363,266 @@
             "pop-pops-oath",
             "pop-pop-was-not-a-nazi-a-thorough-response",
             "dispatch-miss-kumo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scp-wiki-en:collection:series:aleph-hub",
+      "branchID": "scp-wiki-en",
+      "kind": "series",
+      "hubID": "aleph-hub",
+      "title": "ALEPH Hub",
+      "sourceListURL": "https://scp-wiki.wikidot.com/aleph-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/aleph-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "aleph-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "aleph-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Native Series membership is the works the official hub lists."
+      },
+      "memberManifests": [
+        "manifest_scp-foundation",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "en_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-wiki.wikidot.com",
+          "scp-wiki.net",
+          "www.scp-wiki.net",
+          "scpwiki.com"
+        ],
+        "structureHash": "sha256-41018a78dd0f596e7fd8b4ee83f66d7b1bc3da8853dd111a3be32d9442aa46d6"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-l358",
+          "title": "Reasoning in State Hospital",
+          "url": "https://scp-wiki.wikidot.com/scp-l358",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
+        },
+        {
+          "id": "scp-l064",
+          "title": "A Wall Between Two Gardens",
+          "url": "https://scp-wiki.wikidot.com/scp-l064",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
+        },
+        {
+          "id": "scp-9311",
+          "title": "A Series of Elaborate Precautions",
+          "url": "https://scp-wiki.wikidot.com/scp-9311",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 155,
+          "desc": "Testing on SCP-9311 will continue until its purpose has been identified. All instances of SCP-9311 are to be stored within Warehouse 14-B, 14-C, and 14-D at Site-19. Further containment is pending."
+        },
+        {
+          "id": "surprise-happy-birthday-14",
+          "title": "Surprise! Happy Birthday! Round and round it goes...",
+          "url": "https://scp-wiki.wikidot.com/surprise-happy-birthday-14",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 35,
+          "desc": "Hello, my friend. Here we find ourselves again. A lovely little tradition we have going on, isn't it? How have you been? Keeping well? Keeping busy? Enjoying life and all its little horrors? We love to hear from you. But for now, listen to us."
+        },
+        {
+          "id": "scp-l804",
+          "title": "Become Smaller and Smaller",
+          "url": "https://scp-wiki.wikidot.com/scp-l804",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
+        },
+        {
+          "id": "scp-l699",
+          "title": "The End of the World Must Be Coming",
+          "url": "https://scp-wiki.wikidot.com/scp-l699",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
+        },
+        {
+          "id": "scp-l499",
+          "title": "Die, Patriarch! The Screams of Infancy",
+          "url": "https://scp-wiki.wikidot.com/scp-l499",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
+        },
+        {
+          "id": "scp-9596",
+          "title": "The Longest Distance Between Two Places",
+          "url": "https://scp-wiki.wikidot.com/scp-9596",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 142,
+          "desc": "Simple surveillance systems are sufficient to ensure subjects are not injured. Amnestics to counteract cognitohazardous effects are not needed."
+        },
+        {
+          "id": "a-perspective-not-the-truth",
+          "title": "A Perspective, Not the Truth",
+          "url": "https://scp-wiki.wikidot.com/a-perspective-not-the-truth",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 14,
+          "desc": "A Perspective, Not the Truth Time never ceases marching forward. Many rarely think about that, out of fear over their own mortality. That one day, they will die. And eventually, the last person to remember them will also die, and they will die a second death.…"
+        },
+        {
+          "id": "a-slow-and-painful-execution",
+          "title": "A Slow and Painful Execution",
+          "url": "https://scp-wiki.wikidot.com/a-slow-and-painful-execution",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 27,
+          "desc": "— The Amnon Family Home, 1988 On a small field, in the middle of nowhere, there lies a house. It once had creative minds like you and I. Now it bears a family of five. I am one of them. The one who isn't normal, the one who has to support its rocky foundation.…"
+        },
+        {
+          "id": "whatfilthyrottenblood",
+          "title": "What Filthy Rotten Blood",
+          "url": "https://scp-wiki.wikidot.com/whatfilthyrottenblood",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 61,
+          "desc": "From: ██████████████████ To: You Subject: PLEASE READ Now that you have opened this page, you've implicated yourself in my murder."
+        },
+        {
+          "id": "you-feel-a-stillness",
+          "title": "You Feel a Stillness All Around You, Caressing Your Face",
+          "url": "https://scp-wiki.wikidot.com/you-feel-a-stillness",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 21,
+          "desc": "A Tale by KatyaStrangelove Based on SCP-8490 ⚠️ content warning ↑ I was a fool to assume that a night brought to life by the flicker of lavender-scented candles would be a decadent treat for a distant lover such as yourself – too infuriatingly apprehensive to…"
+        },
+        {
+          "id": "scp-l096",
+          "title": "Give Up Your Son So We May Eat Him",
+          "url": "https://scp-wiki.wikidot.com/scp-l096",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
+        },
+        {
+          "id": "ere-i-forget-or-die-or-move-away",
+          "title": "Ere I Forget, or Die, or Move Away",
+          "url": "https://scp-wiki.wikidot.com/ere-i-forget-or-die-or-move-away",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle",
+          "contentKind": "goiFormat",
+          "os": 40,
+          "desc": "I don't want to be here anymore. There's nothing left for me here. The noises that make me jump and fill me with fear, the things I feel whenever I look in a mirror, the way everyone looks at me. I can no longer stand any of it. I no longer believe I was made…"
+        },
+        {
+          "id": "whodyoukillnow",
+          "title": "I Watched You Enter Your Home From Inside A Dumpster",
+          "url": "https://scp-wiki.wikidot.com/whodyoukillnow",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 30,
+          "desc": "Hello again. Every night, it feels like we meet, doesn't it? You always see me staring at you with my bright, white eyes. They're the only things of any light in your shadowed dreams."
+        },
+        {
+          "id": "scp-9190",
+          "title": "Advantages of Making Regular Use of Cleaning Products",
+          "url": "https://scp-wiki.wikidot.com/scp-9190",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 141,
+          "desc": "All information relating to SCP-9190 has been acquired by the Foundation. Personnel who believe in an afterlife are barred from enacting SCP-9190. All individuals about to undergo SCP-9190 are to be prepared for their voyage into the future, and, if necessary,…"
+        },
+        {
+          "id": "scp-8534",
+          "title": "The Insistence on Small Miracles",
+          "url": "https://scp-wiki.wikidot.com/scp-8534",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 132,
+          "desc": "All surviving documentation of SCP-8534 is currently under Foundation custody. Attempts at recreating SCP-8534 are underway."
+        },
+        {
+          "id": "scp-l119",
+          "title": "An Itemized Account of the American Failure",
+          "url": "https://scp-wiki.wikidot.com/scp-l119",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "001: WEED PROBLEM Bull of Heaven is an American experimental music project formed in Denver, Colorado in 2008. Bull of Heaven have hundreds of releases in their discography. All of their works are in the public domain.",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "scp-l358",
+            "scp-l064",
+            "scp-9311",
+            "surprise-happy-birthday-14",
+            "scp-l804",
+            "scp-l699",
+            "scp-l499",
+            "scp-9596",
+            "a-perspective-not-the-truth",
+            "a-slow-and-painful-execution",
+            "whatfilthyrottenblood",
+            "you-feel-a-stillness",
+            "scp-l096",
+            "ere-i-forget-or-die-or-move-away",
+            "whodyoukillnow",
+            "scp-9190",
+            "scp-8534",
+            "scp-l119"
           ]
         }
       ]
@@ -112060,6 +112458,93 @@
       ]
     },
     {
+      "id": "scp-wiki-en:collection:series:afterglow",
+      "branchID": "scp-wiki-en",
+      "kind": "series",
+      "hubID": "afterglow",
+      "title": "Afterglow",
+      "sourceListURL": "https://scp-wiki.wikidot.com/afterglow",
+      "officialHubURL": "https://scp-wiki.wikidot.com/afterglow",
+      "hubPresentation": "standard",
+      "canonicalTag": "afterglow",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "afterglow",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Native Series membership is the works the official hub lists."
+      },
+      "memberManifests": [
+        "manifest_scp-foundation",
+        "manifest_tales"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "en_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-wiki.wikidot.com",
+          "scp-wiki.net",
+          "www.scp-wiki.net",
+          "scpwiki.com"
+        ],
+        "structureHash": "sha256-c47baa56fe6f5accf398848e5fca510c8bd7620cf5c7447dd9193e53ff99aa31"
+      },
+      "primaryArticles": [
+        {
+          "id": "log-of-anomalous-items-vol-ii",
+          "title": "Log Of Anomalous Items, Vol II",
+          "url": "https://scp-wiki.wikidot.com/log-of-anomalous-items-vol-ii",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 380,
+          "desc": "Foreword: The SCP Foundation has discovered a substantial number of items which are simply too useless to merit further attention. This document lists those items which have prompted some curiosity. It may be used as a resource should knowledge of these items…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "All of these negative thoughts will come to pass, and only memories will remain.",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "log-of-anomalous-items-vol-ii"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-wiki-en:collection:series:welcome-to-delta-t",
       "branchID": "scp-wiki-en",
       "kind": "series",
@@ -115697,491 +116182,6 @@
             "71-overlude",
             "a-sunny-day-at-site-27",
             "76-stopwatch"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-wiki-en:collection:series:afterglow",
-      "branchID": "scp-wiki-en",
-      "kind": "series",
-      "hubID": "afterglow",
-      "title": "Afterglow",
-      "sourceListURL": "https://scp-wiki.wikidot.com/afterglow",
-      "officialHubURL": "https://scp-wiki.wikidot.com/afterglow",
-      "hubPresentation": "standard",
-      "canonicalTag": "afterglow",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "afterglow",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Native Series membership is the works the official hub lists."
-      },
-      "memberManifests": [
-        "manifest_scp-foundation",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "en_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-wiki.wikidot.com",
-          "scp-wiki.net",
-          "www.scp-wiki.net",
-          "scpwiki.com"
-        ],
-        "structureHash": "sha256-c47baa56fe6f5accf398848e5fca510c8bd7620cf5c7447dd9193e53ff99aa31"
-      },
-      "primaryArticles": [
-        {
-          "id": "log-of-anomalous-items-vol-ii",
-          "title": "Log Of Anomalous Items, Vol II",
-          "url": "https://scp-wiki.wikidot.com/log-of-anomalous-items-vol-ii",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 380,
-          "desc": "Foreword: The SCP Foundation has discovered a substantial number of items which are simply too useless to merit further attention. This document lists those items which have prompted some curiosity. It may be used as a resource should knowledge of these items…"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "All of these negative thoughts will come to pass, and only memories will remain.",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "log-of-anomalous-items-vol-ii"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-wiki-en:collection:series:be-your-best-self-hub",
-      "branchID": "scp-wiki-en",
-      "kind": "series",
-      "hubID": "be-your-best-self-hub",
-      "title": "BE YOUR / BEST SELF HUB",
-      "sourceListURL": "https://scp-wiki.wikidot.com/be-your-best-self-hub",
-      "officialHubURL": "https://scp-wiki.wikidot.com/be-your-best-self-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "be-your-best-self-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "be-your-best-self-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Native Series membership is the works the official hub lists."
-      },
-      "memberManifests": [
-        "manifest_scp-foundation",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "en_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-wiki.wikidot.com",
-          "scp-wiki.net",
-          "www.scp-wiki.net",
-          "scpwiki.com"
-        ],
-        "structureHash": "sha256-c433d4ffa1279f682a664383266f31c690322d5ef3c2d2e023e3ee86da2dfeb2"
-      },
-      "primaryArticles": [
-        {
-          "id": "accidentally-became-important-at-work-and-it-s-ruining-my-li",
-          "title": "accidentally became important at work and it's ruining my life",
-          "url": "https://scp-wiki.wikidot.com/accidentally-became-important-at-work-and-it-s-ruining-my-li",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 14,
-          "desc": "I still don’t know which version of myself made it out of Optimization. Almost every day since then, I take count of my impulses to try and guess which one I am. Violent thoughts? Too many of those, and I might be Fourteen. Protective? That’s the part of me th…"
-        },
-        {
-          "id": "fucked-up-evil-mrs-rachel-gives-me-a-promotion-prank-gone-wr",
-          "title": "fucked up evil mrs rachel gives me a promotion prank gone wrong",
-          "url": "https://scp-wiki.wikidot.com/fucked-up-evil-mrs-rachel-gives-me-a-promotion-prank-gone-wr",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 6,
-          "desc": "\"Mateo,\" The Supervisor's voice chides like she's correcting a toddler, though I'm not the biggest fan being the toddler in question. \"Mateo, this is going to go over a lot easier if we have our listening ears on.\""
-        },
-        {
-          "id": "i-get-my-shit-rocked-by-a-boyband",
-          "title": "i get my shit rocked by a boyband",
-          "url": "https://scp-wiki.wikidot.com/i-get-my-shit-rocked-by-a-boyband",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 6,
-          "desc": "The Supervisor had told me I had other clones. I wasn't prepared to meet them in the slightest, but she had also made it clear that that choice was no longer mine. Let's be honest, most folks dread having to look at themselves in the mirror after just a bad ni…"
-        },
-        {
-          "id": "the-sight",
-          "title": "The Sight",
-          "url": "https://scp-wiki.wikidot.com/the-sight",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 4,
-          "desc": "It is fall on campus, and the school's biggest donor isn't even allowed to be here. It wasn't like anybody was going to tell him to leave, though, even if they knew. After thirty-one years at the top of his field, there were precious few people who had that so…"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "The Supervisor explains what Mateo is meant to become, and how she will ensure he does.",
-      "articleSections": [
-        {
-          "id": "01-part-i",
-          "title": "PART I.",
-          "articleIDs": [
-            "accidentally-became-important-at-work-and-it-s-ruining-my-li"
-          ]
-        },
-        {
-          "id": "02-part-ii",
-          "title": "PART II.",
-          "articleIDs": [
-            "fucked-up-evil-mrs-rachel-gives-me-a-promotion-prank-gone-wr"
-          ]
-        },
-        {
-          "id": "03-part-iii",
-          "title": "PART III.",
-          "articleIDs": [
-            "i-get-my-shit-rocked-by-a-boyband"
-          ]
-        },
-        {
-          "id": "04-part-iv",
-          "title": "PART IV.",
-          "articleIDs": [
-            "the-sight"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-wiki-en:collection:series:aleph-hub",
-      "branchID": "scp-wiki-en",
-      "kind": "series",
-      "hubID": "aleph-hub",
-      "title": "ALEPH Hub",
-      "sourceListURL": "https://scp-wiki.wikidot.com/aleph-hub",
-      "officialHubURL": "https://scp-wiki.wikidot.com/aleph-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "aleph-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "aleph-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Native Series membership is the works the official hub lists."
-      },
-      "memberManifests": [
-        "manifest_scp-foundation",
-        "manifest_tales"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "en_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-wiki.wikidot.com",
-          "scp-wiki.net",
-          "www.scp-wiki.net",
-          "scpwiki.com"
-        ],
-        "structureHash": "sha256-41018a78dd0f596e7fd8b4ee83f66d7b1bc3da8853dd111a3be32d9442aa46d6"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-l358",
-          "title": "Reasoning in State Hospital",
-          "url": "https://scp-wiki.wikidot.com/scp-l358",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
-        },
-        {
-          "id": "scp-l064",
-          "title": "A Wall Between Two Gardens",
-          "url": "https://scp-wiki.wikidot.com/scp-l064",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
-        },
-        {
-          "id": "scp-9311",
-          "title": "A Series of Elaborate Precautions",
-          "url": "https://scp-wiki.wikidot.com/scp-9311",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 155,
-          "desc": "Testing on SCP-9311 will continue until its purpose has been identified. All instances of SCP-9311 are to be stored within Warehouse 14-B, 14-C, and 14-D at Site-19. Further containment is pending."
-        },
-        {
-          "id": "surprise-happy-birthday-14",
-          "title": "Surprise! Happy Birthday! Round and round it goes...",
-          "url": "https://scp-wiki.wikidot.com/surprise-happy-birthday-14",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 35,
-          "desc": "Hello, my friend. Here we find ourselves again. A lovely little tradition we have going on, isn't it? How have you been? Keeping well? Keeping busy? Enjoying life and all its little horrors? We love to hear from you. But for now, listen to us."
-        },
-        {
-          "id": "scp-l804",
-          "title": "Become Smaller and Smaller",
-          "url": "https://scp-wiki.wikidot.com/scp-l804",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
-        },
-        {
-          "id": "scp-l699",
-          "title": "The End of the World Must Be Coming",
-          "url": "https://scp-wiki.wikidot.com/scp-l699",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
-        },
-        {
-          "id": "scp-l499",
-          "title": "Die, Patriarch! The Screams of Infancy",
-          "url": "https://scp-wiki.wikidot.com/scp-l499",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
-        },
-        {
-          "id": "scp-9596",
-          "title": "The Longest Distance Between Two Places",
-          "url": "https://scp-wiki.wikidot.com/scp-9596",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 142,
-          "desc": "Simple surveillance systems are sufficient to ensure subjects are not injured. Amnestics to counteract cognitohazardous effects are not needed."
-        },
-        {
-          "id": "a-perspective-not-the-truth",
-          "title": "A Perspective, Not the Truth",
-          "url": "https://scp-wiki.wikidot.com/a-perspective-not-the-truth",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 14,
-          "desc": "A Perspective, Not the Truth Time never ceases marching forward. Many rarely think about that, out of fear over their own mortality. That one day, they will die. And eventually, the last person to remember them will also die, and they will die a second death.…"
-        },
-        {
-          "id": "a-slow-and-painful-execution",
-          "title": "A Slow and Painful Execution",
-          "url": "https://scp-wiki.wikidot.com/a-slow-and-painful-execution",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 27,
-          "desc": "— The Amnon Family Home, 1988 On a small field, in the middle of nowhere, there lies a house. It once had creative minds like you and I. Now it bears a family of five. I am one of them. The one who isn't normal, the one who has to support its rocky foundation.…"
-        },
-        {
-          "id": "whatfilthyrottenblood",
-          "title": "What Filthy Rotten Blood",
-          "url": "https://scp-wiki.wikidot.com/whatfilthyrottenblood",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 61,
-          "desc": "From: ██████████████████ To: You Subject: PLEASE READ Now that you have opened this page, you've implicated yourself in my murder."
-        },
-        {
-          "id": "you-feel-a-stillness",
-          "title": "You Feel a Stillness All Around You, Caressing Your Face",
-          "url": "https://scp-wiki.wikidot.com/you-feel-a-stillness",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 21,
-          "desc": "A Tale by KatyaStrangelove Based on SCP-8490 ⚠️ content warning ↑ I was a fool to assume that a night brought to life by the flicker of lavender-scented candles would be a decadent treat for a distant lover such as yourself – too infuriatingly apprehensive to…"
-        },
-        {
-          "id": "scp-l096",
-          "title": "Give Up Your Son So We May Eat Him",
-          "url": "https://scp-wiki.wikidot.com/scp-l096",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
-        },
-        {
-          "id": "ere-i-forget-or-die-or-move-away",
-          "title": "Ere I Forget, or Die, or Move Away",
-          "url": "https://scp-wiki.wikidot.com/ere-i-forget-or-die-or-move-away",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle",
-          "contentKind": "goiFormat",
-          "os": 40,
-          "desc": "I don't want to be here anymore. There's nothing left for me here. The noises that make me jump and fill me with fear, the things I feel whenever I look in a mirror, the way everyone looks at me. I can no longer stand any of it. I no longer believe I was made…"
-        },
-        {
-          "id": "whodyoukillnow",
-          "title": "I Watched You Enter Your Home From Inside A Dumpster",
-          "url": "https://scp-wiki.wikidot.com/whodyoukillnow",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 30,
-          "desc": "Hello again. Every night, it feels like we meet, doesn't it? You always see me staring at you with my bright, white eyes. They're the only things of any light in your shadowed dreams."
-        },
-        {
-          "id": "scp-9190",
-          "title": "Advantages of Making Regular Use of Cleaning Products",
-          "url": "https://scp-wiki.wikidot.com/scp-9190",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 141,
-          "desc": "All information relating to SCP-9190 has been acquired by the Foundation. Personnel who believe in an afterlife are barred from enacting SCP-9190. All individuals about to undergo SCP-9190 are to be prepared for their voyage into the future, and, if necessary,…"
-        },
-        {
-          "id": "scp-8534",
-          "title": "The Insistence on Small Miracles",
-          "url": "https://scp-wiki.wikidot.com/scp-8534",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 132,
-          "desc": "All surviving documentation of SCP-8534 is currently under Foundation custody. Attempts at recreating SCP-8534 are underway."
-        },
-        {
-          "id": "scp-l119",
-          "title": "An Itemized Account of the American Failure",
-          "url": "https://scp-wiki.wikidot.com/scp-l119",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "001: Weed Problem (LOCKED) 002: He Is Not Dead, but Sleepeth 003: Eleven Floors Down 004: Reasoning in State Hospital 005: A Lovely Pear 006: The Myth of Dinosaurs 007: Reptilian Takeover 008: A Wall Between Two Gardens 009: First Our Pleasures Die 010: A White Surveillance Van 011: Spacewalking Your New Way Home 012: Timeship 2012 013: Elsa, Are You in There? 014: Upon One Pair of English Legs 015: Sun Ritual 016: Get Tree Body (Brainwash Solution) 017: Its Bones Are Soft 018: Candles Green, Heads and Skulls 019: Hypnosis, Drugs, and Mind Control (The Beginning: A Touch) 020: Legend of Degree 021: A Series of Elaborate Precautions 022: Man-Lizards, Masters of Venus 023: Odd Things, Brick Bu"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "It's taken me some time to force the SCiPnet servers to accept this, but hopefully I managed to get this thing up and running.",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "scp-l358",
-            "scp-l064",
-            "scp-9311",
-            "surprise-happy-birthday-14",
-            "scp-l804",
-            "scp-l699",
-            "scp-l499",
-            "scp-9596",
-            "a-perspective-not-the-truth",
-            "a-slow-and-painful-execution",
-            "whatfilthyrottenblood",
-            "you-feel-a-stillness",
-            "scp-l096",
-            "ere-i-forget-or-die-or-move-away",
-            "whodyoukillnow",
-            "scp-9190",
-            "scp-8534",
-            "scp-l119"
           ]
         }
       ]
@@ -132516,13 +132516,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "djoric-dmatix-proposal",
-          "title": "Djoric-Dmatix Proposal",
-          "url": "https://scp-wiki.wikidot.com/djoric-dmatix-proposal",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-2500",
           "title": "SCP-2500",
           "url": "https://scp-wiki.wikidot.com/scp-2500",
@@ -132621,23 +132614,30 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-6087",
-          "title": "SCP-6087",
-          "url": "https://scp-wiki.wikidot.com/scp-6087",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-6614",
-          "title": "SCP-6614",
-          "url": "https://scp-wiki.wikidot.com/scp-6614",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8120",
           "title": "SCP-8120",
           "url": "https://scp-wiki.wikidot.com/scp-8120",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4077",
+          "title": "SCP-4077",
+          "url": "https://scp-wiki.wikidot.com/scp-4077",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8638",
+          "title": "SCP-8638",
+          "url": "https://scp-wiki.wikidot.com/scp-8638",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3668",
+          "title": "SCP-3668",
+          "url": "https://scp-wiki.wikidot.com/scp-3668",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -146633,7 +146633,7 @@
         },
         {
           "id": "spc-179",
-          "title": "SPC-179",
+          "title": "SPC-179: GLORIOUS BEACON",
           "url": "https://scp-wiki.wikidot.com/spc-179",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
@@ -148737,13 +148737,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5400",
-          "title": "SCP-5400",
-          "url": "https://scp-wiki.wikidot.com/scp-5400",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8086",
           "title": "SCP-8086",
           "url": "https://scp-wiki.wikidot.com/scp-8086",
@@ -148821,13 +148814,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-8734",
-          "title": "SCP-8734",
-          "url": "https://scp-wiki.wikidot.com/scp-8734",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-5004",
           "title": "SCP-5004",
           "url": "https://scp-wiki.wikidot.com/scp-5004",
@@ -148877,13 +148863,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-9643",
-          "title": "SCP-9643",
-          "url": "https://scp-wiki.wikidot.com/scp-9643",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4506",
           "title": "SCP-4506",
           "url": "https://scp-wiki.wikidot.com/scp-4506",
@@ -148908,13 +148887,6 @@
           "id": "scp-3127",
           "title": "SCP-3127",
           "url": "https://scp-wiki.wikidot.com/scp-3127",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-6660",
-          "title": "SCP-6660",
-          "url": "https://scp-wiki.wikidot.com/scp-6660",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148968,13 +148940,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2600",
-          "title": "SCP-2600",
-          "url": "https://scp-wiki.wikidot.com/scp-2600",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "dyfl001",
           "title": "Foolish David's Lost Proposal",
           "url": "https://scp-wiki.wikidot.com/dyfl001",
@@ -148992,20 +148957,6 @@
           "id": "scp-9550",
           "title": "SCP-9550",
           "url": "https://scp-wiki.wikidot.com/scp-9550",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8870",
-          "title": "SCP-8870",
-          "url": "https://scp-wiki.wikidot.com/scp-8870",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3231",
-          "title": "SCP-3231",
-          "url": "https://scp-wiki.wikidot.com/scp-3231",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -149038,58 +148989,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2472",
-          "title": "SCP-2472",
-          "url": "https://scp-wiki.wikidot.com/scp-2472",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8507",
-          "title": "SCP-8507",
-          "url": "https://scp-wiki.wikidot.com/scp-8507",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8869",
-          "title": "SCP-8869",
-          "url": "https://scp-wiki.wikidot.com/scp-8869",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-4654",
-          "title": "SCP-4654",
-          "url": "https://scp-wiki.wikidot.com/scp-4654",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4579",
           "title": "SCP-4579",
           "url": "https://scp-wiki.wikidot.com/scp-4579",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-9998",
-          "title": "SCP-9998",
-          "url": "https://scp-wiki.wikidot.com/scp-9998",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-5512",
-          "title": "SCP-5512",
-          "url": "https://scp-wiki.wikidot.com/scp-5512",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-2854",
-          "title": "SCP-2854",
-          "url": "https://scp-wiki.wikidot.com/scp-2854",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -149115,13 +149017,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5853",
-          "title": "SCP-5853",
-          "url": "https://scp-wiki.wikidot.com/scp-5853",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4566",
           "title": "SCP-4566",
           "url": "https://scp-wiki.wikidot.com/scp-4566",
@@ -149132,20 +149027,6 @@
           "id": "scp-2641",
           "title": "SCP-2641",
           "url": "https://scp-wiki.wikidot.com/scp-2641",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-633",
-          "title": "SCP-633",
-          "url": "https://scp-wiki.wikidot.com/scp-633",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-9999-j",
-          "title": "SCP-9999-J",
-          "url": "https://scp-wiki.wikidot.com/scp-9999-j",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -149164,23 +149045,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2635",
-          "title": "SCP-2635",
-          "url": "https://scp-wiki.wikidot.com/scp-2635",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-7692",
           "title": "SCP-7692",
           "url": "https://scp-wiki.wikidot.com/scp-7692",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3256",
-          "title": "SCP-3256",
-          "url": "https://scp-wiki.wikidot.com/scp-3256",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -149206,13 +149073,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4256",
-          "title": "SCP-4256",
-          "url": "https://scp-wiki.wikidot.com/scp-4256",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8514",
           "title": "SCP-8514",
           "url": "https://scp-wiki.wikidot.com/scp-8514",
@@ -149234,20 +149094,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4985",
-          "title": "SCP-4985",
-          "url": "https://scp-wiki.wikidot.com/scp-4985",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-4665",
-          "title": "SCP-4665",
-          "url": "https://scp-wiki.wikidot.com/scp-4665",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4871",
           "title": "SCP-4871",
           "url": "https://scp-wiki.wikidot.com/scp-4871",
@@ -149265,6 +149111,160 @@
           "id": "scp-5982",
           "title": "SCP-5982",
           "url": "https://scp-wiki.wikidot.com/scp-5982",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9451",
+          "title": "SCP-9451",
+          "url": "https://scp-wiki.wikidot.com/scp-9451",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7115",
+          "title": "SCP-7115",
+          "url": "https://scp-wiki.wikidot.com/scp-7115",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8944",
+          "title": "SCP-8944",
+          "url": "https://scp-wiki.wikidot.com/scp-8944",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4908",
+          "title": "SCP-4908",
+          "url": "https://scp-wiki.wikidot.com/scp-4908",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4204",
+          "title": "SCP-4204",
+          "url": "https://scp-wiki.wikidot.com/scp-4204",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5082",
+          "title": "SCP-5082",
+          "url": "https://scp-wiki.wikidot.com/scp-5082",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5728",
+          "title": "SCP-5728",
+          "url": "https://scp-wiki.wikidot.com/scp-5728",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9444",
+          "title": "SCP-9444",
+          "url": "https://scp-wiki.wikidot.com/scp-9444",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5177",
+          "title": "SCP-5177",
+          "url": "https://scp-wiki.wikidot.com/scp-5177",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3935",
+          "title": "SCP-3935",
+          "url": "https://scp-wiki.wikidot.com/scp-3935",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2906",
+          "title": "SCP-2906",
+          "url": "https://scp-wiki.wikidot.com/scp-2906",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2414",
+          "title": "SCP-2414",
+          "url": "https://scp-wiki.wikidot.com/scp-2414",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8172",
+          "title": "SCP-8172",
+          "url": "https://scp-wiki.wikidot.com/scp-8172",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7993",
+          "title": "SCP-7993",
+          "url": "https://scp-wiki.wikidot.com/scp-7993",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6795",
+          "title": "SCP-6795",
+          "url": "https://scp-wiki.wikidot.com/scp-6795",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-378",
+          "title": "SCP-378",
+          "url": "https://scp-wiki.wikidot.com/scp-378",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8676",
+          "title": "SCP-8676",
+          "url": "https://scp-wiki.wikidot.com/scp-8676",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-935",
+          "title": "SCP-935",
+          "url": "https://scp-wiki.wikidot.com/scp-935",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "captain-kirby-s-proposal",
+          "title": "Captain Kirby's Proposal",
+          "url": "https://scp-wiki.wikidot.com/captain-kirby-s-proposal",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-847",
+          "title": "SCP-847",
+          "url": "https://scp-wiki.wikidot.com/scp-847",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9110",
+          "title": "SCP-9110",
+          "url": "https://scp-wiki.wikidot.com/scp-9110",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5682",
+          "title": "SCP-5682",
+          "url": "https://scp-wiki.wikidot.com/scp-5682",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
