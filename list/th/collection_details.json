@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1793438467,
-  "generatedAt": "2026-10-31T09:21:07Z",
-  "chunkRevision": "sha256-1d26cb4d7eb0888cf0826e50840a7755fde7724309a448f131b08e8593c1dd7c",
+  "listVersion": 1793960850,
+  "generatedAt": "2026-11-06T10:27:30Z",
+  "chunkRevision": "sha256-aed964b7ecc9e14c9a357bca57af0e8acc60d97729967c9821894636ffaa68fa",
   "builtFrom": {
     "manifests": [
       {
@@ -19,36 +19,36 @@
         "branchID": "scp-th",
         "path": "DataPipeline/list/th/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1788846584,
-        "generatedAt": "2026-09-08T05:49:44Z",
-        "contentHash": "sha256-cacfcbab484801511e1b6495306268ffb9875593eeae974de9622a951c5b2f67"
+        "listVersion": 1793791173,
+        "generatedAt": "2026-11-04T11:19:33Z",
+        "contentHash": "sha256-715a572b06d5eea906559e517d52e4bdfb76c689cb72b0e154eb98accdfcbec5"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-th",
         "path": "DataPipeline/list/th/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1791802598,
-        "generatedAt": "2026-10-12T10:56:38Z",
-        "contentHash": "sha256-afee265e2853cb11b09e0324d66a18b3363767059e808e11adcb27c934d1cba5"
+        "listVersion": 1793791173,
+        "generatedAt": "2026-11-04T11:19:33Z",
+        "contentHash": "sha256-413d0404d2f8f2f53aa1cb7e1a1a089d88d6bbbfd0342b557b951ee21be914be"
       },
       {
         "kind": "manifest_scp-th",
         "branchID": "scp-th",
         "path": "DataPipeline/list/th/manifest_scp-th.json",
         "schemaVersion": 2,
-        "listVersion": 1788656374,
-        "generatedAt": "2026-09-06T00:59:34Z",
-        "contentHash": "sha256-071df9c0f9e9a5857d4a119f2f6c0a801b3bf04b22714ebcf1d1dfb40972029b"
+        "listVersion": 1793791173,
+        "generatedAt": "2026-11-04T11:19:33Z",
+        "contentHash": "sha256-5db2b9020bc74988caa2c6d4186780a57387b49a85dc528dba0f17b2a520f055"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-th",
         "path": "DataPipeline/list/th/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1792920848,
-        "generatedAt": "2026-10-25T08:27:01Z",
-        "contentHash": "sha256-c2c69291b3660802c62839b12105fdece9dce58671813580732838b584fadfc5"
+        "listVersion": 1793791076,
+        "generatedAt": "2026-11-04T11:17:56Z",
+        "contentHash": "sha256-ce2a50143807ccff0b6368011102e00a211e93ca2fffb5fe427593a1ac5eed40"
       }
     ],
     "seedReview": {
@@ -567,15 +567,18 @@
         "emptySectionTitle": "บทความ",
         "membershipPolicy": "officialHubWorks",
         "allowUntaggedMembers": true,
-        "structureHash": "sha256-17a04c7e6e9ec4250a3777e4af982794df93e69e94a460f428d5dc754fbc4ecb"
+        "structureHash": "sha256-319dde1d54ea9d2d2c7770e20386113514c76f2e09789f3cf8a285936f7177f5"
       },
       "primaryArticles": [
         {
           "id": "scp-4514",
-          "title": "SCP-4514 - สิ่งที่ฆ่าคุณตาย",
+          "title": "สิ่งที่ฆ่าคุณตายได้",
           "url": "http://scp-th.wikidot.com/scp-4514",
+          "sourceManifest": "manifest_scp-main",
           "role": "primaryArticle",
-          "contentKind": "scp"
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "SCP-4514 จะต้องถูกเก็บเอาไว้ภายในตู้กักกันระดับ-Safe มาตรฐาน โดยจะสามารถใช้งาน SCP-4514 ได้เพียงต่อเมื่อได้รับการอนุมัติจากคณะกรรมการ O5 เท่านั้น"
         }
       ],
       "supplementLinks": [],
