@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1793793899,
-  "generatedAt": "2026-11-04T12:04:59Z",
-  "chunkRevision": "sha256-765ab15e3535750831968c01a138a15ab87b0a4fdc68582397ded7fd48810573",
+  "listVersion": 1794218595,
+  "generatedAt": "2026-11-09T10:03:15Z",
+  "chunkRevision": "sha256-955b9d5deb4524b7bb3e32515bd027910167d037a3e7c4becfa6d26379583c52",
   "builtFrom": {
     "manifests": [
       {
@@ -19,9 +19,9 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_scp-cs.json",
         "schemaVersion": 2,
-        "listVersion": 1793793838,
-        "generatedAt": "2026-11-04T12:03:58Z",
-        "contentHash": "sha256-3f843ee0acabf7340e7c5dccc0e53bb09d397362a82369a126cd3dd848b70c91"
+        "listVersion": 1794218288,
+        "generatedAt": "2026-11-09T09:58:08Z",
+        "contentHash": "sha256-fd5c60704381e8b5ea2765d8ad37b81be90eda9f6adf18742160a93fa963c678"
       },
       {
         "kind": "manifest_scp-int",
@@ -37,18 +37,18 @@
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1793793838,
-        "generatedAt": "2026-11-04T12:03:58Z",
-        "contentHash": "sha256-607a1510c9a8d16d90f30e8afff6284cd0dbf0b13b59e98e7107e968799aa7e3"
+        "listVersion": 1794218312,
+        "generatedAt": "2026-11-09T09:58:32Z",
+        "contentHash": "sha256-ce9bbf23326ed3cfe38ee3e575539d1f7d80b5f4f201c50b7ed1c05c7a2092dd"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-cs",
         "path": "DataPipeline/list/cs/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1793793838,
-        "generatedAt": "2026-11-04T12:03:58Z",
-        "contentHash": "sha256-6b3116fa5ea6a570649b1678b149f3ea556c42945dc4a249ea6507a97fc89306"
+        "listVersion": 1794218393,
+        "generatedAt": "2026-11-09T09:59:53Z",
+        "contentHash": "sha256-0aebc09b05921c7eeae5a605f921f2d2318123c2a6ff882a74b1251c553d6328"
       }
     ],
     "seedReview": {
@@ -6308,7 +6308,7 @@
         "emptySectionTitle": "Články",
         "membershipPolicy": "officialHubWorks",
         "allowUntaggedMembers": true,
-        "structureHash": "sha256-a1a6e5a347f87906c190710cc69255cd00c2bda08f4cc391345a6f2d34a22554"
+        "structureHash": "sha256-2dea704ac946f3faa76708c5a94b9027afc2a9143e899b304d7217612f1f0667"
       },
       "primaryArticles": [
         {
@@ -6437,6 +6437,16 @@
           "contentKind": "tale",
           "os": 2,
           "desc": "Název: Něco Nádherného Originál: http://scp-cs.wikidot.com/something-beautiful Autor: TopDownUnder Překladatel: DrCheems"
+        },
+        {
+          "id": "scp-5012",
+          "title": "There Is No Escape From The Bottomless Pit",
+          "url": "http://scp-cs.wikidot.com/scp-5012",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 2,
+          "desc": "[nevyřízeno] Starší Zadržovací Procedury: SCP-5012 je právním majetkem společnosti Fitzwilliam Agriculture, krycí společnosti Nadace. Byla zavedena běžná opatření proti neoprávněnému vniknutí, jenž jsou vhodná pro nízkorizikové projekty. SCP-5012 musí být udrž…"
         }
       ],
       "supplementLinks": [],
@@ -6470,7 +6480,8 @@
             "impossible-to-destroy-reptile",
             "scp-4322",
             "scp-4056",
-            "something-beautiful"
+            "something-beautiful",
+            "scp-5012"
           ]
         }
       ]
@@ -6509,9 +6520,19 @@
         "emptySectionTitle": "Články",
         "allowUntaggedMembers": true,
         "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-76a7c7a2460a80c2d9060656ef009c0092b7773cbdbd612f770db74847612ab7"
+        "structureHash": "sha256-b0815c9ffdbf0f2d61361298e6db25719a0260a28c06391c4b2e872d8f4d183e"
       },
       "primaryArticles": [
+        {
+          "id": "scp-7529",
+          "title": "[ACCESS DENIED]",
+          "url": "http://scp-cs.wikidot.com/scp-7529",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": -2,
+          "desc": "SCP-7529 byl zpočátku držen v kleci v zařízení pro zadržování zvířat na Site-333. Vzhledem k obavám Leonory Moralesové, že tato anomálie způsobuje stres u různých druhů mořských ptáků držených v tomto malém prostoru, a také kvůli stížnostem na hluk z přilehlýc…"
+        },
         {
           "id": "secure-facility-dossier-site-58",
           "title": "Dokumentace Zabezpečeného Zařízení - Oblast-58",
@@ -6684,13 +6705,6 @@
           "contentKind": "scp"
         },
         {
-          "id": "scp-7529",
-          "title": "SCP-7529 - Josie's Better Half",
-          "url": "https://scp-cs.wikidot.com/scp-7529",
-          "role": "primaryArticle",
-          "contentKind": "scp"
-        },
-        {
           "id": "scp-8004",
           "title": "SCP-8004 - The Life and Death of Vincent Bohart",
           "url": "https://scp-cs.wikidot.com/scp-8004",
@@ -6779,7 +6793,14 @@
       "description": "Umřít – spát – Spát! Možná také snít? V tomhle to vázne; o čem v tom spánku smrti můžem snít?",
       "articleSections": [
         {
-          "id": "01-hon-za-arkadii",
+          "id": "01-nejnovejsi-preklady",
+          "title": "Nejnovější překlady",
+          "articleIDs": [
+            "scp-7529"
+          ]
+        },
+        {
+          "id": "02-hon-za-arkadii",
           "title": "Hon za Arkádií",
           "articleIDs": [
             "secure-facility-dossier-site-58",
@@ -6787,28 +6808,28 @@
           ]
         },
         {
-          "id": "02-2007",
+          "id": "03-2007",
           "title": "2007",
           "articleIDs": [
             "scp-6404"
           ]
         },
         {
-          "id": "03-2022",
+          "id": "04-2022",
           "title": "2022",
           "articleIDs": [
             "scp-6103"
           ]
         },
         {
-          "id": "04-2023",
+          "id": "05-2023",
           "title": "2023",
           "articleIDs": [
             "the-squirrel"
           ]
         },
         {
-          "id": "05-2024",
+          "id": "06-2024",
           "title": "2024",
           "articleIDs": [
             "scp-7679",
@@ -6816,14 +6837,14 @@
           ]
         },
         {
-          "id": "06-2025",
+          "id": "07-2025",
           "title": "2025",
           "articleIDs": [
             "oris-proposal"
           ]
         },
         {
-          "id": "07-2028",
+          "id": "08-2028",
           "title": "2028",
           "articleIDs": [
             "scp-8585",
@@ -6831,7 +6852,7 @@
           ]
         },
         {
-          "id": "08-2023",
+          "id": "09-2023",
           "title": "2023",
           "articleIDs": [
             "scp-7373",
@@ -6839,7 +6860,7 @@
           ]
         },
         {
-          "id": "09-2027",
+          "id": "10-2027",
           "title": "2027",
           "articleIDs": [
             "scp-7999",
@@ -6847,7 +6868,7 @@
           ]
         },
         {
-          "id": "10-2027-bohove",
+          "id": "11-2027-bohove",
           "title": "2027 · Bohové",
           "articleIDs": [
             "scp-6059",
@@ -6858,7 +6879,7 @@
           ]
         },
         {
-          "id": "11-jine-pribehy",
+          "id": "12-jine-pribehy",
           "title": "Jiné příběhy",
           "articleIDs": [
             "shape-shift-with-me",
@@ -6866,7 +6887,6 @@
             "scp-7073",
             "scp-7976",
             "scp-6458",
-            "scp-7529",
             "scp-8004",
             "the-graduating-class-of-58",
             "scp-7904",
@@ -6876,7 +6896,7 @@
           ]
         },
         {
-          "id": "12-postavy",
+          "id": "13-postavy",
           "title": "Postavy",
           "articleIDs": [
             "rate-my-director",
