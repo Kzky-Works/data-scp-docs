@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1794218902,
-  "generatedAt": "2026-11-09T10:08:22Z",
-  "chunkRevision": "sha256-57a5aaea29b89e3f2aae1fb12e55ba7c80cb50f304e8ff9ef2713d11056f0249",
+  "listVersion": 1794352524,
+  "generatedAt": "2026-11-10T23:15:24Z",
+  "chunkRevision": "sha256-c79ac64fc789b9d663d94052043e30208842cda9eeefe26711d30ed48cd6f833",
   "builtFrom": {
     "manifests": [
       {
@@ -13,6 +13,15 @@
         "listVersion": 1792838806,
         "generatedAt": "2026-10-24T10:46:45Z",
         "contentHash": "sha256-071f0f6697bec3820f93a07d5f182b9a771de6b02a058ad031f713a7ee9c65b2"
+      },
+      {
+        "kind": "manifest_collection_works",
+        "branchID": "scp-tr",
+        "path": "DataPipeline/list/tr/manifest_collection_works.json",
+        "schemaVersion": 2,
+        "listVersion": 1794351158,
+        "generatedAt": "2026-11-10T22:52:38Z",
+        "contentHash": "sha256-79c38ef40d59f9aaebac9ece7d814e6257ff2b4efe98845d15c2e5d9af6598ea"
       },
       {
         "kind": "manifest_scp-int",
@@ -96,6 +105,7 @@
       "memberManifests": [
         "manifest_scp-tr",
         "manifest_tales",
+        "manifest_collection_works",
         "manifest_scp-main",
         "manifest_scp-int"
       ],
@@ -198,6 +208,7 @@
       "memberManifests": [
         "manifest_scp-tr",
         "manifest_tales",
+        "manifest_collection_works",
         "manifest_scp-main",
         "manifest_scp-int"
       ],
