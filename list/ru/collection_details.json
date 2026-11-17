@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1794824413,
-  "generatedAt": "2026-11-16T10:20:13Z",
-  "chunkRevision": "sha256-b7b258cd7528cfc117f08368b11f7beaf0840110e8aa5005a317b3f989ee0918",
+  "listVersion": 1794915307,
+  "generatedAt": "2026-11-17T11:35:07Z",
+  "chunkRevision": "sha256-060f01ae7c1c4226c43e804c0d65cfbc6b7582b35b3c6c875fcdedb97f000145",
   "builtFrom": {
     "manifests": [
       {
@@ -19,45 +19,45 @@
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1794824185,
-        "generatedAt": "2026-11-16T10:16:25Z",
-        "contentHash": "sha256-c9ae5015a5109391b489d703fdbce340c53f3ce2380d942f3d83d6b2f8f5d9e8"
+        "listVersion": 1794915233,
+        "generatedAt": "2026-11-17T11:33:53Z",
+        "contentHash": "sha256-142dfbe6a9d602d1544cacfd89a102571a26068a0f3f152f10ab07abf700e11b"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1794824091,
-        "generatedAt": "2026-11-16T10:14:51Z",
-        "contentHash": "sha256-e411a75165eb4a2d8fd0a86fc56893e71335b492e05c7ab3ff48ae3240bd740d"
+        "listVersion": 1794915233,
+        "generatedAt": "2026-11-17T11:33:53Z",
+        "contentHash": "sha256-65aebafbd717b7e894ab147f4925dd79dddb94e6399d553a1e170b409316f7ee"
       },
       {
         "kind": "manifest_scp-main",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-main.json",
         "schemaVersion": 2,
-        "listVersion": 1794824109,
-        "generatedAt": "2026-11-16T10:15:09Z",
-        "contentHash": "sha256-e55ce2f981140c3ff69a011036e9cb680794c38ee09126e5f7e0ea10248d7efa"
+        "listVersion": 1794915233,
+        "generatedAt": "2026-11-17T11:33:53Z",
+        "contentHash": "sha256-5fa4fd997ba425865742e6d0a998f82e3d40e84021b213f631634e22c7608914"
       },
       {
         "kind": "manifest_scp-ru",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_scp-ru.json",
         "schemaVersion": 2,
-        "listVersion": 1794824108,
-        "generatedAt": "2026-11-16T10:15:08Z",
-        "contentHash": "sha256-6411df1b3c711be2e062e3d3cf218dd8c9bdd56661f1e27777134b5b744795c7"
+        "listVersion": 1794915233,
+        "generatedAt": "2026-11-17T11:33:53Z",
+        "contentHash": "sha256-6047147a959fcc279424bd7fab2993c051488406609e2ca0a5f961039d7f12e2"
       },
       {
         "kind": "manifest_tales",
         "branchID": "scp-ru",
         "path": "DataPipeline/list/ru/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1794824192,
-        "generatedAt": "2026-11-16T10:16:32Z",
-        "contentHash": "sha256-edd92797b65c6a7bed9e7956a712c67f5cd3239f98eaa886072c0c816c5863da"
+        "listVersion": 1794915233,
+        "generatedAt": "2026-11-17T11:33:53Z",
+        "contentHash": "sha256-bc8bdf614e1294110ce56c993f43d466b16e4fade27115541f9c57898d8dbbdd"
       }
     ],
     "seedReview": {
@@ -80,9 +80,9 @@
       "branchID": "scp-ru",
       "path": "DataPipeline/list/ru/ru_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1794824190,
-      "generatedAt": "2026-11-16T10:16:30Z",
-      "contentHash": "sha256-e6a560b4a6e6bd9f23aaf1d5a2d558a2aa349ea5c5e0faf6a0646d59454f90f0"
+      "listVersion": 1794915233,
+      "generatedAt": "2026-11-17T11:33:53Z",
+      "contentHash": "sha256-086c0fa3019c0a70edbe6bcde1619459b655f10af94394e42d1a5032d6f42d9a"
     }
   },
   "collections": [
@@ -14420,6 +14420,34 @@
           "id": "impossible-murder",
           "title": "Невозможное убийство",
           "url": "https://scpfoundation.net/impossible-murder",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "translation:b-wylie-reviews-gato",
+          "title": "Обзор от Б. Уайли: GATO!",
+          "url": "https://scpfoundation.net/translation:b-wylie-reviews-gato",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "translation:eye-man",
+          "title": "Человек-Глаз",
+          "url": "https://scpfoundation.net/translation:eye-man",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "translation:the-halloween-watch",
+          "title": "Хэллоуинский Надзор",
+          "url": "https://scpfoundation.net/translation:the-halloween-watch",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "translation:it-s-real-i-swear",
+          "title": "Это правда, клянусь",
+          "url": "https://scpfoundation.net/translation:it-s-real-i-swear",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }

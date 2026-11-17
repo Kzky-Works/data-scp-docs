@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1794820556,
-  "generatedAt": "2026-11-16T09:15:56Z",
-  "chunkRevision": "sha256-6bee0efed1b286bbc418c58c911ee0d6880f24350f695a14024a833d62003e80",
+  "listVersion": 1794916112,
+  "generatedAt": "2026-11-17T11:48:32Z",
+  "chunkRevision": "sha256-95e586280d07d554ecb0a188e1391f48846b7c33b2758ef17fde27f603f8a6bd",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1794820529,
-        "generatedAt": "2026-11-16T09:15:28Z",
-        "contentHash": "sha256-fb67d132c4a78e05c23adce1597389c0b0e8b4a43833b1aef7c9d73825b24b51"
+        "listVersion": 1794915195,
+        "generatedAt": "2026-11-17T11:33:15Z",
+        "contentHash": "sha256-4057aa72fa4f40495f697b06a4142f82de14bff3d2b1df6bb8a6528c30404508"
       },
       {
         "kind": "manifest_collection_works",
@@ -28,9 +28,9 @@
         "branchID": "scp-wiki-en",
         "path": "DataPipeline/list/en/manifest_gois.json",
         "schemaVersion": 3,
-        "listVersion": 1794819604,
-        "generatedAt": "2026-11-16T09:00:04Z",
-        "contentHash": "sha256-b9faf3f246373f326151c7681836c1efe3ed7aecfdd8491cd142af6499af55c6"
+        "listVersion": 1794915292,
+        "generatedAt": "2026-11-17T11:34:52Z",
+        "contentHash": "sha256-14b6520b7b2c801dc7a7038590bb1ecc75169961a4c98838ff00b8d9896db534"
       },
       {
         "kind": "manifest_scp-foundation",
@@ -66,9 +66,9 @@
       "branchID": "scp-wiki-en",
       "path": "DataPipeline/list/en/en_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1793622116,
-      "generatedAt": "2026-11-02T12:21:56Z",
-      "contentHash": "sha256-0a893a9c2567b134d2b9326d72d1df14bc88218c89d1de85e810af61480d6a2b"
+      "listVersion": 1794915195,
+      "generatedAt": "2026-11-17T11:33:15Z",
+      "contentHash": "sha256-b50244bd0dc7de3d3c2533bdaff0251414861d29b763eb5c461617e492c82bb5"
     },
     "deadURLSuppressions": {
       "path": "DataPipeline/collection_seeds/collection_dead_url_suppressions.json",
@@ -7886,7 +7886,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Explore every way things can go wrong for each SCP-001 proposal. Choose random file? Virr decrypted.",
+      "description": "Explore every way things can go wrong for each SCP-001 proposal. Choose random file? Numerus decrypted.",
       "manualTagReason": "EN canon hub rows carry no hub metadata.g. Auto-derived 2026-06-21: canonical tag 'thaumiel' = hub slug form; 335 members via reverse-lookup across ['manifest_scp-foundation', 'manifest_tales']. Batch-approved method (slug=canonical, members>=3); pending per-hub spot-check.",
       "articleSections": [
         {
@@ -12384,7 +12384,7 @@
         }
       ],
       "supplementLinks": [],
-      "description": "Pick an item from the Log Of Anomalous Items , and make an interesting tale about it. A random object for you: One Good Turn Deserves Another (An AO Tale) .",
+      "description": "Pick an item from the Log Of Anomalous Items , and make an interesting tale about it. A random object for you: Tales of Anomalous Items .",
       "manualTagReason": "EN Canon/Series hub metadata is region-only; the canonical tag was verified against the current EN tag index and official hub on 2026-07-24.",
       "articleSections": [
         {
@@ -64520,6 +64520,136 @@
       ]
     },
     {
+      "id": "scp-wiki-en:collection:series:en-poor-foundation-hub",
+      "branchID": "scp-wiki-en",
+      "kind": "series",
+      "hubID": "en-poor-foundation-hub",
+      "title": "poorFoundation Hub (EN)",
+      "sourceListURL": "https://scp-wiki.wikidot.com/en-poor-foundation-hub",
+      "officialHubURL": "https://scp-wiki.wikidot.com/en-poor-foundation-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "en-poor-foundation-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "en-poor-foundation-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Native Series membership is the works the official hub lists."
+      },
+      "memberManifests": [
+        "manifest_scp-foundation",
+        "manifest_tales",
+        "manifest_collection_works"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "en_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-wiki.wikidot.com",
+          "scp-wiki.net",
+          "www.scp-wiki.net",
+          "scpwiki.com"
+        ],
+        "structureHash": "sha256-6dfcebe58536f01d8458a3aec7bb771f8f7ac870b108eeebf80a993d91df7227"
+      },
+      "primaryArticles": [
+        {
+          "id": "no-such-thing-as-a-free-lunch",
+          "title": "No Such Thing as a Free Lunch",
+          "url": "https://scp-wiki.wikidot.com/no-such-thing-as-a-free-lunch",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 34,
+          "desc": "At least there was Taco Tuesday. My author page: Cthulhu Corner \"And will that be all for you, Eddie?\" Eddie, actively spacing out, did not notice."
+        },
+        {
+          "id": "marquee-moon",
+          "title": "Marquee Moon",
+          "url": "https://scp-wiki.wikidot.com/marquee-moon",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 19,
+          "desc": "My submission for This Is My JamCon! My author page: Cthulhu Corner 8:15 PM - 4 April 2026 Eddie stood on the damp pavement outside the Three Portlands City Council. It had been raining when the Foundation delegation had arrived three days prior, and it was ra…"
+        },
+        {
+          "id": "scp-8782",
+          "title": "Dead Wood",
+          "url": "https://scp-wiki.wikidot.com/scp-8782",
+          "sourceManifest": "manifest_scp-foundation",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 35,
+          "desc": "Area Bowling has been purchased by the Foundation and closed off to the public. Following Incident 8782.10, all testing will only be conducted using personnel who have scored a perfect 300 in professional bowling."
+        },
+        {
+          "id": "scp-4321-j",
+          "title": "SCP-4321-J",
+          "url": "https://scp-wiki.wikidot.com/scp-4321-j",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "desc": "-"
+        },
+        {
+          "id": "offboarding",
+          "title": "Offboarding",
+          "url": "https://scp-wiki.wikidot.com/offboarding",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 17,
+          "desc": "Effective immediately, the Site-3 Department of Human Resources has been dissolved. Its final remaining member submitted her resignation to herself on Thursday, and approved it."
+        }
+      ],
+      "supplementLinks": [],
+      "description": "\"I think you just need to get the idea that the Foundation is prestigious out of your head. Honestly, we're lucky if it lasts another decade at most. If there were ever a time to polish a resume, it's now.\" - Dr. Edward Thompson",
+      "articleSections": [
+        {
+          "id": "01-articles",
+          "title": "Articles",
+          "articleIDs": [
+            "no-such-thing-as-a-free-lunch",
+            "marquee-moon",
+            "scp-8782",
+            "scp-4321-j",
+            "offboarding"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-wiki-en:collection:series:512-means-onwards-hub",
       "branchID": "scp-wiki-en",
       "kind": "series",
@@ -115600,136 +115730,6 @@
       ]
     },
     {
-      "id": "scp-wiki-en:collection:series:en-poor-foundation-hub",
-      "branchID": "scp-wiki-en",
-      "kind": "series",
-      "hubID": "en-poor-foundation-hub",
-      "title": "poorFoundation Hub (EN)",
-      "sourceListURL": "https://scp-wiki.wikidot.com/en-poor-foundation-hub",
-      "officialHubURL": "https://scp-wiki.wikidot.com/en-poor-foundation-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "en-poor-foundation-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "en-poor-foundation-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Native Series membership is the works the official hub lists."
-      },
-      "memberManifests": [
-        "manifest_scp-foundation",
-        "manifest_tales",
-        "manifest_collection_works"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "en_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-wiki.wikidot.com",
-          "scp-wiki.net",
-          "www.scp-wiki.net",
-          "scpwiki.com"
-        ],
-        "structureHash": "sha256-6dfcebe58536f01d8458a3aec7bb771f8f7ac870b108eeebf80a993d91df7227"
-      },
-      "primaryArticles": [
-        {
-          "id": "no-such-thing-as-a-free-lunch",
-          "title": "No Such Thing as a Free Lunch",
-          "url": "https://scp-wiki.wikidot.com/no-such-thing-as-a-free-lunch",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 34,
-          "desc": "At least there was Taco Tuesday. My author page: Cthulhu Corner \"And will that be all for you, Eddie?\" Eddie, actively spacing out, did not notice."
-        },
-        {
-          "id": "marquee-moon",
-          "title": "Marquee Moon",
-          "url": "https://scp-wiki.wikidot.com/marquee-moon",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 19,
-          "desc": "My submission for This Is My JamCon! My author page: Cthulhu Corner 8:15 PM - 4 April 2026 Eddie stood on the damp pavement outside the Three Portlands City Council. It had been raining when the Foundation delegation had arrived three days prior, and it was ra…"
-        },
-        {
-          "id": "scp-8782",
-          "title": "Dead Wood",
-          "url": "https://scp-wiki.wikidot.com/scp-8782",
-          "sourceManifest": "manifest_scp-foundation",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 35,
-          "desc": "Area Bowling has been purchased by the Foundation and closed off to the public. Following Incident 8782.10, all testing will only be conducted using personnel who have scored a perfect 300 in professional bowling."
-        },
-        {
-          "id": "scp-4321-j",
-          "title": "SCP-4321-J",
-          "url": "https://scp-wiki.wikidot.com/scp-4321-j",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "-"
-        },
-        {
-          "id": "offboarding",
-          "title": "Offboarding",
-          "url": "https://scp-wiki.wikidot.com/offboarding",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 17,
-          "desc": "Effective immediately, the Site-3 Department of Human Resources has been dissolved. Its final remaining member submitted her resignation to herself on Thursday, and approved it."
-        }
-      ],
-      "supplementLinks": [],
-      "description": "\"I think you just need to get the idea that the Foundation is prestigious out of your head. Honestly, we're lucky if it lasts another decade at most. If there were ever a time to polish a resume, it's now.\" - Dr. Edward Thompson",
-      "articleSections": [
-        {
-          "id": "01-articles",
-          "title": "Articles",
-          "articleIDs": [
-            "no-such-thing-as-a-free-lunch",
-            "marquee-moon",
-            "scp-8782",
-            "scp-4321-j",
-            "offboarding"
-          ]
-        }
-      ]
-    },
-    {
       "id": "scp-wiki-en:collection:goi:the-alcur-hospital-hub",
       "branchID": "scp-wiki-en",
       "kind": "goi",
@@ -119538,9 +119538,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-9722",
-          "title": "SCP-9722",
-          "url": "https://scp-wiki.wikidot.com/scp-9722",
+          "id": "scp-1074",
+          "title": "SCP-1074",
+          "url": "https://scp-wiki.wikidot.com/scp-1074",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -132066,13 +132066,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-6735",
-          "title": "SCP-6735",
-          "url": "https://scp-wiki.wikidot.com/scp-6735",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8120",
           "title": "SCP-8120",
           "url": "https://scp-wiki.wikidot.com/scp-8120",
@@ -132122,23 +132115,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-2500",
-          "title": "SCP-2500",
-          "url": "https://scp-wiki.wikidot.com/scp-2500",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-6614",
           "title": "SCP-6614",
           "url": "https://scp-wiki.wikidot.com/scp-6614",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-5332",
-          "title": "SCP-5332",
-          "url": "https://scp-wiki.wikidot.com/scp-5332",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -132164,13 +132143,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-3668",
-          "title": "SCP-3668",
-          "url": "https://scp-wiki.wikidot.com/scp-3668",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8343",
           "title": "SCP-8343",
           "url": "https://scp-wiki.wikidot.com/scp-8343",
@@ -132185,13 +132157,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "djoric-dmatix-proposal",
-          "title": "Djoric-Dmatix Proposal",
-          "url": "https://scp-wiki.wikidot.com/djoric-dmatix-proposal",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-6078",
           "title": "SCP-6078",
           "url": "https://scp-wiki.wikidot.com/scp-6078",
@@ -132202,6 +132167,41 @@
           "id": "scp-9120",
           "title": "SCP-9120",
           "url": "https://scp-wiki.wikidot.com/scp-9120",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8073",
+          "title": "SCP-8073",
+          "url": "https://scp-wiki.wikidot.com/scp-8073",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8899",
+          "title": "SCP-8899",
+          "url": "https://scp-wiki.wikidot.com/scp-8899",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4077",
+          "title": "SCP-4077",
+          "url": "https://scp-wiki.wikidot.com/scp-4077",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6087",
+          "title": "SCP-6087",
+          "url": "https://scp-wiki.wikidot.com/scp-6087",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7264",
+          "title": "SCP-7264",
+          "url": "https://scp-wiki.wikidot.com/scp-7264",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -135909,13 +135909,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-102",
-          "title": "SCP-102",
-          "url": "https://scp-wiki.wikidot.com/scp-102",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-6693",
           "title": "SCP-6693",
           "url": "https://scp-wiki.wikidot.com/scp-6693",
@@ -136857,6 +136850,13 @@
           "id": "scp-1738",
           "title": "SCP-1738",
           "url": "https://scp-wiki.wikidot.com/scp-1738",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8257",
+          "title": "SCP-8257",
+          "url": "https://scp-wiki.wikidot.com/scp-8257",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
@@ -146274,7 +146274,7 @@
         },
         {
           "id": "spc-1258",
-          "title": "SPC-1258: CERULEAN GLOVE",
+          "title": "SPC-1258",
           "url": "https://scp-wiki.wikidot.com/spc-1258",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
@@ -147457,7 +147457,7 @@
       "branchID": "scp-wiki-en",
       "kind": "goi",
       "hubID": "unusual-incidents-unit-hub",
-      "title": "Unusual Incidents Unit, Federal Bureau of Investigation",
+      "title": "Unusual Incidents Unit (UIU)",
       "sourceListURL": "https://scp-wiki.wikidot.com/unusual-incidents-unit-hub",
       "officialHubURL": "https://scp-wiki.wikidot.com/unusual-incidents-unit-hub",
       "hubPresentation": "standard",
@@ -148378,13 +148378,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5400",
-          "title": "SCP-5400",
-          "url": "https://scp-wiki.wikidot.com/scp-5400",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-847",
           "title": "SCP-847",
           "url": "https://scp-wiki.wikidot.com/scp-847",
@@ -148434,13 +148427,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-9110",
-          "title": "SCP-9110",
-          "url": "https://scp-wiki.wikidot.com/scp-9110",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-633",
           "title": "SCP-633",
           "url": "https://scp-wiki.wikidot.com/scp-633",
@@ -148469,27 +148455,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-285",
-          "title": "SCP-285",
-          "url": "https://scp-wiki.wikidot.com/scp-285",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-2472",
-          "title": "SCP-2472",
-          "url": "https://scp-wiki.wikidot.com/scp-2472",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3551",
-          "title": "SCP-3551",
-          "url": "https://scp-wiki.wikidot.com/scp-3551",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4654",
           "title": "SCP-4654",
           "url": "https://scp-wiki.wikidot.com/scp-4654",
@@ -148504,30 +148469,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4908",
-          "title": "SCP-4908",
-          "url": "https://scp-wiki.wikidot.com/scp-4908",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-9776",
-          "title": "SCP-9776",
-          "url": "https://scp-wiki.wikidot.com/scp-9776",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-5512",
           "title": "SCP-5512",
           "url": "https://scp-wiki.wikidot.com/scp-5512",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3535",
-          "title": "SCP-3535",
-          "url": "https://scp-wiki.wikidot.com/scp-3535",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148539,23 +148483,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-8936",
-          "title": "SCP-8936",
-          "url": "https://scp-wiki.wikidot.com/scp-8936",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8535",
           "title": "SCP-8535",
           "url": "https://scp-wiki.wikidot.com/scp-8535",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-4204",
-          "title": "SCP-4204",
-          "url": "https://scp-wiki.wikidot.com/scp-4204",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148581,30 +148511,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-1514",
-          "title": "SCP-1514",
-          "url": "https://scp-wiki.wikidot.com/scp-1514",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-6126",
-          "title": "SCP-6126",
-          "url": "https://scp-wiki.wikidot.com/scp-6126",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8477",
           "title": "SCP-8477",
           "url": "https://scp-wiki.wikidot.com/scp-8477",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3256",
-          "title": "SCP-3256",
-          "url": "https://scp-wiki.wikidot.com/scp-3256",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148626,20 +148535,6 @@
           "id": "scp-8734",
           "title": "SCP-8734",
           "url": "https://scp-wiki.wikidot.com/scp-8734",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-7993",
-          "title": "SCP-7993",
-          "url": "https://scp-wiki.wikidot.com/scp-7993",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-019-j",
-          "title": "SCP-019-J",
-          "url": "https://scp-wiki.wikidot.com/scp-019-j",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148672,13 +148567,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4256",
-          "title": "SCP-4256",
-          "url": "https://scp-wiki.wikidot.com/scp-4256",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-4665",
           "title": "SCP-4665",
           "url": "https://scp-wiki.wikidot.com/scp-4665",
@@ -148696,13 +148584,6 @@
           "id": "scp-8676",
           "title": "SCP-8676",
           "url": "https://scp-wiki.wikidot.com/scp-8676",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-5335",
-          "title": "SCP-5335",
-          "url": "https://scp-wiki.wikidot.com/scp-5335",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148735,30 +148616,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-3127",
-          "title": "SCP-3127",
-          "url": "https://scp-wiki.wikidot.com/scp-3127",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-8944",
-          "title": "SCP-8944",
-          "url": "https://scp-wiki.wikidot.com/scp-8944",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-2972",
           "title": "SCP-2972",
           "url": "https://scp-wiki.wikidot.com/scp-2972",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3250",
-          "title": "SCP-3250",
-          "url": "https://scp-wiki.wikidot.com/scp-3250",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148770,13 +148630,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-4058",
-          "title": "SCP-4058",
-          "url": "https://scp-wiki.wikidot.com/scp-4058",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-3742",
           "title": "SCP-3742",
           "url": "https://scp-wiki.wikidot.com/scp-3742",
@@ -148784,23 +148637,9 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-5442",
-          "title": "SCP-5442",
-          "url": "https://scp-wiki.wikidot.com/scp-5442",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-5487",
           "title": "SCP-5487",
           "url": "https://scp-wiki.wikidot.com/scp-5487",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
-          "id": "scp-3935",
-          "title": "SCP-3935",
-          "url": "https://scp-wiki.wikidot.com/scp-3935",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         },
@@ -148840,13 +148679,6 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-8320",
-          "title": "SCP-8320",
-          "url": "https://scp-wiki.wikidot.com/scp-8320",
-          "sourceManifest": "manifest_gois",
-          "role": "primaryArticle"
-        },
-        {
           "id": "scp-8514",
           "title": "SCP-8514",
           "url": "https://scp-wiki.wikidot.com/scp-8514",
@@ -148854,9 +148686,177 @@
           "role": "primaryArticle"
         },
         {
-          "id": "scp-9643",
-          "title": "SCP-9643",
-          "url": "https://scp-wiki.wikidot.com/scp-9643",
+          "id": "scp-2610",
+          "title": "SCP-2610",
+          "url": "https://scp-wiki.wikidot.com/scp-2610",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6828",
+          "title": "SCP-6828",
+          "url": "https://scp-wiki.wikidot.com/scp-6828",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2854",
+          "title": "SCP-2854",
+          "url": "https://scp-wiki.wikidot.com/scp-2854",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9444",
+          "title": "SCP-9444",
+          "url": "https://scp-wiki.wikidot.com/scp-9444",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1949-ex",
+          "title": "SCP-1949-EX",
+          "url": "https://scp-wiki.wikidot.com/scp-1949-ex",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "twistedgears-kaktus-proposal",
+          "title": "TwistedGears-Kaktus Proposal",
+          "url": "https://scp-wiki.wikidot.com/twistedgears-kaktus-proposal",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4871",
+          "title": "SCP-4871",
+          "url": "https://scp-wiki.wikidot.com/scp-4871",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-4506",
+          "title": "SCP-4506",
+          "url": "https://scp-wiki.wikidot.com/scp-4506",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-1862",
+          "title": "SCP-1862",
+          "url": "https://scp-wiki.wikidot.com/scp-1862",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scantron-s-proposal",
+          "title": "Scantron's Proposal",
+          "url": "https://scp-wiki.wikidot.com/scantron-s-proposal",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5728",
+          "title": "SCP-5728",
+          "url": "https://scp-wiki.wikidot.com/scp-5728",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-935",
+          "title": "SCP-935",
+          "url": "https://scp-wiki.wikidot.com/scp-935",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5685",
+          "title": "SCP-5685",
+          "url": "https://scp-wiki.wikidot.com/scp-5685",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-8507",
+          "title": "SCP-8507",
+          "url": "https://scp-wiki.wikidot.com/scp-8507",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9639",
+          "title": "SCP-9639",
+          "url": "https://scp-wiki.wikidot.com/scp-9639",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5460",
+          "title": "SCP-5460",
+          "url": "https://scp-wiki.wikidot.com/scp-5460",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5082",
+          "title": "SCP-5082",
+          "url": "https://scp-wiki.wikidot.com/scp-5082",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9098",
+          "title": "SCP-9098",
+          "url": "https://scp-wiki.wikidot.com/scp-9098",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-2600",
+          "title": "SCP-2600",
+          "url": "https://scp-wiki.wikidot.com/scp-2600",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-9999-j",
+          "title": "SCP-9999-J",
+          "url": "https://scp-wiki.wikidot.com/scp-9999-j",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6644",
+          "title": "SCP-6644",
+          "url": "https://scp-wiki.wikidot.com/scp-6644",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-6795",
+          "title": "SCP-6795",
+          "url": "https://scp-wiki.wikidot.com/scp-6795",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-3231",
+          "title": "SCP-3231",
+          "url": "https://scp-wiki.wikidot.com/scp-3231",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-5141",
+          "title": "SCP-5141",
+          "url": "https://scp-wiki.wikidot.com/scp-5141",
+          "sourceManifest": "manifest_gois",
+          "role": "primaryArticle"
+        },
+        {
+          "id": "scp-7423",
+          "title": "SCP-7423",
+          "url": "https://scp-wiki.wikidot.com/scp-7423",
           "sourceManifest": "manifest_gois",
           "role": "primaryArticle"
         }
