@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1794352524,
-  "generatedAt": "2026-11-10T23:15:24Z",
-  "chunkRevision": "sha256-c52915b8ceed3a50368a8da399ee0e899a5f8e5babfd79bfa8538e9a2fc1d0cc",
+  "listVersion": 1795344541,
+  "generatedAt": "2026-11-22T10:49:01Z",
+  "chunkRevision": "sha256-8b4e859272d4c9512f165ca5ba85ede01f5a5f2a000617e7df0445d0058d016b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-vn",
         "path": "DataPipeline/list/vn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1793265734,
-        "generatedAt": "2026-10-29T09:22:14Z",
-        "contentHash": "sha256-55c9a3eee596a6810912f9b1f28f4a6ee798ceb687ad35cf0f41a89e0978bae6"
+        "listVersion": 1795344416,
+        "generatedAt": "2026-11-22T10:46:56Z",
+        "contentHash": "sha256-2172e2063ec0e18eb936c8240bc58a0122891daa248da6f140bb7125fec08eeb"
       },
       {
         "kind": "manifest_collection_works",
@@ -10927,159 +10927,6 @@
       ]
     },
     {
-      "id": "scp-vn:collection:series:murphy-law-hub",
-      "branchID": "scp-vn",
-      "kind": "series",
-      "hubID": "murphy-law-hub",
-      "title": "Murphy Law góp mặt trong... Trang Hub Về Murphy Law!",
-      "sourceListURL": "https://scp-vn.wikidot.com/murphy-law-hub",
-      "officialHubURL": "https://scp-vn.wikidot.com/murphy-law-hub",
-      "hubPresentation": "standard",
-      "canonicalTag": "murphy-law-hub",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "murphy-law-hub",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-vn",
-        "manifest_tales",
-        "manifest_collection_works",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "vn_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-vn.wikidot.com"
-        ],
-        "structureHash": "sha256-2c28600f829d3685208e90831c95b0912e3a747f8ce84a8e5b45ce9432574507"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-423",
-          "title": "Nhân Vật Tự Chèn Bản Thân",
-          "url": "https://scp-vn.wikidot.com/scp-423",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 7,
-          "desc": "SCP-423 được quản thúc trong một căn phòng rộng 5 x 5 mét có chứa ba (3) giá sách có kích thước 2 x 3 mét. Một máy đốt rác phải được đặt ở gần đó. Mọi nhân sự bước vào hoặc rời khỏi căn phòng phải được khám xét để tìm các vật dụng có thể viết lên được. Mọi vật…"
-        },
-        {
-          "id": "scp-3043",
-          "title": "Murphy Law góp mặt trong… Gõ 3043 — ĐỂ SÁT HẠI!",
-          "url": "https://scp-vn.wikidot.com/scp-3043",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 5,
-          "desc": "SCP-3043 được đặt trong một tủ khóa bảo mật tại Điểm. Yêu cầu Thẩm quyền Cấp 3 để truy cập."
-        },
-        {
-          "id": "scp-3143",
-          "title": "Murphy Law góp mặt trong… Tổ Chức Luôn Gọi Lần Hai!",
-          "url": "https://scp-vn.wikidot.com/scp-3143",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 11,
-          "desc": "Tổ Chức hiện vẫn đang trong quá trình thực hiện các nỗ lực nhằm quản thúc SCP-3143. Trí tuệ nhân tạo được vận hành bởi Tổ Chức (I/O-ISMETA) có nhiệm vụ giám sát những cộng đồng viễn tưởng trên không gian mạng nhằm phát hiện dị thể. Trong trường hợp phát hiện d…"
-        },
-        {
-          "id": "never-metafictional-character-i-liked",
-          "title": "Không Bao Giờ Là Kiểu Nhân Vật Siêu Hình Viễn Tưởng Mà Tôi Không Thích",
-          "url": "https://scp-vn.wikidot.com/never-metafictional-character-i-liked",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 6,
-          "desc": "\"Vậy là, tôi không nghĩ chuyện này — à, chà, dựa theo kết quả làm việc gần đây của ông — tôi không nghĩ ông còn có tiếp tục với công việc nữa.\""
-        },
-        {
-          "id": "scp-2747",
-          "title": "Dưới sao, trên vậy",
-          "url": "https://scp-vn.wikidot.com/scp-2747",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 9,
-          "desc": "Thuật toán giám sát của Tổ Chức phải điều hành internet và các phương tiện in ấn nhằm tìm kiếm các đề cập liên quan tới SCP-2747. Tất cả các trường hợp phù hợp phải được gắn thẻ và chuyển tiếp đến Phòng Ban Phân Tích, nơi sẽ xác thực về sự xuất hiện của SCP-27…"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "Hắn là canon mà Tổ Chức đáng được sở hữu, nhưng chưa phải cái mà chúng ta cần lúc này. Nên ta sẽ lùng bắt hắn. Vì hắn có thể vượt qua toàn bộ. Vì hắn không phải canon của chúng ta. Hắn là một hộ vệ thầm lặng — một người bảo hộ cẩn trọng… …một đêm giông tố tối đen như mực. — Đặc vụ Frederick",
-      "articleSections": [
-        {
-          "id": "01-moi-no-luc-chinh-sua-trai-phep-nhung-tep-duoi-ay-se-uoc-ghi-lai-va-chiu-loi-phan-nan-cua-toi-tren-blog-ca-nhan-cua-minh",
-          "title": "MỌI NỖ LỰC CHỈNH SỬA TRÁI PHÉP NHỮNG TỆP DƯỚI ĐÂY SẼ ĐƯỢC GHI LẠI VÀ CHỊU LỜI PHÀN NÀN CỦA TÔI TRÊN BLOG CÁ NHÂN CỦA MÌNH",
-          "articleIDs": [
-            "scp-423"
-          ]
-        },
-        {
-          "id": "02-chang-co-canon-nao-ca",
-          "title": "Chẳng Có Canon Nào Cả",
-          "articleIDs": [
-            "scp-3043",
-            "scp-3143",
-            "never-metafictional-character-i-liked"
-          ]
-        },
-        {
-          "id": "03-tai-lieu-co-lien-quan",
-          "title": "Tài Liệu Có Liên Quan",
-          "articleIDs": [
-            "scp-2747"
-          ]
-        }
-      ],
-      "suppressedDeadURLs": [
-        {
-          "url": "http://scp-vn.wikidot.com/operation-overmeta",
-          "statuses": [
-            404,
-            404
-          ],
-          "reason": "Confirmed dead branch-local Series member link"
-        }
-      ]
-    },
-    {
       "id": "scp-vn:collection:series:admonition",
       "branchID": "scp-vn",
       "kind": "series",
@@ -12281,6 +12128,159 @@
           "articleIDs": [
             "scp-031-vn"
           ]
+        }
+      ]
+    },
+    {
+      "id": "scp-vn:collection:series:murphy-law-hub",
+      "branchID": "scp-vn",
+      "kind": "series",
+      "hubID": "murphy-law-hub",
+      "title": "Murphy Law góp mặt trong... Trang Hub Về Murphy Law!",
+      "sourceListURL": "https://scp-vn.wikidot.com/murphy-law-hub",
+      "officialHubURL": "https://scp-vn.wikidot.com/murphy-law-hub",
+      "hubPresentation": "standard",
+      "canonicalTag": "murphy-law-hub",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "murphy-law-hub",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_collection_works",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-vn.wikidot.com"
+        ],
+        "structureHash": "sha256-2c28600f829d3685208e90831c95b0912e3a747f8ce84a8e5b45ce9432574507"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-423",
+          "title": "Nhân Vật Tự Chèn Bản Thân",
+          "url": "https://scp-vn.wikidot.com/scp-423",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 7,
+          "desc": "SCP-423 được quản thúc trong một căn phòng rộng 5 x 5 mét có chứa ba (3) giá sách có kích thước 2 x 3 mét. Một máy đốt rác phải được đặt ở gần đó. Mọi nhân sự bước vào hoặc rời khỏi căn phòng phải được khám xét để tìm các vật dụng có thể viết lên được. Mọi vật…"
+        },
+        {
+          "id": "scp-3043",
+          "title": "Murphy Law góp mặt trong… Gõ 3043 — ĐỂ SÁT HẠI!",
+          "url": "https://scp-vn.wikidot.com/scp-3043",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 5,
+          "desc": "SCP-3043 được đặt trong một tủ khóa bảo mật tại Điểm. Yêu cầu Thẩm quyền Cấp 3 để truy cập."
+        },
+        {
+          "id": "scp-3143",
+          "title": "Murphy Law góp mặt trong… Tổ Chức Luôn Gọi Lần Hai!",
+          "url": "https://scp-vn.wikidot.com/scp-3143",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 11,
+          "desc": "Tổ Chức hiện vẫn đang trong quá trình thực hiện các nỗ lực nhằm quản thúc SCP-3143. Trí tuệ nhân tạo được vận hành bởi Tổ Chức (I/O-ISMETA) có nhiệm vụ giám sát những cộng đồng viễn tưởng trên không gian mạng nhằm phát hiện dị thể. Trong trường hợp phát hiện d…"
+        },
+        {
+          "id": "never-metafictional-character-i-liked",
+          "title": "Không Bao Giờ Là Kiểu Nhân Vật Siêu Hình Viễn Tưởng Mà Tôi Không Thích",
+          "url": "https://scp-vn.wikidot.com/never-metafictional-character-i-liked",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "\"Vậy là, tôi không nghĩ chuyện này — à, chà, dựa theo kết quả làm việc gần đây của ông — tôi không nghĩ ông còn có tiếp tục với công việc nữa.\""
+        },
+        {
+          "id": "scp-2747",
+          "title": "Dưới sao, trên vậy",
+          "url": "https://scp-vn.wikidot.com/scp-2747",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 9,
+          "desc": "Thuật toán giám sát của Tổ Chức phải điều hành internet và các phương tiện in ấn nhằm tìm kiếm các đề cập liên quan tới SCP-2747. Tất cả các trường hợp phù hợp phải được gắn thẻ và chuyển tiếp đến Phòng Ban Phân Tích, nơi sẽ xác thực về sự xuất hiện của SCP-27…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "Hắn là canon mà Tổ Chức đáng được sở hữu, nhưng chưa phải cái mà chúng ta cần lúc này. Nên ta sẽ lùng bắt hắn. Vì hắn có thể vượt qua toàn bộ. Vì hắn không phải canon của chúng ta. Hắn là một hộ vệ thầm lặng — một người bảo hộ cẩn trọng… …một đêm giông tố tối đen như mực. — Đặc vụ Frederick",
+      "articleSections": [
+        {
+          "id": "01-moi-no-luc-chinh-sua-trai-phep-nhung-tep-duoi-ay-se-uoc-ghi-lai-va-chiu-loi-phan-nan-cua-toi-tren-blog-ca-nhan-cua-minh",
+          "title": "MỌI NỖ LỰC CHỈNH SỬA TRÁI PHÉP NHỮNG TỆP DƯỚI ĐÂY SẼ ĐƯỢC GHI LẠI VÀ CHỊU LỜI PHÀN NÀN CỦA TÔI TRÊN BLOG CÁ NHÂN CỦA MÌNH",
+          "articleIDs": [
+            "scp-423"
+          ]
+        },
+        {
+          "id": "02-chang-co-canon-nao-ca",
+          "title": "Chẳng Có Canon Nào Cả",
+          "articleIDs": [
+            "scp-3043",
+            "scp-3143",
+            "never-metafictional-character-i-liked"
+          ]
+        },
+        {
+          "id": "03-tai-lieu-co-lien-quan",
+          "title": "Tài Liệu Có Liên Quan",
+          "articleIDs": [
+            "scp-2747"
+          ]
+        }
+      ],
+      "suppressedDeadURLs": [
+        {
+          "url": "http://scp-vn.wikidot.com/operation-overmeta",
+          "statuses": [
+            404,
+            404
+          ],
+          "reason": "Confirmed dead branch-local Series member link"
         }
       ]
     },
