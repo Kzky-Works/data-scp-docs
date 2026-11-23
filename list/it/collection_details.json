@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1794915976,
-  "generatedAt": "2026-11-17T11:46:16Z",
-  "chunkRevision": "sha256-0237337bd9d7078d2ee48e7acb554eabaa713d680bde8d18e1aa1132a7009eea",
+  "listVersion": 1795430016,
+  "generatedAt": "2026-11-23T10:33:36Z",
+  "chunkRevision": "sha256-76efb7b73e4779355c5ba29101030355089309df0c3487aa2dc018397956540e",
   "builtFrom": {
     "manifests": [
       {
@@ -19,27 +19,27 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_collection_works.json",
         "schemaVersion": 2,
-        "listVersion": 1794347899,
-        "generatedAt": "2026-11-10T21:58:19Z",
-        "contentHash": "sha256-7c50981ce20c5956e8b3b4b47903be685e2c71455f8e3259e8e1fc5483a7729c"
+        "listVersion": 1795429756,
+        "generatedAt": "2026-11-23T10:29:16Z",
+        "contentHash": "sha256-89c80db16acbca27ae3f21fc1ca1bd95571e91f77c8c3c91ed6b169f8abacf4c"
       },
       {
         "kind": "manifest_scp-int",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-int.json",
         "schemaVersion": 2,
-        "listVersion": 1794216695,
-        "generatedAt": "2026-11-09T09:31:35Z",
-        "contentHash": "sha256-90562842eaa87f6a0ed4ccae2390e2e8fda3857237d981d21be71c9f48deebe1"
+        "listVersion": 1795429870,
+        "generatedAt": "2026-11-23T10:31:10Z",
+        "contentHash": "sha256-08da95ddbb30a9c2f08acf0f978a5ba1b01b4b199c3b01a9d79f7344eb56c1e2"
       },
       {
         "kind": "manifest_scp-it",
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_scp-it.json",
         "schemaVersion": 2,
-        "listVersion": 1794216454,
-        "generatedAt": "2026-11-09T09:27:34Z",
-        "contentHash": "sha256-bf9ba1fd5585ddcb95b57d14571609d7f7a05f844bfa31bbb61f87a0b58b1f0b"
+        "listVersion": 1795429587,
+        "generatedAt": "2026-11-23T10:26:27Z",
+        "contentHash": "sha256-2705052163fcb954e4ec2cdbb665b099a6b37dfc8f7d11ee5727fe4768e7da79"
       },
       {
         "kind": "manifest_scp-main",
@@ -55,9 +55,9 @@
         "branchID": "scp-it",
         "path": "DataPipeline/list/it/manifest_tales.json",
         "schemaVersion": 2,
-        "listVersion": 1794216515,
-        "generatedAt": "2026-11-09T09:28:35Z",
-        "contentHash": "sha256-64d4186b02f8900ba3e3f6e363cca81a7cb9b687c7a52536de290ce347816648"
+        "listVersion": 1795429655,
+        "generatedAt": "2026-11-23T10:27:35Z",
+        "contentHash": "sha256-c535974ba2f568c6bd7a8d46f3e48bcfc6f76350a5a3677afd2c4afa19819052"
       }
     ],
     "seedReview": {
@@ -75,9 +75,9 @@
       "branchID": "scp-it",
       "path": "DataPipeline/list/it/it_tag.json",
       "schemaVersion": 2,
-      "listVersion": 1794915623,
-      "generatedAt": "2026-11-17T11:40:23Z",
-      "contentHash": "sha256-ce43c2f4d6f3d9df09b16043fc835f42992c5833cb6fd3f6f24ca9c87c039303"
+      "listVersion": 1795429655,
+      "generatedAt": "2026-11-23T10:27:35Z",
+      "contentHash": "sha256-2b17f0de81eb54947be930a4345aa56ea9ae3f52bf23384479adb67337f29b71"
     }
   },
   "collections": [
@@ -3578,47 +3578,58 @@
         ],
         "sourceNoDescription": "The official index gives this Canon only a heading over its works, with no synopsis.",
         "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-afe34610fa3b937bf68a0bec3d9afba20c733934328740561ac74d4134e93951"
+        "structureHash": "sha256-dc6fabdf09fd57be95a319ef7967b7d8d2d38f6e07cbf58aa16a8aa49b5637d0"
       },
       "primaryArticles": [
         {
           "id": "ultimo-in-vita",
           "title": "Sogno ancora di rimanere l'ultimo in vita",
           "url": "http://fondazionescp.wikidot.com/ultimo-in-vita",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
+          "os": 16,
           "desc": "L'apocalisse è arrivata, l'ordine costituito distrutto. SCP-049-IT ha tutta la sicurezza di cui ha bisogno per venire sfruttato."
         },
         {
           "id": "un-ultimo-saluto",
           "title": "Un ultimo saluto",
           "url": "http://fondazionescp.wikidot.com/un-ultimo-saluto",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 11,
+          "desc": "Il Sito Plutone era stato completamente sgomberato. L’apparenza tetra di quelle sale, un tempo familiari, incupivano l’animo di Andrea. Non pensava che sarebbe mai riuscito a rimettere piede dentro a quel posto, che era stato per lungo tempo come una seconda c…"
         },
         {
           "id": "vittoria-di-pirro",
-          "title": "Vittoria di Pirro",
+          "title": "Vittoria Di Pirro",
           "url": "http://fondazionescp.wikidot.com/vittoria-di-pirro",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Le anomalie del Sito Vittoria sono quasi nella loro interezza affette dal morbo che ha causato la fine del mondo. Il direttore farà la cosa giusta per salvaguardare quello che ha di più caro."
+          "os": 7,
+          "desc": "\"Le anomalie del Sito Vittoria sono quasi nella loro interezza infette\". Questo era il pensiero fisso nella mente del direttore Edoardo Pirro mentre osservava sul monitor i segnali dei rivelatori termici, sviluppati dalla sua migliore équipe e installati all'e…"
         },
         {
           "id": "l-ultimo-della-linea-15",
           "title": "L'ultimo della Linea 15",
           "url": "http://fondazionescp.wikidot.com/l-ultimo-della-linea-15",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Il tram è della Serie 4900, hanno tre vagoni. E se c'è una possibilità che anche solo uno di quei vagoni sia pieno anche solo a metà di cibo, non mi convincerai a non provarci."
+          "os": 6,
+          "desc": "Autore: Doctor Fulgrim Ringraziamenti: Non ho spesso occasione di scrivere horror ma sono comunque contento di essermi cimentato in questa scrittura per il contest di Halloween 2024! Ovviamente c'è da ringraziare un po' di gente! Gli approvatori Heck_Tech, the…"
         },
         {
           "id": "sette-rintocchi",
           "title": "Sette Rintocchi",
           "url": "http://fondazionescp.wikidot.com/sette-rintocchi",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "La processione oggi passa dal Laterano."
+          "os": 6,
+          "desc": "Albeggia. Alcuni spiragli di luce entrano dal tetto, dentro alla soffitta. Umida, puzzolente e sporca, è divenuta una seconda casa per i condomini del palazzo della scala 3. O almeno, per quelli che ancora sono rimasti in vita. Più accogliente delle loro case…"
         }
       ],
       "supplementLinks": [],
@@ -3675,7 +3686,7 @@
         ],
         "sourceNoDescription": "The official index gives this Canon only a heading over its works, with no synopsis.",
         "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-9113839d88dafb4f5274adb5f150e3691e3b0891d553bd918e687f52296757e3"
+        "structureHash": "sha256-805c48eceb918a31af83434377b7b098e8690b3c20c0229d1f68c2692963502c"
       },
       "primaryArticles": [
         {
@@ -3690,33 +3701,41 @@
           "id": "eredi",
           "title": "Eredi",
           "url": "http://fondazionescp.wikidot.com/eredi",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "\"Spero tu abbia buone ragioni per tornare trent’anni dopo come se niente fosse!\""
+          "os": 6,
+          "desc": "Adoro il crepuscolo, soprattutto durante l’estate. Sono andato al porto per vederlo, e soprattutto per scattare foto da guardare a casa. Abbiamo stabilizzato la questione degli adepti e fra qualche giorno, se va tutto bene, dovremmo tornare indietro. Mi mancan…"
         },
         {
           "id": "epilogo-di-un-assassino",
           "title": "Epilogo di un assassino",
           "url": "http://fondazionescp.wikidot.com/epilogo-di-un-assassino",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Mero lavoro."
+          "os": 4,
+          "desc": "\"Per morire completamente, una persona non deve solo dimenticare ma essere dimenticata, e chi non viene dimenticato non è morto.\""
         },
         {
           "id": "gian-galeazzo",
           "title": "Gian Galeazzo",
           "url": "http://fondazionescp.wikidot.com/gian-galeazzo",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "\"Non ti ho mai dimenticato\""
+          "os": 6,
+          "desc": "Mise la valigia sui ripiani e si sedette sul posto che gli era stato assegnato, l'11B. Intorno a lui, i passeggeri si agitavano, maneggiando enormi bagagli, cercando i posti loro assegnati, parlando ad alta voce. Li guardava fare, divertito. Diede un’occhiata…"
         },
         {
           "id": "il-peso-delle-responsabilita",
           "title": "Il peso delle responsabilità",
           "url": "http://fondazionescp.wikidot.com/il-peso-delle-responsabilita",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "\"Italia, mi sono occupato di te e di Alyssa per anni; so quando non state bene.\""
+          "os": 3,
+          "desc": "Accendo la luce e guardo lo specchio di fronte a me. Mi ci avvicino e tolgo la maglietta prima di mettermi di profilo e respirare profondamente, gli occhi chiusi. Devo rimanere calma."
         },
         {
           "id": "dossier-del-sito-deus",
@@ -3738,8 +3757,11 @@
           "id": "vedete-da-lassu",
           "title": "Vedete da Lassù",
           "url": "http://fondazionescp.wikidot.com/vedete-da-lassu",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
-          "contentKind": "tale"
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "L'ufficiale Amilde marciava in avanscoperta con il favore delle tenebre e della sua vista capace di fenderle. La sua figura era esile ed il suo passo silenzioso e, per quanto camminasse nel territorio dove era nata e cresciuta, non poteva in nessun modo abbass…"
         }
       ],
       "supplementLinks": [],
@@ -3861,16 +3883,18 @@
         ],
         "sourceNoDescription": "The official index gives this Canon only a heading over its works, with no synopsis.",
         "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-b27087c1b9def76ecc3893d7985478d0581451272488391484658e7454119d5c"
+        "structureHash": "sha256-b7929b1d22bc3362b36700ce2a427b42f987173a666e12dab1e7b07a6fd3aadb"
       },
       "primaryArticles": [
         {
           "id": "cenobirma",
-          "title": "SCP-IT-003—EP.01—Cenobirma Irma",
+          "title": "\\\\\\ SCP-IT-003 \\\\\\\\\\\\\\\\\\ EP.01 \\\\\\ Cenobirma Irma \\\\\\",
           "url": "http://fondazionescp.wikidot.com/cenobirma",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
-          "contentKind": "scp",
-          "desc": "Tante pratiche da sbrigare, sonno arretrato, un trauma cranico. Cosa sono il tempo, l'esistenza e la persistenza della realtà stessa per una stakanovista, se non una mera distrazione dai suoi altri e più importanti incarichi?"
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "\"Cazzo. Cazzo!\", gridò Irma, svegliandosi di colpo e scollando la guancia dal faldone aperto. Cercò il polso che indossava l’orologio: erano le undici passate."
         },
         {
           "id": "scp-it-003",
@@ -4078,16 +4102,18 @@
         ],
         "sourceNoDescription": "The official index gives this Canon only a heading over its works, with no synopsis.",
         "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-bb2e2c8a75e362c98bef4ffe1a3cf8d67dd3f10b5a9823cf8b73ac0a6b3b27fb"
+        "structureHash": "sha256-7f88c139676133fe1bbfb45eb960c844bd3f97f7d3dcff270c23b1494c116d1d"
       },
       "primaryArticles": [
         {
           "id": "vedi-napoli-e-poi-muori",
           "title": "Vedi Napoli e poi Muori",
           "url": "http://fondazionescp.wikidot.com/vedi-napoli-e-poi-muori",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Le ultime ore della Partenopea."
+          "os": 21,
+          "desc": "\"Per finire, la struttura è stata restaurata nella metà del 1900. Ora, se volete seguir-\" Queste furono le ultime parole che Mauro sentì, un attimo prima che la sua guida crollasse al suolo, insieme al resto del suo gruppo. Normalmente sarebbe corso immediatam…"
         },
         {
           "id": "quando-napoli-piange-firenze-ride",
@@ -4101,9 +4127,11 @@
           "id": "addio-roma-addio-napoli",
           "title": "Addio Roma, addio Napoli",
           "url": "http://fondazionescp.wikidot.com/addio-roma-addio-napoli",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "La sua rabbia si spense come un fuoco di paglia. Rimase solo la tristezza. Nemmeno lui sapeva più che fare."
+          "os": 11,
+          "desc": "Il Primo Sovrintendente spense lo schermo del trasmettitore video posto di fronte a lui nella sala riunioni del Sito Virtus. Il filmato che aveva appena visto in tempo reale dopo la segnalazione di una delle tante cimici di sicurezza, lo aveva sia turbato che…"
         },
         {
           "id": "tutto-il-mondo-e-paese",
@@ -4170,7 +4198,7 @@
         ],
         "sourceNoDescription": "The official index gives this Canon only a heading over its works, with no synopsis.",
         "membershipPolicy": "officialHubWorks",
-        "structureHash": "sha256-18db5fd596ce3e43427d477dee8adc318b087812d176b54a85479810ab0473e7"
+        "structureHash": "sha256-1fed2766a31d23c1fd5b54cdfe4d1978e1ad2c795b0652eed5ecbe541bb3cdbe"
       },
       "primaryArticles": [
         {
@@ -4221,11 +4249,13 @@
         },
         {
           "id": "incidente-vela-cuore-d-inchiostro",
-          "title": "Incidente Vela / Cuore d'Inchiostro",
+          "title": "Incidente V3L4 / Cuore d'Inchiostro",
           "url": "http://fondazionescp.wikidot.com/incidente-vela-cuore-d-inchiostro",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Anche le anomalie possono avere un cuore."
+          "os": 12,
+          "desc": "Ringraziamenti: Ringrazio per le recensioni sul forum: DrMeleda, Dr Zeno, Ardi0177 does not match any existing user name, Lo_Dev, Dottor H Echo, Ximon e ThatGuyRichard. E tutti quelli che, direttamente o indirettamente, hanno contribuito a dare forma al mio te…"
         },
         {
           "id": "pluet-ignem",
@@ -4239,25 +4269,31 @@
           "id": "secondo-vi-odia-ma-dal-profondo-del-cuore",
           "title": "Secondo Vi Odia, ma dal Profondo del Cuore",
           "url": "http://fondazionescp.wikidot.com/secondo-vi-odia-ma-dal-profondo-del-cuore",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "\"Benvenuti all'Inferno\"."
+          "os": 10,
+          "desc": "Benvenuti all'Inferno, brutte merde. Se pensate che esista solo la Beretta o la Glock, potete benissimo tornare sul marciapiede da dove stavate battendo per pagarvi la vostra dose di cocaina! In questa riunione vedrete tutti i nuovi equipaggiamenti: abbiamo sp…"
         },
         {
           "id": "sul-tetto-del-mondo",
-          "title": "Sul Tetto del Mondo",
+          "title": "Sul Tetto Del Mondo",
           "url": "http://fondazionescp.wikidot.com/sul-tetto-del-mondo",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Talvolta, la gente si acceca perché vuole il buio."
+          "os": 9,
+          "desc": "Racconto: Sul Tetto del Mondo Autore: Siddartha Alonne Ringraziamenti: Ci tengo a ringraziare tutte le persone che hanno reso possibile la pubblicazione di questo articolo: Mainardo (doppiamente, una volta per l'approvazione e l'altra per il via libera), Astro…"
         },
         {
           "id": "trovare-un-confine",
           "title": "Trovare un Confine",
           "url": "http://fondazionescp.wikidot.com/trovare-un-confine",
+          "sourceManifest": "manifest_collection_works",
           "role": "primaryArticle",
           "contentKind": "tale",
-          "desc": "Non c'è più differenza tra uomo e macchina. Dobbiamo recuperare la nostra identità. Dobbiamo difenderci. Dobbiamo ."
+          "os": 16,
+          "desc": "Cari colleghi Sovrintendenti Oggi devo sottoporvi una delicatissima questione. Ora, come ben saprete, la Fondazione è sempre stata in possesso di una tecnologia robotica notevolmente superiore grazie alle anomalie in suo possesso. E abbiamo affrontato sfide et…"
         }
       ],
       "supplementLinks": [],
