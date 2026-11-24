@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "listVersion": 1795431173,
-  "generatedAt": "2026-11-23T10:52:53Z",
-  "chunkRevision": "sha256-ef7c6237228027af1c57605cd0439ff4815673cdd379bd1de49227a2c37bd633",
+  "listVersion": 1795526468,
+  "generatedAt": "2026-11-24T13:21:08Z",
+  "chunkRevision": "sha256-4c3600d4c4a2157cc2a8f12cff55cde869fb3514f7bc02d12658611e0b44d99b",
   "builtFrom": {
     "manifests": [
       {
@@ -10,9 +10,9 @@
         "branchID": "scp-vn",
         "path": "DataPipeline/list/vn/manifest_canons.json",
         "schemaVersion": 2,
-        "listVersion": 1795431157,
-        "generatedAt": "2026-11-23T10:52:36Z",
-        "contentHash": "sha256-902be5501b36ac3d1db9faddea98fbf7e4f8f2018c5c902d4e4e196bc6ab34f0"
+        "listVersion": 1795526316,
+        "generatedAt": "2026-11-24T13:18:36Z",
+        "contentHash": "sha256-dc19fee0cc47f321a06d3e5c8d3b87c85794496e9e47c4840fcf1709572945e5"
       },
       {
         "kind": "manifest_collection_works",
@@ -7189,6 +7189,165 @@
       ]
     },
     {
+      "id": "scp-vn:collection:series:qui-lactis",
+      "branchID": "scp-vn",
+      "kind": "series",
+      "hubID": "qui-lactis",
+      "title": "ĐÊM XUỐNG: Qui Lactis",
+      "sourceListURL": "https://scp-vn.wikidot.com/qui-lactis",
+      "officialHubURL": "https://scp-vn.wikidot.com/qui-lactis",
+      "hubPresentation": "standard",
+      "canonicalTag": "qui-lactis",
+      "tagReview": {
+        "status": "reviewed",
+        "accepted": "qui-lactis",
+        "notes": [
+          "auto-derived from curated canonRegions.seriesEn archive row"
+        ]
+      },
+      "quality": {
+        "reviewStatus": "reviewed",
+        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
+      },
+      "memberManifests": [
+        "manifest_scp-vn",
+        "manifest_tales",
+        "manifest_collection_works",
+        "manifest_scp-main",
+        "manifest_scp-int"
+      ],
+      "memberResolution": {
+        "mode": "officialHubStructure",
+        "tagSource": "vn_tag.json",
+        "allowUntaggedMembers": true,
+        "excludedSections": [
+          "Setting",
+          "Settings",
+          "Setting information",
+          "Worldbuilding",
+          "Credits",
+          "References",
+          "Authors",
+          "Guides",
+          "設定",
+          "設定資料",
+          "クレジット",
+          "参考資料",
+          "설정",
+          "크레딧",
+          "참고 자료",
+          "设定",
+          "設定",
+          "鸣谢",
+          "鳴謝",
+          "参考资料",
+          "參考資料",
+          "Настройки",
+          "Справка"
+        ],
+        "membershipPolicy": "officialHubWorks",
+        "allowedHosts": [
+          "scp-vn.wikidot.com"
+        ],
+        "structureHash": "sha256-7d9c89fbf2d5f0a14f8aa096d44d2265ed0ac620278df4484402dcb11ebeaf84"
+      },
+      "primaryArticles": [
+        {
+          "id": "scp-6248",
+          "title": "Đờm Trắng của Yvith",
+          "url": "https://scp-vn.wikidot.com/scp-6248",
+          "sourceManifest": "manifest_scp-main",
+          "role": "primaryArticle",
+          "contentKind": "scp",
+          "os": 3,
+          "desc": "SCP-6248 là một con suối bị nguyền rủa tại Đồi Glastonbury. Nơi xuất phát của suối có dạng hai khe nứt vuông góc với nhau trên mặt đất. Vết nứt dọc trải dài sáu mét từ bắc xuống nam, vết nứt ngang kéo dài bốn mét từ tây sang đông. Vết nứt dọc cắt đường nứt nga…"
+        },
+        {
+          "id": "the-phlegmfont",
+          "title": "Phông Đờm",
+          "url": "https://scp-vn.wikidot.com/the-phlegmfont",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Mã Vật Thể: SCP-6248 Phân Loại: Thaumiel Sacrae Causā Prōcēdendae: Thánh Điểm-6248 đã được thành lập vì SCP-6248. Toàn bộ những người hành hương từ Xerophyllan đến điểm này đều phải được chào đón và cho phép tiêu thụ SCP-6248-α…"
+        },
+        {
+          "id": "the-road-to-arcana",
+          "title": "Con Đường Tới Arcana",
+          "url": "https://scp-vn.wikidot.com/the-road-to-arcana",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 2,
+          "desc": "NGƯỜI DẪN TRUYỆN VÔ DANH, người đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Darkest Evropa"
+        },
+        {
+          "id": "the-arcana-institute-of-xerophylla",
+          "title": "Học Viện Arcana Xứ Xerophylla",
+          "url": "https://scp-vn.wikidot.com/the-arcana-institute-of-xerophylla",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 6,
+          "desc": "Người dẫn chuyện của chúng ta, JAMES VÔ-DANH, người đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Darkest Evropa"
+        },
+        {
+          "id": "three-lessons-for-endless-night",
+          "title": "Ba Bài Học Về Màn Đêm Vĩnh Hằng",
+          "url": "https://scp-vn.wikidot.com/three-lessons-for-endless-night",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Người dẫn truyện của chúng ta, JAMES VÔ-DANH, đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Evropa Hắc Ám."
+        },
+        {
+          "id": "names-stricken",
+          "title": "Cái Tên Bị Gạch Bỏ",
+          "url": "https://scp-vn.wikidot.com/names-stricken",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 0,
+          "desc": "Người dẫn truyện của chúng ta, JAMES VÔ-DANH, đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Darkest Evropa"
+        },
+        {
+          "id": "eikyu-monogatari",
+          "title": "Chuyện Kể Eikyuu, Chương Đầu Tiên - Nhị Đấng Nguyên Sơ",
+          "url": "https://scp-vn.wikidot.com/eikyu-monogatari",
+          "sourceManifest": "manifest_tales",
+          "role": "primaryArticle",
+          "contentKind": "tale",
+          "os": 3,
+          "desc": "Chuyện Kể Eikyuu, Chương Đầu tiên Nhị Đấng Nguyên Sơ Hãy để ta kể ngươi nghe một câu chuyện. Ngày xửa ngày xưa, thời trước khi tám triệu Thần Linh còn thống trị đất trời, thậm chí là trước thời vùng Xia, Beakje và Hinomoto trỗi dậy từ Biển Đen, chúng ta có Hư…"
+        }
+      ],
+      "supplementLinks": [],
+      "description": "1 Cô-rinh-tô 3:2 - Tôi lấy sữa nuôi anh em, chớ chẳng lấy đồ ăn cứng, vì anh em không chịu nổi; đến bây giờ cũng chưa chịu được, vì anh em hãy còn thuộc về xác thịt. —KJV",
+      "articleSections": [
+        {
+          "id": "01-mach-truyen-chinh",
+          "title": "Mạch truyện chính",
+          "articleIDs": [
+            "scp-6248",
+            "the-phlegmfont",
+            "the-road-to-arcana",
+            "the-arcana-institute-of-xerophylla",
+            "three-lessons-for-endless-night",
+            "names-stricken"
+          ]
+        },
+        {
+          "id": "02-truyen-ve-vung-at-hinomoto",
+          "title": "Truyện về Vùng đất Hinomoto",
+          "articleIDs": [
+            "eikyu-monogatari"
+          ]
+        }
+      ]
+    },
+    {
       "id": "scp-vn:collection:series:rammer-jammer-yellow-hammer-hub",
       "branchID": "scp-vn",
       "kind": "series",
@@ -13648,165 +13807,6 @@
             "looking-back",
             "scp-1833",
             "scp-1423"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "scp-vn:collection:series:qui-lactis",
-      "branchID": "scp-vn",
-      "kind": "series",
-      "hubID": "qui-lactis",
-      "title": "ĐÊM XUỐNG: Qui Lactis",
-      "sourceListURL": "https://scp-vn.wikidot.com/qui-lactis",
-      "officialHubURL": "https://scp-vn.wikidot.com/qui-lactis",
-      "hubPresentation": "standard",
-      "canonicalTag": "qui-lactis",
-      "tagReview": {
-        "status": "reviewed",
-        "accepted": "qui-lactis",
-        "notes": [
-          "auto-derived from curated canonRegions.seriesEn archive row"
-        ]
-      },
-      "quality": {
-        "reviewStatus": "reviewed",
-        "coverageNote": "Official translated Series membership is refreshed from the local branch hub DOM."
-      },
-      "memberManifests": [
-        "manifest_scp-vn",
-        "manifest_tales",
-        "manifest_collection_works",
-        "manifest_scp-main",
-        "manifest_scp-int"
-      ],
-      "memberResolution": {
-        "mode": "officialHubStructure",
-        "tagSource": "vn_tag.json",
-        "allowUntaggedMembers": true,
-        "excludedSections": [
-          "Setting",
-          "Settings",
-          "Setting information",
-          "Worldbuilding",
-          "Credits",
-          "References",
-          "Authors",
-          "Guides",
-          "設定",
-          "設定資料",
-          "クレジット",
-          "参考資料",
-          "설정",
-          "크레딧",
-          "참고 자료",
-          "设定",
-          "設定",
-          "鸣谢",
-          "鳴謝",
-          "参考资料",
-          "參考資料",
-          "Настройки",
-          "Справка"
-        ],
-        "membershipPolicy": "officialHubWorks",
-        "allowedHosts": [
-          "scp-vn.wikidot.com"
-        ],
-        "structureHash": "sha256-7d9c89fbf2d5f0a14f8aa096d44d2265ed0ac620278df4484402dcb11ebeaf84"
-      },
-      "primaryArticles": [
-        {
-          "id": "scp-6248",
-          "title": "Đờm Trắng của Yvith",
-          "url": "https://scp-vn.wikidot.com/scp-6248",
-          "sourceManifest": "manifest_scp-main",
-          "role": "primaryArticle",
-          "contentKind": "scp",
-          "os": 3,
-          "desc": "SCP-6248 là một con suối bị nguyền rủa tại Đồi Glastonbury. Nơi xuất phát của suối có dạng hai khe nứt vuông góc với nhau trên mặt đất. Vết nứt dọc trải dài sáu mét từ bắc xuống nam, vết nứt ngang kéo dài bốn mét từ tây sang đông. Vết nứt dọc cắt đường nứt nga…"
-        },
-        {
-          "id": "the-phlegmfont",
-          "title": "Phông Đờm",
-          "url": "https://scp-vn.wikidot.com/the-phlegmfont",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 3,
-          "desc": "Mã Vật Thể: SCP-6248 Phân Loại: Thaumiel Sacrae Causā Prōcēdendae: Thánh Điểm-6248 đã được thành lập vì SCP-6248. Toàn bộ những người hành hương từ Xerophyllan đến điểm này đều phải được chào đón và cho phép tiêu thụ SCP-6248-α…"
-        },
-        {
-          "id": "the-road-to-arcana",
-          "title": "Con Đường Tới Arcana",
-          "url": "https://scp-vn.wikidot.com/the-road-to-arcana",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 2,
-          "desc": "NGƯỜI DẪN TRUYỆN VÔ DANH, người đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Darkest Evropa"
-        },
-        {
-          "id": "the-arcana-institute-of-xerophylla",
-          "title": "Học Viện Arcana Xứ Xerophylla",
-          "url": "https://scp-vn.wikidot.com/the-arcana-institute-of-xerophylla",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 6,
-          "desc": "Người dẫn chuyện của chúng ta, JAMES VÔ-DANH, người đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Darkest Evropa"
-        },
-        {
-          "id": "three-lessons-for-endless-night",
-          "title": "Ba Bài Học Về Màn Đêm Vĩnh Hằng",
-          "url": "https://scp-vn.wikidot.com/three-lessons-for-endless-night",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 3,
-          "desc": "Người dẫn truyện của chúng ta, JAMES VÔ-DANH, đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Evropa Hắc Ám."
-        },
-        {
-          "id": "names-stricken",
-          "title": "Cái Tên Bị Gạch Bỏ",
-          "url": "https://scp-vn.wikidot.com/names-stricken",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 0,
-          "desc": "Người dẫn truyện của chúng ta, JAMES VÔ-DANH, đã bị bỏ rơi tại Fundamentum khi lên bảy tuổi, và đang trên đường tới Học Viện Arcana Xứ Xerophylla vào năm mười một tuổi để trở thành một Đờm Quân và chiến đấu với lũ Darkest Evropa"
-        },
-        {
-          "id": "eikyu-monogatari",
-          "title": "Chuyện Kể Eikyuu, Chương Đầu Tiên - Nhị Đấng Nguyên Sơ",
-          "url": "https://scp-vn.wikidot.com/eikyu-monogatari",
-          "sourceManifest": "manifest_tales",
-          "role": "primaryArticle",
-          "contentKind": "tale",
-          "os": 3,
-          "desc": "Chuyện Kể Eikyuu, Chương Đầu tiên Nhị Đấng Nguyên Sơ Hãy để ta kể ngươi nghe một câu chuyện. Ngày xửa ngày xưa, thời trước khi tám triệu Thần Linh còn thống trị đất trời, thậm chí là trước thời vùng Xia, Beakje và Hinomoto trỗi dậy từ Biển Đen, chúng ta có Hư…"
-        }
-      ],
-      "supplementLinks": [],
-      "description": "1 Cô-rinh-tô 3:2 - Tôi lấy sữa nuôi anh em, chớ chẳng lấy đồ ăn cứng, vì anh em không chịu nổi; đến bây giờ cũng chưa chịu được, vì anh em hãy còn thuộc về xác thịt. —KJV",
-      "articleSections": [
-        {
-          "id": "01-mach-truyen-chinh",
-          "title": "Mạch truyện chính",
-          "articleIDs": [
-            "scp-6248",
-            "the-phlegmfont",
-            "the-road-to-arcana",
-            "the-arcana-institute-of-xerophylla",
-            "three-lessons-for-endless-night",
-            "names-stricken"
-          ]
-        },
-        {
-          "id": "02-truyen-ve-vung-at-hinomoto",
-          "title": "Truyện về Vùng đất Hinomoto",
-          "articleIDs": [
-            "eikyu-monogatari"
           ]
         }
       ]
